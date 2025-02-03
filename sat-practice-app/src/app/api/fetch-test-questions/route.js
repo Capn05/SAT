@@ -36,7 +36,8 @@ export async function GET(request) {
         options: options.map(option => ({
           id: option.id,
           text: option.label, // Assuming 'label' is the text for the option
-          isCorrect: option.is_correct // Assuming 'is_correct' indicates the correct answer
+          isCorrect: option.is_correct, // Assuming 'is_correct' indicates the correct answer
+          value: option.value
         }))
       };
     }));

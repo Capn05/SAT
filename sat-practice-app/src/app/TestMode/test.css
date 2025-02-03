@@ -69,6 +69,9 @@
   .passage {
     color: #1f2937;
     line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
   }
   
   .question-header {
@@ -95,6 +98,10 @@
   .question-text {
     color: #1f2937;
     margin-bottom: 24px;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom:20px; 
   }
   
   .choices {
@@ -110,15 +117,20 @@
     border-radius: 8px;
     border: 1px solid #e5e7eb;
     transition: all 0.2s ease;
+    color:black;
+    font-family: 'Noto Sans', sans-serif;
   }
   
   .choice-button:hover {
-    border-color: #d1d5db;
+    background-color: #f0f0f0;
   }
   
   .choice-button.selected {
-    border-color: #4338ca;
+    border: 1px solid #4338ca;
     background-color: rgba(67, 56, 202, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
   .choice-letter {
@@ -207,7 +219,7 @@
   }
   
   .grid-button.current {
-    background-color: #4338ca;
+    background-color: white;
     color: white;
     border-color: #4338ca;
   }
@@ -307,16 +319,7 @@
   margin-top: 20px;
 }
 
-button {
-  padding: 10px;
-  background-color: #4338ca;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+body {
+  font-family: 'Noto Sans', sans-serif;
 }
 
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}

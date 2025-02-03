@@ -139,7 +139,7 @@ export default function TestPage({ params }) {
                 onClick={() => handleAnswer(currentQuestion, choice.id)}
                 className={`choice-button ${answers[currentQuestion] === choice.id ? "selected" : ""}`}
               >
-                <span className="choice-letter">{choice.id}.</span> {choice.text}
+                <span className="choice-letter">{choice.value}.</span> {choice.text}
               </button>
             ))}
           </div>

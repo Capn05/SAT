@@ -61,14 +61,13 @@ export default function PreTestModal({ testType, onStart, onClose }) {
             <option value="" disabled>Select a subject</option>
             <option value="Math">Math</option>
             <option value="Reading/Writing">Reading & Writing</option>
-            <option value="null">None</option>
           </select>
         </div>
 
         <div style={styles.formGroup}>
           <label style={styles.label}>Select Test:</label>
           <select onChange={(e) => handleTestSelection(e.target.value)} value={selectedTest} style={styles.select}>
-            <option value="">Select a test</option>
+            <option value="none">Select a test</option>
             {availableTests.map((test) => (
               <option key={test.id} value={test.id}>
                 {test.name}
