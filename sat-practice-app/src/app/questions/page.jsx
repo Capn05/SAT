@@ -1,32 +1,27 @@
 "use client"
 
 import { useSearchParams } from 'next/navigation'
-import Sidebar from '../components/Sidebar'
 import TopBar from '../components/TopBar'
 import Question from '../components/Question'
-import AIChat from '../components/AIChat'
 import useAuth from '../../../lib/useAuth'
 
 export default function QuestionPage() {
   useAuth()
   const searchParams = useSearchParams()
 
-  // Access the 'subject_id' query parameter
+  // Access the 'subject', 'mode', and 'skillName' query parameters
   const subject = searchParams.get('subject')
+  const mode = searchParams.get('mode') || 'skill'; // Default to skill-specific questions if no mode is provided
+  const skillName = searchParams.get('skillName'); // Retrieve the skill name
 
-    // Log the subject to debug
-    console.log('Subject:', subject)
-  const Title = subject === '1' ? 'Math' : 'Reading/Writing';
-
-  // Set the title and AI prompt based on the subject
-  const aiPrompt = subject ? `Help me with ${subject} questions.` : 'Help me with questions.'
+  const Title = `${subject === '1' ? 'Math' : 'Reading/Writing'}${mode === 'quick' ? ' - Quick Practice' : (mode === 'skill' ? '' : ` - ${mode}`)}${skillName ? `: ${skillName}` : ''}`;
 
   return (
     <div style={styles.container}>
       <main style={styles.main}>
-        <TopBar title={Title}/>
+        <TopBar title={Title} />
         <div style={styles.content}>
-        <Question subject={subject} />
+          <Question subject={subject} mode={mode} skillName={skillName}/>
         </div>
       </main>
     </div>
@@ -47,7 +42,6 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-
   },
 }
 

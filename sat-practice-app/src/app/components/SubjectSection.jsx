@@ -6,12 +6,14 @@ export default function SubjectSection({ title, value, buttonText, subject_id })
     <div style={styles.container}>
       <div style={styles.header}>
         <span style={styles.sectionTitle}>{title}</span>
-        <InfoIcon style={styles.icon} />
+
+
+        
       </div>
       <div style={styles.content}>
         <span style={styles.value}>{value}</span>
       </div>
-      <Link href={{ pathname: '/questions', query: { subject: subject_id } }} style={styles.button}>
+      <Link href={{ pathname: '/questions', query: { subject: subject_id, mode: 'quick' } }} style={styles.button}>
         {buttonText}    
       </Link>
     </div>

@@ -1,5 +1,5 @@
 "use client"
-import { BarChart2 } from 'lucide-react'
+import { House } from 'lucide-react'
 import { supabase } from '../../../lib/supabase'
 import { useRouter } from 'next/navigation'
 
@@ -19,14 +19,25 @@ export default function TopBar({ title}) {
     router.push('/home')
   }
 
+  const handleReturnToSkills = () => {
+    router.push('/skills')
+  }
+  const handleReturnTotestDash = () => {
+    router.push('/TimedTestDash')
+  }
+  const handleReturnToPreviousPage = () => {
+    router.back(); // Navigate back to the previous page
+  };
   return (
     <div style={styles.topBar}>
       <div style={styles.analytics}>
-        <BarChart2 style={styles.icon} />
+        <div onClick={handleDashboardClick}>
+          <House style={styles.icon} />
+        </div>
         <span>{title}</span>
       </div>
       <div style={styles.actions}>
-        <button style={styles.secondaryButton} onClick={handleDashboardClick}>Dashboard</button>
+        {title !== "SAT Skills" && <button style={styles.secondaryButton} onClick={handleReturnToPreviousPage}>Back</button>}
         <button style={styles.primaryButton} onClick={handleLogout}>Log Out</button>
       </div>
     </div>

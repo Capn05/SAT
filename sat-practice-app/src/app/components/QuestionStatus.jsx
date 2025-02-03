@@ -126,7 +126,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: status === 'correct' ? '#65a30d' : status === 'incorrect' ? 'red' : 'grey',
+    backgroundColor: status === 'correct' ? '#65a30d' : status === 'incorrect' ? '#f8d7da' : 'grey',
     color: 'white',
     border: 'none',
     cursor: 'pointer',

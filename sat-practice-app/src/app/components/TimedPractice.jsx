@@ -1,18 +1,23 @@
 import { Clock, ArrowRight } from "lucide-react"
-
+import Link from "next/link"
 export default function TimedTestButton() {
   return (
     <div style={styles.container}>
+              <Link href="/TimedTestDash" style={styles.backLink}>
       <button style={styles.button} onClick={() => console.log("Navigate to timed test")}>
         <div style={styles.iconWrapper}>
           <Clock style={styles.icon} />
         </div>
+
         <div style={styles.textContent}>
-          <h3 style={styles.title}>Take a Timed Practice Test</h3>
+          
+          <h3 style={styles.title}> Practice Test</h3>
           <p style={styles.description}>Challenge yourself with a full-length, timed SAT practice exam</p>
         </div>
         <ArrowRight style={styles.arrowIcon} />
       </button>
+      </Link>
+
     </div>
   )
 }

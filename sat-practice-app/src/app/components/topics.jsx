@@ -1,5 +1,6 @@
 import { BookOpen, Calculator, FlaskRoundIcon as Flask, PenTool } from "lucide-react"
 import { Clock, ArrowRight } from "lucide-react"
+import Link from 'next/link'
 
 export default function TestCategories() {
   const categories = [
@@ -11,7 +12,7 @@ export default function TestCategories() {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Skill Practice</h2>
+      <h2 style={styles.title}>Targeted Practice</h2>
       <div style={styles.grid}>
         {categories.map((category) => {
           const Icon = category.icon
@@ -23,11 +24,13 @@ export default function TestCategories() {
           )
         })}
       </div>
+      <Link href="/skills" style={styles.seeMoreText}>
+
       <div style={styles.seeMore}>
-        <div style={styles.seeMoreText}>All Skills</div>
-      
-        <ArrowRight style={styles.arrowIcon} />
+      All Skills<ArrowRight style={styles.arrowIcon} />
       </div>
+      </Link>
+
     </div>
   )
 }
@@ -52,9 +55,11 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     padding: "16px",
-    backgroundColor: "#e6f0e6",
+    backgroundColor: "white", 
     borderRadius: "8px",
     cursor: "pointer",
+    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
+
   },
   icon: {
     width: "24px",
@@ -78,7 +83,7 @@ const styles = {
     transform: "rotate(180deg)",
   },
   seeMoreText: {
-    marginRight:"10px"
+    marginRight: "10px",
   },
 }
 

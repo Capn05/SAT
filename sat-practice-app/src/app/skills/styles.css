@@ -1,0 +1,30 @@
+/* Hover effects */
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .domain-header:hover {
+    filter: brightness(1.05);
+  }
+  
+  .tab:hover:not(.active) {
+    background-color: #e5e7eb;
+  }
+  
+  /* Focus states */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  }
+  
+  /* Transitions */
+  .tab {
+    transition: all 0.2s ease;
+  }
+  
+  .domain-section {
+    transition: transform 0.2s ease;
+  }
+  
+  
