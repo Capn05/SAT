@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 // Initialize OpenAI and Supabase clients
 const openai = new OpenAI({
-  apiKey: "",
+  apiKey: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 // Function to generate a question using OpenAI GPT

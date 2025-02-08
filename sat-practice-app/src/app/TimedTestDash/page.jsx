@@ -22,7 +22,7 @@ export default function PracticeTestsPage() {
   const router = useRouter()
   const [currentTestType, setCurrentTestType] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [activeTab, setActiveTab] = useState('Active')
+  const [activeTab, setActiveTab] = useState('Past')
   const [completedTests, setCompletedTests] = useState([])
   const [incompleteTests, setIncompleteTests] = useState([])
 

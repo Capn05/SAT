@@ -2,15 +2,7 @@ export default function SubjectTabs({ activeTest, onSubjectChange }) {
     return (
       <div style={styles.container}>
         <div style={styles.tabs}>
-        <button
-            style={{
-              ...styles.tab,
-              ...(activeTest=== "Active" ? styles.activeTab : {}),
-            }}
-            onClick={() => onSubjectChange("Active")}
-          >
-            Active
-          </button>
+
           <button
             style={{
               ...styles.tab,
@@ -20,7 +12,15 @@ export default function SubjectTabs({ activeTest, onSubjectChange }) {
           >
             Past
           </button>
-
+          <button
+            style={{
+              ...styles.tab,
+              ...(activeTest=== "Active" ? styles.activeTab : {}),
+            }}
+            onClick={() => onSubjectChange("Active")}
+          >
+            Active
+          </button>
         </div>
         {/* <div style={styles.info}>
           <h2 style={styles.infoTitle}>Understanding Domains and Skills</h2>

@@ -5,8 +5,8 @@ import { useSearchParams } from 'next/navigation'
 import { supabase } from '../../../lib/supabase'
 import TopBar from '../components/TopBar'
 import ReviewAIChat from '../components/ReviewAIChat'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import './review.css'
+import { MessageCircle } from 'lucide-react'
 
 export default function ReviewTestPage() {
   const [questions, setQuestions] = useState([])
@@ -16,6 +16,19 @@ export default function ReviewTestPage() {
   const [suggestions, setSuggestions] = useState([])
   const searchParams = useSearchParams()
   const testId = searchParams.get('testId')
+  const [currentPage, setCurrentPage] = useState(1)
+  const questionsPerPage = 10
+
+  // Calculate pagination indexes
+  const indexOfLastQuestion = currentPage * questionsPerPage
+  const indexOfFirstQuestion = indexOfLastQuestion - questionsPerPage
+  const currentQuestions = questions.slice(indexOfFirstQuestion, indexOfLastQuestion)
+  const totalPages = Math.ceil(questions.length / questionsPerPage)
+
+  // Pagination controls
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber)
+  }
 
   useEffect(() => {
     const fetchTestData = async () => {
@@ -124,82 +137,105 @@ export default function ReviewTestPage() {
               </div>
             </div>
           </div>
-
-          <div className="chart-container">
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={Object.entries(metrics?.topicPerformance || {}).map(([topic, stats]) => ({
-                topic,
-                accuracy: (stats.correct / stats.total) * 100
-              }))}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="topic" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="accuracy" fill="#8884d8" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
         </div>
 
-        <div className="questions-section">
-          <h2>Review Questions</h2>
-          <div className="questions-grid">
-            {questions.map((question, index) => (
-              <button
-                key={question.id}
-                className={`question-card ${question.userAnswer?.is_correct ? 'correct' : 'incorrect'}`}
-                onClick={() => setSelectedQuestion(index)}
+        <div className="questions-and-content">
+          <div className="questions-section">
+            <h2>Review Questions</h2>
+            <div className="questions-grid">
+              {currentQuestions.map((question, index) => (
+                <button
+                  key={question.id}
+                  className={`question-card ${question.userAnswer?.is_correct ? 'correct' : 'incorrect'}`}
+                  onClick={() => setSelectedQuestion(indexOfFirstQuestion + index)}
+                >
+                  <span className="question-number">Question {indexOfFirstQuestion + index + 1}</span>
+                  <span className="status-indicator">
+                    {question.userAnswer?.is_correct ? '✓' : '✗'}
+                  </span>
+                </button>
+              ))}
+            </div>
+            
+            <div className="pagination">
+              <button 
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="pagination-button"
               >
-                <span className="question-number">Question {index + 1}</span>
-                <span className="status-indicator">
-                  {question.userAnswer?.is_correct ? '✓' : '✗'}
-                </span>
+                Previous
               </button>
-            ))}
-          </div>
-        </div>
-
-        {selectedQuestion !== null && (
-          <div className="main-content">
-            <div className="content-card">
-              {(() => {
-                const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                return <p className="passage">{passage}</p>;
-              })()}
-            </div>
-
-            <div className="content-card">
-              <div className="question-header">
-                <div className="question-number">Question {selectedQuestion + 1}</div>
+              
+              <div className="page-info">
+                {currentPage}
               </div>
-              {(() => {
-                const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                return <p className="question-text">{question}</p>;
-              })()}
-              <div className="choices">
-                {questions[selectedQuestion].options.map((option) => (
-                  <div
-                    key={option.id}
-                    className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
-                  >
-                    <span className="choice-letter">{option.value}.</span> {option.text}
+
+              <button 
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="pagination-button"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+
+          {selectedQuestion !== null ? (
+            <div className="main-content">
+              <div className="question-and-ai">
+                <div className="question-content">
+                  <div className="content-card">
+                    {(() => {
+                      const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
+                      return <p className="passage">{passage}</p>;
+                    })()}
                   </div>
-                ))}
-              </div>
-            </div>
 
-            <div className="content-card">
-              <div className="ai-chat">
-                <ReviewAIChat 
-                  question={questions[selectedQuestion].question_text}
-                  selectedAnswer={questions[selectedQuestion].userAnswer?.option_id}
-                  options={questions[selectedQuestion].options}
-                  imageURL={questions[selectedQuestion].image_url}
-                />
+                  <div className="content-card">
+                    <div className="question-header">
+                      <div className="question-number">Question {selectedQuestion + 1}</div>
+                    </div>
+                    {(() => {
+                      const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
+                      return <p className="question-text">{question}</p>;
+                    })()}
+                    <div className="choices">
+                      {questions[selectedQuestion].options.map((option) => (
+                        <div
+                          key={option.id}
+                          className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
+                        >
+                          <span className="choice-letter">{option.value}.</span> {option.text}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ai-content">
+                  <div className="content-card">
+                    <div className="ai-chat">
+                      <ReviewAIChat 
+                        question={questions[selectedQuestion].question_text}
+                        selectedAnswer={questions[selectedQuestion].userAnswer?.option_id}
+                        options={questions[selectedQuestion].options}
+                        imageURL={questions[selectedQuestion].image_url}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="main-content empty-state">
+              <div className="empty-state-content">
+                <MessageCircle size={48} className="empty-state-icon" />
+                <h3>Select a Question to Review</h3>
+                <p>Choose a question from the list to review it with our AI tutor</p>
+              </div>
+            </div>
+          )}
+        </div>
 
         <div className="suggestions-section">
           <h2>Study Suggestions</h2>
