@@ -101,6 +101,12 @@ export default function PracticeTestsPage() {
 
   const currentTests = (activeTab === "Past" ? completedTests : incompleteTests).slice(indexOfFirstTest, indexOfLastTest);
 
+  const handleTestHistoryClick = (test) => {
+      // If the test is completed, navigate to review page
+      router.push(`/review-test?testId=${test.test_id}`);
+ 
+  };
+
   return (
     <div style={styles.container}>
       <TopBar title={"Full Length Practice Tests"}/>
@@ -172,7 +178,13 @@ export default function PracticeTestsPage() {
                 </div>
               </div>
               {currentTests.map((test) => (
-                <div key={test.id} style={styles.testHistoryItem}>
+                <div 
+                  key={test.id} 
+                  style={styles.testHistoryItem}
+                  onClick={() => handleTestHistoryClick(test)}
+                  role="button"
+                  tabIndex={0}
+                >
                   <div style={styles.testHistoryInfo}>
                     <h3 style={styles.testHistoryName}>{test.name}</h3>
                     <p style={styles.testHistoryDate}>{test.date}</p>
@@ -303,6 +315,7 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "1fr 300px",
     gap: "24px",
+    paddingTop:"20px"
   },
   mainSection: {
     display: "flex",
@@ -478,8 +491,11 @@ const styles = {
     padding: "12px",
     backgroundColor: "#f3f4f6",
     borderRadius: "8px",
-    cursor: "pointer",
-    transition: "background-color 0.2s ease",
+    cursor: 'pointer',
+    transition: 'background-color 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#f3f4f6',
+    },
   },
   testHistoryItemHover: {
     backgroundColor: "#e5e7eb",

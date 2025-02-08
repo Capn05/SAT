@@ -32,6 +32,7 @@ const styles = {
   container: {
     display: 'flex',
     minHeight: '100vh',
+    backgroundColor: 'white'
   },
   main: {
     flex: 1,

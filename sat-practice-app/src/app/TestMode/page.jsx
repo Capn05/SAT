@@ -6,6 +6,7 @@ import { formatTime } from "../lib/utils"
 import "./test.css"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
+import { supabase } from '../../../lib/supabase'
 
 const mockQuestions = [
   {
@@ -29,11 +30,15 @@ export default function TestPage({ params }) {
   const [answers, setAnswers] = useState({})
   const [flaggedQuestions, setFlaggedQuestions] = useState(new Set())
   const [showQuestionNav, setShowQuestionNav] = useState(false)
-  const totalQuestions = params.type === "math" ? 44 : 54
   const router = useRouter()
   const searchParams = useSearchParams()
   const testId = searchParams.get('testId')
   const [questions, setQuestions] = useState([])
+  const totalQuestions = questions.length
+  const [testName, setTestName] = useState('')
+  const [showSubmitModal, setShowSubmitModal] = useState(false)
+  const [showResultsModal, setShowResultsModal] = useState(false)
+  const [testResults, setTestResults] = useState(null)
 
   useEffect(() => {
     if (testId) {
@@ -49,10 +54,25 @@ export default function TestPage({ params }) {
   }, [])
 
   useEffect(() => {
-    const fetchQuestions = async () => {
+    const fetchTestData = async () => {
+      if (!testId) return;
+
+      // Fetch test details including name
+      const { data: testData, error: testError } = await supabase
+        .from('tests')
+        .select('name')
+        .eq('id', testId)
+        .single();
+
+      if (testError) {
+        console.error('Error fetching test details:', testError);
+      } else if (testData) {
+        setTestName(testData.name);
+      }
+
+      // Existing questions fetch
       const response = await fetch(`/api/fetch-test-questions?testId=${testId}`);
       const data = await response.json();
-      console.log("qestions"+ JSON.stringify)
       if (response.ok) {
         setQuestions(data);
       } else {
@@ -61,12 +81,69 @@ export default function TestPage({ params }) {
     };
 
     if (testId) {
-      fetchQuestions();
+      fetchTestData();
     }
   }, [testId]);
 
-  const handleAnswer = (questionId, choice) => {
+  const handleAnswer = async (questionId, choice) => {
+    // Update local state first
     setAnswers((prev) => ({ ...prev, [questionId]: choice }))
+
+    try {
+      // Get the current user from Supabase
+      const { data: { user }, error: userError } = await supabase.auth.getUser();
+      
+      if (userError) {
+        console.error('Error getting user:', userError);
+        return;
+      }
+
+      // Get the current question data to check if the answer is correct
+      const currentQuestionData = questions[currentQuestion - 1];
+      console.log('Current question data:', currentQuestionData);
+      
+      const selectedOption = currentQuestionData.options.find(opt => opt.id === choice);
+      console.log('Selected option:', selectedOption);
+      
+      if (!selectedOption) {
+        console.error('Selected option not found:', { choice, options: currentQuestionData.options });
+        return;
+      }
+
+      const isCorrect = selectedOption.isCorrect;
+      
+      const requestBody = {
+        user_id: user.id,
+        question_id: currentQuestionData.id,
+        option_id: choice,
+        is_correct: isCorrect,
+        test_id: testId
+      };
+      
+      console.log('Sending request with body:', requestBody);
+
+      const response = await fetch('/api/upload-test-answer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      const responseData = await response.json();
+      
+      if (!response.ok) {
+        console.error('Failed to save answer:', {
+          status: response.status,
+          statusText: response.statusText,
+          data: responseData
+        });
+      } else {
+        console.log('Successfully saved answer:', responseData);
+      }
+    } catch (error) {
+      console.error('Error in handleAnswer:', error);
+    }
   }
 
   const toggleFlagged = (questionId) => {
@@ -82,10 +159,12 @@ export default function TestPage({ params }) {
   }
 
   const getQuestionStatus = (questionId) => {
+    let status = []
     if (questionId === currentQuestion) return "current"
-    if (flaggedQuestions.has(questionId)) return "flagged"
-    if (answers[questionId]) return "answered"
-    return "unanswered"
+    if (flaggedQuestions.has(questionId)) status.push("flagged")
+    if (answers[questionId]) status.push("answered")
+    if (status.length === 0) return "unanswered"
+    return status.join(" ")
   }
 
   // Function to parse question text
@@ -97,9 +176,72 @@ export default function TestPage({ params }) {
     return { passage, question };
   };
 
+  const handleSubmitClick = () => {
+    setShowSubmitModal(true);
+  };
+
+  const handleSubmitTest = async () => {
+    try {
+      const { data: { user }, error: userError } = await supabase.auth.getUser();
+      
+      if (userError) {
+        console.error('Error getting user:', userError);
+        return;
+      }
+
+      console.log('Submitting test with data:', {
+        user_id: user.id,
+        test_id: testId,
+        name: testName,
+        answers: answers
+      });
+
+      const response = await fetch('/api/submit-test', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          user_id: user.id,
+          test_id: testId,
+          name: testName,
+          answers: answers
+        }),
+      });
+
+      const data = await response.json();
+      console.log('API Response:', data);
+
+      if (!response.ok) {
+        console.error('Failed to submit test:', data.error);
+        return;
+      }
+
+      // Set the test results using the detailed response
+      const { testSummary } = data;
+      console.log('Test Summary:', testSummary);
+
+      const results = {
+        score: testSummary.score,
+        totalQuestions: questions.length,
+        correctAnswers: testSummary.correctAnswers,
+        incorrectAnswers: testSummary.incorrectAnswers,
+        testName: testSummary.testName,
+        answers: testSummary.answers
+      };
+
+      console.log('Formatted Results:', results);
+      setTestResults(results);
+      setShowResultsModal(true);
+
+    } catch (error) {
+      console.error('Error submitting test:', error);
+    }
+  };
+
   return (
     <div className="test-container">
-      <TopBar title="Test 1, Module 1: Reading and Writing" />
+      <TopBar title="Full Length Practice Test" />
 
       <div className="main-content">
         <div className="content-card">
@@ -121,7 +263,7 @@ export default function TestPage({ params }) {
               onClick={() => toggleFlagged(currentQuestion)}
               className={`bookmark-button ${flaggedQuestions.has(currentQuestion) ? "flagged" : ""}`}
             >
-              <Bookmark className="w-5 h-5" />
+              <Bookmark className="w-5 h-5" fill={flaggedQuestions.has(currentQuestion) ? "currentColor" : "none"} />
             </button>
           </div>
           {(() => {
@@ -150,7 +292,7 @@ export default function TestPage({ params }) {
         <div className="modal-overlay">
           <div className="modal-content">
             <div className="modal-header">
-              <h2 className="modal-title">Section 1, Module 1: Questions</h2>
+              <h2 className="modal-title">Questions</h2>
               <button onClick={() => setShowQuestionNav(false)} className="modal-close">
                 ×
               </button>
@@ -166,8 +308,8 @@ export default function TestPage({ params }) {
                 Unanswered
               </div>
               <div className="status-item">
-                <Flag className="w-4 h-4 text-[#4338ca]" />
-                For Review
+              <div className="status-indicator status-flagged" />
+              For Review
               </div>
             </div>
 
@@ -186,9 +328,85 @@ export default function TestPage({ params }) {
               ))}
             </div>
 
-            <button onClick={() => setShowQuestionNav(false)} className="review-button">
-              Go to Review Page
+            <button onClick={handleSubmitClick} className="review-button">
+              Submit Test
             </button>
+          </div>
+        </div>
+      )}
+
+      {showSubmitModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2 className="modal-title">Submit Test</h2>
+              <button onClick={() => setShowSubmitModal(false)} className="modal-close">
+                ×
+              </button>
+            </div>
+            <div className="modal-body">
+              <p>Are you sure you want to submit this test?</p>
+              <p>You won't be able to change your answers after submission.</p>
+              
+              <div className="modal-actions">
+                <button 
+                  onClick={() => setShowSubmitModal(false)} 
+                  className="cancel-button"
+                >
+                  Cancel
+                </button>
+                <button 
+                  onClick={() => {
+                    setShowSubmitModal(false);
+                    handleSubmitTest();
+                  }} 
+                  className="submit-button"
+                >
+                  Submit Test
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showResultsModal && (
+        <div className="modal-overlay">
+          <div className="modal-content results-modal">
+            <div className="modal-header">
+              <h2 className="modal-title">Test Results</h2>
+            </div>
+            <div className="modal-body">
+              <div className="results-summary">
+                <h3>{testResults.testName}</h3>
+                <div className="score-circle">
+                  <span className="score-number">{testResults.score}</span>
+                  <span className="score-total">/{testResults.totalQuestions}</span>
+                </div>
+                <div className="score-details">
+                  <p>Correct Answers: {testResults.correctAnswers}</p>
+                  <p>Incorrect Answers: {testResults.incorrectAnswers}</p>
+                </div>
+              </div>
+              
+              <div className="next-steps">
+                <h4>What's Next?</h4>
+                <div className="action-buttons">
+                  <button 
+                    onClick={() => router.push('/review-test?testId=' + testId)} 
+                    className="review-answers-button"
+                  >
+                    Review Answers
+                  </button>
+                  <button 
+                    onClick={() => router.push('/TimedTestDash')} 
+                    className="back-to-dashboard"
+                  >
+                    Back to Dashboard
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -217,6 +435,9 @@ export default function TestPage({ params }) {
               className="nav-button"
             >
               <ChevronRight className="w-5 h-5" />
+            </button>
+            <button onClick={handleSubmitClick} className="review-button">
+              Submit Test
             </button>
           </div>
         </div>
