@@ -1,3 +1,4 @@
+import Sidebar from "../components/Sidebar.tsx";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Noto_Sans } from "next/font/google";
 import "./global.css";
@@ -25,8 +26,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}>
-        {children}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}
+        style={{ margin: 0, display: "flex" }}
+      >
+        <Sidebar />
+        <div style={{ marginLeft: "0px", flex: 1 }}>
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -144,12 +144,8 @@ export default function ReviewAIChat({ question, selectedAnswer, options, imageU
         <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.secondaryButton}>
           Explain
         </button>
-        <button onClick={() => handleQuestionPreset("Give me a hint without revealing the correct answer")} style={styles.secondaryButton}>
-          Hint
-        </button>
-        <button onClick={() => handleQuestionPreset("Create a very similar question for me to practice")} style={styles.secondaryButton}>
-          Similar Question
-        </button>
+
+
         <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.secondaryButton}>
           Why is my answer incorrect
         </button>

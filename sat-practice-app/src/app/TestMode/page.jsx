@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag } from "lucide-react"
+import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle } from "lucide-react"
 import { formatTime } from "../lib/utils"
 import "./test.css"
 import TopBar from "../components/TopBar"
@@ -39,6 +39,7 @@ export default function TestPage({ params }) {
   const [showSubmitModal, setShowSubmitModal] = useState(false)
   const [showResultsModal, setShowResultsModal] = useState(false)
   const [testResults, setTestResults] = useState(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     if (testId) {
@@ -55,6 +56,7 @@ export default function TestPage({ params }) {
 
   useEffect(() => {
     const fetchTestData = async () => {
+      setIsLoading(true)
       if (!testId) return;
 
       // Fetch test details including name
@@ -78,6 +80,7 @@ export default function TestPage({ params }) {
       } else {
         console.error('Error fetching questions:', data.error);
       }
+      setIsLoading(false)
     };
 
     if (testId) {
@@ -241,207 +244,212 @@ export default function TestPage({ params }) {
 
   return (
     <div className="test-container">
-      <TopBar title="Full Length Practice Test" />
-
-      <div className="main-content">
-        <div className="content-card">
-          {/* Parse the question text */}
-          {(() => {
-            const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
-            return (
-              <>
-                <p className="passage">{passage}</p>
-              </>
-            );
-          })()}
-        </div>
-
-        <div className="content-card">
-          <div className="question-header">
-            <div className="question-number">{currentQuestion}</div>
-            <button
-              onClick={() => toggleFlagged(currentQuestion)}
-              className={`bookmark-button ${flaggedQuestions.has(currentQuestion) ? "flagged" : ""}`}
-            >
-              <Bookmark className="w-5 h-5" fill={flaggedQuestions.has(currentQuestion) ? "currentColor" : "none"} />
-            </button>
-          </div>
-          {(() => {
-            const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
-            return (
-              <>
-                <p className="question-text">{question}</p>
-              </>
-            );
-          })()}
-          <div className="choices">
-            {questions[currentQuestion - 1]?.options.map((choice) => (
-              <button
-                key={choice.id}
-                onClick={() => handleAnswer(currentQuestion, choice.id)}
-                className={`choice-button ${answers[currentQuestion] === choice.id ? "selected" : ""}`}
-              >
-                <span className="choice-letter">{choice.value}.</span> {choice.text}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {showQuestionNav && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title">Questions</h2>
-              <button onClick={() => setShowQuestionNav(false)} className="modal-close">
-                ×
-              </button>
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          <TopBar title="Full Length Practice Test" />
+          <div className="main-content">
+            <div className="content-card">
+              {/* Parse the question text */}
+              {(() => {
+                const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
+                return (
+                  <>
+                    <p className="passage">{passage}</p>
+                  </>
+                );
+              })()}
             </div>
 
-            <div className="question-status-legend">
-              <div className="status-item">
-                <div className="status-indicator status-current" />
-                Current
-              </div>
-              <div className="status-item">
-                <div className="status-indicator status-unanswered" />
-                Unanswered
-              </div>
-              <div className="status-item">
-              <div className="status-indicator status-flagged" />
-              For Review
-              </div>
-            </div>
-
-            <div className="question-grid">
-              {Array.from({ length: totalQuestions }, (_, i) => i + 1).map((num) => (
+            <div className="content-card">
+              <div className="question-header">
+                <div className="question-number">{currentQuestion}</div>
                 <button
-                  key={num}
-                  onClick={() => {
-                    setCurrentQuestion(num)
-                    setShowQuestionNav(false)
-                  }}
-                  className={`grid-button ${getQuestionStatus(num)}`}
+                  onClick={() => toggleFlagged(currentQuestion)}
+                  className={`bookmark-button ${flaggedQuestions.has(currentQuestion) ? "flagged" : ""}`}
                 >
-                  {num}
+                  <Bookmark className="w-5 h-5" fill={flaggedQuestions.has(currentQuestion) ? "currentColor" : "none"} />
                 </button>
-              ))}
+              </div>
+              {(() => {
+                const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
+                return (
+                  <>
+                    <p className="question-text">{question}</p>
+                  </>
+                );
+              })()}
+              <div className="choices">
+                {questions[currentQuestion - 1]?.options.map((choice) => (
+                  <button
+                    key={choice.id}
+                    onClick={() => handleAnswer(currentQuestion, choice.id)}
+                    className={`choice-button ${answers[currentQuestion] === choice.id ? "selected" : ""}`}
+                  >
+                    <span className="choice-letter">{choice.value}.</span> {choice.text}
+                  </button>
+                ))}
+              </div>
             </div>
-
-            <button onClick={handleSubmitClick} className="review-button">
-              Submit Test
-            </button>
           </div>
-        </div>
-      )}
 
-      {showSubmitModal && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title">Submit Test</h2>
-              <button onClick={() => setShowSubmitModal(false)} className="modal-close">
-                ×
-              </button>
-            </div>
-            <div className="modal-body">
-              <p>Are you sure you want to submit this test?</p>
-              <p>You won't be able to change your answers after submission.</p>
-              
-              <div className="modal-actions">
-                <button 
-                  onClick={() => setShowSubmitModal(false)} 
-                  className="cancel-button"
-                >
-                  Cancel
+          {showQuestionNav && (
+            <div className="modal-overlay">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h2 className="modal-title">Questions</h2>
+                  <button onClick={() => setShowQuestionNav(false)} className="modal-close">
+                    ×
+                  </button>
+                </div>
+
+                <div className="question-status-legend">
+                  <div className="status-item">
+                    <div className="status-indicator status-current" />
+                    Current
+                  </div>
+                  <div className="status-item">
+                    <div className="status-indicator status-unanswered" />
+                    Unanswered
+                  </div>
+                  <div className="status-item">
+                  <div className="status-indicator status-flagged" />
+                  For Review
+                  </div>
+                </div>
+
+                <div className="question-grid">
+                  {Array.from({ length: totalQuestions }, (_, i) => i + 1).map((num) => (
+                    <button
+                      key={num}
+                      onClick={() => {
+                        setCurrentQuestion(num)
+                        setShowQuestionNav(false)
+                      }}
+                      className={`grid-button ${getQuestionStatus(num)}`}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                </div>
+
+                <button onClick={handleSubmitClick} className="review-button">
+                  Submit Test
                 </button>
-                <button 
-                  onClick={() => {
-                    setShowSubmitModal(false);
-                    handleSubmitTest();
-                  }} 
-                  className="submit-button"
+              </div>
+            </div>
+          )}
+
+          {showSubmitModal && (
+            <div className="modal-overlay">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h2 className="modal-title">Submit Test</h2>
+                  <button onClick={() => setShowSubmitModal(false)} className="modal-close">
+                    ×
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <p>Are you sure you want to submit this test?</p>
+                  <p>You won't be able to change your answers after submission.</p>
+                  
+                  <div className="modal-actions">
+                    <button 
+                      onClick={() => setShowSubmitModal(false)} 
+                      className="cancel-button"
+                    >
+                      Cancel
+                    </button>
+                    <button 
+                      onClick={() => {
+                        setShowSubmitModal(false);
+                        handleSubmitTest();
+                      }} 
+                      className="submit-button"
+                    >
+                      Submit Test
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {showResultsModal && (
+            <div className="modal-overlay">
+              <div className="modal-content results-modal">
+                <div className="modal-header">
+                  <h2 className="modal-title">Test Results</h2>
+                </div>
+                <div className="modal-body">
+                  <div className="results-summary">
+                    <h3>{testResults.testName}</h3>
+                    <div className="score-circle">
+                      <span className="score-number">{testResults.score}</span>
+                      <span className="score-total">/{testResults.totalQuestions}</span>
+                    </div>
+                    <div className="score-details">
+                      <p>Correct Answers: {testResults.correctAnswers}</p>
+                      <p>Incorrect Answers: {testResults.incorrectAnswers}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="next-steps">
+                    <h4>What's Next?</h4>
+                    <div className="action-buttons">
+                      <button 
+                        onClick={() => router.push('/review-test?testId=' + testId)} 
+                        className="review-answers-button"
+                      >
+                        Review Answers
+                      </button>
+                      <button 
+                        onClick={() => router.push('/TimedTestDash')} 
+                        className="back-to-dashboard"
+                      >
+                        Back to Dashboard
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className="bottom-nav">
+            <div className="bottom-nav-content">
+              <div className="question-info">
+                <span className="question-count">
+                  Question {currentQuestion} of {totalQuestions}
+                </span>
+                <button onClick={() => setShowQuestionNav(true)} className="view-all-button">
+                  View All Questions
+                </button>
+              </div>
+              <div className="nav-buttons">
+                <button
+                  onClick={() => setCurrentQuestion((prev) => Math.max(1, prev - 1))}
+                  disabled={currentQuestion === 1}
+                  className="nav-button"
                 >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => setCurrentQuestion((prev) => Math.min(totalQuestions, prev + 1))}
+                  disabled={currentQuestion === totalQuestions}
+                  className="nav-button"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+                <button onClick={handleSubmitClick} className="review-button">
                   Submit Test
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </>
       )}
-
-      {showResultsModal && (
-        <div className="modal-overlay">
-          <div className="modal-content results-modal">
-            <div className="modal-header">
-              <h2 className="modal-title">Test Results</h2>
-            </div>
-            <div className="modal-body">
-              <div className="results-summary">
-                <h3>{testResults.testName}</h3>
-                <div className="score-circle">
-                  <span className="score-number">{testResults.score}</span>
-                  <span className="score-total">/{testResults.totalQuestions}</span>
-                </div>
-                <div className="score-details">
-                  <p>Correct Answers: {testResults.correctAnswers}</p>
-                  <p>Incorrect Answers: {testResults.incorrectAnswers}</p>
-                </div>
-              </div>
-              
-              <div className="next-steps">
-                <h4>What's Next?</h4>
-                <div className="action-buttons">
-                  <button 
-                    onClick={() => router.push('/review-test?testId=' + testId)} 
-                    className="review-answers-button"
-                  >
-                    Review Answers
-                  </button>
-                  <button 
-                    onClick={() => router.push('/TimedTestDash')} 
-                    className="back-to-dashboard"
-                  >
-                    Back to Dashboard
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <div className="bottom-nav">
-        <div className="bottom-nav-content">
-          <div className="question-info">
-            <span className="question-count">
-              Question {currentQuestion} of {totalQuestions}
-            </span>
-            <button onClick={() => setShowQuestionNav(true)} className="view-all-button">
-              View All Questions
-            </button>
-          </div>
-          <div className="nav-buttons">
-            <button
-              onClick={() => setCurrentQuestion((prev) => Math.max(1, prev - 1))}
-              disabled={currentQuestion === 1}
-              className="nav-button"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => setCurrentQuestion((prev) => Math.min(totalQuestions, prev + 1))}
-              disabled={currentQuestion === totalQuestions}
-              className="nav-button"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-            <button onClick={handleSubmitClick} className="review-button">
-              Submit Test
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

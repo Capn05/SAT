@@ -13,7 +13,6 @@ export default function ReviewTestPage() {
   const [userAnswers, setUserAnswers] = useState([])
   const [selectedQuestion, setSelectedQuestion] = useState(null)
   const [metrics, setMetrics] = useState(null)
-  const [suggestions, setSuggestions] = useState([])
   const searchParams = useSearchParams()
   const testId = searchParams.get('testId')
   const [currentPage, setCurrentPage] = useState(1)
@@ -83,20 +82,6 @@ export default function ReviewTestPage() {
 
         setQuestions(matchedQuestions)
         setUserAnswers(userAnswersData)
-        
-        // Generate study suggestions
-        const weakTopics = Object.entries(topicPerformance)
-          .filter(([_, stats]) => (stats.correct / stats.total) < 0.7)
-          .map(([topic]) => topic)
-
-        setSuggestions(weakTopics.map(topic => ({
-          topic,
-          resources: [
-            `Review the fundamentals of ${topic}`,
-            `Practice more ${topic} questions`,
-            `Watch video tutorials on ${topic}`
-          ]
-        })))
 
       } catch (error) {
         console.error('Error fetching test data:', error)
@@ -181,74 +166,47 @@ export default function ReviewTestPage() {
           </div>
 
           {selectedQuestion !== null ? (
-            <div className="main-content">
-              <div className="question-and-ai">
-                <div className="question-content">
-                  <div className="content-card">
-                    {(() => {
-                      const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                      return <p className="passage">{passage}</p>;
-                    })()}
-                  </div>
-
-                  <div className="content-card">
-                    <div className="question-header">
-                      <div className="question-number">Question {selectedQuestion + 1}</div>
+            <div className="two-box-grid">
+              <div className="question-box">
+                {(() => {
+                  const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
+                  return (
+                    <>
+                      <div className="passage">{passage}</div>
+                      <p className="question-text">{question}</p>
+                    </>
+                  )
+                })()}
+                <div className="choices">
+                  {questions[selectedQuestion].options.map((option) => (
+                    <div
+                      key={option.id}
+                      className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
+                    >
+                      <span className="choice-letter">{option.value}.</span> {option.text}
                     </div>
-                    {(() => {
-                      const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                      return <p className="question-text">{question}</p>;
-                    })()}
-                    <div className="choices">
-                      {questions[selectedQuestion].options.map((option) => (
-                        <div
-                          key={option.id}
-                          className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
-                        >
-                          <span className="choice-letter">{option.value}.</span> {option.text}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  ))}
                 </div>
-
-                <div className="ai-content">
-                  <div className="content-card">
-                    <div className="ai-chat">
-                      <ReviewAIChat 
-                        question={questions[selectedQuestion].question_text}
-                        selectedAnswer={questions[selectedQuestion].userAnswer?.option_id}
-                        options={questions[selectedQuestion].options}
-                        imageURL={questions[selectedQuestion].image_url}
-                      />
-                    </div>
-                  </div>
-                </div>
+              </div>
+              
+              <div className="ai-box">
+                <ReviewAIChat 
+                  question={questions[selectedQuestion].question_text}
+                  selectedAnswer={questions[selectedQuestion].userAnswer?.option_id}
+                  options={questions[selectedQuestion].options}
+                  imageURL={questions[selectedQuestion].image_url}
+                />
               </div>
             </div>
           ) : (
-            <div className="main-content empty-state">
-              <div className="empty-state-content">
-                <MessageCircle size={48} className="empty-state-icon" />
+            <div className="question-placeholder">
+              <div className="placeholder-content">
+                <MessageCircle size={48} className="placeholder-icon" />
                 <h3>Select a Question to Review</h3>
                 <p>Choose a question from the list to review it with our AI tutor</p>
               </div>
             </div>
           )}
-        </div>
-
-        <div className="suggestions-section">
-          <h2>Study Suggestions</h2>
-          {suggestions.map((suggestion, index) => (
-            <div key={index} className="suggestion-card">
-              <h3>{suggestion.topic}</h3>
-              <ul>
-                {suggestion.resources.map((resource, i) => (
-                  <li key={i}>{resource}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
       </div>
     </div>

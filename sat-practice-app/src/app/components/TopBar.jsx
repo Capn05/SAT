@@ -30,12 +30,12 @@ export default function TopBar({ title}) {
   };
   return (
     <div style={styles.topBar}>
-      <div style={styles.analytics}>
-        <div onClick={handleDashboardClick}>
+      {/* <div style={styles.analytics}> */}
+        {/* <div onClick={handleDashboardClick}>
           <House style={styles.icon} />
-        </div>
+        </div> */}
         <span>{title}</span>
-      </div>
+      {/* </div> */}
       <div style={styles.actions}>
         {title !== "SAT Skills" && <button style={styles.secondaryButton} onClick={handleReturnToPreviousPage}>Back</button>}
         <button style={styles.primaryButton} onClick={handleLogout}>Log Out</button>
