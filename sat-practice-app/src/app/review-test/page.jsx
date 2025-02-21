@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { supabase } from '../../../lib/supabase'
 import TopBar from '../components/TopBar'
-import ReviewAIChat from '../components/ReviewAIChat'
+import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function ReviewTestPage() {
   const [questions, setQuestions] = useState([])
@@ -60,7 +60,7 @@ export default function ReviewTestPage() {
         const totalQuestions = matchedQuestions.length
         const correctAnswers = userAnswersData.filter(a => a.is_correct).length
         const incorrectAnswers = totalQuestions - correctAnswers
-        const accuracy = (correctAnswers / totalQuestions) * 100
+        const accuracy = totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0
 
         // Group questions by topic/skill
         const topicPerformance = matchedQuestions.reduce((acc, question) => {
@@ -103,7 +103,7 @@ export default function ReviewTestPage() {
   };
 
   return (
-    <div className="review-container">
+    <div className="review-container" style={{ marginRight: '40%' }}>
       <TopBar title="Test Review" />
       
       <div className="review-content">
@@ -126,7 +126,7 @@ export default function ReviewTestPage() {
 
         <div className="questions-and-content">
           <div className="questions-section">
-            <h2>Review Questions</h2>
+            <h2>Questions</h2>
             <div className="questions-grid">
               {currentQuestions.map((question, index) => (
                 <button
@@ -134,21 +134,20 @@ export default function ReviewTestPage() {
                   className={`question-card ${question.userAnswer?.is_correct ? 'correct' : 'incorrect'}`}
                   onClick={() => setSelectedQuestion(indexOfFirstQuestion + index)}
                 >
-                  <span className="question-number">Question {indexOfFirstQuestion + index + 1}</span>
+                  <span className="question-number">Q {indexOfFirstQuestion + index + 1}</span>
                   <span className="status-indicator">
                     {question.userAnswer?.is_correct ? '✓' : '✗'}
                   </span>
                 </button>
               ))}
             </div>
-            
             <div className="pagination">
               <button 
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
                 className="pagination-button"
               >
-                Previous
+                <ChevronLeft size={20} />
               </button>
               
               <div className="page-info">
@@ -160,13 +159,12 @@ export default function ReviewTestPage() {
                 disabled={currentPage === totalPages}
                 className="pagination-button"
               >
-                Next
+                <ChevronRight size={20} />
               </button>
             </div>
           </div>
 
           {selectedQuestion !== null ? (
-            <div className="two-box-grid">
               <div className="question-box">
                 {(() => {
                   const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
@@ -187,16 +185,8 @@ export default function ReviewTestPage() {
                     </div>
                   ))}
                 </div>
-              </div>
               
-              <div className="ai-box">
-                <ReviewAIChat 
-                  question={questions[selectedQuestion].question_text}
-                  selectedAnswer={questions[selectedQuestion].userAnswer?.option_id}
-                  options={questions[selectedQuestion].options}
-                  imageURL={questions[selectedQuestion].image_url}
-                />
-              </div>
+
             </div>
           ) : (
             <div className="question-placeholder">
@@ -209,6 +199,13 @@ export default function ReviewTestPage() {
           )}
         </div>
       </div>
+      
+      <ChatSidebar 
+        questionText={selectedQuestion !== null ? questions[selectedQuestion].question_text : ''}
+        selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.option_id : ''}
+        options={selectedQuestion !== null ? questions[selectedQuestion].options : []}
+        imageURL={selectedQuestion !== null ? questions[selectedQuestion].image_url : ''}
+      />
     </div>
   )
 } 

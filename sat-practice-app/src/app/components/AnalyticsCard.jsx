@@ -1,6 +1,69 @@
-import { BarChart2, TrendingUp, CheckCircle, XCircle } from "lucide-react"
+"use client"
+
+import { useState, useEffect } from "react"
+import { BarChart2, TrendingUp, CheckCircle } from "lucide-react"
+import { supabase } from '../../../lib/supabase'
+import { useRouter } from 'next/navigation'
 
 export default function AnalyticsCard() {
+  const [stats, setStats] = useState({
+    questionsAnswered: 0,
+    correctAnswers: 0,
+    accuracyPercentage: 0
+  })
+  const [loading, setLoading] = useState(true)
+  const router = useRouter()
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        // First check if we have a valid session
+        const { data: sessionData, error: sessionError } = await supabase.auth.getSession()
+        
+        if (sessionError || !sessionData.session) {
+          console.log('No valid session found')
+          router.push('/login') // Redirect to login if no session
+          return
+        }
+
+        const { user } = sessionData.session
+
+        if (!user) {
+          console.log('No user found in session')
+          return
+        }
+
+        console.log('Fetching stats for user:', user.id)
+
+        const response = await fetch(`/api/user-stats?userId=${user.id}`, {
+          headers: {
+            'Authorization': `Bearer ${sessionData.session.access_token}`,
+          },
+          credentials: 'include' // Include cookies in the request
+        })
+        
+        const data = await response.json()
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Failed to fetch stats')
+        }
+
+        console.log('Received stats:', data)
+        setStats(data.stats)
+      } catch (error) {
+        console.error('Error fetching user stats:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchStats()
+  }, [router])
+
+  const handleViewAnalytics = () => {
+    router.push('/analytics')
+  }
+
   return (
     <div style={styles.container}>
       <div style={styles.header}>
@@ -13,7 +76,9 @@ export default function AnalyticsCard() {
             <CheckCircle style={{ color: "#65a30d", width: 20, height: 20 }} />
           </div>
           <div style={styles.statInfo}>
-            <div style={styles.statValue}>247</div>
+            <div style={styles.statValue}>
+              {loading ? "..." : stats.questionsAnswered}
+            </div>
             <div style={styles.statLabel}>Questions Completed</div>
           </div>
         </div>
@@ -23,13 +88,15 @@ export default function AnalyticsCard() {
             <TrendingUp style={{ color: "#65a30d", width: 20, height: 20 }} />
           </div>
           <div style={styles.statInfo}>
-            <div style={styles.statValue}>76%</div>
+            <div style={styles.statValue}>
+              {loading ? "..." : `${stats.accuracyPercentage.toFixed(1)}%`}
+            </div>
             <div style={styles.statLabel}>Accuracy Rate</div>
           </div>
         </div>
       </div>
 
-      <button style={styles.viewButton}>
+      <button style={styles.viewButton} onClick={handleViewAnalytics}>
         <BarChart2 style={styles.buttonIcon} />
         <span>View Detailed Analytics</span>
       </button>

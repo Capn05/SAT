@@ -163,6 +163,7 @@ const styles = {
     padding: '20px',
     borderRadius: '12px',
     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
+    backgroundColor: 'white',
   },
 
   paddingBox: {
