@@ -19,12 +19,14 @@ export default function Question({ subject, mode, skillName }) {
   const [feedback, setFeedback] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
+  const [userAnswers, setUserAnswers] = useState({});
+  const [currentQuestionAnswer, setCurrentQuestionAnswer] = useState(null);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
   const [showModal, setShowModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState(skillName || '');
   const router = useRouter()
+  const [answeredFeedback, setAnsweredFeedback] = useState({});
 
   const md = new MarkdownIt({
     html: true,
@@ -159,14 +161,25 @@ export default function Question({ subject, mode, skillName }) {
     }
   }, [answeredCount, mode]); // Add mode as a dependency
 
+  // Update currentQuestionAnswer and feedback when changing questions
+  useEffect(() => {
+    if (questions.length > 0) {
+      const questionId = questions[currentIndex].id;
+      setCurrentQuestionAnswer(userAnswers[questionId] || null);
+      setFeedback(answeredFeedback[questionId] || null);
+    }
+  }, [currentIndex, questions, userAnswers, answeredFeedback]);
+
   const nextQuestion = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % questions.length);
-    setFeedback(null);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const prevQuestion = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);
-    setFeedback(null);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const fetchUserAnswers = async () => {
@@ -191,13 +204,18 @@ export default function Question({ subject, mode, skillName }) {
       console.error('Error fetching user answers:', fetchError);
     } else {
       // Update the user answers state in QuestionStatus
-      setUserAnswers(data);
+      setUserAnswers(data.reduce((acc, answer) => ({
+        ...acc,
+        [answer.question_id]: answer.is_correct
+      }), {}));
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const selectedValue = event.target.answer.value;
+    const currentQuestionId = questions[currentIndex].id;
+    const selectedValue = userAnswers[currentQuestionId];
+    if (!selectedValue) return;
 
     const currentQuestion = questions[currentIndex];
     const questionId = currentQuestion.id;
@@ -205,19 +223,34 @@ export default function Question({ subject, mode, skillName }) {
     // Check if the question has already been answered
     if (answeredQuestions.has(questionId)) {
       console.log('Question already answered');
-      return; // Exit if the question has already been answered
+      return;
     }
 
     // Logic to check if the answer is correct
     const correctOption = currentQuestion.options.find(option => option.is_correct);
-    if (selectedValue === correctOption.value) {
-      // Increment answered count only if the question is answered for the first time
+    const isCorrect = selectedValue === correctOption.value;
+
+    if (isCorrect) {
       setAnsweredCount(prevCount => prevCount + 1);
-      setAnsweredQuestions(prev => new Set(prev).add(questionId)); // Add question ID to the set
+      setAnsweredQuestions(prev => new Set(prev).add(questionId));
     }
 
+    const feedbackMessage = isCorrect ? 
+      "Correct!" : 
+      `Option ${selectedValue} is Incorrect. Try asking Ollie for help`;
+    
+    const newFeedback = { 
+      message: feedbackMessage, 
+      type: isCorrect ? "success" : "error" 
+    };
+
+    setFeedback(newFeedback);
+    setAnsweredFeedback(prev => ({
+      ...prev,
+      [questionId]: newFeedback
+    }));
+
     setSelectedAnswer(selectedValue);
-    setFeedback({ message: selectedValue === correctOption.value ? "Correct!" : `Option ${selectedValue} is Incorrect. Try asking Ollie for help`, type: selectedValue === correctOption.value ? "success" : "error" });
 
     // Call the API to save the user's answer
     const { data: { user }, error: userError } = await supabase.auth.getUser(); // Get the current user's ID
@@ -228,7 +261,6 @@ export default function Question({ subject, mode, skillName }) {
 
     const userId = user?.id; // Get the current user's ID
     const optionId = currentQuestion.options.find(option => option.value === selectedValue)?.id; // Get the selected option's ID
-    const isCorrect = selectedValue === correctOption.value; // Determine if the answer is correct
 
     console.log('Submitting answer:', { userId, questionId, optionId, isCorrect }); // Log the data being sent
 
@@ -270,8 +302,9 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   const selectQuestion = (index) => {
-    setCurrentIndex(index); // Update the current index to the selected question
-    setFeedback(null); // Reset feedback when navigating to a new question
+    setCurrentIndex(index);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const fetchNewQuestions = async () => {
@@ -324,18 +357,54 @@ export default function Question({ subject, mode, skillName }) {
           <br />
           {image_url && <img src={image_url} alt="Question related" style={styles.image} />}
           <form onSubmit={handleSubmit} style={styles.form}>
-            {sortedOptions.map((option) => (
-              <label key={option.value} style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="answer"
-                  value={option.value}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText} dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}></span>
-              </label>
-            ))}
-            <button style={styles.primaryButton} type="submit">Submit Answer</button>
+            {sortedOptions.map((option) => {
+              const currentQuestionId = questions[currentIndex].id;
+              const isAnswered = answeredQuestions.has(currentQuestionId);
+              const isCorrectOption = option.is_correct;
+              
+              return (
+                <label key={option.value} style={styles.radioLabel}>
+                  <input
+                    type="radio"
+                    name={`answer-${currentQuestionId}`}
+                    value={option.value}
+                    checked={currentQuestionAnswer === option.value}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      setCurrentQuestionAnswer(value);
+                      setSelectedAnswer(value);
+                      setUserAnswers(prev => ({
+                        ...prev,
+                        [currentQuestionId]: value
+                      }));
+                    }}
+                    disabled={isAnswered}
+                    style={{
+                      ...styles.radioInput,
+                      cursor: isAnswered ? 'default' : 'pointer',
+                    }}
+                  />
+                  <span 
+                    style={{
+                      ...styles.radioText,
+                      color: isAnswered && isCorrectOption ? '#65a30d' : 'inherit',
+                      fontWeight: isAnswered && isCorrectOption ? '600' : 'normal',
+                    }} 
+                    dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
+                  />
+                  {isAnswered && isCorrectOption && (
+                    <span style={styles.correctIndicator}>✓</span>
+                  )}
+                </label>
+              );
+            })}
+            <button 
+              style={styles.primaryButton} 
+              type="submit"
+              disabled={answeredQuestions.has(questions[currentIndex].id)}
+            >
+              Submit Answer
+            </button>
           </form>
           <AnimatePresence>
             {feedback && (
@@ -483,7 +552,13 @@ const styles = {
     flexDirection: 'row',
     alignItems:"center",
     justifyContent:"center"
-  }
+  },
+  correctIndicator: {
+    color: '#65a30d',
+    marginLeft: '8px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
 };
   
   
