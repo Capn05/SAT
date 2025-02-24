@@ -2,54 +2,44 @@
 import Link from "next/link"
 import { GraduationCap } from 'lucide-react'
 import { useState } from 'react';
-import { supabase } from '../../../lib/supabase';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(null);
   const router = useRouter();
+  const supabase = createClientComponentClient();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
-    setSuccess(null);
 
     if (!email || !password) {
       setError('Email and password are required.');
       return;
     }
 
-    const { user, error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
 
-    if (error) {
-      setError(error.message);
-      setSuccess(null);
-    } else {
-      setSuccess('Login successful!');
-      setEmail('');
-      setPassword('');
-      router.push('/home');
-    }
-  };
+      if (error) {
+        setError(error.message);
+        return;
+      }
 
-  const handleGoogleLogin = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-    });
-
-    if (error) {
-      setError(error.message);
-      setSuccess(null);
-    } else {
-      setSuccess('Google login initiated!');
-      setEmail('');
-      setPassword('');
+      if (data?.session) {
+        router.push('/home');
+      } else {
+        setError('Login failed - no session created');
+      }
+    } catch (error) {
+      setError('An error occurred during login.');
+      console.error('Login error:', error);
     }
   };
 
@@ -188,7 +178,6 @@ export default function Login() {
         </form>
         
         {error && <p style={{ color: 'red', ...styles.message }}>{error}</p>}
-        {success && <p style={{ color: 'green', ...styles.message }}>{success}</p>}
         
         <div style={styles.links}>
           <Link 

@@ -166,7 +166,7 @@ console.log(skill.name)
             </p>
             <button 
               style={styles.actionButton}
-              onClick={() => router.push(`/questions?subject=2&mode=skill&skillName=${skill.name}`)}
+              onClick={() => router.push(`/practice?mode=skill&subject=2&category=${encodeURIComponent(skill.name)}`)}
             >
               <Play size={16} />
               Start Practice Session

@@ -12,6 +12,7 @@ import QuestionStatus from './QuestionStatus';
 import ProgressBar from './ProgressBar';
 import Modal from './Modal';
 import { useRouter } from 'next/navigation'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
 export default function Question({ subject, mode, skillName }) {
   const [questions, setQuestions] = useState([]);
@@ -27,6 +28,15 @@ export default function Question({ subject, mode, skillName }) {
   const [selectedSkill, setSelectedSkill] = useState(skillName || '');
   const router = useRouter()
   const [answeredFeedback, setAnsweredFeedback] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [attempts, setAttempts] = useState({});
+  const MAX_ATTEMPTS = 2;  // Maximum attempts before showing correct answer
+  const supabase = createClientComponentClient();
 
   const md = new MarkdownIt({
     html: true,
@@ -79,118 +89,103 @@ export default function Question({ subject, mode, skillName }) {
 
   const fetchUnansweredQuestions = async (subjectId) => {
     try {
-      const { data: { user }, error: userError } = await supabase.auth.getUser();
-      if (userError) throw new Error('Error fetching user');
+      setLoading(true);
+      setError(null);
       
-      const user_id = user.identities[0].id;
-
-      // First, check if we have enough questions in the database
-      const { count: totalQuestions, error: countError } = await supabase
-        .from('questions')
-        .select('*', { count: 'exact', head: true })
-        .eq('subject_id', subjectId);
-
-      if (countError) throw new Error('Error counting available questions');
-
-      // Determine the limit based on the mode and available questions
-      let limit;
-      if (mode === "skill") {
-        limit = 4;
-        if (totalQuestions < limit) {
-          throw new Error(`Not enough questions available for skill practice. Only ${totalQuestions} questions found, but ${limit} are needed.`);
-        }
-      } else {
-        // For quick mode, use either 15 or the total available questions, whichever is smaller
-        limit = Math.min(15, totalQuestions);
-        console.log(`Using ${limit} questions for quick practice mode`);
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+      if (!session) {
+        console.log('No session found, redirecting to login');
+        router.push('/login');
+        return;
       }
 
-      // Step 1: Fetch answered question IDs
-      const { data: answeredQuestionsData, error: answeredQuestionsError } = await supabase
-        .from('user_answers')
-        .select('question_id')
-        .eq('user_id', user_id);
+      if (sessionError) {
+        console.error('Session error:', sessionError);
+        setError('Authentication error');
+        return;
+      }
 
-      if (answeredQuestionsError) throw new Error('Error fetching answered questions');
-
-      // Extract the question IDs into an array
-      const answeredQuestionIds = answeredQuestionsData?.map(answer => answer.question_id) || [];
-
+      console.log('Fetching questions for:', { subject: subjectId, mode, skillName });
       let questionsData;
-      let query = supabase
-        .from('questions')
-        .select(`
-          *,
-          options(*)
-        `)
-        .eq('subject_id', subjectId);
 
       if (mode === "quick") {
-        try {
-          // First try to get all questions for this subject
-          const { data: allQuestions, error: allQuestionsError } = await query;
-          
-          if (allQuestionsError) throw new Error('Error fetching all questions');
-          
-          // Filter out answered questions if needed
-          let availableQuestions = allQuestions;
-          if (answeredQuestionIds.length > 0 && answeredQuestionIds.length < totalQuestions) {
-            availableQuestions = allQuestions.filter(q => !answeredQuestionIds.includes(q.id));
-          }
-          
-          // If we don't have enough unanswered questions, use all questions
-          if (availableQuestions.length < limit) {
-            availableQuestions = allQuestions;
-          }
-          
-          // Randomly select questions
-          questionsData = shuffleArray(availableQuestions).slice(0, limit);
-          
-        } catch (error) {
-          console.error('Error in quick mode question fetching:', error);
-          throw new Error(`Error fetching questions: ${error.message}`);
-        }
-      }
+        console.log('Fetching quick practice questions for subject:', subjectId);
+        
+        // First, check if we have enough questions in the database
+        const { count, error: countError } = await supabase
+          .from('questions')
+          .select('*', { count: 'exact' })
+          .eq('subject_id', subjectId);
 
-      if (mode === "skill") {
-        try {
-          query = query.eq('category', selectedSkill);
-          
-          // First try to get all questions for this skill
-          const { data: allSkillQuestions, error: allSkillQuestionsError } = await query;
-          
-          if (allSkillQuestionsError) throw new Error('Error fetching skill questions');
-          
-          if (!allSkillQuestions || allSkillQuestions.length < limit) {
-            throw new Error(`Not enough questions available for ${selectedSkill}`);
-          }
-          
-          // Filter out answered questions if needed
-          let availableQuestions = allSkillQuestions;
-          if (answeredQuestionIds.length > 0) {
-            availableQuestions = allSkillQuestions.filter(q => !answeredQuestionIds.includes(q.id));
-          }
-          
-          // If we don't have enough unanswered questions, use all skill questions
-          if (availableQuestions.length < limit) {
-            availableQuestions = allSkillQuestions;
-          }
-          
-          // Randomly select questions
-          questionsData = shuffleArray(availableQuestions).slice(0, limit);
-          
-        } catch (error) {
-          console.error('Error in skill mode question fetching:', error);
-          throw new Error(`Error fetching skill questions: ${error.message}`);
+        if (countError) {
+          console.error('Error counting questions:', countError);
+          setError('Error counting available questions');
+          return;
         }
+
+        const limit = Math.min(15, count || 0);
+        console.log(`Using ${limit} questions for quick practice mode (${count} total available)`);
+
+        if (limit === 0) {
+          setError('No questions available for this subject');
+          return;
+        }
+
+        // Get questions for quick mode with proper random ordering
+        const { data: allQuestions, error: allQuestionsError } = await supabase
+          .from('questions')
+          .select(`
+            *,
+            options(*)
+          `)
+          .eq('subject_id', subjectId)
+          .order('id', { ascending: true }) // Order by id first
+          .limit(limit);
+
+        if (allQuestionsError) {
+          console.error('Error fetching questions:', allQuestionsError);
+          setError('Error fetching questions');
+          return;
+        }
+
+        if (!allQuestions || allQuestions.length === 0) {
+          setError('No questions available for this subject');
+          return;
+        }
+
+        // Shuffle the questions in JavaScript instead
+        questionsData = shuffleArray(allQuestions);
+
+      } else if (mode === "skill") {
+        console.log('Fetching skill practice questions for category:', skillName);
+        
+        // Updated API call to fetch 5 questions for the specific category
+        const apiUrl = `/api/skill-questions?category=${encodeURIComponent(skillName)}&subject=${subject}`;
+        console.log('API URL:', apiUrl);
+        
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (!response.ok) {
+          console.error('API Error:', data);
+          throw new Error(data.error || 'Error fetching skill questions');
+        }
+
+        if (!data.questions || data.questions.length === 0) {
+          throw new Error(`No questions available for ${skillName}`);
+        }
+
+        if (data.questions.length < 5) {
+          throw new Error(`Not enough questions available for ${skillName}. Need 5, got ${data.questions.length}`);
+        }
+
+        questionsData = data.questions;
+        console.log(`Successfully fetched ${questionsData.length} questions for ${skillName}`);
       }
 
       if (!questionsData || questionsData.length === 0) {
-        throw new Error('No questions available');
-      }
-
-      if (questionsData.length < limit) {
-        throw new Error(`Not enough questions returned. Only got ${questionsData.length} out of ${limit} required questions.`);
+        setError('No questions available');
+        return;
       }
 
       // Reset states when loading new questions
@@ -204,8 +199,9 @@ export default function Question({ subject, mode, skillName }) {
       setQuestions(questionsData);
     } catch (error) {
       console.error('Error in fetchUnansweredQuestions:', error);
-      setQuestions([]);  // Set empty questions array on error
-      alert(`Error loading questions: ${error.message}`);
+      setError(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -221,20 +217,20 @@ export default function Question({ subject, mode, skillName }) {
 
   useEffect(() => {
     if (subject) {
+      console.log('Initializing question component with:', { subject, mode, skillName });
       fetchUnansweredQuestions(subject);  
     }
-
   }, [subject]);
 
   // Automatically show the modal when all questions are answered
   useEffect(() => {
     // Determine the limit based on the mode
-    const limit = mode === "skill" ? 4 : 15; // Limit to 4 questions for skill mode
+    const limit = mode === "skill" ? 5 : 15; // Changed from 4 to 5 questions for skill mode
 
     if (answeredCount === limit) {
       setShowModal(true);
     }
-  }, [answeredCount, mode]); // Add mode as a dependency
+  }, [answeredCount, mode]);
 
   // Update currentQuestionAnswer and feedback when changing questions
   useEffect(() => {
@@ -244,6 +240,14 @@ export default function Question({ subject, mode, skillName }) {
       setFeedback(answeredFeedback[questionId] || null);
     }
   }, [currentIndex, questions, userAnswers, answeredFeedback]);
+
+  // Reset states when changing questions
+  useEffect(() => {
+    setSelectedOption(null);
+    setShowFeedback(false);
+    setFeedback(null);
+    setSubmitted(false);
+  }, [currentIndex]);
 
   const nextQuestion = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % questions.length);
@@ -258,122 +262,130 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   const fetchUserAnswers = async () => {
-    const { data: { user }, error } = await supabase.auth.getUser();
+    try {
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+      
+      if (sessionError) {
+        console.error('Error getting session:', sessionError);
+        return;
+      }
 
-    if (error) {
-      console.error('Error fetching user:', error);
-      return;
-    }
+      if (!session) {
+        console.error('No session found');
+        router.push('/login');
+        return;
+      }
 
-    if (!user) {
-      console.error('No user is logged in');
-      return;
-    }
+      const { data, error: fetchError } = await supabase
+        .from('user_answers')
+        .select('question_id, is_correct')
+        .eq('user_id', session.user.id);
 
-    const { data, error: fetchError } = await supabase
-      .from('user_answers')
-      .select('question_id, is_correct')
-      .eq('user_id', user.id);
-
-    if (fetchError) {
-      console.error('Error fetching user answers:', fetchError);
-    } else {
-      // Update the user answers state in QuestionStatus
-      setUserAnswers(data.reduce((acc, answer) => ({
-        ...acc,
-        [answer.question_id]: answer.is_correct
-      }), {}));
+      if (fetchError) {
+        console.error('Error fetching user answers:', fetchError);
+      } else {
+        // Update the user answers state in QuestionStatus
+        setUserAnswers(data.reduce((acc, answer) => ({
+          ...acc,
+          [answer.question_id]: answer.is_correct
+        }), {}));
+      }
+    } catch (error) {
+      console.error('Error in fetchUserAnswers:', error);
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const currentQuestionId = questions[currentIndex].id;
-    const selectedValue = userAnswers[currentQuestionId];
-    if (!selectedValue) return;
-
-    const currentQuestion = questions[currentIndex];
-    const questionId = currentQuestion.id;
-
-    // Check if the question has already been answered
-    if (answeredQuestions.has(questionId)) {
-      console.log('Question already answered');
+    
+    if (!selectedOption) {
+      setError('Please select an answer');
       return;
     }
 
-    // Logic to check if the answer is correct
-    const correctOption = currentQuestion.options.find(option => option.is_correct);
-    const isCorrect = selectedValue === correctOption.value;
+    setIsSubmitting(true);
+    setError(null);
 
-    if (isCorrect) {
-      setAnsweredCount(prevCount => prevCount + 1);
-      setAnsweredQuestions(prev => new Set(prev).add(questionId));
-    }
+    const currentQuestionId = questions[currentIndex].id;
+    const isFirstAttempt = !(currentQuestionId in attempts);
 
-    const feedbackMessage = isCorrect ? 
-      "Correct!" : 
-      `Option ${selectedValue} is Incorrect. Try asking Ollie for help`;
-    
-    const newFeedback = { 
-      message: feedbackMessage, 
-      type: isCorrect ? "success" : "error" 
-    };
-
-    setFeedback(newFeedback);
-    setAnsweredFeedback(prev => ({
-      ...prev,
-      [questionId]: newFeedback
-    }));
-
-    setSelectedAnswer(selectedValue);
-
-    // Call the API to save the user's answer
-    const { data: { user }, error: userError } = await supabase.auth.getUser(); // Get the current user's ID
-    if (userError) {
-      console.error('Error fetching user:', userError);
-      return; // Exit if there's an error fetching the user
-    }
-
-    const userId = user?.id; // Get the current user's ID
-    const optionId = currentQuestion.options.find(option => option.value === selectedValue)?.id; // Get the selected option's ID
-
-    console.log('Submitting answer:', { userId, questionId, optionId, isCorrect }); // Log the data being sent
-
-    if (userId && questionId && optionId) {
-      try {
+    try {
+      // Only send to API if it's the first attempt (for mastery tracking)
+      if (isFirstAttempt) {
         const response = await fetch('/api/user-answers', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            userId,
-            questionId,
-            optionId,
-            isCorrect,
+            questionId: currentQuestionId,
+            optionId: selectedOption.id,
+            isCorrect: selectedOption.is_correct,
+            subject: subject,
+            category: skillName,
+            mode: mode
           }),
         });
 
+        const data = await response.json();
+
         if (!response.ok) {
-          const errorText = await response.text(); // Get the response text for debugging
-          console.error('Error response:', errorText); // Log the error response
-          throw new Error('Network response was not ok');
+          console.error('Error response:', data);
+          
+          if (response.status === 401) {
+            router.push('/login');
+            return;
+          }
+          
+          throw new Error(data.error || 'Failed to submit answer');
         }
-
-        const result = await response.json();
-        console.log('API response:', result);
-
-        // Fetch user answers again to update the status
-        fetchUserAnswers(); // Call the function to update user answers
-      } catch (error) {
-        console.error('Fetch error:', error);
       }
-    }
 
-    setFadeIn(true);
-    setTimeout(() => {
-      setFadeIn(false);
-    }, 3000);
+      // Update attempts count and record the selected answer
+      setAttempts(prev => ({
+        ...prev,
+        [currentQuestionId]: {
+          count: (prev[currentQuestionId]?.count || 0) + 1,
+          selectedOptions: [...(prev[currentQuestionId]?.selectedOptions || []), selectedOption.id]
+        }
+      }));
+      
+      if (selectedOption.is_correct) {
+        // If correct, mark as answered and update count
+        setAnsweredQuestions(prev => new Set([...prev, currentQuestionId]));
+        setAnsweredCount(prev => prev + 1);
+        setUserAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: selectedOption.id
+        }));
+
+        // If correct, automatically move to next question after delay
+        setTimeout(() => {
+          if (currentIndex < questions.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+          }
+        }, 1500);
+      } else {
+        // Only show feedback for incorrect answers
+        setShowFeedback(true);
+        setFeedback({
+          type: 'error',
+          message: 'Incorrect. Try again!'
+        });
+
+        // Show animation for incorrect answers
+        setFadeIn(true);
+        setTimeout(() => {
+          setFadeIn(false);
+        }, 3000);
+      }
+
+    } catch (error) {
+      console.error('Error submitting answer:', error);
+      setError(error.message || 'Failed to submit answer');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const selectQuestion = (index) => {
@@ -394,22 +406,104 @@ export default function Question({ subject, mode, skillName }) {
     setShowModal(false); // Close the modal after fetching new questions
   };
 
-  if (questions.length === 0) return <p>Loading...</p>;
+  if (loading) {
+    return (
+      <div style={styles.loadingContainer}>
+        <div style={styles.loadingText}>Loading questions...</div>
+        <div style={styles.loadingDetails}>
+          Mode: {mode}, Subject: {subject}, Skill: {skillName || 'N/A'}
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div style={styles.errorContainer}>
+        <div style={styles.errorText}>Error: {error}</div>
+        <button 
+          style={styles.retryButton}
+          onClick={() => fetchUnansweredQuestions(subject)}
+        >
+          Retry
+        </button>
+      </div>
+    );
+  }
+
+  if (questions.length === 0) {
+    return (
+      <div style={styles.errorContainer}>
+        <div style={styles.errorText}>No questions available</div>
+        <button 
+          style={styles.retryButton}
+          onClick={() => fetchUnansweredQuestions(subject)}
+        >
+          Retry
+        </button>
+      </div>
+    );
+  }
 
   const { question_text, options, image_url } = questions[currentIndex];
   console.log(questions)
   const sortedOptions = options.sort((a, b) => a.value.localeCompare(b.value));
 
-
- 
   const handleDashboardClick = () => {
     router.push('/home')
   }
+
+  // Update the radio button rendering
+  const renderOptions = () => {
+    const currentQuestionId = questions[currentIndex].id;
+    const isAnswered = answeredQuestions.has(currentQuestionId);
+    const currentAttempts = attempts[currentQuestionId];
+    const correctAnswerId = userAnswers[currentQuestionId];
+
+    return sortedOptions.map((option) => {
+      const wasSelected = currentAttempts?.selectedOptions?.includes(option.id);
+      const showIncorrectFeedback = wasSelected && !option.is_correct;
+      const isCorrectAnswer = option.id === correctAnswerId;
+      
+      return (
+        <label key={option.id} style={styles.radioLabel}>
+          <input
+            type="radio"
+            name={`answer-${currentQuestionId}`}
+            value={option.id}
+            checked={selectedOption?.id === option.id}
+            onChange={() => {
+              setSelectedOption(option);
+              setCurrentQuestionAnswer(option.value);
+              setSelectedAnswer(option.value);
+            }}
+            disabled={isAnswered}
+            style={{
+              ...styles.radioInput,
+              cursor: isAnswered ? 'default' : 'pointer',
+            }}
+          />
+          <span 
+            style={{
+              ...styles.radioText,
+              color: isAnswered && isCorrectAnswer ? '#65a30d' : 
+                     showIncorrectFeedback ? '#dc2626' : 'inherit',
+              fontWeight: isAnswered && isCorrectAnswer ? '600' : 'normal',
+            }} 
+            dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
+          />
+          {isAnswered && isCorrectAnswer && (
+            <span style={styles.correctIndicator}>✓</span>
+          )}
+        </label>
+      );
+    });
+  };
+
   return (
     <div style={styles.column}>
       <div style={styles.progressContainer}>
-        <ProgressBar completed={answeredCount} total={mode === "skill" ? 4 : 15} />
-
+        <ProgressBar completed={answeredCount} total={mode === "skill" ? 5 : 15} />
       </div>
 
       <Modal
@@ -418,7 +512,6 @@ export default function Question({ subject, mode, skillName }) {
         onConfirm={fetchNewQuestions}
       />
       <div style={styles.container}>
-
         <QuestionStatus 
           currentIndex={currentIndex} 
           totalQuestions={questions.length} 
@@ -432,66 +525,26 @@ export default function Question({ subject, mode, skillName }) {
           <br />
           {image_url && <img src={image_url} alt="Question related" style={styles.image} />}
           <form onSubmit={handleSubmit} style={styles.form}>
-            {sortedOptions.map((option) => {
-              const currentQuestionId = questions[currentIndex].id;
-              const isAnswered = answeredQuestions.has(currentQuestionId);
-              const isCorrectOption = option.is_correct;
-              
-              return (
-                <label key={option.value} style={styles.radioLabel}>
-                  <input
-                    type="radio"
-                    name={`answer-${currentQuestionId}`}
-                    value={option.value}
-                    checked={currentQuestionAnswer === option.value}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      setCurrentQuestionAnswer(value);
-                      setSelectedAnswer(value);
-                      setUserAnswers(prev => ({
-                        ...prev,
-                        [currentQuestionId]: value
-                      }));
-                    }}
-                    disabled={isAnswered}
-                    style={{
-                      ...styles.radioInput,
-                      cursor: isAnswered ? 'default' : 'pointer',
-                    }}
-                  />
-                  <span 
-                    style={{
-                      ...styles.radioText,
-                      color: isAnswered && isCorrectOption ? '#65a30d' : 'inherit',
-                      fontWeight: isAnswered && isCorrectOption ? '600' : 'normal',
-                    }} 
-                    dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
-                  />
-                  {isAnswered && isCorrectOption && (
-                    <span style={styles.correctIndicator}>✓</span>
-                  )}
-                </label>
-              );
-            })}
+            {renderOptions()}
             <button 
               style={styles.primaryButton} 
               type="submit"
-              disabled={answeredQuestions.has(questions[currentIndex].id)}
+              disabled={isSubmitting || !selectedOption}
             >
-              Submit Answer
+              {isSubmitting ? 'Submitting...' : 'Submit Answer'}
             </button>
           </form>
           <AnimatePresence>
-            {feedback && (
+            {showFeedback && (
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                style={{ ...styles.feedbackBox, backgroundColor: feedback.type === "success" ? '#d4edda' : '#f8d7da' }}
+                style={{ ...styles.feedbackBox, backgroundColor: feedback?.type === "success" ? '#d4edda' : '#f8d7da' }}
               >
-                {feedback.type === "success" ? <CheckCircle style={styles.icon} /> : <XCircle style={styles.icon} />}
-                <span>{feedback.message}</span>
+                {feedback?.type === "success" ? <CheckCircle style={styles.icon} /> : <XCircle style={styles.icon} />}
+                <span>{feedback?.message}</span>
               </motion.div>
             )}
           </AnimatePresence>
@@ -499,18 +552,17 @@ export default function Question({ subject, mode, skillName }) {
             <button style={styles.secondaryButton} onClick={prevQuestion}>Previous</button>
             <button style={styles.secondaryButton} onClick={nextQuestion}>Next</button>
           </div>
-
         </div>
         <div style={styles.aiChatContainer}>
           <AIChat question={question_text} selectedAnswer={selectedAnswer} options={sortedOptions} imageURL={image_url} />
         </div>
       </div>
-      {answeredCount === 15 && (
-      <div style={styles.RefreshQuestionsContainer}>
-        <button onClick={() => setShowModal(true)} style={styles.newQuestionsButton}>
-          Continue
-        </button>
-                <button style={styles.secondaryButton} onClick={handleDashboardClick}>Return to Dashboard</button>
+      {answeredCount === (mode === "skill" ? 5 : 15) && (
+        <div style={styles.RefreshQuestionsContainer}>
+          <button onClick={() => setShowModal(true)} style={styles.newQuestionsButton}>
+            Continue
+          </button>
+          <button style={styles.secondaryButton} onClick={handleDashboardClick}>Return to Dashboard</button>
         </div>
       )}
     </div>
@@ -633,6 +685,43 @@ const styles = {
     marginLeft: '8px',
     fontSize: '16px',
     fontWeight: 'bold',
+  },
+  loadingContainer: {
+    padding: '20px',
+    textAlign: 'center',
+    backgroundColor: '#f3f4f6',
+    borderRadius: '8px',
+    margin: '20px',
+  },
+  loadingText: {
+    fontSize: '18px',
+    color: '#4b5563',
+    marginBottom: '10px',
+  },
+  loadingDetails: {
+    fontSize: '14px',
+    color: '#6b7280',
+  },
+  errorContainer: {
+    padding: '20px',
+    textAlign: 'center',
+    backgroundColor: '#fee2e2',
+    borderRadius: '8px',
+    margin: '20px',
+  },
+  errorText: {
+    fontSize: '16px',
+    color: '#dc2626',
+    marginBottom: '15px',
+  },
+  retryButton: {
+    padding: '8px 16px',
+    backgroundColor: '#dc2626',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '14px',
   },
 };
   

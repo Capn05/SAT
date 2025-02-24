@@ -1,16 +1,31 @@
-import { supabase } from '../../../../lib/supabase';
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
 export async function GET(request) {
   try {
+    const cookieStore = cookies();
+    const supabase = createRouteHandlerClient({ 
+      cookies: () => cookieStore 
+    });
+    
+    // Get the current session
+    const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+    if (sessionError) {
+      console.error('Session error:', sessionError);
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+    }
+
+    if (!session) {
+      console.log('No session found');
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+    }
+
     const { searchParams } = new URL(request.url);
     const userId = searchParams.get('userId');
 
-    if (!userId) {
-      return NextResponse.json(
-        { error: 'User ID is required' },
-        { status: 400 }
-      );
+    if (userId !== session.user.id) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
     }
 
     // Get answers from both tables
@@ -25,37 +40,26 @@ export async function GET(request) {
         .eq('user_id', userId)
     ]);
 
-    if (officialResponse.error) {
-      console.error('Error fetching official answers:', officialResponse.error);
-      return NextResponse.json(
-        { error: officialResponse.error.message },
-        { status: 500 }
-      );
+    if (officialResponse.error || practiceResponse.error) {
+      console.error('Error fetching answers:', { 
+        official: officialResponse.error, 
+        practice: practiceResponse.error 
+      });
+      return NextResponse.json({ error: 'Failed to fetch answers' }, { status: 500 });
     }
 
-    if (practiceResponse.error) {
-      console.error('Error fetching practice answers:', practiceResponse.error);
-      return NextResponse.json(
-        { error: practiceResponse.error.message },
-        { status: 500 }
-      );
-    }
-
-    // Combine answers from both tables
     const allAnswers = [
       ...(officialResponse.data || []),
       ...(practiceResponse.data || [])
     ];
 
-    // Calculate combined stats
     const questionsAnswered = allAnswers.length;
-    const correctAnswers = allAnswers.filter(a => a.is_correct).length;
-    const accuracyPercentage = questionsAnswered > 0 
-      ? (correctAnswers / questionsAnswered) * 100 
+    const correctAnswers = allAnswers.filter(answer => answer.is_correct).length;
+    const accuracyPercentage = questionsAnswered > 0
+      ? Math.round((correctAnswers / questionsAnswered) * 100)
       : 0;
 
     return NextResponse.json({
-      success: true,
       stats: {
         questionsAnswered,
         correctAnswers,
@@ -64,10 +68,7 @@ export async function GET(request) {
     });
 
   } catch (error) {
-    console.error('Error in user stats route:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    console.error('API error:', error);
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 } 

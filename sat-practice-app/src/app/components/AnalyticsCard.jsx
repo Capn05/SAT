@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { BarChart2, TrendingUp, CheckCircle } from "lucide-react"
-import { supabase } from '../../../lib/supabase'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 
 export default function AnalyticsCard() {
@@ -13,38 +13,29 @@ export default function AnalyticsCard() {
   })
   const [loading, setLoading] = useState(true)
   const router = useRouter()
+  const supabase = createClientComponentClient()
 
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        // First check if we have a valid session
-        const { data: sessionData, error: sessionError } = await supabase.auth.getSession()
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession()
         
-        if (sessionError || !sessionData.session) {
+        if (sessionError || !session) {
           console.log('No valid session found')
-          router.push('/login') // Redirect to login if no session
+          router.push('/login')
           return
         }
 
-        const { user } = sessionData.session
+        console.log('Fetching stats for user:', session.user.id)
 
-        if (!user) {
-          console.log('No user found in session')
-          return
-        }
-
-        console.log('Fetching stats for user:', user.id)
-
-        const response = await fetch(`/api/user-stats?userId=${user.id}`, {
-          headers: {
-            'Authorization': `Bearer ${sessionData.session.access_token}`,
-          },
-          credentials: 'include' // Include cookies in the request
-        })
-        
+        const response = await fetch(`/api/user-stats?userId=${session.user.id}`)
         const data = await response.json()
 
         if (!response.ok) {
+          if (response.status === 401) {
+            router.push('/login')
+            return
+          }
           throw new Error(data.error || 'Failed to fetch stats')
         }
 
