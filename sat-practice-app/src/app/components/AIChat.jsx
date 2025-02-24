@@ -143,9 +143,9 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
     // Remove graph tags from the rendered output
     const cleanResponse = response.replace(/<graph>[\s\S]*?<\/graph>/g, '');
     
-    // Use regex to identify and render inline and block math
-    const inlineMathRegex = /\$([^$]+)\$/g;
-    const blockMathRegex = /\$\$([^$]+)\$\$/g;
+    // Matches inline math only if it is surrounded by word boundaries
+    const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
+    const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
 
     // Replace block math with rendered output first
     let formattedResponse = cleanResponse.replace(blockMathRegex, (match, p1) => {
