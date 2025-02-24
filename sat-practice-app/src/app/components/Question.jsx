@@ -78,70 +78,145 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
-    const { data: { user }, error: userError } = await supabase.auth.getUser();
-    const user_id = user.identities[0].id;
+    try {
+      const { data: { user }, error: userError } = await supabase.auth.getUser();
+      if (userError) throw new Error('Error fetching user');
+      
+      const user_id = user.identities[0].id;
 
-    if (userError) {
-      console.error('Error fetching user:', userError);
-      return;
-    }
+      // First, check if we have enough questions in the database
+      const { count: totalQuestions, error: countError } = await supabase
+        .from('questions')
+        .select('*', { count: 'exact', head: true })
+        .eq('subject_id', subjectId);
 
-    // Step 1: Fetch answered question IDs
-    const { data: answeredQuestionsData, error: answeredQuestionsError } = await supabase
-      .from('user_answers')
-      .select('question_id')
-      .eq('user_id', user_id);
+      if (countError) throw new Error('Error counting available questions');
 
-    if (answeredQuestionsError) {
-      console.error('Error fetching answered questions:', answeredQuestionsError);
-      return;
-    }
+      // Determine the limit based on the mode and available questions
+      let limit;
+      if (mode === "skill") {
+        limit = 4;
+        if (totalQuestions < limit) {
+          throw new Error(`Not enough questions available for skill practice. Only ${totalQuestions} questions found, but ${limit} are needed.`);
+        }
+      } else {
+        // For quick mode, use either 15 or the total available questions, whichever is smaller
+        limit = Math.min(15, totalQuestions);
+        console.log(`Using ${limit} questions for quick practice mode`);
+      }
 
-    // Extract the question IDs into an array
-    const answeredQuestionIds = answeredQuestionsData.map(answer => answer.question_id);
+      // Step 1: Fetch answered question IDs
+      const { data: answeredQuestionsData, error: answeredQuestionsError } = await supabase
+        .from('user_answers')
+        .select('question_id')
+        .eq('user_id', user_id);
 
-    // Determine the limit based on the mode
-    const limit = mode === "skill" ? 4 : 15; // Limit to 4 questions for skill mode
+      if (answeredQuestionsError) throw new Error('Error fetching answered questions');
 
-    if (mode === "quick") {
-      // Step 2: Fetch unanswered questions with their options
-      const { data: questionsData, error: questionsError } = await supabase
+      // Extract the question IDs into an array
+      const answeredQuestionIds = answeredQuestionsData?.map(answer => answer.question_id) || [];
+
+      let questionsData;
+      let query = supabase
         .from('questions')
         .select(`
           *,
           options(*)
         `)
-        .eq('subject_id', subjectId)
-        .not('id', 'in', `(${answeredQuestionIds.join(',')})`) // Use a formatted string for the IDs
-        .limit(limit) // Limit to the determined number of unanswered questions
-        .order('id', { ascending: true });
+        .eq('subject_id', subjectId);
 
-      if (questionsError) {
-        console.error('Error fetching unanswered questions:', questionsError);
-        return;
+      if (mode === "quick") {
+        try {
+          // First try to get all questions for this subject
+          const { data: allQuestions, error: allQuestionsError } = await query;
+          
+          if (allQuestionsError) throw new Error('Error fetching all questions');
+          
+          // Filter out answered questions if needed
+          let availableQuestions = allQuestions;
+          if (answeredQuestionIds.length > 0 && answeredQuestionIds.length < totalQuestions) {
+            availableQuestions = allQuestions.filter(q => !answeredQuestionIds.includes(q.id));
+          }
+          
+          // If we don't have enough unanswered questions, use all questions
+          if (availableQuestions.length < limit) {
+            availableQuestions = allQuestions;
+          }
+          
+          // Randomly select questions
+          questionsData = shuffleArray(availableQuestions).slice(0, limit);
+          
+        } catch (error) {
+          console.error('Error in quick mode question fetching:', error);
+          throw new Error(`Error fetching questions: ${error.message}`);
+        }
       }
-      setQuestions(questionsData);
-    }
 
-    if (mode === "skill") {
-      const { data: questionsData, error: questionsError } = await supabase
-        .from('questions')
-        .select(`
-          *,
-          options(*)
-        `)
-        .eq('subject_id', subjectId)
-        .eq('category', selectedSkill)
-        .not('id', 'in', `(${answeredQuestionIds.join(',')})`)
-        .limit(limit) // Limit to 4 questions for skill mode
-        .order('id', { ascending: true });
-
-      if (questionsError) {
-        console.error('Error fetching unanswered questions:', questionsError);
-        return;
+      if (mode === "skill") {
+        try {
+          query = query.eq('category', selectedSkill);
+          
+          // First try to get all questions for this skill
+          const { data: allSkillQuestions, error: allSkillQuestionsError } = await query;
+          
+          if (allSkillQuestionsError) throw new Error('Error fetching skill questions');
+          
+          if (!allSkillQuestions || allSkillQuestions.length < limit) {
+            throw new Error(`Not enough questions available for ${selectedSkill}`);
+          }
+          
+          // Filter out answered questions if needed
+          let availableQuestions = allSkillQuestions;
+          if (answeredQuestionIds.length > 0) {
+            availableQuestions = allSkillQuestions.filter(q => !answeredQuestionIds.includes(q.id));
+          }
+          
+          // If we don't have enough unanswered questions, use all skill questions
+          if (availableQuestions.length < limit) {
+            availableQuestions = allSkillQuestions;
+          }
+          
+          // Randomly select questions
+          questionsData = shuffleArray(availableQuestions).slice(0, limit);
+          
+        } catch (error) {
+          console.error('Error in skill mode question fetching:', error);
+          throw new Error(`Error fetching skill questions: ${error.message}`);
+        }
       }
+
+      if (!questionsData || questionsData.length === 0) {
+        throw new Error('No questions available');
+      }
+
+      if (questionsData.length < limit) {
+        throw new Error(`Not enough questions returned. Only got ${questionsData.length} out of ${limit} required questions.`);
+      }
+
+      // Reset states when loading new questions
+      setAnsweredQuestions(new Set());
+      setAnsweredCount(0);
+      setUserAnswers({});
+      setAnsweredFeedback({});
+      setCurrentQuestionAnswer(null);
+      setFeedback(null);
+      
       setQuestions(questionsData);
+    } catch (error) {
+      console.error('Error in fetchUnansweredQuestions:', error);
+      setQuestions([]);  // Set empty questions array on error
+      alert(`Error loading questions: ${error.message}`);
     }
+  };
+
+  // Helper function to shuffle array
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
   };
 
   useEffect(() => {
