@@ -1,143 +1,125 @@
-import { TrendingUp, Clock, CheckCircle, AlertCircle } from "lucide-react"
+import { ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+
+const masteryColors = {
+  'Mastered': '#22c55e',
+  'On Track': '#65a30d',
+  'Needs Practice': '#dc2626',
+  'Not Started': '#6b7280',
+  'Needs More Attempts': '#f59e0b'
+};
 
 export default function SkillCard({ skill }) {
   const router = useRouter();
 
-  const handleSkillClick = (skill) => {
-    router.push(`/skillDetails?page=${skill.name}`); // or use skill.id if you have an ID
+  const handleClick = () => {
+    console.log('Navigating to skill practice:', skill.name);
+    const url = `/practice?mode=skill&subject=1&category=${encodeURIComponent(skill.name)}`;
+    console.log('Navigation URL:', url);
+    router.push(url);
   };
-  console.log(`"skill:" + ${skill.name}`)
+
   return (
-    <div style={styles.container} onClick={() => handleSkillClick(skill)}>
+    <div
+      style={{
+        ...styles.card,
+        borderLeft: `3px solid ${masteryColors[skill.mastery] || masteryColors['Not Started']}`
+      }}
+      onClick={handleClick}
+    >
       <div style={styles.header}>
         <div style={styles.iconContainer}>{skill.icon}</div>
-        <div style={styles.headerText}>
-          <h3 style={styles.title}>{skill.name}</h3>
-          <span
-            style={{
-              ...styles.status,
-              color: skill.needsPractice ? "#ef4444" : "#65a30d",
-            }}
-          >
-            {skill.needsPractice ? (
-              <>
-                <AlertCircle size={14} />
-                Needs Practice
-              </>
-            ) : (
-              <>
-                <CheckCircle size={14} />
-                On Track
-              </>
-            )}
+        <h3 style={styles.title}>{skill.name}</h3>
+      </div>
+      <div style={styles.stats}>
+        <div style={styles.stat}>
+          <span style={styles.label}>Accuracy:</span>
+          <span style={styles.value}>{skill.accuracy}%</span>
+        </div>
+        <div style={styles.stat}>
+          <span style={styles.label}>Last Practice:</span>
+          <span style={styles.value}>{skill.lastPracticed}</span>
+        </div>
+        <div style={styles.stat}>
+          <span style={styles.label}>Status:</span>
+          <span style={{
+            ...styles.value,
+            color: masteryColors[skill.mastery] || masteryColors['Not Started'],
+            fontWeight: 600
+          }}>
+            {skill.mastery}
           </span>
         </div>
       </div>
-
-      <div style={styles.stats}>
-        <div style={styles.stat}>
-          <TrendingUp size={16} />
-          <span>{skill.accuracy}% Accuracy</span>
-        </div>
-        <div style={styles.stat}>
-          <Clock size={16} />
-          <span>Last practiced {skill.lastPracticed}</span>
-        </div>
-      </div>
-
-      <div style={styles.progressContainer}>
-        <div style={styles.progressBar}>
-          <div
-            style={{
-              ...styles.progress,
-              width: `${skill.progress}%`,
-              backgroundColor: skill.needsPractice ? "#ef4444" : "#65a30d",
-            }}
-          />
-        </div>
-        <span style={styles.progressText}>{skill.progress}% Mastery</span>
+      <div style={styles.footer}>
+        <span style={styles.practiceText}>Practice Now</span>
+        <ArrowRight size={16} />
       </div>
     </div>
-  )
+  );
 }
 
 const styles = {
-  container: {
-    backgroundColor: "white",
-    borderRadius: "8px",
-    padding: "20px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
-    cursor: "pointer",
-    transition: "transform 0.2s ease, box-shadow 0.2s ease",
-    "&:hover": {
-      transform: "translateY(-2px)",
-      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  card: {
+    backgroundColor: 'white',
+    borderRadius: '8px',
+    padding: '16px',
+    cursor: 'pointer',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    '&:hover': {
+      transform: 'translateY(-2px)',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
     },
   },
   header: {
-    display: "flex",
-    alignItems: "flex-start",
-    gap: "16px",
-    marginBottom: "16px",
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    marginBottom: '16px',
   },
   iconContainer: {
-    width: "40px",
-    height: "40px",
-    borderRadius: "8px",
-    backgroundColor: "#f3f4f6",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  headerText: {
-    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '32px',
+    height: '32px',
   },
   title: {
-    fontSize: "16px",
-    fontWeight: 600,
-    color: "#111827",
-    marginBottom: "4px",
-  },
-  status: {
-    display: "flex",
-    alignItems: "center",
-    gap: "4px",
-    fontSize: "14px",
+    fontSize: '16px',
+    fontWeight: 500,
+    color: '#111827',
+    margin: 0,
   },
   stats: {
-    display: "flex",
-    gap: "16px",
-    marginBottom: "16px",
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
   },
   stat: {
-    display: "flex",
-    alignItems: "center",
-    gap: "8px",
-    color: "#6b7280",
-    fontSize: "14px",
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
-  progressContainer: {
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
+  label: {
+    fontSize: '14px',
+    color: '#6b7280',
   },
-  progressBar: {
-    flex: 1,
-    height: "6px",
-    backgroundColor: "#f3f4f6",
-    borderRadius: "3px",
-    overflow: "hidden",
+  value: {
+    fontSize: '14px',
+    color: '#111827',
   },
-  progress: {
-    height: "100%",
-    transition: "width 0.3s ease",
+  footer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '8px',
+    marginTop: '16px',
+    color: '#4f46e5',
   },
-  progressText: {
-    fontSize: "14px",
+  practiceText: {
+    fontSize: '14px',
     fontWeight: 500,
-    color: "#374151",
-    minWidth: "80px",
   },
-}
+};
 

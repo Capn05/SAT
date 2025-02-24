@@ -11,69 +11,22 @@ export async function POST(request) {
     
     // Get the current session
     const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-    
-    // Handle missing session or session error
-    if (!session || sessionError) {
-      console.error('Auth session missing or error:', sessionError);
-      return new NextResponse(
-        JSON.stringify({ 
-          error: 'Authentication required',
-          code: 'AUTH_REQUIRED'
-        }), 
-        { 
-          status: 401,
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        }
-      );
+    if (sessionError || !session) {
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
     }
 
-    const { questionId, optionId, isCorrect, subject, category, mode } = await request.json();
-    console.log('Processing answer:', { questionId, optionId, isCorrect, subject, category, mode });
+    const { userId, subject } = await request.json();
 
-    // Get question details to ensure we're updating the correct category
-    const { data: question, error: questionError } = await supabase
-      .from('questions')
-      .select('subject_id, main_category, subcategory')
-      .eq('id', questionId)
-      .single();
-
-    if (questionError) {
-      console.error('Error fetching question:', questionError);
-      return NextResponse.json({ error: 'Failed to fetch question details' }, { status: 500 });
-    }
-
-    // Verify the question belongs to the specified category
-    if (mode === 'skill' && question.subcategory !== category) {
-      console.error('Category mismatch:', { expected: category, actual: question.subcategory });
-      return NextResponse.json({ error: 'Question category mismatch' }, { status: 400 });
-    }
-
-    // Record the user's answer
-    const { error: answerError } = await supabase
-      .from('user_answers')
-      .upsert({
-        user_id: session.user.id,
-        question_id: questionId,
-        option_id: optionId,
-        is_correct: isCorrect,
-        answered_at: new Date().toISOString(),
-        category: question.subcategory
-      }, {
-        onConflict: 'user_id,question_id'
-      });
-
-    if (answerError) {
-      console.error('Error recording answer:', answerError);
-      return NextResponse.json({ error: 'Failed to record answer', details: answerError }, { status: 500 });
+    // Verify the user is requesting their own data
+    if (userId !== session.user.id) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
     }
 
     // Get all questions for this subject to ensure we have complete category data
     const { data: questions, error: questionsError } = await supabase
       .from('questions')
-      .select('id, subject_id, main_category, subcategory')
-      .eq('subject_id', question.subject_id);
+      .select('subject_id, main_category, subcategory')
+      .eq('subject_id', subject);
 
     if (questionsError) {
       console.error('Error fetching questions:', questionsError);
@@ -84,7 +37,7 @@ export async function POST(request) {
     const { data: answers, error: answersError } = await supabase
       .from('user_answers')
       .select('*')
-      .eq('user_id', session.user.id);
+      .eq('user_id', userId);
 
     if (answersError) {
       console.error('Error fetching answers:', answersError);
@@ -99,10 +52,10 @@ export async function POST(request) {
           subject_id: q.subject_id,
           main_category: q.main_category,
           subcategory: q.subcategory,
-          questions: new Set()
+          count: 0
         };
       }
-      acc[key].questions.add(q.id);
+      acc[key].count++;
       return acc;
     }, {});
 
@@ -110,10 +63,13 @@ export async function POST(request) {
     for (const key of Object.keys(categoryQuestions)) {
       const category = categoryQuestions[key];
       
-      // Filter answers for this category's questions
-      const categoryAnswers = answers.filter(a => 
-        category.questions.has(a.question_id)
-      );
+      // Filter answers for this category
+      const categoryAnswers = answers.filter(a => {
+        const question = questions.find(q => q.id === a.question_id);
+        return question && 
+               question.main_category === category.main_category && 
+               question.subcategory === category.subcategory;
+      });
 
       // Get unique question attempts
       const uniqueAttempts = new Map();
@@ -142,7 +98,7 @@ export async function POST(request) {
       const { error: updateError } = await supabase
         .from('skill_performance')
         .upsert({
-          user_id: session.user.id,
+          user_id: userId,
           subject_id: category.subject_id,
           main_category: category.main_category,
           subcategory: category.subcategory,
@@ -160,27 +116,9 @@ export async function POST(request) {
       }
     }
 
-    // Get the updated performance for the current category
-    const { data: currentPerformance, error: perfError } = await supabase
-      .from('skill_performance')
-      .select('*')
-      .eq('user_id', session.user.id)
-      .eq('subject_id', question.subject_id)
-      .eq('subcategory', question.subcategory)
-      .single();
-
-    if (perfError) {
-      console.error('Error fetching updated performance:', perfError);
-    }
-
     return NextResponse.json({ 
       success: true,
-      performance: currentPerformance || {
-        totalAttempts: 1,
-        correctAnswers: isCorrect ? 1 : 0,
-        accuracyPercentage: isCorrect ? 100 : 0,
-        masteryLevel: 'Needs More Attempts'
-      }
+      message: 'Skills cache refreshed successfully'
     });
 
   } catch (error) {

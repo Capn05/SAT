@@ -1,12 +1,15 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { supabase } from '../../../lib/supabase';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { useRouter } from 'next/navigation';
 
 const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions }) => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const questionsPerPage = 10;
+  const router = useRouter();
+  const supabase = createClientComponentClient();
 
   // Calculate the index of the first and last question to display
   const startIndex = currentPage * questionsPerPage;
@@ -17,32 +20,37 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
 
   useEffect(() => {
     const fetchUserAnswersData = async () => {
-      const { data: { user }, error } = await supabase.auth.getUser();
+      try {
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+        
+        if (sessionError) {
+          console.error('Error getting session:', sessionError);
+          setLoading(false);
+          return;
+        }
 
-      if (error) {
-        console.error('Error fetching user:', error);
+        if (!session) {
+          console.error('No session found');
+          router.push('/login');
+          return;
+        }
+
+        const { data, error: fetchError } = await supabase
+          .from('user_answers')
+          .select('question_id, is_correct')
+          .eq('user_id', session.user.id);
+
+        if (fetchError) {
+          console.error('Error fetching user answers:', fetchError);
+        } else {
+          console.log('Fetched user answers:', data);
+          setUserAnswers(data);
+        }
+      } catch (error) {
+        console.error('Error in fetchUserAnswersData:', error);
+      } finally {
         setLoading(false);
-        return;
       }
-
-      if (!user) {
-        console.error('No user is logged in');
-        setLoading(false);
-        return;
-      }
-
-      const { data, error: fetchError } = await supabase
-        .from('user_answers')
-        .select('question_id, is_correct')
-        .eq('user_id', user.id);
-
-      if (fetchError) {
-        console.error('Error fetching user answers:', fetchError);
-      } else {
-        console.log('Fetched user answers:', data);
-        setUserAnswers(data);
-      }
-      setLoading(false);
     };
 
     fetchUserAnswersData();
@@ -109,42 +117,53 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
 
 const styles = {
   container: {
-    padding: '20px',
-    borderRadius: '12px',
-    margin: '10px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '10px',
+    padding: '10px',
+    backgroundColor: '#f3f4f6',
+    borderRadius: '8px',
+    width: '80px',
   },
   statusContainer: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '10px',
+    gap: '8px',
   },
   circle: (status, isSelected) => ({
     width: '30px',
     height: '30px',
     borderRadius: '50%',
+    border: 'none',
+    backgroundColor: status === 'correct' ? '#22c55e' :
+                    status === 'incorrect' ? '#ef4444' :
+                    '#d1d5db',
+    color: 'white',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: status === 'correct' ? '#65a30d' : status === 'incorrect' ? '#f8d7da' : 'grey',
-    color: 'white',
-    border: 'none',
     cursor: 'pointer',
-    boxShadow: isSelected ? '0 0 10px rgba(0, 0, 0, 0.5)' : 'none',
-    border: isSelected ? '1px solid black' : '0',
+    fontSize: '12px',
+    outline: isSelected ? '3px solid #3b82f6' : 'none',
+    outlineOffset: '2px',
   }),
   pagination: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '10px',
+    width: '100%',
   },
   arrowButton: {
     background: 'none',
     border: 'none',
-    fontSize: '20px',
     cursor: 'pointer',
-    color: 'black',
+    fontSize: '16px',
+    color: '#6b7280',
+    padding: '4px',
+    '&:disabled': {
+      color: '#d1d5db',
+      cursor: 'not-allowed',
+    },
   },
 };
 
