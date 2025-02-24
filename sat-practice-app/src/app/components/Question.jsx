@@ -19,12 +19,14 @@ export default function Question({ subject, mode, skillName }) {
   const [feedback, setFeedback] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
+  const [userAnswers, setUserAnswers] = useState({});
+  const [currentQuestionAnswer, setCurrentQuestionAnswer] = useState(null);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
   const [showModal, setShowModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState(skillName || '');
   const router = useRouter()
+  const [answeredFeedback, setAnsweredFeedback] = useState({});
 
   const md = new MarkdownIt({
     html: true,
@@ -76,70 +78,145 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
-    const { data: { user }, error: userError } = await supabase.auth.getUser();
-    const user_id = user.identities[0].id;
+    try {
+      const { data: { user }, error: userError } = await supabase.auth.getUser();
+      if (userError) throw new Error('Error fetching user');
+      
+      const user_id = user.identities[0].id;
 
-    if (userError) {
-      console.error('Error fetching user:', userError);
-      return;
-    }
+      // First, check if we have enough questions in the database
+      const { count: totalQuestions, error: countError } = await supabase
+        .from('questions')
+        .select('*', { count: 'exact', head: true })
+        .eq('subject_id', subjectId);
 
-    // Step 1: Fetch answered question IDs
-    const { data: answeredQuestionsData, error: answeredQuestionsError } = await supabase
-      .from('user_answers')
-      .select('question_id')
-      .eq('user_id', user_id);
+      if (countError) throw new Error('Error counting available questions');
 
-    if (answeredQuestionsError) {
-      console.error('Error fetching answered questions:', answeredQuestionsError);
-      return;
-    }
+      // Determine the limit based on the mode and available questions
+      let limit;
+      if (mode === "skill") {
+        limit = 4;
+        if (totalQuestions < limit) {
+          throw new Error(`Not enough questions available for skill practice. Only ${totalQuestions} questions found, but ${limit} are needed.`);
+        }
+      } else {
+        // For quick mode, use either 15 or the total available questions, whichever is smaller
+        limit = Math.min(15, totalQuestions);
+        console.log(`Using ${limit} questions for quick practice mode`);
+      }
 
-    // Extract the question IDs into an array
-    const answeredQuestionIds = answeredQuestionsData.map(answer => answer.question_id);
+      // Step 1: Fetch answered question IDs
+      const { data: answeredQuestionsData, error: answeredQuestionsError } = await supabase
+        .from('user_answers')
+        .select('question_id')
+        .eq('user_id', user_id);
 
-    // Determine the limit based on the mode
-    const limit = mode === "skill" ? 4 : 15; // Limit to 4 questions for skill mode
+      if (answeredQuestionsError) throw new Error('Error fetching answered questions');
 
-    if (mode === "quick") {
-      // Step 2: Fetch unanswered questions with their options
-      const { data: questionsData, error: questionsError } = await supabase
+      // Extract the question IDs into an array
+      const answeredQuestionIds = answeredQuestionsData?.map(answer => answer.question_id) || [];
+
+      let questionsData;
+      let query = supabase
         .from('questions')
         .select(`
           *,
           options(*)
         `)
-        .eq('subject_id', subjectId)
-        .not('id', 'in', `(${answeredQuestionIds.join(',')})`) // Use a formatted string for the IDs
-        .limit(limit) // Limit to the determined number of unanswered questions
-        .order('id', { ascending: true });
+        .eq('subject_id', subjectId);
 
-      if (questionsError) {
-        console.error('Error fetching unanswered questions:', questionsError);
-        return;
+      if (mode === "quick") {
+        try {
+          // First try to get all questions for this subject
+          const { data: allQuestions, error: allQuestionsError } = await query;
+          
+          if (allQuestionsError) throw new Error('Error fetching all questions');
+          
+          // Filter out answered questions if needed
+          let availableQuestions = allQuestions;
+          if (answeredQuestionIds.length > 0 && answeredQuestionIds.length < totalQuestions) {
+            availableQuestions = allQuestions.filter(q => !answeredQuestionIds.includes(q.id));
+          }
+          
+          // If we don't have enough unanswered questions, use all questions
+          if (availableQuestions.length < limit) {
+            availableQuestions = allQuestions;
+          }
+          
+          // Randomly select questions
+          questionsData = shuffleArray(availableQuestions).slice(0, limit);
+          
+        } catch (error) {
+          console.error('Error in quick mode question fetching:', error);
+          throw new Error(`Error fetching questions: ${error.message}`);
+        }
       }
-      setQuestions(questionsData);
-    }
 
-    if (mode === "skill") {
-      const { data: questionsData, error: questionsError } = await supabase
-        .from('questions')
-        .select(`
-          *,
-          options(*)
-        `)
-        .eq('subject_id', subjectId)
-        .eq('category', selectedSkill)
-        .not('id', 'in', `(${answeredQuestionIds.join(',')})`)
-        .limit(limit) // Limit to 4 questions for skill mode
-        .order('id', { ascending: true });
-
-      if (questionsError) {
-        console.error('Error fetching unanswered questions:', questionsError);
-        return;
+      if (mode === "skill") {
+        try {
+          query = query.eq('category', selectedSkill);
+          
+          // First try to get all questions for this skill
+          const { data: allSkillQuestions, error: allSkillQuestionsError } = await query;
+          
+          if (allSkillQuestionsError) throw new Error('Error fetching skill questions');
+          
+          if (!allSkillQuestions || allSkillQuestions.length < limit) {
+            throw new Error(`Not enough questions available for ${selectedSkill}`);
+          }
+          
+          // Filter out answered questions if needed
+          let availableQuestions = allSkillQuestions;
+          if (answeredQuestionIds.length > 0) {
+            availableQuestions = allSkillQuestions.filter(q => !answeredQuestionIds.includes(q.id));
+          }
+          
+          // If we don't have enough unanswered questions, use all skill questions
+          if (availableQuestions.length < limit) {
+            availableQuestions = allSkillQuestions;
+          }
+          
+          // Randomly select questions
+          questionsData = shuffleArray(availableQuestions).slice(0, limit);
+          
+        } catch (error) {
+          console.error('Error in skill mode question fetching:', error);
+          throw new Error(`Error fetching skill questions: ${error.message}`);
+        }
       }
+
+      if (!questionsData || questionsData.length === 0) {
+        throw new Error('No questions available');
+      }
+
+      if (questionsData.length < limit) {
+        throw new Error(`Not enough questions returned. Only got ${questionsData.length} out of ${limit} required questions.`);
+      }
+
+      // Reset states when loading new questions
+      setAnsweredQuestions(new Set());
+      setAnsweredCount(0);
+      setUserAnswers({});
+      setAnsweredFeedback({});
+      setCurrentQuestionAnswer(null);
+      setFeedback(null);
+      
       setQuestions(questionsData);
+    } catch (error) {
+      console.error('Error in fetchUnansweredQuestions:', error);
+      setQuestions([]);  // Set empty questions array on error
+      alert(`Error loading questions: ${error.message}`);
     }
+  };
+
+  // Helper function to shuffle array
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
   };
 
   useEffect(() => {
@@ -159,14 +236,25 @@ export default function Question({ subject, mode, skillName }) {
     }
   }, [answeredCount, mode]); // Add mode as a dependency
 
+  // Update currentQuestionAnswer and feedback when changing questions
+  useEffect(() => {
+    if (questions.length > 0) {
+      const questionId = questions[currentIndex].id;
+      setCurrentQuestionAnswer(userAnswers[questionId] || null);
+      setFeedback(answeredFeedback[questionId] || null);
+    }
+  }, [currentIndex, questions, userAnswers, answeredFeedback]);
+
   const nextQuestion = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % questions.length);
-    setFeedback(null);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const prevQuestion = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);
-    setFeedback(null);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const fetchUserAnswers = async () => {
@@ -191,13 +279,18 @@ export default function Question({ subject, mode, skillName }) {
       console.error('Error fetching user answers:', fetchError);
     } else {
       // Update the user answers state in QuestionStatus
-      setUserAnswers(data);
+      setUserAnswers(data.reduce((acc, answer) => ({
+        ...acc,
+        [answer.question_id]: answer.is_correct
+      }), {}));
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const selectedValue = event.target.answer.value;
+    const currentQuestionId = questions[currentIndex].id;
+    const selectedValue = userAnswers[currentQuestionId];
+    if (!selectedValue) return;
 
     const currentQuestion = questions[currentIndex];
     const questionId = currentQuestion.id;
@@ -205,19 +298,34 @@ export default function Question({ subject, mode, skillName }) {
     // Check if the question has already been answered
     if (answeredQuestions.has(questionId)) {
       console.log('Question already answered');
-      return; // Exit if the question has already been answered
+      return;
     }
 
     // Logic to check if the answer is correct
     const correctOption = currentQuestion.options.find(option => option.is_correct);
-    if (selectedValue === correctOption.value) {
-      // Increment answered count only if the question is answered for the first time
+    const isCorrect = selectedValue === correctOption.value;
+
+    if (isCorrect) {
       setAnsweredCount(prevCount => prevCount + 1);
-      setAnsweredQuestions(prev => new Set(prev).add(questionId)); // Add question ID to the set
+      setAnsweredQuestions(prev => new Set(prev).add(questionId));
     }
 
+    const feedbackMessage = isCorrect ? 
+      "Correct!" : 
+      `Option ${selectedValue} is Incorrect. Try asking Ollie for help`;
+    
+    const newFeedback = { 
+      message: feedbackMessage, 
+      type: isCorrect ? "success" : "error" 
+    };
+
+    setFeedback(newFeedback);
+    setAnsweredFeedback(prev => ({
+      ...prev,
+      [questionId]: newFeedback
+    }));
+
     setSelectedAnswer(selectedValue);
-    setFeedback({ message: selectedValue === correctOption.value ? "Correct!" : `Option ${selectedValue} is Incorrect. Try asking Ollie for help`, type: selectedValue === correctOption.value ? "success" : "error" });
 
     // Call the API to save the user's answer
     const { data: { user }, error: userError } = await supabase.auth.getUser(); // Get the current user's ID
@@ -228,7 +336,6 @@ export default function Question({ subject, mode, skillName }) {
 
     const userId = user?.id; // Get the current user's ID
     const optionId = currentQuestion.options.find(option => option.value === selectedValue)?.id; // Get the selected option's ID
-    const isCorrect = selectedValue === correctOption.value; // Determine if the answer is correct
 
     console.log('Submitting answer:', { userId, questionId, optionId, isCorrect }); // Log the data being sent
 
@@ -270,8 +377,9 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   const selectQuestion = (index) => {
-    setCurrentIndex(index); // Update the current index to the selected question
-    setFeedback(null); // Reset feedback when navigating to a new question
+    setCurrentIndex(index);
+    setSelectedAnswer(null);
+    setCurrentQuestionAnswer(null);
   };
 
   const fetchNewQuestions = async () => {
@@ -324,18 +432,54 @@ export default function Question({ subject, mode, skillName }) {
           <br />
           {image_url && <img src={image_url} alt="Question related" style={styles.image} />}
           <form onSubmit={handleSubmit} style={styles.form}>
-            {sortedOptions.map((option) => (
-              <label key={option.value} style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="answer"
-                  value={option.value}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText} dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}></span>
-              </label>
-            ))}
-            <button style={styles.primaryButton} type="submit">Submit Answer</button>
+            {sortedOptions.map((option) => {
+              const currentQuestionId = questions[currentIndex].id;
+              const isAnswered = answeredQuestions.has(currentQuestionId);
+              const isCorrectOption = option.is_correct;
+              
+              return (
+                <label key={option.value} style={styles.radioLabel}>
+                  <input
+                    type="radio"
+                    name={`answer-${currentQuestionId}`}
+                    value={option.value}
+                    checked={currentQuestionAnswer === option.value}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      setCurrentQuestionAnswer(value);
+                      setSelectedAnswer(value);
+                      setUserAnswers(prev => ({
+                        ...prev,
+                        [currentQuestionId]: value
+                      }));
+                    }}
+                    disabled={isAnswered}
+                    style={{
+                      ...styles.radioInput,
+                      cursor: isAnswered ? 'default' : 'pointer',
+                    }}
+                  />
+                  <span 
+                    style={{
+                      ...styles.radioText,
+                      color: isAnswered && isCorrectOption ? '#65a30d' : 'inherit',
+                      fontWeight: isAnswered && isCorrectOption ? '600' : 'normal',
+                    }} 
+                    dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
+                  />
+                  {isAnswered && isCorrectOption && (
+                    <span style={styles.correctIndicator}>✓</span>
+                  )}
+                </label>
+              );
+            })}
+            <button 
+              style={styles.primaryButton} 
+              type="submit"
+              disabled={answeredQuestions.has(questions[currentIndex].id)}
+            >
+              Submit Answer
+            </button>
           </form>
           <AnimatePresence>
             {feedback && (
@@ -483,7 +627,13 @@ const styles = {
     flexDirection: 'row',
     alignItems:"center",
     justifyContent:"center"
-  }
+  },
+  correctIndicator: {
+    color: '#65a30d',
+    marginLeft: '8px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
 };
   
   

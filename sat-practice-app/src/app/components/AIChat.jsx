@@ -9,6 +9,7 @@ import 'katex/dist/katex.min.css';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
 import dotenv from 'dotenv';
+import DesmosGraph from './DesmosGraph';
 dotenv.config({ path: '.env.local' }); // Load environment variables
 
 export default function AIChat({ question, selectedAnswer, options, imageURL }) {
@@ -17,6 +18,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
   
   const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
+  const [graphExpressions, setGraphExpressions] = useState([]);
   console.log(process.env.NEXT_PUBLIC_OPEN_AI_API_KEY)
   const openai = new OpenAI({
     apiKey: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,
@@ -39,6 +41,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
 
     setLoading(true);
     setResponse('');
+    setGraphExpressions([]);
 
     try {
       const messages = [
@@ -46,7 +49,17 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
           role: 'system',
           content: `Your name is Ollie, You are a helpful SAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. The user may ask about the math question in front of them but they may ask you about other things as well. The question that the user may be referring to: ${question}. The answer choice that the user selected (undefined or null if the user has not answered yet): ${selectedAnswer}. All answer choices where 'label' are the options: ${JSON.stringify(
             options
-          )}. Use markdown for all output.When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`,
+          )}. 
+          
+          When you need to show a graph, use the following format:
+          <graph>
+          y=x^2
+          y=2x+1
+          </graph>
+          
+          Each line between <graph> tags will be interpreted as a separate equation to plot. Use LaTeX syntax for equations.
+          
+          Use markdown for all output. When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`,
         },
         { role: 'user', content: questionToUse },
       ];
@@ -70,10 +83,23 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
         stream: true,
       });
   
+      let currentResponse = '';
       for await (const chunk of stream) {
         const content = chunk.choices[0]?.delta?.content;
         if (content) {
-          setResponse((prev) => prev + content);
+          currentResponse += content;
+          setResponse(currentResponse);
+          
+          // Check for graph tags and extract expressions
+          const graphMatch = currentResponse.match(/<graph>([\s\S]*?)<\/graph>/);
+          if (graphMatch) {
+            const expressions = graphMatch[1]
+              .trim()
+              .split('\n')
+              .map(expr => expr.trim())
+              .filter(expr => expr.length > 0);
+            setGraphExpressions(expressions);
+          }
         }
       }
 
@@ -114,22 +140,25 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
   };
 
   const renderResponse = (response) => {
+    // Remove graph tags from the rendered output
+    const cleanResponse = response.replace(/<graph>[\s\S]*?<\/graph>/g, '');
+    
     // Use regex to identify and render inline and block math
-    const inlineMathRegex = /\$([^$]+)\$/g; // Matches inline math
-    const blockMathRegex = /\$\$([^$]+)\$\$/g; // Matches block math
+    const inlineMathRegex = /\$([^$]+)\$/g;
+    const blockMathRegex = /\$\$([^$]+)\$\$/g;
 
     // Replace block math with rendered output first
-    response = response.replace(blockMathRegex, (match, p1) => {
-        return renderBlockMath(p1);
+    let formattedResponse = cleanResponse.replace(blockMathRegex, (match, p1) => {
+      return renderBlockMath(p1);
     });
 
     // Replace inline math with rendered output
-    response = response.replace(inlineMathRegex, (match, p1) => {
-        return renderMath(p1);
+    formattedResponse = formattedResponse.replace(inlineMathRegex, (match, p1) => {
+      return renderMath(p1);
     });
 
     // Render the remaining markdown content
-    return md.render(response);
+    return md.render(formattedResponse);
   };
 
   return (
@@ -165,7 +194,10 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
       </div>
     <div style={styles.paddingBox}>
       <div style={styles.responseBox}>
-        <div stlye={styles.innermostBox}dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />
+        <div style={styles.innermostBox} dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />
+        {graphExpressions.length > 0 && (
+          <DesmosGraph expressions={graphExpressions} />
+        )}
       </div>
       </div>
     </div>
