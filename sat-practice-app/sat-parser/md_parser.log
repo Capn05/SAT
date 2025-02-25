@@ -1,0 +1,17 @@
+2025-02-25 17:46:40,755 - __main__ - INFO - Parsing Markdown file: Nonlinear Equations and Systems 1~Key (1).md
+2025-02-25 17:46:40,755 - __main__ - INFO - Found first question footnote: ID: 3c95093c
+    $6 x-9 y>12$
+2025-02-25 17:46:40,755 - __main__ - INFO - Found footnote [0]: ID: 3c95093c
+    $6 x-9 y>12$
+2025-02-25 17:46:40,755 - __main__ - INFO - Processing question ID: 3c95093c
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: 4ca30186
+2025-02-25 17:46:40,756 - __main__ - INFO - Found image URL: https://cdn.mathpix.com/cropped/2025_02_25_1df4a82499085e565c44g-02.jpg?height=817&width=817&top_left_y=784&top_left_x=220
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: 3de7a7d7
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: 70f98ab4
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: 568aaf27
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: b76a2815
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: c7789423
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: eb268057
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing question ID: 98f735f2
+2025-02-25 17:46:40,756 - __main__ - INFO - Extracted 9 questions and 32 options
+2025-02-25 17:46:40,756 - __main__ - INFO - Processing complete. Results saved to questions.json and options.json
