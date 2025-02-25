@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Data and SAT resources
+sat-question-bank/
+sat-framework.pdf
+subcategories_rows.csv

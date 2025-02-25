@@ -14,8 +14,8 @@ import Modal from './Modal';
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
-export default function Question({ subject, mode, skillName }) {
-  const [questions, setQuestions] = useState([]);
+export default function Question({ subject, mode, skillName, questions: initialQuestions }) {
+  const [questions, setQuestions] = useState(initialQuestions || []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [feedback, setFeedback] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -216,11 +216,18 @@ export default function Question({ subject, mode, skillName }) {
   };
 
   useEffect(() => {
+    if (initialQuestions && initialQuestions.length > 0) {
+      console.log('Using provided questions:', initialQuestions);
+      setQuestions(initialQuestions);
+      setLoading(false);  // Set loading to false when using initial questions
+      return;
+    }
+
     if (subject) {
-      console.log('Initializing question component with:', { subject, mode, skillName });
+      console.log('Fetching questions for:', { subject, mode, skillName });
       fetchUnansweredQuestions(subject);  
     }
-  }, [subject]);
+  }, [subject, initialQuestions]);
 
   // Automatically show the modal when all questions are answered
   useEffect(() => {
@@ -433,20 +440,17 @@ export default function Question({ subject, mode, skillName }) {
 
   if (questions.length === 0) {
     return (
-      <div style={styles.errorContainer}>
-        <div style={styles.errorText}>No questions available</div>
-        <button 
-          style={styles.retryButton}
-          onClick={() => fetchUnansweredQuestions(subject)}
-        >
-          Retry
-        </button>
+      <div style={styles.loadingContainer}>
+        <div style={styles.loadingText}>No questions available</div>
+        <div style={styles.loadingDetails}>
+          Mode: {mode}, Subject: {subject}, Skill: {skillName || 'N/A'}
+        </div>
       </div>
     );
   }
 
   const { question_text, options, image_url } = questions[currentIndex];
-  console.log(questions)
+  console.log('Rendering question:', { question_text, options, currentIndex });
   const sortedOptions = options.sort((a, b) => a.value.localeCompare(b.value));
 
   const handleDashboardClick = () => {
@@ -511,6 +515,7 @@ export default function Question({ subject, mode, skillName }) {
         onClose={() => setShowModal(false)}
         onConfirm={fetchNewQuestions}
       />
+
       <div style={styles.container}>
         <QuestionStatus 
           currentIndex={currentIndex} 
@@ -519,21 +524,37 @@ export default function Question({ subject, mode, skillName }) {
           onSelectQuestion={selectQuestion}
           questions={questions}
         />
+
         <div style={styles.questionContent}>
           <h2 style={styles.title}>Question {currentIndex + 1}:</h2>
-          <div dangerouslySetInnerHTML={{ __html: renderResponse(question_text) }}></div>
-          <br />
-          {image_url && <img src={image_url} alt="Question related" style={styles.image} />}
+          
+          {/* Question Text */}
+          <div 
+            style={styles.questionText}
+            dangerouslySetInnerHTML={{ __html: renderResponse(question_text) }}
+          />
+
+          {/* Image if present */}
+          {image_url && (
+            <img src={image_url} alt="Question" style={styles.questionImage} />
+          )}
+
+          {/* Options Form */}
           <form onSubmit={handleSubmit} style={styles.form}>
-            {renderOptions()}
+            <div style={styles.optionsContainer}>
+              {renderOptions()}
+            </div>
+            
             <button 
-              style={styles.primaryButton} 
+              style={styles.submitButton}
               type="submit"
               disabled={isSubmitting || !selectedOption}
             >
               {isSubmitting ? 'Submitting...' : 'Submit Answer'}
             </button>
           </form>
+
+          {/* Feedback */}
           <AnimatePresence>
             {showFeedback && (
               <motion.div
@@ -548,21 +569,26 @@ export default function Question({ subject, mode, skillName }) {
               </motion.div>
             )}
           </AnimatePresence>
-          <div style={styles.navigationButtons}>
-            <button style={styles.secondaryButton} onClick={prevQuestion}>Previous</button>
-            <button style={styles.secondaryButton} onClick={nextQuestion}>Next</button>
-          </div>
         </div>
+
         <div style={styles.aiChatContainer}>
-          <AIChat question={question_text} selectedAnswer={selectedAnswer} options={sortedOptions} imageURL={image_url} />
+          <AIChat 
+            question={question_text} 
+            selectedAnswer={selectedAnswer} 
+            options={sortedOptions} 
+            imageURL={image_url} 
+          />
         </div>
       </div>
+
       {answeredCount === (mode === "skill" ? 5 : 15) && (
         <div style={styles.RefreshQuestionsContainer}>
           <button onClick={() => setShowModal(true)} style={styles.newQuestionsButton}>
             Continue
           </button>
-          <button style={styles.secondaryButton} onClick={handleDashboardClick}>Return to Dashboard</button>
+          <button style={styles.secondaryButton} onClick={handleDashboardClick}>
+            Return to Dashboard
+          </button>
         </div>
       )}
     </div>
@@ -570,58 +596,125 @@ export default function Question({ subject, mode, skillName }) {
 }
 
 const styles = {
+  column: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
   container: {
     display: 'flex',
     flexDirection: 'row',
     padding: '20px',
+    backgroundColor: '#f9fafb',
+    minHeight: '100vh',
+  },
+  progressContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    padding: '20px',
   },
   questionContent: {
     flex: 1,
-    margin: '10px',
-    padding: '20px',
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     borderRadius: '12px',
+    padding: '24px',
+    margin: '10px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-  },
-  aiChatContainer: {
-    width: '50%',
   },
   title: {
     fontSize: '20px',
     fontWeight: 600,
     marginBottom: '16px',
+    color: '#1f2937',
   },
-  image: {
+  questionText: {
+    fontSize: '18px',
+    lineHeight: '1.6',
+    color: '#1f2937',
+    marginBottom: '24px',
+  },
+  questionImage: {
     maxWidth: '100%',
     height: 'auto',
-    marginBottom: '16px',
+    marginBottom: '24px',
+    borderRadius: '4px',
   },
   form: {
     display: 'flex',
     flexDirection: 'column',
+    gap: '16px',
+  },
+  optionsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
     gap: '12px',
+  },
+  submitButton: {
+    padding: '12px 24px',
+    backgroundColor: '#65a30d',
+    color: 'white',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: '500',
+    marginTop: '20px',
+    '&:disabled': {
+      backgroundColor: '#e5e7eb',
+      cursor: 'not-allowed',
+    },
+    '&:hover:not(:disabled)': {
+      backgroundColor: '#4d7c0f',
+    },
+  },
+  navigationContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginTop: '24px',
+  },
+  navButton: {
+    padding: '8px 16px',
+    backgroundColor: '#4f46e5',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: '500',
+    '&:disabled': {
+      backgroundColor: '#e5e7eb',
+      cursor: 'not-allowed',
+    },
+    '&:hover:not(:disabled)': {
+      backgroundColor: '#4338ca',
+    },
   },
   radioLabel: {
     display: 'flex',
     alignItems: 'center',
-    gap: '8px',
+    padding: '12px',
+    border: '1px solid #e5e7eb',
+    borderRadius: '4px',
     cursor: 'pointer',
+    transition: 'all 0.2s',
+    '&:hover': {
+      backgroundColor: '#f9fafb',
+    },
   },
   radioInput: {
-    width: '16px',
-    height: '16px',
-    cursor: 'pointer',
+    marginRight: '12px',
   },
   radioText: {
-    fontSize: '14px',
+    fontSize: '16px',
+    color: '#374151',
   },
   feedbackBox: {
     display: 'flex',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    marginTop: '10px',
-    color: '#155724',
+    padding: '12px',
+    borderRadius: '6px',
+    marginTop: '16px',
     border: '1px solid transparent',
   },
   icon: {
@@ -629,39 +722,16 @@ const styles = {
     width: '20px',
     height: '20px',
   },
-  primaryButton: {
-    padding: '8px 16px',
-    backgroundColor: '#65a30d',
-    color: 'white',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '14px',
-    marginTop: '15px'
+  aiChatContainer: {
+    width: '50%',
+    padding: '10px',
   },
-  secondaryButton: {
-    padding: '8px 16px',
-    backgroundColor: '#e6f0e6',
-    color: '#333',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '14px',
-  },
-  navigationButtons: {
+  RefreshQuestionsContainer: {
     display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '10px',
-  },
-  column:{
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  progressContainer:{
-    display:"flex",
-    alignItems:"center",
-    justifyContent:"center",
-    flexDirection:"column"
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '20px',
   },
   newQuestionsButton: {
     padding: '8px 16px',
@@ -672,51 +742,44 @@ const styles = {
     cursor: 'pointer',
     fontSize: '14px',
     margin: '5px',
-    width:"10%"
-  },
-  RefreshQuestionsContainer:{
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems:"center",
-    justifyContent:"center"
+    width: '10%',
   },
   correctIndicator: {
+    marginLeft: 'auto',
     color: '#65a30d',
-    marginLeft: '8px',
-    fontSize: '16px',
     fontWeight: 'bold',
   },
   loadingContainer: {
-    padding: '20px',
-    textAlign: 'center',
-    backgroundColor: '#f3f4f6',
-    borderRadius: '8px',
-    margin: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '50vh',
   },
   loadingText: {
     fontSize: '18px',
     color: '#4b5563',
-    marginBottom: '10px',
+    marginBottom: '8px',
   },
   loadingDetails: {
     fontSize: '14px',
     color: '#6b7280',
   },
   errorContainer: {
-    padding: '20px',
-    textAlign: 'center',
-    backgroundColor: '#fee2e2',
-    borderRadius: '8px',
-    margin: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '50vh',
   },
   errorText: {
-    fontSize: '16px',
+    fontSize: '18px',
     color: '#dc2626',
-    marginBottom: '15px',
+    marginBottom: '16px',
   },
   retryButton: {
     padding: '8px 16px',
-    backgroundColor: '#dc2626',
+    backgroundColor: '#65a30d',
     color: 'white',
     border: 'none',
     borderRadius: '4px',

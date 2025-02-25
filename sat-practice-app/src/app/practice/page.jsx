@@ -12,6 +12,7 @@ export default function PracticePage() {
   const supabase = createClientComponentClient();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [questions, setQuestions] = useState([]);
 
   const mode = searchParams.get('mode');
   const subject = searchParams.get('subject');
@@ -50,18 +51,70 @@ export default function PracticePage() {
           }
         });
 
-        // Validate required parameters
+        // Special handling for test mode
+        if (mode === 'test') {
+          console.log('Fetching test question...');
+          const { data: testQuestions, error: fetchError } = await supabase
+            .from('questions')
+            .select(`
+              *,
+              options (*)
+            `)
+            .eq('subject_id', 1) // Math questions
+            .eq('subcategory_id', 1) // Equivalent Expressions
+            .order('id', { ascending: false })
+            .limit(1);
+
+          if (fetchError) {
+            console.error('Error fetching test question:', fetchError);
+            setError('Error fetching test question');
+            return;
+          }
+
+          if (!testQuestions || testQuestions.length === 0) {
+            console.error('No test questions found');
+            setError('No test questions found');
+            return;
+          }
+
+          console.log('Found test question:', testQuestions[0]);
+          setQuestions(testQuestions);
+          setLoading(false);
+          return;
+        }
+
+        // Validate required parameters for non-test modes
         if (!mode || !subject) {
           setError('Missing required parameters');
           return;
         }
 
-        // Validate mode-specific parameters
-        if (mode === 'skill' && !category) {
-          setError('Missing category for skill practice');
+        // Fetch questions based on mode
+        let questionsData;
+        if (mode === 'quick') {
+          const response = await fetch(`/api/quick-practice?subject=${subject}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch quick practice questions');
+          }
+          const data = await response.json();
+          questionsData = data.questions;
+        } else if (mode === 'skill' && category) {
+          const response = await fetch(`/api/skill-questions?subject=${subject}&category=${encodeURIComponent(category)}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch skill questions');
+          }
+          const data = await response.json();
+          questionsData = data.questions;
+        } else {
+          throw new Error('Invalid mode or missing category for skill practice');
+        }
+
+        if (!questionsData || questionsData.length === 0) {
+          setError('No questions available');
           return;
         }
 
+        setQuestions(questionsData);
         setLoading(false);
 
         // Cleanup subscription
@@ -69,7 +122,7 @@ export default function PracticePage() {
           subscription.unsubscribe();
         };
       } catch (error) {
-        console.error('Auth error:', error);
+        console.error('Error in checkAuth:', error);
         if (mounted) {
           setError(error.message);
           router.push('/login');
@@ -87,7 +140,10 @@ export default function PracticePage() {
   if (loading) {
     return (
       <div style={styles.loadingContainer}>
-        <div style={styles.loadingText}>Loading practice session...</div>
+        <div style={styles.loadingText}>Loading questions...</div>
+        <div style={styles.loadingDetails}>
+          Mode: {mode}, Subject: {subject || 'N/A'}, Skill: {category || 'N/A'}
+        </div>
       </div>
     );
   }
@@ -106,18 +162,26 @@ export default function PracticePage() {
     );
   }
 
+  // Add debug logging
+  console.log('Rendering with questions:', questions);
+
   const title = mode === 'skill' 
     ? `Practice: ${category}`
+    : mode === 'test'
+    ? 'Test Question'
     : 'Quick Practice';
 
   return (
     <div style={styles.container}>
       <TopBar title={title} />
-      <Question 
-        mode={mode}
-        subject={subject}
-        skillName={category}
-      />
+      {questions.length > 0 && (
+        <Question 
+          mode={mode}
+          subject={subject || '1'}  // Default to Math (1) for test mode
+          skillName={category}
+          questions={questions}  // Make sure we're passing the questions prop
+        />
+      )}
     </div>
   );
 }
@@ -137,6 +201,10 @@ const styles = {
   loadingText: {
     fontSize: '18px',
     color: '#4b5563',
+  },
+  loadingDetails: {
+    fontSize: '14px',
+    color: '#6b7280',
   },
   errorContainer: {
     display: 'flex',
