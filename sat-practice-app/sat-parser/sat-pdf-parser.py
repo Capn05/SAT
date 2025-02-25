@@ -3,7 +3,7 @@ import re
 import json
 import logging
 from pathlib import Path
-import PyPDF2
+import fitz  # PyMuPDF
 import pandas as pd
 from datetime import datetime
 
@@ -42,25 +42,29 @@ def load_metadata():
     logger.info(f"Loaded {len(categories_dict)} categories and {len(subcategories_dict)} subcategories")
     return categories_dict, subcategories_dict
 
-# Function to format math expressions
+# Format math expressions with appropriate $ or $$ wrapping
 def format_math_expressions(text):
     if not text:
         return text
     
-    # Format inline math expressions (within sentences)
-    # This is a simplistic approach; might need refinement for complex expressions
-    inline_pattern = r'(\$[^$]+\$)'
-    block_pattern = r'(\$\$[^$]+\$\$)'
+    # Check if the text is a math expression that needs wrapping
+    math_chars = ['=', '<', '>', '+', '-', '*', '/', '^', '(', ')', '[', ']', '|']
+    has_math_chars = any(char in text for char in math_chars)
+    has_variables = bool(re.search(r'\b[a-zA-Z]\b', text))  # Single letters that are likely variables
     
-    # Format any math that's not already wrapped in $ or $$
-    # This would need more sophisticated logic in a real implementation
-    math_symbols_pattern = r'([=<>±×÷≠≈≤≥√∑∏∫]|(\d+\/\d+))'
+    # If it looks like a math expression, wrap in $ signs
+    if has_math_chars and has_variables:
+        # Check if it's already wrapped
+        if not (text.startswith('$') and text.endswith('$')):
+            # For standalone equations, use double $$ for block display
+            if '\n' not in text and not text.endswith('.') and not text.endswith('?'):
+                return f"$${text}$$"
+            # For inline math, use single $
+            return f"${text}$"
     
-    # For now, just return the text - you would implement more sophisticated
-    # math formatting based on your actual PDF content patterns
     return text
 
-# Function to extract question data from PDF
+# Function to extract question data from PDF using PyMuPDF
 def extract_questions_from_pdf(pdf_path, categories_dict, subcategories_dict, stats):
     logger.info(f"Processing PDF: {pdf_path}")
     
@@ -125,81 +129,138 @@ def extract_questions_from_pdf(pdf_path, categories_dict, subcategories_dict, st
     options = []
     
     try:
-        pdf_reader = PyPDF2.PdfReader(pdf_path)
-        current_question = None
+        # Open PDF with PyMuPDF
+        doc = fitz.open(pdf_path)
+        full_text = ""
+        
+        # First, extract all text from the PDF with better formatting
+        for page_num in range(len(doc)):
+            page = doc[page_num]
+            # Extract text with better handling of text blocks
+            page_text = page.get_text("text")
+            if page_text:
+                full_text += page_text + "\n"
+        
+        # Split the text by "Question ID" pattern to identify individual questions
+        question_pattern = r"Question ID ([a-zA-Z0-9]+)"
+        question_matches = list(re.finditer(question_pattern, full_text))
+        
+        # If the pattern didn't work, try an alternative
+        if not question_matches:
+            question_pattern = r"ID:\s+([a-zA-Z0-9]+)"
+            question_matches = list(re.finditer(question_pattern, full_text))
+        
         question_id_counter = 1
         option_id_counter = 1
         
-        # For each page in the PDF
-        for page_num, page in enumerate(pdf_reader.pages):
-            text = page.extract_text()
-            if not text:
-                continue
+        # Process each question block by finding boundaries
+        for i in range(len(question_matches)):
+            start_pos = question_matches[i].start()
+            end_pos = question_matches[i+1].start() if i+1 < len(question_matches) else len(full_text)
             
-            # Look for question ID pattern
-            question_id_matches = re.finditer(r"ID:\s+([a-zA-Z0-9]+)\b", text)
-            for match in question_id_matches:
-                # If we found a new question ID and have processed a previous question
-                if current_question:
-                    questions.append(current_question)
-                    
-                question_id = match.group(1)
-                logger.info(f"Found question ID: {question_id}")
+            question_block = full_text[start_pos:end_pos]
+            question_id_match = re.search(r"(?:Question ID|ID:)\s+([a-zA-Z0-9]+)", question_block)
+            question_id = question_id_match.group(1) if question_id_match else f"unknown_{question_id_counter}"
+            
+            logger.info(f"Processing question ID: {question_id}")
+            
+            # Extract difficulty
+            difficulty_match = re.search(r'Question Difficulty:\s*(Easy|Medium|Hard)', question_block)
+            difficulty = difficulty_match.group(1) if difficulty_match else "Medium"
+            
+            # Extract equation/inequality
+            # First, find where the question ID line ends
+            id_line_end = re.search(r"(?:Question ID|ID:)[^\n]+\n", question_block)
+            if id_line_end:
+                content_start = id_line_end.end()
+                content = question_block[content_start:]
                 
-                # Extract difficulty (this would depend on your PDF format)
-                difficulty_match = re.search(r"Question Difficulty:\s+(Easy|Medium|Hard)", text[match.end():])
-                difficulty = difficulty_match.group(1) if difficulty_match else "Medium"  # Default if not found
+                # Extract the equation and question text
+                lines = content.strip().split('\n')
+                equation_text = ""
                 
-                # Extract question text (simplistic approach, would need refinement)
-                question_text_match = re.search(r"Which of the following is equivalent to.*?\?", text[match.end():], re.DOTALL)
-                question_text = question_text_match.group(0) if question_text_match else ""
+                # First non-empty line after ID is often the equation
+                for line in lines:
+                    line = line.strip()
+                    if line and not line.startswith('A.') and not line.startswith('B.') and not line.startswith('C.') and not line.startswith('D.'):
+                        # Check if it looks like an equation/inequality
+                        if any(c in line for c in ['<', '>', '=', '+', '-', '*', '/']):
+                            equation_text = line
+                            break
                 
-                # Format math expressions in the question
-                question_text = format_math_expressions(question_text)
+                # Find the "Which of the following" question text
+                question_match = re.search(r'Which of the following[^?]+\?', content)
+                question_text = ""
                 
-                current_question = {
-                    "id": question_id_counter,
-                    "question_text": question_text,
-                    "image_url": None,  # Would need image extraction logic
-                    "difficulty": difficulty,
-                    "subject_id": subject_id,
-                    "subject": subject_name,
-                    "category_id": category_id,
-                    "category": category_name,
-                    "subcategory_id": subcategory_id,
-                    "subcategory": subcategory_name
-                }
+                if question_match:
+                    question_text = question_match.group(0).strip()
+                
+                # Combine equation and question text
+                full_question_text = ""
+                if equation_text:
+                    # Format equation with double dollar signs
+                    full_question_text += f"$${equation_text}$$\n"
+                if question_text:
+                    full_question_text += question_text
+                
+                # Extract the correct answer
+                correct_answer_match = re.search(r'Correct Answer:\s*([A-D])', question_block)
+                correct_answer = correct_answer_match.group(1) if correct_answer_match else None
                 
                 # Extract options (A, B, C, D)
-                option_matches = re.finditer(r"([A-D])\.\s+(.+?)(?=\n[A-D]\.|$)", text[match.end():], re.DOTALL)
-                for option_match in option_matches:
-                    option_value = option_match.group(1)  # A, B, C, D
-                    option_label = option_match.group(2).strip()
-                    
-                    # Format math expressions in the option
-                    option_label = format_math_expressions(option_label)
-                    
-                    # Determine if this is the correct answer
-                    # This would need to be adjusted based on how correct answers are marked in your PDFs
-                    is_correct_match = re.search(r"Correct Answer:\s+([A-D])", text)
-                    is_correct = False
-                    if is_correct_match and is_correct_match.group(1) == option_value:
-                        is_correct = True
-                    
-                    options.append({
-                        "id": option_id_counter,
-                        "question_id": question_id_counter,
-                        "value": option_value,
-                        "label": option_label,
-                        "is_correct": is_correct
-                    })
-                    option_id_counter += 1
+                option_labels = []
                 
-                question_id_counter += 1
+                for opt in ['A', 'B', 'C', 'D']:
+                    # Look for patterns like "A. x - y > 2" or "B. 2x - 3y > 4"
+                    opt_pattern = rf'{opt}\.\s+(.*?)(?=(?:[A-D]\.|Correct Answer:|Rationale|$))'
+                    opt_match = re.search(opt_pattern, content, re.DOTALL)
+                    
+                    if opt_match:
+                        # Clean up option text
+                        opt_text = opt_match.group(1).strip()
+                        # Remove line breaks and normalize whitespace
+                        opt_text = re.sub(r'\s+', ' ', opt_text).strip()
+                        # Format math expressions
+                        opt_text = format_math_expressions(opt_text)
+                        option_labels.append((opt, opt_text))
+                    else:
+                        logger.warning(f"Could not find option {opt} for question {question_id}")
+                        option_labels.append((opt, f"Option {opt} text not found"))
+                
+                # Create the question entry
+                if full_question_text:
+                    current_question = {
+                        "id": question_id_counter,
+                        "question_text": full_question_text,
+                        "image_url": None,
+                        "difficulty": difficulty,
+                        "subject_id": subject_id,
+                        "subject": subject_name,
+                        "category_id": category_id,
+                        "category": category_name,
+                        "subcategory_id": subcategory_id,
+                        "subcategory": subcategory_name
+                    }
+                    
+                    questions.append(current_question)
+                    
+                    # Create option entries
+                    for opt_value, opt_label in option_labels:
+                        is_correct = (correct_answer and opt_value == correct_answer)
+                        
+                        options.append({
+                            "id": option_id_counter,
+                            "question_id": question_id_counter,
+                            "value": opt_value,
+                            "label": opt_label,
+                            "is_correct": is_correct
+                        })
+                        option_id_counter += 1
+                    
+                    question_id_counter += 1
         
-        # Add the last question if there is one
-        if current_question:
-            questions.append(current_question)
+        # Close the document
+        doc.close()
             
     except Exception as e:
         error_msg = f"Error processing PDF {pdf_path}: {str(e)}"

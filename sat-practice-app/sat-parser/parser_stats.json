@@ -1,19 +1,19 @@
 {
-  "start_time": "2025-02-25T14:31:53.783709",
-  "end_time": "2025-02-25T14:32:18.578592",
+  "start_time": "2025-02-25T15:18:03.524965",
+  "end_time": "2025-02-25T15:18:08.895905",
   "total_pdfs_processed": 87,
   "total_pdfs_successful": 87,
   "total_pdfs_failed": 0,
-  "total_questions": 2803,
-  "total_options": 4183,
+  "total_questions": 933,
+  "total_options": 3732,
   "subjects": {
     "Math": {
       "categories": {
         "Advanced Math": {
           "subcategories": {
             "Nonlinear Equations and Systems": {
-              "total_questions": 120,
-              "total_options": 107,
+              "total_questions": 45,
+              "total_options": 180,
               "total_pdfs": 3,
               "pdf_files": [
                 "Nonlinear Equations and Systems 1~Key.pdf",
@@ -22,8 +22,8 @@
               ]
             },
             "Nonlinear Functions": {
-              "total_questions": 162,
-              "total_options": 184,
+              "total_questions": 54,
+              "total_options": 216,
               "total_pdfs": 3,
               "pdf_files": [
                 "Nonlinear Functions 2~Key.pdf",
@@ -32,8 +32,8 @@
               ]
             },
             "Equivalent Expressions": {
-              "total_questions": 118,
-              "total_options": 110,
+              "total_questions": 42,
+              "total_options": 168,
               "total_pdfs": 3,
               "pdf_files": [
                 "Equivalent Expressions 1~Key.pdf",
@@ -42,15 +42,15 @@
               ]
             }
           },
-          "total_questions": 400,
-          "total_options": 401,
+          "total_questions": 141,
+          "total_options": 564,
           "total_pdfs": 9
         },
         "Geometry and Trigonometry": {
           "subcategories": {
             "Area and Volume": {
-              "total_questions": 78,
-              "total_options": 78,
+              "total_questions": 14,
+              "total_options": 56,
               "total_pdfs": 3,
               "pdf_files": [
                 "Area and Volume 1~Key.pdf",
@@ -59,8 +59,8 @@
               ]
             },
             "Right Triangles and Trigonometry": {
-              "total_questions": 40,
-              "total_options": 21,
+              "total_questions": 10,
+              "total_options": 40,
               "total_pdfs": 3,
               "pdf_files": [
                 "Right Triangles and Trigonometry 2~Key.pdf",
@@ -69,8 +69,8 @@
               ]
             },
             "Lines, Angles, and Triangles": {
-              "total_questions": 74,
-              "total_options": 82,
+              "total_questions": 17,
+              "total_options": 68,
               "total_pdfs": 3,
               "pdf_files": [
                 "Lines, Angles, and Triangles 1~Key.pdf",
@@ -79,8 +79,8 @@
               ]
             },
             "Circles": {
-              "total_questions": 36,
-              "total_options": 29,
+              "total_questions": 12,
+              "total_options": 48,
               "total_pdfs": 3,
               "pdf_files": [
                 "Circles 2~Key.pdf",
@@ -89,15 +89,15 @@
               ]
             }
           },
-          "total_questions": 228,
-          "total_options": 210,
+          "total_questions": 53,
+          "total_options": 212,
           "total_pdfs": 12
         },
         "Problem-Solving and Data Analysis": {
           "subcategories": {
             "Ratios, Rates, Proportions, and Units": {
-              "total_questions": 102,
-              "total_options": 99,
+              "total_questions": 51,
+              "total_options": 204,
               "total_pdfs": 3,
               "pdf_files": [
                 "Ratios, Rates, Proportions, and Units 1~Key.pdf",
@@ -106,7 +106,7 @@
               ]
             },
             "Evaluating Statistical Claims": {
-              "total_questions": 20,
+              "total_questions": 10,
               "total_options": 40,
               "total_pdfs": 3,
               "pdf_files": [
@@ -116,8 +116,8 @@
               ]
             },
             "Percentages": {
-              "total_questions": 88,
-              "total_options": 107,
+              "total_questions": 44,
+              "total_options": 176,
               "total_pdfs": 3,
               "pdf_files": [
                 "Percentages 2~Key.pdf",
@@ -126,8 +126,8 @@
               ]
             },
             "One-Variable Data": {
-              "total_questions": 80,
-              "total_options": 131,
+              "total_questions": 40,
+              "total_options": 160,
               "total_pdfs": 3,
               "pdf_files": [
                 "One-Variable Data 2~Key.pdf",
@@ -136,8 +136,8 @@
               ]
             },
             "Sample Statistics and Margin of Error": {
-              "total_questions": 32,
-              "total_options": 52,
+              "total_questions": 16,
+              "total_options": 64,
               "total_pdfs": 3,
               "pdf_files": [
                 "Sample Statistics and Margin of Error 3~Key.pdf",
@@ -146,8 +146,8 @@
               ]
             },
             "Two-Variable Data": {
-              "total_questions": 79,
-              "total_options": 109,
+              "total_questions": 40,
+              "total_options": 160,
               "total_pdfs": 3,
               "pdf_files": [
                 "Two-Variable Data 1~Key.pdf",
@@ -156,8 +156,8 @@
               ]
             },
             "Probability": {
-              "total_questions": 64,
-              "total_options": 66,
+              "total_questions": 32,
+              "total_options": 128,
               "total_pdfs": 3,
               "pdf_files": [
                 "Probability 1~Key.pdf",
@@ -166,15 +166,15 @@
               ]
             }
           },
-          "total_questions": 465,
-          "total_options": 604,
+          "total_questions": 233,
+          "total_options": 932,
           "total_pdfs": 21
         },
         "Algebra": {
           "subcategories": {
             "Linear Equations in Two Variables": {
-              "total_questions": 116,
-              "total_options": 117,
+              "total_questions": 46,
+              "total_options": 184,
               "total_pdfs": 3,
               "pdf_files": [
                 "Linear Equations in Two Variables 1~Key.pdf",
@@ -183,8 +183,8 @@
               ]
             },
             "Systems of Linear Equations": {
-              "total_questions": 98,
-              "total_options": 92,
+              "total_questions": 32,
+              "total_options": 128,
               "total_pdfs": 3,
               "pdf_files": [
                 "Systems of Linear Equations 1~Key.pdf",
@@ -193,8 +193,8 @@
               ]
             },
             "Linear Inequalities": {
-              "total_questions": 66,
-              "total_options": 69,
+              "total_questions": 22,
+              "total_options": 88,
               "total_pdfs": 3,
               "pdf_files": [
                 "Linear Inequalities 3~Key.pdf",
@@ -203,8 +203,8 @@
               ]
             },
             "Linear Functions": {
-              "total_questions": 126,
-              "total_options": 146,
+              "total_questions": 42,
+              "total_options": 168,
               "total_pdfs": 3,
               "pdf_files": [
                 "Linear Functions 2~Key.pdf",
@@ -213,8 +213,8 @@
               ]
             },
             "Linear Equations in One Variable": {
-              "total_questions": 94,
-              "total_options": 103,
+              "total_questions": 28,
+              "total_options": 112,
               "total_pdfs": 3,
               "pdf_files": [
                 "Linear Equations in One Variable 1~Key.pdf",
@@ -223,13 +223,13 @@
               ]
             }
           },
-          "total_questions": 500,
-          "total_options": 527,
+          "total_questions": 170,
+          "total_options": 680,
           "total_pdfs": 15
         }
       },
-      "total_questions": 1593,
-      "total_options": 1742,
+      "total_questions": 597,
+      "total_options": 2388,
       "total_pdfs": 57
     },
     "Reading & Writing": {
@@ -237,8 +237,8 @@
         "Expression of Ideas": {
           "subcategories": {
             "Rhetorical Synthesis": {
-              "total_questions": 128,
-              "total_options": 258,
+              "total_questions": 28,
+              "total_options": 112,
               "total_pdfs": 3,
               "pdf_files": [
                 "Rhetorical Synthesis 1~Key.pdf",
@@ -247,8 +247,8 @@
               ]
             },
             "Transitions": {
-              "total_questions": 114,
-              "total_options": 228,
+              "total_questions": 28,
+              "total_options": 112,
               "total_pdfs": 3,
               "pdf_files": [
                 "Transitions 2~Key.pdf",
@@ -257,15 +257,15 @@
               ]
             }
           },
-          "total_questions": 242,
-          "total_options": 486,
+          "total_questions": 56,
+          "total_options": 224,
           "total_pdfs": 6
         },
         "Standard English Conventions": {
           "subcategories": {
             "Form, Structure, and Sense": {
-              "total_questions": 124,
-              "total_options": 251,
+              "total_questions": 43,
+              "total_options": 172,
               "total_pdfs": 3,
               "pdf_files": [
                 "Form, Structure, and Sense 1~Key.pdf",
@@ -274,8 +274,8 @@
               ]
             },
             "Boundaries": {
-              "total_questions": 132,
-              "total_options": 265,
+              "total_questions": 39,
+              "total_options": 156,
               "total_pdfs": 3,
               "pdf_files": [
                 "Boundaries 1~Key.pdf",
@@ -284,15 +284,15 @@
               ]
             }
           },
-          "total_questions": 256,
-          "total_options": 516,
+          "total_questions": 82,
+          "total_options": 328,
           "total_pdfs": 6
         },
         "Information and Ideas": {
           "subcategories": {
             "Central Ideas and Details": {
-              "total_questions": 98,
-              "total_options": 202,
+              "total_questions": 30,
+              "total_options": 120,
               "total_pdfs": 3,
               "pdf_files": [
                 "Central Ideas and Details 1~Key.pdf",
@@ -301,8 +301,8 @@
               ]
             },
             "Inferences": {
-              "total_questions": 106,
-              "total_options": 218,
+              "total_questions": 32,
+              "total_options": 128,
               "total_pdfs": 3,
               "pdf_files": [
                 "Inferences 1~Key.pdf",
@@ -311,8 +311,8 @@
               ]
             },
             "Command of Evidence": {
-              "total_questions": 192,
-              "total_options": 377,
+              "total_questions": 51,
+              "total_options": 204,
               "total_pdfs": 3,
               "pdf_files": [
                 "Command of Evidence 1~Key.pdf",
@@ -321,15 +321,15 @@
               ]
             }
           },
-          "total_questions": 396,
-          "total_options": 797,
+          "total_questions": 113,
+          "total_options": 452,
           "total_pdfs": 9
         },
         "Craft and Structure": {
           "subcategories": {
             "Cross-Text Connections": {
-              "total_questions": 76,
-              "total_options": 156,
+              "total_questions": 38,
+              "total_options": 152,
               "total_pdfs": 3,
               "pdf_files": [
                 "Cross-Text Connections 3~Key.pdf",
@@ -338,8 +338,8 @@
               ]
             },
             "Text, Structure, and Purpose": {
-              "total_questions": 102,
-              "total_options": 205,
+              "total_questions": 26,
+              "total_options": 104,
               "total_pdfs": 3,
               "pdf_files": [
                 "Text, Structure, and Purpose 2~Key.pdf",
@@ -348,8 +348,8 @@
               ]
             },
             "Words in Context": {
-              "total_questions": 138,
-              "total_options": 281,
+              "total_questions": 21,
+              "total_options": 84,
               "total_pdfs": 3,
               "pdf_files": [
                 "Words in Context 1~Key.pdf",
@@ -358,13 +358,13 @@
               ]
             }
           },
-          "total_questions": 316,
-          "total_options": 642,
+          "total_questions": 85,
+          "total_options": 340,
           "total_pdfs": 9
         }
       },
-      "total_questions": 1210,
-      "total_options": 2441,
+      "total_questions": 336,
+      "total_options": 1344,
       "total_pdfs": 30
     }
   },
@@ -375,10 +375,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Equations and Systems 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 28,
-      "options_extracted": 27,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 229.022,
+      "processing_time_ms": 76.049,
       "subcategory": "Nonlinear Equations and Systems"
     },
     {
@@ -387,10 +387,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Functions 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 54,
-      "options_extracted": 76,
+      "questions_extracted": 16,
+      "options_extracted": 64,
       "errors": [],
-      "processing_time_ms": 583.203,
+      "processing_time_ms": 103.38300000000001,
       "subcategory": "Nonlinear Functions"
     },
     {
@@ -399,10 +399,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Functions 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 68,
-      "options_extracted": 62,
+      "questions_extracted": 25,
+      "options_extracted": 100,
       "errors": [],
-      "processing_time_ms": 1487.59,
+      "processing_time_ms": 151.558,
       "subcategory": "Nonlinear Functions"
     },
     {
@@ -411,10 +411,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Functions 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 40,
-      "options_extracted": 46,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 601.523,
+      "processing_time_ms": 85.021,
       "subcategory": "Nonlinear Functions"
     },
     {
@@ -423,10 +423,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Equations and Systems 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 48,
-      "options_extracted": 50,
+      "questions_extracted": 21,
+      "options_extracted": 84,
       "errors": [],
-      "processing_time_ms": 182.841,
+      "processing_time_ms": 98.89399999999999,
       "subcategory": "Nonlinear Equations and Systems"
     },
     {
@@ -435,10 +435,10 @@
       "category": "Advanced Math",
       "filename": "Nonlinear Equations and Systems 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 44,
-      "options_extracted": 30,
+      "questions_extracted": 15,
+      "options_extracted": 60,
       "errors": [],
-      "processing_time_ms": 433.694,
+      "processing_time_ms": 80.136,
       "subcategory": "Nonlinear Equations and Systems"
     },
     {
@@ -447,10 +447,10 @@
       "category": "Advanced Math",
       "filename": "Equivalent Expressions 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 36,
-      "options_extracted": 39,
+      "questions_extracted": 11,
+      "options_extracted": 44,
       "errors": [],
-      "processing_time_ms": 347.16200000000003,
+      "processing_time_ms": 70.081,
       "subcategory": "Equivalent Expressions"
     },
     {
@@ -459,10 +459,10 @@
       "category": "Advanced Math",
       "filename": "Equivalent Expressions 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 46,
-      "options_extracted": 42,
+      "questions_extracted": 17,
+      "options_extracted": 68,
       "errors": [],
-      "processing_time_ms": 359.84,
+      "processing_time_ms": 80.953,
       "subcategory": "Equivalent Expressions"
     },
     {
@@ -471,10 +471,10 @@
       "category": "Advanced Math",
       "filename": "Equivalent Expressions 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 36,
-      "options_extracted": 29,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 370.687,
+      "processing_time_ms": 53.612,
       "subcategory": "Equivalent Expressions"
     },
     {
@@ -483,10 +483,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Area and Volume 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 24,
+      "questions_extracted": 2,
+      "options_extracted": 8,
       "errors": [],
-      "processing_time_ms": 356.009,
+      "processing_time_ms": 53.074999999999996,
       "subcategory": "Area and Volume"
     },
     {
@@ -495,10 +495,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Right Triangles and Trigonometry 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 12,
-      "options_extracted": 11,
+      "questions_extracted": 2,
+      "options_extracted": 8,
       "errors": [],
-      "processing_time_ms": 154.506,
+      "processing_time_ms": 27.912,
       "subcategory": "Right Triangles and Trigonometry"
     },
     {
@@ -507,10 +507,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Right Triangles and Trigonometry 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 8,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 494.108,
+      "processing_time_ms": 65.293,
       "subcategory": "Right Triangles and Trigonometry"
     },
     {
@@ -519,10 +519,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Right Triangles and Trigonometry 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 2,
-      "options_extracted": 2,
+      "questions_extracted": 1,
+      "options_extracted": 4,
       "errors": [],
-      "processing_time_ms": 17.74,
+      "processing_time_ms": 8.481,
       "subcategory": "Right Triangles and Trigonometry"
     },
     {
@@ -531,10 +531,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Area and Volume 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 27,
+      "questions_extracted": 5,
+      "options_extracted": 20,
       "errors": [],
-      "processing_time_ms": 204.996,
+      "processing_time_ms": 57.408,
       "subcategory": "Area and Volume"
     },
     {
@@ -543,10 +543,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Area and Volume 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 28,
-      "options_extracted": 27,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 695.465,
+      "processing_time_ms": 67.29599999999999,
       "subcategory": "Area and Volume"
     },
     {
@@ -555,10 +555,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Lines, Angles, and Triangles 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 54,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 194.98399999999998,
+      "processing_time_ms": 47.809999999999995,
       "subcategory": "Lines, Angles, and Triangles"
     },
     {
@@ -567,10 +567,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Circles 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 10,
-      "options_extracted": 6,
+      "questions_extracted": 4,
+      "options_extracted": 16,
       "errors": [],
-      "processing_time_ms": 210.186,
+      "processing_time_ms": 34.179,
       "subcategory": "Circles"
     },
     {
@@ -579,10 +579,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Circles 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 19,
+      "questions_extracted": 8,
+      "options_extracted": 32,
       "errors": [],
-      "processing_time_ms": 329.227,
+      "processing_time_ms": 48.901,
       "subcategory": "Circles"
     },
     {
@@ -591,10 +591,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Circles 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 2,
-      "options_extracted": 4,
+      "questions_extracted": 0,
+      "options_extracted": 0,
       "errors": [],
-      "processing_time_ms": 10.024,
+      "processing_time_ms": 19.768,
       "subcategory": "Circles"
     },
     {
@@ -603,10 +603,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Lines, Angles, and Triangles 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 18,
-      "options_extracted": 18,
+      "questions_extracted": 4,
+      "options_extracted": 16,
       "errors": [],
-      "processing_time_ms": 252.58799999999997,
+      "processing_time_ms": 36.103,
       "subcategory": "Lines, Angles, and Triangles"
     },
     {
@@ -615,10 +615,10 @@
       "category": "Geometry and Trigonometry",
       "filename": "Lines, Angles, and Triangles 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 10,
+      "questions_extracted": 6,
+      "options_extracted": 24,
       "errors": [],
-      "processing_time_ms": 606.139,
+      "processing_time_ms": 65.04,
       "subcategory": "Lines, Angles, and Triangles"
     },
     {
@@ -627,10 +627,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Ratios, Rates, Proportions, and Units 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 44,
-      "options_extracted": 52,
+      "questions_extracted": 22,
+      "options_extracted": 88,
       "errors": [],
-      "processing_time_ms": 424.206,
+      "processing_time_ms": 79.001,
       "subcategory": "Ratios, Rates, Proportions, and Units"
     },
     {
@@ -639,10 +639,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Evaluating Statistical Claims 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 10,
+      "questions_extracted": 5,
       "options_extracted": 20,
       "errors": [],
-      "processing_time_ms": 76.589,
+      "processing_time_ms": 27.036,
       "subcategory": "Evaluating Statistical Claims"
     },
     {
@@ -651,10 +651,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Percentages 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 34,
+      "questions_extracted": 12,
+      "options_extracted": 48,
       "errors": [],
-      "processing_time_ms": 252.92,
+      "processing_time_ms": 47.848,
       "subcategory": "Percentages"
     },
     {
@@ -663,10 +663,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "One-Variable Data 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 36,
+      "questions_extracted": 12,
+      "options_extracted": 48,
       "errors": [],
-      "processing_time_ms": 89.244,
+      "processing_time_ms": 51.659,
       "subcategory": "One-Variable Data"
     },
     {
@@ -675,10 +675,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Percentages 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 32,
-      "options_extracted": 22,
+      "questions_extracted": 16,
+      "options_extracted": 64,
       "errors": [],
-      "processing_time_ms": 657.3820000000001,
+      "processing_time_ms": 76.987,
       "subcategory": "Percentages"
     },
     {
@@ -687,10 +687,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Evaluating Statistical Claims 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 6,
+      "questions_extracted": 3,
       "options_extracted": 12,
       "errors": [],
-      "processing_time_ms": 38.056,
+      "processing_time_ms": 22.924,
       "subcategory": "Evaluating Statistical Claims"
     },
     {
@@ -699,10 +699,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "One-Variable Data 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 41,
+      "questions_extracted": 12,
+      "options_extracted": 48,
       "errors": [],
-      "processing_time_ms": 161.967,
+      "processing_time_ms": 62.196,
       "subcategory": "One-Variable Data"
     },
     {
@@ -711,10 +711,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Percentages 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 32,
-      "options_extracted": 51,
+      "questions_extracted": 16,
+      "options_extracted": 64,
       "errors": [],
-      "processing_time_ms": 267.595,
+      "processing_time_ms": 55.004,
       "subcategory": "Percentages"
     },
     {
@@ -723,10 +723,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "One-Variable Data 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 32,
-      "options_extracted": 54,
+      "questions_extracted": 16,
+      "options_extracted": 64,
       "errors": [],
-      "processing_time_ms": 160.806,
+      "processing_time_ms": 52.855,
       "subcategory": "One-Variable Data"
     },
     {
@@ -735,10 +735,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Ratios, Rates, Proportions, and Units 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 44,
-      "options_extracted": 33,
+      "questions_extracted": 22,
+      "options_extracted": 88,
       "errors": [],
-      "processing_time_ms": 521.544,
+      "processing_time_ms": 92.27499999999999,
       "subcategory": "Ratios, Rates, Proportions, and Units"
     },
     {
@@ -747,10 +747,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Ratios, Rates, Proportions, and Units 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 14,
-      "options_extracted": 14,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 221.25,
+      "processing_time_ms": 53.589999999999996,
       "subcategory": "Ratios, Rates, Proportions, and Units"
     },
     {
@@ -759,10 +759,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Evaluating Statistical Claims 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 4,
+      "questions_extracted": 2,
       "options_extracted": 8,
       "errors": [],
-      "processing_time_ms": 22.484,
+      "processing_time_ms": 20.611,
       "subcategory": "Evaluating Statistical Claims"
     },
     {
@@ -771,10 +771,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Sample Statistics and Margin of Error 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 8,
-      "options_extracted": 12,
+      "questions_extracted": 4,
+      "options_extracted": 16,
       "errors": [],
-      "processing_time_ms": 52.266,
+      "processing_time_ms": 32.978,
       "subcategory": "Sample Statistics and Margin of Error"
     },
     {
@@ -783,10 +783,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Two-Variable Data 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 37,
-      "options_extracted": 57,
+      "questions_extracted": 19,
+      "options_extracted": 76,
       "errors": [],
-      "processing_time_ms": 334.246,
+      "processing_time_ms": 54.605000000000004,
       "subcategory": "Two-Variable Data"
     },
     {
@@ -795,10 +795,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Probability 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 34,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 120.47099999999999,
+      "processing_time_ms": 47.665,
       "subcategory": "Probability"
     },
     {
@@ -807,10 +807,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Sample Statistics and Margin of Error 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 12,
-      "options_extracted": 18,
+      "questions_extracted": 6,
+      "options_extracted": 24,
       "errors": [],
-      "processing_time_ms": 92.848,
+      "processing_time_ms": 29.856,
       "subcategory": "Sample Statistics and Margin of Error"
     },
     {
@@ -819,10 +819,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Two-Variable Data 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 33,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 276.947,
+      "processing_time_ms": 53.313,
       "subcategory": "Two-Variable Data"
     },
     {
@@ -831,10 +831,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Probability 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 14,
-      "options_extracted": 10,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 118.48899999999999,
+      "processing_time_ms": 42.44499999999999,
       "subcategory": "Probability"
     },
     {
@@ -843,10 +843,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Sample Statistics and Margin of Error 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 12,
-      "options_extracted": 22,
+      "questions_extracted": 6,
+      "options_extracted": 24,
       "errors": [],
-      "processing_time_ms": 57.355000000000004,
+      "processing_time_ms": 30.131,
       "subcategory": "Sample Statistics and Margin of Error"
     },
     {
@@ -855,10 +855,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Probability 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 22,
+      "questions_extracted": 12,
+      "options_extracted": 48,
       "errors": [],
-      "processing_time_ms": 178.094,
+      "processing_time_ms": 43.727000000000004,
       "subcategory": "Probability"
     },
     {
@@ -867,10 +867,10 @@
       "category": "Problem-Solving and Data Analysis",
       "filename": "Two-Variable Data 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 16,
-      "options_extracted": 19,
+      "questions_extracted": 8,
+      "options_extracted": 32,
       "errors": [],
-      "processing_time_ms": 125.007,
+      "processing_time_ms": 43.63,
       "subcategory": "Two-Variable Data"
     },
     {
@@ -879,10 +879,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in Two Variables 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 58,
-      "options_extracted": 68,
+      "questions_extracted": 18,
+      "options_extracted": 72,
       "errors": [],
-      "processing_time_ms": 873.1510000000001,
+      "processing_time_ms": 98.3,
       "subcategory": "Linear Equations in Two Variables"
     },
     {
@@ -891,10 +891,10 @@
       "category": "Algebra",
       "filename": "Systems of Linear Equations 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 38,
-      "options_extracted": 44,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 341.45,
+      "processing_time_ms": 53.959,
       "subcategory": "Systems of Linear Equations"
     },
     {
@@ -903,10 +903,10 @@
       "category": "Algebra",
       "filename": "Linear Inequalities 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
-      "options_extracted": 20,
+      "questions_extracted": 8,
+      "options_extracted": 32,
       "errors": [],
-      "processing_time_ms": 263.51099999999997,
+      "processing_time_ms": 45.174,
       "subcategory": "Linear Inequalities"
     },
     {
@@ -915,10 +915,10 @@
       "category": "Algebra",
       "filename": "Linear Inequalities 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
-      "options_extracted": 26,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 177.601,
+      "processing_time_ms": 44.73,
       "subcategory": "Linear Inequalities"
     },
     {
@@ -927,10 +927,10 @@
       "category": "Algebra",
       "filename": "Systems of Linear Equations 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 30,
+      "questions_extracted": 10,
+      "options_extracted": 40,
       "errors": [],
-      "processing_time_ms": 255.68999999999997,
+      "processing_time_ms": 46.498999999999995,
       "subcategory": "Systems of Linear Equations"
     },
     {
@@ -939,10 +939,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in Two Variables 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 27,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 556.3770000000001,
+      "processing_time_ms": 72.363,
       "subcategory": "Linear Equations in Two Variables"
     },
     {
@@ -951,10 +951,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in Two Variables 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 28,
-      "options_extracted": 22,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 217.088,
+      "processing_time_ms": 57.464,
       "subcategory": "Linear Equations in Two Variables"
     },
     {
@@ -963,10 +963,10 @@
       "category": "Algebra",
       "filename": "Linear Inequalities 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
-      "options_extracted": 23,
+      "questions_extracted": 5,
+      "options_extracted": 20,
       "errors": [],
-      "processing_time_ms": 173.361,
+      "processing_time_ms": 44.784,
       "subcategory": "Linear Inequalities"
     },
     {
@@ -975,10 +975,10 @@
       "category": "Algebra",
       "filename": "Systems of Linear Equations 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 18,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 380.282,
+      "processing_time_ms": 59.555,
       "subcategory": "Systems of Linear Equations"
     },
     {
@@ -987,10 +987,10 @@
       "category": "Algebra",
       "filename": "Linear Functions 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 44,
-      "options_extracted": 43,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 708.766,
+      "processing_time_ms": 78.007,
       "subcategory": "Linear Functions"
     },
     {
@@ -999,10 +999,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in One Variable 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 48,
-      "options_extracted": 48,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 346.40900000000005,
+      "processing_time_ms": 54.417,
       "subcategory": "Linear Equations in One Variable"
     },
     {
@@ -1011,10 +1011,10 @@
       "category": "Algebra",
       "filename": "Linear Functions 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 20,
-      "options_extracted": 25,
+      "questions_extracted": 6,
+      "options_extracted": 24,
       "errors": [],
-      "processing_time_ms": 290.53299999999996,
+      "processing_time_ms": 47.830999999999996,
       "subcategory": "Linear Functions"
     },
     {
@@ -1023,10 +1023,10 @@
       "category": "Algebra",
       "filename": "Linear Functions 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 62,
-      "options_extracted": 78,
+      "questions_extracted": 22,
+      "options_extracted": 88,
       "errors": [],
-      "processing_time_ms": 759.2149999999999,
+      "processing_time_ms": 88.162,
       "subcategory": "Linear Functions"
     },
     {
@@ -1035,10 +1035,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in One Variable 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 28,
+      "questions_extracted": 10,
+      "options_extracted": 40,
       "errors": [],
-      "processing_time_ms": 172.16,
+      "processing_time_ms": 36.833,
       "subcategory": "Linear Equations in One Variable"
     },
     {
@@ -1047,10 +1047,10 @@
       "category": "Algebra",
       "filename": "Linear Equations in One Variable 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
-      "options_extracted": 27,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 324.156,
+      "processing_time_ms": 54.534,
       "subcategory": "Linear Equations in One Variable"
     },
     {
@@ -1059,10 +1059,10 @@
       "category": "Expression of Ideas",
       "filename": "Rhetorical Synthesis 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 32,
-      "options_extracted": 64,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 206.559,
+      "processing_time_ms": 74.672,
       "subcategory": "Rhetorical Synthesis"
     },
     {
@@ -1071,10 +1071,10 @@
       "category": "Expression of Ideas",
       "filename": "Transitions 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 52,
+      "questions_extracted": 5,
+      "options_extracted": 20,
       "errors": [],
-      "processing_time_ms": 103.507,
+      "processing_time_ms": 55.499,
       "subcategory": "Transitions"
     },
     {
@@ -1083,10 +1083,10 @@
       "category": "Expression of Ideas",
       "filename": "Transitions 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 60,
+      "questions_extracted": 10,
+      "options_extracted": 40,
       "errors": [],
-      "processing_time_ms": 121.78999999999999,
+      "processing_time_ms": 61.071,
       "subcategory": "Transitions"
     },
     {
@@ -1095,10 +1095,10 @@
       "category": "Expression of Ideas",
       "filename": "Rhetorical Synthesis 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 70,
-      "options_extracted": 142,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 391.61899999999997,
+      "processing_time_ms": 105.697,
       "subcategory": "Rhetorical Synthesis"
     },
     {
@@ -1107,10 +1107,10 @@
       "category": "Expression of Ideas",
       "filename": "Transitions 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 58,
-      "options_extracted": 116,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 197.773,
+      "processing_time_ms": 76.871,
       "subcategory": "Transitions"
     },
     {
@@ -1119,10 +1119,10 @@
       "category": "Expression of Ideas",
       "filename": "Rhetorical Synthesis 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 52,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 187.469,
+      "processing_time_ms": 46.07,
       "subcategory": "Rhetorical Synthesis"
     },
     {
@@ -1131,10 +1131,10 @@
       "category": "Standard English Conventions",
       "filename": "Form, Structure, and Sense 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 70,
-      "options_extracted": 143,
+      "questions_extracted": 24,
+      "options_extracted": 96,
       "errors": [],
-      "processing_time_ms": 219.071,
+      "processing_time_ms": 66.69500000000001,
       "subcategory": "Form, Structure, and Sense"
     },
     {
@@ -1143,10 +1143,10 @@
       "category": "Standard English Conventions",
       "filename": "Form, Structure, and Sense 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 28,
-      "options_extracted": 56,
+      "questions_extracted": 10,
+      "options_extracted": 40,
       "errors": [],
-      "processing_time_ms": 111.864,
+      "processing_time_ms": 42.22,
       "subcategory": "Form, Structure, and Sense"
     },
     {
@@ -1155,10 +1155,10 @@
       "category": "Standard English Conventions",
       "filename": "Form, Structure, and Sense 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 52,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 95.497,
+      "processing_time_ms": 39.833,
       "subcategory": "Form, Structure, and Sense"
     },
     {
@@ -1167,10 +1167,10 @@
       "category": "Standard English Conventions",
       "filename": "Boundaries 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 56,
-      "options_extracted": 112,
+      "questions_extracted": 11,
+      "options_extracted": 44,
       "errors": [],
-      "processing_time_ms": 167.689,
+      "processing_time_ms": 58.151,
       "subcategory": "Boundaries"
     },
     {
@@ -1179,10 +1179,10 @@
       "category": "Standard English Conventions",
       "filename": "Boundaries 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 36,
-      "options_extracted": 72,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 134.18099999999998,
+      "processing_time_ms": 50.528999999999996,
       "subcategory": "Boundaries"
     },
     {
@@ -1191,10 +1191,10 @@
       "category": "Standard English Conventions",
       "filename": "Boundaries 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 40,
-      "options_extracted": 81,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 129.962,
+      "processing_time_ms": 50.403999999999996,
       "subcategory": "Boundaries"
     },
     {
@@ -1203,10 +1203,10 @@
       "category": "Information and Ideas",
       "filename": "Central Ideas and Details 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 61,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 178.231,
+      "processing_time_ms": 52.653,
       "subcategory": "Central Ideas and Details"
     },
     {
@@ -1215,10 +1215,10 @@
       "category": "Information and Ideas",
       "filename": "Central Ideas and Details 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 42,
-      "options_extracted": 88,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 220.022,
+      "processing_time_ms": 64.578,
       "subcategory": "Central Ideas and Details"
     },
     {
@@ -1227,10 +1227,10 @@
       "category": "Information and Ideas",
       "filename": "Central Ideas and Details 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 53,
+      "questions_extracted": 8,
+      "options_extracted": 32,
       "errors": [],
-      "processing_time_ms": 168.033,
+      "processing_time_ms": 49.946999999999996,
       "subcategory": "Central Ideas and Details"
     },
     {
@@ -1239,10 +1239,10 @@
       "category": "Information and Ideas",
       "filename": "Inferences 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 28,
-      "options_extracted": 56,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 171.298,
+      "processing_time_ms": 50.651,
       "subcategory": "Inferences"
     },
     {
@@ -1251,10 +1251,10 @@
       "category": "Information and Ideas",
       "filename": "Command of Evidence 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 70,
-      "options_extracted": 140,
+      "questions_extracted": 17,
+      "options_extracted": 68,
       "errors": [],
-      "processing_time_ms": 429.87199999999996,
+      "processing_time_ms": 109.411,
       "subcategory": "Command of Evidence"
     },
     {
@@ -1263,10 +1263,10 @@
       "category": "Information and Ideas",
       "filename": "Inferences 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 34,
-      "options_extracted": 69,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 201.596,
+      "processing_time_ms": 59.317,
       "subcategory": "Inferences"
     },
     {
@@ -1275,10 +1275,10 @@
       "category": "Information and Ideas",
       "filename": "Command of Evidence 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 54,
-      "options_extracted": 105,
+      "questions_extracted": 17,
+      "options_extracted": 68,
       "errors": [],
-      "processing_time_ms": 446.51,
+      "processing_time_ms": 100.84,
       "subcategory": "Command of Evidence"
     },
     {
@@ -1287,10 +1287,10 @@
       "category": "Information and Ideas",
       "filename": "Inferences 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 44,
-      "options_extracted": 93,
+      "questions_extracted": 14,
+      "options_extracted": 56,
       "errors": [],
-      "processing_time_ms": 277.19,
+      "processing_time_ms": 75.85600000000001,
       "subcategory": "Inferences"
     },
     {
@@ -1299,10 +1299,10 @@
       "category": "Information and Ideas",
       "filename": "Command of Evidence 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 68,
-      "options_extracted": 132,
+      "questions_extracted": 17,
+      "options_extracted": 68,
       "errors": [],
-      "processing_time_ms": 572.712,
+      "processing_time_ms": 112.053,
       "subcategory": "Command of Evidence"
     },
     {
@@ -1311,10 +1311,10 @@
       "category": "Craft and Structure",
       "filename": "Cross-Text Connections 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 24,
-      "options_extracted": 51,
+      "questions_extracted": 12,
+      "options_extracted": 48,
       "errors": [],
-      "processing_time_ms": 232.976,
+      "processing_time_ms": 80.898,
       "subcategory": "Cross-Text Connections"
     },
     {
@@ -1323,10 +1323,10 @@
       "category": "Craft and Structure",
       "filename": "Cross-Text Connections 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
+      "questions_extracted": 11,
       "options_extracted": 44,
       "errors": [],
-      "processing_time_ms": 186.82000000000002,
+      "processing_time_ms": 72.135,
       "subcategory": "Cross-Text Connections"
     },
     {
@@ -1335,10 +1335,10 @@
       "category": "Craft and Structure",
       "filename": "Cross-Text Connections 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 30,
-      "options_extracted": 61,
+      "questions_extracted": 15,
+      "options_extracted": 60,
       "errors": [],
-      "processing_time_ms": 245.06,
+      "processing_time_ms": 87.684,
       "subcategory": "Cross-Text Connections"
     },
     {
@@ -1347,10 +1347,10 @@
       "category": "Craft and Structure",
       "filename": "Text, Structure, and Purpose 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 40,
-      "options_extracted": 80,
+      "questions_extracted": 9,
+      "options_extracted": 36,
       "errors": [],
-      "processing_time_ms": 239.363,
+      "processing_time_ms": 89.86,
       "subcategory": "Text, Structure, and Purpose"
     },
     {
@@ -1359,10 +1359,10 @@
       "category": "Craft and Structure",
       "filename": "Words in Context 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 90,
-      "options_extracted": 183,
+      "questions_extracted": 13,
+      "options_extracted": 52,
       "errors": [],
-      "processing_time_ms": 337.852,
+      "processing_time_ms": 116.78,
       "subcategory": "Words in Context"
     },
     {
@@ -1371,10 +1371,10 @@
       "category": "Craft and Structure",
       "filename": "Text, Structure, and Purpose 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 52,
+      "questions_extracted": 10,
+      "options_extracted": 40,
       "errors": [],
-      "processing_time_ms": 174.568,
+      "processing_time_ms": 74.198,
       "subcategory": "Text, Structure, and Purpose"
     },
     {
@@ -1383,10 +1383,10 @@
       "category": "Craft and Structure",
       "filename": "Words in Context 3~Key.pdf",
       "status": "success",
-      "questions_extracted": 22,
-      "options_extracted": 46,
+      "questions_extracted": 2,
+      "options_extracted": 8,
       "errors": [],
-      "processing_time_ms": 103.685,
+      "processing_time_ms": 63.08800000000001,
       "subcategory": "Words in Context"
     },
     {
@@ -1395,10 +1395,10 @@
       "category": "Craft and Structure",
       "filename": "Text, Structure, and Purpose 1~Key.pdf",
       "status": "success",
-      "questions_extracted": 36,
-      "options_extracted": 73,
+      "questions_extracted": 7,
+      "options_extracted": 28,
       "errors": [],
-      "processing_time_ms": 208.468,
+      "processing_time_ms": 80.388,
       "subcategory": "Text, Structure, and Purpose"
     },
     {
@@ -1407,10 +1407,10 @@
       "category": "Craft and Structure",
       "filename": "Words in Context 2~Key.pdf",
       "status": "success",
-      "questions_extracted": 26,
-      "options_extracted": 52,
+      "questions_extracted": 6,
+      "options_extracted": 24,
       "errors": [],
-      "processing_time_ms": 113.71100000000001,
+      "processing_time_ms": 60.815,
       "subcategory": "Words in Context"
     }
   ],
@@ -1420,8 +1420,8 @@
       "category": "Advanced Math",
       "subcategory": "Nonlinear Equations and Systems",
       "total_pdfs": 3,
-      "total_questions": 120,
-      "total_options": 107,
+      "total_questions": 45,
+      "total_options": 180,
       "pdf_files": [
         "Nonlinear Equations and Systems 1~Key.pdf",
         "Nonlinear Equations and Systems 2~Key.pdf",
@@ -1433,8 +1433,8 @@
       "category": "Advanced Math",
       "subcategory": "Nonlinear Functions",
       "total_pdfs": 3,
-      "total_questions": 162,
-      "total_options": 184,
+      "total_questions": 54,
+      "total_options": 216,
       "pdf_files": [
         "Nonlinear Functions 2~Key.pdf",
         "Nonlinear Functions 3~Key.pdf",
@@ -1446,8 +1446,8 @@
       "category": "Advanced Math",
       "subcategory": "Equivalent Expressions",
       "total_pdfs": 3,
-      "total_questions": 118,
-      "total_options": 110,
+      "total_questions": 42,
+      "total_options": 168,
       "pdf_files": [
         "Equivalent Expressions 1~Key.pdf",
         "Equivalent Expressions 2~Key.pdf",
@@ -1459,8 +1459,8 @@
       "category": "Geometry and Trigonometry",
       "subcategory": "Area and Volume",
       "total_pdfs": 3,
-      "total_questions": 78,
-      "total_options": 78,
+      "total_questions": 14,
+      "total_options": 56,
       "pdf_files": [
         "Area and Volume 1~Key.pdf",
         "Area and Volume 2~Key.pdf",
@@ -1472,8 +1472,8 @@
       "category": "Geometry and Trigonometry",
       "subcategory": "Right Triangles and Trigonometry",
       "total_pdfs": 3,
-      "total_questions": 40,
-      "total_options": 21,
+      "total_questions": 10,
+      "total_options": 40,
       "pdf_files": [
         "Right Triangles and Trigonometry 2~Key.pdf",
         "Right Triangles and Trigonometry 3~Key.pdf",
@@ -1485,8 +1485,8 @@
       "category": "Geometry and Trigonometry",
       "subcategory": "Lines, Angles, and Triangles",
       "total_pdfs": 3,
-      "total_questions": 74,
-      "total_options": 82,
+      "total_questions": 17,
+      "total_options": 68,
       "pdf_files": [
         "Lines, Angles, and Triangles 1~Key.pdf",
         "Lines, Angles, and Triangles 2~Key.pdf",
@@ -1498,8 +1498,8 @@
       "category": "Geometry and Trigonometry",
       "subcategory": "Circles",
       "total_pdfs": 3,
-      "total_questions": 36,
-      "total_options": 29,
+      "total_questions": 12,
+      "total_options": 48,
       "pdf_files": [
         "Circles 2~Key.pdf",
         "Circles 3~Key.pdf",
@@ -1511,8 +1511,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Ratios, Rates, Proportions, and Units",
       "total_pdfs": 3,
-      "total_questions": 102,
-      "total_options": 99,
+      "total_questions": 51,
+      "total_options": 204,
       "pdf_files": [
         "Ratios, Rates, Proportions, and Units 1~Key.pdf",
         "Ratios, Rates, Proportions, and Units 2~Key.pdf",
@@ -1524,7 +1524,7 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Evaluating Statistical Claims",
       "total_pdfs": 3,
-      "total_questions": 20,
+      "total_questions": 10,
       "total_options": 40,
       "pdf_files": [
         "Evaluating Statistical Claims 3~Key.pdf",
@@ -1537,8 +1537,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Percentages",
       "total_pdfs": 3,
-      "total_questions": 88,
-      "total_options": 107,
+      "total_questions": 44,
+      "total_options": 176,
       "pdf_files": [
         "Percentages 2~Key.pdf",
         "Percentages 3~Key.pdf",
@@ -1550,8 +1550,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "One-Variable Data",
       "total_pdfs": 3,
-      "total_questions": 80,
-      "total_options": 131,
+      "total_questions": 40,
+      "total_options": 160,
       "pdf_files": [
         "One-Variable Data 2~Key.pdf",
         "One-Variable Data 3~Key.pdf",
@@ -1563,8 +1563,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Sample Statistics and Margin of Error",
       "total_pdfs": 3,
-      "total_questions": 32,
-      "total_options": 52,
+      "total_questions": 16,
+      "total_options": 64,
       "pdf_files": [
         "Sample Statistics and Margin of Error 3~Key.pdf",
         "Sample Statistics and Margin of Error 2~Key.pdf",
@@ -1576,8 +1576,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Two-Variable Data",
       "total_pdfs": 3,
-      "total_questions": 79,
-      "total_options": 109,
+      "total_questions": 40,
+      "total_options": 160,
       "pdf_files": [
         "Two-Variable Data 1~Key.pdf",
         "Two-Variable Data 2~Key.pdf",
@@ -1589,8 +1589,8 @@
       "category": "Problem-Solving and Data Analysis",
       "subcategory": "Probability",
       "total_pdfs": 3,
-      "total_questions": 64,
-      "total_options": 66,
+      "total_questions": 32,
+      "total_options": 128,
       "pdf_files": [
         "Probability 1~Key.pdf",
         "Probability 3~Key.pdf",
@@ -1602,8 +1602,8 @@
       "category": "Algebra",
       "subcategory": "Linear Equations in Two Variables",
       "total_pdfs": 3,
-      "total_questions": 116,
-      "total_options": 117,
+      "total_questions": 46,
+      "total_options": 184,
       "pdf_files": [
         "Linear Equations in Two Variables 1~Key.pdf",
         "Linear Equations in Two Variables 2~Key.pdf",
@@ -1615,8 +1615,8 @@
       "category": "Algebra",
       "subcategory": "Systems of Linear Equations",
       "total_pdfs": 3,
-      "total_questions": 98,
-      "total_options": 92,
+      "total_questions": 32,
+      "total_options": 128,
       "pdf_files": [
         "Systems of Linear Equations 1~Key.pdf",
         "Systems of Linear Equations 2~Key.pdf",
@@ -1628,8 +1628,8 @@
       "category": "Algebra",
       "subcategory": "Linear Inequalities",
       "total_pdfs": 3,
-      "total_questions": 66,
-      "total_options": 69,
+      "total_questions": 22,
+      "total_options": 88,
       "pdf_files": [
         "Linear Inequalities 3~Key.pdf",
         "Linear Inequalities 2~Key.pdf",
@@ -1641,8 +1641,8 @@
       "category": "Algebra",
       "subcategory": "Linear Functions",
       "total_pdfs": 3,
-      "total_questions": 126,
-      "total_options": 146,
+      "total_questions": 42,
+      "total_options": 168,
       "pdf_files": [
         "Linear Functions 2~Key.pdf",
         "Linear Functions 3~Key.pdf",
@@ -1654,8 +1654,8 @@
       "category": "Algebra",
       "subcategory": "Linear Equations in One Variable",
       "total_pdfs": 3,
-      "total_questions": 94,
-      "total_options": 103,
+      "total_questions": 28,
+      "total_options": 112,
       "pdf_files": [
         "Linear Equations in One Variable 1~Key.pdf",
         "Linear Equations in One Variable 2~Key.pdf",
@@ -1667,8 +1667,8 @@
       "category": "Expression of Ideas",
       "subcategory": "Rhetorical Synthesis",
       "total_pdfs": 3,
-      "total_questions": 128,
-      "total_options": 258,
+      "total_questions": 28,
+      "total_options": 112,
       "pdf_files": [
         "Rhetorical Synthesis 1~Key.pdf",
         "Rhetorical Synthesis 2~Key.pdf",
@@ -1680,8 +1680,8 @@
       "category": "Expression of Ideas",
       "subcategory": "Transitions",
       "total_pdfs": 3,
-      "total_questions": 114,
-      "total_options": 228,
+      "total_questions": 28,
+      "total_options": 112,
       "pdf_files": [
         "Transitions 2~Key.pdf",
         "Transitions 3~Key.pdf",
@@ -1693,8 +1693,8 @@
       "category": "Standard English Conventions",
       "subcategory": "Form, Structure, and Sense",
       "total_pdfs": 3,
-      "total_questions": 124,
-      "total_options": 251,
+      "total_questions": 43,
+      "total_options": 172,
       "pdf_files": [
         "Form, Structure, and Sense 1~Key.pdf",
         "Form, Structure, and Sense 3~Key.pdf",
@@ -1706,8 +1706,8 @@
       "category": "Standard English Conventions",
       "subcategory": "Boundaries",
       "total_pdfs": 3,
-      "total_questions": 132,
-      "total_options": 265,
+      "total_questions": 39,
+      "total_options": 156,
       "pdf_files": [
         "Boundaries 1~Key.pdf",
         "Boundaries 2~Key.pdf",
@@ -1719,8 +1719,8 @@
       "category": "Information and Ideas",
       "subcategory": "Central Ideas and Details",
       "total_pdfs": 3,
-      "total_questions": 98,
-      "total_options": 202,
+      "total_questions": 30,
+      "total_options": 120,
       "pdf_files": [
         "Central Ideas and Details 1~Key.pdf",
         "Central Ideas and Details 2~Key.pdf",
@@ -1732,8 +1732,8 @@
       "category": "Information and Ideas",
       "subcategory": "Inferences",
       "total_pdfs": 3,
-      "total_questions": 106,
-      "total_options": 218,
+      "total_questions": 32,
+      "total_options": 128,
       "pdf_files": [
         "Inferences 1~Key.pdf",
         "Inferences 2~Key.pdf",
@@ -1745,8 +1745,8 @@
       "category": "Information and Ideas",
       "subcategory": "Command of Evidence",
       "total_pdfs": 3,
-      "total_questions": 192,
-      "total_options": 377,
+      "total_questions": 51,
+      "total_options": 204,
       "pdf_files": [
         "Command of Evidence 1~Key.pdf",
         "Command of Evidence 3~Key.pdf",
@@ -1758,8 +1758,8 @@
       "category": "Craft and Structure",
       "subcategory": "Cross-Text Connections",
       "total_pdfs": 3,
-      "total_questions": 76,
-      "total_options": 156,
+      "total_questions": 38,
+      "total_options": 152,
       "pdf_files": [
         "Cross-Text Connections 3~Key.pdf",
         "Cross-Text Connections 2~Key.pdf",
@@ -1771,8 +1771,8 @@
       "category": "Craft and Structure",
       "subcategory": "Text, Structure, and Purpose",
       "total_pdfs": 3,
-      "total_questions": 102,
-      "total_options": 205,
+      "total_questions": 26,
+      "total_options": 104,
       "pdf_files": [
         "Text, Structure, and Purpose 2~Key.pdf",
         "Text, Structure, and Purpose 3~Key.pdf",
@@ -1784,8 +1784,8 @@
       "category": "Craft and Structure",
       "subcategory": "Words in Context",
       "total_pdfs": 3,
-      "total_questions": 138,
-      "total_options": 281,
+      "total_questions": 21,
+      "total_options": 84,
       "pdf_files": [
         "Words in Context 1~Key.pdf",
         "Words in Context 3~Key.pdf",
@@ -1793,5 +1793,5 @@
       ]
     }
   ],
-  "processing_time_seconds": 24.794883
+  "processing_time_seconds": 5.37094
 }
