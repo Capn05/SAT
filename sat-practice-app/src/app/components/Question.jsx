@@ -612,13 +612,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: '20px',
+    padding: '20px 20px 0 20px',
   },
   questionContent: {
     flex: 1,
     backgroundColor: 'white',
     borderRadius: '12px',
-    padding: '24px',
+    padding: '20px',
     margin: '10px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
   },
@@ -724,7 +724,6 @@ const styles = {
   },
   aiChatContainer: {
     width: '50%',
-    padding: '10px',
   },
   RefreshQuestionsContainer: {
     display: 'flex',

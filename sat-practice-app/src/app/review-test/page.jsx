@@ -103,7 +103,7 @@ export default function ReviewTestPage() {
   };
 
   return (
-    <div className="review-container" style={{ marginRight: '40%' }}>
+    <div className="review-container" style={{ marginRight: '41%' }}>
       <TopBar title="Test Review" />
       
       <div className="review-content">

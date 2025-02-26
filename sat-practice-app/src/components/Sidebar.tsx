@@ -56,13 +56,18 @@ export default function Sidebar() {
         setIsExpanded(false)
         setExpandedSubMenu(null)
       }}
+      style={{ overflow: 'hidden', width: isExpanded ? '240px' : '60px' }}
     >
-      <div className={styles.sidebarContent} style={{ position: 'fixed', width: isExpanded ? '240px' : '60px' }}>
+      <div className={styles.sidebarContent} style={{ 
+        position: 'fixed', 
+        width: isExpanded ? '240px' : '60px',
+        overflow: 'hidden'
+      }}>
         <div className={styles.header}>
           <span className={styles.logoIcon}>S</span>
         </div>
 
-        <nav className={styles.nav}>
+        <nav className={styles.nav} style={{ width: '100%' }}>
           {navItems.map((item) => {
             const isActive = item.path ? pathname === item.path : false
             const hasSubItems = item.subItems && item.subItems.length > 0
