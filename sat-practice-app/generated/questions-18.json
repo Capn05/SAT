@@ -1,7 +1,7 @@
 [
   {
-    "id": 117877,
-    "question_text": "Which of the following systems of equations has the solution $x = 10$ and $y = 20$?",
+    "id": 376245,
+    "question_text": "Which of the following systems of equations is equivalent to $$5x + 2y = 74$$ and $$3x + 7y = 91$$?",
     "image_url": null,
     "difficulty": "Easy",
     "subject": "Math",
@@ -12,7 +12,31 @@
     "subcategory_id": 18
   },
   {
-    "id": 560409,
+    "id": 181502,
+    "question_text": "Identify the system of equations that matches $$6x - 4y = 50$$ with $$2x + 5y = 35$$.",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 691307,
+    "question_text": "Which set of equations accurately represents $$4x + 3y = 62$$ and $$7x - 5y = 23$$?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 40188,
     "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
     "image_url": null,
     "difficulty": "Medium",
@@ -24,8 +48,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 715798,
-    "question_text": "Solve the system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 2y &= 16 \\\\ 5x - 3y &= 11 \\end{align*} $$ What is the value of $x$?",
+    "id": 170276,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -36,8 +60,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 84758,
-    "question_text": "The system of equations below has solution $(x, y)$. What is the value of $x$? $$ \\begin{align*} 2x + 3y &= 12 \\\\ 4x - y &= 5 \\end{align*} $$",
+    "id": 468817,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -48,8 +72,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 538527,
-    "question_text": "Solve the following system of equations for $x$ and $y$: $$\\begin{cases} 3x + 4y = 18 \\\\ 5x - 2y = 4 \\end{cases}$$ What is the value of $x + y$?",
+    "id": 297972,
+    "question_text": "A company produces two types of widgets: standard and deluxe. The total production consists of 400 units and the total revenue generated from these units is $48,000. If each standard widget sells for $80 and each deluxe widget sells for $120, which system of equations represents this scenario?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -60,8 +84,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 323015,
-    "question_text": "Solve the following system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 4y &= 18 \\\\ 5x - 2y &= 10 \\end{align*} $$ What is the value of $x$?",
+    "id": 513386,
+    "question_text": "In a certain city, the number of buses and trains totals 150. The daily operating cost for buses is $100 each and for trains is $250 each, with a total daily cost of $25,000. Which system of equations represents this situation?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -72,8 +96,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 844927,
-    "question_text": "Solve the system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 2y &= 16 \\\\ 5x - 4y &= 8 \\end{align*} $$ What is the value of $x$?",
+    "id": 838935,
+    "question_text": "A farm has two types of animals: chickens and cows. The total number of animals is 120. If there are 320 legs in total on the farm, which system of equations can represent this situation considering chickens have 2 legs and cows have 4 legs?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -84,8 +108,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 306849,
-    "question_text": "Solve the following system of equations for $x$: $$ \\begin{aligned} 3x + 2y &= 16 \\\\ 4x - y &= 9 \\end{aligned} $$",
+    "id": 865963,
+    "question_text": "Solve the system of equations: $$3x + 4y = 20$$ and $$2x - y = 1$$. What is the value of $x$?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -96,8 +120,200 @@
     "subcategory_id": 18
   },
   {
-    "id": 154795,
-    "question_text": "Solve the following system of equations for $x$ and $y$: $$\\begin{align*} 3x + 4y &= 18 \\\\ 5x - 2y &= 6 \\end{align*}$$ What is the value of $x$?",
+    "id": 608961,
+    "question_text": "If $$4a + 5b = 23$$ and $$2a - 3b = -4$$, what is the value of $b$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 958465,
+    "question_text": "Given the equations $$x + y = 8$$ and $$x - 2y = -1$$, find the value of $y$.",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 640452,
+    "question_text": "What is the solution $(x, y)$ to the given system of equations? $$ y = 4x - 1 \\ x = 2 $$",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 983612,
+    "question_text": "What is the solution $(x, y)$ to the given system of equations? $$ y = -3x + 5 \\ x = -1 $$",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 447000,
+    "question_text": "What is the solution $(x, y)$ to the given system of equations? $$ y = \\frac{1}{2}x + 3 \\ x = 4 $$",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 291647,
+    "question_text": "The system of equations $$\\begin{cases} 2x + 3y = 12 \\\\ 4x - y = 8 \\end{cases}$$ has solution $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 840509,
+    "question_text": "The system of equations $$\\begin{cases} x - 2y = 8 \\\\ 3x + y = 14 \\end{cases}$$ has solution $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 7994,
+    "question_text": "The system of equations $$\\begin{cases} 5x + y = 20 \\\\ 2x - 3y = -6 \\end{cases}$$ has solution $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 635659,
+    "question_text": "Solve the system of equations: $$3x + 4y = 18$$ and $$2x - y = 3$$. What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 359055,
+    "question_text": "If $$2a + 5b = 14$$ and $$3a - 2b = 7$$, find the value of $b$.",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 751868,
+    "question_text": "Determine the value of $y$ in the system: $$5x + 2y = 20$$ and $$x - 3y = -4$$.",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 808675,
+    "question_text": "A system of equations is given as follows: $$3x + 4y = 18$$ $$5x - 2y = 4$$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 44683,
+    "question_text": "Consider the following system of equations: $$7x + y = 22$$ $$2x - 3y = -1$$ What is the value of $y$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 397599,
+    "question_text": "Solve the system of equations: $$x - 2y = 8$$ $$4x + 3y = 1$$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 411016,
+    "question_text": "During a week, Alex swam $s$ kilometers at 2 kilometers per hour and hiked $h$ kilometers at 4 kilometers per hour. He swam and hiked a total of 50 kilometers that week, and he hiked for half as many hours as he swam. What is the total number of kilometers that Alex hiked during the week?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 655900,
+    "question_text": "In a training session, Jamie rowed $r$ miles at 3 miles per hour and cycled $c$ miles at 9 miles per hour. She rowed and cycled a total of 90 miles, and she cycled for three times as many hours as she rowed. What is the total number of miles that Jamie cycled during the session?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 888423,
+    "question_text": "Over the summer, Taylor paddled $p$ kilometers at 6 kilometers per hour and jogged $j$ kilometers at 12 kilometers per hour. Taylor paddled and jogged a total of 120 kilometers, and jogged for twice the number of hours Taylor paddled. What is the total number of kilometers that Taylor jogged over the summer?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
