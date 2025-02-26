@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1178770,
+    "question_id": 117877,
+    "value": "A",
+    "label": "5x + 2y = 90 \\newline 3x + 4y = 110",
+    "is_correct": true
+  },
+  {
+    "id": 1178771,
+    "question_id": 117877,
+    "value": "B",
+    "label": "4x + 2y = 80 \\newline 3x + 3y = 110",
+    "is_correct": false
+  },
+  {
+    "id": 1178772,
+    "question_id": 117877,
+    "value": "C",
+    "label": "5x + 3y = 100 \\newline 2x + 3y = 110",
+    "is_correct": false
+  },
+  {
+    "id": 1178773,
+    "question_id": 117877,
+    "value": "D",
+    "label": "2x + 4y = 100 \\newline 3x + 5y = 130",
+    "is_correct": false
+  },
+  {
+    "id": 5604090,
+    "question_id": 560409,
+    "value": "A",
+    "label": "(1, 2)",
+    "is_correct": false
+  },
+  {
+    "id": 5604091,
+    "question_id": 560409,
+    "value": "B",
+    "label": "(2, 4)",
+    "is_correct": false
+  },
+  {
+    "id": 5604092,
+    "question_id": 560409,
+    "value": "C",
+    "label": "(3, 5)",
+    "is_correct": true
+  },
+  {
+    "id": 5604093,
+    "question_id": 560409,
+    "value": "D",
+    "label": "(4, 6)",
+    "is_correct": false
+  },
+  {
+    "id": 7157980,
+    "question_id": 715798,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 7157981,
+    "question_id": 715798,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 7157982,
+    "question_id": 715798,
+    "value": "C",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 7157983,
+    "question_id": 715798,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 847580,
+    "question_id": 84758,
+    "value": "A",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 847581,
+    "question_id": 84758,
+    "value": "B",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 847582,
+    "question_id": 84758,
+    "value": "C",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 847583,
+    "question_id": 84758,
+    "value": "D",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 5385270,
+    "question_id": 538527,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 5385271,
+    "question_id": 538527,
+    "value": "B",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 5385272,
+    "question_id": 538527,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 5385273,
+    "question_id": 538527,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 3230150,
+    "question_id": 323015,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 3230151,
+    "question_id": 323015,
+    "value": "B",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 3230152,
+    "question_id": 323015,
+    "value": "C",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 3230153,
+    "question_id": 323015,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 8449270,
+    "question_id": 844927,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 8449271,
+    "question_id": 844927,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 8449272,
+    "question_id": 844927,
+    "value": "C",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 8449273,
+    "question_id": 844927,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 3068490,
+    "question_id": 306849,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 3068491,
+    "question_id": 306849,
+    "value": "B",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 3068492,
+    "question_id": 306849,
+    "value": "C",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 3068493,
+    "question_id": 306849,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 1547950,
+    "question_id": 154795,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 1547951,
+    "question_id": 154795,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 1547952,
+    "question_id": 154795,
+    "value": "C",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 1547953,
+    "question_id": 154795,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  }
+]

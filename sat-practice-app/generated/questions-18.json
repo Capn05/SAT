@@ -1,0 +1,110 @@
+[
+  {
+    "id": 117877,
+    "question_text": "Which of the following systems of equations has the solution $x = 10$ and $y = 20$?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 560409,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 715798,
+    "question_text": "Solve the system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 2y &= 16 \\\\ 5x - 3y &= 11 \\end{align*} $$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 84758,
+    "question_text": "The system of equations below has solution $(x, y)$. What is the value of $x$? $$ \\begin{align*} 2x + 3y &= 12 \\\\ 4x - y &= 5 \\end{align*} $$",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 538527,
+    "question_text": "Solve the following system of equations for $x$ and $y$: $$\\begin{cases} 3x + 4y = 18 \\\\ 5x - 2y = 4 \\end{cases}$$ What is the value of $x + y$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 323015,
+    "question_text": "Solve the following system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 4y &= 18 \\\\ 5x - 2y &= 10 \\end{align*} $$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 844927,
+    "question_text": "Solve the system of equations for $x$ and $y$: $$ \\begin{align*} 3x + 2y &= 16 \\\\ 5x - 4y &= 8 \\end{align*} $$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 306849,
+    "question_text": "Solve the following system of equations for $x$: $$ \\begin{aligned} 3x + 2y &= 16 \\\\ 4x - y &= 9 \\end{aligned} $$",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 154795,
+    "question_text": "Solve the following system of equations for $x$ and $y$: $$\\begin{align*} 3x + 4y &= 18 \\\\ 5x - 2y &= 6 \\end{align*}$$ What is the value of $x$?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  }
+]
