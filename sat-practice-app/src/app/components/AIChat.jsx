@@ -210,9 +210,10 @@ const styles = {
   },
   container: {
     padding: '20px',
-    borderRadius: '20px',
+    borderRadius: '8px',
     margin: '10px',
     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
+    backgroundColor: 'white',
   },
 
   paddingBox: {

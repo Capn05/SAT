@@ -331,7 +331,7 @@
   }
   /* test.css */
 .test-container {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .question-container {

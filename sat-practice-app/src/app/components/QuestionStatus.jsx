@@ -122,9 +122,11 @@ const styles = {
     alignItems: 'center',
     gap: '10px',
     padding: '10px',
-    backgroundColor: '#f3f4f6',
+    backgroundColor: 'white',
     borderRadius: '8px',
     width: '80px',
+    margin: '10px',
+    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
   },
   statusContainer: {
     display: 'flex',
