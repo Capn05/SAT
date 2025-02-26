@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Data and SAT resources
+sat-question-bank/
+sat-framework.pdf
+Nonlinear Equations and Systems 1~Key (1).md
+
+# Virtual environment
+venv/
