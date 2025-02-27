@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import dotenv from 'dotenv';
-import OpenAI from 'openai';
+import fetch from 'node-fetch'; // Add node-fetch for HTTP requests
 
 // Get the directory path of the current module
 const __filename = fileURLToPath(import.meta.url);
@@ -11,12 +11,6 @@ const __dirname = dirname(__filename);
 
 // Load environment variables from .env.local in the root directory
 dotenv.config({ path: join(__dirname, '../.env.local') });
-
-// Initialize OpenAI with the API key
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY_2,
-  dangerouslyAllowBrowser: true
-});
 
 // Constants for subject, category, and subcategory mapping
 const SUBJECT_ID = 1; // Math
@@ -104,7 +98,7 @@ async function parseMarkdownFile(filePath) {
 }
 
 /**
- * Generate multiple new SAT questions based on an existing question using OpenAI
+ * Generate multiple new SAT questions based on an existing question using Google Gemini API
  * @param {Object} question - Original question object
  * @param {Number} count - Number of questions to generate
  * @returns {Array} - Array of generated question objects
@@ -113,7 +107,7 @@ async function generateQuestions(question, count = 1) {
   try {
     log.progress(`Generating ${count} new questions based on question ID: ${question.id}`);
     
-    // Create a prompt for OpenAI
+    // Create a prompt for Gemini
     const prompt = `
 You are an expert SAT question creator. Create ${count} NEW and UNIQUE SAT Math questions based on the following example:
 
@@ -150,30 +144,62 @@ Format your response as a JSON array of objects with the following structure:
 
 Ensure exactly one option is marked as correct for each question.
 Make sure all ${count} questions are unique and follow the style of the original question.
+
+Think step by step about how to create these questions. First, understand the pattern of the original question. Then, create new questions with different numbers or contexts while maintaining the same structure and difficulty level.
 `;
 
-    log.info(`Using API key: ${process.env.OPENAI_API_KEY_2.substring(0, 5)}...`);
+    // Get the Gemini API key from environment variables
+    const apiKey = process.env.GEMINI_API_KEY;
+    log.info(`Using Gemini API key: ${apiKey.substring(0, 5)}...`);
     
-    // Call OpenAI API with retry logic
+    // Call Gemini API with retry logic
     let attempts = 0;
     const maxAttempts = 3;
     
     while (attempts < maxAttempts) {
       try {
-        const response = await openai.chat.completions.create({
-          model: "gpt-4o",
-          messages: [
-            { role: "system", content: "You are an expert SAT question creator specialized in creating unique, high-quality questions that follow the style of example questions." },
-            { role: "user", content: prompt }
-          ],
-          temperature: 0.8,
-        });
+        // Prepare the request payload for Gemini API
+        const payload = {
+          contents: [{
+            parts: [
+              {
+                text: prompt
+              }
+            ]
+          }],
+          generationConfig: {
+            temperature: 0.8,
+            topP: 0.95,
+            topK: 40
+          }
+        };
+
+        // Make the API request to Gemini
+        const response = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          }
+        );
 
         // Parse the response
-        const generatedContent = response.choices[0].message.content;
-        log.info(`Received response from OpenAI: ${generatedContent.substring(0, 50)}...`);
+        const responseData = await response.json();
         
+        if (!response.ok) {
+          throw new Error(`Gemini API error: ${JSON.stringify(responseData)}`);
+        }
+        
+        // Extract the generated content
+        const generatedContent = responseData.candidates[0].content.parts[0].text;
+        log.info(`Received response from Gemini: ${generatedContent.substring(0, 50)}...`);
+        
+        // Extract JSON from the response
         const jsonMatch = generatedContent.match(/```json\n([\s\S]*?)\n```/) || 
+                          generatedContent.match(/```\n([\s\S]*?)\n```/) ||
                           generatedContent.match(/\[\s*\{[\s\S]*\}\s*\]/);
         
         let jsonContent;
@@ -229,9 +255,6 @@ Make sure all ${count} questions are unique and follow the style of the original
         }
       } catch (apiError) {
         log.error(`API Error: ${apiError.message}`);
-        if (apiError.response) {
-          log.error(`API Error details: ${JSON.stringify(apiError.response)}`);
-        }
         attempts++;
         if (attempts >= maxAttempts) {
           return [];
@@ -245,9 +268,6 @@ Make sure all ${count} questions are unique and follow the style of the original
     return [];
   } catch (error) {
     log.error(`Error generating questions: ${error.message}`);
-    if (error.response) {
-      log.error(`API Error details: ${JSON.stringify(error.response)}`);
-    }
     return [];
   }
 }
