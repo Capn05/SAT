@@ -1,7 +1,7 @@
 [
   {
-    "id": 299812,
-    "question_text": "A bakery sells cookies and muffins. On Monday, they sold 7 cookies and 4 muffins for a total of $18. On Tuesday, they sold 3 cookies and 8 muffins for a total of $22. Which system of equations represents the number of cookies, $x$, and muffins, $y$, sold on each day?",
+    "id": 534127,
+    "question_text": "Which of the following systems of equations has the solution $(x, y) = (5, 10)$?",
     "image_url": null,
     "difficulty": "Easy",
     "subject": "Math",
@@ -12,8 +12,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 72524,
-    "question_text": "A farmer sells apples and bananas at a market. He sold 5 apples and 2 bananas for $7.50. Later, he sold 8 apples and 1 banana for $9.50. Which system of equations represents the price of apples, $x$, and bananas, $y$?",
+    "id": 52981,
+    "question_text": "Which of the following systems of equations has the solution $(x, y) = (3, -2)$?",
     "image_url": null,
     "difficulty": "Easy",
     "subject": "Math",
@@ -24,8 +24,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 930224,
-    "question_text": "A school is selling tickets for a play. Student tickets cost $x$ dollars and adult tickets cost $y$ dollars. On the first day, they sold 9 student tickets and 5 adult tickets for a total of $71. On the second day, they sold 6 student tickets and 7 adult tickets for a total of $74. Which system of equations represents this situation?",
+    "id": 920097,
+    "question_text": "Which of the following systems of equations has the solution $(x, y) = (7, 4)$?",
     "image_url": null,
     "difficulty": "Easy",
     "subject": "Math",
@@ -36,10 +36,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 623657,
+    "id": 258402,
     "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
-    "image_url": "https://i.imgur.com/jJg4jYc.png",
-    "difficulty": "Medium",
+    "image_url": null,
+    "difficulty": "Easy",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -48,10 +48,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 909406,
-    "question_text": "The graph of a system of linear equations is shown. What is the solution $(p, q)$ to the system?",
-    "image_url": "https://i.imgur.com/qjY8w3m.png",
-    "difficulty": "Medium",
+    "id": 922587,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
+    "image_url": null,
+    "difficulty": "Easy",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -60,10 +60,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 106655,
-    "question_text": "The graph of a system of linear equations is shown. What is the solution $(a, b)$ to the system?",
-    "image_url": "https://i.imgur.com/n31G0lD.png",
-    "difficulty": "Medium",
+    "id": 676021,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
+    "image_url": null,
+    "difficulty": "Easy",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -72,8 +72,116 @@
     "subcategory_id": 18
   },
   {
-    "id": 339469,
-    "question_text": "A bakery sells both muffins and croissants. On Tuesday, they sold a total of 180 baked goods and made a total of $360. If muffins sell for $1.50 each and croissants sell for $2.50 each, which of the following systems of equations could be used to determine the number of muffins, $m$, and croissants, $c$, sold?",
+    "id": 216562,
+    "question_text": "A local theater sold tickets for their play. Adult tickets cost $15 each and children's tickets cost $8 each. If they sold a total of 100 tickets and collected $1200 in revenue, which of the following systems of equations could be used to find the number of adult tickets, $a$, and the number of children's tickets, $c$, sold?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 204806,
+    "question_text": "Maria is buying apples and bananas at a farmers market. Apples cost $2 each and bananas cost $0.50 each. She wants to spend exactly $15 and buy a total of 10 fruits.  Which system of equations represents this situation, where $x$ is the number of apples and $y$ is the number of bananas?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 978488,
+    "question_text": "A stationery store sells pens for $3 each and pencils for $1 each.  A customer buys some pens and pencils and spends exactly $20. The number of pencils purchased is twice the number of pens purchased. Which system of equations can be used to determine the number of pens, $p$, and pencils, $q$, the customer bought?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 711291,
+    "question_text": "The sum of two numbers is 25. The larger number is 5 more than the smaller number. What is the value of the larger number?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 881255,
+    "question_text": "At a local farm stand, 3 apples and 2 bananas cost $4.50.  2 apples and 2 bananas cost $3.80. What is the cost of one apple?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 139534,
+    "question_text": "A bookstore sells notebooks and pens.  5 notebooks and 3 pens cost $22.  5 notebooks and 2 pens cost $20.  What is the cost of one pen?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 104123,
+    "question_text": "What is the solution (x,y) to the given system of equations?  $y = x - 2$ $x = 4$",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 204755,
+    "question_text": "What is the solution (x,y) to the given system of equations?  $x + y = 10$ $x = 3$",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 166593,
+    "question_text": "What is the solution (x,y) to the given system of equations?  $y - x = 5$ $x = -1$",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Algebra",
+    "subcategory": "Systems of Linear Equations",
+    "subject_id": 1,
+    "category_id": 2,
+    "subcategory_id": 18
+  },
+  {
+    "id": 759152,
+    "question_text": "The system of equations above has solution $(x, y)$. What is the value of $x$?  $$ \\begin{cases}   x + y = 5 \\\\   2x - y = 1 \\end{cases} $$ ",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -84,8 +192,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 860311,
-    "question_text": "A farmer sells apples and bananas at a local market. She sold a total of 120 pieces of fruit. Apples sell for $0.75 each, and bananas sell for $0.50 each. If her total earnings were $70, which of the following systems of equations could be used to determine the number of apples, $a$, and bananas, $b$, sold?",
+    "id": 886727,
+    "question_text": "The sum of two numbers is 15 and their difference is 3. If $x$ represents the larger number and $y$ represents the smaller number, which system of equations can be used to find the values of $x$ and $y$, and what is the value of $x$?",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -96,8 +204,8 @@
     "subcategory_id": 18
   },
   {
-    "id": 67185,
-    "question_text": "A school is selling tickets for a play. Student tickets cost $8, and adult tickets cost $15. If the school sold a total of 300 tickets and collected $3,200, which of the following systems of equations could be used to determine the number of student tickets, $s$, and adult tickets, $a$, sold?",
+    "id": 112443,
+    "question_text": "The system of equations above has solution $(x, y)$. What is the value of $x$?  $$ \\begin{cases}   2x + 3y = 7 \\\\   x - y = -1 \\end{cases} $$ ",
     "image_url": null,
     "difficulty": "Medium",
     "subject": "Math",
@@ -108,10 +216,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 856366,
-    "question_text": "A farmer sells apples and bananas at a local market. On Monday, he sold 5 apples and 3 bananas for a total of $\\$11.50$. On Tuesday, he sold 8 apples and 2 bananas for $\\$14.00$. What is the price of one apple?",
+    "id": 39003,
+    "question_text": "A coffee shop sells two blends of coffee: Blend A and Blend B. Blend A is made of 60% Arabica beans and 40% Robusta beans and sells for $15 per pound. Blend B is made of 80% Arabica beans and 20% Robusta beans and sells for $20 per pound. The shop wants to create a new blend, Blend C, that is made of 75% Arabica beans and 25% Robusta beans. They want to make 100 pounds of Blend C.  How many pounds of Blend A should they use to make Blend C?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -120,10 +228,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 90484,
-    "question_text": "A school is selling tickets to a play. On the first day of ticket sales, they sold 3 senior citizen tickets and 5 student tickets for a total of $\\$82$. On the second day, they sold 6 senior citizen tickets and 2 student tickets for a total of $\\$76$. What is the price of a single student ticket?",
+    "id": 784194,
+    "question_text": "In a local election, two candidates, Ms. Green and Mr. Blue, received a total of 2400 votes. If Ms. Green had received 10% more votes and Mr. Blue had received 15% fewer votes, the total number of votes would have been 2440. How many votes did Ms. Green actually receive?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -132,10 +240,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 649901,
-    "question_text": "A bakery sells croissants and muffins. On Saturday, they sold 7 croissants and 4 muffins for $\\$25.00$. On Sunday, they sold 3 croissants and 6 muffins for $\\$24.00$. What is the price of a single croissant?",
+    "id": 943535,
+    "question_text": "A rectangular garden has a perimeter of 80 feet. If the length of the garden is increased by 10 feet and the width is decreased by 5 feet, the area of the garden increases by 50 square feet. What is the original length of the garden, in feet?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -144,10 +252,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 125632,
-    "question_text": "## Question ID 9cd1a2b3\n\n| Assessment   | Test | Domain  | Skill                                                  | Difficulty |\n|--------------|------|---------|--------------------------------------------------------|------------|\n| SAT          | Math | Algebra | Systems of two<br>linear equations in<br>two variables | _000       |\n| ID: 9cd1a2b3 |      |         |                                                        |            |\n\nWhat is the solution (x,y) to the given\nsystem of equations?\n\ny = -3x + 7\nx = 2",
+    "id": 11958,
+    "question_text": "A local bakery sells bagels and muffins. On Saturday, they sold 15 bagels and 8 muffins for a total revenue of $82. On Sunday, they sold 20 bagels and 5 muffins for a total revenue of $80. Assuming the prices of bagels and muffins remained constant over the weekend, what is the price of one bagel and one muffin combined?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -156,10 +264,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 842674,
-    "question_text": "## Question ID ef456789\n\n| Assessment   | Test | Domain  | Skill                                                  | Difficulty |\n|--------------|------|---------|--------------------------------------------------------|------------|\n| SAT          | Math | Algebra | Systems of two<br>linear equations in<br>two variables | _000       |\n| ID: ef456789 |      |         |                                                        |            |\n\nWhat is the solution (x,y) to the given\nsystem of equations?\n\nx = 4\ny = x/2 - 1",
+    "id": 783939,
+    "question_text": "Given the following system of equations: $$2x + 3y = 17$$ $$5x - 2y = 11$$ What is the value of $$4x + y$$?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -168,10 +276,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 58026,
-    "question_text": "## Question ID 1a2b3c4d\n\n| Assessment   | Test | Domain  | Skill                                                  | Difficulty |\n|--------------|------|---------|--------------------------------------------------------|------------|\n| SAT          | Math | Algebra | Systems of two<br>linear equations in<br>two variables | _000       |\n| ID: 1a2b3c4d |      |         |                                                        |            |\n\nWhat is the solution (x,y) to the given\nsystem of equations?\n\ny = 5\nx = 2y - 7",
+    "id": 190605,
+    "question_text": "In a chemistry lab, solution A is 25% acid and solution B is 10% acid. To create a 500 ml solution that is 15% acid, a student needs to mix solution A and solution B. How many milliliters of solution A should the student use?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -180,10 +288,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 399224,
-    "question_text": "The system of equations above has solution $(x, y)$. What is the value of $y$?\n\n$$3x + 2y = 11$$\n$$x - y = 3$$",
+    "id": 116,
+    "question_text": "Isabella bought apples and bananas at a farmers market. She bought a total of 50 fruits. Apples cost $1.50 each and bananas cost $0.50 each. The total cost of the apples was three times the total cost of the bananas. How many apples did Isabella buy?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -192,10 +300,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 398976,
-    "question_text": "The system of equations above describes the number of apples, $a$, and bananas, $b$, a fruit vendor sold in one day. If the vendor sold a total of 100 fruits, what is the value of $a$?\n\n$$a + b = 100$$\n$$5a + 3b = 380$$",
+    "id": 366728,
+    "question_text": "A store sells almonds for $6 per pound and peanuts for $2 per pound. John wants to create a 10-pound mixture of almonds and peanuts that costs exactly $44. How many pounds of almonds should John use in the mixture?",
     "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
@@ -204,118 +312,10 @@
     "subcategory_id": 18
   },
   {
-    "id": 946817,
-    "question_text": "The system of equations above has solution $(x, y)$. What is the value of $x + y$?\n\n$$2x - y = 5$$\n$$x + 3y = 6$$",
+    "id": 713236,
+    "question_text": "Sarah works part-time at a coffee shop. She earns $15 per hour on weekdays and $20 per hour on weekends. Last week, she worked a total of 40 hours. Her earnings from weekend work were twice her earnings from weekday work. How many hours did Sarah work on weekdays last week?",
     "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 794800,
-    "question_text": "A bakery sells cupcakes and cookies. On Tuesday, they sold a total of 150 items. The revenue from cupcakes was $2 per cupcake and the revenue from cookies was $1.50 per cookie. If the bakery's total revenue on Tuesday was $260, how many cupcakes did they sell?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 268573,
-    "question_text": "A landscaping company plants maple trees and oak trees. They can plant a maple tree in 30 minutes and an oak tree in 45 minutes. On Wednesday, the crew spent a total of 9 hours planting trees. If they planted a total of 14 trees, how many maple trees did they plant?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 409817,
-    "question_text": "A farmer sells apples and oranges at a local market. Apples sell for $0.75 each and oranges sell for $0.60 each. On Saturday, the farmer sold a total of 200 fruits. If the farmer's total revenue on Saturday was $138, how many oranges did they sell?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 179582,
-    "question_text": "A bakery sells two types of cookies: chocolate chip and oatmeal raisin. On Monday, they sold 8 chocolate chip cookies and 5 oatmeal raisin cookies for a total of $21. On Tuesday, they sold 12 chocolate chip cookies and 3 oatmeal raisin cookies for a total of $27. What is the price of one chocolate chip cookie?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 114456,
-    "question_text": "A farmer sells apples and oranges at a local market. He sold 6 apples and 4 oranges to one customer for $14. He then sold 3 apples and 8 oranges to another customer for $16. What is the cost of one orange?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 275374,
-    "question_text": "Sarah and Ben are selling tickets for a school play. Sarah sold 7 adult tickets and 3 child tickets for a total of $65. Ben sold 5 adult tickets and 6 child tickets for a total of $62. What is the price of one adult ticket?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 44428,
-    "question_text": "During a summer, Leo earned money mowing lawns and washing cars. He earned $m$ dollars mowing lawns at $15 per lawn and $c$ dollars washing cars at $8 per car. He earned a total of $420 that summer, and he washed three times as many cars as he mowed lawns. What is the total amount of money Leo earned washing cars during the summer?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 465879,
-    "question_text": "A store sells apples and bananas.  Last week, the store sold $a$ apples at $0.75 per apple and $b$ bananas at $0.50 per banana. The store made a total of $300 in sales from apples and bananas last week, and they sold twice as many apples as bananas.  What is the total number of apples the store sold last week?",
-    "image_url": null,
-    "difficulty": "Medium",
-    "subject": "Math",
-    "category": "Algebra",
-    "subcategory": "Systems of Linear Equations",
-    "subject_id": 1,
-    "category_id": 2,
-    "subcategory_id": 18
-  },
-  {
-    "id": 283462,
-    "question_text": "A farmer grows wheat and corn on his farm. He plants $w$ acres of wheat at a cost of $50 per acre and $c$ acres of corn at a cost of $80 per acre. He spent a total of $6900 on planting wheat and corn, and he planted 30 more acres of corn than wheat. How many acres of corn did the farmer plant?",
-    "image_url": null,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "subject": "Math",
     "category": "Algebra",
     "subcategory": "Systems of Linear Equations",
