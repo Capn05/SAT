@@ -37,9 +37,6 @@ async function parseMarkdownFile(filePath) {
   try {
     const content = await fs.readFile(filePath, 'utf-8');
     
-    // Split the content by question delimiter
-    const questions = content.split('{').filter(Boolean).map(q => `{${q}`);
-    
     // Determine difficulty based on filename
     let difficulty = 'Medium'; // Default
     if (filePath.includes('1~Key')) {
@@ -52,38 +49,96 @@ async function parseMarkdownFile(filePath) {
     
     log.info(`Parsing file: ${path.basename(filePath)} - Difficulty: ${difficulty}`);
     
-    // Parse each question
-    const parsedQuestions = questions.map(questionText => {
+    // Split the content by "Question ID" to find all questions
+    const questionBlocks = content.split('Question ID').filter(Boolean);
+    
+    // Parse each question block
+    const parsedQuestions = [];
+    
+    for (let i = 0; i < questionBlocks.length; i++) {
+      const questionText = 'Question ID' + questionBlocks[i];
+      
       // Extract question ID
-      const idMatch = questionText.match(/ID: ([a-f0-9]+)/);
+      const idMatch = questionText.match(/Question ID[:\s]+([a-f0-9]+)/i);
       const id = idMatch ? idMatch[1] : null;
       
-      // Extract question text
-      const questionTextMatch = questionText.match(/\n(.*?)\n[A-D]\./s);
-      const questionContent = questionTextMatch ? questionTextMatch[1].trim() : '';
+      if (!id) {
+        log.error(`Could not extract ID from question block ${i+1}`);
+        continue; // Skip this question if ID can't be extracted
+      }
       
-      // Extract answer options
-      const optionsMatch = questionText.match(/([A-D]\. .*?)(?=[A-D]\.|ID:|$)/gs);
-      const options = optionsMatch ? optionsMatch.map(option => {
-        const value = option.substring(0, 1);
-        const label = option.substring(3).trim();
-        return { value, label };
-      }) : [];
+      // Extract question text - look for content between the ID line and the first option
+      // Try different patterns to extract question text
+      let questionContent = '';
+      const questionTextMatch = questionText.match(/Question ID[^]*?\n(.*?)\n[A-D]\./s);
+      if (questionTextMatch) {
+        questionContent = questionTextMatch[1].trim();
+      } else {
+        // Try an alternative pattern if the first one fails
+        const altMatch = questionText.match(/Question ID[^]*?\n(.*?)(?=\nA\.|$)/s);
+        if (altMatch) {
+          questionContent = altMatch[1].trim();
+        }
+      }
       
-      // Extract correct answer
-      const correctAnswerMatch = questionText.match(/Correct Answer: ([A-D])/);
-      const correctAnswer = correctAnswerMatch ? correctAnswerMatch[1] : null;
+      if (!questionContent) {
+        log.error(`Could not extract question text for ID: ${id}`);
+        continue; // Skip this question if text can't be extracted
+      }
+      
+      // Extract answer options - be more lenient here
+      const optionsMatch = questionText.match(/([A-D]\. .*?)(?=[A-D]\.|Correct Answer:|$)/gs);
+      let options = [];
+      
+      if (optionsMatch && optionsMatch.length > 0) {
+        options = optionsMatch.map(option => {
+          const value = option.substring(0, 1);
+          const label = option.substring(3).trim();
+          return { value, label };
+        });
+        
+        // If we don't have exactly 4 options, log a warning but continue
+        if (options.length !== 4) {
+          log.error(`Question ID ${id} has ${options.length} options instead of 4, but continuing anyway`);
+        }
+      } else {
+        // If no options found, create placeholder options
+        log.error(`No options found for question ID: ${id}, creating placeholders`);
+        options = [
+          { value: 'A', label: 'Placeholder A' },
+          { value: 'B', label: 'Placeholder B' },
+          { value: 'C', label: 'Placeholder C' },
+          { value: 'D', label: 'Placeholder D' }
+        ];
+      }
+      
+      // Extract correct answer if available
+      const correctAnswerMatch = questionText.match(/Correct Answer:\s*([A-D])/i);
+      const correctAnswer = correctAnswerMatch ? correctAnswerMatch[1] : 'A'; // Default to A if not found
+      
+      if (!correctAnswerMatch) {
+        log.error(`Could not extract correct answer for question ID: ${id}, defaulting to A`);
+      }
       
       // Mark correct option
       options.forEach(option => {
         option.is_correct = option.value === correctAnswer;
       });
       
+      // Ensure at least one option is marked as correct
+      if (!options.some(opt => opt.is_correct)) {
+        if (options.length > 0) {
+          options[0].is_correct = true;
+          log.error(`No correct option found for question ID: ${id}, marking first option as correct`);
+        }
+      }
+      
       // Extract image URL if present
       const imageMatch = questionText.match(/!\[\]\((.*?)\)/);
       const imageUrl = imageMatch ? imageMatch[1] : null;
       
-      return {
+      // Add the parsed question to the array
+      parsedQuestions.push({
         id,
         question_text: questionContent,
         image_url: imageUrl,
@@ -95,9 +150,12 @@ async function parseMarkdownFile(filePath) {
         subject_id: SUBJECT_ID,
         category_id: CATEGORY_ID,
         subcategory_id: SUBCATEGORY_ID
-      };
-    });
+      });
+      
+      log.progress(`Extracted question ID: ${id}`);
+    }
     
+    log.info(`Found ${parsedQuestions.length} questions in ${path.basename(filePath)}`);
     return parsedQuestions;
   } catch (error) {
     log.error(`Error parsing markdown file ${filePath}: ${error.message}`);
@@ -465,10 +523,14 @@ async function main() {
       
       // Store questions by file for batch processing
       if (questions.length > 0) {
+        // Use all questions found in the file
         fileQuestions.push({
           filePath: path.basename(filePath),
-          questions: questions.slice(0, 7) // Take first 7 questions as templates from each file
+          questions: questions
         });
+        log.info(`Added ${questions.length} questions from ${path.basename(filePath)}`);
+      } else {
+        log.error(`No questions found in ${path.basename(filePath)}`);
       }
     }
     
@@ -476,14 +538,14 @@ async function main() {
     const generatedQuestions = [];
     
     for (const fileData of fileQuestions) {
-      log.info(`Processing questions from ${fileData.filePath}`);
+      log.info(`Processing questions from ${fileData.filePath} (${fileData.questions.length} questions)`);
       
       // Generate 3 questions from each template to get approximately 20 questions per file
       for (const templateQuestion of fileData.questions) {
         if (templateQuestion && templateQuestion.id) {
           log.progress(`Generating 3 questions based on template ID: ${templateQuestion.id} (Difficulty: ${templateQuestion.difficulty})`);
-          // Generate 3 questions based on this template
-          const newQuestions = await generateQuestions(templateQuestion, 3);
+          // Generate 2 questions based on this template
+          const newQuestions = await generateQuestions(templateQuestion, 2);
           generatedQuestions.push(...newQuestions);
           
           // Save progress after each template to avoid losing work if interrupted
