@@ -1,0 +1,122 @@
+[
+  {
+    "id": 32350,
+    "question_text": "The principal of a high school wants to determine if students would prefer a new lunch menu. The principal surveys 200 students who are members of the school's sports teams. The survey results show that a large majority of the surveyed students prefer the new lunch menu. Which of the following is true about the principal's survey?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 842299,
+    "question_text": "A pharmaceutical company conducted a study on a new allergy medication. They randomly selected 150 patients diagnosed with seasonal allergies. After taking the medication for two weeks, 80% of the patients reported a significant reduction in their allergy symptoms. Which of the following inferences is most appropriately drawn from this study result?",
+    "image_url": null,
+    "difficulty": "Easy",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 2670,
+    "question_text": "To gauge support for a new recycling program, a city council surveyed residents. A random sample of 450 residents was selected from the city's phone directory.  Of those surveyed, 68% indicated they would participate in the new recycling program.  Based on this information, which of the following statements must be true?  I.  Exactly 68% of all city residents support the new recycling program. II. If a second random sample of 450 residents were surveyed using the same method, exactly 68% would indicate they would participate.",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 876332,
+    "question_text": "A researcher conducted a study on the sleep habits of nurses working in hospitals within the city of Chicago.  A random sample of nurses was selected from all hospitals in Chicago, and each nurse was asked to record the number of hours they slept per night for one week.  Based on this study, to which of the following populations can the researcher generalize the findings regarding average sleep hours?",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 464445,
+    "question_text": "A market research company surveyed 500 high school students selected at random from a large high school and asked each student, \\",
+    "image_url": null,
+    "difficulty": "Medium",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 624825,
+    "question_text": "A restaurant chain wants to gauge customer satisfaction with a new menu item. At one of their restaurants, they randomly surveyed 75 customers who ordered the new item over a week. 60 of these customers reported they were \\",
+    "image_url": null,
+    "difficulty": "Hard",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 423520,
+    "question_text": "A school counselor wanted to investigate the relationship between the number of hours a student sleeps the night before an exam and their exam score. The counselor randomly selected 100 students from the high school. The table below summarizes the data for the 80 students in the sample who slept for at least 6 hours the night before the exam.  | Hours of sleep   | Exam Score Category |                   |       | |-------------------|---------------------|-------------------|-------| |                   | Below 80%         | 80% or above     | Total | | 6 to 8 hours      | 15                  | 25                | 40    | | More than 8 hours | 5                   | 35                | 40    | | Total             | 20                  | 60                | 80    |  Which of the following is the largest population to which the results of this study can be generalized?",
+    "image_url": null,
+    "difficulty": "Hard",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 866883,
+    "question_text": "A botanist is studying the effect of a new plant food on the growth rate of sunflower plants.  From a greenhouse containing 500 sunflower seedlings, the botanist randomly selects 60 seedlings to receive the new plant food, while the remaining seedlings receive the standard plant food. After one month, the botanist measures the growth rate of all seedlings and finds that the seedlings receiving the new plant food show a statistically significant increase in growth rate compared to those receiving the standard plant food. To which of the following largest groups can the results of this study be reasonably generalized?",
+    "image_url": null,
+    "difficulty": "Hard",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 958209,
+    "question_text": "A popular fitness center chain wants to gauge customer satisfaction across all its locations. To do this, they placed tablet kiosks with a customer satisfaction survey only at the entrance of their busiest location during peak hours on weekdays. After one week, they announced that 92% of respondents reported being \\",
+    "image_url": null,
+    "difficulty": "Hard",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  },
+  {
+    "id": 93065,
+    "question_text": "To estimate the average number of books read per year by adults in a city, a researcher surveyed 75 members of a local book club. The survey found that the average number of books read per year by these 75 members was 28. Which of the following statements must be true?",
+    "image_url": null,
+    "difficulty": "Hard",
+    "subject": "Math",
+    "category": "Problem-Solving and Data Analysis",
+    "subcategory": "Evaluating Statistical Claims",
+    "subject_id": 1,
+    "category_id": 7,
+    "subcategory_id": 23
+  }
+]

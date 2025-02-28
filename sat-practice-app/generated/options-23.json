@@ -1,0 +1,282 @@
+[
+  {
+    "id": 323500,
+    "question_id": 32350,
+    "value": "A",
+    "label": "It accurately represents the preferences of all students at the high school regarding the new lunch menu.",
+    "is_correct": false
+  },
+  {
+    "id": 323501,
+    "question_id": 32350,
+    "value": "B",
+    "label": "The survey would be more representative if it included a larger number of students from the sports teams.",
+    "is_correct": false
+  },
+  {
+    "id": 323502,
+    "question_id": 32350,
+    "value": "C",
+    "label": "To reduce bias, the survey should only include students who bring lunch from home.",
+    "is_correct": false
+  },
+  {
+    "id": 323503,
+    "question_id": 32350,
+    "value": "D",
+    "label": "The survey is biased because the sample population is not representative of the entire student body.",
+    "is_correct": true
+  },
+  {
+    "id": 8422990,
+    "question_id": 842299,
+    "value": "A",
+    "label": "Approximately 80% of people taking allergy medication will experience symptom relief.",
+    "is_correct": false
+  },
+  {
+    "id": 8422991,
+    "question_id": 842299,
+    "value": "B",
+    "label": "Approximately 80% of people with seasonal allergies will experience symptom relief from this medication.",
+    "is_correct": true
+  },
+  {
+    "id": 8422992,
+    "question_id": 842299,
+    "value": "C",
+    "label": "Approximately 80% of people with severe seasonal allergies will experience symptom relief from this medication.",
+    "is_correct": false
+  },
+  {
+    "id": 8422993,
+    "question_id": 842299,
+    "value": "D",
+    "label": "Approximately 20% of people with seasonal allergies will experience symptom relief from this medication.",
+    "is_correct": false
+  },
+  {
+    "id": 26700,
+    "question_id": 2670,
+    "value": "A",
+    "label": "Neither I nor II",
+    "is_correct": true
+  },
+  {
+    "id": 26701,
+    "question_id": 2670,
+    "value": "B",
+    "label": "I only",
+    "is_correct": false
+  },
+  {
+    "id": 26702,
+    "question_id": 2670,
+    "value": "C",
+    "label": "II only",
+    "is_correct": false
+  },
+  {
+    "id": 26703,
+    "question_id": 2670,
+    "value": "D",
+    "label": "I and II",
+    "is_correct": false
+  },
+  {
+    "id": 8763320,
+    "question_id": 876332,
+    "value": "A",
+    "label": "All nurses in the United States.",
+    "is_correct": false
+  },
+  {
+    "id": 8763321,
+    "question_id": 876332,
+    "value": "B",
+    "label": "All nurses working in hospitals.",
+    "is_correct": false
+  },
+  {
+    "id": 8763322,
+    "question_id": 876332,
+    "value": "C",
+    "label": "All nurses working in hospitals in Chicago.",
+    "is_correct": true
+  },
+  {
+    "id": 8763323,
+    "question_id": 876332,
+    "value": "D",
+    "label": "All healthcare professionals working in hospitals in Chicago.",
+    "is_correct": false
+  },
+  {
+    "id": 4644450,
+    "question_id": 464445,
+    "value": "A",
+    "label": "None",
+    "is_correct": true
+  },
+  {
+    "id": 4644451,
+    "question_id": 464445,
+    "value": "B",
+    "label": "II only",
+    "is_correct": false
+  },
+  {
+    "id": 4644452,
+    "question_id": 464445,
+    "value": "C",
+    "label": "I and II only",
+    "is_correct": false
+  },
+  {
+    "id": 4644453,
+    "question_id": 464445,
+    "value": "D",
+    "label": "I and III only",
+    "is_correct": false
+  },
+  {
+    "id": 6248250,
+    "question_id": 624825,
+    "value": "A",
+    "label": "The 75 customers surveyed",
+    "is_correct": false
+  },
+  {
+    "id": 6248251,
+    "question_id": 624825,
+    "value": "B",
+    "label": "All customers who ordered the new item at that restaurant during the week of the survey",
+    "is_correct": true
+  },
+  {
+    "id": 6248252,
+    "question_id": 624825,
+    "value": "C",
+    "label": "All customers who ordered the new item at that restaurant",
+    "is_correct": false
+  },
+  {
+    "id": 6248253,
+    "question_id": 624825,
+    "value": "D",
+    "label": "All customers who ordered the new item at all restaurants in the chain",
+    "is_correct": false
+  },
+  {
+    "id": 4235200,
+    "question_id": 423520,
+    "value": "A",
+    "label": "All students in the high school who scored 80% or above on the exam",
+    "is_correct": false
+  },
+  {
+    "id": 4235201,
+    "question_id": 423520,
+    "value": "B",
+    "label": "The 100 students in the sample",
+    "is_correct": false
+  },
+  {
+    "id": 4235202,
+    "question_id": 423520,
+    "value": "C",
+    "label": "The 80 students in the sample who slept at least 6 hours the night before the exam",
+    "is_correct": false
+  },
+  {
+    "id": 4235203,
+    "question_id": 423520,
+    "value": "D",
+    "label": "All students in the high school",
+    "is_correct": true
+  },
+  {
+    "id": 8668830,
+    "question_id": 866883,
+    "value": "A",
+    "label": "The 60 sunflower seedlings in the sample",
+    "is_correct": false
+  },
+  {
+    "id": 8668831,
+    "question_id": 866883,
+    "value": "B",
+    "label": "The 500 sunflower seedlings in the greenhouse",
+    "is_correct": true
+  },
+  {
+    "id": 8668832,
+    "question_id": 866883,
+    "value": "C",
+    "label": "All sunflower seedlings of this specific variety",
+    "is_correct": false
+  },
+  {
+    "id": 8668833,
+    "question_id": 866883,
+    "value": "D",
+    "label": "All sunflower plants",
+    "is_correct": false
+  },
+  {
+    "id": 9582090,
+    "question_id": 958209,
+    "value": "A",
+    "label": "The survey only offered \\",
+    "is_correct": false
+  },
+  {
+    "id": 9582091,
+    "question_id": 958209,
+    "value": "B",
+    "label": "Customers who are very satisfied are more likely to complete a survey at the entrance than those who are less satisfied.",
+    "is_correct": true
+  },
+  {
+    "id": 9582092,
+    "question_id": 958209,
+    "value": "C",
+    "label": "The survey should have been conducted online to reach a broader range of members more efficiently.",
+    "is_correct": false
+  },
+  {
+    "id": 9582093,
+    "question_id": 958209,
+    "value": "D",
+    "label": "The use of tablet kiosks is less reliable than paper surveys for collecting honest feedback.",
+    "is_correct": false
+  },
+  {
+    "id": 930650,
+    "question_id": 93065,
+    "value": "A",
+    "label": "The average number of books read per year by adults in the city is 28.",
+    "is_correct": false
+  },
+  {
+    "id": 930651,
+    "question_id": 93065,
+    "value": "B",
+    "label": "A conclusion about the average number of books read per year by adults in the city should not be made because the sample size is too small.",
+    "is_correct": false
+  },
+  {
+    "id": 930652,
+    "question_id": 93065,
+    "value": "C",
+    "label": "The sampling method is flawed and may produce a biased estimate of the average number of books read per year by adults in the city.",
+    "is_correct": true
+  },
+  {
+    "id": 930653,
+    "question_id": 93065,
+    "value": "D",
+    "label": "The sampling method is not flawed and is likely to produce an unbiased estimate of the average number of books read per year by adults in the city.",
+    "is_correct": false
+  }
+]

@@ -1,0 +1,1794 @@
+[
+  {
+    "id": 9809360,
+    "question_id": 980936,
+    "value": "A",
+    "label": "not. However,",
+    "is_correct": false
+  },
+  {
+    "id": 9809361,
+    "question_id": 980936,
+    "value": "B",
+    "label": "not, however,",
+    "is_correct": true
+  },
+  {
+    "id": 9809362,
+    "question_id": 980936,
+    "value": "C",
+    "label": "not however",
+    "is_correct": false
+  },
+  {
+    "id": 9809363,
+    "question_id": 980936,
+    "value": "D",
+    "label": "not; however,",
+    "is_correct": false
+  },
+  {
+    "id": 3641550,
+    "question_id": 364155,
+    "value": "A",
+    "label": "effective, but",
+    "is_correct": true
+  },
+  {
+    "id": 3641551,
+    "question_id": 364155,
+    "value": "B",
+    "label": "effective but",
+    "is_correct": false
+  },
+  {
+    "id": 3641552,
+    "question_id": 364155,
+    "value": "C",
+    "label": "effective,",
+    "is_correct": false
+  },
+  {
+    "id": 3641553,
+    "question_id": 364155,
+    "value": "D",
+    "label": "effective",
+    "is_correct": false
+  },
+  {
+    "id": 3879930,
+    "question_id": 387993,
+    "value": "A",
+    "label": ",",
+    "is_correct": true
+  },
+  {
+    "id": 3879931,
+    "question_id": 387993,
+    "value": "B",
+    "label": ";",
+    "is_correct": false
+  },
+  {
+    "id": 3879932,
+    "question_id": 387993,
+    "value": "C",
+    "label": ":",
+    "is_correct": false
+  },
+  {
+    "id": 3879933,
+    "question_id": 387993,
+    "value": "D",
+    "label": ".",
+    "is_correct": false
+  },
+  {
+    "id": 7271280,
+    "question_id": 727128,
+    "value": "A",
+    "label": "computers,",
+    "is_correct": false
+  },
+  {
+    "id": 7271281,
+    "question_id": 727128,
+    "value": "B",
+    "label": "computers",
+    "is_correct": false
+  },
+  {
+    "id": 7271282,
+    "question_id": 727128,
+    "value": "C",
+    "label": "computers;",
+    "is_correct": true
+  },
+  {
+    "id": 7271283,
+    "question_id": 727128,
+    "value": "D",
+    "label": "computers and",
+    "is_correct": false
+  },
+  {
+    "id": 1850730,
+    "question_id": 185073,
+    "value": "A",
+    "label": "on",
+    "is_correct": true
+  },
+  {
+    "id": 1850731,
+    "question_id": 185073,
+    "value": "B",
+    "label": "upon",
+    "is_correct": false
+  },
+  {
+    "id": 1850732,
+    "question_id": 185073,
+    "value": "C",
+    "label": "in",
+    "is_correct": false
+  },
+  {
+    "id": 1850733,
+    "question_id": 185073,
+    "value": "D",
+    "label": "at",
+    "is_correct": false
+  },
+  {
+    "id": 488720,
+    "question_id": 48872,
+    "value": "A",
+    "label": "convenience and",
+    "is_correct": false
+  },
+  {
+    "id": 488721,
+    "question_id": 48872,
+    "value": "B",
+    "label": "convenience,",
+    "is_correct": true
+  },
+  {
+    "id": 488722,
+    "question_id": 48872,
+    "value": "C",
+    "label": "convenience",
+    "is_correct": false
+  },
+  {
+    "id": 488723,
+    "question_id": 48872,
+    "value": "D",
+    "label": "convenience, and",
+    "is_correct": false
+  },
+  {
+    "id": 4551010,
+    "question_id": 455101,
+    "value": "A",
+    "label": "“Was this new medium art or mere replication?”",
+    "is_correct": true
+  },
+  {
+    "id": 4551011,
+    "question_id": 455101,
+    "value": "B",
+    "label": "“Was this new medium art or mere replication”.",
+    "is_correct": false
+  },
+  {
+    "id": 4551012,
+    "question_id": 455101,
+    "value": "C",
+    "label": "Was this new medium art or mere replication?",
+    "is_correct": false
+  },
+  {
+    "id": 4551013,
+    "question_id": 455101,
+    "value": "D",
+    "label": "Was this new medium art or mere replication”.",
+    "is_correct": false
+  },
+  {
+    "id": 8919040,
+    "question_id": 891904,
+    "value": "A",
+    "label": "others. They",
+    "is_correct": false
+  },
+  {
+    "id": 8919041,
+    "question_id": 891904,
+    "value": "B",
+    "label": "others, they",
+    "is_correct": true
+  },
+  {
+    "id": 8919042,
+    "question_id": 891904,
+    "value": "C",
+    "label": "others; they",
+    "is_correct": false
+  },
+  {
+    "id": 8919043,
+    "question_id": 891904,
+    "value": "D",
+    "label": "others: they",
+    "is_correct": false
+  },
+  {
+    "id": 9197310,
+    "question_id": 919731,
+    "value": "A",
+    "label": " ",
+    "is_correct": true
+  },
+  {
+    "id": 9197311,
+    "question_id": 919731,
+    "value": "B",
+    "label": ":",
+    "is_correct": false
+  },
+  {
+    "id": 9197312,
+    "question_id": 919731,
+    "value": "C",
+    "label": "-",
+    "is_correct": false
+  },
+  {
+    "id": 9197313,
+    "question_id": 919731,
+    "value": "D",
+    "label": ";",
+    "is_correct": false
+  },
+  {
+    "id": 7963490,
+    "question_id": 796349,
+    "value": "A",
+    "label": "which",
+    "is_correct": false
+  },
+  {
+    "id": 7963491,
+    "question_id": 796349,
+    "value": "B",
+    "label": "which,",
+    "is_correct": false
+  },
+  {
+    "id": 7963492,
+    "question_id": 796349,
+    "value": "C",
+    "label": "which—",
+    "is_correct": false
+  },
+  {
+    "id": 7963493,
+    "question_id": 796349,
+    "value": "D",
+    "label": ", which",
+    "is_correct": true
+  },
+  {
+    "id": 7246100,
+    "question_id": 724610,
+    "value": "A",
+    "label": "use; however,",
+    "is_correct": false
+  },
+  {
+    "id": 7246101,
+    "question_id": 724610,
+    "value": "B",
+    "label": "use, however,",
+    "is_correct": false
+  },
+  {
+    "id": 7246102,
+    "question_id": 724610,
+    "value": "C",
+    "label": "use. However,",
+    "is_correct": true
+  },
+  {
+    "id": 7246103,
+    "question_id": 724610,
+    "value": "D",
+    "label": "use however,",
+    "is_correct": false
+  },
+  {
+    "id": 1739590,
+    "question_id": 173959,
+    "value": "A",
+    "label": "painter;",
+    "is_correct": false
+  },
+  {
+    "id": 1739591,
+    "question_id": 173959,
+    "value": "B",
+    "label": "painter,",
+    "is_correct": true
+  },
+  {
+    "id": 1739592,
+    "question_id": 173959,
+    "value": "C",
+    "label": "painter. And",
+    "is_correct": false
+  },
+  {
+    "id": 1739593,
+    "question_id": 173959,
+    "value": "D",
+    "label": "painter",
+    "is_correct": false
+  },
+  {
+    "id": 1343090,
+    "question_id": 134309,
+    "value": "A",
+    "label": "look, for",
+    "is_correct": false
+  },
+  {
+    "id": 1343091,
+    "question_id": 134309,
+    "value": "B",
+    "label": "look. For",
+    "is_correct": false
+  },
+  {
+    "id": 1343092,
+    "question_id": 134309,
+    "value": "C",
+    "label": "look; for",
+    "is_correct": false
+  },
+  {
+    "id": 1343093,
+    "question_id": 134309,
+    "value": "D",
+    "label": "look for",
+    "is_correct": true
+  },
+  {
+    "id": 3109280,
+    "question_id": 310928,
+    "value": "A",
+    "label": "City she",
+    "is_correct": false
+  },
+  {
+    "id": 3109281,
+    "question_id": 310928,
+    "value": "B",
+    "label": "City, she",
+    "is_correct": false
+  },
+  {
+    "id": 3109282,
+    "question_id": 310928,
+    "value": "C",
+    "label": "City and she",
+    "is_correct": false
+  },
+  {
+    "id": 3109283,
+    "question_id": 310928,
+    "value": "D",
+    "label": "City. She",
+    "is_correct": true
+  },
+  {
+    "id": 5524070,
+    "question_id": 552407,
+    "value": "A",
+    "label": "reveals the",
+    "is_correct": true
+  },
+  {
+    "id": 5524071,
+    "question_id": 552407,
+    "value": "B",
+    "label": "reveals. The",
+    "is_correct": false
+  },
+  {
+    "id": 5524072,
+    "question_id": 552407,
+    "value": "C",
+    "label": "reveals, the",
+    "is_correct": false
+  },
+  {
+    "id": 5524073,
+    "question_id": 552407,
+    "value": "D",
+    "label": "reveals; the",
+    "is_correct": false
+  },
+  {
+    "id": 7864990,
+    "question_id": 786499,
+    "value": "A",
+    "label": "to:",
+    "is_correct": true
+  },
+  {
+    "id": 7864991,
+    "question_id": 786499,
+    "value": "B",
+    "label": "to-",
+    "is_correct": false
+  },
+  {
+    "id": 7864992,
+    "question_id": 786499,
+    "value": "C",
+    "label": "to,",
+    "is_correct": false
+  },
+  {
+    "id": 7864993,
+    "question_id": 786499,
+    "value": "D",
+    "label": "to",
+    "is_correct": false
+  },
+  {
+    "id": 4511410,
+    "question_id": 451141,
+    "value": "A",
+    "label": "organization",
+    "is_correct": true
+  },
+  {
+    "id": 4511411,
+    "question_id": 451141,
+    "value": "B",
+    "label": "organization,",
+    "is_correct": false
+  },
+  {
+    "id": 4511412,
+    "question_id": 451141,
+    "value": "C",
+    "label": "organization-",
+    "is_correct": false
+  },
+  {
+    "id": 4511413,
+    "question_id": 451141,
+    "value": "D",
+    "label": "organization, and",
+    "is_correct": false
+  },
+  {
+    "id": 6852770,
+    "question_id": 685277,
+    "value": "A",
+    "label": "does screen time affect sleep patterns.",
+    "is_correct": false
+  },
+  {
+    "id": 6852771,
+    "question_id": 685277,
+    "value": "B",
+    "label": "screen time affects sleep patterns.",
+    "is_correct": true
+  },
+  {
+    "id": 6852772,
+    "question_id": 685277,
+    "value": "C",
+    "label": "screen time affects sleep patterns?",
+    "is_correct": false
+  },
+  {
+    "id": 6852773,
+    "question_id": 685277,
+    "value": "D",
+    "label": "will screen time affect sleep patterns?",
+    "is_correct": false
+  },
+  {
+    "id": 3271840,
+    "question_id": 327184,
+    "value": "A",
+    "label": "however,",
+    "is_correct": false
+  },
+  {
+    "id": 3271841,
+    "question_id": 327184,
+    "value": "B",
+    "label": "however",
+    "is_correct": true
+  },
+  {
+    "id": 3271842,
+    "question_id": 327184,
+    "value": "C",
+    "label": "however;",
+    "is_correct": false
+  },
+  {
+    "id": 3271843,
+    "question_id": 327184,
+    "value": "D",
+    "label": "however.",
+    "is_correct": false
+  },
+  {
+    "id": 4817740,
+    "question_id": 481774,
+    "value": "A",
+    "label": "titles:",
+    "is_correct": false
+  },
+  {
+    "id": 4817741,
+    "question_id": 481774,
+    "value": "B",
+    "label": "titles,",
+    "is_correct": false
+  },
+  {
+    "id": 4817742,
+    "question_id": 481774,
+    "value": "C",
+    "label": "titles",
+    "is_correct": true
+  },
+  {
+    "id": 4817743,
+    "question_id": 481774,
+    "value": "D",
+    "label": "titles-",
+    "is_correct": false
+  },
+  {
+    "id": 7173560,
+    "question_id": 717356,
+    "value": "A",
+    "label": "psychology;",
+    "is_correct": false
+  },
+  {
+    "id": 7173561,
+    "question_id": 717356,
+    "value": "B",
+    "label": "psychology:",
+    "is_correct": false
+  },
+  {
+    "id": 7173562,
+    "question_id": 717356,
+    "value": "C",
+    "label": "psychology,",
+    "is_correct": true
+  },
+  {
+    "id": 7173563,
+    "question_id": 717356,
+    "value": "D",
+    "label": "psychology",
+    "is_correct": false
+  },
+  {
+    "id": 9672050,
+    "question_id": 967205,
+    "value": "A",
+    "label": "of",
+    "is_correct": true
+  },
+  {
+    "id": 9672051,
+    "question_id": 967205,
+    "value": "B",
+    "label": "of;",
+    "is_correct": false
+  },
+  {
+    "id": 9672052,
+    "question_id": 967205,
+    "value": "C",
+    "label": "of—",
+    "is_correct": false
+  },
+  {
+    "id": 9672053,
+    "question_id": 967205,
+    "value": "D",
+    "label": "of,",
+    "is_correct": false
+  },
+  {
+    "id": 5374710,
+    "question_id": 537471,
+    "value": "A",
+    "label": ", ",
+    "is_correct": true
+  },
+  {
+    "id": 5374711,
+    "question_id": 537471,
+    "value": "B",
+    "label": ";",
+    "is_correct": false
+  },
+  {
+    "id": 5374712,
+    "question_id": 537471,
+    "value": "C",
+    "label": "-",
+    "is_correct": false
+  },
+  {
+    "id": 5374713,
+    "question_id": 537471,
+    "value": "D",
+    "label": ":",
+    "is_correct": false
+  },
+  {
+    "id": 6035330,
+    "question_id": 603533,
+    "value": "A",
+    "label": "is it not?",
+    "is_correct": false
+  },
+  {
+    "id": 6035331,
+    "question_id": 603533,
+    "value": "B",
+    "label": ".",
+    "is_correct": true
+  },
+  {
+    "id": 6035332,
+    "question_id": 603533,
+    "value": "C",
+    "label": "!",
+    "is_correct": false
+  },
+  {
+    "id": 6035333,
+    "question_id": 603533,
+    "value": "D",
+    "label": "?",
+    "is_correct": false
+  },
+  {
+    "id": 946080,
+    "question_id": 94608,
+    "value": "A",
+    "label": "conifers",
+    "is_correct": false
+  },
+  {
+    "id": 946081,
+    "question_id": 94608,
+    "value": "B",
+    "label": "conifers:",
+    "is_correct": false
+  },
+  {
+    "id": 946082,
+    "question_id": 94608,
+    "value": "C",
+    "label": "conifers—",
+    "is_correct": false
+  },
+  {
+    "id": 946083,
+    "question_id": 94608,
+    "value": "D",
+    "label": "conifers,",
+    "is_correct": true
+  },
+  {
+    "id": 1807390,
+    "question_id": 180739,
+    "value": "A",
+    "label": "and",
+    "is_correct": false
+  },
+  {
+    "id": 1807391,
+    "question_id": 180739,
+    "value": "B",
+    "label": "and,",
+    "is_correct": false
+  },
+  {
+    "id": 1807392,
+    "question_id": 180739,
+    "value": "C",
+    "label": ", and",
+    "is_correct": true
+  },
+  {
+    "id": 1807393,
+    "question_id": 180739,
+    "value": "D",
+    "label": ", and,",
+    "is_correct": false
+  },
+  {
+    "id": 8002490,
+    "question_id": 800249,
+    "value": "A",
+    "label": "but",
+    "is_correct": true
+  },
+  {
+    "id": 8002491,
+    "question_id": 800249,
+    "value": "B",
+    "label": "and",
+    "is_correct": false
+  },
+  {
+    "id": 8002492,
+    "question_id": 800249,
+    "value": "C",
+    "label": "so",
+    "is_correct": false
+  },
+  {
+    "id": 8002493,
+    "question_id": 800249,
+    "value": "D",
+    "label": "for",
+    "is_correct": false
+  },
+  {
+    "id": 5869160,
+    "question_id": 586916,
+    "value": "A",
+    "label": "where plants convert light energy into chemical energy?",
+    "is_correct": false
+  },
+  {
+    "id": 5869161,
+    "question_id": 586916,
+    "value": "B",
+    "label": "where do plants convert light energy into chemical energy.",
+    "is_correct": false
+  },
+  {
+    "id": 5869162,
+    "question_id": 586916,
+    "value": "C",
+    "label": "where plants convert light energy into chemical energy.",
+    "is_correct": true
+  },
+  {
+    "id": 5869163,
+    "question_id": 586916,
+    "value": "D",
+    "label": "where do plants convert light energy into chemical energy?",
+    "is_correct": false
+  },
+  {
+    "id": 463740,
+    "question_id": 46374,
+    "value": "A",
+    "label": "sugars",
+    "is_correct": false
+  },
+  {
+    "id": 463741,
+    "question_id": 46374,
+    "value": "B",
+    "label": "sugars and",
+    "is_correct": false
+  },
+  {
+    "id": 463742,
+    "question_id": 46374,
+    "value": "C",
+    "label": "sugars,",
+    "is_correct": true
+  },
+  {
+    "id": 463743,
+    "question_id": 46374,
+    "value": "D",
+    "label": "sugars-",
+    "is_correct": false
+  },
+  {
+    "id": 9315370,
+    "question_id": 931537,
+    "value": "A",
+    "label": "1440",
+    "is_correct": false
+  },
+  {
+    "id": 9315371,
+    "question_id": 931537,
+    "value": "B",
+    "label": "1440,",
+    "is_correct": false
+  },
+  {
+    "id": 9315372,
+    "question_id": 931537,
+    "value": "C",
+    "label": "1440 and",
+    "is_correct": false
+  },
+  {
+    "id": 9315373,
+    "question_id": 931537,
+    "value": "D",
+    "label": "1440, and",
+    "is_correct": true
+  },
+  {
+    "id": 3661160,
+    "question_id": 366116,
+    "value": "A",
+    "label": "planet,",
+    "is_correct": false
+  },
+  {
+    "id": 3661161,
+    "question_id": 366116,
+    "value": "B",
+    "label": "planet;",
+    "is_correct": false
+  },
+  {
+    "id": 3661162,
+    "question_id": 366116,
+    "value": "C",
+    "label": "planet—",
+    "is_correct": false
+  },
+  {
+    "id": 3661163,
+    "question_id": 366116,
+    "value": "D",
+    "label": "planet",
+    "is_correct": true
+  },
+  {
+    "id": 7041230,
+    "question_id": 704123,
+    "value": "A",
+    "label": "investigated year this",
+    "is_correct": false
+  },
+  {
+    "id": 7041231,
+    "question_id": 704123,
+    "value": "B",
+    "label": "investigated. Year this",
+    "is_correct": false
+  },
+  {
+    "id": 7041232,
+    "question_id": 704123,
+    "value": "C",
+    "label": "investigated, year this",
+    "is_correct": true
+  },
+  {
+    "id": 7041233,
+    "question_id": 704123,
+    "value": "D",
+    "label": "investigated; year this",
+    "is_correct": false
+  },
+  {
+    "id": 6856940,
+    "question_id": 685694,
+    "value": "A",
+    "label": "regions, this",
+    "is_correct": false
+  },
+  {
+    "id": 6856941,
+    "question_id": 685694,
+    "value": "B",
+    "label": "regions; this",
+    "is_correct": true
+  },
+  {
+    "id": 6856942,
+    "question_id": 685694,
+    "value": "C",
+    "label": "regions and this",
+    "is_correct": false
+  },
+  {
+    "id": 6856943,
+    "question_id": 685694,
+    "value": "D",
+    "label": "regions. This",
+    "is_correct": false
+  },
+  {
+    "id": 9993580,
+    "question_id": 999358,
+    "value": "A",
+    "label": "as",
+    "is_correct": false
+  },
+  {
+    "id": 9993581,
+    "question_id": 999358,
+    "value": "B",
+    "label": "as,",
+    "is_correct": true
+  },
+  {
+    "id": 9993582,
+    "question_id": 999358,
+    "value": "C",
+    "label": "as;",
+    "is_correct": false
+  },
+  {
+    "id": 9993583,
+    "question_id": 999358,
+    "value": "D",
+    "label": "as-",
+    "is_correct": false
+  },
+  {
+    "id": 4629330,
+    "question_id": 462933,
+    "value": "A",
+    "label": "patterns. Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 4629331,
+    "question_id": 462933,
+    "value": "B",
+    "label": "patterns, consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 4629332,
+    "question_id": 462933,
+    "value": "C",
+    "label": "patterns consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 4629333,
+    "question_id": 462933,
+    "value": "D",
+    "label": "patterns and consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 6621000,
+    "question_id": 662100,
+    "value": "A",
+    "label": "conversely,",
+    "is_correct": true
+  },
+  {
+    "id": 6621001,
+    "question_id": 662100,
+    "value": "B",
+    "label": "conversely;",
+    "is_correct": false
+  },
+  {
+    "id": 6621002,
+    "question_id": 662100,
+    "value": "C",
+    "label": "conversely",
+    "is_correct": false
+  },
+  {
+    "id": 6621003,
+    "question_id": 662100,
+    "value": "D",
+    "label": "conversely ;",
+    "is_correct": false
+  },
+  {
+    "id": 1574690,
+    "question_id": 157469,
+    "value": "A",
+    "label": "Subsequently",
+    "is_correct": false
+  },
+  {
+    "id": 1574691,
+    "question_id": 157469,
+    "value": "B",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 1574692,
+    "question_id": 157469,
+    "value": "C",
+    "label": "Subsequently; ",
+    "is_correct": false
+  },
+  {
+    "id": 1574693,
+    "question_id": 157469,
+    "value": "D",
+    "label": "Subsequently,",
+    "is_correct": true
+  },
+  {
+    "id": 7918890,
+    "question_id": 791889,
+    "value": "A",
+    "label": "However, the",
+    "is_correct": true
+  },
+  {
+    "id": 7918891,
+    "question_id": 791889,
+    "value": "B",
+    "label": "However; the",
+    "is_correct": false
+  },
+  {
+    "id": 7918892,
+    "question_id": 791889,
+    "value": "C",
+    "label": "However: the",
+    "is_correct": false
+  },
+  {
+    "id": 7918893,
+    "question_id": 791889,
+    "value": "D",
+    "label": "However the",
+    "is_correct": false
+  },
+  {
+    "id": 4216160,
+    "question_id": 421616,
+    "value": "A",
+    "label": "participating,",
+    "is_correct": false
+  },
+  {
+    "id": 4216161,
+    "question_id": 421616,
+    "value": "B",
+    "label": "participating;",
+    "is_correct": false
+  },
+  {
+    "id": 4216162,
+    "question_id": 421616,
+    "value": "C",
+    "label": "participating:",
+    "is_correct": false
+  },
+  {
+    "id": 4216163,
+    "question_id": 421616,
+    "value": "D",
+    "label": "participating",
+    "is_correct": true
+  },
+  {
+    "id": 5802150,
+    "question_id": 580215,
+    "value": "A",
+    "label": "but",
+    "is_correct": false
+  },
+  {
+    "id": 5802151,
+    "question_id": 580215,
+    "value": "B",
+    "label": "but,",
+    "is_correct": false
+  },
+  {
+    "id": 5802152,
+    "question_id": 580215,
+    "value": "C",
+    "label": ", but",
+    "is_correct": true
+  },
+  {
+    "id": 5802153,
+    "question_id": 580215,
+    "value": "D",
+    "label": ",",
+    "is_correct": false
+  },
+  {
+    "id": 9911270,
+    "question_id": 991127,
+    "value": "A",
+    "label": "far-reaching",
+    "is_correct": true
+  },
+  {
+    "id": 9911271,
+    "question_id": 991127,
+    "value": "B",
+    "label": "far-reaching;",
+    "is_correct": false
+  },
+  {
+    "id": 9911272,
+    "question_id": 991127,
+    "value": "C",
+    "label": "far-reaching,",
+    "is_correct": false
+  },
+  {
+    "id": 9911273,
+    "question_id": 991127,
+    "value": "D",
+    "label": "far-reaching.",
+    "is_correct": false
+  },
+  {
+    "id": 8723140,
+    "question_id": 872314,
+    "value": "A",
+    "label": "invention (the",
+    "is_correct": false
+  },
+  {
+    "id": 8723141,
+    "question_id": 872314,
+    "value": "B",
+    "label": "invention-the",
+    "is_correct": false
+  },
+  {
+    "id": 8723142,
+    "question_id": 872314,
+    "value": "C",
+    "label": "invention, the",
+    "is_correct": true
+  },
+  {
+    "id": 8723143,
+    "question_id": 872314,
+    "value": "D",
+    "label": "invention the",
+    "is_correct": false
+  },
+  {
+    "id": 6085280,
+    "question_id": 608528,
+    "value": "A",
+    "label": "however:",
+    "is_correct": false
+  },
+  {
+    "id": 6085281,
+    "question_id": 608528,
+    "value": "B",
+    "label": "however,",
+    "is_correct": false
+  },
+  {
+    "id": 6085282,
+    "question_id": 608528,
+    "value": "C",
+    "label": "however;",
+    "is_correct": true
+  },
+  {
+    "id": 6085283,
+    "question_id": 608528,
+    "value": "D",
+    "label": "however.",
+    "is_correct": false
+  },
+  {
+    "id": 9504380,
+    "question_id": 950438,
+    "value": "A",
+    "label": "the Metropolitan Museum New York",
+    "is_correct": false
+  },
+  {
+    "id": 9504381,
+    "question_id": 950438,
+    "value": "B",
+    "label": "the Metropolitan Museum, New York",
+    "is_correct": false
+  },
+  {
+    "id": 9504382,
+    "question_id": 950438,
+    "value": "C",
+    "label": "the Metropolitan Museum: New York",
+    "is_correct": false
+  },
+  {
+    "id": 9504383,
+    "question_id": 950438,
+    "value": "D",
+    "label": "the Metropolitan Museum; New York",
+    "is_correct": true
+  },
+  {
+    "id": 3644550,
+    "question_id": 364455,
+    "value": "A",
+    "label": "years,",
+    "is_correct": false
+  },
+  {
+    "id": 3644551,
+    "question_id": 364455,
+    "value": "B",
+    "label": "years",
+    "is_correct": false
+  },
+  {
+    "id": 3644552,
+    "question_id": 364455,
+    "value": "C",
+    "label": "years, and",
+    "is_correct": true
+  },
+  {
+    "id": 3644553,
+    "question_id": 364455,
+    "value": "D",
+    "label": "years and,",
+    "is_correct": false
+  },
+  {
+    "id": 650200,
+    "question_id": 65020,
+    "value": "A",
+    "label": "glyphs",
+    "is_correct": false
+  },
+  {
+    "id": 650201,
+    "question_id": 65020,
+    "value": "B",
+    "label": "glyphs;",
+    "is_correct": false
+  },
+  {
+    "id": 650202,
+    "question_id": 65020,
+    "value": "C",
+    "label": "glyphs,",
+    "is_correct": false
+  },
+  {
+    "id": 650203,
+    "question_id": 65020,
+    "value": "D",
+    "label": "glyphs-",
+    "is_correct": true
+  },
+  {
+    "id": 4828930,
+    "question_id": 482893,
+    "value": "A",
+    "label": "Astronomer Jane Lee:",
+    "is_correct": false
+  },
+  {
+    "id": 4828931,
+    "question_id": 482893,
+    "value": "B",
+    "label": "Astronomer, Jane Lee,",
+    "is_correct": false
+  },
+  {
+    "id": 4828932,
+    "question_id": 482893,
+    "value": "C",
+    "label": "Astronomer Jane Lee",
+    "is_correct": true
+  },
+  {
+    "id": 4828933,
+    "question_id": 482893,
+    "value": "D",
+    "label": "Astronomer Jane Lee,",
+    "is_correct": false
+  },
+  {
+    "id": 5072300,
+    "question_id": 507230,
+    "value": "A",
+    "label": "leadership. Resilience",
+    "is_correct": false
+  },
+  {
+    "id": 5072301,
+    "question_id": 507230,
+    "value": "B",
+    "label": "leadership; resilience",
+    "is_correct": false
+  },
+  {
+    "id": 5072302,
+    "question_id": 507230,
+    "value": "C",
+    "label": "leadership resilience",
+    "is_correct": false
+  },
+  {
+    "id": 5072303,
+    "question_id": 507230,
+    "value": "D",
+    "label": "leadership: resilience",
+    "is_correct": true
+  },
+  {
+    "id": 5014660,
+    "question_id": 501466,
+    "value": "A",
+    "label": "demographics,",
+    "is_correct": true
+  },
+  {
+    "id": 5014661,
+    "question_id": 501466,
+    "value": "B",
+    "label": "demographics:",
+    "is_correct": false
+  },
+  {
+    "id": 5014662,
+    "question_id": 501466,
+    "value": "C",
+    "label": "demographics;",
+    "is_correct": false
+  },
+  {
+    "id": 5014663,
+    "question_id": 501466,
+    "value": "D",
+    "label": "demographics",
+    "is_correct": false
+  },
+  {
+    "id": 9170140,
+    "question_id": 917014,
+    "value": "A",
+    "label": "bones, by",
+    "is_correct": false
+  },
+  {
+    "id": 9170141,
+    "question_id": 917014,
+    "value": "B",
+    "label": "bones by",
+    "is_correct": false
+  },
+  {
+    "id": 9170142,
+    "question_id": 917014,
+    "value": "C",
+    "label": "bones and by",
+    "is_correct": false
+  },
+  {
+    "id": 9170143,
+    "question_id": 917014,
+    "value": "D",
+    "label": "bones. By",
+    "is_correct": true
+  },
+  {
+    "id": 4006880,
+    "question_id": 400688,
+    "value": "A",
+    "label": "conventions",
+    "is_correct": false
+  },
+  {
+    "id": 4006881,
+    "question_id": 400688,
+    "value": "B",
+    "label": "conventions,",
+    "is_correct": false
+  },
+  {
+    "id": 4006882,
+    "question_id": 400688,
+    "value": "C",
+    "label": "conventions; rather,",
+    "is_correct": true
+  },
+  {
+    "id": 4006883,
+    "question_id": 400688,
+    "value": "D",
+    "label": "conventions, rather",
+    "is_correct": false
+  },
+  {
+    "id": 4916600,
+    "question_id": 491660,
+    "value": "A",
+    "label": "however,",
+    "is_correct": true
+  },
+  {
+    "id": 4916601,
+    "question_id": 491660,
+    "value": "B",
+    "label": "however;",
+    "is_correct": false
+  },
+  {
+    "id": 4916602,
+    "question_id": 491660,
+    "value": "C",
+    "label": "however",
+    "is_correct": false
+  },
+  {
+    "id": 4916603,
+    "question_id": 491660,
+    "value": "D",
+    "label": "however; and",
+    "is_correct": false
+  },
+  {
+    "id": 2645200,
+    "question_id": 264520,
+    "value": "A",
+    "label": "consequently but it",
+    "is_correct": false
+  },
+  {
+    "id": 2645201,
+    "question_id": 264520,
+    "value": "B",
+    "label": "consequently it",
+    "is_correct": false
+  },
+  {
+    "id": 2645202,
+    "question_id": 264520,
+    "value": "C",
+    "label": "consequently, it",
+    "is_correct": false
+  },
+  {
+    "id": 2645203,
+    "question_id": 264520,
+    "value": "D",
+    "label": "consequently. It",
+    "is_correct": true
+  },
+  {
+    "id": 3364440,
+    "question_id": 336444,
+    "value": "A",
+    "label": "production,",
+    "is_correct": false
+  },
+  {
+    "id": 3364441,
+    "question_id": 336444,
+    "value": "B",
+    "label": "production;",
+    "is_correct": false
+  },
+  {
+    "id": 3364442,
+    "question_id": 336444,
+    "value": "C",
+    "label": "production and",
+    "is_correct": false
+  },
+  {
+    "id": 3364443,
+    "question_id": 336444,
+    "value": "D",
+    "label": "production, and",
+    "is_correct": true
+  },
+  {
+    "id": 1044570,
+    "question_id": 104457,
+    "value": "A",
+    "label": "invertebrates, it",
+    "is_correct": false
+  },
+  {
+    "id": 1044571,
+    "question_id": 104457,
+    "value": "B",
+    "label": "invertebrates and it",
+    "is_correct": false
+  },
+  {
+    "id": 1044572,
+    "question_id": 104457,
+    "value": "C",
+    "label": "invertebrates it",
+    "is_correct": false
+  },
+  {
+    "id": 1044573,
+    "question_id": 104457,
+    "value": "D",
+    "label": "invertebrates. It",
+    "is_correct": true
+  },
+  {
+    "id": 9158350,
+    "question_id": 915835,
+    "value": "A",
+    "label": "poet,",
+    "is_correct": false
+  },
+  {
+    "id": 9158351,
+    "question_id": 915835,
+    "value": "B",
+    "label": "poet",
+    "is_correct": true
+  },
+  {
+    "id": 9158352,
+    "question_id": 915835,
+    "value": "C",
+    "label": "poet;",
+    "is_correct": false
+  },
+  {
+    "id": 9158353,
+    "question_id": 915835,
+    "value": "D",
+    "label": "poet:",
+    "is_correct": false
+  },
+  {
+    "id": 5428000,
+    "question_id": 542800,
+    "value": "A",
+    "label": "and consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 5428001,
+    "question_id": 542800,
+    "value": "B",
+    "label": "and, consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 5428002,
+    "question_id": 542800,
+    "value": "C",
+    "label": "and consequently-",
+    "is_correct": false
+  },
+  {
+    "id": 5428003,
+    "question_id": 542800,
+    "value": "D",
+    "label": "and, consequently",
+    "is_correct": false
+  },
+  {
+    "id": 2176180,
+    "question_id": 217618,
+    "value": "A",
+    "label": "Fleming;",
+    "is_correct": false
+  },
+  {
+    "id": 2176181,
+    "question_id": 217618,
+    "value": "B",
+    "label": "Fleming,",
+    "is_correct": false
+  },
+  {
+    "id": 2176182,
+    "question_id": 217618,
+    "value": "C",
+    "label": "Fleming",
+    "is_correct": true
+  },
+  {
+    "id": 2176183,
+    "question_id": 217618,
+    "value": "D",
+    "label": "Fleming:",
+    "is_correct": false
+  },
+  {
+    "id": 3857590,
+    "question_id": 385759,
+    "value": "A",
+    "label": "physicist, Niels Bohr,",
+    "is_correct": false
+  },
+  {
+    "id": 3857591,
+    "question_id": 385759,
+    "value": "B",
+    "label": "physicist, Niels Bohr",
+    "is_correct": false
+  },
+  {
+    "id": 3857592,
+    "question_id": 385759,
+    "value": "C",
+    "label": "physicist Niels Bohr,",
+    "is_correct": false
+  },
+  {
+    "id": 3857593,
+    "question_id": 385759,
+    "value": "D",
+    "label": "physicist Niels Bohr",
+    "is_correct": true
+  },
+  {
+    "id": 1130400,
+    "question_id": 113040,
+    "value": "A",
+    "label": "PCR:",
+    "is_correct": false
+  },
+  {
+    "id": 1130401,
+    "question_id": 113040,
+    "value": "B",
+    "label": "PCR—",
+    "is_correct": true
+  },
+  {
+    "id": 1130402,
+    "question_id": 113040,
+    "value": "C",
+    "label": "PCR,",
+    "is_correct": false
+  },
+  {
+    "id": 1130403,
+    "question_id": 113040,
+    "value": "D",
+    "label": "PCR",
+    "is_correct": false
+  },
+  {
+    "id": 4267750,
+    "question_id": 426775,
+    "value": "A",
+    "label": "recognized",
+    "is_correct": false
+  },
+  {
+    "id": 4267751,
+    "question_id": 426775,
+    "value": "B",
+    "label": "recognized,",
+    "is_correct": false
+  },
+  {
+    "id": 4267752,
+    "question_id": 426775,
+    "value": "C",
+    "label": "recognized and,",
+    "is_correct": false
+  },
+  {
+    "id": 4267753,
+    "question_id": 426775,
+    "value": "D",
+    "label": "recognized:",
+    "is_correct": true
+  },
+  {
+    "id": 2182720,
+    "question_id": 218272,
+    "value": "A",
+    "label": "insects; triggered",
+    "is_correct": false
+  },
+  {
+    "id": 2182721,
+    "question_id": 218272,
+    "value": "B",
+    "label": "insects, triggered",
+    "is_correct": false
+  },
+  {
+    "id": 2182722,
+    "question_id": 218272,
+    "value": "C",
+    "label": "insects. Triggered",
+    "is_correct": true
+  },
+  {
+    "id": 2182723,
+    "question_id": 218272,
+    "value": "D",
+    "label": "insects - triggered",
+    "is_correct": false
+  },
+  {
+    "id": 1977610,
+    "question_id": 197761,
+    "value": "A",
+    "label": "today: because",
+    "is_correct": true
+  },
+  {
+    "id": 1977611,
+    "question_id": 197761,
+    "value": "B",
+    "label": "today; because",
+    "is_correct": false
+  },
+  {
+    "id": 1977612,
+    "question_id": 197761,
+    "value": "C",
+    "label": "today, because",
+    "is_correct": false
+  },
+  {
+    "id": 1977613,
+    "question_id": 197761,
+    "value": "D",
+    "label": "today. Because",
+    "is_correct": false
+  },
+  {
+    "id": 3260780,
+    "question_id": 326078,
+    "value": "A",
+    "label": "punctuated",
+    "is_correct": false
+  },
+  {
+    "id": 3260781,
+    "question_id": 326078,
+    "value": "B",
+    "label": "punctuated:",
+    "is_correct": false
+  },
+  {
+    "id": 3260782,
+    "question_id": 326078,
+    "value": "C",
+    "label": "punctuated;",
+    "is_correct": true
+  },
+  {
+    "id": 3260783,
+    "question_id": 326078,
+    "value": "D",
+    "label": "punctuated.",
+    "is_correct": false
+  }
+]

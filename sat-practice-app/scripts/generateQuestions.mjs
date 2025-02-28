@@ -12,13 +12,55 @@ const __dirname = dirname(__filename);
 // Load environment variables from .env.local in the root directory
 dotenv.config({ path: join(__dirname, '../.env.local') });
 
-// Constants for subject, category, and subcategory mapping
-const SUBJECT_ID = 1; // Math
-const CATEGORY_ID = 2; // Algebra
-const SUBCATEGORY_ID = 18; // Systems of Linear Equations
-const SUBJECT_NAME = 'Math';
-const CATEGORY_NAME = 'Algebra';
-const SUBCATEGORY_NAME = 'Systems of Linear Equations';
+// Mapping for subject, category, and subcategory IDs
+const SUBJECT_MAPPING = {
+  'Math': 1,
+  'Reading & Writing': 4
+};
+
+const CATEGORY_MAPPING = {
+  'Advanced Math': { subject_id: 1, category_id: 1 },
+  'Algebra': { subject_id: 1, category_id: 2 },
+  'Craft and Structure': { subject_id: 4, category_id: 4 },
+  'Information and Ideas': { subject_id: 4, category_id: 5 },
+  'Standard English Conventions': { subject_id: 4, category_id: 6 },
+  'Problem-Solving and Data Analysis': { subject_id: 1, category_id: 7 },
+  'Geometry and Trigonometry': { subject_id: 1, category_id: 8 },
+  'Expression of Ideas': { subject_id: 4, category_id: 9 }
+};
+
+const SUBCATEGORY_MAPPING = {
+  'Equivalent Expressions': { category_id: 1, subcategory_id: 1 },
+  'Nonlinear Equations and Systems': { category_id: 1, subcategory_id: 2 },
+  'Nonlinear Functions': { category_id: 1, subcategory_id: 3 },
+  'Data Analysis': { category_id: 3, subcategory_id: 7 },
+  'Linear Equations in One Variable': { category_id: 2, subcategory_id: 14 },
+  'Linear Equations in Two Variables': { category_id: 2, subcategory_id: 15 },
+  'Linear Functions': { category_id: 2, subcategory_id: 16 },
+  'Linear Inequalities': { category_id: 2, subcategory_id: 17 },
+  'Systems of Linear Equations': { category_id: 2, subcategory_id: 18 },
+  'One-Variable Data': { category_id: 7, subcategory_id: 19 },
+  'Two-Variable Data': { category_id: 7, subcategory_id: 20 },
+  'Probability': { category_id: 7, subcategory_id: 21 },
+  'Sample Statistics and Margin of Error': { category_id: 7, subcategory_id: 22 },
+  'Evaluating Statistical Claims': { category_id: 7, subcategory_id: 23 },
+  'Percentages': { category_id: 7, subcategory_id: 24 },
+  'Ratios, Rates, Proportions, and Units': { category_id: 7, subcategory_id: 25 },
+  'Lines, Angles, and Triangles': { category_id: 8, subcategory_id: 26 },
+  'Right Triangles and Trigonometry': { category_id: 8, subcategory_id: 27 },
+  'Circles': { category_id: 8, subcategory_id: 28 },
+  'Area and Volume': { category_id: 8, subcategory_id: 29 },
+  'Central Ideas and Details': { category_id: 5, subcategory_id: 30 },
+  'Command of Evidence': { category_id: 5, subcategory_id: 31 },
+  'Inferences': { category_id: 5, subcategory_id: 32 },
+  'Text, Structure, and Purpose': { category_id: 4, subcategory_id: 33 },
+  'Words in Context': { category_id: 4, subcategory_id: 34 },
+  'Cross-Text Connections': { category_id: 4, subcategory_id: 35 },
+  'Rhetorical Synthesis': { category_id: 9, subcategory_id: 36 },
+  'Transitions': { category_id: 9, subcategory_id: 37 },
+  'Boundaries': { category_id: 6, subcategory_id: 38 },
+  'Form, Structure, and Sense': { category_id: 6, subcategory_id: 39 }
+};
 
 // Logging utility
 const log = {
@@ -29,6 +71,52 @@ const log = {
 };
 
 /**
+ * Get metadata for a file based on its path
+ * @param {string} filePath - Path to the markdown file
+ * @returns {Object} - Metadata including subject, category, subcategory, and IDs
+ */
+function getMetadataFromPath(filePath) {
+  const pathParts = filePath.split(path.sep);
+  const fileName = path.basename(filePath, '.md');
+  
+  // Extract subject, category, and subcategory from path
+  const subject = pathParts[pathParts.indexOf('markdown') + 1];
+  const category = pathParts[pathParts.indexOf(subject) + 1];
+  
+  // Extract subcategory from filename (remove difficulty indicator)
+  const subcategoryMatch = fileName.match(/(.+?)\s+\d+~Key$/);
+  const subcategory = subcategoryMatch ? subcategoryMatch[1] : fileName.replace(/\s+\d+~Key$/, '');
+  
+  // Determine difficulty based on filename
+  let difficulty = 'Medium'; // Default
+  if (fileName.includes('1~Key')) {
+    difficulty = 'Easy';
+  } else if (fileName.includes('2~Key')) {
+    difficulty = 'Medium';
+  } else if (fileName.includes('3~Key')) {
+    difficulty = 'Hard';
+  }
+  
+  // Log the extracted difficulty for debugging
+  console.log(`File: ${fileName}, Extracted difficulty: ${difficulty}`);
+  
+  // Get IDs from mappings
+  const subject_id = SUBJECT_MAPPING[subject] || 0;
+  const category_id = CATEGORY_MAPPING[category]?.category_id || 0;
+  const subcategory_id = SUBCATEGORY_MAPPING[subcategory]?.subcategory_id || 0;
+  
+  return {
+    subject,
+    category,
+    subcategory,
+    difficulty,
+    subject_id,
+    category_id,
+    subcategory_id
+  };
+}
+
+/**
  * Read and parse a markdown file containing SAT questions
  * @param {string} filePath - Path to the markdown file
  * @returns {Array} - Array of parsed questions
@@ -37,17 +125,10 @@ async function parseMarkdownFile(filePath) {
   try {
     const content = await fs.readFile(filePath, 'utf-8');
     
-    // Determine difficulty based on filename
-    let difficulty = 'Medium'; // Default
-    if (filePath.includes('1~Key')) {
-      difficulty = 'Easy';
-    } else if (filePath.includes('2~Key')) {
-      difficulty = 'Medium';
-    } else if (filePath.includes('3~Key')) {
-      difficulty = 'Hard';
-    }
+    // Get metadata from file path
+    const metadata = getMetadataFromPath(filePath);
     
-    log.info(`Parsing file: ${path.basename(filePath)} - Difficulty: ${difficulty}`);
+    log.info(`Parsing file: ${path.basename(filePath)} - Difficulty: ${metadata.difficulty}`);
     
     // Split the content by "Question ID" to find all questions
     const questionBlocks = content.split('Question ID').filter(Boolean);
@@ -142,14 +223,14 @@ async function parseMarkdownFile(filePath) {
         id,
         question_text: questionContent,
         image_url: imageUrl,
-        difficulty,
+        difficulty: metadata.difficulty,
         options,
-        subject: SUBJECT_NAME,
-        category: CATEGORY_NAME,
-        subcategory: SUBCATEGORY_NAME,
-        subject_id: SUBJECT_ID,
-        category_id: CATEGORY_ID,
-        subcategory_id: SUBCATEGORY_ID
+        subject: metadata.subject,
+        category: metadata.category,
+        subcategory: metadata.subcategory,
+        subject_id: metadata.subject_id,
+        category_id: metadata.category_id,
+        subcategory_id: metadata.subcategory_id
       });
       
       log.progress(`Extracted question ID: ${id}`);
@@ -294,7 +375,7 @@ async function generateQuestions(question, count = 1) {
     
     // Create a prompt for Gemini
     const prompt = `
-You are an expert SAT question creator. Create ${count} NEW and UNIQUE SAT Math questions based on the following example:
+You are an expert SAT question creator. Create ${count} NEW and UNIQUE SAT ${question.subject} questions based on the following example:
 
 Original Question: ${question.question_text}
 Difficulty: ${question.difficulty}
@@ -336,7 +417,7 @@ Think step by step about how to create these questions. First, understand the pa
 `;
 
     // Get the Gemini API key from environment variables
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY_2;
     log.info(`Using Gemini API key: ${apiKey.substring(0, 5)}...`);
     
     // Call Gemini API with retry logic
@@ -379,7 +460,15 @@ Think step by step about how to create these questions. First, understand the pa
         const responseData = await response.json();
         
         if (!response.ok) {
-          throw new Error(`Gemini API error: ${JSON.stringify(responseData)}`);
+          // If we get a 429 error (Too Many Requests), wait longer before retrying
+          if (response.status === 429) {
+            log.error(`Rate limit exceeded (429). Waiting longer before retry...`);
+            // Wait for a longer time (15 seconds) before retrying
+            await new Promise(resolve => setTimeout(resolve, 15000));
+            throw new Error(`Gemini API rate limit exceeded: ${JSON.stringify(responseData)}`);
+          } else {
+            throw new Error(`Gemini API error: ${JSON.stringify(responseData)}`);
+          }
         }
         
         // Extract the generated content
@@ -410,20 +499,30 @@ Think step by step about how to create these questions. First, understand the pa
           }
         }
         
-        // Add metadata to each question
-        return extractedQuestions.map(q => {
-          return {
+        // Add metadata to each question - ensure difficulty is correctly inherited from template
+        const generatedQuestionsWithMetadata = extractedQuestions.map(q => {
+          const questionWithMetadata = {
             ...q,
-            difficulty: question.difficulty, // Preserve the difficulty from the template question
-            subject: SUBJECT_NAME,
-            category: CATEGORY_NAME,
-            subcategory: SUBCATEGORY_NAME,
-            subject_id: SUBJECT_ID,
-            category_id: CATEGORY_ID,
-            subcategory_id: SUBCATEGORY_ID,
+            difficulty: question.difficulty, // Explicitly preserve the difficulty from the template question
+            subject: question.subject,
+            category: question.category,
+            subcategory: question.subcategory,
+            subject_id: question.subject_id,
+            category_id: question.category_id,
+            subcategory_id: question.subcategory_id,
             id: Math.floor(Math.random() * 1000000) // Generate a random ID
           };
+          
+          // Log the difficulty of each generated question for verification
+          log.info(`Generated question with difficulty: ${questionWithMetadata.difficulty}`);
+          
+          return questionWithMetadata;
         });
+        
+        // Add a delay after successful API call to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        
+        return generatedQuestionsWithMetadata;
       } catch (apiError) {
         log.error(`API Error: ${apiError.message}`);
         attempts++;
@@ -431,8 +530,8 @@ Think step by step about how to create these questions. First, understand the pa
           return [];
         }
         log.info(`Retrying (attempt ${attempts + 1}/${maxAttempts})...`);
-        // Wait a bit before retrying
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Wait longer between retries (10 seconds)
+        await new Promise(resolve => setTimeout(resolve, 10000));
       }
     }
     
@@ -446,9 +545,33 @@ Think step by step about how to create these questions. First, understand the pa
 /**
  * Save generated questions and options to JSON files
  * @param {Array} questions - Array of generated questions
+ * @param {Number} subcategoryId - Subcategory ID for file naming
  */
-async function saveToJson(questions) {
+async function saveToJson(questions, subcategoryId) {
   try {
+    if (questions.length === 0) {
+      log.error(`No questions to save for subcategory ${subcategoryId}`);
+      return;
+    }
+    
+    // Log difficulty distribution for verification
+    const difficultyCount = {
+      Easy: 0,
+      Medium: 0,
+      Hard: 0,
+      Other: 0
+    };
+    
+    questions.forEach(q => {
+      if (q.difficulty === 'Easy') difficultyCount.Easy++;
+      else if (q.difficulty === 'Medium') difficultyCount.Medium++;
+      else if (q.difficulty === 'Hard') difficultyCount.Hard++;
+      else difficultyCount.Other++;
+    });
+    
+    log.info(`Difficulty distribution for subcategory ${subcategoryId}:`);
+    log.info(`Easy: ${difficultyCount.Easy}, Medium: ${difficultyCount.Medium}, Hard: ${difficultyCount.Hard}, Other: ${difficultyCount.Other}`);
+    
     // Prepare questions and options arrays
     const questionsJson = questions.map(q => ({
       id: q.id,
@@ -483,18 +606,50 @@ async function saveToJson(questions) {
     
     // Write to JSON files
     await fs.writeFile(
-      join(outputDir, `questions-${SUBCATEGORY_ID}.json`),
+      join(outputDir, `questions-${subcategoryId}.json`),
       JSON.stringify(questionsJson, null, 2)
     );
     
     await fs.writeFile(
-      join(outputDir, `options-${SUBCATEGORY_ID}.json`),
+      join(outputDir, `options-${subcategoryId}.json`),
       JSON.stringify(optionsJson, null, 2)
     );
     
-    log.success(`Successfully saved ${questions.length} questions to JSON files`);
+    log.success(`Successfully saved ${questions.length} questions to JSON files for subcategory ${subcategoryId}`);
   } catch (error) {
-    log.error(`Error saving to JSON: ${error.message}`);
+    log.error(`Error saving to JSON for subcategory ${subcategoryId}: ${error.message}`);
+  }
+}
+
+/**
+ * Find all markdown files in the question bank
+ * @returns {Array} - Array of file paths
+ */
+async function findAllMarkdownFiles() {
+  try {
+    const markdownDir = join(__dirname, '../sat-parser/sat-question-bank/markdown');
+    const allFiles = [];
+    
+    // Function to recursively search for markdown files
+    async function searchDirectory(dir) {
+      const entries = await fs.readdir(dir, { withFileTypes: true });
+      
+      for (const entry of entries) {
+        const fullPath = join(dir, entry.name);
+        
+        if (entry.isDirectory()) {
+          await searchDirectory(fullPath);
+        } else if (entry.name.endsWith('~Key.md')) {
+          allFiles.push(fullPath);
+        }
+      }
+    }
+    
+    await searchDirectory(markdownDir);
+    return allFiles;
+  } catch (error) {
+    log.error(`Error finding markdown files: ${error.message}`);
+    return [];
   }
 }
 
@@ -505,62 +660,100 @@ async function main() {
   try {
     log.info('Starting SAT question generation process...');
     
-    // Define paths to the markdown files
-    const markdownDir = join(__dirname, '../sat-parser/sat-question-bank/markdown/Math/Algebra');
-    const filePaths = [
-      join(markdownDir, 'Systems of Linear Equations 1~Key.md'), // Easy difficulty
-      join(markdownDir, 'Systems of Linear Equations 2~Key.md'), // Medium difficulty
-      join(markdownDir, 'Systems of Linear Equations 3~Key.md')  // Hard difficulty
-    ];
+    // Find all markdown files
+    const allMarkdownFiles = await findAllMarkdownFiles();
+    log.info(`Found ${allMarkdownFiles.length} markdown files to process`);
     
-    // Parse all markdown files
-    const allQuestions = [];
-    const fileQuestions = [];
+    // Group files by subcategory
+    const filesBySubcategory = {};
     
-    for (const filePath of filePaths) {
-      log.progress(`Parsing file: ${path.basename(filePath)}`);
-      const questions = await parseMarkdownFile(filePath);
+    for (const filePath of allMarkdownFiles) {
+      const metadata = getMetadataFromPath(filePath);
+      const key = `${metadata.subcategory_id}`;
       
-      // Store questions by file for batch processing
-      if (questions.length > 0) {
-        // Use all questions found in the file
-        fileQuestions.push({
-          filePath: path.basename(filePath),
-          questions: questions
-        });
-        log.info(`Added ${questions.length} questions from ${path.basename(filePath)}`);
-      } else {
-        log.error(`No questions found in ${path.basename(filePath)}`);
+      if (!filesBySubcategory[key]) {
+        filesBySubcategory[key] = [];
       }
+      
+      filesBySubcategory[key].push(filePath);
     }
     
-    // Generate new questions based on parsed questions
-    const generatedQuestions = [];
+    // Get subcategory IDs and sort them numerically
+    const subcategoryIds = Object.keys(filesBySubcategory).sort((a, b) => parseInt(a) - parseInt(b));
     
-    for (const fileData of fileQuestions) {
-      log.info(`Processing questions from ${fileData.filePath} (${fileData.questions.length} questions)`);
+    // Filter to only include subcategory IDs >= 37
+    const filteredSubcategoryIds = subcategoryIds.filter(id => parseInt(id) >= 37);
+    
+    log.info(`Starting from subcategory 37. Will process these subcategories: ${filteredSubcategoryIds.join(', ')}`);
+    
+    // Process each subcategory starting from 37
+    for (const subcategoryId of filteredSubcategoryIds) {
+      const filePaths = filesBySubcategory[subcategoryId];
       
-      // Generate 3 questions from each template to get approximately 20 questions per file
-      for (const templateQuestion of fileData.questions) {
+      if (subcategoryId === '0') {
+        log.error(`Skipping files with unknown subcategory ID`);
+        continue;
+      }
+      
+      log.info(`Processing subcategory ID: ${subcategoryId} (${filePaths.length} files)`);
+      
+      // Parse all files for this subcategory
+      const allQuestions = [];
+      
+      for (const filePath of filePaths) {
+        log.progress(`Parsing file: ${path.basename(filePath)}`);
+        const questions = await parseMarkdownFile(filePath);
+        
+        if (questions.length > 0) {
+          allQuestions.push(...questions);
+          log.info(`Added ${questions.length} questions from ${path.basename(filePath)}`);
+        } else {
+          log.error(`No questions found in ${path.basename(filePath)}`);
+        }
+      }
+      
+      if (allQuestions.length === 0) {
+        log.error(`No questions found for subcategory ${subcategoryId}, skipping`);
+        continue;
+      }
+      
+      // Generate new questions based on parsed questions
+      const generatedQuestions = [];
+      // Generate 1 question per template instead of a fixed number
+      const questionsPerTemplate = 1;
+      
+      // Remove the template limit to process all questions from the file
+      const templates = allQuestions;
+      
+      log.info(`Using ${templates.length} templates to generate questions for subcategory ${subcategoryId}`);
+      
+      for (const templateQuestion of templates) {
         if (templateQuestion && templateQuestion.id) {
-          log.progress(`Generating 3 questions based on template ID: ${templateQuestion.id} (Difficulty: ${templateQuestion.difficulty})`);
-          // Generate 2 questions based on this template
-          const newQuestions = await generateQuestions(templateQuestion, 2);
+          log.progress(`Generating ${questionsPerTemplate} question based on template ID: ${templateQuestion.id} (Difficulty: ${templateQuestion.difficulty})`);
+          
+          const newQuestions = await generateQuestions(templateQuestion, questionsPerTemplate);
           generatedQuestions.push(...newQuestions);
           
           // Save progress after each template to avoid losing work if interrupted
           if (newQuestions.length > 0) {
-            await saveToJson([...generatedQuestions]);
-            log.progress(`Progress saved: ${generatedQuestions.length} questions generated so far`);
+            await saveToJson([...generatedQuestions], subcategoryId);
+            log.progress(`Progress saved: ${generatedQuestions.length} questions generated so far for subcategory ${subcategoryId}`);
           }
+          
+          // Add a delay between template questions to avoid rate limiting
+          await new Promise(resolve => setTimeout(resolve, 3000));
         }
       }
+      
+      log.info(`Generated ${generatedQuestions.length} new questions for subcategory ${subcategoryId}`);
+      
+      // Final save of all generated questions for this subcategory
+      await saveToJson(generatedQuestions, subcategoryId);
+      
+      // Add a longer delay between subcategories to avoid rate limiting
+      log.info(`Waiting 30 seconds before processing next subcategory to avoid rate limiting...`);
+      await new Promise(resolve => setTimeout(resolve, 30000));
     }
-    
-    log.info(`Generated ${generatedQuestions.length} new questions in total`);
-    
-    // Final save of all generated questions
-    await saveToJson(generatedQuestions);
     
     log.success('Question generation process completed successfully!');
   } catch (error) {

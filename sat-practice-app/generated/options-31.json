@@ -1,0 +1,2690 @@
+[
+  {
+    "id": 7709150,
+    "question_id": 770915,
+    "value": "A",
+    "label": "Tomato plants treated with GrowBoost showed slightly greener leaves than those treated with standard fertilizer.",
+    "is_correct": false
+  },
+  {
+    "id": 7709151,
+    "question_id": 770915,
+    "value": "B",
+    "label": "Tomato plants treated with GrowBoost produced an average of 2.5 kilograms of tomatoes per plant, while those treated with standard fertilizer produced 2.0 kilograms per plant.",
+    "is_correct": true
+  },
+  {
+    "id": 7709152,
+    "question_id": 770915,
+    "value": "C",
+    "label": "Tomatoes from plants treated with GrowBoost were slightly larger in size compared to tomatoes from plants treated with standard fertilizer.",
+    "is_correct": false
+  },
+  {
+    "id": 7709153,
+    "question_id": 770915,
+    "value": "D",
+    "label": "The soil in which GrowBoost-treated plants were grown showed a higher concentration of certain nutrients after the growing season compared to soil from standard-fertilizer plants.",
+    "is_correct": false
+  },
+  {
+    "id": 5055160,
+    "question_id": 505516,
+    "value": "A",
+    "label": "high enough to result in approximately 20 fewer appointments than predicted.",
+    "is_correct": false
+  },
+  {
+    "id": 5055161,
+    "question_id": 505516,
+    "value": "B",
+    "label": "low enough to result in approximately 20 more appointments than predicted.",
+    "is_correct": false
+  },
+  {
+    "id": 5055162,
+    "question_id": 505516,
+    "value": "C",
+    "label": "low enough to result in approximately 20 fewer appointments than predicted.",
+    "is_correct": true
+  },
+  {
+    "id": 5055163,
+    "question_id": 505516,
+    "value": "D",
+    "label": "high enough to result in approximately 40 fewer appointments than predicted.",
+    "is_correct": false
+  },
+  {
+    "id": 8071870,
+    "question_id": 807187,
+    "value": "A",
+    "label": "a smaller average leaf area and a shorter average stem elongation.",
+    "is_correct": false
+  },
+  {
+    "id": 8071871,
+    "question_id": 807187,
+    "value": "B",
+    "label": "a smaller average leaf area and a longer average stem elongation.",
+    "is_correct": false
+  },
+  {
+    "id": 8071872,
+    "question_id": 807187,
+    "value": "C",
+    "label": "a larger average leaf area and a longer average stem elongation.",
+    "is_correct": true
+  },
+  {
+    "id": 8071873,
+    "question_id": 807187,
+    "value": "D",
+    "label": "a larger average leaf area and a shorter average stem elongation.",
+    "is_correct": false
+  },
+  {
+    "id": 4679130,
+    "question_id": 467913,
+    "value": "A",
+    "label": "Debate Club has a higher enrollment in 10th grade than in 9th grade.",
+    "is_correct": true
+  },
+  {
+    "id": 4679131,
+    "question_id": 467913,
+    "value": "B",
+    "label": "Math Club has the highest total enrollment across both grades.",
+    "is_correct": false
+  },
+  {
+    "id": 4679132,
+    "question_id": 467913,
+    "value": "C",
+    "label": "Drama Club has the same enrollment in both 9th and 10th grade.",
+    "is_correct": false
+  },
+  {
+    "id": 4679133,
+    "question_id": 467913,
+    "value": "D",
+    "label": "Math Club's 9th grade enrollment is lower than Drama Club's 9th grade enrollment.",
+    "is_correct": false
+  },
+  {
+    "id": 5052510,
+    "question_id": 505251,
+    "value": "A",
+    "label": "The editor of \\",
+    "is_correct": false
+  },
+  {
+    "id": 5052511,
+    "question_id": 505251,
+    "value": "B",
+    "label": "Many readers of \\",
+    "is_correct": false
+  },
+  {
+    "id": 5052512,
+    "question_id": 505251,
+    "value": "C",
+    "label": "Professionals in the tech industry frequently cite articles from \\",
+    "is_correct": true
+  },
+  {
+    "id": 5052513,
+    "question_id": 505251,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3645670,
+    "question_id": 364567,
+    "value": "A",
+    "label": "Ford's production figures showed a slight decrease in growth rate after 1925.",
+    "is_correct": false
+  },
+  {
+    "id": 3645671,
+    "question_id": 364567,
+    "value": "B",
+    "label": "General Motors produced more vehicles than Chrysler in 1929.",
+    "is_correct": false
+  },
+  {
+    "id": 3645672,
+    "question_id": 364567,
+    "value": "C",
+    "label": "Chrysler's vehicle production was below 500,000 units in 1921.",
+    "is_correct": false
+  },
+  {
+    "id": 3645673,
+    "question_id": 364567,
+    "value": "D",
+    "label": "From 1921 to 1929, vehicle production increased substantially for Chrysler, Ford, and General Motors.",
+    "is_correct": true
+  },
+  {
+    "id": 8911770,
+    "question_id": 891177,
+    "value": "A",
+    "label": "and student 2 achieved the highest score despite studying less than student 1.",
+    "is_correct": false
+  },
+  {
+    "id": 8911771,
+    "question_id": 891177,
+    "value": "B",
+    "label": "even though study time is not the only factor affecting test scores.",
+    "is_correct": false
+  },
+  {
+    "id": 8911772,
+    "question_id": 891177,
+    "value": "C",
+    "label": "but student 3, who studied significantly less than student 2, received a noticeably lower test score.",
+    "is_correct": true
+  },
+  {
+    "id": 8911773,
+    "question_id": 891177,
+    "value": "D",
+    "label": "and all students showed improvement over previous tests regardless of study time.",
+    "is_correct": false
+  },
+  {
+    "id": 5370180,
+    "question_id": 537018,
+    "value": "A",
+    "label": "A study showing that caffeine significantly improves the reaction times of participants who have been sleep-deprived, but has minimal effect on well-rested participants.",
+    "is_correct": true
+  },
+  {
+    "id": 5370181,
+    "question_id": 537018,
+    "value": "B",
+    "label": "An analysis of large datasets indicating a strong positive correlation between national coffee consumption and overall academic achievement scores.",
+    "is_correct": false
+  },
+  {
+    "id": 5370182,
+    "question_id": 537018,
+    "value": "C",
+    "label": "Experiments demonstrating that caffeine consumption leads to increased activity in brain regions associated with attention and working memory in all participants.",
+    "is_correct": false
+  },
+  {
+    "id": 5370183,
+    "question_id": 537018,
+    "value": "D",
+    "label": "Observations that individuals who regularly consume caffeine report feeling more energetic and motivated throughout the day, regardless of their fatigue levels.",
+    "is_correct": false
+  },
+  {
+    "id": 6486960,
+    "question_id": 648696,
+    "value": "A",
+    "label": "more books on average than both ninth-grade and eleventh-grade students.",
+    "is_correct": true
+  },
+  {
+    "id": 6486961,
+    "question_id": 648696,
+    "value": "B",
+    "label": "fewer books on average than both ninth-grade and eleventh-grade students.",
+    "is_correct": false
+  },
+  {
+    "id": 6486962,
+    "question_id": 648696,
+    "value": "C",
+    "label": "more books on average than ninth-grade students but fewer than eleventh-grade students.",
+    "is_correct": false
+  },
+  {
+    "id": 6486963,
+    "question_id": 648696,
+    "value": "D",
+    "label": "fewer books on average than ninth-grade students but more than eleventh-grade students.",
+    "is_correct": false
+  },
+  {
+    "id": 9175020,
+    "question_id": 917502,
+    "value": "A",
+    "label": "North America saw a modest increase overall.",
+    "is_correct": true
+  },
+  {
+    "id": 9175021,
+    "question_id": 917502,
+    "value": "B",
+    "label": "South America declined sharply after 2016.",
+    "is_correct": false
+  },
+  {
+    "id": 9175022,
+    "question_id": 917502,
+    "value": "C",
+    "label": "Europe experienced a significant decrease from 2010 to 2014.",
+    "is_correct": false
+  },
+  {
+    "id": 9175023,
+    "question_id": 917502,
+    "value": "D",
+    "label": "Asia remained consistently low throughout the period.",
+    "is_correct": false
+  },
+  {
+    "id": 6970320,
+    "question_id": 697032,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6970321,
+    "question_id": 697032,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6970322,
+    "question_id": 697032,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6970323,
+    "question_id": 697032,
+    "value": "D",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 5029250,
+    "question_id": 502925,
+    "value": "A",
+    "label": "China and Japan.",
+    "is_correct": true
+  },
+  {
+    "id": 5029251,
+    "question_id": 502925,
+    "value": "B",
+    "label": "Germany and South Korea.",
+    "is_correct": false
+  },
+  {
+    "id": 5029252,
+    "question_id": 502925,
+    "value": "C",
+    "label": "Germany and China.",
+    "is_correct": false
+  },
+  {
+    "id": 5029253,
+    "question_id": 502925,
+    "value": "D",
+    "label": "United Kingdom and South Korea.",
+    "is_correct": false
+  },
+  {
+    "id": 1993990,
+    "question_id": 199399,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 1993991,
+    "question_id": 199399,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 1993992,
+    "question_id": 199399,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 1993993,
+    "question_id": 199399,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 4614060,
+    "question_id": 461406,
+    "value": "A",
+    "label": "The average user rating for TechPhone was approximately 3.2 in 2015 and approximately 4.5 in 2024.",
+    "is_correct": true
+  },
+  {
+    "id": 4614061,
+    "question_id": 461406,
+    "value": "B",
+    "label": "The highest average user rating for TechPhone during the period shown was approximately 4.8 in 2022.",
+    "is_correct": false
+  },
+  {
+    "id": 4614062,
+    "question_id": 461406,
+    "value": "C",
+    "label": "The lowest average user rating for TechPhone during the period shown was approximately 2.8 in 2018.",
+    "is_correct": false
+  },
+  {
+    "id": 4614063,
+    "question_id": 461406,
+    "value": "D",
+    "label": "The average user rating for TechPhone was approximately 3.5 in 2017 and approximately 2.8 in 2018.",
+    "is_correct": false
+  },
+  {
+    "id": 3539980,
+    "question_id": 353998,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3539981,
+    "question_id": 353998,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 3539982,
+    "question_id": 353998,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3539983,
+    "question_id": 353998,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5737810,
+    "question_id": 573781,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5737811,
+    "question_id": 573781,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5737812,
+    "question_id": 573781,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 5737813,
+    "question_id": 573781,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 2842500,
+    "question_id": 284250,
+    "value": "A",
+    "label": "Students surveyed report feeling less inhibited to participate in online discussions compared to face-to-face classroom settings.",
+    "is_correct": false
+  },
+  {
+    "id": 2842501,
+    "question_id": 284250,
+    "value": "B",
+    "label": "Online learning platforms gather extensive data on student engagement and learning patterns, allowing for continuous refinement of platform algorithms.",
+    "is_correct": false
+  },
+  {
+    "id": 2842502,
+    "question_id": 284250,
+    "value": "C",
+    "label": "Comparative studies indicate that students utilizing personalized online learning platforms achieve demonstrably higher scores on standardized assessments compared to students in conventional classrooms.",
+    "is_correct": true
+  },
+  {
+    "id": 2842503,
+    "question_id": 284250,
+    "value": "D",
+    "label": "Numerous online learning platforms incorporate game-like elements designed to foster student motivation and sustained engagement.",
+    "is_correct": false
+  },
+  {
+    "id": 2437520,
+    "question_id": 243752,
+    "value": "A",
+    "label": "plants treated with Fertilizer X grew to an average height of 25 cm, while control plants averaged 15 cm in height.",
+    "is_correct": true
+  },
+  {
+    "id": 2437521,
+    "question_id": 243752,
+    "value": "B",
+    "label": "plants treated with Fertilizer Y showed the least growth among all groups.",
+    "is_correct": false
+  },
+  {
+    "id": 2437522,
+    "question_id": 243752,
+    "value": "C",
+    "label": "the use of Fertilizer Y resulted in plants that were 5 cm taller than those in the control group.",
+    "is_correct": false
+  },
+  {
+    "id": 2437523,
+    "question_id": 243752,
+    "value": "D",
+    "label": "the combined height of plants treated with Fertilizer X and Fertilizer Y is less than double the height of control plants.",
+    "is_correct": false
+  },
+  {
+    "id": 7312510,
+    "question_id": 731251,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7312511,
+    "question_id": 731251,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 7312512,
+    "question_id": 731251,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7312513,
+    "question_id": 731251,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9958660,
+    "question_id": 995866,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9958661,
+    "question_id": 995866,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9958662,
+    "question_id": 995866,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 9958663,
+    "question_id": 995866,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 944890,
+    "question_id": 94489,
+    "value": "A",
+    "label": "the Scarlet Macaw.",
+    "is_correct": true
+  },
+  {
+    "id": 944891,
+    "question_id": 94489,
+    "value": "B",
+    "label": "the African Grey parrot.",
+    "is_correct": false
+  },
+  {
+    "id": 944892,
+    "question_id": 94489,
+    "value": "C",
+    "label": "the Yellow-crested Cockatoo.",
+    "is_correct": false
+  },
+  {
+    "id": 944893,
+    "question_id": 94489,
+    "value": "D",
+    "label": "the Budgerigar.",
+    "is_correct": false
+  },
+  {
+    "id": 9102970,
+    "question_id": 910297,
+    "value": "A",
+    "label": "Product A and Product E, both targeted at younger demographics and using Strategy X, had positive total sales changes.",
+    "is_correct": false
+  },
+  {
+    "id": 9102971,
+    "question_id": 910297,
+    "value": "B",
+    "label": "Product B and Product D had positive total sales changes, but Product B used Strategy Y and Product D used Strategy X.",
+    "is_correct": false
+  },
+  {
+    "id": 9102972,
+    "question_id": 910297,
+    "value": "C",
+    "label": "Product A, which used Strategy X and targeted younger demographics, had a positive percentage change, while Product C, which used Strategy X and targeted older demographics, had a negative percentage change.",
+    "is_correct": true
+  },
+  {
+    "id": 9102973,
+    "question_id": 910297,
+    "value": "D",
+    "label": "Product D, targeted at younger demographics, had a smaller percentage change than Product B, targeted at older demographics.",
+    "is_correct": false
+  },
+  {
+    "id": 6169160,
+    "question_id": 616916,
+    "value": "A",
+    "label": "April.",
+    "is_correct": false
+  },
+  {
+    "id": 6169161,
+    "question_id": 616916,
+    "value": "B",
+    "label": "May.",
+    "is_correct": false
+  },
+  {
+    "id": 6169162,
+    "question_id": 616916,
+    "value": "C",
+    "label": "June.",
+    "is_correct": true
+  },
+  {
+    "id": 6169163,
+    "question_id": 616916,
+    "value": "D",
+    "label": "May for City A and June for City B.",
+    "is_correct": false
+  },
+  {
+    "id": 4828760,
+    "question_id": 482876,
+    "value": "A",
+    "label": "Maple Heights",
+    "is_correct": true
+  },
+  {
+    "id": 4828761,
+    "question_id": 482876,
+    "value": "B",
+    "label": "Pine Ridge",
+    "is_correct": false
+  },
+  {
+    "id": 4828762,
+    "question_id": 482876,
+    "value": "C",
+    "label": "Willow Creek",
+    "is_correct": false
+  },
+  {
+    "id": 4828763,
+    "question_id": 482876,
+    "value": "D",
+    "label": "Cedar Grove",
+    "is_correct": false
+  },
+  {
+    "id": 9520640,
+    "question_id": 952064,
+    "value": "A",
+    "label": "Zebra mussel populations in Lake Huron have expanded rapidly since their initial introduction, occupying a wider range of habitats than native clams.",
+    "is_correct": false
+  },
+  {
+    "id": 9520641,
+    "question_id": 952064,
+    "value": "B",
+    "label": "Native clam populations in areas of Lake Huron with high zebra mussel densities exhibit significantly lower body weights and reproductive rates compared to clam populations in areas with few zebra mussels.",
+    "is_correct": true
+  },
+  {
+    "id": 9520642,
+    "question_id": 952064,
+    "value": "C",
+    "label": "Water samples from Lake Huron show a general decrease in phytoplankton levels over the three-year study period, regardless of zebra mussel presence.",
+    "is_correct": false
+  },
+  {
+    "id": 9520643,
+    "question_id": 952064,
+    "value": "D",
+    "label": "Some species of fish that prey on native clams have also been observed to consume zebra mussels, albeit at a lower rate.",
+    "is_correct": false
+  },
+  {
+    "id": 7908670,
+    "question_id": 790867,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 7908671,
+    "question_id": 790867,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7908672,
+    "question_id": 790867,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7908673,
+    "question_id": 790867,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 4438540,
+    "question_id": 443854,
+    "value": "A",
+    "label": "plants in sandy soil took 14 days to germinate, and plants in silty soil took 12 days to germinate, indicating similar germination times.",
+    "is_correct": false
+  },
+  {
+    "id": 4438541,
+    "question_id": 443854,
+    "value": "B",
+    "label": "loamy soil resulted in an average plant height of 40 cm, whereas clay soil resulted in an average plant height of 30 cm.",
+    "is_correct": true
+  },
+  {
+    "id": 4438542,
+    "question_id": 443854,
+    "value": "C",
+    "label": "clay soil had fewer plants per plot (28) compared to sandy soil (35), suggesting clay soil is less fertile.",
+    "is_correct": false
+  },
+  {
+    "id": 4438543,
+    "question_id": 443854,
+    "value": "D",
+    "label": "the planting date was April 1st for all soil types, ensuring a consistent starting condition for the experiment.",
+    "is_correct": false
+  },
+  {
+    "id": 6136460,
+    "question_id": 613646,
+    "value": "A",
+    "label": "Participants who were not provided with ratings spent disproportionately more time viewing the Mouse.",
+    "is_correct": false
+  },
+  {
+    "id": 6136461,
+    "question_id": 613646,
+    "value": "B",
+    "label": "Participants who were provided with ratings spent disproportionately more time viewing the Laptop.",
+    "is_correct": true
+  },
+  {
+    "id": 6136462,
+    "question_id": 613646,
+    "value": "C",
+    "label": "Participants who were provided with ratings spent roughly equal amounts of time viewing Headphones and Keyboard.",
+    "is_correct": false
+  },
+  {
+    "id": 6136463,
+    "question_id": 613646,
+    "value": "D",
+    "label": "Participants who were not provided with ratings spent the least amount of time viewing the Laptop.",
+    "is_correct": false
+  },
+  {
+    "id": 3988400,
+    "question_id": 398840,
+    "value": "A",
+    "label": "Pea plants demonstrate increased rates of photosynthesis when exposed to blue light.",
+    "is_correct": false
+  },
+  {
+    "id": 3988401,
+    "question_id": 398840,
+    "value": "B",
+    "label": "Pea plants, after being conditioned with air puffs followed by darkness, subsequently exhibit avoidance behavior when exposed to air puffs alone, even in the absence of darkness.",
+    "is_correct": true
+  },
+  {
+    "id": 3988402,
+    "question_id": 398840,
+    "value": "C",
+    "label": "Studies on other plant species have not yet replicated Gagliano's team's findings regarding associative learning.",
+    "is_correct": false
+  },
+  {
+    "id": 3988403,
+    "question_id": 398840,
+    "value": "D",
+    "label": "The observed avoidance behavior in pea plants is later found to be attributable to a previously unknown physiological response to air currents, rather than learned association.",
+    "is_correct": false
+  },
+  {
+    "id": 3202790,
+    "question_id": 320279,
+    "value": "A",
+    "label": "0.11",
+    "is_correct": false
+  },
+  {
+    "id": 3202791,
+    "question_id": 320279,
+    "value": "B",
+    "label": "0.25",
+    "is_correct": false
+  },
+  {
+    "id": 3202792,
+    "question_id": 320279,
+    "value": "C",
+    "label": "0.28",
+    "is_correct": true
+  },
+  {
+    "id": 3202793,
+    "question_id": 320279,
+    "value": "D",
+    "label": "0.58",
+    "is_correct": false
+  },
+  {
+    "id": 2503100,
+    "question_id": 250310,
+    "value": "A",
+    "label": "3,500",
+    "is_correct": true
+  },
+  {
+    "id": 2503101,
+    "question_id": 250310,
+    "value": "B",
+    "label": "1,000",
+    "is_correct": false
+  },
+  {
+    "id": 2503102,
+    "question_id": 250310,
+    "value": "C",
+    "label": "2,000",
+    "is_correct": false
+  },
+  {
+    "id": 2503103,
+    "question_id": 250310,
+    "value": "D",
+    "label": "2,500",
+    "is_correct": false
+  },
+  {
+    "id": 5202190,
+    "question_id": 520219,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5202191,
+    "question_id": 520219,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5202192,
+    "question_id": 520219,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 5202193,
+    "question_id": 520219,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6386860,
+    "question_id": 638686,
+    "value": "A",
+    "label": "\\$1200 million in revenue.",
+    "is_correct": true
+  },
+  {
+    "id": 6386861,
+    "question_id": 638686,
+    "value": "B",
+    "label": "\\$1500 million in revenue.",
+    "is_correct": false
+  },
+  {
+    "id": 6386862,
+    "question_id": 638686,
+    "value": "C",
+    "label": "20 million in revenue.",
+    "is_correct": false
+  },
+  {
+    "id": 6386863,
+    "question_id": 638686,
+    "value": "D",
+    "label": "10 million in revenue.",
+    "is_correct": false
+  },
+  {
+    "id": 7341840,
+    "question_id": 734184,
+    "value": "A",
+    "label": "Quarter 1.",
+    "is_correct": false
+  },
+  {
+    "id": 7341841,
+    "question_id": 734184,
+    "value": "B",
+    "label": "Quarter 3.",
+    "is_correct": false
+  },
+  {
+    "id": 7341842,
+    "question_id": 734184,
+    "value": "C",
+    "label": "Quarter 4.",
+    "is_correct": false
+  },
+  {
+    "id": 7341843,
+    "question_id": 734184,
+    "value": "D",
+    "label": "Quarter 2.",
+    "is_correct": true
+  },
+  {
+    "id": 5057420,
+    "question_id": 505742,
+    "value": "A",
+    "label": "Researchers observed and documented a measurable increase in average beak depth in the finch population over a period of ten years, coinciding with a shift in the island's vegetation.",
+    "is_correct": true
+  },
+  {
+    "id": 5057421,
+    "question_id": 505742,
+    "value": "B",
+    "label": "Genetic analysis of the finch population revealed a higher rate of heritable mutations in genes related to beak morphology compared to finch populations on older, more stable islands.",
+    "is_correct": false
+  },
+  {
+    "id": 5057422,
+    "question_id": 505742,
+    "value": "C",
+    "label": "Fossil evidence from other volcanic islands indicated that finch beak morphology remained relatively stable for millions of years after the islands' formation.",
+    "is_correct": false
+  },
+  {
+    "id": 5057423,
+    "question_id": 505742,
+    "value": "D",
+    "label": "Scientists discovered that finches possess a gene that allows for greater phenotypic plasticity in beak development compared to other bird species.",
+    "is_correct": false
+  },
+  {
+    "id": 1435890,
+    "question_id": 143589,
+    "value": "A",
+    "label": "In urban areas with high building density, the number of available tree cavities suitable for House Finch nesting is significantly lower compared to suburban areas.",
+    "is_correct": true
+  },
+  {
+    "id": 1435891,
+    "question_id": 143589,
+    "value": "B",
+    "label": "American Robins in urban environments have adapted to forage for food in human-modified landscapes, such as parks and gardens, more effectively than House Finches.",
+    "is_correct": false
+  },
+  {
+    "id": 1435892,
+    "question_id": 143589,
+    "value": "C",
+    "label": "Both House Finches and American Robins exhibit decreased reproductive success in urban areas compared to rural areas due to increased levels of pollution.",
+    "is_correct": false
+  },
+  {
+    "id": 1435893,
+    "question_id": 143589,
+    "value": "D",
+    "label": "The overall number of bird species in urban areas is lower than in surrounding rural areas, but the total bird population density remains relatively constant.",
+    "is_correct": false
+  },
+  {
+    "id": 7224660,
+    "question_id": 722466,
+    "value": "A",
+    "label": "The zebra mussel population in 2020 was approximately 40,000, and the native fish population in 2010 was approximately 80,000.",
+    "is_correct": false
+  },
+  {
+    "id": 7224661,
+    "question_id": 722466,
+    "value": "B",
+    "label": "There were more native fish than zebra mussels in 2010, but by 2020, there were more zebra mussels than native fish, and the population of other invertebrates decreased from 2010 to 2020.",
+    "is_correct": true
+  },
+  {
+    "id": 7224662,
+    "question_id": 722466,
+    "value": "C",
+    "label": "The population of other invertebrates was higher than the zebra mussel population in all three years, and the native fish population was consistently higher than other invertebrates.",
+    "is_correct": false
+  },
+  {
+    "id": 7224663,
+    "question_id": 722466,
+    "value": "D",
+    "label": "Native fish population increased from 2010 to 2015 and from 2015 to 2020, while zebra mussel population also increased in those periods, but at a slower rate.",
+    "is_correct": false
+  },
+  {
+    "id": 7545540,
+    "question_id": 754554,
+    "value": "A",
+    "label": "On average, students' scores on the problem sets were consistently higher than their initial diagnostic test scores regardless of which type of feedback students had received.",
+    "is_correct": false
+  },
+  {
+    "id": 7545541,
+    "question_id": 754554,
+    "value": "B",
+    "label": "Compared with students in the control group, students who received brief, generic feedback had similar average scores, whereas students who received detailed, personalized feedback had significantly higher average scores.",
+    "is_correct": true
+  },
+  {
+    "id": 7545542,
+    "question_id": 754554,
+    "value": "C",
+    "label": "Students who received brief, generic feedback scored slightly higher than students in the control group, but their self-reported confidence in math was lower than that of students in the control group, whereas students with detailed feedback showed both higher scores and higher confidence.",
+    "is_correct": false
+  },
+  {
+    "id": 7545543,
+    "question_id": 754554,
+    "value": "D",
+    "label": "Compared with students who received brief, generic feedback, students who received detailed, personalized feedback achieved higher average scores, and students in the control group achieved the lowest average scores.",
+    "is_correct": false
+  },
+  {
+    "id": 5386070,
+    "question_id": 538607,
+    "value": "A",
+    "label": "A comprehensive study of the 20th and 21st centuries reveals that nearly every major technological breakthrough, from antibiotics to jet engines, relied on government-funded research at its initial stages.",
+    "is_correct": true
+  },
+  {
+    "id": 5386071,
+    "question_id": 538607,
+    "value": "B",
+    "label": "Many successful entrepreneurs and business leaders publicly acknowledge the importance of government regulations in fostering a stable and predictable market environment.",
+    "is_correct": false
+  },
+  {
+    "id": 5386072,
+    "question_id": 538607,
+    "value": "C",
+    "label": "Several historical analyses indicate that countries with strong private property rights and minimal government intervention tend to have higher rates of economic growth.",
+    "is_correct": false
+  },
+  {
+    "id": 5386073,
+    "question_id": 538607,
+    "value": "D",
+    "label": "Public opinion polls consistently show that a majority of citizens believe that private companies are more efficient and innovative than government agencies.",
+    "is_correct": false
+  },
+  {
+    "id": 8831090,
+    "question_id": 883109,
+    "value": "A",
+    "label": "plants grown in soil with synthetic fertilizer reached an average height of 45 cm, while plants in the control group averaged 30 cm, demonstrating a substantial height increase.",
+    "is_correct": true
+  },
+  {
+    "id": 8831091,
+    "question_id": 883109,
+    "value": "B",
+    "label": "plants grown in soil with compost reached an average height of 35 cm, while plants grown with synthetic fertilizer averaged 50 cm, indicating synthetic fertilizer is more effective than compost.",
+    "is_correct": false
+  },
+  {
+    "id": 8831092,
+    "question_id": 883109,
+    "value": "C",
+    "label": "plants in the control group reached an average height of 30 cm, while plants grown with compost averaged 25 cm, suggesting compost hinders plant growth.",
+    "is_correct": false
+  },
+  {
+    "id": 8831093,
+    "question_id": 883109,
+    "value": "D",
+    "label": "plants grown in soil with synthetic fertilizer reached an average height of 40 cm, while plants in the control group also averaged 40 cm, showing no significant impact from synthetic fertilizer.",
+    "is_correct": false
+  },
+  {
+    "id": 3769870,
+    "question_id": 376987,
+    "value": "A",
+    "label": "Analysis of the soil in Plot B revealed that phosphorus levels were significantly lower before fertilization compared to nitrogen and potassium levels.",
+    "is_correct": false
+  },
+  {
+    "id": 3769871,
+    "question_id": 376987,
+    "value": "B",
+    "label": "Tomato plants grown in nutrient solutions lacking phosphorus showed significantly stunted growth and reduced fruit production compared to plants lacking nitrogen or potassium.",
+    "is_correct": true
+  },
+  {
+    "id": 3769872,
+    "question_id": 376987,
+    "value": "C",
+    "label": "The average size of individual tomatoes harvested from Plot B was slightly smaller than the average size of tomatoes from Plot A.",
+    "is_correct": false
+  },
+  {
+    "id": 3769873,
+    "question_id": 376987,
+    "value": "D",
+    "label": "Plots adjacent to Plot B, which were unintentionally exposed to some phosphorus-rich fertilizer runoff, also showed a slight increase in tomato yield compared to the control Plot D.",
+    "is_correct": false
+  },
+  {
+    "id": 5012390,
+    "question_id": 501239,
+    "value": "A",
+    "label": "Participants who practiced with Layout Y achieved significantly higher average WPM scores on the test than participants who practiced with Layout X.",
+    "is_correct": true
+  },
+  {
+    "id": 5012391,
+    "question_id": 501239,
+    "value": "B",
+    "label": "The participants in both groups had similar levels of prior typing experience before the study began.",
+    "is_correct": false
+  },
+  {
+    "id": 5012392,
+    "question_id": 501239,
+    "value": "C",
+    "label": "Participants reported that Layout Y felt slightly more comfortable to use during the practice week compared to Layout X.",
+    "is_correct": false
+  },
+  {
+    "id": 5012393,
+    "question_id": 501239,
+    "value": "D",
+    "label": "By the end of the week, participants using both Layout X and Layout Y showed improvement in their typing speed compared to their speed at the beginning of the week.",
+    "is_correct": false
+  },
+  {
+    "id": 382110,
+    "question_id": 38211,
+    "value": "A",
+    "label": "Plants grown with 150 ppm and 175 ppm of FloraBoost showed a similar average number of flowers per plant to those grown with 200 ppm.",
+    "is_correct": true
+  },
+  {
+    "id": 382111,
+    "question_id": 38211,
+    "value": "B",
+    "label": "Plants grown with 50 ppm and 100 ppm of FloraBoost produced significantly fewer flowers than plants grown with 200 ppm.",
+    "is_correct": false
+  },
+  {
+    "id": 382112,
+    "question_id": 38211,
+    "value": "C",
+    "label": "Plants grown with 250 ppm of FloraBoost exhibited the highest average number of flowers per plant observed in the study.",
+    "is_correct": false
+  },
+  {
+    "id": 382113,
+    "question_id": 38211,
+    "value": "D",
+    "label": "Plants grown with 100 ppm of FloraBoost produced an average of 15 flowers per plant.",
+    "is_correct": false
+  },
+  {
+    "id": 6123550,
+    "question_id": 612355,
+    "value": "A",
+    "label": "Adolescents who engage in creative activities on screens, such as digital art or music production, report higher levels of well-being.",
+    "is_correct": false
+  },
+  {
+    "id": 6123551,
+    "question_id": 612355,
+    "value": "B",
+    "label": "Studies consistently show a strong negative correlation between screen time exceeding six hours daily and adolescent mental health.",
+    "is_correct": false
+  },
+  {
+    "id": 6123552,
+    "question_id": 612355,
+    "value": "C",
+    "label": "The meta-analysis found that adolescents who use screens for approximately two to three hours per day show no significant difference in mental health outcomes compared to those with minimal screen time.",
+    "is_correct": true
+  },
+  {
+    "id": 6123553,
+    "question_id": 612355,
+    "value": "D",
+    "label": "Mental health professionals are increasingly recommending limiting screen time for adolescents as a preventative measure against anxiety and depression.",
+    "is_correct": false
+  },
+  {
+    "id": 6376730,
+    "question_id": 637673,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6376731,
+    "question_id": 637673,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6376732,
+    "question_id": 637673,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 6376733,
+    "question_id": 637673,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3019630,
+    "question_id": 301963,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3019631,
+    "question_id": 301963,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 3019632,
+    "question_id": 301963,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3019633,
+    "question_id": 301963,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5119790,
+    "question_id": 511979,
+    "value": "A",
+    "label": "Rainfall in Seattle generally increases from January to June, while rainfall in Miami generally decreases from January to June.",
+    "is_correct": true
+  },
+  {
+    "id": 5119791,
+    "question_id": 511979,
+    "value": "B",
+    "label": "Rainfall in both Seattle and Miami increases from January to June.",
+    "is_correct": false
+  },
+  {
+    "id": 5119792,
+    "question_id": 511979,
+    "value": "C",
+    "label": "Rainfall in Seattle decreases from January to June, while rainfall in Miami increases from January to June.",
+    "is_correct": false
+  },
+  {
+    "id": 5119793,
+    "question_id": 511979,
+    "value": "D",
+    "label": "Rainfall in Seattle is consistently higher than rainfall in Miami from January to June.",
+    "is_correct": false
+  },
+  {
+    "id": 9422110,
+    "question_id": 942211,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 9422111,
+    "question_id": 942211,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9422112,
+    "question_id": 942211,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9422113,
+    "question_id": 942211,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6196590,
+    "question_id": 619659,
+    "value": "A",
+    "label": "Fertilizer A, despite not yielding the tallest plants overall at week 4, promotes a substantial growth spurt in the later weeks of plant development.",
+    "is_correct": true
+  },
+  {
+    "id": 6196591,
+    "question_id": 619659,
+    "value": "B",
+    "label": "at week 2, plants treated with Fertilizer B were taller than plants with no fertilizer, but by week 4, this difference became negligible.",
+    "is_correct": false
+  },
+  {
+    "id": 6196592,
+    "question_id": 619659,
+    "value": "C",
+    "label": "Fertilizer C is the most effective because it leads to the highest plant height at both week 2 and week 4 compared to all other conditions.",
+    "is_correct": false
+  },
+  {
+    "id": 6196593,
+    "question_id": 619659,
+    "value": "D",
+    "label": "the increase in plant height from week 2 to week 4 is approximately the same for plants treated with Fertilizer A and Fertilizer C.",
+    "is_correct": false
+  },
+  {
+    "id": 7200890,
+    "question_id": 720089,
+    "value": "A",
+    "label": "less than 20% urban in 1970 to around 60% urban in 2020.",
+    "is_correct": true
+  },
+  {
+    "id": 7200891,
+    "question_id": 720089,
+    "value": "B",
+    "label": "around 30% urban in 1970 to more than 70% urban in 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 7200892,
+    "question_id": 720089,
+    "value": "C",
+    "label": "around 10% urban in 1970 to around 40% urban in 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 7200893,
+    "question_id": 720089,
+    "value": "D",
+    "label": "more than 40% urban in 1970 to around 80% urban in 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 965640,
+    "question_id": 96564,
+    "value": "A",
+    "label": "Teenagers who used screens for more than three hours daily reported feeling more tired during the day, regardless of their sleep duration.",
+    "is_correct": false
+  },
+  {
+    "id": 965641,
+    "question_id": 96564,
+    "value": "B",
+    "label": "The study revealed a statistically significant negative correlation between daily screen time and total sleep duration, indicating that for every hour of screen time increase, sleep duration decreased by an average of 15 minutes.",
+    "is_correct": true
+  },
+  {
+    "id": 965642,
+    "question_id": 96564,
+    "value": "C",
+    "label": "Polysomnography results showed that the majority of teenagers in the study experienced at least one sleep disturbance per night, regardless of their screen time.",
+    "is_correct": false
+  },
+  {
+    "id": 965643,
+    "question_id": 96564,
+    "value": "D",
+    "label": "The researchers noted that the type of content viewed on screens (educational vs. entertainment) had a different impact on the teenagers' mood but not on their sleep duration.",
+    "is_correct": false
+  },
+  {
+    "id": 2028130,
+    "question_id": 202813,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 2028131,
+    "question_id": 202813,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 2028132,
+    "question_id": 202813,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 2028133,
+    "question_id": 202813,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6655260,
+    "question_id": 665526,
+    "value": "A",
+    "label": "the average tomato yield at a fertilizer concentration of 1.0 gram per liter is 4.8 kilograms per plant.",
+    "is_correct": false
+  },
+  {
+    "id": 6655261,
+    "question_id": 665526,
+    "value": "B",
+    "label": "increasing fertilizer concentration from 1.5 to 2.0 grams per liter results in a smaller increase in yield compared to increasing from 0.5 to 1.0 gram per liter.",
+    "is_correct": true
+  },
+  {
+    "id": 6655262,
+    "question_id": 665526,
+    "value": "C",
+    "label": "tomato plants show the highest yield when grown with a fertilizer concentration of 2.0 grams per liter.",
+    "is_correct": false
+  },
+  {
+    "id": 6655263,
+    "question_id": 665526,
+    "value": "D",
+    "label": "the increase in tomato yield is consistent across all increases in fertilizer concentration.",
+    "is_correct": false
+  },
+  {
+    "id": 2689120,
+    "question_id": 268912,
+    "value": "A",
+    "label": "plants in Group A consistently showed greater height increases each week compared to plants in Group B and the control group.",
+    "is_correct": false
+  },
+  {
+    "id": 2689121,
+    "question_id": 268912,
+    "value": "B",
+    "label": "plants in Group B showed significantly greater height increases relative to the control group than plants in Group A showed relative to the control group.",
+    "is_correct": true
+  },
+  {
+    "id": 2689122,
+    "question_id": 268912,
+    "value": "C",
+    "label": "plants in the control group initially grew taller than plants in both Group A and Group B, but their growth stagnated after week three.",
+    "is_correct": false
+  },
+  {
+    "id": 2689123,
+    "question_id": 268912,
+    "value": "D",
+    "label": "both Fertilizer X and Fertilizer Y resulted in identical height increases in their respective groups, indicating no fertilizer-specific differences.",
+    "is_correct": false
+  },
+  {
+    "id": 7641810,
+    "question_id": 764181,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7641811,
+    "question_id": 764181,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 7641812,
+    "question_id": 764181,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7641813,
+    "question_id": 764181,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9823020,
+    "question_id": 982302,
+    "value": "A",
+    "label": "Tomato plants grown under red light produced a significantly greater total weight of tomatoes than those grown under blue light.",
+    "is_correct": true
+  },
+  {
+    "id": 9823021,
+    "question_id": 982302,
+    "value": "B",
+    "label": "Tomato plants grown under blue light exhibited slightly taller stem growth compared to those grown under red light.",
+    "is_correct": false
+  },
+  {
+    "id": 9823022,
+    "question_id": 982302,
+    "value": "C",
+    "label": "Tomato plants grown under white light showed a slightly higher rate of leaf photosynthesis than those grown under red light.",
+    "is_correct": false
+  },
+  {
+    "id": 9823023,
+    "question_id": 982302,
+    "value": "D",
+    "label": "Tomato plants grown under red light consumed slightly more water per day than those grown under blue light.",
+    "is_correct": false
+  },
+  {
+    "id": 3288200,
+    "question_id": 328820,
+    "value": "A",
+    "label": "The percentage of households with fiber internet connections increased every year between 2010 and 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 3288201,
+    "question_id": 328820,
+    "value": "B",
+    "label": "In 2010, nearly 60% of households used dial-up connections, whereas in 2020, approximately 50% of households used cable connections.",
+    "is_correct": false
+  },
+  {
+    "id": 3288202,
+    "question_id": 328820,
+    "value": "C",
+    "label": "No households in 2010 had fiber internet connections, whereas in 2020, the percentage of households with fiber connections was greater than those with dial-up connections.",
+    "is_correct": false
+  },
+  {
+    "id": 3288203,
+    "question_id": 328820,
+    "value": "D",
+    "label": "Most households in 2010 used dial-up or DSL connections, whereas most households in 2020 used cable or fiber connections.",
+    "is_correct": true
+  },
+  {
+    "id": 584500,
+    "question_id": 58450,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 584501,
+    "question_id": 58450,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 584502,
+    "question_id": 58450,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 584503,
+    "question_id": 58450,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3709510,
+    "question_id": 370951,
+    "value": "A",
+    "label": "30% of students reported being very interested in Arts, while a larger proportion, 40%, identified as neutral towards Arts.",
+    "is_correct": false
+  },
+  {
+    "id": 3709511,
+    "question_id": 370951,
+    "value": "B",
+    "label": "The percentage of students neutral about Arts (40%) was nearly identical to the percentage neutral about STEM clubs (35%).",
+    "is_correct": false
+  },
+  {
+    "id": 3709512,
+    "question_id": 370951,
+    "value": "C",
+    "label": "60% of students indicated a strong interest in Sports, but only 20% expressed the same level of enthusiasm for STEM Clubs.",
+    "is_correct": true
+  },
+  {
+    "id": 3709513,
+    "question_id": 370951,
+    "value": "D",
+    "label": "25% of students reported feeling neutral about Sports, suggesting a notable segment of the student population is undecided about sports extracurriculars.",
+    "is_correct": false
+  },
+  {
+    "id": 4766760,
+    "question_id": 476676,
+    "value": "A",
+    "label": "In every year of the study, individuals in the exercise group had a resting heart rate of at most 75 beats per minute.",
+    "is_correct": false
+  },
+  {
+    "id": 4766761,
+    "question_id": 476676,
+    "value": "B",
+    "label": "In every year of the study, individuals in the exercise group had a lower resting heart rate than individuals in the control group.",
+    "is_correct": true
+  },
+  {
+    "id": 4766762,
+    "question_id": 476676,
+    "value": "C",
+    "label": "The 2021 resting heart rate for the control group was higher than the 2023 resting heart rate for the exercise group.",
+    "is_correct": false
+  },
+  {
+    "id": 4766763,
+    "question_id": 476676,
+    "value": "D",
+    "label": "The resting heart rate for the exercise group decreased from 2021 to 2022.",
+    "is_correct": false
+  },
+  {
+    "id": 66570,
+    "question_id": 6657,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 66571,
+    "question_id": 6657,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 66572,
+    "question_id": 6657,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 66573,
+    "question_id": 6657,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 6739290,
+    "question_id": 673929,
+    "value": "A",
+    "label": "18.7% of commuters primarily used public transportation.",
+    "is_correct": false
+  },
+  {
+    "id": 6739291,
+    "question_id": 673929,
+    "value": "B",
+    "label": "9.1% of commuters participated in carpooling arrangements.",
+    "is_correct": false
+  },
+  {
+    "id": 6739292,
+    "question_id": 673929,
+    "value": "C",
+    "label": "12.5% of commuters primarily walked or biked to work.",
+    "is_correct": false
+  },
+  {
+    "id": 6739293,
+    "question_id": 673929,
+    "value": "D",
+    "label": "4.5% of commuters primarily worked from home.",
+    "is_correct": true
+  },
+  {
+    "id": 65700,
+    "question_id": 6570,
+    "value": "A",
+    "label": "around 90 errors were categorized as syntax errors, whereas approximately 620 errors were categorized as logic errors.",
+    "is_correct": true
+  },
+  {
+    "id": 65701,
+    "question_id": 6570,
+    "value": "B",
+    "label": "more than 480 errors were categorized as performance errors, whereas fewer than 90 errors were categorized as syntax errors.",
+    "is_correct": false
+  },
+  {
+    "id": 65702,
+    "question_id": 6570,
+    "value": "C",
+    "label": "fewer than 40 errors were categorized as documentation errors, whereas more than 480 errors were categorized as performance errors.",
+    "is_correct": false
+  },
+  {
+    "id": 65703,
+    "question_id": 6570,
+    "value": "D",
+    "label": "around 620 errors were categorized as logic errors, whereas around 150 errors were categorized as neither syntax, performance, nor documentation errors.",
+    "is_correct": false
+  },
+  {
+    "id": 3451810,
+    "question_id": 345181,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3451811,
+    "question_id": 345181,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3451812,
+    "question_id": 345181,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3451813,
+    "question_id": 345181,
+    "value": "D",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 182270,
+    "question_id": 18227,
+    "value": "A",
+    "label": "Fossilized footprints of other known dinosaur species of similar size have been discovered in the same geological formation.",
+    "is_correct": false
+  },
+  {
+    "id": 182271,
+    "question_id": 18227,
+    "value": "B",
+    "label": "Analysis of the surrounding sediment indicates that the footprint was made in very soft mud, which would have significantly exaggerated the size of the impression.",
+    "is_correct": true
+  },
+  {
+    "id": 182272,
+    "question_id": 18227,
+    "value": "C",
+    "label": "Skeletal remains of a Titanopodus, consistent with a creature of the estimated size, have not been found in the same region.",
+    "is_correct": false
+  },
+  {
+    "id": 182273,
+    "question_id": 18227,
+    "value": "D",
+    "label": "Mathematical models of dinosaur locomotion suggest that animals exceeding 80 tons would have faced significant biomechanical challenges.",
+    "is_correct": false
+  },
+  {
+    "id": 8002010,
+    "question_id": 800201,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 8002011,
+    "question_id": 800201,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 8002012,
+    "question_id": 800201,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 8002013,
+    "question_id": 800201,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3194130,
+    "question_id": 319413,
+    "value": "A",
+    "label": "higher than the number of bird species in the Pine forest, and in 2021 was about the same as the number of bird species in the Pine forest.",
+    "is_correct": false
+  },
+  {
+    "id": 3194131,
+    "question_id": 319413,
+    "value": "B",
+    "label": "about the same as the number of bird species in the Pine forest, and in 2021 was about the same as the number of bird species in the Pine forest.",
+    "is_correct": false
+  },
+  {
+    "id": 3194132,
+    "question_id": 319413,
+    "value": "C",
+    "label": "lower than the number of bird species in the Pine forest, but in 2021 was higher than the number of bird species in the Pine forest.",
+    "is_correct": true
+  },
+  {
+    "id": 3194133,
+    "question_id": 319413,
+    "value": "D",
+    "label": "about the same as the number of bird species in the Pine forest, but in 2021 was lower than the number of bird species in the Pine forest.",
+    "is_correct": false
+  },
+  {
+    "id": 7649540,
+    "question_id": 764954,
+    "value": "A",
+    "label": "Plants grown in nutrient-rich soil show faster growth rates than plants grown in nutrient-poor soil.",
+    "is_correct": false
+  },
+  {
+    "id": 7649541,
+    "question_id": 764954,
+    "value": "B",
+    "label": "Analysis of plant leaves shows the presence of atmospheric pollutants absorbed from the air.",
+    "is_correct": false
+  },
+  {
+    "id": 7649542,
+    "question_id": 764954,
+    "value": "C",
+    "label": "Plants grown in environments shielded from atmospheric deposition show reduced levels of certain nutrients in their leaves compared to plants grown in open environments, even when soil conditions are identical.",
+    "is_correct": false
+  },
+  {
+    "id": 7649543,
+    "question_id": 764954,
+    "value": "D",
+    "label": "Analysis of plant leaves reveals the presence of isotopes of nitrogen and other minerals that match those found in atmospheric deposition samples collected in the same region.",
+    "is_correct": true
+  },
+  {
+    "id": 2378660,
+    "question_id": 237866,
+    "value": "A",
+    "label": "Coal decreased from the previous year and became the lowest percentage among the three sources.",
+    "is_correct": true
+  },
+  {
+    "id": 2378661,
+    "question_id": 237866,
+    "value": "B",
+    "label": "Natural Gas decreased from the previous year but remained the highest percentage.",
+    "is_correct": false
+  },
+  {
+    "id": 2378662,
+    "question_id": 237866,
+    "value": "C",
+    "label": "Renewables increased from the previous year and became the highest percentage.",
+    "is_correct": false
+  },
+  {
+    "id": 2378663,
+    "question_id": 237866,
+    "value": "D",
+    "label": "Both Natural Gas and Renewables decreased from the previous year.",
+    "is_correct": false
+  },
+  {
+    "id": 7384130,
+    "question_id": 738413,
+    "value": "A",
+    "label": "The average score of 83 for students receiving positive feedback is considered a high passing grade in many courses.",
+    "is_correct": false
+  },
+  {
+    "id": 7384131,
+    "question_id": 738413,
+    "value": "B",
+    "label": "The proportion of the average final essay scores for students receiving positive and negative feedback is nearly identical.",
+    "is_correct": true
+  },
+  {
+    "id": 7384132,
+    "question_id": 738413,
+    "value": "C",
+    "label": "An average score of 82 achieved by students receiving negative feedback demonstrates they can still perform well.",
+    "is_correct": false
+  },
+  {
+    "id": 7384133,
+    "question_id": 738413,
+    "value": "D",
+    "label": "The average score for students with positive feedback was only marginally higher, approximately 1 point, than those with negative feedback.",
+    "is_correct": false
+  },
+  {
+    "id": 1134200,
+    "question_id": 113420,
+    "value": "A",
+    "label": "Plants grown under red light exhibited the greatest average height compared to plants grown under any other light condition.",
+    "is_correct": true
+  },
+  {
+    "id": 1134201,
+    "question_id": 113420,
+    "value": "B",
+    "label": "Plants grown under white light exhibited only slightly less average height than plants grown under red light.",
+    "is_correct": false
+  },
+  {
+    "id": 1134202,
+    "question_id": 113420,
+    "value": "C",
+    "label": "Plants grown under blue light showed greater height than plants grown under green light, but less than plants grown under white light.",
+    "is_correct": false
+  },
+  {
+    "id": 1134203,
+    "question_id": 113420,
+    "value": "D",
+    "label": "Plants grown under white light showed greater average height than plants grown under blue light, suggesting white light is also effective for growth.",
+    "is_correct": false
+  },
+  {
+    "id": 2859510,
+    "question_id": 285951,
+    "value": "A",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 2859511,
+    "question_id": 285951,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 2859512,
+    "question_id": 285951,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 2859513,
+    "question_id": 285951,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3692880,
+    "question_id": 369288,
+    "value": "A",
+    "label": "exhibited a decreased growth rate when the fertilizer concentration was doubled from the lowest to the highest level.",
+    "is_correct": false
+  },
+  {
+    "id": 3692881,
+    "question_id": 369288,
+    "value": "B",
+    "label": "showed a minimal increase in growth rate when the fertilizer concentration was increased from the second highest to the highest level.",
+    "is_correct": true
+  },
+  {
+    "id": 3692882,
+    "question_id": 369288,
+    "value": "C",
+    "label": "had a negligible growth rate even at the lowest fertilizer concentration tested.",
+    "is_correct": false
+  },
+  {
+    "id": 3692883,
+    "question_id": 369288,
+    "value": "D",
+    "label": "displayed a consistently increasing growth rate across all fertilizer concentrations tested.",
+    "is_correct": false
+  },
+  {
+    "id": 9477530,
+    "question_id": 947753,
+    "value": "A",
+    "label": "Under both fertilizer conditions, less than 20% of farms were in the up-to-10% increase group, but at high fertilizer application, over 50% of farms experienced more than a 10% increase in crop yield.",
+    "is_correct": false
+  },
+  {
+    "id": 9477531,
+    "question_id": 947753,
+    "value": "B",
+    "label": "At low fertilizer application, more than 70% of farms showed no increase in crop yield, but at high fertilizer application, less than 10% of farms showed no increase in crop yield.",
+    "is_correct": true
+  },
+  {
+    "id": 9477532,
+    "question_id": 947753,
+    "value": "C",
+    "label": "At low fertilizer application, most farms experienced at most a 10% increase in crop yield, but at high fertilizer application, most farms experienced greater than a 10% increase in crop yield.",
+    "is_correct": false
+  },
+  {
+    "id": 9477533,
+    "question_id": 947753,
+    "value": "D",
+    "label": "At low fertilizer application, less than 10% of farms experienced more than a 10% increase, but at high fertilizer application, that percentage increased to over 80%.",
+    "is_correct": false
+  },
+  {
+    "id": 6868150,
+    "question_id": 686815,
+    "value": "A",
+    "label": "The mathematical formulas that enable models to predict market crashes are based on theoretical relationships that are not consistently observed in actual market conditions.",
+    "is_correct": true
+  },
+  {
+    "id": 6868151,
+    "question_id": 686815,
+    "value": "B",
+    "label": "Models that did not predict market crashes often incorporated factors related to investor psychology, which are difficult to quantify mathematically.",
+    "is_correct": false
+  },
+  {
+    "id": 6868152,
+    "question_id": 686815,
+    "value": "C",
+    "label": "Economic models are frequently adapted to improve their predictive accuracy across various types of market fluctuations, not just crashes.",
+    "is_correct": false
+  },
+  {
+    "id": 6868153,
+    "question_id": 686815,
+    "value": "D",
+    "label": "When economic models predict market crashes, they are often validated by comparing their predictions with the outcomes of previous market downturns.",
+    "is_correct": false
+  },
+  {
+    "id": 6254560,
+    "question_id": 625456,
+    "value": "A",
+    "label": "The dog rose and the damask rose have significantly different genetic structures and require distinct environmental conditions to thrive.",
+    "is_correct": true
+  },
+  {
+    "id": 6254561,
+    "question_id": 625456,
+    "value": "B",
+    "label": "The damask rose is more commercially valuable in the perfume industry than the dog rose.",
+    "is_correct": false
+  },
+  {
+    "id": 6254562,
+    "question_id": 625456,
+    "value": "C",
+    "label": "Both the dog rose and the damask rose are cultivated in botanical gardens around the world for educational purposes.",
+    "is_correct": false
+  },
+  {
+    "id": 6254563,
+    "question_id": 625456,
+    "value": "D",
+    "label": "The dog rose and the damask rose share some floral characteristics but are also similar in appearance to other species within the broader rose family.",
+    "is_correct": false
+  },
+  {
+    "id": 2922790,
+    "question_id": 292279,
+    "value": "A",
+    "label": "Studies showing a decrease in elk populations following wolf reintroduction, without significant changes in vegetation.",
+    "is_correct": false
+  },
+  {
+    "id": 2922791,
+    "question_id": 292279,
+    "value": "B",
+    "label": "Evidence indicating that willow and aspen trees along rivers in Yellowstone have shown increased growth after wolf reintroduction, coinciding with a decrease in elk browsing in those areas.",
+    "is_correct": true
+  },
+  {
+    "id": 2922792,
+    "question_id": 292279,
+    "value": "C",
+    "label": "Data revealing that the overall biodiversity of Yellowstone has remained relatively stable since the reintroduction of wolves.",
+    "is_correct": false
+  },
+  {
+    "id": 2922793,
+    "question_id": 292279,
+    "value": "D",
+    "label": "Observations of wolves primarily hunting bison and other large herbivores in Yellowstone, rather than elk.",
+    "is_correct": false
+  },
+  {
+    "id": 5628640,
+    "question_id": 562864,
+    "value": "A",
+    "label": "Participants who typically listen to music while reading at home showed no significant difference in comprehension scores between the silent and music conditions.",
+    "is_correct": false
+  },
+  {
+    "id": 5628641,
+    "question_id": 562864,
+    "value": "B",
+    "label": "The type of instrumental music used in the study was found to be particularly disliked by a majority of participants in the music group.",
+    "is_correct": false
+  },
+  {
+    "id": 5628642,
+    "question_id": 562864,
+    "value": "C",
+    "label": "Participants in the music group reported feeling less stressed and more relaxed while reading compared to participants in the silent group.",
+    "is_correct": false
+  },
+  {
+    "id": 5628643,
+    "question_id": 562864,
+    "value": "D",
+    "label": "The instrumental music used in the study was later determined to have contained subliminal vocal cues that were not consciously perceived by the participants.",
+    "is_correct": true
+  },
+  {
+    "id": 9142190,
+    "question_id": 914219,
+    "value": "A",
+    "label": "Bees can navigate effectively on cloudy days when polarized light is significantly reduced but landmarks are visible.",
+    "is_correct": true
+  },
+  {
+    "id": 9142191,
+    "question_id": 914219,
+    "value": "B",
+    "label": "Bees have specialized photoreceptors in their eyes that are highly sensitive to polarized light.",
+    "is_correct": false
+  },
+  {
+    "id": 9142192,
+    "question_id": 914219,
+    "value": "C",
+    "label": "Bees raised in environments with consistent magnetic field manipulations show disrupted navigation patterns.",
+    "is_correct": false
+  },
+  {
+    "id": 9142193,
+    "question_id": 914219,
+    "value": "D",
+    "label": "Experiments show that bees navigate more efficiently when both polarized light and landmarks are available.",
+    "is_correct": false
+  },
+  {
+    "id": 3381950,
+    "question_id": 338195,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3381951,
+    "question_id": 338195,
+    "value": "B",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 3381952,
+    "question_id": 338195,
+    "value": "C",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3381953,
+    "question_id": 338195,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 5093520,
+    "question_id": 509352,
+    "value": "A",
+    "label": "Juvenile *Cyanus melodius* birds raised in isolation still develop songs with some species-typical elements, but these songs lack the regional variations observed in wild populations.",
+    "is_correct": false
+  },
+  {
+    "id": 5093521,
+    "question_id": 509352,
+    "value": "B",
+    "label": "Researchers observed that juvenile *Cyanus melodius* birds are exposed to a wide range of songs from various adult birds within their habitat during their early development.",
+    "is_correct": false
+  },
+  {
+    "id": 5093522,
+    "question_id": 509352,
+    "value": "C",
+    "label": "Longitudinal studies reveal that juvenile *Cyanus melodius* birds are significantly more likely to incorporate song elements heard from their parents into their own songs than elements heard from unrelated adult *Cyanus melodius* birds living nearby.",
+    "is_correct": true
+  },
+  {
+    "id": 5093523,
+    "question_id": 509352,
+    "value": "D",
+    "label": "Analysis of *Cyanus melodius* songs across different regions shows a correlation between the complexity of the song repertoire and the density of the bird population in each region.",
+    "is_correct": false
+  },
+  {
+    "id": 5243510,
+    "question_id": 524351,
+    "value": "A",
+    "label": "Between 1980 and 2020, the average yearly rainfall in Region Beta decreased, while in Region Alpha it continued to increase.",
+    "is_correct": true
+  },
+  {
+    "id": 5243511,
+    "question_id": 524351,
+    "value": "B",
+    "label": "Throughout the entire period from 1920 to 2020, the average yearly rainfall in Region Alpha was consistently higher than in Region Beta.",
+    "is_correct": false
+  },
+  {
+    "id": 5243512,
+    "question_id": 524351,
+    "value": "C",
+    "label": "In Region Beta, the average yearly rainfall in 1950 was higher than in both 1930 and 1970.",
+    "is_correct": false
+  },
+  {
+    "id": 5243513,
+    "question_id": 524351,
+    "value": "D",
+    "label": "Between 1920 and 1940, the average yearly rainfall in both Region Alpha and Region Beta showed similar fluctuations.",
+    "is_correct": false
+  },
+  {
+    "id": 6704070,
+    "question_id": 670407,
+    "value": "A",
+    "label": "Shift workers in the study reported significantly higher levels of daytime sleepiness compared to individuals in the general population.",
+    "is_correct": false
+  },
+  {
+    "id": 6704071,
+    "question_id": 670407,
+    "value": "B",
+    "label": "The shift workers who consumed caffeine in the study also exhibited elevated levels of stress hormones, such as cortisol, compared to the control group.",
+    "is_correct": false
+  },
+  {
+    "id": 6704072,
+    "question_id": 670407,
+    "value": "C",
+    "label": "In a separate analysis, the researchers found that among shift workers who reported getting adequate sleep, caffeine consumption did correlate with improved memory recall.",
+    "is_correct": true
+  },
+  {
+    "id": 6704073,
+    "question_id": 670407,
+    "value": "D",
+    "label": "The memory tasks used in the study were specifically designed to be challenging and to require sustained attention and focus over an extended period.",
+    "is_correct": false
+  },
+  {
+    "id": 9245160,
+    "question_id": 924516,
+    "value": "A",
+    "label": "Insect emergence in the Willow Warbler's breeding grounds is occurring earlier in the spring, and this earlier emergence is strongly correlated with rising average spring temperatures.",
+    "is_correct": true
+  },
+  {
+    "id": 9245161,
+    "question_id": 924516,
+    "value": "B",
+    "label": "Willow Warbler populations in other parts of the world with different climate change impacts are exhibiting similar changes in migration timing.",
+    "is_correct": false
+  },
+  {
+    "id": 9245162,
+    "question_id": 924516,
+    "value": "C",
+    "label": "Average spring temperatures in the Willow Warbler's breeding grounds have increased steadily over the past 30 years.",
+    "is_correct": false
+  },
+  {
+    "id": 9245163,
+    "question_id": 924516,
+    "value": "D",
+    "label": "Willow Warblers that arrive at their breeding grounds at the historical average time are found to have higher rates of nestling survival compared to those arriving earlier.",
+    "is_correct": false
+  },
+  {
+    "id": 9867040,
+    "question_id": 986704,
+    "value": "A",
+    "label": "The graph shows that Sedan X has a fuel tank capacity only slightly larger than Hatchback Y, while the study concludes Sedan X is more fuel-efficient.",
+    "is_correct": true
+  },
+  {
+    "id": 9867041,
+    "question_id": 986704,
+    "value": "B",
+    "label": "The graph shows that both Sedan X and Hatchback Y have fuel tank capacities greater than 14 gallons, and the study concludes Sedan X is more fuel-efficient.",
+    "is_correct": false
+  },
+  {
+    "id": 9867042,
+    "question_id": 986704,
+    "value": "C",
+    "label": "The graph shows that Hatchback Y has a smaller fuel tank capacity than Sedan X, but the study still concludes Sedan X is more fuel-efficient.",
+    "is_correct": false
+  },
+  {
+    "id": 9867043,
+    "question_id": 986704,
+    "value": "D",
+    "label": "The graph shows that Sedan X has a much larger fuel tank capacity than Hatchback Y, which explains why the study concludes Sedan X is more fuel-efficient.",
+    "is_correct": false
+  },
+  {
+    "id": 3622150,
+    "question_id": 362215,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3622151,
+    "question_id": 362215,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 3622152,
+    "question_id": 362215,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 3622153,
+    "question_id": 362215,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7351630,
+    "question_id": 735163,
+    "value": "A",
+    "label": "Participants in the medium intensity group showed greater average muscle gain and fat loss compared to the low intensity group, but the high intensity group had the highest fat loss despite lower muscle gain than the medium intensity group.",
+    "is_correct": false
+  },
+  {
+    "id": 7351631,
+    "question_id": 735163,
+    "value": "B",
+    "label": "The average cortisol level increased with exercise intensity, with the high intensity group showing double the cortisol level of the low intensity group, suggesting increased stress.",
+    "is_correct": false
+  },
+  {
+    "id": 7351632,
+    "question_id": 735163,
+    "value": "C",
+    "label": "While fat loss increased consistently from low to high intensity exercise, muscle gain peaked at medium intensity and decreased at high intensity.",
+    "is_correct": true
+  },
+  {
+    "id": 7351633,
+    "question_id": 735163,
+    "value": "D",
+    "label": "The difference in fat loss between medium and high intensity exercise was relatively small compared to the difference in muscle gain between medium and high intensity exercise.",
+    "is_correct": false
+  },
+  {
+    "id": 5771870,
+    "question_id": 577187,
+    "value": "A",
+    "label": "Brazil, with the highest coffee production at 3,500,000 metric tons, also has a relatively high consumption rate of 1,200,000 metric tons.",
+    "is_correct": false
+  },
+  {
+    "id": 5771871,
+    "question_id": 577187,
+    "value": "B",
+    "label": "The United States, despite not being a major coffee producer at 100,000 metric tons, consumes significantly more coffee (1,600,000 metric tons) than it produces.",
+    "is_correct": true
+  },
+  {
+    "id": 5771872,
+    "question_id": 577187,
+    "value": "C",
+    "label": "Vietnam, a major coffee producer at 1,800,000 metric tons, consumes almost as much coffee (1,500,000 metric tons) as the United States.",
+    "is_correct": false
+  },
+  {
+    "id": 5771873,
+    "question_id": 577187,
+    "value": "D",
+    "label": "Globally, coffee consumption (6,000,000 metric tons) is exactly double the combined production of Brazil and Vietnam (5,300,000 metric tons).",
+    "is_correct": false
+  },
+  {
+    "id": 2692170,
+    "question_id": 269217,
+    "value": "A",
+    "label": "The correlation between test score improvement using Method A and study time is further from 0 than the correlation between overall test score improvement and confidence in method is.",
+    "is_correct": false
+  },
+  {
+    "id": 2692171,
+    "question_id": 269217,
+    "value": "B",
+    "label": "The correlation between test score improvement using Method A and study time is further from 0 than the correlation between test score improvement using Method B and study time is.",
+    "is_correct": false
+  },
+  {
+    "id": 2692172,
+    "question_id": 269217,
+    "value": "C",
+    "label": "For each of the two methods, the correlation with study time is positive while the correlation with confidence in method is also positive.",
+    "is_correct": false
+  },
+  {
+    "id": 2692173,
+    "question_id": 269217,
+    "value": "D",
+    "label": "For each of the two methods, correlations with study time are further from 0 than the corresponding correlations with confidence in method are.",
+    "is_correct": true
+  },
+  {
+    "id": 9647170,
+    "question_id": 964717,
+    "value": "A",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9647171,
+    "question_id": 964717,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9647172,
+    "question_id": 964717,
+    "value": "C",
+    "label": "\\",
+    "is_correct": true
+  },
+  {
+    "id": 9647173,
+    "question_id": 964717,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 9795870,
+    "question_id": 979587,
+    "value": "A",
+    "label": "population density remained lower compared to river valley civilizations, possibly reflecting the limitations of slash-and-burn agriculture despite its ingenuity.",
+    "is_correct": true
+  },
+  {
+    "id": 9795871,
+    "question_id": 979587,
+    "value": "B",
+    "label": "the Indus Valley civilization, which relied on rain-fed agriculture, exhibited a population density only slightly lower than that of the Nile Valley.",
+    "is_correct": false
+  },
+  {
+    "id": 9795872,
+    "question_id": 979587,
+    "value": "C",
+    "label": "irrigation agriculture in Mesopotamia led to a population density significantly higher than that of the Nile Valley, suggesting the superiority of Mesopotamian farming techniques.",
+    "is_correct": false
+  },
+  {
+    "id": 9795873,
+    "question_id": 979587,
+    "value": "D",
+    "label": "slash-and-burn agriculture, while less intensive than irrigation, still allowed for a higher population density than rain-fed agriculture in the Indus Valley.",
+    "is_correct": false
+  },
+  {
+    "id": 634140,
+    "question_id": 63414,
+    "value": "A",
+    "label": "The average BMI in autumn is consistently higher than in spring across all age groups, and the difference between autumn and spring BMI is greatest for the oldest age group.",
+    "is_correct": false
+  },
+  {
+    "id": 634141,
+    "question_id": 63414,
+    "value": "B",
+    "label": "The average BMI in spring is lowest for cubs, and while autumn BMI increases with age, the BMI change is similar across all age groups.",
+    "is_correct": false
+  },
+  {
+    "id": 634142,
+    "question_id": 63414,
+    "value": "C",
+    "label": "Across all age groups, the average BMI increases from spring to autumn, and the magnitude of this increase is progressively smaller with increasing age.",
+    "is_correct": true
+  },
+  {
+    "id": 634143,
+    "question_id": 63414,
+    "value": "D",
+    "label": "The average BMI in autumn is highest for adult bears, but the percentage increase in BMI from spring to autumn is greatest for juvenile bears.",
+    "is_correct": false
+  },
+  {
+    "id": 4482790,
+    "question_id": 448279,
+    "value": "A",
+    "label": "Food waste is highest for low-income households at 45% and lowest for high-income households at 25%, directly contradicting the assertion.",
+    "is_correct": false
+  },
+  {
+    "id": 4482791,
+    "question_id": 448279,
+    "value": "B",
+    "label": "Recyclables increase from 20% in low-income households to 40% in high-income households, while organic waste decreases from 25% to 10% across the same income range.",
+    "is_correct": true
+  },
+  {
+    "id": 4482792,
+    "question_id": 448279,
+    "value": "C",
+    "label": "Other waste increases from 10% in low-income households to 25% in high-income households, showing a positive correlation with income level.",
+    "is_correct": false
+  },
+  {
+    "id": 4482793,
+    "question_id": 448279,
+    "value": "D",
+    "label": "The overall average shows that food waste is the largest component at 35%, followed by recyclables at 30%, regardless of income level.",
+    "is_correct": false
+  },
+  {
+    "id": 3274610,
+    "question_id": 327461,
+    "value": "A",
+    "label": "Analysis of ancient pollen records from Australia indicates a significant shift in vegetation types around 45,000 years ago, suggesting a period of substantial climate change.",
+    "is_correct": false
+  },
+  {
+    "id": 3274611,
+    "question_id": 327461,
+    "value": "B",
+    "label": "Fossil evidence reveals that megafauna populations in regions of Australia uninhabited by humans at the time also experienced a decline, albeit less severe than in human-inhabited areas.",
+    "is_correct": false
+  },
+  {
+    "id": 3274612,
+    "question_id": 327461,
+    "value": "C",
+    "label": "A study comparing megafauna extinction rates across different continents shows that continents colonized by humans earlier experienced more rapid and extensive megafauna extinctions.",
+    "is_correct": true
+  },
+  {
+    "id": 3274613,
+    "question_id": 327461,
+    "value": "D",
+    "label": "Isotopic analysis of megafauna bones from archaeological sites shows a shift in their diet just before their extinction, suggesting they were struggling to adapt to changing food sources.",
+    "is_correct": false
+  },
+  {
+    "id": 7560920,
+    "question_id": 756092,
+    "value": "A",
+    "label": "For all subjects, increased study time led to higher exam scores, but the increase was most significant in Math.",
+    "is_correct": false
+  },
+  {
+    "id": 7560921,
+    "question_id": 756092,
+    "value": "B",
+    "label": "Compared to Math and Science, English scores showed the smallest improvement with increased study time.",
+    "is_correct": true
+  },
+  {
+    "id": 7560922,
+    "question_id": 756092,
+    "value": "C",
+    "label": "Students in the low study time group consistently scored below 70 across all subjects.",
+    "is_correct": false
+  },
+  {
+    "id": 7560923,
+    "question_id": 756092,
+    "value": "D",
+    "label": "Increased study time resulted in the same score improvement across Math and Science, but a lower improvement in English.",
+    "is_correct": false
+  },
+  {
+    "id": 9247550,
+    "question_id": 924755,
+    "value": "A",
+    "label": "above 1950 Calories/day but below 2050 Calories/day.",
+    "is_correct": true
+  },
+  {
+    "id": 9247551,
+    "question_id": 924755,
+    "value": "B",
+    "label": "above 1800 Calories/day but below 1950 Calories/day.",
+    "is_correct": false
+  },
+  {
+    "id": 9247552,
+    "question_id": 924755,
+    "value": "C",
+    "label": "above 2050 Calories/day.",
+    "is_correct": false
+  },
+  {
+    "id": 9247553,
+    "question_id": 924755,
+    "value": "D",
+    "label": "below 1800 Calories/day.",
+    "is_correct": false
+  }
+]

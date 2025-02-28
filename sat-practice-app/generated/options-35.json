@@ -1,0 +1,1066 @@
+[
+  {
+    "id": 8059560,
+    "question_id": 805956,
+    "value": "A",
+    "label": "Urban green spaces are only beneficial in cities with high population densities.",
+    "is_correct": false
+  },
+  {
+    "id": 8059561,
+    "question_id": 805956,
+    "value": "B",
+    "label": "The economic costs of urban green spaces may outweigh their social and health benefits.",
+    "is_correct": true
+  },
+  {
+    "id": 8059562,
+    "question_id": 805956,
+    "value": "C",
+    "label": "City residents are more concerned with economic stability than access to green spaces.",
+    "is_correct": false
+  },
+  {
+    "id": 8059563,
+    "question_id": 805956,
+    "value": "D",
+    "label": "Urban green spaces should be designed to also serve economic purposes, such as community markets.",
+    "is_correct": false
+  },
+  {
+    "id": 3748280,
+    "question_id": 374828,
+    "value": "A",
+    "label": "Streaming services have made television viewing more convenient for audiences.",
+    "is_correct": true
+  },
+  {
+    "id": 3748281,
+    "question_id": 374828,
+    "value": "B",
+    "label": "Binge-watching is the primary way people now consume television content.",
+    "is_correct": false
+  },
+  {
+    "id": 3748282,
+    "question_id": 374828,
+    "value": "C",
+    "label": "The quality of television programming has declined since the rise of streaming.",
+    "is_correct": false
+  },
+  {
+    "id": 3748283,
+    "question_id": 374828,
+    "value": "D",
+    "label": "Traditional broadcast television remains the most popular way to watch shows.",
+    "is_correct": false
+  },
+  {
+    "id": 5176060,
+    "question_id": 517606,
+    "value": "A",
+    "label": "The development of AI art generators is a significant step towards making traditional art skills obsolete.",
+    "is_correct": false
+  },
+  {
+    "id": 5176061,
+    "question_id": 517606,
+    "value": "B",
+    "label": "AI-generated art will likely surpass human art in technical skill and complexity in the near future.",
+    "is_correct": false
+  },
+  {
+    "id": 5176062,
+    "question_id": 517606,
+    "value": "C",
+    "label": "Humans will soon lose interest in creating art as AI becomes more proficient at generating diverse and appealing artistic outputs.",
+    "is_correct": false
+  },
+  {
+    "id": 5176063,
+    "question_id": 517606,
+    "value": "D",
+    "label": "AI tools may make art creation more accessible, but they do not foster the kind of deep, meaningful creativity that humans achieve through personal experience.",
+    "is_correct": true
+  },
+  {
+    "id": 7940360,
+    "question_id": 794036,
+    "value": "A",
+    "label": "The emphasis on oral tradition in Text 1 accurately reflects the views of contemporary Indigenous storytellers.",
+    "is_correct": false
+  },
+  {
+    "id": 7940361,
+    "question_id": 794036,
+    "value": "B",
+    "label": "Text 1 misunderstands the complexity of Indigenous knowledge transmission by focusing solely on spoken narratives.",
+    "is_correct": true
+  },
+  {
+    "id": 7940362,
+    "question_id": 794036,
+    "value": "C",
+    "label": "Both oral and written traditions are equally important, and Text 1 appropriately acknowledges this balance.",
+    "is_correct": false
+  },
+  {
+    "id": 7940363,
+    "question_id": 794036,
+    "value": "D",
+    "label": "The historical context of European contact is essential to understanding the shift from written to oral traditions in Indigenous cultures.",
+    "is_correct": false
+  },
+  {
+    "id": 2786860,
+    "question_id": 278686,
+    "value": "A",
+    "label": "Vinyl records are currently more popular than digital music formats.",
+    "is_correct": false
+  },
+  {
+    "id": 2786861,
+    "question_id": 278686,
+    "value": "B",
+    "label": "The resurgence of vinyl records is a notable trend, but digital music remains dominant.",
+    "is_correct": true
+  },
+  {
+    "id": 2786862,
+    "question_id": 278686,
+    "value": "C",
+    "label": "Younger generations are primarily responsible for the decline in digital music sales.",
+    "is_correct": false
+  },
+  {
+    "id": 2786863,
+    "question_id": 278686,
+    "value": "D",
+    "label": "The sound quality of vinyl records is objectively superior to that of digital music.",
+    "is_correct": false
+  },
+  {
+    "id": 862270,
+    "question_id": 86227,
+    "value": "A",
+    "label": "Renewable energy sources are currently more reliable than fossil fuels.",
+    "is_correct": false
+  },
+  {
+    "id": 862271,
+    "question_id": 86227,
+    "value": "B",
+    "label": "The transition to renewable energy is a complex issue with both advantages and disadvantages.",
+    "is_correct": true
+  },
+  {
+    "id": 862272,
+    "question_id": 86227,
+    "value": "C",
+    "label": "Fossil fuels should be completely phased out within the next decade.",
+    "is_correct": false
+  },
+  {
+    "id": 862273,
+    "question_id": 86227,
+    "value": "D",
+    "label": "Environmental concerns are irrelevant when considering energy production.",
+    "is_correct": false
+  },
+  {
+    "id": 1820580,
+    "question_id": 182058,
+    "value": "A",
+    "label": "As inconsistent, since bluegrass purists themselves enjoy other musical genres",
+    "is_correct": false
+  },
+  {
+    "id": 1820581,
+    "question_id": 182058,
+    "value": "B",
+    "label": "As unrealistic, since bluegrass purists have no way of enforcing their musical preferences",
+    "is_correct": false
+  },
+  {
+    "id": 1820582,
+    "question_id": 182058,
+    "value": "C",
+    "label": "As shortsighted, because bluegrass could enlarge its audience by including influences from mainstream genres",
+    "is_correct": false
+  },
+  {
+    "id": 1820583,
+    "question_id": 182058,
+    "value": "D",
+    "label": "As illogical, because the purists overlook crucial aspects of how the bluegrass sound first originated.",
+    "is_correct": true
+  },
+  {
+    "id": 8806450,
+    "question_id": 880645,
+    "value": "A",
+    "label": "The researchers in Text 1 focused on the effects of caffeine on physical tasks, whereas the researchers in Text 2 focused on the effects on mental tasks.",
+    "is_correct": true
+  },
+  {
+    "id": 8806451,
+    "question_id": 880645,
+    "value": "B",
+    "label": "The researchers in Text 1 used a larger sample size than the researchers in Text 2.",
+    "is_correct": false
+  },
+  {
+    "id": 8806452,
+    "question_id": 880645,
+    "value": "C",
+    "label": "The researchers in Text 1 found caffeine to be completely ineffective, while the researchers in Text 2 found it to be highly effective.",
+    "is_correct": false
+  },
+  {
+    "id": 8806453,
+    "question_id": 880645,
+    "value": "D",
+    "label": "The researchers in Text 1 studied the long-term effects of caffeine, whereas the researchers in Text 2 studied the immediate effects.",
+    "is_correct": false
+  },
+  {
+    "id": 8272430,
+    "question_id": 827243,
+    "value": "A",
+    "label": "The author of Text 1 views globalization primarily as a driver of environmental harm, whereas the author of Text 2 sees globalization as a potential catalyst for environmental improvement.",
+    "is_correct": true
+  },
+  {
+    "id": 8272431,
+    "question_id": 827243,
+    "value": "B",
+    "label": "While the author of Text 1 focuses on the environmental impact of increased consumption, the author of Text 2 is more concerned with the environmental effects of technological development.",
+    "is_correct": false
+  },
+  {
+    "id": 8272432,
+    "question_id": 827243,
+    "value": "C",
+    "label": "The author of Text 1 believes that environmental problems are solely attributable to globalization, whereas the author of Text 2 argues that environmental issues existed before globalization.",
+    "is_correct": false
+  },
+  {
+    "id": 8272433,
+    "question_id": 827243,
+    "value": "D",
+    "label": "Although the author of Text 1 recognizes the economic benefits of globalization, the author of Text 2 questions whether these benefits outweigh the environmental costs.",
+    "is_correct": false
+  },
+  {
+    "id": 6266720,
+    "question_id": 626672,
+    "value": "A",
+    "label": "By agreeing that nature enhances cognition but questioning whether its effects are as straightforward as Text 1 suggests.",
+    "is_correct": true
+  },
+  {
+    "id": 6266721,
+    "question_id": 626672,
+    "value": "B",
+    "label": "By arguing that the benefits of urban green spaces are primarily physical rather than cognitive.",
+    "is_correct": false
+  },
+  {
+    "id": 6266722,
+    "question_id": 626672,
+    "value": "C",
+    "label": "By suggesting that cognitive improvements are only observed in individuals already predisposed to enjoying nature.",
+    "is_correct": false
+  },
+  {
+    "id": 6266723,
+    "question_id": 626672,
+    "value": "D",
+    "label": "By dismissing the idea that urban green spaces have any measurable impact on cognitive function.",
+    "is_correct": false
+  },
+  {
+    "id": 7698150,
+    "question_id": 769815,
+    "value": "A",
+    "label": "As predictable, because mainstream historical accounts tend to focus on political events rather than cultural movements.",
+    "is_correct": false
+  },
+  {
+    "id": 7698151,
+    "question_id": 769815,
+    "value": "B",
+    "label": "As understandable, because the artistic achievements of the Harlem Renaissance are more readily apparent than its social impact.",
+    "is_correct": false
+  },
+  {
+    "id": 7698152,
+    "question_id": 769815,
+    "value": "C",
+    "label": "As consistent, because the situation exemplifies the general tendency to underappreciate art's influence beyond aesthetics.",
+    "is_correct": true
+  },
+  {
+    "id": 7698153,
+    "question_id": 769815,
+    "value": "D",
+    "label": "As questionable, because the Harlem Renaissance’s artistic merit is debatable and its social impact is likely overstated.",
+    "is_correct": false
+  },
+  {
+    "id": 6702330,
+    "question_id": 670233,
+    "value": "A",
+    "label": "Online streaming services have changed how people consume media.",
+    "is_correct": true
+  },
+  {
+    "id": 6702331,
+    "question_id": 670233,
+    "value": "B",
+    "label": "Traditional media expenses are always higher than streaming service costs.",
+    "is_correct": false
+  },
+  {
+    "id": 6702332,
+    "question_id": 670233,
+    "value": "C",
+    "label": "Streaming services primarily benefit content creators.",
+    "is_correct": false
+  },
+  {
+    "id": 6702333,
+    "question_id": 670233,
+    "value": "D",
+    "label": "Attention spans have definitively declined due to streaming services.",
+    "is_correct": false
+  },
+  {
+    "id": 7527150,
+    "question_id": 752715,
+    "value": "A",
+    "label": "Merian's lack of formal training hindered the quality of her scientific observations.",
+    "is_correct": false
+  },
+  {
+    "id": 7527151,
+    "question_id": 752715,
+    "value": "B",
+    "label": "Merian's work is now being re-evaluated for its innovative scientific methods.",
+    "is_correct": true
+  },
+  {
+    "id": 7527152,
+    "question_id": 752715,
+    "value": "C",
+    "label": "Scientific illustration was not considered a valuable contribution to natural history in Merian's time.",
+    "is_correct": false
+  },
+  {
+    "id": 7527153,
+    "question_id": 752715,
+    "value": "D",
+    "label": "Merian primarily focused on studying plants and neglected the study of insects.",
+    "is_correct": false
+  },
+  {
+    "id": 1841950,
+    "question_id": 184195,
+    "value": "A",
+    "label": "The author of Text 2 emphasizes the speculative nature of the study's conclusions, whereas the author of Text 1 highlights the study's groundbreaking implications.",
+    "is_correct": true
+  },
+  {
+    "id": 1841951,
+    "question_id": 184195,
+    "value": "B",
+    "label": "The author of Text 2 questions the reliability of the Kepler space telescope data, whereas the author of Text 1 presents the data as definitive.",
+    "is_correct": false
+  },
+  {
+    "id": 1841952,
+    "question_id": 184195,
+    "value": "C",
+    "label": "The author of Text 2 believes the study focuses too much on Earth-sized planets, whereas the author of Text 1 believes this focus is appropriate.",
+    "is_correct": false
+  },
+  {
+    "id": 1841953,
+    "question_id": 184195,
+    "value": "D",
+    "label": "The author of Text 2 is primarily concerned with the technological challenges of studying exoplanets, whereas the author of Text 1 focuses on the theoretical possibilities.",
+    "is_correct": false
+  },
+  {
+    "id": 3764530,
+    "question_id": 376453,
+    "value": "A",
+    "label": "By concurring that honey production is indeed the most economically significant output from bee colonies.",
+    "is_correct": false
+  },
+  {
+    "id": 3764531,
+    "question_id": 376453,
+    "value": "B",
+    "label": "By pointing out that propolis offers crucial benefits to the hive’s structure and health, beyond food production.",
+    "is_correct": true
+  },
+  {
+    "id": 3764532,
+    "question_id": 376453,
+    "value": "C",
+    "label": "By arguing that the process of collecting nectar for honey actually weakens the bee colony over time.",
+    "is_correct": false
+  },
+  {
+    "id": 3764533,
+    "question_id": 376453,
+    "value": "D",
+    "label": "By claiming that propolis is only produced in small quantities and therefore less important than honey.",
+    "is_correct": false
+  },
+  {
+    "id": 6265070,
+    "question_id": 626507,
+    "value": "A",
+    "label": "Congestion pricing is ultimately ineffective because it only redistributes traffic congestion to other areas.",
+    "is_correct": false
+  },
+  {
+    "id": 6265071,
+    "question_id": 626507,
+    "value": "B",
+    "label": "The primary goal of congestion pricing should be to generate revenue for city infrastructure improvements.",
+    "is_correct": false
+  },
+  {
+    "id": 6265072,
+    "question_id": 626507,
+    "value": "C",
+    "label": "Implementing congestion pricing requires careful planning and consideration of various factors beyond just reducing downtown traffic.",
+    "is_correct": true
+  },
+  {
+    "id": 6265073,
+    "question_id": 626507,
+    "value": "D",
+    "label": "Local businesses generally benefit from congestion pricing due to reduced traffic and improved accessibility for customers.",
+    "is_correct": false
+  },
+  {
+    "id": 1055000,
+    "question_id": 105500,
+    "value": "A",
+    "label": "Dismiss it as limited in scope because the study focuses on specific cities rather than the national economy, which is the proper scale for economic analysis.",
+    "is_correct": false
+  },
+  {
+    "id": 1055001,
+    "question_id": 105500,
+    "value": "B",
+    "label": "Question its methodology, arguing that difference-in-differences approaches are inherently unreliable for isolating the impact of minimum wage policies.",
+    "is_correct": false
+  },
+  {
+    "id": 1055002,
+    "question_id": 105500,
+    "value": "C",
+    "label": "Recognize it as presenting a challenge to the traditional economic theory described in Text 1, suggesting that the theory may not fully account for real-world complexities.",
+    "is_correct": true
+  },
+  {
+    "id": 1055003,
+    "question_id": 105500,
+    "value": "D",
+    "label": "Accept it as potentially demonstrating short-term effects of minimum wage, while still maintaining that long-term consequences will ultimately align with classical economic predictions.",
+    "is_correct": false
+  },
+  {
+    "id": 8774830,
+    "question_id": 877483,
+    "value": "A",
+    "label": "Urban beekeeping is unequivocally beneficial for both honey production and native pollinator populations.",
+    "is_correct": false
+  },
+  {
+    "id": 8774831,
+    "question_id": 877483,
+    "value": "B",
+    "label": "Urban beekeeping presents both potential advantages and notable disadvantages.",
+    "is_correct": true
+  },
+  {
+    "id": 8774832,
+    "question_id": 877483,
+    "value": "C",
+    "label": "The risks associated with urban beekeeping outweigh any potential benefits it may offer.",
+    "is_correct": false
+  },
+  {
+    "id": 8774833,
+    "question_id": 877483,
+    "value": "D",
+    "label": "Educational initiatives are the primary justification for promoting urban beekeeping.",
+    "is_correct": false
+  },
+  {
+    "id": 8786780,
+    "question_id": 878678,
+    "value": "A",
+    "label": "The long-term economic benefits of automation will eventually mitigate any initial social costs.",
+    "is_correct": true
+  },
+  {
+    "id": 8786781,
+    "question_id": 878678,
+    "value": "B",
+    "label": "Petrova's analysis fails to consider the ethical implications of prioritizing profit over employment.",
+    "is_correct": false
+  },
+  {
+    "id": 8786782,
+    "question_id": 878678,
+    "value": "C",
+    "label": "Automation will primarily impact low-skill jobs, leaving higher-skilled workers largely unaffected.",
+    "is_correct": false
+  },
+  {
+    "id": 8786783,
+    "question_id": 878678,
+    "value": "D",
+    "label": "Governments should implement policies to retrain workers and manage the transition to an automated economy.",
+    "is_correct": false
+  },
+  {
+    "id": 4361930,
+    "question_id": 436193,
+    "value": "A",
+    "label": "By questioning whether Castillo and Schmidt accounted for variations in participants' pre-existing melatonin levels.",
+    "is_correct": false
+  },
+  {
+    "id": 4361931,
+    "question_id": 436193,
+    "value": "B",
+    "label": "By suggesting that Castillo and Schmidt's study overemphasized the magnitude of blue light's impact on melatonin production.",
+    "is_correct": true
+  },
+  {
+    "id": 4361932,
+    "question_id": 436193,
+    "value": "C",
+    "label": "By supporting Castillo and Schmidt's focus on the disruption of circadian rhythms due to electronic device use.",
+    "is_correct": false
+  },
+  {
+    "id": 4361933,
+    "question_id": 436193,
+    "value": "D",
+    "label": "By recommending that Castillo and Schmidt expand their research to include a larger sample size of participants.",
+    "is_correct": false
+  },
+  {
+    "id": 6279630,
+    "question_id": 627963,
+    "value": "A",
+    "label": "By arguing that the data in Text 2 is likely flawed and does not accurately reflect the overall increase in leisure time for the average worker.",
+    "is_correct": false
+  },
+  {
+    "id": 6279631,
+    "question_id": 627963,
+    "value": "B",
+    "label": "By suggesting that unforeseen societal or economic factors have counteracted the expected leisure-enhancing effects of technological progress.",
+    "is_correct": true
+  },
+  {
+    "id": 6279632,
+    "question_id": 627963,
+    "value": "C",
+    "label": "By maintaining that the predictions were fundamentally correct, and that the perceived lack of leisure is merely a subjective feeling rather than an objective reality.",
+    "is_correct": false
+  },
+  {
+    "id": 6279633,
+    "question_id": 627963,
+    "value": "D",
+    "label": "By conceding that while technology has increased efficiency, its primary effect has been to redistribute labor rather than reduce its overall demand.",
+    "is_correct": false
+  },
+  {
+    "id": 7452700,
+    "question_id": 745270,
+    "value": "A",
+    "label": "By suggesting that it oversimplifies the complex ways social media users encounter political information",
+    "is_correct": true
+  },
+  {
+    "id": 7452701,
+    "question_id": 745270,
+    "value": "B",
+    "label": "By endorsing it as consistent with findings about the effects of algorithms on online discourse",
+    "is_correct": false
+  },
+  {
+    "id": 7452702,
+    "question_id": 745270,
+    "value": "C",
+    "label": "By dismissing it as failing to account for users' conscious choices in online interactions",
+    "is_correct": false
+  },
+  {
+    "id": 7452703,
+    "question_id": 745270,
+    "value": "D",
+    "label": "By questioning its focus on algorithms rather than on the intentions of social media companies",
+    "is_correct": false
+  },
+  {
+    "id": 2491790,
+    "question_id": 249179,
+    "value": "A",
+    "label": "By suggesting that the prevailing view overlooks critical societal factors that contribute to economic inequality.",
+    "is_correct": true
+  },
+  {
+    "id": 2491791,
+    "question_id": 249179,
+    "value": "B",
+    "label": "By conceding that market forces are the primary drivers of economic inequality, but acknowledging minor social influences.",
+    "is_correct": false
+  },
+  {
+    "id": 2491792,
+    "question_id": 249179,
+    "value": "C",
+    "label": "By arguing that individual skills and productivity are ultimately shaped by social structures and institutions.",
+    "is_correct": false
+  },
+  {
+    "id": 2491793,
+    "question_id": 249179,
+    "value": "D",
+    "label": "By supporting the prevailing view and further emphasizing the importance of individual skills in a competitive economy.",
+    "is_correct": false
+  },
+  {
+    "id": 9022330,
+    "question_id": 902233,
+    "value": "A",
+    "label": "By arguing that the observed cognitive benefits are attributable to general mood enhancement rather than to classical music specifically.",
+    "is_correct": true
+  },
+  {
+    "id": 9022331,
+    "question_id": 902233,
+    "value": "B",
+    "label": "By conceding that while classical music might improve spatial reasoning, it does not affect other aspects of intelligence.",
+    "is_correct": false
+  },
+  {
+    "id": 9022332,
+    "question_id": 902233,
+    "value": "C",
+    "label": "By questioning whether the early studies adequately controlled for participants' prior exposure to classical music.",
+    "is_correct": false
+  },
+  {
+    "id": 9022333,
+    "question_id": 902233,
+    "value": "D",
+    "label": "By suggesting that the \\",
+    "is_correct": false
+  },
+  {
+    "id": 7889160,
+    "question_id": 788916,
+    "value": "A",
+    "label": "It is fundamentally accurate, as expanding green space acreage remains the most straightforward method for improving urban environments.",
+    "is_correct": false
+  },
+  {
+    "id": 7889161,
+    "question_id": 788916,
+    "value": "B",
+    "label": "It is partially correct but overly simplistic, because the quality and accessibility of green spaces are equally important factors.",
+    "is_correct": true
+  },
+  {
+    "id": 7889162,
+    "question_id": 788916,
+    "value": "C",
+    "label": "It is entirely misleading, because studies show that increased green space acreage has no discernible impact on urban residents' well-being.",
+    "is_correct": false
+  },
+  {
+    "id": 7889163,
+    "question_id": 788916,
+    "value": "D",
+    "label": "It is irrelevant to current urban planning debates, because the focus has already shifted to prioritizing the quality of green spaces over quantity.",
+    "is_correct": false
+  },
+  {
+    "id": 8626690,
+    "question_id": 862669,
+    "value": "A",
+    "label": "By conceding that public transportation faces challenges but highlighting its broader societal benefits that Text 1 overlooks.",
+    "is_correct": true
+  },
+  {
+    "id": 8626691,
+    "question_id": 862669,
+    "value": "B",
+    "label": "By arguing that the criticisms in Text 1 are entirely unfounded and that public transportation systems are universally efficient and reliable.",
+    "is_correct": false
+  },
+  {
+    "id": 8626692,
+    "question_id": 862669,
+    "value": "C",
+    "label": "By suggesting that the author of Text 1 focuses too much on the financial costs of public transportation and not enough on the economic benefits.",
+    "is_correct": false
+  },
+  {
+    "id": 8626693,
+    "question_id": 862669,
+    "value": "D",
+    "label": "By agreeing with Text 1 that personal vehicles are ultimately a more practical solution for urban transportation despite environmental concerns.",
+    "is_correct": false
+  },
+  {
+    "id": 6061530,
+    "question_id": 606153,
+    "value": "A",
+    "label": "The presence of bacteria within the stomach was a subject of scientific inquiry.",
+    "is_correct": true
+  },
+  {
+    "id": 6061531,
+    "question_id": 606153,
+    "value": "B",
+    "label": "Lifestyle modifications are ineffective in treating peptic ulcers.",
+    "is_correct": false
+  },
+  {
+    "id": 6061532,
+    "question_id": 606153,
+    "value": "C",
+    "label": "Peptic ulcers were fully understood by the medical community prior to the 1980s.",
+    "is_correct": false
+  },
+  {
+    "id": 6061533,
+    "question_id": 606153,
+    "value": "D",
+    "label": "Antibiotics were a common treatment for peptic ulcers throughout the 20th century.",
+    "is_correct": false
+  },
+  {
+    "id": 2315480,
+    "question_id": 231548,
+    "value": "A",
+    "label": "By agreeing that screen time reduces attention spans in some ways but arguing that the development of selective attention is a more significant outcome.",
+    "is_correct": false
+  },
+  {
+    "id": 2315481,
+    "question_id": 231548,
+    "value": "B",
+    "label": "By contending that Text 1's assertion is overly simplistic and suggesting that screen time may instead foster a different, but valuable, form of attention.",
+    "is_correct": true
+  },
+  {
+    "id": 2315482,
+    "question_id": 231548,
+    "value": "C",
+    "label": "By dismissing Text 1's concerns as unfounded and presenting evidence that screen time has no discernible impact on any aspect of attention.",
+    "is_correct": false
+  },
+  {
+    "id": 2315483,
+    "question_id": 231548,
+    "value": "D",
+    "label": "By conceding that Text 1 accurately describes the negative effects of screen time while acknowledging that more research is needed to understand the mechanisms involved.",
+    "is_correct": false
+  },
+  {
+    "id": 7523870,
+    "question_id": 752387,
+    "value": "A",
+    "label": "By conceding that UBI might improve individual well-being but questioning whether these improvements would translate into measurable gains in national productivity",
+    "is_correct": false
+  },
+  {
+    "id": 7523871,
+    "question_id": 752387,
+    "value": "B",
+    "label": "By challenging the assumption that financial security is the primary factor limiting individual pursuit of education and entrepreneurship",
+    "is_correct": false
+  },
+  {
+    "id": 7523872,
+    "question_id": 752387,
+    "value": "C",
+    "label": "By cautioning that the potential reduction in workforce participation due to UBI could counteract any positive effects on national productivity",
+    "is_correct": true
+  },
+  {
+    "id": 7523873,
+    "question_id": 752387,
+    "value": "D",
+    "label": "By agreeing that UBI could enhance productivity but only if implemented in conjunction with policies that actively encourage workforce participation",
+    "is_correct": false
+  },
+  {
+    "id": 4872520,
+    "question_id": 487252,
+    "value": "A",
+    "label": "The negative effects of blue light on sleep can be mitigated by maintaining a room temperature of 22°C.",
+    "is_correct": false
+  },
+  {
+    "id": 4872521,
+    "question_id": 487252,
+    "value": "B",
+    "label": "Environmental factors, such as light exposure and temperature, independently influence different aspects of sleep quality.",
+    "is_correct": true
+  },
+  {
+    "id": 4872522,
+    "question_id": 487252,
+    "value": "C",
+    "label": "Devices with blue-light filters are less detrimental to sleep quality than maintaining an optimal room temperature.",
+    "is_correct": false
+  },
+  {
+    "id": 4872523,
+    "question_id": 487252,
+    "value": "D",
+    "label": "Both blue light exposure and cooler room temperatures primarily affect sleep latency, but not REM sleep duration.",
+    "is_correct": false
+  },
+  {
+    "id": 9851820,
+    "question_id": 985182,
+    "value": "A",
+    "label": "It is a generally sound framework that requires minor adjustments to incorporate psychological factors.",
+    "is_correct": false
+  },
+  {
+    "id": 9851821,
+    "question_id": 985182,
+    "value": "B",
+    "label": "It is fundamentally misguided, as it overlooks the pervasive influence of cognitive biases on decision-making.",
+    "is_correct": true
+  },
+  {
+    "id": 9851822,
+    "question_id": 985182,
+    "value": "C",
+    "label": "It holds true primarily in controlled laboratory settings but is less applicable to real-world consumer behavior.",
+    "is_correct": false
+  },
+  {
+    "id": 9851823,
+    "question_id": 985182,
+    "value": "D",
+    "label": "It offers a valuable initial perspective, but it needs to be expanded to fully account for the complexities of human emotions.",
+    "is_correct": false
+  },
+  {
+    "id": 2211200,
+    "question_id": 221120,
+    "value": "A",
+    "label": "They would agree that while market failures exist, classical theory adequately accounts for them within its framework.",
+    "is_correct": false
+  },
+  {
+    "id": 2211201,
+    "question_id": 221120,
+    "value": "B",
+    "label": "They would contend that market failures are not merely underestimated but are a fundamental and pervasive characteristic of real-world markets.",
+    "is_correct": true
+  },
+  {
+    "id": 2211202,
+    "question_id": 221120,
+    "value": "C",
+    "label": "They would concede that classical theory's focus on market efficiency is valid but argue that behavioral economics offers a more practical approach to achieving it.",
+    "is_correct": false
+  },
+  {
+    "id": 2211203,
+    "question_id": 221120,
+    "value": "D",
+    "label": "They would claim that the concept of \\",
+    "is_correct": false
+  },
+  {
+    "id": 1106790,
+    "question_id": 110679,
+    "value": "A",
+    "label": "By asserting that the engaging nature of oral storytelling can be effectively replicated through interactive digital platforms.",
+    "is_correct": false
+  },
+  {
+    "id": 1106791,
+    "question_id": 110679,
+    "value": "B",
+    "label": "By emphasizing that the primary goal of cultural preservation should be accessibility, which digital archives undeniably enhance.",
+    "is_correct": false
+  },
+  {
+    "id": 1106792,
+    "question_id": 110679,
+    "value": "C",
+    "label": "By arguing that the irreplaceable elements of live storytelling are fundamentally diminished when traditions are solely preserved digitally.",
+    "is_correct": true
+  },
+  {
+    "id": 1106793,
+    "question_id": 110679,
+    "value": "D",
+    "label": "By suggesting that digital archives should prioritize the preservation of written texts and visual artifacts over oral traditions.",
+    "is_correct": false
+  },
+  {
+    "id": 3544650,
+    "question_id": 354465,
+    "value": "A",
+    "label": "As appropriately emphasizing the need for multifaceted approaches to combating public health issues.",
+    "is_correct": false
+  },
+  {
+    "id": 3544651,
+    "question_id": 354465,
+    "value": "B",
+    "label": "As accurately reflecting the comprehensive nature of current public health interventions.",
+    "is_correct": false
+  },
+  {
+    "id": 3544652,
+    "question_id": 354465,
+    "value": "C",
+    "label": "As somewhat limited in scope by its narrow focus on a single category of sugary products.",
+    "is_correct": true
+  },
+  {
+    "id": 3544653,
+    "question_id": 354465,
+    "value": "D",
+    "label": "As fundamentally flawed in its understanding of the relationship between taxation and consumer behavior.",
+    "is_correct": false
+  },
+  {
+    "id": 3652090,
+    "question_id": 365209,
+    "value": "A",
+    "label": "By fully embracing the optimistic view of AI's potential to revolutionize artistic creation and expressing excitement about the future of AI-assisted art",
+    "is_correct": false
+  },
+  {
+    "id": 3652091,
+    "question_id": 365209,
+    "value": "B",
+    "label": "By acknowledging the potential benefits of AI tools for creative processes but cautioning against an overemphasis on technology at the expense of human elements in art",
+    "is_correct": true
+  },
+  {
+    "id": 3652092,
+    "question_id": 365209,
+    "value": "C",
+    "label": "By dismissing the predictions in Text 1 as overly enthusiastic and arguing that AI will ultimately have a negligible impact on artistic creation",
+    "is_correct": false
+  },
+  {
+    "id": 3652093,
+    "question_id": 365209,
+    "value": "D",
+    "label": "By agreeing with the predictions but suggesting that the integration of AI in art will primarily benefit commercial applications rather than purely artistic pursuits",
+    "is_correct": false
+  },
+  {
+    "id": 6719180,
+    "question_id": 671918,
+    "value": "A",
+    "label": "The author of Text 1 emphasizes the negative aspects of Genovia's economic inequality, while the author of Text 2 focuses on the positive overall improvements in Genovia's quality of life.",
+    "is_correct": true
+  },
+  {
+    "id": 6719181,
+    "question_id": 671918,
+    "value": "B",
+    "label": "The author of Text 1 believes Genovia's economic problems are entirely due to fictional media portrayals, while the author of Text 2 implies that these problems are rooted in real-world economic data.",
+    "is_correct": false
+  },
+  {
+    "id": 6719182,
+    "question_id": 671918,
+    "value": "C",
+    "label": "The author of Text 1 argues that Genovia's government is unaware of the economic disparities, while the author of Text 2 suggests the government is actively working to exacerbate these inequalities.",
+    "is_correct": false
+  },
+  {
+    "id": 6719183,
+    "question_id": 671918,
+    "value": "D",
+    "label": "The author of Text 1 focuses on Genovia's political instability as the primary issue, whereas the author of Text 2 believes that Genovia's main challenge is its lack of natural resources.",
+    "is_correct": false
+  },
+  {
+    "id": 8643270,
+    "question_id": 864327,
+    "value": "A",
+    "label": "Text 1 presents a hypothesis and supporting evidence, whereas Text 2 offers contradictory evidence that undermines that hypothesis.",
+    "is_correct": false
+  },
+  {
+    "id": 8643271,
+    "question_id": 864327,
+    "value": "B",
+    "label": "Text 1 proposes a single factor as the primary cause of a historical event, whereas Text 2 suggests a more complex explanation involving multiple contributing factors.",
+    "is_correct": true
+  },
+  {
+    "id": 8643272,
+    "question_id": 864327,
+    "value": "C",
+    "label": "Text 1 describes a widely accepted historical narrative, whereas Text 2 challenges the accuracy of that narrative based on new archaeological findings.",
+    "is_correct": false
+  },
+  {
+    "id": 8643273,
+    "question_id": 864327,
+    "value": "D",
+    "label": "Text 1 focuses on the environmental aspects of a historical event, whereas Text 2 emphasizes the social and political dimensions of the same event.",
+    "is_correct": false
+  },
+  {
+    "id": 357640,
+    "question_id": 35764,
+    "value": "A",
+    "label": "By suggesting that the researchers should have focused on measuring noise levels during nighttime hours when sleep disturbances are more likely.",
+    "is_correct": false
+  },
+  {
+    "id": 357641,
+    "question_id": 35764,
+    "value": "B",
+    "label": "By arguing that the researchers' conclusion is valid only for individuals living in close proximity to major traffic arteries.",
+    "is_correct": false
+  },
+  {
+    "id": 357642,
+    "question_id": 35764,
+    "value": "C",
+    "label": "By claiming that the researchers' methodology was flawed because sound level meters are unreliable in urban environments.",
+    "is_correct": false
+  },
+  {
+    "id": 357643,
+    "question_id": 35764,
+    "value": "D",
+    "label": "By pointing out that the researchers' analysis overlooks the qualitative differences between various types of urban sounds at similar decibel levels.",
+    "is_correct": true
+  }
+]

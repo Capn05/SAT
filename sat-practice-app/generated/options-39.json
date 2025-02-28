@@ -1,0 +1,1654 @@
+[
+  {
+    "id": 1079570,
+    "question_id": 107957,
+    "value": "A",
+    "label": "harbors",
+    "is_correct": true
+  },
+  {
+    "id": 1079571,
+    "question_id": 107957,
+    "value": "B",
+    "label": "is harboring",
+    "is_correct": false
+  },
+  {
+    "id": 1079572,
+    "question_id": 107957,
+    "value": "C",
+    "label": "harbored",
+    "is_correct": false
+  },
+  {
+    "id": 1079573,
+    "question_id": 107957,
+    "value": "D",
+    "label": "will harbor",
+    "is_correct": false
+  },
+  {
+    "id": 9067480,
+    "question_id": 906748,
+    "value": "A",
+    "label": "its",
+    "is_correct": true
+  },
+  {
+    "id": 9067481,
+    "question_id": 906748,
+    "value": "B",
+    "label": "it's",
+    "is_correct": false
+  },
+  {
+    "id": 9067482,
+    "question_id": 906748,
+    "value": "C",
+    "label": "its'",
+    "is_correct": false
+  },
+  {
+    "id": 9067483,
+    "question_id": 906748,
+    "value": "D",
+    "label": "it's'",
+    "is_correct": false
+  },
+  {
+    "id": 1099740,
+    "question_id": 109974,
+    "value": "A",
+    "label": "get",
+    "is_correct": true
+  },
+  {
+    "id": 1099741,
+    "question_id": 109974,
+    "value": "B",
+    "label": "gotten",
+    "is_correct": false
+  },
+  {
+    "id": 1099742,
+    "question_id": 109974,
+    "value": "C",
+    "label": "getting",
+    "is_correct": false
+  },
+  {
+    "id": 1099743,
+    "question_id": 109974,
+    "value": "D",
+    "label": "got",
+    "is_correct": false
+  },
+  {
+    "id": 2281740,
+    "question_id": 228174,
+    "value": "A",
+    "label": "are",
+    "is_correct": false
+  },
+  {
+    "id": 2281741,
+    "question_id": 228174,
+    "value": "B",
+    "label": "is",
+    "is_correct": true
+  },
+  {
+    "id": 2281742,
+    "question_id": 228174,
+    "value": "C",
+    "label": "were",
+    "is_correct": false
+  },
+  {
+    "id": 2281743,
+    "question_id": 228174,
+    "value": "D",
+    "label": "have been",
+    "is_correct": false
+  },
+  {
+    "id": 5598090,
+    "question_id": 559809,
+    "value": "A",
+    "label": "had explored",
+    "is_correct": false
+  },
+  {
+    "id": 5598091,
+    "question_id": 559809,
+    "value": "B",
+    "label": "have explored",
+    "is_correct": false
+  },
+  {
+    "id": 5598092,
+    "question_id": 559809,
+    "value": "C",
+    "label": "will explore",
+    "is_correct": true
+  },
+  {
+    "id": 5598093,
+    "question_id": 559809,
+    "value": "D",
+    "label": "are exploring",
+    "is_correct": false
+  },
+  {
+    "id": 2695010,
+    "question_id": 269501,
+    "value": "A",
+    "label": "blend",
+    "is_correct": false
+  },
+  {
+    "id": 2695011,
+    "question_id": 269501,
+    "value": "B",
+    "label": "are blending",
+    "is_correct": false
+  },
+  {
+    "id": 2695012,
+    "question_id": 269501,
+    "value": "C",
+    "label": "were blending",
+    "is_correct": false
+  },
+  {
+    "id": 2695013,
+    "question_id": 269501,
+    "value": "D",
+    "label": "blends",
+    "is_correct": true
+  },
+  {
+    "id": 7154890,
+    "question_id": 715489,
+    "value": "A",
+    "label": "showcases",
+    "is_correct": false
+  },
+  {
+    "id": 7154891,
+    "question_id": 715489,
+    "value": "B",
+    "label": "showcase",
+    "is_correct": true
+  },
+  {
+    "id": 7154892,
+    "question_id": 715489,
+    "value": "C",
+    "label": "is showcasing",
+    "is_correct": false
+  },
+  {
+    "id": 7154893,
+    "question_id": 715489,
+    "value": "D",
+    "label": "have showcased",
+    "is_correct": false
+  },
+  {
+    "id": 1637750,
+    "question_id": 163775,
+    "value": "A",
+    "label": "obtaining",
+    "is_correct": false
+  },
+  {
+    "id": 1637751,
+    "question_id": 163775,
+    "value": "B",
+    "label": "obtained",
+    "is_correct": false
+  },
+  {
+    "id": 1637752,
+    "question_id": 163775,
+    "value": "C",
+    "label": "to obtain",
+    "is_correct": true
+  },
+  {
+    "id": 1637753,
+    "question_id": 163775,
+    "value": "D",
+    "label": "obtains",
+    "is_correct": false
+  },
+  {
+    "id": 3151520,
+    "question_id": 315152,
+    "value": "A",
+    "label": "offer",
+    "is_correct": false
+  },
+  {
+    "id": 3151521,
+    "question_id": 315152,
+    "value": "B",
+    "label": "are offering",
+    "is_correct": false
+  },
+  {
+    "id": 3151522,
+    "question_id": 315152,
+    "value": "C",
+    "label": "offers",
+    "is_correct": true
+  },
+  {
+    "id": 3151523,
+    "question_id": 315152,
+    "value": "D",
+    "label": "have offered",
+    "is_correct": false
+  },
+  {
+    "id": 5312180,
+    "question_id": 531218,
+    "value": "A",
+    "label": "a company's",
+    "is_correct": true
+  },
+  {
+    "id": 5312181,
+    "question_id": 531218,
+    "value": "B",
+    "label": "companies",
+    "is_correct": false
+  },
+  {
+    "id": 5312182,
+    "question_id": 531218,
+    "value": "C",
+    "label": "companies'",
+    "is_correct": false
+  },
+  {
+    "id": 5312183,
+    "question_id": 531218,
+    "value": "D",
+    "label": "a company",
+    "is_correct": false
+  },
+  {
+    "id": 268430,
+    "question_id": 26843,
+    "value": "A",
+    "label": "to conclude",
+    "is_correct": false
+  },
+  {
+    "id": 268431,
+    "question_id": 26843,
+    "value": "B",
+    "label": "concluding",
+    "is_correct": false
+  },
+  {
+    "id": 268432,
+    "question_id": 26843,
+    "value": "C",
+    "label": "concludes",
+    "is_correct": false
+  },
+  {
+    "id": 268433,
+    "question_id": 26843,
+    "value": "D",
+    "label": "concluded",
+    "is_correct": true
+  },
+  {
+    "id": 631880,
+    "question_id": 63188,
+    "value": "A",
+    "label": "their",
+    "is_correct": true
+  },
+  {
+    "id": 631881,
+    "question_id": 63188,
+    "value": "B",
+    "label": "its",
+    "is_correct": false
+  },
+  {
+    "id": 631882,
+    "question_id": 63188,
+    "value": "C",
+    "label": "his",
+    "is_correct": false
+  },
+  {
+    "id": 631883,
+    "question_id": 63188,
+    "value": "D",
+    "label": "her",
+    "is_correct": false
+  },
+  {
+    "id": 4523560,
+    "question_id": 452356,
+    "value": "A",
+    "label": "is",
+    "is_correct": false
+  },
+  {
+    "id": 4523561,
+    "question_id": 452356,
+    "value": "B",
+    "label": "will be",
+    "is_correct": false
+  },
+  {
+    "id": 4523562,
+    "question_id": 452356,
+    "value": "C",
+    "label": "had been",
+    "is_correct": false
+  },
+  {
+    "id": 4523563,
+    "question_id": 452356,
+    "value": "D",
+    "label": "has been",
+    "is_correct": true
+  },
+  {
+    "id": 3479440,
+    "question_id": 347944,
+    "value": "A",
+    "label": "exhibiting",
+    "is_correct": false
+  },
+  {
+    "id": 3479441,
+    "question_id": 347944,
+    "value": "B",
+    "label": "to exhibit",
+    "is_correct": false
+  },
+  {
+    "id": 3479442,
+    "question_id": 347944,
+    "value": "C",
+    "label": "exhibited",
+    "is_correct": true
+  },
+  {
+    "id": 3479443,
+    "question_id": 347944,
+    "value": "D",
+    "label": "has exhibited",
+    "is_correct": false
+  },
+  {
+    "id": 7500250,
+    "question_id": 750025,
+    "value": "A",
+    "label": "curtail",
+    "is_correct": false
+  },
+  {
+    "id": 7500251,
+    "question_id": 750025,
+    "value": "B",
+    "label": "had curtailed",
+    "is_correct": true
+  },
+  {
+    "id": 7500252,
+    "question_id": 750025,
+    "value": "C",
+    "label": "will curtail",
+    "is_correct": false
+  },
+  {
+    "id": 7500253,
+    "question_id": 750025,
+    "value": "D",
+    "label": "are curtailing",
+    "is_correct": false
+  },
+  {
+    "id": 8852710,
+    "question_id": 885271,
+    "value": "A",
+    "label": "scientist's early experiment's",
+    "is_correct": false
+  },
+  {
+    "id": 8852711,
+    "question_id": 885271,
+    "value": "B",
+    "label": "scientists early experiment's",
+    "is_correct": false
+  },
+  {
+    "id": 8852712,
+    "question_id": 885271,
+    "value": "C",
+    "label": "scientist's early experiments",
+    "is_correct": true
+  },
+  {
+    "id": 8852713,
+    "question_id": 885271,
+    "value": "D",
+    "label": "scientists early experiments",
+    "is_correct": false
+  },
+  {
+    "id": 5684820,
+    "question_id": 568482,
+    "value": "A",
+    "label": "disrupts",
+    "is_correct": true
+  },
+  {
+    "id": 5684821,
+    "question_id": 568482,
+    "value": "B",
+    "label": "disrupted",
+    "is_correct": false
+  },
+  {
+    "id": 5684822,
+    "question_id": 568482,
+    "value": "C",
+    "label": "will disrupt",
+    "is_correct": false
+  },
+  {
+    "id": 5684823,
+    "question_id": 568482,
+    "value": "D",
+    "label": "is disrupting",
+    "is_correct": false
+  },
+  {
+    "id": 9346520,
+    "question_id": 934652,
+    "value": "A",
+    "label": "showcase",
+    "is_correct": true
+  },
+  {
+    "id": 9346521,
+    "question_id": 934652,
+    "value": "B",
+    "label": "showcases",
+    "is_correct": false
+  },
+  {
+    "id": 9346522,
+    "question_id": 934652,
+    "value": "C",
+    "label": "is showcasing",
+    "is_correct": false
+  },
+  {
+    "id": 9346523,
+    "question_id": 934652,
+    "value": "D",
+    "label": "has showcased",
+    "is_correct": false
+  },
+  {
+    "id": 339290,
+    "question_id": 33929,
+    "value": "A",
+    "label": "it",
+    "is_correct": true
+  },
+  {
+    "id": 339291,
+    "question_id": 33929,
+    "value": "B",
+    "label": "them",
+    "is_correct": false
+  },
+  {
+    "id": 339292,
+    "question_id": 33929,
+    "value": "C",
+    "label": "these",
+    "is_correct": false
+  },
+  {
+    "id": 339293,
+    "question_id": 33929,
+    "value": "D",
+    "label": "those",
+    "is_correct": false
+  },
+  {
+    "id": 4275930,
+    "question_id": 427593,
+    "value": "A",
+    "label": "have been",
+    "is_correct": false
+  },
+  {
+    "id": 4275931,
+    "question_id": 427593,
+    "value": "B",
+    "label": "were",
+    "is_correct": false
+  },
+  {
+    "id": 4275932,
+    "question_id": 427593,
+    "value": "C",
+    "label": "was",
+    "is_correct": true
+  },
+  {
+    "id": 4275933,
+    "question_id": 427593,
+    "value": "D",
+    "label": "are",
+    "is_correct": false
+  },
+  {
+    "id": 1165990,
+    "question_id": 116599,
+    "value": "A",
+    "label": "tending",
+    "is_correct": false
+  },
+  {
+    "id": 1165991,
+    "question_id": 116599,
+    "value": "B",
+    "label": "to tend",
+    "is_correct": false
+  },
+  {
+    "id": 1165992,
+    "question_id": 116599,
+    "value": "C",
+    "label": "tend",
+    "is_correct": false
+  },
+  {
+    "id": 1165993,
+    "question_id": 116599,
+    "value": "D",
+    "label": "tends",
+    "is_correct": true
+  },
+  {
+    "id": 4384960,
+    "question_id": 438496,
+    "value": "A",
+    "label": "to enroll",
+    "is_correct": true
+  },
+  {
+    "id": 4384961,
+    "question_id": 438496,
+    "value": "B",
+    "label": "enrolling",
+    "is_correct": false
+  },
+  {
+    "id": 4384962,
+    "question_id": 438496,
+    "value": "C",
+    "label": "enrolled",
+    "is_correct": false
+  },
+  {
+    "id": 4384963,
+    "question_id": 438496,
+    "value": "D",
+    "label": "enrolls",
+    "is_correct": false
+  },
+  {
+    "id": 39050,
+    "question_id": 3905,
+    "value": "A",
+    "label": "argue",
+    "is_correct": true
+  },
+  {
+    "id": 39051,
+    "question_id": 3905,
+    "value": "B",
+    "label": "arguing",
+    "is_correct": false
+  },
+  {
+    "id": 39052,
+    "question_id": 3905,
+    "value": "C",
+    "label": "to argue",
+    "is_correct": false
+  },
+  {
+    "id": 39053,
+    "question_id": 3905,
+    "value": "D",
+    "label": "having argued",
+    "is_correct": false
+  },
+  {
+    "id": 4559010,
+    "question_id": 455901,
+    "value": "A",
+    "label": "is collecting",
+    "is_correct": false
+  },
+  {
+    "id": 4559011,
+    "question_id": 455901,
+    "value": "B",
+    "label": "will collect",
+    "is_correct": false
+  },
+  {
+    "id": 4559012,
+    "question_id": 455901,
+    "value": "C",
+    "label": "collects",
+    "is_correct": false
+  },
+  {
+    "id": 4559013,
+    "question_id": 455901,
+    "value": "D",
+    "label": "had collected",
+    "is_correct": true
+  },
+  {
+    "id": 7807950,
+    "question_id": 780795,
+    "value": "A",
+    "label": "is moving",
+    "is_correct": false
+  },
+  {
+    "id": 7807951,
+    "question_id": 780795,
+    "value": "B",
+    "label": "moved",
+    "is_correct": false
+  },
+  {
+    "id": 7807952,
+    "question_id": 780795,
+    "value": "C",
+    "label": "moves",
+    "is_correct": true
+  },
+  {
+    "id": 7807953,
+    "question_id": 780795,
+    "value": "D",
+    "label": "has moved",
+    "is_correct": false
+  },
+  {
+    "id": 5702290,
+    "question_id": 570229,
+    "value": "A",
+    "label": "it was",
+    "is_correct": true
+  },
+  {
+    "id": 5702291,
+    "question_id": 570229,
+    "value": "B",
+    "label": "she has been",
+    "is_correct": false
+  },
+  {
+    "id": 5702292,
+    "question_id": 570229,
+    "value": "C",
+    "label": "they were",
+    "is_correct": false
+  },
+  {
+    "id": 5702293,
+    "question_id": 570229,
+    "value": "D",
+    "label": "one is",
+    "is_correct": false
+  },
+  {
+    "id": 3048300,
+    "question_id": 304830,
+    "value": "A",
+    "label": "observing",
+    "is_correct": false
+  },
+  {
+    "id": 3048301,
+    "question_id": 304830,
+    "value": "B",
+    "label": "to observe",
+    "is_correct": true
+  },
+  {
+    "id": 3048302,
+    "question_id": 304830,
+    "value": "C",
+    "label": "observed",
+    "is_correct": false
+  },
+  {
+    "id": 3048303,
+    "question_id": 304830,
+    "value": "D",
+    "label": "observes",
+    "is_correct": false
+  },
+  {
+    "id": 727100,
+    "question_id": 72710,
+    "value": "A",
+    "label": "is",
+    "is_correct": false
+  },
+  {
+    "id": 727101,
+    "question_id": 72710,
+    "value": "B",
+    "label": "was",
+    "is_correct": false
+  },
+  {
+    "id": 727102,
+    "question_id": 72710,
+    "value": "C",
+    "label": "are",
+    "is_correct": false
+  },
+  {
+    "id": 727103,
+    "question_id": 72710,
+    "value": "D",
+    "label": "were",
+    "is_correct": true
+  },
+  {
+    "id": 2771200,
+    "question_id": 277120,
+    "value": "A",
+    "label": "generating",
+    "is_correct": true
+  },
+  {
+    "id": 2771201,
+    "question_id": 277120,
+    "value": "B",
+    "label": "this generates",
+    "is_correct": false
+  },
+  {
+    "id": 2771202,
+    "question_id": 277120,
+    "value": "C",
+    "label": "generates",
+    "is_correct": false
+  },
+  {
+    "id": 2771203,
+    "question_id": 277120,
+    "value": "D",
+    "label": "it generates",
+    "is_correct": false
+  },
+  {
+    "id": 9114840,
+    "question_id": 911484,
+    "value": "A",
+    "label": "to be using",
+    "is_correct": false
+  },
+  {
+    "id": 9114841,
+    "question_id": 911484,
+    "value": "B",
+    "label": "using",
+    "is_correct": false
+  },
+  {
+    "id": 9114842,
+    "question_id": 911484,
+    "value": "C",
+    "label": "uses",
+    "is_correct": false
+  },
+  {
+    "id": 9114843,
+    "question_id": 911484,
+    "value": "D",
+    "label": "used",
+    "is_correct": true
+  },
+  {
+    "id": 281540,
+    "question_id": 28154,
+    "value": "A",
+    "label": "provides",
+    "is_correct": true
+  },
+  {
+    "id": 281541,
+    "question_id": 28154,
+    "value": "B",
+    "label": "providing",
+    "is_correct": false
+  },
+  {
+    "id": 281542,
+    "question_id": 28154,
+    "value": "C",
+    "label": "to provide",
+    "is_correct": false
+  },
+  {
+    "id": 281543,
+    "question_id": 28154,
+    "value": "D",
+    "label": "provided",
+    "is_correct": false
+  },
+  {
+    "id": 1321250,
+    "question_id": 132125,
+    "value": "A",
+    "label": "is",
+    "is_correct": false
+  },
+  {
+    "id": 1321251,
+    "question_id": 132125,
+    "value": "B",
+    "label": "has been",
+    "is_correct": false
+  },
+  {
+    "id": 1321252,
+    "question_id": 132125,
+    "value": "C",
+    "label": "was",
+    "is_correct": true
+  },
+  {
+    "id": 1321253,
+    "question_id": 132125,
+    "value": "D",
+    "label": "will be",
+    "is_correct": false
+  },
+  {
+    "id": 9769240,
+    "question_id": 976924,
+    "value": "A",
+    "label": "Her",
+    "is_correct": true
+  },
+  {
+    "id": 9769241,
+    "question_id": 976924,
+    "value": "B",
+    "label": "Their",
+    "is_correct": false
+  },
+  {
+    "id": 9769242,
+    "question_id": 976924,
+    "value": "C",
+    "label": "It's",
+    "is_correct": false
+  },
+  {
+    "id": 9769243,
+    "question_id": 976924,
+    "value": "D",
+    "label": "His",
+    "is_correct": false
+  },
+  {
+    "id": 8314170,
+    "question_id": 831417,
+    "value": "A",
+    "label": "present",
+    "is_correct": false
+  },
+  {
+    "id": 8314171,
+    "question_id": 831417,
+    "value": "B",
+    "label": "presents",
+    "is_correct": true
+  },
+  {
+    "id": 8314172,
+    "question_id": 831417,
+    "value": "C",
+    "label": "are presenting",
+    "is_correct": false
+  },
+  {
+    "id": 8314173,
+    "question_id": 831417,
+    "value": "D",
+    "label": "have presented",
+    "is_correct": false
+  },
+  {
+    "id": 4769020,
+    "question_id": 476902,
+    "value": "A",
+    "label": "is",
+    "is_correct": true
+  },
+  {
+    "id": 4769021,
+    "question_id": 476902,
+    "value": "B",
+    "label": "being",
+    "is_correct": false
+  },
+  {
+    "id": 4769022,
+    "question_id": 476902,
+    "value": "C",
+    "label": "to be",
+    "is_correct": false
+  },
+  {
+    "id": 4769023,
+    "question_id": 476902,
+    "value": "D",
+    "label": "are",
+    "is_correct": false
+  },
+  {
+    "id": 1395350,
+    "question_id": 139535,
+    "value": "A",
+    "label": "uncovering",
+    "is_correct": false
+  },
+  {
+    "id": 1395351,
+    "question_id": 139535,
+    "value": "B",
+    "label": "uncovered",
+    "is_correct": true
+  },
+  {
+    "id": 1395352,
+    "question_id": 139535,
+    "value": "C",
+    "label": "to uncover",
+    "is_correct": false
+  },
+  {
+    "id": 1395353,
+    "question_id": 139535,
+    "value": "D",
+    "label": "having uncovered",
+    "is_correct": false
+  },
+  {
+    "id": 7653850,
+    "question_id": 765385,
+    "value": "A",
+    "label": "the concept of computer programming existed",
+    "is_correct": false
+  },
+  {
+    "id": 7653851,
+    "question_id": 765385,
+    "value": "B",
+    "label": "computer programming existed conceptually",
+    "is_correct": true
+  },
+  {
+    "id": 7653852,
+    "question_id": 765385,
+    "value": "C",
+    "label": "the conceptual existence of computer programming was",
+    "is_correct": false
+  },
+  {
+    "id": 7653853,
+    "question_id": 765385,
+    "value": "D",
+    "label": "conceptual computer programming had existence",
+    "is_correct": false
+  },
+  {
+    "id": 8378880,
+    "question_id": 837888,
+    "value": "A",
+    "label": "its",
+    "is_correct": true
+  },
+  {
+    "id": 8378881,
+    "question_id": 837888,
+    "value": "B",
+    "label": "their",
+    "is_correct": false
+  },
+  {
+    "id": 8378882,
+    "question_id": 837888,
+    "value": "C",
+    "label": "it's",
+    "is_correct": false
+  },
+  {
+    "id": 8378883,
+    "question_id": 837888,
+    "value": "D",
+    "label": "one's",
+    "is_correct": false
+  },
+  {
+    "id": 659460,
+    "question_id": 65946,
+    "value": "A",
+    "label": "it integrates",
+    "is_correct": false
+  },
+  {
+    "id": 659461,
+    "question_id": 65946,
+    "value": "B",
+    "label": "they integrate",
+    "is_correct": true
+  },
+  {
+    "id": 659462,
+    "question_id": 65946,
+    "value": "C",
+    "label": "one integrates",
+    "is_correct": false
+  },
+  {
+    "id": 659463,
+    "question_id": 65946,
+    "value": "D",
+    "label": "we integrate",
+    "is_correct": false
+  },
+  {
+    "id": 8621310,
+    "question_id": 862131,
+    "value": "A",
+    "label": "patients'",
+    "is_correct": true
+  },
+  {
+    "id": 8621311,
+    "question_id": 862131,
+    "value": "B",
+    "label": "patient's",
+    "is_correct": false
+  },
+  {
+    "id": 8621312,
+    "question_id": 862131,
+    "value": "C",
+    "label": "patients",
+    "is_correct": false
+  },
+  {
+    "id": 8621313,
+    "question_id": 862131,
+    "value": "D",
+    "label": "patient",
+    "is_correct": false
+  },
+  {
+    "id": 297100,
+    "question_id": 29710,
+    "value": "A",
+    "label": "reflects",
+    "is_correct": true
+  },
+  {
+    "id": 297101,
+    "question_id": 29710,
+    "value": "B",
+    "label": "are reflecting",
+    "is_correct": false
+  },
+  {
+    "id": 297102,
+    "question_id": 29710,
+    "value": "C",
+    "label": "have reflected",
+    "is_correct": false
+  },
+  {
+    "id": 297103,
+    "question_id": 29710,
+    "value": "D",
+    "label": "reflect",
+    "is_correct": false
+  },
+  {
+    "id": 9612220,
+    "question_id": 961222,
+    "value": "A",
+    "label": "commences",
+    "is_correct": false
+  },
+  {
+    "id": 9612221,
+    "question_id": 961222,
+    "value": "B",
+    "label": "commenced",
+    "is_correct": true
+  },
+  {
+    "id": 9612222,
+    "question_id": 961222,
+    "value": "C",
+    "label": "will commence",
+    "is_correct": false
+  },
+  {
+    "id": 9612223,
+    "question_id": 961222,
+    "value": "D",
+    "label": "is commencing",
+    "is_correct": false
+  },
+  {
+    "id": 739960,
+    "question_id": 73996,
+    "value": "A",
+    "label": "establishing",
+    "is_correct": true
+  },
+  {
+    "id": 739961,
+    "question_id": 73996,
+    "value": "B",
+    "label": "established",
+    "is_correct": false
+  },
+  {
+    "id": 739962,
+    "question_id": 73996,
+    "value": "C",
+    "label": "to establish",
+    "is_correct": false
+  },
+  {
+    "id": 739963,
+    "question_id": 73996,
+    "value": "D",
+    "label": "establish",
+    "is_correct": false
+  },
+  {
+    "id": 9955660,
+    "question_id": 995566,
+    "value": "A",
+    "label": "the Wright brothers' first successful flight in 1903,",
+    "is_correct": true
+  },
+  {
+    "id": 9955661,
+    "question_id": 995566,
+    "value": "B",
+    "label": "the Wright brothers—in 1903—first successful flight,",
+    "is_correct": false
+  },
+  {
+    "id": 9955662,
+    "question_id": 995566,
+    "value": "C",
+    "label": "it was the Wright brothers’ first successful flight in 1903 that",
+    "is_correct": false
+  },
+  {
+    "id": 9955663,
+    "question_id": 995566,
+    "value": "D",
+    "label": "the 1903 Wright brothers' first successful flight",
+    "is_correct": false
+  },
+  {
+    "id": 837640,
+    "question_id": 83764,
+    "value": "A",
+    "label": "indicate",
+    "is_correct": false
+  },
+  {
+    "id": 837641,
+    "question_id": 83764,
+    "value": "B",
+    "label": "are indicating",
+    "is_correct": false
+  },
+  {
+    "id": 837642,
+    "question_id": 83764,
+    "value": "C",
+    "label": "indicates",
+    "is_correct": true
+  },
+  {
+    "id": 837643,
+    "question_id": 83764,
+    "value": "D",
+    "label": "to indicate",
+    "is_correct": false
+  },
+  {
+    "id": 6240170,
+    "question_id": 624017,
+    "value": "A",
+    "label": "becomes",
+    "is_correct": false
+  },
+  {
+    "id": 6240171,
+    "question_id": 624017,
+    "value": "B",
+    "label": "has become",
+    "is_correct": false
+  },
+  {
+    "id": 6240172,
+    "question_id": 624017,
+    "value": "C",
+    "label": "became",
+    "is_correct": true
+  },
+  {
+    "id": 6240173,
+    "question_id": 624017,
+    "value": "D",
+    "label": "will become",
+    "is_correct": false
+  },
+  {
+    "id": 386210,
+    "question_id": 38621,
+    "value": "A",
+    "label": "vary",
+    "is_correct": false
+  },
+  {
+    "id": 386211,
+    "question_id": 38621,
+    "value": "B",
+    "label": "varies",
+    "is_correct": true
+  },
+  {
+    "id": 386212,
+    "question_id": 38621,
+    "value": "C",
+    "label": "have varied",
+    "is_correct": false
+  },
+  {
+    "id": 386213,
+    "question_id": 38621,
+    "value": "D",
+    "label": "are varying",
+    "is_correct": false
+  },
+  {
+    "id": 9837510,
+    "question_id": 983751,
+    "value": "A",
+    "label": "bioluminescence is",
+    "is_correct": true
+  },
+  {
+    "id": 9837511,
+    "question_id": 983751,
+    "value": "B",
+    "label": "a fascinating natural phenomenon, bioluminescence,",
+    "is_correct": false
+  },
+  {
+    "id": 9837512,
+    "question_id": 983751,
+    "value": "C",
+    "label": "it is bioluminescence, which is",
+    "is_correct": false
+  },
+  {
+    "id": 9837513,
+    "question_id": 983751,
+    "value": "D",
+    "label": "there is bioluminescence, being",
+    "is_correct": false
+  },
+  {
+    "id": 9416170,
+    "question_id": 941617,
+    "value": "A",
+    "label": "are",
+    "is_correct": false
+  },
+  {
+    "id": 9416171,
+    "question_id": 941617,
+    "value": "B",
+    "label": "were",
+    "is_correct": false
+  },
+  {
+    "id": 9416172,
+    "question_id": 941617,
+    "value": "C",
+    "label": "was",
+    "is_correct": true
+  },
+  {
+    "id": 9416173,
+    "question_id": 941617,
+    "value": "D",
+    "label": "have been",
+    "is_correct": false
+  },
+  {
+    "id": 2053930,
+    "question_id": 205393,
+    "value": "A",
+    "label": "is",
+    "is_correct": false
+  },
+  {
+    "id": 2053931,
+    "question_id": 205393,
+    "value": "B",
+    "label": "are",
+    "is_correct": true
+  },
+  {
+    "id": 2053932,
+    "question_id": 205393,
+    "value": "C",
+    "label": "was",
+    "is_correct": false
+  },
+  {
+    "id": 2053933,
+    "question_id": 205393,
+    "value": "D",
+    "label": "were",
+    "is_correct": false
+  },
+  {
+    "id": 5780580,
+    "question_id": 578058,
+    "value": "A",
+    "label": "take",
+    "is_correct": false
+  },
+  {
+    "id": 5780581,
+    "question_id": 578058,
+    "value": "B",
+    "label": "takes",
+    "is_correct": true
+  },
+  {
+    "id": 5780582,
+    "question_id": 578058,
+    "value": "C",
+    "label": "taking",
+    "is_correct": false
+  },
+  {
+    "id": 5780583,
+    "question_id": 578058,
+    "value": "D",
+    "label": "taken",
+    "is_correct": false
+  },
+  {
+    "id": 3650950,
+    "question_id": 365095,
+    "value": "A",
+    "label": "a region that scientists are now beginning to understand more fully.",
+    "is_correct": false
+  },
+  {
+    "id": 3650951,
+    "question_id": 365095,
+    "value": "B",
+    "label": "scientists are now beginning to understand this region more fully.",
+    "is_correct": true
+  },
+  {
+    "id": 3650952,
+    "question_id": 365095,
+    "value": "C",
+    "label": "this region is now beginning to be understood more fully by scientists.",
+    "is_correct": false
+  },
+  {
+    "id": 3650953,
+    "question_id": 365095,
+    "value": "D",
+    "label": "the understanding of this region by scientists is now more fully beginning.",
+    "is_correct": false
+  },
+  {
+    "id": 7567200,
+    "question_id": 756720,
+    "value": "A",
+    "label": "scientists have since used spacetime to model cosmic phenomena, and it",
+    "is_correct": false
+  },
+  {
+    "id": 7567201,
+    "question_id": 756720,
+    "value": "B",
+    "label": "spacetime, which scientists have since used to model cosmic phenomena,",
+    "is_correct": true
+  },
+  {
+    "id": 7567202,
+    "question_id": 756720,
+    "value": "C",
+    "label": "scientists' use of spacetime to model cosmic phenomena, which",
+    "is_correct": false
+  },
+  {
+    "id": 7567203,
+    "question_id": 756720,
+    "value": "D",
+    "label": "spacetime scientists have since used to model cosmic phenomena, and",
+    "is_correct": false
+  },
+  {
+    "id": 9709900,
+    "question_id": 970990,
+    "value": "A",
+    "label": "enabling",
+    "is_correct": true
+  },
+  {
+    "id": 9709901,
+    "question_id": 970990,
+    "value": "B",
+    "label": "enable",
+    "is_correct": false
+  },
+  {
+    "id": 9709902,
+    "question_id": 970990,
+    "value": "C",
+    "label": "to enable",
+    "is_correct": false
+  },
+  {
+    "id": 9709903,
+    "question_id": 970990,
+    "value": "D",
+    "label": "having enabled",
+    "is_correct": false
+  },
+  {
+    "id": 1847390,
+    "question_id": 184739,
+    "value": "A",
+    "label": "hoped",
+    "is_correct": false
+  },
+  {
+    "id": 1847391,
+    "question_id": 184739,
+    "value": "B",
+    "label": "hopes",
+    "is_correct": false
+  },
+  {
+    "id": 1847392,
+    "question_id": 184739,
+    "value": "C",
+    "label": "hoping",
+    "is_correct": true
+  },
+  {
+    "id": 1847393,
+    "question_id": 184739,
+    "value": "D",
+    "label": "is hoping",
+    "is_correct": false
+  },
+  {
+    "id": 1633020,
+    "question_id": 163302,
+    "value": "A",
+    "label": "conducted",
+    "is_correct": false
+  },
+  {
+    "id": 1633021,
+    "question_id": 163302,
+    "value": "B",
+    "label": "were conducting",
+    "is_correct": false
+  },
+  {
+    "id": 1633022,
+    "question_id": 163302,
+    "value": "C",
+    "label": "have conducted",
+    "is_correct": false
+  },
+  {
+    "id": 1633023,
+    "question_id": 163302,
+    "value": "D",
+    "label": "had conducted",
+    "is_correct": true
+  },
+  {
+    "id": 8863820,
+    "question_id": 886382,
+    "value": "A",
+    "label": "would finally acknowledge",
+    "is_correct": false
+  },
+  {
+    "id": 8863821,
+    "question_id": 886382,
+    "value": "B",
+    "label": "to finally acknowledge",
+    "is_correct": false
+  },
+  {
+    "id": 8863822,
+    "question_id": 886382,
+    "value": "C",
+    "label": "finally acknowledged",
+    "is_correct": true
+  },
+  {
+    "id": 8863823,
+    "question_id": 886382,
+    "value": "D",
+    "label": "finally acknowledging",
+    "is_correct": false
+  },
+  {
+    "id": 6138210,
+    "question_id": 613821,
+    "value": "A",
+    "label": "when sea surface temperature rises above 29 degrees Celsius, coral reefs experience bleaching.",
+    "is_correct": false
+  },
+  {
+    "id": 6138211,
+    "question_id": 613821,
+    "value": "B",
+    "label": "coral reefs, when sea surface temperature rises above 29 degrees Celsius, experience bleaching.",
+    "is_correct": false
+  },
+  {
+    "id": 6138212,
+    "question_id": 613821,
+    "value": "C",
+    "label": "experiencing bleaching of coral reefs occurs when sea surface temperature rises above 29 degrees Celsius.",
+    "is_correct": false
+  },
+  {
+    "id": 6138213,
+    "question_id": 613821,
+    "value": "D",
+    "label": "occurs when sea surface temperature rises above 29 degrees Celsius.",
+    "is_correct": true
+  },
+  {
+    "id": 3050720,
+    "question_id": 305072,
+    "value": "A",
+    "label": "housed",
+    "is_correct": true
+  },
+  {
+    "id": 3050721,
+    "question_id": 305072,
+    "value": "B",
+    "label": "housing",
+    "is_correct": false
+  },
+  {
+    "id": 3050722,
+    "question_id": 305072,
+    "value": "C",
+    "label": "to house",
+    "is_correct": false
+  },
+  {
+    "id": 3050723,
+    "question_id": 305072,
+    "value": "D",
+    "label": "having housed",
+    "is_correct": false
+  }
+]
