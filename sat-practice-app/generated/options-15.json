@@ -872,14 +872,14 @@
     "question_id": 775900,
     "value": "A",
     "label": "$C = 5L + 20$",
-    "is_correct": true
+    "is_correct": false
   },
   {
     "id": 7759001,
     "question_id": 775900,
     "value": "B",
     "label": "$C = 10L + 10$",
-    "is_correct": false
+    "is_correct": true
   },
   {
     "id": 7759002,
