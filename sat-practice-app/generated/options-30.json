@@ -1,0 +1,1374 @@
+[
+  {
+    "id": 5604720,
+    "question_id": 560472,
+    "value": "A",
+    "label": "Frederick Douglass lived with Master Hugh's family for seven years and during that time was largely unsuccessful in his attempts to learn literacy.",
+    "is_correct": false
+  },
+  {
+    "id": 5604721,
+    "question_id": 560472,
+    "value": "B",
+    "label": "Frederick Douglass was initially taught to read and write by Mrs. Auld, who willingly began his education until her husband intervened.",
+    "is_correct": true
+  },
+  {
+    "id": 5604722,
+    "question_id": 560472,
+    "value": "C",
+    "label": "Mrs. Auld was a reluctant teacher who only briefly assisted Frederick Douglass with learning the alphabet before abandoning his education.",
+    "is_correct": false
+  },
+  {
+    "id": 5604723,
+    "question_id": 560472,
+    "value": "D",
+    "label": "Master Hugh actively supported Frederick Douglass's education and encouraged Mrs. Auld to continue teaching him to read and write.",
+    "is_correct": false
+  },
+  {
+    "id": 4144090,
+    "question_id": 414409,
+    "value": "A",
+    "label": "They primarily serve as venues for large public events.",
+    "is_correct": false
+  },
+  {
+    "id": 4144091,
+    "question_id": 414409,
+    "value": "B",
+    "label": "They offer various advantages for the well-being of city residents and the environment.",
+    "is_correct": true
+  },
+  {
+    "id": 4144092,
+    "question_id": 414409,
+    "value": "C",
+    "label": "They are essential for attracting tourists and boosting the local economy.",
+    "is_correct": false
+  },
+  {
+    "id": 4144093,
+    "question_id": 414409,
+    "value": "D",
+    "label": "They mainly provide habitats for endangered animal species in urban areas.",
+    "is_correct": false
+  },
+  {
+    "id": 6526880,
+    "question_id": 652688,
+    "value": "A",
+    "label": "Johannes Gutenberg's printing press utilized movable type, which made book production faster.",
+    "is_correct": false
+  },
+  {
+    "id": 6526881,
+    "question_id": 652688,
+    "value": "B",
+    "label": "The printing press dramatically reduced the cost of books, making them more widely available.",
+    "is_correct": false
+  },
+  {
+    "id": 6526882,
+    "question_id": 652688,
+    "value": "C",
+    "label": "The invention of the printing press revolutionized book production and profoundly impacted society by increasing access to knowledge.",
+    "is_correct": true
+  },
+  {
+    "id": 6526883,
+    "question_id": 652688,
+    "value": "D",
+    "label": "Before the printing press, books were expensive and scarce because they were handwritten.",
+    "is_correct": false
+  },
+  {
+    "id": 342140,
+    "question_id": 34214,
+    "value": "A",
+    "label": "A fungal growth in a laboratory",
+    "is_correct": true
+  },
+  {
+    "id": 342141,
+    "question_id": 34214,
+    "value": "B",
+    "label": "A new type of bacteria",
+    "is_correct": false
+  },
+  {
+    "id": 342142,
+    "question_id": 34214,
+    "value": "C",
+    "label": "A chemical compound derived from plants",
+    "is_correct": false
+  },
+  {
+    "id": 342143,
+    "question_id": 34214,
+    "value": "D",
+    "label": "An antiseptic solution",
+    "is_correct": false
+  },
+  {
+    "id": 1381530,
+    "question_id": 138153,
+    "value": "A",
+    "label": "The language used in the scrolls was undecipherable.",
+    "is_correct": false
+  },
+  {
+    "id": 1381531,
+    "question_id": 138153,
+    "value": "B",
+    "label": "The scrolls were too fragile to be easily examined.",
+    "is_correct": true
+  },
+  {
+    "id": 1381532,
+    "question_id": 138153,
+    "value": "C",
+    "label": "The scrolls were located in a remote archaeological site.",
+    "is_correct": false
+  },
+  {
+    "id": 1381533,
+    "question_id": 138153,
+    "value": "D",
+    "label": "The historical information in the scrolls was inconsistent with other sources.",
+    "is_correct": false
+  },
+  {
+    "id": 872520,
+    "question_id": 87252,
+    "value": "A",
+    "label": "Hannah believes rubbing is a traditional and effective remedy.",
+    "is_correct": true
+  },
+  {
+    "id": 872521,
+    "question_id": 87252,
+    "value": "B",
+    "label": "Hannah is trying to warm Jo up because she is cold.",
+    "is_correct": false
+  },
+  {
+    "id": 872522,
+    "question_id": 87252,
+    "value": "C",
+    "label": "Hannah is applying camphor to soothe Jo's headache.",
+    "is_correct": false
+  },
+  {
+    "id": 872523,
+    "question_id": 87252,
+    "value": "D",
+    "label": "Hannah is showing affection for Jo because she is ill.",
+    "is_correct": false
+  },
+  {
+    "id": 5456650,
+    "question_id": 545665,
+    "value": "A",
+    "label": "A study indicates that extensive social media usage is linked to reduced sleep duration among teenagers.",
+    "is_correct": true
+  },
+  {
+    "id": 5456651,
+    "question_id": 545665,
+    "value": "B",
+    "label": "Teenagers who use social media for less than one hour per day experience no negative impacts on their sleep.",
+    "is_correct": false
+  },
+  {
+    "id": 5456652,
+    "question_id": 545665,
+    "value": "C",
+    "label": "The blue light from screens is the only factor contributing to sleep disruption in teenagers who use social media.",
+    "is_correct": false
+  },
+  {
+    "id": 5456653,
+    "question_id": 545665,
+    "value": "D",
+    "label": "Researchers at UC Berkeley have developed a new social media platform that promotes healthy sleep habits for teenagers.",
+    "is_correct": false
+  },
+  {
+    "id": 2056510,
+    "question_id": 205651,
+    "value": "A",
+    "label": "Consumer drones, initially seen as toys, are now essential tools in search and rescue operations.",
+    "is_correct": false
+  },
+  {
+    "id": 2056511,
+    "question_id": 205651,
+    "value": "B",
+    "label": "The use of drones in agriculture and construction has significantly improved efficiency and safety.",
+    "is_correct": false
+  },
+  {
+    "id": 2056512,
+    "question_id": 205651,
+    "value": "C",
+    "label": "Drones are transitioning from primarily recreational devices to valuable tools in a variety of professional fields.",
+    "is_correct": true
+  },
+  {
+    "id": 2056513,
+    "question_id": 205651,
+    "value": "D",
+    "label": "Farmers and construction companies are the primary beneficiaries of drone technology in the professional sector.",
+    "is_correct": false
+  },
+  {
+    "id": 4981480,
+    "question_id": 498148,
+    "value": "A",
+    "label": "To highlight the challenges faced by doctors in developing countries",
+    "is_correct": false
+  },
+  {
+    "id": 4981481,
+    "question_id": 498148,
+    "value": "B",
+    "label": "To encourage more women to join the Peace Corps",
+    "is_correct": false
+  },
+  {
+    "id": 4981482,
+    "question_id": 498148,
+    "value": "C",
+    "label": "To promote scientific careers among students from all backgrounds",
+    "is_correct": true
+  },
+  {
+    "id": 4981483,
+    "question_id": 498148,
+    "value": "D",
+    "label": "To detail the rigorous training required to become an astronaut",
+    "is_correct": false
+  },
+  {
+    "id": 3223200,
+    "question_id": 322320,
+    "value": "A",
+    "label": "Orchids are predominantly found in tropical climates due to their delicate nature.",
+    "is_correct": false
+  },
+  {
+    "id": 3223201,
+    "question_id": 322320,
+    "value": "B",
+    "label": "Botanist Emily Thompson's study focuses on the antifreeze proteins found in certain plants.",
+    "is_correct": false
+  },
+  {
+    "id": 3223202,
+    "question_id": 322320,
+    "value": "C",
+    "label": "Research indicates that some orchid species are surprisingly adaptable to and resilient in colder, temperate climates.",
+    "is_correct": true
+  },
+  {
+    "id": 3223203,
+    "question_id": 322320,
+    "value": "D",
+    "label": "Specialized antifreeze proteins are the primary reason for the vibrancy and diversity of orchid flowers.",
+    "is_correct": false
+  },
+  {
+    "id": 7075960,
+    "question_id": 707596,
+    "value": "A",
+    "label": "Botanists have determined that clay soil is detrimental to the long-term health of sunflower plants.",
+    "is_correct": false
+  },
+  {
+    "id": 7075961,
+    "question_id": 707596,
+    "value": "B",
+    "label": "An experiment demonstrated that sunflower seedlings grow taller in sandy soil than in clay soil in the first two weeks.",
+    "is_correct": true
+  },
+  {
+    "id": 7075962,
+    "question_id": 707596,
+    "value": "C",
+    "label": "The study suggests that the type of soil has no significant impact on the growth rate of sunflower seedlings.",
+    "is_correct": false
+  },
+  {
+    "id": 7075963,
+    "question_id": 707596,
+    "value": "D",
+    "label": "Botanists are primarily interested in studying the effects of soil composition on the growth of various plant species.",
+    "is_correct": false
+  },
+  {
+    "id": 8134470,
+    "question_id": 813447,
+    "value": "A",
+    "label": "Artificial light at night primarily affects migratory birds and sea turtles, causing them to become disoriented and stray from their natural habitats.",
+    "is_correct": false
+  },
+  {
+    "id": 8134471,
+    "question_id": 813447,
+    "value": "B",
+    "label": "While artificial light improves human safety in urban areas, its detrimental effects on nocturnal animals are becoming increasingly evident.",
+    "is_correct": false
+  },
+  {
+    "id": 8134472,
+    "question_id": 813447,
+    "value": "C",
+    "label": "Nocturnal animals, having evolved in the dark, are disproportionately harmed by artificial light pollution, which disrupts their natural behaviors and ecosystems.",
+    "is_correct": true
+  },
+  {
+    "id": 8134473,
+    "question_id": 813447,
+    "value": "D",
+    "label": "Scientists believe that reducing light pollution will have minimal impact on the overall health and survival of nocturnal animal populations.",
+    "is_correct": false
+  },
+  {
+    "id": 8082700,
+    "question_id": 808270,
+    "value": "A",
+    "label": "It allowed her to primarily address political injustices prevalent during the Harlem Renaissance.",
+    "is_correct": false
+  },
+  {
+    "id": 8082701,
+    "question_id": 808270,
+    "value": "B",
+    "label": "It enabled her to document the cultural traditions and everyday experiences of Black communities.",
+    "is_correct": true
+  },
+  {
+    "id": 8082702,
+    "question_id": 808270,
+    "value": "C",
+    "label": "It quickly established her as the most commercially successful writer of her time.",
+    "is_correct": false
+  },
+  {
+    "id": 8082703,
+    "question_id": 808270,
+    "value": "D",
+    "label": "It primarily focused on the urban experiences of Black people during the Harlem Renaissance.",
+    "is_correct": false
+  },
+  {
+    "id": 7905120,
+    "question_id": 790512,
+    "value": "A",
+    "label": "While the inventor was optimistic about the telephone, the public was unsure of its value.",
+    "is_correct": true
+  },
+  {
+    "id": 7905121,
+    "question_id": 790512,
+    "value": "B",
+    "label": "Newspapers were uniformly supportive of Bell's invention and predicted its success.",
+    "is_correct": false
+  },
+  {
+    "id": 7905122,
+    "question_id": 790512,
+    "value": "C",
+    "label": "The telephone quickly became popular and changed daily life for most people.",
+    "is_correct": false
+  },
+  {
+    "id": 7905123,
+    "question_id": 790512,
+    "value": "D",
+    "label": "Bell focused solely on the scientific aspects of the telephone and ignored public opinion.",
+    "is_correct": false
+  },
+  {
+    "id": 2244550,
+    "question_id": 224455,
+    "value": "A",
+    "label": "Confident and eager to impress The Bear with their skills.",
+    "is_correct": false
+  },
+  {
+    "id": 2244551,
+    "question_id": 224455,
+    "value": "B",
+    "label": "Frustrated by The Bear's harsh demeanor and lack of verbal instruction.",
+    "is_correct": false
+  },
+  {
+    "id": 2244552,
+    "question_id": 224455,
+    "value": "C",
+    "label": "Intimidated and anxious about meeting The Bear's expectations.",
+    "is_correct": true
+  },
+  {
+    "id": 2244553,
+    "question_id": 224455,
+    "value": "D",
+    "label": "Amused by The Bear's dramatic behavior and silent communication style.",
+    "is_correct": false
+  },
+  {
+    "id": 3249010,
+    "question_id": 324901,
+    "value": "A",
+    "label": "The type of content consumed before bed may be as important as the duration of screen time in affecting sleep.",
+    "is_correct": true
+  },
+  {
+    "id": 3249011,
+    "question_id": 324901,
+    "value": "B",
+    "label": "Reducing screen time before bed is the most effective strategy for improving sleep duration, regardless of content.",
+    "is_correct": false
+  },
+  {
+    "id": 3249012,
+    "question_id": 324901,
+    "value": "C",
+    "label": "Studies have definitively proven that any screen time before bed will negatively impact sleep duration.",
+    "is_correct": false
+  },
+  {
+    "id": 3249013,
+    "question_id": 324901,
+    "value": "D",
+    "label": "Individuals should eliminate screen time completely before bed to ensure optimal sleep duration.",
+    "is_correct": false
+  },
+  {
+    "id": 7075750,
+    "question_id": 707575,
+    "value": "A",
+    "label": "Petrova and Carter's analysis definitively proves that economic recessions disproportionately harm lower-income households by forcing them to drastically cut essential spending.",
+    "is_correct": false
+  },
+  {
+    "id": 7075751,
+    "question_id": 707575,
+    "value": "B",
+    "label": "Petrova and Carter's study revealed that during the recession from 2008 to 2012, lower-income households reduced essential spending more significantly than higher-income households.",
+    "is_correct": true
+  },
+  {
+    "id": 7075752,
+    "question_id": 707575,
+    "value": "C",
+    "label": "Petrova and Carter discovered that all income groups responded to the recession solely by decreasing discretionary spending, simplifying previous understandings of consumer behavior.",
+    "is_correct": false
+  },
+  {
+    "id": 7075753,
+    "question_id": 707575,
+    "value": "D",
+    "label": "The results of Petrova and Carter's research suggest that government aid programs implemented during recessions are ineffective in preventing essential spending cuts across all income levels, challenging current economic policy.",
+    "is_correct": false
+  },
+  {
+    "id": 2909920,
+    "question_id": 290992,
+    "value": "A",
+    "label": "It determined that any form of social media engagement leads to increased anxiety in teenagers.",
+    "is_correct": false
+  },
+  {
+    "id": 2909921,
+    "question_id": 290992,
+    "value": "B",
+    "label": "It concentrated on the amount of time teenagers spent on social media platforms.",
+    "is_correct": false
+  },
+  {
+    "id": 2909922,
+    "question_id": 290992,
+    "value": "C",
+    "label": "It identified a link between passive social media use and feelings of loneliness in teenagers.",
+    "is_correct": true
+  },
+  {
+    "id": 2909923,
+    "question_id": 290992,
+    "value": "D",
+    "label": "It found no significant correlation between social media use and any negative mental health outcomes.",
+    "is_correct": false
+  },
+  {
+    "id": 2065230,
+    "question_id": 206523,
+    "value": "A",
+    "label": "The narrator explains his reasons for moving to a natural setting to live intentionally and understand life's core elements.",
+    "is_correct": true
+  },
+  {
+    "id": 2065231,
+    "question_id": 206523,
+    "value": "B",
+    "label": "The narrator expresses his dissatisfaction with modern society and his desire to escape its complexities.",
+    "is_correct": false
+  },
+  {
+    "id": 2065232,
+    "question_id": 206523,
+    "value": "C",
+    "label": "The narrator details the practical skills and knowledge he hopes to acquire by living in a simple, rustic environment.",
+    "is_correct": false
+  },
+  {
+    "id": 2065233,
+    "question_id": 206523,
+    "value": "D",
+    "label": "The narrator reflects on the inevitability of death and his fear of not having lived a meaningful life.",
+    "is_correct": false
+  },
+  {
+    "id": 4837180,
+    "question_id": 483718,
+    "value": "A",
+    "label": "The Science Discovery Museum expanded its reach through the \\",
+    "is_correct": false
+  },
+  {
+    "id": 4837181,
+    "question_id": 483718,
+    "value": "B",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 4837182,
+    "question_id": 483718,
+    "value": "C",
+    "label": "The Science Discovery Museum's \\",
+    "is_correct": true
+  },
+  {
+    "id": 4837183,
+    "question_id": 483718,
+    "value": "D",
+    "label": "\\",
+    "is_correct": false
+  },
+  {
+    "id": 7636360,
+    "question_id": 763636,
+    "value": "A",
+    "label": "Archaeological digs in Egypt have proven to be more fruitful thanks to Parcak’s satellite imagery techniques.",
+    "is_correct": false
+  },
+  {
+    "id": 7636361,
+    "question_id": 763636,
+    "value": "B",
+    "label": "Satellite imagery offers a significant improvement over conventional methods in the field of archaeology.",
+    "is_correct": true
+  },
+  {
+    "id": 7636362,
+    "question_id": 763636,
+    "value": "C",
+    "label": "Footwork and aerial photography remain essential tools for archaeologists despite advancements in technology.",
+    "is_correct": false
+  },
+  {
+    "id": 7636363,
+    "question_id": 763636,
+    "value": "D",
+    "label": "Sarah Parcak's most important contribution to archaeology is the discovery of previously unknown pyramids in Egypt.",
+    "is_correct": false
+  },
+  {
+    "id": 2295130,
+    "question_id": 229513,
+    "value": "A",
+    "label": "Although Fleming discovered penicillin, Florey and Chain were essential in making it a widely available and effective medicine.",
+    "is_correct": true
+  },
+  {
+    "id": 2295131,
+    "question_id": 229513,
+    "value": "B",
+    "label": "Fleming's discovery of penicillin in 1928 immediately revolutionized medical treatments for bacterial infections worldwide.",
+    "is_correct": false
+  },
+  {
+    "id": 2295132,
+    "question_id": 229513,
+    "value": "C",
+    "label": "The process of producing penicillin in large quantities was more complex and scientifically significant than Fleming's original discovery.",
+    "is_correct": false
+  },
+  {
+    "id": 2295133,
+    "question_id": 229513,
+    "value": "D",
+    "label": "Penicillin's effectiveness as an antibiotic is primarily attributed to Fleming's profound understanding of bacterial infections and mold.",
+    "is_correct": false
+  },
+  {
+    "id": 1394160,
+    "question_id": 139416,
+    "value": "A",
+    "label": "The study's findings suggest that with proper planning, cities can increase green spaces without causing gentrification.",
+    "is_correct": true
+  },
+  {
+    "id": 1394161,
+    "question_id": 139416,
+    "value": "B",
+    "label": "Urban planners are increasingly focused on the negative impacts of gentrification on lower-income residents.",
+    "is_correct": false
+  },
+  {
+    "id": 1394162,
+    "question_id": 139416,
+    "value": "C",
+    "label": "Prior to this study, no research had examined the relationship between green spaces and gentrification in major cities.",
+    "is_correct": false
+  },
+  {
+    "id": 1394163,
+    "question_id": 139416,
+    "value": "D",
+    "label": "The researchers at the University of Cityville believe that gentrification is an unavoidable consequence of urban development.",
+    "is_correct": false
+  },
+  {
+    "id": 982760,
+    "question_id": 98276,
+    "value": "A",
+    "label": "Evening screen use is conclusively proven to have no impact on sleep quality due to the low intensity of blue light emitted.",
+    "is_correct": false
+  },
+  {
+    "id": 982761,
+    "question_id": 98276,
+    "value": "B",
+    "label": "While blue light from screens may have a minor effect on melatonin, other elements related to screen use are likely more influential on sleep.",
+    "is_correct": true
+  },
+  {
+    "id": 982762,
+    "question_id": 98276,
+    "value": "C",
+    "label": "Meta-analyses consistently demonstrate a strong link between blue light exposure from electronic devices and severe melatonin suppression.",
+    "is_correct": false
+  },
+  {
+    "id": 982763,
+    "question_id": 98276,
+    "value": "D",
+    "label": "Individual sensitivity to light is the sole determinant of whether blue light from screens will disrupt a person's sleep cycle.",
+    "is_correct": false
+  },
+  {
+    "id": 109610,
+    "question_id": 10961,
+    "value": "A",
+    "label": "She believes Mr. Darcy's behavior is justified given her own social standing.",
+    "is_correct": false
+  },
+  {
+    "id": 109611,
+    "question_id": 10961,
+    "value": "B",
+    "label": "She is preoccupied with thoughts about Mr. Darcy's friend, Mr. Wickham.",
+    "is_correct": true
+  },
+  {
+    "id": 109612,
+    "question_id": 10961,
+    "value": "C",
+    "label": "She is naturally forgiving and does not easily hold grudges.",
+    "is_correct": false
+  },
+  {
+    "id": 109613,
+    "question_id": 10961,
+    "value": "D",
+    "label": "She is secretly pleased by Mr. Darcy's attention, even if it is negative.",
+    "is_correct": false
+  },
+  {
+    "id": 6372060,
+    "question_id": 637206,
+    "value": "A",
+    "label": "Reading provides a temporary escape from personal problems.",
+    "is_correct": false
+  },
+  {
+    "id": 6372061,
+    "question_id": 637206,
+    "value": "B",
+    "label": "Reading allows individuals to deeply engage with narratives and experience a sense of transformation.",
+    "is_correct": true
+  },
+  {
+    "id": 6372062,
+    "question_id": 637206,
+    "value": "C",
+    "label": "Reading is primarily a way to acquire knowledge and information about different subjects.",
+    "is_correct": false
+  },
+  {
+    "id": 6372063,
+    "question_id": 637206,
+    "value": "D",
+    "label": "The physical act of reading a book is more important than the content of the story itself.",
+    "is_correct": false
+  },
+  {
+    "id": 9047290,
+    "question_id": 904729,
+    "value": "A",
+    "label": "Researchers at the University of Exeter have conducted studies on microplastic ingestion by marine species.",
+    "is_correct": false
+  },
+  {
+    "id": 9047291,
+    "question_id": 904729,
+    "value": "B",
+    "label": "Microplastics are found in all parts of the ocean, including the deepest trenches.",
+    "is_correct": false
+  },
+  {
+    "id": 9047292,
+    "question_id": 904729,
+    "value": "C",
+    "label": "Microplastic pollution poses a widespread threat to marine ecosystems because it is ingested by many organisms and may cause ecological disruption.",
+    "is_correct": true
+  },
+  {
+    "id": 9047293,
+    "question_id": 904729,
+    "value": "D",
+    "label": "More research is necessary to fully understand the effects of microplastics on marine life.",
+    "is_correct": false
+  },
+  {
+    "id": 8571820,
+    "question_id": 857182,
+    "value": "A",
+    "label": "The speaker reflects on a past near-death experience that made her appreciate the beauty of everyday life.",
+    "is_correct": false
+  },
+  {
+    "id": 8571821,
+    "question_id": 857182,
+    "value": "B",
+    "label": "The poem narrates a speaker's metaphorical journey with Death as a carriage ride through life's stages toward eternity.",
+    "is_correct": true
+  },
+  {
+    "id": 8571822,
+    "question_id": 857182,
+    "value": "C",
+    "label": "The poem is a lament about the speaker's lost youth and the inevitable approach of death.",
+    "is_correct": false
+  },
+  {
+    "id": 8571823,
+    "question_id": 857182,
+    "value": "D",
+    "label": "The speaker recounts a vivid dream about riding in a carriage with a mysterious figure.",
+    "is_correct": false
+  },
+  {
+    "id": 9767660,
+    "question_id": 976766,
+    "value": "A",
+    "label": "They were surprisingly short and their size is believed to be a result of convergent evolution with *Tyrannosaurus rex*.",
+    "is_correct": true
+  },
+  {
+    "id": 9767661,
+    "question_id": 976766,
+    "value": "B",
+    "label": "They were primarily used for hunting large prey, similar to other carnivorous dinosaurs of its time.",
+    "is_correct": false
+  },
+  {
+    "id": 9767662,
+    "question_id": 976766,
+    "value": "C",
+    "label": "Their length suggests they were vestigial and no longer served any significant biological function for *Meraxes gigas*.",
+    "is_correct": false
+  },
+  {
+    "id": 9767663,
+    "question_id": 976766,
+    "value": "D",
+    "label": "The fossil discovery indicates that the arms of *Meraxes gigas* were significantly longer than initially predicted by paleontologists.",
+    "is_correct": false
+  },
+  {
+    "id": 8998140,
+    "question_id": 899814,
+    "value": "A",
+    "label": "Limiting screen time before bed is advisable because blue light can interfere with the body's natural sleep regulation.",
+    "is_correct": true
+  },
+  {
+    "id": 8998141,
+    "question_id": 899814,
+    "value": "B",
+    "label": "Evening use of electronic devices is the primary cause of sleep disorders in modern society.",
+    "is_correct": false
+  },
+  {
+    "id": 8998142,
+    "question_id": 899814,
+    "value": "C",
+    "label": "Melatonin production is solely regulated by exposure to blue light from electronic screens.",
+    "is_correct": false
+  },
+  {
+    "id": 8998143,
+    "question_id": 899814,
+    "value": "D",
+    "label": "Researchers are primarily concerned with the impact of screen time on children's sleep quality.",
+    "is_correct": false
+  },
+  {
+    "id": 4708400,
+    "question_id": 470840,
+    "value": "A",
+    "label": "Caffeine had no noticeable impact on memory recall.",
+    "is_correct": false
+  },
+  {
+    "id": 4708401,
+    "question_id": 470840,
+    "value": "B",
+    "label": "The memory recall of the placebo group was unexpectedly high.",
+    "is_correct": false
+  },
+  {
+    "id": 4708402,
+    "question_id": 470840,
+    "value": "C",
+    "label": "Caffeine's effect on memory was significantly greater than predicted.",
+    "is_correct": true
+  },
+  {
+    "id": 4708403,
+    "question_id": 470840,
+    "value": "D",
+    "label": "The study confirmed previous findings about moderate memory improvement from caffeine.",
+    "is_correct": false
+  },
+  {
+    "id": 7927460,
+    "question_id": 792746,
+    "value": "A",
+    "label": "Oliver is overwhelmed by the amount of food he is given in the workhouse.",
+    "is_correct": false
+  },
+  {
+    "id": 7927461,
+    "question_id": 792746,
+    "value": "B",
+    "label": "Master Bumble is a kind and welcoming figure who cares for the new boys in the workhouse.",
+    "is_correct": false
+  },
+  {
+    "id": 7927462,
+    "question_id": 792746,
+    "value": "C",
+    "label": "Oliver's initial encounter with the workhouse is characterized by fear and intimidation due to Master Bumble's stern demeanor.",
+    "is_correct": true
+  },
+  {
+    "id": 7927463,
+    "question_id": 792746,
+    "value": "D",
+    "label": "The workhouse-master is sympathetic to Oliver and tries to protect him from Master Bumble's anger.",
+    "is_correct": false
+  },
+  {
+    "id": 9786990,
+    "question_id": 978699,
+    "value": "A",
+    "label": "Dr. Austin's team discovered that air pollution causes depression in all individuals exposed to PM2.5.",
+    "is_correct": false
+  },
+  {
+    "id": 9786991,
+    "question_id": 978699,
+    "value": "B",
+    "label": "A large-scale study suggests a link between increased air pollution levels and a higher incidence of depression, potentially due to brain inflammation.",
+    "is_correct": true
+  },
+  {
+    "id": 9786992,
+    "question_id": 978699,
+    "value": "C",
+    "label": "The journal *Nature* published a study in 2023 that focused primarily on the physical health effects of PM2.5 air pollution.",
+    "is_correct": false
+  },
+  {
+    "id": 9786993,
+    "question_id": 978699,
+    "value": "D",
+    "label": "Researchers at the University of California, Berkeley, were the first to identify any connection between environmental factors and mental health.",
+    "is_correct": false
+  },
+  {
+    "id": 3808020,
+    "question_id": 380802,
+    "value": "A",
+    "label": "A majority of monarch butterflies are unable to complete their migration due to weather.",
+    "is_correct": false
+  },
+  {
+    "id": 3808021,
+    "question_id": 380802,
+    "value": "B",
+    "label": "Habitat fragmentation is a more significant factor than severe weather in migration failure.",
+    "is_correct": true
+  },
+  {
+    "id": 3808022,
+    "question_id": 380802,
+    "value": "C",
+    "label": "Severe weather events are the primary cause of monarch butterfly population decline.",
+    "is_correct": false
+  },
+  {
+    "id": 3808023,
+    "question_id": 380802,
+    "value": "D",
+    "label": "Dr. Sharma's study focused on monarch butterflies migrating to locations other than Mexico.",
+    "is_correct": false
+  },
+  {
+    "id": 2371560,
+    "question_id": 237156,
+    "value": "A",
+    "label": "What are the most frequently used social media platforms among teenagers?",
+    "is_correct": false
+  },
+  {
+    "id": 2371561,
+    "question_id": 237156,
+    "value": "B",
+    "label": "How might social media use be connected to teenagers' mental well-being?",
+    "is_correct": true
+  },
+  {
+    "id": 2371562,
+    "question_id": 237156,
+    "value": "C",
+    "label": "Which aspects of social media are most damaging to teenagers’ self-esteem?",
+    "is_correct": false
+  },
+  {
+    "id": 2371563,
+    "question_id": 237156,
+    "value": "D",
+    "label": "Could social media be utilized as a tool to enhance teenagers' mental health?",
+    "is_correct": false
+  },
+  {
+    "id": 2461090,
+    "question_id": 246109,
+    "value": "A",
+    "label": "They believe that social media primarily promotes positive self-esteem by allowing teenagers to showcase their achievements.",
+    "is_correct": false
+  },
+  {
+    "id": 2461091,
+    "question_id": 246109,
+    "value": "B",
+    "label": "They suggest that social media can negatively affect self-esteem through social comparison and pressure for online perfection.",
+    "is_correct": true
+  },
+  {
+    "id": 2461092,
+    "question_id": 246109,
+    "value": "C",
+    "label": "They argue that social media is beneficial because it encourages teenagers to engage in more real-world social interactions.",
+    "is_correct": false
+  },
+  {
+    "id": 2461093,
+    "question_id": 246109,
+    "value": "D",
+    "label": "They contend that social media's impact on teenagers is minimal compared to other factors like family and school environment.",
+    "is_correct": false
+  },
+  {
+    "id": 8775800,
+    "question_id": 877580,
+    "value": "A",
+    "label": "Its environmental benefits ensure that eco-concrete will soon become the primary material used in the construction industry.",
+    "is_correct": false
+  },
+  {
+    "id": 8775801,
+    "question_id": 877580,
+    "value": "B",
+    "label": "Despite its reduced carbon footprint, eco-concrete is unlikely to be used in structural applications due to its inherent weaknesses.",
+    "is_correct": false
+  },
+  {
+    "id": 8775802,
+    "question_id": 877580,
+    "value": "C",
+    "label": "While eco-concrete offers environmental advantages, its practical applications may be limited by certain performance characteristics.",
+    "is_correct": true
+  },
+  {
+    "id": 8775803,
+    "question_id": 877580,
+    "value": "D",
+    "label": "The current research conclusively demonstrates that eco-concrete is superior to traditional concrete in all aspects of building construction.",
+    "is_correct": false
+  },
+  {
+    "id": 2547970,
+    "question_id": 254797,
+    "value": "A",
+    "label": "As someone whose interest in her is likely to diminish if she reciprocates his feelings.",
+    "is_correct": true
+  },
+  {
+    "id": 2547971,
+    "question_id": 254797,
+    "value": "B",
+    "label": "As a man whose mathematical abilities rival her own and provide a basis for intellectual connection.",
+    "is_correct": false
+  },
+  {
+    "id": 2547972,
+    "question_id": 254797,
+    "value": "C",
+    "label": "As a friend whose taste in cigars is as refined and appealing as his romantic sensibilities.",
+    "is_correct": false
+  },
+  {
+    "id": 2547973,
+    "question_id": 254797,
+    "value": "D",
+    "label": "As someone genuinely heartbroken by her rejection and in need of sincere reassurance of her friendship.",
+    "is_correct": false
+  },
+  {
+    "id": 790670,
+    "question_id": 79067,
+    "value": "A",
+    "label": "It can lead to social isolation as one becomes absorbed in books.",
+    "is_correct": false
+  },
+  {
+    "id": 790671,
+    "question_id": 79067,
+    "value": "B",
+    "label": "It can create a sense of inadequacy by highlighting the vastness of what is unknown.",
+    "is_correct": true
+  },
+  {
+    "id": 790672,
+    "question_id": 79067,
+    "value": "C",
+    "label": "It can diminish one's appreciation for practical skills in everyday life.",
+    "is_correct": false
+  },
+  {
+    "id": 790673,
+    "question_id": 79067,
+    "value": "D",
+    "label": "It can foster a distrust of others' opinions as one values personal study above all else.",
+    "is_correct": false
+  },
+  {
+    "id": 9249000,
+    "question_id": 924900,
+    "value": "A",
+    "label": "The growing popularity of standardized tests in college admissions reflects their proven accuracy in predicting student success.",
+    "is_correct": false
+  },
+  {
+    "id": 9249001,
+    "question_id": 924900,
+    "value": "B",
+    "label": "Recent research has focused on improving the design of standardized tests to address concerns about objectivity.",
+    "is_correct": false
+  },
+  {
+    "id": 9249002,
+    "question_id": 924900,
+    "value": "C",
+    "label": "Standardized tests were once considered essential for evaluating academic ability, but their limitations are now prompting a shift towards more comprehensive assessment methods.",
+    "is_correct": true
+  },
+  {
+    "id": 9249003,
+    "question_id": 924900,
+    "value": "D",
+    "label": "The development of new technologies has enabled standardized tests to become more widely used and accepted in educational settings.",
+    "is_correct": false
+  },
+  {
+    "id": 7087760,
+    "question_id": 708776,
+    "value": "A",
+    "label": "It is primarily motivated by the need to conserve energy due to limited food availability during the day.",
+    "is_correct": false
+  },
+  {
+    "id": 7087761,
+    "question_id": 708776,
+    "value": "B",
+    "label": "It is a crucial element of their camouflage strategy, protecting them from visually oriented predators.",
+    "is_correct": true
+  },
+  {
+    "id": 7087762,
+    "question_id": 708776,
+    "value": "C",
+    "label": "It is less effective at night because nocturnal predators rely more on senses other than sight.",
+    "is_correct": false
+  },
+  {
+    "id": 7087763,
+    "question_id": 708776,
+    "value": "D",
+    "label": "It is a learned behavior, acquired through observing the actions of older, more experienced insects.",
+    "is_correct": false
+  },
+  {
+    "id": 9605800,
+    "question_id": 960580,
+    "value": "A",
+    "label": "Lomonosov's discoveries in chemistry were ultimately proven to be more accurate than those of Lavoisier.",
+    "is_correct": false
+  },
+  {
+    "id": 9605801,
+    "question_id": 960580,
+    "value": "B",
+    "label": "Despite Lomonosov's earlier findings, Lavoisier's work became more influential in establishing modern chemistry due to wider recognition.",
+    "is_correct": true
+  },
+  {
+    "id": 9605802,
+    "question_id": 960580,
+    "value": "C",
+    "label": "The language barrier was the sole factor preventing Lomonosov from receiving credit for the law of conservation of mass.",
+    "is_correct": false
+  },
+  {
+    "id": 9605803,
+    "question_id": 960580,
+    "value": "D",
+    "label": "Lavoisier intentionally appropriated Lomonosov's research without giving him proper acknowledgement.",
+    "is_correct": false
+  },
+  {
+    "id": 4509400,
+    "question_id": 450940,
+    "value": "A",
+    "label": "It is likely to result in lower yields over extended periods compared to farming methods that incorporate crop rotation.",
+    "is_correct": true
+  },
+  {
+    "id": 4509401,
+    "question_id": 450940,
+    "value": "B",
+    "label": "It requires more sophisticated machinery and technology than crop rotation methods to achieve comparable levels of efficiency.",
+    "is_correct": false
+  },
+  {
+    "id": 4509402,
+    "question_id": 450940,
+    "value": "C",
+    "label": "It is primarily adopted in regions with less diverse climates, where crop rotation is not a viable agricultural strategy.",
+    "is_correct": false
+  },
+  {
+    "id": 4509403,
+    "question_id": 450940,
+    "value": "D",
+    "label": "It is more labor-intensive in the short term than crop rotation but offers greater long-term economic benefits.",
+    "is_correct": false
+  },
+  {
+    "id": 7825560,
+    "question_id": 782556,
+    "value": "A",
+    "label": "They have transitioned from simplistic power fantasies to complex narratives that explore societal anxieties and ethical dilemmas.",
+    "is_correct": false
+  },
+  {
+    "id": 7825561,
+    "question_id": 782556,
+    "value": "B",
+    "label": "They are unfairly characterized as shallow because many of these narratives engage with profound moral and societal questions.",
+    "is_correct": true
+  },
+  {
+    "id": 7825562,
+    "question_id": 782556,
+    "value": "C",
+    "label": "They are primarily aimed at younger audiences but inadvertently introduce them to complex ethical concepts.",
+    "is_correct": false
+  },
+  {
+    "id": 7825563,
+    "question_id": 782556,
+    "value": "D",
+    "label": "They have become increasingly popular despite their consistent focus on serious moral and social issues, alienating some viewers.",
+    "is_correct": false
+  },
+  {
+    "id": 885140,
+    "question_id": 88514,
+    "value": "A",
+    "label": "Urban planning initiatives should prioritize the development of green spaces, especially in low-income neighborhoods.",
+    "is_correct": false
+  },
+  {
+    "id": 885141,
+    "question_id": 88514,
+    "value": "B",
+    "label": "Residents' socioeconomic status is the primary determinant of their well-being, regardless of access to urban green spaces.",
+    "is_correct": false
+  },
+  {
+    "id": 885142,
+    "question_id": 88514,
+    "value": "C",
+    "label": "Research suggests that increased accessibility to urban green spaces is associated with improved resident well-being in terms of stress and physical activity.",
+    "is_correct": true
+  },
+  {
+    "id": 885143,
+    "question_id": 88514,
+    "value": "D",
+    "label": "Measuring self-reported stress levels and physical activity is an unreliable method for assessing the impact of environmental factors on well-being.",
+    "is_correct": false
+  },
+  {
+    "id": 8461190,
+    "question_id": 846119,
+    "value": "A",
+    "label": "They convert light signals into electrical signals for easier transmission.",
+    "is_correct": false
+  },
+  {
+    "id": 8461191,
+    "question_id": 846119,
+    "value": "B",
+    "label": "They amplify weakened light signals to maintain data integrity over long distances.",
+    "is_correct": true
+  },
+  {
+    "id": 8461192,
+    "question_id": 846119,
+    "value": "C",
+    "label": "They reduce the speed of light signals to prevent signal distortion.",
+    "is_correct": false
+  },
+  {
+    "id": 8461193,
+    "question_id": 846119,
+    "value": "D",
+    "label": "They split the light signal into multiple channels for increased bandwidth.",
+    "is_correct": false
+  },
+  {
+    "id": 9069880,
+    "question_id": 906988,
+    "value": "A",
+    "label": "Nonrenewable energy sources are ultimately unsustainable because their long-term environmental costs outweigh any short-term economic benefits.",
+    "is_correct": false
+  },
+  {
+    "id": 9069881,
+    "question_id": 906988,
+    "value": "B",
+    "label": "Renewable energy sources, despite higher initial costs, are always the more economically sound choice due to their minimal environmental impact.",
+    "is_correct": false
+  },
+  {
+    "id": 9069882,
+    "question_id": 906988,
+    "value": "C",
+    "label": "Both renewable and nonrenewable methods of electricity generation have distinct advantages and disadvantages, and a comprehensive assessment must consider both short-term and long-term consequences.",
+    "is_correct": true
+  },
+  {
+    "id": 9069883,
+    "question_id": 906988,
+    "value": "D",
+    "label": "Studies comparing renewable and nonrenewable energy sources are inherently flawed because they cannot accurately quantify either short-term economic costs or long-term environmental impacts.",
+    "is_correct": false
+  },
+  {
+    "id": 4127010,
+    "question_id": 412701,
+    "value": "A",
+    "label": "Social media echo chambers have been definitively proven to be the primary driver of increasing political polarization in recent years.",
+    "is_correct": false
+  },
+  {
+    "id": 4127011,
+    "question_id": 412701,
+    "value": "B",
+    "label": "While initially believed to be a major cause of political polarization, social media's actual impact is complex and requires further study.",
+    "is_correct": true
+  },
+  {
+    "id": 4127012,
+    "question_id": 412701,
+    "value": "C",
+    "label": "Research has conclusively shown that social media exposes individuals to a wider range of political perspectives than traditional media.",
+    "is_correct": false
+  },
+  {
+    "id": 4127013,
+    "question_id": 412701,
+    "value": "D",
+    "label": "Traditional media sources are more responsible for political polarization than social media platforms due to their established echo chambers.",
+    "is_correct": false
+  },
+  {
+    "id": 6654670,
+    "question_id": 665467,
+    "value": "A",
+    "label": "Early hybrid vehicles from the 19th century were more efficient than modern ones.",
+    "is_correct": false
+  },
+  {
+    "id": 6654671,
+    "question_id": 665467,
+    "value": "B",
+    "label": "The complexity and cost of early hybrid vehicles hindered their widespread adoption, delaying their success until modern times.",
+    "is_correct": false
+  },
+  {
+    "id": 6654672,
+    "question_id": 665467,
+    "value": "C",
+    "label": "The Toyota Prius, introduced in 1997, marked the beginning of hybrid vehicle technology.",
+    "is_correct": false
+  },
+  {
+    "id": 6654673,
+    "question_id": 665467,
+    "value": "D",
+    "label": "Although the idea of hybrid vehicles is old, their widespread practicality and adoption are relatively recent due to technological advancements.",
+    "is_correct": true
+  }
+]

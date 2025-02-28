@@ -1,0 +1,1626 @@
+[
+  {
+    "id": 4237060,
+    "question_id": 423706,
+    "value": "A",
+    "label": "2.25",
+    "is_correct": false
+  },
+  {
+    "id": 4237061,
+    "question_id": 423706,
+    "value": "B",
+    "label": "1.50o",
+    "is_correct": false
+  },
+  {
+    "id": 4237062,
+    "question_id": 423706,
+    "value": "C",
+    "label": "1.50",
+    "is_correct": true
+  },
+  {
+    "id": 4237063,
+    "question_id": 423706,
+    "value": "D",
+    "label": "2.25c",
+    "is_correct": false
+  },
+  {
+    "id": 4388470,
+    "question_id": 438847,
+    "value": "A",
+    "label": "$$\\frac{1}{2}$$",
+    "is_correct": true
+  },
+  {
+    "id": 4388471,
+    "question_id": 438847,
+    "value": "B",
+    "label": "$$-2$$",
+    "is_correct": false
+  },
+  {
+    "id": 4388472,
+    "question_id": 438847,
+    "value": "C",
+    "label": "$$2$$",
+    "is_correct": false
+  },
+  {
+    "id": 4388473,
+    "question_id": 438847,
+    "value": "D",
+    "label": "$$-\\frac{1}{2}$$",
+    "is_correct": false
+  },
+  {
+    "id": 1315980,
+    "question_id": 131598,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 1315981,
+    "question_id": 131598,
+    "value": "B",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 1315982,
+    "question_id": 131598,
+    "value": "C",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 1315983,
+    "question_id": 131598,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 2194470,
+    "question_id": 219447,
+    "value": "A",
+    "label": "The price of the pair of pants",
+    "is_correct": false
+  },
+  {
+    "id": 2194471,
+    "question_id": 219447,
+    "value": "B",
+    "label": "The price of the shirt",
+    "is_correct": false
+  },
+  {
+    "id": 2194472,
+    "question_id": 219447,
+    "value": "C",
+    "label": "The total price of the pants and the shirt",
+    "is_correct": true
+  },
+  {
+    "id": 2194473,
+    "question_id": 219447,
+    "value": "D",
+    "label": "The difference in price between the pants and the shirt",
+    "is_correct": false
+  },
+  {
+    "id": 6135230,
+    "question_id": 613523,
+    "value": "A",
+    "label": "If 3 apples were purchased, then 11 bananas were purchased.",
+    "is_correct": true
+  },
+  {
+    "id": 6135231,
+    "question_id": 613523,
+    "value": "B",
+    "label": "If 3 apples were purchased, then the total cost was $11.",
+    "is_correct": false
+  },
+  {
+    "id": 6135232,
+    "question_id": 613523,
+    "value": "C",
+    "label": "If 11 apples were purchased, then 3 bananas were purchased.",
+    "is_correct": false
+  },
+  {
+    "id": 6135233,
+    "question_id": 613523,
+    "value": "D",
+    "label": "If 11 bananas were purchased, then 3 apples were purchased.",
+    "is_correct": false
+  },
+  {
+    "id": 4749930,
+    "question_id": 474993,
+    "value": "A",
+    "label": "$10",
+    "is_correct": false
+  },
+  {
+    "id": 4749931,
+    "question_id": 474993,
+    "value": "B",
+    "label": "$16",
+    "is_correct": false
+  },
+  {
+    "id": 4749932,
+    "question_id": 474993,
+    "value": "C",
+    "label": "$20",
+    "is_correct": true
+  },
+  {
+    "id": 4749933,
+    "question_id": 474993,
+    "value": "D",
+    "label": "$25",
+    "is_correct": false
+  },
+  {
+    "id": 2302130,
+    "question_id": 230213,
+    "value": "A",
+    "label": "$y = \\frac{1}{2}x + 1$",
+    "is_correct": true
+  },
+  {
+    "id": 2302131,
+    "question_id": 230213,
+    "value": "B",
+    "label": "$y = 2x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 2302132,
+    "question_id": 230213,
+    "value": "C",
+    "label": "$y = \\frac{1}{2}x - 1$",
+    "is_correct": false
+  },
+  {
+    "id": 2302133,
+    "question_id": 230213,
+    "value": "D",
+    "label": "$y = -\\frac{1}{2}x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 5093090,
+    "question_id": 509309,
+    "value": "A",
+    "label": "1.25x + 2.50y = 20.00",
+    "is_correct": false
+  },
+  {
+    "id": 5093091,
+    "question_id": 509309,
+    "value": "B",
+    "label": "2.50x + 1.25y = 20.00",
+    "is_correct": true
+  },
+  {
+    "id": 5093092,
+    "question_id": 509309,
+    "value": "C",
+    "label": "2.50x - 1.25y = 20.00",
+    "is_correct": false
+  },
+  {
+    "id": 5093093,
+    "question_id": 509309,
+    "value": "D",
+    "label": "x + y = 20.00",
+    "is_correct": false
+  },
+  {
+    "id": 3989980,
+    "question_id": 398998,
+    "value": "A",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 3989981,
+    "question_id": 398998,
+    "value": "B",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 3989982,
+    "question_id": 398998,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 3989983,
+    "question_id": 398998,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 5100620,
+    "question_id": 510062,
+    "value": "A",
+    "label": "$c + o = 125$",
+    "is_correct": false
+  },
+  {
+    "id": 5100621,
+    "question_id": 510062,
+    "value": "B",
+    "label": "$c - o = 125$",
+    "is_correct": true
+  },
+  {
+    "id": 5100622,
+    "question_id": 510062,
+    "value": "C",
+    "label": "$o - c = 125$",
+    "is_correct": false
+  },
+  {
+    "id": 5100623,
+    "question_id": 510062,
+    "value": "D",
+    "label": "$2c - o = 125$",
+    "is_correct": false
+  },
+  {
+    "id": 7203940,
+    "question_id": 720394,
+    "value": "A",
+    "label": "The total cost, in dollars, for all roses purchased",
+    "is_correct": false
+  },
+  {
+    "id": 7203941,
+    "question_id": 720394,
+    "value": "B",
+    "label": "The total cost, in dollars, for all lilies purchased",
+    "is_correct": false
+  },
+  {
+    "id": 7203942,
+    "question_id": 720394,
+    "value": "C",
+    "label": "The total cost, in dollars, for all roses and lilies purchased",
+    "is_correct": true
+  },
+  {
+    "id": 7203943,
+    "question_id": 720394,
+    "value": "D",
+    "label": "The difference in the number of roses and lilies purchased",
+    "is_correct": false
+  },
+  {
+    "id": 9865820,
+    "question_id": 986582,
+    "value": "A",
+    "label": "0.12x + 0.15y = 3",
+    "is_correct": true
+  },
+  {
+    "id": 9865821,
+    "question_id": 986582,
+    "value": "B",
+    "label": "0.15x + 0.12y = 3",
+    "is_correct": false
+  },
+  {
+    "id": 9865822,
+    "question_id": 986582,
+    "value": "C",
+    "label": "12x + 15y = 3",
+    "is_correct": false
+  },
+  {
+    "id": 9865823,
+    "question_id": 986582,
+    "value": "D",
+    "label": "27(x+y) = 3",
+    "is_correct": false
+  },
+  {
+    "id": 1676390,
+    "question_id": 167639,
+    "value": "A",
+    "label": "y = -2x + 5",
+    "is_correct": true
+  },
+  {
+    "id": 1676391,
+    "question_id": 167639,
+    "value": "B",
+    "label": "y = 5x - 2",
+    "is_correct": false
+  },
+  {
+    "id": 1676392,
+    "question_id": 167639,
+    "value": "C",
+    "label": "y = 2x + 5",
+    "is_correct": false
+  },
+  {
+    "id": 1676393,
+    "question_id": 167639,
+    "value": "D",
+    "label": "y = -2x - 5",
+    "is_correct": false
+  },
+  {
+    "id": 3218390,
+    "question_id": 321839,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 3218391,
+    "question_id": 321839,
+    "value": "B",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 3218392,
+    "question_id": 321839,
+    "value": "C",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 3218393,
+    "question_id": 321839,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 5834380,
+    "question_id": 583438,
+    "value": "A",
+    "label": "p + b = 90",
+    "is_correct": false
+  },
+  {
+    "id": 5834381,
+    "question_id": 583438,
+    "value": "B",
+    "label": "6p + 15b = 90",
+    "is_correct": false
+  },
+  {
+    "id": 5834382,
+    "question_id": 583438,
+    "value": "C",
+    "label": "15p + 6b = 90",
+    "is_correct": true
+  },
+  {
+    "id": 5834383,
+    "question_id": 583438,
+    "value": "D",
+    "label": "21(p + b) = 90",
+    "is_correct": false
+  },
+  {
+    "id": 2818390,
+    "question_id": 281839,
+    "value": "A",
+    "label": "The cost of the rubber and cypress mulch needed for the garden bed",
+    "is_correct": true
+  },
+  {
+    "id": 2818391,
+    "question_id": 281839,
+    "value": "B",
+    "label": "The cost of the pine and cedar mulch needed for the garden bed",
+    "is_correct": false
+  },
+  {
+    "id": 2818392,
+    "question_id": 281839,
+    "value": "C",
+    "label": "The cost of the cypress mulch needed for the garden bed",
+    "is_correct": false
+  },
+  {
+    "id": 2818393,
+    "question_id": 281839,
+    "value": "D",
+    "label": "The total volume, in cubic feet, of pine and cedar mulch",
+    "is_correct": false
+  },
+  {
+    "id": 749570,
+    "question_id": 74957,
+    "value": "A",
+    "label": "E = 15h + 10",
+    "is_correct": true
+  },
+  {
+    "id": 749571,
+    "question_id": 74957,
+    "value": "B",
+    "label": "E = 10h + 15",
+    "is_correct": false
+  },
+  {
+    "id": 749572,
+    "question_id": 74957,
+    "value": "C",
+    "label": "E = 25h",
+    "is_correct": false
+  },
+  {
+    "id": 749573,
+    "question_id": 74957,
+    "value": "D",
+    "label": "E = 5h + 20",
+    "is_correct": false
+  },
+  {
+    "id": 5187700,
+    "question_id": 518770,
+    "value": "A",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 5187701,
+    "question_id": 518770,
+    "value": "B",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 5187702,
+    "question_id": 518770,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 5187703,
+    "question_id": 518770,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 3231640,
+    "question_id": 323164,
+    "value": "A",
+    "label": "  |    | $x$   | $y$   | |----|-----|-----| |    | 0   | -3  | |    | 2   | 7   | |    | 4   | 17  | ",
+    "is_correct": true
+  },
+  {
+    "id": 3231641,
+    "question_id": 323164,
+    "value": "B",
+    "label": "  |    | $x$   | $y$   | |----|-----|-----| |    | 0   | 3   | |    | 2   | 13  | |    | 4   | 23  | ",
+    "is_correct": false
+  },
+  {
+    "id": 3231642,
+    "question_id": 323164,
+    "value": "C",
+    "label": "  |    | $x$   | $y$   | |----|-----|-----| |    | 0   | -3  | |    | 2   | 3   | |    | 4   | 9   | ",
+    "is_correct": false
+  },
+  {
+    "id": 3231643,
+    "question_id": 323164,
+    "value": "D",
+    "label": "  |    | $x$   | $y$   | |----|-----|-----| |    | 0   | 1   | |    | 2   | 11  | |    | 4   | 21  | ",
+    "is_correct": false
+  },
+  {
+    "id": 7228800,
+    "question_id": 722880,
+    "value": "A",
+    "label": "The total rental cost for bikes and helmets",
+    "is_correct": false
+  },
+  {
+    "id": 7228801,
+    "question_id": 722880,
+    "value": "B",
+    "label": "The rental cost, in dollars, for one helmet",
+    "is_correct": false
+  },
+  {
+    "id": 7228802,
+    "question_id": 722880,
+    "value": "C",
+    "label": "The rental cost, in dollars, for one bike",
+    "is_correct": true
+  },
+  {
+    "id": 7228803,
+    "question_id": 722880,
+    "value": "D",
+    "label": "The number of helmets rented",
+    "is_correct": false
+  },
+  {
+    "id": 5452940,
+    "question_id": 545294,
+    "value": "A",
+    "label": "(3, 0)",
+    "is_correct": true
+  },
+  {
+    "id": 5452941,
+    "question_id": 545294,
+    "value": "B",
+    "label": "(0, 6)",
+    "is_correct": false
+  },
+  {
+    "id": 5452942,
+    "question_id": 545294,
+    "value": "C",
+    "label": "(0, 3)",
+    "is_correct": false
+  },
+  {
+    "id": 5452943,
+    "question_id": 545294,
+    "value": "D",
+    "label": "(6, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 9522410,
+    "question_id": 952241,
+    "value": "A",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 9522411,
+    "question_id": 952241,
+    "value": "B",
+    "label": "11",
+    "is_correct": false
+  },
+  {
+    "id": 9522412,
+    "question_id": 952241,
+    "value": "C",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 9522413,
+    "question_id": 952241,
+    "value": "D",
+    "label": "22",
+    "is_correct": false
+  },
+  {
+    "id": 282600,
+    "question_id": 28260,
+    "value": "A",
+    "label": "-10",
+    "is_correct": false
+  },
+  {
+    "id": 282601,
+    "question_id": 28260,
+    "value": "B",
+    "label": "-5",
+    "is_correct": false
+  },
+  {
+    "id": 282602,
+    "question_id": 28260,
+    "value": "C",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 282603,
+    "question_id": 28260,
+    "value": "D",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 234130,
+    "question_id": 23413,
+    "value": "A",
+    "label": "$y = 2x + 1$",
+    "is_correct": true
+  },
+  {
+    "id": 234131,
+    "question_id": 23413,
+    "value": "B",
+    "label": "$y = x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 234132,
+    "question_id": 23413,
+    "value": "C",
+    "label": "$y = 2x - 1$",
+    "is_correct": false
+  },
+  {
+    "id": 234133,
+    "question_id": 23413,
+    "value": "D",
+    "label": "$y = -2x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 7035020,
+    "question_id": 703502,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 7035021,
+    "question_id": 703502,
+    "value": "B",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 7035022,
+    "question_id": 703502,
+    "value": "C",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 7035023,
+    "question_id": 703502,
+    "value": "D",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 5371790,
+    "question_id": 537179,
+    "value": "A",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 5371791,
+    "question_id": 537179,
+    "value": "B",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 5371792,
+    "question_id": 537179,
+    "value": "C",
+    "label": "13",
+    "is_correct": false
+  },
+  {
+    "id": 5371793,
+    "question_id": 537179,
+    "value": "D",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 4813320,
+    "question_id": 481332,
+    "value": "A",
+    "label": "y = $\\frac{1}{2}x$",
+    "is_correct": true
+  },
+  {
+    "id": 4813321,
+    "question_id": 481332,
+    "value": "B",
+    "label": "y = $2x - 3$",
+    "is_correct": false
+  },
+  {
+    "id": 4813322,
+    "question_id": 481332,
+    "value": "C",
+    "label": "y = $\\frac{1}{2}x + 2$",
+    "is_correct": false
+  },
+  {
+    "id": 4813323,
+    "question_id": 481332,
+    "value": "D",
+    "label": "y = $2x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 6449460,
+    "question_id": 644946,
+    "value": "A",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 6449461,
+    "question_id": 644946,
+    "value": "B",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 6449462,
+    "question_id": 644946,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 6449463,
+    "question_id": 644946,
+    "value": "D",
+    "label": "19",
+    "is_correct": false
+  },
+  {
+    "id": 7282410,
+    "question_id": 728241,
+    "value": "A",
+    "label": "8b + 25h = 432",
+    "is_correct": false
+  },
+  {
+    "id": 7282411,
+    "question_id": 728241,
+    "value": "B",
+    "label": "25b - 8h = 432",
+    "is_correct": false
+  },
+  {
+    "id": 7282412,
+    "question_id": 728241,
+    "value": "C",
+    "label": "8b - 25h = 432",
+    "is_correct": false
+  },
+  {
+    "id": 7282413,
+    "question_id": 728241,
+    "value": "D",
+    "label": "25b + 8h = 432",
+    "is_correct": true
+  },
+  {
+    "id": 1894040,
+    "question_id": 189404,
+    "value": "A",
+    "label": "$\\frac{3}{5}$",
+    "is_correct": true
+  },
+  {
+    "id": 1894041,
+    "question_id": 189404,
+    "value": "B",
+    "label": "$-\\frac{5}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 1894042,
+    "question_id": 189404,
+    "value": "C",
+    "label": "$-\\frac{3}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 1894043,
+    "question_id": 189404,
+    "value": "D",
+    "label": "$\\frac{5}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 7630270,
+    "question_id": 763027,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 7630271,
+    "question_id": 763027,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 7630272,
+    "question_id": 763027,
+    "value": "C",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 7630273,
+    "question_id": 763027,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 7759000,
+    "question_id": 775900,
+    "value": "A",
+    "label": "$C = 5L + 20$",
+    "is_correct": true
+  },
+  {
+    "id": 7759001,
+    "question_id": 775900,
+    "value": "B",
+    "label": "$C = 10L + 10$",
+    "is_correct": false
+  },
+  {
+    "id": 7759002,
+    "question_id": 775900,
+    "value": "C",
+    "label": "$C = 20L - 10$",
+    "is_correct": false
+  },
+  {
+    "id": 7759003,
+    "question_id": 775900,
+    "value": "D",
+    "label": "$C = 25L - 20$",
+    "is_correct": false
+  },
+  {
+    "id": 911650,
+    "question_id": 91165,
+    "value": "A",
+    "label": "5.2",
+    "is_correct": true
+  },
+  {
+    "id": 911651,
+    "question_id": 91165,
+    "value": "B",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 911652,
+    "question_id": 91165,
+    "value": "C",
+    "label": "5.5",
+    "is_correct": false
+  },
+  {
+    "id": 911653,
+    "question_id": 91165,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 9099650,
+    "question_id": 909965,
+    "value": "A",
+    "label": "$-\\frac{5}{3}$",
+    "is_correct": true
+  },
+  {
+    "id": 9099651,
+    "question_id": 909965,
+    "value": "B",
+    "label": "$-\\frac{3}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 9099652,
+    "question_id": 909965,
+    "value": "C",
+    "label": "$\\frac{3}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 9099653,
+    "question_id": 909965,
+    "value": "D",
+    "label": "$\\frac{5}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 9593520,
+    "question_id": 959352,
+    "value": "A",
+    "label": "y = x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 9593521,
+    "question_id": 959352,
+    "value": "B",
+    "label": "y = 2x + 3",
+    "is_correct": false
+  },
+  {
+    "id": 9593522,
+    "question_id": 959352,
+    "value": "C",
+    "label": "y = 2x - 1",
+    "is_correct": true
+  },
+  {
+    "id": 9593523,
+    "question_id": 959352,
+    "value": "D",
+    "label": "y = -2x - 3",
+    "is_correct": false
+  },
+  {
+    "id": 5157770,
+    "question_id": 515777,
+    "value": "A",
+    "label": "45x + 40y = 260",
+    "is_correct": false
+  },
+  {
+    "id": 5157771,
+    "question_id": 515777,
+    "value": "B",
+    "label": "30x + 40y = 140",
+    "is_correct": false
+  },
+  {
+    "id": 5157772,
+    "question_id": 515777,
+    "value": "C",
+    "label": "45x + 40y = 140",
+    "is_correct": true
+  },
+  {
+    "id": 5157773,
+    "question_id": 515777,
+    "value": "D",
+    "label": "45x + 30y = 140",
+    "is_correct": false
+  },
+  {
+    "id": 4191850,
+    "question_id": 419185,
+    "value": "A",
+    "label": "The student spends 15 hours riding the scooter.",
+    "is_correct": false
+  },
+  {
+    "id": 4191851,
+    "question_id": 419185,
+    "value": "B",
+    "label": "The student walks at a speed of 15 miles per hour.",
+    "is_correct": false
+  },
+  {
+    "id": 4191852,
+    "question_id": 419185,
+    "value": "C",
+    "label": "The student rides the scooter at a speed of 15 miles per hour.",
+    "is_correct": true
+  },
+  {
+    "id": 4191853,
+    "question_id": 419185,
+    "value": "D",
+    "label": "The total distance to school is 15 miles.",
+    "is_correct": false
+  },
+  {
+    "id": 5387510,
+    "question_id": 538751,
+    "value": "A",
+    "label": "-3",
+    "is_correct": true
+  },
+  {
+    "id": 5387511,
+    "question_id": 538751,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 5387512,
+    "question_id": 538751,
+    "value": "C",
+    "label": "-\\frac{1}{3}",
+    "is_correct": false
+  },
+  {
+    "id": 5387513,
+    "question_id": 538751,
+    "value": "D",
+    "label": "\\frac{1}{3}",
+    "is_correct": false
+  },
+  {
+    "id": 2191850,
+    "question_id": 219185,
+    "value": "A",
+    "label": "-1",
+    "is_correct": true
+  },
+  {
+    "id": 2191851,
+    "question_id": 219185,
+    "value": "B",
+    "label": "11",
+    "is_correct": false
+  },
+  {
+    "id": 2191852,
+    "question_id": 219185,
+    "value": "C",
+    "label": "-6",
+    "is_correct": false
+  },
+  {
+    "id": 2191853,
+    "question_id": 219185,
+    "value": "D",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 3523280,
+    "question_id": 352328,
+    "value": "A",
+    "label": "$\frac{2}{3}$",
+    "is_correct": true
+  },
+  {
+    "id": 3523281,
+    "question_id": 352328,
+    "value": "B",
+    "label": "$\frac{3}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 3523282,
+    "question_id": 352328,
+    "value": "C",
+    "label": "$-\frac{2}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 3523283,
+    "question_id": 352328,
+    "value": "D",
+    "label": "$\frac{1}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 6069360,
+    "question_id": 606936,
+    "value": "A",
+    "label": "The sum, in meters, of the lengths of the two sides perpendicular to the wall.",
+    "is_correct": false
+  },
+  {
+    "id": 6069361,
+    "question_id": 606936,
+    "value": "B",
+    "label": "The length, in meters, of the side parallel to the wall.",
+    "is_correct": false
+  },
+  {
+    "id": 6069362,
+    "question_id": 606936,
+    "value": "C",
+    "label": "The total length, in meters, of the fence used to enclose the three sides of the garden.",
+    "is_correct": true
+  },
+  {
+    "id": 6069363,
+    "question_id": 606936,
+    "value": "D",
+    "label": "The sum of the lengths, in meters, of all four sides if the garden was fully fenced.",
+    "is_correct": false
+  },
+  {
+    "id": 6920510,
+    "question_id": 692051,
+    "value": "A",
+    "label": "$\\frac{3}{7}$",
+    "is_correct": true
+  },
+  {
+    "id": 6920511,
+    "question_id": 692051,
+    "value": "B",
+    "label": "$\\frac{7}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 6920512,
+    "question_id": 692051,
+    "value": "C",
+    "label": "$-\\frac{3}{7}$",
+    "is_correct": false
+  },
+  {
+    "id": 6920513,
+    "question_id": 692051,
+    "value": "D",
+    "label": "$-15$",
+    "is_correct": false
+  },
+  {
+    "id": 6490880,
+    "question_id": 649088,
+    "value": "A",
+    "label": "7s + 4h = 290",
+    "is_correct": false
+  },
+  {
+    "id": 6490881,
+    "question_id": 649088,
+    "value": "B",
+    "label": "14s + 8h = 290",
+    "is_correct": false
+  },
+  {
+    "id": 6490882,
+    "question_id": 649088,
+    "value": "C",
+    "label": "28s + 4h = 290",
+    "is_correct": false
+  },
+  {
+    "id": 6490883,
+    "question_id": 649088,
+    "value": "D",
+    "label": "28s + 24h = 290",
+    "is_correct": true
+  },
+  {
+    "id": 6984820,
+    "question_id": 698482,
+    "value": "A",
+    "label": "$-\\frac{5}{2}$",
+    "is_correct": true
+  },
+  {
+    "id": 6984821,
+    "question_id": 698482,
+    "value": "B",
+    "label": "$-\\frac{2}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 6984822,
+    "question_id": 698482,
+    "value": "C",
+    "label": "$\\frac{2}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 6984823,
+    "question_id": 698482,
+    "value": "D",
+    "label": "$\\frac{5}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 8763340,
+    "question_id": 876334,
+    "value": "A",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 8763341,
+    "question_id": 876334,
+    "value": "B",
+    "label": "-5",
+    "is_correct": false
+  },
+  {
+    "id": 8763342,
+    "question_id": 876334,
+    "value": "C",
+    "label": "$\\frac{1}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 8763343,
+    "question_id": 876334,
+    "value": "D",
+    "label": "$\\frac{-1}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 9282830,
+    "question_id": 928283,
+    "value": "A",
+    "label": "-24",
+    "is_correct": false
+  },
+  {
+    "id": 9282831,
+    "question_id": 928283,
+    "value": "B",
+    "label": "-16",
+    "is_correct": true
+  },
+  {
+    "id": 9282832,
+    "question_id": 928283,
+    "value": "C",
+    "label": "-8",
+    "is_correct": false
+  },
+  {
+    "id": 9282833,
+    "question_id": 928283,
+    "value": "D",
+    "label": "32",
+    "is_correct": false
+  },
+  {
+    "id": 5683180,
+    "question_id": 568318,
+    "value": "A",
+    "label": "Placeholder A",
+    "is_correct": false
+  },
+  {
+    "id": 5683181,
+    "question_id": 568318,
+    "value": "B",
+    "label": "Placeholder B",
+    "is_correct": true
+  },
+  {
+    "id": 5683182,
+    "question_id": 568318,
+    "value": "C",
+    "label": "Placeholder C",
+    "is_correct": false
+  },
+  {
+    "id": 5683183,
+    "question_id": 568318,
+    "value": "D",
+    "label": "Placeholder D",
+    "is_correct": false
+  },
+  {
+    "id": 192710,
+    "question_id": 19271,
+    "value": "A",
+    "label": "1.00",
+    "is_correct": false
+  },
+  {
+    "id": 192711,
+    "question_id": 19271,
+    "value": "B",
+    "label": "1.20",
+    "is_correct": true
+  },
+  {
+    "id": 192712,
+    "question_id": 19271,
+    "value": "C",
+    "label": "1.50",
+    "is_correct": false
+  },
+  {
+    "id": 192713,
+    "question_id": 19271,
+    "value": "D",
+    "label": "2.00",
+    "is_correct": false
+  },
+  {
+    "id": 9822290,
+    "question_id": 982229,
+    "value": "A",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 9822291,
+    "question_id": 982229,
+    "value": "B",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 9822292,
+    "question_id": 982229,
+    "value": "C",
+    "label": "-1",
+    "is_correct": true
+  },
+  {
+    "id": 9822293,
+    "question_id": 982229,
+    "value": "D",
+    "label": "Undefined",
+    "is_correct": false
+  },
+  {
+    "id": 8835390,
+    "question_id": 883539,
+    "value": "A",
+    "label": "1",
+    "is_correct": true
+  },
+  {
+    "id": 8835391,
+    "question_id": 883539,
+    "value": "B",
+    "label": "-1",
+    "is_correct": false
+  },
+  {
+    "id": 8835392,
+    "question_id": 883539,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 8835393,
+    "question_id": 883539,
+    "value": "D",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 9630910,
+    "question_id": 963091,
+    "value": "A",
+    "label": "200",
+    "is_correct": false
+  },
+  {
+    "id": 9630911,
+    "question_id": 963091,
+    "value": "B",
+    "label": "400",
+    "is_correct": true
+  },
+  {
+    "id": 9630912,
+    "question_id": 963091,
+    "value": "C",
+    "label": "500",
+    "is_correct": false
+  },
+  {
+    "id": 9630913,
+    "question_id": 963091,
+    "value": "D",
+    "label": "800",
+    "is_correct": false
+  },
+  {
+    "id": 1795010,
+    "question_id": 179501,
+    "value": "A",
+    "label": "$\\frac{3}{2}$",
+    "is_correct": true
+  },
+  {
+    "id": 1795011,
+    "question_id": 179501,
+    "value": "B",
+    "label": "$\\frac{2}{3}$",
+    "is_correct": false
+  },
+  {
+    "id": 1795012,
+    "question_id": 179501,
+    "value": "C",
+    "label": "$\\frac{5}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 1795013,
+    "question_id": 179501,
+    "value": "D",
+    "label": "$1$",
+    "is_correct": false
+  },
+  {
+    "id": 9879500,
+    "question_id": 987950,
+    "value": "A",
+    "label": "x + 2y = -2",
+    "is_correct": true
+  },
+  {
+    "id": 9879501,
+    "question_id": 987950,
+    "value": "B",
+    "label": "x + 2y = 2",
+    "is_correct": false
+  },
+  {
+    "id": 9879502,
+    "question_id": 987950,
+    "value": "C",
+    "label": "2x - y = -1",
+    "is_correct": false
+  },
+  {
+    "id": 9879503,
+    "question_id": 987950,
+    "value": "D",
+    "label": "2x - y = 1",
+    "is_correct": false
+  },
+  {
+    "id": 9237570,
+    "question_id": 923757,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 9237571,
+    "question_id": 923757,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 9237572,
+    "question_id": 923757,
+    "value": "C",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 9237573,
+    "question_id": 923757,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 1695640,
+    "question_id": 169564,
+    "value": "A",
+    "label": "-3",
+    "is_correct": true
+  },
+  {
+    "id": 1695641,
+    "question_id": 169564,
+    "value": "B",
+    "label": "-2",
+    "is_correct": false
+  },
+  {
+    "id": 1695642,
+    "question_id": 169564,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 1695643,
+    "question_id": 169564,
+    "value": "D",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 3867830,
+    "question_id": 386783,
+    "value": "A",
+    "label": "Rx + 8y = 24",
+    "is_correct": false
+  },
+  {
+    "id": 3867831,
+    "question_id": 386783,
+    "value": "B",
+    "label": "Rx - 8y = 24",
+    "is_correct": false
+  },
+  {
+    "id": 3867832,
+    "question_id": 386783,
+    "value": "C",
+    "label": "8x + Ry = 24",
+    "is_correct": true
+  },
+  {
+    "id": 3867833,
+    "question_id": 386783,
+    "value": "D",
+    "label": "8x - Ry = 24",
+    "is_correct": false
+  },
+  {
+    "id": 1448980,
+    "question_id": 144898,
+    "value": "A",
+    "label": "$-\\frac{15}{8}$",
+    "is_correct": false
+  },
+  {
+    "id": 1448981,
+    "question_id": 144898,
+    "value": "B",
+    "label": "$\\frac{8}{15}$",
+    "is_correct": false
+  },
+  {
+    "id": 1448982,
+    "question_id": 144898,
+    "value": "C",
+    "label": "$-\\frac{8}{15}$",
+    "is_correct": false
+  },
+  {
+    "id": 1448983,
+    "question_id": 144898,
+    "value": "D",
+    "label": "$\\frac{15}{8}$",
+    "is_correct": true
+  },
+  {
+    "id": 3409440,
+    "question_id": 340944,
+    "value": "A",
+    "label": "A.   | x | y | |---|---| | 0 | -3 | | 3 | -1 | | 6 | 1 |",
+    "is_correct": false
+  },
+  {
+    "id": 3409441,
+    "question_id": 340944,
+    "value": "B",
+    "label": "B.   | x | y | |---|---| | 0 | 1 | | 3 | 0 | | 6 | -1 |",
+    "is_correct": false
+  },
+  {
+    "id": 3409442,
+    "question_id": 340944,
+    "value": "C",
+    "label": "C.   | x | y | |---|---| | 0 | -1 | | 3 | 0 | | 6 | 1 |",
+    "is_correct": false
+  },
+  {
+    "id": 3409443,
+    "question_id": 340944,
+    "value": "D",
+    "label": "D.   | x | y | |---|---| | 0 | -1 | | 3 | 1 | | 6 | 3 |",
+    "is_correct": true
+  }
+]

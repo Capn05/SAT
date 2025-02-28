@@ -1,0 +1,1598 @@
+[
+  {
+    "id": 879400,
+    "question_id": 87940,
+    "value": "A",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 879401,
+    "question_id": 87940,
+    "value": "B",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 879402,
+    "question_id": 87940,
+    "value": "C",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 879403,
+    "question_id": 87940,
+    "value": "D",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 9556250,
+    "question_id": 955625,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 9556251,
+    "question_id": 955625,
+    "value": "B",
+    "label": "For instance,",
+    "is_correct": true
+  },
+  {
+    "id": 9556252,
+    "question_id": 955625,
+    "value": "C",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 9556253,
+    "question_id": 955625,
+    "value": "D",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 2437800,
+    "question_id": 243780,
+    "value": "A",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 2437801,
+    "question_id": 243780,
+    "value": "B",
+    "label": "Therefore,",
+    "is_correct": true
+  },
+  {
+    "id": 2437802,
+    "question_id": 243780,
+    "value": "C",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 2437803,
+    "question_id": 243780,
+    "value": "D",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 4332180,
+    "question_id": 433218,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 4332181,
+    "question_id": 433218,
+    "value": "B",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 4332182,
+    "question_id": 433218,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 4332183,
+    "question_id": 433218,
+    "value": "D",
+    "label": "However,",
+    "is_correct": false
+  },
+  {
+    "id": 7999740,
+    "question_id": 799974,
+    "value": "A",
+    "label": "Conversely,",
+    "is_correct": true
+  },
+  {
+    "id": 7999741,
+    "question_id": 799974,
+    "value": "B",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 7999742,
+    "question_id": 799974,
+    "value": "C",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 7999743,
+    "question_id": 799974,
+    "value": "D",
+    "label": "In other words,",
+    "is_correct": false
+  },
+  {
+    "id": 2175890,
+    "question_id": 217589,
+    "value": "A",
+    "label": "Indeed,",
+    "is_correct": true
+  },
+  {
+    "id": 2175891,
+    "question_id": 217589,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 2175892,
+    "question_id": 217589,
+    "value": "C",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 2175893,
+    "question_id": 217589,
+    "value": "D",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 4299030,
+    "question_id": 429903,
+    "value": "A",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 4299031,
+    "question_id": 429903,
+    "value": "B",
+    "label": "However,",
+    "is_correct": false
+  },
+  {
+    "id": 4299032,
+    "question_id": 429903,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 4299033,
+    "question_id": 429903,
+    "value": "D",
+    "label": "In addition,",
+    "is_correct": true
+  },
+  {
+    "id": 7747950,
+    "question_id": 774795,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 7747951,
+    "question_id": 774795,
+    "value": "B",
+    "label": "Afterward,",
+    "is_correct": true
+  },
+  {
+    "id": 7747952,
+    "question_id": 774795,
+    "value": "C",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 7747953,
+    "question_id": 774795,
+    "value": "D",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 4822710,
+    "question_id": 482271,
+    "value": "A",
+    "label": "Therefore",
+    "is_correct": false
+  },
+  {
+    "id": 4822711,
+    "question_id": 482271,
+    "value": "B",
+    "label": "Nevertheless",
+    "is_correct": true
+  },
+  {
+    "id": 4822712,
+    "question_id": 482271,
+    "value": "C",
+    "label": "Furthermore",
+    "is_correct": false
+  },
+  {
+    "id": 4822713,
+    "question_id": 482271,
+    "value": "D",
+    "label": "Similarly",
+    "is_correct": false
+  },
+  {
+    "id": 7688580,
+    "question_id": 768858,
+    "value": "A",
+    "label": "Subsequently",
+    "is_correct": false
+  },
+  {
+    "id": 7688581,
+    "question_id": 768858,
+    "value": "B",
+    "label": "Conversely",
+    "is_correct": true
+  },
+  {
+    "id": 7688582,
+    "question_id": 768858,
+    "value": "C",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 7688583,
+    "question_id": 768858,
+    "value": "D",
+    "label": "Moreover",
+    "is_correct": false
+  },
+  {
+    "id": 5305250,
+    "question_id": 530525,
+    "value": "A",
+    "label": "Subsequently,",
+    "is_correct": true
+  },
+  {
+    "id": 5305251,
+    "question_id": 530525,
+    "value": "B",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 5305252,
+    "question_id": 530525,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 5305253,
+    "question_id": 530525,
+    "value": "D",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 5572110,
+    "question_id": 557211,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 5572111,
+    "question_id": 557211,
+    "value": "B",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 5572112,
+    "question_id": 557211,
+    "value": "C",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 5572113,
+    "question_id": 557211,
+    "value": "D",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 7831710,
+    "question_id": 783171,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 7831711,
+    "question_id": 783171,
+    "value": "B",
+    "label": "In other words,",
+    "is_correct": false
+  },
+  {
+    "id": 7831712,
+    "question_id": 783171,
+    "value": "C",
+    "label": "Regardless,",
+    "is_correct": false
+  },
+  {
+    "id": 7831713,
+    "question_id": 783171,
+    "value": "D",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 8542500,
+    "question_id": 854250,
+    "value": "A",
+    "label": "Conversely,",
+    "is_correct": true
+  },
+  {
+    "id": 8542501,
+    "question_id": 854250,
+    "value": "B",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 8542502,
+    "question_id": 854250,
+    "value": "C",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 8542503,
+    "question_id": 854250,
+    "value": "D",
+    "label": "In other words,",
+    "is_correct": false
+  },
+  {
+    "id": 2614360,
+    "question_id": 261436,
+    "value": "A",
+    "label": "Consequently",
+    "is_correct": true
+  },
+  {
+    "id": 2614361,
+    "question_id": 261436,
+    "value": "B",
+    "label": "Conversely",
+    "is_correct": false
+  },
+  {
+    "id": 2614362,
+    "question_id": 261436,
+    "value": "C",
+    "label": "Ultimately",
+    "is_correct": false
+  },
+  {
+    "id": 2614363,
+    "question_id": 261436,
+    "value": "D",
+    "label": "Similarly",
+    "is_correct": false
+  },
+  {
+    "id": 8098330,
+    "question_id": 809833,
+    "value": "A",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 8098331,
+    "question_id": 809833,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 8098332,
+    "question_id": 809833,
+    "value": "C",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 8098333,
+    "question_id": 809833,
+    "value": "D",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 234800,
+    "question_id": 23480,
+    "value": "A",
+    "label": "Conversely",
+    "is_correct": true
+  },
+  {
+    "id": 234801,
+    "question_id": 23480,
+    "value": "B",
+    "label": "Subsequently",
+    "is_correct": false
+  },
+  {
+    "id": 234802,
+    "question_id": 23480,
+    "value": "C",
+    "label": "Indeed",
+    "is_correct": false
+  },
+  {
+    "id": 234803,
+    "question_id": 23480,
+    "value": "D",
+    "label": "Consequently",
+    "is_correct": false
+  },
+  {
+    "id": 9186000,
+    "question_id": 918600,
+    "value": "A",
+    "label": "Subsequently,",
+    "is_correct": true
+  },
+  {
+    "id": 9186001,
+    "question_id": 918600,
+    "value": "B",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 9186002,
+    "question_id": 918600,
+    "value": "C",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 9186003,
+    "question_id": 918600,
+    "value": "D",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 9467300,
+    "question_id": 946730,
+    "value": "A",
+    "label": "For example,",
+    "is_correct": true
+  },
+  {
+    "id": 9467301,
+    "question_id": 946730,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 9467302,
+    "question_id": 946730,
+    "value": "C",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 9467303,
+    "question_id": 946730,
+    "value": "D",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 9034440,
+    "question_id": 903444,
+    "value": "A",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 9034441,
+    "question_id": 903444,
+    "value": "B",
+    "label": "However,",
+    "is_correct": false
+  },
+  {
+    "id": 9034442,
+    "question_id": 903444,
+    "value": "C",
+    "label": "For example,",
+    "is_correct": true
+  },
+  {
+    "id": 9034443,
+    "question_id": 903444,
+    "value": "D",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 5860830,
+    "question_id": 586083,
+    "value": "A",
+    "label": "As a result,",
+    "is_correct": true
+  },
+  {
+    "id": 5860831,
+    "question_id": 586083,
+    "value": "B",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 5860832,
+    "question_id": 586083,
+    "value": "C",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 5860833,
+    "question_id": 586083,
+    "value": "D",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 1465390,
+    "question_id": 146539,
+    "value": "A",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 1465391,
+    "question_id": 146539,
+    "value": "B",
+    "label": "In contrast,",
+    "is_correct": true
+  },
+  {
+    "id": 1465392,
+    "question_id": 146539,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 1465393,
+    "question_id": 146539,
+    "value": "D",
+    "label": "Additionally,",
+    "is_correct": false
+  },
+  {
+    "id": 7741220,
+    "question_id": 774122,
+    "value": "A",
+    "label": "Consequently",
+    "is_correct": false
+  },
+  {
+    "id": 7741221,
+    "question_id": 774122,
+    "value": "B",
+    "label": "Furthermore",
+    "is_correct": false
+  },
+  {
+    "id": 7741222,
+    "question_id": 774122,
+    "value": "C",
+    "label": "However",
+    "is_correct": true
+  },
+  {
+    "id": 7741223,
+    "question_id": 774122,
+    "value": "D",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 9070060,
+    "question_id": 907006,
+    "value": "A",
+    "label": "Therefore",
+    "is_correct": false
+  },
+  {
+    "id": 9070061,
+    "question_id": 907006,
+    "value": "B",
+    "label": "Conversely",
+    "is_correct": true
+  },
+  {
+    "id": 9070062,
+    "question_id": 907006,
+    "value": "C",
+    "label": "Subsequently",
+    "is_correct": false
+  },
+  {
+    "id": 9070063,
+    "question_id": 907006,
+    "value": "D",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 603520,
+    "question_id": 60352,
+    "value": "A",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 603521,
+    "question_id": 60352,
+    "value": "B",
+    "label": "For example,",
+    "is_correct": true
+  },
+  {
+    "id": 603522,
+    "question_id": 60352,
+    "value": "C",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 603523,
+    "question_id": 60352,
+    "value": "D",
+    "label": "Indeed,",
+    "is_correct": false
+  },
+  {
+    "id": 2862510,
+    "question_id": 286251,
+    "value": "A",
+    "label": "Subsequently",
+    "is_correct": false
+  },
+  {
+    "id": 2862511,
+    "question_id": 286251,
+    "value": "B",
+    "label": "However",
+    "is_correct": true
+  },
+  {
+    "id": 2862512,
+    "question_id": 286251,
+    "value": "C",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 2862513,
+    "question_id": 286251,
+    "value": "D",
+    "label": "Therefore",
+    "is_correct": false
+  },
+  {
+    "id": 1969540,
+    "question_id": 196954,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 1969541,
+    "question_id": 196954,
+    "value": "B",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 1969542,
+    "question_id": 196954,
+    "value": "C",
+    "label": "In addition,",
+    "is_correct": false
+  },
+  {
+    "id": 1969543,
+    "question_id": 196954,
+    "value": "D",
+    "label": "Incidentally,",
+    "is_correct": false
+  },
+  {
+    "id": 9195320,
+    "question_id": 919532,
+    "value": "A",
+    "label": "Furthermore,",
+    "is_correct": true
+  },
+  {
+    "id": 9195321,
+    "question_id": 919532,
+    "value": "B",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 9195322,
+    "question_id": 919532,
+    "value": "C",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 9195323,
+    "question_id": 919532,
+    "value": "D",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 1270160,
+    "question_id": 127016,
+    "value": "A",
+    "label": "Now,",
+    "is_correct": true
+  },
+  {
+    "id": 1270161,
+    "question_id": 127016,
+    "value": "B",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 1270162,
+    "question_id": 127016,
+    "value": "C",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 1270163,
+    "question_id": 127016,
+    "value": "D",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 9913280,
+    "question_id": 991328,
+    "value": "A",
+    "label": "Nonetheless",
+    "is_correct": true
+  },
+  {
+    "id": 9913281,
+    "question_id": 991328,
+    "value": "B",
+    "label": "Consequently",
+    "is_correct": false
+  },
+  {
+    "id": 9913282,
+    "question_id": 991328,
+    "value": "C",
+    "label": "Moreover",
+    "is_correct": false
+  },
+  {
+    "id": 9913283,
+    "question_id": 991328,
+    "value": "D",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 1318950,
+    "question_id": 131895,
+    "value": "A",
+    "label": "Consequently",
+    "is_correct": false
+  },
+  {
+    "id": 1318951,
+    "question_id": 131895,
+    "value": "B",
+    "label": "However",
+    "is_correct": true
+  },
+  {
+    "id": 1318952,
+    "question_id": 131895,
+    "value": "C",
+    "label": "Therefore",
+    "is_correct": false
+  },
+  {
+    "id": 1318953,
+    "question_id": 131895,
+    "value": "D",
+    "label": "Similarly",
+    "is_correct": false
+  },
+  {
+    "id": 4666560,
+    "question_id": 466656,
+    "value": "A",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 4666561,
+    "question_id": 466656,
+    "value": "B",
+    "label": "In contrast,",
+    "is_correct": true
+  },
+  {
+    "id": 4666562,
+    "question_id": 466656,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 4666563,
+    "question_id": 466656,
+    "value": "D",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 8461610,
+    "question_id": 846161,
+    "value": "A",
+    "label": "meanwhile",
+    "is_correct": true
+  },
+  {
+    "id": 8461611,
+    "question_id": 846161,
+    "value": "B",
+    "label": "in short",
+    "is_correct": false
+  },
+  {
+    "id": 8461612,
+    "question_id": 846161,
+    "value": "C",
+    "label": "therefore",
+    "is_correct": false
+  },
+  {
+    "id": 8461613,
+    "question_id": 846161,
+    "value": "D",
+    "label": "additionally",
+    "is_correct": false
+  },
+  {
+    "id": 6235660,
+    "question_id": 623566,
+    "value": "A",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 6235661,
+    "question_id": 623566,
+    "value": "B",
+    "label": "Ultimately,",
+    "is_correct": true
+  },
+  {
+    "id": 6235662,
+    "question_id": 623566,
+    "value": "C",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 6235663,
+    "question_id": 623566,
+    "value": "D",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 7910730,
+    "question_id": 791073,
+    "value": "A",
+    "label": "however,",
+    "is_correct": true
+  },
+  {
+    "id": 7910731,
+    "question_id": 791073,
+    "value": "B",
+    "label": "for example,",
+    "is_correct": false
+  },
+  {
+    "id": 7910732,
+    "question_id": 791073,
+    "value": "C",
+    "label": "in addition,",
+    "is_correct": false
+  },
+  {
+    "id": 7910733,
+    "question_id": 791073,
+    "value": "D",
+    "label": "therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 7663660,
+    "question_id": 766366,
+    "value": "A",
+    "label": "furthermore",
+    "is_correct": false
+  },
+  {
+    "id": 7663661,
+    "question_id": 766366,
+    "value": "B",
+    "label": "for example",
+    "is_correct": true
+  },
+  {
+    "id": 7663662,
+    "question_id": 766366,
+    "value": "C",
+    "label": "in conclusion",
+    "is_correct": false
+  },
+  {
+    "id": 7663663,
+    "question_id": 766366,
+    "value": "D",
+    "label": "conversely",
+    "is_correct": false
+  },
+  {
+    "id": 7235030,
+    "question_id": 723503,
+    "value": "A",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 7235031,
+    "question_id": 723503,
+    "value": "B",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 7235032,
+    "question_id": 723503,
+    "value": "C",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 7235033,
+    "question_id": 723503,
+    "value": "D",
+    "label": "Accordingly,",
+    "is_correct": false
+  },
+  {
+    "id": 2793160,
+    "question_id": 279316,
+    "value": "A",
+    "label": "Specifically,",
+    "is_correct": false
+  },
+  {
+    "id": 2793161,
+    "question_id": 279316,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 2793162,
+    "question_id": 279316,
+    "value": "C",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 2793163,
+    "question_id": 279316,
+    "value": "D",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 3266180,
+    "question_id": 326618,
+    "value": "A",
+    "label": "Conversely,",
+    "is_correct": false
+  },
+  {
+    "id": 3266181,
+    "question_id": 326618,
+    "value": "B",
+    "label": "Moreover,",
+    "is_correct": true
+  },
+  {
+    "id": 3266182,
+    "question_id": 326618,
+    "value": "C",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 3266183,
+    "question_id": 326618,
+    "value": "D",
+    "label": "Ultimately,",
+    "is_correct": false
+  },
+  {
+    "id": 1438510,
+    "question_id": 143851,
+    "value": "A",
+    "label": "However,",
+    "is_correct": false
+  },
+  {
+    "id": 1438511,
+    "question_id": 143851,
+    "value": "B",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 1438512,
+    "question_id": 143851,
+    "value": "C",
+    "label": "Specifically,",
+    "is_correct": false
+  },
+  {
+    "id": 1438513,
+    "question_id": 143851,
+    "value": "D",
+    "label": "Additionally,",
+    "is_correct": true
+  },
+  {
+    "id": 7987850,
+    "question_id": 798785,
+    "value": "A",
+    "label": "For example,",
+    "is_correct": true
+  },
+  {
+    "id": 7987851,
+    "question_id": 798785,
+    "value": "B",
+    "label": "In contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 7987852,
+    "question_id": 798785,
+    "value": "C",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 7987853,
+    "question_id": 798785,
+    "value": "D",
+    "label": "Moreover,",
+    "is_correct": false
+  },
+  {
+    "id": 7598340,
+    "question_id": 759834,
+    "value": "A",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 7598341,
+    "question_id": 759834,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 7598342,
+    "question_id": 759834,
+    "value": "C",
+    "label": "However,",
+    "is_correct": false
+  },
+  {
+    "id": 7598343,
+    "question_id": 759834,
+    "value": "D",
+    "label": "Ultimately,",
+    "is_correct": true
+  },
+  {
+    "id": 8408540,
+    "question_id": 840854,
+    "value": "A",
+    "label": "Consequently",
+    "is_correct": false
+  },
+  {
+    "id": 8408541,
+    "question_id": 840854,
+    "value": "B",
+    "label": "Nevertheless",
+    "is_correct": true
+  },
+  {
+    "id": 8408542,
+    "question_id": 840854,
+    "value": "C",
+    "label": "For instance",
+    "is_correct": false
+  },
+  {
+    "id": 8408543,
+    "question_id": 840854,
+    "value": "D",
+    "label": "Moreover",
+    "is_correct": false
+  },
+  {
+    "id": 5996210,
+    "question_id": 599621,
+    "value": "A",
+    "label": "however",
+    "is_correct": false
+  },
+  {
+    "id": 5996211,
+    "question_id": 599621,
+    "value": "B",
+    "label": "subsequently",
+    "is_correct": true
+  },
+  {
+    "id": 5996212,
+    "question_id": 599621,
+    "value": "C",
+    "label": "furthermore",
+    "is_correct": false
+  },
+  {
+    "id": 5996213,
+    "question_id": 599621,
+    "value": "D",
+    "label": "for example",
+    "is_correct": false
+  },
+  {
+    "id": 1664340,
+    "question_id": 166434,
+    "value": "A",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 1664341,
+    "question_id": 166434,
+    "value": "B",
+    "label": "As a result,",
+    "is_correct": true
+  },
+  {
+    "id": 1664342,
+    "question_id": 166434,
+    "value": "C",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 1664343,
+    "question_id": 166434,
+    "value": "D",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 6240190,
+    "question_id": 624019,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 6240191,
+    "question_id": 624019,
+    "value": "B",
+    "label": "Alternatively,",
+    "is_correct": false
+  },
+  {
+    "id": 6240192,
+    "question_id": 624019,
+    "value": "C",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 6240193,
+    "question_id": 624019,
+    "value": "D",
+    "label": "Additionally,",
+    "is_correct": false
+  },
+  {
+    "id": 9830950,
+    "question_id": 983095,
+    "value": "A",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 9830951,
+    "question_id": 983095,
+    "value": "B",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 9830952,
+    "question_id": 983095,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 9830953,
+    "question_id": 983095,
+    "value": "D",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 2678710,
+    "question_id": 267871,
+    "value": "A",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 2678711,
+    "question_id": 267871,
+    "value": "B",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 2678712,
+    "question_id": 267871,
+    "value": "C",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 2678713,
+    "question_id": 267871,
+    "value": "D",
+    "label": "In addition,",
+    "is_correct": false
+  },
+  {
+    "id": 3860900,
+    "question_id": 386090,
+    "value": "A",
+    "label": "Consequently",
+    "is_correct": true
+  },
+  {
+    "id": 3860901,
+    "question_id": 386090,
+    "value": "B",
+    "label": "Conversely",
+    "is_correct": false
+  },
+  {
+    "id": 3860902,
+    "question_id": 386090,
+    "value": "C",
+    "label": "Moreover",
+    "is_correct": false
+  },
+  {
+    "id": 3860903,
+    "question_id": 386090,
+    "value": "D",
+    "label": "Nevertheless",
+    "is_correct": false
+  },
+  {
+    "id": 7675640,
+    "question_id": 767564,
+    "value": "A",
+    "label": "However,",
+    "is_correct": true
+  },
+  {
+    "id": 7675641,
+    "question_id": 767564,
+    "value": "B",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 7675642,
+    "question_id": 767564,
+    "value": "C",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 7675643,
+    "question_id": 767564,
+    "value": "D",
+    "label": "Therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 6858710,
+    "question_id": 685871,
+    "value": "A",
+    "label": "For example,",
+    "is_correct": false
+  },
+  {
+    "id": 6858711,
+    "question_id": 685871,
+    "value": "B",
+    "label": "By contrast,",
+    "is_correct": false
+  },
+  {
+    "id": 6858712,
+    "question_id": 685871,
+    "value": "C",
+    "label": "Nevertheless,",
+    "is_correct": false
+  },
+  {
+    "id": 6858713,
+    "question_id": 685871,
+    "value": "D",
+    "label": "Therefore,",
+    "is_correct": true
+  },
+  {
+    "id": 779960,
+    "question_id": 77996,
+    "value": "A",
+    "label": "similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 779961,
+    "question_id": 77996,
+    "value": "B",
+    "label": "conversely,",
+    "is_correct": true
+  },
+  {
+    "id": 779962,
+    "question_id": 77996,
+    "value": "C",
+    "label": "furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 779963,
+    "question_id": 77996,
+    "value": "D",
+    "label": "therefore,",
+    "is_correct": false
+  },
+  {
+    "id": 2439130,
+    "question_id": 243913,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": false
+  },
+  {
+    "id": 2439131,
+    "question_id": 243913,
+    "value": "B",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 2439132,
+    "question_id": 243913,
+    "value": "C",
+    "label": "Specifically,",
+    "is_correct": false
+  },
+  {
+    "id": 2439133,
+    "question_id": 243913,
+    "value": "D",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 1865040,
+    "question_id": 186504,
+    "value": "A",
+    "label": "Accordingly,",
+    "is_correct": false
+  },
+  {
+    "id": 1865041,
+    "question_id": 186504,
+    "value": "B",
+    "label": "Conversely,",
+    "is_correct": true
+  },
+  {
+    "id": 1865042,
+    "question_id": 186504,
+    "value": "C",
+    "label": "For instance,",
+    "is_correct": false
+  },
+  {
+    "id": 1865043,
+    "question_id": 186504,
+    "value": "D",
+    "label": "Unquestionably,",
+    "is_correct": false
+  },
+  {
+    "id": 7232970,
+    "question_id": 723297,
+    "value": "A",
+    "label": "Accordingly,",
+    "is_correct": false
+  },
+  {
+    "id": 7232971,
+    "question_id": 723297,
+    "value": "B",
+    "label": "Nevertheless,",
+    "is_correct": true
+  },
+  {
+    "id": 7232972,
+    "question_id": 723297,
+    "value": "C",
+    "label": "Furthermore,",
+    "is_correct": false
+  },
+  {
+    "id": 7232973,
+    "question_id": 723297,
+    "value": "D",
+    "label": "Subsequently,",
+    "is_correct": false
+  },
+  {
+    "id": 1784790,
+    "question_id": 178479,
+    "value": "A",
+    "label": "similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 1784791,
+    "question_id": 178479,
+    "value": "B",
+    "label": "in fact,",
+    "is_correct": false
+  },
+  {
+    "id": 1784792,
+    "question_id": 178479,
+    "value": "C",
+    "label": "for example,",
+    "is_correct": false
+  },
+  {
+    "id": 1784793,
+    "question_id": 178479,
+    "value": "D",
+    "label": "by contrast,",
+    "is_correct": true
+  },
+  {
+    "id": 7299600,
+    "question_id": 729960,
+    "value": "A",
+    "label": "Consequently,",
+    "is_correct": true
+  },
+  {
+    "id": 7299601,
+    "question_id": 729960,
+    "value": "B",
+    "label": "Regardless,",
+    "is_correct": false
+  },
+  {
+    "id": 7299602,
+    "question_id": 729960,
+    "value": "C",
+    "label": "Similarly,",
+    "is_correct": false
+  },
+  {
+    "id": 7299603,
+    "question_id": 729960,
+    "value": "D",
+    "label": "Incidentally,",
+    "is_correct": false
+  }
+]
