@@ -1,0 +1,70 @@
+[
+  {
+    "question_id": 512291,
+    "question_text": "Which of the following ordered pairs (x, y) satisfies the inequality $2x + y > 6$ ?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question is incomplete as options I, II, and III are not defined (ordered pairs are missing). Without the ordered pairs corresponding to options I, II, and III, it is impossible to determine the correct answer or validate the provided correct option.",
+        "The question refers to options I, II, and III, but these options are not provided in the question text.  This makes the question unsolvable as it is presented."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is fundamentally flawed because it refers to options labeled I, II, and III without actually providing what those options are.  Specifically, the ordered pairs that are supposed to be evaluated are missing.  Therefore, it is impossible to determine which option is correct or to validate the marked answer 'D'.  Assuming that the question intends to be valid and 'D' is meant to be the correct answer, then options I and III should represent ordered pairs that satisfy the inequality $2x + y > 6$, and option II should represent an ordered pair that does not. However, without knowing the actual ordered pairs, we cannot confirm this or deem the question valid.  The question is incomplete and cannot be used in its current form."
+    }
+  },
+  {
+    "question_id": 815458,
+    "question_text": "Which point (x, y) is a solution to the given inequality in the xy-plane?  $$y > 2x - 3$$...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question has more than one correct answer. Options A and B are both valid solutions to the inequality."
+      ],
+      "correct_answer": "B",
+      "explanation": "To check if a point (x, y) is a solution to the inequality y > 2x - 3, we substitute the x and y values of the point into the inequality and check if it holds true.\n\nOption A: (-5, 0)\ny > 2x - 3\n0 > 2(-5) - 3\n0 > -10 - 3\n0 > -13  (True)\nOption A is a solution.\n\nOption B: (2, 2)\ny > 2x - 3\n2 > 2(2) - 3\n2 > 4 - 3\n2 > 1  (True)\nOption B is a solution.\n\nOption C: (1, -1)\ny > 2x - 3\n-1 > 2(1) - 3\n-1 > 2 - 3\n-1 > -1  (False)\nOption C is not a solution.\n\nOption D: (1, -3)\ny > 2x - 3\n-3 > 2(1) - 3\n-3 > 2 - 3\n-3 > -1  (False)\nOption D is not a solution.\n\nBoth options A and B are correct solutions to the inequality. For a multiple-choice SAT question, there should ideally be only one correct answer among the options provided.  While option B is marked as correct, option A is also valid, making the question flawed as it currently stands. Options C and D are correctly identified as incorrect."
+    }
+  },
+  {
+    "question_id": 566144,
+    "question_text": "A streaming service offers two plans for watching movies and shows. Plan A is a monthly subscription...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is incorrect. The correct answer should be option C.",
+        "Option B (12) does not satisfy the condition that Plan A is less expensive than Plan B. For 12 titles, Plan B costs $4.50 * 12 = $54, which is less than Plan A's cost of $55. Plan A is not less expensive.",
+        "Option D (14) is also a valid number of titles for which Plan A is less expensive, but it is not the *minimum* number among the options that satisfy the condition. However, in a multiple-choice context, there should be only one best answer, and in this case, the question is asking for the *minimum* number, so option C is the most appropriate answer from the given choices."
+      ],
+      "correct_answer": "C",
+      "explanation": "To find the minimum number of titles for Plan A to be less expensive than Plan B, we need to set up an inequality. Let 'x' be the number of titles streamed. The cost of Plan A is $55. The cost of Plan B is $4.50x. We want to find the smallest integer x for which 55 < 4.50x. Dividing both sides by 4.50, we get x > 55 / 4.50, which simplifies to x > 12.22... Since the number of titles must be a whole number, the minimum number of titles is 13. Let's check: For 12 titles, Plan B costs $4.50 * 12 = $54, which is less than $55. For 13 titles, Plan B costs $4.50 * 13 = $58.50, which is more than $55. Therefore, the minimum number of titles is 13, corresponding to option C. Option B, which is marked as correct, is incorrect."
+    }
+  },
+  {
+    "question_id": 373941,
+    "question_text": "Leo works at a coffee shop and earns $12 per hour for the first 8 hours he works each week. For each...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 7) is incorrect.",
+        "None of the provided options are actually correct for the question as stated.",
+        "Based on calculations, the least number of hours Leo must work after the first 8 hours to save at least $225 is 14 hours, which is not among the options."
+      ],
+      "correct_answer": null,
+      "explanation": "To solve this problem, we need to determine the number of hours Leo needs to work after the first 8 hours to save at least $225.First, calculate Leo's earnings for the first 8 hours: 8 hours * $12/hour = $96.Let 'x' be the number of hours Leo works after the first 8 hours. His earnings for these hours will be x hours * $15/hour = $15x.Total earnings for the week are $96 + $15x.Leo saves 75% of his total earnings, so his savings are 0.75 * ($96 + $15x).We want his savings to be at least $225, so we set up the inequality:0.75 * ($96 + $15x) >= $225Divide both sides by 0.75:$96 + $15x >= $225 / 0.75$96 + $15x >= 300Subtract 96 from both sides:$15x >= 300 - 96$15x >= 204Divide both sides by 15:x >= 204 / 15x >= 13.6Since the number of hours must be a whole number, Leo must work at least 14 hours after the first 8 hours.Let's check the provided option A (7 hours):Total earnings = (8 * $12) + (7 * $15) = $96 + $105 = $201Savings = 0.75 * $201 = $150.75. This is less than $225.Let's check if 14 hours after the first 8 hours works:Total earnings = (8 * $12) + (14 * $15) = $96 + $210 = $306Savings = 0.75 * $306 = $229.5. This is at least $225.Therefore, the least number of hours he must work after the first 8 hours is 14.  Option A (7) is incorrect, and none of the provided options are correct. The question is clearly written and makes sense, but the provided correct answer is wrong, making the question invalid as an SAT question with multiple-choice options where only one is supposed to be correct."
+    }
+  },
+  {
+    "question_id": 419379,
+    "question_text": "Which of the following consists of the y-coordinates of all the points that satisfy the system of in...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question asks for the y-coordinates of points satisfying inequalities that only involve x. This implies that the y-coordinate can be any real number, as there is no constraint on y. However, the options provided are in the form 'v > number', suggesting a lower bound for y, which contradicts the fact that y can be any real number.",
+        "The option marked as correct (B. v > 5) is not actually correct. Based on the given inequalities, the set of y-coordinates should be all real numbers, not y > 5.",
+        "All other options are also technically incorrect as they also suggest a lower bound for y, rather than the set of all real numbers.",
+        "The question is misleading and does not logically connect the x-inequalities to a restriction on y-coordinates. It seems to be based on a misunderstanding or error in question design."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is flawed because it asks for the y-coordinates of points that satisfy a system of inequalities involving only x. Solving the inequalities, we get x > -4 and x > 5, which simplifies to x > 5. This condition only restricts the x-coordinate. There is no restriction on the y-coordinate, meaning y can be any real number. The options provided are all in the form 'v > number', suggesting a lower bound for y, which is inconsistent with the problem statement.  The option marked as correct (B. v > 5) is incorrect because it implies that y must be greater than 5, which is not derived from the given inequalities.  The question likely contains an error in its formulation, possibly intending to ask about x-coordinates or having a different relationship between x and y in mind that is not explicitly stated."
+    }
+  }
+]
