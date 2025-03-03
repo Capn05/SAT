@@ -1,0 +1,356 @@
+[
+  {
+    "question_id": 716863,
+    "question_text": "A fruit vendor has two baskets of fruits. In the first basket, 20% of the fruits are apples, and in ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. Option A, which is marked as correct, accurately represents the given scenario.  Let x be the total number of fruits in the first basket and y be the total number of fruits in the second basket.  In the first basket, 20% are apples, so there are 0.2x apples. In the second basket, 60% are apples, so there are 0.6y apples. The total number of apples is the sum of apples from both baskets, which is 0.2x + 0.6y. The question states that together, the baskets must contain 'at least 300 apples', which translates to 'greater than or equal to 300'. Therefore, the correct inequality is 0.2x + 0.6y ≥ 300, which is option A.Option B is incorrect because it reverses the percentages, applying 60% to the first basket and 20% to the second. Option C is incorrect because it uses '≤' (less than or equal to), meaning 'at most 300 apples', which contradicts the requirement of 'at least 300 apples'. Option D is incorrect because it uses '<' (less than), meaning 'less than 300 apples', also contradicting the requirement of 'at least 300 apples'.There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it involves a straightforward translation of a word problem into a linear inequality, a fundamental concept in early algebra."
+    }
+  },
+  {
+    "question_id": 284992,
+    "question_text": "Sarah is buying notebooks and pens for school. Notebooks cost $2.50 each and pens cost $1.50 each. S...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the inequality representing Sarah's spending constraint. Option B, 2.50n + 1.50p < 18, correctly represents the situation where the total cost of notebooks (2.50n) and pens (1.50p) is less than $18. Options A, C, and D are incorrect because they either use the wrong inequality symbol ('>' instead of '<') or incorrectly assign the prices to the variables n and p, or both. The question is grammatically sound and appropriately categorized as 'Easy' for the SAT."
+    }
+  },
+  {
+    "question_id": 310670,
+    "question_text": "A fruit vendor sells baskets of oranges. Each basket contains at least 25 oranges but no more than 3...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To determine the possible range for the total number of oranges in 6 baskets, we need to consider the minimum and maximum number of oranges per basket. \n\nMinimum oranges per basket: 25\nMaximum oranges per basket: 35\nNumber of baskets: 6\n\nMinimum total oranges = Minimum oranges per basket * Number of baskets = 25 * 6 = 150\nMaximum total oranges = Maximum oranges per basket * Number of baskets = 35 * 6 = 210\n\nTherefore, the total number of oranges in 6 baskets must be between 150 and 210, inclusive.\n\nLet's check each option:\nA. 140: This is less than the minimum possible total of 150, so it is incorrect.\nB. 195: This is within the possible range (150 ≤ 195 ≤ 210), so it could be correct.\nC. 220: This is greater than the maximum possible total of 210, so it is incorrect.\nD. 240: This is greater than the maximum possible total of 210, so it is incorrect.\n\nOption B (195) is the only option that falls within the possible range of total oranges. Thus, option B is the correct answer, and options A, C, and D are clearly incorrect. The difficulty level 'Easy' is appropriate as it involves basic multiplication and understanding of ranges."
+    }
+  },
+  {
+    "question_id": 167406,
+    "question_text": "A student worked 20, 25, and 15 hours in the first three weeks at a part-time job. Solving which ine...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A,  $$\frac{20+25+15+H}{4} ≥ 22$$, is the correct inequality because it represents the average hours worked over four weeks being greater than or equal to 22.  Options B, C, and D are incorrect. Option B uses the wrong inequality sign (less than or equal to). Option C calculates the average over only three weeks instead of four. Option D does not calculate the average at all, but rather the sum of hours being greater than or equal to 22. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a basic understanding of average and translating a word problem into a linear inequality."
+    }
+  },
+  {
+    "question_id": 794539,
+    "question_text": "To earn a 'Bronze' medal in a robotics competition, a team's robot must complete the obstacle course...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. The condition for earning a 'Bronze' medal is that the robot's completion time must be greater than 25 seconds and less than or equal to 30 seconds. Option B, 25.1 seconds, is the only option that satisfies this condition: 25.1 > 25 and 25.1 <= 30. Options A, C, and D are incorrect because: \n- Option A (24.9 seconds) is not more than 25 seconds.\n- Option C (30.1 seconds) is not less than or equal to 30 seconds.\n- Option D (31 seconds) is not less than or equal to 30 seconds.\nThere are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question as it tests basic understanding of inequalities."
+    }
+  },
+  {
+    "question_id": 512291,
+    "question_text": "Which of the following ordered pairs (x, y) satisfies the inequality $2x + y > 6$ ?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question is incomplete as options I, II, and III are not defined (ordered pairs are missing). Without the ordered pairs corresponding to options I, II, and III, it is impossible to determine the correct answer or validate the provided correct option.",
+        "The question refers to options I, II, and III, but these options are not provided in the question text.  This makes the question unsolvable as it is presented."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is fundamentally flawed because it refers to options labeled I, II, and III without actually providing what those options are.  Specifically, the ordered pairs that are supposed to be evaluated are missing.  Therefore, it is impossible to determine which option is correct or to validate the marked answer 'D'.  Assuming that the question intends to be valid and 'D' is meant to be the correct answer, then options I and III should represent ordered pairs that satisfy the inequality $2x + y > 6$, and option II should represent an ordered pair that does not. However, without knowing the actual ordered pairs, we cannot confirm this or deem the question valid.  The question is incomplete and cannot be used in its current form."
+    }
+  },
+  {
+    "question_id": 354787,
+    "question_text": "A coffee shop sells small coffees for $2 and large coffees for $4.  During the morning rush, the bar...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The problem describes a scenario where a coffee shop sells small coffees for $2 and large coffees for $4. The barista wants the total revenue to be at least $60. If 'x' represents the number of small coffees and 'y' represents the number of large coffees, the total revenue can be expressed as 2x + 4y.  'At least $60' translates to 'greater than or equal to 60'. Therefore, the correct inequality is 2x + 4y ≥ 60, which corresponds to option B. Options A, C, and D are incorrect because they either use the wrong inequality sign (≤ instead of ≥) or incorrectly assign the prices to the variables x and y (reversing the prices for small and large coffees)."
+    }
+  },
+  {
+    "question_id": 668608,
+    "question_text": "A bakery is making cookies and cakes for a school event. Let $x$ be the number of cookies and $y$ be...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A correctly models the given situation: 'at least 50 items in total' is represented by $x + y \\\\geq 50$, and 'total baking time should be no more than 120 minutes' is represented by $2x + 5y \\\\leq 120$, where $x$ is the number of cookies (2 minutes each) and $y$ is the number of cakes (5 minutes each). Options B, C, and D are incorrect because they misrepresent either the total number of items constraint or the baking time constraint, or both. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for an SAT question on linear inequalities, as it involves a direct translation of word problem constraints into mathematical inequalities."
+    }
+  },
+  {
+    "question_id": 722898,
+    "question_text": "A taxi service charges a flat fee of $3 plus $2.50 per mile driven. Michael wants to spend no more t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the maximum number of miles Michael can travel, we need to set up an inequality based on the given information. Let 'm' be the number of miles. The cost of the taxi ride is $3 (flat fee) + $2.50 * m (per mile charge). Michael wants to spend no more than $28, so the inequality is: 3 + 2.50 * m <= 28.  Subtracting 3 from both sides gives 2.50 * m <= 25. Dividing both sides by 2.50 gives m <= 10. Since the distance is measured in whole miles, the maximum number of miles Michael can travel is 10. Option B (10) is indeed the correct answer. Options A (9), C (11), and D (12) are incorrect because 9 miles is less than the maximum, while 11 and 12 miles exceed Michael's budget. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward application of linear inequalities."
+    }
+  },
+  {
+    "question_id": 545539,
+    "question_text": "A hardware store needs to stock up on boxes of nails for the upcoming week. They estimate they will ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the minimum number of cartons, we need to divide the minimum number of boxes needed (200) by the number of boxes per carton (24). 200 divided by 24 is approximately 8.33. Since the hardware store cannot purchase a fraction of a carton, they must round up to the next whole number to ensure they have at least 200 boxes of nails. Rounding 8.33 up to the nearest whole number gives 9. Therefore, the minimum number of cartons needed is 9. Option C (9) is indeed the correct answer. Options A (7) and B (8) are incorrect because they would result in fewer than 200 boxes of nails (7 cartons * 24 boxes/carton = 168 boxes, 8 cartons * 24 boxes/carton = 192 boxes). Option D (10) is not the *minimum* number of cartons required, although it would meet the need. In the context of SAT questions asking for the 'minimum', option C is the most appropriate correct answer. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' as it involves a single-step word problem requiring basic division and rounding."
+    }
+  },
+  {
+    "question_id": 258502,
+    "question_text": "A certain chemical reaction is most effective when the temperature is between 25 degrees Celsius and...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. It accurately describes a scenario where a temperature range is given for optimal effectiveness and asks for the corresponding inequality. Option D, $25 \\\\leq t \\\\leq 40$, is indeed the correct representation of 'between 25 degrees Celsius and 40 degrees Celsius, inclusive'. Options A ($t < 25$), B ($25 < t < 40$), and C ($t > 40$) are all clearly incorrect as they do not represent the given inclusive range. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a fundamental understanding of translating a verbal description into a linear inequality."
+    }
+  },
+  {
+    "question_id": 56955,
+    "question_text": "A delivery truck is transporting two types of boxes: small boxes weighing 30 pounds each and large b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Let 'x' be the number of small boxes and 'y' be the number of large boxes. We have two constraints: x + y ≥ 12 (minimum number of boxes) and 30x + 50y ≤ 600 (maximum weight). To maximize 'y', we should minimize 'x' while satisfying both constraints. \n\nLet's test option C (12 large boxes). If y = 12, the weight from large boxes is 50 * 12 = 600 pounds. To meet the minimum box requirement (x + y ≥ 12), we can have x = 0. In this case, x + y = 0 + 12 = 12, and the total weight is 30*0 + 50*12 = 600 pounds. Both conditions are satisfied. \n\nNow let's check if we can have more than 12 large boxes. If we try y = 13, the weight from large boxes alone would be 50 * 13 = 650 pounds, which exceeds the maximum weight limit of 600 pounds. Therefore, 12 is the maximum number of large boxes. \n\nOptions A (10) and B (11) are possible but not the maximum. Option D (13) is not possible because it exceeds the weight limit. Thus, option C is the only correct answer, and options A, B, and D are clearly incorrect. The difficulty level 'Medium' is appropriate as it requires setting up and solving linear inequalities in a word problem context."
+    }
+  },
+  {
+    "question_id": 731832,
+    "question_text": "A bakery is making cookies and cakes for a large order. They need to make at least 50 items in total...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A correctly represents all the given conditions as a system of linear inequalities: \n- 'at least 50 items in total':  $x + y \\\\geq 50$\n- 'maximum of 15 hours (900 minutes) of preparation time': $10x + 25y \\\\leq 900$\n- 'at least 20 cookies': $x \\\\geq 20$\n- 'at least 10 cakes': $y \\\\geq 10$\n\nOption B is incorrect because it reverses the inequalities for total preparation time and total items, using $\\\\geq$ for preparation time (implying minimum time) and $\\\\leq$ for total items (implying maximum items).\nOption C is incorrect because it reverses the inequalities for the minimum number of cookies and cakes, using $\\\\leq$ instead of $\\\\geq$.\nOption D is incorrect as it reverses the inequalities for total preparation time and total items, and also incorrectly sets upper bounds for the number of cookies and cakes instead of lower bounds.\n\nThere are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding of translating word problems into linear inequalities, a standard topic for the SAT."
+    }
+  },
+  {
+    "question_id": 544509,
+    "question_text": "A shipping company uses cylindrical containers to transport goods. The standard diameter of a contai...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the possible number of containers, we need to consider the range of container diameters. \n\nMinimum number of containers: This occurs when the container diameter is at its maximum (5 feet). In this case, the number of containers is $60 \text{ feet} / 5 \text{ feet/container} = 12 \text{ containers}$.\n\nMaximum number of containers: This occurs when the container diameter is at its minimum (4 feet). In this case, the number of containers is $60 \text{ feet} / 4 \text{ feet/container} = 15 \text{ containers}$.\n\nSince the diameter can be any value between 4 and 5 feet inclusive, the number of containers $n$ can be any integer value between 12 and 15 inclusive. Therefore, the possible values of $n$ are described by the inequality $12 \\\\leq n \\\\leq 15$.\n\nOption A, $12 \\\\leq n \\\\leq 15$, is the correct answer and matches our derivation.\n\nOption B, $4 < n < 5$, is incorrect as it describes the range of diameters, not the number of containers.\n\nOption C, $12 < n < 15$, is incorrect because it excludes the cases where the diameter is exactly 4 feet or 5 feet, which are allowed, leading to $n=15$ and $n=12$ respectively. The question states 'at least 4 feet and no more than 5 feet', which includes 4 and 5.\n\nOption D, $4 \\\\leq n \\\\leq 60$, is incorrect. The lower bound of 4 is related to the minimum diameter but is not directly the minimum number of containers. The upper bound of 60 is far too high and doesn't logically follow from the problem constraints.\n\nThe difficulty level of 'Medium' is appropriate as it requires basic division and understanding of inequalities, skills typically expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 590518,
+    "question_text": "Which of the following ordered pairs (x, y) is a solution to the system of inequalities below?  $$y ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the solution to a system of linear inequalities. To check if an ordered pair (x, y) is a solution, we substitute the values of x and y into both inequalities.For Option A (0, 0):Inequality 1: y ≥ x + 1  =>  0 ≥ 0 + 1  =>  0 ≥ 1 (False)Since the first inequality is false, (0, 0) is not a solution.For Option B (-2, 0):Inequality 1: y ≥ x + 1  =>  0 ≥ -2 + 1  =>  0 ≥ -1 (True)Inequality 2: y ≤ -x - 1 =>  0 ≤ -(-2) - 1 =>  0 ≤ 2 - 1  =>  0 ≤ 1 (True)Since both inequalities are true, (-2, 0) is a solution.For Option C (0, -2):Inequality 1: y ≥ x + 1  =>  -2 ≥ 0 + 1  =>  -2 ≥ 1 (False)Since the first inequality is false, (0, -2) is not a solution.For Option D (-2, -2):Inequality 1: y ≥ x + 1  =>  -2 ≥ -2 + 1  =>  -2 ≥ -1 (False)Since the first inequality is false, (-2, -2) is not a solution.Option B (-2, 0) is the only ordered pair that satisfies both inequalities. Therefore, Option B is the correct answer, and the marked answer is indeed correct. All other options are clearly incorrect as they fail to satisfy at least one of the inequalities. The question is grammatically correct, and the difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 815458,
+    "question_text": "Which point (x, y) is a solution to the given inequality in the xy-plane?  $$y > 2x - 3$$...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question has more than one correct answer. Options A and B are both valid solutions to the inequality."
+      ],
+      "correct_answer": "B",
+      "explanation": "To check if a point (x, y) is a solution to the inequality y > 2x - 3, we substitute the x and y values of the point into the inequality and check if it holds true.\n\nOption A: (-5, 0)\ny > 2x - 3\n0 > 2(-5) - 3\n0 > -10 - 3\n0 > -13  (True)\nOption A is a solution.\n\nOption B: (2, 2)\ny > 2x - 3\n2 > 2(2) - 3\n2 > 4 - 3\n2 > 1  (True)\nOption B is a solution.\n\nOption C: (1, -1)\ny > 2x - 3\n-1 > 2(1) - 3\n-1 > 2 - 3\n-1 > -1  (False)\nOption C is not a solution.\n\nOption D: (1, -3)\ny > 2x - 3\n-3 > 2(1) - 3\n-3 > 2 - 3\n-3 > -1  (False)\nOption D is not a solution.\n\nBoth options A and B are correct solutions to the inequality. For a multiple-choice SAT question, there should ideally be only one correct answer among the options provided.  While option B is marked as correct, option A is also valid, making the question flawed as it currently stands. Options C and D are correctly identified as incorrect."
+    }
+  },
+  {
+    "question_id": 678892,
+    "question_text": "A certain plant is 5 inches tall when planted and grows more than 0.5 inch but less than 0.75 inch p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the possible heights after 52 weeks, we need to calculate the minimum and maximum possible growth. The minimum growth per week is more than 0.5 inch, and the maximum growth per week is less than 0.75 inch. \n\nMinimum growth over 52 weeks: 52 weeks * 0.5 inch/week = 26 inches\nMaximum growth over 52 weeks: 52 weeks * 0.75 inch/week = 39 inches\n\nMinimum height after 52 weeks: Initial height + Minimum growth = 5 inches + 26 inches = 31 inches\nMaximum height after 52 weeks: Initial height + Maximum growth = 5 inches + 39 inches = 44 inches\n\nTherefore, the possible heights $h$ are represented by the inequality 31 < h < 44. Option B, 31 < h < 44, correctly represents this range. Options A, C, and D are incorrect because they do not encompass the calculated range of possible heights. The difficulty level is appropriately classified as Medium, as it requires understanding of linear inequalities and basic arithmetic. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 506663,
+    "question_text": "The cost $C$ of a taxi ride, in dollars, is given by the formula $C = 2d + 5$, where $d$ is the dist...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The options use strict inequalities (<) while the mathematically precise range for the cost, based on the inclusive distance range, should be inclusive inequalities (<=). Option B, marked as correct, represents the open interval (11, 19) which technically excludes the minimum and maximum possible costs of $11 and $19. However, among the given options, it is the numerically closest to the actual range [11, 19] and likely intended as the best answer in a multiple-choice context.  Options A, C, and D are less accurate representations of the cost range."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. Given the distance range 3 ≤ d ≤ 7 and the cost formula C = 2d + 5, we can calculate the minimum and maximum costs. When d = 3, C = 2(3) + 5 = 11. When d = 7, C = 2(7) + 5 = 19. Therefore, the cost range is 11 ≤ C ≤ 19.  Ideally, an option with inclusive inequalities should be present. However, among the provided options using strict inequalities, option B, 11 < C < 19, is the numerically closest and is marked as correct. While technically not perfectly representing the inclusive range, it is likely considered the best approximation within the given choices for an SAT question. Options A, C, and D are less accurate: A is too low, and C and D are wider ranges that are less precise than option B."
+    }
+  },
+  {
+    "question_id": 443293,
+    "question_text": "A coffee shop estimates that on a typical weekday, they sell between 350 and 400 cups of coffee befo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "1. **Clarity and Sense:** The question is clearly written and makes logical sense. It provides the range of coffee cups sold and the price per cup and asks for the inequality representing the possible total revenue. The relationship between cups sold, price, and revenue is straightforward (Revenue = Number of cups * Price per cup).2. **Correctness of Option B:** Option B, (350)(3) < x < (400)(3), is indeed the correct answer.    - The lower bound of coffee cups is 350. The minimum revenue is 350 cups * $3/cup = $1050.    - The upper bound of coffee cups is 400. The maximum revenue is 400 cups * $3/cup = $1200.    - Option B correctly represents the revenue 'x' being between $1050 and $1200.3. **Incorrectness of Other Options:**    - **Option A: 350 + 3 < x < 400 + 3**  This option incorrectly adds the price of coffee to the number of cups instead of multiplying. It represents the revenue being between 353 and 403, which is not logically derived from the given information.    - **Option C: 350 < 3 + x < 400** This option incorrectly adds the price to the revenue and places the sum between the number of cups.  Rearranging this inequality to solve for x would give 347 < x < 397, which is also not the correct revenue range.    - **Option D: 350 < 3x < 400** This option incorrectly multiplies the revenue by the price and places the product between the number of cups. Solving for x would give approximately 116.67 < x < 133.33, which is far from the possible revenue range.4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question text or the options.5. **Appropriateness of Difficulty Level:** The difficulty level is appropriately marked as 'Medium'. It requires a basic understanding of revenue calculation and translating a word problem into a linear inequality. It is a standard type of question expected at the SAT level, not too trivial but also not overly complex, making 'Medium' a suitable classification."
+    }
+  },
+  {
+    "question_id": 338771,
+    "question_text": "A small business currently spends $1,500 per year on traditional light bulbs. The owner is consideri...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the number of years (t) when the total electricity cost savings exceed the installation cost, we first need to calculate the annual savings. The annual savings from switching to LED bulbs is the difference between the current annual cost and the new annual cost: $1,500 - $900 = $600 per year.  The total savings after t years will be $600t. We want to find when this total savings exceeds the installation cost of $4,800.  This can be represented by the inequality: 600t > 4,800.  Option B, 4,800 < (1,500 - 900)t, simplifies to 4,800 < 600t, which is the correct inequality. Options A, C, and D do not correctly represent the relationship described in the problem. Option A represents when the installation cost is greater than the savings. Option C and D do not correctly formulate the savings or compare it to the installation cost in the way described in the problem. The difficulty level 'Medium' is appropriate as it requires translating a word problem into a mathematical inequality, a skill tested at the SAT level."
+    }
+  },
+  {
+    "question_id": 122107,
+    "question_text": "Which of the following ordered pairs (x, y) satisfies the system of inequalities below?\\n$$y > -2x +...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the ordered pair that satisfies the given system of inequalities. \n\nTo check if option D (2, 1) is correct, we substitute x=2 and y=1 into both inequalities:\nInequality 1: y > -2x + 3  =>  1 > -2(2) + 3  =>  1 > -4 + 3  =>  1 > -1 (True)\nInequality 2: x + y ≤ 4  =>  2 + 1 ≤ 4  =>  3 ≤ 4 (True)\nSince (2, 1) satisfies both inequalities, option D is indeed the correct answer.\n\nLet's check why other options are incorrect:\nOption A (1, 1):\nInequality 1: 1 > -2(1) + 3  =>  1 > 1 (False)\nOption B (0, 5):\nInequality 2: 0 + 5 ≤ 4  =>  5 ≤ 4 (False)\nOption C (3, 2):\nInequality 2: 3 + 2 ≤ 4  =>  5 ≤ 4 (False)\n\nOptions A, B, and C do not satisfy at least one of the inequalities, making them incorrect. The question is grammatically correct, well-formatted, and of appropriate medium difficulty for the SAT."
+    }
+  },
+  {
+    "question_id": 661631,
+    "question_text": "The formula to convert Celsius (C) to Fahrenheit (F) is $F = \\frac{9}{5}C + 32$. The Fahrenheit temp...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The option marked as correct (A) uses '<' (less than) instead of '$\\\\leq$' (less than or equal to). The phrase 'at most 41 degrees Fahrenheit' mathematically translates to 'less than or equal to 41'. Therefore, the most accurate inequality should be $\frac{9}{5}C + 32 \\\\leq 41$. However, among the given options, option A is the closest and most reasonable choice, as it correctly uses the conversion formula and the direction of the inequality, even if it is slightly less precise by using '<' instead of '$\\\\leq$'.  Ideally, an option with '$\\\\leq$' should have been provided."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the inequality representing the condition for Celsius temperature when Fahrenheit temperature is at most 41 degrees. The correct conversion formula is given as $F = \frac{9}{5}C + 32$. 'At most 41 degrees Fahrenheit' means $F \\\\leq 41$. Substituting the formula, we get $\frac{9}{5}C + 32 \\\\leq 41$. Option A, $\frac{9}{5}C + 32 < 41$, is marked as correct. While option A uses '<' instead of the more accurate '$\\\\leq$', it is the closest and most reasonable option among the choices provided. Options B, C, and D are clearly incorrect: Option B uses '$\\\\geq$' which is the opposite of 'at most', and options C and D use the incorrect conversion factor $\frac{5}{9}$ instead of $\frac{9}{5}$.  The difficulty level 'Medium' is appropriate as it requires understanding of linear inequalities and formula application.  Despite the slight imprecision in option A using '<' instead of '$\\\\leq$', the question is considered valid in the context of multiple-choice options where option A is the best and most reasonable answer available."
+    }
+  },
+  {
+    "question_id": 313507,
+    "question_text": "Maria's office is a 25-minute bike ride or a 10-minute car drive away from her home. The traffic lig...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. We are given that biking takes 25 minutes and driving takes 10 minutes plus a waiting time 't'. For biking to be faster than driving, the bike time must be less than the car time. Car time is the sum of driving time and waiting time, which is 10 + t. So, we need to find the condition where 25 < 10 + t.  Rearranging this inequality, we get t > 25 - 10, which simplifies to t > 15. Option B, t + 10 > 25, is equivalent to t > 15. Therefore, option B is the correct answer.Let's examine the other options:Option A: t + 10 < 25 implies t < 15, which means driving is faster.Option C: t + 25 < 10 implies t < -15, which is impossible as waiting time cannot be negative and also doesn't represent the condition for biking to be faster.Option D: t + 25 > 10 is always true for any non-negative t, and doesn't represent the condition for biking to be faster.All other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level is appropriate for 'Hard' as it requires understanding the problem context, translating it into a mathematical inequality, and solving it."
+    }
+  },
+  {
+    "question_id": 957984,
+    "question_text": "A craft store is making bracelets and necklaces to sell at a fair. Each bracelet requires 20 beads a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It accurately describes a scenario involving constraints on beads and the ratio of bracelets to necklaces. \n\nOption A is correct because:\n- The inequality '20b + 50n ≤ 1000' correctly represents the constraint on the total number of beads. Each bracelet uses 20 beads, each necklace uses 50 beads, and the total beads used must be at most 1000.\n- The inequality 'b ≥ 2n' correctly represents the requirement that the store wants to make at least twice as many bracelets as necklaces. The number of bracelets (b) must be greater than or equal to twice the number of necklaces (2n).\n\nOptions B, C, and D are incorrect:\n- Option B is incorrect because the second inequality '2b ≥ n' represents 'at least half as many necklaces as bracelets' or 'at most twice as many bracelets as necklaces', which is the opposite of what is stated in the problem.\n- Option C is incorrect because the first inequality '50b + 20n ≤ 1000' incorrectly assigns 50 beads to bracelets and 20 beads to necklaces, reversing the given information.\n- Option D is incorrect because it combines both errors from options B and C. The first inequality is incorrect due to reversed bead counts, and the second inequality represents the wrong ratio between bracelets and necklaces.\n\nThere are no grammatical or formatting issues that affect the question's clarity. The difficulty level 'Hard' is appropriate as it requires translating a word problem into a system of inequalities, which is a skill tested in the SAT math section at a higher difficulty level."
+    }
+  },
+  {
+    "question_id": 566144,
+    "question_text": "A streaming service offers two plans for watching movies and shows. Plan A is a monthly subscription...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is incorrect. The correct answer should be option C.",
+        "Option B (12) does not satisfy the condition that Plan A is less expensive than Plan B. For 12 titles, Plan B costs $4.50 * 12 = $54, which is less than Plan A's cost of $55. Plan A is not less expensive.",
+        "Option D (14) is also a valid number of titles for which Plan A is less expensive, but it is not the *minimum* number among the options that satisfy the condition. However, in a multiple-choice context, there should be only one best answer, and in this case, the question is asking for the *minimum* number, so option C is the most appropriate answer from the given choices."
+      ],
+      "correct_answer": "C",
+      "explanation": "To find the minimum number of titles for Plan A to be less expensive than Plan B, we need to set up an inequality. Let 'x' be the number of titles streamed. The cost of Plan A is $55. The cost of Plan B is $4.50x. We want to find the smallest integer x for which 55 < 4.50x. Dividing both sides by 4.50, we get x > 55 / 4.50, which simplifies to x > 12.22... Since the number of titles must be a whole number, the minimum number of titles is 13. Let's check: For 12 titles, Plan B costs $4.50 * 12 = $54, which is less than $55. For 13 titles, Plan B costs $4.50 * 13 = $58.50, which is more than $55. Therefore, the minimum number of titles is 13, corresponding to option C. Option B, which is marked as correct, is incorrect."
+    }
+  },
+  {
+    "question_id": 652938,
+    "question_text": "A car rental company charges a base daily rate of $d dollars, plus an additional charge of $0.10 for...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The total cost of renting a car for a day is given by the expression $d + 0.10m$, where $d$ is the base daily rate and $m$ is the number of miles driven. The problem states that the customer wants the total cost to be at least 1.5 times and at most 2 times the base daily rate. This can be written as the compound inequality: $1.5d \\\\leq d + 0.10m \\\\leq 2d$.To solve for $m$, we can break this into two separate inequalities:1) $1.5d \\\\leq d + 0.10m$Subtract $d$ from both sides: $1.5d - d \\\\leq 0.10m$$0.5d \\\\leq 0.10m$Divide both sides by $0.10$: $\frac{0.5d}{0.10} \\\\leq m$$5d \\\\leq m$2) $d + 0.10m \\\\leq 2d$Subtract $d$ from both sides: $0.10m \\\\leq 2d - d$$0.10m \\\\leq d$Divide both sides by $0.10$: $m \\\\leq \frac{d}{0.10}$$m \\\\leq 10d$Combining these two inequalities, we get $5d \\\\leq m \\\\leq 10d$. This matches option A.Options B, C, and D are incorrect because they do not represent the solution to the derived inequality.Option B: $0.5d \\\\leq m \\\\leq d$ - This would mean the total cost is much lower than the desired range.Option C: $1.5d \\\\leq m \\\\leq 2d$ - This represents the range for the total cost, not the miles driven.Option D: $15d \\\\leq m \\\\leq 20d$ - This would mean the total cost is much higher than the desired range.There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires multiple steps of algebraic manipulation and understanding of translating word problems into inequalities, which is typical of SAT level hard questions."
+    }
+  },
+  {
+    "question_id": 620261,
+    "question_text": "A number $p$ is at least 5 more than twice the value of $q$. If the value of $q$ is 3, what is the l...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 140. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense. The phrase \\\\\"at least 5 more than twice the value of q\\\\\" translates to t..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 718896,
+    "question_text": "A sales manager at a technology company organized a training program to improve the sales performanc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. To find the inequality that describes the possible values of q, we need to consider the condition that more than 30% of *all* sales representatives achieved their sales target.Total number of sales representatives = 200.Number of representatives who achieved target in the first group = 45.Number of representatives who achieved target in the second group = q.Total number of representatives who achieved target = 45 + q.According to the problem, more than 30% of all sales representatives achieved their target. So, the total number of representatives who achieved the target must be greater than 30% of 200.Mathematically, this can be written as:45 + q > 0.30 * 200Option A is: q + 45 > 0.30(200), where q ≤ 100. This inequality correctly represents the condition and also includes the constraint that q cannot be greater than 100, as there are only 100 representatives in the second group.Let's examine why other options are incorrect:Option B: q > 0.30(200 + 45), where q ≤ 100. This option incorrectly adds 45 to 200 before multiplying by 0.30. It should be 30% of the total number of representatives (200), not 30% of (200 + 45).Option C: q - 45 > 0.30(200), where q < 100. This option incorrectly subtracts 45 from q. It should be the sum of successful representatives from both groups (45 + q) that is compared to 30% of 200. Also, the constraint q < 100 is not as precise as q ≤ 100, although in the context of number of people, q must be an integer and less than or equal to 100. However, the main issue is the subtraction.Option D: q + 45 > 0.30(100), where q ≤ 100. This option incorrectly calculates 30% of 100 instead of 30% of the total number of representatives, which is 200.Therefore, Option A is the only correct option. The question is clear, grammatically correct, and the difficulty level of 'Hard' is appropriate for SAT as it requires translating a word problem into a linear inequality and understanding the context. All other options are clearly incorrect due to misinterpretation of the problem statement or incorrect mathematical formulation."
+    }
+  },
+  {
+    "question_id": 584145,
+    "question_text": "The triangle inequality theorem states that the sum of the lengths of any two sides of a triangle mu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It correctly states the triangle inequality theorem and asks for the possible range of the third side, $y$, given two sides of lengths 5 and 9. To solve this, we apply the triangle inequality theorem to all three combinations of sides:\n\n1. 5 + 9 > y  =>  14 > y  =>  y < 14\n2. 5 + y > 9  =>  y > 9 - 5  =>  y > 4\n3. 9 + y > 5  =>  y > 5 - 9  =>  y > -4\n\nSince side lengths must be positive, y > -4 is always true for a valid triangle side. Combining the relevant inequalities, y < 14 and y > 4, we get 4 < y < 14. Option C, 4 < y < 14, correctly represents this range and is therefore the correct answer.\n\nOptions A, B, and D are incorrect because:\n- Option A (y < 4) violates the condition that the sum of two sides must be greater than the third side (5 + y > 9 implies y > 4).\n- Option B (y > 14) violates the condition that the sum of two sides must be greater than the third side (5 + 9 > y implies y < 14).\n- Option D (y < 4 or y > 14) combines the incorrect ranges from options A and B and does not represent the valid range for y.\n\nThe question is grammatically correct and well-formatted. The difficulty level 'Hard' is appropriate as it requires understanding and application of the triangle inequality theorem to form and solve inequalities, which is a concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 72914,
+    "question_text": "A theme park charges an entrance fee of \\$15 per person and an additional \\$4 per ride. Sarah wants ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The correct inequality representing the situation is $15 + 4r \\\\leq 55$, where \\\\$15 is the entrance fee, \\\\$4 is the cost per ride, and $r$ is the number of rides. To find the greatest number of rides Sarah can go on, we solve the inequality:$15 + 4r \\\\leq 55$$4r \\\\leq 55 - 15$$4r \\\\leq 40$$r \\\\leq \frac{40}{4}$$r \\\\leq 10$The greatest integer value for $r$ that satisfies the inequality is 10. Option A correctly presents the inequality $15 + 4r \\\\leq 55$ and the greatest number of rides as 10.Option B has the correct inequality but the wrong number of rides (17 is incorrect as $r \\\\leq 10$).Option C has an incorrect inequality ($15r + 4 \\\\leq 55$) which reverses the roles of the entrance fee and ride cost. Even if we solve $15r + 4 \\\\leq 55$, we get $15r \\\\leq 51$, $r \\\\leq 3.4$, so the greatest integer is 3, which is coincidentally the number given in option C, but the inequality is wrong.Option D has an incorrect inequality ($19r \\\\leq 55$). This seems to be derived from incorrectly adding the entrance fee and ride cost (15+4=19) and multiplying by the number of rides, which does not represent the situation correctly. Solving $19r \\\\leq 55$ gives $r \\\\leq 2.89$, so the greatest integer is 2, which is coincidentally the number given in option D, but the inequality is wrong.All options except A are clearly incorrect due to either the inequality or the calculated number of rides, or both. There are no grammatical or formatting issues. The difficulty level 'Hard' is arguably appropriate for SAT, as it requires understanding of word problems and translating them into linear inequalities, although it might be considered medium for students well-versed in these concepts."
+    }
+  },
+  {
+    "question_id": 672959,
+    "question_text": "A shipping service restricts the dimensions of the boxes it will ship for a certain type of service....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve the problem, we need to translate the word problem into a mathematical inequality. Let x be the width of the box. The length is given as 2.5 times the width, so length = 2.5x. The perimeter of the base is 2 * (length + width) = 2 * (2.5x + x) = 2 * (3.5x) = 7x. The height of the box is given as 40 inches. The restriction states that the sum of the perimeter of the base and the height cannot exceed 150 inches. So, we have the inequality: 7x + 40 <= 150.  Subtracting 40 from both sides, we get 7x <= 110. Dividing both sides by 7, we get x <= 110/7.  To convert 110/7 to a mixed number, we divide 110 by 7. 110 divided by 7 is 15 with a remainder of 5. So, 110/7 = 15 $\\\\frac{5}{7}$. Therefore, x <= 15 $\\\\frac{5}{7}$. Since the width must be a positive value, we have 0 < x <= 15 $\\\\frac{5}{7}$. Option C matches this inequality. Options A, B, and D have incorrect upper bounds for x. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of word problems and inequalities, which is typical for SAT level hard questions."
+    }
+  },
+  {
+    "question_id": 373941,
+    "question_text": "Leo works at a coffee shop and earns $12 per hour for the first 8 hours he works each week. For each...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 7) is incorrect.",
+        "None of the provided options are actually correct for the question as stated.",
+        "Based on calculations, the least number of hours Leo must work after the first 8 hours to save at least $225 is 14 hours, which is not among the options."
+      ],
+      "correct_answer": null,
+      "explanation": "To solve this problem, we need to determine the number of hours Leo needs to work after the first 8 hours to save at least $225.First, calculate Leo's earnings for the first 8 hours: 8 hours * $12/hour = $96.Let 'x' be the number of hours Leo works after the first 8 hours. His earnings for these hours will be x hours * $15/hour = $15x.Total earnings for the week are $96 + $15x.Leo saves 75% of his total earnings, so his savings are 0.75 * ($96 + $15x).We want his savings to be at least $225, so we set up the inequality:0.75 * ($96 + $15x) >= $225Divide both sides by 0.75:$96 + $15x >= $225 / 0.75$96 + $15x >= 300Subtract 96 from both sides:$15x >= 300 - 96$15x >= 204Divide both sides by 15:x >= 204 / 15x >= 13.6Since the number of hours must be a whole number, Leo must work at least 14 hours after the first 8 hours.Let's check the provided option A (7 hours):Total earnings = (8 * $12) + (7 * $15) = $96 + $105 = $201Savings = 0.75 * $201 = $150.75. This is less than $225.Let's check if 14 hours after the first 8 hours works:Total earnings = (8 * $12) + (14 * $15) = $96 + $210 = $306Savings = 0.75 * $306 = $229.5. This is at least $225.Therefore, the least number of hours he must work after the first 8 hours is 14.  Option A (7) is incorrect, and none of the provided options are correct. The question is clearly written and makes sense, but the provided correct answer is wrong, making the question invalid as an SAT question with multiple-choice options where only one is supposed to be correct."
+    }
+  },
+  {
+    "question_id": 419379,
+    "question_text": "Which of the following consists of the y-coordinates of all the points that satisfy the system of in...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question asks for the y-coordinates of points satisfying inequalities that only involve x. This implies that the y-coordinate can be any real number, as there is no constraint on y. However, the options provided are in the form 'v > number', suggesting a lower bound for y, which contradicts the fact that y can be any real number.",
+        "The option marked as correct (B. v > 5) is not actually correct. Based on the given inequalities, the set of y-coordinates should be all real numbers, not y > 5.",
+        "All other options are also technically incorrect as they also suggest a lower bound for y, rather than the set of all real numbers.",
+        "The question is misleading and does not logically connect the x-inequalities to a restriction on y-coordinates. It seems to be based on a misunderstanding or error in question design."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is flawed because it asks for the y-coordinates of points that satisfy a system of inequalities involving only x. Solving the inequalities, we get x > -4 and x > 5, which simplifies to x > 5. This condition only restricts the x-coordinate. There is no restriction on the y-coordinate, meaning y can be any real number. The options provided are all in the form 'v > number', suggesting a lower bound for y, which is inconsistent with the problem statement.  The option marked as correct (B. v > 5) is incorrect because it implies that y must be greater than 5, which is not derived from the given inequalities.  The question likely contains an error in its formulation, possibly intending to ask about x-coordinates or having a different relationship between x and y in mind that is not explicitly stated."
+    }
+  }
+]
