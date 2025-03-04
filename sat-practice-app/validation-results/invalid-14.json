@@ -1,0 +1,34 @@
+[
+  {
+    "question_id": 73299,
+    "question_text": "What value of m satisfies the equation 7m + 65 = 166?...",
+    "issues": [
+      "The option marked as correct (A. 13) is incorrect. Substituting m=13 into the equation 7m + 65 = 166 yields 7(13) + 65 = 91 + 65 = 156, which is not equal to 166.",
+      "None of the provided options are correct for the equation 7m + 65 = 166. Solving for m gives m = (166 - 65) / 7 = 101 / 7, which is approximately 14.43. None of the options A, B, C, or D are equal to 101/7 or even close to it as integers.",
+      "The question, while clearly written, has an incorrect set of answer options, including the marked 'correct' answer."
+    ]
+  },
+  {
+    "question_id": 695158,
+    "question_text": "In the equation below, what is the value of $x$?...",
+    "issues": [
+      " implies an equation should follow, but none is given.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 415084,
+    "question_text": "If x is the solution to the equation above, what is the value of x - 4?...",
+    "issues": [
+      "The question is invalid because it refers to 'the equation above' but no equation is provided in the question text or description. Without the equation, the question is unsolvable."
+    ]
+  },
+  {
+    "question_id": 517890,
+    "question_text": "What value of $x$ is the solution to the equation $4(x - 2) - 9(x - 2) = 55$?...",
+    "issues": [
+      "The option marked as correct (D) is incorrect. The actual correct answer is option A.",
+      "The difficulty level might be overstated. While subjective, this question is solvable with basic algebraic manipulation and is likely more appropriately classified as 'Medium' rather than 'Hard' for the SAT."
+    ]
+  }
+]

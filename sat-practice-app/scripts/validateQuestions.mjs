@@ -324,14 +324,26 @@ async function processFiles(questionFile, optionFile) {
     
     // Validate each question
     const validationResults = [];
+    const validQuestions = [];
+    const validOptions = [];
     const invalidQuestions = [];
     
     for (const question of completeQuestions) {
       const result = await validateQuestion(question);
       validationResults.push(result);
       
-      if (!result.validation.is_valid) {
-        invalidQuestions.push(result);
+      if (result.validation.is_valid) {
+        // If valid, add to valid arrays
+        validQuestions.push(question);
+        validOptions.push(...question.options);
+        log.success(`Question ID ${question.id} is valid`);
+      } else {
+        // If invalid, add to invalid questions array for reporting
+        invalidQuestions.push({
+          question,
+          validationResult: result
+        });
+        log.warning(`Question ID ${question.id} is invalid: ${result.validation.issues.join(', ')}`);
       }
       
       // Add a delay to avoid rate limiting
@@ -341,27 +353,72 @@ async function processFiles(questionFile, optionFile) {
     // Save validation results
     await saveValidationResults(validationResults, subcategoryId);
     
-    // Log invalid questions
+    // Report on invalid questions
     if (invalidQuestions.length > 0) {
-      log.warning(`Found ${invalidQuestions.length} invalid questions in subcategory ${subcategoryId}`);
+      log.warning(`Removed ${invalidQuestions.length} invalid questions from subcategory ${subcategoryId}`);
       
-      // Save invalid questions to a separate file
+      // Save invalid questions to a separate file for reference
       await fs.writeFile(
         join(__dirname, '../validation-results', `invalid-${subcategoryId}.json`),
-        JSON.stringify(invalidQuestions, null, 2)
+        JSON.stringify(invalidQuestions.map(item => ({
+          question_id: item.question.id,
+          question_text: item.question.question_text.substring(0, 100) + '...',
+          issues: item.validationResult.validation.issues
+        })), null, 2)
       );
     } else {
       log.success(`All questions in subcategory ${subcategoryId} are valid!`);
     }
     
+    // Save updated questions and options (only valid ones)
+    await saveUpdatedFiles(validQuestions, validOptions, subcategoryId);
+    log.success(`Successfully saved updated files for subcategory ${subcategoryId} with ${validQuestions.length} valid questions`);
+    
     return {
       subcategoryId,
       totalQuestions: completeQuestions.length,
+      validQuestions: validQuestions.length,
       invalidQuestions: invalidQuestions.length
     };
+    
   } catch (error) {
     log.error(`Error processing files: ${error.message}`);
     return null;
+  }
+}
+
+/**
+ * Save updated questions and options to JSON files
+ * @param {Array} questions - Array of valid questions
+ * @param {Array} options - Array of valid options
+ * @param {string} subcategoryId - Subcategory ID for file naming
+ */
+async function saveUpdatedFiles(questions, options, subcategoryId) {
+  try {
+    // Create output directory if it doesn't exist
+    const outputDir = join(__dirname, '../updated-files');
+    await fs.mkdir(outputDir, { recursive: true });
+    
+    // Remove options property from questions before saving
+    const cleanedQuestions = questions.map(q => {
+      const { options, ...questionWithoutOptions } = q;
+      return questionWithoutOptions;
+    });
+    
+    // Write to JSON files
+    await fs.writeFile(
+      join(outputDir, `updated-questions-${subcategoryId}.json`),
+      JSON.stringify(cleanedQuestions, null, 2)
+    );
+    
+    await fs.writeFile(
+      join(outputDir, `updated-options-${subcategoryId}.json`),
+      JSON.stringify(options, null, 2)
+    );
+    
+    log.success(`Successfully saved updated files for subcategory ${subcategoryId}`);
+  } catch (error) {
+    log.error(`Error saving updated files for subcategory ${subcategoryId}: ${error.message}`);
   }
 }
 

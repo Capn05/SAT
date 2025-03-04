@@ -1,0 +1,107 @@
+[
+  {
+    "question_id": 8550,
+    "question_text": "The table shown includes some values of x and their corresponding values of y. Which of the followin...",
+    "issues": [
+      "The question is incomplete as it is missing the table of values and the graphs for options A, B, C, and D (placeholders are used). Without the table and graphs, it is impossible to determine if the question makes sense, if the marked answer is correct, or if other options are clearly incorrect.",
+      "Assuming the placeholder 'Placeholder B (Correct)' indicates that option B is intended to be the correct answer, this cannot be verified without the actual graph for option B and the table of values.",
+      "The question type and format are standard for SAT Math questions, but the missing content prevents a full evaluation of its validity and difficulty."
+    ]
+  },
+  {
+    "question_id": 475350,
+    "question_text": "The graph shown models the number of views a certain online video received $x$ days after it was upl...",
+    "issues": [
+      "The question refers to a graph that is not provided ('The graph shown...'). Without the graph, the question cannot be answered.",
+      "Due to the missing graph, it is impossible to verify if option A is the correct answer or if other options are incorrect.",
+      "The question is incomplete and unclear because a crucial visual element (the graph) is missing."
+    ]
+  },
+  {
+    "question_id": 324773,
+    "question_text": "The function P above models the population, in thousands, of a town $t$ years after the year 2020, w...",
+    "issues": [
+      " implies that the function should have been provided before this sentence, but it is missing. This makes the question technically incomplete and ambiguous, as the form of the function P is not specified. While it is highly implied that P(t) is an exponential function of the form P(t) = P_0 * b^t for population growth, this is not explicitly stated, making the question flawed from a strict validation perspective.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 471443,
+    "question_text": "$$f(x) = (x-2)(x+5)$$   If the given function f is graphed in the xy-plane, where y = f(x), what is ...",
+    "issues": [
+      "The question has more than one correct answer among the options (A and D), but only option A is marked as correct. While technically asking for 'an' x-coordinate, in a standard SAT multiple-choice format with only one marked answer, it is expected to have a single best answer among the options provided."
+    ]
+  },
+  {
+    "question_id": 17506,
+    "question_text": "A tennis ball bounces upward two-fifths of the height that it falls each time it hits the ground. If...",
+    "issues": [
+      "The option marked as correct (B) is incorrect. The correct answer is option C.",
+      "Option B (12) represents the maximum height after the first bounce, not between the second and third hits.",
+      "Option D (2.4) is also incorrect and does not represent a logical step in solving the problem."
+    ]
+  },
+  {
+    "question_id": 876506,
+    "question_text": "The population of a certain species of bacteria in a petri dish doubles every 3 hours. At 9:00 AM, t...",
+    "issues": [
+      "The option marked as correct (C) is incorrect. The correct answer should be A.",
+      "Option C (12:00 AM Midnight) is not the correct time when the bacteria population reaches 32,000. The correct time is 6:00 PM."
+    ]
+  },
+  {
+    "question_id": 482261,
+    "question_text": "The table below gives the values of the function g for some values of x. Which of the following equa...",
+    "issues": [
+      "The question is invalid because it refers to a table that is not provided. Without the table of values for function g, it is impossible to determine which equation could define g.",
+      "Assuming there was a table that makes option B the correct answer, the question would be valid, but as it stands, it is incomplete."
+    ]
+  },
+  {
+    "question_id": 693666,
+    "question_text": "The graph shown models the volume of water, $V$, in liters, in a tank $t$ minutes after filling bega...",
+    "issues": [
+      "The question is missing the graph that it refers to. Without the graph, the question cannot be answered.",
+      "Assuming a graph exists where the volume of water is increasing from t=0 to t=3 and not increasing for any interval beyond t=3, then option A would be correct and options B, C, and D would be incorrect. In this hypothetical scenario, the question would be clearly written and of appropriate difficulty."
+    ]
+  },
+  {
+    "question_id": 363546,
+    "question_text": "The table below gives selected values of a polynomial function $q$. Based on the values in the table...",
+    "issues": [
+      "The question refers to a table of values that is not provided. Without the table, the question is unsolvable.",
+      "The question states 'No image', indicating that the table was intended to be an image but is missing."
+    ]
+  },
+  {
+    "question_id": 492244,
+    "question_text": "The functions m and n are defined by the given equations, where $x ≥ 0$. Which of the following equa...",
+    "issues": [
+      "The question is invalid because the equations for functions m and n, and equations labeled I and II are missing from the question text. This makes the question unanswerable.",
+      "The wording 'function it defines' is ambiguous and could be rephrased for clarity."
+    ]
+  },
+  {
+    "question_id": 821258,
+    "question_text": "The table shows three values of x and their corresponding values of y, where $y = f(x) - 3$ and $f$ ...",
+    "issues": [
+      "The option marked as correct (A) is not actually correct. The calculated correct answer is -85, which is not among the options.",
+      "All options provided (A, B, C, D) are incorrect based on the problem statement and calculations."
+    ]
+  },
+  {
+    "question_id": 663023,
+    "question_text": "Which of the following functions has(have) a minimum value at x = -3?...",
+    "issues": [
+      "The question is incomplete as it refers to functions labeled 'I' and 'II' which are not provided in the question text or description. Without knowing the definitions of functions I and II, the question cannot be answered.",
+      "The use of 'has(have)' is grammatically incorrect. It should be 'has' since 'function' is singular."
+    ]
+  },
+  {
+    "question_id": 492570,
+    "question_text": "$$f(x) = (x + 2)(x - 3)(x + 1)$$In the xy-plane, the graph of the function f, where y = f(x), is shi...",
+    "issues": [
+      "The option marked as correct (A) is not actually correct. The mathematically correct answer is -17, which is not among the provided options."
+    ]
+  }
+]

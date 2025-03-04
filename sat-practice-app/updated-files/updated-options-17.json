@@ -1,0 +1,758 @@
+[
+  {
+    "id": 7168630,
+    "question_id": 716863,
+    "value": "A",
+    "label": "0.2x + 0.6y ≥ 300",
+    "is_correct": true
+  },
+  {
+    "id": 7168631,
+    "question_id": 716863,
+    "value": "B",
+    "label": "0.6x + 0.2y ≥ 300",
+    "is_correct": false
+  },
+  {
+    "id": 7168632,
+    "question_id": 716863,
+    "value": "C",
+    "label": "0.2x + 0.6y ≤ 300",
+    "is_correct": false
+  },
+  {
+    "id": 7168633,
+    "question_id": 716863,
+    "value": "D",
+    "label": "0.2x + 0.6y < 300",
+    "is_correct": false
+  },
+  {
+    "id": 2849920,
+    "question_id": 284992,
+    "value": "A",
+    "label": "2.50n + 1.50p > 18",
+    "is_correct": false
+  },
+  {
+    "id": 2849921,
+    "question_id": 284992,
+    "value": "B",
+    "label": "2.50n + 1.50p < 18",
+    "is_correct": true
+  },
+  {
+    "id": 2849922,
+    "question_id": 284992,
+    "value": "C",
+    "label": "1.50n + 2.50p > 18",
+    "is_correct": false
+  },
+  {
+    "id": 2849923,
+    "question_id": 284992,
+    "value": "D",
+    "label": "1.50n + 2.50p < 18",
+    "is_correct": false
+  },
+  {
+    "id": 3106700,
+    "question_id": 310670,
+    "value": "A",
+    "label": "140",
+    "is_correct": false
+  },
+  {
+    "id": 3106701,
+    "question_id": 310670,
+    "value": "B",
+    "label": "195",
+    "is_correct": true
+  },
+  {
+    "id": 3106702,
+    "question_id": 310670,
+    "value": "C",
+    "label": "220",
+    "is_correct": false
+  },
+  {
+    "id": 3106703,
+    "question_id": 310670,
+    "value": "D",
+    "label": "240",
+    "is_correct": false
+  },
+  {
+    "id": 1674060,
+    "question_id": 167406,
+    "value": "A",
+    "label": "$$\\frac{20+25+15+H}{4} ≥ 22$$",
+    "is_correct": true
+  },
+  {
+    "id": 1674061,
+    "question_id": 167406,
+    "value": "B",
+    "label": "$$\\frac{20+25+15+H}{4} ≤ 22$$",
+    "is_correct": false
+  },
+  {
+    "id": 1674062,
+    "question_id": 167406,
+    "value": "C",
+    "label": "$$\\frac{20+25+15+H}{3} ≥ 22$$",
+    "is_correct": false
+  },
+  {
+    "id": 1674063,
+    "question_id": 167406,
+    "value": "D",
+    "label": "$$20+25+15+H ≥ 22$$",
+    "is_correct": false
+  },
+  {
+    "id": 7945390,
+    "question_id": 794539,
+    "value": "A",
+    "label": "24.9 seconds",
+    "is_correct": false
+  },
+  {
+    "id": 7945391,
+    "question_id": 794539,
+    "value": "B",
+    "label": "25.1 seconds",
+    "is_correct": true
+  },
+  {
+    "id": 7945392,
+    "question_id": 794539,
+    "value": "C",
+    "label": "30.1 seconds",
+    "is_correct": false
+  },
+  {
+    "id": 7945393,
+    "question_id": 794539,
+    "value": "D",
+    "label": "31 seconds",
+    "is_correct": false
+  },
+  {
+    "id": 3547870,
+    "question_id": 354787,
+    "value": "A",
+    "label": "2x + 4y ≤ 60",
+    "is_correct": false
+  },
+  {
+    "id": 3547871,
+    "question_id": 354787,
+    "value": "B",
+    "label": "2x + 4y ≥ 60",
+    "is_correct": true
+  },
+  {
+    "id": 3547872,
+    "question_id": 354787,
+    "value": "C",
+    "label": "4x + 2y ≤ 60",
+    "is_correct": false
+  },
+  {
+    "id": 3547873,
+    "question_id": 354787,
+    "value": "D",
+    "label": "4x + 2y ≥ 60",
+    "is_correct": false
+  },
+  {
+    "id": 6686080,
+    "question_id": 668608,
+    "value": "A",
+    "label": "$ \\begin{array}{l}  x + y \\geq 50 \\\\ 2x + 5y \\leq 120 \\end{array} $",
+    "is_correct": true
+  },
+  {
+    "id": 6686081,
+    "question_id": 668608,
+    "value": "B",
+    "label": "$ \\begin{array}{l}  x + y \\leq 50 \\\\ 2x + 5y \\geq 120 \\end{array} $",
+    "is_correct": false
+  },
+  {
+    "id": 6686082,
+    "question_id": 668608,
+    "value": "C",
+    "label": "$ \\begin{array}{l}  2x + 5y \\geq 50 \\\\ x + y \\leq 120 \\end{array} $",
+    "is_correct": false
+  },
+  {
+    "id": 6686083,
+    "question_id": 668608,
+    "value": "D",
+    "label": "$ \\begin{array}{l}  x + y \\geq 50 \\\\ 5x + 2y \\leq 120 \\end{array} $",
+    "is_correct": false
+  },
+  {
+    "id": 7228980,
+    "question_id": 722898,
+    "value": "A",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 7228981,
+    "question_id": 722898,
+    "value": "B",
+    "label": "10",
+    "is_correct": true
+  },
+  {
+    "id": 7228982,
+    "question_id": 722898,
+    "value": "C",
+    "label": "11",
+    "is_correct": false
+  },
+  {
+    "id": 7228983,
+    "question_id": 722898,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 5455390,
+    "question_id": 545539,
+    "value": "A",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 5455391,
+    "question_id": 545539,
+    "value": "B",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 5455392,
+    "question_id": 545539,
+    "value": "C",
+    "label": "9",
+    "is_correct": true
+  },
+  {
+    "id": 5455393,
+    "question_id": 545539,
+    "value": "D",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 2585020,
+    "question_id": 258502,
+    "value": "A",
+    "label": "$t < 25$",
+    "is_correct": false
+  },
+  {
+    "id": 2585021,
+    "question_id": 258502,
+    "value": "B",
+    "label": "$25 < t < 40$",
+    "is_correct": false
+  },
+  {
+    "id": 2585022,
+    "question_id": 258502,
+    "value": "C",
+    "label": "$t > 40$",
+    "is_correct": false
+  },
+  {
+    "id": 2585023,
+    "question_id": 258502,
+    "value": "D",
+    "label": "$25 \\leq t \\leq 40$",
+    "is_correct": true
+  },
+  {
+    "id": 569550,
+    "question_id": 56955,
+    "value": "A",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 569551,
+    "question_id": 56955,
+    "value": "B",
+    "label": "11",
+    "is_correct": false
+  },
+  {
+    "id": 569552,
+    "question_id": 56955,
+    "value": "C",
+    "label": "12",
+    "is_correct": true
+  },
+  {
+    "id": 569553,
+    "question_id": 56955,
+    "value": "D",
+    "label": "13",
+    "is_correct": false
+  },
+  {
+    "id": 7318320,
+    "question_id": 731832,
+    "value": "A",
+    "label": "$$ 10x + 25y \\leq 900\\\\ x + y \\geq 50\\\\ x \\geq 20\\\\ y \\geq 10 $$",
+    "is_correct": true
+  },
+  {
+    "id": 7318321,
+    "question_id": 731832,
+    "value": "B",
+    "label": "$$ 10x + 25y \\geq 900\\\\ x + y \\leq 50\\\\ x \\geq 20\\\\ y \\geq 10 $$",
+    "is_correct": false
+  },
+  {
+    "id": 7318322,
+    "question_id": 731832,
+    "value": "C",
+    "label": "$$ 10x + 25y \\leq 900\\\\ x + y \\geq 50\\\\ x \\leq 20\\\\ y \\leq 10 $$",
+    "is_correct": false
+  },
+  {
+    "id": 7318323,
+    "question_id": 731832,
+    "value": "D",
+    "label": "$$ 10x + 25y \\geq 900\\\\ x + y \\leq 50\\\\ x \\leq 10\\\\ y \\leq 20 $$",
+    "is_correct": false
+  },
+  {
+    "id": 5445090,
+    "question_id": 544509,
+    "value": "A",
+    "label": "$12 \\leq n \\leq 15$",
+    "is_correct": true
+  },
+  {
+    "id": 5445091,
+    "question_id": 544509,
+    "value": "B",
+    "label": "$4 < n < 5$",
+    "is_correct": false
+  },
+  {
+    "id": 5445092,
+    "question_id": 544509,
+    "value": "C",
+    "label": "$12 < n < 15$",
+    "is_correct": false
+  },
+  {
+    "id": 5445093,
+    "question_id": 544509,
+    "value": "D",
+    "label": "$4 \\leq n \\leq 60$",
+    "is_correct": false
+  },
+  {
+    "id": 5905180,
+    "question_id": 590518,
+    "value": "A",
+    "label": "(0,0)",
+    "is_correct": false
+  },
+  {
+    "id": 5905181,
+    "question_id": 590518,
+    "value": "B",
+    "label": "(-2,0)",
+    "is_correct": true
+  },
+  {
+    "id": 5905182,
+    "question_id": 590518,
+    "value": "C",
+    "label": "(0,-2)",
+    "is_correct": false
+  },
+  {
+    "id": 5905183,
+    "question_id": 590518,
+    "value": "D",
+    "label": "(-2,-2)",
+    "is_correct": false
+  },
+  {
+    "id": 6788920,
+    "question_id": 678892,
+    "value": "A",
+    "label": "30 < h < 40",
+    "is_correct": false
+  },
+  {
+    "id": 6788921,
+    "question_id": 678892,
+    "value": "B",
+    "label": "31 < h < 44",
+    "is_correct": true
+  },
+  {
+    "id": 6788922,
+    "question_id": 678892,
+    "value": "C",
+    "label": "35 < h < 50",
+    "is_correct": false
+  },
+  {
+    "id": 6788923,
+    "question_id": 678892,
+    "value": "D",
+    "label": "40 < h < 55",
+    "is_correct": false
+  },
+  {
+    "id": 4432930,
+    "question_id": 443293,
+    "value": "A",
+    "label": "350 + 3 < x < 400 + 3",
+    "is_correct": false
+  },
+  {
+    "id": 4432931,
+    "question_id": 443293,
+    "value": "B",
+    "label": "(350)(3) < x < (400)(3)",
+    "is_correct": true
+  },
+  {
+    "id": 4432932,
+    "question_id": 443293,
+    "value": "C",
+    "label": "350 < 3 + x < 400",
+    "is_correct": false
+  },
+  {
+    "id": 4432933,
+    "question_id": 443293,
+    "value": "D",
+    "label": "350 < 3x < 400",
+    "is_correct": false
+  },
+  {
+    "id": 3387710,
+    "question_id": 338771,
+    "value": "A",
+    "label": "4,800 > (1,500 - 900)t",
+    "is_correct": false
+  },
+  {
+    "id": 3387711,
+    "question_id": 338771,
+    "value": "B",
+    "label": "4,800 < (1,500 - 900)t",
+    "is_correct": true
+  },
+  {
+    "id": 3387712,
+    "question_id": 338771,
+    "value": "C",
+    "label": "4,800 - 1,500 > 900t",
+    "is_correct": false
+  },
+  {
+    "id": 3387713,
+    "question_id": 338771,
+    "value": "D",
+    "label": "4,800 < 1,500 - 900t",
+    "is_correct": false
+  },
+  {
+    "id": 1221070,
+    "question_id": 122107,
+    "value": "A",
+    "label": "(1, 1)",
+    "is_correct": false
+  },
+  {
+    "id": 1221071,
+    "question_id": 122107,
+    "value": "B",
+    "label": "(0, 5)",
+    "is_correct": false
+  },
+  {
+    "id": 1221072,
+    "question_id": 122107,
+    "value": "C",
+    "label": "(3, 2)",
+    "is_correct": false
+  },
+  {
+    "id": 1221073,
+    "question_id": 122107,
+    "value": "D",
+    "label": "(2, 1)",
+    "is_correct": true
+  },
+  {
+    "id": 6616310,
+    "question_id": 661631,
+    "value": "A",
+    "label": "$\\frac{9}{5}C + 32 < 41$",
+    "is_correct": true
+  },
+  {
+    "id": 6616311,
+    "question_id": 661631,
+    "value": "B",
+    "label": "$\\frac{9}{5}C + 32 \\geq 41$",
+    "is_correct": false
+  },
+  {
+    "id": 6616312,
+    "question_id": 661631,
+    "value": "C",
+    "label": "$\\frac{5}{9}C + 32 < 41$",
+    "is_correct": false
+  },
+  {
+    "id": 6616313,
+    "question_id": 661631,
+    "value": "D",
+    "label": "$\\frac{5}{9}C + 32 \\geq 41$",
+    "is_correct": false
+  },
+  {
+    "id": 3135070,
+    "question_id": 313507,
+    "value": "A",
+    "label": "t + 10 < 25",
+    "is_correct": false
+  },
+  {
+    "id": 3135071,
+    "question_id": 313507,
+    "value": "B",
+    "label": "t + 10 > 25",
+    "is_correct": true
+  },
+  {
+    "id": 3135072,
+    "question_id": 313507,
+    "value": "C",
+    "label": "t + 25 < 10",
+    "is_correct": false
+  },
+  {
+    "id": 3135073,
+    "question_id": 313507,
+    "value": "D",
+    "label": "t + 25 > 10",
+    "is_correct": false
+  },
+  {
+    "id": 9579840,
+    "question_id": 957984,
+    "value": "A",
+    "label": "20b + 50n ≤ 1000<br>b ≥ 2n",
+    "is_correct": true
+  },
+  {
+    "id": 9579841,
+    "question_id": 957984,
+    "value": "B",
+    "label": "20b + 50n ≤ 1000<br>2b ≥ n",
+    "is_correct": false
+  },
+  {
+    "id": 9579842,
+    "question_id": 957984,
+    "value": "C",
+    "label": "50b + 20n ≤ 1000<br>b ≥ 2n",
+    "is_correct": false
+  },
+  {
+    "id": 9579843,
+    "question_id": 957984,
+    "value": "D",
+    "label": "50b + 20n ≤ 1000<br>2b ≥ n",
+    "is_correct": false
+  },
+  {
+    "id": 6529380,
+    "question_id": 652938,
+    "value": "A",
+    "label": "5d ≤ m ≤ 10d",
+    "is_correct": true
+  },
+  {
+    "id": 6529381,
+    "question_id": 652938,
+    "value": "B",
+    "label": "0.5d ≤ m ≤ d",
+    "is_correct": false
+  },
+  {
+    "id": 6529382,
+    "question_id": 652938,
+    "value": "C",
+    "label": "1.5d ≤ m ≤ 2d",
+    "is_correct": false
+  },
+  {
+    "id": 6529383,
+    "question_id": 652938,
+    "value": "D",
+    "label": "15d ≤ m ≤ 20d",
+    "is_correct": false
+  },
+  {
+    "id": 6202610,
+    "question_id": 620261,
+    "value": "A",
+    "label": "11",
+    "is_correct": true
+  },
+  {
+    "id": 6202611,
+    "question_id": 620261,
+    "value": "B",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 6202612,
+    "question_id": 620261,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 6202613,
+    "question_id": 620261,
+    "value": "D",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 7188960,
+    "question_id": 718896,
+    "value": "A",
+    "label": "q + 45 > 0.30(200), where q ≤ 100",
+    "is_correct": true
+  },
+  {
+    "id": 7188961,
+    "question_id": 718896,
+    "value": "B",
+    "label": "q > 0.30(200 + 45), where q ≤ 100",
+    "is_correct": false
+  },
+  {
+    "id": 7188962,
+    "question_id": 718896,
+    "value": "C",
+    "label": "q - 45 > 0.30(200), where q < 100",
+    "is_correct": false
+  },
+  {
+    "id": 7188963,
+    "question_id": 718896,
+    "value": "D",
+    "label": "q + 45 > 0.30(100), where q ≤ 100",
+    "is_correct": false
+  },
+  {
+    "id": 5841450,
+    "question_id": 584145,
+    "value": "A",
+    "label": "y < 4",
+    "is_correct": false
+  },
+  {
+    "id": 5841451,
+    "question_id": 584145,
+    "value": "B",
+    "label": "y > 14",
+    "is_correct": false
+  },
+  {
+    "id": 5841452,
+    "question_id": 584145,
+    "value": "C",
+    "label": "4 < y < 14",
+    "is_correct": true
+  },
+  {
+    "id": 5841453,
+    "question_id": 584145,
+    "value": "D",
+    "label": "y < 4 or y > 14",
+    "is_correct": false
+  },
+  {
+    "id": 729140,
+    "question_id": 72914,
+    "value": "A",
+    "label": "$15 + 4r \\leq 55$; 10",
+    "is_correct": true
+  },
+  {
+    "id": 729141,
+    "question_id": 72914,
+    "value": "B",
+    "label": "$15 + 4r \\leq 55$; 17",
+    "is_correct": false
+  },
+  {
+    "id": 729142,
+    "question_id": 72914,
+    "value": "C",
+    "label": "$15r + 4 \\leq 55$; 3",
+    "is_correct": false
+  },
+  {
+    "id": 729143,
+    "question_id": 72914,
+    "value": "D",
+    "label": "$19r \\leq 55$; 2",
+    "is_correct": false
+  },
+  {
+    "id": 6729590,
+    "question_id": 672959,
+    "value": "A",
+    "label": "$0 < x \\le 15 \\\\frac{3}{7}$",
+    "is_correct": false
+  },
+  {
+    "id": 6729591,
+    "question_id": 672959,
+    "value": "B",
+    "label": "$0 < x \\le 15 \\\\frac{4}{7}$",
+    "is_correct": false
+  },
+  {
+    "id": 6729592,
+    "question_id": 672959,
+    "value": "C",
+    "label": "$0 < x \\le 15 \\\\frac{5}{7}$",
+    "is_correct": true
+  },
+  {
+    "id": 6729593,
+    "question_id": 672959,
+    "value": "D",
+    "label": "$0 < x \\le 16 \\\\frac{1}{7}$",
+    "is_correct": false
+  }
+]

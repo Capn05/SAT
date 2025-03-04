@@ -1,0 +1,219 @@
+[
+  {
+    "question_id": 923187,
+    "question_text": "The lengths of the legs of a right triangle are shown in the figure. Which of the following is close...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "1. **Clarity:** The question is clearly written and easy to understand. It asks for the hypotenuse of a right triangle given the lengths of its legs. The phrase 'closest to' is appropriate as the hypotenuse might not be exactly one of the options.2. **Correctness of Marked Answer:**   - Using the Pythagorean theorem: hypotenuse² = leg1² + leg2² = 3² + 4.1² = 9 + 16.81 = 25.81   - hypotenuse = √25.81 ≈ 5.08   - Option A is 5.1, which is the closest value to 5.08 among the given options. Therefore, option A is indeed the correct answer.3. **Incorrectness of Other Options:**   - Option B (7.1): This is significantly larger than the calculated hypotenuse (approximately 5.08) and is clearly incorrect.   - Option C (2.9): This is smaller than the shorter leg (3) and thus cannot be the hypotenuse of a right triangle with legs 3 and 4.1. It is clearly incorrect.   - Option D (25.81): This is the value of the hypotenuse *squared* (c²), not the hypotenuse itself (c). It is clearly incorrect.4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question text or options.5. **Difficulty Level:** The difficulty level is appropriately marked as 'Easy'. It involves a straightforward application of the Pythagorean theorem and requires basic arithmetic and approximation skills, which are expected at the 'Easy' level for the SAT."
+    }
+  },
+  {
+    "question_id": 831970,
+    "question_text": "In the figure above, what is the value of cos(A)?  ![](_page_0_Figure_5_new.jpeg)...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a figure that is not provided. Without the figure, the question is incomplete and cannot be solved.",
+        "Due to the missing figure, it is impossible to definitively verify if option C is the correct answer or if other options are incorrect based on the intended geometry."
+      ],
+      "correct_answer": null,
+      "explanation": "The question asks for the value of cos(A) 'in the figure above', but the figure is missing. This is a critical flaw as the question is entirely dependent on the visual information provided by the figure. Without the figure, there is no context for angle A or any sides of a triangle to determine cos(A).  While option C, $\\\\frac{4}{5}$, is marked as correct and could be a valid cosine value in a right triangle (e.g., in a 3-4-5 triangle), we cannot confirm this or evaluate the other options without the figure.  Therefore, the question is invalid due to the missing visual information."
+    }
+  },
+  {
+    "question_id": 21821,
+    "question_text": "For the right triangle shown, which expression represents the value of b?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the expression representing side 'b' in a right triangle. Assuming the image depicts a right triangle with hypotenuse 17 and one leg 8, and 'b' as the other leg, the Pythagorean theorem ($a^2 + b^2 = c^2$) leads to $8^2 + b^2 = 17^2$. Solving for 'b' gives $b = \\\\sqrt{17^2 - 8^2}$, which is option A. Options B, C, and D are incorrect as they do not correctly apply the Pythagorean theorem or represent the side length 'b'. The difficulty level of Medium is appropriate for this question as it tests a standard application of the Pythagorean theorem, a concept typically covered in middle school and high school geometry."
+    }
+  },
+  {
+    "question_id": 969814,
+    "question_text": "A carpenter is building a ramp for wheelchair access. The ramp is in the shape of a right triangle. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It describes a right triangle ramp with horizontal leg 4 feet and vertical leg 6 feet, asking for the length of the hypotenuse (the ramp). Using the Pythagorean theorem, $a^2 + b^2 = c^2$, where a=4 and b=6, we get $4^2 + 6^2 = c^2$, which simplifies to $16 + 36 = c^2$, so $52 = c^2$. Taking the square root of both sides gives $c = \\\\sqrt{52}$. Simplifying the radical, $\\\\sqrt{52} = \\\\sqrt{4 \times 13} = \\\\sqrt{4} \times \\\\sqrt{13} = 2\\\\sqrt{13}$. Option A, $2\\\\sqrt{13}$, is indeed the correct answer.Options B, C, and D are incorrect. Option B (10) would imply a hypotenuse squared of 100, Option C ($\\\\sqrt{26}$) would imply a hypotenuse squared of 26, and Option D (26) would imply a hypotenuse squared of 676, none of which equal 52.There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question on the SAT, as it requires a basic understanding and application of the Pythagorean theorem, which is a standard topic in geometry."
+    }
+  },
+  {
+    "question_id": 967774,
+    "question_text": "In right triangle $ABC$, $\\angle C$ is a right angle. Altitude $\\overline{CD}$ is drawn to hypotenus...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense geometrically. To find the length of altitude $\\\\overline{CD}$, we can use the area of triangle $ABC$ in two ways or similar triangles properties. First, using the Pythagorean theorem, we find the hypotenuse $AB = \\\\sqrt{AC^2 + BC^2} = \\\\sqrt{8^2 + 6^2} = \\\\sqrt{64 + 36} = \\\\sqrt{100} = 10$. The area of triangle $ABC$ can be calculated as $\frac{1}{2} \times AC \times BC = \frac{1}{2} \times 8 \times 6 = 24$.  Alternatively, the area can also be expressed as $\frac{1}{2} \times AB \times CD = \frac{1}{2} \times 10 \times CD = 5 \times CD$. Equating the two expressions for the area, we have $5 \times CD = 24$, so $CD = \frac{24}{5} = 4.8$. Option B (4.8) is indeed the correct answer. Options A, C, and D are incorrect as they do not match the calculated value of $CD$. The difficulty level 'Medium' is appropriate as it requires understanding of right triangles, Pythagorean theorem, and the concept of altitude and area of a triangle, which are typical topics for middle to high school geometry and are suitable for the SAT at a medium difficulty level. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 789394,
+    "question_text": "The length of a rectangle's diagonal is $4\\sqrt{29}$, and the length of the rectangle's shorter side...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. We are given the diagonal length and the shorter side of a rectangle and asked to find the longer side. Using the Pythagorean theorem, let the shorter side be $a=8$, the longer side be $b$, and the diagonal be $d=4\\\\sqrt{29}$. Then $a^2 + b^2 = d^2$. Substituting the given values, we get $8^2 + b^2 = (4\\\\sqrt{29})^2$. This simplifies to $64 + b^2 = 16 \times 29 = 464$. Subtracting 64 from both sides gives $b^2 = 464 - 64 = 400$. Taking the square root of both sides gives $b = \\\\sqrt{400} = 20$. Option A, 20, is indeed the correct answer.Let's check the other options:B. 29: If the longer side is 29, then $8^2 + 29^2 = 64 + 841 = 905$. But $(4\\\\sqrt{29})^2 = 464$. So, this is incorrect.C. $4\\\\sqrt{33}$: If the longer side is $4\\\\sqrt{33}$, then $8^2 + (4\\\\sqrt{33})^2 = 64 + 16 \times 33 = 64 + 528 = 592$. But $(4\\\\sqrt{29})^2 = 464$. So, this is incorrect.D. 16: If the longer side is 16, then $8^2 + 16^2 = 64 + 256 = 320$. But $(4\\\\sqrt{29})^2 = 464$. So, this is incorrect.All other options are clearly incorrect. The question is grammatically correct and appropriately formatted. The difficulty level is medium, suitable for SAT as it requires applying the Pythagorean theorem, a standard geometry concept."
+    }
+  },
+  {
+    "question_id": 879456,
+    "question_text": "In right triangle $ABC$, angle $C$ is a right angle, and angle $A$ measures $30^\\circ$. If the lengt...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. In a right triangle ABC with angle C = 90° and angle A = 30°, angle B must be 60°. This is a 30-60-90 triangle. The sides opposite to angles 30°, 60°, and 90° are in the ratio 1:$\\\\sqrt{3}$:2. Side BC is opposite to angle A (30°) and side AB is the hypotenuse opposite to angle C (90°). Therefore, the ratio BC/AB = 1/2. Given BC = 5, we have 5/AB = 1/2, which gives AB = 10. Option A (10) is indeed the correct answer. Options B, C, and D are incorrect as they do not satisfy the side ratios of a 30-60-90 triangle with BC = 5. The difficulty level 'Medium' is appropriate for this question as it requires knowledge of special right triangles or basic trigonometry, which is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 455845,
+    "question_text": "In right triangle PQR, where angle R is the right angle, the cosine of angle P is $\\frac{3}{5}$ and ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. We are given a right triangle PQR with the right angle at R. We are given that cos(P) = 3/5 and the hypotenuse PQ = 15. We need to find the length of side QR.First, recall the definition of cosine in a right triangle: cos(angle) = Adjacent side / Hypotenuse.For angle P, the adjacent side is PR and the hypotenuse is PQ.So, cos(P) = PR / PQ.We are given cos(P) = 3/5 and PQ = 15.Therefore, 3/5 = PR / 15.Solving for PR, we get PR = (3/5) * 15 = 3 * 3 = 9.Now, we use the Pythagorean theorem in right triangle PQR: PR^2 + QR^2 = PQ^2.We know PR = 9 and PQ = 15.Substituting these values, we get 9^2 + QR^2 = 15^2.81 + QR^2 = 225.QR^2 = 225 - 81.QR^2 = 144.QR = sqrt(144) = 12.Therefore, the length of side QR is 12, which corresponds to option B.Option A (9) is the length of side PR, not QR. This is a plausible distractor as it is an intermediate value calculated in the process.Option C (15) is the length of the hypotenuse PQ, which is clearly not QR.Option D (20) is not directly related to the given values through a simple calculation and is incorrect.The question is grammatically correct and well-formatted. The difficulty level 'Hard' is appropriate as it requires multiple steps involving trigonometric ratios and the Pythagorean theorem, which is typical for SAT level 'Hard' geometry questions."
+    }
+  },
+  {
+    "question_id": 655412,
+    "question_text": "17 Note: Figure not drawn to scale.\\n\\nIn the right triangle shown, what is the value of $\\cos(y)$?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to 'the right triangle shown' and states 'Figure not drawn to scale,' but no image is provided. This makes the question fundamentally flawed as it is impossible to determine the value of cos(y) without knowing the triangle and the angle y within that triangle.",
+        "Without an image, the question is not clearly written and does not make sense as presented."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid due to the absence of the figure it refers to.  While option A is marked as correct and could be correct in a hypothetical right triangle with sides 5, 12, and 13 where cos(y) = 5/13, the lack of a visual representation makes the question unsolvable as it is presented.  For a valid SAT question, especially one marked as 'Hard', it must be self-contained and provide all necessary information, which this question fails to do due to the missing figure.  Assuming the question intends to use a 5-12-13 right triangle and angle y is such that the adjacent side is 5 and the hypotenuse is 13, then option A would be correct. However, this is speculative and relies on assumptions not provided in the question itself. Options B, C, and D are likely intended to be incorrect in this hypothetical scenario, with B being sin(y) = 12/13, C being tan(x) = 5/12 (where x is the other acute angle), and D being sec(y) = 13/5 which is greater than 1 and impossible for cosine.  Despite the potential intended answer, the missing image is a critical flaw that renders the question invalid."
+    }
+  },
+  {
+    "question_id": 901110,
+    "question_text": "A jewelry designer is crafting a pendant in the shape of a trapezoid, composed of three congruent eq...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is incorrect. The correct answer should be option C."
+      ],
+      "correct_answer": "C",
+      "explanation": "The trapezoidal pendant is composed of three congruent equilateral triangles. The total area of the trapezoid is given as $27\\\\sqrt{3}$ square millimeters. Since the trapezoid is made of three congruent triangles, the area of each equilateral triangle is $\frac{1}{3} \times 27\\\\sqrt{3} = 9\\\\sqrt{3}$ square millimeters. The sterling silver regions are composed of two of these equilateral triangles. Therefore, the combined area of the sterling silver regions is $2 \times 9\\\\sqrt{3} = 18\\\\sqrt{3}$ square millimeters. Option C, 18$\\\\sqrt{3}$, is the correct answer, not option B as marked."
+    }
+  },
+  {
+    "question_id": 219996,
+    "question_text": "In the figure above, tan B = 5/12. If BC = 26 and DA = 8, what is the length of DE ?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because it refers to a figure that is not provided ('In the figure above'). Without the figure, the geometric relationships between points and lines are undefined, making the question ambiguous and unsolvable as presented.",
+        "Assuming a standard geometric interpretation where triangles ABC and DBE are similar right triangles sharing angle B, with AC perpendicular to AB and DE perpendicular to DB, and points A, D, B are collinear and C, E, B are collinear, the provided correct answer option A is mathematically correct. However, this assumption is based on common geometric problem structures and is not explicitly stated in the question due to the missing figure."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid due to the absence of the figure mentioned in the problem statement. Without the figure, the geometric configuration is unclear, and the question is not well-defined. However, if we assume a standard interpretation where we have two similar right triangles ABC and DBE sharing angle B, with tan B = 5/12, BC = 26, and DA = 8, we can solve for DE. \n\nAssuming right triangle ABC, tan B = AC/AB = 5/12. Let AC = 5x and AB = 12x. By Pythagorean theorem, AC^2 + AB^2 = BC^2, so (5x)^2 + (12x)^2 = 26^2, which simplifies to 169x^2 = 26^2. Thus, 13x = 26, and x = 2. Therefore, AB = 12x = 24 and AC = 5x = 10.\n\nAssuming point D is on AB such that DA = 8, then DB = AB - DA = 24 - 8 = 16. Since triangle DBE is similar to triangle ABC, tan B = DE/DB = 5/12. So, DE = DB * tan B = 16 * (5/12) = (16 * 5) / 12 = 80 / 12 = 20 / 3.\n\nOption A, $rac{20}{3}$, is indeed the correct answer under this assumption. However, without the figure, we cannot definitively confirm this is the intended configuration, making the question invalid as presented."
+    }
+  },
+  {
+    "question_id": 472184,
+    "question_text": "In triangle RST above, point W (not shown) lies on RT. What is the value of $\\frac{\\cos(\\angle RSW)}...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "In triangle RST, $\\\\angle RST = 90^\\\\circ$. Point W lies on RT. Therefore, $\\\\angle RSW + \\\\angle WST = \\\\angle RST = 90^\\\\circ$. This means that $\\\\angle RSW$ and $\\\\angle WST$ are complementary angles.For complementary angles $\\\\alpha$ and $\\beta$ such that $\\\\alpha + \beta = 90^\\\\circ$, we know that $\\\\sin(\beta) = \\\\cos(\\\\alpha)$. In this case, let $\\\\angle RSW = \\\\alpha$ and $\\\\angle WST = \beta$. Then $\\\\alpha + \beta = 90^\\\\circ$, and $\\\\sin(\\\\angle WST) = \\\\sin(\beta) = \\\\cos(\\\\alpha) = \\\\cos(\\\\angle RSW)$.Therefore, $\frac{\\\\cos(\\\\angle RSW)}{\\\\sin(\\\\angle WST)} = \frac{\\\\cos(\\\\angle RSW)}{\\\\cos(\\\\angle RSW)} = 1$, provided that $\\\\cos(\\\\angle RSW) \neq 0$. For $\\\\cos(\\\\angle RSW) = 0$, $\\\\angle RSW = 90^\\\\circ$. If $\\\\angle RSW = 90^\\\\circ$ and $\\\\angle RSW + \\\\angle WST = 90^\\\\circ$, then $\\\\angle WST = 0^\\\\circ$. However, for W to be a point on RT such that $\\\\angle WST$ is an angle in a triangle WST, $\\\\angle WST$ must be greater than $0^\\\\circ$.  If W is strictly between R and T, then $0^\\\\circ < \\\\angle RSW < 90^\\\\circ$ and $0^\\\\circ < \\\\angle WST < 90^\\\\circ$. If W coincides with R, then $\\\\angle RSW = 0^\\\\circ$ and $\\\\angle WST = 90^\\\\circ$. In both cases, $\\\\cos(\\\\angle RSW) \neq 0$ (unless $\\\\angle RSW = 90^\\\\circ$, which would imply $\\\\angle WST = 0^\\\\circ$, which is a degenerate case for triangle WST).  Assuming W is such that $\\\\angle WST > 0^\\\\circ$, then the ratio is indeed 1.Option B, which is 1, is the correct answer. Options A (0), C (-1), and D (2) are incorrect because the ratio is always equal to 1 under the given conditions for any valid point W on RT (excluding the case where W=T which would make $\\\\angle WST = 0$). The question is clearly written and the difficulty level is appropriate for a 'Hard' SAT question as it requires understanding of complementary angles and trigonometric relationships."
+    }
+  },
+  {
+    "question_id": 645618,
+    "question_text": "Triangle ABC is similar to triangle DEF, where A corresponds to D and C corresponds to F. Angles C a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. Given that triangle ABC is similar to triangle DEF with A corresponding to D and C corresponding to F, and angles C and F are right angles, we know that both triangles are right triangles and angle A is equal to angle D. We are given that $\tan(A) = 1$. Since $\tan(A) = \frac{BC}{AC}$ in right triangle ABC, $\tan(A) = 1$ implies $BC = AC$. This means triangle ABC is a 45-45-90 triangle, and therefore triangle DEF is also a 45-45-90 triangle because they are similar. In triangle DEF, angle F is the right angle, so angles D and E are 45 degrees each. DF is a leg of the right triangle, and DE is the hypotenuse. In a 45-45-90 triangle, the ratio of the sides is $1:1:\\\\sqrt{2}$. If DF = 50 (which is one leg), then the other leg EF is also 50, and the hypotenuse DE is $DF \times \\\\sqrt{2} = 50\\\\sqrt{2}$. Option D, $50\\\\sqrt{2}$, is indeed the correct answer. Options A, B, and C are incorrect because they do not represent the hypotenuse length of a 45-45-90 triangle with a leg of length 50. The difficulty level 'Hard' is appropriate for this question as it requires multiple steps and understanding of different concepts in geometry and trigonometry."
+    }
+  },
+  {
+    "question_id": 875612,
+    "question_text": "The length of a rectangle's diagonal is 5, and the length of the rectangle's shorter side is 2. What...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. We are given the diagonal and the shorter side of a rectangle and asked to find the longer side. We can use the Pythagorean theorem because the diagonal of a rectangle divides it into two right triangles. Let the shorter side be 'a', the longer side be 'b', and the diagonal be 'c'. According to the Pythagorean theorem, $a^2 + b^2 = c^2$. In this case, a = 2 and c = 5. So, $2^2 + b^2 = 5^2$, which simplifies to $4 + b^2 = 25$. Subtracting 4 from both sides gives $b^2 = 21$. Taking the square root of both sides gives $b = \\\\sqrt{21}$. Option A, $\\\\sqrt{21}$, is indeed the correct answer.Let's check the other options:- Option B: $\\\\sqrt{29}$. If the longer side were $\\\\sqrt{29}$, then $2^2 + (\\\\sqrt{29})^2 = 4 + 29 = 33 \neq 5^2 = 25$. So, Option B is incorrect.- Option C: 3. If the longer side were 3, then $2^2 + 3^2 = 4 + 9 = 13 \neq 5^2 = 25$. So, Option C is incorrect.- Option D: 7. If the longer side were 7, then $2^2 + 7^2 = 4 + 49 = 53 \neq 5^2 = 25$. So, Option D is incorrect.All other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding of the Pythagorean theorem and applying it in a geometric context, which is typical for SAT Math questions."
+    }
+  },
+  {
+    "question_id": 43296,
+    "question_text": "Triangle PQR is similar to triangle STU, where angle P corresponds to angle S and angles R and U are...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Since triangle PQR is similar to triangle STU and angle P corresponds to angle S, angle P is equal to angle S. Given $\tan P = \frac{4}{3}$, we have $\tan S = \frac{4}{3}$. We can consider a right triangle where the opposite side to angle S is 4 and the adjacent side is 3. The hypotenuse would be $\\\\sqrt{4^2 + 3^2} = 5$. Therefore, $\\\\cos S = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{3}{5}$. Option A is $\frac{3}{5}$, which is the correct answer. Options B, C, and D are incorrect because they do not correspond to $\\\\cos S$ when $\tan S = \frac{4}{3}$. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of trigonometric ratios and similar triangles."
+    }
+  },
+  {
+    "question_id": 601775,
+    "question_text": "In a right triangle, the tangent of one of the two acute angles is $\\frac{3}{2}$. What is the tangen...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 542. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense. In a right triangle, if one acute angle is $\\\\\\\\theta$, the other acute an..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 651452,
+    "question_text": "Triangle PQR is similar to triangle XYZ, where angle P corresponds to angle X, angle Q corresponds t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. We are given that triangle PQR is similar to triangle XYZ, with corresponding angles P=X, Q=Y, R=Z, and angles R and Z are right angles. We are given $\\\\sin(P) = \frac{3}{5}$. In a right triangle PQR with right angle at R, $\\\\sin(P) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{QR}{PQ} = \frac{3}{5}$. Let QR = 3 and PQ = 5. Using the Pythagorean theorem, $PR^2 + QR^2 = PQ^2$, so $PR^2 + 3^2 = 5^2$, which gives $PR^2 = 25 - 9 = 16$, and $PR = 4$. We need to find $\tan(Y)$. Since angle Q corresponds to angle Y, $\\\\angle Y = \\\\angle Q$. In right triangle PQR, $\tan(Q) = \frac{\text{opposite}}{\text{adjacent}} = \frac{PR}{QR} = \frac{4}{3}$. Therefore, $\tan(Y) = \frac{4}{3}$, which corresponds to option C. Options A, B, and D represent other trigonometric ratios related to angle P (specifically $\tan(P) = \frac{3}{4}$, $\\\\sin(P) = \frac{3}{5}$, and $\\\\cos(P) = \frac{4}{5}$ respectively) and are therefore incorrect for $\tan(Y)$. The difficulty level of 'Hard' is reasonable for SAT, as it requires understanding of similar triangles, trigonometric ratios, and the Pythagorean theorem."
+    }
+  },
+  {
+    "question_id": 6618,
+    "question_text": "In the figure above, BD is parallel to AE. Triangle BCD is a right triangle with BC = 3 and BD = 4. ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to 'the figure above' but no image is provided, making the question incomplete and ambiguous.  A geometry question, especially on the SAT, requires a figure for clarity.",
+        "While the description 'Triangle BCD is a right triangle' is given, the location of the right angle is not explicitly stated. This could lead to different interpretations, although assuming angle CBD is the right angle leads to the provided correct answer.",
+        "Without the figure, the relative positions of points A, B, C, D, and E are not definitively established, requiring assumptions about collinearity (C, B, A and C, D, E) and the configuration of parallel lines BD and AE to solve the problem."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid due to the absence of the figure referenced in the question text.  Assuming that angle CBD is the right angle in triangle BCD, and points C, B, A are collinear and points C, D, E are collinear, and BD is parallel to AE, then triangle CBD is similar to triangle CAE.  Using the similarity ratio BD/AE = CB/CA = CD/CE, and applying the Pythagorean theorem to right triangle BCD (with BC=3, BD=4 as legs), we get CD = sqrt(BC^2 + BD^2) = sqrt(3^2 + 4^2) = 5.  From the similarity, we have BD/AE = CD/CE, so 4/AE = 5/25 = 1/5. Solving for AE gives AE = 4 * 5 = 20. Option A is indeed 20. However, the lack of an image and the implicit assumption about the right angle and point arrangement make the question poorly constructed for a standardized test.  A valid SAT question should be unambiguous and self-contained with the provided information and figure."
+    }
+  },
+  {
+    "question_id": 454356,
+    "question_text": "A right triangle has angle measures of 30°, 60°, and 90°. The perimeter of this triangle is $9+3\\sqr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. In a 30-60-90 right triangle, the side lengths are in the ratio $x : x\\\\sqrt{3} : 2x$, where $x$ is the length of the shortest side (opposite the 30° angle). The perimeter of such a triangle is $x + x\\\\sqrt{3} + 2x = x(3 + \\\\sqrt{3})$. We are given that the perimeter is $9+3\\\\sqrt{3}$. Setting these equal, we have $x(3 + \\\\sqrt{3}) = 9+3\\\\sqrt{3}$. We can factor out 3 from the right side to get $x(3 + \\\\sqrt{3}) = 3(3 + \\\\sqrt{3})$. Dividing both sides by $(3 + \\\\sqrt{3})$ gives $x = 3$. Therefore, the length of the shortest side is 3, which corresponds to option A. Options B, C, and D lead to different perimeters when used as the shortest side length in a 30-60-90 triangle, and are therefore incorrect. The difficulty level 'Hard' is appropriate as it requires knowledge of special right triangles and algebraic manipulation to solve."
+    }
+  },
+  {
+    "question_id": 657473,
+    "question_text": "Triangle PQR is a right triangle with the right angle at Q. If PQ = 5 and PR = 13, what is the value...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. In right triangle PQR with the right angle at Q, PQ is the adjacent side to angle P and PR is the hypotenuse.  Given PQ = 5 and PR = 13, cos P = Adjacent/Hypotenuse = PQ/PR = 5/13. Option D, $rac{5}{13}$, is indeed the correct answer. To confirm other options are incorrect, we can find the length of QR using the Pythagorean theorem: $PQ^2 + QR^2 = PR^2$, so $5^2 + QR^2 = 13^2$, which gives $QR^2 = 169 - 25 = 144$, and QR = 12. Option A, $rac{12}{13}$, represents sin P (Opposite/Hypotenuse = QR/PR). Option B, $rac{5}{12}$, represents tan P (Opposite/Adjacent = PQ/QR). Option C, $rac{13}{5}$, is greater than 1 and cannot be the cosine of an angle in a triangle, and it also represents sec P (Hypotenuse/Adjacent = PR/PQ). There are no grammatical or formatting issues in the question. The difficulty level 'Hard' is arguable, it might be considered medium for SAT, but it's not inappropriate as it requires understanding of right triangles, Pythagorean theorem, and trigonometric ratios."
+    }
+  }
+]

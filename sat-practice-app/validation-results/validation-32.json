@@ -1,0 +1,565 @@
+[
+  {
+    "question_id": 182857,
+    "question_text": "Researchers investigated the impact of different social media platforms on users' feelings of social...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 226. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and logically structured, presenting a research scenario and asking for the most logical in..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 164065,
+    "question_text": "Economist Mariana Mazzucato argues that technological advancements are not solely the product of the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-constructed.1. **Clarity:** The question is clearly written and easy to understand. The passage presents a concise argument by Mariana Mazzucato, and the question stem directly asks for the inference that completes her thought.2. **Correctness of Option A:** Option A, 'overlooks the crucial contributions of governmental and public institutions,' is indeed the correct answer.  Mazzucato's entire argument is centered around the idea that the narrative of innovation being solely private sector driven is incomplete and ignores the vital role of public investment and institutions.  The examples of the internet and pharmaceuticals directly support this point.3. **Incorrectness of Other Options:**    * **Option B:** 'accurately reflects the limited capacity of public institutions to foster true innovation.' This option is the direct opposite of Mazzucato's argument. She is emphasizing the *significant* contributions of public institutions, not their limitations.    * **Option C:** 'is primarily supported by evidence from sectors outside of technology and pharmaceuticals.' This option is factually incorrect based on the passage. The passage *explicitly* uses technology (internet) and pharmaceuticals as examples to support Mazzucato's claim.    * **Option D:** 'underestimates the financial risks that private companies undertake in technological development.' While financial risk is a factor in private sector innovation, Mazzucato's argument is not primarily about the financial risks faced by private companies. Her focus is on the *source* and *collaborative nature* of innovation, highlighting the often-overlooked public contributions. Option D is a distractor that might seem plausible in a general discussion of innovation, but it doesn't directly address the core argument presented in the passage.4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is well-written and presented.5. **Difficulty Level:** The 'Easy' difficulty level is appropriate. The inference required is quite direct and explicitly supported by the text. A student who understands the main idea of the passage should be able to easily identify option A as the correct answer by recognizing the central theme of Mazzucato's argument."
+    }
+  },
+  {
+    "question_id": 59335,
+    "question_text": "Before the invention of the printing press in the 15th century, books were painstakingly handwritten...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity:** The question is clear and easy to understand. The passage provides sufficient context about the impact of the printing press. The question stem directly asks for a reasonable inference based on the provided information.\n\n2. **Correct Answer (C):** Option C, 'the cost of books decreased significantly,' is indeed the correct answer. The passage explicitly states that the printing press allowed for mass production, drastically reducing time and labor. This directly leads to a significant decrease in the cost of books, making them more accessible.\n\n3. **Incorrect Options (A, B, D):**\n    * **Option A (handwriting was no longer taught in schools):** This is an extreme and unsupported inference. While the printing press reduced the need for handwritten *books*, it did not eliminate the need for handwriting in general. Handwriting remains essential for personal notes, signatures, and various other purposes. This option is clearly incorrect.\n    * **Option B (the demand for handwritten books increased):** This is the opposite of what is logically expected. The printing press made books cheaper and more readily available.  Demand for expensive and time-consuming handwritten books would logically decrease, not increase. This option is clearly incorrect.\n    * **Option D (authors became less important in the book creation process):** This is also incorrect. The printing press facilitated the wider distribution of books, potentially *increasing* the reach and influence of authors. The printing press is a tool for reproduction, not for content creation. Authors remain crucial for creating the content that is then printed. This option is clearly incorrect.\n\n4. **Grammar and Formatting:** There are no grammatical or formatting issues in the question or options. The language is clear and concise.\n\n5. **Difficulty Level:** The 'Easy' difficulty level is appropriate. The inference required is straightforward and directly supported by the text. It does not require complex reasoning or outside knowledge."
+    }
+  },
+  {
+    "question_id": 6118,
+    "question_text": "A study examined the effect of background noise on reading comprehension. Participants were divided ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and describes a straightforward study on the impact of background noise on reading comprehension. Option B, 'background noise may negatively impact the ability to understand and process written information,' is the most logical inference directly supported by the study's findings. Group 1 (silence) scored significantly higher than Group 2 (noise), indicating a negative impact of noise.Option A is incorrect because while prior knowledge and vocabulary are important for reading comprehension, the study specifically isolates and tests the effect of environmental noise. The study's findings directly contradict the idea that environmental factors are not important.Option C is incorrect as it is an extreme and unsupported generalization. The study suggests noise *may* hinder comprehension, not that easily distracted people should avoid reading altogether.Option D is incorrect because it presents an oversimplification. The study only examines background noise, but it does not conclude that noise is the *only* factor affecting reading comprehension. Other factors could also play a role.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the question requires a direct inference from the provided text and does not involve complex reasoning or outside knowledge."
+    }
+  },
+  {
+    "question_id": 202084,
+    "question_text": "Researchers studying a population of island birds called \\...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense, even without an accompanying image or passage. Option B, stating that environmental changes related to food sources drive shifts in beak size over generations, is the most scientifically sound and logical inference related to evolutionary adaptation and natural selection. This aligns with established biological principles, such as Darwin's finches, where beak size changes are driven by food availability. Options A, C, and D are clearly incorrect. Option A suggests conscious control over beak size, which is not a biologically plausible mechanism for evolutionary change in birds. Option C makes a restrictive and likely false claim about diet and beak size irrelevance to other food sources. Option D is about measurement methodology and not a biological inference about beak size evolution. The difficulty level 'Easy' is appropriate as the question tests a basic understanding of adaptation and natural selection, which is a fundamental concept in biology often introduced at an early stage of science education. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 687287,
+    "question_text": "The early internet, unlike the heavily regulated telecommunications networks that preceded it, was d...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The passage describes the early internet's open and decentralized design and its positive consequences like experimentation and freedom. Option A, 'fostered rapid innovation and the emergence of diverse online communities,' directly and logically follows from this description. Options B, C, and D are less directly supported by the text and less aligned with the positive tone of the passage. Option B, while potentially true in a broader context, focuses on a challenge rather than a direct positive outcome. Option C contradicts the spirit of decentralization described. Option D introduces the idea of adoption struggles due to complexity, which is not mentioned in the passage and is less directly related to the 'openness and freedom' emphasized.  Therefore, option A is the most accurate and best answer. The difficulty level 'Easy' is appropriate as the inference required is straightforward and directly supported by the text."
+    }
+  },
+  {
+    "question_id": 922298,
+    "question_text": "Archaeologists studying two ancient settlements in the Indus Valley, Harappa and Mohenjo-daro, analy...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense within the context of archaeological findings and trade patterns. Option B is the correct answer because it directly infers a likely trade scenario based on the evidence presented: more pottery from the south (Mohenjo-daro) found in the north (Harappa), and this southern pottery being of higher quality. This strongly suggests a southward movement of superior pottery to Harappa. \n\nOption A is incorrect because the passage only states a *higher proportion* of southern pottery in Harappa, not that Harappan potters *primarily* or *exclusively* used southern clay for *all* pottery. This is an overstatement not supported by the text.\n\nOption C is incorrect because while the findings suggest trade, they don't provide enough information to conclude that Mohenjo-daro was *more dependent* on trade with Harappa. The passage focuses on the direction and quality of pottery found in Harappa, not the overall trade dependence of either city.\n\nOption D is incorrect because the text mentions 'locally produced Harappan pottery,' implying that Harappa *did* have local clay sources suitable for pottery making. The southern clay is described as producing *finer* pottery, suggesting a difference in quality, not a complete lack of usability of Harappan clay. \n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the inference required is relatively straightforward and directly supported by the provided information."
+    }
+  },
+  {
+    "question_id": 517208,
+    "question_text": "Urban planners increasingly recognize the importance of green spaces in cities. Parks, gardens, and ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the most logical completion of a sentence explaining why cities invest in green spaces, based on the provided text. Option B, 'they believe green spaces contribute to the health and happiness of city dwellers,' is directly supported by the text, which mentions 'significant benefits for residents' well-being,' 'reduces stress levels,' and 'promotes physical activity.' These benefits are all related to health and happiness. \n\nOption A is incorrect because while the text mentions 'aesthetic appeal,' it is not the primary focus. The text emphasizes the well-being benefits more strongly. Option C is irrelevant as it discusses construction costs, which are not mentioned in the passage. Option D is also irrelevant as it talks about maintenance, which is not discussed in the passage. \n\nTherefore, Option B is the only option that logically completes the text based on the information provided. The question is grammatically correct, well-formatted, and the 'Easy' difficulty level is appropriate as it requires a straightforward inference based on the text."
+    }
+  },
+  {
+    "question_id": 898195,
+    "question_text": "Researchers have long been fascinated by the Bar-tailed Godwit's incredible migratory feats. These b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the most logical completion of a sentence based on the provided text about Bar-tailed Godwits. The text emphasizes the 'remarkable endurance' and 'non-stop flight over 11,000 kilometers without stopping to rest or refuel.' Option B, 'has developed highly efficient metabolic processes for long-distance flight,' directly addresses the physiological capability required for such an extraordinary feat of endurance. This is the most logical inference based on the information given. \n\nOption A, 'relies on favorable wind patterns to assist its transpacific journeys,' is plausible but less directly supported by the text. While wind might help, the text highlights the bird's inherent endurance, suggesting internal biological adaptations are key. Wind assistance is a contributing factor, not the primary explanation for 'remarkable endurance.'\n\nOption C, 'is the only bird species capable of migrating over such vast distances,' is incorrect. The text states it's the 'longest known non-stop flight of any bird,' implying other birds also migrate vast distances, just not necessarily non-stop for as long. Option C is an overstatement not supported by the text.\n\nOption D, 'faces significant challenges from predators during its lengthy migrations,' is a general truth about bird migration but not a logical completion of the sentence based on the text's focus. The text emphasizes the bird's endurance and flight capabilities, not the dangers it faces. While predators are a factor in bird migration, it's not the most logical inference from the provided information about 'remarkable endurance' and 'non-stop flight.'\n\nTherefore, Option B is the most logically sound and directly inferred answer. The question is grammatically correct, well-formatted, and appropriately classified as 'Easy' for an SAT inference question."
+    }
+  },
+  {
+    "question_id": 411780,
+    "question_text": "In a recent study, two types of advertisements were tested for their effectiveness in attracting cus...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text is incomplete and unclear. It mentions 'two types of advertisements' but only describes one type as 'No image'. The description of 'No image' is vague and doesn't provide enough information about the advertisement type.",
+        "Without a complete description of both advertisement types and the study's findings, it is impossible to definitively determine if option A is the correct inference.",
+        "Similarly, without the study details, it's impossible to definitively say if options B, C, and D are clearly incorrect. Their correctness depends entirely on the missing context of the study.",
+        "There is a formatting issue in the question text: 'One type, \\\\\\\\\\ No image'. The backslash before 'No image' is likely a typo or formatting error.",
+        "Due to the lack of context and incomplete question text, the difficulty level cannot be accurately assessed. While the options themselves are relatively straightforward to understand, the question's answerability is severely compromised by the missing information.",
+        "A"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 607234,
+    "question_text": "Dr. Ramirez, a marine biologist, was studying the impact of microplastics on marine life in a remote...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B, 'conduct preliminary analyses of her samples immediately after collection,' is indeed the correct answer. The passage explicitly states that transporting samples was time-consuming and could compromise sample integrity, and that Dr. Ramirez set up an on-site station to address this. This setup directly enables immediate analysis, avoiding the issues associated with transportation. Options A, C, and D are clearly incorrect because they are not the most direct and likely benefits of setting up an on-site analysis station as described in the passage. Option A is irrelevant to the immediate practical problem described. Option C is a possible secondary benefit but not the primary and most likely one. Option D is unrelated to the stated purpose of the on-site setup. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the inference required is straightforward and directly linked to the information provided in the passage."
+    }
+  },
+  {
+    "question_id": 364632,
+    "question_text": "In 1911, Ernest Rutherford conducted an experiment to probe the structure of the atom. He directed a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B, 'fundamentally flawed in its understanding of atomic structure,' is the correct answer because Rutherford's experiment directly contradicted the prevailing 'plum pudding' model of the atom, which posited a uniform distribution of positive charge. The experiment demonstrated that the positive charge and most of the mass are concentrated in a tiny nucleus, indicating a fundamental flaw in the previous model. Options A, C, and D are incorrect. Option A is incorrect because the experiment showed the model was *not* accurate in depicting atomic structure. Option C is incorrect because while isotopes are a refinement, Rutherford's experiment revealed a more fundamental flaw than just needing refinement about isotopes. Option D is incorrect because the experiment was a physical phenomenon observation that directly challenged the existing atomic model, not consistent with it. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the question requires a straightforward inference based on the provided text about a well-known scientific experiment."
+    }
+  },
+  {
+    "question_id": 888507,
+    "question_text": "A recent study investigated the impact of different types of music on plant growth. Researchers play...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Option C is the correct answer because it is a cautious and reasonable inference based on the study's findings. The study shows that classical music had a positive effect on basil plant growth compared to a control group, while heavy metal music had no significant effect. This supports the idea that 'certain types of music may have a beneficial effect on the growth of basil plants.'\n\nOption A is incorrect because the study only tested classical and heavy metal music. It's an overreach to conclude that classical music is the *only* genre with positive effects. Other genres were not tested, and the study doesn't provide evidence to support this exclusivity.\n\nOption B is incorrect because the study showed that classical music had a *positive* effect, not a detrimental one. The option uses the strong and incorrect word 'detrimental' and the sweeping generalization 'any type of music'.\n\nOption D is incorrect because the study found 'no significant difference' for heavy metal music compared to the control group, not that it 'inhibits' growth. 'Inhibits' implies a negative impact, which is not supported by the study's findings. Additionally, the study focused only on basil plants, so generalizing to 'all types of plants' is also an overreach.\n\nThe question is grammatically sound and well-formatted. The difficulty level 'Easy' is appropriate because the inference required is relatively straightforward and directly related to the information provided in the passage."
+    }
+  },
+  {
+    "question_id": 980703,
+    "question_text": "Botanists investigated the impact of light spectrum on spinach growth. Three groups of spinach plant...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 271. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"1. **Clarity:** The question is clearly written and easy to understand. The experimental setup, results, and question stem ..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 576543,
+    "question_text": "In her 2010 study on urban development, sociologist Dr. Lena Reyes examines the \\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text is incomplete and ends mid-sentence, making it impossible to understand what Dr. Reyes is examining. The phrase 'examines the' is followed by no further information.",
+        "The mention of 'No image' suggests that crucial visual or textual information related to Dr. Reyes' study is missing, which is essential for answering the question.",
+        "Without the complete question text and context (including the missing image or text), it is impossible to definitively confirm if option B is the correct answer or if other options are clearly incorrect. The correctness of option B is based on an assumption of what the question *might* be asking.",
+        "Due to the incompleteness, it is impossible to accurately assess the difficulty level. While 'Medium' might be intended, the lack of a complete question renders this assessment speculative."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is invalid due to incomplete question text and missing context ('No image'). The sentence 'In her 2010 study on urban development, sociologist Dr. Lena Reyes examines the' is grammatically incomplete and provides no information about the focus of Dr. Reyes' examination.  While option B is marked as correct and is a plausible inference based on the general topic of urban development and the nature of the options provided, we cannot definitively validate it or confirm that other options are clearly incorrect without the full question text and context. The question, as presented, is unanswerable and therefore not a valid SAT question."
+    }
+  },
+  {
+    "question_id": 800842,
+    "question_text": "Many educational theorists argue that excessive screen time diminishes students' attention spans and...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 502. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-structured. \\n\\n1. **Clarity and Sense:** The question is clearly written and makes logical ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 497951,
+    "question_text": "Researchers conducted a study on the impact of background noise on focus. Participants were asked to...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes logical sense. The study described shows that background noise increases completion time for complex math problems without affecting accuracy. Option B, 'increases the cognitive effort required to maintain the same level of accuracy,' is the most logical inference from these findings.  If accuracy is maintained but completion time increases, it suggests that participants are working harder (exerting more cognitive effort) to achieve the same level of correctness in the presence of noise.Option A is incorrect because the study shows noise *hinders* performance (increases completion time), not improves focus, even if individuals are accustomed to busy environments. Option C is incorrect as the study makes no distinction about the experience level of participants with math tasks; the conclusion is general to the effect of ambient noise. Option D is incorrect because the study explicitly states that accuracy remained *consistent*, directly contradicting this option.  There are no grammatical or formatting issues, and 'Medium' difficulty is appropriate as it requires understanding a simple study and making a direct inference based on the results."
+    }
+  },
+  {
+    "question_id": 65775,
+    "question_text": "Archaeologists initially hypothesized that the monumental statues on Easter Island, known as Moai, w...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 453. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity and Sense:** The question is clearly written..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 339805,
+    "question_text": "Paleontologist Dr. Aris Thorne initially estimated the age of newly discovered *Tyrannosaurus Rex* f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The passage describes a scenario where an initial age estimate of fossils, based on geological stratum dating, is revised using a more refined radiometric dating method. The radiometric dating yields a younger age. Option D, 'the initial age estimate of the fossils was likely inaccurate,' is the most direct and logical conclusion.  Since the team revised their estimate based on new evidence (radiometric dating), it directly implies that the initial estimate was not perfectly accurate.Option A, 'the radiometric dating method is inherently more accurate than geological stratum dating,' is a plausible statement in general scientific practice, but it's not the *most likely conclusion* of the team *in this specific scenario*. The passage only shows that radiometric dating led to a *different* age, not explicitly that it's inherently more accurate. While implied, it's not the most direct conclusion.Option B, 'the *Tyrannosaurus Rex* species lived for a shorter period than previously thought,' is not supported by the passage. The passage is about the age of *these specific fossils*, not the entire lifespan of the *Tyrannosaurus Rex* species.  A change in the age of these fossils doesn't necessarily mean the species' lifespan is shorter.Option C, 'the geological stratum where the fossils were found is likely younger than initially determined,' is a reasonable inference, but less direct than Option D. If the fossils are younger than initially estimated *based on the stratum*, it *could* suggest the stratum is younger. However, the passage focuses on the fossil age estimate being revised, making Option D the most direct and obvious conclusion.All other options are less directly supported by the text than Option D, making them clearly less correct in the context of the question. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding inference and selecting the most direct conclusion from the given information."
+    }
+  },
+  {
+    "question_id": 538871,
+    "question_text": "Researchers investigated the effects of different amounts of caffeine on cognitive performance. Part...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and describes a study investigating the effects of caffeine on cognitive performance. Option B is the correct answer because the study shows a significant improvement in performance at 200mg compared to 0mg and 100mg, but no significant difference between 0mg and 100mg. This suggests that increasing caffeine from 0mg to 100mg does not provide a measurable benefit, but increasing it to 200mg does, implying a plateau effect might be occurring between 100mg and 200mg or that the benefit is not linear from 0mg upwards.Option A is incorrect because the study explicitly states there was no significant difference between 0mg and 100mg, meaning small amounts (like 100mg in this context) did not noticeably improve cognitive functions compared to no caffeine.Option C is incorrect because the results indicate improvements in both reaction time and accuracy, not just reaction time.Option D is incorrect as the study does not provide any information about individuals who regularly consume caffeine. The participants were randomly assigned to groups, and the conclusion is based on the comparison between these groups, not on pre-existing caffeine habits."
+    }
+  },
+  {
+    "question_id": 14718,
+    "question_text": "Scientists have long observed the remarkable migration of monarch butterflies, traveling thousands o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and effectively assesses reading comprehension and inference skills. Here's a breakdown:\n\n1. **Clarity:** The question is clearly written and makes sense. It asks for the best inference based on the provided text about monarch butterfly migration. The question stem, 'These patterns suggest that __', directly prompts for an inference.\n\n2. **Correctness of Option C:** Option C is indeed the correct answer. The passage explicitly states that the navigation mechanisms are 'unclear, particularly for butterflies that have never made the journey before,' yet 'consistent patterns' are observed and they 'appear to utilize environmental cues.' This strongly suggests an inherent, unlearned navigational ability. Option C, 'monarch butterflies possess an inherent navigational capability that allows them to migrate without prior experience,' directly aligns with this inference.\n\n3. **Incorrectness of Other Options:**\n    * **Option A:** 'the complete migration route of monarch butterflies is now fully understood by researchers.' This is incorrect because the passage states that the 'exact mechanisms guiding their navigation...remain unclear.'  The passage emphasizes what is *not* fully understood, directly contradicting Option A.\n    * **Option B:** 'monarch butterflies' ability to navigate is primarily based on learned behaviors passed down through generations.' This is incorrect. The passage specifically mentions butterflies 'that have never made the journey before,' implying that navigation is not primarily learned or passed down. If it were learned behavior, first-time migrators wouldn't be able to navigate. The passage suggests the opposite – an innate ability.\n    * **Option D:** 'future research should focus solely on the environmental cues used by monarch butterflies during migration.' This is incorrect because while the passage mentions environmental cues, it doesn't suggest that research should *solely* focus on them.  The passage highlights that the 'mechanisms' are unclear, implying broader research is needed, not just limited to environmental cues.  'Solely' makes this option too narrow and unsupported by the text.\n\n4. **Grammatical or Formatting Issues:** There are no grammatical or formatting issues in the question text or options. The language is clear and standard for SAT-level questions.\n\n5. **Difficulty Level:** 'Medium' is an appropriate difficulty level. The question requires understanding the nuances of the text and making an inference, which is typical of medium-difficulty SAT Reading questions. It's not a simple recall question, but it also doesn't require extremely complex reasoning. The distractors are plausible but clearly incorrect upon closer reading of the passage."
+    }
+  },
+  {
+    "question_id": 319542,
+    "question_text": "To understand the impact of environmental noise on avian communication, researchers studied song spa...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The study design is easy to understand, and the data provided is straightforward. Option A is indeed the correct inference because the data shows a clear negative correlation between environmental noise levels and song complexity: higher noise (urban, 65 decibels) is associated with lower song complexity (7.2), and lower noise (rural, 45 decibels) is associated with higher song complexity (12.5).Option B is incorrect because the passage only discusses song complexity and does not provide any information about song volume.  It introduces an element (volume) not mentioned in the provided text, making it an unsupported inference.Option C is incorrect because it directly contradicts the findings of the study. The study investigates the impact of environmental noise and finds a correlation, suggesting that environmental noise *does* affect song complexity, rather than complexity being solely determined by genetics and unaffected by noise.Option D is incorrect because it introduces a specific threshold (55 decibels) and a 'sharp decline' that are not supported by the data. The data points are at 45 and 65 decibels, and we cannot infer a threshold of 55 decibels or a sharp decline based on just two data points.There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as the question requires understanding a simple study and making a direct inference based on the provided data."
+    }
+  },
+  {
+    "question_id": 986515,
+    "question_text": "Alexander Fleming's 1928 observation of mold inhibiting bacterial growth in a petri dish marked the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A, which is marked as correct, is indeed the best inference. The passage describes Fleming's serendipitous discovery as the 'beginning of antibiotic therapy.' This implies that while the initial observation was significant, its full impact (antibiotic therapy) unfolded over time. Option A, 'the initial reception of a scientific breakthrough can sometimes underestimate its long-term impact,' accurately reflects this idea. \n\nOption B is incorrect because the passage doesn't mention anything about Fleming's personal limitations hindering penicillin development. Option C is incorrect because the passage explicitly states that this 'accidental discovery' marked the 'beginning of antibiotic therapy,' a highly practical application, thus contradicting the idea that accidental discoveries are inherently difficult to translate into practical applications. Option D is incorrect as the passage provides no information about the scientific community's reaction to Fleming's discovery or resistance to individual researchers' innovations. \n\nThere are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires inference based on the provided text, a typical skill assessed at the medium difficulty level on the SAT Reading & Writing section."
+    }
+  },
+  {
+    "question_id": 354452,
+    "question_text": "In a study of social media usage and political polarization, researchers analyzed the online behavio...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 430. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and easy ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 777312,
+    "question_text": "Paleoclimatologists analyze tree rings to reconstruct past climate conditions. Wider tree rings gene...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The passage explains that while wider tree rings *generally* indicate favorable conditions like increased rainfall, other factors unrelated to regional climate can also influence tree growth. Therefore, option A, 'tree ring width alone may not be a definitive indicator of regional rainfall patterns,' is the most accurate inference. It directly reflects the nuance presented in the passage, acknowledging the general trend while highlighting the limitations due to other influencing factors.Option B is incorrect because the passage does not suggest that tree rings are *unreliable*, but rather that their interpretation requires consideration of other factors. Option C is incorrect because it uses the strong word 'necessarily,' which is not supported by the passage's use of 'generally.' The passage indicates a correlation, not a guaranteed causation. Option D is too extreme; the passage discusses limitations of tree rings but does not suggest abandoning them in favor of other methods. It implies that tree rings are still a valuable tool when interpreted with caution and consideration of other influences.There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding inference and identifying the most nuanced and supported conclusion from the provided text, rather than simple recall or direct extraction of information."
+    }
+  },
+  {
+    "question_id": 882943,
+    "question_text": "In many cultures, storytelling through oral tradition plays a vital role in transmitting history, va...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and makes sense. It asks for a logical inference based on the provided text about oral traditions. The prompt 'Consequently, _' clearly indicates that the missing part should be a logical consequence of the preceding information.\n\n2. **Correctness of Option B:** Option B, 'the fluidity of oral narratives allows for cultural values to be continually re-examined and reinterpreted,' is indeed the correct answer. The passage emphasizes the dynamic nature of oral traditions, where storytellers are 'active interpreters' shaping narratives to resonate with 'contemporary concerns.' This directly implies that cultural values are not fixed but are actively reinterpreted through the evolving narratives. \n\n3. **Incorrectness of Other Options:**\n    * **Option A:** 'oral traditions are often dismissed as unreliable sources of historical information compared to written documents.' This option presents a common viewpoint *about* oral traditions, but it's not a logical consequence of the passage's description of their dynamic and interpretive nature. The passage focuses on the *function* and *characteristics* of oral traditions, not their reliability compared to written records.  It's a distractor based on a common misconception, but not supported by the text.\n    * **Option C:** 'anthropologists prioritize the study of oral traditions over written history to gain a deeper understanding of a culture.'  While the passage mentions anthropologist Margaret Mead, it doesn't suggest that anthropologists *prioritize* oral traditions *over* written history. The passage highlights the value of oral traditions, but option C is an overgeneralization and not a direct inference from the text.\n    * **Option D:** 'storytellers in oral traditions are primarily concerned with preserving the literal accuracy of historical events.' This option directly contradicts the passage. The text explicitly states that storytellers are 'active interpreters' who 'shape the narrative,' not just passive preservers of literal accuracy. This is clearly incorrect based on the provided information.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question or options.\n\n5. **Difficulty Level:** The 'Medium' difficulty level is appropriate. The question requires understanding the nuance of the passage and making an inference, which is typical of medium-difficulty SAT Reading & Writing questions."
+    }
+  },
+  {
+    "question_id": 803641,
+    "question_text": "Early reports concerning a recent study appeared to establish a direct link between social media usa...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. Option B, 'is considerably more complex than initial interpretations indicated,' is the correct answer because the passage explicitly contrasts early reports that suggested a simple detrimental link with the study's findings of a 'more intricate relationship.' The passage highlights that while excessive use is harmful, moderate use for specific purposes is not necessarily so, and can even be slightly positive. This directly supports the idea that the connection is more complex than initial interpretations. \n\nOption A is incorrect because the passage refutes the idea that the connection is 'as detrimental as early reports led many to believe.' Option C is incorrect because while the 'nature of content' might be a relevant factor in real-world scenarios, the passage focuses on the *amount* and *purpose* of social media usage, not the content itself. Option D is incorrect as the passage discusses the complexity of the relationship and nuances of usage rather than suggesting 'simple restrictions' as a comprehensive solution; it's an oversimplification not supported by the passage's detailed analysis. The difficulty level 'Medium' is appropriate as it requires understanding the nuance of the passage and making an inference based on the provided information."
+    }
+  },
+  {
+    "question_id": 705405,
+    "question_text": "Ecological researchers studying migratory patterns of songbirds tracked various populations along bo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is the correct answer because it directly reflects the inference that can be drawn from the researchers' findings and proposed explanation. The passage states that coastal routes have a statistically significant increase in predation rates and attributes this to greater visibility for aerial predators due to unobstructed airspace. Option A accurately summarizes this implication by stating that coastal paths pose an intrinsically higher predation risk.Option B is incorrect because the passage focuses on predation as the differentiating factor between coastal and inland routes, not food availability. Food resources are not mentioned in the passage.Option C is incorrect because weather conditions are not discussed in the passage. The passage explicitly contrasts predation rates between coastal and inland routes as the key finding.Option D is incorrect because while the passage indicates higher predation on coastal routes, it does not provide information to conclude that songbird populations using these routes are 'inevitably facing a steep decline'. 'Inevitably' is too strong a word and an unsupported exaggeration of the information provided. The passage only discusses increased predation rates, not population decline.There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding the text and drawing a logical inference, which is typical of medium-difficulty SAT Reading & Writing questions."
+    }
+  },
+  {
+    "question_id": 337601,
+    "question_text": "Ornithologists have long observed that migratory bird populations are declining worldwide.  While ha...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense within the context of SAT Reading & Writing. Option B is the correct answer because the passage explicitly details the negative impacts of light pollution on migratory birds, leading to the logical inference that reducing artificial light at night would be crucial for their conservation. Options A, C, and D are incorrect because they make claims that are not directly supported or are too extreme compared to the information provided in the passage. Option A is too absolute ('no longer sufficient'), Option C overstates the primary threat, and Option D makes a comparison not present in the text. There are no grammatical or formatting issues, and 'Medium' difficulty is appropriate as it requires understanding the main idea and making a logical inference based on the provided information."
+    }
+  },
+  {
+    "question_id": 333534,
+    "question_text": "Ornithologists have noted a trend in the migration patterns of the Willow Warbler, a species that br...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It presents a scenario about Willow Warbler migration and asks for the most likely adaptation driving the observed change. Option A, 'the altered seasonal availability of their food resources in Europe,' is indeed the correct answer. The passage explicitly states that scientists hypothesize the earlier arrival is linked to climate change causing earlier spring and 'a corresponding advancement in the phenology of plants and insects, the Willow Warbler's primary food source during breeding.' This directly supports Option A as the most likely adaptation.Options B, C, and D are clearly incorrect. Option B, 'a reduction in the energy expenditure required for their migration journey,' is not supported by the text. The passage focuses on food availability, not energy conservation during migration. Option C, 'increasing competition from other bird species in their wintering grounds,' is irrelevant as the question is about their *arrival at breeding grounds* in Europe, not their wintering grounds.  Furthermore, the text doesn't mention competition. Option D, 'a natural fluctuation in their internal biological clocks over time,' is less likely because the passage explicitly links the change to external environmental factors (climate change and food availability), making an adaptation to these external changes a more probable explanation than a random internal fluctuation.There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding the text and making a logical inference about the most likely cause-and-effect relationship described."
+    }
+  },
+  {
+    "question_id": 712353,
+    "question_text": "The bombardier beetle is known for its unique defense mechanism. When threatened, it can eject a hot...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense within the context of SAT Reading & Writing. Option B, 'effectively deter predators with a rapid and potent chemical defense without risking self-harm,' is the most logical completion of the text. The passage describes a 'sophisticated system' that produces a 'hot, irritating chemical spray' through an 'exothermic reaction' from initially 'harmless chemicals' stored in 'separate compartments.' This system allows the beetle to defend itself potently and rapidly without self-harm because the reaction is contained and controlled, and the irritating spray is not stored pre-mixed. Options A, C, and D are clearly incorrect. Option A is incorrect because the text describes the chemicals being stored *within* the beetle, not obtained from the environment. Option C is incorrect because the text explicitly states the beetle stores *harmless* chemicals, not the *irritating spray* itself. Option D is incorrect as the text focuses on the mechanism of defense, not the beetle's immunity to its own spray, which is not directly supported by the provided information. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires reading comprehension and inference skills to select the best option."
+    }
+  },
+  {
+    "question_id": 992723,
+    "question_text": "A study in 2015 found that the average household in City X recycled approximately 25 pounds of plast...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option A, Option C, and Option D are also plausible explanations for the modest increase in recycling, making Option B not definitively the *only* or *best* correct answer. The question, while asking for 'One potential explanation', implies there should be a single *best* answer in the context of SAT questions. Option A, in particular, is a strong alternative correct answer as methodological differences would directly invalidate the comparison and explain a seemingly 'modest' increase that might not be real at all."
+      ],
+      "correct_answer": "B",
+      "explanation": "While Option B is a plausible explanation for a modest increase in recycling after a public awareness campaign, Options A, C, and D are also valid and strong potential explanations. \n\n* **Option A:** If the methodology changed, the comparison between 2015 and 2020 is unreliable. A 3-pound difference might be due to measurement differences, not an actual increase in recycling behavior. This is a critical flaw in drawing conclusions from the data and a very strong reason for a 'modest' or even non-existent real increase. \n\n* **Option B:** This option is plausible. If many people were already recycling, the campaign's impact would be limited to the remaining population, naturally resulting in a smaller overall increase. This is the marked correct answer and is a reasonable inference. \n\n* **Option C:** If the campaign targeted those already recycling, it would be ineffective in significantly raising the overall average. This could also explain a modest increase, as it might only slightly nudge up the recycling rates of an already engaged group, without converting new recyclers. \n\n* **Option D:** A decrease in the price of recycled plastic could reduce the incentive for households to recycle more, counteracting the campaign's intended effect. This is another valid reason for a modest increase, as economic factors can influence behavior regardless of awareness campaigns.\n\n**Why the question is flawed:** The question asks for 'One potential explanation,' but in the context of SAT Reading questions, there is usually a single *best* answer that is more directly supported by the text or logically superior. In this case, Options A, C, and D are all very reasonable and strong explanations for a modest increase, arguably as strong or even stronger than Option B. Option A, in particular, is a critical point about data validity that often undermines conclusions drawn from studies.  The question is not definitively *bad*, but it lacks the clear single 'best' answer expected of high-quality SAT questions, making it potentially confusing and frustrating for test-takers. Option B is likely intended as correct because it directly relates to the *effectiveness of the campaign*, but the other options are too plausible to be definitively ruled out without more context or specific constraints within the question itself."
+    }
+  },
+  {
+    "question_id": 362478,
+    "question_text": "Researchers recently discovered that presenting information in a visually cluttered environment can ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and logically sound. The passage suggests that cluttered visuals enhance memory due to increased cognitive effort, and conversely, simplified visuals might hinder deeper processing. The question then sets up a study where participants learn from densely or sparsely populated timelines and asks for a hypothesis about the sparsely populated group.Option B, 'demonstrate a weaker understanding of the causal links between events compared to those with densely packed timelines,' is the correct answer. This is because if sparsely populated timelines represent a highly structured and overly simplified visual presentation, as suggested in the passage, they would, according to the researchers' suspicion, hinder deeper cognitive processing. Understanding causal links requires deeper cognitive processing than simply recalling dates or feeling less overwhelmed.Option A is incorrect because it contradicts the passage's logic. The passage implies that clarity (sparsely populated timeline) might *hinder* deeper processing, not enhance recall due to clarity.Option C is incorrect because while feeling less overwhelmed is a plausible outcome of a sparsely populated timeline, it doesn't directly address the researchers' hypothesis about cognitive processing and memory retention. The question is focused on cognitive processing and understanding, not subjective feelings of being overwhelmed.Option D is incorrect because faster processing and quicker comprehension are not necessarily indicative of deeper cognitive processing or better memory retention in the context of the passage. The passage suggests that increased cognitive effort (implied by cluttered visuals) leads to better memory, not faster processing.The difficulty level 'Hard' is appropriate as the question requires understanding a nuanced argument, making an inference based on the provided text, and eliminating distractors that might seem plausible at first glance."
+    }
+  },
+  {
+    "question_id": 299193,
+    "question_text": "Prior to Alexander Fleming's 1928 discovery of penicillin, bacterial infections posed a significant ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 444. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-constructed. Here's a breakdown:\\n\\n1. **Clarity and Sense:** The question is clearly writte..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 989663,
+    "question_text": "Early ethologists, scientists who study animal behavior, often assumed that the complex social struc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B, 'the seemingly complex social organization of these colonies was, in fact, the result of numerous simple, genetically determined actions,' logically completes the text. The passage describes early ethologists assuming insect social structures were driven by instinct and genetically programmed responses. Option B directly aligns with this assumption by stating that the complex organization is actually a result of simple, genetically determined actions. Options A, C, and D are incorrect because they do not logically follow from the premise that early ethologists focused on genetically programmed responses. Option A introduces a comparison about adaptability which is not directly supported by the text. Option C discusses behavioral variation within colonies, which is a related but not directly implied belief of early ethologists based on the text. Option D shifts the focus to research methodology, which is also not the central idea being discussed in the incomplete sentence.  There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding the nuance of the text and making a logical inference to complete the sentence, distinguishing between plausible but ultimately incorrect options."
+    }
+  },
+  {
+    "question_id": 103036,
+    "question_text": "Economists once predicted that the expansion of railroads in the 19th century would uniformly stimul...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written.1.  **Clarity and Sense:** The question is clear and logically structured. It presents a scenario, contrasting expectations with observed data, and asks for the most logical conclusion. The question stem is straightforward and appropriate for an SAT reading comprehension question.2.  **Correct Option (C):** Option C is indeed the most logically correct answer. The passage highlights a discrepancy between the predicted uniform economic growth from railroads and the reality observed in the Southern US. The passage explicitly states that early data from the Northeast seemed to confirm the initial prediction, but data from the South contradicted it. This discrepancy directly suggests that the initial economic models were flawed because they didn't account for the differences between regions like the Northeast and the South (specifically, the agricultural nature of the South versus the industrializing Northeast). Option C directly addresses this flaw in the models.3.  **Incorrect Options (A, B, D):**    *   **Option A:** While potentially true in reality, the passage provides no information about the technical specifications of railroad construction being different between the North and South. Option A introduces an external factor not mentioned in the text, making it an unsupported inference.    *   **Option B:** This option is incorrect because the passage implies the opposite. The South is described as *agricultural regions* that did *not* experience the same industrialization as the Northeast. This suggests the South was *less* developed industrially, not already at a peak level of development.    *   **Option D:** Option D is plausible and close to being correct. It is true that the benefits of railroads were not universally applicable and depended on regional characteristics. However, Option C is a more direct and stronger answer because the passage is framed around the *failure of the initial economic models/predictions*. Option C directly addresses the flaw in the models themselves, while Option D is a more general statement about the conditions for economic benefit.  Option C is a more precise inference based on the text's focus on the economists' predictions and their shortcomings.4.  **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question text or options.5.  **Difficulty Level (Hard):** The difficulty level of 'Hard' is appropriate. The question requires careful reading, understanding the nuance of the passage, and differentiating between closely related options (especially C and D). It tests inference skills and the ability to identify the most logical conclusion based on the provided text, rather than simple recall.In conclusion, the question is a well-constructed SAT reading comprehension question with a clear correct answer and reasonably plausible but ultimately incorrect distractors. It appropriately tests inference skills at a 'Hard' difficulty level."
+    }
+  },
+  {
+    "question_id": 292507,
+    "question_text": "The average commute time in major cities has steadily increased over the past decade. Studies show t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Option A is the correct answer because the passage describes issues with current public transportation (delays, overcrowding) and initiatives to expand subway systems, implying that the current systems are inadequate to meet commuter demands. Options B, C, and D are incorrect as they contradict or are not supported by the information provided in the passage. Option B is opposite to the initiatives mentioned. Option C is contradicted by the mention of delays, overcrowding, and improvement initiatives. Option D misinterprets the focus on peak hour problems. The difficulty level 'Hard' is appropriate as the question requires inference and elimination of incorrect options."
+    }
+  },
+  {
+    "question_id": 335736,
+    "question_text": "Botanist Maria Rodriguez studies plant adaptations in extreme environments. While researching in the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and logically sound. It presents a scenario where a cactus with shallow roots thrives in an extremely dry environment, prompting an inference about its water source. Option B, 'atmospheric moisture, absorbed directly through its specialized skin,' is the most logical inference. Shallow roots in a desert environment suggest that the plant is not accessing deep underground water. Therefore, an alternative water source, such as atmospheric moisture absorption, becomes a plausible adaptation. Option A is directly contradicted by the information about shallow roots. Option C is too specific and assumes the existence of a hidden spring without any supporting evidence, also using the strong word 'definitely' which is rarely correct in inference questions. Option D is overly complex and introduces 'unknown biological mechanisms,' making it an unlikely and less direct inference.  The difficulty level 'Hard' is appropriate as it requires inferential reasoning and elimination of less plausible options."
+    }
+  },
+  {
+    "question_id": 756701,
+    "question_text": "A recent study published in the Journal of Digital Security revealed that 85 percent of internet use...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and presents a logical scenario: a stated concern about online privacy juxtaposed with high internet usage. The question asks for an inference that resolves this apparent contradiction. \n\nOption B, 'willing to trade some privacy for the benefits of internet access,' directly addresses the contradiction. It suggests that despite privacy concerns, individuals find the advantages of internet use compelling enough to engage with it extensively, implicitly accepting some privacy trade-off. This is a reasonable inference based on the provided information.\n\nOption A, 'actively seeking out online platforms with stronger privacy protections,' is incorrect because the high internet usage despite privacy concerns suggests the opposite. If people were actively seeking privacy-focused platforms, the contradiction would be less pronounced. Their behavior indicates they are not prioritizing this action to a significant degree.\n\nOption C, 'largely unaware of the extent to which their online activity is tracked,' is also incorrect. While some individuals might be unaware, the premise states that 85% *report being concerned* about online privacy. This suggests a level of awareness, making option C less likely to be the primary explanation for the contradiction. Furthermore, even if some are unaware, the core contradiction remains for those who *are* concerned but still use the internet heavily.\n\nOption D, 'becoming increasingly vocal about government regulations on data privacy,' is incorrect because it describes a potential consequence or action related to privacy concerns, but it doesn't explain the contradiction between concern and behavior.  Being vocal about regulations is a reaction to privacy concerns, not an explanation for why people spend so much time online despite those concerns.\n\nThere are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as the question requires inferential reasoning and understanding of implied meanings to select the best option that resolves the presented contradiction. The question effectively tests the ability to make inferences based on provided information, a key skill assessed on the SAT Reading & Writing section."
+    }
+  },
+  {
+    "question_id": 797517,
+    "question_text": "Dr. Anya Sharma theorizes that non-diegetic music in film, particularly its emotional congruence wit...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It presents Dr. Sharma's theory about non-diegetic music and viewer identification, then asks for an inference based on this theory applied to the example of *City Lights*. Option B is the correct answer because it directly aligns with Sharma's theory: the absence of music during an emotional moment (the reunion) should *attenuate* viewer identification, leading to a weakened emotional connection and emotional distance. Option A is incorrect because it suggests intensification of emotional engagement, which contradicts Sharma's theory regarding the absence of congruent music. Option C is incorrect because while the absence of music might draw attention to visual aspects, it doesn't directly address the impact on viewer *identification* and *emotional connection* as described by Sharma's theory. Option D is incorrect because it focuses on a 'detached, intellectual appreciation,' which is not the primary effect Sharma's theory predicts regarding viewer identification and empathy; Sharma's theory is about emotional impact, not intellectual analysis.  There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding an abstract theory and applying it to a specific example to make an inference."
+    }
+  },
+  {
+    "question_id": 934769,
+    "question_text": "It is widely accepted that exercise, particularly resistance training, leads to muscle hypertrophy. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and logically structured. The passage presents a common belief about muscle hypertrophy and then introduces a contrasting viewpoint from researchers. These researchers argue that the observed muscle gains are disproportionately small compared to the expected muscle damage if damage were the sole driver of growth.  Option A directly addresses this discrepancy by suggesting that other factors beyond muscle damage repair are likely involved in muscle growth. This is the most logical inference based on the researchers' argument.Option B is incorrect because the researchers are arguing *against* excessive muscle damage being the primary driver, not for it. Option C is a possible inference, but it's not the most direct or logical completion of the text. The researchers are questioning the *interpretation* of the relationship between damage and growth, not necessarily the measurement methods themselves. Option D is irrelevant to the central argument, which is about the mechanism of muscle growth in resistance training, not the comparative efficiency of different exercise types. Therefore, option A is the only option that logically completes the text and aligns with the researchers' implied argument."
+    }
+  },
+  {
+    "question_id": 461795,
+    "question_text": "Researchers have studied the effectiveness of different renewable energy sources, such as solar and ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and logically structured. It presents a problem (intermittency of renewable energy) and a current limitation (battery storage). The question asks for the necessary condition for renewable energy sources like solar and wind to become primary. \n\nOption A, which is marked as correct, directly addresses the limitation discussed in the passage. It states that advancements in battery technology are needed for reliable and affordable large-scale energy storage, which is precisely the solution to the intermittency problem hindering renewables from becoming primary. Therefore, Option A is indeed the correct inference.\n\nLet's examine why the other options are incorrect:\n\n* **Option B:** This option suggests reducing investment in renewables and focusing on nuclear power. This is irrelevant to the passage's argument. The passage discusses the *challenges* of renewable energy, not whether we should abandon it.  Switching to nuclear power is a different energy strategy altogether and doesn't logically follow from the need to address renewable energy intermittency to make them *primary*. It's a distraction, not a solution within the context of the passage.\n\n* **Option C:** This option suggests keeping fossil fuel plants operational. While this is a current practice to manage grid stability, it directly contradicts the initial goal stated in the passage: 'reducing reliance on fossil fuels'.  Keeping fossil fuel plants operational is a temporary workaround for intermittency, not a solution to make renewables *primary*. It maintains reliance on fossil fuels, rather than overcoming the limitations of renewables.\n\n* **Option D:** This option suggests consumers reducing energy consumption. While energy conservation is beneficial, it's not the primary solution to the problem of renewable energy intermittency in the context of making them a *primary energy source*.  Reducing consumption might lessen the impact of intermittency, but it doesn't address the core issue of needing reliable storage to make renewables consistently available as a primary energy source. It's a reactive measure, not a proactive solution to the technological challenge.\n\nThere are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate because it requires understanding the implicit argument and drawing a logical inference, rather than simple recall or literal comprehension."
+    }
+  },
+  {
+    "question_id": 383534,
+    "question_text": "The quill pen, fashioned from bird feathers, served as the dominant writing instrument across numero...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes logical sense. It describes the quill pen, highlighting both its advantages and disadvantages. The question then asks for the characteristic of the writing implements that superseded it, based on the provided context. \n\nOption B, 'were less fragile and provided a more consistent and cleaner writing process,' is indeed the correct answer. The passage explicitly mentions the quill pen's drawbacks: 'prone to breakage,' 'necessitated frequent ink dipping,' and 'demanded regular sharpening to preserve a precise point.' Option B directly addresses these limitations by describing writing implements that are *less fragile* (addressing breakage) and provide a *more consistent and cleaner writing process* (addressing frequent ink dipping and sharpening for a precise point). \n\nLet's examine why other options are incorrect:\n\n* **Option A: 'utilized different types of ink and pigments for enhanced color variation.'** While different inks and pigments might be a feature of newer writing implements, the passage focuses on the *mechanical* and *practical* limitations of the quill pen (fragility, inconsistency). Color variation is not directly related to overcoming these core disadvantages. \n\n* **Option C: 'could be manufactured on a larger scale and at a lower cost of production.'**  While mass production and cost are important factors in the widespread adoption of technologies, the passage emphasizes the *performance* drawbacks of the quill pen. Cost and scalability are not mentioned as reasons for its supersession in the provided text. The focus is on functionality and user experience.\n\n* **Option D: 'were adopted for specialized purposes beyond general writing and calligraphy.'** This option shifts the focus to *different uses* rather than *replacing* the quill pen for its primary function. The passage states the quill pen was the 'dominant writing instrument,' implying it was used for general writing and calligraphy. Option D describes implements used for *other* purposes, not necessarily those that superseded the quill pen in its original domain.\n\nTherefore, Option B is the most logical and direct answer as it directly addresses the weaknesses of the quill pen mentioned in the passage, providing the reasons for its eventual replacement. The difficulty level 'Hard' is appropriate as it requires inference and understanding of the implied cause-and-effect relationship between the quill pen's disadvantages and the characteristics of its successors. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 244312,
+    "question_text": "Researchers studying the impact of urbanization on bird populations observed two groups of sparrows ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. Option B is the correct answer because it accurately summarizes the findings of the research described in the question. The research indicates 'higher levels of corticosterone' (physiological consequence), 'lower diversity of gut bacteria' (physiological consequence), and 'reduced foraging efficiency' (behavioral consequence) in downtown sparrows due to the 'stress of urban environments'. Option B, stating 'multifaceted physiological and behavioral consequences', directly aligns with these findings and uses appropriately cautious language ('may have').\n\nOption A is incorrect because the passage only discusses sparrows and doesn't generalize to 'all bird species'.  The term 'uniformly diminishes' is also too absolute and not supported by the text, which only suggests negative impacts on the studied sparrow population.\n\nOption C is incorrect as it directly contradicts the passage by stating that stress hormone levels are not significantly altered. The passage explicitly states 'significantly higher levels of corticosterone'.\n\nOption D is incorrect because it makes an unsupported assumption that the stress is 'solely attributable to noise pollution' (the passage doesn't specify the source of stress) and incorrectly claims 'minimal impact on foraging behaviors' when the passage clearly states 'reduced foraging efficiency'.\n\nThe question is clearly written, grammatically sound, and the 'Hard' difficulty level is appropriate as it requires careful reading and inference to select the best answer and eliminate the distractors."
+    }
+  },
+  {
+    "question_id": 82579,
+    "question_text": "Before 2006, Pluto was widely considered the ninth planet of our solar system. However, in 2006, the...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is grammatically incomplete and unclear due to the missing term after 'redefined the term \\\\\\\\\\'. It seems to be missing the word 'planet' or a similar concept.",
+        "Option A, marked as correct, is not grammatically correct when inserted into the sentence. 'redefined the term the definition of' is nonsensical.",
+        "Option C, while also grammatically incomplete when directly inserted, is conceptually closer to the correct answer if we assume the question is asking about the IAU's new definition of 'planet'.",
+        "Options A and C are presented as incomplete phrases, making them grammatically awkward in the context of completing the sentence.",
+        "The formatting issue '[No image]' is present in the question text and should be removed or replaced with the intended content.",
+        "Option D is clearly incorrect as it promotes prioritizing historical classifications over modern ones, which is contrary to scientific progress and the context of the passage.",
+        "C"
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 189453,
+    "question_text": "The Metropolis Public Library system recently implemented a new fine structure for overdue books. Pr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of analyzing the impact of a new library fine policy. Option B is indeed the correct answer because it logically explains both observed data points: a decrease in the number of overdue books and an increase in total revenue.  A higher fine per day and a maximum cap could incentivize patrons to return most books sooner (leading to fewer overdue books overall), but those who do keep books overdue might reach the maximum fine more quickly, thus increasing the total revenue despite fewer books being overdue. \n\nOption A is incorrect because while it explains the decrease in overdue books, it doesn't explain the increase in revenue. Returning books more promptly should ideally lead to lower or at least not significantly higher revenue. \n\nOption C is incorrect because it discusses operational costs, which is not directly supported by the data provided. The data is about fines and overdue books, not library operations. While reduced overdue books *might* indirectly affect operational costs, it's not a direct inference from the given data about fines and revenue. \n\nOption D is incorrect because while it could explain the decrease in overdue books (fewer borrowed books mean fewer potential overdue books), it doesn't explain the increase in revenue. If fewer books are borrowed, and thus fewer are overdue, the revenue from fines would likely decrease or stay the same, not increase by 20%. \n\nThe question is grammatically sound and well-formatted. The difficulty level 'Hard' is appropriate as it requires careful analysis of the data and inference to select the best explanation among plausible distractors."
+    }
+  },
+  {
+    "question_id": 302693,
+    "question_text": "Researchers studying the effects of caffeine on memory conducted an experiment involving two groups ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and describes a straightforward experiment. Option C, 'consuming 200mg of caffeine may lead to a measurable improvement in memory recall,' is directly supported by the experiment's findings, which showed a 15% improvement in the caffeine group compared to the placebo group. \n\nOption A, 'placebos have no discernible effect on memory recall performance,' is not supported by the study. The study only compares caffeine to placebo, not placebo to a no-treatment control. Placebos can have effects, and the study doesn't provide evidence to negate any placebo effect on memory recall. \n\nOption B, 'caffeine consumption has no correlation with enhanced memory recall,' is directly contradicted by the experiment's results, which showed a positive correlation. \n\nOption D, 'memory recall tests are not a reliable method for assessing cognitive enhancement,' is a general statement about the reliability of memory recall tests. While this might be true in some contexts, the question is asking for a conclusion based on the given experiment, which *uses* memory recall tests and finds a difference between groups. Option D is not a valid inference from the provided study's results. \n\nThere are no grammatical or formatting issues. The difficulty level of 'Hard' is appropriate as it requires understanding experimental design and drawing a logical inference from the results."
+    }
+  },
+  {
+    "question_id": 567572,
+    "question_text": "In the field of archaeology, radiocarbon dating has long been the standard method for determining th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 200. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense within the context of scientific dating methods. Option A, stating that \\\\\"..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 882871,
+    "question_text": "Conventional marketing wisdom suggests that celebrity endorsements significantly boost product appea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-written.1. **Clarity and Sense:** The question is clear and makes sense. It presents a scenario where conventional wisdom is challenged by a study's findings, and asks for the most logical explanation for this unexpected result. The language is straightforward and easy to understand.2. **Correctness of Option B:** Option B is indeed the most logically correct answer. The passage highlights the surprising finding that ordinary user endorsements are *more* effective than celebrity endorsements. Option B directly addresses this by suggesting that ordinary users are perceived as 'trustworthy and reflective of genuine user experience,' contrasting with celebrity endorsements which are often seen as 'purely transactional.' This aligns perfectly with the idea of why ordinary users might be preferred in this context, especially for a product like a smartphone where user experience is crucial.3. **Incorrectness of Other Options:**    * **Option A (expert and grounded in a deep understanding):** While ordinary users *can* be knowledgeable, it's less likely that consumers primarily perceive them as *more expert* than celebrities in smartphone technology. Celebrities often endorse products across various domains without deep expertise. The core issue is not expertise, but rather perceived genuineness and relatability.    * **Option C (aspirational and representative of a lifestyle):** Celebrity endorsements are typically associated with aspiration and lifestyle.  It's counterintuitive to suggest that ordinary users are *more* aspirational than celebrities. This option reverses the typical association and doesn't logically explain why ordinary users would be *more* effective in this specific scenario.    * **Option D (technically detailed and informative):**  While ordinary users *could* provide technical details, the passage focuses on 'consumer interest' and 'perception.'  Celebrity endorsements are generally *less* about technical details and more about brand image. However, the core contrast isn't about technical detail versus brand image, but rather about trustworthiness and genuine experience versus transactional endorsements. Option D is less directly relevant to the core contrast presented in the passage.4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is well-structured and uses appropriate language.5. **Difficulty Level:** The 'Hard' difficulty level is appropriate. While the passage is not overly complex, choosing the *most logical* completion requires careful consideration of nuances and the ability to differentiate between plausible but less fitting options. It requires inference and understanding of consumer perception, making it more challenging than a simple vocabulary or grammar question.In conclusion, the question is a well-constructed SAT-style reading comprehension question with a clear correct answer and reasonably distinct incorrect options. It effectively tests inference skills and understanding of the nuances of marketing and consumer perception."
+    }
+  },
+  {
+    "question_id": 436595,
+    "question_text": "Researchers investigated the effect of different light wavelengths on the photosynthetic rate of a s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense within the context of a scientific study. Option B is the correct answer because it is a logical inference based on the study's findings. The study shows that *P. oceanica* has the highest photosynthetic rate under blue light and negligible photosynthesis under red light. Since blue light penetrates deeper into water than red light, it is reasonable to infer that the depth at which *P. oceanica* can thrive is limited by the availability of blue light for photosynthesis.Option A is incorrect because the study only shows negligible photosynthesis under red light (650 nm), not complete incapability of utilizing wavelengths longer than 550 nm.  Furthermore, the comparison to terrestrial plants is irrelevant and not supported by the provided information.Option C is incorrect because the study only indicates negligible photosynthesis under red light, not that red light is detrimental or causes cellular damage. This is an over-interpretation of the findings.Option D is incorrect because the study does not provide any information about the photosynthetic rate of *P. oceanica* at wavelengths shorter than 450 nm.  It is an unsupported extrapolation to assume the rate would continue to increase.There are no grammatical or formatting issues. The difficulty level of 'Hard' is appropriate as it requires students to make an inference based on scientific data and eliminate distractors that are plausible but not directly supported by the text."
+    }
+  },
+  {
+    "question_id": 578931,
+    "question_text": "Researchers conducted a study on consumer behavior to investigate the impact of loss aversion on pur...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The study design is straightforward to understand, and the results are presented clearly. \n\nOption A is the correct answer. The data explicitly shows that 46% of participants in the first scenario (lost cash) would repurchase, while only 23% in the second scenario (lost ticket) would repurchase. This directly supports the statement that consumers are less willing to repurchase a lost ticket than to proceed with a purchase after losing an equivalent amount of cash.\n\nOption B is incorrect. While the data suggests a lower willingness to purchase after a loss, it doesn't directly address the 'perceived value' of the ticket. The study focuses on loss aversion, not value perception changes due to financial loss.  Furthermore, 'significantly' is subjective and not directly quantified by the data provided. \n\nOption C is incorrect. The data clearly contradicts this option, as 46% and 23% are not equally likely outcomes. The study demonstrates a difference in behavior based on the type of loss.\n\nOption D is incorrect. While the price of concert tickets might be a general concern for some consumers, this option introduces an external factor not directly tested in the study. The study is designed to investigate loss aversion, not consumer opinions on ticket prices. The data is explained by loss aversion principles, where losing a pre-purchased ticket is perceived as losing more than losing an equivalent amount of cash intended for the purchase.\n\nThere are no grammatical or formatting issues. The language is clear and appropriate for an SAT question.\n\nThe difficulty level 'Hard' is appropriate. The question requires understanding a research scenario, interpreting data, and making an inference based on that data, which are skills tested at the 'Hard' difficulty level on the SAT Reading & Writing section."
+    }
+  },
+  {
+    "question_id": 293196,
+    "question_text": "In urban environments, the \\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text is incomplete and grammatically incorrect. It starts with 'In urban environments, the \\\\\\\\\\' which is not a complete sentence or question.",
+        "There is no accompanying text passage or image provided, making it impossible to determine the context and make a valid inference. Inference questions on the SAT require a source text.",
+        "Without a source text, all options (A, B, C, and D) are plausible and could be considered 'correct' based on general knowledge about urban environments and green spaces. This makes it difficult to definitively select one option as the uniquely correct inference.",
+        "The label 'No image' suggests that there might be a missing image that is crucial for understanding the question or context. Its absence is a formatting/content issue.",
+        "While option C is a true statement about urban heat islands, without a source text, it's impossible to validate if it's the *intended* correct inference based on specific information. The question's validity is compromised by the missing context.",
+        "C"
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  }
+]

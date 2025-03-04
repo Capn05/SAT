@@ -1,0 +1,514 @@
+[
+  {
+    "question_id": 560472,
+    "question_text": "The following text is adapted from Frederick Douglass's 1845 autobiography, *Narrative of the Life o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 781. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-written. \\n\\n1. **Clarity:** The question is clear and easy to understand. It asks about the..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 414409,
+    "question_text": "Urban green spaces like parks and gardens provide numerous benefits for city dwellers. Studies have ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clear and directly asks for a reason urban green spaces are important according to the provided text. Option B accurately summarizes the main points of the text, which highlights various benefits for city residents' well-being (stress reduction, mental health, physical activity) and the environment (mitigating heat island effect, improving air quality, supporting biodiversity). Options A, C, and D are incorrect because they are not supported by the text. Option A focuses on public events, which are not mentioned. Option C emphasizes tourism and economic benefits, which are also not the focus of the text. Option D is too narrow, focusing only on endangered species habitats, while the text discusses broader biodiversity and environmental benefits. The difficulty level 'Easy' is appropriate as the answer is directly inferable from the text."
+    }
+  },
+  {
+    "question_id": 652688,
+    "question_text": "Before the invention of the printing press in the mid-15th century, books were painstakingly handwri...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text. Option C accurately captures the main idea by stating that the printing press revolutionized book production and had a profound societal impact by increasing access to knowledge. Options A, B, and D are all true statements derived from the text, but they represent supporting details or background information rather than the overarching main idea. Option A focuses on the mechanism and speed, Option B on cost and availability, and Option D on the pre-printing press situation.  The difficulty level 'Easy' is appropriate as the main idea is readily discernible from the text and the distractor options are clearly not the main idea. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 34214,
+    "question_text": "In 1928, Scottish bacteriologist Alexander Fleming noticed a petri dish contaminated with mold.  He ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is implicitly asking for the central idea or a brief summary of the provided passage about Alexander Fleming's discovery of penicillin. Option A, 'A fungal growth in a laboratory,' accurately describes the initial observation that led to the discovery, as Fleming noticed mold (fungal growth) in a petri dish (laboratory). This is the direct starting point of the story described in the passage.Option B, 'A new type of bacteria,' is incorrect because the passage is about the discovery of penicillin from mold, which kills bacteria, not the discovery of a new type of bacteria itself.Option C, 'A chemical compound derived from plants,' is incorrect because penicillin is derived from *Penicillium notatum*, a mold, which is a type of fungus, not a plant.Option D, 'An antiseptic solution,' is incorrect because while penicillin is antibacterial and related to antiseptic principles, the passage describes the *discovery* of penicillin as a substance produced by mold, not the creation of an antiseptic solution.  Penicillin is an antibiotic, not an antiseptic solution in the typical sense.All options except A are clearly contradicted or not directly supported by the passage. The difficulty level 'Easy' is appropriate as the question requires basic reading comprehension to identify a key detail from the passage and match it to the correct option."
+    }
+  },
+  {
+    "question_id": 138153,
+    "question_text": "Dr. Anya Sharma, a historian specializing in ancient Mediterranean civilizations, faced a significan...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity:** The question is clearly written and easy to understand. It presents a scenario about a historian facing a challenge with fragile papyrus scrolls. \n2. **Correct Answer:** Option B, 'The scrolls were too fragile to be easily examined,' is indeed the correct answer. The passage explicitly states that the scrolls were 'brittle and prone to crumbling,' making them 'impossible to unroll fully and read' without specialized techniques. This directly corresponds to the fragility hindering easy examination.\n3. **Incorrect Options:** Options A, C, and D are clearly incorrect because they are not supported by the passage. \n    * **Option A:**  The passage does not mention anything about the language being undecipherable. The focus is on the physical condition of the scrolls, not the language itself. \n    * **Option C:** The passage mentions the scrolls were 'buried underground,' but not that the location is a 'remote archaeological site' that poses an obstacle to examination. The problem is the fragility, not the location. \n    * **Option D:** The passage is about the initial examination of the scrolls, not about comparing their historical information to other sources. There is no mention of inconsistencies.\n4. **Grammar and Formatting:** There are no grammatical or formatting issues in the question or the options.\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The answer is directly stated in the passage, requiring basic reading comprehension skills to identify the main problem described."
+    }
+  },
+  {
+    "question_id": 87252,
+    "question_text": "The following text is from Louisa May Alcott's 1868 novel *Little Women*. Hannah is a servant in the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 192. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense. Option A is directly supported by the text, where Hannah says, \\\\\"I don't ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 545665,
+    "question_text": "Researchers at the University of California, Berkeley, conducted a study on the impact of social med...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks about the central idea of the provided text. Option A, 'A study indicates that extensive social media usage is linked to reduced sleep duration among teenagers,' accurately summarizes the main finding of the study described in the passage. Options B, C, and D are all demonstrably incorrect based on the text. Option B makes an unsupported claim about 'no negative impacts' for less than one hour of use. Option C misrepresents the text by stating blue light is the 'only' factor, when the text mentions it as one of the potential factors along with the 'stimulating nature of social media content'. Option D is completely unrelated to the study's focus, which is on the impact of social media, not the development of a new platform.  The difficulty level 'Easy' is appropriate as the question requires identifying the main idea from a straightforward passage."
+    }
+  },
+  {
+    "question_id": 205651,
+    "question_text": "While consumer drones are often associated with recreational use, they are increasingly being adopte...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text. Option C, 'Drones are transitioning from primarily recreational devices to valuable tools in a variety of professional fields,' accurately captures the central theme of the text, which discusses the shift in drone usage from recreational to professional applications across sectors like farming, construction, and search and rescue. \n\nOption A is incorrect because while it mentions search and rescue, it overemphasizes this single application and doesn't capture the broader shift across 'various professional sectors' mentioned in the text.  \n\nOption B is incorrect as it focuses on specific examples (agriculture and construction) and their benefits (efficiency and safety), rather than the overarching main idea of the transition from recreational to professional use. It's a supporting detail, not the main idea. \n\nOption D is incorrect because it makes an unsupported claim about 'primary beneficiaries' and is also too narrow, focusing only on farmers and construction companies when the text highlights diverse applications beyond just these two. \n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because identifying the main idea of this straightforward passage is a fundamental reading comprehension skill expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 498148,
+    "question_text": "Dr. Mae Jemison was the first African American woman to travel to space.  Before becoming an astrona...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the central idea of the provided text about Dr. Mae Jemison. Option C, 'To promote scientific careers among students from all backgrounds,' accurately reflects the main point of the text, which highlights Jemison's advocacy for students, especially minority students, to pursue science and technology careers and her belief in universal potential in science. \n\nOption A is incorrect because while Jemison served as a doctor, the text doesn't focus on the challenges doctors face in developing countries. Option B is incorrect because although she served in the Peace Corps, the text's primary focus is not on Peace Corps recruitment but on STEM career encouragement. Option D is incorrect as the text mentions her astronaut career but does not detail the training process. All incorrect options are clearly not the central idea of the passage, making option C the unambiguously correct answer. The difficulty level 'Easy' is appropriate as the central idea is explicitly stated and easily identifiable."
+    }
+  },
+  {
+    "question_id": 322320,
+    "question_text": "Orchids, known for their diverse and vibrant flowers, are often perceived as delicate and requiring ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity:** The question is clear and asks for the main idea of the provided text, which is a standard reading comprehension task. The text itself is also easy to understand and focused on a single central idea.\n\n2. **Correct Answer (Option C):** Option C accurately captures the main idea of the text. The passage explicitly states that Thompson's research challenges the perception of orchids as delicate and confined to tropical climates, revealing their surprising adaptability to colder, temperate regions. This aligns perfectly with Option C.\n\n3. **Incorrect Options (A, B, D):**\n    * **Option A:** This option presents the opposite of the main idea. The text *refutes* the notion that orchids are predominantly tropical and delicate. \n    * **Option B:** While antifreeze proteins are mentioned in the text, they are a supporting detail, not the main focus of Thompson's study as presented in the passage. The main focus is the broader finding of orchid resilience in temperate climates, not just the mechanism of antifreeze proteins.\n    * **Option D:** This option is factually incorrect and irrelevant to the main idea. Antifreeze proteins are related to cold survival, not flower vibrancy or diversity. The text doesn't link antifreeze proteins to these floral characteristics.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical errors or formatting problems in the question text or options. \n\n5. **Difficulty Level (Easy):** The difficulty level is appropriately labeled as 'Easy'. The text is short, the main idea is explicitly stated, and the incorrect options are clearly distinguishable from the correct answer. Identifying the main idea in such a straightforward passage is a fundamental reading comprehension skill expected at an 'Easy' level for the SAT."
+    }
+  },
+  {
+    "question_id": 707596,
+    "question_text": "Botanists investigated the effect of different soil types on the growth rate of sunflower seedlings....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard SAT Reading & Writing question type. Option B, 'An experiment demonstrated that sunflower seedlings grow taller in sandy soil than in clay soil in the first two weeks,' accurately summarizes the experiment's findings and the botanists' conclusion as stated in the text. Options A, C, and D are demonstrably incorrect. Option A makes an unsupported claim about long-term health, which is not discussed in the text. Option C directly contradicts the experimental results, which show a clear difference in growth based on soil type. Option D is too broad and represents a general statement about botanists rather than the specific main idea of the provided text, which is about a particular experiment and its results. There are no grammatical or formatting issues, and the 'Easy' difficulty level is appropriate given the straightforward nature of the text and question."
+    }
+  },
+  {
+    "question_id": 813447,
+    "question_text": "Artificial light at night, from streetlights to building illumination, is increasingly recognized as...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard reading comprehension task. Option C accurately captures the central theme of the text: the negative impact of artificial light pollution on nocturnal animals due to their evolutionary adaptation to darkness.  Option A is too narrow, focusing only on migratory birds and sea turtles, while the text discusses nocturnal animals more broadly. Option B introduces the idea of 'human safety' which is not mentioned in the text, making it irrelevant. Option D contradicts the text by suggesting minimal impact from reducing light pollution, whereas the text implies mitigation is necessary to protect ecosystems. All options are grammatically sound and the difficulty level 'Easy' is appropriate because the text is straightforward and the main idea is readily discernible."
+    }
+  },
+  {
+    "question_id": 808270,
+    "question_text": "Zora Neale Hurston, a central figure of the Harlem Renaissance, carved a unique path by centering he...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clear, directly asks about the significance of Hurston's focus as described in the text, and is easily understood. Option B is explicitly supported by the text, which states Hurston 'immersed herself in documenting the vibrant cultural traditions, folklore, and daily routines of Southern Black communities.' Options A, C, and D are all clearly incorrect based on the passage. Option A is incorrect because the text contrasts Hurston's approach with 'direct political protest.' Option C is incorrect as commercial success is not mentioned in the text. Option D is incorrect because the text explicitly states Hurston focused on the 'rural South,' not urban experiences. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the answer is directly stated in the text and requires basic reading comprehension skills."
+    }
+  },
+  {
+    "question_id": 790512,
+    "question_text": "The following text describes the initial reception of the telephone.  When Alexander Graham Bell int...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text. Option A, 'While the inventor was optimistic about the telephone, the public was unsure of its value,' accurately captures the central contrast presented in the text: Bell's excitement and positive vision versus the public's skepticism and doubt. Options B, C, and D are demonstrably incorrect based on the text. Option B is false because the text explicitly mentions newspapers ridiculing the telephone, contradicting 'uniformly supportive.' Option C is incorrect as the text describes the *initial* reception, not rapid popularization. Option D misrepresents Bell's focus; the text highlights his vision for connecting people, not solely scientific aspects, and doesn't mention him ignoring public opinion. There are no grammatical or formatting issues, and the 'Easy' difficulty level is appropriate for identifying the main idea of this straightforward text."
+    }
+  },
+  {
+    "question_id": 224455,
+    "question_text": "The following text is from a memoir by a chef recalling their first experience working in a professi...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The text passage that the question refers to is missing. Without the text, it is impossible to definitively determine if option C is the correct answer or if other options are clearly incorrect. The question is incomplete and cannot be properly evaluated for content validity.",
+        "Assuming 'The Bear' is the head chef's nickname, the options are plausible interpretations of a chef's first experience in a professional kitchen. However, without the source text, we cannot confirm which option is best supported by evidence.",
+        "The question relies entirely on the unprovided text to determine the correct answer.  Therefore, the validity of the question is entirely dependent on the content of this missing text."
+      ],
+      "correct_answer": "C",
+      "explanation": "While the question structure and options are grammatically sound and relevant to SAT Reading question types (analyzing character emotions and central ideas), the crucial text passage is missing.  Therefore, we cannot validate if option C is actually the correct answer or if options A, B, and D are definitively incorrect.  The question's validity hinges entirely on the content of the unprovided text.  Assuming the 'Easy' difficulty level is intended, the text should likely provide clear evidence supporting option C (Intimidated and anxious) and contradicting the other options. However, without the text, this is just speculation.  The question is incomplete and thus invalid in its current form."
+    }
+  },
+  {
+    "question_id": 324901,
+    "question_text": "It is commonly assumed that increased screen time before bed negatively impacts sleep duration. Stud...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is the correct answer because it accurately reflects the main point of the text, which is that the *type* of content consumed before bed may be as important as the *duration* of screen time in affecting sleep. Options B, C, and D are all clearly incorrect because they contradict or oversimplify the nuanced information presented in the text. Option B is incorrect as the text suggests content matters. Option C is too definitive and ignores the nuance about content. Option D is too extreme and not supported by the text, which suggests relaxing content might not be detrimental. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding the nuances of the text and drawing a conclusion based on the presented information, rather than simple recall."
+    }
+  },
+  {
+    "question_id": 707575,
+    "question_text": "Researchers have long observed that consumer spending patterns shift during economic downturns, but ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is indeed the correct answer as it accurately reflects the findings of Petrova and Carter's study as described in the passage: lower-income households reduced essential spending more significantly than higher-income households during the recession. Option A is incorrect because it uses strong, definitive language ('definitively proves', 'drastically cut') which is an overstatement of the study's findings. The passage describes findings, not definitive proof, and 'proportionally larger decrease' is not necessarily 'drastic'. Option C is incorrect as it directly contradicts the passage by stating that all income groups *solely* decreased discretionary spending, while the passage explicitly mentions lower-income groups also reduced essential spending. Option D is incorrect because it introduces an element not discussed in the passage - the effectiveness of government aid programs. The passage focuses on spending patterns, not the impact of government aid.  There are no grammatical or formatting issues, and 'Medium' difficulty seems appropriate as it requires understanding the main idea and specific details of the passage to choose the correct answer."
+    }
+  },
+  {
+    "question_id": 290992,
+    "question_text": "Researchers have conducted multiple studies on the effects of social media on teenage mental health....",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 378. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is valid and well-written. \\n1. **Clarity:** The question is clear and asks directly about the findings of the..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 206523,
+    "question_text": "The following text is adapted from Henry David Thoreau's *Walden* (1854).  I went to the woods becau...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text excerpt from Thoreau's *Walden*. Option A, 'The narrator explains his reasons for moving to a natural setting to live intentionally and understand life's core elements,' accurately captures the central theme of the passage. The text explicitly states the narrator's desire to 'live deliberately,' 'front only the essential facts of life,' and 'learn what it had to teach,' all of which are reasons for his move to the woods. Options B, C, and D are plausible distractors but do not represent the main idea as effectively as Option A. Option B touches on a broader theme in *Walden* but isn't the primary focus of this excerpt. Option C focuses on practical skills, which are not the central concern here. Option D mentions death, but it's presented as a motivation for living deliberately, not the main idea itself.  There are no grammatical or formatting issues, and the 'Medium' difficulty level is appropriate given the complexity of Thoreau's prose and the need to discern the main idea from related themes."
+    }
+  },
+  {
+    "question_id": 483718,
+    "question_text": "The city's Science Discovery Museum recently launched a mobile outreach program called 'Science on W...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 262. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is clearly written and asks for the main idea of the provided text, which is a standard SAT Reading & Writing ..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 763636,
+    "question_text": "Archaeologist Sarah Parcak uses satellite imagery to locate ancient sites.  Traditional archaeologic...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks about the central idea of the provided text. Option B, 'Satellite imagery offers a significant improvement over conventional methods in the field of archaeology,' accurately reflects the main point of the passage, which highlights the advantages of Sarah Parcak's satellite imagery approach over traditional archaeological surveys. \n\nOption A is incorrect because while the passage mentions Egypt, it doesn't explicitly state that archaeological digs in Egypt have *proven* to be more fruitful. It focuses on the potential and efficiency of Parcak's method, not definitive results of digs. \n\nOption C is incorrect because the passage contrasts satellite imagery with traditional methods to emphasize the *improvement* offered by the new technology. It does not suggest that footwork and aerial photography remain 'essential' despite advancements; rather, it highlights the limitations of these traditional methods compared to satellite imagery. \n\nOption D is incorrect because it overemphasizes a specific example (pyramids in Egypt) and misrepresents Parcak's main contribution. The passage focuses on the broader impact of her methodology on the scale and efficiency of archaeological exploration, not solely on the discovery of pyramids.  While the Egypt example is mentioned, it serves to illustrate the broader point about the effectiveness of satellite imagery. \n\nThe difficulty level of 'Medium' is appropriate as it requires understanding the main idea and differentiating between options that are related to the text but not the central point."
+    }
+  },
+  {
+    "question_id": 229513,
+    "question_text": "While Alexander Fleming is widely credited with the discovery of penicillin in 1928, his initial fin...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard SAT Reading & Writing question type. Option A, 'Although Fleming discovered penicillin, Florey and Chain were essential in making it a widely available and effective medicine,' accurately captures the central theme of the passage. The passage emphasizes the collaborative nature of penicillin's development, highlighting Fleming's initial discovery but stressing the crucial role of Florey and Chain in enabling mass production and widespread use. Options B, C, and D are demonstrably incorrect. Option B incorrectly states that Fleming's discovery 'immediately revolutionized' medicine, contradicting the passage's point about the limitations of his initial findings. Option C shifts the focus to the complexity of mass production being 'more scientifically significant' than the initial discovery, which is not the main idea of the text, which is about the collaborative effort. Option D misattributes penicillin's effectiveness 'primarily' to Fleming's understanding, ignoring the essential contributions of Florey and Chain in making it practically applicable.  The difficulty level 'Medium' is appropriate as it requires understanding the nuances of the text and identifying the overarching message rather than just factual recall. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 139416,
+    "question_text": "Conventional wisdom in urban planning has long held that increasing green spaces in cities invariabl...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A accurately describes the main idea of the text, which is that while green spaces can be linked to gentrification, proper planning and interventions can prevent this negative outcome. Option B is incorrect because while gentrification's negative impacts are mentioned as a concern, the main point is not about urban planners' focus but about the study's findings challenging conventional wisdom. Option C is incorrect as the text refers to 'conventional wisdom,' implying prior understanding and discussion of the relationship, not a complete lack of prior research. Option D is incorrect because the researchers believe gentrification can be mitigated, not that it is unavoidable. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding the main idea of a short, straightforward text and differentiating it from related but incorrect interpretations."
+    }
+  },
+  {
+    "question_id": 98276,
+    "question_text": "Some studies have indicated that exposure to blue light, commonly emitted from electronic devices, c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is indeed the correct answer because it accurately reflects the main idea of the passage: while blue light might have a minor effect, other factors related to screen use are likely more significant in affecting sleep. Option A is incorrect because it overstates the findings, claiming 'no impact' which is not supported by 'weak correlation'. Option C is incorrect as it directly contradicts the passage by stating a 'strong link' when the passage describes a 'weak correlation'. Option D is incorrect because it presents individual sensitivity as the 'sole determinant', while the passage suggests it is one of several 'other factors' alongside screen content. All incorrect options are clearly wrong, and there are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding the nuance of 'weak correlation' versus stronger claims."
+    }
+  },
+  {
+    "question_id": 10961,
+    "question_text": "The following text is adapted from Jane Austen's 1813 novel *Pride and Prejudice*. Elizabeth Bennet ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 198. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is clearly written and makes sense. Option B is indeed the correct answer as the text explicitly states, \\\\\"Sh..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 637206,
+    "question_text": "The following text is adapted from a reflection on the experience of reading.   When I sit down to r...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard SAT reading comprehension question type. Option B, 'Reading allows individuals to deeply engage with narratives and experience a sense of transformation,' accurately captures the central theme of the text. The passage emphasizes the immersive nature of reading, where the reader 'steps into another world,' becomes 'lost in the narrative,' and experiences a shift in reality. Option A is partially true, as reading can be an escape, but it doesn't fully encompass the depth of engagement and transformation described in the text. Option C is incorrect because the text focuses on the experiential and emotional aspects of reading, not knowledge acquisition. Option D is incorrect as it misrepresents the text's focus, which is clearly on the content and experience of the story, not the physical act of reading. All options are distinct enough, and Option B is definitively the best answer. The difficulty level 'Medium' is appropriate as identifying the main idea of a short, relatively straightforward passage is a typical medium-difficulty task on the SAT."
+    }
+  },
+  {
+    "question_id": 904729,
+    "question_text": "Recent studies have revealed the widespread presence of microplastics in marine environments, from s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard SAT Reading & Writing question type. Option C accurately captures the main idea by summarizing the widespread nature of microplastic pollution, its ingestion by marine organisms, and the potential threat it poses to marine ecosystems. Options A, B, and D are all details mentioned in the text, but they do not represent the overarching main idea. Option A focuses on a specific study, Option B highlights the pervasiveness of microplastics, and Option D points to a future need for research. While all are true according to the text, they are supporting details rather than the central point.  There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as identifying the main idea of a short, straightforward passage is a typical skill assessed at this level."
+    }
+  },
+  {
+    "question_id": 857182,
+    "question_text": "The following text is adapted from Emily Dickinson's poem 712, \\...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B, which is marked as correct, accurately reflects the central idea of Emily Dickinson's poem 712. The poem is widely interpreted as a metaphorical journey with Death personified as a carriage driver, taking the speaker through stages of life towards eternity. Options A, C, and D are demonstrably incorrect. Option A misinterprets the poem as being about a *past* near-death experience and appreciating everyday life, while the poem is about the journey *with* death. Option C incorrectly frames the poem as a lament about lost youth, missing the broader theme of the journey towards eternity. Option D reduces the profound metaphorical journey to a mere dream, diminishing the poem's deeper meaning. There are no grammatical or formatting issues. The 'Medium' difficulty level is appropriate as understanding the poem's metaphor and central idea requires a moderate level of reading comprehension and literary analysis skills suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 976766,
+    "question_text": "In 2023, paleontologists in Argentina unearthed the fossil of a giant dinosaur, *Meraxes gigas*. Whi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks about information explicitly stated in the provided text. Option A is correct because the text states that *Meraxes gigas* had 'surprisingly short' arms, 'similar to *Tyrannosaurus rex*', and that scientists believe this similarity is due to 'convergent evolution' (independent evolution for different purposes). Option B is incorrect because the text suggests the arms' purpose might be related to 'mating or balance', not hunting large prey. Option C is incorrect as the text explicitly states the arms were 'not vestigial'. Option D is incorrect because the text indicates the arms were short, not longer than predicted. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium because it requires understanding explicit information and making a straightforward inference about convergent evolution."
+    }
+  },
+  {
+    "question_id": 899814,
+    "question_text": "Researchers studying the impact of screen time on sleep quality have noted a correlation between eve...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is the correct answer because it accurately summarizes the main idea of the provided text: limiting screen time before bed is advisable due to the interference of blue light with natural sleep regulation (melatonin production). \n\nOption B is incorrect because it overstates the claim. The text mentions a correlation and a potential impact, but not that evening screen use is the *primary cause* of all sleep disorders. \n\nOption C is incorrect because it presents a false absolute. Melatonin production is influenced by various factors, not solely blue light from screens. The text only mentions blue light as a factor that *can* suppress melatonin. \n\nOption D is incorrect as it introduces information not present in the text. The text discusses the general impact of screen time on sleep quality and does not specifically focus on children. \n\nThere are no grammatical or formatting issues, and the difficulty level of 'Medium' is appropriate as it requires understanding the central idea and identifying the best summary among plausible but incorrect options."
+    }
+  },
+  {
+    "question_id": 470840,
+    "question_text": "Researchers studying the effects of caffeine on memory conducted an experiment where participants we...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks about what was surprising in the study results according to the provided text. Option C, 'Caffeine's effect on memory was significantly greater than predicted,' directly reflects the text's statement that 'the difference [in recall rates] was much larger than initially hypothesized.' Options A, B, and D are all demonstrably incorrect based on the text. Option A is wrong because the text states caffeine *did* have an impact. Option B is incorrect because the text doesn't comment on whether the placebo group's recall was high or low, only that the caffeinated group's recall was significantly higher than expected. Option D is incorrect because the study's results were *contrary* to previous findings of moderate improvement, showing a much larger effect instead. There are no grammatical or formatting issues, and the 'Medium' difficulty level is appropriate as it requires understanding a straightforward detail from the text."
+    }
+  },
+  {
+    "question_id": 792746,
+    "question_text": "The following text is from Charles Dickens's 1838 novel *Oliver Twist*. The scene depicts Oliver's a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "There is a potential typographical error in the text: 'lofty andтельном composure'. 'тельном' is likely a misspelling and should be replaced with a more common English word like 'contemptuous' or 'stern' to better fit the context of Bumble's demeanor. While this doesn't invalidate the question, it could be confusing for test-takers."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text excerpt. Option C, which is marked as correct, accurately states the main idea. The passage depicts Oliver's first encounter at the workhouse as frightening and intimidating due to Master Bumble's stern and authoritarian behavior. Bumble's 'angry voice,' commands like 'Hold your head up!', and 'steady frown' all contribute to an atmosphere of intimidation. \n\nOption A is incorrect because while Oliver does eat a lot of gruel, the text focuses more on his interaction with Master Bumble and the intimidating atmosphere than on the quantity of food. The amount of food is a detail, not the main idea.\n\nOption B is clearly incorrect as the text explicitly portrays Master Bumble as stern and intimidating, the opposite of 'kind and welcoming.' His actions and words are far from caring.\n\nOption D is incorrect because while the workhouse-master does show some timidity and pleads with Bumble ('Please, Bumble, don't bite at him!'), this is a secondary detail. The main focus is on Oliver's experience of fear and intimidation, not the workhouse-master's sympathetic actions. The workhouse-master's fear also underscores Bumble's intimidating nature, further supporting option C.\n\nThere are no grammatical or formatting issues in the question itself, aside from the potential typo in the passage text. The difficulty level of 'Medium' is appropriate as identifying the main idea requires understanding the tone and character interactions within the short passage, but it is not overly complex or nuanced."
+    }
+  },
+  {
+    "question_id": 978699,
+    "question_text": "A 2023 study published in the journal *Nature* analyzed data from over 500,000 individuals across mu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-written. Option B is the correct answer because it accurately summarizes the central idea of the passage: a large-scale study indicating a correlation between air pollution and depression, with a potential link to brain inflammation. \n\nOption A is incorrect because it misrepresents the study's findings by stating that air pollution *causes* depression in *all* individuals, which is a stronger claim than the study makes (correlation, not causation, and an 8% *rise in incidence*, not universal causation). \n\nOption C is incorrect because it mischaracterizes the study's focus. While air pollution can have physical health effects, the passage explicitly states the study focused on the link to *depression*, a mental health issue, not primarily physical health effects. \n\nOption D is incorrect because the passage does not claim that researchers at UC Berkeley were the *first* to identify a connection between environmental factors and mental health. It only states they conducted *this* specific study. This option introduces information not supported by the text and makes an absolute claim that is unlikely to be true and not suggested by the passage.\n\nThere are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding the nuances of correlation vs. causation and accurately identifying the main idea and supporting details from a short text, skills tested on the SAT Reading & Writing section."
+    }
+  },
+  {
+    "question_id": 380802,
+    "question_text": "Entomologist Dr. Anya Sharma and her team conducted a study on monarch butterfly migration patterns ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and assesses comprehension of details within the provided text. Option B is correct because the passage states that of the 30% of butterflies that did not complete the migration, two-thirds were lost due to habitat fragmentation and one-third due to severe weather. This directly supports the claim that habitat fragmentation is a more significant factor than severe weather in migration failure. Option A is incorrect because the passage states that 70% of butterflies *successfully* complete the migration, meaning a majority *are able* to complete it, and weather is only responsible for a portion of the failures. Option C is incorrect as the study focuses on migration failure, not overall population decline, and while weather is a factor in migration failure, habitat fragmentation is presented as a more significant factor within the context of this study. Option D is incorrect because the passage explicitly states the butterflies reached overwintering sites in Mexico, directly contradicting this option. The difficulty level of 'Medium' is appropriate as it requires understanding of proportions and direct textual evidence."
+    }
+  },
+  {
+    "question_id": 237156,
+    "question_text": "Studies have shown a correlation between increased social media use among teenagers and a rise in re...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks about the central idea of the provided text. Option B, 'How might social media use be connected to teenagers' mental well-being?', accurately captures the main point of the text, which discusses the correlation and potential mechanisms linking social media use to anxiety and depression in teenagers. Option A is incorrect because the text doesn't focus on the popularity of social media platforms. Option C is related but not the most direct answer; while the text mentions self-esteem, the primary focus is on anxiety and depression. Option D is incorrect as the text discusses negative impacts, not potential positive uses of social media for mental health. All options are clearly distinct, and Option B is definitively the best answer. The difficulty level of 'Medium' is appropriate as it requires understanding the main idea of a short paragraph and selecting the most fitting question it addresses."
+    }
+  },
+  {
+    "question_id": 246109,
+    "question_text": "Recent studies have explored the impact of social media on teenagers' mental health. While some cele...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks about the critics' viewpoint on social media's impact on teenagers, as described in the provided text. Option B accurately reflects the critics' argument that social media can negatively affect self-esteem due to social comparison and the pressure to maintain a perfect online image. Options A, C, and D are demonstrably incorrect as they contradict or misrepresent the critics' perspective presented in the text. Option A suggests a positive impact on self-esteem, which is the opposite of the critics' view. Option C claims social media encourages real-world interactions, which is not supported by the critics' concerns about online versus real-life experiences. Option D minimizes social media's impact, while the critics in the text are explicitly concerned about its negative effects. There are no grammatical or formatting issues, and the 'Medium' difficulty level is appropriate as it requires reading comprehension and the ability to identify the main idea and supporting details within a short paragraph."
+    }
+  },
+  {
+    "question_id": 877580,
+    "question_text": "Researchers have recently developed a novel type of concrete that incorporates recycled plastic wast...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense within the context of SAT Reading & Writing questions. Option C is the most appropriate answer because it presents a balanced and nuanced perspective on the novel concrete. It acknowledges the 'environmental advantages' mentioned in the question stem while also suggesting that 'practical applications may be limited by certain performance characteristics.' This cautious and realistic assessment aligns with the typical tone and reasoning expected in SAT reading comprehension.Option A is too strong and speculative.  The phrase 'ensure that eco-concrete will soon become the primary material' is an overstatement not supported by the limited information in the question stem.  Environmental benefits alone rarely 'ensure' immediate and complete market dominance.Option B is also too definitive and negative.  Stating that eco-concrete is 'unlikely to be used in structural applications due to its inherent weaknesses' is a strong claim that is not supported by the introductory nature of the question stem. The stem only mentions 'novel type of concrete' and 'recycled plastic waste,' not necessarily 'inherent weaknesses.'Option D is overly enthusiastic and absolute.  Claiming that 'current research conclusively demonstrates that eco-concrete is superior to traditional concrete in all aspects' is highly improbable and unrealistic for initial research into a novel material.  'Conclusively demonstrates' and 'superior in all aspects' are excessively strong phrases.There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate because the question requires nuanced understanding and the ability to differentiate between options based on the strength and certainty of their claims, rather than simple factual recall.  Students need to infer the most reasonable and balanced conclusion based on the limited information provided."
+    }
+  },
+  {
+    "question_id": 254797,
+    "question_text": "The following text is adapted from Edith Wharton's 1905 novel *The House of Mirth*.  Miss Bart was a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 458. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-constructed. Here's a breakdown:\\n\\n1. **Clarity and Sense:** The question is clear and dire..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 79067,
+    "question_text": "The following text is adapted from a short story about a scholar's experience in a library.  The lib...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 423. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-written. \\n\\n1. **Clarity and Sense:** The question is clear and makes sense. It directly as..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 924900,
+    "question_text": "For much of the 20th century, standardized testing was widely accepted as an objective measure of ac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text, which is a standard SAT Reading & Writing question type. Option C accurately captures the main idea: the text describes a historical period where standardized tests were highly valued, followed by a period of research revealing their limitations, leading to a current trend of questioning their reliance and seeking alternative assessment methods. Options A, B, and D are all demonstrably incorrect based on the text. Option A is the opposite of the text's main idea, suggesting growing popularity and proven accuracy when the text argues against reliance due to limitations. Option B focuses on improving tests, which is not the main point of the text; the text is about moving away from sole reliance on them. Option D introduces 'new technologies' and increased acceptance, which is also contrary to the text's argument about questioning and limitations. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate because identifying the main idea requires careful reading and understanding of the nuances of the text, and the incorrect options are plausible distractors that require close analysis to eliminate."
+    }
+  },
+  {
+    "question_id": 708776,
+    "question_text": "Many insects have evolved remarkable camouflage strategies to avoid predation. Stick insects, for ex...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks what the text 'most strongly suggests' about the daytime behavior of stick and leaf insects. Option B, 'It is a crucial element of their camouflage strategy, protecting them from visually oriented predators,' is directly supported by the text. The passage states that these insects 'remain motionless throughout the day, when visually oriented predators like birds are most active.' This directly links their daytime behavior to camouflage and protection from these predators. \n\nOption A, 'It is primarily motivated by the need to conserve energy due to limited food availability during the day,' is not mentioned or suggested in the text. The passage focuses solely on camouflage and predation avoidance, not energy conservation or food availability.\n\nOption C, 'It is less effective at night because nocturnal predators rely more on senses other than sight,' while partially related to the text's mention of nocturnal activity and other senses, does not directly answer the question about the *daytime* behavior's motivation. The text uses the contrast with nighttime activity to highlight the *daytime* behavior's purpose related to *visual* predators. Option C shifts the focus to nighttime ineffectiveness, not daytime motivation.\n\nOption D, 'It is a learned behavior, acquired through observing the actions of older, more experienced insects,' is not supported by the text. The passage discusses 'evolved camouflage strategies' and 'mimicking,' suggesting an innate, evolutionary behavior rather than a learned one. There is no mention of learning or observation.\n\nTherefore, option B is the only option directly and strongly supported by the provided text, making it the correct answer. The difficulty level 'Hard' is appropriate as it requires careful reading and inference to identify the best answer and eliminate distractors."
+    }
+  },
+  {
+    "question_id": 960580,
+    "question_text": "While Antoine Lavoisier is often credited as the father of modern chemistry for his groundbreaking w...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is the correct answer because it accurately reflects the central idea of the passage: while Lomonosov predated Lavoisier in formulating the law of conservation of mass, Lavoisier's work was more influential due to wider recognition and dissemination. Option A is incorrect because the passage does not compare the accuracy of their findings, only their influence. Option C is incorrect because the passage states that language barriers were *a* factor, not the *sole* factor, as limited dissemination is also mentioned. Option D is incorrect as there is no indication in the passage that Lavoisier intentionally appropriated Lomonosov's work; the lack of recognition for Lomonosov is attributed to language and dissemination issues, not intentional plagiarism.  The difficulty level 'Hard' is appropriate as the question requires understanding nuanced historical context and drawing inferences about the reasons for Lavoisier's greater influence despite Lomonosov's earlier work."
+    }
+  },
+  {
+    "question_id": 450940,
+    "question_text": "Traditional crop rotation involves planting different types of crops in the same field in planned se...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks what the text most strongly suggests about monoculture farming. Option A is correct because the text explicitly states that monoculture leads to soil nutrient depletion and is unsustainable in the long run, implying lower yields over extended periods compared to crop rotation which maintains soil fertility and is sustainable. Options B, C, and D are incorrect because they introduce information not mentioned or suggested in the text. Option B discusses machinery and technology, which is not in the passage. Option C talks about climate and regional adoption, also not mentioned. Option D discusses labor intensity and long-term economic benefits, which are not the focus of the text, which is about soil health and sustainability.  The difficulty level 'Hard' is appropriate as it requires inference and understanding of the implications of soil depletion and lack of sustainability mentioned in the text."
+    }
+  },
+  {
+    "question_id": 782556,
+    "question_text": "Though often criticized for their perceived lack of depth, superhero narratives in comic books and f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and easy to understand. It presents a short paragraph arguing for the nuanced nature of superhero narratives and implicitly asks for the main idea of this paragraph.\n\n2. **Correctness of Option B:** Option B, 'They are unfairly characterized as shallow because many of these narratives engage with profound moral and societal questions,' is indeed the correct answer. This option accurately captures the central argument of the paragraph, which is that superhero narratives are often wrongly perceived as lacking depth and are actually more complex, dealing with ethical and societal issues.\n\n3. **Incorrectness of other options:**\n    * **Option A:** 'They have transitioned from simplistic power fantasies to complex narratives that explore societal anxieties and ethical dilemmas.' While superhero narratives might have evolved, the paragraph doesn't focus on a *transition*. It argues against the *current* perception of shallowness and highlights the *current* complexity. The focus is on correcting a misconception, not describing a historical shift.\n    * **Option C:** 'They are primarily aimed at younger audiences but inadvertently introduce them to complex ethical concepts.' The paragraph makes no mention of the target audience. The argument is about the narratives' inherent qualities, not their intended audience or unintended consequences for that audience.\n    * **Option D:** 'They have become increasingly popular despite their consistent focus on serious moral and social issues, alienating some viewers.' The paragraph doesn't discuss popularity or viewer alienation. It focuses solely on the thematic depth and complexity of the narratives in contrast to critical perceptions of them as shallow.\n\n4. **Grammatical and formatting issues:** There are no grammatical or formatting issues in the question or options. \n\n5. **Difficulty Level:** The 'Hard' difficulty level is appropriate. While the paragraph is short, identifying the central idea and distinguishing it from plausible but incorrect options requires careful reading and analytical skills, typical of harder SAT Reading and Writing questions. Students need to understand the nuance of the argument and eliminate options that are related to superhero narratives but don't accurately represent the main point of the provided text."
+    }
+  },
+  {
+    "question_id": 88514,
+    "question_text": "In a study of urban green spaces, researchers at Elmwood University examined the impact of park acce...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 472. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is valid and well-constructed. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and easy..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 846119,
+    "question_text": "Data transmission through fiber optic cables relies on light signals. However, over long distances, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity:** The question is clear and directly asks about the primary function of optical repeaters as described in the provided text. The text itself is easy to understand and provides sufficient information to answer the question.\n\n2. **Correctness of Option B:** Option B, 'They amplify weakened light signals to maintain data integrity over long distances,' is indeed the correct answer. The text explicitly states that repeaters 'receive the weakened signal, amplify it back to its original strength, and then retransmit it down the fiber. This process ensures data integrity over vast distances.' Option B accurately reflects this information.\n\n3. **Incorrectness of Other Options:**\n    * **Option A:** 'They convert light signals into electrical signals for easier transmission.' This is incorrect. The text describes optical repeaters dealing with light signals, not converting them to electrical signals. While some repeaters *might* involve electrical components internally, the text focuses on the light signal aspect and amplification, not conversion to a different signal type for transmission.  This option introduces information not present in the text and is therefore incorrect based on the provided passage.\n    * **Option C:** 'They reduce the speed of light signals to prevent signal distortion.' This is incorrect. The text mentions signal weakening (attenuation) and amplification, not signal distortion or speed reduction. Reducing the speed of light is not a function of optical repeaters in the context of mitigating signal attenuation. This option is irrelevant to the text's content.\n    * **Option D:** 'They split the light signal into multiple channels for increased bandwidth.' This is incorrect. The text describes repeaters as amplifying and retransmitting the signal, not splitting it into multiple channels. Splitting signals for bandwidth increase is a different concept (wavelength-division multiplexing) and is not the function of repeaters as described in the text. This option introduces a concept not mentioned in the text and is therefore incorrect.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question text or options. The language is clear and standard.\n\n5. **Difficulty Level:** The 'Hard' difficulty level is arguably appropriate. While the answer is directly stated in the text, students need to carefully read and understand the text to identify the primary function and differentiate it from plausible but incorrect options.  Students must understand the concept of 'primary function' and accurately match it to the text's description, while also eliminating distractors that might sound somewhat related to data transmission but are not the specific function of optical repeaters as described in this context. It requires careful reading and comprehension, making 'Hard' a reasonable assessment, especially within the SAT Reading & Writing context where time management and careful reading are crucial. "
+    }
+  },
+  {
+    "question_id": 906988,
+    "question_text": "There are two primary methods for generating electricity: renewable and nonrenewable. Nonrenewable m...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks about the central idea of the provided text. Option C accurately reflects the main point of the passage, which is that both renewable and nonrenewable energy sources have pros and cons, and a complete evaluation requires considering both short-term and long-term impacts. Options A, B, and D are demonstrably incorrect because they present extreme or unsupported claims. Option A overstates the case against nonrenewable energy by saying they are 'ultimately unsustainable' and that long-term costs *always* outweigh short-term benefits, which is not explicitly stated or implied in the passage. Option B makes an equally absolute and unsupported claim that renewable energy is *always* the more economically sound choice, ignoring the challenges mentioned in the passage like initial costs and intermittency. Option D incorrectly dismisses the validity of studies comparing energy sources, which is contrary to the passage's use of a study as an example. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding nuanced arguments and identifying the central idea rather than simple recall or literal comprehension."
+    }
+  },
+  {
+    "question_id": 412701,
+    "question_text": "Studies examining the relationship between social media and political polarization have yielded comp...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the main idea of the provided text. Option B accurately captures the central theme of the passage, which is that the relationship between social media and political polarization is more complex and less straightforward than initially hypothesized, requiring further research to fully understand. Options A, C, and D are all demonstrably incorrect based on the text. Option A overstates the role of social media echo chambers and claims definitive proof that is not supported by the passage. Option C misrepresents the text by suggesting conclusive evidence of wider exposure on social media compared to traditional media, which is not the text's claim. Option D introduces a comparison and conclusion about traditional media's responsibility that is not discussed or supported in the provided text. There are no grammatical or formatting issues. The difficulty level of 'Hard' is appropriate as identifying the nuanced main idea and eliminating the distractors requires careful reading and comprehension skills typical of harder SAT Reading & Writing questions."
+    }
+  },
+  {
+    "question_id": 665467,
+    "question_text": "The history of hybrid vehicles dates back further than many realize, with early examples appearing i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. Option D is the correct answer because it accurately represents the central idea of the passage: that while the concept of hybrid vehicles is old, their practical success and widespread adoption are recent developments due to technological advancements. \n\nOption A is incorrect because the passage does not suggest that early hybrid vehicles were more efficient than modern ones; it states they were complex and unreliable. \n\nOption B is a true statement supported by the passage, as complexity and cost did hinder early adoption. However, it is more of a supporting detail explaining *why* early hybrids were not successful, rather than the overarching central idea. Option D is a more comprehensive summary of the passage's main point. \n\nOption C is incorrect because the passage explicitly states that hybrid vehicle technology existed in the 19th century, predating the Toyota Prius. The Prius is credited with popularizing modern hybrids, not initiating the technology itself. \n\nThe difficulty level 'Hard' is appropriate because while the passage is relatively straightforward, discerning the central idea from closely related but less encompassing options like B requires careful reading and understanding of the author's main point."
+    }
+  }
+]

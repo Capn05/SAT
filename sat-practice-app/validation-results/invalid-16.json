@@ -1,0 +1,53 @@
+[
+  {
+    "question_id": 990450,
+    "question_text": "The graph shown models the volume of water in a tank as it is being filled over time, measured in se...",
+    "issues": [
+      "The question text is incomplete and does not explicitly ask a question. It only provides context by stating that the graph models the volume of water in a tank as it is being filled over time.  A question needs to be formulated to make it a valid question.",
+      "According to the graph, how many seconds does it take for the tank to contain 80 liters of water?\\\\",
+      "C"
+    ]
+  },
+  {
+    "question_id": 361235,
+    "question_text": "The graph below shows the estimated number of apples $y$, in thousands, harvested from an orchard ea...",
+    "issues": [
+      "The question is incomplete and unclear. It provides context and options but is missing the actual question being asked.  It is not specified what value of average rainfall 'x' should be used to determine the estimated number of apples 'y'.",
+      "Without the graph, it is impossible to verify if option C is actually the correct answer or if other options are clearly incorrect. The correctness depends entirely on the missing graph and the intended question.",
+      "The question text only sets up the scenario and does not pose a question to be answered."
+    ]
+  },
+  {
+    "question_id": 91943,
+    "question_text": "The number of shirts a store sells is recorded at different price points and kept at a constant stor...",
+    "issues": [
+      "The question refers to a graph that is not provided, making it impossible to answer the question as written.",
+      "The question is unclear about what is being asked. It states 'The graph shows the estimated number of shirts sold y when the price is x.' but does not specify what needs to be determined from this information. It's missing a clear question prompt (e.g., 'What is the number of shirts sold when the price is...?').",
+      "Without the graph, it is impossible to verify if option C is the correct answer or if other options are incorrect."
+    ]
+  },
+  {
+    "question_id": 543937,
+    "question_text": "The graph of the linear function g is shown. What is the y-intercept of the graph of y = g(x)?...",
+    "issues": [
+      "The question refers to a graph that is not provided ('No image'). Without the graph, it is impossible to determine the y-intercept of the function g(x).",
+      "While option C is marked as correct and is a valid y-intercept format (0, y), we cannot verify its correctness without the graph. If we assume option C is intended to be the correct answer, then options A, B, and D are incorrect because A and B are x-intercepts and D is a different y-intercept value. However, this is based on assumption and not on the provided question content."
+    ]
+  },
+  {
+    "question_id": 931558,
+    "question_text": "The total revenue $r(h)$, in dollars, a bakery earns from selling $h$ loaves of bread in a day is gi...",
+    "issues": [
+      "The option marked as correct (A. 1040) is mathematically incorrect. The correct answer should be 1000 based on the given information and function.",
+      "The correct answer (1000) is not provided as one of the options. This makes the question flawed as none of the provided options are actually correct."
+    ]
+  },
+  {
+    "question_id": 422905,
+    "question_text": "The graph of $y = f(x) - 5$ is shown.  ![](image_placeholder.jpeg)  Which equation defines the linea...",
+    "issues": [
+      "The question is invalid because it refers to a graph that is not provided. The placeholder '![](image_placeholder.jpeg)' indicates a missing image, which is essential for solving the problem. Without the graph, it is impossible to determine the linear function f(x) from the graph of y = f(x) - 5.",
+      "Although option B is marked as correct and can be logically derived if we assume the graph of y = f(x) - 5 is y = 2x - 3, this assumption cannot be made without the actual image. The question is incomplete and relies on visual information that is absent."
+    ]
+  }
+]

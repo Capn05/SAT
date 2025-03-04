@@ -1,0 +1,22 @@
+[
+  {
+    "question_id": 643385,
+    "question_text": "The triangle shown (figure not drawn to scale) has a perimeter of 31 units. If one side length is 12...",
+    "issues": [
+      "The question refers to 'the triangle shown' but no image is provided, making the question incomplete and ambiguous.",
+      "The variable '$\\\\beta$' is used without context or visual representation. In geometry, '$\\\\beta$' typically represents an angle, but the question asks for its value 'in units', which is usually associated with length, not angles. This creates confusion about what '$\\\\beta$' represents.",
+      "The subcategory 'Area and Volume' is inappropriate. The question is about the perimeter and side lengths of a triangle, which falls under basic geometry, not necessarily area and volume.",
+      "The phrase 'in units' is redundant when asking for the value of a side length, as the perimeter and other side lengths are already given in 'units'. If '$\\\\beta$' were intended to be an angle, 'in units' would be incorrect.",
+      "Without an image, it is impossible to determine which angle or side '$\\\\beta$' refers to, even if we assume it's related to the triangle described."
+    ]
+  },
+  {
+    "question_id": 135799,
+    "question_text": "The table gives the perimeters of similar triangles $TUV$ and $XYZ$, where $TU$ corresponds to $XY$....",
+    "issues": [
+      "The question is severely flawed due to missing crucial information: the table mentioned in the question text is not provided. Without the table containing the perimeters of triangles TUV and XYZ, the question is unsolvable as it is currently stated.",
+      "The question is ambiguously worded. It does not explicitly state what needs to be determined. While it can be inferred that it is asking for the perimeter of triangle XYZ, this is not explicitly stated, making the question unclear.",
+      "Assuming the question intends to provide the perimeter of triangle TUV in the missing table as 10, and is asking for the perimeter of triangle XYZ, and option D (30) is intended to be correct, then the ratio of perimeters would be consistent with the properties of similar triangles. However, this is a significant assumption to make due to the lack of information."
+    ]
+  }
+]

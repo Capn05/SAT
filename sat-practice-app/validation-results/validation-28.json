@@ -1,0 +1,190 @@
+[
+  {
+    "question_id": 583021,
+    "question_text": "The circle above with center O has a circumference of 48. If the measure of central angle AOC is 60 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the length of minor arc AC, we can set up a proportion using the central angle and the circumference. The ratio of the central angle to 360 degrees is equal to the ratio of the arc length to the circumference.  \n\n(Central Angle / 360°) = (Arc Length / Circumference)\n\nGiven: Central Angle AOC = 60°, Circumference = 48.\n\n(60° / 360°) = (Arc Length / 48)\n\n(1/6) = (Arc Length / 48)\n\nArc Length = (1/6) * 48\nArc Length = 8\n\nOption C, which is 8, is the correct answer. Options A, B, and D are incorrect as they would correspond to different central angles if we reverse the calculation. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental concept of circles in a straightforward manner. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 479505,
+    "question_text": "The number of radians in a 270-degree angle can be written as $a\\pi$, where $a$ is a constant. What ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of 'a' when 270 degrees is converted to radians in the form $a\\\\pi$. To convert degrees to radians, we multiply by $\frac{\\\\pi}{180}$. So, $270^\\\\circ = 270 \times \frac{\\\\pi}{180} = \frac{270}{180}\\\\pi$. Simplifying the fraction $\frac{270}{180}$, we divide both numerator and denominator by their greatest common divisor, which is 90. $\frac{270 \\\\div 90}{180 \\\\div 90} = \frac{3}{2}$. Therefore, $270^\\\\circ = \frac{3}{2}\\\\pi$. Comparing this to $a\\\\pi$, we find that $a = \frac{3}{2}$. Option A, $\frac{3}{2}$, is the correct answer and is marked as correct. Options B, C, and D are incorrect because they would correspond to different angles in degrees: Option B ($\frac{2}{3}\\\\pi$) is $120^\\\\circ$, Option C ($3\\\\pi$) is $540^\\\\circ$, and Option D ($2\\\\pi$) is $360^\\\\circ$. The difficulty level 'Medium' is appropriate as it tests a fundamental concept in trigonometry and geometry that is expected to be understood at the SAT level."
+    }
+  },
+  {
+    "question_id": 769080,
+    "question_text": "An angle has a measure of $\\frac{5\\pi}{6}$ radians. What is the measure of this angle in degrees?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to convert an angle from radians to degrees. The conversion is performed using the formula: degrees = radians * (180/pi). For the given angle of $\frac{5\\\\pi}{6}$ radians, the degree measure is $(\frac{5\\\\pi}{6}) \times \frac{180^\\\\circ}{\\\\pi} = \frac{5 \times 180}{6} = 5 \times 30 = 150^\\\\circ$. Option C, 150, is the correct answer and is marked as correct. Options A, B, and D are incorrect and represent common errors in radian-degree conversion or are simply incorrect values. The difficulty level is appropriate for a medium level SAT math question, as it tests a fundamental concept in trigonometry."
+    }
+  },
+  {
+    "question_id": 684941,
+    "question_text": "In the xy-plane, a circle has center (5, -3) and radius 7. Which of the following is an equation of ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the equation of a circle given its center (5, -3) and radius 7. The standard equation of a circle with center (h, k) and radius r is (x-h)^2 + (y-k)^2 = r^2.  Substituting h=5, k=-3, and r=7 into the equation, we get (x-5)^2 + (y-(-3))^2 = 7^2, which simplifies to (x-5)^2 + (y+3)^2 = 49. Option C matches this equation and is therefore the correct answer.Option A is incorrect because it has the correct center but the radius squared is 7, not 49 (radius is sqrt(7), not 7).Option B is incorrect because it has the wrong center (-5, 3) and the correct radius squared (49).Option D is incorrect because it has the wrong center (-5, 3) and the wrong radius squared (7).There are no grammatical or formatting issues. The difficulty level is appropriately classified as medium for the SAT, as it tests a fundamental concept of circle equations."
+    }
+  },
+  {
+    "question_id": 200915,
+    "question_text": "In the xy-plane above, points P, Q, R, and T lie on the circle with center O. The degree measures of...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is ambiguous and does not provide enough information to uniquely determine the radian measure of angle QOR.  It is implied that points P, Q, R, and T are in consecutive order around the circle, and angles POQ, QOR, and ROT are adjacent central angles.  If we assume that angles POQ, QOR, and ROT are consecutive and sum to 180 degrees (forming a semicircle), then angle QOR can be uniquely determined. However, this assumption is not explicitly stated in the question. Without this assumption or further information from the diagram, there are infinitely many possible values for angle QOR.",
+        "The question relies on an unstated assumption that angles POQ, QOR, and ROT are somehow related (e.g., adjacent and summing to 180 degrees) to have a unique solution from the given options.  If we assume ∠POQ + ∠QOR + ∠ROT = 180°, then the correct answer is derived. However, this is not explicitly given in the problem statement.",
+        "The question is not clearly written due to the ambiguity regarding the relationship between angles POQ, QOR, and ROT.  For a standardized test question, it lacks precision and could be misinterpreted by students."
+      ],
+      "correct_answer": "A",
+      "explanation": "Assuming the question intends for angles POQ, QOR, and ROT to be consecutive central angles that sum to 180 degrees (forming a semicircle), we can calculate angle QOR as follows: ∠POQ + ∠QOR + ∠ROT = 180°. Given ∠POQ = 45° and ∠ROT = 15°, we have 45° + ∠QOR + 15° = 180°.  This simplifies to ∠QOR + 60° = 180°, so ∠QOR = 180° - 60° = 120°. To convert 120° to radians, we multiply by $\frac{\\\\pi}{180}$: $120° \times \frac{\\\\pi}{180°} = \frac{2\\\\pi}{3}$ radians. This corresponds to option A.  However, the question is flawed due to its ambiguity and reliance on an unstated assumption to arrive at a unique answer.  Without the diagram, it is impossible to confirm if this assumption is visually supported.  If the diagram visually suggests that P, Q, R lie on a semicircle, then the question becomes more valid, but the ambiguity in the wording remains an issue."
+    }
+  },
+  {
+    "question_id": 887680,
+    "question_text": "A circle in the xy-plane has its center at (2, -3) and the point (5, 1) lies on the circle. Which eq...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the equation of a circle given its center (2, -3) and a point on the circle (5, 1). To find the equation, we first need to calculate the radius squared (r^2). The radius is the distance between the center and the point on the circle. Using the distance formula (or Pythagorean theorem), r^2 = (5 - 2)^2 + (1 - (-3))^2 = 3^2 + 4^2 = 9 + 16 = 25. The standard equation of a circle with center (h, k) and radius r is (x - h)^2 + (y - k)^2 = r^2. Substituting the center (2, -3) and r^2 = 25, we get (x - 2)^2 + (y - (-3))^2 = 25, which simplifies to (x - 2)^2 + (y + 3)^2 = 25. Option D matches this equation.Option A is incorrect because it has the wrong center (-2, 3) and the wrong radius squared (5).Option B is incorrect because it has the correct center (2, -3) but the wrong radius squared (5).Option C is incorrect because it has the wrong center (-2, 3) but the correct radius squared (25).Option D is correct because it has the correct center (2, -3) and the correct radius squared (25).The difficulty level is appropriate for a medium SAT question as it requires understanding the standard equation of a circle and applying the distance formula, which are typical concepts tested on the SAT."
+    }
+  },
+  {
+    "question_id": 245131,
+    "question_text": "In the circle with center O, the length of arc ADC is $3\\pi$ and the measure of central angle $\\angl...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Let $r$ be the radius of the circle. The length of an arc is given by the formula: Arc Length = $(\frac{\text{Central Angle}}{360^\\\\circ}) \times 2\\\\pi r$.  We are given that the length of arc ADC is $3\\\\pi$ and the central angle $\\\\angle AOC$ is $60^\\\\circ$.  It is implied that $\\\\angle AOC$ is the central angle corresponding to the minor arc AC. Therefore, the central angle corresponding to the major arc ADC is $360^\\\\circ - 60^\\\\circ = 300^\\\\circ$. However, the problem states that the central angle $\\\\angle AOC$ is $60^\\\\circ$ and refers to arc ADC.  Let's assume that the central angle related to arc ADC is actually $360^\\\\circ - 60^\\\\circ = 300^\\\\circ$ and $\\\\angle AOC = 60^\\\\circ$ is the central angle for the minor arc AC.  If we assume that the central angle for arc ADC is $300^\\\\circ$, then we have: $3\\\\pi = (\frac{300^\\\\circ}{360^\\\\circ}) \times 2\\\\pi r = (\frac{5}{6}) \times 2\\\\pi r = \frac{5\\\\pi r}{3}$. Solving for $r$, we get $r = \frac{3\\\\pi \times 3}{5\\\\pi} = \frac{9}{5}$.  Now we need to find the length of arc ABC.  Assuming ABC is the minor arc AC, the central angle is $60^\\\\circ$.  Length of arc ABC = $(\frac{60^\\\\circ}{360^\\\\circ}) \times 2\\\\pi r = (\frac{1}{6}) \times 2\\\\pi \times \frac{9}{5} = \frac{1}{6} \times \frac{18\\\\pi}{5} = \frac{3\\\\pi}{5} = 0.6\\\\pi$. This is not among the options.Let's reconsider the interpretation. If $\\\\angle AOC = 60^\\\\circ$ is the central angle subtended by arc ADC, then arc ADC is the minor arc and arc ABC is the major arc.  In this case, Length of arc ADC = $(\frac{60^\\\\circ}{360^\\\\circ}) \times 2\\\\pi r = \frac{1}{6} \times 2\\\\pi r = \frac{\\\\pi r}{3}$. We are given that this length is $3\\\\pi$. So, $\frac{\\\\pi r}{3} = 3\\\\pi$, which gives $r = 9$.  Now we need to find the length of arc ABC. The central angle for arc ABC is $360^\\\\circ - 60^\\\\circ = 300^\\\\circ$. Length of arc ABC = $(\frac{300^\\\\circ}{360^\\\\circ}) \times 2\\\\pi r = (\frac{5}{6}) \times 2\\\\pi \times 9 = (\frac{5}{6}) \times 18\\\\pi = 15\\\\pi$.  This matches option B.Option B is indeed the correct answer. Options A, C, and D are clearly incorrect as shown in the derivation. The question is grammatically correct and clearly written. The difficulty level is appropriate for a 'Hard' SAT question as it requires understanding of arc length and central angles, and some algebraic manipulation. "
+    }
+  },
+  {
+    "question_id": 737978,
+    "question_text": "The equation above defines a circle in the xy-plane. What are the coordinates of the center of the c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and clearly written. To find the center of the circle, we need to rewrite the equation in the standard form (x-h)^2 + (y-k)^2 = r^2. We complete the square for the x terms and y terms separately.\n\nFor x terms: x^2 - 6x = (x - 3)^2 - 9\nFor y terms: y^2 + 4y = (y + 2)^2 - 4\n\nSubstituting these back into the equation:\n(x - 3)^2 - 9 + (y + 2)^2 - 4 = 12\n(x - 3)^2 + (y + 2)^2 = 12 + 9 + 4\n(x - 3)^2 + (y + 2)^2 = 25\n\nComparing this to the standard form, the center of the circle is (h, k) = (3, -2). Option C, (3, -2), is the correct answer and is marked as correct. Options A, B, and D are incorrect. The difficulty level 'Hard' is appropriate as it requires multiple steps including completing the square and understanding the standard equation of a circle."
+    }
+  },
+  {
+    "question_id": 352937,
+    "question_text": "Point O is the center of the circle above, and the measure of $\\angle OAB$ is 45°. \\n\\nIf the length...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Point O is the center of the circle, and OD is given as a radius with length 10. Therefore, OA and OB are also radii and have length 10. Since $\\\\angle OAB = 45°$ and triangle OAB is isosceles (OA = OB), $\\\\angle OBA = 45°$. The central angle $\\\\angle AOB = 180° - 45° - 45° = 90°$. The circumference of the circle is $C = 2\\\\pi r = 2\\\\pi (10) = 20\\\\pi$. The length of arc AB is the fraction of the circumference corresponding to the central angle $\\\\angle AOB$. Arc length AB = $(\frac{\\\\angle AOB}{360°}) \times C = (\frac{90°}{360°}) \times 20\\\\pi = (\frac{1}{4}) \times 20\\\\pi = 5\\\\pi$. Option B, 5π, is indeed the correct answer. Options A, C, and D are incorrect as they do not match the calculated arc length. The question is grammatically correct, well-formatted, and the difficulty level 'Hard' is appropriate for an SAT geometry question involving circles and arc length."
+    }
+  },
+  {
+    "question_id": 181190,
+    "question_text": "The equation $(x-2)^2+(y+5)^2 = 64$ defines a circle in the xy-plane. What is the diameter of the ci...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The equation of a circle is given in the form $(x-h)^2+(y-k)^2 = r^2$, where $(h, k)$ is the center of the circle and $r$ is the radius. In the given equation $(x-2)^2+(y+5)^2 = 64$, we can see that $r^2 = 64$. Taking the square root of both sides, we get the radius $r = \\\\sqrt{64} = 8$. The diameter of a circle is twice the radius, so the diameter is $d = 2r = 2 \times 8 = 16$. Option B is indeed the correct answer.All other options are incorrect:- Option A (8) represents the radius, not the diameter.- Option C (32) is twice the diameter, or four times the radius.- Option D (64) is the value of $r^2$, not the diameter.The question is clearly written and makes sense. There are no grammatical or formatting issues. While the concept is fundamental in geometry, for students who are not completely comfortable with the equation of a circle, it might pose a challenge. Therefore, classifying it as 'Hard' might be slightly overstated, possibly more accurately 'Medium-Hard' depending on the specific SAT difficulty distribution, but it is within the acceptable range for SAT difficulty levels, especially for questions intended to differentiate between higher-scoring students.  For students aiming for top scores, this should be a standard question."
+    }
+  },
+  {
+    "question_id": 456061,
+    "question_text": "A circle in the xy-plane has its center at (1, 5). Line m is tangent to this circle at the point (4,...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. None of the provided options are correct. The correct slope of the tangent line is 3/4, which is not listed among the options."
+      ],
+      "correct_answer": "None",
+      "explanation": "The slope of the radius connecting the center (1, 5) and the point of tangency (4, 1) is calculated as (change in y) / (change in x) = (1-5) / (4-1) = -4/3.  Since the tangent line is perpendicular to the radius at the point of tangency, the slope of the tangent line is the negative reciprocal of the radius's slope. The negative reciprocal of -4/3 is 3/4.  Option A, which is marked as correct, is 1, but the correct slope is 3/4.  None of the options A, B, C, D is equal to 3/4. Therefore, the question is invalid because the marked correct answer is wrong and the actual correct answer is not among the options."
+    }
+  },
+  {
+    "question_id": 713383,
+    "question_text": "In the xy-plane, the graph of $3x^2 + 12x + 3y^2 - 6y = 36$ is a circle. What is the radius of the c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. The equation $3x^2 + 12x + 3y^2 - 6y = 36$ does indeed represent a circle. To find the radius, we first divide the equation by 3 to get $x^2 + 4x + y^2 - 2y = 12$. Then, we complete the square for the x terms and y terms. For x terms: $x^2 + 4x = (x+2)^2 - 4$. For y terms: $y^2 - 2y = (y-1)^2 - 1$. Substituting these back into the equation, we get $(x+2)^2 - 4 + (y-1)^2 - 1 = 12$, which simplifies to $(x+2)^2 + (y-1)^2 = 17$. This is the standard form of a circle equation $(x-h)^2 + (y-k)^2 = r^2$, where $r^2 = 17$. Therefore, the radius $r = \\\\sqrt{17}$. Option A, $\\\\sqrt{17}$, is the correct answer. The other options are incorrect but serve as plausible distractors. Option B is $r^2$, option C is a simple integer, and option D is another square root value close to the correct answer. The difficulty level 'Hard' is appropriate for this question on the SAT as it requires multiple steps and algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 794326,
+    "question_text": "A circle has center O, and points P and Q lie on the circle. The measure of arc PQ is 30° and the le...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense mathematically. The relationship between arc length, arc measure, and circumference is correctly tested. To solve, we set up a proportion: (arc length / circumference) = (arc measure / 360°). Plugging in the given values: (2 inches / circumference) = (30° / 360°). Simplifying the ratio of angles: 30°/360° = 1/12. So, 2 / circumference = 1/12. Solving for the circumference, we get circumference = 2 * 12 = 24 inches. Option D is indeed the correct answer. Options A, B, and C are incorrect because they would result in different arc lengths for a 30° arc. The difficulty level 'Hard' is appropriate as it requires understanding of circle properties and setting up a proportion, which is typical of SAT geometry questions."
+    }
+  },
+  {
+    "question_id": 793801,
+    "question_text": "In the xy-plane, the graph of the equation above is a circle. Point R is on the circle and has coord...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The equation of the circle is given as $(x+2)^2+(y-3)^2=25$. This is in the standard form $(x-h)^2+(y-k)^2=r^2$, where the center of the circle is (h, k) and the radius is r. In this case, the center C is (-2, 3) and the radius is $\\\\sqrt{25} = 5$. Point R is given as (3, 3). Since RS is a diameter, the center C is the midpoint of RS. Let S have coordinates (x, y). Using the midpoint formula, the coordinates of the midpoint of RS are (($3+x$)/2, ($3+y$)/2). This midpoint must be the center C(-2, 3). Therefore, we have two equations: \n\n(3+x)/2 = -2  =>  3+x = -4  =>  x = -4 - 3 = -7\n(3+y)/2 = 3   =>  3+y = 6   =>  y = 6 - 3 = 3\n\nSo, the coordinates of point S are (-7, 3), which corresponds to option A.\n\nTo verify that R is on the circle, substitute R(3, 3) into the circle equation: $(3+2)^2+(3-3)^2 = 5^2 + 0^2 = 25$. So R is indeed on the circle.\n\nLet's check the other options:\nOption B: (-2, 3) is the center of the circle, not the other end of the diameter.\nOption C: (-2, 8). The midpoint of R(3, 3) and (-2, 8) is ((3-2)/2, (3+8)/2) = (1/2, 11/2), which is not the center (-2, 3).\nOption D: (1, 3). The midpoint of R(3, 3) and (1, 3) is ((3+1)/2, (3+3)/2) = (2, 3), which is not the center (-2, 3).\n\nTherefore, option A is the only correct answer, and the question is valid, clearly written, and of appropriate difficulty for the SAT."
+    }
+  },
+  {
+    "question_id": 836636,
+    "question_text": "A circle in the xy-plane has its center at (3, -4) and has a radius of 5. An equation of this circle...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To find the value of c, we start with the standard equation of a circle $(x-h)^2 + (y-k)^2 = r^2$, where (h, k) is the center and r is the radius. Given center (3, -4) and radius 5, the equation is $(x-3)^2 + (y-(-4))^2 = 5^2$, which simplifies to $(x-3)^2 + (y+4)^2 = 25$. Expanding this equation gives $x^2 - 6x + 9 + y^2 + 8y + 16 = 25$. Rearranging to the form $x^2 + y^2 + ax + by + c = 0$, we get $x^2 + y^2 - 6x + 8y + 9 + 16 - 25 = 0$, which simplifies to $x^2 + y^2 - 6x + 8y + 0 = 0$. Comparing this to $x^2 + y^2 + ax + by + c = 0$, we find that c = 0. Option A is indeed the correct answer. Options B, C, and D lead to circles with different radii or no circle at all, making them incorrect. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of circle equations."
+    }
+  },
+  {
+    "question_id": 889118,
+    "question_text": "Points C and D lie on a circle with radius 4. The area of sector COD is $2\\pi$. What fraction of the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the fraction of the area of the circle that the sector COD represents, we first need to calculate the area of the entire circle. The radius of the circle is given as 4, so the area of the circle is $A_{circle} = \\\\pi r^2 = \\\\pi (4)^2 = 16\\\\pi$. The area of sector COD is given as $2\\\\pi$. The fraction of the area of the circle that is the area of sector COD is $\frac{Area_{sector COD}}{Area_{circle}} = \frac{2\\\\pi}{16\\\\pi} = \frac{2}{16} = \frac{1}{8}$. Option A, $\frac{1}{8}$, is indeed the correct answer. Options B, C, and D are incorrect as they do not equal $\frac{1}{8}$. There are no grammatical or formatting issues. The difficulty level is subjective, but for the SAT, this question is likely at the medium to hard end of the spectrum, making 'Hard' an acceptable, though perhaps slightly overstated, difficulty level. It requires understanding of circle area and sector area concepts and ratio calculation, which are typical topics for the SAT math section."
+    }
+  },
+  {
+    "question_id": 622256,
+    "question_text": "A circle in the xy-plane has equation $(x - 1)^2 +(y + 3)^2 = 9$. Which of the following points does...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 204. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The equation of the circle is given by $(x - 1)^2 +(y + 3)^2 = 9$. The center of the circle is (1, -3) and the radius is $\\..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 232815,
+    "question_text": "A circle in the xy-plane has its center at $(2, -3)$. Line $t$ is tangent to this circle at the poin...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the equation of the tangent line, first find the slope of the radius connecting the center (2, -3) and the point of tangency (-1, 1). The slope of the radius is (1 - (-3)) / (-1 - 2) = 4 / -3 = -4/3. The tangent line is perpendicular to the radius, so its slope is the negative reciprocal of -4/3, which is 3/4. Using the point-slope form of a line equation, y - y1 = m(x - x1), with the point (-1, 1) and slope 3/4, we get y - 1 = 3/4 (x - (-1)), which simplifies to y = 3/4 x + 7/4. Checking option A (7, 7): 7 = 3/4 * 7 + 7/4 = 21/4 + 7/4 = 28/4 = 7. Option A lies on the line. Checking other options, none of them satisfy the equation of the tangent line. Therefore, option A is the correct answer, and the other options are incorrect. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of circle and tangent properties."
+    }
+  }
+]

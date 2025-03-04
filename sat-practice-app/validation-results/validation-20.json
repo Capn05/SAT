@@ -1,0 +1,451 @@
+[
+  {
+    "question_id": 240601,
+    "question_text": "The scatterplot below shows the relationship between the number of hours students studied for a test...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is missing the scatterplot image, which is crucial for answering the question. Without the image, it is impossible to determine which equation best models the relationship between study hours and test scores.",
+        "Due to the missing image, it is impossible to definitively confirm if option D is the correct answer or if other options are clearly incorrect. The validity of the marked answer and the suitability of other options depend entirely on the visual representation in the scatterplot."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is fundamentally flawed due to the absence of the scatterplot image.  The question asks to choose the equation that 'best models' the relationship shown in the scatterplot, but without the scatterplot, this task is impossible.  While option D is marked as correct, we cannot verify this or assess the incorrectness of other options without seeing the visual data.  Assuming that option D is intended to be the correct answer, and that the scatterplot would visually support this choice over other options, the question *could be* valid *if* the image were present and appropriately designed.  However, in its current state with the missing image, the question is not valid as it is unsolvable.  The question text itself is clear and grammatically correct, and the difficulty level of 'Easy' might be appropriate if the visual pattern in the scatterplot is straightforward and clearly points to option D as the best fit.  However, the missing image is a critical error that renders the question invalid."
+    }
+  },
+  {
+    "question_id": 880451,
+    "question_text": "A botanist is studying the growth of a sunflower. The table below shows the height, in centimeters (...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the 1-week interval with the greatest average rate of height increase. To determine this, we need to calculate the rate of growth for each interval:\n\n* **Between week 0 and week 1:** (5 cm - 2 cm) / (1 week - 0 week) = 3 cm/week\n* **Between week 1 and week 2:** (9 cm - 5 cm) / (2 week - 1 week) = 4 cm/week\n* **Between week 2 and week 3:** (12 cm - 9 cm) / (3 week - 2 week) = 3 cm/week\n* **Between week 3 and week 4:** (14 cm - 12 cm) / (4 week - 3 week) = 2 cm/week\n\nThe greatest average rate of increase is 4 cm/week, which occurs between week 1 and week 2. Therefore, option B is the correct answer. All other options represent intervals with lower average rates of growth. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as Easy, as it requires basic subtraction and division to solve."
+    }
+  },
+  {
+    "question_id": 983144,
+    "question_text": "The scatterplot above shows the number of hours students studied for a test and their corresponding ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the predicted test score for a student who studied for 5 hours based on the line of best fit shown in the scatterplot. By visually inspecting the graph, when you locate 5 hours on the x-axis and move vertically to the line of best fit, then horizontally to the y-axis, the predicted test score appears to be approximately 81. Option B, which is 81, is marked as correct and is indeed the most accurate answer among the given options based on visual estimation from the graph. The other options, A (78), C (84), and D (87), are further away from the line of best fit at x=5 compared to option B. The question is appropriate for an 'Easy' difficulty level as it primarily tests the ability to read and interpret data from a scatterplot and a line of best fit."
+    }
+  },
+  {
+    "question_id": 127921,
+    "question_text": "2018 2019 2020 2021 2022 2023  ![](_page_3_Figure_1_modified.jpeg)  The line graph shows the annual ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is missing the crucial image of the line graph, making it impossible to answer the question.",
+        "The list of years '2018 2019 2020 2021 2022 2023' at the beginning of the question text is unclear and potentially distracting. It's not explained why these years are listed and what their relevance is to the question, which asks about profits from 2019 to 2025.",
+        "Without the image, it is impossible to verify if option B (2022) is actually the correct answer or if the other options are incorrect."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is invalid because it refers to a line graph that is not provided.  The question asks to identify the year with the greatest annual profit based on a graph, but the graph is missing (indicated by 'No image' and the broken image link '![ ](_page_3_Figure_1_modified.jpeg)').  Without the graph, the question cannot be answered, and the correctness of the marked answer (B. 2022) cannot be verified.  Additionally, the initial list of years '2018 2019 2020 2021 2022 2023' is unexplained and adds unnecessary confusion.  Assuming that option B is marked as correct based on some intended graph, we are still unable to validate this without the actual visual data.  Therefore, the question in its current form is unusable for an SAT exam."
+    }
+  },
+  {
+    "question_id": 595354,
+    "question_text": "A beaker of water was heated for 25 minutes. The graph above shows the temperature of the water over...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because the graph image is missing. Without the graph, it is impossible to determine the correct answer or evaluate the truthfulness of the options.",
+        "There is a potential contradiction or error in the provided information. Option D is marked as 'correct', but the question asks for the statement that is 'NOT true'. If option D is indeed true according to the graph (which we cannot see), then it should not be the answer to a 'NOT true' question.  This suggests a possible misunderstanding in the 'correct' marking or an error in the question design if D is intended to be the answer to a 'NOT TRUE' question."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is fundamentally flawed because the crucial graph image is missing.  Without the graph, we cannot analyze the temperature changes of the water over time and therefore cannot determine which statement is NOT true.  \n\nAssuming a typical scenario where water is heated and its temperature generally increases or plateaus, let's analyze the options:\n\nA. 'The water temperature increased for 10 minutes.' - This is plausible during a heating process.\nB. 'The water temperature remained constant for 5 minutes.' - This is also plausible, for example, if the water reached boiling point and stayed there for a period.\nC. 'The water temperature decreased at a constant rate for 10 minutes.' - This is highly unlikely if the water is being heated. This statement is the most likely candidate to be 'NOT true' in a typical heating scenario.\nD. 'The water temperature was highest at the end of the heating process.' - This is generally expected if the water is being heated continuously. This statement is likely to be true.\n\nGiven that the question asks for the statement that is 'NOT true', and option D is marked as 'correct', there is a logical inconsistency. If D is true, it cannot be the answer to a 'NOT true' question.  It is more likely that option C is intended to be the correct answer (the 'NOT true' statement), and there might be an error in marking D as 'correct' in the provided information. \n\nDue to the missing image, we cannot definitively determine the intended correct answer based on the actual graph. However, logically, option C is the most likely 'NOT true' statement in the context of heating water."
+    }
+  },
+  {
+    "question_id": 403389,
+    "question_text": "The scatterplot above shows the relationship between the number of hours students studied for a test...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks students to interpret a scatterplot and line of best fit, a common SAT skill.  Assuming the scatterplot image (scatterplot_study_hours_test_scores.png) is a standard, well-constructed graph where the line of best fit passes closest to a test score of 90 when study hours are 3.5, then option C is indeed the correct answer.  The other options (85, 88, and 93) are plausible distractors as they are close to 90, requiring students to accurately read the graph. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests a fundamental skill in data interpretation, typically introduced in early high school or even middle school and considered foundational for SAT Math Problem-Solving and Data Analysis."
+    }
+  },
+  {
+    "question_id": 112159,
+    "question_text": "A meteorologist recorded the average daily temperature for a week, as shown in the line graph above....",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The image of the line graph is missing. The question refers to 'the line graph above' and includes an image placeholder '![](_page_6_Figure_4.jpeg)', but the image is not displayed. Without the line graph, the question cannot be answered or validated.",
+        "Due to the missing image, it is impossible to verify if the option marked as correct (C. Thursday - Friday) is actually correct, or if other options are clearly incorrect."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is fundamentally flawed because the crucial visual information, the line graph, is missing.  Without the graph, it's impossible to determine the average daily temperatures for each day of the week and calculate the temperature increases between consecutive days.  Therefore, we cannot verify if option C (Thursday - Friday) is indeed the correct answer or if the difficulty level is appropriate.  Assuming the question is intended to be a straightforward line graph interpretation problem, the question *could* be valid *if* the graph were present and depicted temperature data where the greatest increase occurred between Thursday and Friday. However, in its current state with the missing image, the question is invalid and unusable."
+    }
+  },
+  {
+    "question_id": 465599,
+    "question_text": "A local ice cream shop tracked daily high temperatures and their ice cream sales for a month. A scat...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Multiple options (A, B, and D) could represent a line of best fit for the given scenario, as they all show a positive linear association (positive slope).",
+        "Option C is less plausible in a real-world context due to the negative y-intercept implying negative ice cream sales at 0 degrees Celsius, but mathematically it still represents a positive linear association and could be considered a line of best fit.",
+        "Marking only option A as the correct answer is arbitrary and not justified by the question's wording or the information provided. Options B and D are equally valid.",
+        "The question lacks discrimination among the options, making it too easy and potentially misleading as it suggests a single correct answer when multiple are plausible."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question asks which equation *could* represent a line of best fit for data showing a positive linear association. All options A, B, and D have a positive slope, indicating a positive linear association, and a positive y-intercept, which is plausible in the context of ice cream sales. Option C also has a positive slope but a negative y-intercept, which is less realistic in this context (negative sales at 0 degrees Celsius), but mathematically it still represents a positive linear association. Therefore, options A, B, and D are all valid answers. Marking only option A as correct is arbitrary and incorrect, making the question flawed due to having multiple correct answers and not clearly distinguishing a single best option. The question is too simplistic for the SAT and does not effectively test the understanding of lines of best fit beyond the basic concept of positive slope."
+    }
+  },
+  {
+    "question_id": 56706,
+    "question_text": "The graph above shows the relationship between the number of hours a student studies for a test and ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an approximate difference in test scores based on the provided graph for study times of 8 hours and 4 hours. Assuming the graph in '0__page_8_Figure_3.jpeg' visually represents data points such that at 4 hours of study, the score is approximately 70 points, and at 8 hours of study, the score is approximately 90 points, then the difference is 90 - 70 = 20 points. Option B (20) is indeed the correct answer. The other options (A, C, and D) are reasonably distant from 20 to be considered clearly incorrect given the 'approximate' nature of reading values from a graph. The question is appropriate for the 'Easy' difficulty level as it involves a straightforward reading and interpretation of a graph to find a difference. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 751117,
+    "question_text": "Each dot in the scatterplot above represents the number of hours students studied per week and their...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a straightforward interpretation of the scatterplot and the line of best fit. To find the predicted exam score for a student who studies 15 hours per week, we would locate 15 hours on the x-axis (hours studied) and follow vertically up to the line of best fit. Then, we would read the corresponding value on the y-axis (exam score). Assuming the image is a standard scatterplot for SAT purposes, visually estimating from a typical graph, if we go up from 15 hours to the line of best fit, the corresponding exam score on the y-axis appears to be approximately 90. Rounding to the nearest 10, it remains 90. Options A (80), C (100), and D (70) are reasonably spaced out and visually distinct from 90 on a typical scatterplot, making them clearly incorrect if 90 is the intended answer based on the graph. The question is grammatically correct, well-formatted, and the difficulty level 'Easy' is appropriate for SAT Problem-Solving and Data Analysis questions involving scatterplots and lines of best fit. Therefore, the question is valid, and option B (90) is likely the correct answer based on a visual interpretation of a standard scatterplot for this type of question."
+    }
+  },
+  {
+    "question_id": 228696,
+    "question_text": "The scatterplot shows the number of daily visitors, $y$, to a museum recorded over several months, $...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense, asking for the time period with the greatest increase in daily museum visitors based on a scatterplot (which is unfortunately missing from this prompt, but we assume it exists in the actual test).  Assuming the scatterplot is designed such that option B is indeed the correct answer, then the marked answer is correct.  For option B to be correct, the increase in 'y' (daily visitors) from x=4 to x=5 must be greater than the increase in 'y' for all other given options (A, C, and D).  Without the image, we must assume that such a scatterplot exists and that the question intends for option B to be the correct answer.  The question is grammatically sound and appropriately categorized as 'Easy' for the SAT, as it tests basic interpretation of data from a scatterplot by comparing the rate of change between different intervals.  There are no apparent grammatical or formatting issues in the question text or options.  If the scatterplot were provided and option B was demonstrably the interval with the greatest increase, then all other options would be clearly incorrect by definition of 'greatest increase'."
+    }
+  },
+  {
+    "question_id": 947320,
+    "question_text": "A study was conducted to investigate the relationship between the number of hours students spend stu...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (C) is likely incorrect based on the provided graph. Option B appears to be a more accurate estimate for the test score when studying 25 hours per week."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks to estimate the test score for a student studying 25 hours per week based on the provided graph. By visually inspecting the graph, when study hours are 25 (midway between 20 and 30 on the x-axis), the corresponding test score on the y-axis appears to be approximately 70. Option C (80), which is marked as correct, seems to correspond to a study time closer to 20 hours. Option B (70) is a more reasonable estimate based on the graph. Options A (60) and D (90) are clearly too low and too high respectively. Therefore, the marked correct answer is likely incorrect, and option B should be the correct answer."
+    }
+  },
+  {
+    "question_id": 937328,
+    "question_text": "The scatterplot below shows the number of hours spent per week exercising and the resting heart rate...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the best description of the association shown in the scatterplot. Option A, 'As the number of hours spent exercising increases, the resting heart rate tends to decrease,' is indeed the correct answer because the line of best fit in the scatterplot has a negative slope. This indicates an inverse relationship between the two variables, meaning as one increases, the other tends to decrease. Options B, C, and D are all clearly incorrect. Option B describes a positive association, which is opposite to what the scatterplot shows. Option C also describes a positive association but reverses the variables, which is still incorrect based on the negative trend. Option D is incorrect because the line of best fit clearly indicates an association, even if it's not a perfect correlation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as interpreting the direction of association from a scatterplot and line of best fit is a fundamental skill in data analysis at the SAT level."
+    }
+  },
+  {
+    "question_id": 382344,
+    "question_text": "The scatterplot above shows the fuel efficiency, in miles per gallon (mpg), of 7 car models with res...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It asks to approximate the fuel efficiency for a car with a 3.2-liter engine using the provided line of best fit on the scatterplot. By visually locating 3.2 liters on the x-axis (Engine Size) and tracing up to the line of best fit, we can approximate the corresponding fuel efficiency on the y-axis (Fuel Efficiency). This approximation falls closest to 27 mpg. Option C, which is 27, is marked as correct and is indeed the best approximation among the given options. Options A (23), B (25), and D (30) are further away from the estimated value on the line of best fit for an engine size of 3.2 liters and are therefore clearly incorrect in the context of choosing the 'best approximation'. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it primarily tests the ability to read and interpret a scatterplot and line of best fit, a fundamental skill in data analysis."
+    }
+  },
+  {
+    "question_id": 407940,
+    "question_text": "Twelve data points are shown in a scatterplot representing hours studied per week (x) and exam score...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is missing the scatterplot image, which is essential to answer the question.",
+        "Without the image, it is impossible to verify if option C is the correct answer or if other options are definitively incorrect.",
+        "The question is incomplete and cannot be answered as presented."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is invalid because it lacks the crucial scatterplot image.  Without the visual representation of the data points and the line of best fit, it is impossible to determine the y-value predicted by the line of best fit at x=5.  While option C is marked as correct and falls within a plausible range for an 'easy' question on this topic, we cannot confirm its correctness or definitively rule out other options without the image. The question is incomplete and cannot be answered as presented."
+    }
+  },
+  {
+    "question_id": 654073,
+    "question_text": "The scatterplot shows the relationship between the number of hours spent exercising per week and the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the approximate resting heart rate for an adult who exercises 5 hours per week based on the provided scatterplot. By examining the scatterplot, we can see that for 5 hours of exercise per week on the x-axis, the corresponding resting heart rate on the y-axis is approximately 60 bpm. Option B, 60, is the marked correct answer and is indeed the most reasonable approximation based on the visual representation of the data. Options A (65), C (55), and D (50) are less accurate approximations when visually assessed against the scatterplot for 5 hours of exercise. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as Easy, as it primarily requires reading information directly from a scatterplot."
+    }
+  },
+  {
+    "question_id": 911037,
+    "question_text": "The table shows selected values from function g.  | x | g(x) | |---|------| | 0 | 5    | | 1 | 10   ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The table provides values for function g at different x values. To determine the best description of function g, we analyze the changes in g(x) as x increases.\n\n- As x increases from 0 to 1, g(x) increases from 5 to 10.\n- As x increases from 1 to 2, g(x) increases from 10 to 20.\n- As x increases from 2 to 3, g(x) increases from 20 to 40.\n\nFirst, let's check if it's linear. For a linear function, the rate of change (slope) should be constant. The change in g(x) from x=0 to x=1 is 10-5 = 5. The change in g(x) from x=1 to x=2 is 20-10 = 10. Since the rate of change is not constant, the function is not linear. This eliminates options A (Decreasing linear) and B (Increasing linear).\n\nNext, let's check if it's exponential. For an exponential function, the ratio of consecutive g(x) values should be constant when x increases by a constant amount. Let's calculate the ratios:\n\n- g(1)/g(0) = 10/5 = 2\n- g(2)/g(1) = 20/10 = 2\n- g(3)/g(2) = 40/20 = 2\n\nThe ratio is constant and equal to 2. This indicates an exponential function. Since the values of g(x) are increasing as x increases, it is an increasing exponential function. This confirms that option D (Increasing exponential) is the correct answer.\n\nOption C (Decreasing exponential) is incorrect because the values of g(x) are increasing, not decreasing.\n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it requires basic understanding of linear and exponential functions and pattern recognition, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 727608,
+    "question_text": "A student recorded the number of hours they studied and their corresponding test scores for five dif...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the test score when the student studied for 3 hours.  The data point (3, 80) in the provided dataset indicates that when the study hours (x-coordinate) are 3, the test score (y-coordinate) is 80. Therefore, option A, which is 80, is the correct answer. Options B, C, and D are incorrect as they correspond to different study hours in the given dataset."
+    }
+  },
+  {
+    "question_id": 813187,
+    "question_text": "Two-variable data: Plant Growth SAT Problem-Solving Math and Data Analysis Models and scatterplots  ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question text is missing. The provided text only describes the question type and context, but does not actually pose a question related to the scatterplot.",
+        "Cannot verify correctness of marked answer without the question text. 'Placeholder A (Correct)' indicates an intended correct answer, but without a question, it's impossible to determine if option A would be correct.",
+        "Cannot verify incorrectness of other options without the question text. Similarly, without a question, it's impossible to determine if 'Placeholder B', 'Placeholder C', and 'Placeholder D' are incorrect.",
+        "Formatting issues: 'Placeholder A', 'Placeholder B', 'Placeholder C', and 'Placeholder D' are not valid SAT answer options.  The description is also somewhat verbose and repetitive ('Problem-Solving Math and Data Analysis Models and scatterplots').",
+        "Difficulty level cannot be accurately assessed without the question text. While scatterplot interpretation can be 'Easy' on the SAT, the absence of a question makes it impossible to judge the difficulty."
+      ],
+      "correct_answer": "A",
+      "explanation": "The provided information is incomplete and does not constitute a valid SAT question.  The core issue is the absence of the actual question text.  Instead, there is descriptive text about the question type and placeholders for answer options.  Without a question, it's impossible to assess the correctness of the marked answer (A), the incorrectness of other options, or the appropriateness of the difficulty level.  The use of 'Placeholder' options and the verbose description also indicate formatting issues.  Therefore, the question as presented is invalid and needs to be completed with actual question text related to the scatterplot image to be properly evaluated."
+    }
+  },
+  {
+    "question_id": 914562,
+    "question_text": "The scatterplot shows the relationship between the number of hours students studied for a test and t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the difference between the actual test score and the predicted test score from the line of best fit for a student who studied for 5 hours.  Looking at the scatterplot image, for students who studied for 5 hours, there is a data point at approximately (5, 78). This represents an actual test score of around 78. The line of best fit at 5 hours of study is approximately at a test score of 76. The difference between the actual test score (78) and the predicted test score (76) is 78 - 76 = 2. Option A, which is 2, is the closest to this difference. Options B (5), C (10), and D (78) are significantly different from 2 and are not reasonable differences based on the graph. The question is appropriate for a medium difficulty level SAT math question as it requires interpretation of a scatterplot and line of best fit, and a simple subtraction."
+    }
+  },
+  {
+    "question_id": 449362,
+    "question_text": "The scatterplot below shows the relationship between the number of hours students spent watching tel...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the slope of the line of best fit shown in the scatterplot.  Assuming the scatterplot depicts a typical negative correlation between hours of television watched and exam scores, a negative slope is expected. Option A, -5, represents a negative slope. To verify if -5 is the *closest* option, we would ideally need to see the actual scatterplot image. However, based on the context and the options provided, a slope of -5 is a reasonable and plausible value for the line of best fit in this scenario. Options B (-0.5) and C (0.5) represent much shallower slopes (negative and positive respectively), and option D (5) represents a positive slope.  Given the likely negative correlation, options C and D are clearly incorrect. Option B might represent a weak negative correlation, but -5 suggests a stronger negative relationship, which is often observed in such scenarios.  Without the image, and assuming a typical scatterplot for this context, -5 is the most plausible and likely correct slope.  The difficulty level 'Medium' is appropriate as it requires interpretation of a scatterplot and understanding of slope in the context of data analysis, which are typical skills tested in the SAT Math section."
+    }
+  },
+  {
+    "question_id": 670979,
+    "question_text": "Which of the following is true about the values of $3^x$ and $3x+1$ for $x > 0$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to compare the values of $3^x$ and $3x+1$ for $x > 0$. Let $f(x) = 3^x$ and $g(x) = 3x+1$. We examine the relationship between $f(x)$ and $g(x)$ for $x > 0$.For small values of $x$, let's test $x=1$: $3^1 = 3$ and $3(1)+1 = 4$. In this case, $3^x < 3x+1$.For larger values of $x$, let's test $x=2$: $3^2 = 9$ and $3(2)+1 = 7$. In this case, $3^x > 3x+1$.This suggests that there might be a value $c$ where the relationship changes. Let's analyze the functions further.Consider the function $h(x) = 3^x - (3x+1)$. We are looking for the sign of $h(x)$ for $x > 0$.We know that $h(0) = 3^0 - (3(0)+1) = 1 - 1 = 0$.Let's find the derivative of $h(x)$: $h'(x) = \frac{d}{dx}(3^x - (3x+1)) = 3^x \\\\ln(3) - 3$.At $x=0$, $h'(0) = 3^0 \\\\ln(3) - 3 = \\\\ln(3) - 3$. Since $\\\\ln(3) \\\\approx 1.0986 < 3$, $h'(0) < 0$. This means that $h(x)$ is initially decreasing around $x=0$.Let's find where $h'(x) = 0$: $3^x \\\\ln(3) - 3 = 0 \\\\Rightarrow 3^x \\\\ln(3) = 3 \\\\Rightarrow 3^x = \frac{3}{\\\\ln(3)} \\\\Rightarrow x = \\\\log_3 \\\\left(\frac{3}{\\\\ln(3)}\right) = \\\\log_3(3) - \\\\log_3(\\\\ln(3)) = 1 - \\\\log_3(\\\\ln(3))$.Since $\\\\ln(3) > 1$, $\\\\log_3(\\\\ln(3)) > 0$. So $x = 1 - \\\\log_3(\\\\ln(3)) < 1$. Let's call this value $x_0 = 1 - \\\\log_3(\\\\ln(3))$.For $x < x_0$, $h'(x) < 0$, and for $x > x_0$, $h'(x) > 0$. This means $h(x)$ decreases until $x_0$ and then increases.Since $h(0) = 0$ and $h(x)$ decreases initially, for $0 < x < c$ (where $c$ is the positive root of $h(x)=0$), we must have $h(x) < 0$, which means $3^x < 3x+1$. For $x > c$, $h(x) > 0$, which means $3^x > 3x+1$.Therefore, option C is correct.Option A is incorrect because we showed that for $x=2$, $3^x > 3x+1$.Option B is incorrect because we showed that for $x=1$, $3^x < 3x+1$.Option D is incorrect because it describes the opposite relationship to what we found.The difficulty level is appropriate for Medium as it requires understanding of exponential functions and inequalities, possibly using derivatives to analyze the behavior of the functions. The question is mathematically sound and all options are clearly distinguishable. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 284699,
+    "question_text": "The scatterplot shows the relationship between altitude above sea level, in feet, and atmospheric pr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the slope of the line of best fit shown in the scatterplot.  To find the slope, we can use the two points provided that the line passes through approximately: (0, 15) and (10000, 10).  Using the slope formula (change in y / change in x), we calculate the slope as follows: (10 - 15) / (10000 - 0) = -5 / 10000 = -0.0005.  Option B, -0.0005, matches this calculated slope and is therefore the correct answer.Option A (-0.05) is incorrect because it is ten times larger in magnitude than the correct slope and has the correct negative sign, but is not the accurate value.Option C (0.0005) is incorrect because it is positive, indicating an upward sloping line, which contradicts the downward sloping line of best fit described and visually implied by the context (pressure decreases with altitude).Option D (0.05) is incorrect because it is positive and significantly larger in magnitude than the correct slope, and also indicates an upward sloping line.The difficulty level of 'Medium' is appropriate as it requires understanding of scatterplots, lines of best fit, and the slope formula, which are typical concepts tested on the SAT at a medium difficulty level. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 267126,
+    "question_text": "A water tank initially contains 500 gallons of water. Water drains from the tank at a constant rate ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The scenario describes a water tank losing water at a constant rate.  Let W be the amount of water remaining in the tank after m minutes. Initially, W = 500 gallons. Since water drains at a constant rate of 10 gallons per minute, after m minutes, the amount of water drained is 10m gallons. Therefore, the amount of water remaining in the tank can be represented by the equation: W = 500 - 10m. This equation is in the form of a linear equation, y = mx + b, where y = W, x = m, b = 500 (y-intercept or initial value), and m = -10 (slope).  The slope is negative, indicating a decrease in the amount of water over time.Option A is incorrect because a linear model with a positive slope would represent an increase in the amount of water over time, which contradicts the scenario of water draining.Option B is correct because a linear model with a negative slope accurately represents the decrease in the amount of water at a constant rate.Option C is incorrect because an exponential growth model represents a quantity increasing at an increasing rate, which is not applicable to water draining from a tank.Option D is incorrect because an exponential decay model represents a quantity decreasing at a rate proportional to the current quantity. While the water is decreasing, the rate of decrease is constant (10 gallons per minute), not proportional to the amount of water remaining.  A constant rate of change is characteristic of a linear model, not an exponential model.There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium for the SAT, as it requires understanding linear models and applying them to a real-world scenario."
+    }
+  },
+  {
+    "question_id": 851365,
+    "question_text": "The scatterplot above shows data for eight students relating their hours studied per week to their e...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the actual and predicted exam score percentages for the student who studied the greatest number of hours per week. Option A, Actual: 90%, Predicted: 86%, is marked as correct. Assuming the scatterplot in the image (0__page_7_Figure_2.jpeg) is a standard representation, we can infer that the student who studied the greatest number of hours is represented by the rightmost data point. By visually estimating from a typical scatterplot of this nature, an actual score of around 90% and a predicted score (from the line of best fit at that x-value) of around 86% is reasonable. Options B, C, and D are less likely to be correct. Option B reverses actual and predicted values. Option C has a predicted value significantly higher than the actual, which is less likely for a line of best fit in this context. Option D has a significantly lower actual score (80%) for the student with the most study hours, which is inconsistent with a positive correlation generally depicted in such scatterplots. The difficulty level of 'Medium' is appropriate for SAT Problem-Solving and Data Analysis questions. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 327591,
+    "question_text": "Each dot in the scatterplot above represents the number of practice SAT Math tests taken, $x$, and t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the line that most closely fits the data in the scatterplot. Assuming the image at the provided URL shows a scatterplot with a positive linear trend, option A (y = 25x + 10) is likely the correct answer.  A line with a positive slope is expected for this scenario (more practice tests likely lead to a higher score increase).  A slope of 25 and a y-intercept of 10 are plausible values for a line of best fit in this context. Options B, C, and D represent lines that are less likely to be the best fit. Option B has a negative y-intercept which might be less appropriate. Options C and D have a smaller slope (10) compared to A and B (25), which might not capture the trend as accurately if the scatterplot shows a steeper positive correlation.  Without seeing the actual scatterplot image, and assuming a typical positive correlation for this type of question, option A is the most reasonable 'best fit' among the given options. The difficulty level 'Medium' is appropriate as it requires understanding scatterplots and lines of best fit, but doesn't involve complex calculations."
+    }
+  },
+  {
+    "question_id": 503139,
+    "question_text": "The scatterplot above shows the relationship between the number of hours a student spent tutoring pe...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equation of the line of best fit for the given scatterplot. Option A, s = 52 + 7t, represents a line with a y-intercept of 52 and a slope of 7.  Based on a typical scatterplot showing a positive correlation between tutoring hours and exam scores, and visually estimating the line of best fit, a y-intercept around 50-60 and a positive slope less than 10 seems reasonable.Option B, s = 7 + 52t, has a y-intercept of 7, which is too low for a final exam score when tutoring hours are zero, and a slope of 52, which is unrealistically steep.  If tutoring hours increased by just 1 hour, the score would increase by 52 points, which is unlikely in a realistic scenario and visually inconsistent with a typical scatterplot.Option C, s = 52 + 15t, has a reasonable y-intercept of 52, but a slope of 15 might be slightly too steep. While plausible, compared to Option A, a slope of 7 is more likely to represent a moderate positive correlation in this context.Option D, s = 15 + 52t, has a y-intercept of 15, which is too low, and a slope of 52, which is too steep, similar to Option B.Comparing all options, Option A (s = 52 + 7t) is the most reasonable equation for the line of best fit, having a plausible y-intercept and a moderate positive slope.  Options B and D are clearly incorrect due to unrealistic y-intercepts and slopes. Option C, while having a reasonable y-intercept, has a slope that is likely too steep compared to what is visually expected for a line of best fit in this context. Therefore, Option A is the most appropriate and likely intended correct answer. The difficulty level of 'Medium' is appropriate as it requires understanding of scatterplots, lines of best fit, and interpreting slope and y-intercept in context."
+    }
+  },
+  {
+    "question_id": 708786,
+    "question_text": "In which of the following tables is the relationship between the values of x and their corresponding...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks to identify the table where the relationship between x and y is nonlinear. To determine linearity, we check if the rate of change (slope) between consecutive points is constant. \n\nFor Option A: The change in y-values is constant (5-3=2, 7-5=2, 9-7=2) for constant changes in x-values (2-1=1, 3-2=1, 4-3=1). This is a linear relationship.\n\nFor Option B: The change in y-values is constant (9-10=-1, 8-9=-1, 7-8=-1) for constant changes in x-values. This is a linear relationship.\n\nFor Option C: The change in y-values is constant (2.5-2=0.5, 3-2.5=0.5, 3.5-3=0.5) for constant changes in x-values. This is a linear relationship.\n\nFor Option D: The change in y-values is not constant (3-0=3, 8-3=5, 15-8=7) for constant changes in x-values. This is a nonlinear relationship.\n\nTherefore, option D is the only table representing a nonlinear relationship, and it is correctly marked as the correct answer. Options A, B, and C are clearly linear. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for an SAT question assessing understanding of linear and nonlinear relationships from tabular data."
+    }
+  },
+  {
+    "question_id": 405037,
+    "question_text": "The scatterplot below shows the relationship between the number of hours a group of students spent v...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It asks for the equation of a line of best fit for a scatterplot showing the relationship between volunteering hours and exam scores. Assuming the scatterplot (based on the correct answer and typical SAT question design) shows a negative correlation (as volunteering hours increase, exam scores tend to decrease, or vice versa, or at least a negative trend), option A, y = -2x + 80, is a plausible line of best fit. It has a negative slope (-2), indicating a negative correlation, and a y-intercept of 80. Option B is incorrect because it has a positive slope, suggesting a positive correlation, which would contradict a typical scatterplot question where only one option is correct and the others are clearly distinguishable. Option C has a negative slope but a y-intercept of 60, which is significantly lower than option A and might not fit the data as well if the data points are generally higher on the y-axis. Option D has a negative slope but a shallower slope (-0.5) than option A, and the same y-intercept as A.  Without seeing the actual scatterplot, we assume that option A is the best fit because it's marked as correct, and the other options are designed to be clearly distinguishable based on slope and y-intercept in a typical SAT question.  The difficulty level 'Medium' is appropriate as it requires understanding scatterplots, lines of best fit, and interpreting linear equations. There are no grammatical or formatting issues.  To definitively confirm the correctness, the actual scatterplot image would need to be analyzed to visually verify that a line with a negative slope of approximately -2 and a y-intercept of approximately 80 is indeed a reasonable line of best fit and that options B, C, and D are clearly less suitable."
+    }
+  },
+  {
+    "question_id": 614377,
+    "question_text": "The scatterplot shows the relationship between the number of hours students studied for a test and t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the predicted test score for a student who studied for 7 hours based on the line of best fit shown in the scatterplot. To find the predicted score, we need to locate 7 hours on the x-axis (hours studied) and follow a vertical line up to the line of best fit. From that point on the line of best fit, we follow a horizontal line to the y-axis (test scores) to read the predicted score.  Visually inspecting the graph, at 7 hours, the line of best fit corresponds to a test score that is slightly above 70 and below 75. Among the given options, 71 (Option B) is the closest value to the predicted score on the line of best fit for 7 hours of studying. Options A (66), C (76), and D (81) are further away from the line of best fit at 7 hours. Therefore, Option B (71) is the most reasonable and correct answer based on visual interpretation of the graph. The difficulty level 'Medium' is appropriate for this question as it requires understanding scatterplots and lines of best fit, and performing a visual estimation."
+    }
+  },
+  {
+    "question_id": 729692,
+    "question_text": "The scatterplot below shows the relationship between the number of hours students studied for a test...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The actual question being asked is missing. The prompt provides context (scatterplot, line of best fit, options) but no explicit question text.  Without knowing what is being asked, it's impossible to definitively determine the correct answer or validate the options.",
+        "Due to the missing question, it is impossible to verify if option C is actually the correct answer.",
+        "Due to the missing question, it is impossible to verify if options A, B, and D are clearly incorrect."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is invalid because the actual question text is missing. While context is provided (scatterplot, line of best fit, options related to hours studied), there is no explicit question asking what needs to be determined from the graph.  For example, is it asking for the predicted score for a certain number of study hours, the number of study hours needed for a certain score, the slope of the line, or something else entirely?  Without the question text, we cannot assess the correctness of the marked answer (C) or the incorrectness of other options.  We are assuming that option C is marked as correct based on some interpretation of the scatterplot and line of best fit, but this cannot be confirmed without the full question."
+    }
+  },
+  {
+    "question_id": 89351,
+    "question_text": "The scatterplot (not shown) displays the relationship between the number of hours students spent vol...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete because the scatterplot is missing. Without the scatterplot, it is impossible to determine the correct answer and validate the options.",
+        "The question relies on visual information (the scatterplot) that is not provided, making it unsolvable as presented.",
+        "While the question text itself is clearly written and grammatically correct, its lack of accompanying visual data is a critical flaw."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is designed to test the understanding of scatterplots and lines of best fit.  Students need to visually identify points on a scatterplot that are above the line of best fit.  However, the scatterplot is explicitly stated as 'not shown'.  Without the scatterplot, there is no way to determine how many data points are above the line of best fit.  Therefore, while option C is marked as correct, we cannot verify this or any other option's correctness without the visual data.  The question is fundamentally flawed in its current form due to the missing scatterplot.  Assuming that '9' is intended to be the correct answer based on some hypothetical scatterplot, the question *could* be valid *if* the scatterplot were provided and if, upon examination of that scatterplot, exactly 9 points were indeed above the line of best fit.  However, as it stands, the question is invalid due to incompleteness. The difficulty level of 'Medium' is appropriate *if* the scatterplot were provided, as it requires interpretation of visual data and understanding of lines of best fit, but without it, the difficulty is effectively 'Impossible'."
+    }
+  },
+  {
+    "question_id": 139703,
+    "question_text": "The scatterplot above shows the relationship between the number of hours a group of students spent s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The question text refers to 'scatterplot above' but no image is provided in this prompt. In a real test setting, the image would be necessary for context, although the question is solvable without it based on the provided equation."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the interpretation of the slope in the given linear equation of the line of best fit, $\textit{y} = 7.2\textit{x} + 65$. In this equation, the slope is 7.2, which represents the change in the predicted test score ($\textit{y}$) for each unit increase in the number of study hours ($\textit{x}$). Therefore, for each additional hour of study, the predicted test score increases by 7.2 points. Option B correctly states this interpretation. Options A, C, and D misinterpret the slope and y-intercept or miscalculate the relationship. Option A uses the y-intercept (65) as the increase per hour. Option C inverts the relationship and also miscalculates the increase. Option D also misinterprets the slope and y-intercept.  The difficulty level 'Hard' is arguably slightly overstated, as the question primarily tests basic understanding of slope in a linear equation, which is generally considered a medium difficulty concept on the SAT. However, it can be considered 'Hard' for students who struggle with interpreting linear equations in context."
+    }
+  },
+  {
+    "question_id": 941540,
+    "question_text": "The scatterplot above shows a company's sales $s$, in thousands of dollars, and advertising spending...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The question refers to an image that is missing from the provided text. This makes it impossible to definitively verify the correctness of the options without making assumptions about the scatterplot."
+      ],
+      "correct_answer": "A",
+      "explanation": "Assuming the scatterplot shows a positive correlation between advertising spending and sales, and the line of best fit has a positive slope and a y-intercept within a reasonable range for the context, option A (s = 7.5a + 75) is the most plausible answer and is marked as correct. Here's why:\n\n* **Option A: s = 7.5a + 75** has a positive slope (7.5) and a y-intercept of 75. This suggests that even with zero advertising, there are some base sales (75 thousand dollars), and sales increase significantly with increased advertising spending.\n\n* **Option B: s = 2a + 200** has a positive slope (2) but a higher y-intercept (200). This implies higher base sales even with no advertising and a less steep increase in sales with advertising compared to Option A.\n\n* **Option C: s = 15a + 25** has a very steep positive slope (15) and a low y-intercept (25). This suggests very low base sales and a very rapid increase in sales with advertising. While possible, a slope of 15 might be too steep for a typical line of best fit in this context.\n\n* **Option D: s = 0.5a + 300** has a very shallow positive slope (0.5) and a very high y-intercept (300). This implies very high base sales and a minimal increase in sales with advertising. This is less likely to represent a line of best fit showing a positive relationship between advertising and sales, as advertising spending has a very small impact on sales.\n\nWithout the actual image, it's impossible to definitively confirm. However, based on the slopes and y-intercepts, Option A appears to be the most reasonable equation for a line of best fit in this context, assuming a moderate positive correlation.  The other options represent lines that are either too flat, too steep, or have y-intercepts that might be less realistic for a typical sales vs. advertising scatterplot. \n\n**Assuming the marked answer (A) is indeed correct, and given the context of SAT questions often requiring estimation and reasoning based on visual data, the question is likely designed to be solvable by estimating the slope and y-intercept from a typical scatterplot of this nature.** The difficulty level 'Hard' is appropriate as it requires understanding of scatterplots, lines of best fit, and interpreting linear equations in context, along with some estimation skills."
+    }
+  },
+  {
+    "question_id": 523940,
+    "question_text": "The scatterplot shows the relationship between the height of a sunflower, y, in centimeters, and the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the average rate of change of the sunflower's height between week 3 and week 7. To find this, we need to identify the height at week 3 and week 7 from the provided data points.  From the data points, at week 3, the height is approximately 12 cm, and at week 7, the height is approximately 26 cm. The average rate of change is calculated as the change in height divided by the change in weeks: (Change in height) / (Change in weeks) = (26 cm - 12 cm) / (7 weeks - 3 weeks) = 14 cm / 4 weeks = 3.5 cm/week. Option B, 3.5, is indeed the correct answer. Option D, 14, represents the change in height but not the rate of change, making it a plausible distractor for students who might forget to divide by the change in weeks. Options A and C are numerically different from the correct answer and less likely to be chosen by students who understand the concept but make a minor error. The difficulty level 'Hard' is appropriate as it requires understanding of scatterplots and the concept of average rate of change, which is a standard topic in SAT Problem-Solving and Data Analysis."
+    }
+  },
+  {
+    "question_id": 826324,
+    "question_text": "Each dot in the scatterplot above represents the number of hours spent exercising per week and the r...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The slope of the line of best fit is given as -2.5, which means for every 1-hour increase in exercise per week, the resting heart rate is predicted to decrease by 2.5 beats per minute. To find the predicted decrease for a 4-hour increase in exercise, we multiply the slope by 4: -2.5 * 4 = -10.  The question asks 'how much lower', so we are interested in the magnitude of the decrease, which is 10 beats per minute. Option C, 10 beats per minute, is therefore the correct answer. Options A, B, and D are incorrect as they do not result from correctly applying the given slope to a 4-hour increase in exercise. The difficulty level 'Hard' is appropriate as it requires understanding the concept of slope in the context of a scatterplot and applying it to solve a problem, which is typical of SAT Problem-Solving and Data Analysis questions."
+    }
+  },
+  {
+    "question_id": 101,
+    "question_text": "The scatterplot below shows the height of a ball, in feet, at different times after it was thrown up...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the equation that best models the scatterplot data, which depicts the height of a ball thrown upwards over time.  The scatterplot (assuming a typical trajectory of a ball thrown upwards, forming a downward-opening parabola) should be modeled by a quadratic equation with a negative leading coefficient (for the downward curve) and a positive y-intercept (for the initial height of the ball).Option A has a positive leading coefficient (12.5), indicating an upward-opening parabola, which is incorrect for this scenario.Option B has a negative leading coefficient (-12.5), which is correct for a downward-opening parabola, but it also has a negative constant term (-4.1), suggesting a starting height below ground level, which is less likely and generally not the case for such problems. Additionally, the negative coefficient for the linear term (-30.2) would shift the vertex of the parabola to the left of the y-axis (negative time), which is not physically meaningful in this context.Option C has a positive leading coefficient (12.5), indicating an upward-opening parabola, which is incorrect.Option D has a negative leading coefficient (-12.5), which is correct for a downward-opening parabola. It also has a positive constant term (4.1), suggesting a reasonable positive initial height. The positive coefficient for the linear term (30.2) correctly positions the vertex of the parabola to the right of the y-axis (positive time), representing the ball reaching its maximum height after being thrown.Therefore, Option D is the only option that logically and mathematically represents the motion of a ball thrown upwards, resulting in a downward-opening parabola with a positive initial height and a peak at a positive time. Options A, B, and C are clearly incorrect based on the signs of the coefficients and their implications for the shape and position of the parabola in the context of the problem.The difficulty level 'Hard' is appropriate as it requires understanding the relationship between quadratic equations and their graphical representation in a real-world context, as well as the ability to interpret the coefficients of a quadratic equation to match the physical scenario."
+    }
+  },
+  {
+    "question_id": 628770,
+    "question_text": "The scatterplot above shows the number of hours studied per week, $x$, and the exam score, $y$, for ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete because it refers to a scatterplot image that is missing. Without the scatterplot, it is impossible to definitively determine the correct line of best fit.",
+        "While option B is marked as correct, without the scatterplot, we cannot verify if it is indeed the most appropriate line of best fit compared to other options or if other options are definitively incorrect. The correctness is contingent on the unseen scatterplot.",
+        "The question relies on visual interpretation of a scatterplot, which is absent. This makes it impossible to validate the correctness of the options based solely on the provided text."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is invalid in its current form because it is missing the crucial scatterplot image referenced in the question text.  A line of best fit is determined based on the distribution of points in a scatterplot. Without seeing the scatterplot, we cannot definitively say which equation 'could be' a line of best fit, nor can we confirm that option B is uniquely correct and other options are definitively incorrect.  However, assuming that option B is intended to be the correct answer based on some unseen scatterplot, and given the typical context of SAT questions, we can analyze the options for plausibility. Option B, y = 4x + 30, represents a line with a positive slope and a reasonable y-intercept in the context of study hours and exam scores. Options A, C, and D, while also lines with positive slopes, might be less suitable depending on the distribution of points in the missing scatterplot. For instance, option C has a steeper slope and higher y-intercept which might overestimate scores, while option D has a lower y-intercept which might underestimate scores. Option A has a shallower slope and lower y-intercept, which might also be less fitting.  Despite the plausibility of option B, the absence of the scatterplot is a critical flaw that renders the question unverifiable and thus invalid as presented.  If the scatterplot were present and visually supported option B as a reasonable line of best fit, and made other options less suitable, then the question could be considered valid.  As it stands, we must assume the question is flawed due to the missing visual component."
+    }
+  },
+  {
+    "question_id": 846083,
+    "question_text": "Two cities had populations that grew as shown in the table below. The population growth in City A is...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (Option B) is incorrect. Option D is the correct answer.",
+        "The provided correct answer key is wrong, making the question invalid as it is currently presented."
+      ],
+      "correct_answer": "D",
+      "explanation": "Let's analyze the annual population increase for each city:\n\n**City A:** Population growth is 4% compounded annually. \nYear 1 increase: 4% of 5,000 = 0.04 * 5,000 = 200 people.\nYear 2 population: 5,000 + 200 = 5,200. Year 2 increase: 4% of 5,200 = 0.04 * 5,200 = 208 people.\nYear 3 population: 5,200 + 208 = 5,408. Year 3 increase: 4% of 5,408 = 0.04 * 5,408 = 216.32 people.\n\nThe annual population increase for City A is increasing each year.\n\n**City B:** Population growth is a constant 300 people per year. \nYear 1 increase: 300 people.\nYear 2 increase: 300 people.\nYear 3 increase: 300 people.\n\nThe annual population increase for City B is constant.\n\nComparing the annual increases:\nYear 1: City A increase (200) < City B increase (300)\nYear 2: City A increase (208) < City B increase (300)\nYear 3: City A increase (216.32) < City B increase (300)\n\nLet's find when City A's annual increase becomes larger than City B's. Let 'n' be the number of years. The annual increase for City A in year 'n' is given by 0.04 * 5000 * (1.04)^(n-1) = 200 * (1.04)^(n-1}. We want to find when this is greater than 300:\n200 * (1.04)^(n-1) > 300\n(1.04)^(n-1) > 1.5\nTaking logarithm (natural log) of both sides:\n(n-1) * ln(1.04) > ln(1.5)\nn-1 > ln(1.5) / ln(1.04) ≈ 10.38\nn > 11.38\n\nSo, after approximately 12 years, City A's annual population increase will become larger than City B's. Therefore, initially, City A has a smaller annual population increase, but eventually, it becomes larger.\n\n**Option Analysis:**\nA. City A always has a larger annual population increase than City B. - Incorrect.\nB. City A always has a smaller annual population increase than City B. - Incorrect.\nC. City A has a larger annual population increase than City B at first but eventually has a smaller annual population increase. - Incorrect.\nD. City A has a smaller annual population increase than City B at first but eventually has a larger annual population increase. - Correct.\n\n**Conclusion:** Option D is the correct answer. The question is well-written and understandable, and the difficulty level is appropriate for SAT. However, the provided correct answer (Option B) is wrong. This needs to be corrected for the question to be valid."
+    }
+  },
+  {
+    "question_id": 967765,
+    "question_text": "The scatterplot above shows the number of hours students studied per week and their exam scores (out...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the predicted increase in exam score for every 1-hour increase in study per week, based on the line of best fit. This is equivalent to finding the slope of the line of best fit. By visually inspecting the line of best fit on the scatterplot, we can estimate the slope.  For example, if we look at two points on the line, we can approximate the change in exam score for a change in study hours.  Observing the graph, it appears that for an increase of approximately 2 hours of study per week, the exam score increases by roughly 3 points (e.g., from around 63 to 66, or 66 to 69). This gives a slope of approximately 3/2 = 1.5. Option C, 1.5, is the closest value to this estimated slope and is therefore the correct answer. Options A (2.5), B (2.0), and D (1.0) represent slopes that are noticeably different from the slope of the line of best fit shown in the image. The question is appropriately categorized as 'Hard' for the SAT as it requires interpretation of a scatterplot and line of best fit to determine the rate of change, which is a key concept in data analysis."
+    }
+  }
+]

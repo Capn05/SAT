@@ -1,0 +1,486 @@
+[
+  {
+    "question_id": 73299,
+    "question_text": "What value of m satisfies the equation 7m + 65 = 166?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 13) is incorrect. Substituting m=13 into the equation 7m + 65 = 166 yields 7(13) + 65 = 91 + 65 = 156, which is not equal to 166.",
+        "None of the provided options are correct for the equation 7m + 65 = 166. Solving for m gives m = (166 - 65) / 7 = 101 / 7, which is approximately 14.43. None of the options A, B, C, or D are equal to 101/7 or even close to it as integers.",
+        "The question, while clearly written, has an incorrect set of answer options, including the marked 'correct' answer."
+      ],
+      "correct_answer": "None of the provided options are correct",
+      "explanation": "The question is clearly written and asks to solve a linear equation. However, the option marked as correct (A. 13) is incorrect when substituted back into the equation.  Solving the equation 7m + 65 = 166 correctly yields m = 101/7, which is not among the provided options.  Therefore, the question is invalid due to incorrect answer options and a wrongly marked correct answer. While the difficulty level is appropriate for an 'Easy' SAT question, the lack of a correct option makes it flawed."
+    }
+  },
+  {
+    "question_id": 128415,
+    "question_text": "The perimeter of an isosceles triangle is 95 inches. Two sides of this triangle are congruent and ea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It describes an isosceles triangle with a given perimeter and the length of its two congruent sides. To find the length of the third side, we can set up a simple equation. Let x be the length of the third side. The perimeter is the sum of all three sides, so we have: 30 + 30 + x = 95. Solving for x: 60 + x = 95, x = 95 - 60, x = 35. Therefore, the length of the third side is 35 inches, which corresponds to option A.Option A (35) is correct because 30 + 30 + 35 = 95.Option B (30) is incorrect because 30 + 30 + 30 = 90, not 95.Option C (65) is incorrect because 30 + 30 + 65 = 125, not 95.Option D (55) is incorrect because 30 + 30 + 55 = 115, not 95.All options except A are clearly incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Easy, as it involves basic geometric concepts and simple algebra suitable for the SAT. The question also implicitly satisfies the triangle inequality theorem (30+30 > 35, 30+35 > 30), ensuring a valid triangle can be formed."
+    }
+  },
+  {
+    "question_id": 695158,
+    "question_text": "In the equation below, what is the value of $x$?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        " implies an equation should follow, but none is given.",
+        "A"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 257673,
+    "question_text": "Which of the following equations is equivalent to $5x - 3 = 7$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent equation to 5x - 3 = 7. Option A, 10x - 6 = 14, is indeed equivalent because it is obtained by multiplying both sides of the original equation by 2. Options B, C, and D are not equivalent to the original equation. Option B changes the constant term on the left side and the constant term on the right side incorrectly. Option C changes the coefficient of x on the left side and the constant term on the left side incorrectly. Option D changes the constant term on the right side incorrectly. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it involves a simple linear equation and testing for equivalence, which is a fundamental concept in algebra."
+    }
+  },
+  {
+    "question_id": 932944,
+    "question_text": "A bakery sells muffins for $3 each. At this price, how many dollars will it cost to buy m muffins?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "This question is valid and well-written. \n\n1. **Clarity:** The question is clear and easy to understand. It directly asks for the total cost of buying 'm' muffins when each muffin costs $3.\n2. **Correct Answer:** Option A, '3m', is indeed the correct answer. If each muffin costs $3, then 'm' muffins will cost 3 multiplied by m, which is 3m.\n3. **Incorrect Options:** Options B, C, and D are clearly incorrect:\n    * **B. 3+m:** This option represents adding the price of one muffin to the number of muffins, which is not how total cost is calculated.\n    * **C. m:** This option only represents the number of muffins, not the total cost in dollars. It ignores the price per muffin.\n    * **D. 3:** This option represents the price of a single muffin, regardless of how many muffins are purchased.\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is concise and uses standard English.\n5. **Difficulty Level:** The difficulty level is appropriately labeled as 'Easy'. This question tests a fundamental understanding of multiplication and its application in a simple real-world scenario, which is suitable for the 'Easy' category on the SAT, particularly within the Algebra section."
+    }
+  },
+  {
+    "question_id": 478626,
+    "question_text": "A baker made a total of 32 cookies for a bake sale.  If 18 of the cookies were chocolate chip, how m...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. It asks a straightforward subtraction problem. Option A, 14, is indeed the correct answer as 32 (total cookies) - 18 (chocolate chip cookies) = 14 (cookies not chocolate chip). Options B, C, and D are clearly incorrect. Option B (18) is the number of chocolate chip cookies, not the number of cookies that are not chocolate chip. Option C (32) is the total number of cookies. Option D (50) is the sum of 32 and 18, which is not relevant to the question. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it involves a single, simple subtraction operation suitable for early SAT math questions."
+    }
+  },
+  {
+    "question_id": 729480,
+    "question_text": "7x = 91  What value of x is the solution to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the solution to a simple linear equation, 7x = 91. Option A, 13, is the correct answer because 7 * 13 = 91. Options B (84), C (98), and D (637) are incorrect as substituting these values for x in the equation 7x = 91 does not result in a true statement. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a basic one-step linear equation solvable through division."
+    }
+  },
+  {
+    "question_id": 317347,
+    "question_text": "7z + 3 = 17  How many solutions exist to the equation shown above?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The equation 7z + 3 = 17 is a linear equation in one variable. To find the number of solutions, we can solve for z: 7z = 17 - 3 => 7z = 14 => z = 14 / 7 => z = 2.  There is exactly one solution (z=2). Therefore, option B, 'Exactly 1', is the correct answer. Options A, C, and D are incorrect because a non-degenerate linear equation in one variable always has exactly one solution."
+    }
+  },
+  {
+    "question_id": 240292,
+    "question_text": "A bakery sells cupcakes and cakes. On Monday, they sold $m$ cupcakes. On Tuesday, they sold 7 fewer ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks for the number of cupcakes sold on Tuesday in terms of $m$, given that Tuesday's sales were '7 fewer than half the number of cupcakes sold on Monday'.  If Monday's sales were $m$, then half the number of cupcakes sold on Monday is $\frac{m}{2}$. '7 fewer than half' translates to subtracting 7 from $\frac{m}{2}$, resulting in the expression $\frac{m}{2} - 7$. Option B, $\frac{m}{2} - 7$, correctly represents this. Options A, C, and D are incorrect as they represent different mathematical relationships than described in the problem. Option A represents '7 more than half', Option C represents '7 fewer than twice', and Option D represents 'half fewer than 7' or '7 minus half'. The difficulty level 'Easy' is appropriate as it tests basic translation of words into algebraic expressions, a fundamental skill for early algebra and the SAT."
+    }
+  },
+  {
+    "question_id": 752950,
+    "question_text": "A mobile phone company charges a $25 activation fee and $8 per gigabyte (GB) of data used. If a cust...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. It describes a scenario with a fixed activation fee and a variable charge per GB of data. To solve the problem, we can set up a linear equation: Total Bill = Activation Fee + (Cost per GB * Number of GB).  Plugging in the given values, we get 89 = 25 + 8x, where x is the number of GB of data used. Solving for x: 8x = 89 - 25 = 64, so x = 64 / 8 = 8. Therefore, the customer used 8 GB of data, which corresponds to option B, the marked correct answer.  Options A, C, and D are incorrect because substituting these values back into the equation does not yield a total bill of $89. For example, for option A (7 GB): 25 + 8*7 = 81; for option C (9 GB): 25 + 8*9 = 97; for option D (11 GB): 25 + 8*11 = 113. The difficulty level 'Easy' is appropriate as it involves a straightforward linear equation solvable with basic arithmetic."
+    }
+  },
+  {
+    "question_id": 927699,
+    "question_text": "For what value of x does 2x + 3 = 3(x - 1) ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The equation 2x + 3 = 3(x - 1) is a standard linear equation in one variable. To verify the correctness of option C, we solve the equation: \n2x + 3 = 3(x - 1)\n2x + 3 = 3x - 3\nAdding 3 to both sides: 2x + 6 = 3x\nSubtracting 2x from both sides: 6 = x\nThus, x = 6 is the correct solution, and option C is indeed correct.\nTo verify that other options are incorrect, we can substitute them into the equation:\nOption A (x=4): 2(4) + 3 = 11,  3(4 - 1) = 9. 11 ≠ 9.\nOption B (x=5): 2(5) + 3 = 13,  3(5 - 1) = 12. 13 ≠ 12.\nOption D (x=0): 2(0) + 3 = 3,  3(0 - 1) = -3. 3 ≠ -3.\nAll other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves solving a basic linear equation, a fundamental skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 454466,
+    "question_text": "If $3x = 18$, what is the value of $3x + 5$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear and mathematically sound. Given $3x = 18$, we substitute this value into the expression $3x + 5$ to get $18 + 5 = 23$. Option C is the correct answer. Options A, B, and D are incorrect as they do not result from correctly evaluating $3x + 5$ when $3x = 18$. The difficulty level is appropriately categorized as Easy for the SAT."
+    }
+  },
+  {
+    "question_id": 237700,
+    "question_text": "If $\frac{x}{3} - \frac{x}{12} = 5$, what is the value of $x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to solve a linear equation for x. The equation is $\\\\frac{x}{3} - \\\\frac{x}{12} = 5$. To solve for x, we first find a common denominator for the fractions, which is 12. Rewriting the equation with the common denominator, we get $\\\\frac{4x}{12} - \\\\frac{x}{12} = 5$. Combining the fractions, we have $\\\\frac{3x}{12} = 5$, which simplifies to $\\\\frac{x}{4} = 5$. Multiplying both sides by 4, we get $x = 20$. Therefore, option C is indeed the correct answer. Options A, B, and D are incorrect as substituting these values back into the original equation does not yield 5. The question is grammatically correct and formatted appropriately for an SAT question. The difficulty level is appropriately classified as 'Easy' for the SAT, as it involves basic algebraic manipulation of linear equations."
+    }
+  },
+  {
+    "question_id": 473256,
+    "question_text": "If $5x - 3 = 12$, what is the value of $20x - 12$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The option marked as correct, B (48), is indeed the correct answer. Solving the equation $5x - 3 = 12$ gives $5x = 15$. We want to find the value of $20x - 12$. Since $20x = 4 \times 5x$, we have $20x = 4 \times 15 = 60$. Therefore, $20x - 12 = 60 - 12 = 48$. All other options are clearly incorrect as they do not result from a valid solution to the given equation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward linear equation and a simple manipulation to find the required expression's value."
+    }
+  },
+  {
+    "question_id": 565376,
+    "question_text": "If the cost of 2 pens and 5 pencils is $8, what is the cost, in dollars, of 6 pens and 15 pencils?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. Let 'p' be the cost of a pen and 'c' be the cost of a pencil. The given information can be represented as the equation 2p + 5c = 8. We are asked to find the cost of 6 pens and 15 pencils, which can be represented as 6p + 15c. Notice that 6p + 15c is exactly 3 times (2p + 5c). Therefore, the cost of 6 pens and 15 pencils is 3 * $8 = $24. Option C is indeed the correct answer. Options A, B, and D are incorrect as they do not represent the cost of 6 pens and 15 pencils based on the given information. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it involves a simple linear scaling and basic arithmetic, suitable for the SAT math section."
+    }
+  },
+  {
+    "question_id": 617475,
+    "question_text": "A bakery has 77 cookies to pack into boxes. If they put 6 cookies in each box, they will have 5 cook...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve this problem, we can set up a simple equation. Let 'x' be the number of boxes. The total number of cookies can be represented as (cookies per box * number of boxes) + leftover cookies.  So, 77 = (6 * x) + 5.  Solving for x: 77 - 5 = 6x, which simplifies to 72 = 6x. Dividing both sides by 6 gives x = 12. Therefore, the bakery used 12 boxes. Option B, which is marked as correct, is indeed the correct answer. The other options are clearly incorrect because if we plug them back into the equation (6 * boxes + 5), they do not result in 77 cookies. For example, for option A (13 boxes): 6 * 13 + 5 = 83 cookies, for option C (14 boxes): 6 * 14 + 5 = 89 cookies, and for option D (18 boxes): 6 * 18 + 5 = 113 cookies.  There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question as it involves basic arithmetic and a straightforward word problem."
+    }
+  },
+  {
+    "question_id": 919127,
+    "question_text": "In the given equation, m is a constant. If the equation has infinitely many solutions, what is the v...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the value of 'm' that results in the equation having infinitely many solutions. For a linear equation of the form ax + b = cx + d to have infinitely many solutions, we must have a = c and b = d. In the given equation, 3x + m = 3x - 9, the coefficients of x are already equal (a = c = 3). For infinitely many solutions, the constant terms must also be equal, which means m = -9. Option B, -9, is indeed the correct answer. Options A, C, and D would lead to equations with no solutions (e.g., if m = 9, we get 3x + 9 = 3x - 9, which simplifies to 9 = -9, a contradiction). The difficulty level 'Easy' is appropriate as it involves a basic understanding of linear equations and the condition for infinite solutions."
+    }
+  },
+  {
+    "question_id": 474911,
+    "question_text": "If $3x = 21$, what is the value of $12x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To solve it, first solve for x in the equation $3x = 21$, which gives $x = 7$. Then, substitute this value of x into the expression $12x$ to get $12 \times 7 = 84$. Option D, which is 84, is indeed the correct answer. Options A, B, and C are incorrect. Option A (7) is the value of x, not $12x$. Options B (28) and C (63) are not directly derived from a simple miscalculation using the given information, but they are clearly not the correct answer of 84. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it involves a single-step linear equation and basic multiplication, skills expected at an early stage of algebra."
+    }
+  },
+  {
+    "question_id": 662979,
+    "question_text": "What is the solution to the equation $3x - 2 = 13$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the solution to a linear equation. The option marked as correct, C (5), is indeed the correct solution to the equation $3x - 2 = 13$. Solving the equation: $3x - 2 = 13 \\\\implies 3x = 15 \\\\implies x = 5$. Options A (3), B (4), and D (6) are incorrect as substituting these values into the equation does not yield 13. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward single-variable linear equation."
+    }
+  },
+  {
+    "question_id": 553686,
+    "question_text": "If $6b - 30 = 42$, what is the value of $b - 5$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve, first solve for $b$ in the equation $6b - 30 = 42$. Adding 30 to both sides gives $6b = 72$. Dividing both sides by 6 gives $b = 12$. Then, substitute $b = 12$ into the expression $b - 5$ to get $12 - 5 = 7$. Option B is indeed 7, so it is the correct answer. Options A, C, and D are clearly incorrect as they are not equal to 7. The question is straightforward and appropriate for an 'Easy' difficulty level on the SAT."
+    }
+  },
+  {
+    "question_id": 752851,
+    "question_text": "2x + 4(x + 3) = 36  What value of x is the solution to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The equation 2x + 4(x + 3) = 36 is a standard linear equation in one variable. Solving the equation: \n2x + 4(x + 3) = 36\n2x + 4x + 12 = 36\n6x + 12 = 36\n6x = 36 - 12\n6x = 24\nx = 24 / 6\nx = 4\nOption B, which is 4, is indeed the correct solution. Substituting x = 4 back into the equation: 2(4) + 4(4 + 3) = 8 + 4(7) = 8 + 28 = 36. Options A, C, and D are incorrect as substituting these values into the equation does not result in 36. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves basic algebraic manipulation of a linear equation."
+    }
+  },
+  {
+    "question_id": 327515,
+    "question_text": "7x = 60 – 5x What value of x is the solution to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the solution to the linear equation 7x = 60 – 5x. To solve for x, we can add 5x to both sides of the equation: 7x + 5x = 60 – 5x + 5x, which simplifies to 12x = 60. Then, divide both sides by 12: x = 60 / 12, which gives x = 5. Option B, which is marked as correct, is indeed the correct solution. Let's check the other options: A) 7(4) = 28 and 60 - 5(4) = 40, 28 ≠ 40; C) 7(6) = 42 and 60 - 5(6) = 30, 42 ≠ 30; D) 7(10) = 70 and 60 - 5(10) = 10, 70 ≠ 10. Thus, options A, C, and D are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward single-variable linear equation."
+    }
+  },
+  {
+    "question_id": 595840,
+    "question_text": "A bakery starts the day with 60 bagels. Every hour, the bakery makes 25 new bagels. If no bagels are...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The bakery starts with 60 bagels and makes 25 new bagels every hour. After 3 hours, without selling any bagels, the bakery will have the initial 60 bagels plus the bagels made in 3 hours.  Bagels made in 3 hours = 25 bagels/hour * 3 hours = 75 bagels. Total bagels = 60 + 75 = 135 bagels. Option A, 135, is the correct answer and is marked as correct. Options B, C, and D are incorrect. The question is a straightforward linear equation problem and is appropriately categorized as 'Easy' difficulty."
+    }
+  },
+  {
+    "question_id": 102327,
+    "question_text": "If $4y = 20$, what is the value of $4y - 5$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The option marked as correct, B (15), is indeed the correct answer because if $4y = 20$, then substituting this value into the expression $4y - 5$ gives $20 - 5 = 15$. Options A (1), C (25), and D (3) are all incorrect as they do not result from the correct substitution and calculation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it involves a single, straightforward substitution and basic subtraction."
+    }
+  },
+  {
+    "question_id": 415084,
+    "question_text": "If x is the solution to the equation above, what is the value of x - 4?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because it refers to 'the equation above' but no equation is provided in the question text or description. Without the equation, the question is unsolvable."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is fundamentally flawed because it refers to 'the equation above' without actually providing an equation.  This makes the question impossible to solve as it is presented.  While option A is marked as correct, and we can reverse-engineer a possible equation that would lead to option A being the correct answer for x-4 (e.g., if x - 4 = 12/5, then x = 32/5, and an equation like 5x - 32 = 0 or 5x - 2 = 30 would yield this x), the absence of the equation renders the question invalid.  For a valid SAT question, the equation must be explicitly stated."
+    }
+  },
+  {
+    "question_id": 512996,
+    "question_text": "A bicycle rental shop charges a fixed fee in addition to an hourly rental rate. The equation $5h + 1...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense in the context of a bicycle rental shop with a fixed fee and hourly rate. The equation provided, $5h + 10 = 35$, accurately represents this scenario, where $10 is explicitly stated as the fixed fee.  Let's analyze each option:\n\n* **Option A: The total cost to rent the bicycle for 5 hours.**  If $h=5$, the total cost would be $5(5) + 10 = 35$. While 35 is the total cost for 5 hours in this *specific* equation, the number '5' itself in the equation does not represent the *total cost*. It is a component used to calculate the total cost based on the number of hours. Therefore, Option A is incorrect.\n\n* **Option B: The fixed fee for renting the bicycle.** The question explicitly states that '$10 is the fixed fee'. The number '5' is multiplied by 'h' in the equation, and is clearly not the fixed fee. Therefore, Option B is incorrect.\n\n* **Option C: The hourly rate for renting the bicycle, in dollars per hour.** In the equation $5h + 10 = 35$, 'h' represents the number of hours, and '5' is multiplied by 'h'. This structure ($(\text{hourly rate}) \times (\text{hours}) + (\text{fixed fee}) = \text{total cost}$) is the standard form for linear cost functions. Therefore, '5' correctly represents the hourly rate. Option C is correct.\n\n* **Option D: The number of hours the bicycle can be rented for $5.** This option is misinterpreting the meaning of '5'.  If we wanted to find out how many hours can be rented for $5, we would need to set up a different equation or manipulate the given one.  '5' in the equation is the coefficient of 'h', not a dollar amount for rental. Therefore, Option D is incorrect.\n\nAll incorrect options are clearly incorrect, and the correct option C is indeed the best interpretation of the number 5 in the given context. The difficulty level of 'Medium' is appropriate for an SAT question testing basic linear equation interpretation."
+    }
+  },
+  {
+    "question_id": 389807,
+    "question_text": "In the given equation, a is a constant.  $$3x + 15 = a(x + 5)$$  If the equation has infinitely many...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. For the equation to have infinitely many solutions, both sides of the equation must be identical. Let's expand the right side of the equation:  $$3x + 15 = a(x + 5) = ax + 5a$$ For the equation to hold true for infinitely many values of x, the coefficients of x on both sides must be equal, and the constant terms on both sides must be equal.  Comparing the coefficients of x, we get: $$3 = a$$ Comparing the constant terms, we get: $$15 = 5a$$ From both conditions, we find that a = 3.  If a = 3, the equation becomes $$3x + 15 = 3(x + 5)$$ $$3x + 15 = 3x + 15$$ This equation is true for all values of x, meaning there are infinitely many solutions.  Options B, C, and D (a=1, a=5, a=6) will lead to equations with a unique solution for x, not infinitely many solutions. Therefore, option A is the only correct answer, and the marked answer is correct. The difficulty level is appropriately classified as Medium, as it requires understanding the conditions for infinite solutions in linear equations."
+    }
+  },
+  {
+    "question_id": 648872,
+    "question_text": "In the given equation, c is a constant. If the equation has no solution, what is the value of c?  $$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The equation given is (c+3)x = 5. For a linear equation of the form ax = b to have no solution, the coefficient of x (which is 'a') must be zero, and the constant term on the right side (which is 'b') must be non-zero. In this case, a = (c+3) and b = 5. For no solution, we need c+3 = 0. Solving for c, we get c = -3. If c = -3, the equation becomes (-3+3)x = 5, which simplifies to 0x = 5. This equation has no solution. Checking the options, only option B, c = -3, results in an equation with no solution. Options A, C, and D will result in equations with a unique solution for x."
+    }
+  },
+  {
+    "question_id": 497516,
+    "question_text": "In the equation $c(2+x)-d=5+3x$, where $c$ and $d$ are constants, if the equation has infinitely man...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The equation is $c(2+x)-d=5+3x$. For the equation to have infinitely many solutions, the coefficients of $x$ on both sides must be equal, and the constant terms on both sides must be equal after expansion. Expanding the left side, we get $2c + cx - d = 5 + 3x$. For the coefficients of $x$ to be equal, we must have $c = 3$. For the constant terms to be equal, we must have $2c - d = 5$. Substituting $c = 3$ into the second equation, we get $2(3) - d = 5$, which simplifies to $6 - d = 5$. Solving for $d$, we get $d = 6 - 5 = 1$. Therefore, $c = 3$ and $d = 1$. Option A, c = 3 and d = 1, is the correct answer. Options B, C, and D do not satisfy these conditions and would lead to either no solution or a unique solution for $x$, not infinitely many solutions."
+    }
+  },
+  {
+    "question_id": 45917,
+    "question_text": "A group of friends bought 5 concert tickets online. The price of each ticket was $45. They also had ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. To solve, first calculate the cost of the tickets without the service fee: 5 tickets * $45/ticket = $225. Then, subtract this ticket cost from the total cost to find the service fee: $240 (total cost) - $225 (ticket cost) = $15. Option A, $15, is the correct answer. The other options (B, C, and D) are clearly incorrect as they would result in total costs different from $240. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for this question type on the SAT, as it involves a straightforward linear equation in one variable."
+    }
+  },
+  {
+    "question_id": 724642,
+    "question_text": "What value of x is the solution of the equation above?  $$3(x - 2) + 4(x + 1) = 6x$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the solution to a linear equation. The option marked as correct, A (x=2), is indeed the correct solution to the equation 3(x - 2) + 4(x + 1) = 6x.  Solving the equation: \n3(x - 2) + 4(x + 1) = 6x\n3x - 6 + 4x + 4 = 6x\n7x - 2 = 6x\n7x - 6x = 2\nx = 2\nOptions B, C, and D are incorrect as they do not satisfy the equation. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for this question as it involves standard algebraic manipulation to solve a linear equation."
+    }
+  },
+  {
+    "question_id": 994430,
+    "question_text": "If $\frac{3x+2}{4} = 2$, what is the value of $6x+1$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and mathematically sound. To solve, first solve the equation $\\\\frac{3x+2}{4} = 2$ for x. Multiplying both sides by 4 gives $3x+2 = 8$. Subtracting 2 from both sides gives $3x = 6$. Dividing by 3 gives $x = 2$. Now substitute $x=2$ into the expression $6x+1$: $6(2)+1 = 12+1 = 13$. Option D, 13, is indeed the correct answer. The other options (A. 8, B. 21, C. -19) are incorrect as they do not result from the correct value of x derived from the given equation. The difficulty level 'Medium' is appropriate for this question type on the SAT, as it tests basic algebraic manipulation skills."
+    }
+  },
+  {
+    "question_id": 295183,
+    "question_text": "A salesperson earns a base commission rate for the first $5000 in monthly sales and a commission rat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve this problem, let 'r' be the base commission rate. The commission for the first $5000 in sales is 5000 * r. The sales exceeding $5000 are $8000 - $5000 = $3000, and the commission rate for these sales is 1.2 * r. So, the commission for sales exceeding $5000 is 3000 * (1.2 * r). The total commission is the sum of these two parts, which is given as $688. Therefore, we have the equation: 5000r + 3000 * (1.2 * r) = 688. Simplifying this equation: 5000r + 3600r = 688, which leads to 8600r = 688. Solving for r, we get r = 688 / 8600 = 0.08. Converting this to a percentage, the base commission rate is 0.08 * 100% = 8%. Option C (8%) is indeed the correct answer. Checking other options: Option A (7%) leads to a total commission of $602, Option B (7.5%) leads to $645, and Option D (8.5%) leads to $731, none of which are $688. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as medium for the SAT."
+    }
+  },
+  {
+    "question_id": 810242,
+    "question_text": "The width of a rectangular garden is $x$ feet. The length of the garden is 3 feet less than twice it...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The width of the rectangle is given as $x$ feet. The length is described as '3 feet less than twice its width', which translates to $2x - 3$ feet. The area of a rectangle is calculated by multiplying its length and width. Therefore, the area is $x * (2x - 3) = 2x^2 - 3x$ square feet. Option C, $2x^2 - 3x$, is the correct answer. Options A, B, and D are incorrect as they do not represent the correct area based on the given description. The difficulty level is appropriately classified as Medium for the SAT."
+    }
+  },
+  {
+    "question_id": 32598,
+    "question_text": "If $4(2x + 3) + 2(2x + 3) = 24$, what is the value of $2x + 3$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. To solve, we can notice that $(2x+3)$ is a common term. Let $y = 2x + 3$. The equation becomes $4y + 2y = 24$, which simplifies to $6y = 24$. Dividing both sides by 6 gives $y = 4$. Since $y = 2x + 3$, we have $2x + 3 = 4$. Option B is indeed the correct answer. Let's check the other options: Option A gives $4(3) + 2(3) = 18 \neq 24$; Option C gives $4(6) + 2(6) = 36 \neq 24$; Option D gives $4(12) + 2(12) = 72 \neq 24$. Thus, options A, C, and D are incorrect. The difficulty level is appropriate for a medium-level SAT question as it requires basic algebraic manipulation and pattern recognition."
+    }
+  },
+  {
+    "question_id": 437856,
+    "question_text": "What value of x is the solution to the given equation? $$\\frac{1}{2}(x-3) - \\frac{1}{5}(x-3) = 3$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the solution to a linear equation. The option marked as correct, C (13), is indeed the correct solution to the equation: \n\n$$\frac{1}{2}(x-3) - \frac{1}{5}(x-3) = 3$$ \n$$(x-3) \\\\left( \frac{1}{2} - \frac{1}{5} \right) = 3$$ \n$$(x-3) \\\\left( \frac{5}{10} - \frac{2}{10} \right) = 3$$ \n$$(x-3) \\\\left( \frac{3}{10} \right) = 3$$ \n$$x-3 = 3 \times \frac{10}{3}$$ \n$$x-3 = 10$$ \n$$x = 13$$ \n\nChecking other options:\nOption A (-7): $\frac{1}{2}(-7-3) - \frac{1}{5}(-7-3) = -3 \neq 3$\nOption B (8): $\frac{1}{2}(8-3) - \frac{1}{5}(8-3) = \frac{3}{2} \neq 3$\nOption D (23): $\frac{1}{2}(23-3) - \frac{1}{5}(23-3) = 6 \neq 3$\n\nAll other options are incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for an SAT math question of this type, as it requires multiple steps to solve and involves fractions."
+    }
+  },
+  {
+    "question_id": 168866,
+    "question_text": "A tank initially contained 30,000 liters of water. Water is drained from the tank at a constant rate...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and mathematically sound. The correct answer is calculated as follows: First, find the rate of water drainage. In 4 hours, the water drained is 30,000 - 22,000 = 8,000 liters. The rate is 8,000 liters / 4 hours = 2,000 liters per hour. To find the time it takes for 14,000 liters to remain, we need to find out how much water needs to be drained: 30,000 - 14,000 = 16,000 liters.  Time = Total water to drain / Drainage rate = 16,000 liters / 2,000 liters/hour = 8 hours. Option C is indeed the correct answer. All other options are incorrect as they would result in a different amount of water remaining in the tank."
+    }
+  },
+  {
+    "question_id": 334379,
+    "question_text": "A school is printing flyers for an upcoming event. They currently print an average of 500 flyers eac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To reduce the monthly expenditure on ink by $6, we need to determine how many fewer flyers should be printed.Currently, the school prints 500 flyers and spends $15 on ink (500 flyers / 1000 flyers per cartridge = 0.5 cartridges, 0.5 cartridges * $30/cartridge = $15).The cost per flyer is $30 / 1000 flyers = $0.03 per flyer.To reduce the expenditure by $6, we need to reduce the number of flyers printed by an amount 'f' such that the cost of printing 'f' flyers is $6.Cost of 'f' flyers = (Cost per flyer) * f$6 = ($0.03 per flyer) * f$6 = (30/1000) * fThis equation matches option B.Let's check the other options:Option A: (1000/30)f = 6  => f = 6 * (30/1000) = 180/1000 = 0.18. This equation represents (Flyers per dollar) * f = 6, which is not logically consistent with reducing cost by $6.Option C: (1000/30)f = 500 => f = 500 * (30/1000) = 15000/1000 = 15. This equation represents (Flyers per dollar) * f = 500, which is also not logically consistent.Option D: (30/1000)f = 500 => f = 500 * (1000/30) = 500000/30 = 50000/3 ≈ 16666.67. This equation represents (Cost per flyer) * f = 500, which is also not logically consistent with reducing cost by $6.Option B is the only equation that correctly represents the relationship between the reduction in flyers and the reduction in cost. The difficulty level 'Hard' is appropriate as it requires understanding ratios and setting up a linear equation from a word problem. There are no grammatical or formatting issues. Option B is indeed the correct answer."
+    }
+  },
+  {
+    "question_id": 740427,
+    "question_text": "In the given equation, $j$ is a constant. The equation has no solution. What is the value of $3j$?\\n...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The given equation is $5(jx-2)=\frac{25}{3}x+7$. For this equation to have no solution, the coefficients of $x$ on both sides must be equal, and the constant terms must be unequal after simplification. Let's expand and rearrange the equation:\n\n$5jx - 10 = \frac{25}{3}x + 7$\n\nTo have no solution, the coefficient of $x$ on the left side must be equal to the coefficient of $x$ on the right side, and the constant terms must be different when we move all $x$ terms to one side and constant terms to the other side.\n\nMove $x$ terms to the left and constant terms to the right:\n\n$5jx - \frac{25}{3}x = 7 + 10$\n\n$(5j - \frac{25}{3})x = 17$\n\nFor this equation to have no solution, the coefficient of $x$, which is $(5j - \frac{25}{3})$, must be equal to zero, and the constant term, which is $17$, must be non-zero. Since $17 \neq 0$, we only need to set the coefficient of $x$ to zero:\n\n$5j - \frac{25}{3} = 0$\n\n$5j = \frac{25}{3}$\n\n$j = \frac{25}{3 \times 5}$\n\n$j = \frac{5}{3}$\n\nThe question asks for the value of $3j$:\n\n$3j = 3 \times \frac{5}{3} = 5$\n\nTherefore, the value of $3j$ is 5, which corresponds to option A. All other options are incorrect as they do not represent the value of $3j$ that makes the equation have no solution. The question is clearly written, grammatically correct, and the difficulty level is appropriate for a hard SAT question."
+    }
+  },
+  {
+    "question_id": 930205,
+    "question_text": "A bakery produces artisanal bread at a cost of $3 per loaf.  Each loaf is sold at a farmer's market ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Option C is also a correct answer, mathematically equivalent to option A. Ideally, there should be only one uniquely correct option in this type of question."
+      ],
+      "correct_answer": "A",
+      "explanation": "Option A correctly represents the profit per loaf as (selling price after commission - cost) and sets up the equation to find the number of loaves needed for a profit of $810. Option A simplifies to (12*(1-0.1)-3)l = (12*0.9 - 3)l = (10.8 - 3)l = 7.8l = 810. Option C, (0.9(12)-3)l = 810, is mathematically equivalent to option A and is also a correct representation. Option B incorrectly calculates the profit per loaf by reducing the profit margin (selling price - cost) by the commission percentage. Option D incorrectly adds the commission to the cost when calculating the profit. While option C is also correct, option A is marked as correct, and options B and D are definitively incorrect. The difficulty level 'Hard' is appropriate for SAT."
+    }
+  },
+  {
+    "question_id": 517890,
+    "question_text": "What value of $x$ is the solution to the equation $4(x - 2) - 9(x - 2) = 55$?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (D) is incorrect. The actual correct answer is option A.",
+        "The difficulty level might be overstated. While subjective, this question is solvable with basic algebraic manipulation and is likely more appropriately classified as 'Medium' rather than 'Hard' for the SAT."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and grammatically correct. To solve the equation $4(x - 2) - 9(x - 2) = 55$, we can combine like terms. Notice that $(x-2)$ is a common factor. We can rewrite the equation as $(4 - 9)(x - 2) = 55$, which simplifies to $-5(x - 2) = 55$. Dividing both sides by -5 gives $x - 2 = -11$. Adding 2 to both sides yields $x = -11 + 2 = -9$. Therefore, the correct value of $x$ is -9, which corresponds to option A. Option D, marked as correct, is -13, which is incorrect. Substituting $x = -13$ into the equation gives $4(-13 - 2) - 9(-13 - 2) = 4(-15) - 9(-15) = -60 + 135 = 75$, which is not equal to 55. Substituting $x = -9$ into the equation gives $4(-9 - 2) - 9(-9 - 2) = 4(-11) - 9(-11) = -44 + 99 = 55$, which is correct. Options B and C are also incorrect when substituted back into the original equation."
+    }
+  },
+  {
+    "question_id": 234715,
+    "question_text": "#### Townsend Realty Group Investments  | Property<br>address | Purchase<br>price (dollars) | Monthl...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "Let 'x' be the original listed price of the Driftwood Drive property.  First, a 15% discount was applied, so the price became x - 0.15x = 0.85x.  Then, an additional $5,000 reduction was negotiated, resulting in a final purchase price of 0.85x - 5000. We are given that the purchase price was $176,000. Therefore, we can set up the equation: 0.85x - 5000 = 176000.  Solving for x:  0.85x = 176000 + 5000  0.85x = 181000  x = 181000 / 0.85  x ≈ 212941.18.  Among the given options, option B, $212,900, is the closest approximation to this value.  Checking option B: 15% discount on $212,900 is $31,935, resulting in a price of $212,900 - $31,935 = $180,965.  Subtracting the additional $5,000 reduction gives $180,965 - $5,000 = $175,965, which is very close to the given purchase price of $176,000.  The other options, when calculated similarly, will result in purchase prices further away from $176,000, confirming that option B is the best approximation and the correct answer. The question is clearly written, mathematically sound, and the difficulty level is appropriate for a 'Hard' SAT math question."
+    }
+  },
+  {
+    "question_id": 45494,
+    "question_text": "A stationery store sells pens in three colors: black, blue, and green. The total number of pens avai...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A, '3b + 10 = 50', is indeed the correct equation. Here's why:* **Define variables:**    * Let 'b' be the number of blue pens.    * Number of black pens is twice the number of blue pens, so it's '2b'.    * Number of green pens is given as 10.* **Total pens:** The total number of pens is the sum of black, blue, and green pens, which is 2b + b + 10.* **Set up the equation:** We are given that the total number of pens is 50. Therefore, the equation is 2b + b + 10 = 50, which simplifies to 3b + 10 = 50.Options B, C, and D are incorrect:* **Option B: 2b + 10 = 50**  This equation only accounts for black pens (2b) and green pens (10), omitting the blue pens (b).* **Option C: 2b + 2 + 10 = 50**  The term '2b + 2' does not logically represent any quantity described in the problem.* **Option D: 2(2b) + 10 = 50** This equation, 4b + 10 = 50, incorrectly uses '4b' which is twice the number of black pens, and doesn't represent the sum of all pens correctly.There are no grammatical or formatting issues.The difficulty level 'Hard' might be slightly overstated for SAT standards. This question is more likely to be considered in the medium to hard range, depending on the student's algebra proficiency. However, it's not fundamentally misclassified as 'Hard', especially if intended for students aiming for higher scores on the SAT. It requires translating a word problem into an algebraic equation, which is a core skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 650138,
+    "question_text": "If $\frac{y-3}{4} = \frac{y-3}{9}$, the value of $y-3$ is between which of the following pairs of valu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The given equation is $\frac{y-3}{4} = \frac{y-3}{9}$. To solve for $y-3$, we can multiply both sides by the least common multiple of 4 and 9, which is 36. This gives us: $36 \times \frac{y-3}{4} = 36 \times \frac{y-3}{9}$, which simplifies to $9(y-3) = 4(y-3)$. Subtracting $4(y-3)$ from both sides, we get $9(y-3) - 4(y-3) = 0$. Factoring out $(y-3)$, we have $(y-3)(9-4) = 0$, which simplifies to $5(y-3) = 0$. Dividing both sides by 5, we find $y-3 = 0$. Now we check which of the given options contains the value 0. Option A (-5 and -1) represents the interval $(-5, -1)$, which does not contain 0. Option B (-1 and 1) represents the interval $(-1, 1)$, which contains 0. Option C (2 and 6) represents the interval $(2, 6)$, which does not contain 0. Option D (7 and 11) represents the interval $(7, 11)$, which does not contain 0. Therefore, the value of $y-3 = 0$ is between -1 and 1, making option B the correct answer. The question is clearly written, the correct option is indeed correct, and the other options are clearly incorrect. There are no grammatical or formatting issues (assuming 'dfrac' is a representation of fraction formatting). The difficulty level is arguably 'Medium-Hard' rather than strictly 'Hard' for well-prepared students, but it is reasonable to classify it as 'Hard' for SAT standards as it requires algebraic manipulation and is not immediately obvious to all students."
+    }
+  },
+  {
+    "question_id": 689737,
+    "question_text": "The equation $px - 4 = 2(x + q)$, where $p$ and $q$ are constants, has no solutions. Which of the fo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "For the equation $px - 4 = 2(x + q)$ to have no solutions, we first expand the right side: $px - 4 = 2x + 2q$.  For a linear equation of the form $ax + b = cx + d$ to have no solutions, the coefficients of $x$ must be equal ($a=c$) and the constant terms must be unequal ($b \neq d$). In this case, we need $p = 2$ and $-4 \neq 2q$.Let's analyze each statement:I. $p=2$: If $p=2$, the equation becomes $2x - 4 = 2x + 2q$.  For this equation to have no solutions, we need $-4 \neq 2q$. This condition on $p$ is necessary for the equation to have no solutions. Thus, statement I must be true.II. $q = 2$: If $q = 2$, and we also have $p=2$ (from statement I), the equation becomes $2x - 4 = 2(x + 2) = 2x + 4$. This simplifies to $-4 = 4$, which is false. Therefore, if $p=2$ and $q=2$, the equation has no solutions. However, $q$ does not *have* to be 2 for the equation to have no solutions. As long as $p=2$ and $q \neq -2$, the equation will have no solutions. For example, if $p=2$ and $q=0$, the equation is $2x - 4 = 2(x + 0) = 2x$, which simplifies to $-4 = 0$, also having no solutions. Thus, statement II is not necessarily true.Since statement I must be true and statement II is not necessarily true, the correct option is B, 'I only'.The question is clearly written, and the difficulty level is appropriate for a 'Hard' SAT question as it tests the understanding of conditions for linear equations to have no solutions. The options are clearly incorrect except for the marked correct option."
+    }
+  },
+  {
+    "question_id": 781523,
+    "question_text": "A student is buying pens and pencils for a class of 25 students. Pens cost $2 each and pencils cost ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Let's break down the cost calculation: \n- Number of pens = y, and the cost per pen is $2, so the total cost of pens is 2y.\n- The student is buying items for 25 students in total. If 'y' pens are bought, the remaining items are pencils, so the number of pencils is 25 - y.\n- The cost per pencil is $1, so the total cost of pencils is (25 - y) * 1 = 25 - y.\n- The total cost is the sum of the cost of pens and the cost of pencils: Total Cost = 2y + (25 - y) = 2y + 25 - y = 25 + y.\n\nOption A, 25 + y, matches this derived expression and is therefore the correct answer. Options B, C, and D are incorrect because they do not correctly represent the total cost based on the given conditions. The difficulty level of 'Hard' is arguably slightly overstated, as the question is solvable with basic algebraic translation, but it is reasonable for SAT level as it requires careful reading and setting up an expression from a word problem. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 130425,
+    "question_text": "A bakery sells three types of cookies: chocolate chip, oatmeal raisin, and peanut butter. On a parti...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Let 'r' represent the number of oatmeal raisin cookies sold. According to the problem, the number of chocolate chip cookies sold is 3 times the number of oatmeal raisin cookies, which is 3r. The bakery also sold 25 peanut butter cookies. The total number of cookies sold is 85. Therefore, the equation representing this situation is the sum of oatmeal raisin cookies, chocolate chip cookies, and peanut butter cookies equaling the total number of cookies: r + 3r + 25 = 85. Option B correctly represents this equation. Options A, C, and D are incorrect as they do not accurately represent the given relationships between the number of different types of cookies and the total number of cookies sold. The difficulty level 'Hard' is arguably slightly overstated, as this is a standard linear equation setup problem, more likely to be considered medium difficulty on the SAT. However, it is still a valid question for the SAT and requires a few steps of translation and equation formation."
+    }
+  }
+]

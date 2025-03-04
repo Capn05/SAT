@@ -1,0 +1,42 @@
+[
+  {
+    "question_id": 182058,
+    "question_text": "### Text 1\\n\\nFor decades, bluegrass musicians have debated whether their genre should exclude influ...",
+    "issues": [
+      "The provided text snippet 'Text 1' is incomplete, ending mid-sentence with 'Such \\\\\\\\\\ No image'. This lack of completion makes it difficult to fully understand the context and intent of the passage.",
+      "While option D is marked as correct and is arguably the strongest option among the choices, it relies on an inference that the 'purists overlook crucial aspects of how the bluegrass sound first originated.' This is not explicitly stated in the provided text, making the correctness of option D debatable based solely on the given information.",
+      "Options A, B, and C are not definitively incorrect. They present alternative perspectives on the purist viewpoint that could be considered valid depending on further context or interpretation. Option A is a weak argument, but B and C offer reasonable critiques (unrealistic enforcement, missed opportunity for audience growth).",
+      "There are formatting issues. The passage ends abruptly with 'Such \\\\\\\\\\ No image', which is not standard or clear. This suggests missing content or a formatting error.",
+      "The difficulty level 'Easy' might be inappropriate. While the core concept is understandable, evaluating the nuances of each option and determining the 'most logical' critique requires more than basic comprehension, potentially making it more of a medium difficulty question.",
+      "D"
+    ]
+  },
+  {
+    "question_id": 376453,
+    "question_text": "## ID: NEW_QUESTION_1\\n\\n### Text 1\\n\\nBees are well-known for their ability to produce honey, a swe...",
+    "issues": [
+      " which is incomplete and makes the question unclear. It's likely intended to refer to an idea, but without the image or a clearer statement, it's ambiguous.",
+      "While Option B is the best answer among the choices, the question's ambiguity due to the missing image/idea weakens its overall validity. The question relies on an inferred idea rather than a clearly stated one.",
+      "B"
+    ]
+  },
+  {
+    "question_id": 902233,
+    "question_text": "Text 1\\n\\nStudies from the early 2000s suggested that listening to classical music, particularly Moz...",
+    "issues": [
+      "The question stem is missing, making it impossible to understand what is being asked.",
+      "Option D is incomplete and abruptly cut off, rendering it unevaluable.",
+      "For a 'Cross-Text Connections' question, Text 2 is missing.  Without Text 2, it's impossible to assess how it relates to Text 1 or which option accurately describes its relationship.",
+      "While Option A is a plausible critique of the 'Mozart effect' studies, without a complete question stem and Text 2, it's unclear why it is definitively the 'correct' answer and the others are definitively 'incorrect'. Options B and C also present valid ways to respond to or critique the initial studies.",
+      "The question mentions 'No image' which might indicate missing visual content that could be relevant, although its impact on the current question is unclear without knowing what the image was intended to be."
+    ]
+  },
+  {
+    "question_id": 221120,
+    "question_text": "## ID: a1b2c3d4\\n\\n#### Text 1\\n\\nEconomists have long debated the optimal level of government inter...",
+    "issues": [
+      "Option D is incomplete and does not present a full answer choice, making it impossible to evaluate as a potential answer. This is a significant flaw in the question design.",
+      "While Option B is the most plausible correct answer, the question could be improved by ensuring all options are complete and clearly distinct distractors."
+    ]
+  }
+]

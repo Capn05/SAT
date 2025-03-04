@@ -1,0 +1,49 @@
+[
+  {
+    "question_id": 17982,
+    "question_text": "The practice of \\...",
+    "issues": [
+      "The question is incomplete and cannot be answered without the question text and the passage it refers to. The prompt only provides 'The practice of \\\\nNo image' as the question text, which is insufficient to understand the question's context or purpose.",
+      "Without the passage, it is impossible to determine if option A is actually the correct answer or if any of the options are clearly incorrect. The correctness of the options depends entirely on the unprovided text.",
+      "The question refers to 'the previous sentence' and 'the following sentence', but these sentences are not provided, making it impossible to evaluate the relationships described in the options."
+    ]
+  },
+  {
+    "question_id": 134648,
+    "question_text": "The following text is from Ralph Waldo Emerson's 1841 essay \\...",
+    "issues": [
+      "The question is missing the actual text from Ralph Waldo Emerson's 1841 essay. Without the text, it is impossible to definitively determine if the marked answer is correct or if the question is valid.",
+      "The question relies on external knowledge of Emerson's writing style or the specific essay to potentially guess the correct answer without the text, which is not ideal for a standardized test question.",
+      "While the question format and options are generally well-structured and grammatically sound, the absence of the core text renders the question unverifiable and therefore invalid in its current state."
+    ]
+  },
+  {
+    "question_id": 615889,
+    "question_text": "The following text is adapted from Virginia Woolf's essay \\...",
+    "issues": [
+      "Missing text excerpt from Virginia Woolf's essay. Without the text, it is impossible to definitively determine the correct answer or evaluate the validity of the options.",
+      "While the question structure and options are generally well-formed and relevant to SAT Reading & Writing, the absence of the source text is a critical flaw. The question is unanswerable as presented."
+    ]
+  },
+  {
+    "question_id": 349223,
+    "question_text": "Economist Elinor Ostrom challenged the traditional view in economics that common-pool resources, lik...",
+    "issues": [
+      ") is missing. Without the actual sentence, it's impossible to definitively determine the correct answer or fully assess the question's validity.",
+      "While option B is marked as correct, without the context of the missing sentence and the passage, it's impossible to confirm if it is indeed the correct answer.  It is plausible that option B *could* be correct if the missing sentence provides evidence supporting community resource management, but this is an assumption.",
+      "Similarly, without the missing sentence and passage context, it's impossible to definitively say if options A, C, and D are clearly incorrect. They *could* be incorrect depending on the missing sentence's actual content and purpose within the passage.",
+      "The question itself is grammatically sound and clearly written in terms of its structure and what it is asking *given* the missing sentence. However, the missing sentence is a critical formatting/content issue.",
+      "The difficulty level of 'Medium' is likely appropriate for this type of SAT Reading & Writing question, assuming the passage and the missing sentence are of medium complexity. However, the missing sentence makes it impossible to accurately gauge the actual difficulty.",
+      "B"
+    ]
+  },
+  {
+    "question_id": 973463,
+    "question_text": "In many urban centers, the construction of new luxury apartments paradoxically leads to an increase ...",
+    "issues": [
+      "The question is incomplete as it refers to a 'following sentence' that is not provided, making it impossible to fully assess the relationship between sentences and definitively determine the correct answer.",
+      "The phrase 'No image' is present in the question text and is likely a formatting error or placeholder, which is distracting and unprofessional for a standardized test question.",
+      "Without the 'following sentence', the question becomes speculative and relies on assumptions about the intended context, rather than being objectively answerable based on the provided text."
+    ]
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "question_id": 139712,
+    "question_text": "The following text is from a review of a musical performance.  The critic listened intently to the p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and makes sense. It provides context from a musical performance review and asks the test-taker to choose the best word to fit the sentence. The task is to understand the critic's sentiment and choose a word that aligns with the idea that while the singer's technique was good, something was missing in the *sound* of her voice regarding emotion.\n\n2. **Correctness of Option A:** Option A, 'Quality,' is indeed the correct answer. In this context, 'quality' refers to the overall character and nature of the sound, encompassing aspects like emotional depth and expressiveness. The sentence implies that while technically proficient, the *quality* of the singer's voice lacked genuine emotion.\n\n3. **Incorrectness of other options:**\n    * **B. Noise:** 'Noise' is generally understood as unwanted or disruptive sound. It is inappropriate in the context of describing a singer's voice in a performance review, especially after mentioning 'impressive technique.'  'Noise' does not relate to the lack of genuine emotion in a voice.\n    * **C. Volume:** 'Volume' refers to the loudness of the sound. While volume can affect the impact of a performance, it doesn't directly relate to the presence or absence of genuine emotion in the *sound* itself. A voice can be loud or soft and still lack emotion.\n    * **D. Audibility:** 'Audibility' refers to whether something can be heard.  The critic 'listened intently,' implying the voice was audible.  Audibility is not related to the emotional quality of the sound.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is concise and well-presented.\n\n5. **Difficulty Level:** The difficulty level is appropriately marked as 'Easy.' The vocabulary is straightforward, and the context clues strongly point to 'Quality' as the correct answer.  Students at an SAT level should be able to discern the meaning and choose the best word in context."
+    }
+  },
+  {
+    "question_id": 289564,
+    "question_text": "Even though the professor’s lecture on quantum physics was highly theoretical, she aimed to _______ ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The sentence structure establishes a contrast between the lecture being 'highly theoretical' and the professor's aim for undergraduate students. Option D, 'clarify,' is the most logical and precise word because it directly addresses the need to make complex, theoretical concepts understandable for students. Options B ('complicate') and C ('disregard') are clearly incorrect as they contradict the professor's likely goal in teaching. Option A ('summarize') is less precise than 'clarify' in this context. While summarizing might be part of teaching, the core aim when dealing with theoretical concepts for undergraduates is to make them understandable, i.e., to clarify them. Therefore, 'clarify' is the best fit.  The question is grammatically sound, has no formatting issues, and is appropriately classified as 'Easy' due to the straightforward vocabulary and logical reasoning required."
+    }
+  },
+  {
+    "question_id": 618958,
+    "question_text": "Although initially intimidated by the complexity of sourdough baking, Marcus was surprised to find t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A, 'routine,' is the correct answer because it logically completes the sentence, indicating that with instruction and practice, the initially intimidating process of sourdough baking became a regular and less daunting activity. The word 'routine' effectively contrasts with the initial intimidation and aligns with the idea of learning and practice leading to familiarity and ease. Options B, C, and D are incorrect because 'unpredictable,' 'demanding,' and 'laborious' do not logically follow from the phrase 'with careful instruction and practice' in the context of overcoming initial intimidation. Instruction and practice typically aim to make a process more predictable and less demanding or laborious, not the opposite. The difficulty level 'Easy' is appropriate as the vocabulary and sentence structure are straightforward, and the correct answer can be deduced through basic contextual understanding."
+    }
+  },
+  {
+    "question_id": 148192,
+    "question_text": "Dr. Anya Sharma, a renowned astrophysicist, dedicated her career to studying distant galaxies.  Afte...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of an astrophysicist's work. Option B, 'estimate,' is the most appropriate word to fill in the blank, as it aligns with the idea of determining the age of galaxies, even with a revolutionary new method. Options C ('ignore') and D ('destroy') are clearly incorrect and nonsensical in this context. Option A ('postulate'), while related to scientific inquiry, is less fitting than 'estimate' because 'postulate' means to suggest or assume something, whereas the sentence describes developing a method to determine or calculate the age, which is better represented by 'estimate'.  'Estimate' implies a degree of calculation and approximation, even with increased accuracy, which is realistic when dealing with astronomical ages. The difficulty level 'Easy' is appropriate as the vocabulary and sentence structure are straightforward, and the correct answer is readily discernible through context clues and elimination of clearly incorrect options."
+    }
+  },
+  {
+    "question_id": 467639,
+    "question_text": "Initially met with skepticism, artificial sweeteners, such as aspartame and sucralose, have become i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The sentence structure is logical, and the blank is appropriately placed to test vocabulary in context. Option A, 'appealing,' is the correct answer because it logically fits the context. The sentence explains that artificial sweeteners, despite initial skepticism, became prevalent because their ability to provide sweetness without calories made them an 'appealing' alternative for manufacturers targeting health-conscious consumers. Options B, C, and D are clearly incorrect. 'Necessary' is too strong and doesn't fit the reason for prevalence; 'controversial' focuses on a different aspect (disagreement) rather than the positive attribute leading to adoption; and 'novel' (new) is less relevant than 'appealing' in explaining why manufacturers would choose them. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate given the vocabulary and straightforward logic required."
+    }
+  },
+  {
+    "question_id": 78093,
+    "question_text": "Despite the senator's reputation for delivering lengthy, meandering speeches, her address at the nat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 273. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-constructed. \\n\\n1. **Clarity:** The question is clearly written and easy to understand. The..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 311126,
+    "question_text": "The following text is from Jane Austen's 1813 novel *Pride and Prejudice*.\\n\\n\\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text/excerpt from *Pride and Prejudice* is missing, making it impossible to determine the correct answer or evaluate the question effectively.",
+        "Without the question text, it is impossible to verify if option C ('Suppress') is the correct answer in context.",
+        "Without the question text, it is impossible to verify if options A, B, and D are clearly incorrect.",
+        "Without the question text, it is impossible to assess if the 'Easy' difficulty level is appropriate."
+      ],
+      "correct_answer": "C",
+      "explanation": "This SAT question is invalid due to the critical absence of the text excerpt from *Pride and Prejudice*. Word-in-context questions are entirely dependent on the surrounding text to determine the meaning of a word and identify the correct answer. Without this context, we cannot evaluate whether 'Suppress' is the correct answer, if the other options are truly incorrect, or if the 'Easy' difficulty level is appropriate.  The question is fundamentally incomplete and unusable in its current state. While 'Suppress' is marked as correct, we cannot confirm this without the actual sentence or passage from the novel."
+    }
+  },
+  {
+    "question_id": 174568,
+    "question_text": "Economists studying global trade patterns have observed that while the exchange of goods between nat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clear, grammatically sound, and easy to understand. Option B, 'impede,' is the correct answer because tariffs and trade barriers are designed to hinder or slow down the growth of global trade. Options A, 'catalyze,' C, 'amplify,' and D, 'validate,' are incorrect in this context. 'Catalyze' means to speed up, which is the opposite of what tariffs do to trade growth. 'Amplify' means to increase or intensify, which doesn't fit the intended meaning of reducing growth. 'Validate' means to confirm or prove, which is irrelevant to the impact of tariffs on trade growth. The vocabulary and sentence structure are appropriate for an 'Easy' difficulty level SAT question."
+    }
+  },
+  {
+    "question_id": 789272,
+    "question_text": "While the ancient Greeks are renowned for their advancements in philosophy and democracy, their appr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The sentence describes the ancient Greeks' approach to science, contrasting their abstract reasoning with a lack of empirical observation. The blank requires a word that describes what their elaborate theoretical constructs lacked in order to be considered scientifically sound in a modern sense. Option B, 'evidence,' is the correct answer because it directly contrasts with 'abstract reasoning' and 'not grounded in verifiable.' The sentence implies that their theories, while intellectually stimulating, were not based on verifiable facts or data (evidence). Options A, C, and D are incorrect because while 'speculation,' 'intuition,' and 'imagination' are related to abstract thought and could be part of theory formation, they do not directly represent the verifiable grounding that was lacking, as 'evidence' does. 'Speculation' is closer than 'intuition' or 'imagination' but still refers more to the process of theorizing rather than the factual basis. 'Intuition' and 'imagination' are even further removed from the concept of verifiable grounding in scientific context. The difficulty level 'Easy' is appropriate as the vocabulary and sentence structure are not complex, and the logical relationship in the sentence is relatively straightforward."
+    }
+  },
+  {
+    "question_id": 954285,
+    "question_text": "Despite facing numerous setbacks in her early experiments, chemist Marie Maynard Daly remained remar...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity and Sense:** The question is clear and makes sense. The sentence structure provides sufficient context to understand the meaning and determine the appropriate word. The phrase 'Despite facing numerous setbacks' sets up a contrast, indicating that the missing word should describe a positive quality that allowed Marie Maynard Daly to overcome these setbacks and achieve success.\n\n2. **Correct Answer:** Option B, 'persistent,' is indeed the correct answer. 'Persistent' means continuing firmly or obstinately in a course of action in spite of difficulty or opposition. This aligns perfectly with the context of facing 'numerous setbacks' and ultimately achieving 'groundbreaking research.' Her unwavering focus, implied by persistence, is directly linked to her success.\n\n3. **Incorrect Options:**\n    * **A. curious:** While curiosity is a positive trait for a scientist, it doesn't fit as well in this context. 'Curious' describes a desire to learn or know something, but it doesn't emphasize the perseverance needed to overcome setbacks.  Remaining 'curious' despite setbacks is less directly connected to achieving groundbreaking research than remaining 'persistent'.\n    * **C. recognized:** 'Recognized' is incorrect grammatically and logically. 'Recognized' is a passive verb form implying that someone else acknowledges her. It doesn't describe an internal quality that would help her overcome setbacks.  It also doesn't make sense to say she 'remained recognized' in the face of setbacks; recognition is usually gained after achievements, not maintained during struggles.\n    * **D. innovative:** 'Innovative' is a positive trait, meaning introducing new ideas or methods. While relevant to scientific discovery, it's not the best fit in this specific context. 'Innovative' describes the nature of her research, but 'persistent' describes the quality that allowed her to *achieve* that research *despite setbacks*. Persistence is more directly linked to overcoming obstacles and achieving a goal, which is the focus of the sentence.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The vocabulary is accessible, and the context clues strongly point to 'persistent' as the correct answer. Students at the SAT level should be able to identify the correct word based on the sentence's meaning and structure."
+    }
+  },
+  {
+    "question_id": 261101,
+    "question_text": "Despite being written centuries ago, Jane Austen's novels continue to resonate with modern readers b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-constructed. \n1. **Clarity:** The question is clear and easy to understand. The sentence structure is straightforward, and the blank is clearly indicated. The context of Jane Austen's novels and their continued relevance to modern readers provides sufficient information to determine the correct word.\n2. **Correct Answer:** Option B, 'insightful,' is indeed the correct answer. Jane Austen's novels are renowned for their perceptive and insightful observations on human nature, which is a key reason for their enduring appeal.\n3. **Incorrect Options:** Options A, C, and D are clearly incorrect:\n    * **A. outdated:**  This is the opposite of what is needed. If her observations were outdated, the novels would not resonate with modern readers.\n    * **C. complex:** While Austen's novels can be complex, 'complex' is not the primary reason for their *resonance*. 'Insightful' more directly addresses why they remain relevant and appealing.\n    * **D. simplistic:** Austen's observations are far from simplistic; they are nuanced and insightful. 'Simplistic' is the opposite of the intended meaning.\n4. **Grammar/Formatting:** There are no grammatical issues. The long underline is a bit unusual but serves its purpose to indicate the blank and is not technically incorrect.\n5. **Difficulty Level:** 'Easy' is an appropriate difficulty level. The vocabulary is accessible, and the logic required to choose 'insightful' is relatively straightforward for SAT-level students."
+    }
+  },
+  {
+    "question_id": 617968,
+    "question_text": "Botanist Maria Merian was fascinated by insects and their transformations. Departing from the common...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-constructed. Here's a breakdown:\n\n1. **Clarity and Sense:** The question is clear and makes sense. It provides context about Maria Merian's work and her unique approach to studying insects. The sentence structure is straightforward, and the blank is logically placed to assess vocabulary in context.\n\n2. **Correct Option (C. illuminate):** Option C, 'illuminate,' is indeed the correct answer.  Merian's detailed engravings, showcasing insect life cycles and interactions with plants, would have made scientific understanding of entomology clearer and more accessible. 'Illuminate' perfectly captures the idea of making something understandable and bringing light to a subject.\n\n3. **Incorrect Options:** All other options are clearly incorrect:\n    * **A. restrict:** Merian's work expanded, rather than restricted, scientific understanding. Her detailed observations provided more information, not less.\n    * **B. obfuscate:** 'Obfuscate' means to make something unclear or confusing. Merian's detailed and observational approach would have done the opposite of obfuscating; it would have clarified and made entomology more understandable.\n    * **D. complicate:** While Merian's work added detail and nuance, it aimed to clarify and explain, not to unnecessarily 'complicate' the fundamental understanding of entomology. 'Complicate' often carries a negative connotation of making something unnecessarily difficult, which is not the intended meaning in this context. 'Illuminate' is a much more positive and fitting description of the impact of her work.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct, and the options are presented clearly.\n\n5. **Difficulty Level (Easy):** The difficulty level of 'Easy' is appropriate. The sentence provides strong contextual clues pointing towards a positive word that means 'to make clear.' The vocabulary in the options, while varied, is within the expected range for SAT vocabulary, and 'illuminate' is a relatively common word. The logic of eliminating the incorrect options is also fairly straightforward, making it an accessible question for students at the 'Easy' difficulty level."
+    }
+  },
+  {
+    "question_id": 834048,
+    "question_text": "The following text is adapted from Henry David Thoreau's \\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete and invalid because the text passage from Henry David Thoreau is missing. Without the text, it is impossible to determine the correct answer or evaluate the options in context.",
+        "It is impossible to verify if option A ('Conditions') is the correct answer without the context of the text.",
+        "It is impossible to verify if options B ('Deadlines'), C ('Arguments'), and D ('Vocabulary') are clearly incorrect without the context of the text."
+      ],
+      "correct_answer": "A",
+      "explanation": "This question is fundamentally flawed because the source text from Thoreau is missing. Words-in-context questions on the SAT require a passage to provide the necessary context for determining the meaning of a word or phrase. Without the text, the question is unanswerable and cannot be properly evaluated.  While option A is marked as correct, there is no way to confirm this or assess the validity of the other options without the passage. The question, as presented, is not a valid SAT question."
+    }
+  },
+  {
+    "question_id": 810987,
+    "question_text": "In the early 2000s, Nokia was the leading mobile phone manufacturer.  Before the rise of smartphones...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 446. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and makes..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 489405,
+    "question_text": "While social media platforms were initially hailed as tools for connecting people across distances, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and easy to understand. The sentence structure is straightforward, presenting a contrast between the initial positive perception of social media and a critical perspective. The blank is logically placed to complete the critic's argument.\n\n2. **Correctness of Option B:** Option B, 'diminishing,' is indeed the correct answer. The sentence argues that critics believe the negative aspects of social media (constant information and superficial interactions) can 'diminish' or reduce genuine human connection. This aligns perfectly with the context and the critic's viewpoint.\n\n3. **Incorrectness of other options:**\n    * **A. fostering:** 'Fostering' means to encourage or promote. This is the opposite of what critics would argue. If social media were 'fostering' genuine connection in this context, it would support the initial positive view, not the critic's argument.\n    * **C. amplifying:** 'Amplifying' means to increase or strengthen. Similar to 'fostering,' 'amplifying' would contradict the critic's negative perspective on social media's impact on genuine connection.\n    * **D. guaranteeing:** 'Guaranteeing' means to ensure or make certain. While social media might aim to connect people, critics argue it doesn't 'guarantee' genuine connection and may even undermine it. 'Guaranteeing' doesn't fit the negative tone of the critic's argument.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct and clearly presented.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The vocabulary is accessible, and the sentence structure is not complex. The question primarily tests vocabulary in context and basic reading comprehension skills, which are suitable for an 'Easy' level SAT question."
+    }
+  },
+  {
+    "question_id": 400970,
+    "question_text": "While some initial studies suggested a correlation between smartphone use and decreased attention sp...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "1. **Clarity and Sense:** The question is clearly written and makes logical sense. It presents a contrast between initial studies and more recent research, indicating a shift in findings regarding the correlation between smartphone use and attention spans. The sentence structure is straightforward and easy to understand.\n\n2. **Correctness of Option B (undermined):** Option B, 'undermined,' is indeed the correct answer. The sentence structure indicates that the 'more recent, longitudinal research' with improved methodologies is contradicting or weakening the 'earlier conclusions.' 'Undermined' accurately reflects this meaning, suggesting that the newer research has weakened the validity or support for the initial conclusions.\n\n3. **Incorrectness of Other Options:**\n    * **A. bolstered:** 'Bolstered' means to strengthen or support. This is the opposite of what the sentence implies. If the recent research bolstered earlier conclusions, it would mean it confirmed or strengthened them, not contradicted them.\n    * **C. qualified:** 'Qualified' means to limit or modify. While recent research might refine or qualify earlier conclusions, 'largely qualified' doesn't fit as well as 'undermined' in the context of contradicting or weakening the initial findings. 'Largely' suggests a more significant impact than just qualification.  'Undermined' implies a more direct contradiction.\n    * **D. reiterated:** 'Reiterated' means to repeat or restate. This is also the opposite of what the sentence implies. If the recent research reiterated earlier conclusions, it would mean it confirmed or repeated them, not contradicted them.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues with the question. The sentence is grammatically sound, and the options are clearly presented.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The vocabulary used is not overly complex, and the logical reasoning required to identify the correct answer is relatively straightforward for SAT level questions, especially within the 'Words in Context' subcategory. Students should be able to understand the contrast presented in the sentence and deduce that a word meaning 'weakened' or 'contradicted' is required."
+    }
+  },
+  {
+    "question_id": 730070,
+    "question_text": "In the early twentieth century, as radio broadcasting became increasingly widespread, political camp...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. Option A, 'utilized,' is indeed the correct answer as it best fits the context of political campaigns adapting to a new medium to reach a wider audience. The phrase 'recognizing its potential' strongly supports the idea that campaigns would actively use ('utilized') radio. Options B, 'avoided,' C, 'questioned,' and D, 'overlooked,' are all clearly incorrect. 'Avoided' and 'overlooked' are antonyms of what the sentence describes, as campaigns would logically embrace a new medium for wider reach, not ignore or shun it. 'Questioned' is plausible in an initial phase, but the sentence emphasizes their recognition of radio's potential and subsequent action, making 'utilized' a more accurate fit for the blank. The difficulty level is appropriately marked as 'Easy' due to the straightforward vocabulary and logical reasoning required."
+    }
+  },
+  {
+    "question_id": 389673,
+    "question_text": "The following text is from a book review discussing a new historical biography.\\n\\n\\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete and lacks the crucial text passage needed to answer the question. The placeholder 'No image' indicates missing text, which is essential for a Words in Context question.",
+        "Without the text passage, it is impossible to definitively determine if option C ('Tracks') is the correct answer or if other options are incorrect. The correctness is entirely dependent on the missing context.",
+        "The question, as presented, is not clearly written due to the absence of the text it refers to. A Words in Context question requires a sentence or passage with a blank where students must choose the most appropriate word."
+      ],
+      "correct_answer": "C",
+      "explanation": "This question is invalid in its current form due to the missing text passage. Words in Context questions on the SAT require a sentence or paragraph to provide context for choosing the correct word.  The placeholder 'No image' suggests that the text from the book review is missing.  Without this text, we cannot evaluate if 'Tracks' is the correct answer, or if the other options are definitively incorrect.  While 'Tracks' *could* be correct in some contexts related to historical biographies (e.g., 'the biography tracks the historian's early career'), we cannot confirm this without the actual text.  Therefore, the question fails to be a valid SAT question in its current state.  Assuming 'Tracks' is intended to be correct based on the provided 'Marked as correct' information, we still must highlight the critical issue of the missing text."
+    }
+  },
+  {
+    "question_id": 264196,
+    "question_text": "Dr. Anya Sharma is renowned for her groundbreaking research on the migratory patterns of monarch but...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and makes sense. The context of Dr. Sharma's research on monarch butterfly migration and her choice of radio telemetry is easy to understand. The sentence structure is straightforward, and the blank is placed logically within the context.\n\n2. **Correctness of Marked Option:** Option B, 'practical,' is indeed the correct answer. The sentence explicitly states that radio telemetry allows for 'precise, real-time tracking of individual insects over vast distances.' This directly supports the idea that it was a 'practical' choice because it is well-suited and effective for the purpose of studying migratory patterns. \n\n3. **Incorrectness of Other Options:**\n    * **A. insightful:** While radio telemetry *can* lead to insightful findings, 'insightful' describes the *results* of the research, not the *choice* of method itself. The sentence focuses on the *reason* for choosing the method, which is its functionality, not its potential to generate insights directly. \n    * **C. conventional:** 'Conventional' means customary or traditional. While radio telemetry is a known method, the sentence emphasizes its specific advantages ('precise, real-time tracking') making 'practical' a more direct and fitting descriptor of the *reason* for choosing it. 'Conventional' doesn't highlight the functional advantage explained in the sentence. \n    * **D. unexpected:** 'Unexpected' is the opposite of what the context suggests. The sentence explains the logical reasoning behind choosing radio telemetry, making it a deliberate and sensible choice, not an unexpected one.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is well-written and follows standard SAT question format.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The context clues strongly point to 'practical' as the most logical choice. The vocabulary is accessible, and the reasoning required is relatively straightforward for a Words in Context question at the 'Easy' level on the SAT."
+    }
+  },
+  {
+    "question_id": 781778,
+    "question_text": "The scientific community lauded the ________________________________________________________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clear, grammatically sound, and appropriately formatted for an SAT-style question. The word 'collaborative' (Option D) is the most logical and contextually appropriate choice to fill in the blank. The phrase 'international research teams' and 'combined expertise' strongly suggests a cooperative effort, making 'collaborative' the best fit. Options A, B, and C are clearly incorrect because 'competitive,' 'independent,' and 'solitary' do not align with the idea of teams working together and combining expertise to achieve a breakthrough. 'Competitive' implies rivalry, 'independent' suggests working separately, and 'solitary' means working alone, all of which contradict the context provided. The difficulty level 'Easy' is appropriate as the vocabulary and reasoning required are relatively straightforward for SAT Reading & Writing."
+    }
+  },
+  {
+    "question_id": 854882,
+    "question_text": "Early photography techniques, especially the daguerreotype process, \\_\\_\\_\\_\\_\\_ modern photography,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clear and easy to understand. It establishes a relationship between early photography techniques (daguerreotype) and modern photography, indicating that the former served as a precursor to the latter. The blank requires a verb that logically connects these two concepts.\n\n2. **Correctness of Option A (influenced):** Option A, 'influenced,' is indeed the correct answer. Early photography techniques, particularly the daguerreotype, directly influenced the development of modern photography. They laid the groundwork and paved the way for subsequent advancements in the field. The phrase 'serving as a significant step towards' strongly supports 'influenced' as the correct verb.\n\n3. **Incorrectness of Other Options:**\n    * **B. resisted:** 'Resisted' is incorrect because early techniques did not hinder modern photography; they were foundational to it. 'Resisted' implies opposition or prevention, which is the opposite of the intended meaning.\n    * **C. complicated:** 'Complicated' is incorrect. While early techniques might have had their complexities, the sentence emphasizes their role as a positive step forward, not a source of complication for modern photography. 'Complicated' doesn't fit the context of progress and development.\n    * **D. mirrored:** 'Mirrored' is incorrect. 'Mirrored' would suggest that early photography techniques simply reflected or resembled modern photography, which is not the intended relationship. The sentence highlights a developmental progression, not a mere reflection.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The vocabulary is accessible, and the logical reasoning required to select 'influenced' is straightforward within the context of understanding cause and effect and the development of photography."
+    }
+  },
+  {
+    "question_id": 1787,
+    "question_text": "While some critics found Toni Morrison's novel *Beloved* to be stylistically challenging, many prais...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and makes sense. The sentence structure is typical of SAT Reading & Writing questions, and the context provided clearly indicates that the missing word should describe something positive and essential to the novel's artistic achievement, as perceived by readers who praised it. The contrast with critics who found it 'stylistically challenging' further clarifies the intended meaning.\n\n2. **Correct Answer:** Option B, 'integral,' is indeed the correct answer. 'Integral' means essential or necessary to completeness.  The sentence states that for readers who praised the novel, the 'unconventional narrative structure was essential to conveying the story's complex and emotionally charged themes.' Therefore, for these readers, the formal experimentation was not a flaw but an *integral* aspect of its artistic achievement.\n\n3. **Incorrect Options:** All other options are clearly incorrect in this context:\n    * **A. incidental:** 'Incidental' means occurring by chance or in connection with something else of lesser importance. This contradicts the idea that the structure is 'essential.'\n    * **C. peripheral:** 'Peripheral' means of secondary or minor importance; marginal.  This also contradicts the idea that the structure is 'essential.'\n    * **D. extraneous:** 'Extraneous' means irrelevant or unrelated to the subject being dealt with. This is the opposite of what the sentence is conveying; the structure is presented as highly relevant and important to the artistic achievement.\n\n4. **Grammatical/Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct and well-punctuated.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The vocabulary required to answer this question ('integral,' 'incidental,' 'peripheral,' 'extraneous') is within the expected range for SAT level vocabulary, and the logical reasoning required to select the correct answer is relatively straightforward based on the provided context."
+    }
+  },
+  {
+    "question_id": 996535,
+    "question_text": "While some critics found the author's latest novel to be overly sentimental, many readers appreciate...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (D. sincere) is not the most logical or contextually appropriate answer. Options A, B, and C are arguably better fits for the sentence.",
+        "The question suffers from having multiple plausible options, making it ambiguous and potentially unfair.",
+        "The intended meaning of 'too sincere' is unclear and less idiomatic in this context compared to other options."
+      ],
+      "correct_answer": null,
+      "explanation": "The question asks for a word that describes emotions considered negatively in 'serious literature,' especially in contrast to 'earnest portrayal' and in light of critics finding the novel 'overly sentimental.'\n\nLet's analyze each option:\n\nA. banal: 'Banal' means commonplace, ordinary, and lacking originality. Emotions deemed 'too banal' could be seen as unsuitable for serious literature, which often aims for depth and originality. This is a plausible option.\n\nB. mundane: 'Mundane' means ordinary, everyday, and lacking excitement. Similar to 'banal,' emotions deemed 'too mundane' might be considered beneath the scope of serious literature, which often explores more profound or extraordinary aspects of human experience. This is also a plausible option.\n\nC. maudlin: 'Maudlin' means self-pityingly or tearfully sentimental. Given that critics found the novel 'overly sentimental,' emotions deemed 'too maudlin' would strongly align with the idea of emotions considered excessive and inappropriate for serious literature. This is a very strong option.\n\nD. sincere: 'Sincere' means genuine and honest. While sincerity is generally considered a positive trait, the phrase 'emotions often deemed too sincere for serious literature' is less idiomatic and less logically sound in this context. It's unclear why sincerity itself would be considered detrimental to serious literature. One could argue that *excessive* or *naive* sincerity might be seen as unsophisticated, but this is a less direct and less common interpretation than the other options.\n\nOptions A, B, and C all provide stronger and more direct contrasts to the idea of emotions valued in 'serious literature' and align better with the context of critics finding the novel 'overly sentimental.' 'Maudlin' is particularly strong because it directly relates to excessive sentimentality, which is hinted at by the critics' view. 'Sincere' is the weakest option and likely not the intended correct answer. The question is flawed because it has multiple plausible answers and the marked 'correct' answer is questionable."
+    }
+  },
+  {
+    "question_id": 902354,
+    "question_text": "The chameleon’s skin color is remarkable because it __________________ to its surroundings, allowing...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Options B and C, while not as precise as option A, are not clearly incorrect in the general sense of describing a chameleon's color change. This reduces the clarity of option A being definitively the *only* correct answer, especially for an 'Easy' difficulty level.  For an 'Easy' question, distractors should ideally be more obviously wrong.",
+        "The difficulty level might be slightly misclassified as 'Easy'. While the vocabulary is not complex, distinguishing the nuance between 'conforms,' 'changes,' and 'reacts' requires a slightly higher level of precision in understanding word choice within context than typical 'Easy' level questions."
+      ],
+      "correct_answer": "A",
+      "explanation": "Option A, 'conforms,' is the most precise and contextually appropriate answer. 'Conforms to its surroundings' accurately describes how a chameleon's skin color adapts to match its environment for camouflage. \n\nOption B, 'changes,' is not entirely incorrect, as a chameleon's skin color does change. However, 'changes to its surroundings' is less precise than 'conforms to.' 'Changes' is a more general term and doesn't specifically convey the idea of adaptation or matching the environment as effectively as 'conforms.'\n\nOption C, 'reacts,' is also somewhat plausible. Chameleons do react to their environment, and color change can be seen as a reaction. However, 'reacts to its surroundings' is also less precise than 'conforms.' It suggests a response, but not necessarily the active adaptation and blending implied by 'conforms.'\n\nOption D, 'ignores,' is clearly incorrect. Chameleons' skin color change is directly related to their surroundings, not an act of ignoring them.\n\nWhile 'conforms' is the best answer, the options 'changes' and 'reacts' are not so clearly wrong that they function as ideal distractors for an 'Easy' level question.  A stronger 'Easy' level question would have distractors that are more semantically distant from the correct answer in this context."
+    }
+  },
+  {
+    "question_id": 314322,
+    "question_text": "Early writing systems were initially very complex, often employing hundreds of symbols. As societies...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear, grammatically sound, and logically consistent. The correct answer, 'simplified,' accurately reflects the process of early writing systems becoming more efficient and accessible as societies grew. Options A ('complicated'), B ('stagnated'), and D ('expanded') are clearly incorrect as they contradict the idea of writing systems becoming more efficient and accessible. 'Complicated' is the opposite of what the sentence describes. 'Stagnated' implies a lack of development, which is also contrary to the context of becoming more efficient. While 'expanded' might seem plausible in some contexts, it doesn't fit the description of becoming *more efficient and accessible* from a complex system with hundreds of symbols; simplification is the more direct and logical progression. The difficulty level 'Easy' is appropriate as the vocabulary and reasoning required are relatively straightforward for an SAT context."
+    }
+  },
+  {
+    "question_id": 278520,
+    "question_text": "Economists once believed that deflation, a general decline in prices for goods and services, invaria...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and makes sense. It presents a contrast between a past economic belief and findings from recent studies. The sentence structure is straightforward, and the vocabulary is appropriate for the SAT. The blank is logically placed to test vocabulary in context.\n\n2. **Correctness of Option C (demonstrated):** Option C, 'demonstrated,' is indeed the correct answer.  'Demonstrated' means to have clearly shown the existence or truth of something by giving proof or evidence. Recent studies would aim to 'demonstrate' or prove that the old belief is not always true, making 'demonstrated' the most fitting word in this context.\n\n3. **Incorrectness of other options (A, B, D):**\n    * **A. insinuated:** 'Insinuated' means to suggest or hint at something indirectly and usually unpleasant. Studies don't typically 'insinuate' findings; they present them more directly. This word doesn't fit the formal and objective tone of academic research.\n    * **B. postulated:** 'Postulated' means to suggest or assume the existence, fact, or truth of something as a basis for reasoning, discussion, or belief. While studies might 'postulate' hypotheses before research, the sentence describes the *outcome* of studies ('recent studies of economies experiencing mild deflation have _________'). 'Demonstrated' is a stronger word indicating a conclusion based on evidence, rather than a starting assumption.\n    * **D. assumed:** 'Assumed' means to suppose to be the case without proof. Studies are based on evidence and analysis, not assumptions. If studies 'assumed' something, it would undermine their credibility and not effectively counter the previous belief. \n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues with the question.\n\n5. **Difficulty Level (Easy):** The difficulty level is appropriately marked as 'Easy'. The vocabulary is not overly complex, and the sentence structure is relatively simple to understand. The logical relationship between the parts of the sentence is clear, making it accessible to students at an 'Easy' difficulty level for SAT Reading & Writing."
+    }
+  },
+  {
+    "question_id": 275459,
+    "question_text": "While some historians argue that the invention of the printing press led to a rapid and widespread i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It presents a contrast between two perspectives on the initial impact of the printing press on literacy. One perspective is 'rapid and widespread increase,' while the other argues for a more limited initial impact. The supporting evidence provided – expensive books primarily for the wealthy elite – directly supports the idea that the initial impact was 'localized,' meaning restricted to a specific group rather than widespread.Option B, 'localized,' is indeed the correct answer as it directly aligns with the idea that the initial impact was limited to certain areas or groups (the wealthy elite) due to the expense and accessibility of books.Let's examine why other options are incorrect:* **A. substantial:** 'Substantial' means considerable in size or importance. While the impact on the wealthy elite might have been substantial *for them*, this option doesn't effectively contrast with 'rapid and widespread' in the context of overall literacy. The argument is that the *overall* initial impact on literacy was *not* rapid and widespread, but something else. 'Substantial' doesn't inherently imply limited reach.* **C. universal:** 'Universal' means applicable to everyone or everything. This is the opposite of what the second viewpoint is arguing. If books were primarily for the wealthy elite, the impact was certainly not universal.* **D. revolutionary:** 'Revolutionary' means causing a complete or dramatic change. While the printing press was ultimately revolutionary, the question focuses on the *initial* impact. The second viewpoint argues that the *initial* impact was *not* rapid and widespread, suggesting it was more limited or gradual at first. 'Revolutionary' doesn't directly address the scope or breadth of the *initial* impact in the way 'localized' does.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the vocabulary is not overly complex, and the logic of contrasting viewpoints is relatively straightforward for SAT level questions."
+    }
+  },
+  {
+    "question_id": 767655,
+    "question_text": "Paleontologist Stephen Jay Gould emphasized the idea of punctuated equilibrium, suggesting that evol...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of SAT Reading & Writing. The passage explains punctuated equilibrium and argues that gaps in the fossil record are not flaws in the data but rather inherent characteristics of the evolutionary process as described by Gould. Option B, 'reflections,' accurately completes the sentence by suggesting that these gaps are indicative or representative of the nature of punctuated equilibrium itself. Options A, C, and D are clearly incorrect. 'Misinterpretations' would imply the gaps are misunderstandings, not actual features. 'Fabrications' suggests the gaps are made up, which contradicts the idea that they are real features of the fossil record. 'Exaggerations' implies the gaps are overstated, which doesn't fit the context.  The vocabulary and reasoning required are straightforward, making 'Easy' an appropriate difficulty level. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 14855,
+    "question_text": "The following text is adapted from a scientific article about the behavior of ants.\\n\\nAnts exhibit ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and easy to understand. The text provides sufficient context to determine the meaning of 'deviate'.\n2. **Correct Answer:** Option B, 'Depart,' is indeed the correct answer. In the context of ants moving away from a blocked or dead-end trail, 'deviate' means to move away or depart from the established path.\n3. **Incorrect Options:** Options A, C, and D are clearly incorrect. 'Distinguish' means to recognize a difference, 'Deceive' means to mislead, and 'Destroy' means to ruin. None of these words fit the context of ants changing their path when encountering an obstacle.\n4. **Grammar and Formatting:** There are no grammatical or formatting issues.\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. 'Deviate' is a relatively common word, and the context provided makes its meaning accessible to students at the SAT level."
+    }
+  },
+  {
+    "question_id": 139042,
+    "question_text": "The town of Willow Creek faced a severe drought last summer.  Initially, residents attempted to cons...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes logical sense. The context of a severe drought and the need for stricter regulations to manage a dwindling water supply points directly to the word 'conserve'. Option D, 'conserve', is indeed the correct answer as it best fits the sentence's meaning and the overall context. Options A, B, and C are clearly incorrect. 'Augment' (A) means to increase, which is the opposite of what stricter regulations in a drought situation would aim to do to the *remaining* supply. 'Exhaust' (B) and 'deplete' (C) both mean to use up or reduce, which is also the opposite of the intended outcome of stricter regulations. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the vocabulary and context are straightforward and easily understood."
+    }
+  },
+  {
+    "question_id": 62738,
+    "question_text": "The following text is from Jane Austen's 1813 novel Pride and Prejudice.\\n\\nElizabeth Bennet had bee...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the meaning of 'attentions' as used in the provided text from Pride and Prejudice. Option B, 'Consideration,' is the most accurate synonym for 'attentions' in this context, referring to Mr. Wickham's polite and focused engagement with Elizabeth during their dance. Options A ('Thoughts'), C ('Warnings'), and D ('Challenges') are clearly incorrect as they do not fit the context of social interaction and polite engagement described in the sentence. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because understanding 'attentions' in this context is a relatively straightforward vocabulary question for SAT level."
+    }
+  },
+  {
+    "question_id": 181991,
+    "question_text": "While some critics initially dismissed Toni Morrison’s early novels as overly sentimental, others re...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and makes sense. It presents a contrast between initial negative criticism and later positive recognition of Toni Morrison's work. The sentence structure is typical of SAT questions, and the blank is placed logically to test vocabulary in context.\n\n2. **Correctness of Option D (accentuated):** Option D, 'accentuated,' is indeed the correct answer. 'Accentuated' means to make more noticeable or prominent. In this context, it correctly completes the sentence by indicating that the critics who recognized the depth in Morrison's work believed her evocative prose highlighted or emphasized the emotional depth and complexity of the African American experience. This aligns with the idea of 'powerful and unflinching exploration'.\n\n3. **Incorrectness of Other Options (A, B, C):**\n    * **A. minimized:** 'Minimized' means to reduce to the smallest possible amount or degree. If her prose 'minimized' the emotional depth, it would contradict the idea that critics recognized a 'powerful and unflinching exploration'.\n    * **B. obscured:** 'Obscured' means to make unclear, indistinct, or hidden. If her prose 'obscured' the emotional depth, it would also contradict the critics' recognition of depth and complexity.\n    * **C. belied:** 'Belied' means to contradict or give a false impression of. If her prose 'belied' the emotional depth, it would suggest her writing masked or misrepresented the emotional depth, which is again contrary to the positive interpretation by the critics.\n    All incorrect options create sentences that are illogical and contradict the intended meaning of the sentence, particularly the contrast between initial dismissal and later appreciation.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct and follows standard SAT question format.\n\n5. **Difficulty Level (Easy):** The difficulty level 'Easy' is appropriate. While the sentence structure is slightly complex, the vocabulary required to answer the question is not overly challenging for SAT test-takers. The core logic of understanding contrast and choosing the word that fits the positive side of the contrast is a fundamental skill tested in SAT Reading and Writing.  The question primarily tests vocabulary in context, which is generally considered an easier question type compared to more complex reasoning or inference questions."
+    }
+  },
+  {
+    "question_id": 451182,
+    "question_text": "While some critics lauded the film's ambitious scope and intricate plot, others found its narrative ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clearly written and easy to understand. The sentence structure is straightforward, and the context provided effectively guides the test-taker to the correct answer.\n\n2. **Correctness of Marked Answer:** Option A, 'convoluted', is indeed the correct answer. 'Convoluted' means complex and difficult to follow, which aligns perfectly with the description of a narrative structure with 'constant shifts in timeline and perspective' that 'detracted from the viewing experience'.\n\n3. **Incorrectness of Other Options:** Options B, C, and D are clearly incorrect in this context:\n    * **B. transparent:**  'Transparent' means easy to understand, the opposite of what is described.\n    * **C. conventional:** 'Conventional' means following accepted norms, which doesn't fit the negative critique related to timeline shifts.\n    * **D. predictable:** 'Predictable' means easily foreseen, which is not directly related to the issue of timeline and perspective shifts detracting from the viewing experience.\n\n4. **Grammatical/Formatting Issues:** There are no grammatical or formatting issues.\n\n5. **Difficulty Level:** The 'Easy' difficulty level is appropriate. While 'convoluted' might be a slightly advanced vocabulary word, the context clues within the sentence strongly point towards this answer, making it accessible for SAT test-takers at an 'Easy' difficulty level for Words in Context questions."
+    }
+  },
+  {
+    "question_id": 756515,
+    "question_text": "Renowned art critic, Alistair Finch, carefully examined the abstract painting, striving to _________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense in the context of art criticism. Option A, 'discern,' is indeed the correct answer because it means to perceive or recognize something, which aligns perfectly with the act of an art critic trying to understand the artist's intentions by examining the artwork's elements. Options B, C, and D are clearly incorrect. 'Ignore' is the opposite of what an art critic would do when 'carefully examining' art. 'Enhance' doesn't fit the context of understanding intentions; it means to improve or intensify something. 'Question' is not as fitting as 'discern' because while an art critic might question aspects of the artwork, the primary goal in this context is to understand or 'discern' the artist's intentions. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the context strongly suggests the meaning of the missing word, and 'discern' is a word commonly tested at the SAT level."
+    }
+  },
+  {
+    "question_id": 889186,
+    "question_text": "The following text is from a historical account of early aviation.\\n\\n\\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as it is missing the text passage that the question refers to. Without the text, it is impossible to determine the correct answer or assess the validity of the options in context.",
+        "Because the text is missing, it is impossible to verify if option A ('Fragile') is actually the correct answer in context.",
+        "Similarly, without the text, it cannot be determined if options B, C, and D are clearly incorrect or if they could be plausible distractors.",
+        "The question prompt itself is grammatically sound and formatted correctly, but it is unusable without the accompanying text passage."
+      ],
+      "correct_answer": "A",
+      "explanation": "This question is invalid because it is presented without the crucial text passage it refers to. 'Words in Context' questions on the SAT require a text to provide context for determining the meaning of a word or phrase. Without the text, we cannot evaluate which word best fits the intended meaning, nor can we confirm if 'Fragile' is indeed the correct answer or if the other options are definitively incorrect.  The question is essentially unanswerable in its current state. To validate this question, the text passage from the historical account of early aviation must be provided."
+    }
+  },
+  {
+    "question_id": 168293,
+    "question_text": "To ensure the validity of their findings, researchers must be exceptionally ________________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes logical sense. The sentence emphasizes the importance of careful planning and documentation in research to ensure valid findings. Option B, 'methodical,' is the most appropriate word to fill in the blank because 'methodical' means systematic and careful, which directly aligns with the need for meticulous documentation and careful experimental design to avoid deviations that could influence results. Options A, 'adaptable,' C, 'impulsive,' and D, 'indifferent,' are clearly incorrect in this context. 'Adaptable' might be a positive trait in research in general, but it doesn't fit the specific need for careful design and documentation for validity. 'Impulsive' and 'indifferent' are antonyms of the required trait, as they suggest a lack of care and planning, which would undermine the validity of research findings.  The difficulty level 'Easy' is appropriate as the vocabulary and sentence structure are not complex, and the logic is straightforward."
+    }
+  },
+  {
+    "question_id": 773349,
+    "question_text": "The following text is from a science article about bird migration.\\n\\nScientists have long been puzz...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-constructed. \n\n1. **Clarity:** The question is clear and makes sense. It asks for the meaning of 'practice' as used in the provided text, which is a standard format for SAT vocabulary-in-context questions.\n\n2. **Correct Answer:** Option B, 'Perform,' is indeed the correct answer. In the context of 'incredible feats of long-distance navigation,' 'practice' is used to mean 'perform' or 'carry out.' Birds are not 'practicing' in the sense of rehearsing or studying, but rather they are *performing* or *executing* these feats of navigation using their magnetoreception.\n\n3. **Incorrect Options:**\n    * **A. Exercise:** While 'exercise' can sometimes be a synonym for 'practice,' in this context, it's less precise. 'Exercise' often implies using or employing a skill or ability, but 'perform' better captures the idea of carrying out a complex action like navigation.  It's not entirely wrong, but less fitting than 'Perform'.\n    * **C. Rehearse:** 'Rehearse' means to practice for a future performance, which is not the intended meaning of 'practice' in this context. Birds are not rehearsing navigation; they are actively navigating.\n    * **D. Study:** 'Study' means to learn about something, which is completely unrelated to the meaning of 'practice' in this sentence. Birds are not studying navigation in this context; they are using their innate ability to navigate.\n\n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The question is well-written and easy to understand.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The word 'practice' is a common word, and in this context, the intended meaning is relatively straightforward to discern, especially when considering the context of 'feats of long-distance navigation.' The distractors, while related to 'practice' in some senses, are clearly less fitting than 'Perform' in this specific context."
+    }
+  },
+  {
+    "question_id": 767897,
+    "question_text": "Art historian Dr. Anya Sharma argues that Frida Kahlo's later self-portraits, characterized by their...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It presents a concise argument about Frida Kahlo's artistic development and asks for the most appropriate word to describe the shift in her style. The context provided clearly points towards a significant change.\n\n2. **Correct Answer:** Option A, 'radical,' is indeed the correct answer. 'Radical departure' accurately describes a significant and fundamental shift from a traditional style, which aligns with the description of bolder colors and a direct gaze reflecting growing artistic confidence. \n\n3. **Incorrect Options:** Options B, C, and D are clearly incorrect:\n    * **B. tentative:** 'Tentative' means hesitant or uncertain. This contradicts the idea of 'bolder colors and direct gaze' and 'growing artistic confidence,' which suggest assertiveness, not hesitancy.\n    * **C. hesitant:** 'Hesitant' is similar to 'tentative' and also implies a lack of confidence or decisiveness, again contrasting with the described characteristics of Kahlo's later self-portraits.\n    * **D. typical:** 'Typical' means usual or expected. If the departure were 'typical,' it wouldn't be noteworthy or indicative of 'growing artistic confidence.' The sentence structure implies a distinct and significant change, not a common or 'typical' one.\n\n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The sentence is grammatically correct and easy to read.\n\n5. **Difficulty Level:** The 'Easy' difficulty level is appropriate. The vocabulary is not overly complex, and the context clues strongly suggest 'radical' as the correct answer. Students at the SAT level should be able to identify the correct word based on the provided context and the meanings of the options."
+    }
+  },
+  {
+    "question_id": 455081,
+    "question_text": "The old wooden bridge, despite its age, was remarkably **sound**. Inspectors had examined it thoroug...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 255. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is valid and well-written. \\n\\n1. **Clarity:** The question is clear and easy to understand. The sentence prov..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 998232,
+    "question_text": "The following text is adapted from a historical account of early computing. \\n\\nAda Lovelace underst...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the meaning of 'notion' as used in the provided text. Option C, 'Idea', is the most accurate synonym for 'notion' in this context. Ada Lovelace had an early 'idea' or concept of computer programming, which aligns with the meaning of 'nascent notion'. Options A ('Whim') and D ('Fact') are clearly incorrect as they do not fit the context of a developing concept. Option B ('Understanding'), while related to 'notion', is not as precise in this context. 'Notion' implies a preliminary or nascent idea, whereas 'understanding' suggests a more complete grasp. Therefore, 'Idea' is the best fit. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate given the straightforward vocabulary and context and the clear incorrectness of most distractors."
+    }
+  },
+  {
+    "question_id": 42005,
+    "question_text": "Researchers studying memory and learning compared the effectiveness of two different study technique...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete and grammatically incorrect. It ends mid-sentence with 'massed practice, or \\\\\\\\\\No image', suggesting missing text or an image that is crucial for understanding the question's intent.",
+        "The intended meaning of the question is unclear due to the incompleteness. It's impossible to definitively determine if option A ('efficacious') is the correct answer without the missing part of the question.",
+        "Assuming the question is asking for a word to describe massed practice in contrast to spaced repetition, 'efficacious' (meaning effective) is an unlikely and potentially incorrect answer. Massed practice is often considered *less* effective than spaced repetition for long-term retention.",
+        "Options B ('arduous') and C ('commonplace') could potentially describe massed practice. Massed practice can be 'arduous' due to its intensive nature, and it is a 'commonplace' study technique.",
+        "The 'No image' note indicates a formatting issue and potentially missing context that is essential for the question.",
+        "Given the incompleteness and unclear intent, the 'Easy' difficulty level is questionable. If the intended answer is indeed 'efficacious' in this incomplete context, the question is likely more confusing than easy.",
+        "A"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 302825,
+    "question_text": "While classical music is often perceived as rigid and structured, many composers found ways to expre...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of SAT Reading & Writing. The option marked as correct, 'intensity', is indeed the most appropriate word to fill in the blank. Beethoven's use of dynamic shifts and harmonic complexity in his symphonies is well-known for creating a sense of dramatic intensity. The other options are clearly incorrect: 'precision' relates more to accuracy than dramatic feeling, 'restraint' is the opposite of the intended meaning as Beethoven is known for emotional expression, and 'ornamentation' refers to decorative elements rather than the overall dramatic effect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the vocabulary and sentence structure are not overly complex, and the context strongly suggests 'intensity' as the correct answer."
+    }
+  },
+  {
+    "question_id": 923279,
+    "question_text": "Botanist Maria Santos studies the flora of the Amazon rainforest.  She hypothesized that introducing...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and easy to understand. It presents a scenario where a botanist hypothesizes about the impact of introducing a non-native orchid species on biodiversity. The reasoning provided, focusing on symbiotic relationships and supporting a wider range of life, logically leads to a positive impact on biodiversity.\n\n2. **Correctness of Option A (bolster):** Option A, 'bolster,' meaning to strengthen or support, is indeed the correct answer.  The sentence states that orchids create symbiotic relationships that support a wider range of life. Therefore, introducing them would logically *bolster* or strengthen the biodiversity of a degraded area.\n\n3. **Incorrectness of other options:**\n    * **B. supplant:** 'Supplant' means to replace or supersede. While introducing a new species could potentially replace some existing flora, the reasoning emphasizes the *increase* in biodiversity due to symbiotic relationships, not replacement. 'Supplant' does not fit the positive connotation of supporting a wider range of life.\n    * **C. disregard:** 'Disregard' means to ignore or pay no attention to. This option is nonsensical in the context of biodiversity. Introducing orchids would not 'disregard' biodiversity; it would have an impact on it.\n    * **D. undermine:** 'Undermine' means to weaken or damage. This option is the opposite of what the sentence suggests. The reasoning explicitly states that orchids *support* a wider range of life, implying a positive impact on biodiversity, not a weakening one.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct, and the question is clearly presented.\n\n5. **Difficulty Level (Easy):** The difficulty level is appropriately marked as 'Easy'. The vocabulary is accessible, and the logical reasoning required to arrive at the correct answer is straightforward. Students should be able to understand the sentence and identify 'bolster' as the word that best fits the context based on the provided reasoning about symbiotic relationships and increased biodiversity."
+    }
+  },
+  {
+    "question_id": 308398,
+    "question_text": "The following text is adapted from a historical account of early aviation.   “The biplane, a marvel ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 194. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-constructed. \\n\\n1. **Clarity:** The question is clear and asks for the meaning of \\\\\"gainin..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 909837,
+    "question_text": "Dr. Aris Thorne is celebrated for his innovative contributions to astrophysics. Unlike many of his p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It presents a scenario contrasting Dr. Thorne's approach to astrophysics with that of his peers. The sentence structure is straightforward and easy to understand.\n\n2. **Correct Answer:** Option D, 'speculative,' is indeed the correct answer. The sentence describes Thorne as someone who champions 'exploratory investigations' even when they 'appear initially speculative.' This creates a logical contrast with 'established methodologies' and explains why his approach is considered innovative and leads to 'groundbreaking discoveries.' Exploratory investigations, by their nature, are often speculative at the outset, venturing into uncharted territory.\n\n3. **Incorrect Options:**\n    * **A. rigorous:** 'Rigorous' means strict or thoroughly logical. If investigations appear initially rigorous, it would align with 'established methodologies,' not contrast with them.  It doesn't fit the context of taking unconventional paths.\n    * **B. untenable:** 'Untenable' means not able to be maintained or defended. If investigations appear initially untenable, it would suggest they are fundamentally flawed or weak from the start. This contradicts the idea that Thorne's approach leads to 'groundbreaking discoveries.'\n    * **C. derivative:** 'Derivative' means imitative of someone else's work. If investigations appear initially derivative, it would mean they lack originality and are not innovative. This is the opposite of what the passage describes about Thorne's contributions.\n\n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The sentence is grammatically correct and clearly presented.\n\n5. **Difficulty Level:** The 'Hard' difficulty level is appropriate. While the vocabulary is not overly complex, understanding the nuance of the sentence and choosing the word that best fits the context and the contrast being established requires careful reading and analytical skills, typical of harder SAT questions in Words in Context."
+    }
+  },
+  {
+    "question_id": 814704,
+    "question_text": "Paleontologist Emily Carter and her team examined fossilized remains of a previously unknown species...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes logical sense. The passage presents a paleontological puzzle: a terrestrial bird with dense bones, a trait usually associated with aquatic birds. The question asks for the word that best completes the sentence explaining the researchers' likely conclusion. \n\nOption D, 'adaptive to,' is the correct answer. The researchers are suggesting that despite the unusual context, the dense bones were likely an adaptation to the terrestrial environment, specifically to the 'demands of a terrestrial environment with frequent aerial predation.' This implies that the dense bones, while not for diving, served some beneficial purpose in that specific terrestrial environment, possibly related to stability, resistance to impact during predation, or some other advantage not immediately obvious but related to survival in that environment.\n\nOption A, 'ancillary to,' means supplementary or subordinate. This doesn't fit the context, as the bone density isn't described as supporting the demands of the environment, but rather potentially being a response or adaptation to them.\n\nOption B, 'independent of,' suggests that the bone density is unrelated to the environmental demands. This contradicts the likely reasoning of the researchers, who are trying to find a connection between the unusual trait and the bird's environment.\n\nOption C, 'unaccounted for by,' is plausible at first glance as it highlights the mystery. However, the sentence structure 'likely ... the demands' suggests the researchers are proposing a possible explanation, not stating that the bone density is inexplicable by the environment. 'Adaptive to' provides a more direct and positive conclusion, fitting the context better than 'unaccounted for by,' which implies a lack of explanation.\n\nAll other options are clearly less suitable than 'adaptive to' in conveying the researchers' likely conclusion. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate because it requires nuanced understanding of vocabulary and the logical flow of the passage to select the best option."
+    }
+  },
+  {
+    "question_id": 542566,
+    "question_text": "The following text is adapted from Jane Austen's 1813 novel Pride and Prejudice.  Elizabeth had the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "1. **Clarity:** The question is clearly written and makes sense. It provides context from a well-known literary work and asks for the meaning of 'exert themselves' within that context. The task is straightforward: determine the best synonym for the phrase in the given sentence.\n2. **Correctness of Option B:** Option B, 'To apply effort,' is indeed the correct answer. In the context of the sentence, 'they were repeatedly obliged to exert themselves' means they had to repeatedly apply effort to manage the situation with Mr. and Mrs. Bennet. This aligns perfectly with the meaning of 'exert themselves' in standard English.\n3. **Incorrectness of Other Options:**\n    * **Option A: To relax:** This is the opposite of 'exert themselves.'  The context describes a situation requiring action and control, not relaxation.\n    * **Option C: To boast:** 'To boast' means to speak with excessive pride. This meaning is completely unrelated to the context of restraining someone's behavior and applying effort to manage a situation.\n    * **Option D: To criticize:** While 'reproof' involves criticism, 'exert themselves to criticize' doesn't fit the sentence's meaning. The sentence describes them exerting effort to *restrain* the mother's criticism, not to engage in criticism themselves.  It's about managing a situation, not participating in the 'violence of reproof'.\nAll incorrect options are clearly wrong and do not fit the context of the sentence.\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question.\n5. **Difficulty Level:** The difficulty level 'Hard' is appropriate. While 'exert' is not an extremely obscure word, understanding its precise meaning in context and differentiating it from the distractors requires careful reading and vocabulary skills, which aligns with the 'Hard' difficulty level for SAT Reading & Writing, especially within the 'Words in Context' subcategory. Students need to understand nuance and eliminate options that might seem vaguely related but are not accurate synonyms in this specific context."
+    }
+  },
+  {
+    "question_id": 33598,
+    "question_text": "Dr. Aris Thorne’s research on avian migration patterns necessitates a highly ______ approach to fiel...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. The sentence clearly indicates that Dr. Thorne's research requires a very thorough and detailed approach due to the 'countless hours in remote locations' and 'meticulously documents every detail' aspects, which are aimed at 'ensuring the integrity of his dataset.'\n\nOption B, 'rigorous,' meaning extremely thorough, careful, or strict, perfectly fits this context. A rigorous approach is exactly what is needed for meticulous documentation and ensuring data integrity in scientific field observations.\n\nLet's look at why other options are incorrect:\n\n* **A. desultory:** means lacking a plan, purpose, or enthusiasm; going from one thing to another in a halfhearted way. This is the opposite of the intended meaning, as meticulous documentation is the antithesis of a desultory approach.\n* **C. perfunctory:** means carried out with a minimum of effort or reflection.  This is also the opposite of the intended meaning.  Meticulous documentation requires significant effort and reflection, not a perfunctory approach.\n* **D. intuitive:** means based on or relating to intuition; instinctive. While intuition might play a role in forming hypotheses, the context emphasizes careful observation and documentation to ensure data integrity, making 'intuitive' less suitable than 'rigorous.'  Scientific field observations, especially those aimed at building a reliable dataset, require a systematic and rigorous approach rather than an intuitive one.\n\nTherefore, 'rigorous' is the only option that accurately reflects the demands of Dr. Thorne's research as described in the sentence. The difficulty level 'Hard' is appropriate because while the logic is clear, students need to understand the nuances of vocabulary and how context clues point to the most precise word."
+    }
+  },
+  {
+    "question_id": 240088,
+    "question_text": "Studies on social media use and mental health are varied. Some suggest a correlation between increas...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 644. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and easy ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 8982,
+    "question_text": "Initial paleontological interpretations of *Tyrannosaurus Rex* bones suggested a solitary predator. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. The sentence presents a contrast between initial paleontological interpretations of *T. Rex* as solitary predators and recent discoveries of multiple fossils together. The word that best fits the blank should describe how these new discoveries affect the 'long-held view' of solitary behavior.Option D, 'undermining,' is the correct answer because it accurately describes how new evidence that contradicts a previous theory weakens or challenges that theory. The discovery of multiple *T. Rex* fossils together suggests they may not have been solitary, thus undermining the initial interpretation.Let's look at why the other options are incorrect:* **A. refining:** 'Refining' means to make something more precise or subtle. While new discoveries can refine a view, in this context, the discoveries are presented as challenging the fundamental idea of *T. Rex* being solitary, not just making it more nuanced. 'Refining' is too weak of a word to describe the impact of contradictory evidence.* **B. solidifying:** 'Solidifying' means to make something stronger or more firm. This is the opposite of what the sentence describes. The new discoveries are not making the 'long-held view' stronger; they are challenging it.* **C. confirming:** 'Confirming' means to establish the truth or correctness of something.  Similar to 'solidifying,' this is also the opposite of what the sentence describes. The new discoveries are not supporting the 'long-held view'; they are suggesting it might be incorrect.Therefore, 'undermining' is the only option that logically fits the context of the sentence and accurately reflects the relationship between new contradictory evidence and an established viewpoint. The difficulty level of 'Hard' is appropriate as it requires understanding nuanced vocabulary and the logical flow of scientific interpretation and evidence."
+    }
+  },
+  {
+    "question_id": 173890,
+    "question_text": "While many economists assume that technological advancements inevitably lead to widespread job losse...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and makes sense. It presents a common assumption about technology and job losses, then introduces a historical example that contradicts this assumption. The sentence structure is straightforward and easy to understand.\n\n2. **Correct Answer (C - anomaly):** Option C, 'anomaly,' is indeed the correct answer. An anomaly is something that deviates from what is standard, normal, or expected. The 19th-century textile industry's employment *increase* despite automation is presented as an exception to the general expectation of job losses due to technological advancements. Therefore, 'anomaly' accurately describes this situation.\n\n3. **Incorrect Options:**\n    * **A. predicament:** A predicament is a difficult, unpleasant, or embarrassing situation. This word does not fit the context. The passage is describing a surprising outcome, not a difficult situation.\n    * **B. paradox:** A paradox is a seemingly absurd or self-contradictory statement or proposition that when investigated or explained may prove to be well founded or true. While 'paradox' is closer in meaning than 'predicament' or 'validation', 'anomaly' is a more precise fit. A paradox highlights a contradiction in ideas, whereas the passage emphasizes a deviation from an expected outcome.  While arguably 'paradox' could be considered *somewhat* plausible, 'anomaly' is the stronger and more direct choice in this context.\n    * **D. validation:** Validation means the action of checking or proving the validity or accuracy of something. This is the opposite of what the sentence requires. The example is presented as contradicting, not validating, the initial assumption.\n\n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The question is grammatically correct and uses standard formatting.\n\n5. **Difficulty Level (Hard):** The difficulty level 'Hard' is appropriate. While the core concept is not overly complex, choosing the most precise word ('anomaly' over 'paradox') requires a strong vocabulary and nuanced understanding of word meanings in context.  Students need to differentiate between words with similar but distinct connotations to select the best fit."
+    }
+  },
+  {
+    "question_id": 271741,
+    "question_text": "While initial predictions suggested that digital communication would foster stronger interpersonal b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Here's a breakdown:\n\n1. **Clarity:** The question is clearly written and makes sense. It presents a contrast between initial predictions about digital communication and Anya Kamenetz's argument about the actual impact of technology on human interactions. The sentence structure is straightforward, and the vocabulary is appropriate for the SAT.\n\n2. **Correctness of Option A (cursory):** Option A, 'cursory,' is indeed the correct answer. 'Cursory' means hasty and not detailed or thorough; superficial. This aligns perfectly with the description of human interactions becoming characterized by 'fleeting exchanges and a decline in sustained, meaningful conversation.'  The contrast is that initial predictions were for *stronger* bonds, but Kamenetz argues for *weaker*, more superficial interactions.\n\n3. **Incorrectness of other options:**\n    * **B. profound:** 'Profound' means deep and meaningful. This is the opposite of what the sentence describes. If interactions were 'profound,' it would contradict the idea of 'fleeting exchanges' and a 'decline in sustained, meaningful conversation.'\n    * **C. tenuous:** 'Tenuous' means weak or slight, lacking substance. While it might seem somewhat related to weakened interactions, it doesn't capture the specific nuance of 'fleeting exchanges' as well as 'cursory' does. 'Cursory' more directly emphasizes the superficial and brief nature of the interactions, which is more strongly implied by the phrase 'fleeting exchanges.' 'Tenuous' is a weaker fit in this context compared to 'cursory'.\n    * **D. robust:** 'Robust' means strong and healthy. This is the direct opposite of what the sentence is describing. If interactions were 'robust,' it would contradict the entire premise of Kamenetz's argument about a decline in meaningful conversation.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically correct and well-punctuated.\n\n5. **Difficulty Level (Hard):** The difficulty level 'Hard' is appropriate. While the core vocabulary isn't exceptionally obscure, understanding the nuanced contrast and selecting the most precise word ('cursory' over potentially tempting but less accurate options like 'tenuous') requires careful reading comprehension and vocabulary knowledge, aligning with the 'Hard' difficulty level for SAT vocabulary in context questions."
+    }
+  },
+  {
+    "question_id": 275101,
+    "question_text": "While some urban planners advocate for increased green spaces in cities, citing the environmental an...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Option B, 'expense,' is a very strong distractor and could also be considered a correct answer, although 'detriment' is slightly more precise in conveying a negative consequence. This makes the question slightly less ideal as there isn't a single definitively correct answer and clearly incorrect distractors. The distinction between 'detriment' and 'expense' is subtle and might be debated."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense, presenting a contrast between prioritizing green spaces and housing density in urban planning. The sentence implies that focusing on green spaces, according to some, might negatively impact or harm necessary housing development. \n\nOption A, 'detriment,' fits perfectly as it means harm or damage. The phrase 'at the detriment of' accurately conveys that green spaces might negatively affect housing development.\n\nOption B, 'expense,' is also a plausible answer. 'At the expense of' means 'at the cost of' or 'by sacrificing.'  While grammatically correct and contextually relevant, 'detriment' is slightly stronger in emphasizing the negative consequence or harm, which aligns more closely with the idea of a trade-off between green spaces and 'necessary' housing development. However, 'expense' is a very strong distractor and could be argued as correct.\n\nOption C, 'auspice,' meaning protection or support, is incorrect. It doesn't make sense to say that focusing on green spaces comes 'at the auspice' of housing development. This option is clearly wrong.\n\nOption D, 'catalyst,' meaning something that causes or speeds up an event, is also incorrect. It doesn't fit the context of a trade-off or negative consequence. This option is also clearly wrong.\n\nThe difficulty level 'Hard' is appropriate because it requires understanding nuanced vocabulary and the complex relationship between the two viewpoints presented in the sentence. While 'detriment' is the intended best answer, the closeness of 'expense' as a plausible alternative is a minor weakness of the question."
+    }
+  },
+  {
+    "question_id": 565310,
+    "question_text": "While initial studies suggested that the impact of microplastics on marine ecosystems was minimal, D...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity:** The question is clearly written and makes sense. The sentence structure is logical, and the context is easy to understand. It sets up a contrast between initial studies suggesting minimal impact and Dr. Sharma's research showing a different, more concerning picture.\n\n2. **Correctness of Option C (localized):** Option C, 'localized,' is indeed the most correct answer. The sentence implies that initial studies might have underestimated the *scope* of microplastic pollution, perhaps thinking it was confined to certain areas. Dr. Sharma's research, focusing on deep-sea organisms and the abyssal zone, reveals that the problem is not 'localized' but widespread, even reaching remote areas. 'Far from localized' effectively conveys this idea of pervasive reach.\n\n3. **Incorrectness of other options:**\n    * **A. insignificant & B. negligible:** While these options are related to the idea of 'minimal impact' from the initial studies, they don't directly contrast with the idea of 'pervasive reach' and 'consumption by even the most remote species.'  Saying the impact is 'far from insignificant' or 'far from negligible' is grammatically correct and somewhat logically fits, but it's less precise than 'localized' in capturing the shift in understanding from limited impact to widespread presence. The focus of the sentence is more on the *extent* and *distribution* of the problem, not just the *magnitude* of the impact.  'Localized' directly addresses the scope, while 'insignificant' and 'negligible' address the severity.\n    * **D. detectable:** 'Detectable' is the least fitting option.  The sentence is not about whether microplastics can be detected, but about the *extent* and *impact* of their presence.  Saying the prevalence is 'far from detectable' doesn't make logical sense in the context of the sentence. It would imply that microplastics are very difficult to detect, which is not the point being made. The research is highlighting that they *are* prevalent and being consumed, implying they *are* detectable.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues.\n\n5. **Difficulty Level:** The 'Hard' difficulty level is appropriate. While the vocabulary is not overly complex, choosing the most precise word ('localized') requires careful consideration of the context and the nuances of each option. Students need to understand the subtle difference between the scope of the problem (localized vs. widespread) and the magnitude of the impact (insignificant vs. significant).  It tests nuanced vocabulary in context, which is a hallmark of harder SAT Reading & Writing questions.\n\nIn conclusion, the question is a valid and well-designed SAT question. 'Localized' is the best answer, and while 'insignificant' and 'negligible' are plausible distractors, they are not as contextually precise as 'localized'. 'Detectable' is clearly incorrect."
+    }
+  },
+  {
+    "question_id": 978677,
+    "question_text": "The following text is from a science article discussing the impact of urbanization on local climates...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid, assuming the missing text discusses how urbanization exacerbates certain climate effects. \n\n1. **Clarity and Sense:** The question makes sense as a vocabulary-in-context question. It asks for the best word to fill a blank in a science article about urbanization and climate. Without the text, we must assume a context where 'intensifies' is the most appropriate word. Given the topic, it's highly likely the text describes how urbanization *increases* or *strengthens* certain climate phenomena like the urban heat island effect. \n\n2. **Correctness of Option A (Intensifies):**  'Intensifies' is likely correct. Urbanization generally *intensifies* negative climate impacts in local areas, such as the urban heat island effect, increased runoff, and altered wind patterns.  If the text discusses these common impacts, 'intensifies' would be the most fitting word to describe the effect of urbanization.\n\n3. **Incorrectness of Other Options:**\n    * **B. Initiates:** While urbanization *initiates* changes in the landscape that *lead to* climate effects, 'intensifies' is a more precise word to describe the *impact* on existing or potential climate phenomena. 'Initiates' suggests starting something entirely new, whereas 'intensifies' suggests making something stronger, which is often the case with urbanization's impact on local climates (e.g., intensifying the heat island effect). In many contexts, 'intensifies' is a better fit than 'initiates' when discussing the degree of impact.  It's plausible as a distractor, but less accurate than 'intensifies'.\n    * **C. Reverses:** Urbanization does not *reverse* negative climate impacts; it generally exacerbates them. This option is clearly incorrect and serves as a strong distractor for students who might not fully understand the context.\n    * **D. Monitors:** 'Monitors' is a verb related to observation and study, not to the impact of urbanization itself. While scientists might *monitor* the effects of urbanization on climate, the sentence structure likely requires a verb that describes the *action* of urbanization on climate, not what we do to study it. This option is also clearly incorrect in context.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question as presented. The question is clearly written and the options are formatted correctly.\n\n5. **Difficulty Level (Hard):** 'Hard' is an appropriate difficulty level. While 'intensifies' is not an extremely obscure word, determining the most precise word in context requires careful reading comprehension and vocabulary understanding.  Students need to understand the general impacts of urbanization on climate and differentiate between the nuances of 'intensifies,' 'initiates,' 'reverses,' and 'monitors' in this specific context.  It's a reasonable challenge for the 'Hard' difficulty level on the SAT Reading & Writing section.\n\n**Overall:** The question appears to be a valid SAT-style vocabulary-in-context question. Assuming the missing text is about the typical impacts of urbanization on local climates, 'intensifies' is the most accurate answer, and the other options are plausible but incorrect distractors. The difficulty level is also appropriate."
+    }
+  }
+]

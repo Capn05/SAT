@@ -1,0 +1,90 @@
+[
+  {
+    "question_id": 150226,
+    "question_text": "The graph of a system of a linear equation and a nonlinear equation is shown. What is the solution (...",
+    "issues": [
+      "The phrase '(മു ഗു)' in the question text is nonsensical and likely a character encoding error. It should be replaced with the word 'solution' or 'solutions'.",
+      "The question asks for 'the solution', implying a unique solution. However, systems of linear and nonlinear equations can have multiple solutions. If the graph shows multiple intersection points, the question is ambiguous unless it is implied to select one of the intersection points from the options.",
+      "Without seeing the actual graph (placeholder_image_url_1.png), it's impossible to definitively confirm if option C (3, 2) is the *only* correct solution and if options A, B, and D are definitively incorrect. It is assumed based on the 'Easy' difficulty and single correct answer format of SAT that the graph is designed to have (3, 2) as the visually clear and intended solution among the provided options, and other options are not visually represented as intersection points on the graph.",
+      "If the graph actually shows other intersection points corresponding to options A, B, or D, then the question is flawed as it implies a single solution while multiple options might be valid."
+    ]
+  },
+  {
+    "question_id": 115741,
+    "question_text": "$$|\\% - 2| = \\%^2 - 4$$ \\n\\n$$\\mathsf{What \\text{\\\\textquotedblleft}values\\text{\\\\textquotedblright{...",
+    "issues": [
+      "The question text contains unnecessary and distracting formatting issues, such as excessive use of LaTeX commands for quotation marks and the use of \\\\\\\\\\mathsf which is not needed. Specifically, the phrases \\\\\\\\text{\\\\\\\\textquotedblleft}values\\\\\\\\text{\\\\\\\\textquotedblright{}}, \\\\\\\\text{\\\\\\\\textless{}\\\\\\\\%\\textgreater{}}, and \\\\\\\\text{\\\\\\\\textquotedblleft}satisfy\\\\\\\\text{\\\\\\\\textquotedblleft{}}\\\\\\\\\\mathsf{the}\\\\\\\\\\mathsf{equation\\\\\\\\text{\\\\\\\\textquotedblright{}}} are poorly formatted and reduce clarity.",
+      "While mathematically the use of '%' as a variable is acceptable, it is unconventional and might be confusing or distracting for students in a standardized test setting. Using 'x' or another standard variable would improve clarity.",
+      "The question, despite the formatting issues, is mathematically solvable and has a correct answer among the options. However, the presentation detracts from the question's quality.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 907944,
+    "question_text": "In the xy-plane, what is a possible y-coordinate of a point of intersection of the graphs of $y = (x...",
+    "issues": [
+      "Option B is also a possible y-coordinate of a point of intersection, making options A and B both correct. In a standard SAT multiple-choice question, there should ideally be only one correct answer among the options provided. While the question asks for 'a possible y-coordinate', implying there could be more than one, in the context of single-best-answer multiple choice tests like the SAT, this question is flawed because it has more than one correct option presented, but only option A is marked as correct."
+    ]
+  },
+  {
+    "question_id": 448022,
+    "question_text": "A solution to the given system of equations is (x,y). Which of the following is a possible value of ...",
+    "issues": [
+      "The question is ambiguous because the variable 'y' is introduced in the question stem and options, but the given system of equations only involves 'χ' and 'ω' (or 'x' and 'ω' if we assume 'χ' is a typo for 'x'). There is no equation or constraint provided for 'y', making 'y' effectively a free variable. Consequently, multiple values for 'xy' are possible, and the question does not have a single definitive answer without making unstated assumptions about the relationship between 'x' and 'y'.",
+      "The use of the Greek letter 'χ' instead of 'x' is unusual and could be a typo or cause confusion for students. Similarly, 'ω' is used without context; while it could be intended as a parameter, it is not explicitly defined, which adds to the ambiguity.",
+      "If we assume 'χ' is 'x' and solve the system with x=3 in the first equation, we get 3<sup>ω</sup> = 9*3 = 27, which implies 3<sup>ω</sup> = 3<sup>3</sup>, so ω = 3.  With ω=3, the first equation becomes x<sup>3</sup> = 9x, which simplifies to x<sup>3</sup> - 9x = 0 or x(x<sup>2</sup> - 9) = 0. This gives solutions x = 0, x = 3, and x = -3. However, the second equation explicitly states x = 3, so x=3 is the intended solution for 'x'.",
+      "Since 'y' is unconstrained, options A, B, C, and D could all be possible values of 'xy' depending on the value of 'y'. For example, if y=0, xy=0 (Option A); if y=3, xy=9 (Option B); if y=6, xy=18 (Option C); if y=9, xy=27 (Option D).  Therefore, marking only option B as correct is misleading unless there is an unstated assumption that 'y' should be related to 'x' in a specific way (e.g., y=x or y=3), which is not justified by the question text.",
+      "The question is not clearly written due to the ambiguity surrounding 'y' and the lack of context for 'ω'. It does not adhere to the standard of clarity expected in SAT questions."
+    ]
+  },
+  {
+    "question_id": 238136,
+    "question_text": "$$\\frac{\\text{miles} \\cdot \\text{123456789}}{3x^2 - 7x + 2 = 0}$$\\n\\n2.19\\n\\n$$\\mathsf{What are the ...",
+    "issues": [
+      "The question text includes irrelevant and confusing information: the fraction '$\\\\\\\\frac{\\\\\\\\text{miles} \\\\\\\\cdot \\\\\\\\text{123456789}}{3x^2 - 7x + 2 = 0}$' and the number '2.19' are extraneous and do not contribute to the mathematical problem. The presence of 'miles' is particularly nonsensical in this context.",
+      "There is a typographical error in the word 'given', which is misspelled as 'giv\\\\\\\\\\eun'.",
+      "While option A is mathematically correct for the quadratic equation $3x^2 - 7x + 2 = 0$, the overall question presentation is poor due to the extraneous and confusing elements.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 431251,
+    "question_text": "In the $xy$-plane, a line with equation $3y = -9$ intersects a parabola at exactly one point. If the...",
+    "issues": [
+      "The option marked as correct (B) is mathematically incorrect. For option B (m=4), the line and parabola do not intersect at exactly one point. In fact, they do not intersect at all. The mathematically correct value for m that results in exactly one intersection point is $4\\\\sqrt{2}$, which is not among the options. Therefore, the question is flawed due to incorrect answer options."
+    ]
+  },
+  {
+    "question_id": 716276,
+    "question_text": "$$\frac{9}{x^2 - 14x + 49} = 1$$   If x is a solution to the given equation, which of the following i...",
+    "issues": [
+      "Option B (-3) is also a correct answer, but it is not marked as correct. The question asks for a 'possible value', and there are two possible values among the options (3 and -3).  This makes the question ambiguous or incorrectly keyed, as it implies only one correct answer when there are multiple valid options present."
+    ]
+  },
+  {
+    "question_id": 43707,
+    "question_text": "Which of the following is a solution to the equation $$3x^2 - 5 = x + 1$$?...",
+    "issues": [
+      "Option B is also a correct solution to the equation, meaning there are two correct answers instead of one. This violates the standard format of single correct answer multiple-choice questions on the SAT."
+    ]
+  },
+  {
+    "question_id": 491042,
+    "question_text": "At $\\phi - \\lambda = \\frac{4}{\\tau - \\lambda}$, what is $\\tau$ in terms of $\\psi$?\\n\\n$$\\mathbf{A} \\...",
+    "issues": [
+      "Variable mismatch: The equation uses $\\\\\\\\\\phi$ but the question asks for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$. Assuming $\\\\\\\\\\phi$ is a typo and should be $\\\\\\\\\\psi$.",
+      "Question asks for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$ but the given equation $\\\\\\\\\\psi - \\\\\\\\\\lambda = \\\\\\\\frac{4}{\\\\\\\\tau - \\\\\\\\\\lambda}$ involves an additional variable $\\\\\\\\\\lambda$. It is impossible to express $\\\\\\\\tau$ solely in terms of $\\\\\\\\\\psi$ from this equation without further information or assumptions about $\\\\\\\\\\lambda$.",
+      "For option C to be mathematically correct as the solution for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$ only, there must be an implicit assumption that $\\\\\\\\\\lambda$ is a constant that simplifies the equation to allow for an answer in terms of $\\\\\\\\\\psi$ alone. If we assume $\\\\\\\\\\lambda = 1$, then option C becomes the correct answer. However, this assumption is not stated in the question, making it ambiguous and potentially misleading.",
+      "The question is poorly written due to the ambiguity regarding the variable $\\\\\\\\\\lambda$ and the expectation of an answer in terms of $\\\\\\\\\\psi$ only.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 583146,
+    "question_text": "In the xy-plane, the graph of $$y = x^2 - 5x + 7$$ intersects line q at (2, c) and (4, d), where c a...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. The correct slope is 1, which is not provided as an option.",
+      "The difficulty level 'Hard' might be slightly overstated; 'Medium' could be more appropriate."
+    ]
+  }
+]

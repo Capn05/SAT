@@ -1,0 +1,168 @@
+[
+  {
+    "question_id": 360318,
+    "question_text": "A bakery produces 400 loaves of bread each day. To ensure quality, a random sample of 25 loaves is s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. To estimate the total number of underbaked loaves, we can set up a proportion based on the sample. In the sample of 25 loaves, 3 were underbaked. This gives a proportion of underbaked loaves in the sample as 3/25. To estimate the total number of underbaked loaves out of the 400 produced, we apply this proportion to the total production: (3/25) * 400 = 48. Option C, 48, is indeed the correct answer. The other options are clearly incorrect as they do not represent a reasonable estimation based on the sample proportion. Option A (3) is simply the number of underbaked loaves in the sample, not an estimate for the total production. Options B (12) and D (75) do not follow logically from a simple proportional estimation. The difficulty level 'Easy' is appropriate as this is a straightforward application of sample proportions, a concept typically considered easy within SAT math problem-solving."
+    }
+  },
+  {
+    "question_id": 403056,
+    "question_text": "A quality control inspector at a factory randomly sampled 60 light bulbs and found that 3 were defec...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The marked option B (150) is indeed the correct answer, calculated by finding the proportion of defective bulbs in the sample (3/60 = 1/20) and applying this proportion to the total daily production (3000 bulbs).  (1/20) * 3000 = 150. Options A, C, and D are clearly incorrect as they deviate significantly from the expected proportional value. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' for an SAT math question, as it involves a straightforward proportional reasoning."
+    }
+  },
+  {
+    "question_id": 464331,
+    "question_text": "A factory produces a batch of 1500 smartphones. To estimate the number of defective smartphones in t...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is statistically flawed and misleading. The method to estimate the total number of defective smartphones based on directly scaling the sample mean by the batch size is incorrect in a statistical context. While arithmetically leading to the marked answer, the underlying logic is not sound for estimating population parameters from sample statistics.",
+        " is unclear. It's not explicitly stated if these numbers represent counts from multiple samples or if there's a misunderstanding of what these numbers represent within a single sample of 10.",
+        "The question implies a direct proportionality that is not statistically accurate for estimating the total number of defective items in a larger population based on a small sample. A more statistically sound approach would involve calculating the sample proportion of defective smartphones and applying that proportion to the batch size, or considering confidence intervals, which are not implied by the 'Easy' difficulty level but are more relevant to estimation problems.",
+        "The correct answer is only 'correct' if we assume a flawed and simplistic interpretation of using the sample mean directly scaled to the batch size, which is not a standard or statistically valid method for this type of estimation.",
+        "B"
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 287979,
+    "question_text": "At a large high school, 350 students were selected at random and were asked in a survey about their ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense in the context of SAT Math Problem-Solving and Data Analysis. Option C is the correct interpretation of margin of error. A margin of error of 4% means that the true population percentage is likely to be within 4 percentage points of the sample percentage. In this case, the sample percentage is 60%, so the plausible range for the population percentage is 60% - 4% = 56% to 60% + 4% = 64%. Option C accurately reflects this understanding. Options A and B are incorrect because they present a definitive value (60% or less than 60%) without acknowledging the uncertainty introduced by the margin of error. Option D is incorrect because it attempts to apply the percentage range to the number of students who reported Science as their favorite subject in the entire school, which is not directly interpretable from the given margin of error which applies to the percentage. The margin of error is about the percentage in the population, not the count.  The difficulty level 'Easy' is appropriate as it tests a fundamental understanding of margin of error, a concept typically covered in introductory statistics within the scope of SAT Math."
+    }
+  },
+  {
+    "question_id": 303649,
+    "question_text": "In a survey of high school students, the average time spent studying per week from a random sample w...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The margin of error of 4 hours around the sample average of 25 hours indicates that the true population average is likely to be within the range of 25 - 4 = 21 hours and 25 + 4 = 29 hours. Option C, 'It is between 21 hours and 29 hours,' accurately reflects this interpretation of margin of error. Options A and B are incorrect because they are too restrictive and only consider one side of the margin of error. Option D is incorrect as it suggests the true average is outside the range defined by the margin of error, which is the opposite of what margin of error implies. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a basic understanding of margin of error, a fundamental concept in data analysis often covered in introductory statistics or SAT-level math."
+    }
+  },
+  {
+    "question_id": 32383,
+    "question_text": "A school has 600 students. Ms. Lee randomly surveyed 30 students and found that 12 of them are membe...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To estimate the total number of Math Club members, we can set up a proportion based on the survey results. In the survey, 12 out of 30 students are members of the Math Club. This gives us a proportion of 12/30, which simplifies to 2/5 or 0.4. To estimate the total number of Math Club members in the entire school of 600 students, we multiply this proportion by the total number of students: 0.4 * 600 = 240. Therefore, the best estimate is 240, which corresponds to option B, the marked correct answer. The other options (A, C, and D) are not the most direct estimate based on the given sample proportion and are thus clearly incorrect in the context of a straightforward estimation problem at this difficulty level. The difficulty level 'Easy' is appropriate as it involves a single-step proportion calculation."
+    }
+  },
+  {
+    "question_id": 631266,
+    "question_text": "A quality control inspector at a factory randomly sampled 250 light bulbs from a recent production b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense in the context of sample statistics. Option C, 'Approximately 8% of the light bulbs in this production batch are defective,' is the best conclusion supported by the sample data. The sample of 250 light bulbs from this batch showed 8% defective, making 'approximately 8%' a reasonable estimate for the entire batch. \n\nOption A is incorrect because sample data cannot definitively state the exact percentage for the entire population (all light bulbs produced by the factory). It's an estimation, not an exact value. \n\nOption B, while possibly true, is not the best conclusion *supported by the sample data*. The sample data directly suggests around 8%, not just 'fewer than 10%'. It's a weaker and less precise conclusion than option C. \n\nOption D is incorrect because the sample is drawn from one factory's production batch, and we cannot generalize this result to all light bulbs produced by all factories. This is an overgeneralization not supported by the given data. \n\nThere are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it tests basic understanding of statistical inference from samples without requiring complex calculations."
+    }
+  },
+  {
+    "question_id": 477548,
+    "question_text": "A technology company surveyed a random sample of its employees about their daily commute time. The e...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and tests the understanding of margin of error in the context of sample statistics. Option D is the correct interpretation of margin of error, which provides a plausible range for the population mean, not for individual data points or certainty about all data points. Options A, B, and C are misinterpretations of margin of error. Option A incorrectly applies the margin of error to individual commute times. Option B misunderstands the mean as a common individual value. Option C makes an unwarranted claim about the minimum commute time based on the margin of error for the mean. The difficulty level 'Medium' is appropriate as it requires understanding of statistical concepts beyond simple calculations."
+    }
+  },
+  {
+    "question_id": 474280,
+    "question_text": "A survey of 600 adults who read books was conducted randomly. The survey found that 25% of the sampl...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and logically sound. The margin of error of 3% means that the true percentage of all adults who read books who prefer mystery novels is likely to be within 3 percentage points of the sample percentage of 25%.  Therefore, the plausible range is between 25% - 3% = 22% and 25% + 3% = 28%. Option B, 'Between 22% and 28% of all adults who read books prefer mystery novels,' accurately reflects this plausible range and is therefore the correct answer. Options A, C, and D are incorrect because they fall outside or partially outside this plausible range. The difficulty level of 'Medium' is appropriate as it requires understanding and applying the concept of margin of error, which is a standard topic in introductory statistics and relevant to the SAT's Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 228382,
+    "question_text": "A factory produces 5,000 smartphones in a day. To estimate the percentage of defective smartphones p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the plausible range for the actual number of defective smartphones (d), we first need to determine the range of the percentage of defective smartphones based on the sample percentage and margin of error. The sample percentage is 4% with a margin of error of 1.5%. This means the actual percentage of defective smartphones is likely to be within the range of (4% - 1.5%) to (4% + 1.5%), which is 2.5% to 5.5%.  \n\nNow, we apply this percentage range to the total number of smartphones produced in a day, which is 5,000. \n\nLower bound of defective smartphones: 2.5% of 5,000 = (0.025) * 5,000 = 125\nUpper bound of defective smartphones: 5.5% of 5,000 = (0.055) * 5,000 = 275\n\nTherefore, the plausible range for the actual number of defective smartphones (d) is 125 < d < 275. Option B, which states 125 < d < 275, is the correct answer. \n\nLet's check other options:\nOption A: d > 300 - This is outside the plausible range (125-275) and is therefore incorrect.\nOption C: 50 < d < 150 - This range is partially overlapping with the plausible range but is narrower and does not fully capture the most plausible range derived from the margin of error. While 125 is included, values below 125 are less plausible based on the given margin of error.\nOption D: d < 100 - This is completely outside the plausible range (125-275) and is incorrect.\n\nThe question is grammatically correct, and the difficulty level is appropriately classified as Medium for the SAT, requiring understanding of sample statistics and margin of error. Option B is the only option that accurately reflects the plausible range for the actual number of defective smartphones based on the given data."
+    }
+  },
+  {
+    "question_id": 31236,
+    "question_text": "A quality control inspector examined a random sample of 150 light bulbs from a recent production bat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Option C is the correct answer because it provides the best estimate for the number of defective bulbs in the entire batch based on the sample proportion. The proportion of defective bulbs in the sample is 6/150 = 0.04 or 4%. Applying this proportion to the total production of 5,000 bulbs gives an estimate of 0.04 * 5,000 = 200 defective bulbs. Options A and B are incorrect because they claim to know the exact number of defective bulbs, which is not possible to determine with certainty from a sample. Option D is incorrect because it incorrectly assumes the number of defective bulbs in the sample is the best estimate for the entire batch, rather than scaling up the proportion. The difficulty level of 'Medium' is appropriate as it requires a basic understanding of sample proportions and estimation, which is a standard topic for the SAT Math section."
+    }
+  },
+  {
+    "question_id": 925193,
+    "question_text": "A company wants to estimate the number of customers who prefer their new Chocolate flavored snack ba...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the best estimate, we first calculate the proportion of customers in the sample who prefer the Chocolate flavored snack bar. In the sample of 500 customers, 160 + 80 = 240 customers prefer Chocolate. The proportion is 240/500 = 0.48. To estimate the number of customers who prefer Chocolate in the total customer base of 25,000, we multiply this proportion by the total customer base: 0.48 * 25,000 = 12,000. Option A, 12,000, is the correct answer. The other options are clearly incorrect as they are not the result of a correct proportional calculation based on the sample data. The difficulty level 'Medium' is appropriate for this question as it involves basic proportion and scaling, which is a standard concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 414228,
+    "question_text": "Researchers conducted a survey on breakfast habits and academic performance among 500 randomly selec...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The estimated percent of US high school students who eat breakfast regularly and achieve good grades is 30%, with a margin of error of 4%. This means the true percentage is likely to be within the range of 30% - 4% = 26% and 30% + 4% = 34%.Option A is incorrect because it misinterprets the margin of error as a percentage of students within the sample who are misclassified, which is not the meaning of margin of error.Option B is correct. The margin of error suggests that we are reasonably confident that the true percentage lies within the interval [26%, 34%]. Therefore, it is unlikely (and in the context of SAT questions, often interpreted as 'not possible' within the given confidence level) that the true percentage is less than 26%. While statistically, 'not possible' is too strong a statement, in the simplified context of SAT margin of error questions, it is often used to indicate values outside the plausible range defined by the margin of error.Option C is incorrect because while 34% is within the plausible range, the margin of error indicates a range of values, not that the true percentage is exactly at the upper bound.Option D is incorrect because 35% is outside the range of 30% ± 4%. Therefore, it is *not* doubtful, but rather quite unlikely (or 'doubtful') that the true percentage is 35%.  However, Option B is a stronger and more direct statement related to the lower bound of the confidence interval implied by the margin of error, making it the better answer in the context of SAT questions focusing on margin of error interpretation. Option B directly addresses the lower limit of the plausible range, which is a common focus in such questions.The question is clearly written and makes sense. The difficulty level is appropriate for 'Hard' as it requires understanding of margin of error and its implications. All options except B are clearly incorrect or less optimal interpretations of margin of error in this context."
+    }
+  },
+  {
+    "question_id": 263759,
+    "question_text": "A market research company interviewed 500 randomly selected adults in a city and asked about their p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the best estimate of the difference in the city's adult population, we first calculate the difference in the sample: 280 (Movies/TV Shows) - 120 (Music) = 160. This means in the sample of 500 adults, 160 more people prefer movies/TV shows over music. To scale this up to the city's population of 2 million, we find the proportion of this difference in the sample: 160 / 500. Then, we multiply this proportion by the city's population: (160 / 500) * 2,000,000 = 0.32 * 2,000,000 = 640,000. To express this in millions, we divide by 1,000,000: 640,000 / 1,000,000 = 0.64 million. Rounding to the nearest whole number as requested in the question (although it likely means nearest tenth of a million given the options), we get 0.6 million. Option A (0.6) is indeed the correct answer. Options B, C, and D are incorrect as they do not match the calculated estimate. The difficulty level 'Hard' is appropriate as it requires understanding of sample statistics and scaling to a population."
+    }
+  },
+  {
+    "question_id": 390823,
+    "question_text": "The results of two random surveys of customer satisfaction with a new online service are shown above...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and tests the understanding of margin of error in the context of surveys. The margin of error is inversely related to the square root of the sample size. This means that a smaller sample size will result in a larger margin of error, assuming all other factors (like confidence level and population variability, which are implied to be constant here as 'same method' is used) are equal.Option D, 'Survey P had a smaller sample size,' is the most direct and appropriate reason for Survey P having a larger margin of error compared to Survey Q.Let's analyze why other options are less appropriate or incorrect:* **Option A: Survey P had a smaller number of respondents who completed the entire survey.** This option is related to sample size. A smaller number of completed surveys effectively means a smaller sample size. While technically related and could contribute to a larger margin of error, it is less direct and precise than option D. Option D directly states 'smaller sample size' which is the core statistical concept.  In the context of choosing the *most appropriate* reason, option D is stronger.* **Option B: Survey P had a lower percent of customers reporting satisfaction.** While the percentage of satisfaction can slightly influence the margin of error (as it affects the standard deviation of the sample proportion, which is maximized at 50%), the impact of sample size is generally much more significant.  For a given sample size, the margin of error is largest when the sample proportion is close to 0.5 and smallest when it's close to 0 or 1. However, the question asks for the *most appropriate reason* for a *greater* margin of error, and sample size is the primary and most direct factor influencing margin of error in typical introductory statistical contexts, especially in SAT level questions.  It's less likely that the difference in satisfaction percentage alone would be the *most appropriate* explanation for a larger margin of error when sample sizes could be different.* **Option C: Survey P had a larger sample size.** This option is incorrect because a larger sample size leads to a *smaller* margin of error, not a larger one. This is the opposite of what the question is asking.Therefore, Option D is the most accurate and appropriate reason for Survey P having a larger margin of error. The question is valid, and the marked correct answer is indeed the best answer. The difficulty level 'Hard' is appropriate as it requires understanding of the concept of margin of error and its relationship with sample size."
+    }
+  },
+  {
+    "question_id": 399443,
+    "question_text": "At Northwood High School, a survey of 50 randomly selected students found that 42 percent of them pr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the number of students who do *not* prefer basketball, we first need to find the percentage of students who do not prefer basketball. If 42 percent prefer basketball, then 100% - 42% = 58% do not prefer basketball.  Next, we calculate 58% of the total student population of 1500.  58% of 1500 = 0.58 * 1500 = 870. Therefore, the best estimate for the number of students who do not prefer basketball is 870, which corresponds to option C. Option B (630) represents the number of students who *do* prefer basketball (42% of 1500), which is a common mistake. Options A and D are not directly derived from a simple miscalculation based on the given information, but they are clearly incorrect when compared to the correct calculation. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of percentages and representative samples in the context of data analysis."
+    }
+  }
+]

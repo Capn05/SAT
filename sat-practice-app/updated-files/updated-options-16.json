@@ -1,0 +1,1570 @@
+[
+  {
+    "id": 6188670,
+    "question_id": 618867,
+    "value": "A",
+    "label": "h = 20m + 500",
+    "is_correct": true
+  },
+  {
+    "id": 6188671,
+    "question_id": 618867,
+    "value": "B",
+    "label": "h = 500m + 20",
+    "is_correct": false
+  },
+  {
+    "id": 6188672,
+    "question_id": 618867,
+    "value": "C",
+    "label": "h = 520m",
+    "is_correct": false
+  },
+  {
+    "id": 6188673,
+    "question_id": 618867,
+    "value": "D",
+    "label": "h = 500 - 20m",
+    "is_correct": false
+  },
+  {
+    "id": 9154160,
+    "question_id": 915416,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 9154161,
+    "question_id": 915416,
+    "value": "B",
+    "label": "$\\frac{9}{2}$",
+    "is_correct": true
+  },
+  {
+    "id": 9154162,
+    "question_id": 915416,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 9154163,
+    "question_id": 915416,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 5558600,
+    "question_id": 555860,
+    "value": "A",
+    "label": "The cost of buying apples is $2.50.",
+    "is_correct": false
+  },
+  {
+    "id": 5558601,
+    "question_id": 555860,
+    "value": "B",
+    "label": "The total cost of buying apples is $2.50n.",
+    "is_correct": false
+  },
+  {
+    "id": 5558602,
+    "question_id": 555860,
+    "value": "C",
+    "label": "Each apple costs $2.50.",
+    "is_correct": true
+  },
+  {
+    "id": 5558603,
+    "question_id": 555860,
+    "value": "D",
+    "label": "The number of apples that can be bought for $2.50.",
+    "is_correct": false
+  },
+  {
+    "id": 8815500,
+    "question_id": 881550,
+    "value": "A",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 8815501,
+    "question_id": 881550,
+    "value": "B",
+    "label": "-3",
+    "is_correct": false
+  },
+  {
+    "id": 8815502,
+    "question_id": 881550,
+    "value": "C",
+    "label": "-1",
+    "is_correct": true
+  },
+  {
+    "id": 8815503,
+    "question_id": 881550,
+    "value": "D",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 1814160,
+    "question_id": 181416,
+    "value": "A",
+    "label": "$2.00",
+    "is_correct": true
+  },
+  {
+    "id": 1814161,
+    "question_id": 181416,
+    "value": "B",
+    "label": "$2.50",
+    "is_correct": false
+  },
+  {
+    "id": 1814162,
+    "question_id": 181416,
+    "value": "C",
+    "label": "$3.50",
+    "is_correct": false
+  },
+  {
+    "id": 1814163,
+    "question_id": 181416,
+    "value": "D",
+    "label": "$5.00",
+    "is_correct": false
+  },
+  {
+    "id": 3356430,
+    "question_id": 335643,
+    "value": "A",
+    "label": "f(x) = 2x + 3",
+    "is_correct": false
+  },
+  {
+    "id": 3356431,
+    "question_id": 335643,
+    "value": "B",
+    "label": "f(x) = 3x + 1",
+    "is_correct": false
+  },
+  {
+    "id": 3356432,
+    "question_id": 335643,
+    "value": "C",
+    "label": "f(x) = 3x + 2",
+    "is_correct": true
+  },
+  {
+    "id": 3356433,
+    "question_id": 335643,
+    "value": "D",
+    "label": "f(x) = 4x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 4860490,
+    "question_id": 486049,
+    "value": "A",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 4860491,
+    "question_id": 486049,
+    "value": "B",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 4860492,
+    "question_id": 486049,
+    "value": "C",
+    "label": "11",
+    "is_correct": true
+  },
+  {
+    "id": 4860493,
+    "question_id": 486049,
+    "value": "D",
+    "label": "13",
+    "is_correct": false
+  },
+  {
+    "id": 6105520,
+    "question_id": 610552,
+    "value": "A",
+    "label": "The florist creates 12.50 bouquets per day.",
+    "is_correct": false
+  },
+  {
+    "id": 6105521,
+    "question_id": 610552,
+    "value": "B",
+    "label": "The cost to create one bouquet of roses is $12.50.",
+    "is_correct": true
+  },
+  {
+    "id": 6105522,
+    "question_id": 610552,
+    "value": "C",
+    "label": "The florist sells each bouquet for $12.50.",
+    "is_correct": false
+  },
+  {
+    "id": 6105523,
+    "question_id": 610552,
+    "value": "D",
+    "label": "The cost of roses increased by $12.50 this week.",
+    "is_correct": false
+  },
+  {
+    "id": 1651600,
+    "question_id": 165160,
+    "value": "A",
+    "label": "104",
+    "is_correct": false
+  },
+  {
+    "id": 1651601,
+    "question_id": 165160,
+    "value": "B",
+    "label": "188",
+    "is_correct": true
+  },
+  {
+    "id": 1651602,
+    "question_id": 165160,
+    "value": "C",
+    "label": "271",
+    "is_correct": false
+  },
+  {
+    "id": 1651603,
+    "question_id": 165160,
+    "value": "D",
+    "label": "388",
+    "is_correct": false
+  },
+  {
+    "id": 3735870,
+    "question_id": 373587,
+    "value": "A",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 3735871,
+    "question_id": 373587,
+    "value": "B",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 3735872,
+    "question_id": 373587,
+    "value": "C",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 3735873,
+    "question_id": 373587,
+    "value": "D",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 2380840,
+    "question_id": 238084,
+    "value": "A",
+    "label": "$9",
+    "is_correct": false
+  },
+  {
+    "id": 2380841,
+    "question_id": 238084,
+    "value": "B",
+    "label": "$12",
+    "is_correct": false
+  },
+  {
+    "id": 2380842,
+    "question_id": 238084,
+    "value": "C",
+    "label": "$15",
+    "is_correct": true
+  },
+  {
+    "id": 2380843,
+    "question_id": 238084,
+    "value": "D",
+    "label": "$18",
+    "is_correct": false
+  },
+  {
+    "id": 2370490,
+    "question_id": 237049,
+    "value": "A",
+    "label": "f(x) = 12000 - 300x",
+    "is_correct": false
+  },
+  {
+    "id": 2370491,
+    "question_id": 237049,
+    "value": "B",
+    "label": "f(x) = 300x",
+    "is_correct": false
+  },
+  {
+    "id": 2370492,
+    "question_id": 237049,
+    "value": "C",
+    "label": "f(x) = 12000 + 300x",
+    "is_correct": true
+  },
+  {
+    "id": 2370493,
+    "question_id": 237049,
+    "value": "D",
+    "label": "f(x) = 12300x",
+    "is_correct": false
+  },
+  {
+    "id": 1375470,
+    "question_id": 137547,
+    "value": "A",
+    "label": "y = 3.50x",
+    "is_correct": false
+  },
+  {
+    "id": 1375471,
+    "question_id": 137547,
+    "value": "B",
+    "label": "y = 2.25x + 3.50",
+    "is_correct": true
+  },
+  {
+    "id": 1375472,
+    "question_id": 137547,
+    "value": "C",
+    "label": "y = 5.75x",
+    "is_correct": false
+  },
+  {
+    "id": 1375473,
+    "question_id": 137547,
+    "value": "D",
+    "label": "y = 3.50x + 2.25",
+    "is_correct": false
+  },
+  {
+    "id": 8781370,
+    "question_id": 878137,
+    "value": "A",
+    "label": "-100",
+    "is_correct": false
+  },
+  {
+    "id": 8781371,
+    "question_id": 878137,
+    "value": "B",
+    "label": "50",
+    "is_correct": true
+  },
+  {
+    "id": 8781372,
+    "question_id": 878137,
+    "value": "C",
+    "label": "150",
+    "is_correct": false
+  },
+  {
+    "id": 8781373,
+    "question_id": 878137,
+    "value": "D",
+    "label": "250",
+    "is_correct": false
+  },
+  {
+    "id": 9563790,
+    "question_id": 956379,
+    "value": "A",
+    "label": "$g(x) = -2x - 5$",
+    "is_correct": false
+  },
+  {
+    "id": 9563791,
+    "question_id": 956379,
+    "value": "B",
+    "label": "$g(x) = -2x + 5$",
+    "is_correct": true
+  },
+  {
+    "id": 9563792,
+    "question_id": 956379,
+    "value": "C",
+    "label": "$g(x) = 2x - 5$",
+    "is_correct": false
+  },
+  {
+    "id": 9563793,
+    "question_id": 956379,
+    "value": "D",
+    "label": "$g(x) = 2x + 5$",
+    "is_correct": false
+  },
+  {
+    "id": 752810,
+    "question_id": 75281,
+    "value": "A",
+    "label": "$21.50",
+    "is_correct": true
+  },
+  {
+    "id": 752811,
+    "question_id": 75281,
+    "value": "B",
+    "label": "$20.25",
+    "is_correct": false
+  },
+  {
+    "id": 752812,
+    "question_id": 75281,
+    "value": "C",
+    "label": "$33.00",
+    "is_correct": false
+  },
+  {
+    "id": 752813,
+    "question_id": 75281,
+    "value": "D",
+    "label": "$14.25",
+    "is_correct": false
+  },
+  {
+    "id": 402000,
+    "question_id": 40200,
+    "value": "A",
+    "label": "The number of visitors to the museum is predicted to be 10,000 in the year 2015.",
+    "is_correct": false
+  },
+  {
+    "id": 402001,
+    "question_id": 40200,
+    "value": "B",
+    "label": "The number of visitors to the museum is predicted to be 45,000 in the year 2015.",
+    "is_correct": true
+  },
+  {
+    "id": 402002,
+    "question_id": 40200,
+    "value": "C",
+    "label": "The number of visitors to the museum is predicted to be 10,000 in the year 2025.",
+    "is_correct": false
+  },
+  {
+    "id": 402003,
+    "question_id": 40200,
+    "value": "D",
+    "label": "The number of visitors to the museum is predicted to be 45,000 in the year 2025.",
+    "is_correct": false
+  },
+  {
+    "id": 2401530,
+    "question_id": 240153,
+    "value": "A",
+    "label": "A line with a positive slope and y-intercept at (0, 3).",
+    "is_correct": false
+  },
+  {
+    "id": 2401531,
+    "question_id": 240153,
+    "value": "B",
+    "label": "A line with a negative slope and y-intercept at (0, -3).",
+    "is_correct": false
+  },
+  {
+    "id": 2401532,
+    "question_id": 240153,
+    "value": "C",
+    "label": "A line with a negative slope and y-intercept at (0, 3).",
+    "is_correct": true
+  },
+  {
+    "id": 2401533,
+    "question_id": 240153,
+    "value": "D",
+    "label": "A line with a positive slope and y-intercept at (3, 0).",
+    "is_correct": false
+  },
+  {
+    "id": 9684870,
+    "question_id": 968487,
+    "value": "A",
+    "label": "g(x) = -5",
+    "is_correct": true
+  },
+  {
+    "id": 9684871,
+    "question_id": 968487,
+    "value": "B",
+    "label": "g(x) = x - 5",
+    "is_correct": false
+  },
+  {
+    "id": 9684872,
+    "question_id": 968487,
+    "value": "C",
+    "label": "g(x) = -2x - 5",
+    "is_correct": false
+  },
+  {
+    "id": 9684873,
+    "question_id": 968487,
+    "value": "D",
+    "label": "g(x) = 5",
+    "is_correct": false
+  },
+  {
+    "id": 8375180,
+    "question_id": 837518,
+    "value": "A",
+    "label": "-6",
+    "is_correct": false
+  },
+  {
+    "id": 8375181,
+    "question_id": 837518,
+    "value": "B",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 8375182,
+    "question_id": 837518,
+    "value": "C",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 8375183,
+    "question_id": 837518,
+    "value": "D",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 2852270,
+    "question_id": 285227,
+    "value": "A",
+    "label": "f(l) = 30l + 25",
+    "is_correct": true
+  },
+  {
+    "id": 2852271,
+    "question_id": 285227,
+    "value": "B",
+    "label": "f(l) = 25l",
+    "is_correct": false
+  },
+  {
+    "id": 2852272,
+    "question_id": 285227,
+    "value": "C",
+    "label": "f(l) = 25l + 30",
+    "is_correct": false
+  },
+  {
+    "id": 2852273,
+    "question_id": 285227,
+    "value": "D",
+    "label": "f(l) = 55l",
+    "is_correct": false
+  },
+  {
+    "id": 2174210,
+    "question_id": 217421,
+    "value": "A",
+    "label": "200",
+    "is_correct": false
+  },
+  {
+    "id": 2174211,
+    "question_id": 217421,
+    "value": "B",
+    "label": "300",
+    "is_correct": false
+  },
+  {
+    "id": 2174212,
+    "question_id": 217421,
+    "value": "C",
+    "label": "400",
+    "is_correct": true
+  },
+  {
+    "id": 2174213,
+    "question_id": 217421,
+    "value": "D",
+    "label": "500",
+    "is_correct": false
+  },
+  {
+    "id": 1020820,
+    "question_id": 102082,
+    "value": "A",
+    "label": "(0, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 1020821,
+    "question_id": 102082,
+    "value": "B",
+    "label": "(0, -7)",
+    "is_correct": false
+  },
+  {
+    "id": 1020822,
+    "question_id": 102082,
+    "value": "C",
+    "label": "(0, -3)",
+    "is_correct": true
+  },
+  {
+    "id": 1020823,
+    "question_id": 102082,
+    "value": "D",
+    "label": "(0, 3)",
+    "is_correct": false
+  },
+  {
+    "id": 9445930,
+    "question_id": 944593,
+    "value": "A",
+    "label": "19",
+    "is_correct": false
+  },
+  {
+    "id": 9445931,
+    "question_id": 944593,
+    "value": "B",
+    "label": "35",
+    "is_correct": true
+  },
+  {
+    "id": 9445932,
+    "question_id": 944593,
+    "value": "C",
+    "label": "60",
+    "is_correct": false
+  },
+  {
+    "id": 9445933,
+    "question_id": 944593,
+    "value": "D",
+    "label": "95",
+    "is_correct": false
+  },
+  {
+    "id": 9939010,
+    "question_id": 993901,
+    "value": "A",
+    "label": "g(x) = -x + 1",
+    "is_correct": false
+  },
+  {
+    "id": 9939011,
+    "question_id": 993901,
+    "value": "B",
+    "label": "g(x) = -x - 3",
+    "is_correct": false
+  },
+  {
+    "id": 9939012,
+    "question_id": 993901,
+    "value": "C",
+    "label": "g(x) = -x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 9939013,
+    "question_id": 993901,
+    "value": "D",
+    "label": "g(x) = -x + 3",
+    "is_correct": true
+  },
+  {
+    "id": 1277740,
+    "question_id": 127774,
+    "value": "A",
+    "label": "The cost of each cupcake.",
+    "is_correct": false
+  },
+  {
+    "id": 1277741,
+    "question_id": 127774,
+    "value": "B",
+    "label": "The total cost of purchasing one cupcake.",
+    "is_correct": false
+  },
+  {
+    "id": 1277742,
+    "question_id": 127774,
+    "value": "C",
+    "label": "The initial setup fee or base cost, regardless of the number of cupcakes purchased.",
+    "is_correct": true
+  },
+  {
+    "id": 1277743,
+    "question_id": 127774,
+    "value": "D",
+    "label": "The number of cupcakes you can buy for $3.50.",
+    "is_correct": false
+  },
+  {
+    "id": 3302860,
+    "question_id": 330286,
+    "value": "A",
+    "label": "650",
+    "is_correct": false
+  },
+  {
+    "id": 3302861,
+    "question_id": 330286,
+    "value": "B",
+    "label": "800",
+    "is_correct": false
+  },
+  {
+    "id": 3302862,
+    "question_id": 330286,
+    "value": "C",
+    "label": "900",
+    "is_correct": false
+  },
+  {
+    "id": 3302863,
+    "question_id": 330286,
+    "value": "D",
+    "label": "950",
+    "is_correct": true
+  },
+  {
+    "id": 2807760,
+    "question_id": 280776,
+    "value": "A",
+    "label": "$12.50",
+    "is_correct": true
+  },
+  {
+    "id": 2807761,
+    "question_id": 280776,
+    "value": "B",
+    "label": "$7.50",
+    "is_correct": false
+  },
+  {
+    "id": 2807762,
+    "question_id": 280776,
+    "value": "C",
+    "label": "$8.00",
+    "is_correct": false
+  },
+  {
+    "id": 2807763,
+    "question_id": 280776,
+    "value": "D",
+    "label": "$20.00",
+    "is_correct": false
+  },
+  {
+    "id": 4016000,
+    "question_id": 401600,
+    "value": "A",
+    "label": "g(x) = 3x + 5",
+    "is_correct": false
+  },
+  {
+    "id": 4016001,
+    "question_id": 401600,
+    "value": "B",
+    "label": "g(x) = 2x + 3",
+    "is_correct": false
+  },
+  {
+    "id": 4016002,
+    "question_id": 401600,
+    "value": "C",
+    "label": "g(x) = 2x + 5",
+    "is_correct": true
+  },
+  {
+    "id": 4016003,
+    "question_id": 401600,
+    "value": "D",
+    "label": "g(x) = x + 7",
+    "is_correct": false
+  },
+  {
+    "id": 8192800,
+    "question_id": 819280,
+    "value": "A",
+    "label": "The tank will be completely empty after 25 minutes.",
+    "is_correct": true
+  },
+  {
+    "id": 8192801,
+    "question_id": 819280,
+    "value": "B",
+    "label": "The tank is draining at a rate of 25 gallons per minute.",
+    "is_correct": false
+  },
+  {
+    "id": 8192802,
+    "question_id": 819280,
+    "value": "C",
+    "label": "The tank is draining at a rate of 20 gallons per minute.",
+    "is_correct": false
+  },
+  {
+    "id": 8192803,
+    "question_id": 819280,
+    "value": "D",
+    "label": "The tank initially contained 500 gallons of water.",
+    "is_correct": false
+  },
+  {
+    "id": 9487990,
+    "question_id": 948799,
+    "value": "A",
+    "label": "The taxi charges a flat fee of $5.",
+    "is_correct": false
+  },
+  {
+    "id": 9487991,
+    "question_id": 948799,
+    "value": "B",
+    "label": "There is an initial charge of $5, and then it costs $2.50 per mile.",
+    "is_correct": false
+  },
+  {
+    "id": 9487992,
+    "question_id": 948799,
+    "value": "C",
+    "label": "The taxi charges $2.50 for every mile driven.",
+    "is_correct": true
+  },
+  {
+    "id": 9487993,
+    "question_id": 948799,
+    "value": "D",
+    "label": "The total cost of the taxi ride is $2.50.",
+    "is_correct": false
+  },
+  {
+    "id": 8441830,
+    "question_id": 844183,
+    "value": "A",
+    "label": "T = 77 + 1.4h",
+    "is_correct": false
+  },
+  {
+    "id": 8441831,
+    "question_id": 844183,
+    "value": "B",
+    "label": "T = 77 - 1.4h",
+    "is_correct": false
+  },
+  {
+    "id": 8441832,
+    "question_id": 844183,
+    "value": "C",
+    "label": "T = 77 - (1.4/400)h",
+    "is_correct": true
+  },
+  {
+    "id": 8441833,
+    "question_id": 844183,
+    "value": "D",
+    "label": "T = 77 + (1.4/400)h",
+    "is_correct": false
+  },
+  {
+    "id": 821550,
+    "question_id": 82155,
+    "value": "A",
+    "label": "1",
+    "is_correct": true
+  },
+  {
+    "id": 821551,
+    "question_id": 82155,
+    "value": "B",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 821552,
+    "question_id": 82155,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 821553,
+    "question_id": 82155,
+    "value": "D",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 8097280,
+    "question_id": 809728,
+    "value": "A",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 8097281,
+    "question_id": 809728,
+    "value": "B",
+    "label": "1",
+    "is_correct": true
+  },
+  {
+    "id": 8097282,
+    "question_id": 809728,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 8097283,
+    "question_id": 809728,
+    "value": "D",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 7308930,
+    "question_id": 730893,
+    "value": "A",
+    "label": "f(x) = -2x + 7",
+    "is_correct": true
+  },
+  {
+    "id": 7308931,
+    "question_id": 730893,
+    "value": "B",
+    "label": "f(x) = -x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 7308932,
+    "question_id": 730893,
+    "value": "C",
+    "label": "f(x) = 2x + 3",
+    "is_correct": false
+  },
+  {
+    "id": 7308933,
+    "question_id": 730893,
+    "value": "D",
+    "label": "f(x) = -2x + 5",
+    "is_correct": false
+  },
+  {
+    "id": 516270,
+    "question_id": 51627,
+    "value": "A",
+    "label": "V = 4t",
+    "is_correct": true
+  },
+  {
+    "id": 516271,
+    "question_id": 51627,
+    "value": "B",
+    "label": "$V = \\frac{1}{4}t$",
+    "is_correct": false
+  },
+  {
+    "id": 516272,
+    "question_id": 51627,
+    "value": "C",
+    "label": "V = t + 4",
+    "is_correct": false
+  },
+  {
+    "id": 516273,
+    "question_id": 51627,
+    "value": "D",
+    "label": "$V = \\frac{1}{2}t$",
+    "is_correct": false
+  },
+  {
+    "id": 1914310,
+    "question_id": 191431,
+    "value": "A",
+    "label": "587",
+    "is_correct": false
+  },
+  {
+    "id": 1914311,
+    "question_id": 191431,
+    "value": "B",
+    "label": "630",
+    "is_correct": false
+  },
+  {
+    "id": 1914312,
+    "question_id": 191431,
+    "value": "C",
+    "label": "633",
+    "is_correct": true
+  },
+  {
+    "id": 1914313,
+    "question_id": 191431,
+    "value": "D",
+    "label": "696",
+    "is_correct": false
+  },
+  {
+    "id": 948510,
+    "question_id": 94851,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 948511,
+    "question_id": 94851,
+    "value": "B",
+    "label": "-2",
+    "is_correct": false
+  },
+  {
+    "id": 948512,
+    "question_id": 94851,
+    "value": "C",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 948513,
+    "question_id": 94851,
+    "value": "D",
+    "label": "98",
+    "is_correct": false
+  },
+  {
+    "id": 993610,
+    "question_id": 99361,
+    "value": "A",
+    "label": "e = 0.8d",
+    "is_correct": false
+  },
+  {
+    "id": 993611,
+    "question_id": 99361,
+    "value": "B",
+    "label": "e = 0.9d",
+    "is_correct": true
+  },
+  {
+    "id": 993612,
+    "question_id": 99361,
+    "value": "C",
+    "label": "d = 0.9e",
+    "is_correct": false
+  },
+  {
+    "id": 993613,
+    "question_id": 99361,
+    "value": "D",
+    "label": "e = 1.1d",
+    "is_correct": false
+  },
+  {
+    "id": 5479860,
+    "question_id": 547986,
+    "value": "A",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 5479861,
+    "question_id": 547986,
+    "value": "B",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 5479862,
+    "question_id": 547986,
+    "value": "C",
+    "label": "13",
+    "is_correct": true
+  },
+  {
+    "id": 5479863,
+    "question_id": 547986,
+    "value": "D",
+    "label": "17",
+    "is_correct": false
+  },
+  {
+    "id": 5308510,
+    "question_id": 530851,
+    "value": "A",
+    "label": "The initial volume of water in the tank, in gallons.",
+    "is_correct": false
+  },
+  {
+    "id": 5308511,
+    "question_id": 530851,
+    "value": "B",
+    "label": "The rate at which water is draining from the tank, in gallons per minute.",
+    "is_correct": false
+  },
+  {
+    "id": 5308512,
+    "question_id": 530851,
+    "value": "C",
+    "label": "The number of minutes it takes for the water tank to be completely empty.",
+    "is_correct": true
+  },
+  {
+    "id": 5308513,
+    "question_id": 530851,
+    "value": "D",
+    "label": "The number of minutes it would take to drain half the initial volume of water.",
+    "is_correct": false
+  },
+  {
+    "id": 6775500,
+    "question_id": 677550,
+    "value": "A",
+    "label": "222",
+    "is_correct": false
+  },
+  {
+    "id": 6775501,
+    "question_id": 677550,
+    "value": "B",
+    "label": "225",
+    "is_correct": false
+  },
+  {
+    "id": 6775502,
+    "question_id": 677550,
+    "value": "C",
+    "label": "237",
+    "is_correct": true
+  },
+  {
+    "id": 6775503,
+    "question_id": 677550,
+    "value": "D",
+    "label": "245",
+    "is_correct": false
+  },
+  {
+    "id": 1388050,
+    "question_id": 138805,
+    "value": "A",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 1388051,
+    "question_id": 138805,
+    "value": "B",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 1388052,
+    "question_id": 138805,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 1388053,
+    "question_id": 138805,
+    "value": "D",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 7875380,
+    "question_id": 787538,
+    "value": "A",
+    "label": "H(w) = 18 + 3w",
+    "is_correct": true
+  },
+  {
+    "id": 7875381,
+    "question_id": 787538,
+    "value": "B",
+    "label": "H(w) = 24 + 3w",
+    "is_correct": false
+  },
+  {
+    "id": 7875382,
+    "question_id": 787538,
+    "value": "C",
+    "label": "H(w) = 18 + 6w",
+    "is_correct": false
+  },
+  {
+    "id": 7875383,
+    "question_id": 787538,
+    "value": "D",
+    "label": "H(w) = 24 - 3w",
+    "is_correct": false
+  },
+  {
+    "id": 5773710,
+    "question_id": 577371,
+    "value": "A",
+    "label": "$21.50",
+    "is_correct": true
+  },
+  {
+    "id": 5773711,
+    "question_id": 577371,
+    "value": "B",
+    "label": "$19.50",
+    "is_correct": false
+  },
+  {
+    "id": 5773712,
+    "question_id": 577371,
+    "value": "C",
+    "label": "$18.00",
+    "is_correct": false
+  },
+  {
+    "id": 5773713,
+    "question_id": 577371,
+    "value": "D",
+    "label": "$3.50",
+    "is_correct": false
+  },
+  {
+    "id": 4828860,
+    "question_id": 482886,
+    "value": "A",
+    "label": "45.75",
+    "is_correct": false
+  },
+  {
+    "id": 4828861,
+    "question_id": 482886,
+    "value": "B",
+    "label": "7.80",
+    "is_correct": false
+  },
+  {
+    "id": 4828862,
+    "question_id": 482886,
+    "value": "C",
+    "label": "37.95",
+    "is_correct": true
+  },
+  {
+    "id": 4828863,
+    "question_id": 482886,
+    "value": "D",
+    "label": "-0.65",
+    "is_correct": false
+  },
+  {
+    "id": 6423800,
+    "question_id": 642380,
+    "value": "A",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 6423801,
+    "question_id": 642380,
+    "value": "B",
+    "label": "27",
+    "is_correct": false
+  },
+  {
+    "id": 6423802,
+    "question_id": 642380,
+    "value": "C",
+    "label": "30",
+    "is_correct": true
+  },
+  {
+    "id": 6423803,
+    "question_id": 642380,
+    "value": "D",
+    "label": "35",
+    "is_correct": false
+  },
+  {
+    "id": 9403710,
+    "question_id": 940371,
+    "value": "A",
+    "label": "y = 25x + 35",
+    "is_correct": true
+  },
+  {
+    "id": 9403711,
+    "question_id": 940371,
+    "value": "B",
+    "label": "y = 25x + 60",
+    "is_correct": false
+  },
+  {
+    "id": 9403712,
+    "question_id": 940371,
+    "value": "C",
+    "label": "y = 60x + 25",
+    "is_correct": false
+  },
+  {
+    "id": 9403713,
+    "question_id": 940371,
+    "value": "D",
+    "label": "y = 85x",
+    "is_correct": false
+  },
+  {
+    "id": 2731470,
+    "question_id": 273147,
+    "value": "A",
+    "label": "-10",
+    "is_correct": true
+  },
+  {
+    "id": 2731471,
+    "question_id": 273147,
+    "value": "B",
+    "label": "-5",
+    "is_correct": false
+  },
+  {
+    "id": 2731472,
+    "question_id": 273147,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 2731473,
+    "question_id": 273147,
+    "value": "D",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 3999260,
+    "question_id": 399926,
+    "value": "A",
+    "label": "The annual increase in the population of the town.",
+    "is_correct": false
+  },
+  {
+    "id": 3999261,
+    "question_id": 399926,
+    "value": "B",
+    "label": "The population of the town in the year 2010.",
+    "is_correct": false
+  },
+  {
+    "id": 3999262,
+    "question_id": 399926,
+    "value": "C",
+    "label": "The population of the town in the year 2015.",
+    "is_correct": true
+  },
+  {
+    "id": 3999263,
+    "question_id": 399926,
+    "value": "D",
+    "label": "The population of the town in the year 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 7326320,
+    "question_id": 732632,
+    "value": "A",
+    "label": "$f(t) = 200t + 5000$",
+    "is_correct": false
+  },
+  {
+    "id": 7326321,
+    "question_id": 732632,
+    "value": "B",
+    "label": "$f(t) = -250t + 7500$",
+    "is_correct": false
+  },
+  {
+    "id": 7326322,
+    "question_id": 732632,
+    "value": "C",
+    "label": "$f(t) = 250t + 5000$",
+    "is_correct": true
+  },
+  {
+    "id": 7326323,
+    "question_id": 732632,
+    "value": "D",
+    "label": "$f(t) = 250t + 7500$",
+    "is_correct": false
+  },
+  {
+    "id": 2455470,
+    "question_id": 245547,
+    "value": "A",
+    "label": "4.02",
+    "is_correct": true
+  },
+  {
+    "id": 2455471,
+    "question_id": 245547,
+    "value": "B",
+    "label": "2.50",
+    "is_correct": false
+  },
+  {
+    "id": 2455472,
+    "question_id": 245547,
+    "value": "C",
+    "label": "1.61",
+    "is_correct": false
+  },
+  {
+    "id": 2455473,
+    "question_id": 245547,
+    "value": "D",
+    "label": "6.52",
+    "is_correct": false
+  },
+  {
+    "id": 49770,
+    "question_id": 4977,
+    "value": "A",
+    "label": "(2,0)",
+    "is_correct": false
+  },
+  {
+    "id": 49771,
+    "question_id": 4977,
+    "value": "B",
+    "label": "(4,0)",
+    "is_correct": false
+  },
+  {
+    "id": 49772,
+    "question_id": 4977,
+    "value": "C",
+    "label": "(3,0)",
+    "is_correct": true
+  },
+  {
+    "id": 49773,
+    "question_id": 4977,
+    "value": "D",
+    "label": "(6,0)",
+    "is_correct": false
+  },
+  {
+    "id": 1454590,
+    "question_id": 145459,
+    "value": "A",
+    "label": "$s = 100 - \\frac{5}{11}b - \\frac{16}{11}p$",
+    "is_correct": true
+  },
+  {
+    "id": 1454591,
+    "question_id": 145459,
+    "value": "B",
+    "label": "$s = 100 + \\frac{5}{11}b + \\frac{16}{11}p$",
+    "is_correct": false
+  },
+  {
+    "id": 1454592,
+    "question_id": 145459,
+    "value": "C",
+    "label": "$s = 100 - \\frac{11}{5}b - \\frac{11}{16}p$",
+    "is_correct": false
+  },
+  {
+    "id": 1454593,
+    "question_id": 145459,
+    "value": "D",
+    "label": "$s = 100 + \\frac{11}{5}b - \\frac{16}{11}p$",
+    "is_correct": false
+  },
+  {
+    "id": 8686330,
+    "question_id": 868633,
+    "value": "A",
+    "label": "The initial number of apples in the barrel.",
+    "is_correct": false
+  },
+  {
+    "id": 8686331,
+    "question_id": 868633,
+    "value": "B",
+    "label": "The number of apples sold in 7 days.",
+    "is_correct": false
+  },
+  {
+    "id": 8686332,
+    "question_id": 868633,
+    "value": "C",
+    "label": "The decrease in the number of apples remaining for each day.",
+    "is_correct": true
+  },
+  {
+    "id": 8686333,
+    "question_id": 868633,
+    "value": "D",
+    "label": "The number of days it takes to sell 150 apples.",
+    "is_correct": false
+  },
+  {
+    "id": 1927800,
+    "question_id": 192780,
+    "value": "A",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 1927801,
+    "question_id": 192780,
+    "value": "B",
+    "label": "7",
+    "is_correct": true
+  },
+  {
+    "id": 1927802,
+    "question_id": 192780,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 1927803,
+    "question_id": 192780,
+    "value": "D",
+    "label": "-1",
+    "is_correct": false
+  }
+]

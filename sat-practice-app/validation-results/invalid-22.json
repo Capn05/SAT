@@ -1,0 +1,13 @@
+[
+  {
+    "question_id": 464331,
+    "question_text": "A factory produces a batch of 1500 smartphones. To estimate the number of defective smartphones in t...",
+    "issues": [
+      "The question is statistically flawed and misleading. The method to estimate the total number of defective smartphones based on directly scaling the sample mean by the batch size is incorrect in a statistical context. While arithmetically leading to the marked answer, the underlying logic is not sound for estimating population parameters from sample statistics.",
+      " is unclear. It's not explicitly stated if these numbers represent counts from multiple samples or if there's a misunderstanding of what these numbers represent within a single sample of 10.",
+      "The question implies a direct proportionality that is not statistically accurate for estimating the total number of defective items in a larger population based on a small sample. A more statistically sound approach would involve calculating the sample proportion of defective smartphones and applying that proportion to the batch size, or considering confidence intervals, which are not implied by the 'Easy' difficulty level but are more relevant to estimation problems.",
+      "The correct answer is only 'correct' if we assume a flawed and simplistic interpretation of using the sample mean directly scaled to the batch size, which is not a standard or statistically valid method for this type of estimation.",
+      "B"
+    ]
+  }
+]

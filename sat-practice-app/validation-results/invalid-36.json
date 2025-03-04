@@ -1,0 +1,42 @@
+[
+  {
+    "question_id": 876156,
+    "question_text": "While researching the impact of social media on political discourse, a student has taken the followi...",
+    "issues": [
+      "Missing crucial information: The content of Dr. Sharma's study ('No image') is absent, making it impossible to accurately assess the options against the intended source material.",
+      "Incomplete option: Option C is grammatically incomplete, ending mid-sentence with 'amplifying \\\\\\\\\\'. This makes it technically incorrect as presented.",
+      "Contradiction: Option C is marked as correct despite being incomplete and grammatically flawed.",
+      "Ambiguity in intended answer: Without the content of Dr. Sharma's study, it's unclear which option best synthesizes the student's notes and Sharma's point. Options B and C (if completed) both relate to algorithms, but their specific focus differs (engagement vs. amplification).",
+      "C"
+    ]
+  },
+  {
+    "question_id": 626559,
+    "question_text": "While researching urban gardening, a student has taken the following notes:\\n\\n*   Hydroponics is a ...",
+    "issues": [
+      "The question stem is missing, making it impossible to fully understand what is being asked. The provided text only includes notes and answer options without a question.",
+      "Option C is also a plausible answer based on the provided notes. Both options A and C could logically complete a sentence related to Maria Rodriguez's advocacy for hydroponics.",
+      "The options B and D, consisting only of 'The', are not grammatically or semantically viable sentence completions in this context and are clearly incorrect, but their inclusion is unusual and doesn't contribute to a meaningful question.",
+      "Without the full question stem, it's difficult to definitively determine why option A is the *only* correct answer or what specific rhetorical skill is being tested beyond basic comprehension of the notes."
+    ]
+  },
+  {
+    "question_id": 882894,
+    "question_text": "While researching the history of reusable rocket technology, a student has taken the following notes...",
+    "issues": [
+      "The question is incomplete due to a missing image referenced in the question text as 'No image'. This missing image likely contains the actual statement from Elara Musk, which is crucial for answering the question. Without this statement, it's impossible to fully assess the correctness of the options and the intended task of rhetorical synthesis.",
+      "Option B is incomplete and nonsensical ('A 2023 report, \\\\\\\\\\'). It does not form a coherent sentence or relate meaningfully to the provided notes.",
+      "The options are presented as sentence fragments or incomplete sentences, which is unusual for SAT Reading and Writing questions. While not grammatically incorrect in isolation, it makes the question feel less polished and potentially confusing in terms of what is being asked.",
+      "The question stem is implicit. It's not explicitly stated what the student is supposed to do with Elara Musk's statement. It's implied that the student needs to incorporate or refer to it in some way, but this could be made clearer.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 431011,
+    "question_text": "While researching urban development, a student has taken the following notes:\\n\\n*   \\...",
+    "issues": [
+      "The question is missing the source material (notes) that the options are supposed to synthesize.  Without the notes, it's impossible to definitively determine the 'correct' answer based on synthesis of provided information.  While Option A is marked as correct and is a reasonable statement about smart cities, its correctness cannot be validated against specific source material as intended for a rhetorical synthesis question.",
+      "The question relies on general knowledge about 'smart cities' rather than on synthesizing specific provided information. This deviates from the typical purpose of a rhetorical synthesis question on the SAT, which usually requires integrating information from provided sources."
+    ]
+  }
+]
