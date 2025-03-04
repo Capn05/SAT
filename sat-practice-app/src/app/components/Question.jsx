@@ -42,7 +42,10 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     html: true,
     linkify: true,
     typographer: true,
+    breaks: true,
   }).use(markdownItKatex);
+
+  md.enable('table');
 
   const renderMath = (mathString) => {
     try {
@@ -69,22 +72,56 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   };
 
   const renderResponse = (response) => {
-    // Matches inline math only if it is surrounded by word boundaries
+    if (!response) return '';
+    
+    response = processTableFormat(response);
+    
     const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
     const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
 
-    // Replace block math with rendered output first
     response = response.replace(blockMathRegex, (match, p1) => {
       return renderBlockMath(p1);
     });
 
-    // Replace inline math with rendered output
     response = response.replace(inlineMathRegex, (match, p1) => {
       return renderMath(p1);
     });
 
-    // Render the remaining markdown content
     return md.render(response);
+  };
+
+  const processTableFormat = (text) => {
+    if (text.includes('|---') || text.includes('| ---')) {
+      return text;
+    }
+    
+    const lines = text.split('\n');
+    let tableStartIndex = -1;
+    let tableEndIndex = -1;
+    
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
+        if (tableStartIndex === -1) {
+          tableStartIndex = i;
+        }
+        tableEndIndex = i;
+      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
+        break;
+      }
+    }
+    
+    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
+      const headerRow = lines[tableStartIndex].trim();
+      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
+      
+      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
+      
+      lines.splice(tableStartIndex + 1, 0, separatorRow);
+      
+      return lines.join('\n');
+    }
+    
+    return text;
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
@@ -111,7 +148,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       if (mode === "quick") {
         console.log('Fetching quick practice questions for subject:', subjectId);
         
-        // First, check if we have enough questions in the database
         const { count, error: countError } = await supabase
           .from('questions')
           .select('*', { count: 'exact' })
@@ -131,7 +167,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           return;
         }
 
-        // Get questions for quick mode with proper random ordering
         const { data: allQuestions, error: allQuestionsError } = await supabase
           .from('questions')
           .select(`
@@ -139,7 +174,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             options(*)
           `)
           .eq('subject_id', subjectId)
-          .order('id', { ascending: true }) // Order by id first
+          .order('id', { ascending: true })
           .limit(limit);
 
         if (allQuestionsError) {
@@ -153,13 +188,11 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           return;
         }
 
-        // Shuffle the questions in JavaScript instead
         questionsData = shuffleArray(allQuestions);
 
       } else if (mode === "skill") {
         console.log('Fetching skill practice questions for category:', skillName);
         
-        // Updated API call to fetch 5 questions for the specific category
         const apiUrl = `/api/skill-questions?category=${encodeURIComponent(skillName)}&subject=${subject}`;
         console.log('API URL:', apiUrl);
         
@@ -188,7 +221,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         return;
       }
 
-      // Reset states when loading new questions
       setAnsweredQuestions(new Set());
       setAnsweredCount(0);
       setUserAnswers({});
@@ -205,7 +237,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
   };
 
-  // Helper function to shuffle array
   const shuffleArray = (array) => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -229,17 +260,14 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
   }, [subject, initialQuestions]);
 
-  // Automatically show the modal when all questions are answered
   useEffect(() => {
-    // Determine the limit based on the mode
-    const limit = mode === "skill" ? 5 : 15; // Changed from 4 to 5 questions for skill mode
+    const limit = mode === "skill" ? 5 : 15;
 
     if (answeredCount === limit) {
       setShowModal(true);
     }
   }, [answeredCount, mode]);
 
-  // Update currentQuestionAnswer and feedback when changing questions
   useEffect(() => {
     if (questions.length > 0) {
       const questionId = questions[currentIndex].id;
@@ -248,7 +276,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
   }, [currentIndex, questions, userAnswers, answeredFeedback]);
 
-  // Reset states when changing questions
   useEffect(() => {
     setSelectedOption(null);
     setShowFeedback(false);
@@ -291,7 +318,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       if (fetchError) {
         console.error('Error fetching user answers:', fetchError);
       } else {
-        // Update the user answers state in QuestionStatus
         setUserAnswers(data.reduce((acc, answer) => ({
           ...acc,
           [answer.question_id]: answer.is_correct
@@ -317,7 +343,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     const isFirstAttempt = !(currentQuestionId in attempts);
 
     try {
-      // Only send to API if it's the first attempt (for mastery tracking)
       if (isFirstAttempt) {
         const response = await fetch('/api/user-answers', {
           method: 'POST',
@@ -348,7 +373,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         }
       }
 
-      // Update attempts count and record the selected answer
       setAttempts(prev => ({
         ...prev,
         [currentQuestionId]: {
@@ -358,7 +382,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       }));
       
       if (selectedOption.is_correct) {
-        // If correct, mark as answered and update count
         setAnsweredQuestions(prev => new Set([...prev, currentQuestionId]));
         setAnsweredCount(prev => prev + 1);
         setUserAnswers(prev => ({
@@ -366,14 +389,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           [currentQuestionId]: selectedOption.id
         }));
         
-        // Show success feedback
         setShowFeedback(true);
         setFeedback({
           type: 'success',
           message: 'Correct! Well done!'
         });
         
-        // Store the feedback for this question
         setAnsweredFeedback(prev => ({
           ...prev,
           [currentQuestionId]: {
@@ -382,14 +403,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           }
         }));
       } else {
-        // Show feedback for incorrect answers
         setShowFeedback(true);
         setFeedback({
           type: 'error',
           message: 'Incorrect. Try again!'
         });
 
-        // Store the feedback for this question
         setAnsweredFeedback(prev => ({
           ...prev,
           [currentQuestionId]: {
@@ -398,7 +417,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           }
         }));
 
-        // Show animation for incorrect answers
         setFadeIn(true);
         setTimeout(() => {
           setFadeIn(false);
@@ -420,15 +438,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   };
 
   const fetchNewQuestions = async () => {
-    // Reset the current index and answered count
     setCurrentIndex(0);
     setAnsweredCount(0);
-    setAnsweredQuestions(new Set()); // Reset the set of answered questions
+    setAnsweredQuestions(new Set());
 
-    // Fetch new unanswered questions
-    await fetchUnansweredQuestions(subject); // Call the function to fetch questions
+    await fetchUnansweredQuestions(subject);
 
-    setShowModal(false); // Close the modal after fetching new questions
+    setShowModal(false);
   };
 
   if (loading) {
@@ -475,7 +491,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     router.push('/home')
   }
 
-  // Update the radio button rendering
   const renderOptions = () => {
     const currentQuestionId = questions[currentIndex].id;
     const isAnswered = answeredQuestions.has(currentQuestionId);
@@ -548,18 +563,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         <div style={styles.questionContent}>
           <h2 style={styles.title}>Question {currentIndex + 1}:</h2>
           
-          {/* Question Text */}
           <div 
             style={styles.questionText}
             dangerouslySetInnerHTML={{ __html: renderResponse(question_text) }}
+            className="question-text-container"
           />
 
-          {/* Image if present */}
-          {image_url && (
-            <img src={image_url} alt="Question" style={styles.questionImage} />
-          )}
-
-          {/* Options Form */}
           <form onSubmit={handleSubmit} style={styles.form}>
             <div style={styles.optionsContainer}>
               {renderOptions()}
@@ -574,7 +583,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             </button>
           </form>
 
-          {/* Feedback */}
           <AnimatePresence>
             {showFeedback && (
               <motion.div
@@ -598,7 +606,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             )}
           </AnimatePresence>
 
-          {/* Navigation Buttons */}
           <div style={styles.navigationContainer}>
             <button
               style={styles.navButton}
@@ -681,6 +688,27 @@ const styles = {
     lineHeight: '1.6',
     color: '#1f2937',
     marginBottom: '24px',
+    '& table': {
+      borderCollapse: 'collapse',
+      width: '100%',
+      margin: '16px 0',
+      fontSize: '16px',
+    },
+    '& th, & td': {
+      border: '1px solid #e5e7eb',
+      padding: '8px 12px',
+      textAlign: 'left',
+    },
+    '& th': {
+      backgroundColor: '#f9fafb',
+      fontWeight: '600',
+    },
+    '& tr:nthChild(even)': {
+      backgroundColor: '#f9fafb',
+    },
+    '& tr:hover': {
+      backgroundColor: '#f3f4f6',
+    },
   },
   questionImage: {
     maxWidth: '100%',
@@ -869,5 +897,41 @@ const styles = {
     fontSize: '18px',
   },
 };
+  
+  
+const globalStyles = `
+  .question-text-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  
+  .question-text-container th,
+  .question-text-container td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  .question-text-container th {
+    background-color: #f9fafb;
+    font-weight: 600;
+  }
+  
+  .question-text-container tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  .question-text-container tr:hover {
+    background-color: #f3f4f6;
+  }
+`;
+
+if (typeof document !== 'undefined') {
+  const styleElement = document.createElement('style');
+  styleElement.innerHTML = globalStyles;
+  document.head.appendChild(styleElement);
+}
   
   

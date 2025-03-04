@@ -18,6 +18,7 @@ const styles = {
     alignItems: "center",
     padding: "24px",
     borderBottom: "1px solid #e5e7eb",
+    backgroundColor: "white",
   },
   title: {
     fontSize: "24px",

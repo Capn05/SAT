@@ -49,7 +49,7 @@ const styles = {
   },
   content: {
     padding: "24px",
-    margin:"0 5vh  0 5vh",
+    margin:"0 1vh  0 1vh",
   },
   grid: {
     display: "grid",
