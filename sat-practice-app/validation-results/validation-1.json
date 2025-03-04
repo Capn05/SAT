@@ -1,0 +1,610 @@
+[
+  {
+    "question_id": 422185,
+    "question_text": "Which of the following expressions is equivalent to $(3y + 7) - (y - 2)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "1. **Clarity:** The question is clearly written and easy to understand. It directly asks for the equivalent expression of a given algebraic expression. \n2. **Correct Answer:** Option B, '2y + 9', is indeed the correct answer. Simplifying the expression: \n(3y + 7) - (y - 2) = 3y + 7 - y + 2 = (3y - y) + (7 + 2) = 2y + 9\n3. **Incorrect Options:** Options A, C, and D are all clearly incorrect. \n   - Option A (2y + 5) incorrectly calculates the constant term.\n   - Option C (4y + 9) incorrectly calculates the coefficient of 'y'.\n   - Option D (2y - 5) incorrectly calculates the constant term (sign and value).\n4. **Grammar/Formatting:** There are no grammatical or formatting issues. The question is well-structured and uses standard mathematical notation.\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. This question tests a fundamental skill in algebraic manipulation, which is expected to be easily solvable for students preparing for the SAT."
+    }
+  },
+  {
+    "question_id": 402167,
+    "question_text": "Which of the following expressions is equivalent to $2(y - 4) + 7$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $2(y - 4) + 7$. Expanding and simplifying the expression: $2(y - 4) + 7 = 2y - 8 + 7 = 2y - 1$. Option D, $2y - 1$, is the correct equivalent expression. Options A, B, and C are incorrect as they do not simplify to the given expression. The question is grammatically correct and appropriately formatted. The difficulty level is 'Easy' which is suitable for this type of algebraic simplification question on the SAT."
+    }
+  },
+  {
+    "question_id": 394543,
+    "question_text": "Which expression is equivalent to $(3x^2 + 5x - 2) - (x^2 - 2x + 1)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equivalent expression after subtracting two polynomials. Option A, $2x^2 + 7x - 3$, is indeed the correct answer, as $(3x^2 + 5x - 2) - (x^2 - 2x + 1) = 3x^2 + 5x - 2 - x^2 + 2x - 1 = (3x^2 - x^2) + (5x + 2x) + (-2 - 1) = 2x^2 + 7x - 3$. Options B, C, and D are incorrect because they do not result from the correct subtraction of the given polynomials. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it tests basic polynomial subtraction skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 456790,
+    "question_text": "The expression $3x^2 + bx$ is equivalent to $x(3x + 5)$ for some constant b. What is the value of b?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and mathematically sound. To find the value of b, we expand the expression $x(3x + 5)$ to get $3x^2 + 5x$.  We are given that $3x^2 + bx$ is equivalent to $x(3x + 5)$, so we set $3x^2 + bx = 3x^2 + 5x$. For these two expressions to be equivalent, the coefficients of the $x$ terms must be equal. Therefore, $b = 5$. Option C is indeed the correct answer, and options A, B, and D are incorrect as they would result in expressions not equivalent to $x(3x + 5)$. The difficulty level 'Easy' is appropriate as it requires basic algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 625071,
+    "question_text": "Which of the following expressions is equivalent to $5(a^3+2a) - 2(a^3+2a)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression. Option A, $3a^3+6a$, is indeed the correct equivalent expression, as simplifying $5(a^3+2a) - 2(a^3+2a)$ gives $(5-2)(a^3+2a) = 3(a^3+2a) = 3a^3+6a$. Options B, C, and D are clearly incorrect as they do not result from a correct simplification of the given expression. Option B and D incorrectly raise the power of 'a', while option C and D have the wrong coefficient (7 instead of 3). There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it tests basic algebraic simplification skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 313031,
+    "question_text": "Which of the following expressions is equivalent to $3y^2 + 12y$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $3y^2 + 12y$. Option A, $3y(y + 4)$, is equivalent because expanding it gives $3y^2 + 12y$. Options B, C, and D are not equivalent when expanded. There are no grammatical or formatting issues. The difficulty level is appropriately labeled as Easy, as it tests basic factoring skills."
+    }
+  },
+  {
+    "question_id": 55118,
+    "question_text": "Which of the following expressions is equivalent to $3x^2(2x-1)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear, well-written, and mathematically sound. Expanding the expression $3x^2(2x-1)$ using the distributive property yields $3x^2 \times 2x - 3x^2 \times 1 = 6x^3 - 3x^2$. Option C, $6x^3 - 3x^2$, is indeed the correct equivalent expression. Options A, B, and D are demonstrably incorrect upon expansion and comparison. There are no grammatical or formatting errors. The difficulty level is appropriately categorized as Easy, as it tests a fundamental skill in algebraic manipulation suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 690322,
+    "question_text": "Which of the following is equivalent to the expression above?  $$ (3x^2 - 2)(x^2 + 4) $$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given expression $(3x^2 - 2)(x^2 + 4)$. To find the equivalent expression, we expand the given expression using the distributive property (FOIL method): \n\n$(3x^2 - 2)(x^2 + 4) = (3x^2)(x^2) + (3x^2)(4) + (-2)(x^2) + (-2)(4)$ \n$= 3x^4 + 12x^2 - 2x^2 - 8$ \n$= 3x^4 + (12x^2 - 2x^2) - 8$ \n$= 3x^4 + 10x^2 - 8$\n\nComparing this result with the given options:\nOption A: $3x^4 + 12x^2 - 8$ - Incorrect, the coefficient of $x^2$ is 12, not 10.\nOption B: $3x^4 + 10x^2 - 8$ - Correct, matches our expanded expression.\nOption C: $3x^4 - 10x^2 - 8$ - Incorrect, the sign of the $10x^2$ term is negative, not positive.\nOption D: $3x^4 - 8$ - Incorrect, the $10x^2$ term is missing.\n\nOption B is indeed the correct equivalent expression, and options A, C, and D are clearly incorrect. The question is grammatically correct, and the difficulty level of 'Easy' is appropriate for this type of algebraic manipulation on the SAT."
+    }
+  },
+  {
+    "question_id": 739488,
+    "question_text": "Which expression is equivalent to $15 + x^2 + 7$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $15 + x^2 + 7$. To find the equivalent expression, we need to combine the constant terms, 15 and 7.  $15 + 7 = 22$. Therefore, the expression $15 + x^2 + 7$ simplifies to $x^2 + 22$. Option B, $x^2 + 22$, is indeed the correct equivalent expression. Options A, C, and D are incorrect because their constant terms (12, 21, and 29 respectively) are not equal to 22. The question is grammatically correct, properly formatted, and the difficulty level 'Easy' is appropriate as it only requires basic addition and understanding of equivalent expressions."
+    }
+  },
+  {
+    "question_id": 77367,
+    "question_text": "Which of the following expressions is equivalent to $$4(y - 1) + 3$$ ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an equivalent expression to 4(y - 1) + 3. To find the equivalent expression, we can distribute the 4 and simplify: \n\n4(y - 1) + 3 = 4*y - 4*1 + 3 = 4y - 4 + 3 = 4y - 1\n\nOption C, 4y - 1, matches this simplified expression. \n\nLet's check the other options:\nOption A: 4y - 7 (Incorrect, as -4 + 3 = -1, not -7)\nOption B: 4y + 1 (Incorrect, as -4 + 3 = -1, not +1)\nOption D: 4y - 5 (Incorrect, as -4 + 3 = -1, not -5)\n\nAll options except C are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests basic algebraic manipulation of expanding and simplifying a linear expression, which is a fundamental skill expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 998073,
+    "question_text": "Which expression is equivalent to $7a + 3a + 8b - 2b$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given algebraic expression. To solve this, we need to combine like terms. Combining the 'a' terms, we have 7a + 3a = 10a. Combining the 'b' terms, we have 8b - 2b = 6b. Therefore, the equivalent expression is 10a + 6b, which corresponds to option D. Options A, B, and C are incorrect because they do not represent the simplified form of the given expression. Option A (4a + 6b) incorrectly combines the 'a' terms. Option B (10a + 10b) incorrectly combines the 'b' terms. Option C (11a + 5b) incorrectly combines both 'a' and 'b' terms. The difficulty level 'Easy' is appropriate as this question tests basic algebraic simplification skills."
+    }
+  },
+  {
+    "question_id": 726687,
+    "question_text": "Which expression is equivalent to $49x^2 - 144$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $49x^2 - 144$. Option A, $(7x - 12)(7x + 12)$, is the correct answer because it expands to $49x^2 - 144$ using the difference of squares formula: $(a-b)(a+b) = a^2 - b^2$, where $a = 7x$ and $b = 12$. Options B, C, and D are incorrect because they expand to different expressions. Option B expands to $(7x - 12)^2 = 49x^2 - 168x + 144$. Option C expands to $(49x)^2 - 12^2 = 2401x^2 - 144$. Option D expands to $(7x + 12)^2 = 49x^2 + 168x + 144$. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests a basic algebraic concept of difference of squares factorization."
+    }
+  },
+  {
+    "question_id": 984452,
+    "question_text": "6x + 24  Which of the following expressions is equivalent to the given expression?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Multiple options are equivalent to the given expression (Options A, C, and D are all correct).",
+        "The question is flawed as it implies a single correct answer, but options A, C, and D are all valid.",
+        "Option A is marked as the only correct answer, but options C and D are also correct."
+      ],
+      "correct_answer": "A, C, D",
+      "explanation": "The question asks for an expression equivalent to 6x + 24. Let's examine each option:\n\nOption A: 6(x + 4) = 6*x + 6*4 = 6x + 24 (Correct)\nOption B: 6(x + 6) = 6*x + 6*6 = 6x + 36 (Incorrect)\nOption C: 3(2x + 8) = 3*2x + 3*8 = 6x + 24 (Correct)\nOption D: 2(3x + 12) = 2*3x + 2*12 = 6x + 24 (Correct)\n\nOptions A, C, and D are all equivalent to the given expression 6x + 24.  A well-formed multiple-choice question, especially on the SAT, should ideally have only one correct answer. While option A is indeed a correct equivalent expression, marking it as the *only* correct answer is misleading and makes the question invalid.  Options C and D are equally valid and should also be considered correct.  The question needs to be revised to have only one correct option or to explicitly state that there might be multiple correct options and ask to select 'all that apply' (though this format is less common on the SAT for this type of question)."
+    }
+  },
+  {
+    "question_id": 623007,
+    "question_text": "Which of the following expressions is equivalent to the sum of $(2x^3 + 3x - 4)$ and $(x^3 - x^2 + 5...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the sum of two polynomial expressions. To find the equivalent expression, we add the two given polynomials: \n$(2x^3 + 3x - 4) + (x^3 - x^2 + 5)$\nCombine like terms:\n$(2x^3 + x^3) + (-x^2) + (3x) + (-4 + 5)$\\n$3x^3 - x^2 + 3x + 1$\nOption C, $3x^3 - x^2 + 3x + 1$, matches this result and is therefore the correct answer. \n\nLet's examine the other options:\nOption A: $3x^3 + x^2 + 3x + 1$ - Incorrect because the $x^2$ term has a positive sign instead of negative.\nOption B: $3x^3 + 3x + 1$ - Incorrect because the $x^2$ term is missing.\nOption D: $2x^3 - x^2 + 3x + 1$ - Incorrect because the coefficient of the $x^3$ term is 2 instead of 3.\n\nAll options except C are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it tests basic polynomial addition, a fundamental concept in algebra."
+    }
+  },
+  {
+    "question_id": 706644,
+    "question_text": "Which expression is equivalent to $15x + 35$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an expression equivalent to $15x + 35$. Option C, when expanded, is $5(3x + 7) = 5 \times 3x + 5 \times 7 = 15x + 35$, which is indeed equivalent to the given expression. Let's check the other options:\nOption A: $3(5x + 7) = 3 \times 5x + 3 \times 7 = 15x + 21$, which is not equivalent.\nOption B: $5(5x + 7) = 5 \times 5x + 5 \times 7 = 25x + 35$, which is not equivalent.\nOption D: $7(2x + 5) = 7 \times 2x + 7 \times 5 = 14x + 35$, which is not equivalent.\nTherefore, option C is the only correct answer, and options A, B, and D are clearly incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Easy' for an SAT question, as it tests basic factoring and distribution skills."
+    }
+  },
+  {
+    "question_id": 117735,
+    "question_text": "Which expression is equivalent to $7p - 7q$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an equivalent expression to 7p - 7q. Option B, 7(p - q), is indeed equivalent because distributing the 7 results in 7*p - 7*q = 7p - 7q. Options A, C, and D are clearly incorrect. Option A, 7pq, represents multiplication, not subtraction. Option C, 14q, and Option D, 14p, are different terms and do not represent the original expression. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests a fundamental concept of factoring out a common factor, which is typically taught in early algebra and is considered a basic skill for the SAT."
+    }
+  },
+  {
+    "question_id": 265977,
+    "question_text": "Which expression is equivalent to $(3xy)(z)(4x)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to (3xy)(z)(4x). To find the equivalent expression, we multiply the coefficients and combine like variables: (3 * 4) * (x * x) * y * z = 12x²yz. Option A, 12x²yz, is indeed the correct equivalent expression. Options B, C, and D are incorrect because they do not result from correctly simplifying the given expression. Option B and D have a coefficient of 7 instead of 12, and Options C and D have x instead of x². The question is grammatically correct, well-formatted, and the difficulty level is appropriately labeled as 'Easy' as it tests basic algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 608957,
+    "question_text": "Which expression is equivalent to $24a^4b^2 + 18a^2b^3$?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Multiple options are correct. Options A, C, and D are all equivalent to the given expression."
+      ],
+      "correct_answer": "D",
+      "explanation": "To determine the equivalent expression, we need to factor out the greatest common factor from $24a^4b^2 + 18a^2b^3$. The greatest common factor of the coefficients 24 and 18 is 6. The greatest common factor of $a^4$ and $a^2$ is $a^2$. The greatest common factor of $b^2$ and $b^3$ is $b^2$. Therefore, the greatest common factor of the terms is $6a^2b^2$. Factoring this out, we get $6a^2b^2(4a^2 + 3b)$. This matches option D.Let's check each option by expanding them:Option A: $3a^2b^2(8a^2 + 6b) = 3a^2b^2 \\\\cdot 8a^2 + 3a^2b^2 \\\\cdot 6b = 24a^4b^2 + 18a^2b^3$. This is equivalent to the original expression.Option B: $6ab^2(4a^3 + 3b) = 6ab^2 \\\\cdot 4a^3 + 6ab^2 \\\\cdot 3b = 24a^4b^2 + 18ab^3$. This is NOT equivalent to the original expression because the second term is $18ab^3$ instead of $18a^2b^3$.Option C: $6a^2b(4a^2b + 3b^2) = 6a^2b \\\\cdot 4a^2b + 6a^2b \\\\cdot 3b^2 = 24a^4b^2 + 18a^2b^3$. This is equivalent to the original expression.Option D: $6a^2b^2(4a^2 + 3b) = 6a^2b^2 \\\\cdot 4a^2 + 6a^2b^2 \\\\cdot 3b = 24a^4b^2 + 18a^2b^3$. This is equivalent to the original expression.Options A, C, and D are all correct, while option B is incorrect. For a multiple-choice SAT question, there should be only one correct answer.  Therefore, the question is flawed due to having multiple correct options. While option D is the most fully factored form (using the greatest common factor), options A and C are also mathematically equivalent to the original expression, making the question invalid as a single-answer multiple-choice question."
+    }
+  },
+  {
+    "question_id": 391996,
+    "question_text": "Which of the following is a factor of the polynomial $9x^2 - 12xy + 4y^2$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for a factor of the polynomial $9x^2 - 12xy + 4y^2$. This polynomial is a perfect square trinomial, which can be factored as $(3x - 2y)^2$. To verify this, we can expand $(3x - 2y)^2 = (3x)^2 - 2(3x)(2y) + (2y)^2 = 9x^2 - 12xy + 4y^2$. Therefore, $(3x - 2y)$ is a factor of the given polynomial. Option D, 3x - 2y, is indeed the correct answer.Let's check the other options:Option A: $3x + 2y$. If we square this, we get $(3x + 2y)^2 = 9x^2 + 12xy + 4y^2$, which is not the given polynomial.Option B: $9x - 2y$. If we try to multiply $(9x - 2y)$ by $(x - \frac{2}{9}y)$ to potentially get $9x^2 - 12xy + 4y^2$, the $xy$ term would be $-2xy - 2xy = -4xy$, which is not $-12xy$.Option C: $3x - 4y$. If we try to multiply $(3x - 4y)$ by $(3x - y)$ to potentially get $9x^2 - 12xy + 4y^2$, the $xy$ term would be $-3xy - 12xy = -15xy$, which is not $-12xy$.All other options are clearly incorrect as factors of the given polynomial. The question is grammatically correct, well-formatted, and the difficulty level is appropriately set to Medium for the SAT, as it tests the understanding of factoring quadratic expressions and recognizing perfect square trinomials."
+    }
+  },
+  {
+    "question_id": 223988,
+    "question_text": "If a = 2x - 1 and b = x + 3, which of the following is equivalent to 2ab - a + 3b ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To solve it, we substitute the given expressions for 'a' and 'b' into the expression '2ab - a + 3b'.\n\nGiven:\na = 2x - 1\nb = x + 3\nExpression: 2ab - a + 3b\n\nSubstitute 'a' and 'b' into the expression:\n2(2x - 1)(x + 3) - (2x - 1) + 3(x + 3)\n\nExpand the terms:\n2(2x² + 6x - x - 3) - 2x + 1 + 3x + 9\n2(2x² + 5x - 3) - 2x + 1 + 3x + 9\n4x² + 10x - 6 - 2x + 1 + 3x + 9\n\nCombine like terms:\n4x² + (10x - 2x + 3x) + (-6 + 1 + 9)\n4x² + 11x + 4\n\nThis matches option D. Options A, B, and C are incorrect as they do not simplify to the correct expression. The difficulty level 'Medium' is appropriate as it requires algebraic substitution and simplification, which is a standard skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 785160,
+    "question_text": "Which of the following is equivalent to the expression $x^4 - 8x^2 + 15$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $x^4 - 8x^2 + 15$. Option A, $(x^2-3)(x^2-5)$, when expanded, yields $x^4 - 5x^2 - 3x^2 + 15 = x^4 - 8x^2 + 15$, which is the original expression. Therefore, option A is indeed the correct answer. Options B, C, and D, when expanded, do not result in the original expression. Option B gives $x^4 - 16x^2 + 15$, Option C gives $x^4 - 8x^2 + 12$, and Option D gives $x^4 + 2x^2 - 15$. There are no grammatical or formatting issues. The difficulty level is appropriately marked as 'Medium' for the SAT, as it requires factoring a quadratic-like expression, a standard skill tested on the SAT Math section."
+    }
+  },
+  {
+    "question_id": 907144,
+    "question_text": "Which of the following is equivalent to the expression $(3x-2)^2 - 2(x+1) + (4x-3)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given algebraic expression. To verify the correct answer, we expand and simplify the given expression: \n\n$(3x-2)^2 - 2(x+1) + (4x-3)$\n\nFirst, expand $(3x-2)^2$: \n$(3x-2)^2 = (3x)^2 - 2(3x)(2) + (-2)^2 = 9x^2 - 12x + 4$\n\nNext, expand $-2(x+1)$: \n$-2(x+1) = -2x - 2$\n\nNow substitute these back into the original expression:\n$(9x^2 - 12x + 4) + (-2x - 2) + (4x - 3)$\n\nCombine like terms:\n$9x^2 + (-12x - 2x + 4x) + (4 - 2 - 3)$\\n$9x^2 + (-14x + 4x) + (2 - 3)$\\n$9x^2 - 10x - 1$\n\nThe simplified expression is $9x^2 - 10x - 1$, which matches option A. Options B, C, and D are incorrect because they do not simplify to the same expression. The question is grammatically correct, and the difficulty level is appropriately classified as Medium for an SAT Advanced Math question."
+    }
+  },
+  {
+    "question_id": 500318,
+    "question_text": "Which of the following expressions is equivalent to $x^2 - 9$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the expression equivalent to $x^2 - 9$. Option C, $(x+3)(x-3)$, is the correct answer because it expands to $x^2 - 3^2 = x^2 - 9$ using the difference of squares formula. Options A, B, and D are incorrect: \n- Option A, $(x-3)^2 = x^2 - 6x + 9$, which is not equivalent to $x^2 - 9$.\n- Option B, $(x+9)(x-1) = x^2 + 8x - 9$, which is not equivalent to $x^2 - 9$.\n- Option D, $(x+3)^2 = x^2 + 6x + 9$, which is not equivalent to $x^2 - 9$.\nThere are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it tests a standard algebraic concept (difference of squares) that is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 441768,
+    "question_text": "Which of the following is an equivalent form of $(2x-3)^2 - (3x^2-5)$ ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent form of the given expression. To find the equivalent form, we need to expand and simplify the expression $(2x-3)^2 - (3x^2-5)$.\n\nStep 1: Expand $(2x-3)^2$\\n$(2x-3)^2 = (2x)^2 - 2(2x)(3) + (-3)^2 = 4x^2 - 12x + 9$\n\nStep 2: Substitute this back into the original expression and simplify\n$(2x-3)^2 - (3x^2-5) = (4x^2 - 12x + 9) - (3x^2-5)$\\n$= 4x^2 - 12x + 9 - 3x^2 + 5$\\n$= (4x^2 - 3x^2) - 12x + (9 + 5)$\\n$= x^2 - 12x + 14$\n\nComparing this simplified expression with the given options:\nOption A: $x^2 - 12x + 14$ (This matches our simplified expression and is marked as correct)\nOption B: $x^2 - 12x - 4$ (Incorrect)\nOption C: $-x^2 - 12x + 14$ (Incorrect)\nOption D: $5x^2 - 12x + 14$ (Incorrect)\n\nOption A is indeed the correct equivalent form. The other options are clearly incorrect as they differ in the coefficient of $x^2$ or the constant term. The question is grammatically correct and appropriately formatted. The difficulty level is medium, suitable for the SAT's Advanced Math section, as it requires expanding a binomial square and simplifying a polynomial expression, which are standard skills tested on the SAT."
+    }
+  },
+  {
+    "question_id": 995100,
+    "question_text": "Which of the following expressions is equivalent to $\\frac{(5x^3y^7)}{(5x^3y^5)}$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given fraction. Option A, $y^2$, is indeed the correct answer because when we simplify $\frac{(5x^3y^7)}{(5x^3y^5)}$, we can cancel out the common factors in the numerator and denominator: $\frac{5}{5} = 1$, $\frac{x^3}{x^3} = 1$, and $\frac{y^7}{y^5} = y^{7-5} = y^2$. Options B, C, and D are all clearly incorrect as they do not simplify to $y^2$. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it tests basic algebraic simplification skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 921497,
+    "question_text": "Which expression is equivalent to $(2x + 3)(x^2 - 5x + 2)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equivalent expression after expanding the product of two polynomials. Option A, which is marked as correct, is indeed the correct expansion of $(2x + 3)(x^2 - 5x + 2)$, as shown below:\n\n$(2x + 3)(x^2 - 5x + 2) = 2x(x^2 - 5x + 2) + 3(x^2 - 5x + 2)$\\n$= 2x^3 - 10x^2 + 4x + 3x^2 - 15x + 6$\\n$= 2x^3 - 7x^2 - 11x + 6$\n\nOptions B, C, and D are all incorrect because they differ from the correct expansion in at least one coefficient. Option B has a positive sign for the $x$ term, Option C has a different coefficient for the $x^2$ term, and Option D has a negative constant term. The question is grammatically sound and appropriately categorized as 'Medium' difficulty for the SAT Advanced Math section, testing a fundamental algebraic skill."
+    }
+  },
+  {
+    "question_id": 847493,
+    "question_text": "If $p^3 = m+n$ and $q^3 = m+r$, which of the following is equal to $(p^3 - q^3)^2$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first find an expression for $p^3 - q^3$ using the given equations: $p^3 - q^3 = (m+n) - (m+r) = m+n-m-r = n-r$. Then, we need to find $(p^3 - q^3)^2$, which is $(n-r)^2$. Expanding $(n-r)^2$ gives $n^2 - 2nr + r^2$. Comparing this with the options, we see that option A, $n^2 - 2nr + r^2$, is the correct answer. Option B, $n^2 + 2nr + r^2 = (n+r)^2$, is incorrect. Option C, $m^2 - 2mr + r^2 = (m-r)^2$, is incorrect as it involves $m$ and is not equivalent to $(n-r)^2$. Option D, $n^2 - r^2 = (n-r)(n+r)$, is also incorrect as it is the difference of squares, not the square of the difference. Therefore, option A is the only correct answer, and the marked answer is indeed correct. The difficulty level of 'Medium' is appropriate as it requires basic algebraic manipulation and understanding of equivalent expressions, which is typical for the SAT Advanced Math section. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 683220,
+    "question_text": "If $x \\\\neq 0$, which of the following expressions is equivalent to $\\\\frac{\\\\sqrt[3]{8x^9y^6}}{x^4}...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 214. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"D\",  \"explanation\": \"The question is clearly written and makes sense. To find the equivalent expression, we simplify the given expression: \\n\\n$..."
+      ],
+      "correct_answer": "D",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 554341,
+    "question_text": "Which of the following is equivalent to the expression below?  $x^2 - 8x + 10$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $x^2 - 8x + 10$. To check Option A, we expand $(x - 4)^2 - 6$: \n$(x - 4)^2 - 6 = (x^2 - 2 \\\\cdot 4 \\\\cdot x + 4^2) - 6 = (x^2 - 8x + 16) - 6 = x^2 - 8x + 10$. \nThis matches the original expression, so Option A is indeed correct.\n\nLet's check the other options:\nOption B: $(x - 4)^2 + 6 = (x^2 - 8x + 16) + 6 = x^2 - 8x + 22$. This is not equivalent.\nOption C: $(x + 4)^2 - 6 = (x^2 + 2 \\\\cdot 4 \\\\cdot x + 4^2) - 6 = (x^2 + 8x + 16) - 6 = x^2 + 8x + 10$. This is not equivalent because the middle term is $+8x$ instead of $-8x$.\nOption D: $(x + 4)^2 + 6 = (x^2 + 8x + 16) + 6 = (x^2 + 8x + 22)$. This is not equivalent because the middle term is $+8x$ instead of $-8x$ and the constant term is also different.\n\nAll options are distinct and only Option A is equivalent to the given expression. The question is grammatically correct and the difficulty level of 'Medium' is appropriate for SAT Advanced Math, as it tests the understanding of equivalent expressions and completing the square or expanding binomials."
+    }
+  },
+  {
+    "question_id": 847858,
+    "question_text": "The difference of $(5x^2 - 3x + 12)$ and $(2x^2 + x - 5)$ can be written in the form $ax^2 + bx + c$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. To find the difference of $(5x^2 - 3x + 12)$ and $(2x^2 + x - 5)$, we subtract the second polynomial from the first: \n\n$(5x^2 - 3x + 12) - (2x^2 + x - 5) = 5x^2 - 3x + 12 - 2x^2 - x + 5$\n\nCombine like terms:\n\n$(5x^2 - 2x^2) + (-3x - x) + (12 + 5) = 3x^2 - 4x + 17$\n\nThis is in the form $ax^2 + bx + c$, where $a = 3$, $b = -4$, and $c = 17$. \n\nWe are asked to find the value of $a+b+c$: \n\n$a+b+c = 3 + (-4) + 17 = 3 - 4 + 17 = 16$\n\nThe option marked as correct, B. 16, is indeed the correct answer. The other options (A. 15, C. 20, D. 24) are incorrect. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as Medium for the SAT Advanced Math section."
+    }
+  },
+  {
+    "question_id": 55000,
+    "question_text": "The expression\\n$$ \\left(\\frac{2}{3}\\mathbf{x} - \\frac{1}{3}\\right)\\left(\\frac{3}{4}\\mathbf{x} + \\fr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of 'b' in the expanded form of the given expression. To find 'b', we need to expand the expression (2/3 x - 1/3)(3/4 x + 2/3). \n\nExpanding the expression:\n\n(2/3 x - 1/3)(3/4 x + 2/3) = (2/3 x) * (3/4 x) + (2/3 x) * (2/3) + (-1/3) * (3/4 x) + (-1/3) * (2/3)\n\n= (6/12)x^2 + (4/9)x - (3/12)x - (2/9)\n\n= (1/2)x^2 + (4/9)x - (1/4)x - (2/9)\n\nTo find the coefficient of x (which is 'b'), we need to combine the x terms:\n\nb = 4/9 - 1/4\n\nTo subtract these fractions, we find a common denominator, which is 36:\n\nb = (4/9) * (4/4) - (1/4) * (9/9)\n\nb = 16/36 - 9/36\n\nb = (16 - 9)/36\n\nb = 7/36\n\nTherefore, the value of b is 7/36, which corresponds to option A. The other options are incorrect as they do not match the calculated value of b. The difficulty level 'Medium' is appropriate for this question as it requires basic algebraic expansion and fraction arithmetic, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 699139,
+    "question_text": "Which of the following expressions is equivalent to the sum of $5y^5 + 3y^2$ and $2y^5 - y^2$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the sum of two polynomial expressions. To find the equivalent expression, we need to add the like terms of the given expressions: $(5y^5 + 3y^2) + (2y^5 - y^2)$. Combining the $y^5$ terms, we get $5y^5 + 2y^5 = 7y^5$. Combining the $y^2$ terms, we get $3y^2 - y^2 = 2y^2$. Therefore, the sum is $7y^5 + 2y^2$, which corresponds to option D.Option A, $8y^5 + y^2$, is incorrect because it incorrectly adds the coefficients of $y^5$ as $5+2=8$ (should be 7) and incorrectly subtracts the coefficients of $y^2$ as $3-1=1$ (should be 2).Option B, $3y^5 + 4y^2$, is incorrect as it incorrectly subtracts the coefficients of $y^5$ as $5-2=3$ (should be adding) and incorrectly adds the coefficients of $y^2$ as $3+1=4$ (should be subtracting the second coefficient from the first).Option C, $9y^5$, is incorrect because it only considers the $y^5$ terms and incorrectly adds their coefficients as $5+2=9$ (should be 7), and it completely ignores the $y^2$ terms.The question is grammatically correct, and the formatting is appropriate. The difficulty level is correctly assessed as Medium, as it requires basic algebraic manipulation of combining like terms, a standard topic in middle school and high school mathematics, and suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 146090,
+    "question_text": "If the given expression is rewritten in the form $(3x - 2)(x + k)$, where k is a constant, and the e...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the value of k, we expand the expression $(3x - 2)(x + k)$ and compare it to the given expression $3x^2 + 10x - 8$. Expanding $(3x - 2)(x + k)$ gives $3x^2 + 3kx - 2x - 2k = 3x^2 + (3k - 2)x - 2k$. For this to be equal to $3x^2 + 10x - 8$, the coefficients of x and the constant terms must be equal.  Equating the coefficient of x, we have $3k - 2 = 10$, which gives $3k = 12$, so $k = 4$. Equating the constant terms, we have $-2k = -8$, which also gives $k = 4$. Therefore, the value of k is 4, and option C is the correct answer. Options A, B, and D are incorrect because substituting k = 2, 3, or 5 into $(3x - 2)(x + k)$ does not yield $3x^2 + 10x - 8$. The difficulty level of 'Medium' is appropriate for this question as it tests a standard algebraic skill expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 281690,
+    "question_text": "Which expression represents the product of $(2x + 3y)$ and $(x - 4y)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the product of two binomial expressions. Expanding $(2x + 3y)(x - 4y)$ yields $2x^2 - 8xy + 3xy - 12y^2 = 2x^2 - 5xy - 12y^2$, which matches option D. Options A, B, and C are incorrect due to differences in the coefficients or signs of the terms. The question is grammatically correct and appropriately categorized as 'Medium' difficulty for the SAT."
+    }
+  },
+  {
+    "question_id": 635916,
+    "question_text": "Which of the following is equivalent to $(1-q)(1+q+q^2+q^3+q^4)$ ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To verify the correct answer, we can expand the given expression: \n$(1-q)(1+q+q^2+q^3+q^4) = 1 \\\\cdot (1+q+q^2+q^3+q^4) - q \\\\cdot (1+q+q^2+q^3+q^4)$\\n$= (1+q+q^2+q^3+q^4) - (q+q^2+q^3+q^4+q^5)$\\n$= 1+q+q^2+q^3+q^4 - q-q^2-q^3-q^4-q^5$\\n$= 1 - q^5$\nThis matches option A. Options B, C, and D are not equivalent to the given expression. The difficulty level 'Medium' is appropriate as it requires algebraic manipulation of polynomial expressions, which is a standard topic for the SAT."
+    }
+  },
+  {
+    "question_id": 476626,
+    "question_text": "Which of the following expressions is equivalent to $3(y - 2) + 2(y + 4)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an equivalent expression. Option C, $5y + 2$, is indeed the correct equivalent expression, as expanding $3(y - 2) + 2(y + 4)$ gives $3y - 6 + 2y + 8 = 5y + 2$. Options A, B, and D are incorrect because they do not result from correctly simplifying the given expression. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it tests basic algebraic manipulation skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 801278,
+    "question_text": "Which of the following expressions is equivalent to $$ \\left(\\frac{3}{4}\\mathbf{x} - \\mathbf{2}\\righ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. Option A, $$\\\\frac{1}{4}\\\\mathbf{x} - \\\\mathbf{3}$$, is indeed the correct equivalent expression, as derived by simplifying the given expression: \n$$ \\\\left(\frac{3}{4}\\\\mathbf{x} - \\\\mathbf{2}\right) - \\\\left(\frac{1}{2}\\\\mathbf{x} + \\\\mathbf{1}\right) = \frac{3}{4}\\\\mathbf{x} - \\\\mathbf{2} - \frac{1}{2}\\\\mathbf{x} - \\\\mathbf{1} = \\\\left(\frac{3}{4} - \frac{1}{2}\right)\\\\mathbf{x} + (-2 - 1) = \\\\left(\frac{3}{4} - \frac{2}{4}\right)\\\\mathbf{x} - 3 = \frac{1}{4}\\\\mathbf{x} - \\\\mathbf{3} $$\nOptions B, C, and D are incorrect because they do not result from the correct simplification of the given expression. Option B has the wrong coefficient for x, Option C has the wrong constant term, and Option D has the wrong sign for the coefficient of x. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question type on the SAT, as it requires basic algebraic manipulation and fraction arithmetic."
+    }
+  },
+  {
+    "question_id": 745354,
+    "question_text": "Which of the following expressions is equivalent to the expression above?\\n\\n$$\\\\begin{array}{c} \\\\m...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given polynomial expression. To find the equivalent expression, we need to subtract the second polynomial from the first one:\n\n(3x^3 + 2x^2 - 7x + 1) - (x^3 - 4x^2 + 2x - 5)\n\nDistribute the negative sign to the terms in the second parenthesis:\n\n3x^3 + 2x^2 - 7x + 1 - x^3 + 4x^2 - 2x + 5\n\nCombine like terms:\n\n(3x^3 - x^3) + (2x^2 + 4x^2) + (-7x - 2x) + (1 + 5)\n\n2x^3 + 6x^2 - 9x + 6\n\nOption C, 2x^3 + 6x^2 - 9x + 6, matches the simplified expression. Options A, B, and D are incorrect because they do not result from correctly simplifying the given expression. The difficulty level 'Medium' is appropriate for this question as it tests a standard algebraic skill expected at the SAT level. There are no grammatical or significant formatting issues. The 'ID: NEWSbSAT' and 'No image' are likely metadata and do not affect the validity of the question itself."
+    }
+  },
+  {
+    "question_id": 547332,
+    "question_text": "Which of the following is equivalent to $${\\sqrt[3]{(x^2 - 6x + 9)^2}}$$, where $$x > 3$$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The given expression is $${\\\\sqrt[3]{(x^2 - 6x + 9)^2}}$$. First, we simplify the expression inside the parenthesis: $$x^2 - 6x + 9 = (x - 3)^2$$. Substituting this back into the original expression, we get $${\\\\sqrt[3]{((x - 3)^2)^2}}$$. Using the rule $$(a^m)^n = a^{m \times n}$$, we simplify the exponent: $${\\\\sqrt[3]{(x - 3)^{2 \times 2}}} = {\\\\sqrt[3]{(x - 3)^4}}$$. Finally, we convert the radical expression to exponential form using the rule $$\\\\sqrt[n]{a^m} = a^{\frac{m}{n}}$$: $${\\\\sqrt[3]{(x - 3)^4}} = (x - 3)^{\frac{4}{3}}$$. Comparing this with the given options, we see that option C, $$(x - 3)^{\frac{4}{3}}$$, is the correct equivalent expression. Options A, B, and D are not equivalent to the original expression. The condition $$x > 3$$ ensures that $$x-3 > 0$$, which means we are taking the root of a positive number, and the base of the exponential expression is positive, avoiding any issues with real roots of negative numbers or undefined expressions for real numbers. The question is clearly written, the correct option is indeed correct, and the other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires algebraic manipulation and understanding of exponents and radicals, which are typical topics for SAT Advanced Math."
+    }
+  },
+  {
+    "question_id": 549946,
+    "question_text": "Which of the following is equivalent to the expression above?  $(2x+3y)(x-4y)-5y(x+2y)$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an equivalent expression. To find the equivalent expression, we need to expand and simplify the given expression: $(2x+3y)(x-4y)-5y(x+2y)$.First, expand $(2x+3y)(x-4y)$:$(2x+3y)(x-4y) = 2x(x) + 2x(-4y) + 3y(x) + 3y(-4y) = 2x^2 - 8xy + 3xy - 12y^2 = 2x^2 - 5xy - 12y^2$Next, expand $5y(x+2y)$:$5y(x+2y) = 5y(x) + 5y(2y) = 5xy + 10y^2$Now, subtract the second expanded expression from the first:$(2x^2 - 5xy - 12y^2) - (5xy + 10y^2) = 2x^2 - 5xy - 12y^2 - 5xy - 10y^2$Combine like terms:$2x^2 + (-5xy - 5xy) + (-12y^2 - 10y^2) = 2x^2 - 10xy - 22y^2$Comparing this result with the options:A. $2x^2 + xy - 22y^2$ - IncorrectB. $2x^2 - 10xy - 2y^2$ - IncorrectC. $2x^2 - 10xy - 22y^2$ - CorrectD. $2x^2 - 6xy - 22y^2$ - IncorrectOption C is indeed the correct equivalent expression. All other options are clearly incorrect because they have different coefficients for the $xy$ or $y^2$ terms. The question is grammatically correct, and the difficulty level is appropriate for a 'Medium' SAT math question as it requires algebraic manipulation and simplification."
+    }
+  },
+  {
+    "question_id": 279039,
+    "question_text": "Which of the following expressions is equivalent to $12y^3 + 18y^2 - 6y$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an equivalent expression to $12y^3 + 18y^2 - 6y$. Option A, when expanded, is $6y(2y^2 + 3y - 1) = 6y \times 2y^2 + 6y \times 3y - 6y \times 1 = 12y^3 + 18y^2 - 6y$, which is the original expression. Therefore, Option A is indeed the correct answer.Let's check the other options:Option B: $2y(6y^2 + 9y - 1) = 2y \times 6y^2 + 2y \times 9y - 2y \times 1 = 12y^3 + 18y^2 - 2y$. This is not equivalent to the original expression because the last term is $-2y$ instead of $-6y$.Option C: $3y(4y^2 - 6y + 2) = 3y \times 4y^2 + 3y \times (-6y) + 3y \times 2 = 12y^3 - 18y^2 + 6y$. This is not equivalent to the original expression because the middle term is $-18y^2$ instead of $+18y^2$, and the last term is $+6y$ instead of $-6y$.Option D: $6(2y^2 + 3y - 1) = 6 \times 2y^2 + 6 \times 3y - 6 \times 1 = 12y^2 + 18y - 6$. This is not equivalent to the original expression because the degree of the first term is $y^2$ instead of $y^3$.All options except A are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it tests basic algebraic manipulation skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 516918,
+    "question_text": "The equation $(px - 1)(qx^2 + rx + 2) = 2x^3 + 5x^2 + sx - 2$ is true for all values of $x$, where $...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Unterminated string in JSON at position 2203. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"Expanding the left side of the equation $(px - 1)(qx^2 + rx + 2) = 2x^3 + 5x^2 + sx - 2$, we get:$pqx^3 + prx^2 + 2px - qx^..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 386567,
+    "question_text": "$$\\begin{aligned} \\text{s} & \\quad \\frac{\\sqrt[3]{\\text{x}^7}}{\\sqrt{\\text{x}^3}} = \\text{x}^{\\frac{...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To solve for $\\\\frac{\\\\text{g}}{\\\\text{b}}$, we need to simplify the left side of the equation: $$\frac{\\\\sqrt[3]{\text{x}^7}}{\\\\sqrt{\text{x}^3}}$$ First, convert the radical expressions to exponential expressions: $$\\\\sqrt[3]{\text{x}^7} = \text{x}^{\frac{7}{3}}$$ $$\\\\sqrt{\text{x}^3} = \text{x}^{\frac{3}{2}}$$ Now substitute these back into the equation: $$\frac{\text{x}^{\frac{7}{3}}}{\text{x}^{\frac{3}{2}}} = \text{x}^{\frac{7}{3} - \frac{3}{2}}$$ To subtract the exponents, find a common denominator for $\\\\frac{7}{3}$ and $\\\\frac{3}{2}$, which is 6: $$\frac{7}{3} = \frac{7 \times 2}{3 \times 2} = \frac{14}{6}$$ $$\frac{3}{2} = \frac{3 \times 3}{2 \times 3} = \frac{9}{6}$$ Subtract the exponents: $$\frac{14}{6} - \frac{9}{6} = \frac{14 - 9}{6} = \frac{5}{6}$$ So, the left side simplifies to $\text{x}^{\frac{5}{6}}$. The equation becomes: $$\text{x}^{\frac{5}{6}} = \text{x}^{\frac{\text{g}}{\text{b}}}$$ Therefore, $\\\\frac{\\\\text{g}}{\\\\text{b}} = \frac{5}{6}$. Option A, $\\\\frac{5}{6}$, is the correct answer. Options B, C, and D are incorrect as they do not equal $\\\\frac{5}{6}$. The difficulty level 'Hard' is appropriate as it requires understanding of exponent rules and fraction operations, which is typically considered an advanced math topic for the SAT."
+    }
+  },
+  {
+    "question_id": 542695,
+    "question_text": "The equation $\\\\frac{1}{x+3} - \\\\frac{5}{x-1} = \\\\frac{px+q}{(x+3)(x-1)}$ is true for all $x \\\\neq -...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "To solve for $p$ and $q$, we first combine the fractions on the left side of the equation: \n$\\\\frac{1}{x+3} - \\\\frac{5}{x-1} = \\\\frac{1(x-1) - 5(x+3)}{(x+3)(x-1)} = \\\\frac{x-1 - 5x - 15}{(x+3)(x-1)} = \\\\frac{-4x - 16}{(x+3)(x-1)}$\n\nWe are given that this expression is equal to $\\\\frac{px+q}{(x+3)(x-1)}$. Therefore, we must have:\n$\\\\frac{-4x - 16}{(x+3)(x-1)} = \\\\frac{px+q}{(x+3)(x-1)}$\n\nSince the denominators are the same, we can equate the numerators:\n$-4x - 16 = px + q$\n\nFor this equation to be true for all $x \\\\neq -3, x \\\\neq 1$, the coefficients of $x$ and the constant terms must be equal. Comparing the coefficients, we get:\n$p = -4$\\n$q = -16$\n\nWe are asked to find the value of $pq$:\n$pq = (-4) \times (-16) = 64$\n\nThe correct answer is 64, which corresponds to option D."
+    }
+  },
+  {
+    "question_id": 870979,
+    "question_text": "For what value of x is the given expression equivalent to $(5^2)^{3x}$, where the given expression i...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually correct.",
+        "None of the provided options are correct for the given question.",
+        "The correct answer should be $\\\\frac{1}{3}$, which is not listed among the options."
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 419166,
+    "question_text": "The expression $(5x - 7)(2x + 9)$ is equivalent to the expression $ax^2 + bx + c$, where $a$, $b$, a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To find the value of $b$, we need to expand the expression $(5x - 7)(2x + 9)$.\n\nExpanding the expression:\n$(5x - 7)(2x + 9) = 5x(2x) + 5x(9) - 7(2x) - 7(9)$\\n$= 10x^2 + 45x - 14x - 63$\\n$= 10x^2 + (45 - 14)x - 63$\\n$= 10x^2 + 31x - 63$\n\nComparing this to $ax^2 + bx + c$, we can see that $a = 10$, $b = 31$, and $c = -63$. Therefore, the value of $b$ is 31, which corresponds to option A. The other options are incorrect as they do not represent the correct value of $b$ obtained after expanding and simplifying the expression. The difficulty level of 'Hard' is appropriate for the SAT, as it requires algebraic manipulation and attention to detail, although it might be considered medium-hard by some students proficient in algebra."
+    }
+  },
+  {
+    "question_id": 491038,
+    "question_text": "$$\\\\frac{x^2 - 5x + k}{x-2}$$\\n\\nIn the expression above, k and m are integers. If the expression is...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 101. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"For the expression \\\\\\\\\\$\\\\\\\\frac{x^2 - 5x + k}{x-2}\\\\\\\\$ to be equivalent to $$x + m$$, the numerator $$x^2 - 5x + k$$ mus..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 170426,
+    "question_text": "The expression $0.25x^2 - 0.15x + 0.40$ can be rewritten in the form $a(5x^2 - 3x + 8)$, where $a$ i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of the constant 'a' when the expression $0.25x^2 - 0.15x + 0.40$ is rewritten in the form $a(5x^2 - 3x + 8)$. To find the value of 'a', we can expand the rewritten form and compare coefficients with the original expression.Expanding $a(5x^2 - 3x + 8)$ gives $5ax^2 - 3ax + 8a$.For this to be equal to $0.25x^2 - 0.15x + 0.40$, the coefficients of corresponding terms must be equal:For $x^2$ term: $5a = 0.25$For $x$ term: $-3a = -0.15$For the constant term: $8a = 0.40$Solving any of these equations for 'a' will give the same result. Let's solve the first equation:$5a = 0.25$$a = \frac{0.25}{5} = 0.05$We can verify this value with the other equations:$-3a = -3 \times 0.05 = -0.15$ (Correct)$8a = 8 \times 0.05 = 0.40$ (Correct)Thus, the value of $a$ is $0.05$, which corresponds to option A.The other options are clearly incorrect because if we substitute them back into the form $a(5x^2 - 3x + 8)$, we will not get the original expression $0.25x^2 - 0.15x + 0.40$. For example, if $a = 0.5$ (option B), we get $0.5(5x^2 - 3x + 8) = 2.5x^2 - 1.5x + 4$, which is not the original expression. Similarly, options C and D will also result in different expressions.The question is grammatically correct and formatted well. The difficulty level 'Hard' is arguably slightly high, it might be considered medium difficulty for SAT Advanced Math section, but it is still within the acceptable range for 'Hard' as it requires a few steps of algebraic manipulation and understanding of equivalent expressions. Overall, the question is valid and well-posed."
+    }
+  },
+  {
+    "question_id": 179612,
+    "question_text": "In the expression $2(3x^2 + px + 5) - 4x(p + 2)$, $p$ is a constant. This expression is equivalent t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the value of $p$, we need to expand and simplify the first expression and then equate the coefficients with the second expression.Expanding the first expression:$2(3x^2 + px + 5) - 4x(p + 2) = 6x^2 + 2px + 10 - 4xp - 8x$Combining like terms:$6x^2 + (2p - 4p)x - 8x + 10 = 6x^2 - 2px - 8x + 10$$6x^2 + (-2p - 8)x + 10$This expression is given to be equivalent to $6x^2 + 2x + 10$. For these two expressions to be equivalent, the coefficients of the corresponding terms must be equal. Comparing the coefficient of $x$:$-2p - 8 = 2$Solving for $p$:$-2p = 2 + 8$$-2p = 10$$p = \frac{10}{-2}$$p = -5$Therefore, the value of $p$ is -5, which corresponds to option A.Let's check if other options are incorrect:If $p = -3$, the coefficient of $x$ would be $-2(-3) - 8 = 6 - 8 = -2 \neq 2$.If $p = 3$, the coefficient of $x$ would be $-2(3) - 8 = -6 - 8 = -14 \neq 2$.If $p = 5$, the coefficient of $x$ would be $-2(5) - 8 = -10 - 8 = -18 \neq 2$.All other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires algebraic manipulation and solving a linear equation, which is typical for the Advanced Math section of the SAT."
+    }
+  },
+  {
+    "question_id": 295832,
+    "question_text": "The expression $$\frac{p^{\frac{1}{2}}q^{-3}}{p^{-2}q^{\frac{1}{4}}}$$ where p > 1 and q > 1, is equiva...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The given expression is $$\frac{p^{rac{1}{2}}q^{-3}}{p^{-2}q^{rac{1}{4}}}$$. To simplify this expression, we use the exponent rules $\frac{a^m}{a^n} = a^{m-n}$ and $a^{-m} = \frac{1}{a^m}$.For the term with base p:$$\frac{p^{rac{1}{2}}}{p^{-2}} = p^{rac{1}{2} - (-2)} = p^{rac{1}{2} + 2} = p^{rac{1}{2} + \frac{4}{2}} = p^{rac{5}{2}}$$For the term with base q:$$\frac{q^{-3}}{q^{rac{1}{4}}} = q^{-3 - \frac{1}{4}} = q^{-\frac{12}{4} - \frac{1}{4}} = q^{-\frac{13}{4}}$$So the expression simplifies to $$p^{rac{5}{2}}q^{-\frac{13}{4}} = \frac{p^{rac{5}{2}}}{q^{rac{13}{4}}}$$.Now we convert the fractional exponents into radical form.$$p^{rac{5}{2}} = p^{2 + \frac{1}{2}} = p^2 \\\\cdot p^{rac{1}{2}} = p^2\\\\sqrt{p}$$$$q^{rac{13}{4}} = q^{3 + \frac{1}{4}} = q^3 \\\\cdot q^{rac{1}{4}} = q^3\\\\sqrt[4]{q}$$Therefore, the simplified expression is $$\frac{p^2\\\\sqrt{p}}{q^3\\\\sqrt[4]{q}}$$.Comparing this with the given options:A. $$\frac{p^2\\\\sqrt{p}}{q^3\\\\sqrt[4]{q}}$$ - This matches our simplified expression and is marked as correct.B. $$\frac{p^2\\\\sqrt[4]{p}}{q^3\\\\sqrt{q}}$$ - Incorrect.C. $$\frac{p\\\\sqrt{p}}{q^2\\\\sqrt[4]{q}}$$ - Incorrect.D. $$\frac{\\\\sqrt[4]{p^5}}{q^3\\\\sqrt{q}} = \frac{p^{5/4}}{q^{3}q^{1/2}} = \frac{p^{5/4}}{q^{7/2}}$$ - Incorrect.All options except A are clearly incorrect. The question is clearly written and makes sense. The difficulty level 'Hard' is appropriate as it requires understanding of exponent rules and simplification. There are no grammatical issues. The formatting of fractions in the question text could be improved for better readability, but it is still understandable. Overall, the question is valid and option A is the correct answer."
+    }
+  },
+  {
+    "question_id": 755986,
+    "question_text": "Given the functions $f(x) = x^3 + 5x^2 + 6x$ and $g(x) = x^2 + 3x + 2$, which of the following expre...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for an equivalent expression of $\frac{f(x)}{g(x)}$. To find the equivalent expression, we first factor the numerator and the denominator.$f(x) = x^3 + 5x^2 + 6x = x(x^2 + 5x + 6) = x(x+2)(x+3)$$g(x) = x^2 + 3x + 2 = (x+1)(x+2)$Then, we form the fraction $\frac{f(x)}{g(x)}$ and simplify it:$\frac{f(x)}{g(x)} = \frac{x(x+2)(x+3)}{(x+1)(x+2)}$For $x \neq -2$, we can cancel out the common factor $(x+2)$ from the numerator and the denominator:$\frac{f(x)}{g(x)} = \frac{x(x+3)}{x+1}$This matches option D.The condition $x > -1$ is given to ensure that we are considering values of $x$ for which the original expression is defined and to avoid division by zero in the simplified expression's denominator.  Specifically, $g(x) = (x+1)(x+2) \neq 0$, so $x \neq -1$ and $x \neq -2$. The condition $x > -1$ satisfies these restrictions and also ensures that canceling $(x+2)$ is valid in the context of finding an equivalent expression for $x > -1$.Options A, B, and C are incorrect because they do not match the simplified expression $\frac{x(x+3)}{x+1}$.Option A: $\frac{x+3}{x+1}$ is missing the factor 'x' in the numerator.Option B: $\frac{x(x+2)}{x+1}$ has $(x+2)$ instead of $(x+3)$ in the numerator.Option C: $\frac{x(x+3)}{x+2}$ has $(x+2)$ in the denominator instead of $(x+1)$.The difficulty level 'Hard' is appropriate as it requires factoring cubic and quadratic polynomials and simplifying rational expressions, which are advanced algebra skills tested on the SAT."
+    }
+  },
+  {
+    "question_id": 800127,
+    "question_text": "The expression $7x^2 - 28$ can be rewritten as $7(x-a)(x+a)$, where $a$ is a positive constant. What...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To find the value of $a$, we need to expand the expression $7(x-a)(x+a)$ and compare it to $7x^2 - 28$.Expanding $7(x-a)(x+a)$, we get $7(x^2 - a^2) = 7x^2 - 7a^2$.We are given that this expression is equal to $7x^2 - 28$.Therefore, we must have $7x^2 - 7a^2 = 7x^2 - 28$.Subtracting $7x^2$ from both sides, we get $-7a^2 = -28$.Dividing both sides by $-7$, we get $a^2 = \frac{-28}{-7} = 4$.Since $a$ is a positive constant, we take the positive square root of 4, which is $a = \\\\sqrt{4} = 2$.Therefore, the value of $a$ is 2, which corresponds to option A.Let's check the other options:Option B: If $a=4$, then $7(x-4)(x+4) = 7(x^2 - 16) = 7x^2 - 112 \neq 7x^2 - 28$.Option C: If $a=\\\\sqrt{7}$, then $7(x-\\\\sqrt{7})(x+\\\\sqrt{7}) = 7(x^2 - 7) = 7x^2 - 49 \neq 7x^2 - 28$.Option D: If $a=\\\\sqrt{28}$, then $7(x-\\\\sqrt{28})(x+\\\\sqrt{28}) = 7(x^2 - 28) = 7x^2 - 196 \neq 7x^2 - 28$.Only option A gives the correct value for $a$. The question is valid, and all incorrect options are clearly incorrect. The difficulty level of 'Hard' is arguable, it might be considered medium to hard depending on the student's familiarity with factoring and difference of squares, but it is acceptable for SAT advanced math topics."
+    }
+  },
+  {
+    "question_id": 626557,
+    "question_text": "Which of the following expressions is equivalent to $(2x - 3y)^2$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the expression equivalent to $(2x - 3y)^2$. Expanding this expression using the formula $(a - b)^2 = a^2 - 2ab + b^2$, where $a = 2x$ and $b = 3y$, we get: \n$(2x - 3y)^2 = (2x)^2 - 2(2x)(3y) + (3y)^2 = 4x^2 - 12xy + 9y^2$. \nOption D, $4x^2 - 12xy + 9y^2$, matches this expansion and is therefore the correct answer.\n\nLet's examine why other options are incorrect:\nOption A, $4x^2 - 9y^2$, is the result of $(2x - 3y)(2x + 3y)$ (difference of squares), not $(2x - 3y)^2$.\nOption B, $4x^2 + 12xy + 9y^2$, is the expansion of $(2x + 3y)^2$, not $(2x - 3y)^2$. The middle term has a positive sign instead of negative.\nOption C, $2x^2 - 6xy + 3y^2$, is incorrect because the coefficients of the terms are wrong when expanding $(2x - 3y)^2$. For example, $(2x)^2 = 4x^2$, not $2x^2$, and $(3y)^2 = 9y^2$, not $3y^2$.\n\nThere are no grammatical or formatting issues. The difficulty level 'Hard' is reasonable for SAT standards, as it requires algebraic manipulation and understanding of binomial expansion, which is typically tested in the 'Advanced Math' section. While some might consider it medium-hard, labeling it as 'Hard' is not inaccurate for the broader SAT test-taker population."
+    }
+  },
+  {
+    "question_id": 959282,
+    "question_text": "$$\\\\frac{x^2 - 5x - 14}{x - 7} = ax + d$$ \\nThe equation above is true for all $x \\\\neq 7$, where a ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and mathematically sound. To solve the problem, we simplify the left side of the equation: $$\\\\frac{x^2 - 5x - 14}{x - 7}$$. We factor the numerator: $x^2 - 5x - 14 = (x - 7)(x + 2)$. So the expression becomes $$\\\\frac{(x - 7)(x + 2)}{x - 7}$$. For $x \\\\neq 7$, we can cancel out the $(x - 7)$ terms, which simplifies to $x + 2$. Therefore, we have $x + 2 = ax + d$. Comparing the coefficients, we get $a = 1$ and $d = 2$. Thus, $a + d = 1 + 2 = 3$. Option D is indeed the correct answer. Options A, B, and C are incorrect as they do not equal 3. The difficulty level 'Hard' is appropriate as it requires algebraic manipulation and factoring skills typically tested in the advanced math section of the SAT."
+    }
+  },
+  {
+    "question_id": 913488,
+    "question_text": "Which of the following expressions is equivalent to $$\frac{3x^2 - 7x + 3}{x-2}$$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for an equivalent expression to the given rational function. Option D, $3x - 1 + \frac{1}{x-2}$, is indeed the correct equivalent expression. We can verify this by combining the terms in option D: \n\n$3x - 1 + \frac{1}{x-2} = \frac{(3x - 1)(x-2)}{x-2} + \frac{1}{x-2} = \frac{3x^2 - 6x - x + 2 + 1}{x-2} = \frac{3x^2 - 7x + 3}{x-2}$\n\nOptions A, B, and C are incorrect because when combined, they do not yield the original expression. For example:\n\nOption A: $3x + 1 + \frac{1}{x-2} = \frac{3x^2 - 5x - 1}{x-2} \neq \frac{3x^2 - 7x + 3}{x-2}$\nOption B: $3x - 1 - \frac{1}{x-2} = \frac{3x^2 - 7x + 1}{x-2} \neq \frac{3x^2 - 7x + 3}{x-2}$\nOption C: $3x + 1 - \frac{1}{x-2} = \frac{3x^2 - 5x - 3}{x-2} \neq \frac{3x^2 - 7x + 3}{x-2}$\n\nThere are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires polynomial division or manipulation of rational expressions, which is a skill tested in the advanced math section of the SAT."
+    }
+  },
+  {
+    "question_id": 688902,
+    "question_text": "The expression above can be written in the form $ax^2 + b$, where $a$ and $b$ are constants. What is...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to simplify the given expression $(4250 + 50x^2) + 5(20x^2 - 200)$ into the form $ax^2 + b$ and find the value of $a + b$. \n\nStep 1: Distribute the 5 in the second term: \n$5(20x^2 - 200) = 100x^2 - 1000$\n\nStep 2: Substitute this back into the original expression:\n$(4250 + 50x^2) + (100x^2 - 1000)$\n\nStep 3: Combine like terms:\n$(50x^2 + 100x^2) + (4250 - 1000) = 150x^2 + 3250$\n\nStep 4: Identify $a$ and $b$ by comparing $150x^2 + 3250$ to $ax^2 + b$:\n$a = 150$ and $b = 3250$\n\nStep 5: Calculate $a + b$:\n$a + b = 150 + 3250 = 3400$\n\nThe correct answer is 3400, which corresponds to option A. Options B, C, and D are incorrect. The question is grammatically sound and formatted correctly. The difficulty level is appropriate for 'Hard' within the SAT Advanced Math section, as it requires algebraic manipulation and understanding of equivalent expressions."
+    }
+  },
+  {
+    "question_id": 575894,
+    "question_text": "If β = p - q, which of the following is equivalent to the expression $y^2 - p^2 + 2pq - q^2$ ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. We are given that β = p - q and asked to find an equivalent expression for $y^2 - p^2 + 2pq - q^2$. We can rewrite the expression as $y^2 - (p^2 - 2pq + q^2)$. Recognizing that $p^2 - 2pq + q^2 = (p - q)^2 = β^2$, we can substitute β into the expression to get $y^2 - β^2$.  This expression is a difference of squares, which can be factored as $(y + β)(y - β)$. Option B, (y + β)(y - β), is therefore the correct equivalent expression.Let's check the other options:Option A: (y - β)² = $y^2 - 2βy + β^2$, which is not equal to $y^2 - β^2$.Option C: $y^2 - βy - β^2$, which is not equal to $y^2 - β^2$.Option D: $y^2 + β^2$, which is not equal to $y^2 - β^2$.All options except B are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires algebraic manipulation and pattern recognition, which is typical for advanced SAT math questions."
+    }
+  },
+  {
+    "question_id": 559958,
+    "question_text": "If x and y are positive numbers, which of the following is equivalent to $\\\\sqrt[3]{27x^9} \\cdot \\\\s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 253. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and mathematically sound. To solve the problem, we simplify each radical expression separat..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 105231,
+    "question_text": "If $(5^2)^x = \\sqrt[4]{5^3}$, what is the value of $x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. To solve for x in the equation $(5^2)^x = \\\\sqrt[4]{5^3}$, we first simplify both sides using exponent rules. On the left side, $(5^2)^x = 5^{2x}$. On the right side, $\\\\sqrt[4]{5^3} = (5^3)^{\frac{1}{4}} = 5^{\frac{3}{4}}$.  Setting the exponents equal, we have $2x = \frac{3}{4}$. Dividing both sides by 2, we get $x = \frac{3}{4} \\\\div 2 = \frac{3}{4} \times \frac{1}{2} = \frac{3}{8}$. Option B, $\frac{3}{8}$, is indeed the correct answer. The other options are incorrect as substituting them back into the original equation will not satisfy the equality. The difficulty level 'Hard' is appropriate for an SAT question testing exponent manipulation and equation solving skills, especially within the 'Advanced Math' category."
+    }
+  }
+]

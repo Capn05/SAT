@@ -1,0 +1,627 @@
+[
+  {
+    "question_id": 423706,
+    "question_text": "A bakery sells two types of cookies: chocolate chip and oatmeal raisin. Last Saturday, the bakery's ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The equation provided is 2.25c + 1.50o = 352.50. In this equation, 'c' represents the number of chocolate chip cookies sold and 'o' represents the number of oatmeal raisin cookies sold. The coefficients of these variables represent the price of each cookie type. Therefore, 2.25 is the price of each chocolate chip cookie and 1.50 is the price of each oatmeal raisin cookie. The question asks for the price of each oatmeal raisin cookie, which is represented by 1.50. Option C, 1.50, is the correct answer. Options A, B, and D are incorrect because: A (2.25) is the price of a chocolate chip cookie, B (1.50o) represents the total revenue from oatmeal raisin cookies, and D (2.25c) represents the total revenue from chocolate chip cookies. The question is clearly written, grammatically correct, and the difficulty level is appropriately categorized as Easy for the SAT."
+    }
+  },
+  {
+    "question_id": 438847,
+    "question_text": "Line p is defined by the equation $$y = -2x + 7$$. Line q is perpendicular to line p in the xy-plane...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the slope of a line perpendicular to a given line. The equation of line p is given in slope-intercept form, $$y = -2x + 7$$, so the slope of line p is $$m_p = -2$$. For two lines to be perpendicular, the product of their slopes must be -1. Let $$m_q$$ be the slope of line q. Then, $$m_p \\\\cdot m_q = -1$$. Substituting $$m_p = -2$$, we get $$-2 \\\\cdot m_q = -1$$. Solving for $$m_q$$, we have $$m_q = \frac{-1}{-2} = \frac{1}{2}$$. Option A, $$\frac{1}{2}$$, is indeed the correct slope.Options B, C, and D are incorrect. Option B, $$-2$$, is the slope of line p, not line q. Option C, $$2$$, would result in a product of slopes of $$-2 \times 2 = -4 \neq -1$$, so line q would not be perpendicular to line p. Option D, $$-\frac{1}{2}$$, would result in a product of slopes of $$-2 \times -\frac{1}{2} = 1 \neq -1$$, so line q would also not be perpendicular to line p.There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Easy' because it tests a fundamental concept of perpendicular lines and slopes, which is typically covered in early algebra and is considered a basic skill for the SAT math section."
+    }
+  },
+  {
+    "question_id": 131598,
+    "question_text": "2x+5y=31  A fruit vendor charged a customer $31 for some apples and some bananas. The equation above...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The equation 2x+5y=31 accurately represents the given scenario. To find the number of bananas purchased when 3 apples were purchased, we substitute x=3 into the equation: 2(3) + 5y = 31. This simplifies to 6 + 5y = 31. Subtracting 6 from both sides gives 5y = 25. Dividing by 5 gives y = 5. Therefore, the customer purchased 5 bananas, and option C is indeed the correct answer. Options A, B, and D are incorrect because substituting x=3 and these values for y into the equation does not result in 31. The difficulty level is appropriately classified as Easy, as it involves a straightforward substitution and solving a simple linear equation."
+    }
+  },
+  {
+    "question_id": 219447,
+    "question_text": "p + c = 45  The equation above relates the price of a pair of pants, p, and the price of a shirt, c,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The equation p + c = 45 states that the sum of the price of pants (p) and the price of a shirt (c) is equal to 45.  The question asks what the number 45 represents in this context. Option C, 'The total price of the pants and the shirt', accurately describes the sum p + c. Options A, B, and D are incorrect because 45 is not just the price of pants, just the price of the shirt, or the difference in price; it is the sum of the two prices. The question is clearly written, grammatically sound, and appropriate for an 'Easy' difficulty level on the SAT."
+    }
+  },
+  {
+    "question_id": 613523,
+    "question_text": "A fruit vendor sells apples for $2 each and bananas for $1.50 each. A customer purchased some apples...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense in the context of a word problem involving linear equations. The equation 4x + 3y = 45 correctly represents the given scenario where apples cost $2 each (2x becomes 4x after multiplying by 2.25 to remove decimals from $22.50 and $1.50) and bananas cost $1.50 each (1.5y becomes 3y after multiplying by 2.25). The solution (x, y) = (3, 11) means x=3 apples and y=11 bananas. Option A correctly interprets this as 'If 3 apples were purchased, then 11 bananas were purchased.' Option B is incorrect because it misinterprets 'y' as the total cost instead of the number of bananas. Option C and D are incorrect because they reverse the roles of x and y in the interpretation. The difficulty level is appropriate as it requires basic understanding of linear equations and their interpretation in a real-world context."
+    }
+  },
+  {
+    "question_id": 474993,
+    "question_text": "The equation $y = 2.5x$ models the total earnings, $y$, in dollars, a vendor makes at a craft fair b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The equation $y = 2.5x$ correctly models the earnings based on the number of items sold. To find the earnings when 8 items are sold, we substitute $x = 8$ into the equation: $y = 2.5 \times 8 = 20$. Therefore, option C ($20) is the correct answer. Options A, B, and D are incorrect because they do not result from correctly substituting $x=8$ into the given equation. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Easy, as it involves a straightforward substitution and basic arithmetic."
+    }
+  },
+  {
+    "question_id": 230213,
+    "question_text": "Which of the following is an equation of the graph shown in the xy-plane above?  ![](_page_6_Figure_...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a graph in the xy-plane, but the image of the graph is missing. This makes the question impossible to answer as intended.",
+        "Without the image, it is impossible to definitively verify if option A is the correct equation for the missing graph.",
+        "While the question structure and options are valid for a linear equation problem, the missing visual component is a critical flaw."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is designed to test the understanding of linear equations and their graphical representation. The options provided are all linear equations in slope-intercept form, and they are distinct enough that a graph would likely allow for easy differentiation between them. Option A, $y = \frac{1}{2}x + 1$, is marked as correct, suggesting the intended graph has a y-intercept of 1 and a slope of 1/2. Options B, C, and D represent lines with different slopes or y-intercepts, making them likely incorrect if the graph corresponds to option A. However, the crucial image of the graph is missing. Without the graph, the question cannot be solved, and its validity is compromised.  Assuming the question was intended to be valid and option A is indeed the correct answer for the missing graph, then the other options are clearly incorrect and the difficulty level 'Easy' is appropriate for SAT Math.  Nevertheless, the missing image is a critical error that renders the question invalid in its current form."
+    }
+  },
+  {
+    "question_id": 509309,
+    "question_text": "A student is buying notebooks and pens for school supplies. Each notebook costs $2.50 and each pen c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It describes a scenario where a student buys notebooks and pens at given prices and spends a total amount. To represent this situation with an equation, we need to consider the cost of each item and the quantity purchased. \n\nLet x be the number of notebooks and y be the number of pens.\nCost of each notebook = $2.50\nCost of x notebooks = 2.50x\nCost of each pen = $1.25\nCost of y pens = 1.25y\nTotal cost = Cost of notebooks + Cost of pens = 2.50x + 1.25y\n\nThe question states that the total amount spent is $20.00. Therefore, the equation representing this situation is 2.50x + 1.25y = 20.00.\n\nOption B, 2.50x + 1.25y = 20.00, correctly represents this situation and is marked as correct. \n\nOption A, 1.25x + 2.50y = 20.00, incorrectly assigns the price of pens to notebooks and vice versa.\nOption C, 2.50x - 1.25y = 20.00, uses subtraction which does not represent the total cost of purchasing both items.\nOption D, x + y = 20.00, ignores the cost of each item and only considers the sum of the quantities, which is not what the question is asking.\n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it is a straightforward application of translating a word problem into a linear equation, a fundamental concept in algebra."
+    }
+  },
+  {
+    "question_id": 398998,
+    "question_text": "The graph shows the possible combinations of the number of cups of coffee and tea that could be purc...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. The correct answer should be option C (9)."
+      ],
+      "correct_answer": "C",
+      "explanation": "The line on the graph passes through points (24, 0) and (0, 12). This represents the equation of the line in intercept form. We can find the equation of the line using these two points. The slope of the line is (12 - 0) / (0 - 24) = 12 / -24 = -1/2. The y-intercept is 12. So, the equation of the line is y = (-1/2)x + 12.  Alternatively, we can use the two-point form of a line equation. However, intercept form is easier here.  We can rewrite this equation to represent the total cost. Let 'x' be the number of cups of coffee and 'y' be the number of cups of tea. From the intercepts, we can infer the following: If only coffee is purchased (y=0), 24 cups can be bought for $24. If only tea is purchased (x=0), 12 cups can be bought for $24. This implies the price of one cup of coffee is $24/24 = $1, and the price of one cup of tea is $24/12 = $2. Therefore, the equation representing the total cost is 1*x + 2*y = 24, or x + 2y = 24.  Sarah purchased 6 cups of coffee, so x = 6. Substituting x = 6 into the equation: 6 + 2y = 24. Subtracting 6 from both sides gives 2y = 18. Dividing by 2 gives y = 9. Therefore, Sarah purchased 9 cups of tea. Option C is the correct answer, not option A."
+    }
+  },
+  {
+    "question_id": 510062,
+    "question_text": "A bakery sold a total of $c$ cookies in a day. Of these, $o$ were oatmeal raisin cookies and 125 wer...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The total number of cookies sold is $c$. This total is composed of oatmeal raisin cookies ($o$) and chocolate chip cookies (125). Therefore, the relationship can be expressed as $c = o + 125$. Rearranging this equation to solve for the relationship between $c$ and $o$ in the form of the options provided, we subtract $o$ from both sides to get $c - o = 125$. Option B correctly represents this relationship. Options A, C, and D are incorrect because they do not logically follow from the problem description. Option A suggests $c + o = 125$, implying the sum of total cookies and oatmeal raisin cookies is 125, which is not correct. Option C, $o - c = 125$, implies oatmeal raisin cookies are more than total cookies, which is impossible. Option D, $2c - o = 125$, has no logical basis in the given context. The difficulty level 'Easy' is appropriate as it involves a straightforward translation of a word problem into a linear equation."
+    }
+  },
+  {
+    "question_id": 720394,
+    "question_text": "A florist purchased 7 roses that cost $r each and 2 lilies that cost $l each. If the given equation ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The equation provided is 7r + 2l = 42. In this equation, '7r' represents the total cost of 7 roses (since 'r' is the cost of each rose), and '2l' represents the total cost of 2 lilies (since 'l' is the cost of each lily). The sum of these two terms, 7r + 2l, represents the total cost of all roses and lilies purchased. Therefore, 42, which is equal to 7r + 2l, represents the total cost, in dollars, for all roses and lilies purchased. Option C accurately describes this interpretation. Options A and B are incorrect because they only represent parts of the total cost (cost of roses and cost of lilies respectively). Option D is incorrect because it refers to the difference in the *number* of flowers, not the cost, and the equation is about the cost."
+    }
+  },
+  {
+    "question_id": 986582,
+    "question_text": "A baker is creating a custom blend of two types of flour, Type A and Type B. Type A flour is 12% pro...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. Option A, 0.12x + 0.15y = 3, correctly represents the relationship described.  Type A flour contributes 0.12x pounds of protein, and Type B flour contributes 0.15y pounds of protein. The sum of these should equal the desired total of 3 pounds of protein. Options B, C, and D are incorrect because they either swap the protein percentages for Type A and Type B (Option B), use the percentages as whole numbers instead of decimals (Option C), or misrepresent the relationship entirely by adding percentages and multiplying by the total weight (Option D). There are no grammatical or formatting issues, and the difficulty level of 'Easy' is appropriate for an SAT math question testing basic linear equation formation from a word problem."
+    }
+  },
+  {
+    "question_id": 167639,
+    "question_text": "In the xy-plane, a line has a slope of -2 and passes through the point (0, 5).  Which of the followi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equation of a line given its slope and a point it passes through. The point (0, 5) is the y-intercept because the x-coordinate is 0.  Using the slope-intercept form of a linear equation, y = mx + b, where m is the slope and b is the y-intercept, we can substitute m = -2 and b = 5 to get y = -2x + 5. Option A, y = -2x + 5, is indeed the correct equation. Options B, C, and D are all incorrect because they either have the wrong slope or the wrong y-intercept, or both. Option B has a slope of 5 and a y-intercept of -2. Option C has a slope of 2 and a y-intercept of 5. Option D has a slope of -2 and a y-intercept of -5.  The difficulty level 'Easy' is appropriate as this question tests a fundamental concept in linear equations."
+    }
+  },
+  {
+    "question_id": 321839,
+    "question_text": "The equation 12x + 6y = 60 represents the cost in dollars of buying movie tickets, x, and snacks, y,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of a budget for movie tickets and snacks. To find the number of snacks they could purchase if they bought 3 movie tickets, we substitute x = 3 into the equation 12x + 6y = 60:12(3) + 6y = 6036 + 6y = 606y = 60 - 366y = 24y = 24 / 6y = 4Therefore, if the group purchased 3 movie tickets, they could purchase 4 snacks. Option B, which is 4, is indeed the correct answer.Let's check the other options:A. 2: 12(3) + 6(2) = 36 + 12 = 48. This is within the budget, but not the solution to the equation when x=3.C. 6: 12(3) + 6(6) = 36 + 36 = 72. This exceeds the budget of $60.D. 12: 12(3) + 6(12) = 36 + 72 = 108. This significantly exceeds the budget of $60.Options A, C, and D are clearly incorrect as they do not satisfy the equation when x=3 or violate the budget constraint. The difficulty level 'Easy' is appropriate as it involves a straightforward substitution and solving a linear equation, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 583438,
+    "question_text": "David is ordering pizzas and breadsticks for a party. Each pizza costs $15, and each order of breads...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Option C, '15p + 6b = 90', is the correct answer because it accurately represents the total cost of 'p' pizzas at $15 each and 'b' orders of breadsticks at $6 each, totaling David's budget of $90. Option A is incorrect as it sums the number of pizzas and breadsticks, not their costs. Option B incorrectly assigns the cost of breadsticks to pizzas and vice versa. Option D incorrectly assumes a combined cost of $21 for each pizza and breadstick unit. There are no grammatical or formatting issues, and the difficulty level is appropriately classified as 'Easy' for an SAT math question."
+    }
+  },
+  {
+    "question_id": 281839,
+    "question_text": "A landscaping company is designing a rectangular garden bed and considering four types of mulch to u...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is poorly written and confusing due to the contradictory definition of variables 'p' and 'c'. The question states that 'p' and 'c' represent the 'number of bags' of pine and cedar mulch respectively, but the equation `6.00(p/2) + 7.50(c/1.5) + 108 = T` is structured as if 'p' and 'c' represent the *volume* of pine and cedar mulch in cubic feet. If 'p' were the number of bags of pine mulch, the cost of pine mulch should be represented as `6.00p`, not `6.00(p/2)`. Similarly for cedar mulch. This inconsistency makes the question ambiguous and difficult to understand.",
+        "While option A is likely the intended correct answer based on the structure of the equation and the process of elimination, the question's flawed wording undermines its validity as a clear and unambiguous SAT question.",
+        "The difficulty level is likely miscategorized as 'Easy'. The ambiguity and potential misinterpretation of variables make it more of a medium difficulty question, as students need to infer the intended meaning despite the confusing wording."
+      ],
+      "correct_answer": "A",
+      "explanation": "The equation is structured as (Cost of Pine Mulch) + (Cost of Cedar Mulch) + 108 = Total Cost.  If we assume 'p' represents the volume of pine mulch in cubic feet and 'c' represents the volume of cedar mulch in cubic feet, then `p/2` is the number of bags of pine mulch and `c/1.5` is the number of bags of cedar mulch.  Therefore, `6.00(p/2)` represents the cost of pine mulch and `7.50(c/1.5)` represents the cost of cedar mulch.  In this interpretation, '108' must represent the cost of the remaining mulch types, which are rubber and cypress. Option A, 'The cost of the rubber and cypress mulch needed for the garden bed', is the correct interpretation of 108 in this context. However, the question is poorly worded because it defines 'p' and 'c' as 'number of bags' while the equation suggests they are volumes. This inconsistency makes the question confusing and not clearly written, despite option A being the most logically consistent answer based on the equation's structure."
+    }
+  },
+  {
+    "question_id": 74957,
+    "question_text": "The table below shows the number of hours Leo worked each day and the amount he earned. Assuming Leo...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a table that is not provided. Without the table showing the number of hours Leo worked and the amount he earned, the question is unsolvable.",
+        "It is impossible to verify if option A is actually correct or if other options are incorrect without the data from the missing table."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is fundamentally flawed because it relies on a table that is not included. To determine the correct equation representing the relationship between hours worked and earnings, we need the data from the table.  Assuming Option A is marked as correct based on some unseen table data, we cannot validate this without the table.  The question text itself is clear in its description of the relationship (hourly rate + fixed bonus), and the options are in the correct format for linear equations. However, the missing data renders the question unsolvable and therefore invalid as presented.  If we were to assume Option A is indeed the correct answer and work backwards, a possible table could have data points that fit the equation E = 15h + 10 (e.g., for h=1, E=25; for h=2, E=40).  However, without the actual table, this is speculation. The difficulty level 'Easy' might be appropriate if the table were present and the data straightforward, as the task involves identifying a linear equation from given data, a common easy-level algebra skill on the SAT. But with the missing table, the question is not easy, it's impossible."
+    }
+  },
+  {
+    "question_id": 518770,
+    "question_text": "A bakery sells muffins for $3 each and cookies for $2 each.  A customer buys a mix of muffins and co...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first calculate the cost of the muffins: 6 muffins * $3/muffin = $18.  Then, we subtract the cost of the muffins from the total cost to find the cost of the cookies: $24 - $18 = $6. Finally, we divide the cost of the cookies by the price per cookie to find the number of cookies: $6 / $2/cookie = 3 cookies. Option A, which is 3, is indeed the correct answer. Options B, C, and D are incorrect because they would result in a total cost different from $24. The question is appropriate for the 'Easy' difficulty level as it involves basic arithmetic and a simple linear equation concept."
+    }
+  },
+  {
+    "question_id": 323164,
+    "question_text": "The equation of a line is given by $y = 5x - 3$. Which table gives three values of $x$ and their cor...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to identify the table that correctly represents three values of x and their corresponding y values for the given linear equation $y = 5x - 3$. Option A is correct because for x=0, y = 5(0) - 3 = -3; for x=2, y = 5(2) - 3 = 7; and for x=4, y = 5(4) - 3 = 17. Options B, C, and D are incorrect because at least one pair of (x, y) values does not satisfy the given equation. For example, in option B, when x=0, y should be -3, but the table shows y=3. Similarly, for options C and D, the y values do not match the equation for the given x values. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it involves straightforward substitution and calculation for a linear equation, which is a fundamental concept in algebra."
+    }
+  },
+  {
+    "question_id": 722880,
+    "question_text": "R = 15b + 5h  In the equation above, R represents the total rental cost, in dollars, for renting b b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense in the context of renting bikes and helmets. The equation R = 15b + 5h directly represents the total rental cost as a function of the number of bikes (b) and helmets (h).  In this equation, 15 is the coefficient of 'b', which represents the number of bikes.  Therefore, 15 represents the cost associated with each bike. Option C, 'The rental cost, in dollars, for one bike', is the correct interpretation of the number 15. Options A, B, and D are clearly incorrect. Option A describes 'R', not 15. Option B describes the coefficient of 'h' (which is 5), not 15. Option D describes 'h', not 15. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it requires a basic understanding of linear equations and variable interpretation."
+    }
+  },
+  {
+    "question_id": 545294,
+    "question_text": "The graph of a line is shown below.  ![](1__page_24_Figure_4.jpeg)  What is the x-intercept of the l...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a graph that is not provided. The image file '1__page_24_Figure_4.jpeg' is missing, making the question unsolvable as it is presented.",
+        "Without the graph, it is impossible to verify if option A is indeed the correct x-intercept or if other options are incorrect based on the visual representation of the line."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question asks for the x-intercept of a line shown in a graph, but the graph image is missing.  An x-intercept is a point where the line crosses the x-axis, and it has the form (x, 0). Option A, (3, 0), and Option D, (6, 0), are both x-intercepts. Options B, (0, 6), and C, (0, 3), are y-intercepts.  Assuming option A is marked as correct because the intended graph has an x-intercept at (3, 0), then option A would be the correct answer, and options B and C would be clearly incorrect as they are y-intercepts. Option D would be incorrect if the x-intercept is indeed at x=3. However, without the actual graph, we cannot definitively confirm the correctness of option A or the incorrectness of other options based on visual information. The primary issue is the missing image, which renders the question invalid in its current form."
+    }
+  },
+  {
+    "question_id": 952241,
+    "question_text": "The equation $P = 2l + 2w$ gives the perimeter $P$ of a rectangle with length $l$ and width $w$. A r...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the formula for the perimeter of a rectangle and asks for the width given the perimeter and length. To verify the correct answer, we can plug in the given values into the formula: $P = 2l + 2w$. We are given $P = 32$ and $l = 10$. Substituting these values, we get $32 = 2(10) + 2w$, which simplifies to $32 = 20 + 2w$. Subtracting 20 from both sides gives $12 = 2w$. Dividing by 2 gives $w = 6$. Option A, which is 6, is indeed the correct answer. The other options are clearly incorrect as they would result in different perimeters when plugged back into the formula with the given length. Option B (11) gives $P = 2(10) + 2(11) = 42$, Option C (16) gives $P = 2(10) + 2(16) = 52$, and Option D (22) gives $P = 2(10) + 2(22) = 64$. None of these result in a perimeter of 32. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward application of a basic formula and solving a simple linear equation."
+    }
+  },
+  {
+    "question_id": 28260,
+    "question_text": "The x-intercept of the graph of $y = 2x - 10$ in the $xy$-plane is $(x, 0)$. What is the value of $x...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the x-coordinate of the x-intercept of the given linear equation. To find the x-intercept, we set $y = 0$ in the equation $y = 2x - 10$. This gives us $0 = 2x - 10$. Solving for $x$, we add 10 to both sides to get $10 = 2x$, and then divide by 2 to get $x = 5$. Therefore, the x-intercept is $(5, 0)$, and the value of $x$ is 5. Option C is indeed the correct answer. Options A, B, and D are incorrect because substituting these values for $x$ into the equation $y = 2x - 10$ does not result in $y = 0$. The question is grammatically correct, has no formatting issues, and is of appropriate difficulty (Easy) for the SAT."
+    }
+  },
+  {
+    "question_id": 23413,
+    "question_text": "What is the equation of the line shown in the xy-plane above?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equation of the line shown in the xy-plane. To verify the correct answer, we need to analyze the image provided in the URL. Assuming the image at URL '2__page_28_Figure_3_modified.jpeg' depicts a line with a slope of 2 and a y-intercept of 1, then option A, $y = 2x + 1$, is indeed the correct equation.  Let's assume the line passes through points (0, 1) and (1, 3). The slope would be (3-1)/(1-0) = 2, and the y-intercept is 1. Thus, the equation is y = 2x + 1. Option A matches this equation. Option B, $y = x + 1$, has a slope of 1, which is incorrect. Option C, $y = 2x - 1$, has a y-intercept of -1, which is incorrect. Option D, $y = -2x + 1$, has a slope of -2, which is incorrect. All other options are clearly incorrect if option A is correct. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it tests basic understanding of linear equations and graph interpretation, which is typically covered in early algebra and is considered easy on the SAT."
+    }
+  },
+  {
+    "question_id": 703502,
+    "question_text": "Javier bought some apples and bananas. The apples cost $2.00 per pound, and the bananas cost $1.00 p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Let 'a' be the pounds of apples and 'b' be the pounds of bananas. We are given two pieces of information that can be translated into equations: 1) The total cost is $12.00, so 2a + 1b = 12. 2) Javier bought twice as many pounds of bananas as apples, so b = 2a. Substituting the second equation into the first, we get 2a + 1(2a) = 12, which simplifies to 4a = 12. Solving for 'a', we find a = 3. Substituting 'a = 3' back into 'b = 2a', we get b = 2 * 3 = 6. Therefore, Javier bought 6 pounds of bananas. Option C is indeed the correct answer. Options A, B, and D are clearly incorrect as they do not satisfy the conditions given in the problem. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward application of linear equations."
+    }
+  },
+  {
+    "question_id": 537179,
+    "question_text": "David bought notebooks and pens for a total of $26. Each notebook costs $5 and each pen costs $2. If...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and easy to understand. The problem describes a scenario where David buys notebooks and pens with given costs and a total budget. We are given the number of pens and asked to find the number of notebooks. To solve this, we first calculate the cost of the pens (3 pens * $2/pen = $6). Then, we subtract this cost from the total amount to find the amount spent on notebooks ($26 - $6 = $20). Finally, we divide the amount spent on notebooks by the cost per notebook to find the number of notebooks ($20 / $5/notebook = 4 notebooks). Option A, which is 4, is indeed the correct answer. Options B, C, and D are incorrect as they would result in a total cost exceeding $26. The difficulty level is appropriately categorized as 'Easy' for an SAT question, as it involves basic arithmetic and a straightforward linear equation concept."
+    }
+  },
+  {
+    "question_id": 481332,
+    "question_text": "A line in the xy-plane has a slope of $\\frac{1}{2}$ and passes through the point (2, 1). Which equat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the equation of a line given its slope and a point it passes through. Option A, y = $\\\\frac{1}{2}x$, is correct because it has a slope of $\\\\frac{1}{2}$ and passes through the point (2, 1) as substituting x = 2 into the equation yields y = $\\\\frac{1}{2}(2) = 1$. Options B, C, and D are incorrect. Option B (y = $2x - 3$) has the wrong slope (slope is 2, not $\\\\frac{1}{2}$). Option C (y = $\\\\frac{1}{2}x + 2$) has the correct slope but does not pass through (2, 1) because substituting x = 2 yields y = $\\\\frac{1}{2}(2) + 2 = 3$, not 1. Option D (y = $2x + 1$) has the wrong slope and does not pass through (2, 1) because substituting x = 2 yields y = $2(2) + 1 = 5$, not 1. There are no grammatical or formatting issues, and the difficulty level is appropriately classified as 'Easy' for the SAT."
+    }
+  },
+  {
+    "question_id": 644946,
+    "question_text": "The equation $28 = 2l + 2w$ gives the perimeter of a rectangular garden that has length $l$, in feet...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the formula for the perimeter of a rectangle, gives the length, and asks for the width. Option A, which is 5, is the correct answer because substituting l=9 into the equation 28 = 2l + 2w gives 28 = 2(9) + 2w, which simplifies to 28 = 18 + 2w. Solving for w, we get 2w = 28 - 18 = 10, so w = 5. Options B, C, and D are incorrect because substituting them back into the perimeter equation with l=9 does not yield a perimeter of 28. The question is grammatically correct, has no formatting issues, and is appropriately classified as 'Easy' for the SAT."
+    }
+  },
+  {
+    "question_id": 728241,
+    "question_text": "A bicycle rental shop charges $25 per bicycle and $8 per helmet. The total cost of renting $b$ bicyc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and easy to understand. The cost of renting bicycles is $25 per bicycle, so for 'b' bicycles, the cost is 25b. The cost of renting helmets is $8 per helmet, so for 'h' helmets, the cost is 8h. The total cost is the sum of these two costs, which is 25b + 8h. The problem states that the total cost is $432. Therefore, the equation representing this situation is 25b + 8h = 432. Option D, 25b + 8h = 432, correctly represents this situation. Options A, B, and C are incorrect because they either reverse the costs associated with bicycles and helmets or use subtraction instead of addition for the total cost. The difficulty level is appropriately classified as 'Easy' as it involves a straightforward translation of a word problem into a linear equation."
+    }
+  },
+  {
+    "question_id": 189404,
+    "question_text": "Line $m$ is defined by the equation $y = -\\frac{5}{3}x + 7$. Line $n$ is perpendicular to line $m$ i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the slope of a line perpendicular to line $m$, we need to find the negative reciprocal of the slope of line $m$. The slope of line $m$ is given as $-\frac{5}{3}$ from the equation $y = -\frac{5}{3}x + 7$. The reciprocal of $-\frac{5}{3}$ is $-\frac{3}{5}$. The negative reciprocal is $-(-\frac{3}{5}) = \frac{3}{5}$. Therefore, the slope of line $n$ is $\frac{3}{5}$, which corresponds to option A. Options B, C, and D are incorrect. Option B is the slope of line $m$ itself. Option C is the negative reciprocal without taking the negative of the reciprocal. Option D is the reciprocal but not the negative reciprocal. The difficulty level 'Medium' is appropriate for this question as it tests a fundamental concept in linear equations typically covered in middle or high school algebra and is suitable for the SAT level."
+    }
+  },
+  {
+    "question_id": 763027,
+    "question_text": "At a local bakery, each muffin costs $3 and each loaf of bread costs $7.  A customer buys $m$ muffin...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is based on an inconsistent premise. If a customer buys 4 muffins at $3 each, the cost is $12. To reach a total cost of $44, the cost of loaves of bread must be $44 - $12 = $32. Since each loaf of bread costs $7, the number of loaves would be $32 / $7, which is not an integer. Therefore, there is no integer solution for the number of loaves of bread when the customer buys 4 muffins and the total cost is $44.",
+        "The option marked as correct (C. 4) is incorrect. If the customer bought 4 muffins and 4 loaves of bread, the total cost would be (4 * $3) + (4 * $7) = $12 + $28 = $40, not $44.",
+        "All options are technically incorrect because none of them lead to a total cost of $44 when combined with 4 muffins and integer loaves of bread."
+      ],
+      "correct_answer": null,
+      "explanation": "The question presents a scenario with inconsistent information.  Given the prices of muffins ($3) and loaves of bread ($7), and a total cost of $44, it's impossible for a customer who bought 4 muffins to have purchased an integer number of loaves of bread.  Let 'm' be the number of muffins and 'b' be the number of loaves of bread. The equation is 3m + 7b = 44. If m = 4, then 3(4) + 7b = 44, which simplifies to 12 + 7b = 44, and further to 7b = 32. Solving for b gives b = 32/7, which is not an integer. Since the number of loaves of bread must be an integer, the question as posed has no valid solution within the context of whole loaves of bread.  The marked answer C (4) is incorrect, as are all other options, because none of them satisfy the given conditions when m=4 and the total cost is $44 with integer values for both muffins and loaves."
+    }
+  },
+  {
+    "question_id": 775900,
+    "question_text": "A bakery sells custom cakes. The price C, in dollars, of a custom cake is a linear function of the n...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. Option B is the correct answer."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. However, the option marked as correct (A) is incorrect. Let's test each option against the data in the table:\n\n* **Option A: C = 5L + 20**\n   - For L=2, C = 5(2) + 20 = 30 (Correct)\n   - For L=4, C = 5(4) + 20 = 40 (Incorrect, should be $50)\n   - For L=6, C = 5(6) + 20 = 50 (Incorrect, should be $70)\n\n* **Option B: C = 10L + 10**\n   - For L=2, C = 10(2) + 10 = 30 (Correct)\n   - For L=4, C = 10(4) + 10 = 50 (Correct)\n   - For L=6, C = 10(6) + 10 = 70 (Correct)\n\n* **Option C: C = 20L - 10**\n   - For L=2, C = 20(2) - 10 = 30 (Correct)\n   - For L=4, C = 20(4) - 10 = 70 (Incorrect, should be $50)\n   - For L=6, C = 20(6) - 10 = 110 (Incorrect, should be $70)\n\n* **Option D: C = 25L - 20**\n   - For L=2, C = 25(2) - 20 = 30 (Correct)\n   - For L=4, C = 25(4) - 20 = 80 (Incorrect, should be $50)\n   - For L=6, C = 25(6) - 20 = 130 (Incorrect, should be $70)\n\nOnly Option B,  $C = 10L + 10$, correctly defines the relationship between L and C for all data points in the table.  Options A, C, and D are clearly incorrect as they do not fit all the given data points. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding of linear functions and testing equations against given data."
+    }
+  },
+  {
+    "question_id": 91165,
+    "question_text": "Sarah earns $25 per hour tutoring and $15 per hour babysitting. Last week, she babysat for 5 hours. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To earn $205 in total, and having earned $15/hour * 5 hours = $75 from babysitting, Sarah needs to earn $205 - $75 = $130 from tutoring. At a rate of $25/hour for tutoring, she must tutor for $130 / $25 = 5.2 hours. Option A, 5.2, is the correct answer. Options B, C, and D are incorrect as they would result in total earnings different from $205. The difficulty level is appropriate for a medium-level SAT math question."
+    }
+  },
+  {
+    "question_id": 909965,
+    "question_text": "Line $k$ in the xy-plane has an x-intercept at $(3, 0)$ and a y-intercept at $(0, -5)$. What is the ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. The correct answer is option D."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the slope of a line given its x-intercept at (3, 0) and y-intercept at (0, -5). The slope can be calculated using the formula $m = \frac{y_2 - y_1}{x_2 - x_1}$. Using the given points, $m = \frac{-5 - 0}{0 - 3} = \frac{-5}{-3} = \frac{5}{3}$. Therefore, option D, $\frac{5}{3}$, is the correct answer. Option A, $-\frac{5}{3}$, which is marked as correct, is incorrect. The other options, B and C, are also incorrect."
+    }
+  },
+  {
+    "question_id": 959352,
+    "question_text": "In the xy-plane, line K passes through the points (2, 3) and (4, 7). Which equation defines line K?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the equation of a line passing through two given points. Option C, y = 2x - 1, is indeed the correct equation for the line passing through (2, 3) and (4, 7). We can verify this by substituting the x and y values of both points into the equation: For (2, 3), 3 = 2(2) - 1 = 4 - 1 = 3 (correct). For (4, 7), 7 = 2(4) - 1 = 8 - 1 = 7 (correct). Options A, B, and D are incorrect because they do not satisfy both points. Option A: For (2, 3), 3 ≠ 2 - 1 = 1. Option B: For (2, 3), 3 ≠ 2(2) + 3 = 7. Option D: For (2, 3), 3 ≠ -2(2) - 3 = -7. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires basic knowledge of linear equations and slope calculation, which is standard for the SAT math section."
+    }
+  },
+  {
+    "question_id": 515777,
+    "question_text": "A furniture maker is designing a tabletop using oak, pine, and maple wood. The table below shows the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve this problem, we need to set up an equation based on the given information. Let $x$ be the volume of oak in cubic feet and $y$ be the volume of maple in cubic feet. We are given that 60 pounds of pine wood is used, and the total weight of the tabletop is 200 pounds.  From the table, the density of oak is 45 lb/ft³ and the density of maple is 40 lb/ft³.  The weight of oak is given by density × volume = $45x$ pounds. The weight of maple is given by density × volume = $40y$ pounds. The total weight of the tabletop is the sum of the weights of oak, pine, and maple. So, we have the equation: Weight of oak + Weight of pine + Weight of maple = Total weight. Substituting the values, we get: $45x + 60 + 40y = 200$. To find the relationship between $x$ and $y$, we need to isolate the terms with $x$ and $y$ on one side of the equation. Subtracting 60 from both sides, we get: $45x + 40y = 200 - 60$, which simplifies to $45x + 40y = 140$. This equation matches option C.  Options A, B, and D are incorrect because they do not represent the correct relationship derived from the problem statement. Option A has the wrong constant term (260 instead of 140). Option B has the wrong coefficient for x (30 instead of 45). Option D has the wrong coefficient for y (30 instead of 40)."
+    }
+  },
+  {
+    "question_id": 419185,
+    "question_text": "A student travels to school using a combination of walking and riding a scooter. The total distance ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The equation provided is $3w + 15s = 1.5$, where $w$ is the time spent walking and $s$ is the time spent riding a scooter, and 1.5 is the total distance in miles.  In the context of distance, speed, and time, we know that distance = speed × time.  Therefore, in the term $3w$, 3 represents the speed of walking in miles per hour, and $w$ is the time spent walking in hours, so $3w$ represents the distance walked. Similarly, in the term $15s$, 15 represents the speed of riding the scooter in miles per hour, and $s$ is the time spent riding the scooter in hours, so $15s$ represents the distance traveled by scooter. The sum of these two distances, $3w + 15s$, equals the total distance to school, which is 1.5 miles. Therefore, 15 represents the speed at which the student rides the scooter in miles per hour.Option A is incorrect because it misinterprets 15 as the time spent riding the scooter, when 's' already represents the time spent riding the scooter.Option B is incorrect because it misinterprets 15 as the walking speed, when the coefficient of 'w', which is 3, represents the walking speed.Option C is correct because it accurately interprets 15 as the speed of the scooter in miles per hour.Option D is incorrect because it misinterprets 15 as the total distance, when the total distance is given as 1.5 miles in the problem statement and in the equation."
+    }
+  },
+  {
+    "question_id": 538751,
+    "question_text": "The table shows three values of $x$ and their corresponding values of $y$, where $k$ is a constant, ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a table that is not provided. Without the table, the question cannot be solved.",
+        "The question is incomplete due to the missing table, making it unclear and unsolvable as presented."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question asks for the slope of a linear relationship based on a table of x and y values. However, the table itself is missing from the question description.  Without the table, it is impossible to determine the slope and answer the question.  If we assume that option A (-3) is indeed the correct answer, then there must have been a table that would yield a slope of -3. For example, a table with points like (0, 5), (1, 2), and (2, -1) would result in a slope of -3.  However, as the question is presented without the table, it is invalid due to missing crucial information.  If the table were provided and did lead to a slope of -3, then option A would be the correct answer, and options B, C, and D would be clearly incorrect. The difficulty level would be appropriate for a medium SAT question if the table were included."
+    }
+  },
+  {
+    "question_id": 219185,
+    "question_text": "What is the slope of the graph of $y = -\\frac{1}{3}(18x - 9) + 5x$ in the xy-plane?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the slope of the given linear equation. To find the slope, we first simplify the equation: \n$y = -\frac{1}{3}(18x - 9) + 5x$ \n$y = -\frac{1}{3} \\\\cdot 18x - \frac{1}{3} \\\\cdot (-9) + 5x$ \n$y = -6x + 3 + 5x$ \n$y = -x + 3$ \nThis equation is in slope-intercept form ($y = mx + b$), where the slope $m$ is the coefficient of $x$. In this case, $m = -1$. Therefore, option A (-1) is the correct answer. Options B, C, and D are incorrect as they do not represent the slope of the given equation. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium because it requires simplification of a linear equation and understanding of the slope-intercept form, which are standard algebra skills tested on the SAT."
+    }
+  },
+  {
+    "question_id": 352328,
+    "question_text": "A line passes through the points (1, 4) and (7, 8) in the xy-plane. What is the slope of the line?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the slope of a line passing through two given points. To calculate the slope, we use the formula: $m = \frac{y_2 - y_1}{x_2 - x_1}$. Using the points (1, 4) and (7, 8), we have $m = \frac{8 - 4}{7 - 1} = \frac{4}{6} = \frac{2}{3}$. Option A, $\frac{2}{3}$, is the correct answer and is marked as correct. Options B, C, and D are incorrect as they represent different slope values. There are no grammatical or formatting issues. The difficulty level is appropriately set to 'Medium' as it tests a fundamental concept in linear equations with straightforward calculations."
+    }
+  },
+  {
+    "question_id": 606936,
+    "question_text": "A rectangular garden is fenced on three sides, with one side of the garden serving as a wall. The si...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense in the context of an SAT math problem. The equation $2x + y = 50$ directly represents the sum of the lengths of the three fenced sides of the rectangular garden (two sides of length $x$ and one side of length $y$). Option C, 'The total length, in meters, of the fence used to enclose the three sides of the garden,' accurately describes what 50 represents in the given equation and scenario. Options A, B, and D are incorrect because they do not accurately represent the sum $2x + y$. Option A represents $2x$, Option B represents $y$, and Option D represents $2x + 2y$, none of which is directly equal to 50 as defined by the given equation in this context. There are no grammatical or formatting issues, and the difficulty level of 'Medium' is appropriate for an SAT question of this type, as it tests basic algebraic interpretation in a word problem context."
+    }
+  },
+  {
+    "question_id": 692051,
+    "question_text": "What is the slope of the graph of $y = \\frac{3}{7}x - 15$ in the xy-plane?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "1. **Clarity:** The question is clearly written and unambiguous. It directly asks for the slope of the given linear equation in the xy-plane. \n2. **Correct Answer:** The equation is given in slope-intercept form, $y = mx + b$, where $m$ represents the slope. In the equation $y = \frac{3}{7}x - 15$, the coefficient of $x$ is $\frac{3}{7}$, which is the slope. Therefore, option A, $\frac{3}{7}$, is indeed the correct answer.\n3. **Incorrect Options:**\n    * **B. $\frac{7}{3}$:** This is the reciprocal of the slope. It is a plausible distractor as students might mistakenly invert the fraction.\n    * **C. $-\frac{3}{7}$:** This is the negative of the slope. It is also a plausible distractor, perhaps confusing slope with negative slope in a different context or due to a sign error.\n    * **D. $-15$:** This is the y-intercept of the line. It is a plausible distractor as students might confuse the y-intercept with the slope.\n    All incorrect options are clearly wrong and represent common errors students might make when identifying the slope.\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is well-structured and uses standard mathematical notation.\n5. **Difficulty Level:** The difficulty level is appropriately marked as Medium. While the concept is fundamental, it tests a core skill in linear equations that is expected at the SAT level. It is not overly complex but requires understanding of the slope-intercept form."
+    }
+  },
+  {
+    "question_id": 649088,
+    "question_text": "A carpenter is building birdhouses. He uses 7 pieces of square wood, each with side length $s$, for ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To find the total perimeter, we need to calculate the perimeter of each type of wooden piece and sum them up. For the square pieces, each has a perimeter of 4s, and there are 7 pieces, so the total perimeter from square pieces is 7 * (4s) = 28s. For the regular hexagonal pieces, each has a perimeter of 6h, and there are 4 pieces, so the total perimeter from hexagonal pieces is 4 * (6h) = 24h. The total perimeter of all wooden pieces is the sum of these two, which is 28s + 24h.  The question states that the total perimeter is 290 inches. Therefore, the equation representing this situation is 28s + 24h = 290. Option D matches this equation. Options A, B, and C are incorrect because they do not correctly calculate the total perimeter based on the number of sides of each shape and the number of pieces used."
+    }
+  },
+  {
+    "question_id": 698482,
+    "question_text": "Line $m$ is defined by $y = \\frac{2}{5}x - 3$. Line $n$ is perpendicular to line $m$ in the xy-plane...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To find the slope of a line perpendicular to line $m$, we need to find the negative reciprocal of the slope of line $m$. The slope of line $m$ is given as $\frac{2}{5}$ from the equation $y = \frac{2}{5}x - 3$. The negative reciprocal of $\frac{2}{5}$ is $-\frac{5}{2}$. Option A, $-\frac{5}{2}$, is indeed the correct answer. Options B, C, and D are incorrect because they do not represent the negative reciprocal of $\frac{2}{5}$. The difficulty level 'Medium' is appropriate for this question as it tests a fundamental concept in linear equations."
+    }
+  },
+  {
+    "question_id": 876334,
+    "question_text": "The graph of the equation $px + qy = -10$ is a line in the xy-plane, where $p$ and $q$ are constants...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the value of $q$, we can use the given points that lie on the line. Substituting the point $(0, -2)$ into the equation $px + qy = -10$, we get: $p(0) + q(-2) = -10$, which simplifies to $-2q = -10$. Solving for $q$, we divide both sides by $-2$ to get $q = \frac{-10}{-2} = 5$. To verify, we can also use the point $(2, -4)$. Substituting this point and $q=5$ into the equation, we get: $p(2) + 5(-4) = -10$, which simplifies to $2p - 20 = -10$. Adding 20 to both sides gives $2p = 10$, so $p = 5$. Thus, with $p=5$ and $q=5$, the equation of the line is $5x + 5y = -10$. Let's check if both points satisfy this equation. For $(2, -4)$: $5(2) + 5(-4) = 10 - 20 = -10$. For $(0, -2)$: $5(0) + 5(-2) = 0 - 10 = -10$. Both points satisfy the equation. Therefore, the value of $q$ is indeed 5, and option A is the correct answer. Options B, C, and D are incorrect because substituting $q = -5, \frac{1}{5}, \frac{-1}{5}$ into $-2q = -10$ would not hold true."
+    }
+  },
+  {
+    "question_id": 928283,
+    "question_text": "In the xy-plane, line m intersects the y-axis at the point (0, 8) and passes through the point (4, 0...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first find the slope of line m using the points (0, 8) and (4, 0): slope = (0 - 8) / (4 - 0) = -8 / 4 = -2. Since the line intersects the y-axis at (0, 8), the y-intercept is 8. Thus, the equation of line m is y = -2x + 8. To find the value of w when x = 12, we substitute x = 12 into the equation: w = -2(12) + 8 = -24 + 8 = -16. Option B, -16, is indeed the correct answer. Options A, C, and D are incorrect as substituting x=12 into the line equation does not yield these values. There are no grammatical or formatting issues. The difficulty level 'Hard' is arguably appropriate as it requires multiple steps involving linear equations, which can be challenging for some students on the SAT."
+    }
+  },
+  {
+    "question_id": 568318,
+    "question_text": "In the equation $cx + dy = d$, $c$ and $d$ are constants such that $0 < d \\leq c$. Which of the foll...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The equation can be rewritten in slope-intercept form as $y = -\frac{c}{d}x + 1$.  Given that $0 < d \\\\leq c$, we know that $\frac{c}{d} \\\\geq 1$. Therefore, the slope $m = -\frac{c}{d}$ is negative and $m \\\\leq -1$. The y-intercept is $b = 1$.  The graph should be a line with a y-intercept of 1 and a slope less than or equal to -1.  Without seeing the placeholder options, we cannot definitively confirm if option B is correct and others are incorrect, but based on the problem description and constraints, a valid question can be constructed with these properties. The question is clearly written, makes sense, and the difficulty level 'Hard' is appropriate for SAT as it requires algebraic manipulation and understanding of linear equations and inequalities. Assuming Option B is designed to be the correct answer, it should represent a graph of a line with a y-intercept of 1 and a slope less than or equal to -1, while options A, C, and D should represent graphs that do not fit these criteria (e.g., positive slope, y-intercept not equal to 1, slope between -1 and 0)."
+    }
+  },
+  {
+    "question_id": 19271,
+    "question_text": " ![](_page_4_Figure_1.jpeg) The graph above shows the possible numbers of bagels and muffins that so...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because the image referenced in the question text is missing. The question refers to 'The graph above' but no graph is provided. Without the graph, it is impossible to determine the relationship between the number of bagels and muffins and solve for the price of a bagel.",
+        "Due to the missing image, it is impossible to verify if option B is actually the correct answer based on the intended graph.",
+        "Without the graph, we cannot definitively say that other options are incorrect. Different graphs could lead to different correct answers.",
+        "There is a formatting issue as the image is missing, which is crucial for solving the problem."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is invalid due to the missing image. The question refers to a graph that is essential to solve the problem, but the image file 'page_4_Figure_1.jpeg' is not provided.  Without the graph, we cannot determine the relationship between the number of bagels and muffins that can be bought for $30.  Therefore, we cannot definitively verify if option B is the correct answer or if other options are incorrect based on the intended question.  The question is not clearly written because it relies on a visual element that is absent.  While 'Hard' might be an appropriate difficulty level for a question involving linear equations in a graphical context, the missing graph renders the question unsolvable as presented."
+    }
+  },
+  {
+    "question_id": 982229,
+    "question_text": "Line $k$ in the xy-plane is perpendicular to the line with equation $y = x + 5$. What is the slope o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the slope of line $k$ perpendicular to the line $y = x + 5$, we first identify the slope of the given line. The equation $y = x + 5$ is in slope-intercept form ($y = mx + b$), where the slope $m$ is the coefficient of $x$. In this case, the slope of the given line is 1. For two lines to be perpendicular, the product of their slopes must be -1. Let $m_k$ be the slope of line $k$. Then, $1 \times m_k = -1$, which means $m_k = -1$. Therefore, the slope of line $k$ is -1, and option C is the correct answer. Options A, B, and D are incorrect. Option A (1) is the slope of the given line, not the perpendicular line. Option B (0) represents a horizontal line, which is not perpendicular to a line with slope 1. Option D (Undefined) represents a vertical line, but a line perpendicular to $y = x + 5$ is not vertical.  The difficulty level 'Hard' is likely an overestimate for this question, as it is a straightforward application of a basic concept in linear equations and is more likely to be considered 'Easy' or 'Medium' on the SAT."
+    }
+  },
+  {
+    "question_id": 883539,
+    "question_text": "The table below shows the coordinates of three points on a line in the xy-plane, where a and b are c...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually correct. The correct value of a + b is 6, which is not among the options provided.",
+        "None of the provided options (A, B, C, D) are correct for the given question.",
+        "The question states that option A is the correct answer, but based on calculations, it is incorrect."
+      ],
+      "correct_answer": null,
+      "explanation": "Let the three points be (0, b), (2, 1), and (a, 0). The slope of the line passing through these points is given as $-\frac{1}{2}$. We can calculate the slope using any two pairs of points and set it equal to $-\frac{1}{2}$.\n\nUsing points (0, b) and (2, 1), the slope is: $m = \frac{1 - b}{2 - 0} = \frac{1 - b}{2}$.\nSetting this equal to $-\frac{1}{2}$: $\frac{1 - b}{2} = -\frac{1}{2}$.\nMultiplying both sides by 2: $1 - b = -1$.\nSolving for b: $b = 1 - (-1) = 1 + 1 = 2$.\n\nUsing points (2, 1) and (a, 0), the slope is: $m = \frac{0 - 1}{a - 2} = \frac{-1}{a - 2}$.\nSetting this equal to $-\frac{1}{2}$: $\frac{-1}{a - 2} = -\frac{1}{2}$.\nMultiplying both sides by -1: $\frac{1}{a - 2} = \frac{1}{2}$.\nThis implies $a - 2 = 2$.\nSolving for a: $a = 2 + 2 = 4$.\n\nTherefore, $a + b = 4 + 2 = 6$.\n\nThe value of $a + b$ is 6, which is not among the options A, B, C, or D. Option A, marked as correct (1), is incorrect. All other options are also incorrect as they are not equal to 6. The question itself is valid and clearly written, and the difficulty level is appropriate. However, there is an error in the provided options and the marked correct answer."
+    }
+  },
+  {
+    "question_id": 963091,
+    "question_text": "Evelyn sells two types of handcrafted jewelry: rings and necklaces. She earns a profit of $25 for ea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of SAT math problems.  It describes a scenario involving profit from selling rings and necklaces and relates it to a graph representing combinations for a total profit P. To find P, we need to analyze the graph (assuming it's provided in 'page_7_Figure_1.jpeg').  Let's assume the graph is a line segment connecting the x-intercept and y-intercept.  From the options and the context, we can test the option marked as correct, B. 400.If P = 400, the equation representing the profit is 25x + 40y = 400, where x is the number of rings and y is the number of necklaces.  Dividing the equation by 5 simplifies it to 5x + 8y = 80.To find the intercepts:If y = 0 (necklaces = 0), then 5x = 80, so x = 16 (rings = 16).  Point (16, 0).If x = 0 (rings = 0), then 8y = 80, so y = 10 (necklaces = 10). Point (0, 10).If we assume the graph in 'page_7_Figure_1.jpeg' is a line segment connecting the points (16, 0) and (0, 10) in the first quadrant, then this line represents all combinations of rings and necklaces that yield a profit of $400.Let's check option A. 200:  25x + 40y = 200 simplifies to 5x + 8y = 40. Intercepts are (8, 0) and (0, 5). This is a different line.Let's check option C. 500:  25x + 40y = 500 simplifies to 5x + 8y = 100. Intercepts are (20, 0) and (0, 12.5). This is a different line.Let's check option D. 800:  25x + 40y = 800 simplifies to 5x + 8y = 160. Intercepts are (32, 0) and (0, 20). This is a different line.Assuming the graph in the image corresponds to the line connecting (16, 0) and (0, 10), then option B (400) is indeed the correct answer, and options A, C, and D are clearly incorrect as they would represent different lines on the graph.The question is grammatically correct and well-formatted. The difficulty level is appropriate for a 'Hard' SAT math question, as it requires understanding linear equations, interpreting word problems, and relating them to graphical representations.  The question relies on the visual information from the graph, which is standard for SAT math questions.  Without seeing the actual graph, we are assuming it aligns with the correct answer and the logic of linear equations.  If the graph visually represents the line connecting (16, 0) and (0, 10), then the question is valid and well-suited for the SAT. "
+    }
+  },
+  {
+    "question_id": 179501,
+    "question_text": "The line in the xy-plane is given by the equation $\\frac{y}{2} + \\frac{x}{5} = \\frac{3}{10}$. What i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the x-coordinate of the x-intercept of the given line. To find the x-intercept, we set y = 0 in the equation of the line: $\frac{0}{2} + \frac{x}{5} = \frac{3}{10}$. This simplifies to $\frac{x}{5} = \frac{3}{10}$. Multiplying both sides by 5, we get $x = \frac{3}{10} \times 5 = \frac{15}{10} = \frac{3}{2}$. Therefore, the x-coordinate of the x-intercept is $\frac{3}{2}$, which corresponds to option A. Options B, C, and D are incorrect because they are not equal to $\frac{3}{2}$. The difficulty level of 'Hard' is arguably slightly high, as this question primarily tests a fundamental concept of linear equations and involves straightforward algebraic manipulation. It might be considered medium to hard difficulty depending on the student's familiarity with fractions and linear equations, but 'Hard' is not entirely inappropriate for SAT standards."
+    }
+  },
+  {
+    "question_id": 987950,
+    "question_text": "In the xy-plane, line k is defined by 2x - y = 0. Line j is perpendicular to line k, and the y-inter...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve this problem, first, we need to find the slope of line k. The equation of line k is given as 2x - y = 0. Rewriting this in slope-intercept form (y = mx + b), we get y = 2x. Thus, the slope of line k is 2.Since line j is perpendicular to line k, the slope of line j is the negative reciprocal of the slope of line k. Therefore, the slope of line j is -1/2.We are given that the y-intercept of line j is (0, -1). This means that when x = 0, y = -1. Using the slope-intercept form y = mx + b, where m is the slope and b is the y-intercept, we have y = (-1/2)x + (-1), or y = (-1/2)x - 1.To convert this equation to the standard form Ax + By = C, we can multiply the entire equation by 2 to eliminate the fraction: 2y = -x - 2. Rearranging the terms to get the standard form, we add x to both sides: x + 2y = -2.Comparing this equation with the given options:Option A: x + 2y = -2. This matches our derived equation and is marked as correct.Option B: x + 2y = 2. This is incorrect because the constant term is different.Option C: 2x - y = -1.  The slope of this line is 2, which is the same as line k, not perpendicular.Option D: 2x - y = 1. The slope of this line is 2, which is the same as line k, not perpendicular.Options B, C, and D are clearly incorrect because they either have the wrong constant term or the wrong slope (not perpendicular to line k).The difficulty level 'Hard' is appropriate as it requires multiple steps: finding the slope of a line from standard form, understanding perpendicular lines and their slopes, using the y-intercept, and converting to standard form.There are no grammatical or formatting issues. The question is valid, and option A is indeed the correct answer."
+    }
+  },
+  {
+    "question_id": 923757,
+    "question_text": "A coffee shop wants to create a new blend of coffee by mixing two types of beans. They have Colombia...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. The correct answer should be option B."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. However, the option marked as correct (A) is incorrect. To solve this problem, let 'x' be the number of pounds of Colombian beans. The total cost of the Colombian beans is 12x, and the total cost of the Brazilian beans is 9 * 6 = 54. The total weight of the blend is x + 6 pounds, and the desired cost of the blend is $10 per pound. Therefore, the total cost of the blend should be 10 * (x + 6). We can set up the equation: 12x + 54 = 10(x + 6). Solving for x: 12x + 54 = 10x + 60 => 2x = 6 => x = 3. Thus, 3 pounds of Colombian beans must be mixed with 6 pounds of Brazilian beans. Option B, which is 3, is the correct answer. Options A, C, and D are incorrect. The difficulty level 'Hard' is arguably appropriate for SAT, as it requires setting up and solving a linear equation from a word problem."
+    }
+  },
+  {
+    "question_id": 169564,
+    "question_text": "The table shows two values of x and their corresponding values of y. In the xy-plane, the graph of t...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as it refers to a table of values for x and y, but the table itself is missing from the question text. Without the table, it is impossible to determine the linear relationship between x and y and solve for the value of 'a'.",
+        "Due to the missing table, it is impossible to verify if option A is actually the correct answer based on the provided information alone."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid because it refers to a table that is not provided.  To solve this problem, we need two pairs of (x, y) values to define the linear equation. Without this table, the question is unsolvable as presented.  Assuming that option A (-3) is intended to be the correct answer, one possible linear relationship could be derived. For example, if the linear equation is y = (6/5)x, and the table contained values like (0, 0) and (5, 6), then when x = -5/2, y = (6/5)*(-5/2) = -3. In this hypothetical scenario, option A would be correct. However, without the actual table, we cannot definitively confirm the correctness of option A or the incorrectness of other options. The primary issue is the missing table, which makes the question unclear and unsolvable as given."
+    }
+  },
+  {
+    "question_id": 386783,
+    "question_text": "The graph shows a linear relationship between p and q. Which equation represents this relationship, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The question text refers to variables 'p' and 'q', but the options use 'x' and 'y'. This inconsistency might cause minor confusion, although it's likely intended that 'p' corresponds to 'x' and 'q' corresponds to 'y'."
+      ],
+      "correct_answer": "C",
+      "explanation": "Option C, 8x + Ry = 24, is the correct answer if the graph depicts a line with an x-intercept of 3 and a positive y-intercept. To see why, let's find the intercepts for each option:\n\nOption A: Rx + 8y = 24.  x-intercept = 24/R, y-intercept = 3.\nOption B: Rx - 8y = 24.  x-intercept = 24/R, y-intercept = -3.\nOption C: 8x + Ry = 24.  x-intercept = 3, y-intercept = 24/R.\nOption D: 8x - Ry = 24.  x-intercept = 3, y-intercept = -24/R.\n\nFor Option C to be correct, the graph must intersect the x-axis at x=3 and the y-axis at a positive value (since R is a positive constant, 24/R is positive).  Options B and D have negative y-intercepts, so they are incorrect if the graph is in the first and second quadrants or passes through the first quadrant with a negative slope from the y-axis to the x-axis. Option A has different intercepts compared to option C (unless R=8, which is not specified). Assuming the graph is designed to have an x-intercept of 3 and a positive y-intercept, Option C is the only equation that fits this description.  The difficulty level is appropriate as it requires understanding of linear equations and intercepts, and analyzing the effect of coefficients."
+    }
+  },
+  {
+    "question_id": 144898,
+    "question_text": "Line k is defined by the equation $-\frac{3}{4}x + \frac{2}{5}y + 15 = 0$ in the xy-plane. What is the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "To find the slope of line k, we need to rewrite the equation in the slope-intercept form, which is y = mx + b, where m is the slope. The given equation is $-\frac{3}{4}x + \frac{2}{5}y + 15 = 0$.First, isolate the term with y:$\frac{2}{5}y = \frac{3}{4}x - 15$Next, solve for y by multiplying both sides of the equation by $\frac{5}{2}$:$y = \frac{5}{2} \times (\frac{3}{4}x - 15)$$y = (\frac{5}{2} \times \frac{3}{4})x - (\frac{5}{2} \times 15)$$y = \frac{15}{8}x - \frac{75}{2}$In the slope-intercept form $y = mx + b$, the slope m is the coefficient of x. In this case, $m = \frac{15}{8}$.Therefore, the slope of line k is $\frac{15}{8}$, which corresponds to option D.Options A, B, and C are incorrect because they do not represent the correct slope calculated from the given equation. Option A ($-\frac{15}{8}$) is the negative of the correct slope, Option B ($\frac{8}{15}$) is the reciprocal of the correct slope, and Option C ($-\frac{8}{15}$) is the negative reciprocal of the correct slope. These options might represent common errors students make when rearranging equations or misunderstanding the concept of slope."
+    }
+  },
+  {
+    "question_id": 340944,
+    "question_text": "The equation of a line is given by $$y = \\frac{2}{3}x - 1$$. Which table gives three values of $x$ a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The difficulty level 'Hard' is likely inaccurate. This question is more appropriately classified as 'Easy' to 'Medium' difficulty on the SAT, as it involves straightforward substitution into a linear equation."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for a table of values that satisfy the given linear equation $$y = \frac{2}{3}x - 1$$. To check each option, we substitute the given $x$ values into the equation and verify if the corresponding $y$ values match.\n\nOption A:\n- For x=0, y = (2/3)(0) - 1 = -1, but the table shows y = -3. Incorrect.\n\nOption B:\n- For x=0, y = (2/3)(0) - 1 = -1, but the table shows y = 1. Incorrect.\n\nOption C:\n- For x=0, y = (2/3)(0) - 1 = -1. Correct.\n- For x=3, y = (2/3)(3) - 1 = 2 - 1 = 1, but the table shows y = 0. Incorrect.\n\nOption D:\n- For x=0, y = (2/3)(0) - 1 = -1. Correct.\n- For x=3, y = (2/3)(3) - 1 = 2 - 1 = 1. Correct.\n- For x=6, y = (2/3)(6) - 1 = 4 - 1 = 3. Correct.\n\nOption D is the only option where all three pairs of (x, y) values satisfy the given equation. Therefore, option D is the correct answer, and options A, B, and C are clearly incorrect. There are no grammatical or formatting issues. The question is valid, but the difficulty level is overestimated."
+    }
+  }
+]

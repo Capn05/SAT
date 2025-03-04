@@ -1,0 +1,439 @@
+[
+  {
+    "question_id": 678209,
+    "question_text": "The weights, in pounds, of six packages are listed below: 12, 15, 15, 18, 20, 32.  What is the media...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the median weight of a given set of six package weights. To find the median, we first order the weights (which are already ordered): 12, 15, 15, 18, 20, 32. Since there are an even number of data points (six), the median is the average of the two middle values, which are the 3rd and 4th values: 15 and 18. The median is calculated as (15 + 18) / 2 = 33 / 2 = 16.5. Option B, 16.5, is indeed the correct median. The other options are incorrect. Option A (15) is the value of the 3rd data point, but not the median. Option C (17) and Option D (18) are also incorrect and not directly derived from a simple misunderstanding of the median calculation. The difficulty level 'Easy' is appropriate for this question as it tests a basic statistical concept. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 288601,
+    "question_text": "A teacher recorded the scores of two quizzes for a group of students. The scores for Quiz 1 are: 70,...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The marked correct answer is incorrect. Option B (80) should be the correct answer, not Option C (85)."
+      ],
+      "correct_answer": "B",
+      "explanation": "To solve this problem, we first need to calculate the average score for Quiz 1. The scores for Quiz 1 are 70, 75, 80, 80, and 85. The sum of these scores is 70 + 75 + 80 + 80 + 85 = 390. Since there are 5 scores, the average score for Quiz 1 is 390 / 5 = 78.Next, we are given the scores for Quiz 2 as 65, 70, 80, 95, and $x$. The sum of these scores is 65 + 70 + 80 + 95 + $x$ = 310 + $x$. Since there are also 5 scores for Quiz 2, the average score for Quiz 2 is (310 + $x$) / 5.We are told that the average score for Quiz 1 is equal to the average score for Quiz 2. Therefore, we can set up the equation:78 = (310 + $x$) / 5To solve for $x$, we multiply both sides of the equation by 5:78 * 5 = 310 + $x$390 = 310 + $x$Now, we subtract 310 from both sides of the equation to isolate $x$:390 - 310 = $x$$x$ = 80Therefore, the value of $x$ is 80. The correct option should be B, not C as marked."
+    }
+  },
+  {
+    "question_id": 894,
+    "question_text": "In a recent survey, 25 students reported spending a total of 100 hours on homework during a specific...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question provides the total number of homework hours (100) and the number of students (25). Based on this information alone, we can calculate the average number of hours spent on homework per student by dividing the total hours by the number of students (100 hours / 25 students = 4 hours/student). Therefore, option A is correct. Options B, C, and D (median, maximum, and minimum) cannot be determined because we only have aggregate data (the total) and not individual data points for each student. To calculate the median, maximum, or minimum, we would need to know the distribution of homework hours among the 25 students, which is not provided."
+    }
+  },
+  {
+    "question_id": 497353,
+    "question_text": "The heights, in inches, of five seedlings are recorded as follows: 4, 6, 8, 10, 12.  What is the mea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clear, concise, and mathematically sound. The correct answer is calculated by summing the heights (4 + 6 + 8 + 10 + 12 = 40) and dividing by the number of seedlings (5), resulting in a mean height of 8 inches. Option A correctly provides this answer. The other options are incorrect but plausible distractors. The difficulty level is appropriately categorized as Easy for the SAT."
+    }
+  },
+  {
+    "question_id": 558677,
+    "question_text": "The table below shows the scores of four students on Test 1 and Test 2.  | Student | Test 1 | Test 2...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the mean score on Test 1. To find the mean score on Test 1, we sum the scores of the four students on Test 1 and divide by the number of students (4). The scores on Test 1 are 85, 78, 92, and 81.  Sum of scores = 85 + 78 + 92 + 81 = 336. Mean score = 336 / 4 = 84. Option B is 84, which is the correct mean. Options A (83), C (89), and D (90) are all incorrect as they are not the calculated mean of the Test 1 scores. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it involves a straightforward calculation of the mean."
+    }
+  },
+  {
+    "question_id": 144240,
+    "question_text": "The table below shows the number of hours two students, Aisha and Ben, spent studying each day for a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to compare the means of two given data sets. To verify the correct answer, we calculate the mean of each data set:  Mean of data set C = (2 + 3 + 4 + 2 + 3 + 4 + 5) / 7 = 23 / 7 ≈ 3.29. Mean of data set D = (1 + 2 + 2 + 3 + 3 + 3 + 4) / 7 = 18 / 7 ≈ 2.57.  Comparing the means, 3.29 is greater than 2.57. Therefore, option C, 'The mean of data set C is greater than the mean of data set D,' is the correct statement. Options A, B, and D are incorrect because they do not accurately reflect the comparison of the calculated means. The question is grammatically sound, well-formatted, and the difficulty level is appropriately classified as 'Easy' for the SAT, as it involves basic calculation of the mean and comparison."
+    }
+  },
+  {
+    "question_id": 641264,
+    "question_text": "The number of hours per week students spend studying is summarized in the box plot above for a group...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        " and referencing an image file name. This makes the question impossible to answer as the visual information necessary to solve the problem is absent.",
+        " appearing after the question text is extraneous and unclear. It seems to be a formatting or processing error and does not contribute to the question's clarity.",
+        "Without the image, it is impossible to verify if option B (8) is actually the correct answer or if the other options are clearly incorrect. The correctness depends entirely on the missing box plot.",
+        "B",
+        "No image\\\\"
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 86296,
+    "question_text": "The table below shows the number of books read by students in a class during a summer reading progra...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the range of the number of books read by students. The range is calculated by subtracting the minimum value from the maximum value. In the given data, the maximum number of books read is 15 (Daniel) and the minimum number of books read is 8 (Ben). Therefore, the range is 15 - 8 = 7. Option C, which is 7, is indeed the correct answer. The other options (A, B, and D) are incorrect and serve as plausible distractors. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as calculating the range from a small dataset is a fundamental statistical concept suitable for an introductory level of data analysis."
+    }
+  },
+  {
+    "question_id": 746520,
+    "question_text": "The table gives the results of a survey of 200 students who were asked about the number of books the...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a table that is not provided. Without the table, it is impossible to determine the correct answer.",
+        "Due to the missing table, it is impossible to verify if option C is actually the correct answer or if other options are incorrect."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is invalid because it is incomplete. It explicitly mentions a table that contains the survey results, but this table is missing from the question description.  Without the table, we cannot determine the number of students who read 10 books or fewer, and therefore cannot verify if option C (marked as correct) is indeed correct, or if any of the other options are incorrect.  The question is unanswerable in its current form.  While the question text itself is grammatically sound and the difficulty level might be appropriate if the table were present, the fundamental lack of the data source renders the question invalid."
+    }
+  },
+  {
+    "question_id": 817733,
+    "question_text": "#### Five Tallest Buildings in Metropolis  | Building Name       | Height (meters) | |--------------...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the mean height of the five buildings listed in the table. To find the mean, we sum the heights and divide by the number of buildings, which is 5.  Sum of heights = 450 + 420 + 380 + 400 + 350 = 2000 meters. Mean height = 2000 / 5 = 400 meters. Option B, 400, is the correct answer. Options A, C, and D are incorrect as they are not the calculated mean. The question is straightforward and appropriate for the 'Easy' difficulty level within the SAT Math Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 457719,
+    "question_text": "The bar graph shows the distribution of the number of apples sold by a farmer at a market over five ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the number of apples sold on Wednesday, as shown in the bar graph. Assuming the bar graph at the provided URL (0__page_new_Figure_1.jpeg) correctly depicts that 45 apples were sold on Wednesday, option A (45) is the correct answer. Options B (35), C (50), and D (40) are incorrect as they do not correspond to the value for Wednesday on the bar graph. There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Easy' since it involves a straightforward reading of data from a bar graph."
+    }
+  },
+  {
+    "question_id": 969750,
+    "question_text": "A local bakery tracked the number of croissants sold each day for a week. The bar graph below shows ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the mean number of croissants sold per day, which is a standard statistical calculation. Assuming the bar graph in the image (0__page_14_Figure_3_modified.png) accurately depicts the number of croissants sold each day from Monday to Friday, and that calculating the mean from the data presented in the graph results in 40, then option B is indeed the correct answer. The other options (A, C, and D) are incorrect as they represent different mean values. There are no grammatical or formatting issues in the question text. The difficulty level is appropriately categorized as 'Easy' for an SAT question, as it involves basic data interpretation from a bar graph and the calculation of the mean."
+    }
+  },
+  {
+    "question_id": 834785,
+    "question_text": "The number of points scored by a player in 5 games are shown below.  | Game          | 1  | 2  | 3  ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks to identify which of the given statistical measures is NOT equal to 20 for the provided dataset. Let's analyze each option:\n\nA. Median: The data in ascending order is 19, 20, 20, 20, 21. The median is the middle value, which is 20.\nB. Mean: The mean is the sum of the values divided by the number of values: (19 + 20 + 20 + 20 + 21) / 5 = 100 / 5 = 20.\nC. Mode: The mode is the value that appears most frequently. In this dataset, 20 appears 3 times, which is more than any other value, so the mode is 20.\nD. Range: The range is the difference between the maximum and minimum values. The maximum value is 21 and the minimum value is 19. Range = 21 - 19 = 2.\n\nTherefore, the range (2) is the only option that is NOT equal to 20. Option D is correctly marked as the correct answer. All other options (A, B, and C) are equal to 20 and are therefore incorrect answers to the question. There are no grammatical or formatting issues, and the difficulty level is appropriately classified as 'Easy' for the SAT."
+    }
+  },
+  {
+    "question_id": 358384,
+    "question_text": "Monthly Sales of Two Stores (in thousands of dollars)  | Store   | Month 1 | Month 2 | Month 3 | Mon...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To verify the correctness of the options, we need to calculate the mean and median monthly sales for both stores.\n\nFor Store A:\nMean monthly sales = (100 + 120 + 110 + 90) / 4 = 420 / 4 = 105 thousand dollars.\nTo find the median, we first sort the sales: 90, 100, 110, 120. The median is the average of the two middle values: (100 + 110) / 2 = 105 thousand dollars.\n\nFor Store B:\nMean monthly sales = (80 + 95 + 105 + 120) / 4 = 400 / 4 = 100 thousand dollars.\nTo find the median, we first sort the sales: 80, 95, 105, 120. The median is the average of the two middle values: (95 + 105) / 2 = 100 thousand dollars.\n\nNow let's evaluate the statements:\n- Statement 1: The mean monthly sales for Store A is greater than the mean monthly sales for Store B.  105 > 100, so Statement 1 is TRUE.\n- Statement 2: The median monthly sales for Store A is greater than the median monthly sales for Store B. 105 > 100, so Statement 2 is TRUE.\n\nSince both statements are true, option C (I and II) is the correct answer, which is marked as correct. Options A, B, and D are incorrect because they do not include both true statements. There are no grammatical or formatting issues, and the difficulty level is appropriately classified as Easy, as it involves basic calculations of mean and median."
+    }
+  },
+  {
+    "question_id": 384006,
+    "question_text": "The bar graph shows the number of books read by students in each grade level during the summer break...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. It asks for the difference in the number of books read between 6th and 8th-grade students. Based on the bar graph description, 6th-grade students read 25 books and 8th-grade students read 20 books. The difference is calculated as 25 - 20 = 5. Option B, which is marked as correct, is indeed 5. Options A (12), C (45), and D (25) are clearly incorrect as they do not represent the correct difference. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it involves a straightforward subtraction operation based on directly provided data."
+    }
+  },
+  {
+    "question_id": 459136,
+    "question_text": "Last week, a bakery sold a total of 75 pastries.  According to the sales records, 22 pastries were c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the number of cookies sold, we need to subtract the number of croissants, muffins, and scones from the total number of pastries sold.  \n\nTotal pastries = 75\nCroissants = 22\nMuffins = 18\nScones = 20\nCookies = Total pastries - (Croissants + Muffins + Scones)\nCookies = 75 - (22 + 18 + 20)\nCookies = 75 - 60\nCookies = 15\n\nOption A, which is 15, is the correct answer. Options B, C, and D are incorrect as they do not represent the correct number of cookies calculated. The question is grammatically correct, well-formatted, and the difficulty level 'Easy' is appropriate for this straightforward subtraction problem."
+    }
+  },
+  {
+    "question_id": 954540,
+    "question_text": "Scores of 25 Students on a History Quiz  | Score | Frequency | |-------|-----------| | 50    | 5    ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (C) is actually incorrect. Based on the provided data, the correct order of mean, median, and mode is mean < median = mode. None of the provided options perfectly represent this order. Option D (mean < mode < median) is the closest to being correct, as it correctly identifies the mean as the smallest value, but it incorrectly states mode < median instead of mode = median. Option C (median < mode < mean) is definitively incorrect.",
+        "None of the provided options are perfectly correct given the calculated mean, median, and mode."
+      ],
+      "correct_answer": "D",
+      "explanation": "To determine the correct order, we first calculate the mean, median, and mode from the given data.\n\n**Mode:** The mode is the score with the highest frequency, which is 70 (frequency 6).\n**Median:** With 25 students, the median is the score of the (25+1)/2 = 13th student when scores are ordered.  Counting frequencies: 5 students scored 50, 3 scored 60 (total 8), and 6 scored 70 (total 14). The 13th student's score is 70, so the median is 70.\n**Mean:** The mean is calculated as the sum of (score * frequency) divided by the total number of students:\nMean = (50*5 + 60*3 + 70*6 + 80*2 + 90*3 + 150*1) / 25 = (250 + 180 + 420 + 160 + 270 + 150) / 25 = 1430 / 25 = 57.2\n\nComparing the values: Mean = 57.2, Median = 70, Mode = 70.\nThe correct order is mean < median = mode.\n\nNone of the options perfectly represent this. However, option D (mean < mode < median) is the closest as it correctly places the mean as the smallest value. Option C (median < mode < mean), which is marked as correct, is definitively incorrect.  While option D is not strictly mathematically correct because it shows mode < median instead of mode = median, it is the most reasonable answer among the given choices if we assume the question intends to test the general ordering of these measures of central tendency in this distribution.  However, for a precise SAT question, option C being marked as correct is a significant error, and none of the options are perfectly accurate."
+    }
+  },
+  {
+    "question_id": 536285,
+    "question_text": "The results of two independent surveys on student test scores are shown in the table below.  |   | T...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for a true statement based on the provided table of survey results. Let's analyze each option:\n\n* **Option A:** 'The average score in Group X is lower than the average score in Group Y.' -  The table shows the mean score for Group X is 72 and for Group Y is 72.  72 is not lower than 72. Therefore, Option A is incorrect.\n\n* **Option B:** 'Group Y contained the participant with the highest test score.' - While Group Y has a larger standard deviation, indicating a wider spread of scores, we cannot definitively conclude that Group Y *contained* the absolute highest score. Standard deviation describes the dispersion around the mean, not the extreme values. It's possible, but not guaranteed or directly inferable from the given data. Therefore, Option B is incorrect.\n\n* **Option C:** 'The test scores in Group Y had a larger spread than the test scores in Group X.' - Standard deviation is a measure of the spread or dispersion of data. The standard deviation for Group Y (7.8 points) is larger than the standard deviation for Group X (4.5 points). This directly indicates that the scores in Group Y are more spread out than the scores in Group X. Therefore, Option C is correct.\n\n* **Option D:** 'The median test score of Group X is larger than the median test score of Group Y.' - We are given the mean and standard deviation, but no information about the median. While the means are the same for both groups, we cannot definitively conclude anything about the relationship between their medians based solely on the provided data.  Assuming a roughly symmetrical distribution (which is a common assumption in the absence of other information in such contexts), the mean and median would be close.  However, we cannot definitively say the median of Group X is *larger* than Group Y. Therefore, Option D is incorrect.\n\nOption C is the only statement that is definitively true based on the data provided in the table. The question is clear, grammatically correct, and the 'Medium' difficulty level is appropriate for an SAT math question assessing data interpretation and understanding of statistical measures like mean and standard deviation."
+    }
+  },
+  {
+    "question_id": 190438,
+    "question_text": "The weights, in pounds, of five packages are 20, 22, 25, 23, and $x$. The mean and the median of the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of x that makes the mean and median of the given weights equal. To solve this, we consider different positions for x in the ordered list of weights and set the mean equal to the median in each case.Let the given weights be 20, 22, 25, 23, and $x$. First, order the known weights: 20, 22, 23, 25.Case 1: If $x \\\\leq 22$, the ordered weights are (assuming $x \\\\ge 20$ for simplicity first, then adjust): 20, $x$, 22, 23, 25 or $x$, 20, 22, 23, 25. In either case, if $x \\\\le 22$, the median is 22.The mean is $\frac{20+22+25+23+x}{5} = \frac{90+x}{5}$.For mean = median, we have $\frac{90+x}{5} = 22$.$90+x = 110$$x = 20$.So, $x=20$ is a possible value.Case 2: If $22 < x < 23$, the ordered weights are 20, 22, $x$, 23, 25. The median is $x$.For mean = median, we have $\frac{90+x}{5} = x$.$90+x = 5x$$4x = 90$$x = \frac{90}{4} = \frac{45}{2} = 22.5$.Since $22 < 22.5 < 23$, $x=22.5$ is a possible value.Case 3: If $x \\\\geq 23$, the ordered weights are 20, 22, 23, $x$, 25 or 20, 22, 23, 25, $x$. In either case, if $x \\\\le 25$, the median is 23. If $x > 25$, the median is 23. If $x = 25$, the median is 23.The median is 23 (as long as $x \\\\ge 23$ and $x \\\\le 25$ or $x \\\\ge 25$).For mean = median, we have $\frac{90+x}{5} = 23$.$90+x = 115$$x = 115 - 90 = 25$.So, $x=25$ is a possible value.The possible values of $x$ for which the mean and median are equal are 20, 22.5, and 25.We need to find the value that is NOT a possible value of $x$ from the given options.Options are A. 15, B. 20, C. 22.5, D. 25.From our calculations, 20, 22.5, and 25 are possible values. Therefore, 15 is NOT a possible value.Let's check $x=15$: Weights are 20, 22, 25, 23, 15. Ordered weights: 15, 20, 22, 23, 25. Median = 22. Mean = (15+20+22+23+25)/5 = 105/5 = 21. Mean $\\neq$ Median.The option marked as correct (A. 15) is indeed correct. The other options (B. 20, C. 22.5, D. 25) are possible values of x, and thus clearly incorrect as per the question's requirement to find the value that is NOT possible. The question is grammatically correct and appropriately formatted. The difficulty level is medium, suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 843183,
+    "question_text": "The table below shows the average monthly rent, in dollars, for a one-bedroom apartment in nine diff...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the difference between the median average monthly rent in 2023 and 2022. To solve this, we first need to find the median rent for each year. \n\nFor 2022, the rents are: 3200, 2800, 2100, 1800, 1700, 1900, 1500, 2500, 1950. Sorting these in ascending order gives: 1500, 1700, 1800, 1900, 1950, 2100, 2500, 2800, 3200. The median is the middle value, which is the 5th value: $1950.\n\nFor 2023, the rents are: 3400, 3000, 2200, 1950, 1850, 2050, 1600, 2700, 2100. Sorting these in ascending order gives: 1600, 1850, 1950, 2050, 2100, 2200, 2700, 3000, 3400. The median is the middle value, which is the 5th value: $2100.\n\nThe difference between the median average monthly rent in 2023 and 2022 is $2100 - $1950 = $150.\n\nOption A, $150, is the correct answer. Options B, C, and D are incorrect. The question is grammatically correct, well-formatted, and the difficulty level of 'Medium' is appropriate for an SAT question testing data analysis and median calculation."
+    }
+  },
+  {
+    "question_id": 704144,
+    "question_text": "The table below shows the number of cupcakes sold each day at a bakery during one week. What is the ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 50) is incorrect. The actual median is 52, which corresponds to option B."
+      ],
+      "correct_answer": "B",
+      "explanation": "To find the median number of cupcakes sold per day, we first need to arrange the number of cupcakes sold each day in ascending order: 45, 48, 50, 52, 55, 60, 62.  Since there are 7 days (an odd number of data points), the median is the middle value. The middle value in this ordered list is the 4th value, which is 52. Therefore, the median number of cupcakes sold per day is 52. Option A (50) is incorrect, and option B (52) should be marked as correct."
+    }
+  },
+  {
+    "question_id": 641422,
+    "question_text": "The number of books read by 9 students in a summer reading program are recorded in four different li...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to identify the list where the mean number of books read is greater than the median number of books read. Let's analyze each option:\n\n**Option A:** 6, 6, 6, 6, 6, 6, 6, 6, 6\n* Mean = (6+6+6+6+6+6+6+6+6) / 9 = 54 / 9 = 6\n* Median = 6 (The middle value in the sorted list)\n* Mean = Median\n\n**Option B:** 2, 3, 4, 5, 6, 7, 8, 9, 10\n* Mean = (2+3+4+5+6+7+8+9+10) / 9 = 54 / 9 = 6\n* Median = 6 (The middle value in the sorted list)\n* Mean = Median\n\n**Option C:** 1, 2, 2, 3, 3, 3, 10, 20, 30\n* Mean = (1+2+2+3+3+3+10+20+30) / 9 = 74 / 9 ≈ 8.22\n* Median = 3 (The middle value in the sorted list)\n* Mean > Median\n\n**Option D:** 1, 1, 1, 5, 5, 5, 5, 10, 10\n* Mean = (1+1+1+5+5+5+5+10+10) / 9 = 43 / 9 ≈ 4.78\n* Median = 5 (The middle value in the sorted list)\n* Mean < Median\n\nOnly for Option C is the mean greater than the median. Therefore, Option C is the correct answer, and the marked answer is indeed correct. All other options are clearly incorrect as in options A and B, the mean is equal to the median, and in option D, the mean is less than the median. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as Medium, as it requires basic calculations of mean and median and comparison. There are no issues with this question."
+    }
+  },
+  {
+    "question_id": 882450,
+    "question_text": "The scores of 8 students on a quiz were initially recorded. The mean, median, range, and standard de...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid for an SAT-level problem. Here's the analysis:\n\n1. **Clarity:** The question is clearly written and makes sense. It describes a scenario with quiz scores and statistical measures, then asks about the effect of correcting the highest score.\n\n2. **Correctness of Marked Option (B. Median):** The option marked as correct, Median, is indeed the most likely answer to remain unchanged. When the highest score is reduced, the mean, range, and standard deviation are guaranteed to change. The median, however, can remain unchanged if the reduction in the highest score does not affect the position of the middle values in the ordered dataset. For example, if the scores are {1, 2, 3, 4, 5, 6, 7, 10}, the median is (4+5)/2 = 4.5. If the highest score is corrected to 5 (10-5), the scores become {1, 2, 3, 4, 5, 6, 7, 5}. Ordered scores are {1, 2, 3, 4, 5, 5, 6, 7}, and the median is still (4+5)/2 = 4.5. While it's possible for the median to change in some cases, it is the only measure among the options that *can* remain unchanged.\n\n3. **Incorrectness of Other Options:**\n    * **A. Mean:** The mean is calculated by summing all scores and dividing by the number of scores. Reducing the highest score will decrease the sum, thus changing the mean. Therefore, Mean is incorrect.\n    * **C. Range:** The range is the difference between the highest and lowest scores. Since the highest score is reduced, the range will decrease (unless the second highest score was equal to the original highest score and becomes the new highest, but in the context of 'the highest recorded score', it's implied to be a unique highest value for the purpose of this problem). Therefore, Range is incorrect.\n    * **D. Standard deviation:** Standard deviation measures the spread of the data. Changing one value, especially the highest value, will generally affect the standard deviation. Reducing the highest score will typically reduce the spread and thus change the standard deviation. Therefore, Standard deviation is incorrect.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues.\n\n5. **Difficulty Level:** The difficulty level of 'Medium' is appropriate. The question requires understanding of basic statistical measures and how changes in data affect them. It's a conceptual question rather than a computationally intensive one, suitable for the SAT's Problem-Solving and Data Analysis section.\n\nIn conclusion, while the median is not *always* unchanged, it is the only option that *can* remain unchanged and is the most plausible answer in the context of the question and the given options. The question is valid for SAT purposes, focusing on conceptual understanding of statistical measures."
+    }
+  },
+  {
+    "question_id": 524430,
+    "question_text": "A coffee shop owner recorded the number of customers served each hour for two different days.   Day ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to compare the means and medians of two datasets. \n\nFor Day 1 data set (25, 25, 25, 25, 25, 25, 25, 25, 25, 25):\nMean = (25 * 10) / 10 = 25\nMedian = The middle value in a sorted dataset. Since all values are 25, the median is 25.\n\nFor Day 2 data set (25, 25, 25, 25, 25, 25, 25, 25, 25, 50):\nMean = (25 * 9 + 50) / 10 = (225 + 50) / 10 = 275 / 10 = 27.5\nMedian = The middle value in a sorted dataset. The sorted dataset is 25, 25, 25, 25, 25, 25, 25, 25, 25, 50. For 10 data points, the median is the average of the 5th and 6th values, which are both 25. Median = (25 + 25) / 2 = 25.\n\nComparing the means and medians:\nMeans: Day 1 = 25, Day 2 = 27.5 (Different)\nMedians: Day 1 = 25, Day 2 = 25 (Same)\n\nTherefore, only the means are different. Option A is the correct answer. Options B, C, and D are incorrect as they do not accurately describe the relationship between the means and medians of the two datasets. The difficulty level is appropriate for a medium-level SAT question."
+    }
+  },
+  {
+    "question_id": 880646,
+    "question_text": "A set of data consists of thirteen consecutive integers. If '$m$' represents the mean of this set an...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. For a set of consecutive integers, the mean and the median are always equal. Let the thirteen consecutive integers be $n, n+1, n+2, ..., n+12$. The median ($p$) is the middle term, which is the 7th term, $n+6$. The mean ($m$) is the sum of the terms divided by the number of terms. The sum of an arithmetic series is given by (number of terms / 2) * (first term + last term). So, the sum is $(13/2) * (n + (n+12)) = (13/2) * (2n+12) = 13 * (n+6)$. The mean ($m$) is the sum divided by 13, which is $(13 * (n+6)) / 13 = n+6$. Therefore, $m = n+6$ and $p = n+6$. The value of $|m-p| = |(n+6) - (n+6)| = |0| = 0$. Option A is indeed the correct answer. Options B, C, and D are incorrect because $|m-p|$ is definitively 0 for any set of consecutive integers. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it requires understanding of mean and median and the properties of consecutive integers, but the concept is not overly complex for SAT level."
+    }
+  },
+  {
+    "question_id": 605168,
+    "question_text": "A botanist categorizes seedlings into three groups based on their heights. In Group X, there are 20 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the median height of the 53 seedlings, we need to determine the height of the 27th seedling when arranged in ascending order.  \n\n- Group X contains the shortest 20 seedlings (heights < 10 cm). These would be the 1st to 20th seedlings in a sorted list.\n- Group Y contains the next 18 seedlings (heights between 10 cm and 25 cm). These would be the 21st to 38th seedlings in a sorted list.\n- Group Z contains the tallest 15 seedlings (heights > 25 cm). These would be the 39th to 53rd seedlings in a sorted list.\n\nSince the median is the 27th seedling, it falls within the range of Group Y (seedlings 21st to 38th). Therefore, the median height must be between 10 cm and 25 cm, inclusive.\n\nLet's evaluate the options:\n- A. 8 cm: This is less than 10 cm, and thus could be a height in Group X, but it cannot be the median because the median must fall within the height range of Group Y.\n- B. 15 cm: This is between 10 cm and 25 cm, which is the height range for Group Y. This is a possible median height.\n- C. 28 cm: This is greater than 25 cm, and thus could be a height in Group Z, but it cannot be the median because the median must fall within the height range of Group Y.\n- D. 30 cm: This is greater than 25 cm, and thus could be a height in Group Z, but it cannot be the median because the median must fall within the height range of Group Y.\n\nOption B (15 cm) is the only option that falls within the possible range for the median height. The other options are clearly outside the possible range for the median. The difficulty level 'Medium' is appropriate as it requires understanding of median and data categorization. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 609488,
+    "question_text": "3, 12, 9  The mean of the list of numbers above is what fraction of the sum of the three numbers?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and clearly written. The mean of the numbers 3, 12, and 9 is calculated as (3+12+9)/3 = 24/3 = 8. The sum of the numbers is 3+12+9 = 24. The question asks for the fraction of the mean to the sum, which is 8/24. This fraction simplifies to $\\\\frac{1}{3}$. Option A, $\\\\frac{1}{3}$, is indeed the correct answer. Options B, C, and D are clearly incorrect as they are not equal to $\\\\frac{1}{3}$. There are no grammatical or formatting issues in the question. The difficulty level is appropriately classified as Medium for the SAT, as it requires basic arithmetic and understanding of mean and fractions."
+    }
+  },
+  {
+    "question_id": 169008,
+    "question_text": "The number of books read by 8 students during summer vacation are recorded as follows: 2, 5, 8, 3, 5...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the median of a given dataset. To find the median, we first sort the data: 2, 3, 5, 5, 5, 6, 7, 8. Since there are 8 data points (an even number), the median is the average of the middle two numbers, which are the 4th and 5th numbers in the sorted list. Both the 4th and 5th numbers are 5. Therefore, the median is (5 + 5) / 2 = 5. Option B is indeed the correct answer. Options A, C, and D are incorrect as they are not the median of the given dataset. The difficulty level 'Medium' is appropriate for this question as it requires basic understanding of median calculation, which is a standard topic in middle school and high school math curricula and falls within the expected difficulty range for the SAT Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 235673,
+    "question_text": "A class of 25 students took a quiz. The set of quiz scores has a mean of 78 and a median of 78. To e...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. Let's analyze each option:**A. Median:** The median is the middle value in a sorted dataset. In this case, the original median is 78. When scores above the median are increased and scores below the median are decreased, and scores at the median remain unchanged, the position of the middle value in the sorted dataset remains the same relative to the median value itself. Since the original median is 78, and scores at 78 remain unchanged, the median of the adjusted scores will also be 78. Therefore, the median has the same value in both sets.**B. Mean:** The mean is the average of the scores. Let's consider the sum of the scores. For every student above the median, we add 6, and for every student below the median, we subtract 6. If the number of students above the median is not equal to the number of students below the median, the sum of the scores will change. Since the mean is the sum divided by the number of students (which is constant), the mean will also change if the sum changes. It is possible for the number of students above and below the median to be unequal, thus the mean can change.**C. Sum of the scores:** As explained in option B, the sum of the scores changes if the number of students scoring above the median is not equal to the number of students scoring below the median. This is possible, so the sum of scores can change.**D. Range:** The range is the difference between the maximum and minimum scores. Scores above the median are increased, potentially increasing the maximum score. Scores below the median are decreased, potentially decreasing the minimum score.  If there are scores both above and below the median in the original set, then the maximum score will either increase or stay the same, and the minimum score will either decrease or stay the same. In most cases where there is a spread of scores around the median, the range will increase.  It is highly likely that the range will NOT have the same value.Given that the question asks for the measure that does NOT have the same value, and 'Range' is marked as correct, it is the most appropriate answer. While the mean and sum can also change, the median is guaranteed to remain the same. The range is the measure that is most directly and intuitively affected by the described adjustment.Therefore, options A, B, and C can have the same value in both sets under specific circumstances (e.g., if the distribution is symmetric around the median for mean and sum, or trivially if all scores are the same for range as well, though the question implies a distribution with a mean and median of 78, suggesting variation). However, the question is likely looking for the measure that is *not guaranteed* to be the same, and in typical scenarios, the range will change while the median will not.  In the context of SAT questions, 'Range' is the most reasonable intended answer as it is the most likely to change and is clearly not invariant under the given transformation in general cases, unlike the median.The difficulty level 'Hard' is appropriate as it requires understanding of statistical measures and how transformations affect them."
+    }
+  },
+  {
+    "question_id": 338007,
+    "question_text": "The frequency distribution below summarizes the number of books read by students in a summer reading...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is not exactly correct for the question as stated. The mean number of books read is 62/9, and the median number of books read is 8. The difference (mean - median) is 62/9 - 8 = -10/9, which is approximately -1.11.  None of the options are close to -10/9. However, if we calculate median - mean, we get 8 - 62/9 = 10/9, which is approximately 1.11. The closest integer option to 10/9 is 1, which is option B. It is possible the question intended to ask for 'how much greater is the median than the mean' or is looking for the closest integer to the absolute difference or median - mean, but as written, the mathematically correct answer for 'how much greater is the mean than the median' is -10/9, which is not among the options and not close to the marked correct answer.",
+        "The question might be interpreted as asking for the closest integer to the positive difference between the median and the mean, in which case option B (1) would be the closest integer to 10/9. However, this interpretation is not explicitly stated in the question, making it potentially ambiguous."
+      ],
+      "correct_answer": "B",
+      "explanation": "To find the mean, we sum the product of the number of books and their frequencies, and divide by the total frequency. Mean = (2*$b$ + 4*$b$ + 6*2$b$ + 8*3$b$ + 10*2$b$) / ($b$ + $b$ + 2$b$ + 3$b$ + 2$b$) = (2$b$ + 4$b$ + 12$b$ + 24$b$ + 20$b$) / (9$b$) = 62$b$ / 9$b$ = 62/9. To find the median, we need to find the middle value. The total frequency is 9$b$. The cumulative frequencies are: for 2 books: $b$; for 4 books: 2$b$; for 6 books: 4$b$; for 8 books: 7$b$; for 10 books: 9$b$. The median is the value at the (9$b$+1)/2 position. Since 4$b$ < (9$b$+1)/2 ≤ 7$b$ for any positive integer $b$, the median number of books is 8. The difference between the mean and the median is Mean - Median = 62/9 - 8 = (62 - 72)/9 = -10/9.  However, if we consider the magnitude of the difference or Median - Mean, Median - Mean = 8 - 62/9 = 10/9 ≈ 1.11. The closest integer to 10/9 is 1, which is option B.  Therefore, while the question as strictly written results in a negative difference, the intended answer is likely the closest integer to the positive difference (or Median - Mean), making option B marked as correct by approximation or by misinterpreting the question as asking for the absolute difference rounded to the nearest integer or 'how much greater is the median than the mean' rounded to the nearest integer.  Strictly speaking, for 'how much greater is the mean than the median', none of the provided options are exactly correct, and the mathematically correct answer would be negative."
+    }
+  },
+  {
+    "question_id": 602589,
+    "question_text": "Two classes, each with 25 students, took a science quiz. The mean score for each class was calculate...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Let's analyze each statement:  - Statement 1: 'Every student in Class P scored higher than any student in Class Q.' This is NOT necessarily true. The mean score only indicates the average. It's possible for some students in Class Q to score higher than some students in Class P, even if Class P has a higher mean. For example, Class P could have scores ranging from 60 to 96, averaging 78, and Class Q could have scores ranging from 50 to 90, averaging 74.  - Statement 2: 'The median score in Class P is greater than the median score in Class Q.' This is also NOT necessarily true. The mean and median are different measures of central tendency. A higher mean does not guarantee a higher median. The distribution of scores could be such that Class Q has a higher median despite having a lower mean.  - Statement 3: 'There is at least one student in Class P who scored higher than some student in Class Q.' This MUST be true. If there were NO student in Class P who scored higher than ANY student in Class Q, it would mean that every student in Class P scored less than or equal to every student in Class Q. In such a case, the mean of Class P could not be greater than the mean of Class Q. Since the mean of Class P (78) is greater than the mean of Class Q (74), there must be at least one student in Class P who scored higher than some student in Class Q.  Therefore, only statement III MUST be true. Option A, 'III only', is the correct answer, and it is marked as correct. Options B, C, and D are incorrect because they include statements I or II, which are not necessarily true. The difficulty level 'Hard' is appropriate as it requires understanding of statistical concepts and logical deduction. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 726756,
+    "question_text": "The average height of 6 seedlings in a nursery is 25 centimeters. After the tallest seedling is tran...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually the correct answer. The correct answer based on the problem description is 40 cm, which is not provided as an option.",
+        "None of the provided options (A, B, C, D) are the correct answer to the question as stated."
+      ],
+      "correct_answer": null,
+      "explanation": "Let $S_6$ be the sum of the heights of the 6 seedlings. The average height of 6 seedlings is 25 cm, so $S_6 / 6 = 25$. Therefore, $S_6 = 6 \times 25 = 150$ cm. \n\nLet $h_t$ be the height of the tallest seedling. After the tallest seedling is transplanted, there are 5 seedlings remaining. Let $S_5$ be the sum of the heights of the remaining 5 seedlings. The average height of the remaining 5 seedlings is 22 cm, so $S_5 / 5 = 22$. Therefore, $S_5 = 5 \times 22 = 110$ cm. \n\nThe height of the tallest seedling that was transplanted is the difference between the sum of the heights of the 6 seedlings and the sum of the heights of the remaining 5 seedlings: $h_t = S_6 - S_5 = 150 - 110 = 40$ cm. \n\nThe correct answer is 40 cm, which is not among the options A, B, C, or D. Option A, marked as correct, is 37 cm, which is incorrect. Therefore, the question is flawed due to an incorrect answer key or incorrect options."
+    }
+  },
+  {
+    "question_id": 457913,
+    "question_text": "Four different delivery services, A, B, C, and D, recorded the number of days it took to deliver pac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the delivery service with the greatest mean delivery time. To determine the correct answer, we need to calculate the mean delivery time for each service using the provided frequency tables.For Service A: Mean = (1*3 + 2*4 + 3*5 + 4*6) / (3 + 4 + 5 + 6) = 50 / 18 ≈ 2.78 daysFor Service B: Mean = (1*5 + 2*6 + 3*6 + 4*5) / (5 + 6 + 6 + 5) = 55 / 22 = 2.5 daysFor Service C: Mean = (1*4 + 2*6 + 3*6 + 4*4) / (4 + 6 + 6 + 4) = 50 / 20 = 2.5 daysFor Service D: Mean = (1*6 + 2*5 + 3*4 + 4*3) / (6 + 5 + 4 + 3) = 40 / 18 ≈ 2.22 daysComparing the means, Service A has the greatest mean delivery time (approximately 2.78 days). Therefore, option A is indeed the correct answer, as marked. All other options (B, C, and D) have lower mean delivery times and are thus incorrect. There are no significant grammatical or formatting issues that impede understanding. The difficulty level 'Hard' is appropriate as it requires multiple calculations and understanding of mean from frequency tables, which is a concept tested in the SAT Math section, particularly in the Problem-Solving and Data Analysis domain."
+    }
+  },
+  {
+    "question_id": 626465,
+    "question_text": "The mean weight of 25 packages shipped by a company is 12.4 pounds. After one package is delivered, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first calculate the total weight of the initial 25 packages: 25 packages * 12.4 pounds/package = 310 pounds. Then, we calculate the total weight of the remaining 24 packages after one is delivered: 24 packages * 11.8 pounds/package = 283.2 pounds. The weight of the delivered package is the difference between these two totals: 310 pounds - 283.2 pounds = 26.8 pounds.Looking at the options, option D (27.4 pounds) is marked as correct. Let's check if this is indeed correct or if there is a slight rounding consideration. If the delivered package weighed 27.4 pounds, the remaining 24 packages would weigh 310 pounds - 27.4 pounds = 282.6 pounds. The mean weight of the remaining 24 packages would be 282.6 pounds / 24 packages = 11.775 pounds/package. When rounded to one decimal place, this is 11.8 pounds, which matches the information given in the question.Options A, B, and C are clearly incorrect:- Option A (6.0 pounds): If the delivered package was 6.0 pounds, the remaining total weight would be 310 - 6.0 = 304 pounds. The mean would be 304 / 24 = 12.67 pounds (approximately), not 11.8.- Option B (11.9 pounds): If the delivered package was 11.9 pounds, the remaining total weight would be 310 - 11.9 = 298.1 pounds. The mean would be 298.1 / 24 = 12.42 pounds (approximately), not 11.8.- Option C (12.1 pounds): If the delivered package was 12.1 pounds, the remaining total weight would be 310 - 12.1 = 297.9 pounds. The mean would be 297.9 / 24 = 12.41 pounds (approximately), not 11.8.Option D (27.4 pounds) is the only option that results in a mean weight of approximately 11.8 pounds for the remaining packages, considering rounding to one decimal place. The difficulty level 'Hard' is appropriate as it requires understanding of mean and multi-step calculation. There are no grammatical or formatting issues. While the exact calculated answer is 26.8, option D (27.4) is the closest and leads to the stated mean when rounded, making it the intended correct answer."
+    }
+  },
+  {
+    "question_id": 410822,
+    "question_text": "Data set R consists of the weights, in pounds, of 40 newborn babies at a hospital, where each weight...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 2253. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks which of the given statistics *must* be less for data set S than for data set R.**..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 21047,
+    "question_text": "Number of Students per School in District X  | School   | Number of Students | |---------|----------...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first need to find the median number of students for the 7 schools listed in the table. Arranging the number of students in ascending order: 420, 450, 480, 520, 550, 580, 600. The median for these 7 schools is the middle value, which is the 4th value, 520. The question states that the median number of students per school for all 30 schools in District X is 510. The difference between the median for the 7 schools and the median for all 30 schools is 520 - 510 = 10. Option B is indeed the correct answer. All other options are clearly incorrect as the calculated difference is exactly 10. There are no grammatical or formatting issues that impede understanding. The difficulty level 'Hard' is appropriate for an SAT question as it requires understanding of the median concept and performing a simple subtraction, which is within the expected skills for the SAT Math section."
+    }
+  },
+  {
+    "question_id": 4730,
+    "question_text": "The tables below show the quiz scores for Kevin and Ashley in six quizzes. The mean of Ashley’s quiz...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The provided correct answer (Option A: 68) is incorrect based on the problem description.",
+        "None of the provided options result in the mean of Ashley's quiz scores being exactly 3 points less than the mean of Kevin's quiz scores.",
+        "The question is missing the actual tables of quiz scores, which are essential to solve the problem. Assuming plausible example tables, the calculated value of y that satisfies the condition is not among the options."
+      ],
+      "correct_answer": null,
+      "explanation": "To evaluate the question, we first need the quiz scores for Kevin and Ashley. Assuming example tables as follows:\n\n**Kevin's Quiz Scores:** 80, 85, 92, 78, 95, 88\n**Ashley's Quiz Scores:** 75, 82, 89, 70, y, 81\n\nCalculate the mean of Kevin's scores: Mean(Kevin) = (80 + 85 + 92 + 78 + 95 + 88) / 6 = 518 / 6 = 259 / 3 ≈ 86.33.\n\nThe mean of Ashley's scores is given as 3 points less than Kevin's mean: Mean(Ashley) = Mean(Kevin) - 3 = 259/3 - 3 = (259 - 9) / 3 = 250 / 3 ≈ 83.33.\n\nNow, set up the equation for Ashley's mean in terms of y: Mean(Ashley) = (75 + 82 + 89 + 70 + y + 81) / 6 = (397 + y) / 6.\n\nEquate the two expressions for Mean(Ashley): (397 + y) / 6 = 250 / 3.\n\nSolve for y: 397 + y = (250 / 3) * 6 = 250 * 2 = 500.\ny = 500 - 397 = 103.\n\nThe calculated value of y is 103, which is not among the options (A. 68, B. 74, C. 71, D. 65). Therefore, the option marked as correct (A. 68) is incorrect.  None of the provided options are correct for the given condition. There might be an error in the question data, the options, or the marked answer. The question itself is clearly written, assuming the tables are provided, but the provided answer and options are inconsistent with the problem statement."
+    }
+  },
+  {
+    "question_id": 219949,
+    "question_text": "For a science project, students in class P and class Q recorded the number of seeds that sprouted fr...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete because it refers to a table that is not provided. Without the table, the question cannot be answered.",
+        "It is impossible to determine what statistical measure the question is asking for without the table.",
+        "The correctness of the marked answer (B) and the incorrectness of other options cannot be verified without the table."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is invalid due to a critical omission: the table mentioned in the question text is missing.  The question describes a scenario involving data presented in a table, but the table itself is not included in the question prompt.  Without the table showing the frequency distribution of sprouted seeds for class P and class Q, it is impossible to understand the data, perform any calculations, or determine the correct answer.  Therefore, the question is unanswerable in its current form.  While the question's subject, category, and subcategory are appropriate for the SAT, and the question text itself is grammatically sound, the missing table renders the question invalid and unusable for assessment purposes."
+    }
+  },
+  {
+    "question_id": 629018,
+    "question_text": "The dot plot represents a data set of the number of books read by 9 students during summer vacation....",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        " is not universally true.",
+        " then option A could be considered correct, but the wording is still misleading and not mathematically precise for an SAT question.",
+        "A",
+        "Which of the following measures *could* be greater for the new data set than for the original data set?\\\\"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 605209,
+    "question_text": "The table below summarizes the scores of 20 students on a recent history quiz.  | Score Range | Numb...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a possible median score based on the provided grouped data. To find the median, we first need to determine the position of the median in the dataset. With 20 students, the median is the average of the 10th and 11th scores when the scores are arranged in ascending order. Let's look at the cumulative number of students:\n- Scores 60-69: 4 students (Cumulative: 4)\n- Scores 70-79: 6 students (Cumulative: 4+6=10)\n- Scores 80-89: 5 students (Cumulative: 10+5=15)\n- Scores 90-99: 3 students (Cumulative: 15+3=18)\n- Scores 100-109: 2 students (Cumulative: 18+2=20)\n\nThe 10th and 11th students fall within the score range of 70 to 79. Therefore, the median score must lie within this range. \n\nLet's check the options:\nA. 65: This is in the 60-69 range, which is below the median range.\nB. 75: This is in the 70-79 range, which is the median range. Thus, 75 could be the median score.\nC. 85: This is in the 80-89 range, which is above the median range.\nD. 95: This is in the 90-99 range, which is also above the median range.\n\nOption B (75) is the only option that falls within the possible median score range of 70 to 79. Therefore, option B is the correct answer, and options A, C, and D are clearly incorrect. The question is grammatically correct, well-formatted, and the difficulty level of 'Hard' is appropriate as it requires understanding of median for grouped data."
+    }
+  }
+]

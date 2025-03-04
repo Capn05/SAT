@@ -1,0 +1,110 @@
+[
+  {
+    "question_id": 32350,
+    "question_text": "The principal of a high school wants to determine if students would prefer a new lunch menu. The pri...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. Option D is correctly identified as the correct answer because the survey is indeed biased. Surveying only students on sports teams does not represent the entire student body's preferences regarding the lunch menu. Students on sports teams might have different nutritional needs or preferences compared to students not involved in sports, making this sample unrepresentative. Options A, B, and C are clearly incorrect. Option A is incorrect because the sample is biased. Option B is incorrect because increasing the sample size within the same biased group does not reduce bias. Option C is incorrect because surveying only students who bring lunch from home introduces a different type of bias and doesn't address the initial issue of non-representative sampling. The difficulty level 'Easy' is appropriate as the question tests a fundamental concept of sampling bias in a straightforward scenario."
+    }
+  },
+  {
+    "question_id": 842299,
+    "question_text": "A pharmaceutical company conducted a study on a new allergy medication. They randomly selected 150 p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is the most appropriate inference because the study was conducted on a randomly selected group of patients diagnosed with seasonal allergies.  The 80% result is directly applicable to the population from which the sample was drawn, which is people with seasonal allergies.Option A is incorrect because it generalizes to 'people taking allergy medication' which is too broad. The study is specific to *this new medication* and *seasonal allergies*, not all allergy medications.Option C is incorrect because it narrows the scope to 'people with severe seasonal allergies'. The study did not differentiate based on the severity of allergies; it only included patients diagnosed with seasonal allergies.  There is no basis to infer specifically about 'severe' cases.Option D is incorrect because it misinterprets the study result. 80% reported symptom reduction, not 20%.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a basic understanding of statistical inference and generalization from a sample to a population, which is a fundamental concept in data analysis often tested on the SAT."
+    }
+  },
+  {
+    "question_id": 2670,
+    "question_text": "To gauge support for a new recycling program, a city council surveyed residents. A random sample of ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. Here's a breakdown of why option A is the correct answer and why the other options are incorrect:\n\n* **Statement I: Exactly 68% of all city residents support the new recycling program.** This statement is incorrect.  A sample statistic (68% in this sample) is an estimate of the population parameter (the true percentage of all city residents who support the program). Due to sampling variability, it's highly unlikely that the sample percentage will be exactly equal to the population percentage.  We can infer that the true percentage is *likely* to be *around* 68%, but not *exactly* 68%.\n\n* **Statement II: If a second random sample of 450 residents were surveyed using the same method, exactly 68% would indicate they would participate.** This statement is also incorrect.  Sampling variability means that different random samples from the same population are likely to yield slightly different results. It is highly improbable that a second random sample would produce exactly the same percentage (68%) as the first sample.  While it might be close to 68%, it's not guaranteed to be exactly 68%.\n\n* **Option A: Neither I nor II (Marked as correct)** - This is the correct answer because both statements I and II are not necessarily true. They are possibilities, but not guaranteed outcomes based solely on the information provided.\n\n* **Option B: I only** - Incorrect because statement I is not necessarily true.\n\n* **Option C: II only** - Incorrect because statement II is not necessarily true.\n\n* **Option D: I and II** - Incorrect because neither statement I nor II is necessarily true.\n\n**Additional Points:**\n* **Clarity and Writing:** The question is clearly written and easy to understand. The scenario is straightforward, and the question is unambiguous.\n* **Correctness of Marked Answer:** Option A is indeed the correct answer.\n* **Incorrectness of Other Options:** Options B, C, and D are clearly incorrect because they rely on at least one of the false statements being true.\n* **Grammar and Formatting:** There are no grammatical or formatting issues.\n* **Difficulty Level:** 'Medium' is an appropriate difficulty level. The question tests basic understanding of statistical inference, sampling variability, and the difference between sample statistics and population parameters, which is a common topic in SAT level math and data analysis. The question requires logical reasoning about statistical concepts rather than complex calculations."
+    }
+  },
+  {
+    "question_id": 876332,
+    "question_text": "A researcher conducted a study on the sleep habits of nurses working in hospitals within the city of...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. Here's a breakdown:\n\n1. **Clarity:** The question is clear and easy to understand. It describes a study with a specific sample and asks about the appropriate population for generalization.\n\n2. **Correctness of Option C:** Option C, 'All nurses working in hospitals in Chicago,' is indeed the correct answer.  Statistical findings from a random sample can generally be generalized to the population from which the sample was drawn. In this case, the sample was drawn from 'nurses working in hospitals within the city of Chicago.' Therefore, it is most appropriate to generalize the findings to this specific population.\n\n3. **Incorrectness of Other Options:**\n    * **Option A (All nurses in the United States):** This is too broad. The sample was only taken from Chicago hospitals, not hospitals across the entire United States. Generalizing to all nurses in the US would be inappropriate as sleep habits might vary geographically and across different hospital systems.\n    * **Option B (All nurses working in hospitals):** This is also too broad.  The sample is limited to Chicago hospitals. Generalizing to all nurses working in hospitals globally or even nationally is not justified based on a sample from a single city.\n    * **Option D (All healthcare professionals working in hospitals in Chicago):** This is too broad in terms of profession. The study specifically focused on nurses.  Generalizing to all healthcare professionals (which includes doctors, technicians, therapists, etc.) is not valid as their sleep habits might differ from nurses.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question or options.\n\n5. **Difficulty Level:** The 'Medium' difficulty level is appropriate. The question tests a fundamental concept in statistical inference – the scope of generalization based on sampling. It requires understanding that generalizations should be limited to the population from which the sample is representative. This is a concept typically taught in introductory statistics and is suitable for the SAT's Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 464445,
+    "question_text": "A market research company surveyed 500 high school students selected at random from a large high sch...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text is incomplete. It describes a survey but does not state the actual question being asked about the survey.  The statements labeled I, II, and III, which the options refer to, are missing entirely.",
+        "Without the full question text and statements I, II, and III, it is impossible to determine if option A (None) is actually the correct answer or if any of the options are definitively incorrect.",
+        "The question is unanswerable in its current form due to the missing core content."
+      ],
+      "correct_answer": "A",
+      "explanation": "The provided question is fundamentally flawed because it is incomplete. The actual question being asked about the survey and the statements (I, II, and III) that are to be evaluated are missing.  Without this crucial information, it's impossible to assess the validity of the question, determine the correct answer, or evaluate the correctness of the other options. While option A is marked as correct, we cannot verify this or any other aspect of the question's validity without the complete question text.  The question, as presented, does not make sense and is not clearly written due to the missing information.  It is therefore invalid for use in an SAT exam."
+    }
+  },
+  {
+    "question_id": 624825,
+    "question_text": "A restaurant chain wants to gauge customer satisfaction with a new menu item. At one of their restau...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks to identify the population that the restaurant chain is trying to make inferences about based on their survey. The survey was conducted at *one* restaurant and included customers who ordered the new item *over a week*. Therefore, the population that the sample of 75 customers represents is 'All customers who ordered the new item at that restaurant during the week of the survey'.Option A is incorrect because it describes the sample, not the population. Option C is incorrect because it is too broad; the survey was only conducted over a week, so generalizing to all customers at that restaurant at any time is not appropriate. Option D is also incorrect because the survey was only conducted at *one* restaurant, not across the entire chain.The question is grammatically correct and well-formatted. The difficulty level 'Hard' is appropriate as it requires understanding of statistical concepts like sample and population and the ability to correctly identify the population based on the survey description."
+    }
+  },
+  {
+    "question_id": 423520,
+    "question_text": "A school counselor wanted to investigate the relationship between the number of hours a student slee...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. The correct answer is D. Here's why:\n\n* **Random Sampling:** The counselor randomly selected 100 students from the high school. Random sampling is the key to generalizing results to a larger population.  Because the initial sample was randomly drawn from 'all students in the high school', the results can, in principle, be generalized back to this population.\n\n* **Focus on Subgroup:** While the table only presents data for the 80 students who slept at least 6 hours, this is a subset of the initial random sample. The act of focusing the analysis on this subgroup does not change the population from which the original sample was drawn. The initial random selection is what determines the population of generalization.\n\n* **Why other options are incorrect:**\n    * **A. All students in the high school who scored 80% or above on the exam:** This is incorrect because the study is about the relationship between sleep and exam scores for *all* students, not just those who scored above 80%. Generalizing to this group would be limiting the scope unnecessarily and misinterpreting the study's purpose.\n    * **B. The 100 students in the sample:** This is incorrect because the goal of statistical studies is often to generalize beyond the specific sample to a larger population.  While the results *apply* to the sample, the question asks about the *largest population to which the results can be generalized*, implying we should look beyond just the sample itself.\n    * **C. The 80 students in the sample who slept at least 6 hours the night before the exam:** This is incorrect because this is a subgroup of the sample, and even more limited than option B.  Generalization should ideally be to the population from which the *random sample* was initially drawn.\n\n* **Difficulty Level:** The 'Hard' difficulty level is appropriate.  Understanding the concept of generalizing from a sample to a population, especially in the context of a potentially misleading focus on a subgroup within the data, requires a solid grasp of statistical principles tested on the SAT.\n\nIn summary, the question correctly tests the understanding of statistical generalization based on random sampling. Option D, 'All students in the high school', is the largest and most appropriate population to which the results of this study can be generalized due to the initial random selection from this population."
+    }
+  },
+  {
+    "question_id": 866883,
+    "question_text": "A botanist is studying the effect of a new plant food on the growth rate of sunflower plants.  From ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-written. The botanist randomly selected 60 seedlings from the 500 seedlings in the greenhouse. Random selection allows for generalization from the sample to the population from which the sample was drawn. In this case, the population is the 500 sunflower seedlings in the greenhouse. Therefore, it is reasonable to generalize the results to the 500 seedlings in the greenhouse (Option B).Option A is incorrect because generalizing only to the 60 seedlings in the sample is too narrow and doesn't utilize the purpose of the experiment, which is to infer about a larger group.Option C is incorrect because while the seedlings are of a specific variety, the study was conducted on seedlings within a specific greenhouse environment. Generalizing to all sunflower seedlings of this variety would require assuming that the greenhouse conditions are representative of all conditions under which this variety is grown, which is not stated or implied.Option D is incorrect as it is an even broader generalization than Option C. The study is specifically about sunflower *seedlings* and generalizing to all sunflower plants (including mature plants) is not justified based on the experiment described.The question is grammatically correct and clearly written. The difficulty level is appropriate for a 'Hard' SAT question as it requires understanding the principles of statistical generalization and experimental design."
+    }
+  },
+  {
+    "question_id": 958209,
+    "question_text": "A popular fitness center chain wants to gauge customer satisfaction across all its locations. To do ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option A is incomplete and does not present a full answer choice.",
+        "Option A, due to its incompleteness, is not clearly incorrect, but it is not a viable answer choice in its current form.",
+        "While Option B is the best answer, the incompleteness of Option A detracts from the overall quality of the question as it introduces ambiguity and a poorly formed option."
+      ],
+      "correct_answer": "B",
+      "explanation": "Option B correctly identifies a significant flaw in the survey methodology: sampling bias. By surveying only at the entrance of the busiest location during peak hours, the fitness center is likely to oversample satisfied customers who are actively using the facilities and undersample dissatisfied customers or those who visit less frequently or at different times. Customers who are very satisfied might be more inclined to complete a survey at the entrance, especially if they are feeling positive after a workout, leading to an inflated satisfaction score. \n\nOption A is incomplete and therefore cannot be evaluated as a valid answer choice. If we were to assume it was intended to be about biased response options (e.g., only positive choices), it would still be less directly relevant than the sampling bias identified in Option B.\n\nOption C suggests conducting the survey online for broader reach. While online surveys have their merits, this option doesn't directly address the bias introduced by surveying only at the busiest location during peak hours. It's more of an alternative approach rather than a critique of the existing flawed method.\n\nOption D claims tablet kiosks are less reliable than paper surveys for honest feedback. There is no general evidence to support this claim, and it's not relevant to the specific bias issue in the question. In fact, digital surveys can sometimes improve data collection and reduce errors. \n\nTherefore, Option B is the most accurate and relevant critique of the survey method described in the question. However, the incompleteness of Option A is a significant flaw in the question's construction."
+    }
+  },
+  {
+    "question_id": 93065,
+    "question_text": "To estimate the average number of books read per year by adults in a city, a researcher surveyed 75 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and assesses understanding of sampling bias in statistical analysis. Option C is the correct answer because surveying members of a book club to estimate the average number of books read by all adults in a city is a flawed sampling method. Book club members are likely to read more books than the average adult, leading to a biased overestimate. Option A is incorrect because the sample average from a biased sample cannot be assumed to be the population average. Option B is incorrect because while sample size is a consideration, the primary issue is the inherent bias of the sample selection, not just the size. Option D is incorrect because the sampling method is indeed flawed and likely to produce a biased estimate. The difficulty level 'Hard' is appropriate as it requires understanding of statistical concepts beyond basic calculations and identification of sampling bias."
+    }
+  }
+]

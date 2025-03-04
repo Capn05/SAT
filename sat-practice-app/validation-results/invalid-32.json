@@ -1,0 +1,56 @@
+[
+  {
+    "question_id": 411780,
+    "question_text": "In a recent study, two types of advertisements were tested for their effectiveness in attracting cus...",
+    "issues": [
+      "The question text is incomplete and unclear. It mentions 'two types of advertisements' but only describes one type as 'No image'. The description of 'No image' is vague and doesn't provide enough information about the advertisement type.",
+      "Without a complete description of both advertisement types and the study's findings, it is impossible to definitively determine if option A is the correct inference.",
+      "Similarly, without the study details, it's impossible to definitively say if options B, C, and D are clearly incorrect. Their correctness depends entirely on the missing context of the study.",
+      "There is a formatting issue in the question text: 'One type, \\\\\\\\\\ No image'. The backslash before 'No image' is likely a typo or formatting error.",
+      "Due to the lack of context and incomplete question text, the difficulty level cannot be accurately assessed. While the options themselves are relatively straightforward to understand, the question's answerability is severely compromised by the missing information.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 576543,
+    "question_text": "In her 2010 study on urban development, sociologist Dr. Lena Reyes examines the \\...",
+    "issues": [
+      "The question text is incomplete and ends mid-sentence, making it impossible to understand what Dr. Reyes is examining. The phrase 'examines the' is followed by no further information.",
+      "The mention of 'No image' suggests that crucial visual or textual information related to Dr. Reyes' study is missing, which is essential for answering the question.",
+      "Without the complete question text and context (including the missing image or text), it is impossible to definitively confirm if option B is the correct answer or if other options are clearly incorrect. The correctness of option B is based on an assumption of what the question *might* be asking.",
+      "Due to the incompleteness, it is impossible to accurately assess the difficulty level. While 'Medium' might be intended, the lack of a complete question renders this assessment speculative."
+    ]
+  },
+  {
+    "question_id": 992723,
+    "question_text": "A study in 2015 found that the average household in City X recycled approximately 25 pounds of plast...",
+    "issues": [
+      "Option A, Option C, and Option D are also plausible explanations for the modest increase in recycling, making Option B not definitively the *only* or *best* correct answer. The question, while asking for 'One potential explanation', implies there should be a single *best* answer in the context of SAT questions. Option A, in particular, is a strong alternative correct answer as methodological differences would directly invalidate the comparison and explain a seemingly 'modest' increase that might not be real at all."
+    ]
+  },
+  {
+    "question_id": 82579,
+    "question_text": "Before 2006, Pluto was widely considered the ninth planet of our solar system. However, in 2006, the...",
+    "issues": [
+      "The question is grammatically incomplete and unclear due to the missing term after 'redefined the term \\\\\\\\\\'. It seems to be missing the word 'planet' or a similar concept.",
+      "Option A, marked as correct, is not grammatically correct when inserted into the sentence. 'redefined the term the definition of' is nonsensical.",
+      "Option C, while also grammatically incomplete when directly inserted, is conceptually closer to the correct answer if we assume the question is asking about the IAU's new definition of 'planet'.",
+      "Options A and C are presented as incomplete phrases, making them grammatically awkward in the context of completing the sentence.",
+      "The formatting issue '[No image]' is present in the question text and should be removed or replaced with the intended content.",
+      "Option D is clearly incorrect as it promotes prioritizing historical classifications over modern ones, which is contrary to scientific progress and the context of the passage.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 293196,
+    "question_text": "In urban environments, the \\...",
+    "issues": [
+      "The question text is incomplete and grammatically incorrect. It starts with 'In urban environments, the \\\\\\\\\\' which is not a complete sentence or question.",
+      "There is no accompanying text passage or image provided, making it impossible to determine the context and make a valid inference. Inference questions on the SAT require a source text.",
+      "Without a source text, all options (A, B, C, and D) are plausible and could be considered 'correct' based on general knowledge about urban environments and green spaces. This makes it difficult to definitively select one option as the uniquely correct inference.",
+      "The label 'No image' suggests that there might be a missing image that is crucial for understanding the question or context. Its absence is a formatting/content issue.",
+      "While option C is a true statement about urban heat islands, without a source text, it's impossible to validate if it's the *intended* correct inference based on specific information. The question's validity is compromised by the missing context.",
+      "C"
+    ]
+  }
+]

@@ -1,0 +1,1878 @@
+[
+  {
+    "id": 3900510,
+    "question_id": 390051,
+    "value": "A",
+    "label": "(7, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 3900511,
+    "question_id": 390051,
+    "value": "B",
+    "label": "(0, 7)",
+    "is_correct": true
+  },
+  {
+    "id": 3900512,
+    "question_id": 390051,
+    "value": "C",
+    "label": "(0, -4)",
+    "is_correct": false
+  },
+  {
+    "id": 3900513,
+    "question_id": 390051,
+    "value": "D",
+    "label": "(0, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 6349910,
+    "question_id": 634991,
+    "value": "A",
+    "label": "| x   | y   | |-----|-----| | 0   | 60  | | 2   | 20  | | 4   | 60  |",
+    "is_correct": false
+  },
+  {
+    "id": 6349911,
+    "question_id": 634991,
+    "value": "B",
+    "label": "| x   | y   | |-----|-----| | 0   | 20  | | 2   | 40  | | 4   | 60  |",
+    "is_correct": false
+  },
+  {
+    "id": 6349912,
+    "question_id": 634991,
+    "value": "C",
+    "label": "| x   | y   | |-----|-----| | 0   | 20  | | 2   | 60  | | 4   | 60  |",
+    "is_correct": true
+  },
+  {
+    "id": 6349913,
+    "question_id": 634991,
+    "value": "D",
+    "label": "| x   | y   | |-----|-----| | 0   | 20  | | 60  | 2   | | 60  | 4   |",
+    "is_correct": false
+  },
+  {
+    "id": 7500700,
+    "question_id": 750070,
+    "value": "A",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 7500701,
+    "question_id": 750070,
+    "value": "B",
+    "label": "11",
+    "is_correct": false
+  },
+  {
+    "id": 7500702,
+    "question_id": 750070,
+    "value": "C",
+    "label": "9",
+    "is_correct": true
+  },
+  {
+    "id": 7500703,
+    "question_id": 750070,
+    "value": "D",
+    "label": "13",
+    "is_correct": false
+  },
+  {
+    "id": 8684720,
+    "question_id": 868472,
+    "value": "A",
+    "label": "-3",
+    "is_correct": false
+  },
+  {
+    "id": 8684721,
+    "question_id": 868472,
+    "value": "B",
+    "label": "-1",
+    "is_correct": true
+  },
+  {
+    "id": 8684722,
+    "question_id": 868472,
+    "value": "C",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 8684723,
+    "question_id": 868472,
+    "value": "D",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 5716710,
+    "question_id": 571671,
+    "value": "A",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 5716711,
+    "question_id": 571671,
+    "value": "B",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 5716712,
+    "question_id": 571671,
+    "value": "C",
+    "label": "18",
+    "is_correct": false
+  },
+  {
+    "id": 5716713,
+    "question_id": 571671,
+    "value": "D",
+    "label": "24",
+    "is_correct": true
+  },
+  {
+    "id": 9480630,
+    "question_id": 948063,
+    "value": "A",
+    "label": "(0, 4)",
+    "is_correct": true
+  },
+  {
+    "id": 9480631,
+    "question_id": 948063,
+    "value": "B",
+    "label": "(4, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 9480632,
+    "question_id": 948063,
+    "value": "C",
+    "label": "(0, -4)",
+    "is_correct": false
+  },
+  {
+    "id": 9480633,
+    "question_id": 948063,
+    "value": "D",
+    "label": "(-4, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 5497820,
+    "question_id": 549782,
+    "value": "A",
+    "label": "In the year 2030, the predicted population of the town is approximately 8144.",
+    "is_correct": true
+  },
+  {
+    "id": 5497821,
+    "question_id": 549782,
+    "value": "B",
+    "label": "Over the 10 years since 2020, the population of the town has increased by a total of approximately 8144 people.",
+    "is_correct": false
+  },
+  {
+    "id": 5497822,
+    "question_id": 549782,
+    "value": "C",
+    "label": "When the town's predicted population is approximately 8144, it is growing 5 times faster than in the year 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 5497823,
+    "question_id": 549782,
+    "value": "D",
+    "label": "When the town's predicted population is approximately 8144, it has increased by 5% since the previous year.",
+    "is_correct": false
+  },
+  {
+    "id": 8381450,
+    "question_id": 838145,
+    "value": "A",
+    "label": "19",
+    "is_correct": true
+  },
+  {
+    "id": 8381451,
+    "question_id": 838145,
+    "value": "B",
+    "label": "13",
+    "is_correct": false
+  },
+  {
+    "id": 8381452,
+    "question_id": 838145,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 8381453,
+    "question_id": 838145,
+    "value": "D",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 4260330,
+    "question_id": 426033,
+    "value": "A",
+    "label": "30",
+    "is_correct": false
+  },
+  {
+    "id": 4260331,
+    "question_id": 426033,
+    "value": "B",
+    "label": "70",
+    "is_correct": true
+  },
+  {
+    "id": 4260332,
+    "question_id": 426033,
+    "value": "C",
+    "label": "110",
+    "is_correct": false
+  },
+  {
+    "id": 4260333,
+    "question_id": 426033,
+    "value": "D",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 8500300,
+    "question_id": 850030,
+    "value": "A",
+    "label": "Graph A: A parabola opening upwards with vertex at (2, 1).",
+    "is_correct": false
+  },
+  {
+    "id": 8500301,
+    "question_id": 850030,
+    "value": "B",
+    "label": "Graph B: A parabola opening downwards with vertex at (2, -1).",
+    "is_correct": false
+  },
+  {
+    "id": 8500302,
+    "question_id": 850030,
+    "value": "C",
+    "label": "Graph C: A parabola opening upwards with vertex at (-2, -1).",
+    "is_correct": false
+  },
+  {
+    "id": 8500303,
+    "question_id": 850030,
+    "value": "D",
+    "label": "Graph D: A parabola opening upwards with vertex at (2, -1).",
+    "is_correct": true
+  },
+  {
+    "id": 3593610,
+    "question_id": 359361,
+    "value": "A",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 3593611,
+    "question_id": 359361,
+    "value": "B",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 3593612,
+    "question_id": 359361,
+    "value": "C",
+    "label": "11",
+    "is_correct": true
+  },
+  {
+    "id": 3593613,
+    "question_id": 359361,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 2599040,
+    "question_id": 259904,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 2599041,
+    "question_id": 259904,
+    "value": "B",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 2599042,
+    "question_id": 259904,
+    "value": "C",
+    "label": "-2",
+    "is_correct": false
+  },
+  {
+    "id": 2599043,
+    "question_id": 259904,
+    "value": "D",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 9092040,
+    "question_id": 909204,
+    "value": "A",
+    "label": "150",
+    "is_correct": false
+  },
+  {
+    "id": 9092041,
+    "question_id": 909204,
+    "value": "B",
+    "label": "200",
+    "is_correct": false
+  },
+  {
+    "id": 9092042,
+    "question_id": 909204,
+    "value": "C",
+    "label": "300",
+    "is_correct": true
+  },
+  {
+    "id": 9092043,
+    "question_id": 909204,
+    "value": "D",
+    "label": "450",
+    "is_correct": false
+  },
+  {
+    "id": 8293860,
+    "question_id": 829386,
+    "value": "A",
+    "label": "-5",
+    "is_correct": true
+  },
+  {
+    "id": 8293861,
+    "question_id": 829386,
+    "value": "B",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 8293862,
+    "question_id": 829386,
+    "value": "C",
+    "label": "$\\frac{1}{5}$",
+    "is_correct": false
+  },
+  {
+    "id": 8293863,
+    "question_id": 829386,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 6892820,
+    "question_id": 689282,
+    "value": "A",
+    "label": "A circle with a radius of 10 centimeters has an area of 400 square centimeters.",
+    "is_correct": true
+  },
+  {
+    "id": 6892821,
+    "question_id": 689282,
+    "value": "B",
+    "label": "A circle with a radius of 400 centimeters has an area of 10 square centimeters.",
+    "is_correct": false
+  },
+  {
+    "id": 6892822,
+    "question_id": 689282,
+    "value": "C",
+    "label": "A circle with an area of 10 square centimeters has a radius of 400 centimeters.",
+    "is_correct": false
+  },
+  {
+    "id": 6892823,
+    "question_id": 689282,
+    "value": "D",
+    "label": "A circle with an area of 1600 square centimeters has a radius of 10 centimeters.",
+    "is_correct": false
+  },
+  {
+    "id": 9903360,
+    "question_id": 990336,
+    "value": "A",
+    "label": "15",
+    "is_correct": true
+  },
+  {
+    "id": 9903361,
+    "question_id": 990336,
+    "value": "B",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 9903362,
+    "question_id": 990336,
+    "value": "C",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 9903363,
+    "question_id": 990336,
+    "value": "D",
+    "label": "225",
+    "is_correct": false
+  },
+  {
+    "id": 1613440,
+    "question_id": 161344,
+    "value": "A",
+    "label": "The estimated number of bacteria in the petri dish increased by 500 at the beginning of the experiment.",
+    "is_correct": false
+  },
+  {
+    "id": 1613441,
+    "question_id": 161344,
+    "value": "B",
+    "label": "The estimated number of bacteria in the petri dish was 500 when the experiment began.",
+    "is_correct": true
+  },
+  {
+    "id": 1613442,
+    "question_id": 161344,
+    "value": "C",
+    "label": "The estimated number of bacteria in the petri dish increased by 5% each hour during the experiment.",
+    "is_correct": false
+  },
+  {
+    "id": 1613443,
+    "question_id": 161344,
+    "value": "D",
+    "label": "The estimated number of bacteria in the petri dish will be 500 after 1 hour.",
+    "is_correct": false
+  },
+  {
+    "id": 9600960,
+    "question_id": 960096,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 9600961,
+    "question_id": 960096,
+    "value": "B",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 9600962,
+    "question_id": 960096,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 9600963,
+    "question_id": 960096,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 2656130,
+    "question_id": 265613,
+    "value": "A",
+    "label": "The initial number of bacteria in the petri dish",
+    "is_correct": true
+  },
+  {
+    "id": 2656131,
+    "question_id": 265613,
+    "value": "B",
+    "label": "The estimated rate of increase of bacteria in the petri dish per hour",
+    "is_correct": false
+  },
+  {
+    "id": 2656132,
+    "question_id": 265613,
+    "value": "C",
+    "label": "The estimated percentage increase of bacteria in the petri dish per hour",
+    "is_correct": false
+  },
+  {
+    "id": 2656133,
+    "question_id": 265613,
+    "value": "D",
+    "label": "The estimated number of bacteria in the petri dish after $t$ hours",
+    "is_correct": false
+  },
+  {
+    "id": 3940520,
+    "question_id": 394052,
+    "value": "A",
+    "label": "When the city's predicted population is approximately 136,000, it represents a 2.5% increase from the predicted population of the previous year.",
+    "is_correct": false
+  },
+  {
+    "id": 3940521,
+    "question_id": 394052,
+    "value": "B",
+    "label": "When the city's predicted population is approximately 136,000, it is approximately 5 times the population of the city in the year 2020.",
+    "is_correct": false
+  },
+  {
+    "id": 3940522,
+    "question_id": 394052,
+    "value": "C",
+    "label": "From the year 2020 to 5 years later, the city's predicted population increased by approximately 136,000 people.",
+    "is_correct": false
+  },
+  {
+    "id": 3940523,
+    "question_id": 394052,
+    "value": "D",
+    "label": "5 years after the year 2020, the city's predicted population is approximately 136,000.",
+    "is_correct": true
+  },
+  {
+    "id": 6175790,
+    "question_id": 617579,
+    "value": "A",
+    "label": "V = 100(0.20)^t",
+    "is_correct": false
+  },
+  {
+    "id": 6175791,
+    "question_id": 617579,
+    "value": "B",
+    "label": "V = 100(1.20)^t",
+    "is_correct": true
+  },
+  {
+    "id": 6175792,
+    "question_id": 617579,
+    "value": "C",
+    "label": "V = 100 + 20t",
+    "is_correct": false
+  },
+  {
+    "id": 6175793,
+    "question_id": 617579,
+    "value": "D",
+    "label": "V = 100(0.80)^t",
+    "is_correct": false
+  },
+  {
+    "id": 6507750,
+    "question_id": 650775,
+    "value": "A",
+    "label": "$f(0)$",
+    "is_correct": true
+  },
+  {
+    "id": 6507751,
+    "question_id": 650775,
+    "value": "B",
+    "label": "$f(1)$",
+    "is_correct": false
+  },
+  {
+    "id": 6507752,
+    "question_id": 650775,
+    "value": "C",
+    "label": "$f(2)$",
+    "is_correct": false
+  },
+  {
+    "id": 6507753,
+    "question_id": 650775,
+    "value": "D",
+    "label": "$f(3)$",
+    "is_correct": false
+  },
+  {
+    "id": 3108100,
+    "question_id": 310810,
+    "value": "A",
+    "label": "1",
+    "is_correct": true
+  },
+  {
+    "id": 3108101,
+    "question_id": 310810,
+    "value": "B",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 3108102,
+    "question_id": 310810,
+    "value": "C",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 3108103,
+    "question_id": 310810,
+    "value": "D",
+    "label": "-1",
+    "is_correct": false
+  },
+  {
+    "id": 4642990,
+    "question_id": 464299,
+    "value": "A",
+    "label": "Graph of a decreasing exponential function.",
+    "is_correct": false
+  },
+  {
+    "id": 4642991,
+    "question_id": 464299,
+    "value": "B",
+    "label": "Graph of an increasing exponential function with a z-intercept of (0, 4) and doubling growth.",
+    "is_correct": false
+  },
+  {
+    "id": 4642992,
+    "question_id": 464299,
+    "value": "C",
+    "label": "Graph of an increasing exponential function with a z-intercept of (0, 2) and doubling growth.",
+    "is_correct": false
+  },
+  {
+    "id": 4642993,
+    "question_id": 464299,
+    "value": "D",
+    "label": "Graph of an increasing exponential function with a z-intercept of (0, 2) and tripling growth.",
+    "is_correct": true
+  },
+  {
+    "id": 5406240,
+    "question_id": 540624,
+    "value": "A",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 5406241,
+    "question_id": 540624,
+    "value": "B",
+    "label": "2.5",
+    "is_correct": false
+  },
+  {
+    "id": 5406242,
+    "question_id": 540624,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 5406243,
+    "question_id": 540624,
+    "value": "D",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 4189680,
+    "question_id": 418968,
+    "value": "A",
+    "label": "The profit when 100 items are sold is $3000.",
+    "is_correct": true
+  },
+  {
+    "id": 4189681,
+    "question_id": 418968,
+    "value": "B",
+    "label": "The number of items sold when the profit is $3000 is 100.",
+    "is_correct": false
+  },
+  {
+    "id": 4189682,
+    "question_id": 418968,
+    "value": "C",
+    "label": "The profit when 3000 items are sold is $100.",
+    "is_correct": false
+  },
+  {
+    "id": 4189683,
+    "question_id": 418968,
+    "value": "D",
+    "label": "The profit when 100 items are sold is $300.",
+    "is_correct": false
+  },
+  {
+    "id": 7906190,
+    "question_id": 790619,
+    "value": "A",
+    "label": "1.5",
+    "is_correct": false
+  },
+  {
+    "id": 7906191,
+    "question_id": 790619,
+    "value": "B",
+    "label": "-1.5",
+    "is_correct": false
+  },
+  {
+    "id": 7906192,
+    "question_id": 790619,
+    "value": "C",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 7906193,
+    "question_id": 790619,
+    "value": "D",
+    "label": "60",
+    "is_correct": false
+  },
+  {
+    "id": 5388370,
+    "question_id": 538837,
+    "value": "A",
+    "label": "p = 0.05(1000)^h",
+    "is_correct": false
+  },
+  {
+    "id": 5388371,
+    "question_id": 538837,
+    "value": "B",
+    "label": "p = 1000(1 + 0.05)^h",
+    "is_correct": true
+  },
+  {
+    "id": 5388372,
+    "question_id": 538837,
+    "value": "C",
+    "label": "p = 0.05(1000h)",
+    "is_correct": false
+  },
+  {
+    "id": 5388373,
+    "question_id": 538837,
+    "value": "D",
+    "label": "p = 1000(0.05 + h)",
+    "is_correct": false
+  },
+  {
+    "id": 6372350,
+    "question_id": 637235,
+    "value": "A",
+    "label": "V(t) = 0.10(25,000)^t",
+    "is_correct": false
+  },
+  {
+    "id": 6372351,
+    "question_id": 637235,
+    "value": "B",
+    "label": "V(t) = 0.90(25,000)^t",
+    "is_correct": false
+  },
+  {
+    "id": 6372352,
+    "question_id": 637235,
+    "value": "C",
+    "label": "V(t) = 25,000(0.10)^t",
+    "is_correct": false
+  },
+  {
+    "id": 6372353,
+    "question_id": 637235,
+    "value": "D",
+    "label": "V(t) = 25,000(0.90)^t",
+    "is_correct": true
+  },
+  {
+    "id": 7612340,
+    "question_id": 761234,
+    "value": "A",
+    "label": "(-8, 0)",
+    "is_correct": true
+  },
+  {
+    "id": 7612341,
+    "question_id": 761234,
+    "value": "B",
+    "label": "(5, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 7612342,
+    "question_id": 761234,
+    "value": "C",
+    "label": "(40, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 7612343,
+    "question_id": 761234,
+    "value": "D",
+    "label": "(8, 0)",
+    "is_correct": false
+  },
+  {
+    "id": 5508280,
+    "question_id": 550828,
+    "value": "A",
+    "label": "The fixed costs, in dollars, before any units are sold.",
+    "is_correct": true
+  },
+  {
+    "id": 5508281,
+    "question_id": 550828,
+    "value": "B",
+    "label": "The profit, in dollars, when 50 units are sold.",
+    "is_correct": false
+  },
+  {
+    "id": 5508282,
+    "question_id": 550828,
+    "value": "C",
+    "label": "The maximum profit, in dollars, that can be achieved.",
+    "is_correct": false
+  },
+  {
+    "id": 5508283,
+    "question_id": 550828,
+    "value": "D",
+    "label": "The revenue, in dollars, from selling one unit.",
+    "is_correct": false
+  },
+  {
+    "id": 4501730,
+    "question_id": 450173,
+    "value": "A",
+    "label": "For every increase in time by 1 year, the value of the motorcycle decreases by $22,000.",
+    "is_correct": false
+  },
+  {
+    "id": 4501731,
+    "question_id": 450173,
+    "value": "B",
+    "label": "For every increase in time by 1 year, the value of the motorcycle decreases by 85%.",
+    "is_correct": false
+  },
+  {
+    "id": 4501732,
+    "question_id": 450173,
+    "value": "C",
+    "label": "For every increase in time by 1 year, the value of the motorcycle decreases by 15%.",
+    "is_correct": true
+  },
+  {
+    "id": 4501733,
+    "question_id": 450173,
+    "value": "D",
+    "label": "For every increase in time by 15 years, the value of the motorcycle decreases by 85%.",
+    "is_correct": false
+  },
+  {
+    "id": 1959770,
+    "question_id": 195977,
+    "value": "A",
+    "label": "$f$",
+    "is_correct": false
+  },
+  {
+    "id": 1959771,
+    "question_id": 195977,
+    "value": "B",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 1959772,
+    "question_id": 195977,
+    "value": "C",
+    "label": "$(f + 12)$",
+    "is_correct": true
+  },
+  {
+    "id": 1959773,
+    "question_id": 195977,
+    "value": "D",
+    "label": "$f(f + 12)$",
+    "is_correct": false
+  },
+  {
+    "id": 3270410,
+    "question_id": 327041,
+    "value": "A",
+    "label": "-7",
+    "is_correct": false
+  },
+  {
+    "id": 3270411,
+    "question_id": 327041,
+    "value": "B",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 3270412,
+    "question_id": 327041,
+    "value": "C",
+    "label": "-2",
+    "is_correct": true
+  },
+  {
+    "id": 3270413,
+    "question_id": 327041,
+    "value": "D",
+    "label": "-0.5",
+    "is_correct": false
+  },
+  {
+    "id": 2201750,
+    "question_id": 220175,
+    "value": "A",
+    "label": "$$p(t) = 50(1.20)^t$$",
+    "is_correct": true
+  },
+  {
+    "id": 2201751,
+    "question_id": 220175,
+    "value": "B",
+    "label": "$$p(t) = 50(2)^{1.20t}$$",
+    "is_correct": false
+  },
+  {
+    "id": 2201752,
+    "question_id": 220175,
+    "value": "C",
+    "label": "$$p(t) = 1.20(50)^t$$",
+    "is_correct": false
+  },
+  {
+    "id": 2201753,
+    "question_id": 220175,
+    "value": "D",
+    "label": "$$p(t) = (50 \\cdot 1.20)^t$$",
+    "is_correct": false
+  },
+  {
+    "id": 9767690,
+    "question_id": 976769,
+    "value": "A",
+    "label": "The ball reaches a maximum height of 20 feet at 2.5 seconds.",
+    "is_correct": false
+  },
+  {
+    "id": 9767691,
+    "question_id": 976769,
+    "value": "B",
+    "label": "The ball hits the ground at 2.5 seconds.",
+    "is_correct": true
+  },
+  {
+    "id": 9767692,
+    "question_id": 976769,
+    "value": "C",
+    "label": "The ball reaches a maximum height of 20 feet at 0.5 seconds.",
+    "is_correct": false
+  },
+  {
+    "id": 9767693,
+    "question_id": 976769,
+    "value": "D",
+    "label": "The ball reaches a height of 5 feet at 0.1 seconds.",
+    "is_correct": false
+  },
+  {
+    "id": 2113740,
+    "question_id": 211374,
+    "value": "A",
+    "label": "Approximately 2000 bacteria are present in the colony 6 hours after the colony was started.",
+    "is_correct": true
+  },
+  {
+    "id": 2113741,
+    "question_id": 211374,
+    "value": "B",
+    "label": "The population of the bacteria colony has increased by approximately 2000 bacteria after 6 hours.",
+    "is_correct": false
+  },
+  {
+    "id": 2113742,
+    "question_id": 211374,
+    "value": "C",
+    "label": "The population of the bacteria colony has increased by approximately 6 bacteria after 2000 hours.",
+    "is_correct": false
+  },
+  {
+    "id": 2113743,
+    "question_id": 211374,
+    "value": "D",
+    "label": "Approximately 6 bacteria are present in the colony 2000 hours after the colony was started.",
+    "is_correct": false
+  },
+  {
+    "id": 6082310,
+    "question_id": 608231,
+    "value": "A",
+    "label": "-23",
+    "is_correct": false
+  },
+  {
+    "id": 6082311,
+    "question_id": 608231,
+    "value": "B",
+    "label": "23",
+    "is_correct": true
+  },
+  {
+    "id": 6082312,
+    "question_id": 608231,
+    "value": "C",
+    "label": "529",
+    "is_correct": false
+  },
+  {
+    "id": 6082313,
+    "question_id": 608231,
+    "value": "D",
+    "label": "0",
+    "is_correct": false
+  },
+  {
+    "id": 2582260,
+    "question_id": 258226,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 2582261,
+    "question_id": 258226,
+    "value": "B",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 2582262,
+    "question_id": 258226,
+    "value": "C",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 2582263,
+    "question_id": 258226,
+    "value": "D",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 3873150,
+    "question_id": 387315,
+    "value": "A",
+    "label": "The maximum estimated population of rabbits in the park during the 5 years was approximately 638.",
+    "is_correct": false
+  },
+  {
+    "id": 3873151,
+    "question_id": 387315,
+    "value": "B",
+    "label": "The initial population of rabbits in the park in the year 2000 was 500.",
+    "is_correct": true
+  },
+  {
+    "id": 3873152,
+    "question_id": 387315,
+    "value": "C",
+    "label": "The estimated population of rabbits in the park in the year 2001 was approximately 525.",
+    "is_correct": false
+  },
+  {
+    "id": 3873153,
+    "question_id": 387315,
+    "value": "D",
+    "label": "The estimated population of rabbits in the park in the year 2005 was approximately 638.",
+    "is_correct": false
+  },
+  {
+    "id": 5350000,
+    "question_id": 535000,
+    "value": "A",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 5350001,
+    "question_id": 535000,
+    "value": "B",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 5350002,
+    "question_id": 535000,
+    "value": "C",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 5350003,
+    "question_id": 535000,
+    "value": "D",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 3756630,
+    "question_id": 375663,
+    "value": "A",
+    "label": "$h = -4(t + 3.5)^2 + 49$",
+    "is_correct": false
+  },
+  {
+    "id": 3756631,
+    "question_id": 375663,
+    "value": "B",
+    "label": "$h = -4t^2 + 49$",
+    "is_correct": false
+  },
+  {
+    "id": 3756632,
+    "question_id": 375663,
+    "value": "C",
+    "label": "$h = -4t^2 - 49$",
+    "is_correct": false
+  },
+  {
+    "id": 3756633,
+    "question_id": 375663,
+    "value": "D",
+    "label": "$h = -4(t - 3.5)^2 + 49$",
+    "is_correct": true
+  },
+  {
+    "id": 3004000,
+    "question_id": 300400,
+    "value": "A",
+    "label": "-12",
+    "is_correct": false
+  },
+  {
+    "id": 3004001,
+    "question_id": 300400,
+    "value": "B",
+    "label": "-11",
+    "is_correct": true
+  },
+  {
+    "id": 3004002,
+    "question_id": 300400,
+    "value": "C",
+    "label": "-10",
+    "is_correct": false
+  },
+  {
+    "id": 3004003,
+    "question_id": 300400,
+    "value": "D",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 752500,
+    "question_id": 75250,
+    "value": "A",
+    "label": "The revenue, in dollars, when the price of a backpack is $0",
+    "is_correct": false
+  },
+  {
+    "id": 752501,
+    "question_id": 75250,
+    "value": "B",
+    "label": "The price, in dollars, of a backpack that will result in maximum revenue",
+    "is_correct": false
+  },
+  {
+    "id": 752502,
+    "question_id": 75250,
+    "value": "C",
+    "label": "The price, in dollars, of a backpack that will result in a revenue of $0",
+    "is_correct": true
+  },
+  {
+    "id": 752503,
+    "question_id": 75250,
+    "value": "D",
+    "label": "The maximum revenue, in dollars, that the store can make",
+    "is_correct": false
+  },
+  {
+    "id": 6256790,
+    "question_id": 625679,
+    "value": "A",
+    "label": "Day 5",
+    "is_correct": false
+  },
+  {
+    "id": 6256791,
+    "question_id": 625679,
+    "value": "B",
+    "label": "Day 7",
+    "is_correct": true
+  },
+  {
+    "id": 6256792,
+    "question_id": 625679,
+    "value": "C",
+    "label": "Day 9",
+    "is_correct": false
+  },
+  {
+    "id": 6256793,
+    "question_id": 625679,
+    "value": "D",
+    "label": "Day 11",
+    "is_correct": false
+  },
+  {
+    "id": 670560,
+    "question_id": 67056,
+    "value": "A",
+    "label": "-32",
+    "is_correct": false
+  },
+  {
+    "id": 670561,
+    "question_id": 67056,
+    "value": "B",
+    "label": "-4",
+    "is_correct": false
+  },
+  {
+    "id": 670562,
+    "question_id": 67056,
+    "value": "C",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 670563,
+    "question_id": 67056,
+    "value": "D",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 2806120,
+    "question_id": 280612,
+    "value": "A",
+    "label": "$k < -1$",
+    "is_correct": false
+  },
+  {
+    "id": 2806121,
+    "question_id": 280612,
+    "value": "B",
+    "label": "$-1 < k < 0$",
+    "is_correct": true
+  },
+  {
+    "id": 2806122,
+    "question_id": 280612,
+    "value": "C",
+    "label": "$0 < k < 1$",
+    "is_correct": false
+  },
+  {
+    "id": 2806123,
+    "question_id": 280612,
+    "value": "D",
+    "label": "$k > 1$",
+    "is_correct": false
+  },
+  {
+    "id": 1801720,
+    "question_id": 180172,
+    "value": "A",
+    "label": "2 < x < 4",
+    "is_correct": true
+  },
+  {
+    "id": 1801721,
+    "question_id": 180172,
+    "value": "B",
+    "label": "0 < x < 2",
+    "is_correct": false
+  },
+  {
+    "id": 1801722,
+    "question_id": 180172,
+    "value": "C",
+    "label": "4 < x < 6",
+    "is_correct": false
+  },
+  {
+    "id": 1801723,
+    "question_id": 180172,
+    "value": "D",
+    "label": "-1 < x < 1",
+    "is_correct": false
+  },
+  {
+    "id": 7652830,
+    "question_id": 765283,
+    "value": "A",
+    "label": "8",
+    "is_correct": true
+  },
+  {
+    "id": 7652831,
+    "question_id": 765283,
+    "value": "B",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 7652832,
+    "question_id": 765283,
+    "value": "C",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 7652833,
+    "question_id": 765283,
+    "value": "D",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 666880,
+    "question_id": 66688,
+    "value": "A",
+    "label": "25",
+    "is_correct": true
+  },
+  {
+    "id": 666881,
+    "question_id": 66688,
+    "value": "B",
+    "label": "50",
+    "is_correct": false
+  },
+  {
+    "id": 666882,
+    "question_id": 66688,
+    "value": "C",
+    "label": "100",
+    "is_correct": false
+  },
+  {
+    "id": 666883,
+    "question_id": 66688,
+    "value": "D",
+    "label": "150",
+    "is_correct": false
+  },
+  {
+    "id": 8521550,
+    "question_id": 852155,
+    "value": "A",
+    "label": "P = 500(1.05)\\^{\\frac{m}{12}}",
+    "is_correct": true
+  },
+  {
+    "id": 8521551,
+    "question_id": 852155,
+    "value": "B",
+    "label": "P = 500(1.05)^{12m}",
+    "is_correct": false
+  },
+  {
+    "id": 8521552,
+    "question_id": 852155,
+    "value": "C",
+    "label": "P = 500(1.05)^m",
+    "is_correct": false
+  },
+  {
+    "id": 8521553,
+    "question_id": 852155,
+    "value": "D",
+    "label": "P = 500(1.05 \\u00B9\\u00B2)^m",
+    "is_correct": false
+  },
+  {
+    "id": 7217210,
+    "question_id": 721721,
+    "value": "A",
+    "label": "$y = -0.5(x + 2)^2 + 4$",
+    "is_correct": true
+  },
+  {
+    "id": 7217211,
+    "question_id": 721721,
+    "value": "B",
+    "label": "$y = 0.5(x - 2)^2 + 4$",
+    "is_correct": false
+  },
+  {
+    "id": 7217212,
+    "question_id": 721721,
+    "value": "C",
+    "label": "$y = -0.5(x - 2)^2 - 4$",
+    "is_correct": false
+  },
+  {
+    "id": 7217213,
+    "question_id": 721721,
+    "value": "D",
+    "label": "$y = 0.5(x + 2)^2 - 4$",
+    "is_correct": false
+  },
+  {
+    "id": 3720270,
+    "question_id": 372027,
+    "value": "A",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 3720271,
+    "question_id": 372027,
+    "value": "B",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 3720272,
+    "question_id": 372027,
+    "value": "C",
+    "label": "10",
+    "is_correct": true
+  },
+  {
+    "id": 3720273,
+    "question_id": 372027,
+    "value": "D",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 1536760,
+    "question_id": 153676,
+    "value": "A",
+    "label": "440",
+    "is_correct": true
+  },
+  {
+    "id": 1536761,
+    "question_id": 153676,
+    "value": "B",
+    "label": "500",
+    "is_correct": false
+  },
+  {
+    "id": 1536762,
+    "question_id": 153676,
+    "value": "C",
+    "label": "340",
+    "is_correct": false
+  },
+  {
+    "id": 1536763,
+    "question_id": 153676,
+    "value": "D",
+    "label": "200",
+    "is_correct": false
+  },
+  {
+    "id": 5803720,
+    "question_id": 580372,
+    "value": "A",
+    "label": "108",
+    "is_correct": true
+  },
+  {
+    "id": 5803721,
+    "question_id": 580372,
+    "value": "B",
+    "label": "96",
+    "is_correct": false
+  },
+  {
+    "id": 5803722,
+    "question_id": 580372,
+    "value": "C",
+    "label": "144",
+    "is_correct": false
+  },
+  {
+    "id": 5803723,
+    "question_id": 580372,
+    "value": "D",
+    "label": "72",
+    "is_correct": false
+  },
+  {
+    "id": 35010,
+    "question_id": 3501,
+    "value": "A",
+    "label": "-8",
+    "is_correct": true
+  },
+  {
+    "id": 35011,
+    "question_id": 3501,
+    "value": "B",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 35012,
+    "question_id": 3501,
+    "value": "C",
+    "label": "-6",
+    "is_correct": false
+  },
+  {
+    "id": 35013,
+    "question_id": 3501,
+    "value": "D",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 8786220,
+    "question_id": 878622,
+    "value": "A",
+    "label": "$T(m) = 80 (1.25)^m$",
+    "is_correct": false
+  },
+  {
+    "id": 8786221,
+    "question_id": 878622,
+    "value": "B",
+    "label": "$T(m) = 80 (0.85)^m$",
+    "is_correct": false
+  },
+  {
+    "id": 8786222,
+    "question_id": 878622,
+    "value": "C",
+    "label": "$T(m) = (80 - 20) (0.75)^{\\frac{m}{4}}$",
+    "is_correct": false
+  },
+  {
+    "id": 8786223,
+    "question_id": 878622,
+    "value": "D",
+    "label": "$T(m) = 20 + 60 (0.75)^{\\frac{m}{4}}$",
+    "is_correct": true
+  },
+  {
+    "id": 2190130,
+    "question_id": 219013,
+    "value": "A",
+    "label": "1,000 = 1,200(1.05)^t",
+    "is_correct": false
+  },
+  {
+    "id": 2190131,
+    "question_id": 219013,
+    "value": "B",
+    "label": "1,000 = 1,200(0.05)^t",
+    "is_correct": false
+  },
+  {
+    "id": 2190132,
+    "question_id": 219013,
+    "value": "C",
+    "label": "1,200 = 1,000(0.05)^t",
+    "is_correct": false
+  },
+  {
+    "id": 2190133,
+    "question_id": 219013,
+    "value": "D",
+    "label": "1,200 = 1,000(1.05)^t",
+    "is_correct": true
+  },
+  {
+    "id": 2856260,
+    "question_id": 285626,
+    "value": "A",
+    "label": "The initial height of the ball above the ground.",
+    "is_correct": false
+  },
+  {
+    "id": 2856261,
+    "question_id": 285626,
+    "value": "B",
+    "label": "The maximum height of the ball above the ground.",
+    "is_correct": false
+  },
+  {
+    "id": 2856262,
+    "question_id": 285626,
+    "value": "C",
+    "label": "The time at which the ball reaches its maximum height.",
+    "is_correct": false
+  },
+  {
+    "id": 2856263,
+    "question_id": 285626,
+    "value": "D",
+    "label": "The time at which the ball hits the ground.",
+    "is_correct": true
+  },
+  {
+    "id": 7839240,
+    "question_id": 783924,
+    "value": "A",
+    "label": "8",
+    "is_correct": true
+  },
+  {
+    "id": 7839241,
+    "question_id": 783924,
+    "value": "B",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 7839242,
+    "question_id": 783924,
+    "value": "C",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 7839243,
+    "question_id": 783924,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 1129430,
+    "question_id": 112943,
+    "value": "A",
+    "label": "-1",
+    "is_correct": false
+  },
+  {
+    "id": 1129431,
+    "question_id": 112943,
+    "value": "B",
+    "label": "7",
+    "is_correct": true
+  },
+  {
+    "id": 1129432,
+    "question_id": 112943,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 1129433,
+    "question_id": 112943,
+    "value": "D",
+    "label": "-7",
+    "is_correct": false
+  },
+  {
+    "id": 2428660,
+    "question_id": 242866,
+    "value": "A",
+    "label": "2.6",
+    "is_correct": false
+  },
+  {
+    "id": 2428661,
+    "question_id": 242866,
+    "value": "B",
+    "label": "3.2",
+    "is_correct": false
+  },
+  {
+    "id": 2428662,
+    "question_id": 242866,
+    "value": "C",
+    "label": "4.0",
+    "is_correct": false
+  },
+  {
+    "id": 2428663,
+    "question_id": 242866,
+    "value": "D",
+    "label": "2.9",
+    "is_correct": true
+  },
+  {
+    "id": 6181860,
+    "question_id": 618186,
+    "value": "A",
+    "label": "$y = 16 \\cdot (16^x)$",
+    "is_correct": true
+  },
+  {
+    "id": 6181861,
+    "question_id": 618186,
+    "value": "B",
+    "label": "$y = 16^{(x+1)}$",
+    "is_correct": false
+  },
+  {
+    "id": 6181862,
+    "question_id": 618186,
+    "value": "C",
+    "label": "$y = 4^{(2x+2)}$",
+    "is_correct": false
+  },
+  {
+    "id": 6181863,
+    "question_id": 618186,
+    "value": "D",
+    "label": "$y = 16 + 16 \\cdot (16^x - 1)$",
+    "is_correct": false
+  },
+  {
+    "id": 8030910,
+    "question_id": 803091,
+    "value": "A",
+    "label": "P = 5000(1.16)^t",
+    "is_correct": false
+  },
+  {
+    "id": 8030911,
+    "question_id": 803091,
+    "value": "B",
+    "label": "P = 5000(0.08)^t",
+    "is_correct": false
+  },
+  {
+    "id": 8030912,
+    "question_id": 803091,
+    "value": "C",
+    "label": "P = 5000(9)^t",
+    "is_correct": false
+  },
+  {
+    "id": 8030913,
+    "question_id": 803091,
+    "value": "D",
+    "label": "P = 5000(1.08)^t",
+    "is_correct": true
+  },
+  {
+    "id": 6618980,
+    "question_id": 661898,
+    "value": "A",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 6618981,
+    "question_id": 661898,
+    "value": "B",
+    "label": "7.5",
+    "is_correct": false
+  },
+  {
+    "id": 6618982,
+    "question_id": 661898,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 6618983,
+    "question_id": 661898,
+    "value": "D",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 1256280,
+    "question_id": 125628,
+    "value": "A",
+    "label": "3.4, 17/5",
+    "is_correct": true
+  },
+  {
+    "id": 1256281,
+    "question_id": 125628,
+    "value": "B",
+    "label": "6.6, 33/5",
+    "is_correct": false
+  },
+  {
+    "id": 1256282,
+    "question_id": 125628,
+    "value": "C",
+    "label": "7.4, 37/5",
+    "is_correct": false
+  },
+  {
+    "id": 1256283,
+    "question_id": 125628,
+    "value": "D",
+    "label": "4.4, 22/5",
+    "is_correct": false
+  },
+  {
+    "id": 4175800,
+    "question_id": 417580,
+    "value": "A",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 4175801,
+    "question_id": 417580,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 4175802,
+    "question_id": 417580,
+    "value": "C",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 4175803,
+    "question_id": 417580,
+    "value": "D",
+    "label": "2",
+    "is_correct": false
+  }
+]

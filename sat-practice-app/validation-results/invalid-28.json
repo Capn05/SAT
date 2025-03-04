@@ -1,0 +1,18 @@
+[
+  {
+    "question_id": 200915,
+    "question_text": "In the xy-plane above, points P, Q, R, and T lie on the circle with center O. The degree measures of...",
+    "issues": [
+      "The question is ambiguous and does not provide enough information to uniquely determine the radian measure of angle QOR.  It is implied that points P, Q, R, and T are in consecutive order around the circle, and angles POQ, QOR, and ROT are adjacent central angles.  If we assume that angles POQ, QOR, and ROT are consecutive and sum to 180 degrees (forming a semicircle), then angle QOR can be uniquely determined. However, this assumption is not explicitly stated in the question. Without this assumption or further information from the diagram, there are infinitely many possible values for angle QOR.",
+      "The question relies on an unstated assumption that angles POQ, QOR, and ROT are somehow related (e.g., adjacent and summing to 180 degrees) to have a unique solution from the given options.  If we assume ∠POQ + ∠QOR + ∠ROT = 180°, then the correct answer is derived. However, this is not explicitly given in the problem statement.",
+      "The question is not clearly written due to the ambiguity regarding the relationship between angles POQ, QOR, and ROT.  For a standardized test question, it lacks precision and could be misinterpreted by students."
+    ]
+  },
+  {
+    "question_id": 456061,
+    "question_text": "A circle in the xy-plane has its center at (1, 5). Line m is tangent to this circle at the point (4,...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. None of the provided options are correct. The correct slope of the tangent line is 3/4, which is not listed among the options."
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "question_id": 240601,
+    "question_text": "The scatterplot below shows the relationship between the number of hours students studied for a test...",
+    "issues": [
+      "The question is missing the scatterplot image, which is crucial for answering the question. Without the image, it is impossible to determine which equation best models the relationship between study hours and test scores.",
+      "Due to the missing image, it is impossible to definitively confirm if option D is the correct answer or if other options are clearly incorrect. The validity of the marked answer and the suitability of other options depend entirely on the visual representation in the scatterplot."
+    ]
+  },
+  {
+    "question_id": 127921,
+    "question_text": "2018 2019 2020 2021 2022 2023  ![](_page_3_Figure_1_modified.jpeg)  The line graph shows the annual ...",
+    "issues": [
+      "The question is missing the crucial image of the line graph, making it impossible to answer the question.",
+      "The list of years '2018 2019 2020 2021 2022 2023' at the beginning of the question text is unclear and potentially distracting. It's not explained why these years are listed and what their relevance is to the question, which asks about profits from 2019 to 2025.",
+      "Without the image, it is impossible to verify if option B (2022) is actually the correct answer or if the other options are incorrect."
+    ]
+  },
+  {
+    "question_id": 595354,
+    "question_text": "A beaker of water was heated for 25 minutes. The graph above shows the temperature of the water over...",
+    "issues": [
+      "The question is invalid because the graph image is missing. Without the graph, it is impossible to determine the correct answer or evaluate the truthfulness of the options.",
+      "There is a potential contradiction or error in the provided information. Option D is marked as 'correct', but the question asks for the statement that is 'NOT true'. If option D is indeed true according to the graph (which we cannot see), then it should not be the answer to a 'NOT true' question.  This suggests a possible misunderstanding in the 'correct' marking or an error in the question design if D is intended to be the answer to a 'NOT TRUE' question."
+    ]
+  },
+  {
+    "question_id": 112159,
+    "question_text": "A meteorologist recorded the average daily temperature for a week, as shown in the line graph above....",
+    "issues": [
+      "The image of the line graph is missing. The question refers to 'the line graph above' and includes an image placeholder '![](_page_6_Figure_4.jpeg)', but the image is not displayed. Without the line graph, the question cannot be answered or validated.",
+      "Due to the missing image, it is impossible to verify if the option marked as correct (C. Thursday - Friday) is actually correct, or if other options are clearly incorrect."
+    ]
+  },
+  {
+    "question_id": 465599,
+    "question_text": "A local ice cream shop tracked daily high temperatures and their ice cream sales for a month. A scat...",
+    "issues": [
+      "Multiple options (A, B, and D) could represent a line of best fit for the given scenario, as they all show a positive linear association (positive slope).",
+      "Option C is less plausible in a real-world context due to the negative y-intercept implying negative ice cream sales at 0 degrees Celsius, but mathematically it still represents a positive linear association and could be considered a line of best fit.",
+      "Marking only option A as the correct answer is arbitrary and not justified by the question's wording or the information provided. Options B and D are equally valid.",
+      "The question lacks discrimination among the options, making it too easy and potentially misleading as it suggests a single correct answer when multiple are plausible."
+    ]
+  },
+  {
+    "question_id": 947320,
+    "question_text": "A study was conducted to investigate the relationship between the number of hours students spend stu...",
+    "issues": [
+      "The option marked as correct (C) is likely incorrect based on the provided graph. Option B appears to be a more accurate estimate for the test score when studying 25 hours per week."
+    ]
+  },
+  {
+    "question_id": 407940,
+    "question_text": "Twelve data points are shown in a scatterplot representing hours studied per week (x) and exam score...",
+    "issues": [
+      "The question is missing the scatterplot image, which is essential to answer the question.",
+      "Without the image, it is impossible to verify if option C is the correct answer or if other options are definitively incorrect.",
+      "The question is incomplete and cannot be answered as presented."
+    ]
+  },
+  {
+    "question_id": 813187,
+    "question_text": "Two-variable data: Plant Growth SAT Problem-Solving Math and Data Analysis Models and scatterplots  ...",
+    "issues": [
+      "Question text is missing. The provided text only describes the question type and context, but does not actually pose a question related to the scatterplot.",
+      "Cannot verify correctness of marked answer without the question text. 'Placeholder A (Correct)' indicates an intended correct answer, but without a question, it's impossible to determine if option A would be correct.",
+      "Cannot verify incorrectness of other options without the question text. Similarly, without a question, it's impossible to determine if 'Placeholder B', 'Placeholder C', and 'Placeholder D' are incorrect.",
+      "Formatting issues: 'Placeholder A', 'Placeholder B', 'Placeholder C', and 'Placeholder D' are not valid SAT answer options.  The description is also somewhat verbose and repetitive ('Problem-Solving Math and Data Analysis Models and scatterplots').",
+      "Difficulty level cannot be accurately assessed without the question text. While scatterplot interpretation can be 'Easy' on the SAT, the absence of a question makes it impossible to judge the difficulty."
+    ]
+  },
+  {
+    "question_id": 729692,
+    "question_text": "The scatterplot below shows the relationship between the number of hours students studied for a test...",
+    "issues": [
+      "The actual question being asked is missing. The prompt provides context (scatterplot, line of best fit, options) but no explicit question text.  Without knowing what is being asked, it's impossible to definitively determine the correct answer or validate the options.",
+      "Due to the missing question, it is impossible to verify if option C is actually the correct answer.",
+      "Due to the missing question, it is impossible to verify if options A, B, and D are clearly incorrect."
+    ]
+  },
+  {
+    "question_id": 89351,
+    "question_text": "The scatterplot (not shown) displays the relationship between the number of hours students spent vol...",
+    "issues": [
+      "The question is incomplete because the scatterplot is missing. Without the scatterplot, it is impossible to determine the correct answer and validate the options.",
+      "The question relies on visual information (the scatterplot) that is not provided, making it unsolvable as presented.",
+      "While the question text itself is clearly written and grammatically correct, its lack of accompanying visual data is a critical flaw."
+    ]
+  },
+  {
+    "question_id": 628770,
+    "question_text": "The scatterplot above shows the number of hours studied per week, $x$, and the exam score, $y$, for ...",
+    "issues": [
+      "The question is incomplete because it refers to a scatterplot image that is missing. Without the scatterplot, it is impossible to definitively determine the correct line of best fit.",
+      "While option B is marked as correct, without the scatterplot, we cannot verify if it is indeed the most appropriate line of best fit compared to other options or if other options are definitively incorrect. The correctness is contingent on the unseen scatterplot.",
+      "The question relies on visual interpretation of a scatterplot, which is absent. This makes it impossible to validate the correctness of the options based solely on the provided text."
+    ]
+  },
+  {
+    "question_id": 846083,
+    "question_text": "Two cities had populations that grew as shown in the table below. The population growth in City A is...",
+    "issues": [
+      "The option marked as correct (Option B) is incorrect. Option D is the correct answer.",
+      "The provided correct answer key is wrong, making the question invalid as it is currently presented."
+    ]
+  }
+]

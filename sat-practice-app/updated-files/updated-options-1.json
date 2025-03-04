@@ -1,0 +1,1570 @@
+[
+  {
+    "id": 4221850,
+    "question_id": 422185,
+    "value": "A",
+    "label": "2y + 5",
+    "is_correct": false
+  },
+  {
+    "id": 4221851,
+    "question_id": 422185,
+    "value": "B",
+    "label": "2y + 9",
+    "is_correct": true
+  },
+  {
+    "id": 4221852,
+    "question_id": 422185,
+    "value": "C",
+    "label": "4y + 9",
+    "is_correct": false
+  },
+  {
+    "id": 4221853,
+    "question_id": 422185,
+    "value": "D",
+    "label": "2y - 5",
+    "is_correct": false
+  },
+  {
+    "id": 4021670,
+    "question_id": 402167,
+    "value": "A",
+    "label": "2y - 15",
+    "is_correct": false
+  },
+  {
+    "id": 4021671,
+    "question_id": 402167,
+    "value": "B",
+    "label": "2y + 3",
+    "is_correct": false
+  },
+  {
+    "id": 4021672,
+    "question_id": 402167,
+    "value": "C",
+    "label": "2y + 15",
+    "is_correct": false
+  },
+  {
+    "id": 4021673,
+    "question_id": 402167,
+    "value": "D",
+    "label": "2y - 1",
+    "is_correct": true
+  },
+  {
+    "id": 3945430,
+    "question_id": 394543,
+    "value": "A",
+    "label": "2x^2 + 7x - 3",
+    "is_correct": true
+  },
+  {
+    "id": 3945431,
+    "question_id": 394543,
+    "value": "B",
+    "label": "2x^2 + 3x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 3945432,
+    "question_id": 394543,
+    "value": "C",
+    "label": "4x^2 + 3x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 3945433,
+    "question_id": 394543,
+    "value": "D",
+    "label": "2x^2 + 7x + 3",
+    "is_correct": false
+  },
+  {
+    "id": 4567900,
+    "question_id": 456790,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 4567901,
+    "question_id": 456790,
+    "value": "B",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 4567902,
+    "question_id": 456790,
+    "value": "C",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 4567903,
+    "question_id": 456790,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 6250710,
+    "question_id": 625071,
+    "value": "A",
+    "label": "$3a^3+6a$",
+    "is_correct": true
+  },
+  {
+    "id": 6250711,
+    "question_id": 625071,
+    "value": "B",
+    "label": "$3a^6+6a^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6250712,
+    "question_id": 625071,
+    "value": "C",
+    "label": "$7a^3+14a$",
+    "is_correct": false
+  },
+  {
+    "id": 6250713,
+    "question_id": 625071,
+    "value": "D",
+    "label": "$7a^6+14a^2$",
+    "is_correct": false
+  },
+  {
+    "id": 3130310,
+    "question_id": 313031,
+    "value": "A",
+    "label": "$3y(y + 4)$",
+    "is_correct": true
+  },
+  {
+    "id": 3130311,
+    "question_id": 313031,
+    "value": "B",
+    "label": "$3y(y + 12)$",
+    "is_correct": false
+  },
+  {
+    "id": 3130312,
+    "question_id": 313031,
+    "value": "C",
+    "label": "$12y(y + 1)$",
+    "is_correct": false
+  },
+  {
+    "id": 3130313,
+    "question_id": 313031,
+    "value": "D",
+    "label": "$4y(y + 3)$",
+    "is_correct": false
+  },
+  {
+    "id": 551180,
+    "question_id": 55118,
+    "value": "A",
+    "label": "6x^3 - x^2",
+    "is_correct": false
+  },
+  {
+    "id": 551181,
+    "question_id": 55118,
+    "value": "B",
+    "label": "5x^3 - 3x^2",
+    "is_correct": false
+  },
+  {
+    "id": 551182,
+    "question_id": 55118,
+    "value": "C",
+    "label": "6x^3 - 3x^2",
+    "is_correct": true
+  },
+  {
+    "id": 551183,
+    "question_id": 55118,
+    "value": "D",
+    "label": "6x^4 - 3x^2",
+    "is_correct": false
+  },
+  {
+    "id": 6903220,
+    "question_id": 690322,
+    "value": "A",
+    "label": "$3x^4 + 12x^2 - 8$",
+    "is_correct": false
+  },
+  {
+    "id": 6903221,
+    "question_id": 690322,
+    "value": "B",
+    "label": "$3x^4 + 10x^2 - 8$",
+    "is_correct": true
+  },
+  {
+    "id": 6903222,
+    "question_id": 690322,
+    "value": "C",
+    "label": "$3x^4 - 10x^2 - 8$",
+    "is_correct": false
+  },
+  {
+    "id": 6903223,
+    "question_id": 690322,
+    "value": "D",
+    "label": "$3x^4 - 8$",
+    "is_correct": false
+  },
+  {
+    "id": 7394880,
+    "question_id": 739488,
+    "value": "A",
+    "label": "x^2 + 12",
+    "is_correct": false
+  },
+  {
+    "id": 7394881,
+    "question_id": 739488,
+    "value": "B",
+    "label": "x^2 + 22",
+    "is_correct": true
+  },
+  {
+    "id": 7394882,
+    "question_id": 739488,
+    "value": "C",
+    "label": "x^2 + 21",
+    "is_correct": false
+  },
+  {
+    "id": 7394883,
+    "question_id": 739488,
+    "value": "D",
+    "label": "x^2 + 29",
+    "is_correct": false
+  },
+  {
+    "id": 773670,
+    "question_id": 77367,
+    "value": "A",
+    "label": "4y - 7",
+    "is_correct": false
+  },
+  {
+    "id": 773671,
+    "question_id": 77367,
+    "value": "B",
+    "label": "4y + 1",
+    "is_correct": false
+  },
+  {
+    "id": 773672,
+    "question_id": 77367,
+    "value": "C",
+    "label": "4y - 1",
+    "is_correct": true
+  },
+  {
+    "id": 773673,
+    "question_id": 77367,
+    "value": "D",
+    "label": "4y - 5",
+    "is_correct": false
+  },
+  {
+    "id": 9980730,
+    "question_id": 998073,
+    "value": "A",
+    "label": "4a + 6b",
+    "is_correct": false
+  },
+  {
+    "id": 9980731,
+    "question_id": 998073,
+    "value": "B",
+    "label": "10a + 10b",
+    "is_correct": false
+  },
+  {
+    "id": 9980732,
+    "question_id": 998073,
+    "value": "C",
+    "label": "11a + 5b",
+    "is_correct": false
+  },
+  {
+    "id": 9980733,
+    "question_id": 998073,
+    "value": "D",
+    "label": "10a + 6b",
+    "is_correct": true
+  },
+  {
+    "id": 7266870,
+    "question_id": 726687,
+    "value": "A",
+    "label": "$(7x - 12)(7x + 12)$",
+    "is_correct": true
+  },
+  {
+    "id": 7266871,
+    "question_id": 726687,
+    "value": "B",
+    "label": "$(7x - 12)(7x - 12)$",
+    "is_correct": false
+  },
+  {
+    "id": 7266872,
+    "question_id": 726687,
+    "value": "C",
+    "label": "$(49x - 12)(49x + 12)$",
+    "is_correct": false
+  },
+  {
+    "id": 7266873,
+    "question_id": 726687,
+    "value": "D",
+    "label": "$(7x + 12)(7x + 12)$",
+    "is_correct": false
+  },
+  {
+    "id": 6230070,
+    "question_id": 623007,
+    "value": "A",
+    "label": "$3x^3 + x^2 + 3x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 6230071,
+    "question_id": 623007,
+    "value": "B",
+    "label": "$3x^3 + 3x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 6230072,
+    "question_id": 623007,
+    "value": "C",
+    "label": "$3x^3 - x^2 + 3x + 1$",
+    "is_correct": true
+  },
+  {
+    "id": 6230073,
+    "question_id": 623007,
+    "value": "D",
+    "label": "$2x^3 - x^2 + 3x + 1$",
+    "is_correct": false
+  },
+  {
+    "id": 7066440,
+    "question_id": 706644,
+    "value": "A",
+    "label": "3($5x + 7$)",
+    "is_correct": false
+  },
+  {
+    "id": 7066441,
+    "question_id": 706644,
+    "value": "B",
+    "label": "5($5x + 7$)",
+    "is_correct": false
+  },
+  {
+    "id": 7066442,
+    "question_id": 706644,
+    "value": "C",
+    "label": "5($3x + 7$)",
+    "is_correct": true
+  },
+  {
+    "id": 7066443,
+    "question_id": 706644,
+    "value": "D",
+    "label": "7($2x + 5$)",
+    "is_correct": false
+  },
+  {
+    "id": 1177350,
+    "question_id": 117735,
+    "value": "A",
+    "label": "7pq",
+    "is_correct": false
+  },
+  {
+    "id": 1177351,
+    "question_id": 117735,
+    "value": "B",
+    "label": "7(p - q)",
+    "is_correct": true
+  },
+  {
+    "id": 1177352,
+    "question_id": 117735,
+    "value": "C",
+    "label": "14q",
+    "is_correct": false
+  },
+  {
+    "id": 1177353,
+    "question_id": 117735,
+    "value": "D",
+    "label": "14p",
+    "is_correct": false
+  },
+  {
+    "id": 2659770,
+    "question_id": 265977,
+    "value": "A",
+    "label": "12x²yz",
+    "is_correct": true
+  },
+  {
+    "id": 2659771,
+    "question_id": 265977,
+    "value": "B",
+    "label": "7x²yz",
+    "is_correct": false
+  },
+  {
+    "id": 2659772,
+    "question_id": 265977,
+    "value": "C",
+    "label": "12xyz",
+    "is_correct": false
+  },
+  {
+    "id": 2659773,
+    "question_id": 265977,
+    "value": "D",
+    "label": "7xyz",
+    "is_correct": false
+  },
+  {
+    "id": 3919960,
+    "question_id": 391996,
+    "value": "A",
+    "label": "3x + 2y",
+    "is_correct": false
+  },
+  {
+    "id": 3919961,
+    "question_id": 391996,
+    "value": "B",
+    "label": "9x - 2y",
+    "is_correct": false
+  },
+  {
+    "id": 3919962,
+    "question_id": 391996,
+    "value": "C",
+    "label": "3x - 4y",
+    "is_correct": false
+  },
+  {
+    "id": 3919963,
+    "question_id": 391996,
+    "value": "D",
+    "label": "3x - 2y",
+    "is_correct": true
+  },
+  {
+    "id": 2239880,
+    "question_id": 223988,
+    "value": "A",
+    "label": "4x² + 11x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 2239881,
+    "question_id": 223988,
+    "value": "B",
+    "label": "4x² + 6x + 4",
+    "is_correct": false
+  },
+  {
+    "id": 2239882,
+    "question_id": 223988,
+    "value": "C",
+    "label": "4x² + 11x + 2",
+    "is_correct": false
+  },
+  {
+    "id": 2239883,
+    "question_id": 223988,
+    "value": "D",
+    "label": "4x² + 11x + 4",
+    "is_correct": true
+  },
+  {
+    "id": 7851600,
+    "question_id": 785160,
+    "value": "A",
+    "label": "$(x^2-3)(x^2-5)$",
+    "is_correct": true
+  },
+  {
+    "id": 7851601,
+    "question_id": 785160,
+    "value": "B",
+    "label": "$(x^2-1)(x^2-15)$",
+    "is_correct": false
+  },
+  {
+    "id": 7851602,
+    "question_id": 785160,
+    "value": "C",
+    "label": "$(x^2-2)(x^2-6)$",
+    "is_correct": false
+  },
+  {
+    "id": 7851603,
+    "question_id": 785160,
+    "value": "D",
+    "label": "$(x^2-3)(x^2+5)$",
+    "is_correct": false
+  },
+  {
+    "id": 9071440,
+    "question_id": 907144,
+    "value": "A",
+    "label": "9x^2 - 10x - 1",
+    "is_correct": true
+  },
+  {
+    "id": 9071441,
+    "question_id": 907144,
+    "value": "B",
+    "label": "9x^2 + 14x - 1",
+    "is_correct": false
+  },
+  {
+    "id": 9071442,
+    "question_id": 907144,
+    "value": "C",
+    "label": "9x^2 - 10x + 1",
+    "is_correct": false
+  },
+  {
+    "id": 9071443,
+    "question_id": 907144,
+    "value": "D",
+    "label": "9x^2 + 14x + 1",
+    "is_correct": false
+  },
+  {
+    "id": 5003180,
+    "question_id": 500318,
+    "value": "A",
+    "label": "$(x-3)^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5003181,
+    "question_id": 500318,
+    "value": "B",
+    "label": "$(x+9)(x-1)$",
+    "is_correct": false
+  },
+  {
+    "id": 5003182,
+    "question_id": 500318,
+    "value": "C",
+    "label": "$(x+3)(x-3)$",
+    "is_correct": true
+  },
+  {
+    "id": 5003183,
+    "question_id": 500318,
+    "value": "D",
+    "label": "$(x+3)^2$",
+    "is_correct": false
+  },
+  {
+    "id": 4417680,
+    "question_id": 441768,
+    "value": "A",
+    "label": "$x^2 - 12x + 14$",
+    "is_correct": true
+  },
+  {
+    "id": 4417681,
+    "question_id": 441768,
+    "value": "B",
+    "label": "$x^2 - 12x - 4$",
+    "is_correct": false
+  },
+  {
+    "id": 4417682,
+    "question_id": 441768,
+    "value": "C",
+    "label": "$-x^2 - 12x + 14$",
+    "is_correct": false
+  },
+  {
+    "id": 4417683,
+    "question_id": 441768,
+    "value": "D",
+    "label": "$5x^2 - 12x + 14$",
+    "is_correct": false
+  },
+  {
+    "id": 9951000,
+    "question_id": 995100,
+    "value": "A",
+    "label": "$y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 9951001,
+    "question_id": 995100,
+    "value": "B",
+    "label": "$xy^2$",
+    "is_correct": false
+  },
+  {
+    "id": 9951002,
+    "question_id": 995100,
+    "value": "C",
+    "label": "$x^2y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 9951003,
+    "question_id": 995100,
+    "value": "D",
+    "label": "$y^3$",
+    "is_correct": false
+  },
+  {
+    "id": 9214970,
+    "question_id": 921497,
+    "value": "A",
+    "label": "2x^3 - 7x^2 - 11x + 6",
+    "is_correct": true
+  },
+  {
+    "id": 9214971,
+    "question_id": 921497,
+    "value": "B",
+    "label": "2x^3 - 7x^2 + 11x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 9214972,
+    "question_id": 921497,
+    "value": "C",
+    "label": "2x^3 - 13x^2 - 11x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 9214973,
+    "question_id": 921497,
+    "value": "D",
+    "label": "2x^3 - 7x^2 - 11x - 6",
+    "is_correct": false
+  },
+  {
+    "id": 8474930,
+    "question_id": 847493,
+    "value": "A",
+    "label": "n^2 - 2nr + r^2",
+    "is_correct": true
+  },
+  {
+    "id": 8474931,
+    "question_id": 847493,
+    "value": "B",
+    "label": "n^2 + 2nr + r^2",
+    "is_correct": false
+  },
+  {
+    "id": 8474932,
+    "question_id": 847493,
+    "value": "C",
+    "label": "m^2 - 2mr + r^2",
+    "is_correct": false
+  },
+  {
+    "id": 8474933,
+    "question_id": 847493,
+    "value": "D",
+    "label": "n^2 - r^2",
+    "is_correct": false
+  },
+  {
+    "id": 6832200,
+    "question_id": 683220,
+    "value": "A",
+    "label": "$2x^3y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6832201,
+    "question_id": 683220,
+    "value": "B",
+    "label": "$2xy^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6832202,
+    "question_id": 683220,
+    "value": "C",
+    "label": "$2x^{-1}y^3$",
+    "is_correct": false
+  },
+  {
+    "id": 6832203,
+    "question_id": 683220,
+    "value": "D",
+    "label": "$2x^{-1}y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 5543410,
+    "question_id": 554341,
+    "value": "A",
+    "label": "$(x - 4)^2 - 6$",
+    "is_correct": true
+  },
+  {
+    "id": 5543411,
+    "question_id": 554341,
+    "value": "B",
+    "label": "$(x - 4)^2 + 6$",
+    "is_correct": false
+  },
+  {
+    "id": 5543412,
+    "question_id": 554341,
+    "value": "C",
+    "label": "$(x + 4)^2 - 6$",
+    "is_correct": false
+  },
+  {
+    "id": 5543413,
+    "question_id": 554341,
+    "value": "D",
+    "label": "$(x + 4)^2 + 6$",
+    "is_correct": false
+  },
+  {
+    "id": 8478580,
+    "question_id": 847858,
+    "value": "A",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 8478581,
+    "question_id": 847858,
+    "value": "B",
+    "label": "16",
+    "is_correct": true
+  },
+  {
+    "id": 8478582,
+    "question_id": 847858,
+    "value": "C",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 8478583,
+    "question_id": 847858,
+    "value": "D",
+    "label": "24",
+    "is_correct": false
+  },
+  {
+    "id": 550000,
+    "question_id": 55000,
+    "value": "A",
+    "label": "$\\\\frac{7}{36}$",
+    "is_correct": true
+  },
+  {
+    "id": 550001,
+    "question_id": 55000,
+    "value": "B",
+    "label": "$\\\\frac{25}{36}$",
+    "is_correct": false
+  },
+  {
+    "id": 550002,
+    "question_id": 55000,
+    "value": "C",
+    "label": "$\\\\frac{1}{36}$",
+    "is_correct": false
+  },
+  {
+    "id": 550003,
+    "question_id": 55000,
+    "value": "D",
+    "label": "$\\\\frac{7}{18}$",
+    "is_correct": false
+  },
+  {
+    "id": 6991390,
+    "question_id": 699139,
+    "value": "A",
+    "label": "$8y^5 + y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6991391,
+    "question_id": 699139,
+    "value": "B",
+    "label": "$3y^5 + 4y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6991392,
+    "question_id": 699139,
+    "value": "C",
+    "label": "$9y^5$",
+    "is_correct": false
+  },
+  {
+    "id": 6991393,
+    "question_id": 699139,
+    "value": "D",
+    "label": "$7y^5 + 2y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 1460900,
+    "question_id": 146090,
+    "value": "A",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 1460901,
+    "question_id": 146090,
+    "value": "B",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 1460902,
+    "question_id": 146090,
+    "value": "C",
+    "label": "4",
+    "is_correct": true
+  },
+  {
+    "id": 1460903,
+    "question_id": 146090,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 2816900,
+    "question_id": 281690,
+    "value": "A",
+    "label": "$2x^2 + 5xy - 12y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 2816901,
+    "question_id": 281690,
+    "value": "B",
+    "label": "$2x^2 - 11xy - 12y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 2816902,
+    "question_id": 281690,
+    "value": "C",
+    "label": "$2x^2 - 5xy + 12y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 2816903,
+    "question_id": 281690,
+    "value": "D",
+    "label": "$2x^2 - 5xy - 12y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 6359160,
+    "question_id": 635916,
+    "value": "A",
+    "label": "$1-q^5$",
+    "is_correct": true
+  },
+  {
+    "id": 6359161,
+    "question_id": 635916,
+    "value": "B",
+    "label": "$1-q^6$",
+    "is_correct": false
+  },
+  {
+    "id": 6359162,
+    "question_id": 635916,
+    "value": "C",
+    "label": "$1+q^5$",
+    "is_correct": false
+  },
+  {
+    "id": 6359163,
+    "question_id": 635916,
+    "value": "D",
+    "label": "$1+q^6$",
+    "is_correct": false
+  },
+  {
+    "id": 4766260,
+    "question_id": 476626,
+    "value": "A",
+    "label": "$5y - 2$",
+    "is_correct": false
+  },
+  {
+    "id": 4766261,
+    "question_id": 476626,
+    "value": "B",
+    "label": "$y + 2$",
+    "is_correct": false
+  },
+  {
+    "id": 4766262,
+    "question_id": 476626,
+    "value": "C",
+    "label": "$5y + 2$",
+    "is_correct": true
+  },
+  {
+    "id": 4766263,
+    "question_id": 476626,
+    "value": "D",
+    "label": "$y - 2$",
+    "is_correct": false
+  },
+  {
+    "id": 8012780,
+    "question_id": 801278,
+    "value": "A",
+    "label": "$$\\\\frac{1}{4}\\mathbf{x} - \\mathbf{3}$$",
+    "is_correct": true
+  },
+  {
+    "id": 8012781,
+    "question_id": 801278,
+    "value": "B",
+    "label": "$$\\\\frac{5}{4}\\mathbf{x} - \\mathbf{3}$$",
+    "is_correct": false
+  },
+  {
+    "id": 8012782,
+    "question_id": 801278,
+    "value": "C",
+    "label": "$$\\\\frac{1}{4}\\mathbf{x} - \\mathbf{1}$$",
+    "is_correct": false
+  },
+  {
+    "id": 8012783,
+    "question_id": 801278,
+    "value": "D",
+    "label": "$$-\\\\frac{1}{4}\\mathbf{x} - \\mathbf{3}$$",
+    "is_correct": false
+  },
+  {
+    "id": 7453540,
+    "question_id": 745354,
+    "value": "A",
+    "label": "2x^3 - 2x^2 - 9x - 4",
+    "is_correct": false
+  },
+  {
+    "id": 7453541,
+    "question_id": 745354,
+    "value": "B",
+    "label": "2x^3 - 2x^2 - 9x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 7453542,
+    "question_id": 745354,
+    "value": "C",
+    "label": "2x^3 + 6x^2 - 9x + 6",
+    "is_correct": true
+  },
+  {
+    "id": 7453543,
+    "question_id": 745354,
+    "value": "D",
+    "label": "2x^3 + 6x^2 + 9x + 6",
+    "is_correct": false
+  },
+  {
+    "id": 5473320,
+    "question_id": 547332,
+    "value": "A",
+    "label": "$$(x - 3)^{\\frac{2}{3}}$$",
+    "is_correct": false
+  },
+  {
+    "id": 5473321,
+    "question_id": 547332,
+    "value": "B",
+    "label": "$$(x - 3)^3$$",
+    "is_correct": false
+  },
+  {
+    "id": 5473322,
+    "question_id": 547332,
+    "value": "C",
+    "label": "$$(x - 3)^{\\frac{4}{3}}$$",
+    "is_correct": true
+  },
+  {
+    "id": 5473323,
+    "question_id": 547332,
+    "value": "D",
+    "label": "$$(x - 9)^{\\frac{2}{3}}$$",
+    "is_correct": false
+  },
+  {
+    "id": 5499460,
+    "question_id": 549946,
+    "value": "A",
+    "label": "$2x^2 + xy - 22y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5499461,
+    "question_id": 549946,
+    "value": "B",
+    "label": "$2x^2 - 10xy - 2y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5499462,
+    "question_id": 549946,
+    "value": "C",
+    "label": "$2x^2 - 10xy - 22y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 5499463,
+    "question_id": 549946,
+    "value": "D",
+    "label": "$2x^2 - 6xy - 22y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 2790390,
+    "question_id": 279039,
+    "value": "A",
+    "label": "6y(2y² + 3y - 1)",
+    "is_correct": true
+  },
+  {
+    "id": 2790391,
+    "question_id": 279039,
+    "value": "B",
+    "label": "2y(6y² + 9y - 1)",
+    "is_correct": false
+  },
+  {
+    "id": 2790392,
+    "question_id": 279039,
+    "value": "C",
+    "label": "3y(4y² - 6y + 2)",
+    "is_correct": false
+  },
+  {
+    "id": 2790393,
+    "question_id": 279039,
+    "value": "D",
+    "label": "6(2y² + 3y - 1)",
+    "is_correct": false
+  },
+  {
+    "id": 5169180,
+    "question_id": 516918,
+    "value": "A",
+    "label": "7",
+    "is_correct": false
+  },
+  {
+    "id": 5169181,
+    "question_id": 516918,
+    "value": "B",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 5169182,
+    "question_id": 516918,
+    "value": "C",
+    "label": "14",
+    "is_correct": true
+  },
+  {
+    "id": 5169183,
+    "question_id": 516918,
+    "value": "D",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 3865670,
+    "question_id": 386567,
+    "value": "A",
+    "label": "$\\\\frac{5}{6}$",
+    "is_correct": true
+  },
+  {
+    "id": 3865671,
+    "question_id": 386567,
+    "value": "B",
+    "label": "$\\\\frac{23}{6}$",
+    "is_correct": false
+  },
+  {
+    "id": 3865672,
+    "question_id": 386567,
+    "value": "C",
+    "label": "$\\\\frac{7}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 3865673,
+    "question_id": 386567,
+    "value": "D",
+    "label": "$\\\\frac{3}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 5426950,
+    "question_id": 542695,
+    "value": "A",
+    "label": "-64",
+    "is_correct": false
+  },
+  {
+    "id": 5426951,
+    "question_id": 542695,
+    "value": "B",
+    "label": "-16",
+    "is_correct": false
+  },
+  {
+    "id": 5426952,
+    "question_id": 542695,
+    "value": "C",
+    "label": "16",
+    "is_correct": false
+  },
+  {
+    "id": 5426953,
+    "question_id": 542695,
+    "value": "D",
+    "label": "64",
+    "is_correct": true
+  },
+  {
+    "id": 4191660,
+    "question_id": 419166,
+    "value": "A",
+    "label": "31",
+    "is_correct": true
+  },
+  {
+    "id": 4191661,
+    "question_id": 419166,
+    "value": "B",
+    "label": "59",
+    "is_correct": false
+  },
+  {
+    "id": 4191662,
+    "question_id": 419166,
+    "value": "C",
+    "label": "45",
+    "is_correct": false
+  },
+  {
+    "id": 4191663,
+    "question_id": 419166,
+    "value": "D",
+    "label": "-14",
+    "is_correct": false
+  },
+  {
+    "id": 4910380,
+    "question_id": 491038,
+    "value": "A",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 4910381,
+    "question_id": 491038,
+    "value": "B",
+    "label": "6",
+    "is_correct": true
+  },
+  {
+    "id": 4910382,
+    "question_id": 491038,
+    "value": "C",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 4910383,
+    "question_id": 491038,
+    "value": "D",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 1704260,
+    "question_id": 170426,
+    "value": "A",
+    "label": "0.05",
+    "is_correct": true
+  },
+  {
+    "id": 1704261,
+    "question_id": 170426,
+    "value": "B",
+    "label": "0.5",
+    "is_correct": false
+  },
+  {
+    "id": 1704262,
+    "question_id": 170426,
+    "value": "C",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 1704263,
+    "question_id": 170426,
+    "value": "D",
+    "label": "1.25",
+    "is_correct": false
+  },
+  {
+    "id": 1796120,
+    "question_id": 179612,
+    "value": "A",
+    "label": "-5",
+    "is_correct": true
+  },
+  {
+    "id": 1796121,
+    "question_id": 179612,
+    "value": "B",
+    "label": "-3",
+    "is_correct": false
+  },
+  {
+    "id": 1796122,
+    "question_id": 179612,
+    "value": "C",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 1796123,
+    "question_id": 179612,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 2958320,
+    "question_id": 295832,
+    "value": "A",
+    "label": "$$\\frac{p^2\\sqrt{p}}{q^3\\sqrt[4]{q}}$$",
+    "is_correct": true
+  },
+  {
+    "id": 2958321,
+    "question_id": 295832,
+    "value": "B",
+    "label": "$$\\frac{p^2\\sqrt[4]{p}}{q^3\\sqrt{q}}$$",
+    "is_correct": false
+  },
+  {
+    "id": 2958322,
+    "question_id": 295832,
+    "value": "C",
+    "label": "$$\\frac{p\\sqrt{p}}{q^2\\sqrt[4]{q}}$$",
+    "is_correct": false
+  },
+  {
+    "id": 2958323,
+    "question_id": 295832,
+    "value": "D",
+    "label": "$$\\frac{\\sqrt[4]{p^5}}{q^3\\sqrt{q}}$$",
+    "is_correct": false
+  },
+  {
+    "id": 7559860,
+    "question_id": 755986,
+    "value": "A",
+    "label": "$\\frac{x+3}{x+1}$",
+    "is_correct": false
+  },
+  {
+    "id": 7559861,
+    "question_id": 755986,
+    "value": "B",
+    "label": "$\\frac{x(x+2)}{x+1}$",
+    "is_correct": false
+  },
+  {
+    "id": 7559862,
+    "question_id": 755986,
+    "value": "C",
+    "label": "$\\frac{x(x+3)}{x+2}$",
+    "is_correct": false
+  },
+  {
+    "id": 7559863,
+    "question_id": 755986,
+    "value": "D",
+    "label": "$\\frac{x(x+3)}{x+1}$",
+    "is_correct": true
+  },
+  {
+    "id": 8001270,
+    "question_id": 800127,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 8001271,
+    "question_id": 800127,
+    "value": "B",
+    "label": "4",
+    "is_correct": false
+  },
+  {
+    "id": 8001272,
+    "question_id": 800127,
+    "value": "C",
+    "label": "$\\sqrt{7}$",
+    "is_correct": false
+  },
+  {
+    "id": 8001273,
+    "question_id": 800127,
+    "value": "D",
+    "label": "$\\sqrt{28}$",
+    "is_correct": false
+  },
+  {
+    "id": 6265570,
+    "question_id": 626557,
+    "value": "A",
+    "label": "$4x^2 - 9y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6265571,
+    "question_id": 626557,
+    "value": "B",
+    "label": "$4x^2 + 12xy + 9y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6265572,
+    "question_id": 626557,
+    "value": "C",
+    "label": "$2x^2 - 6xy + 3y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 6265573,
+    "question_id": 626557,
+    "value": "D",
+    "label": "$4x^2 - 12xy + 9y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 9592820,
+    "question_id": 959282,
+    "value": "A",
+    "label": "-3",
+    "is_correct": false
+  },
+  {
+    "id": 9592821,
+    "question_id": 959282,
+    "value": "B",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 9592822,
+    "question_id": 959282,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 9592823,
+    "question_id": 959282,
+    "value": "D",
+    "label": "3",
+    "is_correct": true
+  },
+  {
+    "id": 9134880,
+    "question_id": 913488,
+    "value": "A",
+    "label": "$3x + 1 + \\frac{1}{x-2}$",
+    "is_correct": false
+  },
+  {
+    "id": 9134881,
+    "question_id": 913488,
+    "value": "B",
+    "label": "$3x - 1 - \\frac{1}{x-2}$",
+    "is_correct": false
+  },
+  {
+    "id": 9134882,
+    "question_id": 913488,
+    "value": "C",
+    "label": "$3x + 1 - \\frac{1}{x-2}$",
+    "is_correct": false
+  },
+  {
+    "id": 9134883,
+    "question_id": 913488,
+    "value": "D",
+    "label": "$3x - 1 + \\frac{1}{x-2}$",
+    "is_correct": true
+  },
+  {
+    "id": 6889020,
+    "question_id": 688902,
+    "value": "A",
+    "label": "3400",
+    "is_correct": true
+  },
+  {
+    "id": 6889021,
+    "question_id": 688902,
+    "value": "B",
+    "label": "4200",
+    "is_correct": false
+  },
+  {
+    "id": 6889022,
+    "question_id": 688902,
+    "value": "C",
+    "label": "5400",
+    "is_correct": false
+  },
+  {
+    "id": 6889023,
+    "question_id": 688902,
+    "value": "D",
+    "label": "3300",
+    "is_correct": false
+  },
+  {
+    "id": 5758940,
+    "question_id": 575894,
+    "value": "A",
+    "label": "(y - β)²",
+    "is_correct": false
+  },
+  {
+    "id": 5758941,
+    "question_id": 575894,
+    "value": "B",
+    "label": "(y + β)(y - β)",
+    "is_correct": true
+  },
+  {
+    "id": 5758942,
+    "question_id": 575894,
+    "value": "C",
+    "label": "$y^2 - βy - β^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5758943,
+    "question_id": 575894,
+    "value": "D",
+    "label": "$y^2 + β^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5599580,
+    "question_id": 559958,
+    "value": "A",
+    "label": "$12x^3y^2$",
+    "is_correct": true
+  },
+  {
+    "id": 5599581,
+    "question_id": 559958,
+    "value": "B",
+    "label": "$7xy$",
+    "is_correct": false
+  },
+  {
+    "id": 5599582,
+    "question_id": 559958,
+    "value": "C",
+    "label": "$7x^3y^2$",
+    "is_correct": false
+  },
+  {
+    "id": 5599583,
+    "question_id": 559958,
+    "value": "D",
+    "label": "$12xy$",
+    "is_correct": false
+  },
+  {
+    "id": 1052310,
+    "question_id": 105231,
+    "value": "A",
+    "label": "$\\frac{3}{4}$",
+    "is_correct": false
+  },
+  {
+    "id": 1052311,
+    "question_id": 105231,
+    "value": "B",
+    "label": "$\\frac{3}{8}$",
+    "is_correct": true
+  },
+  {
+    "id": 1052312,
+    "question_id": 105231,
+    "value": "C",
+    "label": "$\\frac{3}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 1052313,
+    "question_id": 105231,
+    "value": "D",
+    "label": "$\\frac{2}{3}$",
+    "is_correct": false
+  }
+]

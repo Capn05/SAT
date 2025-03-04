@@ -1,0 +1,516 @@
+[
+  {
+    "question_id": 238593,
+    "question_text": "Leo and Mia went to a farmers market. The price of each apple was the same, and the price of each ba...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A, which is marked as correct, accurately represents the given situation. Leo bought 5 apples and 3 bananas for $13.50, which translates to the equation 5x + 3y = 13.50. Mia bought 2 apples and 4 bananas for $9.00, which translates to the equation 2x + 4y = 9.00. Option A correctly presents this system of equations. Options B, C, and D are incorrect because they do not accurately represent the given information about the quantities and costs of apples and bananas purchased by Leo and Mia. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question type, which tests the basic skill of translating a word problem into a system of linear equations."
+    }
+  },
+  {
+    "question_id": 431753,
+    "question_text": "The graph of a system of linear equations is shown. The two lines intersect at a single point. What ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Question is unsolvable without the graph image. The question text refers to a graph that is not provided."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question text describes a problem that is visually presented in a graph, but the graph itself is missing.  Without the graph, it is impossible to determine the solution to the system of equations.  Assuming that option A, (2, 1), is indeed the intended correct answer, and that the missing graph would visually show the intersection of the two lines at the point (2, 1), then option A would be correct, and options B, C, and D would be incorrect as they represent different points. The question text itself is grammatically correct and clearly written in the context of a graph being present. The difficulty level of identifying an intersection point from a graph is generally considered 'Easy' for the SAT. However, the fundamental issue is the missing visual component, rendering the question invalid as it is currently presented."
+    }
+  },
+  {
+    "question_id": 735298,
+    "question_text": "A bakery sells muffins and bagels. Each muffin costs $3 and each bagel costs $2. On Tuesday, the bak...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A correctly represents the given information as a system of equations. The first equation, m + b = 120, accurately represents the total number of muffins (m) and bagels (b) sold. The second equation, 3m + 2b = 290, correctly represents the total revenue, where muffins cost $3 each and bagels cost $2 each. Options B, C, and D are incorrect because they misrepresent the relationships between the number of muffins and bagels sold and the total revenue. Option B incorrectly assigns the total number of items to the revenue equation and vice versa. Options C and D also incorrectly swap the prices of muffins and bagels in the revenue equation and misassign the total sum values. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it is a straightforward application of setting up a system of linear equations from a word problem, a fundamental concept in algebra typically tested at the SAT level."
+    }
+  },
+  {
+    "question_id": 420513,
+    "question_text": "m = 7 n = 2m - 5  The solution to the given system of equations is (m, n). What is the value of n?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. We are given two equations: m = 7 and n = 2m - 5. To find the value of n, we substitute the value of m from the first equation into the second equation: n = 2(7) - 5 = 14 - 5 = 9. Therefore, the correct value of n is 9, which corresponds to option C. Options A, B, and D are incorrect because they do not result from correctly substituting m = 7 into the second equation. The question is straightforward and requires basic substitution and arithmetic, making the 'Easy' difficulty level appropriate."
+    }
+  },
+  {
+    "question_id": 681584,
+    "question_text": "What is the solution (x,y) to the given system of equations?  $$y = 3x - 1$$ $$x - 2 = 0$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the solution to a system of two linear equations. The option marked as correct, B. (2,5), is indeed the correct solution. Solving the second equation, x - 2 = 0, gives x = 2. Substituting x = 2 into the first equation, y = 3x - 1, gives y = 3(2) - 1 = 6 - 1 = 5. Thus, the solution is (x,y) = (2,5). Options A, C, and D are incorrect because they do not satisfy both equations. The difficulty level 'Easy' is appropriate as this system of equations is straightforward to solve, requiring basic algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 971780,
+    "question_text": "A system of two linear equations is graphed in the xy-plane below.  ![](_page_7_Figure_4_modified.jp...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because the image referenced in the question text is missing. The question asks to identify the solution to a system of linear equations based on a graph, but the graph is not provided. Without the graph, the question cannot be answered.",
+        "It is impossible to verify if option A is the correct answer or if other options are incorrect without the graph."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is fundamentally flawed due to the missing image. The question explicitly states 'A system of two linear equations is graphed in the xy-plane below' and refers to 'Figure 4', but the image is not displayed.  This makes it impossible to determine the solution to the system of equations visually, as intended by the question. While option A is marked as correct, we cannot validate this or the incorrectness of other options without the visual information from the graph.  The question, in its current state, is not a valid SAT question."
+    }
+  },
+  {
+    "question_id": 158502,
+    "question_text": "What is the solution (x, y) to the given system of equations?\\n\\n$$y = \\mathbf{7}$$\\n$$x = \\mathbf{3...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear and well-written. The system of equations is given as y = 7 and x = 3. The solution (x, y) is therefore (3, 7). Option C is (3, 7), which is the correct solution. Options A, B, and D are incorrect as they do not satisfy the given system of equations. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it directly provides the solution in the equations."
+    }
+  },
+  {
+    "question_id": 774793,
+    "question_text": "A fruit stand sells apples and bananas. Let $a$ be the number of apples and $b$ be the number of ban...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The variables are well-defined, and the conditions are easy to understand and translate into equations. Option A, which is marked as correct, accurately represents the given situation: 'b = 3a' translates to 'there are 3 times as many bananas as apples', and 'a + b = 16' translates to 'in total there are 16 fruits'. Options B, C, and D are clearly incorrect as they misrepresent either the relationship between the number of apples and bananas or the total number of fruits. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it tests a fundamental concept of translating word problems into systems of linear equations."
+    }
+  },
+  {
+    "question_id": 169533,
+    "question_text": "A coffee shop sells two types of coffee beans: Arabica and Robusta. Arabica beans cost $15 per pound...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 474. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is clearly written and makes sense. It describes a scenario of blending two types of coffee beans with differe..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 110676,
+    "question_text": "If (x, y) is the solution to the given system of equations, what is the value of y?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as it does not provide the system of equations. Without the system of equations, the question cannot be solved.",
+        "Assuming the intended correct answer (C. 20) is indeed correct for some system of equations, the question is still invalid due to the missing information.",
+        "While the question structure and options are valid in format, the core content (the system of equations) is missing, making it impossible to definitively verify the correctness of the marked answer or the incorrectness of other options without guessing the intended system."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is fundamentally flawed because it refers to 'the given system of equations' without actually providing the system.  To determine if option C is correct, we would need to know the system of equations.  Assuming that option C is intended to be correct, there must exist a system of linear equations for which the y-value of the solution (x, y) is 20.  However, without this system provided in the question, the question is unsolvable and therefore invalid for an SAT exam.  Even if we assume a system that leads to y=20, the question as presented is incomplete and would not be a valid SAT question.  The difficulty level might be appropriate if the system were provided and was indeed solvable easily, but the missing information is a critical error."
+    }
+  },
+  {
+    "question_id": 825268,
+    "question_text": "If (x, y) is the solution to the given system of equations, what is the value of y ?  $$ 2x - y = 10...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of 'y' in the given system of equations. The system is: 2x - y = 10 and x = 6. Substituting x = 6 into the first equation, we get 2(6) - y = 10, which simplifies to 12 - y = 10. Solving for y, we get -y = 10 - 12, so -y = -2, and y = 2. Option A, which is 2, is indeed the correct answer. Options B, C, and D are incorrect because substituting them back into the equations along with x = 6 does not satisfy the first equation. The question is grammatically correct, well-formatted, and of appropriate difficulty (Easy) for the SAT."
+    }
+  },
+  {
+    "question_id": 678483,
+    "question_text": "A fruit stand sells apples and bananas. Each apple costs $2, and each banana costs $0.50. If John pu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It presents a system of two linear equations based on the given information: let 'a' be the number of apples and 'b' be the number of bananas. The equations are:\n1. a + b = 15 (total number of fruits)\n2. 2a + 0.5b = 18 (total cost)\nSolving this system of equations, we find that a = 7 and b = 8.  Therefore, John purchased 7 apples. Option C, which is marked as correct, is indeed the correct answer. Options A, B, and D are incorrect because they do not satisfy both conditions of the problem (total number of fruits and total cost). The difficulty level 'Easy' is appropriate as this is a straightforward application of systems of linear equations, a fundamental concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 928918,
+    "question_text": "A bakery sells two types of cookies: chocolate chip and oatmeal raisin. Chocolate chip cookies are s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A correctly represents the given scenario with the following system of equations:\n\nEquation 1: c + o = 200. This equation represents the total number of cookies sold, where 'c' is the number of chocolate chip cookies and 'o' is the number of oatmeal raisin cookies. The problem states that a total of 200 cookies were sold.\n\nEquation 2: 2c + 1.5o = 340. This equation represents the total revenue. Chocolate chip cookies are \\\\$2 each, so the revenue from chocolate chip cookies is 2c. Oatmeal raisin cookies are \\\\$1.50 each, so the revenue from oatmeal raisin cookies is 1.5o. The total revenue is given as \\\\$340.\n\nOptions B, C, and D are incorrect:\n\nOption B incorrectly assigns the total number of cookies to the revenue equation and vice versa.\n\nOption C incorrectly formulates the equations, mixing prices and quantities in a way that does not represent the given scenario.\n\nOption D incorrectly equates the revenue from chocolate chip cookies to the revenue from oatmeal raisin cookies and also uses the wrong total number of cookies in the second equation.\n\nThere are no grammatical or formatting issues. The difficulty level is appropriately classified as Easy for an SAT question on systems of linear equations."
+    }
+  },
+  {
+    "question_id": 454290,
+    "question_text": "A coffee shop sells small coffees for $3.50 and large coffees for $4.75. On a particular morning, th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is correctly marked as the correct answer because it accurately represents the given information as a system of equations. The first equation, s + l = 85, represents the total number of coffees sold. The second equation, 3.50s + 4.75l = 343.25, represents the total revenue generated from selling small and large coffees. Options A, C, and D are incorrect because they misrepresent the relationships between the variables and the given totals. Option A incorrectly assigns the total revenue to the sum of coffees and the total number of coffees to the revenue equation. Option C incorrectly swaps the prices for small and large coffees in the revenue equation. Option D incorrectly assigns the total number of coffees to the revenue equation and the total revenue to the sum of coffees equation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question involves a basic setup of a system of linear equations from a word problem, a fundamental concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 78732,
+    "question_text": "A coffee shop sells two types of beans: Arabica and Robusta. Arabica beans cost $a per pound, and Ro...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Option C is the correct answer because it accurately represents the given information as a system of linear equations. Let 'a' be the cost per pound of Arabica beans and 'b' be the cost per pound of Robusta beans. On Monday, 15 pounds of Arabica and 20 pounds of Robusta were sold for $215, which translates to the equation 15a + 20b = 215. On Tuesday, 12 pounds of Arabica and 25 pounds of Robusta were sold for $230, which translates to the equation 12a + 25b = 230. Option C correctly presents this system of equations. Options A and B are incorrect because they incorrectly assign the coefficients to variables 'a' and 'b' in the second equation or both equations. Option D is incorrect as it completely misrepresents the relationship between quantities, prices, and revenue, using revenue as coefficients and quantities as results, which is the inverse of the correct representation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of translating word problems into linear equations, which is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 555630,
+    "question_text": "$$\\begin{aligned} \\mathsf{Px} + \\mathsf{Qy} &= \\mathsf{R} \\\\ \\mathsf{Sx} + \\mathsf{Ty} &= c \\end{ali...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is not clearly written because the values or relationships of P, Q, R, S, and T are not specified. Without these values or relationships, the value of c cannot be uniquely determined.  For the system to have infinitely many solutions, the second equation must be a multiple of the first equation. This means S/P = T/Q = c/R. However, without knowing the values of P, Q, R, S, and T, or at least some relationship between them, we cannot solve for a specific numerical value of c. The question is underspecified and ambiguous.",
+        "While option A (c=6) is marked as correct, there is no information provided in the question to definitively arrive at this answer without making assumptions about the values of P, Q, R, S, and T.  For example, if we assume S=2P, T=2Q, and R=3, then for infinite solutions, c must be 2R = 6.  However, these values are not given in the problem statement, making the question flawed.",
+        "It is not possible to definitively say that options B, C, and D are clearly incorrect because the question is ambiguous. Depending on the unspecified values of P, Q, R, S, and T, other options could potentially be correct if the intended relationships were different or if there was an error in the question design.",
+        "There are no grammatical or formatting issues, but the lack of specific values for P, Q, R, S, and T is a critical issue in the question's clarity and solvability."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is flawed due to the absence of specific values or relationships for the coefficients P, Q, R, S, and T. For a system of linear equations to have infinitely many solutions, the equations must be linearly dependent, meaning one equation is a multiple of the other.  This implies S/P = T/Q = c/R.  Without knowing P, Q, R, S, and T, we cannot uniquely determine c. However, if we assume that the question intended a simple scenario where the second equation is a multiple of the first, and that option A (c=6) is indeed the correct answer, we can reverse-engineer a possible scenario. For instance, if we assume the second equation is twice the first, then S=2P and T=2Q, and c=2R. If we further assume R=3, then c=2*3=6, which corresponds to option A.  Despite option A being marked as correct, the question is invalid as an SAT question due to its ambiguity and lack of necessary information to solve it definitively without making unjustified assumptions.  It is likely that the question intended to have specific values or relationships for P, Q, R, S, and T that were inadvertently omitted."
+    }
+  },
+  {
+    "question_id": 818479,
+    "question_text": "What is the solution (a, b) to the given system of equations?  $$3a - 2b = 20$$ $$b = 2$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the solution (a, b) to the given system of equations. The system is:  $$3a - 2b = 20$$ $$b = 2$$. Substituting b = 2 into the first equation, we get: $$3a - 2(2) = 20$$ $$3a - 4 = 20$$ $$3a = 24$$ $$a = 8$$. Thus, the solution is (a, b) = (8, 2). Option B, (8, 2), is indeed the correct answer and is marked as correct. Options A, C, and D are incorrect because they do not satisfy both equations in the system. Option A: (2, 8) gives $$3(2) - 2(8) = 6 - 16 = -10 \neq 20$$ and $$b = 8 \neq 2$$. Option C: (2, 20) gives $$3(2) - 2(20) = 6 - 40 = -34 \neq 20$$ and $$b = 20 \neq 2$$. Option D: (20, 2) gives $$3(20) - 2(2) = 60 - 4 = 56 \neq 20$$, although $$b = 2$$ is satisfied. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because it involves a straightforward substitution to solve a system of linear equations."
+    }
+  },
+  {
+    "question_id": 164118,
+    "question_text": "The graph of a system of linear equations is shown. What is the solution (ႏ, y) to the system?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The symbol 'ႏ' in the question text should likely be 'x'. This appears to be a character encoding issue or typo."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the solution to the system of linear equations represented by the graph. By visually inspecting the graph, the intersection point of the two lines is at (1, -2). Option A, (1, -2), is correctly marked as the correct answer. Options B, C, and D are clearly incorrect as they do not represent the intersection point shown in the graph. The question is grammatically sound, although there is a minor formatting issue with the unusual symbol 'ႏ' which should likely be 'x'. The difficulty level 'Easy' is appropriate as it requires a straightforward visual interpretation of a graph to find the intersection point."
+    }
+  },
+  {
+    "question_id": 926369,
+    "question_text": "a = 7 b = 2a - 5  The solution to the given system of equations is (a, b). What is the value of b?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear, well-written, and makes logical sense. The system of equations provided is a = 7 and b = 2a - 5. To find the value of b, we substitute the value of a from the first equation into the second equation: b = 2(7) - 5 = 14 - 5 = 9. Option C, which is 9, is indeed the correct answer. Options A (14), B (7), and D (5) are all incorrect as substituting a = 7 into b = 2a - 5 yields b = 9, and these options do not equal 9. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it involves a simple substitution and basic arithmetic, which is typical of introductory algebra concepts tested on the SAT."
+    }
+  },
+  {
+    "question_id": 126222,
+    "question_text": "The system of equations above has solution $(x, y)$. What is the value of $x$?  $$ \\begin{cases} 3x ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the value of x in the given system of linear equations. Solving the system:\n\nAdding the two equations:\n(3x + y) + (x - y) = 10 + 2\n4x = 12\nx = 3\n\nSubstituting x = 3 into the second equation:\n3 - y = 2\n-y = 2 - 3\n-y = -1\ny = 1\n\nThe solution is (x, y) = (3, 1). Therefore, the value of x is 3, which corresponds to option B. Options A, C, and D are incorrect because substituting x = 2, 4, or 5 into the system does not yield a valid solution for both equations. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as medium for the SAT."
+    }
+  },
+  {
+    "question_id": 234949,
+    "question_text": "A cashier has a total of 48 coins, consisting of only nickels and dimes. The total value of the coin...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The option marked as correct, A (30), is indeed the correct answer. Let 'n' be the number of nickels and 'd' be the number of dimes. We have two equations: n + d = 48 (total number of coins) and 5n + 10d = 330 (total value in cents). Solving this system of equations, we find n = 30 and d = 18.  Checking the other options: B (24 nickels) leads to a total value of $3.60, C (18 nickels) leads to $3.90, and D (36 nickels) leads to $3.00. None of these match the required $3.30. Therefore, options B, C, and D are clearly incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires setting up and solving a system of linear equations, a standard topic for SAT math."
+    }
+  },
+  {
+    "question_id": 80418,
+    "question_text": "A coffee shop sells two blends of coffee beans: House Blend and Premium Blend.  Let $h$ represent th...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Options A and C are identical, meaning there are two correct options provided for a single correct answer question. This violates the principle of having only one correct answer in a multiple-choice question. While option C is marked as correct and is indeed correct, option A is also correct and indistinguishable from option C. This makes the question ambiguous and potentially confusing for test-takers."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is asking for the correct set of points that lie on the lines represented by the given equations. For the equation $2h + 3p = 25$, the intercepts are found by setting $h=0$ to get $3p = 25 \\\\Rightarrow p = \frac{25}{3}$, giving the point $(0, \frac{25}{3})$, and setting $p=0$ to get $2h = 25 \\\\Rightarrow h = \frac{25}{2}$, giving the point $(\frac{25}{2}, 0)$. For the equation $4h + p = 15$, the intercepts are found by setting $h=0$ to get $p = 15$, giving the point $(0, 15)$, and setting $p=0$ to get $4h = 15 \\\\Rightarrow h = \frac{15}{4}$, giving the point $(\frac{15}{4}, 0)$. Option C (and Option A which is identical) correctly lists these points for both equations. Options B and D contain incorrect points for at least one of the equations. However, the duplication of options A and C is a significant issue in the question design."
+    }
+  },
+  {
+    "question_id": 828364,
+    "question_text": "$$\\begin{array}{c} y = \\frac{1}{3}x \\\\ y = -2x + 7 \\end{array}$$  The solution to the given system o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of x in the solution to the given system of linear equations. To solve the system, we can set the two expressions for y equal to each other: \n\n$$\frac{1}{3}x = -2x + 7$$\n\nMultiply both sides by 3 to eliminate the fraction:\n\n$$x = 3(-2x + 7)$$\\n$$x = -6x + 21$$\n\nAdd 6x to both sides:\n\n$$7x = 21$$\n\nDivide by 7:\n\n$$x = 3$$\n\nSubstituting x = 3 into the first equation, we get y = (1/3)(3) = 1. Substituting x = 3 into the second equation, we get y = -2(3) + 7 = -6 + 7 = 1. Thus, the solution is (x, y) = (3, 1), and the value of x is 3. Option A is indeed the correct answer. Options B, C, and D are incorrect because substituting x = -3, 0, or 2 into the system of equations does not yield a consistent solution for y in both equations. The difficulty level 'Medium' is appropriate for this question as it involves a standard algebraic procedure of solving a system of linear equations, which is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 591606,
+    "question_text": "``` 2x + 3y = 30 3x + 2y = 20 ``` If the system of equations above has solution (x, y), what is the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the value of x + y given a system of two linear equations. Solving the system:\n\n1. **Elimination Method:**\n   Multiply the first equation by 3 and the second equation by 2 to eliminate x:\n   ```\n   3 * (2x + 3y) = 3 * 30  =>  6x + 9y = 90\n   2 * (3x + 2y) = 2 * 20  =>  6x + 4y = 40\n   ```\n   Subtract the second new equation from the first:\n   ```\n   (6x + 9y) - (6x + 4y) = 90 - 40\n   5y = 50\n   y = 10\n   ```\n   Substitute y = 10 into the first original equation:\n   ```\n   2x + 3(10) = 30\n   2x + 30 = 30\n   2x = 0\n   x = 0\n   ```\n   Therefore, x + y = 0 + 10 = 10.\n\n2. **Verification of Options:**\n   - Option A (5): Incorrect, as x + y = 10.\n   - Option B (10): Correct, as calculated above.\n   - Option C (25): Incorrect, as x + y = 10.\n   - Option D (50): Incorrect, as x + y = 10.\n\nThe question is grammatically correct, clearly formatted, and the difficulty level is appropriate for a medium-level SAT math question. The option marked as correct (B) is indeed the correct answer, and all other options are clearly incorrect."
+    }
+  },
+  {
+    "question_id": 853218,
+    "question_text": "In the xy-plane, the graph of $y = 3x - 2$ intersects the graph of $y = -x + 6$ at the point $(\\alph...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. To find the value of 'a', we need to solve the system of equations $y = 3x - 2$ and $y = -x + 6$. Setting the expressions for y equal to each other gives $3x - 2 = -x + 6$. Solving for x, we get $4x = 8$, so $x = 2$. Since the intersection point is $(\\\\alpha, b)$ and we are asked for the value of 'a', then $a = 2$. Option B is indeed the correct answer, and the other options are incorrect. The difficulty level is appropriately marked as Medium."
+    }
+  },
+  {
+    "question_id": 112442,
+    "question_text": "At a local farm stand, apples cost $2 each and bananas cost $1.50 each. Sarah bought a total of 12 f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. Let 'a' be the number of apples and 'b' be the number of bananas. We have two equations based on the problem description: a + b = 12 (total fruits) and 2a + 1.5b = 21 (total cost). Solving this system of equations, or by testing the options, we find that if Sarah bought 6 apples (Option A), she would have bought 12 - 6 = 6 bananas. The cost would be (6 * $2) + (6 * $1.50) = $12 + $9 = $21, which matches the given total cost. Options B, C, and D can be similarly checked and shown to be incorrect as they do not result in a total cost of $21. The difficulty level is appropriately categorized as 'Medium' for an SAT math question, as it requires setting up and solving a simple system of linear equations or using a logical trial-and-error approach."
+    }
+  },
+  {
+    "question_id": 608720,
+    "question_text": "$$2x + y = 10$$ $$2x - y = 6$$The solution to the given system of equations is (x, y). What is the v...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve the system of equations:\n\n$$2x + y = 10$$ $$2x - y = 6$$\n\nAdd the two equations together to eliminate y:\n$$(2x + y) + (2x - y) = 10 + 6$$ $$4x = 16$$ $$x = \frac{16}{4}$$ $$x = 4$$\n\nSubstitute x = 4 into the first equation to find y:\n$$2(4) + y = 10$$ $$8 + y = 10$$ $$y = 10 - 8$$ $$y = 2$$\n\nThe solution is (x, y) = (4, 2). The value of x is 4, which corresponds to option B. \n\nLet's check the other options:\nOption A (2): If x = 2, then from the first equation, 2(2) + y = 10 => y = 6. From the second equation, 2(2) - y = 6 => y = -2. This is inconsistent.\nOption C (6): If x = 6, then from the first equation, 2(6) + y = 10 => y = -2. From the second equation, 2(6) - y = 6 => y = 6. This is inconsistent.\nOption D (8): If x = 8, then from the first equation, 2(8) + y = 10 => y = -6. From the second equation, 2(8) - y = 6 => y = 10. This is inconsistent.\n\nAll other options are incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for an SAT math question on systems of linear equations."
+    }
+  },
+  {
+    "question_id": 479545,
+    "question_text": "Which of the following systems of linear equations has no solution?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to identify the system of linear equations with no solution. Option A is correctly marked as the correct answer because the two equations, y = -3x + 7 and y = -3x - 2, represent parallel lines. Parallel lines have the same slope (-3 in this case) but different y-intercepts (7 and -2), meaning they never intersect and thus the system has no solution. Options B, C, and D all represent systems with at least one solution. Option B has lines with different slopes (2 and -2), Option C has lines with different slopes (4 and 5), and Option D has a vertical line (x = -2) and a horizontal line (y = 5), all of which will intersect at a single point. The difficulty level 'Medium' is appropriate as it requires understanding the relationship between the slopes and intercepts of linear equations and the number of solutions to a system."
+    }
+  },
+  {
+    "question_id": 446961,
+    "question_text": "In the solution to the system of equations below, what is the value of y?  $$\\begin{aligned} y &= 3x...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the value of y in the solution to the given system of linear equations. The equations are well-formatted and easy to read. To solve the system, we can use substitution. Since the first equation is already solved for y (y = 3x + 1), we can substitute this expression for y into the second equation: 2(3x + 1) = 7x.  Expanding and simplifying this equation gives 6x + 2 = 7x, which leads to x = 2. Substituting x = 2 back into the first equation (y = 3x + 1) gives y = 3(2) + 1 = 6 + 1 = 7. Therefore, the value of y is 7, which corresponds to option B. Options A, C, and D are incorrect as they do not satisfy the solution to the system of equations. The difficulty level is appropriately marked as 'Medium' for an SAT math question involving a system of linear equations."
+    }
+  },
+  {
+    "question_id": 629126,
+    "question_text": "Which of the following systems of equations has the same solution as the system of equations graphed...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to identify the system of equations with the same solution as the system graphed in the image. To solve this, we first need to determine the solution from the graph. By examining the graph (assuming the image is accessible and shows two intersecting lines), we can visually estimate the point of intersection.  Let's assume the graph shows an intersection at approximately (2, -1).  Now, we need to check which of the given options has (2, -1) as a solution. We substitute x=2 and y=-1 into each system of equations:  Option A:  2(2) + 3(-1) = 4 - 3 = 1 (Correct)  4(2) - (-1) = 8 + 1 = 9 (Correct)  Option A has (2, -1) as a solution.  Option B:  2 + (-1) = 1 ≠ 0 (Incorrect)  3(2) - (-1) = 6 + 1 = 7 ≠ 8 (Incorrect)  Option B does not have (2, -1) as a solution.  Option C:  2 - 2(-1) = 2 + 2 = 4 ≠ 5 (Incorrect)  2(2) + (-1) = 4 - 1 = 3 ≠ 5 (Incorrect)  Option C does not have (2, -1) as a solution.  Option D:  3(2) + (-1) = 6 - 1 = 5 ≠ 7 (Incorrect)  2 - (-1) = 2 + 1 = 3 ≠ 1 (Incorrect)  Option D does not have (2, -1) as a solution.  Based on this analysis, Option A is the only system of equations that has (2, -1) as a solution. Therefore, Option A is indeed the correct answer.  All other options are clearly incorrect as they do not yield the same solution (2, -1).  There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it requires students to interpret a graph and solve/check systems of linear equations, which are standard skills tested on the SAT."
+    }
+  },
+  {
+    "question_id": 330557,
+    "question_text": "In the solution (x, y) to the system of equations below, what is the value of y? $$3x + 5y = 25$$ $$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of y in the solution to the given system of linear equations. To solve the system, we can use the elimination method. Subtracting the second equation from the first equation eliminates x: (3x + 5y) - (3x + 2y) = 25 - 10, which simplifies to 3y = 15. Solving for y, we get y = 5. Substituting y = 5 into the second equation, we get 3x + 2(5) = 10, which simplifies to 3x + 10 = 10, and thus 3x = 0, so x = 0. The solution is (x, y) = (0, 5). Therefore, the value of y is 5, which corresponds to option A. Options B, C, and D are incorrect as they do not represent the correct value of y. The difficulty level 'Medium' is appropriate for this question as it involves a standard method for solving systems of linear equations, a skill typically expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 198772,
+    "question_text": "The solution to the given system of equations is (a, b). What is the value of a?  $$a + 2b = 45$$ $$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The system of equations is:  $$a + 2b = 45$$ $$2b = 15$$ From the second equation, we have $$2b = 15$$. Substituting this into the first equation, we get $$a + 15 = 45$$. Solving for a, we subtract 15 from both sides: $$a = 45 - 15 = 30$$. Therefore, the value of a is 30, which corresponds to option A. Options B, C, and D are incorrect because substituting them back into the equations leads to contradictions. The difficulty level 'Medium' is appropriate for this question as it involves a straightforward substitution in a system of linear equations, which is a standard topic in algebra tested on the SAT."
+    }
+  },
+  {
+    "question_id": 112718,
+    "question_text": "The solution to the given system of equations is $(x, y)$. What is the value of $x$?  $$ 3x + y = 10...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The system of equations is solvable, and the correct value of x is indeed 1, which corresponds to option A. To verify, we can substitute y from the second equation into the first equation: 3x + (2x + 5) = 10. Simplifying this gives 5x + 5 = 10, then 5x = 5, and finally x = 1. Substituting x = 1 back into the second equation gives y = 2(1) + 5 = 7. Thus, the solution is (1, 7), and the value of x is 1. Options B, C, and D are incorrect because substituting x = -1, 3, and 5 into the system of equations does not yield a valid solution. The difficulty level is appropriately classified as medium for an SAT math question."
+    }
+  },
+  {
+    "question_id": 224388,
+    "question_text": "$\\frac{1}{2}y = x$  $\\frac{1}{3}y = x + 2$  The solution to the given system of equations is (x, y)....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The system of equations is: \n\n1) $\\\\frac{1}{2}y = x$ \n2) $\\\\frac{1}{3}y = x + 2$\n\nFrom equation 1, we can express y in terms of x: $y = 2x$. Substituting this into equation 2, we get:\n$\\\\frac{1}{3}(2x) = x + 2$\\n$\\\\frac{2}{3}x = x + 2$\nMultiplying both sides by 3 to eliminate the fraction:\n$2x = 3(x + 2)$\\n$2x = 3x + 6$\nSubtracting $3x$ from both sides:\n$2x - 3x = 6$\\n$-x = 6$\\n$x = -6$\n\nTherefore, the value of x is -6, which corresponds to option B. Let's check if other options are incorrect. If x = -6, then $y = 2x = 2(-6) = -12$. Substituting x = -6 and y = -12 into both equations:\nEquation 1: $\\\\frac{1}{2}(-12) = -6$, which is true.\nEquation 2: $\\\\frac{1}{3}(-12) = -6 + 2$, which simplifies to $-4 = -4$, also true.\n\nChecking other options:\nOption A (x = -3): From equation 1, $y = 2(-3) = -6$. Equation 2: $\\\\frac{1}{3}(-6) = -3 + 2 \\\\implies -2 = -1$, false.\nOption C (x = 0): From equation 1, $y = 2(0) = 0$. Equation 2: $\\\\frac{1}{3}(0) = 0 + 2 \\\\implies 0 = 2$, false.\nOption D (x = 6): From equation 1, $y = 2(6) = 12$. Equation 2: $\\\\frac{1}{3}(12) = 6 + 2 \\\\implies 4 = 8$, false.\n\nAll other options are clearly incorrect. The question is grammatically sound, and the difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 844631,
+    "question_text": "$$\\mathbf{3x} - \\mathbf{2y} = \\mathbf{7}$$\\n$$\\mathbf{x} + \\mathbf{2y} = \\mathbf{5}$$\\n\\nIf (x, y) s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of y in the given system of linear equations. To solve for y, we can use the method of elimination or substitution. Adding the two equations directly eliminates y:\n(3x - 2y) + (x + 2y) = 7 + 5\n4x = 12\nx = 3\nSubstituting x = 3 into the second equation:\n3 + 2y = 5\n2y = 5 - 3\n2y = 2\ny = 1\nTherefore, the value of y is 1, which corresponds to option A. Options B, C, and D are incorrect as they do not represent the correct value of y. There are no grammatical or formatting issues. While solving a system of two linear equations is a fundamental algebra skill, for SAT standards, classifying this question as 'Hard' is reasonable, especially considering the time constraints and the range of difficulty levels on the SAT. It requires a few steps and understanding of solving systems of equations, making it more challenging than a very basic algebra question."
+    }
+  },
+  {
+    "question_id": 201501,
+    "question_text": "At a fruit stand, apples are sold for $1 each and bananas are sold for $0.50 each. A customer bought...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. Let 'a' be the number of apples and 'b' be the number of bananas. We are given two conditions: 1) a + b = 140 (total fruits) and 2) 0.50 * b = 2 * (1 * a) (revenue from bananas is twice the revenue from apples). Solving this system of equations: From the second equation, 0.5b = 2a, so a = 0.25b. Substituting this into the first equation: 0.25b + b = 140, which simplifies to 1.25b = 140. Solving for b, we get b = 140 / 1.25 = 112.  Therefore, the customer bought 112 bananas, which corresponds to option C. Checking other options: Option A (28 bananas) leads to revenue from bananas being less than revenue from apples. Option B (84 bananas) also leads to revenue from bananas being less than revenue from apples. Option D (120 bananas) leads to revenue from bananas being more than twice the revenue from apples. Thus, only option C is correct, and the other options are clearly incorrect. The difficulty level 'Hard' is appropriate as it requires setting up and solving a system of linear equations, which is a standard topic for SAT but requires multiple steps and understanding of the problem context."
+    }
+  },
+  {
+    "question_id": 697999,
+    "question_text": "In the system of equations below, a is a constant.  $$ 4ax + 2y = 8 $$ $$ 6x + 3y = 12 $$  If the sy...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "For a system of two linear equations to have an infinite number of solutions, the two equations must be linearly dependent, meaning one equation is a multiple of the other.  Let's simplify the second equation: 6x + 3y = 12. Dividing by 3, we get 2x + y = 4. Multiplying this simplified equation by 2, we get 4x + 2y = 8.  For the system to have infinite solutions, the first equation, 4ax + 2y = 8, must be identical to 4x + 2y = 8.  Comparing the coefficients of x, we must have 4a = 4. Solving for a, we get a = 1. Therefore, option A is the correct answer.  Let's check why other options are incorrect. If a is not 1, the first equation will not be a multiple of the second equation (or its simplified form), and the system will have either a unique solution or no solution. For example, if a=0, the first equation becomes 2y=8 or y=4. Substituting y=4 into the second equation gives 6x + 3(4) = 12, so 6x = 0, x=0. This gives a unique solution (0,4). Similarly, for other incorrect options, we would find unique solutions, not infinite solutions."
+    }
+  },
+  {
+    "question_id": 557551,
+    "question_text": "If $(x,y)$ is the solution to the system of equations above: $$3x + 4y = 10$$ $$2x - 3y = -1$$  What...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of $5x + y$ where $(x,y)$ is the solution to the given system of linear equations. To solve the system: \n\nMultiply the first equation by 3 and the second equation by 4 to eliminate $y$:\n$3 \times (3x + 4y = 10) \\\\implies 9x + 12y = 30$\\n$4 \times (2x - 3y = -1) \\\\implies 8x - 12y = -4$\n\nAdd the two new equations:\n$(9x + 12y) + (8x - 12y) = 30 + (-4)$\\n$17x = 26$\\n$x = \frac{26}{17}$\n\nSubstitute the value of $x$ into the first equation to solve for $y$:\n$3(\frac{26}{17}) + 4y = 10$\\n$\frac{78}{17} + 4y = 10$\\n$4y = 10 - \frac{78}{17}$\\n$4y = \frac{170 - 78}{17}$\\n$4y = \frac{92}{17}$\\n$y = \frac{92}{17 \times 4} = \frac{23}{17}$\n\nNow calculate $5x + y$:\n$5x + y = 5(\frac{26}{17}) + \frac{23}{17} = \frac{130}{17} + \frac{23}{17} = \frac{130 + 23}{17} = \frac{153}{17} = 9$\n\nThe value of $5x + y$ is 9, which corresponds to option C. Options A, B, and D are incorrect as they are not equal to 9. The question is grammatically correct and well-formatted. The difficulty level is appropriate for 'Hard' as it requires solving a system of linear equations and then substituting the values into another expression, which involves multiple steps and some calculation."
+    }
+  },
+  {
+    "question_id": 85790,
+    "question_text": "A bakery sells two kinds of cakes: chocolate and vanilla. A chocolate cake costs $25 and a vanilla c...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 450) is incorrect.",
+        "None of the provided options (A, B, C, D) are correct.",
+        "The correct answer should be $300."
+      ],
+      "correct_answer": null,
+      "explanation": "Let 'c' be the number of chocolate cakes and 'v' be the number of vanilla cakes. We have the following system of equations based on the problem description:\n\nc + v = 45 (Total number of cakes)\n25c + 20v = 1050 (Total revenue)\n\nSolving this system of equations:\nFrom the first equation, c = 45 - v. Substitute this into the second equation:\n25(45 - v) + 20v = 1050\n1125 - 25v + 20v = 1050\n1125 - 5v = 1050\n5v = 1125 - 1050\n5v = 75\nv = 15\n\nThe number of vanilla cakes sold is 15. The revenue from vanilla cake sales is 20 * v = 20 * 15 = $300.\n\nThe provided correct answer option A ($450) is incorrect. Options B ($600), C ($500), and D ($525) are also incorrect. The correct answer, $300, is not listed among the options. Therefore, the question is flawed due to the incorrect answer options, specifically the incorrectly marked correct option."
+    }
+  },
+  {
+    "question_id": 576432,
+    "question_text": "The solution to the given system of equations is (x, y). What is the value of xy?\\n\\n$$\\\\begin{array...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of xy given the system of equations. Solving the system:\n\nEquation 1: 2x + 3y = 10\nEquation 2: 3x + 2y = 10\n\nSubtract Equation 2 from Equation 1:\n(2x + 3y) - (3x + 2y) = 10 - 10\n-x + y = 0\ny = x\n\nSubstitute y = x into Equation 1:\n2x + 3(x) = 10\n5x = 10\nx = 2\n\nSince y = x, y = 2.\n\nTherefore, xy = 2 * 2 = 4.\n\nOption C is indeed the correct answer (4). Options A (3), B (5), and D (6) are incorrect. The question is grammatically sound and formatted correctly. The difficulty level of 'Hard' is reasonable for an SAT question involving systems of equations, although it might be considered medium-hard by some. Overall, the question is valid and well-suited for the SAT."
+    }
+  },
+  {
+    "question_id": 982103,
+    "question_text": "In the system of equations below, $k$ is a constant. $$ 2x + 3y = 7 $$ $$ 4x + ky = 14 $$ If the sys...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "For a system of linear equations to have infinitely many solutions, the two equations must represent the same line. This means that the second equation must be a multiple of the first equation.  We can observe that the coefficient of $x$ in the second equation (4) is twice the coefficient of $x$ in the first equation (2), and the constant term in the second equation (14) is twice the constant term in the first equation (7). For the equations to be the same line, the coefficient of $y$ in the second equation ($k$) must also be twice the coefficient of $y$ in the first equation (3). Therefore, $k = 2 \times 3 = 6$. Option A is indeed the correct answer. Options B, C, and D are incorrect because they would not make the second equation a multiple of the first equation, thus not resulting in infinitely many solutions."
+    }
+  },
+  {
+    "question_id": 963493,
+    "question_text": "In the system of equations below, $b$ is a constant.  $$ 3x + 4y = 12 $$ $$ 6x + by = 5 $$  If the s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of 'b' for which the given system of linear equations has no solution. For a system of linear equations to have no solution, the lines must be parallel but not coincident.  This occurs when the ratio of the coefficients of x is equal to the ratio of the coefficients of y, but not equal to the ratio of the constants.For the given system:$$ 3x + 4y = 12 $$$$ 6x + by = 5 $$The ratio of the coefficients of x is $\frac{6}{3} = 2$.The ratio of the coefficients of y is $\frac{b}{4}$.For the lines to be parallel, these ratios must be equal:$$ \frac{b}{4} = 2 $$Solving for b:$$ b = 2 \times 4 = 8 $$Now we need to check if for $b=8$, the lines are not coincident.  If $b=8$, the system becomes:$$ 3x + 4y = 12 $$$$ 6x + 8y = 5 $$Multiply the first equation by 2:$$ 6x + 8y = 24 $$$$ 6x + 8y = 5 $$Since $24 \neq 5$, the lines are parallel and distinct, meaning there is no solution.Let's check the other options:A. If $b=2$, the system is $3x + 4y = 12$ and $6x + 2y = 5$. The ratio of x coefficients is $6/3 = 2$, and the ratio of y coefficients is $2/4 = 1/2$. Since the ratios are not equal, the lines are not parallel and there is a solution.B. If $b=4$, the system is $3x + 4y = 12$ and $6x + 4y = 5$. The ratio of x coefficients is $6/3 = 2$, and the ratio of y coefficients is $4/4 = 1$. Since the ratios are not equal, the lines are not parallel and there is a solution.D. If $b=12$, the system is $3x + 4y = 12$ and $6x + 12y = 5$. The ratio of x coefficients is $6/3 = 2$, and the ratio of y coefficients is $12/4 = 3$. Since the ratios are not equal, the lines are not parallel and there is a solution.Therefore, only $b=8$ results in a system with no solution. Option C is indeed the correct answer, and options A, B, and D are incorrect. The question is clearly written, grammatically correct, and the difficulty level is appropriate for a 'Hard' SAT question as it requires understanding the conditions for systems of linear equations to have no solution. There are no formatting issues. "
+    }
+  },
+  {
+    "question_id": 644794,
+    "question_text": "Company A sells regular concert tickets for $40 each and VIP tickets for $100 each. Company B sells ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "Let 'r' be the number of regular tickets and 'v' be the number of VIP tickets.  We can set up a system of two linear equations based on the given information:\n\nFor Company A: 40r + 100v = 680\nFor Company B: 50r + 90v = 780\n\nWe can simplify these equations:\nDivide the first equation by 20: 2r + 5v = 34\nDivide the second equation by 10: 5r + 9v = 78\n\nTo solve for 'v', we can use the method of elimination. Multiply the first simplified equation by 5 and the second simplified equation by 2 to eliminate 'r':\n\n5 * (2r + 5v) = 5 * 34  =>  10r + 25v = 170\n2 * (5r + 9v) = 2 * 78  =>  10r + 18v = 156\n\nSubtract the second new equation from the first new equation:\n(10r + 25v) - (10r + 18v) = 170 - 156\n7v = 14\nv = 2\n\nTherefore, there are 2 VIP tickets in this purchase. Option B is indeed the correct answer. Let's check if other options are incorrect by substituting them back into the equations or by observing that the system of linear equations has a unique solution.\n\nIf we substitute v=2 back into 2r + 5v = 34, we get 2r + 5(2) = 34 => 2r = 24 => r = 12. So, r=12 and v=2 is the unique solution. Checking with the original equations:\nCompany A: 40(12) + 100(2) = 480 + 200 = 680\nCompany B: 50(12) + 90(2) = 600 + 180 = 780\n\nThe question is clear, the marked option is correct, other options are incorrect as there is a unique solution, and there are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate for SAT math questions as it involves setting up and solving a system of linear equations."
+    }
+  },
+  {
+    "question_id": 638890,
+    "question_text": "One of the two equations in a linear system is 3x - 9y = 6. The system has no solution. Which of the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the equation that, when paired with 3x - 9y = 6, results in a system with no solution.  A system of linear equations has no solution when the lines are parallel and distinct.  First, simplify the given equation 3x - 9y = 6 by dividing by 3 to get x - 3y = 2. For a system to have no solution, the second equation must be parallel to x - 3y = 2 but not identical. Parallel lines have the same slope, which means they have proportional coefficients for x and y.Option A: x - 3y = 2 is identical to the simplified first equation. This system would have infinitely many solutions, not no solution.Option B: x - 3y = 10 has the same coefficients for x and y as the simplified first equation (1 and -3 respectively), but a different constant term (10 vs 2). This indicates parallel lines that are distinct, resulting in no solution. Thus, Option B is correct.Option C: 3x + 9y = 6 simplifies to x + 3y = 2. The coefficient of y is +3, while in the first equation it is -3. These lines are not parallel and will intersect at a single point, resulting in one solution.Option D: 3x + y = 6. The coefficient of y is +1, while in the first equation it is -3. These lines are not parallel and will intersect at a single point, resulting in one solution.Therefore, Option B is the only option that results in a system with no solution, and the other options lead to systems with either infinitely many solutions (Option A if considered in simplified form) or a unique solution (Options C and D). The difficulty level 'Hard' is appropriate as it requires understanding the conditions for no solution in linear systems and manipulating equations."
+    }
+  },
+  {
+    "question_id": 117215,
+    "question_text": "The solution to the given system of equations is (x, y). What is the value of $10x$?  $2y = 7x + 12$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of $10x$ given the system of equations $2y = 7x + 12$ and $2y = 2x + 2$. To solve for $x$, we can set the two expressions for $2y$ equal to each other: $7x + 12 = 2x + 2$. Subtracting $2x$ from both sides gives $5x + 12 = 2$. Subtracting $12$ from both sides gives $5x = -10$. Dividing by $5$ gives $x = -2$. Therefore, $10x = 10 \times (-2) = -20$. Option A, -20, is indeed the correct answer.  To verify that other options are incorrect, we can test each option. If $10x = -10$, then $x = -1$. Substituting $x = -1$ into the equations gives $2y = 7(-1) + 12 = 5$ and $2y = 2(-1) + 2 = 0$, which leads to different values for $2y$, so $x = -1$ is not a solution. Similarly, for $10x = 10$ ($x = 1$), $2y = 7(1) + 12 = 19$ and $2y = 2(1) + 2 = 4$. For $10x = 20$ ($x = 2$), $2y = 7(2) + 12 = 26$ and $2y = 2(2) + 2 = 6$. In all cases other than $x = -2$, the values of $2y$ are inconsistent, confirming that options B, C, and D are incorrect. The question is grammatically correct and appropriately formatted. The difficulty level of 'Hard' is reasonable for an SAT question involving systems of linear equations, particularly as it requires a few steps to solve and asks for $10x$ rather than just $x$, potentially adding a slight layer of complexity."
+    }
+  },
+  {
+    "question_id": 249055,
+    "question_text": "Alex and Ben together earned $50 from a weekend job. Alex's earnings were $2 more than twice Ben's e...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. We can set up a system of linear equations to solve it. Let A be Alex's earnings and B be Ben's earnings. We have two equations from the problem description: \n1. A + B = 50 (Total earnings are $50)\n2. A = 2B + 2 (Alex's earnings are $2 more than twice Ben's earnings)\n\nSolving this system, we can substitute the second equation into the first: (2B + 2) + B = 50, which simplifies to 3B + 2 = 50. Subtracting 2 from both sides gives 3B = 48, and dividing by 3 gives B = 16. Substituting B = 16 back into the equation A = 2B + 2, we get A = 2(16) + 2 = 32 + 2 = 34. Therefore, Alex earned $34. Option A, $34, is indeed the correct answer. The other options are incorrect as they do not satisfy the conditions given in the problem. The difficulty level 'Hard' is appropriate as it requires setting up and solving a system of equations, which is a standard algebra skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 450347,
+    "question_text": "In the given system of equations, p is a constant. If the system has no solution, what is the value ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of 'p' for which the given system of linear equations has no solution. For a system of linear equations to have no solution, the lines represented by the equations must be parallel but not coincident.  We can rewrite the equations in the standard form Ax + By = C:Equation 1: 3x = 12 + 6y  =>  3x - 6y = 12Equation 2: px = 10 + 4y  =>  px - 4y = 10For two lines a1x + b1y = c1 and a2x + b2y = c2 to be parallel, the ratio of the coefficients of x and y must be equal, but the ratio of the constants must be different:a1/a2 = b1/b2 ≠ c1/c2In this case:a1 = 3, b1 = -6, c1 = 12a2 = p, b2 = -4, c2 = 10Setting the ratios of the coefficients of x and y equal:3/p = -6/-43/p = 6/43/p = 3/2Solving for p:3 * 2 = 3 * p6 = 3pp = 2Now we need to check if for p = 2, the lines are not coincident. Let's check the ratio of the constants:c1/c2 = 12/10 = 6/5For p = 2, we have:a1/a2 = 3/2b1/b2 = -6/-4 = 3/2c1/c2 = 12/10 = 6/5Since a1/a2 = b1/b2 ≠ c1/c2, the lines are parallel and distinct, meaning the system has no solution when p = 2.Option A, which is 2, is indeed the correct answer.  Options B, C, and D would lead to systems with solutions, as demonstrated by substituting these values for p and solving the systems (though not strictly necessary for validation, it confirms the other options are incorrect for 'no solution'). The difficulty level 'Hard' is appropriate as it requires understanding the conditions for a system of linear equations to have no solution. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 346300,
+    "question_text": "In the given system of equations, m is a constant. If the system has no solution, what is the value ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "To determine the value of m for which the system of equations has no solution, we first rewrite both equations in the standard form Ax + By = C.\n\nEquation 1: $$10x - 4y = 6y + 8$$  \nSubtract 6y from both sides: $$10x - 10y = 8$$  \nDivide by 2: $$5x - 5y = 4$$\n\nEquation 2: $$my = -5x$$  \nAdd 5x to both sides: $$5x + my = 0$$\n\nFor a system of linear equations to have no solution, the lines represented by the equations must be parallel but not coincident. This occurs when the ratio of the coefficients of x and y are equal, but the ratio of the constant terms is different (or when the constant terms are not proportional to the coefficients).  In the form Ax + By = C, for two equations A1x + B1y = C1 and A2x + B2y = C2, the condition for no solution is:  $$\frac{A1}{A2} = \frac{B1}{B2} \neq \frac{C1}{C2}$$  \n\nIn our system:\nEquation 1: 5x - 5y = 4  (A1 = 5, B1 = -5, C1 = 4)\nEquation 2: 5x + my = 0  (A2 = 5, B2 = m, C2 = 0)\n\nApplying the condition for no solution:\n$$\frac{A1}{A2} = \frac{B1}{B2}$$  \n$$\frac{5}{5} = \frac{-5}{m}$$  \n$$1 = \frac{-5}{m}$$  \n$$m = -5$$\n\nNow we check if $$\frac{A1}{A2} \neq \frac{C1}{C2}$$ or $$\frac{B1}{B2} \neq \frac{C1}{C2}$$.  Since C2 = 0 and C1 = 4,  $$\frac{C1}{C2}$$ is undefined (or we can consider the ratio to be infinite if C2=0 and C1 is not zero).  In any case, $$\frac{B1}{B2} = \frac{-5}{-5} = 1$$ when m = -5, and $$\frac{C1}{C2}$$ is not equal to 1 (or undefined), so the condition for no solution is satisfied.\n\nAlternatively, we can consider the slopes of the lines.  \nEquation 1: 5x - 5y = 4  =>  5y = 5x - 4  =>  y = x - 4/5. Slope = 1.\nEquation 2: 5x + my = 0  =>  my = -5x  =>  y = (-\frac{5}{m})x$. Slope = $-\frac{5}{m}$.\nFor the lines to be parallel, the slopes must be equal:  $$1 = -\frac{5}{m}$$  $$m = -5$$\nWhen m = -5, Equation 2 becomes 5x - 5y = 0, or y = x.  Equation 1 is y = x - 4/5. These are parallel lines with different y-intercepts, so they have no solution.\n\nTherefore, the value of m for which the system has no solution is -5, and option A is correct. The other options would lead to systems with solutions because the lines would not be parallel.\n"
+    }
+  },
+  {
+    "question_id": 782484,
+    "question_text": "In the given system of equations, $c$ and $d$ are constants.  $$cx + dy = 48$$ $$5x + 3dy = 40$$  Th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To find the value of $c$, we first substitute $x=2$ into both equations since the intersection point is $(2, y)$.  \n\nSubstituting $x=2$ into the first equation $cx + dy = 48$, we get $2c + dy = 48$. \n\nSubstituting $x=2$ into the second equation $5x + 3dy = 40$, we get $5(2) + 3dy = 40$, which simplifies to $10 + 3dy = 40$.  \n\nSolving for $dy$ from the second equation: $3dy = 40 - 10 = 30$, so $dy = \frac{30}{3} = 10$. \n\nNow substitute $dy = 10$ into the modified first equation $2c + dy = 48$: $2c + 10 = 48$. \n\nSolving for $c$: $2c = 48 - 10 = 38$, so $c = \frac{38}{2} = 19$. \n\nTherefore, the value of $c$ is 19, which corresponds to option D. Options A, B, and C are incorrect as shown by this calculation. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of systems of equations."
+    }
+  }
+]

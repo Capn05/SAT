@@ -1,0 +1,786 @@
+[
+  {
+    "id": 6344850,
+    "question_id": 634485,
+    "value": "A",
+    "label": "It presents a chronological account of a botanist's career, then speculates on future directions in the field.",
+    "is_correct": false
+  },
+  {
+    "id": 6344851,
+    "question_id": 634485,
+    "value": "B",
+    "label": "It describes the established understanding of a scientific area, then details how one researcher expanded that understanding.",
+    "is_correct": true
+  },
+  {
+    "id": 6344852,
+    "question_id": 634485,
+    "value": "C",
+    "label": "It outlines a problem within a scientific discipline, then proposes a controversial solution to that problem.",
+    "is_correct": false
+  },
+  {
+    "id": 6344853,
+    "question_id": 634485,
+    "value": "D",
+    "label": "It contrasts two different approaches to scientific investigation, then argues for the superiority of one approach.",
+    "is_correct": false
+  },
+  {
+    "id": 3776620,
+    "question_id": 377662,
+    "value": "A",
+    "label": "It defines a concept that is explored in the text.",
+    "is_correct": true
+  },
+  {
+    "id": 3776621,
+    "question_id": 377662,
+    "value": "B",
+    "label": "It presents a controversy that is resolved in the text.",
+    "is_correct": false
+  },
+  {
+    "id": 3776622,
+    "question_id": 377662,
+    "value": "C",
+    "label": "It introduces a theory that is refuted in the text.",
+    "is_correct": false
+  },
+  {
+    "id": 3776623,
+    "question_id": 377662,
+    "value": "D",
+    "label": "It states a generalization that is exemplified in the text.",
+    "is_correct": false
+  },
+  {
+    "id": 3793600,
+    "question_id": 379360,
+    "value": "A",
+    "label": "It provides a specific example of Mr. Bennet's oddity.",
+    "is_correct": true
+  },
+  {
+    "id": 3793601,
+    "question_id": 379360,
+    "value": "B",
+    "label": "It highlights a potential source of conflict between Mr. and Mrs. Bennet.",
+    "is_correct": false
+  },
+  {
+    "id": 3793602,
+    "question_id": 379360,
+    "value": "C",
+    "label": "It offers a contrast to Mrs. Bennet's character.",
+    "is_correct": false
+  },
+  {
+    "id": 3793603,
+    "question_id": 379360,
+    "value": "D",
+    "label": "It softens the negative portrayal of Mr. Bennet's personality.",
+    "is_correct": false
+  },
+  {
+    "id": 3086690,
+    "question_id": 308669,
+    "value": "A",
+    "label": "To celebrate the Wright brothers' personal qualities and perseverance.",
+    "is_correct": false
+  },
+  {
+    "id": 3086691,
+    "question_id": 308669,
+    "value": "B",
+    "label": "To outline the technical challenges the Wright brothers faced in designing their aircraft.",
+    "is_correct": false
+  },
+  {
+    "id": 3086692,
+    "question_id": 308669,
+    "value": "C",
+    "label": "To provide a concise account of the Wright brothers' breakthrough and its historical significance.",
+    "is_correct": true
+  },
+  {
+    "id": 3086693,
+    "question_id": 308669,
+    "value": "D",
+    "label": "To argue that the Wright brothers' invention was more important than other early aviation efforts.",
+    "is_correct": false
+  },
+  {
+    "id": 9157820,
+    "question_id": 915782,
+    "value": "A",
+    "label": "To detail the technical limitations of early radio technology.",
+    "is_correct": false
+  },
+  {
+    "id": 9157821,
+    "question_id": 915782,
+    "value": "B",
+    "label": "To emphasize the social impact of early radio broadcasting despite its imperfections.",
+    "is_correct": true
+  },
+  {
+    "id": 9157822,
+    "question_id": 915782,
+    "value": "C",
+    "label": "To explain the process of how early radio signals were transmitted and received.",
+    "is_correct": false
+  },
+  {
+    "id": 9157823,
+    "question_id": 915782,
+    "value": "D",
+    "label": "To argue that early radio broadcasts were primarily intended for scientific experimentation.",
+    "is_correct": false
+  },
+  {
+    "id": 7493050,
+    "question_id": 749305,
+    "value": "A",
+    "label": "It depicts a character's internal conflict amidst a social setting.",
+    "is_correct": true
+  },
+  {
+    "id": 7493051,
+    "question_id": 749305,
+    "value": "B",
+    "label": "It emphasizes the exciting and vibrant atmosphere of a social event.",
+    "is_correct": false
+  },
+  {
+    "id": 7493052,
+    "question_id": 749305,
+    "value": "C",
+    "label": "It outlines the historical context of social gatherings in the early 20th century.",
+    "is_correct": false
+  },
+  {
+    "id": 7493053,
+    "question_id": 749305,
+    "value": "D",
+    "label": "It compares a character's current feelings with her past experiences at parties.",
+    "is_correct": false
+  },
+  {
+    "id": 5603570,
+    "question_id": 560357,
+    "value": "A",
+    "label": "The text presents a chronological account of the events leading to the discovery of plate tectonics and then discusses the ongoing debates within the field.",
+    "is_correct": false
+  },
+  {
+    "id": 5603571,
+    "question_id": 560357,
+    "value": "B",
+    "label": "The text outlines an earlier scientific hypothesis, describes the reasons for its initial rejection, and then explains how later evidence led to its acceptance.",
+    "is_correct": true
+  },
+  {
+    "id": 5603572,
+    "question_id": 560357,
+    "value": "C",
+    "label": "The text compares and contrasts two competing theories about the Earth's crust and then argues for the superiority of one theory over the other.",
+    "is_correct": false
+  },
+  {
+    "id": 5603573,
+    "question_id": 560357,
+    "value": "D",
+    "label": "The text identifies the key figures involved in the development of plate tectonics and then summarizes their individual contributions to the field.",
+    "is_correct": false
+  },
+  {
+    "id": 2717880,
+    "question_id": 271788,
+    "value": "A",
+    "label": "It presents a description of a traditional perspective in a field by naming a key figure, and then contrasts it with a more recent perspective that offers a critique and alternative approach.",
+    "is_correct": true
+  },
+  {
+    "id": 2717881,
+    "question_id": 271788,
+    "value": "B",
+    "label": "It discusses a long-standing economic theory and then asserts that despite its historical influence, recent research has proven it to be fundamentally flawed and irrelevant in modern contexts.",
+    "is_correct": false
+  },
+  {
+    "id": 2717882,
+    "question_id": 271788,
+    "value": "C",
+    "label": "It outlines the historical development of economic thought by focusing on two key periods and then suggests areas where further investigation is needed to reconcile these differing viewpoints.",
+    "is_correct": false
+  },
+  {
+    "id": 2717883,
+    "question_id": 271788,
+    "value": "D",
+    "label": "It contrasts two different schools of economic thought and then evaluates which approach has had a greater impact on policy decisions and real-world applications.",
+    "is_correct": false
+  },
+  {
+    "id": 1265740,
+    "question_id": 126574,
+    "value": "A",
+    "label": "It provides a specific example that exemplifies a contrast introduced in the preceding sentence.",
+    "is_correct": true
+  },
+  {
+    "id": 1265741,
+    "question_id": 126574,
+    "value": "B",
+    "label": "It qualifies a generalization presented in the initial sentence of the passage.",
+    "is_correct": false
+  },
+  {
+    "id": 1265742,
+    "question_id": 126574,
+    "value": "C",
+    "label": "It introduces an analogy that is used to support the central claim of the paragraph.",
+    "is_correct": false
+  },
+  {
+    "id": 1265743,
+    "question_id": 126574,
+    "value": "D",
+    "label": "It concedes a minor exception to the overall positive effects of digital communication described in the passage.",
+    "is_correct": false
+  },
+  {
+    "id": 4968760,
+    "question_id": 496876,
+    "value": "A",
+    "label": "It presents a contrast to the preceding description of Mr. Bennet's character.",
+    "is_correct": true
+  },
+  {
+    "id": 4968761,
+    "question_id": 496876,
+    "value": "B",
+    "label": "It foreshadows the complexity of Mrs. Bennet’s motivations that are explored later in the paragraph.",
+    "is_correct": false
+  },
+  {
+    "id": 4968762,
+    "question_id": 496876,
+    "value": "C",
+    "label": "It provides an example illustrating the difficulty of understanding Mr. Bennet as described in the prior sentence.",
+    "is_correct": false
+  },
+  {
+    "id": 4968763,
+    "question_id": 496876,
+    "value": "D",
+    "label": "It introduces a shift in focus from Mr. Bennet to a more detailed analysis of Mrs. Bennet's personality.",
+    "is_correct": false
+  },
+  {
+    "id": 1224540,
+    "question_id": 122454,
+    "value": "A",
+    "label": "It presents an example of how social media was initially perceived.",
+    "is_correct": false
+  },
+  {
+    "id": 1224541,
+    "question_id": 122454,
+    "value": "B",
+    "label": "It describes a mechanism that contributes to a negative effect of social media on political discourse.",
+    "is_correct": false
+  },
+  {
+    "id": 1224542,
+    "question_id": 122454,
+    "value": "C",
+    "label": "It highlights a solution to the problem of echo chambers in online discourse.",
+    "is_correct": false
+  },
+  {
+    "id": 1224543,
+    "question_id": 122454,
+    "value": "D",
+    "label": "It explains how echo chambers and filter bubbles lead to increased political polarization.",
+    "is_correct": true
+  },
+  {
+    "id": 9213480,
+    "question_id": 921348,
+    "value": "A",
+    "label": "It introduces a standard practice, then illustrates the practical benefits of adhering to that practice.",
+    "is_correct": false
+  },
+  {
+    "id": 9213481,
+    "question_id": 921348,
+    "value": "B",
+    "label": "It presents a limitation of a common methodology, then describes a potential refinement to improve that methodology.",
+    "is_correct": true
+  },
+  {
+    "id": 9213482,
+    "question_id": 921348,
+    "value": "C",
+    "label": "It outlines a theoretical debate within a field, then summarizes the consensus view on the debated topic.",
+    "is_correct": false
+  },
+  {
+    "id": 9213483,
+    "question_id": 921348,
+    "value": "D",
+    "label": "It contrasts two distinct areas of research, then questions the relevance of one area to the other.",
+    "is_correct": false
+  },
+  {
+    "id": 1667330,
+    "question_id": 166733,
+    "value": "A",
+    "label": "It presents a traditional historical interpretation, then introduces recent research that offers a more complex perspective.",
+    "is_correct": true
+  },
+  {
+    "id": 1667331,
+    "question_id": 166733,
+    "value": "B",
+    "label": "It contrasts the views of historians with those of economists, then argues for the superiority of the economic perspective.",
+    "is_correct": false
+  },
+  {
+    "id": 1667332,
+    "question_id": 166733,
+    "value": "C",
+    "label": "It outlines several competing theories about the French Revolution, then argues for the most likely cause.",
+    "is_correct": false
+  },
+  {
+    "id": 1667333,
+    "question_id": 166733,
+    "value": "D",
+    "label": "It identifies a common misconception about the French Revolution, then proposes a new approach to studying this historical event.",
+    "is_correct": false
+  },
+  {
+    "id": 2422990,
+    "question_id": 242299,
+    "value": "A",
+    "label": "To advocate for the complete abandonment of spell-check and grammar-check software.",
+    "is_correct": false
+  },
+  {
+    "id": 2422991,
+    "question_id": 242299,
+    "value": "B",
+    "label": "To argue that digital writing tools are unequivocally beneficial for improving writing skills.",
+    "is_correct": false
+  },
+  {
+    "id": 2422992,
+    "question_id": 242299,
+    "value": "C",
+    "label": "To present different perspectives on the impact of digital writing tools on writing abilities.",
+    "is_correct": true
+  },
+  {
+    "id": 2422993,
+    "question_id": 242299,
+    "value": "D",
+    "label": "To provide a detailed technical explanation of how spell-check and grammar-check software function.",
+    "is_correct": false
+  },
+  {
+    "id": 2771950,
+    "question_id": 277195,
+    "value": "A",
+    "label": "To argue that urban beekeeping is primarily beneficial for honey production.",
+    "is_correct": false
+  },
+  {
+    "id": 2771951,
+    "question_id": 277195,
+    "value": "B",
+    "label": "To describe the practical challenges of maintaining beehives in an urban environment.",
+    "is_correct": false
+  },
+  {
+    "id": 2771952,
+    "question_id": 277195,
+    "value": "C",
+    "label": "To illustrate the personal fulfillment Maya finds in urban beekeeping beyond its practical outputs.",
+    "is_correct": true
+  },
+  {
+    "id": 2771953,
+    "question_id": 277195,
+    "value": "D",
+    "label": "To compare and contrast urban beekeeping with traditional rural beekeeping practices.",
+    "is_correct": false
+  },
+  {
+    "id": 6851950,
+    "question_id": 685195,
+    "value": "A",
+    "label": "To provide a definition of a key term used in Veblen's critique",
+    "is_correct": true
+  },
+  {
+    "id": 6851951,
+    "question_id": 685195,
+    "value": "B",
+    "label": "To illustrate the practical utility of goods purchased by wealthy individuals",
+    "is_correct": false
+  },
+  {
+    "id": 6851952,
+    "question_id": 685195,
+    "value": "C",
+    "label": "To question the accuracy of Veblen's observations about consumer behavior",
+    "is_correct": false
+  },
+  {
+    "id": 6851953,
+    "question_id": 685195,
+    "value": "D",
+    "label": "To summarize the positive impacts of increased manufacturing in the 20th century",
+    "is_correct": false
+  },
+  {
+    "id": 9465280,
+    "question_id": 946528,
+    "value": "A",
+    "label": "It contrasts the dangers of natural infection with the safety of vaccination in achieving immunity.",
+    "is_correct": false
+  },
+  {
+    "id": 9465281,
+    "question_id": 946528,
+    "value": "B",
+    "label": "It explains the concept of herd immunity and outlines two different methods of achieving it.",
+    "is_correct": true
+  },
+  {
+    "id": 9465282,
+    "question_id": 946528,
+    "value": "C",
+    "label": "It presents an argument for vaccination as the only ethical way to achieve herd immunity.",
+    "is_correct": false
+  },
+  {
+    "id": 9465283,
+    "question_id": 946528,
+    "value": "D",
+    "label": "It analyzes the historical trends in disease outbreaks before and after the introduction of vaccines.",
+    "is_correct": false
+  },
+  {
+    "id": 4401610,
+    "question_id": 440161,
+    "value": "A",
+    "label": "To question the methodology employed by Miller and Chen in their study of preschool classrooms and literacy skills.",
+    "is_correct": false
+  },
+  {
+    "id": 4401611,
+    "question_id": 440161,
+    "value": "B",
+    "label": "To present the results of a research project that examined the impact of classroom book ratios on young children's literacy development.",
+    "is_correct": true
+  },
+  {
+    "id": 4401612,
+    "question_id": 440161,
+    "value": "C",
+    "label": "To argue for increased funding for preschool programs based on the findings of Miller and Chen’s classroom research.",
+    "is_correct": false
+  },
+  {
+    "id": 4401613,
+    "question_id": 440161,
+    "value": "D",
+    "label": "To compare and contrast different approaches to teaching pre-literacy skills in early childhood education.",
+    "is_correct": false
+  },
+  {
+    "id": 4682180,
+    "question_id": 468218,
+    "value": "A",
+    "label": "To criticize the lack of genuine empathy in urban environments.",
+    "is_correct": true
+  },
+  {
+    "id": 4682181,
+    "question_id": 468218,
+    "value": "B",
+    "label": "To describe the physical layout of a city square during lunchtime.",
+    "is_correct": false
+  },
+  {
+    "id": 4682182,
+    "question_id": 468218,
+    "value": "C",
+    "label": "To illustrate how technology isolates people in public spaces.",
+    "is_correct": false
+  },
+  {
+    "id": 4682183,
+    "question_id": 468218,
+    "value": "D",
+    "label": "To celebrate the spontaneous acts of kindness found in cities.",
+    "is_correct": false
+  },
+  {
+    "id": 4669730,
+    "question_id": 466973,
+    "value": "A",
+    "label": "It summarizes Harris and Sabot’s critique of Lewis’s dual-sector model and proposes an alternative framework for understanding economic development.",
+    "is_correct": false
+  },
+  {
+    "id": 4669731,
+    "question_id": 466973,
+    "value": "B",
+    "label": "It contrasts Lewis’s dual-sector model with the findings of Harris and Sabot’s study to illustrate the limitations of Lewis’s model.",
+    "is_correct": true
+  },
+  {
+    "id": 4669732,
+    "question_id": 466973,
+    "value": "C",
+    "label": "It analyzes the methodology of Harris and Sabot’s study and questions its applicability to other developing economies beyond Tanzania.",
+    "is_correct": false
+  },
+  {
+    "id": 4669733,
+    "question_id": 466973,
+    "value": "D",
+    "label": "It defends Lewis’s dual-sector model against the challenges raised by Harris and Sabot’s research on Tanzanian migration patterns.",
+    "is_correct": false
+  },
+  {
+    "id": 7851440,
+    "question_id": 785144,
+    "value": "A",
+    "label": "It presents a chronological account of a scientist's life, detailing their education, key discoveries, and eventual recognition.",
+    "is_correct": false
+  },
+  {
+    "id": 7851441,
+    "question_id": 785144,
+    "value": "B",
+    "label": "It introduces a prominent scientist, outlines a significant area of their research, and indicates the broad impact of that research.",
+    "is_correct": true
+  },
+  {
+    "id": 7851442,
+    "question_id": 785144,
+    "value": "C",
+    "label": "It contrasts different scientific fields, highlighting a scientist's contributions to each, and argues for the interdisciplinary nature of their work.",
+    "is_correct": false
+  },
+  {
+    "id": 7851443,
+    "question_id": 785144,
+    "value": "D",
+    "label": "It describes a scientific partnership, focusing on the collaborative aspect of the research, and emphasizes the shared awards received.",
+    "is_correct": false
+  },
+  {
+    "id": 4001500,
+    "question_id": 400150,
+    "value": "A",
+    "label": "The text describes the initial acceptance of Pluto as a planet and then explains the reasons for a subsequent revision of this classification.",
+    "is_correct": true
+  },
+  {
+    "id": 4001501,
+    "question_id": 400150,
+    "value": "B",
+    "label": "The text recounts the discovery of Pluto and then details the immediate scientific agreement regarding its planetary status.",
+    "is_correct": false
+  },
+  {
+    "id": 4001502,
+    "question_id": 400150,
+    "value": "C",
+    "label": "The text compares Pluto to other planets in our solar system and then emphasizes Pluto's distinct characteristics.",
+    "is_correct": false
+  },
+  {
+    "id": 4001503,
+    "question_id": 400150,
+    "value": "D",
+    "label": "The text outlines the development of astronomical classification systems and then illustrates how Pluto challenged these systems.",
+    "is_correct": false
+  },
+  {
+    "id": 3494850,
+    "question_id": 349485,
+    "value": "A",
+    "label": "It details a longitudinal study aimed at determining the precise relationship between snowmelt duration and plant species distribution in Arctic ecosystems.",
+    "is_correct": false
+  },
+  {
+    "id": 3494851,
+    "question_id": 349485,
+    "value": "B",
+    "label": "It contrasts two distinct hypotheses regarding the short-term versus long-term effects of altered snowmelt patterns on Arctic shrub growth.",
+    "is_correct": false
+  },
+  {
+    "id": 3494852,
+    "question_id": 349485,
+    "value": "C",
+    "label": "It argues for the necessity of implementing immediate conservation strategies to mitigate the negative impacts of early snowmelt on vulnerable Arctic plant species.",
+    "is_correct": false
+  },
+  {
+    "id": 3494853,
+    "question_id": 349485,
+    "value": "D",
+    "label": "It summarizes the findings of a study that assessed the long-term impacts of changes in snowmelt timing on the growth and stress levels of a specific Arctic plant.",
+    "is_correct": true
+  },
+  {
+    "id": 6290850,
+    "question_id": 629085,
+    "value": "A",
+    "label": "It introduces a scientific book, outlines the scope of its investigation, and then summarizes the book's primary recommendations.",
+    "is_correct": true
+  },
+  {
+    "id": 6290851,
+    "question_id": 629085,
+    "value": "B",
+    "label": "It presents a controversial scientific theory, provides historical context for its development, and then critiques the methodology used to support the theory.",
+    "is_correct": false
+  },
+  {
+    "id": 6290852,
+    "question_id": 629085,
+    "value": "C",
+    "label": "It describes a personal journey of scientific discovery, highlights the key experiments conducted, and then reflects on the broader implications of the findings.",
+    "is_correct": false
+  },
+  {
+    "id": 6290853,
+    "question_id": 629085,
+    "value": "D",
+    "label": "It analyzes a scientific publication, compares it to other works in the field, and then evaluates the originality of its contributions to scientific knowledge.",
+    "is_correct": false
+  },
+  {
+    "id": 1383420,
+    "question_id": 138342,
+    "value": "A",
+    "label": "It concedes a potential strength of the fission theory while introducing a major flaw.",
+    "is_correct": true
+  },
+  {
+    "id": 1383421,
+    "question_id": 138342,
+    "value": "B",
+    "label": "It provides evidence supporting the fission theory’s widespread acceptance within the scientific community.",
+    "is_correct": false
+  },
+  {
+    "id": 1383422,
+    "question_id": 138342,
+    "value": "C",
+    "label": "It summarizes the primary mechanism proposed by the fission theory for lunar formation.",
+    "is_correct": false
+  },
+  {
+    "id": 1383423,
+    "question_id": 138342,
+    "value": "D",
+    "label": "It contrasts the fission theory with the co-formation theory in terms of explanatory power.",
+    "is_correct": false
+  },
+  {
+    "id": 2858650,
+    "question_id": 285865,
+    "value": "A",
+    "label": "It introduces a commonly accepted technique, acknowledges a potential benefit of that technique, and then argues for the technique’s complete ineffectiveness.",
+    "is_correct": false
+  },
+  {
+    "id": 2858651,
+    "question_id": 285865,
+    "value": "B",
+    "label": "It presents a widely promoted method, points out an oversimplification in the understanding of that method, and then advocates for a more nuanced application of it.",
+    "is_correct": true
+  },
+  {
+    "id": 2858652,
+    "question_id": 285865,
+    "value": "C",
+    "label": "It describes a popular practice, concedes the practice’s validity in certain contexts, and then proposes an entirely new practice as a superior alternative.",
+    "is_correct": false
+  },
+  {
+    "id": 2858653,
+    "question_id": 285865,
+    "value": "D",
+    "label": "It outlines a familiar strategy, dismisses the strategy as fundamentally flawed, and then recommends abandoning the strategy in favor of different approaches.",
+    "is_correct": false
+  },
+  {
+    "id": 8008580,
+    "question_id": 800858,
+    "value": "A",
+    "label": "It summarizes the overall significance of Merian's research and its lasting impact on the field of entomology.",
+    "is_correct": true
+  },
+  {
+    "id": 8008581,
+    "question_id": 800858,
+    "value": "B",
+    "label": "It highlights the specific artistic techniques Merian employed in her illustrations of Surinamese insects.",
+    "is_correct": false
+  },
+  {
+    "id": 8008582,
+    "question_id": 800858,
+    "value": "C",
+    "label": "It emphasizes the geographical scope of Merian's travels and the diversity of insect species she encountered.",
+    "is_correct": false
+  },
+  {
+    "id": 8008583,
+    "question_id": 800858,
+    "value": "D",
+    "label": "It provides a specific example of a common misconception about insect metamorphosis prevalent in 17th-century Europe.",
+    "is_correct": false
+  },
+  {
+    "id": 2929320,
+    "question_id": 292932,
+    "value": "A",
+    "label": "To advocate for stricter regulations on plastic manufacturing.",
+    "is_correct": false
+  },
+  {
+    "id": 2929321,
+    "question_id": 292932,
+    "value": "B",
+    "label": "To explain the sources and challenges associated with microplastic pollution.",
+    "is_correct": true
+  },
+  {
+    "id": 2929322,
+    "question_id": 292932,
+    "value": "C",
+    "label": "To compare the dangers of microplastics to those of larger plastic debris.",
+    "is_correct": false
+  },
+  {
+    "id": 2929323,
+    "question_id": 292932,
+    "value": "D",
+    "label": "To detail the specific chemical composition of various microplastics.",
+    "is_correct": false
+  }
+]

@@ -1,0 +1,463 @@
+[
+  {
+    "question_id": 356210,
+    "question_text": "The table below shows the quarterly sales for a company in 2023, rounded to the nearest million doll...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the approximate percent increase in sales from Q1 to Q2. The sales in Q1 were $100 million and in Q2 were $120 million. The increase in sales is $120 - $100 = $20 million. The percent increase is calculated as (Increase / Original Sales) * 100 = (20 / 100) * 100 = 20%. Option B, 20%, is the correct answer. Options A, C, and D are clearly incorrect as they are not close to the calculated percentage increase. The question is grammatically correct, well-formatted, and the difficulty level 'Easy' is appropriate for an SAT math question on percentages."
+    }
+  },
+  {
+    "question_id": 990129,
+    "question_text": "The price of a book is $30. If there is a 10% discount, what is the final price of the book?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clear, concise, and mathematically sound. To find the final price after a 10% discount on a $30 book, we first calculate the discount amount: 10% of $30 is (10/100) * $30 = $3. Then, we subtract the discount from the original price: $30 - $3 = $27. Option D, $27.00, is indeed the correct answer. The other options are incorrect and serve as plausible distractors, representing common errors in percentage calculations. The difficulty level is appropriately categorized as 'Easy' for an SAT math question, particularly within the 'Percentages' subcategory."
+    }
+  },
+  {
+    "question_id": 432629,
+    "question_text": "A local bakery sold 350 loaves of bread last week. This week, due to a promotion, they sold 122% of ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the number of loaves sold this week, we need to calculate 122% of last week's sales (350 loaves).  \n\nCalculation: 122% of 350 = (122/100) * 350 = 1.22 * 350 = 427.\n\nOption B, 427, is indeed the correct answer. The other options are clearly incorrect as they are not the result of a correct calculation of 122% of 350. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward percentage calculation, which is a fundamental math skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 192725,
+    "question_text": "What is 75% of 40?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks a straightforward percentage calculation: finding 75% of 40. Option B, which is 30, is indeed the correct answer because 75% of 40 is (75/100) * 40 = 0.75 * 40 = 30. Options A, C, and D are clearly incorrect. Option A (10) is too low, Option C (40) represents 100% of 40, and Option D (70) is significantly higher than the correct answer. These incorrect options could represent common errors in percentage calculations, making them reasonable distractors for an 'Easy' level question. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this fundamental percentage problem."
+    }
+  },
+  {
+    "question_id": 175184,
+    "question_text": "The original price of a jacket is $j.  During a weekend sale, the jacket is advertised at a 15% disc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the expression representing a 15% discount on a jacket priced at $j. To calculate a 15% discount, we need to multiply the original price (j) by 15% expressed as a decimal.  15% is equivalent to 15/100, which is 0.15. Therefore, the amount of the discount is 0.15 * j, or 0.15j. Option D, 0.15j, correctly represents this. Options A, B, and C are incorrect: 15j represents 1500% of the original price, 0.015j represents 1.5% of the original price, and 1.5j represents 150% of the original price. The question is grammatically correct, well-formatted, and appropriately classified as 'Easy' for the SAT as it tests a fundamental percentage concept."
+    }
+  },
+  {
+    "question_id": 751612,
+    "question_text": "The table below shows the distribution of favorite subjects among 1,800 high school students surveye...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and easy to understand. The table is well-formatted and provides all necessary information. To find the number of students who consider either Math or Science their favorite subject, we need to add the percentages for Math and Science and then apply that combined percentage to the total number of students surveyed.  Percentage of students who prefer Math or Science = 38% + 25% = 63%. Number of students who prefer Math or Science = 63% of 1,800 = (63/100) * 1,800 = 0.63 * 1,800 = 1,134. Option C, 1134, is indeed the correct answer. The other options are clearly incorrect as they deviate significantly from the correct calculation. The difficulty level 'Easy' is appropriate because it involves a straightforward percentage calculation and addition, skills expected at the SAT level within the 'Easy' category for Problem-Solving and Data Analysis."
+    }
+  },
+  {
+    "question_id": 28648,
+    "question_text": "A baker made 200 cookies in a day. If 35% of the cookies were chocolate chip, how many cookies were ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. The question asks for the number of chocolate chip cookies, given that 35% of 200 cookies are chocolate chip. To find 35% of 200, we calculate (35/100) * 200 = 0.35 * 200 = 70. Therefore, option C (70) is the correct answer.Option A (35) is incorrect because it represents the percentage itself, not the number of cookies. Option B (50) is incorrect and doesn't directly relate to a simple miscalculation of 35% of 200. Option D (130) is incorrect and might represent subtracting the percentage from the total (200 - 35 = 165, not 130, but it's in the wrong direction anyway) or some other misunderstanding of percentages. All incorrect options are clearly numerically distinct from the correct answer and represent plausible errors a student might make.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this is a straightforward percentage calculation, a fundamental skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 150869,
+    "question_text": "A bakery made 300 cookies in the morning. By noon, they had sold 35% of these cookies. How many cook...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the number of cookies sold, we need to calculate 35% of 300.  35% of 300 = (35/100) * 300 = 0.35 * 300 = 105. Option A, 105, is the correct answer. Option B (35) is the percentage itself, not the number of cookies. Option C (175) and Option D (265) are incorrect and likely represent common errors in percentage calculations, such as misinterpreting what percentage to calculate or performing incorrect operations. The difficulty level 'Easy' is appropriate as this is a straightforward percentage calculation problem suitable for the SAT Math section."
+    }
+  },
+  {
+    "question_id": 879660,
+    "question_text": "The manager of an online bookstore tracked customer ratings for four different book genres. The numb...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the percentage of 1-star Fiction book ratings out of the total Fiction book ratings. To calculate this, we divide the number of 1-star Fiction ratings (25) by the total number of Fiction ratings (200) and multiply by 100: (25/200) * 100 = 12.5%. Rounding to the nearest whole percent gives 13%. Option B, 13%, is indeed the correct answer. Options A (8%), C (25%), and D (40%) are clearly incorrect as they are not close to the calculated percentage of 13%. The table is well-formatted and easy to understand. The question is a straightforward percentage calculation and is appropriately classified as 'Easy' difficulty for the SAT."
+    }
+  },
+  {
+    "question_id": 213438,
+    "question_text": "In 2010, the population of a certain city was approximately 500,000. It is projected that the popula...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and easy to understand. To find the projected population in 2020, we need to calculate a 15% increase from the 2010 population of 500,000.  \n\nIncrease = 15% of 500,000 = (15/100) * 500,000 = 0.15 * 500,000 = 75,000\n\nProjected population = Initial population + Increase = 500,000 + 75,000 = 575,000\n\nOption C, 575,000, matches this calculation and is correctly marked as the correct answer. Options A, B, and D are incorrect as they do not represent a 15% increase from 500,000. The difficulty level 'Easy' is appropriate for this straightforward percentage problem."
+    }
+  },
+  {
+    "question_id": 651645,
+    "question_text": "A retail store is having a 20% off sale on all items. If a customer is purchasing an item with a reg...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the discount, we calculate 20% of $42.50.  20% of $42.50 is (20/100) * $42.50 = 0.20 * $42.50 = $8.50. Option B, $8.50, is the exact discount amount and is correctly marked as the correct answer.Options A, C, and D are incorrect.Option A ($7.00) is less than the correct discount.Option C ($9.00) is more than the correct discount.Option D ($10.00) is significantly more than the correct discount.While option C is numerically closer to $8.50 in absolute difference than option A or D, option B is the *exact* correct answer.  The question asks for the 'closest to the amount of the discount', and since option B is the exact discount, it is the closest (and in fact, equal to) the amount of the discount.There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Easy' for an SAT math question, as it involves a straightforward percentage calculation.Therefore, the question is valid and suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 185759,
+    "question_text": "The total bill at a restaurant before discount is $40. If there is a 15% discount on the total bill,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the final amount after a 15% discount on a $40 bill, we first calculate the discount amount: 15% of $40 = (15/100) * $40 = 0.15 * $40 = $6. Then, we subtract the discount from the original bill amount to find the final amount: $40 - $6 = $34. Option C, $34, is indeed the correct answer. The other options are clearly incorrect: Option A ($6) represents only the discount amount, not the final price. Option B ($32) and Option D ($36) are incorrect amounts that do not result from a straightforward miscalculation of the 15% discount in this context. The question is grammatically sound and appropriately categorized as 'Easy' for the SAT, testing a fundamental percentage concept."
+    }
+  },
+  {
+    "question_id": 610990,
+    "question_text": "A store is offering a 25% discount on all shirts. If a shirt is originally priced at $80, what is th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the amount of the discount, not the final price. To calculate the discount, we need to find 25% of $80.  25% is equivalent to 0.25 or 1/4.  0.25 * $80 = $20, or ($80 / 4) = $20. Option B, $20, is indeed the correct discount amount. The other options are clearly incorrect: Option A ($8) is too low, Option C ($40) is 50% of $80, and Option D ($60) is the price after the discount, not the discount itself.  There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a basic percentage calculation."
+    }
+  },
+  {
+    "question_id": 598221,
+    "question_text": "At a bookstore, the price of a book is $40. If there is a discount of 15% on all books, what is the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It asks for the amount of discount on a book priced at $40 with a 15% discount. To find the discount amount, we calculate 15% of $40: 0.15 * $40 = $6.00. Option C, $6.00, is indeed the correct answer. The other options are clearly incorrect as they do not represent 15% of $40. Options A, B, and D are plausible distractors, potentially representing common calculation errors (e.g., miscalculating the percentage or applying the discount to a different base). There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it involves a straightforward percentage calculation, which is a fundamental math skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 394495,
+    "question_text": "A local bakery decided to increase the price of their croissants by 25%. If a croissant originally c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. To find the new price after a 25% increase on a $2 croissant, we first calculate the increase amount: 25% of $2 is (25/100) * $2 = $0.50. Then, we add this increase to the original price: $2 + $0.50 = $2.50. Option B, $2.50, is indeed the correct answer and is marked as correct. Options A, C, and D are all incorrect as they do not represent a 25% increase from $2. The question is grammatically correct, well-formatted, and the difficulty level is appropriately categorized as 'Easy' for an SAT math question focusing on percentages."
+    }
+  },
+  {
+    "question_id": 638937,
+    "question_text": "If 25% of a number is 5, what is the number?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The correct answer is D (20) because 25% of 20 is indeed 5 (0.25 * 20 = 5). Options A, B, and C are incorrect: 25% of 1.25 is 0.3125, 25% of 5 is 1.25, and 25% of 10 is 2.5. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a fundamental percentage concept and straightforward calculation, suitable for the SAT's 'Problem-Solving and Data Analysis' section."
+    }
+  },
+  {
+    "question_id": 771578,
+    "question_text": "For a fundraising event benefiting Charity A and Charity B, donations were collected through online ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 2448. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"1. **Clarity:** The question is clearly written and makes sense. The context of fundraising and donation distribution is ea..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 282149,
+    "question_text": "During the first month of service, a streaming platform gained 2,500,000 new subscribers. During the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the number of subscriptions cancelled in the first month, we calculate 8% of 2,500,000: 0.08 * 2,500,000 = 200,000.  The question states that the rate of new subscriptions and the cancellation rate remain the same for the next 5 months. This means that each month, 200,000 subscriptions will be cancelled. Over a 6-month period, the total number of cancelled subscriptions will be 6 * 200,000 = 1,200,000. Option C, 1,200,000, is indeed the correct answer. The other options are clearly incorrect as they do not match the calculated value. The difficulty level 'Medium' is appropriate for this question as it involves a straightforward percentage calculation and multiplication, skills expected at the SAT level. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 278934,
+    "question_text": "The original price of a jacket is $j.  During a sale, the price of the jacket is reduced by 20%. Whi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Option C, 0.80j, is indeed the correct expression for the sale price. A 20% reduction means the sale price is 100% - 20% = 80% of the original price.  80% of j is equivalent to 0.80 * j or 0.80j. \n\nOption A (0.20j) represents the amount of the discount, not the sale price. Option B (j - 20) incorrectly subtracts 20 dollars instead of 20 percent. Option D (1.20j) represents a 20% increase in price, not a reduction.  All other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for this question on the SAT, as it tests a fundamental concept of percentage decrease."
+    }
+  },
+  {
+    "question_id": 783476,
+    "question_text": "The number p is 15% greater than 60. If p is the product of 60 and q, what is the value of q?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, first, we need to find the value of p.  '15% greater than 60' means we need to add 15% of 60 to 60.  15% of 60 is (15/100) * 60 = 0.15 * 60 = 9. So, p = 60 + 9 = 69.  The question also states that 'p is the product of 60 and q', which means p = 60 * q.  Substituting the value of p we found, we get 69 = 60 * q. To find q, we divide both sides by 60: q = 69 / 60.  Simplifying this fraction or converting to decimal, q = 1.15. Option B, 1.15, is indeed the correct answer. Options A, C, and D are clearly incorrect as substituting them back into the equation p = 60 * q does not yield a p that is 15% greater than 60. The difficulty level 'Medium' is appropriate for this question as it requires understanding of percentages and basic algebraic manipulation, skills typically tested at the SAT level."
+    }
+  },
+  {
+    "question_id": 607490,
+    "question_text": "The value of y is 1.25 times 200. The value of y is what percent greater than 200?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, first calculate the value of y: y = 1.25 * 200 = 250. Then, to find what percent greater y is than 200, we calculate the difference and divide it by the original value (200), and then multiply by 100:  ((250 - 200) / 200) * 100 = (50 / 200) * 100 = (1/4) * 100 = 25%. Therefore, option B (25) is the correct answer. Options A, C, and D are incorrect as they do not represent the percentage by which y is greater than 200. The difficulty level 'Medium' is appropriate for this question as it requires a basic understanding of percentages and problem-solving skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 325030,
+    "question_text": "In a high school, 60% of students are enrolled in an art class. Of the students enrolled in an art c...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the percentage of all students who are in both art class and the photography club, we need to calculate 25% of 60%.  \n\nStep 1: Convert percentages to decimals or fractions. 60% = 0.60 and 25% = 0.25.\nStep 2: Multiply the percentages. 0.25 * 0.60 = 0.15.\nStep 3: Convert the decimal back to a percentage. 0.15 = 15%.\n\nTherefore, 15% of all students in the high school are enrolled in an art class and are in the photography club. Option C (15%) is indeed the correct answer. Options A, B, and D are incorrect and serve as plausible distractors. The difficulty level 'Medium' is appropriate as it requires a straightforward percentage calculation, which is typical for SAT math questions."
+    }
+  },
+  {
+    "question_id": 70538,
+    "question_text": "At a furniture store's clearance sale, all chairs are marked down by 15%. If the sale price of a cha...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the original price, we need to understand that the sale price ($68) represents 100% - 15% = 85% of the original price. Let 'x' be the original price. Then, 0.85x = $68. Solving for x, we get x = $68 / 0.85 = $80. Option C, $80, is indeed the correct answer.Let's check the other options:A. $58: 15% discount of $58 is 0.15 * $58 = $8.70. Sale price = $58 - $8.70 = $49.30 (Incorrect)B. $78: 15% discount of $78 is 0.15 * $78 = $11.70. Sale price = $78 - $11.70 = $66.30 (Incorrect)D. $85: 15% discount of $85 is 0.15 * $85 = $12.75. Sale price = $85 - $12.75 = $72.25 (Incorrect)All other options are clearly incorrect as they do not result in a sale price of $68 after a 15% discount. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for this question type on the SAT, as it requires understanding of percentages and setting up a simple equation."
+    }
+  },
+  {
+    "question_id": 170718,
+    "question_text": "A local bakery sold a loaf of sourdough bread for $6.50 last year. This year, due to increased ingre...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the percentage increase in the price of sourdough bread. To calculate the percentage increase, we first find the difference in price ($6.89 - $6.50 = $0.39). Then, we divide this difference by the original price and multiply by 100: ($0.39 / $6.50) * 100 = 0.06 * 100 = 6%.  Rounding to the nearest tenth of a percent, we get 6.0%. Option B, 6.0%, is indeed the correct answer. The other options are clearly incorrect as they are not close to the calculated value of 6.0%."
+    }
+  },
+  {
+    "question_id": 394122,
+    "question_text": "A store is having a sale where all items are 25% off. If a pair of jeans is on sale for $36, what wa...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the original price, we need to understand that the sale price of $36 represents 75% of the original price (100% - 25% discount). Let 'x' be the original price. Then, 0.75x = $36. Solving for x, we get x = $36 / 0.75 = $48. Option C, $48, is indeed the correct answer. Options A, B, and D are incorrect. For example, if the original price was $42 (Option A), a 25% discount would be $42 * 0.25 = $10.50, and the sale price would be $42 - $10.50 = $31.50, not $36. Similarly, checking options B and D will also show they do not result in a sale price of $36. The difficulty level 'Medium' is appropriate as it requires a basic understanding of percentages and setting up a simple equation."
+    }
+  },
+  {
+    "question_id": 812549,
+    "question_text": "A store is having a sale where all items are marked up by 15% from their original wholesale price. I...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and easy to understand. To find the sale price, we need to calculate 15% of the wholesale price ($20) and add it to the wholesale price. 15% of $20 is (15/100) * $20 = $3. Adding this markup to the wholesale price gives $20 + $3 = $23. Option A, $23, is indeed the correct answer. Options B, C, and D are clearly incorrect as they do not represent a 15% markup on $20. Option B is too low, and options C and D are significantly too high. The difficulty level of 'Medium' is appropriate for this question as it involves a basic percentage calculation, which is a standard concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 567234,
+    "question_text": "A small town currently has a population of 50,000 residents. Town planners predict that the populati...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the population after 2 years with a 10% annual growth rate, we need to calculate the growth year by year.\n\nYear 1:\nGrowth = 10% of 50,000 = 0.10 * 50,000 = 5,000\nPopulation after Year 1 = 50,000 + 5,000 = 55,000\n\nYear 2:\nGrowth = 10% of 55,000 = 0.10 * 55,000 = 5,500\nPopulation after Year 2 = 55,000 + 5,500 = 60,500\n\nTherefore, the estimated population after 2 years will be 60,500, which corresponds to option B. \n\nOption A (60,000) is incorrect because it assumes a 10% growth on the initial population each year (simple interest approach), instead of compounding growth. Option C (55,000) is the population after only one year of growth. Option D (61,000) is also incorrect as it is not the result of a 10% growth over two years. \n\nThe difficulty level 'Medium' is appropriate for this question as it tests a standard percentage growth concept within a reasonable calculation complexity for the SAT."
+    }
+  },
+  {
+    "question_id": 686742,
+    "question_text": "A company increased its number of employees from 25 to 30. What was the percent increase in the numb...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the percent increase, we first calculate the amount of increase, which is 30 - 25 = 5 employees. Then, we divide the increase by the original number of employees (25) and multiply by 100 to express it as a percentage: (5 / 25) * 100% = (1/5) * 100% = 20%. Option C, 20%, is indeed the correct answer.Option A (5%) is incorrect because it represents the absolute increase in the number of employees, not the percent increase.Option B (16.7%) is incorrect. This might be a result of incorrectly calculating the percentage decrease from 30 to 25, or dividing the increase by the final number of employees (30) instead of the original number (25), i.e., (5/30) * 100% ≈ 16.7%.Option D (120%) is incorrect and significantly larger than the actual percent increase. It's not a plausible result for an increase from 25 to 30.There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it tests a fundamental concept of percentage increase, which is expected to be understood at the SAT level."
+    }
+  },
+  {
+    "question_id": 970442,
+    "question_text": "The Green Garden store is having a spring sale where all flower pots are marked down by 15%.  If Ele...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is misleading because the total percentage discount Elena receives is always 15%, regardless of the number of flower pots she buys.  The variable 'x' (number of flower pots) does not affect the percentage discount 'p'.",
+        "The option marked as correct (A. p = 15x) is incorrect. It suggests that the percentage discount increases linearly with the number of flower pots, which is not consistent with the problem description of a flat 15% discount on all flower pots.",
+        "All other options (B, C, D) are also incorrect as they incorrectly relate the percentage discount 'p' to the number of flower pots 'x'. Options B and D also imply a dependence of the percentage on 'x', while option C adds 'x' to the percentage, which is conceptually flawed in this context.",
+        "The question is poorly designed as it asks to express 'p' in terms of 'x' when 'p' is actually a constant value (15) independent of 'x' in the given scenario. This might confuse students into thinking there is a more complex relationship than there actually is."
+      ],
+      "correct_answer": null,
+      "explanation": "The question states that all flower pots are marked down by 15%. This means that for each flower pot Elena buys, she receives a 15% discount. The total percentage discount on her purchase is also 15%, regardless of whether she buys one flower pot or $x$ flower pots. Therefore, $p$ should be equal to 15, and it is not dependent on $x$. None of the provided options correctly express this. Option A, which is marked as correct, incorrectly suggests that the percentage discount increases with the number of flower pots ($p = 15x$). The correct relationship should be $p = 15$, or if we must express it in terms of $x$ in a trivial way to highlight the independence, we could say $p = 15 + 0x$. However, none of the given options represent the correct understanding of percentage discount in this scenario. The question is flawed due to the incorrect marked answer and the misleading nature of asking for 'p in terms of x' when 'p' is constant."
+    }
+  },
+  {
+    "question_id": 48583,
+    "question_text": "A local library conducted a survey to determine the types of books its patrons prefer. Of the survey...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is internally inconsistent. Based on the given percentages, the percentage of respondents who preferred 'other genres' is 15% (100% - 35% - 30% - 20%).  If 15% of the total respondents is equal to 8, then the difference between the percentage of respondents who preferred fiction (35%) and mystery (20%), which is also 15%, should correspond to the same number of respondents, i.e., 8. However, the option marked as correct is 20, which contradicts this logical deduction.",
+        "The option marked as correct (B. 20) is incorrect. Based on the information provided, the difference in the number of respondents who preferred fiction and mystery should be 8, not 20.",
+        "All other options (A, C, D) are also likely incorrect as they are not logically derived from the consistent interpretation of the given percentages and the number of respondents for 'other genres'.",
+        "The question leads to a non-integer total number of respondents if we assume the percentages are exact and 8 respondents represent exactly 15%. This suggests a potential flaw in the question design."
+      ],
+      "correct_answer": null,
+      "explanation": "The question states that 35% preferred fiction, 20% preferred mystery, and the remaining percentage (100% - 35% - 30% - 20% = 15%) representing 8 respondents preferred other genres. The difference in percentage between fiction and mystery is 35% - 20% = 15%.  If 15% of respondents is 8, then the difference in the number of respondents preferring fiction and mystery should also be 8. However, the marked correct answer is 20. This indicates an inconsistency in the question or a mistake in the answer key.  The logically derived answer based on the question's premise is 8, which is not among the options, and the marked option 20 is incorrect. Therefore, the question is invalid due to internal inconsistency and an incorrect marked answer."
+    }
+  },
+  {
+    "question_id": 8138,
+    "question_text": "Enrollment in a summer camp increased over two consecutive years, as shown in the table below.  | Ye...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first calculate the percent increase in enrollment from 2021 to 2022:  Percent increase = [(220 - 200) / 200] * 100% = (20 / 200) * 100% = 10%.  The problem states that this percent increase (10%) is double the percent increase from 2022 to 2023. Therefore, the percent increase from 2022 to 2023 is 10% / 2 = 5%.  To find the expected enrollment in 2023, we calculate a 5% increase from the 2022 enrollment of 220 students: Increase = 5% of 220 = (5/100) * 220 = 11.  Expected enrollment in 2023 = 220 + 11 = 231. Option B, 231, is indeed the correct answer. The other options are not achievable based on the given conditions. There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Hard' as it requires multiple steps and understanding of percentage increase concepts, suitable for SAT level problem-solving."
+    }
+  },
+  {
+    "question_id": 754452,
+    "question_text": "The line graph (not shown) displays the monthly website visits in thousands for a company from Janua...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The data is provided in a straightforward manner, and the question asks for the percent increase in website visits from February to May. To calculate the percent increase, we first find the difference in visits: 36,000 (May) - 25,000 (February) = 11,000. Then, we divide this difference by the original value (February visits) and multiply by 100: (11,000 / 25,000) * 100 = (11/25) * 100 = 44%. Option D, 44%, is indeed the correct answer. The other options are incorrect as they do not represent the accurate percent increase. There are no grammatical or formatting issues. The difficulty level 'Hard' is arguably appropriate as it requires understanding of percentage increase and careful calculation, although it might also be considered medium-hard depending on the student's skill level."
+    }
+  },
+  {
+    "question_id": 957273,
+    "question_text": "The number $x$ is 20% greater than the positive number $y$. The number $z$ is 25% less than $x$. The...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 159. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense. Let's analyze the steps: \\n1. \\\\\"The number $x$ is 20% greater than the po..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 793426,
+    "question_text": "According to a recent survey, adults in different age groups were asked about their preferred type o...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is ambiguously worded, leading to potential misinterpretations regarding what percentages are being asked for. Based on the most straightforward interpretation of the question, the provided correct answer is incorrect, and none of the options are close to the actual correct answer.",
+        "The option marked as correct (C, 9%) is not mathematically correct based on the most natural interpretation of the question. The calculated difference based on the percentage of adults aged 18-45 who preferred Action and Comedy is approximately 29.63%, which is not close to 9%.",
+        "If the intended answer is indeed around 9%, then options A, B, and D are not clearly incorrect, as none of the options are close to the mathematically correct answer (approximately 29.63%). If the intended answer is 9%, then the question is poorly worded and misleading.",
+        "There are no grammatical or formatting issues, but the clarity of the question is a major concern."
+      ],
+      "correct_answer": null,
+      "explanation": "The question asks for the difference between the percentage of adults aged 18–45 years who responded 'Action' and 'Comedy'. To solve this based on the most direct interpretation:\n\n1. **Calculate the total number of adults aged 18-45:** 590 (18-30) + 490 (31-45) = 1080.\n2. **Calculate the number of adults aged 18-45 who preferred Action:** 340 + 290 = 630.\n3. **Calculate the number of adults aged 18-45 who preferred Comedy:** 180 + 130 = 310.\n4. **Calculate the percentage of adults aged 18-45 who preferred Action:** (630 / 1080) * 100% ≈ 58.33%.\n5. **Calculate the percentage of adults aged 18-45 who preferred Comedy:** (310 / 1080) * 100% ≈ 28.70%.\n6. **Calculate the difference between these percentages:** 58.33% - 28.70% ≈ 29.63%.\n\nNone of the provided options (A. 4%, B. 5%, C. 9%, D. 14%) are close to 29.63%. Option C (9%) is marked as correct, which is significantly different from the calculated value. \n\nIt's possible that the question intends to ask for the difference in percentages calculated differently, such as the percentage of 18-45 year olds within the total 'Action' respondents versus within the total 'Comedy' respondents. If we calculate it this way:\n\n1. **Percentage of 18-45 Action respondents out of all Action respondents:** (630 / 920) * 100% ≈ 68.48%.\n2. **Percentage of 18-45 Comedy respondents out of all Comedy respondents:** (310 / 520) * 100% ≈ 59.62%.\n3. **Difference:** 68.48% - 59.62% ≈ 8.86%.\n\nThis result is close to 9%, suggesting that this might be the intended, albeit poorly worded, interpretation. However, even with this interpretation, the question is ambiguous and misleading.  The mathematically correct answer based on the most straightforward reading of the question is approximately 30%, and none of the options reflect this. Therefore, the question is invalid due to ambiguity and an incorrect marked answer."
+    }
+  },
+  {
+    "question_id": 848658,
+    "question_text": "The initial price of a jacket was $P. During a clearance sale, the price was reduced by 30%. After t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, let's assume the initial price is $P$. A 30% reduction means the price becomes $P - 0.30P = 0.70P$.  Then, a 20% increase of the reduced price means the price is increased by $0.20 \times (0.70P) = 0.14P$. The final price is the reduced price plus the increase: $0.70P + 0.14P = 0.84P$.  This means the final price is 84% of the original price $P$. Option A (84%) is indeed the correct answer. The other options (B, C, D) are clearly incorrect as they do not result from the correct sequence of percentage changes. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of percentage calculations in sequence."
+    }
+  },
+  {
+    "question_id": 202784,
+    "question_text": "The number $a$ is 30% greater than the number $b$. The number $b$ is 80% less than 200. What is the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To solve it, we first find the value of $b$.  '80% less than 200' means we subtract 80% of 200 from 200. 80% of 200 is $0.80 \times 200 = 160$. So, $b = 200 - 160 = 40$. Next, we find the value of $a$. '$a$ is 30% greater than $b$' means we add 30% of $b$ to $b$. 30% of $b$ (which is 40) is $0.30 \times 40 = 12$. So, $a = 40 + 12 = 52$. Option A, 52, is the correct answer. Options B, C, and D are incorrect as shown by reversing the calculation and checking against the conditions in the question. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of percentage concepts, which can be challenging for some students at the SAT level."
+    }
+  },
+  {
+    "question_id": 140574,
+    "question_text": "A telecommunications company guarantees that the data corruption rate on their network will not exce...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The correct answer is option A (62.5). Let's verify the calculation:1. Convert the corruption rate from percentage to decimal: 0.025% = 0.025 / 100 = 0.000252. Convert the total data transmitted from gigabytes to megabytes: 250 gigabytes * 1000 megabytes/gigabyte = 250,000 megabytes3. Calculate the maximum amount of corrupted data in megabytes: 0.00025 * 250,000 megabytes = 62.5 megabytesOption A (62.5) matches our calculation, so it is the correct answer.Let's check the other options:- Option B (625): This is 10 times larger than the correct answer.- Option C (0.0625): This is 1/1000 of the correct answer.- Option D (25): This is smaller than the correct answer.All other options are clearly incorrect as they deviate significantly from the calculated correct answer. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires multiple steps including percentage conversion, unit conversion, and multiplication, which is typical for SAT Math problem-solving questions."
+    }
+  },
+  {
+    "question_id": 632013,
+    "question_text": "70% of the fruits in a basket are apples. Of those apples, 80% are ripe. Of the ripe apples, 20% are...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and mathematically sound. To solve it, we first calculate the percentage of fruits that are ripe organic apples. 70% of fruits are apples. Of these apples, 80% are ripe, so 0.70 * 0.80 = 0.56 or 56% of the fruits are ripe apples. Of these ripe apples, 20% are organic, so 0.56 * 0.20 = 0.112 or 11.2% of the fruits are ripe organic apples. The question asks for the percentage of fruits that are NOT ripe organic apples, which is 100% - 11.2% = 88.8%. Option C, 88.8%, is the correct answer. Options A, B, and D are clearly incorrect as they are significantly different from the correct answer and do not represent plausible misinterpretations of the problem for a student who understands percentages."
+    }
+  },
+  {
+    "question_id": 840861,
+    "question_text": "The number $x$ is 30% greater than the positive number $y$. The number $z$ is 20% less than $x$. The...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 233. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes logical sense. Let's break down the problem step-by-step to verify the correct an..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 307878,
+    "question_text": "The price of a share of stock in a tech company increased by 25% during the first quarter of the yea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and easy to understand. To solve it, assume the initial price of the stock is $100. After a 25% increase in the first quarter, the price becomes $100 + (25% of $100) = $100 + $25 = $125. In the second quarter, the price decreased by 10% of the *new* price ($125). The decrease is 10% of $125 = $12.50. So, the price after the second quarter is $125 - $12.50 = $112.50. The net increase from the initial price of $100 to $112.50 is $12.50, which represents a 12.5% increase. Option A (12.5%) is indeed the correct answer. Options B, C, and D are incorrect as they do not reflect the correct calculation of sequential percentage changes. The difficulty level 'Hard' is appropriate as it requires understanding of how percentages are applied sequentially and avoiding the common mistake of simply subtracting percentages."
+    }
+  },
+  {
+    "question_id": 928850,
+    "question_text": "42 is q% greater than 30. What is the value of q?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks to find the percentage q such that 42 is q% greater than 30. To solve this, we can set up the equation: 30 + (q/100) * 30 = 42.  Subtracting 30 from both sides gives (q/100) * 30 = 12. Dividing both sides by 30 gives q/100 = 12/30 = 2/5 = 0.4. Multiplying both sides by 100 gives q = 40. Therefore, option B is the correct answer.Let's check the other options:A. If q=24, 30 + (24/100)*30 = 30 + 7.2 = 37.2, which is not 42.C. If q=70, 30 + (70/100)*30 = 30 + 21 = 51, which is not 42.D. If q=140, 30 + (140/100)*30 = 30 + 42 = 72, which is not 42.All other options are incorrect. There are no grammatical or formatting issues. While the question is solvable with a single step equation, the 'Hard' difficulty level might be slightly overstated for students well-versed in percentage problems. It could be considered medium to hard depending on the student's skill level, but it is acceptable as a 'Hard' question on the SAT, especially for students who find percentage problems challenging."
+    }
+  },
+  {
+    "question_id": 131114,
+    "question_text": "After 30% of the original number of books in a library were checked out, 280 books remained in the l...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Let 'O' be the original number of books. 30% of the books were checked out, which means 0.30 * O books were checked out. The remaining books are O - 0.30 * O = 0.70 * O. We are given that 280 books remained. So, 0.70 * O = 280. Solving for O, we get O = 280 / 0.70 = 400. The number of books checked out is 30% of the original number, which is 0.30 * 400 = 120. Option B, 120, is indeed the correct answer. Options A, C, and D are incorrect. Option A (84) would correspond to 30% of the remaining books, not the original number. Option C (140) and D (400) are also incorrect based on the problem description. The difficulty level 'Hard' is appropriate for SAT as it requires understanding of percentages and setting up a simple equation to solve for the unknown."
+    }
+  },
+  {
+    "question_id": 239112,
+    "question_text": "In the year 2020, the population of Town A increased by 10% compared to 2019. In 2021, the populatio...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. To solve it, let P be the population in 2019. In 2020, the population increased by 10%, so the population in 2020 was P * (1 + 0.10) = 1.10P. In 2021, the population increased by 5% compared to 2020, so the population in 2021 was (1.10P) * (1 + 0.05) = 1.10P * 1.05 = 1.155P.  Since the population in 2021 is $z$ times the population in 2019, we have 1.155P = z * P. Dividing both sides by P, we get z = 1.155. Option C, 1.155, is indeed the correct answer. The other options are incorrect. Option A (1.150) is close but incorrect, possibly a distractor based on simply adding the percentages (10% + 5% = 15%). Option B (1.050) only considers the second percentage increase. Option D (1.105) is also incorrect and doesn't represent a logical miscalculation based on the problem description. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of percentage increase concepts, which can be challenging for some students."
+    }
+  },
+  {
+    "question_id": 640349,
+    "question_text": "The number p is 150% greater than the number q is 60% less than 35. What is the value of p?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first need to find the value of q. The question states that 'q is 60% less than 35'.  60% of 35 is (60/100) * 35 = 21. Therefore, q = 35 - 21 = 14. Next, the question states that 'p is 150% greater than q'. This means p is equal to q plus 150% of q. 150% of q is (150/100) * q = 1.5 * q = 1.5 * 14 = 21. Therefore, p = q + 21 = 14 + 21 = 35. Option C, which is 35, is indeed the correct answer. Options A, B, and D are incorrect. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of percentage concepts."
+    }
+  }
+]

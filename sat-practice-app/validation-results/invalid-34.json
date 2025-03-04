@@ -1,0 +1,62 @@
+[
+  {
+    "question_id": 311126,
+    "question_text": "The following text is from Jane Austen's 1813 novel *Pride and Prejudice*.\\n\\n\\...",
+    "issues": [
+      "The question text/excerpt from *Pride and Prejudice* is missing, making it impossible to determine the correct answer or evaluate the question effectively.",
+      "Without the question text, it is impossible to verify if option C ('Suppress') is the correct answer in context.",
+      "Without the question text, it is impossible to verify if options A, B, and D are clearly incorrect.",
+      "Without the question text, it is impossible to assess if the 'Easy' difficulty level is appropriate."
+    ]
+  },
+  {
+    "question_id": 834048,
+    "question_text": "The following text is adapted from Henry David Thoreau's \\...",
+    "issues": [
+      "The question is incomplete and invalid because the text passage from Henry David Thoreau is missing. Without the text, it is impossible to determine the correct answer or evaluate the options in context.",
+      "It is impossible to verify if option A ('Conditions') is the correct answer without the context of the text.",
+      "It is impossible to verify if options B ('Deadlines'), C ('Arguments'), and D ('Vocabulary') are clearly incorrect without the context of the text."
+    ]
+  },
+  {
+    "question_id": 389673,
+    "question_text": "The following text is from a book review discussing a new historical biography.\\n\\n\\...",
+    "issues": [
+      "The question is incomplete and lacks the crucial text passage needed to answer the question. The placeholder 'No image' indicates missing text, which is essential for a Words in Context question.",
+      "Without the text passage, it is impossible to definitively determine if option C ('Tracks') is the correct answer or if other options are incorrect. The correctness is entirely dependent on the missing context.",
+      "The question, as presented, is not clearly written due to the absence of the text it refers to. A Words in Context question requires a sentence or passage with a blank where students must choose the most appropriate word."
+    ]
+  },
+  {
+    "question_id": 996535,
+    "question_text": "While some critics found the author's latest novel to be overly sentimental, many readers appreciate...",
+    "issues": [
+      "The option marked as correct (D. sincere) is not the most logical or contextually appropriate answer. Options A, B, and C are arguably better fits for the sentence.",
+      "The question suffers from having multiple plausible options, making it ambiguous and potentially unfair.",
+      "The intended meaning of 'too sincere' is unclear and less idiomatic in this context compared to other options."
+    ]
+  },
+  {
+    "question_id": 889186,
+    "question_text": "The following text is from a historical account of early aviation.\\n\\n\\...",
+    "issues": [
+      "The question is incomplete as it is missing the text passage that the question refers to. Without the text, it is impossible to determine the correct answer or assess the validity of the options in context.",
+      "Because the text is missing, it is impossible to verify if option A ('Fragile') is actually the correct answer in context.",
+      "Similarly, without the text, it cannot be determined if options B, C, and D are clearly incorrect or if they could be plausible distractors.",
+      "The question prompt itself is grammatically sound and formatted correctly, but it is unusable without the accompanying text passage."
+    ]
+  },
+  {
+    "question_id": 42005,
+    "question_text": "Researchers studying memory and learning compared the effectiveness of two different study technique...",
+    "issues": [
+      "The question is incomplete and grammatically incorrect. It ends mid-sentence with 'massed practice, or \\\\\\\\\\No image', suggesting missing text or an image that is crucial for understanding the question's intent.",
+      "The intended meaning of the question is unclear due to the incompleteness. It's impossible to definitively determine if option A ('efficacious') is the correct answer without the missing part of the question.",
+      "Assuming the question is asking for a word to describe massed practice in contrast to spaced repetition, 'efficacious' (meaning effective) is an unlikely and potentially incorrect answer. Massed practice is often considered *less* effective than spaced repetition for long-term retention.",
+      "Options B ('arduous') and C ('commonplace') could potentially describe massed practice. Massed practice can be 'arduous' due to its intensive nature, and it is a 'commonplace' study technique.",
+      "The 'No image' note indicates a formatting issue and potentially missing context that is essential for the question.",
+      "Given the incompleteness and unclear intent, the 'Easy' difficulty level is questionable. If the intended answer is indeed 'efficacious' in this incomplete context, the question is likely more confusing than easy.",
+      "A"
+    ]
+  }
+]

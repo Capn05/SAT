@@ -1,0 +1,842 @@
+[
+  {
+    "id": 6782090,
+    "question_id": 678209,
+    "value": "A",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 6782091,
+    "question_id": 678209,
+    "value": "B",
+    "label": "16.5",
+    "is_correct": true
+  },
+  {
+    "id": 6782092,
+    "question_id": 678209,
+    "value": "C",
+    "label": "17",
+    "is_correct": false
+  },
+  {
+    "id": 6782093,
+    "question_id": 678209,
+    "value": "D",
+    "label": "18",
+    "is_correct": false
+  },
+  {
+    "id": 8940,
+    "question_id": 894,
+    "value": "A",
+    "label": "The average number of hours spent on homework per student during the week",
+    "is_correct": true
+  },
+  {
+    "id": 8941,
+    "question_id": 894,
+    "value": "B",
+    "label": "The median number of hours spent on homework per student during the week",
+    "is_correct": false
+  },
+  {
+    "id": 8942,
+    "question_id": 894,
+    "value": "C",
+    "label": "The maximum number of hours spent on homework by any student during the week",
+    "is_correct": false
+  },
+  {
+    "id": 8943,
+    "question_id": 894,
+    "value": "D",
+    "label": "The minimum number of hours spent on homework by any student during the week",
+    "is_correct": false
+  },
+  {
+    "id": 4973530,
+    "question_id": 497353,
+    "value": "A",
+    "label": "8",
+    "is_correct": true
+  },
+  {
+    "id": 4973531,
+    "question_id": 497353,
+    "value": "B",
+    "label": "9",
+    "is_correct": false
+  },
+  {
+    "id": 4973532,
+    "question_id": 497353,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 4973533,
+    "question_id": 497353,
+    "value": "D",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 5586770,
+    "question_id": 558677,
+    "value": "A",
+    "label": "83",
+    "is_correct": false
+  },
+  {
+    "id": 5586771,
+    "question_id": 558677,
+    "value": "B",
+    "label": "84",
+    "is_correct": true
+  },
+  {
+    "id": 5586772,
+    "question_id": 558677,
+    "value": "C",
+    "label": "89",
+    "is_correct": false
+  },
+  {
+    "id": 5586773,
+    "question_id": 558677,
+    "value": "D",
+    "label": "90",
+    "is_correct": false
+  },
+  {
+    "id": 1442400,
+    "question_id": 144240,
+    "value": "A",
+    "label": "The mean of each data set is 3.",
+    "is_correct": false
+  },
+  {
+    "id": 1442401,
+    "question_id": 144240,
+    "value": "B",
+    "label": "The mean of data set C is less than the mean of data set D.",
+    "is_correct": false
+  },
+  {
+    "id": 1442402,
+    "question_id": 144240,
+    "value": "C",
+    "label": "The mean of data set C is greater than the mean of data set D.",
+    "is_correct": true
+  },
+  {
+    "id": 1442403,
+    "question_id": 144240,
+    "value": "D",
+    "label": "The means of data set C and data set D are equal.",
+    "is_correct": false
+  },
+  {
+    "id": 862960,
+    "question_id": 86296,
+    "value": "A",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 862961,
+    "question_id": 86296,
+    "value": "B",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 862962,
+    "question_id": 86296,
+    "value": "C",
+    "label": "7",
+    "is_correct": true
+  },
+  {
+    "id": 862963,
+    "question_id": 86296,
+    "value": "D",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 8177330,
+    "question_id": 817733,
+    "value": "A",
+    "label": "390",
+    "is_correct": false
+  },
+  {
+    "id": 8177331,
+    "question_id": 817733,
+    "value": "B",
+    "label": "400",
+    "is_correct": true
+  },
+  {
+    "id": 8177332,
+    "question_id": 817733,
+    "value": "C",
+    "label": "410",
+    "is_correct": false
+  },
+  {
+    "id": 8177333,
+    "question_id": 817733,
+    "value": "D",
+    "label": "420",
+    "is_correct": false
+  },
+  {
+    "id": 4577190,
+    "question_id": 457719,
+    "value": "A",
+    "label": "45",
+    "is_correct": true
+  },
+  {
+    "id": 4577191,
+    "question_id": 457719,
+    "value": "B",
+    "label": "35",
+    "is_correct": false
+  },
+  {
+    "id": 4577192,
+    "question_id": 457719,
+    "value": "C",
+    "label": "50",
+    "is_correct": false
+  },
+  {
+    "id": 4577193,
+    "question_id": 457719,
+    "value": "D",
+    "label": "40",
+    "is_correct": false
+  },
+  {
+    "id": 9697500,
+    "question_id": 969750,
+    "value": "A",
+    "label": "38",
+    "is_correct": false
+  },
+  {
+    "id": 9697501,
+    "question_id": 969750,
+    "value": "B",
+    "label": "40",
+    "is_correct": true
+  },
+  {
+    "id": 9697502,
+    "question_id": 969750,
+    "value": "C",
+    "label": "42",
+    "is_correct": false
+  },
+  {
+    "id": 9697503,
+    "question_id": 969750,
+    "value": "D",
+    "label": "44",
+    "is_correct": false
+  },
+  {
+    "id": 8347850,
+    "question_id": 834785,
+    "value": "A",
+    "label": "Median of the points scored",
+    "is_correct": false
+  },
+  {
+    "id": 8347851,
+    "question_id": 834785,
+    "value": "B",
+    "label": "Mean of the points scored",
+    "is_correct": false
+  },
+  {
+    "id": 8347852,
+    "question_id": 834785,
+    "value": "C",
+    "label": "Mode of the points scored",
+    "is_correct": false
+  },
+  {
+    "id": 8347853,
+    "question_id": 834785,
+    "value": "D",
+    "label": "Range of the points scored",
+    "is_correct": true
+  },
+  {
+    "id": 3583840,
+    "question_id": 358384,
+    "value": "A",
+    "label": "I only",
+    "is_correct": false
+  },
+  {
+    "id": 3583841,
+    "question_id": 358384,
+    "value": "B",
+    "label": "II only",
+    "is_correct": false
+  },
+  {
+    "id": 3583842,
+    "question_id": 358384,
+    "value": "C",
+    "label": "I and II",
+    "is_correct": true
+  },
+  {
+    "id": 3583843,
+    "question_id": 358384,
+    "value": "D",
+    "label": "Neither I nor II",
+    "is_correct": false
+  },
+  {
+    "id": 3840060,
+    "question_id": 384006,
+    "value": "A",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 3840061,
+    "question_id": 384006,
+    "value": "B",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 3840062,
+    "question_id": 384006,
+    "value": "C",
+    "label": "45",
+    "is_correct": false
+  },
+  {
+    "id": 3840063,
+    "question_id": 384006,
+    "value": "D",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 4591360,
+    "question_id": 459136,
+    "value": "A",
+    "label": "15",
+    "is_correct": true
+  },
+  {
+    "id": 4591361,
+    "question_id": 459136,
+    "value": "B",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 4591362,
+    "question_id": 459136,
+    "value": "C",
+    "label": "40",
+    "is_correct": false
+  },
+  {
+    "id": 4591363,
+    "question_id": 459136,
+    "value": "D",
+    "label": "50",
+    "is_correct": false
+  },
+  {
+    "id": 5362850,
+    "question_id": 536285,
+    "value": "A",
+    "label": "The average score in Group X is lower than the average score in Group Y.",
+    "is_correct": false
+  },
+  {
+    "id": 5362851,
+    "question_id": 536285,
+    "value": "B",
+    "label": "Group Y contained the participant with the highest test score.",
+    "is_correct": false
+  },
+  {
+    "id": 5362852,
+    "question_id": 536285,
+    "value": "C",
+    "label": "The test scores in Group Y had a larger spread than the test scores in Group X.",
+    "is_correct": true
+  },
+  {
+    "id": 5362853,
+    "question_id": 536285,
+    "value": "D",
+    "label": "The median test score of Group X is larger than the median test score of Group Y.",
+    "is_correct": false
+  },
+  {
+    "id": 1904380,
+    "question_id": 190438,
+    "value": "A",
+    "label": "15",
+    "is_correct": true
+  },
+  {
+    "id": 1904381,
+    "question_id": 190438,
+    "value": "B",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 1904382,
+    "question_id": 190438,
+    "value": "C",
+    "label": "22.5",
+    "is_correct": false
+  },
+  {
+    "id": 1904383,
+    "question_id": 190438,
+    "value": "D",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 8431830,
+    "question_id": 843183,
+    "value": "A",
+    "label": "$150",
+    "is_correct": true
+  },
+  {
+    "id": 8431831,
+    "question_id": 843183,
+    "value": "B",
+    "label": "$100",
+    "is_correct": false
+  },
+  {
+    "id": 8431832,
+    "question_id": 843183,
+    "value": "C",
+    "label": "$200",
+    "is_correct": false
+  },
+  {
+    "id": 8431833,
+    "question_id": 843183,
+    "value": "D",
+    "label": "$250",
+    "is_correct": false
+  },
+  {
+    "id": 6414220,
+    "question_id": 641422,
+    "value": "A",
+    "label": "6, 6, 6, 6, 6, 6, 6, 6, 6",
+    "is_correct": false
+  },
+  {
+    "id": 6414221,
+    "question_id": 641422,
+    "value": "B",
+    "label": "2, 3, 4, 5, 6, 7, 8, 9, 10",
+    "is_correct": false
+  },
+  {
+    "id": 6414222,
+    "question_id": 641422,
+    "value": "C",
+    "label": "1, 2, 2, 3, 3, 3, 10, 20, 30",
+    "is_correct": true
+  },
+  {
+    "id": 6414223,
+    "question_id": 641422,
+    "value": "D",
+    "label": "1, 1, 1, 5, 5, 5, 5, 10, 10",
+    "is_correct": false
+  },
+  {
+    "id": 8824500,
+    "question_id": 882450,
+    "value": "A",
+    "label": "Mean",
+    "is_correct": false
+  },
+  {
+    "id": 8824501,
+    "question_id": 882450,
+    "value": "B",
+    "label": "Median",
+    "is_correct": true
+  },
+  {
+    "id": 8824502,
+    "question_id": 882450,
+    "value": "C",
+    "label": "Range",
+    "is_correct": false
+  },
+  {
+    "id": 8824503,
+    "question_id": 882450,
+    "value": "D",
+    "label": "Standard deviation",
+    "is_correct": false
+  },
+  {
+    "id": 5244300,
+    "question_id": 524430,
+    "value": "A",
+    "label": "Only the means are different.",
+    "is_correct": true
+  },
+  {
+    "id": 5244301,
+    "question_id": 524430,
+    "value": "B",
+    "label": "Only the medians are different.",
+    "is_correct": false
+  },
+  {
+    "id": 5244302,
+    "question_id": 524430,
+    "value": "C",
+    "label": "Both the means and the medians are different.",
+    "is_correct": false
+  },
+  {
+    "id": 5244303,
+    "question_id": 524430,
+    "value": "D",
+    "label": "Neither the means nor the medians are different.",
+    "is_correct": false
+  },
+  {
+    "id": 8806460,
+    "question_id": 880646,
+    "value": "A",
+    "label": "0",
+    "is_correct": true
+  },
+  {
+    "id": 8806461,
+    "question_id": 880646,
+    "value": "B",
+    "label": "1",
+    "is_correct": false
+  },
+  {
+    "id": 8806462,
+    "question_id": 880646,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 8806463,
+    "question_id": 880646,
+    "value": "D",
+    "label": "-1",
+    "is_correct": false
+  },
+  {
+    "id": 6051680,
+    "question_id": 605168,
+    "value": "A",
+    "label": "8",
+    "is_correct": false
+  },
+  {
+    "id": 6051681,
+    "question_id": 605168,
+    "value": "B",
+    "label": "15",
+    "is_correct": true
+  },
+  {
+    "id": 6051682,
+    "question_id": 605168,
+    "value": "C",
+    "label": "28",
+    "is_correct": false
+  },
+  {
+    "id": 6051683,
+    "question_id": 605168,
+    "value": "D",
+    "label": "30",
+    "is_correct": false
+  },
+  {
+    "id": 6094880,
+    "question_id": 609488,
+    "value": "A",
+    "label": "$\\frac{1}{3}$",
+    "is_correct": true
+  },
+  {
+    "id": 6094881,
+    "question_id": 609488,
+    "value": "B",
+    "label": "$\\frac{1}{2}$",
+    "is_correct": false
+  },
+  {
+    "id": 6094882,
+    "question_id": 609488,
+    "value": "C",
+    "label": "2",
+    "is_correct": false
+  },
+  {
+    "id": 6094883,
+    "question_id": 609488,
+    "value": "D",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 1690080,
+    "question_id": 169008,
+    "value": "A",
+    "label": "5.1",
+    "is_correct": false
+  },
+  {
+    "id": 1690081,
+    "question_id": 169008,
+    "value": "B",
+    "label": "5",
+    "is_correct": true
+  },
+  {
+    "id": 1690082,
+    "question_id": 169008,
+    "value": "C",
+    "label": "6",
+    "is_correct": false
+  },
+  {
+    "id": 1690083,
+    "question_id": 169008,
+    "value": "D",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 2356730,
+    "question_id": 235673,
+    "value": "A",
+    "label": "Median",
+    "is_correct": false
+  },
+  {
+    "id": 2356731,
+    "question_id": 235673,
+    "value": "B",
+    "label": "Mean",
+    "is_correct": false
+  },
+  {
+    "id": 2356732,
+    "question_id": 235673,
+    "value": "C",
+    "label": "Sum of the scores",
+    "is_correct": false
+  },
+  {
+    "id": 2356733,
+    "question_id": 235673,
+    "value": "D",
+    "label": "Range",
+    "is_correct": true
+  },
+  {
+    "id": 6025890,
+    "question_id": 602589,
+    "value": "A",
+    "label": "A. III only",
+    "is_correct": true
+  },
+  {
+    "id": 6025891,
+    "question_id": 602589,
+    "value": "B",
+    "label": "B. I and II only",
+    "is_correct": false
+  },
+  {
+    "id": 6025892,
+    "question_id": 602589,
+    "value": "C",
+    "label": "C. II and III only",
+    "is_correct": false
+  },
+  {
+    "id": 6025893,
+    "question_id": 602589,
+    "value": "D",
+    "label": "D. I, II, and III",
+    "is_correct": false
+  },
+  {
+    "id": 4579130,
+    "question_id": 457913,
+    "value": "A",
+    "label": "A.  |    | Days | Frequency | |----|------|-----------| |    | 1    | 3         | |    | 2    | 4         | |    | 3    | 5         | |    | 4    | 6         |",
+    "is_correct": true
+  },
+  {
+    "id": 4579131,
+    "question_id": 457913,
+    "value": "B",
+    "label": "B.  |    | Days | Frequency | |----|------|-----------| |    | 1    | 5         | |    | 2    | 6         | |    | 3    | 6         | |    | 4    | 5         |",
+    "is_correct": false
+  },
+  {
+    "id": 4579132,
+    "question_id": 457913,
+    "value": "C",
+    "label": "C.  |    | Days | Frequency | |----|------|-----------| |    | 1    | 4         | |    | 2    | 6         | |    | 3    | 6         | |    | 4    | 4         |",
+    "is_correct": false
+  },
+  {
+    "id": 4579133,
+    "question_id": 457913,
+    "value": "D",
+    "label": "D.  |    | Days | Frequency | |----|------|-----------| |    | 1    | 6         | |    | 2    | 5         | |    | 3    | 4         | |    | 4    | 3         |",
+    "is_correct": false
+  },
+  {
+    "id": 6264650,
+    "question_id": 626465,
+    "value": "A",
+    "label": "6.0",
+    "is_correct": false
+  },
+  {
+    "id": 6264651,
+    "question_id": 626465,
+    "value": "B",
+    "label": "11.9",
+    "is_correct": false
+  },
+  {
+    "id": 6264652,
+    "question_id": 626465,
+    "value": "C",
+    "label": "12.1",
+    "is_correct": false
+  },
+  {
+    "id": 6264653,
+    "question_id": 626465,
+    "value": "D",
+    "label": "27.4",
+    "is_correct": true
+  },
+  {
+    "id": 4108220,
+    "question_id": 410822,
+    "value": "A",
+    "label": "I only",
+    "is_correct": true
+  },
+  {
+    "id": 4108221,
+    "question_id": 410822,
+    "value": "B",
+    "label": "II only",
+    "is_correct": false
+  },
+  {
+    "id": 4108222,
+    "question_id": 410822,
+    "value": "C",
+    "label": "I and II",
+    "is_correct": false
+  },
+  {
+    "id": 4108223,
+    "question_id": 410822,
+    "value": "D",
+    "label": "Neither I nor II",
+    "is_correct": false
+  },
+  {
+    "id": 210470,
+    "question_id": 21047,
+    "value": "A",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 210471,
+    "question_id": 21047,
+    "value": "B",
+    "label": "10",
+    "is_correct": true
+  },
+  {
+    "id": 210472,
+    "question_id": 21047,
+    "value": "C",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 210473,
+    "question_id": 21047,
+    "value": "D",
+    "label": "20",
+    "is_correct": false
+  },
+  {
+    "id": 6052090,
+    "question_id": 605209,
+    "value": "A",
+    "label": "65",
+    "is_correct": false
+  },
+  {
+    "id": 6052091,
+    "question_id": 605209,
+    "value": "B",
+    "label": "75",
+    "is_correct": true
+  },
+  {
+    "id": 6052092,
+    "question_id": 605209,
+    "value": "C",
+    "label": "85",
+    "is_correct": false
+  },
+  {
+    "id": 6052093,
+    "question_id": 605209,
+    "value": "D",
+    "label": "95",
+    "is_correct": false
+  }
+]

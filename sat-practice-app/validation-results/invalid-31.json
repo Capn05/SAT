@@ -1,0 +1,233 @@
+[
+  {
+    "question_id": 505516,
+    "question_text": "Veterinary clinics often forecast the number of appointments they expect to have each week to manage...",
+    "issues": [
+      "The image referenced in the question text is missing, making it impossible to definitively answer the question.",
+      "Options A and C are identical, which is redundant and confusing. This also means there are two correct options if Option C is indeed correct based on the missing image.",
+      "The question relies entirely on visual information from the graph, which is absent. Without the graph, the question is unsolvable.",
+      " in the question text is a formatting issue, likely a placeholder for the missing image that was not properly rendered.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 505251,
+    "question_text": "\\...",
+    "issues": [
+      "Question stem is missing, making it impossible to understand what the question is asking.",
+      "Option D is empty, which is invalid.",
+      "Option A has a trailing backslash ('\\\\\\\\\\'), which is a formatting issue.",
+      "Without the question stem and context (likely a passage), it is impossible to determine if option C is actually the correct answer.",
+      "Without the question stem and context, it is impossible to determine if options A and B are clearly incorrect.",
+      "The difficulty level cannot be accurately assessed without the complete question.",
+      "C"
+    ]
+  },
+  {
+    "question_id": 697032,
+    "question_text": "The passage below is from a 20th-century novel set in a bustling marketplace. The author aims to ill...",
+    "issues": [
+      "The question is incomplete. The passage and options (A, B, C, D) are missing. Without the passage and options, it is impossible to determine if the question is valid, if the marked answer is correct, or if the difficulty level is appropriate."
+    ]
+  },
+  {
+    "question_id": 573781,
+    "question_text": "A short story describes two bakers, Mrs. Gable and Mr. Finch, competing in a bake-off. Mrs. Gable is...",
+    "issues": [
+      "The question is incomplete because options A, B, C, and D are missing. Without the actual quotations, it is impossible to determine if the question is valid, if option C is correct, or if other options are incorrect.",
+      "The question relies on external information (the content of the short story) that is not provided. To validate the question, the short story and the options are necessary.",
+      "While the question stem itself is clearly written and makes sense in principle, its effectiveness and validity are entirely dependent on the missing options."
+    ]
+  },
+  {
+    "question_id": 243752,
+    "question_text": "Scientists studied the effects of different fertilizers on tomato plant growth. They grew tomato pla...",
+    "issues": [
+      "Option B, C, and D are not clearly incorrect, making the question ambiguous. While Option A is a reasonable answer and is marked as correct, the other options are not definitively ruled out by the question stem or Option A itself without seeing the graph. For instance, Option B could be true if Fertilizer Y resulted in the least growth, and Option C could be true if Fertilizer Y resulted in plants exactly 5cm taller than the control. Option D's correctness depends on the specific values of plant heights, and it's not universally false based on the premise.",
+      "The question relies on an unseen graph, which is a significant flaw. Without the graph, it's impossible to definitively validate the correctness of the options and ensure that only one option is unambiguously correct and the others are unambiguously incorrect.",
+      "The phrase 'for example:' before Option A might suggest that other options could also be valid examples, further contributing to the ambiguity if only Option A is intended to be the correct answer. This phrasing weakens the question's clarity and precision."
+    ]
+  },
+  {
+    "question_id": 790867,
+    "question_text": "A city council in Oakhaven recently implemented a new initiative to improve recycling rates among re...",
+    "issues": [
+      "The question is incomplete as it is missing the actual question stem and answer options (A, B, C, D).",
+      "Without the question stem and answer options, it is impossible to determine if the marked answer 'A' is actually correct, or if other options are clearly incorrect.",
+      "The difficulty level cannot be accurately assessed without knowing the actual question being asked and the nature of the answer choices."
+    ]
+  },
+  {
+    "question_id": 520219,
+    "question_text": "Researchers Davies and Lee conducted a study on the effects of screen time on sleep quality in teena...",
+    "issues": [
+      "The actual question prompt is missing. The provided text only includes background information and the marked correct option, but not the question itself.",
+      "Answer options A, B, C, and D are represented by backslashes ('\\\\\\\\\\') and are therefore missing. This makes it impossible to evaluate the correctness of option C or the incorrectness of other options.",
+      "Without the question prompt and answer options, it's impossible to determine if the marked answer (C) is actually correct or if the other options are clearly incorrect.",
+      "The difficulty level cannot be accurately assessed without knowing the actual question being asked."
+    ]
+  },
+  {
+    "question_id": 638686,
+    "question_text": " \\n|  | Top Selling Video Games of 2023 | \\n|--|------------------------------------| \\n|--|--------...",
+    "issues": [
+      "The question is grammatically incomplete and unclear. It ends with 'revenue generated by \\\\\\\\\\ No image', which is nonsensical and doesn't specify what the revenue is generated by. It's likely intended to ask for the revenue of one of the games, but it doesn't state which one.",
+      "The phrase '\\\\\\\\\\ No image' is extraneous and likely an error in question generation.",
+      "While option A is marked as correct and corresponds to the revenue of 'Game B: Battleground', the question's lack of clarity makes it difficult to definitively say if this is the intended correct answer based on the question text alone.  It relies on inference from the options rather than clear instruction in the question stem.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 38211,
+    "question_text": "Researchers studied the impact of different concentrations of a new fertilizer, \\...",
+    "issues": [
+      "The question is incomplete and cannot be answered without the accompanying image (likely a graph or table) that presents the data from the fertilizer study.  Without this visual information, it is impossible to verify the correctness of any of the options.",
+      "Option A is marked as correct, but without the data, we cannot confirm if it is actually correct.",
+      "Options B, C, and D cannot be definitively evaluated as incorrect without the data.",
+      "The question text mentions 'No image', indicating a crucial missing component."
+    ]
+  },
+  {
+    "question_id": 637673,
+    "question_text": "In his Gettysburg Address, delivered in 1863, Abraham Lincoln sought to contextualize the immense sa...",
+    "issues": [
+      "Options A, B, C, and D are missing. The question cannot be properly evaluated without the actual quotation options.",
+      "Without the options, it is impossible to determine if the marked answer (C) is actually correct or if the other options are clearly incorrect."
+    ]
+  },
+  {
+    "question_id": 511979,
+    "question_text": "A student is researching average monthly rainfall in Seattle, Washington, and Miami, Florida. When c...",
+    "issues": [
+      "The option marked as correct (Option A) is actually incorrect based on general weather patterns of Seattle and Miami. Option C is the more appropriate answer as it describes contrasting rainfall trends between the two cities from January to June.",
+      "Option D, while describing a difference in rainfall amounts, does not directly address the 'contrasting trends' in rainfall patterns as effectively as Option C. Option D could be true even if both cities have similar trends (e.g., both decreasing, but Seattle always higher)."
+    ]
+  },
+  {
+    "question_id": 942211,
+    "question_text": "\\...",
+    "issues": [
+      "Missing question text and options. Without the actual question text and answer options (A, B, C, D), it is impossible to evaluate the question's clarity, correctness, and the validity of the marked correct answer.  A question cannot be assessed for content, command of evidence, or difficulty without the actual content being provided."
+    ]
+  },
+  {
+    "question_id": 202813,
+    "question_text": "Abraham Lincoln's Gettysburg Address, delivered in 1863, aims to dedicate a portion of the Gettysbur...",
+    "issues": [
+      "The question is incomplete because the options (A, B, C, D) are missing. Without the options, it is impossible to determine if the question is answerable, if the marked answer is correct, or if the other options are clearly incorrect. The question stem itself is reasonably clear and relevant to the topic of the Gettysburg Address, but the lack of options is a critical flaw.",
+      "It is impossible to assess the correctness of option B or the incorrectness of other options without knowing what those options are."
+    ]
+  },
+  {
+    "question_id": 764181,
+    "question_text": "Elias Porter's 2023 essay \\...",
+    "issues": [
+      "The question text is missing. 'Elias Porter's 2023 essay No image' provides context but does not pose a question.",
+      "Without a question, it is impossible to determine if option B is the correct answer or if other options are incorrect.",
+      "The provided options are placeholders ('\\\\\\\\\\ ') and do not represent actual answer choices.",
+      "Cannot be determined"
+    ]
+  },
+  {
+    "question_id": 58450,
+    "question_text": "Environmental historian William Cronon argues that our understanding of \\...",
+    "issues": [
+      "The question text is incomplete and does not present a full question. It only provides context about William Cronon but lacks the actual question being asked.",
+      "The options (A, B, C, D) are completely missing. They are represented only by backslashes, making it impossible to evaluate the answer choices.",
+      "Without the full question text and options, it is impossible to determine if the option marked as correct (A) is actually correct.",
+      "Similarly, without options, it's impossible to assess if other options are clearly incorrect.",
+      "The missing question and options are significant formatting issues that render the question unusable.",
+      "The difficulty level (Medium) cannot be appropriately assessed without the complete question and options."
+    ]
+  },
+  {
+    "question_id": 800201,
+    "question_text": "In a sociological study on modern communication, a researcher claims that while digital platforms of...",
+    "issues": [
+      "The question is incomplete as options A, B, C, and D are missing. Without the options (quotations from the study's findings), it is impossible to determine if the marked answer (A) is actually correct, if other options are clearly incorrect, or to fully assess the difficulty level.",
+      "It is impossible to verify the correctness of option A or the incorrectness of options B, C, and D without the actual text of these options."
+    ]
+  },
+  {
+    "question_id": 319413,
+    "question_text": "A researcher is studying bird populations in two different forest types, Oak and Pine, over a decade...",
+    "issues": [
+      "Missing images are crucial for answering the question. The question text refers to 'Figure_1.jpeg' and 'Figure_3.jpeg' which are not provided. Without these figures, the question is unanswerable.",
+      "The question relies on visual data (presumably graphs or charts in the missing images) to compare bird species counts in Oak and Pine forests over time.  Without this visual data, there is no 'evidence' to command, making it impossible to assess the correctness of the options.",
+      "Cannot verify if option C is actually the correct answer without the figures.",
+      "Cannot determine if other options are clearly incorrect without the figures.",
+      "The difficulty level cannot be accurately assessed without the figures. While the concept is medium difficulty (interpreting data), the question as presented is impossible, making the difficulty effectively 'invalid'.",
+      "The presence of image placeholders '![](3__page_49_Figure_1.jpeg)' and '![](3__page_49_Figure_3.jpeg)' and 'No image' indicates a formatting or technical issue where the images were intended to be included but are missing."
+    ]
+  },
+  {
+    "question_id": 113420,
+    "question_text": "Plant Height Under Different Light Conditions (in Centimeters)...",
+    "issues": [
+      "The question is missing the crucial data (table, graph, or text passage) that the options refer to. Without this data, it is impossible to definitively determine if option A is the correct answer or if the other options are incorrect.  SAT Reading & Writing questions in the 'Command of Evidence' subcategory require students to analyze provided information to answer questions.",
+      "While option A *could* be correct if the data shows that red light results in the greatest average plant height, and the other options describe true but less central or less comprehensive observations from the same data, the lack of data makes this assumption unverifiable.",
+      "Options B, C, and D are not necessarily 'clearly incorrect' without the data. They describe plausible relationships between plant height and different light conditions.  Depending on the missing data, one or more of these options could also be considered correct or partially correct.",
+      "The term 'slightly less' in option B is somewhat subjective and could be considered vague in a standardized test context, although it is not grammatically incorrect."
+    ]
+  },
+  {
+    "question_id": 369288,
+    "question_text": "![](_page_6_Figure_1_plant_growth.jpeg)  Research suggests that plant growth rate typically increase...",
+    "issues": [
+      "The image associated with the question is missing. This is a critical issue as the question explicitly refers to data presented in a graph (Figure 1) to answer the question. Without the graph, the question cannot be answered.",
+      "While option B is marked as correct and likely *would be* correct if the graph showed a plateauing effect as described in the question stem, this cannot be definitively confirmed without the visual data.",
+      "The question relies entirely on visual information that is not provided, making it impossible for a test-taker to effectively 'Command Evidence' from the graph."
+    ]
+  },
+  {
+    "question_id": 947753,
+    "question_text": "Effect of Fertilizer Application on Crop Yield Increase for Two Application Levels, by Percentage of...",
+    "issues": [
+      "The option marked as correct (Option B) is factually incorrect based on the provided data.",
+      "Option C is a better description of the data and more accurately supports the researchers' conclusion.",
+      "Option B contains a numerical inaccuracy: it states 'at high fertilizer application, less than 10% of farms showed no increase in crop yield,' but the data shows exactly 10% of farms showed no increase, which is not 'less than 10%'.",
+      "Option A is factually incorrect as it states 'Under both fertilizer conditions, less than 20% of farms were in the up-to-10% increase group,' which is false for both conditions (20% and 35% are not less than 20%).",
+      "Option D is factually incorrect as it states 'at high fertilizer application, that percentage increased to over 80%,' referring to farms experiencing more than a 10% increase, but the data shows 55%, not over 80%."
+    ]
+  },
+  {
+    "question_id": 625456,
+    "question_text": "Botanists often categorize plant species into broad groups based on shared characteristics, such as ...",
+    "issues": [
+      "The question stem is incomplete and grammatically incorrect. It is a sentence fragment and does not pose a clear question.",
+      "The option marked as correct (A) is questionable. It emphasizes differences between dog rose and damask rose (genetic structure, environmental conditions), which seems to contradict the idea of categorization based on shared characteristics mentioned in the incomplete question stem. Option D, which highlights shared floral characteristics and similarity within the rose family, appears to be a more logical answer if the question is about botanical categorization based on shared traits.",
+      "Option D appears to be a stronger candidate for the correct answer than option A, based on the likely intended topic of botanical categorization.",
+      "There is a 'No image' note, indicating potentially missing visual content that might be relevant to the question.",
+      "Without a complete question stem and potentially missing context (image and passage), it is difficult to definitively assess the difficulty level. However, the fundamental flaws in the question's construction are a more pressing issue than the difficulty level."
+    ]
+  },
+  {
+    "question_id": 562864,
+    "question_text": "Researchers investigated the impact of background music on reading comprehension. Participants were ...",
+    "issues": [
+      "The option marked as correct (D) is actually incorrect; it strengthens the explanation rather than weakening it.",
+      "Option A is the most direct answer that weakens the proposed explanation.",
+      "Option C also weakens the explanation, though perhaps less directly than Option A.",
+      "Option B strengthens the explanation."
+    ]
+  },
+  {
+    "question_id": 524351,
+    "question_text": "A climatology student is studying trends in average yearly rainfall in two different regions, Region...",
+    "issues": [
+      "The question is fundamentally flawed because it refers to a line graph that is not provided. The question text explicitly states '[Imagine a line graph similar to the example, titled No image]', indicating that the visual information necessary to answer the question is missing. Without the graph, it is impossible to determine the correct answer or evaluate the options.",
+      "While the question text and options are clearly written and grammatically sound, their validity is entirely dependent on the unseen graph.  The question is therefore unanswerable in its current form.",
+      "It is impossible to verify if option A is actually correct, or if other options are clearly incorrect without the visual data from the graph."
+    ]
+  },
+  {
+    "question_id": 577187,
+    "question_text": "Global Coffee Consumption and Production (in metric tons)...",
+    "issues": [
+      "The question lacks a clear question stem. It only provides a title 'Global Coffee Consumption and Production (in metric tons)' without explicitly asking what the student needs to do with this information. This makes the task ambiguous.",
+      "Options A, B, and C are all factually plausible and logically consistent based on the provided numerical data. While Option B is marked as correct, Options A and C are not clearly incorrect, making the question ambiguous and potentially having multiple 'correct' answers if the task is simply to identify a true statement based on the data.",
+      "Option D is numerically incorrect. The combined production of Brazil and Vietnam (3,500,000 + 1,800,000 = 5,300,000) is not half of the global consumption (6,000,000). 6,000,000 is approximately 1.13 times 5,300,000, not double. This makes Option D easily dismissible and less effective as a distractor, potentially lowering the question's difficulty.",
+      "The difficulty level 'Hard' might be inappropriate. While the question requires analysis of numerical data, the ambiguity of having multiple plausible options and one clearly incorrect option (D) due to a simple numerical error might make it less challenging than intended for a 'Hard' level question. The 'hardness' might stem from the ambiguity of determining the *intended* correct answer rather than genuine complexity."
+    ]
+  }
+]

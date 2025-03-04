@@ -1,0 +1,42 @@
+[
+  {
+    "question_id": 831970,
+    "question_text": "In the figure above, what is the value of cos(A)?  ![](_page_0_Figure_5_new.jpeg)...",
+    "issues": [
+      "The question refers to a figure that is not provided. Without the figure, the question is incomplete and cannot be solved.",
+      "Due to the missing figure, it is impossible to definitively verify if option C is the correct answer or if other options are incorrect based on the intended geometry."
+    ]
+  },
+  {
+    "question_id": 655412,
+    "question_text": "17 Note: Figure not drawn to scale.\\n\\nIn the right triangle shown, what is the value of $\\cos(y)$?...",
+    "issues": [
+      "The question refers to 'the right triangle shown' and states 'Figure not drawn to scale,' but no image is provided. This makes the question fundamentally flawed as it is impossible to determine the value of cos(y) without knowing the triangle and the angle y within that triangle.",
+      "Without an image, the question is not clearly written and does not make sense as presented."
+    ]
+  },
+  {
+    "question_id": 901110,
+    "question_text": "A jewelry designer is crafting a pendant in the shape of a trapezoid, composed of three congruent eq...",
+    "issues": [
+      "The option marked as correct (B) is incorrect. The correct answer should be option C."
+    ]
+  },
+  {
+    "question_id": 219996,
+    "question_text": "In the figure above, tan B = 5/12. If BC = 26 and DA = 8, what is the length of DE ?...",
+    "issues": [
+      "The question is invalid because it refers to a figure that is not provided ('In the figure above'). Without the figure, the geometric relationships between points and lines are undefined, making the question ambiguous and unsolvable as presented.",
+      "Assuming a standard geometric interpretation where triangles ABC and DBE are similar right triangles sharing angle B, with AC perpendicular to AB and DE perpendicular to DB, and points A, D, B are collinear and C, E, B are collinear, the provided correct answer option A is mathematically correct. However, this assumption is based on common geometric problem structures and is not explicitly stated in the question due to the missing figure."
+    ]
+  },
+  {
+    "question_id": 6618,
+    "question_text": "In the figure above, BD is parallel to AE. Triangle BCD is a right triangle with BC = 3 and BD = 4. ...",
+    "issues": [
+      "The question refers to 'the figure above' but no image is provided, making the question incomplete and ambiguous.  A geometry question, especially on the SAT, requires a figure for clarity.",
+      "While the description 'Triangle BCD is a right triangle' is given, the location of the right angle is not explicitly stated. This could lead to different interpretations, although assuming angle CBD is the right angle leads to the provided correct answer.",
+      "Without the figure, the relative positions of points A, B, C, D, and E are not definitively established, requiring assumptions about collinearity (C, B, A and C, D, E) and the configuration of parallel lines BD and AE to solve the problem."
+    ]
+  }
+]

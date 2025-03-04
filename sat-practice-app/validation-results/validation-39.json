@@ -1,0 +1,647 @@
+[
+  {
+    "question_id": 107957,
+    "question_text": "Botanists have been studying the biodiversity of the Amazon rainforest for decades.  New research su...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and effectively tests subject-verb agreement and tense consistency within a sentence. \n\n1. **Clarity and Sense:** The sentence is clear, concise, and makes logical sense. It presents a straightforward idea about new research findings regarding the Amazon rainforest floor.\n\n2. **Correct Answer (A - harbors):** Option A, 'harbors,' is indeed the correct answer. It is the simple present tense, which is appropriate here because the sentence describes a general characteristic or current understanding based on 'new research suggests.'  'The rainforest floor harbors' correctly conveys that it contains or shelters the ecosystem.\n\n3. **Incorrect Options (B, C, D):**\n    * **B. is harboring:** While grammatically correct, 'is harboring' (present continuous) implies an ongoing action or a temporary state.  In this context, it's less precise than the simple present 'harbors' which describes a more permanent or inherent characteristic of the rainforest floor.  It's not as strong a choice as A in conveying the intended meaning of the sentence.\n    * **C. harbored:** 'Harbored' (past tense) is incorrect because the sentence is framed in the present tense ('New research suggests'). Using past tense would imply that the rainforest floor *used to* harbor the ecosystem, but no longer does, or that the research discovered something about the past, which is not the intended meaning. The present tense is needed to align with 'suggests' and describe a current understanding.\n    * **D. will harbor:** 'Will harbor' (future tense) is incorrect because it implies that the rainforest floor *will in the future* harbor the ecosystem. This doesn't fit the context of 'new research suggests' which is about a current discovery or understanding of the present state of the rainforest floor.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question.\n\n5. **Difficulty Level (Easy):** The difficulty level 'Easy' is appropriate. The question tests a fundamental concept of verb tense and agreement, which is typically covered in early stages of English language learning and is considered a basic skill tested on the SAT Reading & Writing section."
+    }
+  },
+  {
+    "question_id": 906748,
+    "question_text": "The renowned art museum prides itself on the breadth of its collection. Visitors to the museum are o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is grammatically correct, clear, and makes sense. Option A, 'its,' is the correct answer because it is the possessive pronoun needed to modify 'diverse range,' indicating possession by the art museum. Options B ('it's'), C ('its''), and D ('it's'') are all incorrect. 'It's' is a contraction of 'it is' or 'it has' and not a possessive pronoun. 'Its'' and 'it's'' are not standard English possessive forms and are grammatically incorrect. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of possessive pronouns versus contractions, which is a basic grammar skill assessed on the SAT."
+    }
+  },
+  {
+    "question_id": 109974,
+    "question_text": "The Rhythmic Roots, a band known for their energetic performances, are a group of talented musicians...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. Option A, 'get', is the correct answer because it creates the grammatically correct and idiomatic phrase 'get ready', which fits the context of the sentence. Options B ('gotten') and C ('getting') are incorrect because they require auxiliary verbs (like 'have' or 'are') to be grammatically correct in this sentence structure. Option D ('got'), while grammatically possible, is less idiomatic and implies a completed action in the past, whereas 'get ready' in the base form is more general and fits the context of preparing for concerts when a venue is booked. The difficulty level 'Easy' is appropriate as the question tests a basic understanding of verb forms and idiomatic expressions."
+    }
+  },
+  {
+    "question_id": 228174,
+    "question_text": "The novel \\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as the title of the novel is missing. This lack of context makes the question feel unfinished and less clear than it could be. While 'The novel' as a subject is present, a complete sentence would include the novel's title to provide full context.",
+        "While option B ('is') is grammatically correct for the subject 'The novel' in isolation, the missing context could potentially lead to ambiguity in a real test scenario.  Without knowing the full sentence, we are assuming a simple present tense context.",
+        "The phrase 'No image' is unclear and irrelevant to the grammatical question. It should be removed as it adds no value and might be confusing.",
+        "Although options A, C, and D are grammatically incorrect for the singular subject 'The novel' in a simple present tense context, the lack of a complete sentence makes it slightly less definitively clear why they are wrong in a real-world scenario.  In a complete sentence, the incorrectness would be even more obvious."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is testing subject-verb agreement. 'The novel' is a singular subject and requires a singular verb. Option B, 'is', is the only singular present tense verb among the options that agrees with 'The novel'. Options A ('are') and D ('have been') are plural forms, and option C ('were') is a singular past tense form. While grammatically option B is correct for the provided fragment, the question is incomplete due to the missing novel title and the extraneous 'No image' text. A complete SAT question would provide a full sentence or clause for context. Despite these issues, the core grammatical concept being tested is valid, and option B remains the grammatically correct answer based on the provided information. The difficulty level 'Easy' is appropriate for subject-verb agreement questions."
+    }
+  },
+  {
+    "question_id": 559809,
+    "question_text": "In 1776, the Declaration of Independence was signed, marking a pivotal moment in American history.  ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear and grammatically sound. Option C, 'will explore,' is the correct answer because it logically fits the context of academic analysis. The phrase 'later chapters of their analyses' indicates a future action in relation to the structure of their written work. Scholars plan to address the document's influence in subsequent parts of their analysis. Options A, B, and D are less suitable: 'had explored' (A) implies a past action completed before another past action, which doesn't fit the forward-looking context of 'later chapters'; 'have explored' (B) suggests a present perfect action, which is less precise than the future tense in this context; and 'are exploring' (D) implies an ongoing action at the present moment, which is also less fitting than the future tense indicating planned content for later chapters. The difficulty level 'Easy' is appropriate as the question tests basic understanding of verb tenses and contextual clues."
+    }
+  },
+  {
+    "question_id": 269501,
+    "question_text": "Renowned for her innovative approach to vegan baking, pastry chef Anya Sharma carefully _____ each s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. Option D, 'blends,' is the correct answer because it is the only option that correctly uses the simple present tense and agrees with the singular subject 'Anya Sharma.' The sentence describes a general or habitual action, making the simple present tense appropriate. Options A, B, and C are grammatically incorrect due to incorrect verb tense or subject-verb agreement."
+    }
+  },
+  {
+    "question_id": 715489,
+    "question_text": "Examples of modern architecture, from the Guggenheim Museum Bilbao to the Sydney Opera House to the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is grammatically sound and clearly written. The subject of the sentence is 'Examples,' which is plural. Therefore, the verb must also be plural. Option B, 'showcase,' is the only option that provides the correct plural, present tense verb form to agree with the plural subject 'Examples.' Options A and C use singular verb forms ('showcases' and 'is showcasing'), which do not agree with the plural subject. Option D, 'have showcased,' while grammatically plural, uses the present perfect tense, which is less appropriate in this context than the simple present tense 'showcase' for describing a general characteristic of these examples of modern architecture.  The difficulty level 'Easy' is appropriate as subject-verb agreement is a fundamental grammar concept tested on the SAT."
+    }
+  },
+  {
+    "question_id": 163775,
+    "question_text": "During the early 20th century, as aviation technology rapidly advanced, Bessie Coleman faced signifi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is grammatically sound and clearly written. Option C, 'to obtain,' correctly completes the sentence by using the infinitive form after 'the first African American woman,' indicating purpose or result. Options A ('obtaining'), B ('obtained'), and D ('obtains') are grammatically incorrect in this context. Option A creates a participle phrase that doesn't fit, Option B uses a past participle incorrectly, and Option D uses present tense which is inconsistent with the past tense context of the sentence. The difficulty level is appropriately marked as 'Easy' as it tests a fundamental concept of verb forms and sentence structure."
+    }
+  },
+  {
+    "question_id": 315152,
+    "question_text": "The newly renovated community center, a hub for local artists and workshops, _______________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and grammatically sound. It tests subject-verb agreement, a fundamental concept in Standard English Conventions. The subject of the sentence is 'The newly renovated community center,' which is singular. Therefore, the verb must also be singular. Option C, 'offers,' is the only option that provides the correct singular form of the verb in the simple present tense, which is appropriate for describing a general function of the community center. Options A ('offer'), B ('are offering'), and D ('have offered') are all incorrect because they use plural verb forms or inappropriate tenses that do not agree with the singular subject or the intended meaning of the sentence. The difficulty level 'Easy' is appropriate as subject-verb agreement is a basic grammar skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 531218,
+    "question_text": "The long-term success of any startup often hinges on _______________________________________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is grammatically sound and clearly written. Option A, 'a company's', is the correct answer because it uses the singular possessive form to correctly modify 'ability' in the context of 'any startup'.  Options B ('companies') and D ('a company') are grammatically incorrect as they do not use the possessive form. Option C ('companies'') is grammatically correct as a plural possessive, but it is contextually less appropriate than 'a company's' because the sentence refers to 'any startup' in the singular, suggesting a focus on the ability of a single company rather than multiple companies collectively. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of possessive apostrophes."
+    }
+  },
+  {
+    "question_id": 26843,
+    "question_text": "During his groundbreaking research in the 1920s, Edwin Hubble, an American astronomer, meticulously ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It provides context about Edwin Hubble's research and asks for the most appropriate verb to complete the sentence describing his action of reaching a conclusion based on his measurements. \n\n2. **Correct Answer (D. concluded):** Option D, 'concluded,' is indeed the correct answer. It is grammatically correct in the past tense, aligning with the past tense verbs 'analyzed' and 'measured' in the sentence. It logically completes the sentence, indicating that Hubble reached a conclusion ('that these nebulae were actually galaxies moving away from Earth') based on his redshift measurements.\n\n3. **Incorrect Options (A, B, C):**\n    * **A. to conclude:** While grammatically possible, 'to conclude' as an infinitive is less direct and less idiomatic in this context. It creates a slightly awkward phrasing compared to the simple past tense 'concluded'.\n    * **B. concluding:** 'Concluding' as a present participle could technically fit grammatically, but it would imply a continuous or ongoing action simultaneous with 'measured,' which doesn't best represent the sequence of research leading to a conclusion. It's less precise than the simple past tense.\n    * **C. concludes:** 'Concludes' is in the present tense, which is incorrect because the sentence is clearly referring to past research ('in the 1920s,' 'analyzed,' 'measured'). The tense mismatch makes this option clearly incorrect.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question.\n\n5. **Difficulty Level (Easy):** The difficulty level 'Easy' is appropriate. The question tests a basic understanding of verb tense and sentence structure, which is a fundamental skill assessed in the SAT Reading & Writing section. The context is also relatively straightforward and accessible."
+    }
+  },
+  {
+    "question_id": 63188,
+    "question_text": "Researchers studying ancient artifacts discovered a collection of clay tablets. These tablets were i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Option A, 'their,' is the correct answer because it is the plural possessive pronoun that correctly refers to 'tablets.' Options B ('its'), C ('his'), and D ('her') are incorrect because they are singular possessive pronouns and do not agree with the plural noun 'tablets.' The question is clearly written, grammatically sound, and appropriately categorized as 'Easy' due to its focus on basic pronoun agreement."
+    }
+  },
+  {
+    "question_id": 452356,
+    "question_text": "Attributed to the ancient Greek mathematician Pythagoras, the Pythagorean theorem, relating the side...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option A ('is') is also a grammatically correct and logically sound option, making the question ambiguous. While option D ('has been') might be slightly preferable due to the emphasis on duration implied by 'for millennia,' option A is not clearly incorrect. This makes the question potentially flawed as it may not have a single, definitively correct answer, or the distinction is too subtle for an 'easy' level question."
+      ],
+      "correct_answer": "D",
+      "explanation": "While option D ('has been') is marked as correct and is a grammatically sound and logically reasonable answer, option A ('is') is also a very strong contender.  'Is' in this context is also grammatically correct and conveys a similar meaning, stating a current truth that has been valid for a long time.  The sentence 'Attributed to the ancient Greek mathematician Pythagoras, the Pythagorean theorem, relating the sides of a right triangle, is a cornerstone of geometry for millennia' is perfectly acceptable English.  While 'has been' might slightly emphasize the duration implied by 'for millennia,' the difference is very subtle and doesn't make 'is' clearly incorrect. For an 'easy' level SAT question, the distinction between these two options is too nuanced, and the question should ideally have a single, clearly correct answer and clearly incorrect distractors.  Options B ('will be') and C ('had been') are less fitting: 'will be' implies a future state, which doesn't align well with 'for millennia,' and 'had been' suggests the theorem is no longer necessarily a cornerstone, which is also not the intended meaning. However, the strong plausibility of option A as a correct answer makes the question flawed in its design for a single best answer scenario."
+    }
+  },
+  {
+    "question_id": 347944,
+    "question_text": "In a 2023 study published in *The Astrophysical Journal*, Dr. Anya Sharma and her team found that th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It describes a scientific finding from a study and asks for the correct verb form to complete the sentence. The context is easily understandable. \n\n2. **Correct Answer:** Option C, 'exhibited', is indeed the correct answer. The sentence describes a finding from a study conducted in the past (2023). The verb needs to be in the simple past tense to align with 'found'. 'Exhibited' correctly indicates the action of showing or displaying high levels of methane in the past, as discovered by the study.\n\n3. **Incorrect Options:**\n    * **A. exhibiting:** This is the present participle form. It would be incorrect in this context without a helping verb (like 'was' or 'is').  Using 'exhibiting' alone creates a sentence fragment or an awkward construction after 'found that'.\n    * **B. to exhibit:** This is the infinitive form. It does not fit grammatically in this sentence structure after 'found that'.  Infinitives are typically used for purpose, after certain verbs, or as nouns, none of which apply here.\n    * **D. has exhibited:** This is the present perfect tense. While grammatically correct in some contexts, it implies an action that started in the past and continues to the present or has present relevance. In the context of a study's findings in 2023, the simple past 'exhibited' is more direct and appropriate to describe what the study *found* at that time. The simple past tense is the most natural and concise choice to describe a completed action in the past, which is the discovery made by the study.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically sound, and the options are presented clearly.\n\n5. **Difficulty Level:** The difficulty level is appropriately marked as 'Easy'. This question tests a fundamental concept of verb tense agreement, which is expected to be understood at the SAT level, especially within the 'Standard English Conventions' category."
+    }
+  },
+  {
+    "question_id": 750025,
+    "question_text": "Economists noted that if consumers _________________________________________________________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is grammatically correct and clearly written. The sentence is a conditional statement in the past unreal conditional form. The 'if' clause describes a hypothetical past action (consumers curtailing spending habits), and the main clause describes the hypothetical past consequence (the recession might have been less severe).  \n\nOption B, 'had curtailed,' is the correct answer because it uses the past perfect tense, which is required in the 'if' clause of a past unreal conditional sentence. This tense correctly indicates a hypothetical action that did not happen in the past.\n\nOption A, 'curtail,' uses the simple present tense, which is not appropriate for a past unreal conditional. It would be more suitable for a present or future conditional.\n\nOption C, 'will curtail,' uses the future tense, which is also inappropriate for a past unreal conditional. It suggests a future action influencing a past event, which is illogical in this context.\n\nOption D, 'are curtailing,' uses the present continuous tense, which, like option A, is not suitable for a past unreal conditional. It suggests an ongoing present action influencing a past event, which is also illogical.\n\nTherefore, option B is the only grammatically correct and logically coherent option. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of verb tense agreement in conditional sentences, which is expected knowledge for SAT level."
+    }
+  },
+  {
+    "question_id": 885271,
+    "question_text": "The discovery of penicillin revolutionized medicine.  However, many of the _ early experiments were ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Option C, while marked as correct, is not the most natural or precise phrasing. 'Scientists' early experiments' (plural possessive) would be more grammatically natural and contextually appropriate. However, among the given options, C is the most grammatically sound and likely intended correct answer. Option D, while more natural sounding to some, lacks the possessive apostrophe and is technically less grammatically correct in formal writing."
+      ],
+      "correct_answer": "C",
+      "explanation": "Option C, 'scientist's early experiments', is marked as correct. While grammatically valid, it implies experiments belonging to a single scientist, which is slightly less natural in the context of 'many of the _ early experiments'. A more natural phrasing would be 'scientists' early experiments' (plural possessive). However, among the given options, C is the most grammatically sound. Options A and B are incorrect due to number disagreements and incorrect possessive forms. Option D, 'scientists early experiments', is grammatically questionable due to the missing possessive apostrophe, although it is closer to the intended meaning than options A and B.  Therefore, Option C is the best answer among the choices provided, likely testing the understanding of singular possessive forms."
+    }
+  },
+  {
+    "question_id": 568482,
+    "question_text": "Researchers studying the impact of artificial light on nocturnal wildlife have observed that increas...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 425. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-written. \\n1. **Clarity and Sense:** The question makes perfect sense and is clearly written..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 934652,
+    "question_text": "Botanical gardens play a crucial role in conservation efforts.  These gardens, acting as living labo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. Option A, 'showcase,' is the correct answer because it is the simple present tense, plural form of the verb, which agrees with the plural subject 'These gardens.'  \n\nOption B, 'showcases,' is incorrect due to subject-verb disagreement; it is the singular form of the verb and does not agree with the plural subject 'These gardens.'\n\nOption C, 'is showcasing,' while grammatically possible, is less concise and less direct than the simple present tense 'showcase' in describing a general, ongoing function of botanical gardens. The simple present tense is generally preferred for describing habitual actions or general truths, which aligns better with the context of botanical gardens' role.\n\nOption D, 'has showcased,' is also grammatically possible, but it implies a completed action with present relevance, which is less fitting than the simple present tense 'showcase' for describing an ongoing, typical function.  Similar to option C, it is less concise and direct than option A in this context.\n\nTherefore, option A is the most grammatically correct and contextually appropriate choice. The difficulty level 'Easy' is appropriate as the question primarily tests basic subject-verb agreement."
+    }
+  },
+  {
+    "question_id": 33929,
+    "question_text": "Bioluminescence, the production of light by living organisms, is a fascinating phenomenon.  Fireflie...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity:** The question is clear and easy to understand. It provides context about bioluminescence and sets up a sentence completion task effectively.\n2. **Correct Answer:** Option A, 'it', is indeed the correct answer. 'It' is a singular pronoun that correctly refers back to the singular noun 'bioluminescence'.  The sentence logically flows as 'understanding bioluminescence may lead to breakthroughs'.\n3. **Incorrect Options:** Options B, C, and D are clearly incorrect. 'Them', 'these', and 'those' are all plural pronouns and do not agree with the singular noun 'bioluminescence'. Using any of these options would create a grammatically incorrect and illogical sentence.\n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The sentence structure is sound, and the punctuation is correct.\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The question tests a basic understanding of pronoun-antecedent agreement, a fundamental concept in English grammar typically considered easy for SAT level questions."
+    }
+  },
+  {
+    "question_id": 427593,
+    "question_text": "In mathematics, Fermat's Last Theorem, after being conjectured by Pierre de Fermat in 1637, ________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It tests subject-verb agreement and tense in the context of a historical fact about Fermat's Last Theorem. The sentence structure is straightforward and easy to understand.\n\n2. **Correct Answer:** Option C, 'was', is indeed the correct answer. The subject of the sentence is 'Fermat's Last Theorem', which is singular. The sentence describes an event in the past (conjectured in 1637 and proven in 1994), requiring a past tense verb. 'Was' is the singular past tense form of 'to be', correctly agreeing with the singular subject and fitting the past tense context.\n\n3. **Incorrect Options:** Options A, B, and D are clearly incorrect:\n    * **A. have been:** This is present perfect tense and plural form, which does not agree with the singular subject 'Fermat's Last Theorem' and the simple past context indicated by 'finally proven in 1994'.\n    * **B. were:** This is past tense but plural form, which does not agree with the singular subject 'Fermat's Last Theorem'.\n    * **D. are:** This is present tense and plural form, which does not agree with the singular subject 'Fermat's Last Theorem' and the past context of the sentence.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically sound, and the formatting is standard for a multiple-choice question.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. Subject-verb agreement and basic past tense are fundamental grammar concepts typically tested at an 'Easy' level on the SAT."
+    }
+  },
+  {
+    "question_id": 116599,
+    "question_text": "Researchers have studied various factors affecting sleep quality. One factor, the use of electronic ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is grammatically sound and clearly written. The sentence requires a singular present tense verb to agree with the singular subject 'use' (from 'the use of electronic devices'). Option D, 'tends,' is the correct singular present tense form of the verb 'to tend' and fits logically within the sentence. Options A, B, and C are incorrect because they do not provide the grammatically correct verb form for subject-verb agreement in this context. 'Tending' (A) is a present participle and needs a helping verb to function as the main verb. 'To tend' (B) is an infinitive and does not function as the main verb in this sentence structure. 'Tend' (C) is the plural present tense form and does not agree with the singular subject 'use'. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of subject-verb agreement."
+    }
+  },
+  {
+    "question_id": 438496,
+    "question_text": "Recognizing the limitations of his current role at the tech startup, David resigned from his positio...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Option A, 'to enroll,' is the correct answer because it creates a grammatically correct and logically coherent sentence. The infinitive phrase 'to enroll' functions as an adverbial phrase of purpose, explaining why David resigned. Options B, C, and D are incorrect because they do not fit grammatically or logically in the sentence. 'Enrolling' (B) is a present participle and doesn't express the purpose of resigning. 'Enrolled' (C) is past participle/past tense and doesn't make sense as a direct continuation of 'resigned.' 'Enrolls' (D) is present tense, third person singular, which is also grammatically incorrect and illogical in this context. The difficulty level 'Easy' is appropriate as the question tests a fundamental understanding of verb forms and sentence structure."
+    }
+  },
+  {
+    "question_id": 3905,
+    "question_text": "While conventional ovens rely on heating elements to warm the air inside, microwave ovens use electr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The sentence requires a present tense verb that agrees with the plural subject 'culinary purists'. Option A, 'argue', is the correct present tense verb form. Options B, C, and D are incorrect because they do not fit grammatically or semantically in the sentence. 'Arguing' is a present participle and would require a helping verb. 'To argue' is an infinitive and doesn't function as the main verb in this context. 'Having argued' is a perfect participle, suggesting a completed action in the past, which doesn't fit the ongoing nature of the purists' opinion. The difficulty level 'Easy' is appropriate as it tests a basic understanding of subject-verb agreement and verb tense in a straightforward context."
+    }
+  },
+  {
+    "question_id": 455901,
+    "question_text": "In 1953, James Watson and Francis Crick published their model of DNA. This discovery built upon the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. Option D, 'had collected,' is the correct answer because it uses the past perfect tense to indicate an action (Franklin collecting data) that was completed before another action in the past (Watson and Crick's publication in 1953). This accurately reflects the historical timeline. Options A, B, and C are incorrect because they use verb tenses that do not logically fit the chronological context. 'Is collecting' (present continuous) and 'collects' (simple present) imply the data collection is happening at the same time or after the publication, which is incorrect. 'Will collect' (future) is also incorrect as it places the data collection after the publication. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of verb tense usage in a clear and straightforward context."
+    }
+  },
+  {
+    "question_id": 780795,
+    "question_text": "Many ancient cultures relied on celestial bodies for navigation and timekeeping. The position of the...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. Option C, 'moves,' is the correct answer because it uses the simple present tense, which is appropriate for describing a general, timeless principle of how sundials work. The sentence describes the purpose of sundials and how they function based on the sun's shadow. The simple present tense 'moves' accurately reflects this general and ongoing action. Options A ('is moving'), B ('moved'), and D ('has moved') are incorrect because they use verb tenses that do not fit the context of describing a general principle. 'Is moving' (present continuous) suggests an action happening right now, which is less suitable for a general description. 'Moved' (simple past) is past tense and doesn't align with the timeless nature of how sundials function. 'Has moved' (present perfect) implies an action completed up to the present, which is also less fitting than the simple present tense for describing a general mechanism. The question is clear, grammatically sound, and appropriately categorized as 'Easy' for SAT level as it tests basic verb tense understanding."
+    }
+  },
+  {
+    "question_id": 570229,
+    "question_text": "With its enigmatic smile and soft sfumato technique, the Mona Lisa is one of the most recognizable p...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question, as presented, is a sentence fragment. The second part of the sentence, 'However, many people are unaware that painted by Leonardo da Vinci in the early 16th century,' is grammatically incomplete and lacks a subject and verb to form a complete clause.",
+        "While option A ('it was') does grammatically complete the sentence and is the intended correct answer, the original sentence structure is flawed and relies on the test-taker to recognize and correct a pre-existing grammatical error rather than simply identifying the correct word choice within a grammatically sound sentence.",
+        "Option B ('she has been') is grammatically incorrect in this context. 'She' could refer to the Mona Lisa, but 'has been painted' implies a present perfect passive voice, suggesting an ongoing or recently completed action, which is not appropriate for describing a historical painting. 'Was painted' (simple past passive) is more suitable.",
+        "Option C ('they were') is incorrect because 'they' is plural and does not agree with the singular subject 'Mona Lisa'.",
+        "Option D ('one is') is grammatically awkward and less precise than 'it was'. 'One' is vague and doesn't clearly refer back to 'Mona Lisa' as effectively as 'it'. Additionally, 'is painted' (present simple passive) is less appropriate than 'was painted' (simple past passive) for describing a historical event."
+      ],
+      "correct_answer": "A",
+      "explanation": "The original sentence is a fragment. Option A, 'it was,' correctly completes the sentence by providing the necessary subject and verb to form a grammatically sound clause: 'However, many people are unaware that it was painted by Leonardo da Vinci in the early 16th century.'  'It' refers to the Mona Lisa, and 'was painted' is the correct simple past passive tense to describe a historical event. Options B, C, and D are grammatically incorrect or contextually inappropriate within the sentence."
+    }
+  },
+  {
+    "question_id": 304830,
+    "question_text": "Dr. Anya Sharma is a plant biologist. This means that Dr. Sharma doesn't just observe plants in thei...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes logical sense. The sentence explains what a plant biologist does beyond observing plants in natural habitats, stating that Dr. Sharma uses advanced imaging techniques for a specific purpose. Option B, 'to observe,' correctly completes the sentence by indicating the purpose of using advanced imaging techniques – to observe cellular structures in detail. This creates a clear and grammatically correct infinitive phrase indicating purpose. Options A, C, and D are incorrect. Option A, 'observing,' could be interpreted as a participial phrase, but it is less precise and slightly awkward compared to the infinitive 'to observe' in conveying purpose. Option C, 'observed,' is grammatically incorrect in this context as it creates a past tense verb where an infinitive is needed. Option D, 'observes,' creates a run-on sentence with two main verbs ('uses' and 'observes') without proper conjunction. The difficulty level 'Easy' is appropriate as the question tests a fundamental understanding of infinitives and sentence structure, which is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 72710,
+    "question_text": "In early astronomical studies of the night sky, nebulae, once mysterious and poorly understood, ____...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and well-written. \n1. **Clarity:** The sentence is clear and easy to understand. The context of 'early astronomical studies' provides a clear timeframe for the verb tense.\n2. **Correct Answer:** Option D, 'were,' is indeed the correct answer. The subject 'nebulae' is plural, and the phrase 'In early astronomical studies' establishes a past tense context. Therefore, the plural past tense verb 'were' is grammatically correct and contextually appropriate.\n3. **Incorrect Options:**\n    * **A. is:** Incorrect because 'is' is singular and present tense, not agreeing with the plural subject 'nebulae' and the past tense context.\n    * **B. was:** Incorrect because 'was' is singular, not agreeing with the plural subject 'nebulae,' although it is past tense.\n    * **C. are:** Incorrect because 'are' is present tense, which clashes with the past tense context established by 'In early astronomical studies.' While 'nebulae are vast clouds' is a generally true statement in the present, the sentence specifically refers to the understanding *during early studies*, making the past tense 'were' more appropriate.\n4. **Grammatical/Formatting Issues:** There are no grammatical or formatting issues.\n5. **Difficulty Level:** The 'Easy' difficulty level is appropriate. The question tests basic subject-verb agreement and tense consistency, which are fundamental grammar concepts typically considered easy on the SAT."
+    }
+  },
+  {
+    "question_id": 277120,
+    "question_text": "To mitigate the effects of urban heat islands, many cities are increasing their green spaces by plan...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and effectively tests Standard English Conventions, specifically sentence structure and verb forms. Option A, 'generating,' is the correct answer because it forms a participial phrase that smoothly and logically connects to the preceding clause, indicating the result of 'planting trees and creating parks.' This creates a concise and grammatically correct sentence. Options B, C, and D are incorrect because they create run-on sentences or introduce unnecessary subjects ('this' or 'it') that disrupt the sentence's flow and grammatical structure. 'This generates,' 'generates,' and 'it generates' would all require a conjunction or different sentence construction to be grammatically correct in this context. The difficulty level is appropriately marked as 'Easy' because it tests a fundamental concept of participial phrases and sentence combining, which is expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 911484,
+    "question_text": "Although massive by today's standards, ENIAC, one of the first electronic computers, ______ approxim...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is grammatically sound and clearly written. Option D, 'used,' is the correct answer because it is the simple past tense verb that correctly and concisely describes a past characteristic of ENIAC. The sentence describes historical facts about ENIAC, making the past tense appropriate. \n\nOption A, 'to be using,' is incorrect because it's an infinitive phrase that doesn't fit grammatically within the sentence structure. It creates an awkward and incomplete clause.\n\nOption B, 'using,' is incorrect because it's a present participle, creating a sentence fragment. It lacks a main verb to complete the clause and doesn't align with the past tense context of describing historical facts about ENIAC.\n\nOption C, 'uses,' is incorrect because it's in the present tense.  ENIAC is a historical artifact, and the sentence describes its past characteristics. Using the present tense 'uses' would be grammatically incorrect and contextually inappropriate.\n\nThe difficulty level 'Easy' is appropriate as the question tests a fundamental understanding of verb tense and sentence structure, which is expected at an early stage of SAT preparation."
+    }
+  },
+  {
+    "question_id": 28154,
+    "question_text": "The latest research study on the effects of blue light on sleep ______ compelling evidence suggestin...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and effectively tests subject-verb agreement. \n\n1. **Clarity and Sense:** The question is clearly written and makes sense. It presents a sentence with a blank space where a verb is needed to agree with the subject 'The latest research study'.\n\n2. **Correct Option (A):** Option A, 'provides', is indeed the correct answer. The subject 'The latest research study' is singular, and 'provides' is the singular present tense form of the verb 'to provide', correctly agreeing with the subject. The sentence 'The latest research study on the effects of blue light on sleep provides compelling evidence suggesting a link between increased screen time and insomnia' is grammatically sound and logically coherent.\n\n3. **Incorrect Options (B, C, D):**\n    * **B. providing:** 'Providing' is a present participle. Using 'providing' alone creates a sentence fragment. It needs a helping verb (like 'is providing' or 'was providing') to function as the main verb of the sentence. Without a helping verb, it acts as a modifier, which doesn't fit the sentence structure.\n    * **C. to provide:** 'To provide' is an infinitive form of the verb. It cannot function as the main verb in this sentence structure. Using 'to provide' would create an awkward and grammatically incorrect sentence in this context.\n    * **D. provided:** 'Provided' is the simple past tense form of the verb. While grammatically possible in some contexts, the present tense 'provides' is more appropriate here. The sentence is about the current state of research findings, and present tense is typically used to describe current or generally accepted findings.  'Provides' is a stronger and more direct fit for the sentence's intended meaning in the context of reporting research results. For SAT purposes, 'provides' is definitively the best and most natural choice.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues with the question.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is appropriate. The question tests a fundamental concept of subject-verb agreement, which is considered a basic grammar skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 132125,
+    "question_text": "The advent of digital photography in the late 20th century dramatically changed the field.  Prior to...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The sentence establishes a contrast between the current state of digital photography and the past process of traditional photography 'prior to this technological shift'.  The correct answer is 'C. was' because it is the simple past tense, which accurately reflects the time frame described ('prior to'). Option A 'is' is incorrect because it is present tense and doesn't align with the past context. Option B 'has been' is also incorrect; while it refers to the past, it implies a state that continues to the present or has present relevance, which is not the intended meaning in this context of contrasting past and present methods. Option D 'will be' is incorrect as it is future tense and completely contradicts the 'prior to' timeframe.  All other options are clearly incorrect, and there are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it tests a fundamental understanding of verb tense agreement in a clear and straightforward context."
+    }
+  },
+  {
+    "question_id": 976924,
+    "question_text": "Dr. Mae Jemison was the first African American woman to travel to space, embarking on the Space Shut...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A, 'Her,' is the correct possessive pronoun to refer to Dr. Mae Jemison, a singular female. Options B ('Their') is incorrect because it is plural, Option C ('It's') is a contraction and not a possessive pronoun, and Option D ('His') is incorrect because it is masculine. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the question tests a basic concept of possessive pronoun agreement."
+    }
+  },
+  {
+    "question_id": 831417,
+    "question_text": "Contemporary research into the effects of social media on adolescent mental health ________ a comple...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It presents a sentence with a blank space where a verb is needed, and the context clearly indicates that the sentence is about the current state of research. \n\n2. **Correctness of Marked Answer (B. presents):** Option B, 'presents,' is indeed the correct answer. The subject of the sentence is 'Contemporary research,' which is singular. Therefore, the verb must also be singular to maintain subject-verb agreement. 'Presents' is the singular form of the verb 'to present' in the simple present tense, which accurately fits the context of describing the current state of research.\n\n3. **Incorrectness of Other Options:**\n    * **A. present:** This option is incorrect because 'present' is the plural form of the verb. It does not agree with the singular subject 'Contemporary research.'\n    * **C. are presenting:** This option is incorrect because 'are presenting' is the plural present continuous tense. It does not agree with the singular subject and implies an ongoing action at this very moment, which is not the intended meaning of describing the general state of research. \n    * **D. have presented:** This option is incorrect because 'have presented' is the plural present perfect tense. While grammatically closer to being correct than A or C, it still uses the plural form 'have' and is less concise and direct than the simple present 'presents' for describing the current state of research. The simple present tense is generally preferred for stating facts or general truths, which aligns with describing what contemporary research shows.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is grammatically sound, and the options are clearly presented.\n\n5. **Difficulty Level (Easy):** The difficulty level 'Easy' is appropriate. The question tests a fundamental concept of subject-verb agreement, which is a basic grammar skill expected at the SAT level, especially within the 'Standard English Conventions' category. The sentence structure is straightforward, and the subject is easily identifiable."
+    }
+  },
+  {
+    "question_id": 476902,
+    "question_text": "In binary code, the number two represented as '10'. However, in the standard decimal system, two ___...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and grammatically sound. It effectively tests subject-verb agreement in a straightforward sentence. The subject 'two' in the context of representing a number is singular, thus requiring the singular verb 'is'. Option A, 'is', is the correct answer. Options B ('being'), C ('to be'), and D ('are') are grammatically incorrect in this sentence structure. The difficulty level is appropriately marked as 'Easy' as it tests a fundamental concept of Standard English Conventions."
+    }
+  },
+  {
+    "question_id": 139535,
+    "question_text": "The development of sophisticated artificial intelligence models has dramatically transformed various...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and clearly written. The sentence employs parallel structure, listing actions that artificial intelligence models have performed. 'Streamlined' and 'enhanced' are both past participles functioning as verbs in this parallel structure. Therefore, the blank also requires a past participle to maintain parallelism. Option B, 'uncovered,' is the only past participle among the choices and correctly completes the parallel structure: 'streamlined...enhanced...and uncovered.' Options A, C, and D are grammatically incorrect in this context because they do not maintain the parallel structure of past participles. Option A ('uncovering') is a present participle, Option C ('to uncover') is an infinitive, and Option D ('having uncovered') is a perfect participle. While Option A could be argued as grammatically possible in a slightly different sentence construction, in the context of parallel structure with 'streamlined' and 'enhanced', Option B is clearly the most grammatically sound and stylistically appropriate choice. The difficulty level of 'Medium' is appropriate as it tests understanding of parallel structure and verb tense consistency, which are standard SAT grammar concepts."
+    }
+  },
+  {
+    "question_id": 765385,
+    "question_text": "Despite being often associated with recent technological advancements, __________________ as far bac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 221. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-structured. \\n\\n1. **Clarity:** The question is clearly written and makes sense. The sentenc..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 837888,
+    "question_text": "Recent studies have shown a correlation between increased screen time and decreased attention spans ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. its) is not the most contextually appropriate answer. Option B (their) is a stronger and more natural choice in this context.",
+        "While option A (its) can be grammatically interpreted, it is less clear and direct in its reference compared to option B (their).",
+        "Option D (one's) is grammatically correct but less specific and less directly related to the subject 'adolescents' which is central to the passage."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question tests the understanding of pronoun agreement and contextual appropriateness. The sentence discusses the impact of technology on 'adolescents' and their 'cognitive skills,' specifically 'ability to focus.'  The blank requires a possessive pronoun to modify 'ability to focus.'Option A, 'its,' is marked as correct, but it is contextually weak. 'Its' would typically refer to a singular, non-personal noun. While grammatically it could vaguely refer to 'technology integration' or 'learning outcomes' in a general sense, it doesn't directly and clearly connect to the subject of the passage, which is the impact on 'adolescents.'Option B, 'their,' is the most contextually appropriate answer. 'Their' is a plural possessive pronoun, and it naturally refers back to 'adolescents,' the plural subject discussed throughout the passage.  The sentence is about maximizing learning outcomes without compromising *adolescents'* ability to focus.Option C, 'it's,' is incorrect because 'it's' is a contraction of 'it is' or 'it has,' not a possessive pronoun.Option D, 'one's,' is grammatically correct as a singular possessive pronoun, referring to a generic person. However, in the context of the passage focusing on 'adolescents,' 'their' is more specific and directly relevant than the generic 'one's.' While 'one's' isn't grammatically wrong, 'their' is a stronger and more precise choice in this specific context.Therefore, while 'its' might be interpretable in a less direct way, 'their' is the clearest, most natural, and contextually accurate answer. The question is flawed because the marked 'correct' answer is not the best option, and 'their' should be considered the correct answer in standard English usage for this context."
+    }
+  },
+  {
+    "question_id": 65946,
+    "question_text": "While individual honeybees are incapable of complex navigation over long distances, a swarm of bees,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 549. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-structured for an SAT Standard English Conventions question. \\n\\n1. **Clarity:** The questio..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 862131,
+    "question_text": "Dr. Ramirez and colleagues at the university's biology department published groundbreaking findings ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. Option A, 'patients\\\\'', is the correct answer because it is the plural possessive form of 'patient', which correctly indicates that the DNA samples belong to multiple patients.  'Multiple' in the sentence clearly signals the need for a plural form. Option B, 'patient\\\\'s', is singular possessive and incorrect because 'multiple' implies more than one patient. Option C, 'patients', is plural but not possessive, making it grammatically incorrect in this context as it doesn't show ownership of the DNA samples. Option D, 'patient', is singular and not possessive, and also clashes with 'multiple'. The difficulty level 'Medium' is appropriate as it tests a common grammar concept of plural possessives in a straightforward context."
+    }
+  },
+  {
+    "question_id": 29710,
+    "question_text": "The recent surge in popularity of podcasts, particularly those focusing on investigative journalism,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is grammatically sound and clearly written. The subject of the sentence is 'The recent surge,' which is singular. Therefore, the verb must also be singular to maintain subject-verb agreement. Option A, 'reflects,' is the only singular verb form among the options and correctly completes the sentence, indicating that the surge in podcast popularity is the cause of the renewed interest. Options B ('are reflecting'), C ('have reflected'), and D ('reflect') are all plural verb forms and thus do not agree with the singular subject. Option B is also in the progressive tense, which is unnecessary and less appropriate in this context. Option C is in the present perfect tense, which is also less direct and less suitable than the simple present tense 'reflects'. Option D is the simple plural form, which is incorrect for a singular subject. The difficulty level of 'Medium' is appropriate as it tests a fundamental concept of subject-verb agreement within a sentence of moderate complexity."
+    }
+  },
+  {
+    "question_id": 961222,
+    "question_text": "Prior to Marie Curie _______________________________________________________________________________...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is valid and well-structured. Option B, 'commenced,' is the correct answer because it is the past tense verb that logically fits the sentence's time frame indicated by 'Prior to... in the late 19th century.' The sentence describes the state of knowledge about radioactivity *before* Marie Curie's research began. Options A ('commences'), C ('will commence'), and D ('is commencing') are incorrect because they use present or future tenses, which do not align with the past time frame established by 'Prior to... in the late 19th century.' The question is clear, grammatically sound, and the 'Medium' difficulty level is appropriate for SAT Reading & Writing, as it tests a fundamental understanding of verb tense and context."
+    }
+  },
+  {
+    "question_id": 73996,
+    "question_text": "Maya Lin’s design for the Vietnam Veterans Memorial—a stark, black granite wall inscribed with the n...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Option A, 'establishing,' is the correct answer because it creates a participial phrase that logically and grammatically connects the public's deep resonance with the memorial becoming a landmark. The participial phrase 'establishing it a landmark of American memorial architecture' modifies the preceding clause, indicating the result of the public's positive reception. \n\nOption B, 'established,' could be grammatically correct if preceded by a conjunction like 'and,' but without one, it creates a run-on sentence or a less natural phrasing. As a past participle, it doesn't flow as smoothly as the present participle in this context.\n\nOption C, 'to establish,' creates an infinitive phrase that suggests purpose ('in order to establish'), which doesn't fit the cause-and-effect relationship as well as the participial phrase. While grammatically possible, it's less direct and idiomatic.\n\nOption D, 'establish,' is grammatically incorrect as it would create a sentence fragment or an ungrammatical clause in this context. It lacks the necessary grammatical structure to connect to the preceding clause.\n\nThe difficulty level of 'Medium' is appropriate as it tests understanding of participial phrases and sentence structure, which are typical concepts assessed on the SAT."
+    }
+  },
+  {
+    "question_id": 995566,
+    "question_text": "A pivotal moment in the history of flight, _________ revolutionized air travel and military strategy...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option D is also a grammatically correct and semantically valid answer, making the question ambiguous as it implies only one correct answer. Both options A and D effectively complete the sentence and are grammatically sound.",
+        "Option B is grammatically awkward due to the placement of dashes, disrupting the natural flow of the sentence and making the subject less clear.",
+        "Option C creates a sentence fragment and is grammatically incorrect in this context. It does not form a complete and coherent sentence when inserted into the blank."
+      ],
+      "correct_answer": "A",
+      "explanation": "While option A is grammatically correct and a valid answer, option D is also grammatically correct and conveys the same meaning. Both 'the Wright brothers' first successful flight in 1903' and 'the 1903 Wright brothers' first successful flight' can be considered pivotal moments that revolutionized air travel. Option B is grammatically awkward due to the dashes, making the sentence less clear and natural. Option C is grammatically incorrect as it results in a sentence fragment.  Ideally, for a single correct answer question, only option A should be grammatically correct and semantically appropriate, while options B, C, and D should be clearly incorrect. In this case, option D's validity makes the question flawed."
+    }
+  },
+  {
+    "question_id": 83764,
+    "question_text": "Because the annual average temperature in coastal cities _________ a noticeable increase in recent y...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and effectively tests subject-verb agreement. Option C, 'indicates,' is the correct answer because the subject 'annual average temperature' is singular and requires a singular verb form in the present tense. \n\nOption A, 'indicate,' is incorrect because it is the plural form of the verb and does not agree with the singular subject.\n\nOption B, 'are indicating,' is incorrect for two reasons: it uses the plural form of the auxiliary verb 'are,' which does not agree with the singular subject, and the present continuous tense ('are indicating') is less appropriate than the simple present tense ('indicates') in this context, which describes a general trend or fact over 'recent years.'\n\nOption D, 'to indicate,' is incorrect because it is an infinitive form and does not function as the main verb of the clause. The sentence requires a conjugated verb to complete the clause grammatically.\n\nThe question is clearly written, grammatically sound (with the correct answer choice), and the medium difficulty level is appropriate for an SAT Reading & Writing question focusing on Standard English Conventions, specifically subject-verb agreement."
+    }
+  },
+  {
+    "question_id": 624017,
+    "question_text": "In the early 20th century, advancements in physics led to a groundbreaking understanding of the atom...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 38621,
+    "question_text": "The average distance from Earth to Mars, a measurement that fluctuates based on the planets' ellipti...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 983751,
+    "question_text": "Occurring in various marine organisms, from bacteria to fish, ______________________________________...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 941617,
+    "question_text": "In the late nineteenth century, the groundbreaking work of Marie Curie and her husband Pierre, parti...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 205393,
+    "question_text": "The effects of social media on teenage mental health, a subject of ongoing debate in popular media, ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 578058,
+    "question_text": "The intricate patterns of migration observed in monarch butterflies, a phenomenon that involves gene...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 365095,
+    "question_text": "Developed to withstand extreme temperatures and pressures, specialized deep-sea probes are deployed ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 756720,
+    "question_text": "In the realm of modern physics, the concept of spacetime, initially proposed by Hermann Minkowski in...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 970990,
+    "question_text": "Entomologist Erica McAlister has observed that the complex flight patterns of certain fly species, p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. \n\n1. **Clarity and Sense:** The question is clear and makes sense. It describes Erica McAlister's observation about hoverfly flight patterns and sets up a sentence completion task. The context is easy to understand, and the sentence structure is straightforward.\n\n2. **Correctness of Option A (enabling):** Option A, 'enabling,' is grammatically correct and contextually appropriate.  'Enabling' functions as a present participle modifying 'patterns,' creating a participial phrase that describes the effect of the intricate patterns.  The sentence means that these patterns *make it possible* for the flies to navigate and perform essential functions. This is a logical and grammatically sound construction.\n\n3. **Incorrectness of Other Options:**\n    * **B. enable:** While 'enable' (simple present tense) could technically fit grammatically if we consider 'patterns' as the subject and 'enable' as the verb, it is less idiomatic and slightly less precise than 'enabling' in this context. 'Enabling' emphasizes the ongoing effect and function of the patterns more dynamically.  However, 'enable' is not *clearly* incorrect, and in some contexts, it might even be preferred.  For SAT purposes, 'enabling' is likely favored because it creates a more descriptive and nuanced sentence.\n    * **C. to enable:** 'to enable' (infinitive) is grammatically incorrect in this sentence structure. It would create an awkward phrasing.  'These intricate patterns, often characterized by rapid changes... to enable the flies...' sounds less natural and doesn't fit the intended meaning as smoothly as 'enabling.'\n    * **D. having enabled:** 'having enabled' (present perfect participle) is grammatically incorrect and changes the meaning. It implies that the patterns *have already* enabled the flies in the past, and the sentence is describing a current, ongoing function. This tense is inappropriate for the context.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The sentence is well-structured, and the options are clearly presented.\n\n5. **Difficulty Level:** The difficulty level 'Hard' is appropriate. While the grammatical concept itself (verb forms and participles) is not extremely complex, choosing the most precise and idiomatic option requires careful reading and understanding of sentence structure and nuance.  Distinguishing between 'enabling' and 'enable' requires a good grasp of English conventions, making it suitable for a 'Hard' difficulty level on the SAT.\n\n**In summary:** The question is valid. Option A ('enabling') is the best and most idiomatic answer. Options C and D are clearly incorrect. Option B ('enable') is grammatically possible but less nuanced and less likely to be the intended best answer in the SAT context. The difficulty level is appropriately marked as 'Hard'."
+    }
+  },
+  {
+    "question_id": 184739,
+    "question_text": "Biologist Rachel Carson, _ _ to alert the public to the dangers of pesticide use, meticulously detai...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 163302,
+    "question_text": "By the time the Wright brothers successfully flew their airplane at Kitty Hawk in 1903, they _______...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 886382,
+    "question_text": "In 1903, years after Marie Curie's initial discoveries, the Nobel Committee _______________ her pion...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 613821,
+    "question_text": "In recent decades, rising sea surface temperatures have led to increased coral bleaching events. Cor...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  },
+  {
+    "question_id": 305072,
+    "question_text": "The ancient library of Alexandria, once a beacon of knowledge and scholarship, _____ thousands of sc...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to an error"
+    }
+  }
+]

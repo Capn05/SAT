@@ -1,0 +1,52 @@
+[
+  {
+    "question_id": 431753,
+    "question_text": "The graph of a system of linear equations is shown. The two lines intersect at a single point. What ...",
+    "issues": [
+      "Question is unsolvable without the graph image. The question text refers to a graph that is not provided."
+    ]
+  },
+  {
+    "question_id": 971780,
+    "question_text": "A system of two linear equations is graphed in the xy-plane below.  ![](_page_7_Figure_4_modified.jp...",
+    "issues": [
+      "The question is invalid because the image referenced in the question text is missing. The question asks to identify the solution to a system of linear equations based on a graph, but the graph is not provided. Without the graph, the question cannot be answered.",
+      "It is impossible to verify if option A is the correct answer or if other options are incorrect without the graph."
+    ]
+  },
+  {
+    "question_id": 110676,
+    "question_text": "If (x, y) is the solution to the given system of equations, what is the value of y?...",
+    "issues": [
+      "The question is incomplete as it does not provide the system of equations. Without the system of equations, the question cannot be solved.",
+      "Assuming the intended correct answer (C. 20) is indeed correct for some system of equations, the question is still invalid due to the missing information.",
+      "While the question structure and options are valid in format, the core content (the system of equations) is missing, making it impossible to definitively verify the correctness of the marked answer or the incorrectness of other options without guessing the intended system."
+    ]
+  },
+  {
+    "question_id": 555630,
+    "question_text": "$$\\begin{aligned} \\mathsf{Px} + \\mathsf{Qy} &= \\mathsf{R} \\\\ \\mathsf{Sx} + \\mathsf{Ty} &= c \\end{ali...",
+    "issues": [
+      "The question is not clearly written because the values or relationships of P, Q, R, S, and T are not specified. Without these values or relationships, the value of c cannot be uniquely determined.  For the system to have infinitely many solutions, the second equation must be a multiple of the first equation. This means S/P = T/Q = c/R. However, without knowing the values of P, Q, R, S, and T, or at least some relationship between them, we cannot solve for a specific numerical value of c. The question is underspecified and ambiguous.",
+      "While option A (c=6) is marked as correct, there is no information provided in the question to definitively arrive at this answer without making assumptions about the values of P, Q, R, S, and T.  For example, if we assume S=2P, T=2Q, and R=3, then for infinite solutions, c must be 2R = 6.  However, these values are not given in the problem statement, making the question flawed.",
+      "It is not possible to definitively say that options B, C, and D are clearly incorrect because the question is ambiguous. Depending on the unspecified values of P, Q, R, S, and T, other options could potentially be correct if the intended relationships were different or if there was an error in the question design.",
+      "There are no grammatical or formatting issues, but the lack of specific values for P, Q, R, S, and T is a critical issue in the question's clarity and solvability."
+    ]
+  },
+  {
+    "question_id": 80418,
+    "question_text": "A coffee shop sells two blends of coffee beans: House Blend and Premium Blend.  Let $h$ represent th...",
+    "issues": [
+      "Options A and C are identical, meaning there are two correct options provided for a single correct answer question. This violates the principle of having only one correct answer in a multiple-choice question. While option C is marked as correct and is indeed correct, option A is also correct and indistinguishable from option C. This makes the question ambiguous and potentially confusing for test-takers."
+    ]
+  },
+  {
+    "question_id": 85790,
+    "question_text": "A bakery sells two kinds of cakes: chocolate and vanilla. A chocolate cake costs $25 and a vanilla c...",
+    "issues": [
+      "The option marked as correct (A. 450) is incorrect.",
+      "None of the provided options (A, B, C, D) are correct.",
+      "The correct answer should be $300."
+    ]
+  }
+]
