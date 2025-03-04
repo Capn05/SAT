@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../../lib/supabase';
 import { CheckCircle, XCircle } from 'lucide-react';
-import AIChat from './AIChat';
+import ChatSidebar from './ChatSidebar';
 import { motion, AnimatePresence } from 'framer-motion';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
@@ -365,20 +365,38 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           ...prev,
           [currentQuestionId]: selectedOption.id
         }));
-
-        // If correct, automatically move to next question after delay
-        setTimeout(() => {
-          if (currentIndex < questions.length - 1) {
-            setCurrentIndex(currentIndex + 1);
+        
+        // Show success feedback
+        setShowFeedback(true);
+        setFeedback({
+          type: 'success',
+          message: 'Correct! Well done!'
+        });
+        
+        // Store the feedback for this question
+        setAnsweredFeedback(prev => ({
+          ...prev,
+          [currentQuestionId]: {
+            type: 'success',
+            message: 'Correct! Well done!'
           }
-        }, 1500);
+        }));
       } else {
-        // Only show feedback for incorrect answers
+        // Show feedback for incorrect answers
         setShowFeedback(true);
         setFeedback({
           type: 'error',
           message: 'Incorrect. Try again!'
         });
+
+        // Store the feedback for this question
+        setAnsweredFeedback(prev => ({
+          ...prev,
+          [currentQuestionId]: {
+            type: 'error',
+            message: 'Incorrect. Try again!'
+          }
+        }));
 
         // Show animation for incorrect answers
         setFadeIn(true);
@@ -468,38 +486,40 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       const wasSelected = currentAttempts?.selectedOptions?.includes(option.id);
       const showIncorrectFeedback = wasSelected && !option.is_correct;
       const isCorrectAnswer = option.id === correctAnswerId;
+      const isSelected = selectedOption?.id === option.id;
       
       return (
-        <label key={option.id} style={styles.radioLabel}>
-          <input
-            type="radio"
-            name={`answer-${currentQuestionId}`}
-            value={option.id}
-            checked={selectedOption?.id === option.id}
-            onChange={() => {
+        <div key={option.id}>
+          <button
+            type="button"
+            onClick={() => {
               setSelectedOption(option);
               setCurrentQuestionAnswer(option.value);
               setSelectedAnswer(option.value);
             }}
             disabled={isAnswered}
             style={{
-              ...styles.radioInput,
+              ...styles.choiceButton,
+              border: isSelected ? '1px solid #4338ca' : '1px solid #e5e7eb',
+              backgroundColor: isSelected ? 'rgba(67, 56, 202, 0.05)' : 'white',
+              boxShadow: isSelected ? '0 4px 10px rgba(0, 0, 0, 0.1)' : 'none',
+              transform: isSelected ? 'scale(1.05)' : 'scale(1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border 0.2s ease',
               cursor: isAnswered ? 'default' : 'pointer',
-            }}
-          />
-          <span 
-            style={{
-              ...styles.radioText,
               color: isAnswered && isCorrectAnswer ? '#65a30d' : 
-                     showIncorrectFeedback ? '#dc2626' : 'inherit',
-              fontWeight: isAnswered && isCorrectAnswer ? '600' : 'normal',
-            }} 
-            dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
-          />
-          {isAnswered && isCorrectAnswer && (
-            <span style={styles.correctIndicator}>✓</span>
-          )}
-        </label>
+                     showIncorrectFeedback ? '#dc2626' : '#374151',
+            }}
+          >
+            <span style={styles.choiceLetter}>{option.value}.</span>
+            <span 
+              style={styles.choiceText}
+              dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
+            />
+            {isAnswered && isCorrectAnswer && (
+              <span style={styles.correctIndicator}>✓</span>
+            )}
+          </button>
+        </div>
       );
     });
   };
@@ -548,9 +568,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             <button 
               style={styles.submitButton}
               type="submit"
-              disabled={isSubmitting || !selectedOption}
+              disabled={isSubmitting || !selectedOption || answeredQuestions.has(questions[currentIndex].id)}
             >
-              {isSubmitting ? 'Submitting...' : 'Submit Answer'}
+              {isSubmitting ? 'Submitting...' : answeredQuestions.has(questions[currentIndex].id) ? 'Answered' : 'Submit Answer'}
             </button>
           </form>
 
@@ -562,18 +582,44 @@ export default function Question({ subject, mode, skillName, questions: initialQ
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                style={{ ...styles.feedbackBox, backgroundColor: feedback?.type === "success" ? '#d4edda' : '#f8d7da' }}
+                style={{ 
+                  ...styles.feedbackBox, 
+                  backgroundColor: feedback?.type === "success" ? '#d4edda' : '#f8d7da',
+                  color: feedback?.type === "success" ? '#155724' : '#721c24',
+                  borderColor: feedback?.type === "success" ? '#c3e6cb' : '#f5c6cb'
+                }}
               >
-                {feedback?.type === "success" ? <CheckCircle style={styles.icon} /> : <XCircle style={styles.icon} />}
+                {feedback?.type === "success" ? 
+                  <CheckCircle style={{ ...styles.icon, color: '#155724' }} /> : 
+                  <XCircle style={{ ...styles.icon, color: '#721c24' }} />
+                }
                 <span>{feedback?.message}</span>
               </motion.div>
             )}
           </AnimatePresence>
+
+          {/* Navigation Buttons */}
+          <div style={styles.navigationContainer}>
+            <button
+              style={styles.navButton}
+              onClick={prevQuestion}
+              disabled={currentIndex === 0}
+            >
+              Previous
+            </button>
+            <button
+              style={styles.navButton}
+              onClick={nextQuestion}
+              disabled={currentIndex === questions.length - 1}
+            >
+              Next
+            </button>
+          </div>
         </div>
 
         <div style={styles.aiChatContainer}>
-          <AIChat 
-            question={question_text} 
+          <ChatSidebar 
+            questionText={question_text} 
             selectedAnswer={selectedAnswer} 
             options={sortedOptions} 
             imageURL={image_url} 
@@ -603,7 +649,7 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'row',
-    padding: '20px',
+    padding: '10px 20px 10px 20px',
     backgroundColor: '#f9fafb',
     minHeight: '100vh',
   },
@@ -612,7 +658,9 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: '20px 20px 0 20px',
+    padding: '20px 20px 10px 20px',
+    backgroundColor: 'rgb(249, 250, 251)',
+    marginRight: '41.5%'
   },
   questionContent: {
     flex: 1,
@@ -674,16 +722,18 @@ const styles = {
     marginTop: '24px',
   },
   navButton: {
-    padding: '8px 16px',
+    padding: '10px 20px',
     backgroundColor: '#4f46e5',
     color: 'white',
     border: 'none',
-    borderRadius: '4px',
+    borderRadius: '6px',
     cursor: 'pointer',
     fontSize: '14px',
     fontWeight: '500',
+    transition: 'background-color 0.2s',
     '&:disabled': {
       backgroundColor: '#e5e7eb',
+      color: '#9ca3af',
       cursor: 'not-allowed',
     },
     '&:hover:not(:disabled)': {
@@ -712,18 +762,20 @@ const styles = {
   feedbackBox: {
     display: 'flex',
     alignItems: 'center',
-    padding: '12px',
+    padding: '16px',
     borderRadius: '6px',
     marginTop: '16px',
+    marginBottom: '16px',
     border: '1px solid transparent',
+    fontWeight: '500',
   },
   icon: {
-    marginRight: '8px',
+    marginRight: '12px',
     width: '20px',
     height: '20px',
   },
   aiChatContainer: {
-    width: '50%',
+    width: '43%',
   },
   RefreshQuestionsContainer: {
     display: 'flex',
@@ -784,6 +836,37 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer',
     fontSize: '14px',
+  },
+  optionsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  choiceButton: {
+    width: '100%',
+    textAlign: 'left',
+    padding: '16px',
+    borderRadius: '8px',
+    border: '1px solid #e5e7eb',
+    backgroundColor: 'white',
+    fontSize: '16px',
+    display: 'flex',
+    alignItems: 'center',
+    position: 'relative',
+    fontFamily: "'Noto Sans', sans-serif",
+  },
+  choiceLetter: {
+    fontWeight: '500',
+    marginRight: '12px',
+  },
+  choiceText: {
+    flex: 1,
+  },
+  correctIndicator: {
+    marginLeft: 'auto',
+    color: '#65a30d',
+    fontWeight: 'bold',
+    fontSize: '18px',
   },
 };
   
