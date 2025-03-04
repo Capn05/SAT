@@ -1,0 +1,32 @@
+[
+  {
+    "question_id": 970442,
+    "question_text": "The Green Garden store is having a spring sale where all flower pots are marked down by 15%.  If Ele...",
+    "issues": [
+      "The question is misleading because the total percentage discount Elena receives is always 15%, regardless of the number of flower pots she buys.  The variable 'x' (number of flower pots) does not affect the percentage discount 'p'.",
+      "The option marked as correct (A. p = 15x) is incorrect. It suggests that the percentage discount increases linearly with the number of flower pots, which is not consistent with the problem description of a flat 15% discount on all flower pots.",
+      "All other options (B, C, D) are also incorrect as they incorrectly relate the percentage discount 'p' to the number of flower pots 'x'. Options B and D also imply a dependence of the percentage on 'x', while option C adds 'x' to the percentage, which is conceptually flawed in this context.",
+      "The question is poorly designed as it asks to express 'p' in terms of 'x' when 'p' is actually a constant value (15) independent of 'x' in the given scenario. This might confuse students into thinking there is a more complex relationship than there actually is."
+    ]
+  },
+  {
+    "question_id": 48583,
+    "question_text": "A local library conducted a survey to determine the types of books its patrons prefer. Of the survey...",
+    "issues": [
+      "The question is internally inconsistent. Based on the given percentages, the percentage of respondents who preferred 'other genres' is 15% (100% - 35% - 30% - 20%).  If 15% of the total respondents is equal to 8, then the difference between the percentage of respondents who preferred fiction (35%) and mystery (20%), which is also 15%, should correspond to the same number of respondents, i.e., 8. However, the option marked as correct is 20, which contradicts this logical deduction.",
+      "The option marked as correct (B. 20) is incorrect. Based on the information provided, the difference in the number of respondents who preferred fiction and mystery should be 8, not 20.",
+      "All other options (A, C, D) are also likely incorrect as they are not logically derived from the consistent interpretation of the given percentages and the number of respondents for 'other genres'.",
+      "The question leads to a non-integer total number of respondents if we assume the percentages are exact and 8 respondents represent exactly 15%. This suggests a potential flaw in the question design."
+    ]
+  },
+  {
+    "question_id": 793426,
+    "question_text": "According to a recent survey, adults in different age groups were asked about their preferred type o...",
+    "issues": [
+      "The question is ambiguously worded, leading to potential misinterpretations regarding what percentages are being asked for. Based on the most straightforward interpretation of the question, the provided correct answer is incorrect, and none of the options are close to the actual correct answer.",
+      "The option marked as correct (C, 9%) is not mathematically correct based on the most natural interpretation of the question. The calculated difference based on the percentage of adults aged 18-45 who preferred Action and Comedy is approximately 29.63%, which is not close to 9%.",
+      "If the intended answer is indeed around 9%, then options A, B, and D are not clearly incorrect, as none of the options are close to the mathematically correct answer (approximately 29.63%). If the intended answer is 9%, then the question is poorly worded and misleading.",
+      "There are no grammatical or formatting issues, but the clarity of the question is a major concern."
+    ]
+  }
+]

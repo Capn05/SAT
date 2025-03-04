@@ -1,0 +1,51 @@
+[
+  {
+    "question_id": 211436,
+    "question_text": "The table below shows the number of hours a student studied and the number of practice problems they...",
+    "issues": [
+      "The option marked as correct (C. 105) is actually incorrect based on the condition that the rate of practice problems completed per hour is constant.",
+      "None of the provided options are correct. The correct value of p, based on the constant rate derived from the other data points, should be 45, which is not among the options.",
+      "The question is flawed because the marked answer does not satisfy the condition of constant rate implied by the given data points. If we assume the rate is constant across the given data, the value of p should be 45, not a value that leads to option C being correct."
+    ]
+  },
+  {
+    "question_id": 934418,
+    "question_text": "The ratio of boys to girls in a class is 2 to 3. If there are 12 boys, how many girls are in the cla...",
+    "issues": [
+      "The option marked as correct (B) is actually incorrect. The correct answer should be option C."
+    ]
+  },
+  {
+    "question_id": 259454,
+    "question_text": "The recommended daily intake of potassium for an adult is approximately $\\frac{7}{5}$ of the recomme...",
+    "issues": [
+      "The option marked as correct (A. 150) is incorrect based on the provided information. The calculated difference between the recommended daily intake of potassium and calcium is 750 milligrams, not 150 milligrams.  The question asks for 'how many more milligrams of calcium than potassium', which mathematically translates to Calcium intake - Potassium intake.  Based on the given ratios and sodium intake, Potassium intake = 3500 mg and Calcium intake = 2750 mg. Therefore, Calcium intake - Potassium intake = 2750 - 3500 = -750 mg.  If we consider the absolute difference, it is 750 mg.  Neither -750 nor 750 is option A. Option A (150) is exactly 1/5 of 750, which suggests a possible error in the question design or the intended answer was derived through an unstated operation (like dividing the actual difference by 5).  However, as the question is presented, option A is not the correct answer.  All other options are also incorrect as they are not close to the calculated difference of 750 or -750.",
+      "The question is clearly written and makes sense in its wording, but the numerical values provided lead to a different answer than the marked correct option. This discrepancy makes the question invalid as a correctly answered question should have one of the provided options as the accurate result of the calculation described in the question."
+    ]
+  },
+  {
+    "question_id": 839237,
+    "question_text": "A chemist is conducting an experiment that requires her to convert a volume of liquid from millilite...",
+    "issues": [
+      "The option marked as correct (B) is not actually the correct answer when using the provided conversion factor and rounding to the nearest tenth. Based on the given information (1 fluid ounce ≈ 29.6 milliliters and 740 milliliters of liquid), the correct calculation is 740 / 29.6 = 25.0 fluid ounces. Option B, 24.9, is close but not mathematically accurate to the nearest tenth based on the provided data. While it might be considered an approximation, for a math question on the SAT, especially at 'Easy' difficulty, a more precise answer is expected, and option B deviates from the mathematically correct answer of 25.0 when rounded to the nearest tenth."
+    ]
+  },
+  {
+    "question_id": 783891,
+    "question_text": "The table below shows the distance a scooter can travel on a full tank of gasoline and the cost to f...",
+    "issues": [
+      "The option marked as correct (B) is not actually correct. The correct ratio of cost per mile for Scooter X to Scooter Y is 1:1, which is not among the provided options.",
+      "All other options (A, C, D) are also incorrect as they are not equal to the correct ratio of 1:1."
+    ]
+  },
+  {
+    "question_id": 649065,
+    "question_text": "A bakery produces croissants at a rate of 15 dozens per hour. What is this production rate in croiss...",
+    "issues": [
+      "The option marked as correct (B) is actually incorrect.",
+      "The correct answer (3 croissants per minute) is not among the provided options.",
+      "Option B (180) represents the production rate in croissants per hour, not per minute, which is what the question asks for.",
+      "Options A, C, and D are also incorrect and not logically derived from the given information."
+    ]
+  }
+]

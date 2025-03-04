@@ -1,0 +1,137 @@
+[
+  {
+    "question_id": 284949,
+    "question_text": "In the figure above, lines AB and CD are parallel, and line EF is a transversal. If angle $v = 30^\\c...",
+    "issues": [
+      "The question refers to 'the figure above' but no figure is provided, making the question ambiguous and impossible to solve as intended without making significant assumptions about the positions of angles v, z, and x.",
+      "The relationship between angles v, z, and x is not clearly defined in the problem statement.  Without a diagram, it is unclear how these angles are related to the parallel lines and transversal.",
+      "The phrase 'In the figure above' is grammatically incorrect as there is no figure provided."
+    ]
+  },
+  {
+    "question_id": 62760,
+    "question_text": "In the figure, line m is parallel to line n. If the measure of angle x is $115^\\circ$, what is the v...",
+    "issues": [
+      "The question is missing a figure, which is essential for understanding the relationship between angle x and angle y. Without the figure, the question is ambiguous and cannot be solved definitively.",
+      "While option C (65) is likely intended to be the correct answer assuming x and y are consecutive interior angles, this assumption cannot be verified without the figure. Therefore, the correctness of the marked answer is uncertain in the absence of the figure.",
+      "Due to the missing figure, it is impossible to definitively confirm that options A, B, and D are incorrect, although they would be incorrect if x and y were intended to be consecutive interior angles."
+    ]
+  },
+  {
+    "question_id": 841426,
+    "question_text": "In the figure above, AD intersects BE at C. If the measure of angle CDE is 70°, the measure of angle...",
+    "issues": [
+      "The question refers to 'the figure above' but no image is provided. This is a critical issue for a geometry question as the visual representation is essential for understanding the spatial relationships between the points, lines, and angles described. Without the image, students must rely solely on textual description, which can lead to misinterpretations and increased difficulty.",
+      "While mathematically solvable based on the description, the absence of an image makes the question ambiguous and deviates from standard SAT geometry question formats which almost always include a diagram."
+    ]
+  },
+  {
+    "question_id": 654150,
+    "question_text": "In the triangle above, the measure of an exterior angle adjacent to the angle labeled $2x°$ is $140°...",
+    "issues": [
+      "The question refers to 'the triangle above' but no image is provided. This makes the question unclear and potentially unsolvable as the positions of angles $2x°$ and $y°$ within the triangle are undefined. Without the image, it is impossible to determine the relationship between the angles and solve for $y$ definitively."
+    ]
+  },
+  {
+    "question_id": 419040,
+    "question_text": "In the figure above, two sides of a triangle are extended. What is the value of x?...",
+    "issues": [
+      "The option marked as correct (B. 130) is mathematically incorrect.",
+      "None of the provided options (A, B, C, D) are actually correct for the given figure.",
+      "The correct value of x, based on the provided exterior angles, is 70 degrees, which is not listed as an option."
+    ]
+  },
+  {
+    "question_id": 77033,
+    "question_text": "In the figure shown, lines $m$ and $s$ are parallel, and line $t$ intersects both lines. If $y > 70$...",
+    "issues": [
+      "The question is missing a figure, which is essential for a geometry problem involving angles formed by parallel lines and a transversal. Without a figure, the relationship between angles x and y is ambiguous. While it is highly likely that angles x and y are intended to be consecutive interior angles, this is not explicitly stated and cannot be assumed for a rigorous SAT question.",
+      "Due to the missing figure, the question is not clearly written and can be interpreted in multiple ways, making it potentially confusing for students."
+    ]
+  },
+  {
+    "question_id": 808587,
+    "question_text": "Note: Figure not drawn to scale.  In the figure above, segments AE and BD are parallel. If angle BDC...",
+    "issues": [
+      " is provided. This is a critical issue as a geometry question of this type requires a visual representation to be unambiguously understood and solved. Without the figure, the spatial relationships between points and lines are not clearly defined, making the question technically unsolvable as presented.",
+      "B"
+    ]
+  },
+  {
+    "question_id": 955939,
+    "question_text": "![](_page_0_Figure_1.jpeg)  Note: Figure not drawn to scale.  In the figure, AC = CD. The measure of...",
+    "issues": [
+      "Error during validation: Cannot read properties of undefined (reading '0')"
+    ]
+  },
+  {
+    "question_id": 322625,
+    "question_text": "In the figure shown, points Q, R, S, and T lie on line segment RU. Line segment RV intersects line s...",
+    "issues": [
+      "The option marked as correct (A. 135) is incorrect based on geometric deduction. The calculated correct answer is 30 degrees, which is not among the provided options. This suggests either a mistake in the question itself, the provided options, or the marked correct answer.",
+      "Assuming points Q, R, S, T are collinear in the order R-Q-S-T-U on line segment RU, and using the given angles, we deduce ∠TUR = 30°. This contradicts the marked correct answer of 135° and none of the options accurately reflect the calculated answer."
+    ]
+  },
+  {
+    "question_id": 317158,
+    "question_text": "Intersecting lines r, s, and t are shown below.  ![](_page_2_Figure_4.jpeg)  What is the value of x ...",
+    "issues": [
+      ") is missing. Without the image, the question is incomprehensible and cannot be solved.",
+      "It is impossible to verify if option A (103) is the correct answer or if other options are incorrect without the diagram. The correctness of the marked answer and the distractor options are entirely dependent on the missing visual information.",
+      "The question text itself is grammatically sound and clearly written in terms of asking for the value of 'x' given intersecting lines. However, the lack of the visual component renders the clarity moot.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 660844,
+    "question_text": "In the figure above, right triangle $MNP$ has a right angle at $N$. Line segment $NP$ is perpendicul...",
+    "issues": [
+      "Line segment NQ is perpendicular to line segment MP\\\\",
+      " is problematic and assumes the presence of a figure that is not provided in the text.",
+      "C",
+      "NP is perpendicular to MQ\\\\",
+      "NQ is perpendicular to MP\\\\"
+    ]
+  },
+  {
+    "question_id": 565353,
+    "question_text": "In the figure above, RT = TU. If angle TSR = 40° and angle RST = 90°, what is the value of x?...",
+    "issues": [
+      "Error during validation: Cannot read properties of undefined (reading '0')"
+    ]
+  },
+  {
+    "question_id": 301170,
+    "question_text": "Note: Figure not drawn to scale\\n\\nThe area of triangle ABC above is at least 72 but no more than 96...",
+    "issues": [
+      "The question is unclear due to the missing image. The variables 'x' and 'y' are not defined in relation to triangle ABC, making the problem ambiguous.",
+      "Assuming 'x' and 'y' represent base and height (or are directly related to them such that Area = k*x*y for some constant k), and given the area constraint 72 <= Area <= 96, multiple options are actually correct, not just option A. If we assume Area = (1/2)xy, then for each option (x=2, 3, 4, 5), we can find an integer 'y' that satisfies the area condition.",
+      "Option A is marked as correct, and it is indeed a possible value of x. However, options B, C, and D are also possible values of x under the most straightforward interpretation of the problem.",
+      "The question asks for 'one possible value of x', which technically makes option A correct, but in the context of SAT multiple-choice questions, there should ideally be only one uniquely correct answer among the options.",
+      "The question is poorly designed for a multiple-choice SAT question as it does not have a unique correct answer among the provided options. It is more of a 'find a possible value' question rather than a 'find the value' question, but the options suggest a single correct answer is expected."
+    ]
+  },
+  {
+    "question_id": 75934,
+    "question_text": "![](0__page_8_Figure_1.jpeg)  Note: Figure not drawn to scale.  In the figure, parallel lines q and ...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. Based on geometric principles, option D (85) appears to be the correct answer."
+    ]
+  },
+  {
+    "question_id": 431251,
+    "question_text": "In the figure, LQ intersects MP at point R, and LM is parallel to PQ. The lengths of LR, MR, and RP ...",
+    "issues": [
+      "The option marked as correct (C) is not actually correct based on the provided information and geometric principles. The calculated correct answer is approximately 43.43, which is not among the options and significantly different from the marked correct answer 112."
+    ]
+  },
+  {
+    "question_id": 204719,
+    "question_text": "![](0__page_11_Figure_1_modified.jpeg)  Note: Figure not drawn to scale.  In the figure, RT = RU, th...",
+    "issues": [
+      "The question is poorly worded and potentially flawed due to inconsistencies in the given angle measures.  Without additional assumptions (like VU being parallel to ST, which is not stated), the given angles lead to contradictions in triangle angle sums and exterior angle properties. The problem relies on implicit assumptions about the figure which are not explicitly stated, making it ambiguous and potentially unsolvable with standard geometric principles based solely on the provided information.",
+      "The provided angles ∠VST = 30° and ∠RVS = 35° in conjunction with RT = RU do not lead to a consistent geometric figure using standard Euclidean geometry principles without making extra assumptions not given in the problem statement.  If we assume VU || ST, then a solution of 170 is possible, but this parallelism is not provided.",
+      "The question lacks clarity regarding the relative positions of points and lines, leading to multiple interpretations and potential inconsistencies."
+    ]
+  }
+]

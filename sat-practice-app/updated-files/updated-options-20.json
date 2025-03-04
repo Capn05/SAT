@@ -1,0 +1,786 @@
+[
+  {
+    "id": 8804510,
+    "question_id": 880451,
+    "value": "A",
+    "label": "Between week 0 and week 1",
+    "is_correct": false
+  },
+  {
+    "id": 8804511,
+    "question_id": 880451,
+    "value": "B",
+    "label": "Between week 1 and week 2",
+    "is_correct": true
+  },
+  {
+    "id": 8804512,
+    "question_id": 880451,
+    "value": "C",
+    "label": "Between week 2 and week 3",
+    "is_correct": false
+  },
+  {
+    "id": 8804513,
+    "question_id": 880451,
+    "value": "D",
+    "label": "Between week 3 and week 4",
+    "is_correct": false
+  },
+  {
+    "id": 9831440,
+    "question_id": 983144,
+    "value": "A",
+    "label": "78",
+    "is_correct": false
+  },
+  {
+    "id": 9831441,
+    "question_id": 983144,
+    "value": "B",
+    "label": "81",
+    "is_correct": true
+  },
+  {
+    "id": 9831442,
+    "question_id": 983144,
+    "value": "C",
+    "label": "84",
+    "is_correct": false
+  },
+  {
+    "id": 9831443,
+    "question_id": 983144,
+    "value": "D",
+    "label": "87",
+    "is_correct": false
+  },
+  {
+    "id": 4033890,
+    "question_id": 403389,
+    "value": "A",
+    "label": "85",
+    "is_correct": false
+  },
+  {
+    "id": 4033891,
+    "question_id": 403389,
+    "value": "B",
+    "label": "88",
+    "is_correct": false
+  },
+  {
+    "id": 4033892,
+    "question_id": 403389,
+    "value": "C",
+    "label": "90",
+    "is_correct": true
+  },
+  {
+    "id": 4033893,
+    "question_id": 403389,
+    "value": "D",
+    "label": "93",
+    "is_correct": false
+  },
+  {
+    "id": 567060,
+    "question_id": 56706,
+    "value": "A",
+    "label": "15",
+    "is_correct": false
+  },
+  {
+    "id": 567061,
+    "question_id": 56706,
+    "value": "B",
+    "label": "20",
+    "is_correct": true
+  },
+  {
+    "id": 567062,
+    "question_id": 56706,
+    "value": "C",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 567063,
+    "question_id": 56706,
+    "value": "D",
+    "label": "30",
+    "is_correct": false
+  },
+  {
+    "id": 7511170,
+    "question_id": 751117,
+    "value": "A",
+    "label": "80",
+    "is_correct": false
+  },
+  {
+    "id": 7511171,
+    "question_id": 751117,
+    "value": "B",
+    "label": "90",
+    "is_correct": true
+  },
+  {
+    "id": 7511172,
+    "question_id": 751117,
+    "value": "C",
+    "label": "100",
+    "is_correct": false
+  },
+  {
+    "id": 7511173,
+    "question_id": 751117,
+    "value": "D",
+    "label": "70",
+    "is_correct": false
+  },
+  {
+    "id": 2286960,
+    "question_id": 228696,
+    "value": "A",
+    "label": "From $x = 2$ to $x = 3$",
+    "is_correct": false
+  },
+  {
+    "id": 2286961,
+    "question_id": 228696,
+    "value": "B",
+    "label": "From $x = 4$ to $x = 5$",
+    "is_correct": true
+  },
+  {
+    "id": 2286962,
+    "question_id": 228696,
+    "value": "C",
+    "label": "From $x = 6$ to $x = 7$",
+    "is_correct": false
+  },
+  {
+    "id": 2286963,
+    "question_id": 228696,
+    "value": "D",
+    "label": "From $x = 1$ to $x = 2$",
+    "is_correct": false
+  },
+  {
+    "id": 9373280,
+    "question_id": 937328,
+    "value": "A",
+    "label": "As the number of hours spent exercising increases, the resting heart rate tends to decrease.",
+    "is_correct": true
+  },
+  {
+    "id": 9373281,
+    "question_id": 937328,
+    "value": "B",
+    "label": "As the number of hours spent exercising increases, the resting heart rate tends to increase.",
+    "is_correct": false
+  },
+  {
+    "id": 9373282,
+    "question_id": 937328,
+    "value": "C",
+    "label": "As the resting heart rate increases, the number of hours spent exercising tends to increase.",
+    "is_correct": false
+  },
+  {
+    "id": 9373283,
+    "question_id": 937328,
+    "value": "D",
+    "label": "There is no association between the number of hours spent exercising and the resting heart rate.",
+    "is_correct": false
+  },
+  {
+    "id": 3823440,
+    "question_id": 382344,
+    "value": "A",
+    "label": "23",
+    "is_correct": false
+  },
+  {
+    "id": 3823441,
+    "question_id": 382344,
+    "value": "B",
+    "label": "25",
+    "is_correct": false
+  },
+  {
+    "id": 3823442,
+    "question_id": 382344,
+    "value": "C",
+    "label": "27",
+    "is_correct": true
+  },
+  {
+    "id": 3823443,
+    "question_id": 382344,
+    "value": "D",
+    "label": "30",
+    "is_correct": false
+  },
+  {
+    "id": 6540730,
+    "question_id": 654073,
+    "value": "A",
+    "label": "65",
+    "is_correct": false
+  },
+  {
+    "id": 6540731,
+    "question_id": 654073,
+    "value": "B",
+    "label": "60",
+    "is_correct": true
+  },
+  {
+    "id": 6540732,
+    "question_id": 654073,
+    "value": "C",
+    "label": "55",
+    "is_correct": false
+  },
+  {
+    "id": 6540733,
+    "question_id": 654073,
+    "value": "D",
+    "label": "50",
+    "is_correct": false
+  },
+  {
+    "id": 9110370,
+    "question_id": 911037,
+    "value": "A",
+    "label": "Decreasing linear",
+    "is_correct": false
+  },
+  {
+    "id": 9110371,
+    "question_id": 911037,
+    "value": "B",
+    "label": "Increasing linear",
+    "is_correct": false
+  },
+  {
+    "id": 9110372,
+    "question_id": 911037,
+    "value": "C",
+    "label": "Decreasing exponential",
+    "is_correct": false
+  },
+  {
+    "id": 9110373,
+    "question_id": 911037,
+    "value": "D",
+    "label": "Increasing exponential",
+    "is_correct": true
+  },
+  {
+    "id": 7276080,
+    "question_id": 727608,
+    "value": "A",
+    "label": "80",
+    "is_correct": true
+  },
+  {
+    "id": 7276081,
+    "question_id": 727608,
+    "value": "B",
+    "label": "70",
+    "is_correct": false
+  },
+  {
+    "id": 7276082,
+    "question_id": 727608,
+    "value": "C",
+    "label": "85",
+    "is_correct": false
+  },
+  {
+    "id": 7276083,
+    "question_id": 727608,
+    "value": "D",
+    "label": "90",
+    "is_correct": false
+  },
+  {
+    "id": 9145620,
+    "question_id": 914562,
+    "value": "A",
+    "label": "2",
+    "is_correct": true
+  },
+  {
+    "id": 9145621,
+    "question_id": 914562,
+    "value": "B",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 9145622,
+    "question_id": 914562,
+    "value": "C",
+    "label": "10",
+    "is_correct": false
+  },
+  {
+    "id": 9145623,
+    "question_id": 914562,
+    "value": "D",
+    "label": "78",
+    "is_correct": false
+  },
+  {
+    "id": 4493620,
+    "question_id": 449362,
+    "value": "A",
+    "label": "-5",
+    "is_correct": true
+  },
+  {
+    "id": 4493621,
+    "question_id": 449362,
+    "value": "B",
+    "label": "-0.5",
+    "is_correct": false
+  },
+  {
+    "id": 4493622,
+    "question_id": 449362,
+    "value": "C",
+    "label": "0.5",
+    "is_correct": false
+  },
+  {
+    "id": 4493623,
+    "question_id": 449362,
+    "value": "D",
+    "label": "5",
+    "is_correct": false
+  },
+  {
+    "id": 6709790,
+    "question_id": 670979,
+    "value": "A",
+    "label": "For all $x > 0$, it is true that $3^x < 3x+1$.",
+    "is_correct": false
+  },
+  {
+    "id": 6709791,
+    "question_id": 670979,
+    "value": "B",
+    "label": "For all $x > 0$, it is true that $3^x > 3x+1$.",
+    "is_correct": false
+  },
+  {
+    "id": 6709792,
+    "question_id": 670979,
+    "value": "C",
+    "label": "There is a constant $c$ such that if $0 < x < c$, then $3^x < 3x+1$, but if $x > c$, then $3^x > 3x+1$.",
+    "is_correct": true
+  },
+  {
+    "id": 6709793,
+    "question_id": 670979,
+    "value": "D",
+    "label": "There is a constant $c$ such that if $0 < x < c$, then $3^x > 3x+1$, but if $x > c$, then $3^x < 3x+1$.",
+    "is_correct": false
+  },
+  {
+    "id": 2846990,
+    "question_id": 284699,
+    "value": "A",
+    "label": "-0.05",
+    "is_correct": false
+  },
+  {
+    "id": 2846991,
+    "question_id": 284699,
+    "value": "B",
+    "label": "-0.0005",
+    "is_correct": true
+  },
+  {
+    "id": 2846992,
+    "question_id": 284699,
+    "value": "C",
+    "label": "0.0005",
+    "is_correct": false
+  },
+  {
+    "id": 2846993,
+    "question_id": 284699,
+    "value": "D",
+    "label": "0.05",
+    "is_correct": false
+  },
+  {
+    "id": 2671260,
+    "question_id": 267126,
+    "value": "A",
+    "label": "A linear model with a positive slope",
+    "is_correct": false
+  },
+  {
+    "id": 2671261,
+    "question_id": 267126,
+    "value": "B",
+    "label": "A linear model with a negative slope",
+    "is_correct": true
+  },
+  {
+    "id": 2671262,
+    "question_id": 267126,
+    "value": "C",
+    "label": "An exponential growth model",
+    "is_correct": false
+  },
+  {
+    "id": 2671263,
+    "question_id": 267126,
+    "value": "D",
+    "label": "An exponential decay model",
+    "is_correct": false
+  },
+  {
+    "id": 8513650,
+    "question_id": 851365,
+    "value": "A",
+    "label": "Actual: 90%, Predicted: 86%",
+    "is_correct": true
+  },
+  {
+    "id": 8513651,
+    "question_id": 851365,
+    "value": "B",
+    "label": "Actual: 86%, Predicted: 90%",
+    "is_correct": false
+  },
+  {
+    "id": 8513652,
+    "question_id": 851365,
+    "value": "C",
+    "label": "Actual: 90%, Predicted: 96%",
+    "is_correct": false
+  },
+  {
+    "id": 8513653,
+    "question_id": 851365,
+    "value": "D",
+    "label": "Actual: 80%, Predicted: 86%",
+    "is_correct": false
+  },
+  {
+    "id": 3275910,
+    "question_id": 327591,
+    "value": "A",
+    "label": "y = 25x + 10",
+    "is_correct": true
+  },
+  {
+    "id": 3275911,
+    "question_id": 327591,
+    "value": "B",
+    "label": "y = 25x - 5",
+    "is_correct": false
+  },
+  {
+    "id": 3275912,
+    "question_id": 327591,
+    "value": "C",
+    "label": "y = 10x + 25",
+    "is_correct": false
+  },
+  {
+    "id": 3275913,
+    "question_id": 327591,
+    "value": "D",
+    "label": "y = 10x - 10",
+    "is_correct": false
+  },
+  {
+    "id": 5031390,
+    "question_id": 503139,
+    "value": "A",
+    "label": "s = 52 + 7t",
+    "is_correct": true
+  },
+  {
+    "id": 5031391,
+    "question_id": 503139,
+    "value": "B",
+    "label": "s = 7 + 52t",
+    "is_correct": false
+  },
+  {
+    "id": 5031392,
+    "question_id": 503139,
+    "value": "C",
+    "label": "s = 52 + 15t",
+    "is_correct": false
+  },
+  {
+    "id": 5031393,
+    "question_id": 503139,
+    "value": "D",
+    "label": "s = 15 + 52t",
+    "is_correct": false
+  },
+  {
+    "id": 7087860,
+    "question_id": 708786,
+    "value": "A",
+    "label": "  | x | 1 | 2  | 3  | 4  | |---|---|----|----|----| | y | 3 | 5 | 7 | 9 | ",
+    "is_correct": false
+  },
+  {
+    "id": 7087861,
+    "question_id": 708786,
+    "value": "B",
+    "label": "  | x | 1 | 2  | 3  | 4  | |---|---|----|----|----| | y | 10 | 9 | 8 | 7 | ",
+    "is_correct": false
+  },
+  {
+    "id": 7087862,
+    "question_id": 708786,
+    "value": "C",
+    "label": "  | x | 1 | 2  | 3  | 4  | |---|---|----|----|----| | y | 2 | 2.5 | 3 | 3.5 | ",
+    "is_correct": false
+  },
+  {
+    "id": 7087863,
+    "question_id": 708786,
+    "value": "D",
+    "label": "  | x | 1 | 2  | 3  | 4  | |---|---|----|----|----| | y | 0 | 3 | 8 | 15 | ",
+    "is_correct": true
+  },
+  {
+    "id": 4050370,
+    "question_id": 405037,
+    "value": "A",
+    "label": "y = -2x + 80",
+    "is_correct": true
+  },
+  {
+    "id": 4050371,
+    "question_id": 405037,
+    "value": "B",
+    "label": "y = 2x + 80",
+    "is_correct": false
+  },
+  {
+    "id": 4050372,
+    "question_id": 405037,
+    "value": "C",
+    "label": "y = -2x + 60",
+    "is_correct": false
+  },
+  {
+    "id": 4050373,
+    "question_id": 405037,
+    "value": "D",
+    "label": "y = -0.5x + 80",
+    "is_correct": false
+  },
+  {
+    "id": 6143770,
+    "question_id": 614377,
+    "value": "A",
+    "label": "66",
+    "is_correct": false
+  },
+  {
+    "id": 6143771,
+    "question_id": 614377,
+    "value": "B",
+    "label": "71",
+    "is_correct": true
+  },
+  {
+    "id": 6143772,
+    "question_id": 614377,
+    "value": "C",
+    "label": "76",
+    "is_correct": false
+  },
+  {
+    "id": 6143773,
+    "question_id": 614377,
+    "value": "D",
+    "label": "81",
+    "is_correct": false
+  },
+  {
+    "id": 1397030,
+    "question_id": 139703,
+    "value": "A",
+    "label": "For each additional hour of study, the test score is predicted to increase by 65 points.",
+    "is_correct": false
+  },
+  {
+    "id": 1397031,
+    "question_id": 139703,
+    "value": "B",
+    "label": "For each additional hour of study, the test score is predicted to increase by 7.2 points. ",
+    "is_correct": true
+  },
+  {
+    "id": 1397032,
+    "question_id": 139703,
+    "value": "C",
+    "label": "For every 7.2 hours of study, the test score is predicted to increase by 1 point.",
+    "is_correct": false
+  },
+  {
+    "id": 1397033,
+    "question_id": 139703,
+    "value": "D",
+    "label": "For every 65 hours of study, the test score is predicted to increase by 7.2 points.",
+    "is_correct": false
+  },
+  {
+    "id": 9415400,
+    "question_id": 941540,
+    "value": "A",
+    "label": "s = 7.5a + 75",
+    "is_correct": true
+  },
+  {
+    "id": 9415401,
+    "question_id": 941540,
+    "value": "B",
+    "label": "s = 2a + 200",
+    "is_correct": false
+  },
+  {
+    "id": 9415402,
+    "question_id": 941540,
+    "value": "C",
+    "label": "s = 15a + 25",
+    "is_correct": false
+  },
+  {
+    "id": 9415403,
+    "question_id": 941540,
+    "value": "D",
+    "label": "s = 0.5a + 300",
+    "is_correct": false
+  },
+  {
+    "id": 5239400,
+    "question_id": 523940,
+    "value": "A",
+    "label": "2.5",
+    "is_correct": false
+  },
+  {
+    "id": 5239401,
+    "question_id": 523940,
+    "value": "B",
+    "label": "3.5",
+    "is_correct": true
+  },
+  {
+    "id": 5239402,
+    "question_id": 523940,
+    "value": "C",
+    "label": "4.5",
+    "is_correct": false
+  },
+  {
+    "id": 5239403,
+    "question_id": 523940,
+    "value": "D",
+    "label": "14",
+    "is_correct": false
+  },
+  {
+    "id": 8263240,
+    "question_id": 826324,
+    "value": "A",
+    "label": "2.5 beats per minute",
+    "is_correct": false
+  },
+  {
+    "id": 8263241,
+    "question_id": 826324,
+    "value": "B",
+    "label": "6.25 beats per minute",
+    "is_correct": false
+  },
+  {
+    "id": 8263242,
+    "question_id": 826324,
+    "value": "C",
+    "label": "10 beats per minute",
+    "is_correct": true
+  },
+  {
+    "id": 8263243,
+    "question_id": 826324,
+    "value": "D",
+    "label": "25 beats per minute",
+    "is_correct": false
+  },
+  {
+    "id": 1010,
+    "question_id": 101,
+    "value": "A",
+    "label": "y = 12.5x<sup>2</sup> + 30.2x + 4.1",
+    "is_correct": false
+  },
+  {
+    "id": 1011,
+    "question_id": 101,
+    "value": "B",
+    "label": "y = -12.5x<sup>2</sup> - 30.2x - 4.1",
+    "is_correct": false
+  },
+  {
+    "id": 1012,
+    "question_id": 101,
+    "value": "C",
+    "label": "y = 12.5x<sup>2</sup> + 30.2x - 4.1",
+    "is_correct": false
+  },
+  {
+    "id": 1013,
+    "question_id": 101,
+    "value": "D",
+    "label": "y = -12.5x<sup>2</sup> + 30.2x + 4.1",
+    "is_correct": true
+  },
+  {
+    "id": 9677650,
+    "question_id": 967765,
+    "value": "A",
+    "label": "2.5",
+    "is_correct": false
+  },
+  {
+    "id": 9677651,
+    "question_id": 967765,
+    "value": "B",
+    "label": "2.0",
+    "is_correct": false
+  },
+  {
+    "id": 9677652,
+    "question_id": 967765,
+    "value": "C",
+    "label": "1.5",
+    "is_correct": true
+  },
+  {
+    "id": 9677653,
+    "question_id": 967765,
+    "value": "D",
+    "label": "1.0",
+    "is_correct": false
+  }
+]

@@ -1,0 +1,846 @@
+[
+  {
+    "question_id": 390051,
+    "question_text": "The graph of a quadratic function in the xy-plane is given by the equation $y = x^2 - 4x + 7$.  What...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the y-intercept of the quadratic function $y = x^2 - 4x + 7$. To find the y-intercept, we set $x = 0$ in the equation.  Substituting $x = 0$ gives $y = (0)^2 - 4(0) + 7 = 7$. Therefore, the y-intercept is the point (0, 7). Option B, (0, 7), is indeed the correct answer. Options A, C, and D are incorrect because they do not represent the y-intercept of the given function. Option A represents the point (7, 0), which is an x-intercept if the quadratic equation was $0 = x^2 - 4x + 7$. Options C and D are simply incorrect points that do not correspond to the y-intercept. The difficulty level 'Easy' is appropriate as finding the y-intercept of a quadratic function is a fundamental concept."
+    }
+  },
+  {
+    "question_id": 634991,
+    "question_text": "Scientists recorded data about the temperature of a chemical solution as it was heated over a period...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks to identify the table that correctly represents the given data points (0, 20), (2, 60), and (4, 60). Option C is the only table that accurately lists these points. Options A, B, and D contain incorrect values for either x or y coordinates, or both. Option A swaps the y-values for x=0 and x=2. Option B has an incorrect y-value for x=2. Option D swaps the x and y values for the points (2, 60) and (4, 60). Therefore, option C is the only correct answer, and the other options are clearly incorrect. The difficulty level 'Easy' is appropriate as the question primarily tests the ability to match given points to a table, requiring no complex mathematical operations or deep understanding of nonlinear functions beyond point identification."
+    }
+  },
+  {
+    "question_id": 750070,
+    "question_text": "The function g is defined by g(x) = $\\sqrt{x}$ - 2. What is the value of g(121)?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written.1.  **Clarity:** The question is clearly written and easy to understand. It defines a function g(x) and asks for the value of g(121).2.  **Correctness of Marked Answer:** The option marked as correct, C (9), is indeed correct. g(121) = $\\\\sqrt{121}$ - 2 = 11 - 2 = 9.3.  **Incorrectness of Other Options:** All other options are clearly incorrect.    *   Option A (7): $\\\\sqrt{121} - 2 = 7 \\\\implies \\\\sqrt{121} = 9 \\\\implies 121 = 81$ (False)    *   Option B (11): $\\\\sqrt{121} - 2 = 11 \\\\implies \\\\sqrt{121} = 13 \\\\implies 121 = 169$ (False)    *   Option D (13): $\\\\sqrt{121} - 2 = 13 \\\\implies \\\\sqrt{121} = 15 \\\\implies 121 = 225$ (False)4.  **Grammatical and Formatting Issues:** There are no grammatical or formatting issues.5.  **Difficulty Level:** The difficulty level is appropriately classified as 'Easy'. It involves a straightforward function evaluation, which is a fundamental skill tested on the SAT Math section."
+    }
+  },
+  {
+    "question_id": 8550,
+    "question_text": "The table shown includes some values of x and their corresponding values of y. Which of the followin...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as it is missing the table of values and the graphs for options A, B, C, and D (placeholders are used). Without the table and graphs, it is impossible to determine if the question makes sense, if the marked answer is correct, or if other options are clearly incorrect.",
+        "Assuming the placeholder 'Placeholder B (Correct)' indicates that option B is intended to be the correct answer, this cannot be verified without the actual graph for option B and the table of values.",
+        "The question type and format are standard for SAT Math questions, but the missing content prevents a full evaluation of its validity and difficulty."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question structure is valid for an SAT math question, asking students to match a table of values to a graph representing the relationship. However, the question is currently incomplete and unusable in its present form due to the missing table of values and graph options (placeholders).  To fully evaluate the question's validity, correctness, and difficulty, the placeholders need to be replaced with the actual table and graph images.  Assuming 'Placeholder B (Correct)' is accurate, then 'B' is indicated as the intended correct answer.  However, without the visual information, we cannot confirm if option B is indeed the correct representation of the relationship described by the (missing) table, or if options A, C, and D are clearly incorrect.  The difficulty level 'Easy' might be appropriate depending on the complexity of the relationship in the table and the visual distinction between the graphs, but this also cannot be confirmed without the actual question content."
+    }
+  },
+  {
+    "question_id": 868472,
+    "question_text": "If $h(x) = \frac{x^2 - 2x - 3}{x + 1}$, what is the value of $h(2)$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Formatting issue: 'rac' should be 'frac' or properly rendered as a fraction."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is mathematically sound and asks for the evaluation of the function h(x) at x=2. Substituting x=2 into the function h(x) = (x^2 - 2x - 3) / (x + 1) gives h(2) = (2^2 - 2*2 - 3) / (2 + 1) = (4 - 4 - 3) / 3 = -3 / 3 = -1. Option B, which is -1, is the correct answer. Options A, C, and D are incorrect as they are not equal to -1. The question is clearly written and the difficulty level is appropriate for an 'Easy' SAT question. However, there is a formatting issue with 'rac' which should be 'frac' or rendered as a fraction."
+    }
+  },
+  {
+    "question_id": 571671,
+    "question_text": "For the function g defined above, $$g(x) = 3(2^x)$$, what is the value of $$g(3)$$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the value of the function g(x) = 3(2^x) at x = 3. To find g(3), we substitute x = 3 into the function: $$g(3) = 3(2^3) = 3(8) = 24$$. Option D, which is 24, is indeed the correct answer. The other options are clearly incorrect as they do not result from a correct evaluation of g(3). Option A (8) might be a result of calculating 2^3 but forgetting to multiply by 3. Option B (12) and C (18) are also plausible distractors representing common errors in evaluating exponential functions. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for an SAT question testing basic function evaluation and exponentiation."
+    }
+  },
+  {
+    "question_id": 948063,
+    "question_text": "The graph of a nonlinear function is shown below.  ![](new_graph_image_2.png)  What is the y-interce...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the y-intercept of the provided graph. Assuming the graph in 'new_graph_image_2.png' visually shows the y-intercept at the point (0, 4), then option A, (0, 4), is indeed the correct answer. Options B and D, (4, 0) and (-4, 0), represent x-intercepts, not y-intercepts. Option C, (0, -4), represents a y-intercept at y = -4, which would be incorrect if the graph clearly shows the y-intercept at y = 4.  All other options are clearly incorrect if option A is correct. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for identifying the y-intercept from a graph, a fundamental concept in algebra and function analysis."
+    }
+  },
+  {
+    "question_id": 549782,
+    "question_text": "The function $P(t) = 5000(1.05)^t$ models the predicted population of a town $t$ years after the yea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is correct because when $t=10$ (for the year 2030), $P(10) = 5000(1.05)^{10} \\\\approx 5000 \times 1.62889 \\\\approx 8144.45$, which is approximately 8144. Option B is incorrect because it describes the total increase in population over 10 years, which is $P(10) - P(0) \\\\approx 8144 - 5000 = 3144$, not 8144. Option C is incorrect because it talks about the growth rate. The growth rate is proportional to the population, so it is growing $(1.05)^{10} \\\\approx 1.63$ times faster in 2030 than in 2020, not 5 times faster. Option D is also a true statement about exponential growth models with a base of 1.05, indicating a 5% annual increase. However, in the context of 'best interpretation' related to the calculated population value of approximately 8144, option A is the most direct and relevant interpretation. Option D describes a general property of the model rather than a specific interpretation of the population value 8144. While option D is true, option A is a more direct answer to what the population is predicted to be in 2030 when the population is approximately 8144.  The difficulty level 'Easy' is appropriate for SAT level questions on exponential functions. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 838145,
+    "question_text": "The function f is defined by f(x) = 10 + √x. What is the value of f(81)?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to evaluate the function f(x) = 10 + √x at x = 81.  f(81) = 10 + √81 = 10 + 9 = 19. Option A is 19, which is the correct answer. Options B, C, and D are incorrect. The question is grammatically correct and appropriately formatted. The difficulty level is correctly identified as Easy, as it involves a straightforward function evaluation with a square root and addition, which is a basic skill expected for the SAT Math section, especially in the Advanced Math category."
+    }
+  },
+  {
+    "question_id": 426033,
+    "question_text": "The quadratic function graphed above models the fuel efficiency of a car as a function of its speed....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the speed at which fuel efficiency is greatest according to the provided quadratic model graph.  By examining the graph (assuming the image is accessible and shows a standard downward-opening parabola for fuel efficiency vs. speed), the vertex of the parabola, which represents the maximum fuel efficiency, appears to be at approximately a speed of 70 kilometers per hour. Option B, 70, corresponds to this value and is marked as correct. Options A (30), C (110), and D (15) are visibly further away from the vertex on the x-axis and would correspond to lower fuel efficiency values on the graph, making them clearly incorrect. There are no grammatical or formatting issues in the question text. Identifying the vertex of a parabola from a graph is an easy skill within the context of SAT Math, making the 'Easy' difficulty level appropriate."
+    }
+  },
+  {
+    "question_id": 850030,
+    "question_text": "The function f is defined as shown. Which of the following graphs in the xy-plane could be the graph...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The function is given in vertex form: f(x) = (x-h)^2 + k, where the vertex of the parabola is at (h, k). In this case, f(x) = (x-2)^2 - 1, so h = 2 and k = -1. Therefore, the vertex is at (2, -1). Since the coefficient of the (x-2)^2 term is positive (1), the parabola opens upwards. Option D correctly describes a parabola opening upwards with a vertex at (2, -1). Options A, B, and C are incorrect because they either describe a parabola with a different vertex or a parabola opening in the wrong direction. Option A has the wrong y-coordinate for the vertex. Option B describes a parabola opening downwards. Option C has the wrong x-coordinate for the vertex."
+    }
+  },
+  {
+    "question_id": 359361,
+    "question_text": "The function g is defined by g(x) = x² - 5. What is the value of g(4)?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of the function g(x) = x² - 5 at x = 4.  Substituting x = 4 into the function, we get g(4) = 4² - 5 = 16 - 5 = 11. Option C is indeed 11, and options A, B, and D are incorrect as they do not equal 11. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward function evaluation requiring basic arithmetic."
+    }
+  },
+  {
+    "question_id": 259904,
+    "question_text": "The graph of the polynomial function f, where y = f(x), is described. The y-intercept of the graph i...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question clearly states that the y-intercept of the graph is given as (0, y) and also that the graph intersects the y-axis at the point (0, 2).  The y-intercept is the point where the graph intersects the y-axis. Therefore, the two given points must represent the same y-intercept. For the points (0, y) and (0, 2) to be the same point, their y-coordinates must be equal. Thus, y = 2. Option A, which is 2, is the correct answer. The question is clearly written, and the other options (B, C, and D) are definitively incorrect as they are not equal to 2. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of y-intercepts in a very direct manner."
+    }
+  },
+  {
+    "question_id": 909204,
+    "question_text": "The function f is defined above as $$f(x) = (x + 0.5x)(30 - x)$$. What is the value of $$f(10)$$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of f(10) for the given function f(x) = (x + 0.5x)(30 - x). To find f(10), we substitute x = 10 into the function: f(10) = (10 + 0.5 * 10)(30 - 10) = (10 + 5)(20) = (15)(20) = 300. Option C is 300, which matches our calculation. Options A, B, and D are not equal to 300 and are therefore incorrect. The question is grammatically correct, well-formatted, and the difficulty level 'Easy' is appropriate as it involves straightforward substitution and arithmetic."
+    }
+  },
+  {
+    "question_id": 829386,
+    "question_text": "For a function $f$, it is given that $f(x) = -5$ for all values of $x$. What is the value of $f(12)$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The function $f(x) = -5$ is defined as a constant function, meaning that for any input value of $x$, the output is always -5. Therefore, $f(12) = -5$. Option A, which is -5, is correctly marked as the correct answer. Options B, C, and D are all clearly incorrect as they are not equal to -5. There are no grammatical or formatting issues. The difficulty level is appropriately labeled as 'Easy' because it requires a basic understanding of function notation and constant functions, which is a fundamental concept in mathematics."
+    }
+  },
+  {
+    "question_id": 689282,
+    "question_text": "The area of a circle, in square centimeters, with radius r centimeters is given by the function A, w...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the best interpretation of A(10) = 400 given the function A(r) = 4r², which represents the area of a circle with radius r according to this problem.Option A correctly interprets A(10) = 400 as meaning that when the radius (r) is 10 centimeters, the area A(r) is 400 square centimeters. This directly reflects the function definition and the given equation.Option B is incorrect because it reverses the values, stating a radius of 400 cm results in an area of 10 sq cm.  If r=400, A(400) = 4*(400)² = 640000, not 10.Option C is incorrect because it also reverses the values and misinterprets the function. It suggests an area of 10 sq cm corresponds to a radius of 400 cm.Option D is incorrect because it states an area of 1600 sq cm for a radius of 10 cm. If r=10, A(10) = 4*(10)² = 400, not 1600.The question is grammatically correct and formatted well. The difficulty level is appropriate for 'Easy' as it primarily tests the understanding of function notation and direct interpretation within a given context. While the formula A(r) = 4r² is not the standard formula for the area of a circle (which is πr²), the question explicitly defines the area using this function, and the question is valid within the context of the provided function definition. The question is testing function interpretation, not knowledge of the actual area of a circle formula."
+    }
+  },
+  {
+    "question_id": 990336,
+    "question_text": "The y-intercept of the graph of y = x² + 15 in the xy-plane is (0, y). What is the value of y?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the y-intercept of the graph of y = x² + 15, we set x = 0. Substituting x = 0 into the equation gives y = (0)² + 15 = 15. Therefore, the y-intercept is (0, 15), and the value of y is 15. Option A, which is 15, is correctly marked as the correct answer. Options B, C, and D are incorrect. Option B (0) is the value of x at the y-intercept, not the value of y. Option C (1) and D (225) are not derived from a straightforward misinterpretation of the y-intercept concept in this equation. The difficulty level 'Easy' is appropriate as it tests a fundamental concept of functions and graphs."
+    }
+  },
+  {
+    "question_id": 475350,
+    "question_text": "The graph shown models the number of views a certain online video received $x$ days after it was upl...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a graph that is not provided ('The graph shown...'). Without the graph, the question cannot be answered.",
+        "Due to the missing graph, it is impossible to verify if option A is the correct answer or if other options are incorrect.",
+        "The question is incomplete and unclear because a crucial visual element (the graph) is missing."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid because it refers to a graph that is not included in the question description ('No image').  The question asks for an interpretation of a graph to determine the number of views at x=0 (immediately after upload). Without the graph, it is impossible to determine the correct answer. While option A is marked as correct, we cannot verify this or the incorrectness of other options without the visual information the question is based on. The question is therefore not clearly written and does not make sense in its current form."
+    }
+  },
+  {
+    "question_id": 161344,
+    "question_text": " $$R(h) = 500(1.05)^h$$ The function R gives the estimated number of bacteria in a petri dish, where...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The function R(h) = 500(1.05)^h models exponential growth of bacteria.  To interpret R(0) = 500, we substitute h = 0 into the function: R(0) = 500(1.05)^0 = 500 * 1 = 500.  This means that when the number of hours since the experiment began is 0 (at the beginning of the experiment), the estimated number of bacteria is 500.Option A is incorrect because it suggests an *increase* of 500 bacteria at the beginning, rather than the initial amount being 500.Option B is correct because it accurately states that the estimated number of bacteria was 500 *when* the experiment began.Option C is incorrect because it describes the growth rate (5% increase per hour, represented by the 1.05 factor), not the interpretation of R(0) = 500.Option D is incorrect because it misinterprets R(0) = 500 as the number of bacteria after 1 hour. R(1) would be 500(1.05)^1 = 525.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because it requires a basic understanding of function notation and exponential functions, which is typically covered in early algebra and is considered easy within the SAT Math context, especially for the Nonlinear Functions subcategory."
+    }
+  },
+  {
+    "question_id": 960096,
+    "question_text": "A rectangular garden has an area of 144 square feet. If the length of the garden is 4 times the widt...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To solve it, let 'w' be the width and 'l' be the length of the rectangular garden. We are given that the area is 144 square feet and the length is 4 times the width, so l = 4w. The area of a rectangle is given by Area = length * width, so 144 = (4w) * w = 4w^2. Dividing both sides by 4 gives w^2 = 36. Taking the square root of both sides gives w = 6 (since width must be positive). Therefore, the width of the garden is 6 feet, and option B is indeed the correct answer. Options A, C, and D are incorrect because they do not satisfy the given conditions when plugged back into the problem. The difficulty level of 'Medium' is appropriate for this question on the SAT, as it requires basic algebraic manipulation and understanding of geometric concepts. There are no grammatical or formatting issues. While categorized under 'Advanced Math' and 'Nonlinear Functions', the problem is fundamentally based on quadratic equations, which falls under these categories, although it is at the simpler end of these topics."
+    }
+  },
+  {
+    "question_id": 324773,
+    "question_text": "The function P above models the population, in thousands, of a town $t$ years after the year 2020, w...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        " implies that the function should have been provided before this sentence, but it is missing. This makes the question technically incomplete and ambiguous, as the form of the function P is not specified. While it is highly implied that P(t) is an exponential function of the form P(t) = P_0 * b^t for population growth, this is not explicitly stated, making the question flawed from a strict validation perspective.",
+        "C"
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 265613,
+    "question_text": "The equation $B = 250(1.2)^t$ estimates the number of bacteria, $B$, in a petri dish after $t$ hours...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The equation is given in the form $B = 250(1.2)^t$, which represents exponential growth. In this form, the general equation for exponential growth is $y = a(b)^x$, where 'a' represents the initial amount, 'b' is the growth factor, and 'x' is the time or independent variable. In the given equation, $B$ is analogous to $y$, $250$ is analogous to $a$, $1.2$ is analogous to $b$, and $t$ is analogous to $x$. Therefore, 250 represents the initial number of bacteria when $t=0$. Let's check the options:\n\nA. **The initial number of bacteria in the petri dish:** When $t=0$, $B = 250(1.2)^0 = 250(1) = 250$. This is the number of bacteria at the beginning (initial number). This option is correct.\n\nB. **The estimated rate of increase of bacteria in the petri dish per hour:** The rate of increase is derived from the base of the exponent, which is 1.2. The growth factor is 1.2, meaning a 20% increase per hour (1.2 = 1 + 0.2). 250 is not the rate of increase, but the initial amount. This option is incorrect.\n\nC. **The estimated percentage increase of bacteria in the petri dish per hour:** The percentage increase is derived from the base 1.2. The percentage increase is (1.2 - 1) * 100% = 20% per hour. 250 is not the percentage increase, but the initial amount. This option is incorrect.\n\nD. **The estimated number of bacteria in the petri dish after $t$ hours:**  The entire expression $250(1.2)^t$ represents the estimated number of bacteria after $t$ hours, which is $B$.  250 is a specific part of this equation (the initial value), not the number of bacteria after $t$ hours in general. This option is incorrect.\n\nAll options except A are clearly incorrect, and option A is the correct interpretation of the number 250 in the given context. The question is clearly written, makes sense, and the difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 471443,
+    "question_text": "$$f(x) = (x-2)(x+5)$$   If the given function f is graphed in the xy-plane, where y = f(x), what is ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question has more than one correct answer among the options (A and D), but only option A is marked as correct. While technically asking for 'an' x-coordinate, in a standard SAT multiple-choice format with only one marked answer, it is expected to have a single best answer among the options provided."
+      ],
+      "correct_answer": "A",
+      "explanation": "The x-intercepts of the graph of y = f(x) occur when f(x) = 0.  Setting f(x) = (x-2)(x+5) = 0, we find that x-2 = 0 or x+5 = 0. This gives x = 2 or x = -5. Therefore, both options A (2) and D (-5) are valid x-coordinates of x-intercepts.  However, in a standard SAT multiple-choice question format, there should ideally be only one correct answer among the options, or a clear indication if multiple options could be correct.  As only option A is marked as correct, and option D is also a valid answer, the question is flawed due to having more than one correct option presented when only one is expected to be selected as the single best answer. Options B and C are incorrect because f(-2) = (-2-2)(-2+5) = -12 ≠ 0 and f(5) = (5-2)(5+5) = 30 ≠ 0."
+    }
+  },
+  {
+    "question_id": 394052,
+    "question_text": "The function $g(t) = 120000(1.025)^t$, where $0 ≤ t ≤ 15$, models the predicted population of a city...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. Option D is correct because when $t=5$, $g(5) = 120000(1.025)^5 \\\\approx 120000 \times 1.1314 = 135768$, which is approximately 136,000. Options B and C are clearly incorrect based on calculations. Option B states the population is 5 times the population in 2020, which would be $5 \times 120000 = 600000$, far from 136,000. Option C states the population increased by 136,000 in 5 years, but the actual increase is approximately $135768 - 120000 = 15768$. Option A is also a true statement about exponential growth models, as 1.025 represents a 2.5% increase each year. However, in the context of the question and the options provided, option D is the most direct and accurate interpretation related to the approximate population value of 136,000. While option A is factually correct about the growth rate, it doesn't directly address the population value at $t=5$ as options C and D do. In the context of SAT questions, option D is the best and most directly relevant answer. The difficulty level of Medium is appropriate as it requires understanding of exponential functions and basic calculation. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 617579,
+    "question_text": "From 2015 through 2024, the number of electric vehicles sold in a country increased each year by app...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question describes a scenario of exponential growth where the number of electric vehicles sold increases by 20% each year.  Let's analyze each option:\n\n* **Option A: V = 100(0.20)^t** - This formula represents exponential decay, not growth, because the base (0.20) is less than 1.  Also, 0.20 represents 20% *of* the previous year's sales being retained, not a 20% *increase*.\n\n* **Option B: V = 100(1.20)^t** - This formula represents exponential growth. The base (1.20) is greater than 1, indicating growth.  1.20 represents 100% (the original amount) + 20% (the increase), which correctly models a 20% annual increase. When t=0 (2015), V = 100(1.20)^0 = 100, which corresponds to 100,000 vehicles, matching the initial condition. This option correctly models the scenario.\n\n* **Option C: V = 100 + 20t** - This formula represents linear growth. It adds a constant amount (20, which represents 20,000 vehicles since V is in thousands) each year, rather than a percentage increase. This does not model the described scenario of a percentage increase.\n\n* **Option D: V = 100(0.80)^t** - This formula represents exponential decay with a 20% decrease each year. 0.80 represents 100% - 20% = 80% remaining from the previous year. This is the opposite of the described growth.\n\nTherefore, option B is the only option that correctly models the exponential growth of 20% per year. The question is clearly written, and the difficulty level of 'Medium' is appropriate for an SAT Advanced Math question testing understanding of exponential functions and their application in word problems. All other options are clearly incorrect as they represent either decay or linear growth, neither of which matches the problem description."
+    }
+  },
+  {
+    "question_id": 650775,
+    "question_text": "In the xy-plane, the graph of a nonlinear function $f$ has a y-intercept. Let $k$ be the y-coordinat...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The y-intercept of a function's graph is the point where the graph intersects the y-axis. This occurs when the x-coordinate is 0. For a function $f$, the y-coordinate at x=0 is given by $f(0)$. Therefore, the y-coordinate of the y-intercept, denoted as $k$, must be equal to $f(0)$. Option A, $f(0)$, is indeed the correct answer. Options B, C, and D, which are $f(1)$, $f(2)$, and $f(3)$ respectively, represent the y-coordinates of the function at $x=1$, $x=2$, and $x=3$, and are not necessarily equal to the y-intercept. The difficulty level 'Medium' is appropriate as it tests a fundamental concept of functions and graphs in a straightforward manner."
+    }
+  },
+  {
+    "question_id": 310810,
+    "question_text": "For the function g defined above, what is the value of g(2)? $$g(x) = 2x^2 - 5x + 3$$ ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of the function g(x) at x=2. Given g(x) = 2x^2 - 5x + 3, substituting x=2 gives g(2) = 2*(2)^2 - 5*(2) + 3 = 2*4 - 10 + 3 = 8 - 10 + 3 = 1. Option A is indeed 1, and options B, C, and D are not equal to 1. Therefore, option A is the correct answer, and the other options are clearly incorrect. The question is grammatically correct and well-formatted. The difficulty level is appropriately classified as Medium for an SAT Advanced Math question, as it involves a straightforward function evaluation."
+    }
+  },
+  {
+    "question_id": 464299,
+    "question_text": "z = 2(3^w)  Which of the following is the graph in the wzplane of the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The given equation is z = 2(3^w). This is an exponential function in the wz-plane where w is the independent variable and z is the dependent variable. \n\n1. **Type of function:** Since the base of the exponent (3) is greater than 1, the function is an increasing exponential function.\n\n2. **z-intercept:** To find the z-intercept, we set w = 0.  z = 2(3^0) = 2(1) = 2. So, the z-intercept is at the point (0, 2) in the wz-plane.\n\n3. **Growth factor:** The base of the exponent, 3, determines the growth factor. For every increase of 1 in w, the value of z is multiplied by 3. This indicates tripling growth.\n\nNow let's evaluate the options:\n\n* **Option A:** Incorrect. The function is increasing, not decreasing.\n* **Option B:** Incorrect. The z-intercept is (0, 2), not (0, 4), and the growth is tripling, not doubling.\n* **Option C:** Incorrect. While the z-intercept is correct, the growth is tripling, not doubling.\n* **Option D:** Correct. This option accurately describes the function as an increasing exponential function with a z-intercept of (0, 2) and tripling growth.\n\nTherefore, option D is the correct answer, and the other options are clearly incorrect. The question is clearly written, makes sense, and the difficulty level is appropriate for a medium-level SAT math question."
+    }
+  },
+  {
+    "question_id": 540624,
+    "question_text": "An object's kinetic energy, in joules, is given by the formula $K = \frac{1}{2}mv^2$, where $m$ is th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the formula for kinetic energy, $K = \frac{1}{2}mv^2$, and asks for the speed $v$ given the mass $m = 4$ kilograms and kinetic energy $K = 50$ joules. To find the speed, we substitute the given values into the formula and solve for $v$:$50 = \frac{1}{2} \times 4 \times v^2$$50 = 2v^2$$v^2 = \frac{50}{2}$$v^2 = 25$$v = \\\\sqrt{25}$$v = 5$Therefore, the correct speed is 5 meters per second, which corresponds to option A.Let's check the other options:Option B: If $v = 2.5$, $K = \frac{1}{2} \times 4 \times (2.5)^2 = 2 \times 6.25 = 12.5$ joules, which is not 50 joules.Option C: If $v = 10$, $K = \frac{1}{2} \times 4 \times (10)^2 = 2 \times 100 = 200$ joules, which is not 50 joules.Option D: If $v = 25$, $K = \frac{1}{2} \times 4 \times (25)^2 = 2 \times 625 = 1250$ joules, which is not 50 joules.All options except A are incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium because it requires understanding a formula and performing basic algebraic manipulation to solve for a variable. This is a typical skill tested in the SAT Math section, particularly within the Advanced Math domain and can be related to Nonlinear Functions due to the quadratic relationship between kinetic energy and speed."
+    }
+  },
+  {
+    "question_id": 418968,
+    "question_text": "The profit, in dollars, from selling $n$ items can be modeled by the function $P(n) = -0.1n^2 + 50n ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the best interpretation of the equation $P(100) = 3000$ based on the given profit function $P(n)$. Option A, 'The profit when 100 items are sold is $3000,' is the most direct and accurate interpretation of $P(100) = 3000$, as it directly reflects the function definition where $P(n)$ represents the profit from selling $n$ items.  Calculating $P(100) = -0.1(100)^2 + 50(100) - 1000 = -1000 + 5000 - 1000 = 3000$ confirms that this statement is correct according to the model. Option B, 'The number of items sold when the profit is $3000 is 100,' is also a correct interpretation of $P(100) = 3000$, but it is a slightly less direct interpretation compared to Option A. However, in the context of selecting the 'best' interpretation and given that only one option is marked as correct, Option A is considered the most straightforward and intended answer. Options C and D are clearly incorrect. Option C, 'The profit when 3000 items are sold is $100,' would be represented by $P(3000) = 100$, which is not the given equation. Option D, 'The profit when 100 items are sold is $300,' would be represented by $P(100) = 300$, which is also not the given equation and is numerically incorrect as $P(100) = 3000$. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding function notation and interpreting it in a context, along with basic calculation."
+    }
+  },
+  {
+    "question_id": 790619,
+    "question_text": "The height of a ball thrown vertically upwards is modeled by the function $h(t) = -1.5(t-5)^2 + 60$,...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the time at which the ball reaches its maximum height based on the given quadratic function $h(t) = -1.5(t-5)^2 + 60$. This function is in vertex form, $h(t) = a(t-h_v)^2 + k_v$, where the vertex is at $(h_v, k_v)$. In this case, the vertex is at $(5, 60)$. Since the coefficient of the $(t-5)^2$ term is negative (-1.5), the parabola opens downwards, indicating that the vertex represents the maximum point. The t-coordinate of the vertex, which is 5, represents the time at which the maximum height is reached. Therefore, option C, which is 5, is the correct answer. Options A, B, and D are incorrect. Option A (1.5) and B (-1.5) are related to the coefficient of the squared term but are not relevant to the time of maximum height. Option D (60) represents the maximum height itself, not the time at which it is reached. The difficulty level is appropriately marked as Medium because it requires understanding of the vertex form of a quadratic equation and its interpretation in a real-world context, which is a standard topic in algebra and pre-calculus curricula relevant to the SAT."
+    }
+  },
+  {
+    "question_id": 538837,
+    "question_text": "The population of a bacteria colony is observed to grow exponentially. The table shows the relations...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B, p = 1000(1 + 0.05)^h, is indeed the correct equation representing the exponential growth. Let's verify this: \n- At h=0, p = 1000(1 + 0.05)^0 = 1000 * 1 = 1000, which matches the table.\n- At h=1, p = 1000(1 + 0.05)^1 = 1000 * 1.05 = 1050, which matches the table.\n- At h=2, p = 1000(1 + 0.05)^2 = 1000 * 1.1025 = 1102.5, which matches the table.\n\nThe growth rate is calculated as (1050 - 1000) / 1000 = 0.05 or 5% per hour. This constant growth rate confirms exponential growth with a base of (1 + 0.05) = 1.05 and an initial population of 1000.\n\nLet's examine why other options are incorrect:\n- Option A: p = 0.05(1000)^h. At h=0, p = 0.05(1000)^0 = 0.05, which is not 1000. This option is incorrect as it does not yield the initial population and has a base of 1000 which is far too large for the given growth rate.\n- Option C: p = 0.05(1000h) = 50h. This is a linear function, not exponential. At h=0, p=0, which is not 1000. At h=1, p=50, which is not 1050. This option is clearly incorrect.\n- Option D: p = 1000(0.05 + h). This is also a linear function. At h=0, p = 1000(0.05 + 0) = 50, which is not 1000. At h=1, p = 1000(0.05 + 1) = 1050, which is correct for h=1 but not for h=0 and does not represent exponential growth.\n\nThere are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding of exponential growth and applying it to a given data set, which is a standard skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 637235,
+    "question_text": "A new car was purchased for $25,000. The value of the car is predicted to depreciate by 10% each yea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. Option D, V(t) = 25,000(0.90)^t, is the correct function to model the car's value.  Here's why:\n\n* **Initial Value:** When t=0 (at purchase), V(0) = 25,000(0.90)^0 = 25,000 * 1 = $25,000, which matches the purchase price.\n* **Depreciation Rate:**  A 10% depreciation means the car retains 90% of its value each year.  Multiplying by 0.90 represents this retention.  The base of the exponential function (0.90) correctly reflects the depreciation rate.\n* **Exponential Decay:** The function is in the form of exponential decay, which is appropriate for modeling depreciation.\n\nLet's examine why other options are incorrect:\n\n* **Option A: V(t) = 0.10(25,000)^t** - This is incorrect because the initial value at t=0 would be 0.10, not $25,000. Also, the base (25,000) is far too large for a depreciation model, and 0.10 is multiplying the exponential term, not acting as the initial value or depreciation factor.\n* **Option B: V(t) = 0.90(25,000)^t** - Similar to Option A, the initial value at t=0 would be 0.90, not $25,000. Again, the base (25,000) is incorrect for a depreciation model, and 0.90 is multiplying the exponential term incorrectly.\n* **Option C: V(t) = 25,000(0.10)^t** - This option has the correct initial value ($25,000). However, the base (0.10) represents retaining only 10% of the value each year, implying a 90% depreciation, not 10%.  The car would lose value too quickly with this model.\n\nAll options are clearly distinct and only Option D correctly models the given scenario. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding of exponential functions and depreciation concepts, which are typically covered in algebra II or precalculus, aligning with SAT Math content."
+    }
+  },
+  {
+    "question_id": 17506,
+    "question_text": "A tennis ball bounces upward two-fifths of the height that it falls each time it hits the ground. If...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is incorrect. The correct answer is option C.",
+        "Option B (12) represents the maximum height after the first bounce, not between the second and third hits.",
+        "Option D (2.4) is also incorrect and does not represent a logical step in solving the problem."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question asks for the maximum height between the second and third time the ball hits the ground.  \n\n1. **First fall:** The ball is dropped from 30 feet.\n2. **First bounce height:** The ball bounces to 2/5 of the initial height: (2/5) * 30 feet = 12 feet.\n3. **Second fall:** The ball falls from the height of the first bounce, which is 12 feet.\n4. **Second bounce height:** The ball bounces to 2/5 of the height of the second fall: (2/5) * 12 feet = 24/5 feet = 4.8 feet.\n\nThe maximum height between the second and third time it hits the ground is the height of the second bounce, which is 4.8 feet. Therefore, option C (4.8) is the correct answer, and option B (12) is incorrect. The question itself is clearly written and makes sense. The difficulty level of 'Medium' is appropriate for the SAT. The category and subcategory are broadly acceptable, although it could also be categorized under Algebra or Functions."
+    }
+  },
+  {
+    "question_id": 761234,
+    "question_text": "The function $f$ is defined by $f(x) = x^2 + 3x - 40$. If the graph of $y = f(x)$ is plotted in the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for an x-intercept of the function $f(x) = x^2 + 3x - 40$. To find the x-intercepts, we set $f(x) = 0$ and solve for x:$x^2 + 3x - 40 = 0$Factoring the quadratic equation, we look for two numbers that multiply to -40 and add up to 3. These numbers are 8 and -5.$(x + 8)(x - 5) = 0$This gives us two possible values for x: $x + 8 = 0 \\\\Rightarrow x = -8$ and $x - 5 = 0 \\\\Rightarrow x = 5$.The x-intercepts are the points where y = 0, so the x-intercepts are (-8, 0) and (5, 0).Option A is (-8, 0), which is a correct x-intercept and is marked as correct.Option B is (5, 0), which is also a correct x-intercept, but is not marked as correct. However, for SAT multiple-choice questions, it is common to have only one option marked as correct even if there are multiple correct answers mathematically. The question asks for 'which of the following points represents an x-intercept', implying that there might be more than one x-intercept, and we need to choose one from the given options that is indeed an x-intercept. Option A is a valid x-intercept and is listed as the correct answer.Options C (40, 0) and D (8, 0) are not x-intercepts because if we plug in x=40 and x=8 into $f(x)$, we do not get 0.$f(40) = 40^2 + 3(40) - 40 = 1600 + 120 - 40 = 1680 \neq 0$$f(8) = 8^2 + 3(8) - 40 = 64 + 24 - 40 = 48 \neq 0$The difficulty level 'Medium' is appropriate for this question as it involves factoring a quadratic equation, a standard skill tested on the SAT. There are no grammatical or formatting issues. While option B is also a correct x-intercept, in the context of a multiple-choice question where only one answer is expected to be selected and marked as correct, and option A is indeed a correct answer and marked as such, the question is considered valid. Ideally, if multiple correct options were provided, the question might have been designed to ask for all correct options or ensure only one correct option was listed. However, as it stands, the question is acceptable for SAT purposes."
+    }
+  },
+  {
+    "question_id": 876506,
+    "question_text": "The population of a certain species of bacteria in a petri dish doubles every 3 hours. At 9:00 AM, t...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (C) is incorrect. The correct answer should be A.",
+        "Option C (12:00 AM Midnight) is not the correct time when the bacteria population reaches 32,000. The correct time is 6:00 PM."
+      ],
+      "correct_answer": "A",
+      "explanation": "The bacteria population starts at 4,000 at 9:00 AM and doubles every 3 hours. To reach 32,000 bacteria, we need to determine how many doublings are required. \n\nStarting population: 4,000\nTarget population: 32,000\n\nNumber of doublings needed: 32,000 / 4,000 = 8. Since 8 = 2^3, we need 3 doublings.\n\nEach doubling takes 3 hours, so 3 doublings will take 3 * 3 = 9 hours.\n\nStarting from 9:00 AM and adding 9 hours:\n9:00 AM + 9 hours = 6:00 PM.\n\nTherefore, the bacteria population will reach 32,000 at approximately 6:00 PM. Option A is the correct answer, not option C as marked. All other options represent times later than 6:00 PM and would correspond to populations greater than 32,000, making them incorrect."
+    }
+  },
+  {
+    "question_id": 550828,
+    "question_text": "The profit $P(x)$, in dollars, from selling $x$ units of a product is modeled by the function $P(x) ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is correct because when $x=0$ units are sold, the profit $P(0) = -0.5(0)^2 + 50(0) - 200 = -200$.  A profit of -200 dollars means a loss of 200 dollars. This loss occurs even before any units are sold, which is the definition of fixed costs. Option B is incorrect because $P(50) = -0.5(50)^2 + 50(50) - 200 = 1050$, not -200. Option C is incorrect because the maximum profit is the vertex of the parabola, which occurs at $x = -b/(2a) = -50/(2 \times -0.5) = 50$, and the maximum profit is $P(50) = 1050$, not -200. Option D is incorrect because revenue is not directly represented by the constant term in the profit function in this way. The constant term represents the profit (or loss) when no units are sold, which corresponds to the negative of the fixed costs. The difficulty level is appropriate for a medium-difficulty SAT question."
+    }
+  },
+  {
+    "question_id": 450173,
+    "question_text": "$$V(t) = 22000(0.85)^t$$  The function V defined above models the value V(t), in dollars, of a used ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The function V(t) = 22000(0.85)^t represents exponential decay. The base of the exponent, 0.85, indicates the proportion of the value remaining after each year.  To find the percentage decrease, we subtract this base from 1: 1 - 0.85 = 0.15. This means that each year, the value decreases by 15% of the previous year's value.\n\nLet's analyze each option:\n\nA. Incorrect. This option suggests a constant dollar decrease, which is not characteristic of exponential decay. The decrease is a percentage of the current value, not a fixed amount.\n\nB. Incorrect. This option misinterprets the base 0.85.  0.85 represents the value *remaining* (85%), not the value decreased. A decrease of 85% would mean the value is multiplied by (1 - 0.85) = 0.15 each year, which is not the case here.\n\nC. Correct. This option accurately interprets the base 0.85 as a 15% decrease per year (1 - 0.85 = 0.15).\n\nD. Incorrect. This option incorrectly applies the percentage decrease over a period of 15 years instead of per year. Exponential decay happens annually based on the given function."
+    }
+  },
+  {
+    "question_id": 195977,
+    "question_text": "The area A, in square feet, of a rectangular floor in a dance studio is given by the expression $f(f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The area of a rectangle is given by the formula Area = Length × Width.  The question states that the area A is given by $f(f + 12)$ and the width is $f$. Let L be the length of the rectangular floor. Then, we have $A = L \times f$. Substituting the given expression for A, we get $f(f + 12) = L \times f$. To find the length L, we divide both sides of the equation by $f$ (assuming $f \neq 0$, which is a valid assumption for the width of a floor). This gives $L = \frac{f(f + 12)}{f} = f + 12$. Therefore, the expression representing the length of the floor is $(f + 12)$, which corresponds to option C. Options A, B, and D are incorrect because option A represents the width, option B is a constant term and not the full expression for length, and option D represents the area."
+    }
+  },
+  {
+    "question_id": 482261,
+    "question_text": "The table below gives the values of the function g for some values of x. Which of the following equa...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because it refers to a table that is not provided. Without the table of values for function g, it is impossible to determine which equation could define g.",
+        "Assuming there was a table that makes option B the correct answer, the question would be valid, but as it stands, it is incomplete."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is fundamentally flawed because it refers to a table that is essential for solving the problem, but this table is missing from the question description.  To analyze the options, we must assume a table that would make option B the correct answer. Let's assume the table includes the following values:\n\nx | g(x)\n---|---\n0 | 2\n1 | 6\n2 | 18\n-1 | 2\n\nLet's test each option against these values:\n\nA. $g(x) = 2 \\\\langle 3^{x+1} \rangle$\nFor x=0, $g(0) = 2 \\\\langle 3^{0+1} \rangle = 2 \\\\langle 3 \rangle = 6$. This does not match g(0) = 2 from our assumed table. Option A is incorrect.\n\nB. $g(x) = 2 \\\\langle 3^{x} \rangle$\nFor x=0, $g(0) = 2 \\\\langle 3^{0} \rangle = 2 \\\\langle 1 \rangle = 2$.\nFor x=1, $g(1) = 2 \\\\langle 3^{1} \rangle = 2 \\\\langle 3 \rangle = 6$.\nFor x=2, $g(2) = 2 \\\\langle 3^{2} \rangle = 2 \\\\langle 9 \rangle = 18$.\nFor x=-1, $g(-1) = 2 \\\\langle 3^{-1} \rangle = 2 \\\\langle 1/3 \rangle = 2 \\\\langle 0.333... \rangle = 2 \times 1 = 2$. Option B matches the assumed table values.\n\nC. $g(x) = 3 \\\\langle 2^{x} \rangle$\nFor x=0, $g(0) = 3 \\\\langle 2^{0} \rangle = 3 \\\\langle 1 \rangle = 3$. This does not match g(0) = 2 from our assumed table. Option C is incorrect.\n\nD. $g(x) = 2 \\\\langle 3^{-x} \rangle$\nFor x=1, $g(1) = 2 \\\\langle 3^{-1} \rangle = 2 \\\\langle 1/3 \rangle = 2 \\\\langle 0.333... \rangle = 2 \times 1 = 2$. This does not match g(1) = 6 from our assumed table. Option D is incorrect.\n\nAssuming the intended table is consistent with option B, then option B is indeed the correct answer, and options A, C, and D are incorrect. The difficulty level of 'Medium' would be appropriate for SAT Advanced Math if the table were provided. However, the missing table renders the question invalid as it is currently presented."
+    }
+  },
+  {
+    "question_id": 327041,
+    "question_text": "The function h is defined above. $$h(x)=(x-1)(2x+1)(x+7)$$  Which of the following is NOT an x-inter...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The x-intercepts of the graph of the function h(x) are the values of x for which h(x) = 0.  Given h(x) = (x-1)(2x+1)(x+7), we set h(x) = 0 and solve for x:(x-1)(2x+1)(x+7) = 0This equation is satisfied if any of the factors are equal to zero:1. x - 1 = 0  =>  x = 12. 2x + 1 = 0 =>  2x = -1 => x = -1/2 = -0.53. x + 7 = 0  =>  x = -7Therefore, the x-intercepts are 1, -0.5, and -7.Now let's check the options:A. -7: This is an x-intercept.B. 1: This is an x-intercept.C. -2: This is NOT an x-intercept.D. -0.5: This is an x-intercept.The question asks for the value that is NOT an x-intercept. Option C, -2, is the only option that is not among the x-intercepts we found. Thus, option C is the correct answer.The question is clearly written, the correct option is indeed correct, and the other options are clearly incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it requires basic understanding of function intercepts and solving linear equations."
+    }
+  },
+  {
+    "question_id": 220175,
+    "question_text": "A scientist initially cultures 50 bacteria in a petri dish. If the bacteria population grows exponen...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It describes a scenario of exponential bacterial growth with a given initial population and annual growth rate. Option A, $$p(t) = 50(1.20)^t$$, correctly models this scenario.  \n\n- **Initial population:** When $$t=0$$, $$p(0) = 50(1.20)^0 = 50 \\\\cdot 1 = 50$$, which matches the initial culture.\n- **Annual growth rate:** The base of the exponential term, 1.20, represents a 20% annual increase (since $$1.20 = 1 + 0.20$$).\n\nLet's examine why other options are incorrect:\n\n- **Option B:** $$p(t) = 50(2)^{1.20t} = 50(2^{1.20})^t$$. The base is $$2^{1.20} \\\\approx 2.3$$, which represents a much larger growth rate than 20% per year.\n- **Option C:** $$p(t) = 1.20(50)^t$$. This option incorrectly uses 1.20 as a coefficient and 50 as the base.  When $$t=0$$, $$p(0) = 1.20(50)^0 = 1.20$$, which does not match the initial population of 50. Also, the growth is unrealistically rapid with a base of 50.\n- **Option D:** $$p(t) = (50 \\\\cdot 1.20)^t = (60)^t$$. When $$t=0$$, $$p(0) = (60)^0 = 1$$, which does not match the initial population of 50.  Furthermore, the initial population and growth factor are incorrectly combined as the base.\n\nAll options except A are clearly incorrect. The question is grammatically sound and appropriately formatted. The difficulty level of 'Medium' is suitable for an SAT Advanced Math question, as it tests the understanding of exponential growth models."
+    }
+  },
+  {
+    "question_id": 976769,
+    "question_text": "A ball is thrown upwards from the ground. The graph shown gives the height above the ground $y$, in ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the best interpretation of a graph depicting the height of a ball thrown upwards over time. Option B, marked as correct, states that the ball hits the ground at 2.5 seconds.  Assuming a standard parabolic graph for projectile motion where the ball starts at the ground (y=0 at x=0), rises to a peak, and then falls back to the ground, the point where the graph intersects the x-axis again (y=0) after x=0 represents the time when the ball hits the ground. If the graph shows this intersection at x=2.5 seconds, then option B is indeed the correct interpretation.Options A and C are about the maximum height.  While a parabolic graph will have a maximum height, these options might be incorrect if the graph is designed to highlight the time when the ball hits the ground as the 'best' interpretation, or if the maximum height is not exactly 20 feet or reached at 2.5 or 0.5 seconds based on the (unseen) graph.  Option D states a specific height at a specific time. This could be true for a point on the parabola, but it might not be the 'best' interpretation if the question is designed to focus on key features like maximum height or time to hit the ground.Without the actual image of the graph, we must assume that the graph is designed such that option B is the most direct and intended interpretation.  If the graph visually clearly shows the ball returning to the ground at 2.5 seconds, and if the other options are not as directly supported by prominent features of the graph, then option B is correctly identified as the best interpretation.All options are grammatically correct and formatted well. The difficulty level of 'Medium' is appropriate for SAT Math, particularly for questions involving graph interpretation and nonlinear functions (quadratic functions in the context of projectile motion).  Assuming the graph is a standard parabola and designed to clearly show the ball hitting the ground at 2.5 seconds as the most salient feature, then the question is valid and option B is the correct 'best interpretation', making the other options less optimal interpretations, even if they might describe other points on the graph."
+    }
+  },
+  {
+    "question_id": 693666,
+    "question_text": "The graph shown models the volume of water, $V$, in liters, in a tank $t$ minutes after filling bega...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is missing the graph that it refers to. Without the graph, the question cannot be answered.",
+        "Assuming a graph exists where the volume of water is increasing from t=0 to t=3 and not increasing for any interval beyond t=3, then option A would be correct and options B, C, and D would be incorrect. In this hypothetical scenario, the question would be clearly written and of appropriate difficulty."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is invalid because it refers to a graph that is not provided.  To answer the question, we need to see the graph modeling the volume of water in the tank over time.  If we assume a graph where the volume is increasing from t=0 to t=3 and then either stays constant or decreases after t=3, then option A would be the correct answer, as it is the only interval where the volume is increasing for the entire duration. Options B, C, and D would be incorrect because they include time intervals where the volume is not increasing (either constant or decreasing).  However, without the actual graph, we cannot definitively confirm the correctness of option A or the incorrectness of other options based on the intended graph. The missing graph is a critical error that makes the question unsolvable as presented."
+    }
+  },
+  {
+    "question_id": 211374,
+    "question_text": "A colony of bacteria doubles in population every 3 hours. The function $$p(t) = 500(2)^{\\frac{t}{3}}...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense in the context of exponential growth. The function $$p(t) = 500(2)^{\frac{t}{3}}$$ correctly models the bacteria population doubling every 3 hours, starting with 500 bacteria. \n\nOption A is the correct interpretation of $$p(6) = 2000$$. When we substitute $$t=6$$ into the function, we get $$p(6) = 500(2)^{\frac{6}{3}} = 500(2)^2 = 500 \times 4 = 2000$$. Option A states that approximately 2000 bacteria are present after 6 hours, which is a direct and accurate interpretation of $$p(6) = 2000$$.\n\nOption B is incorrect because it interprets 2000 as the *increase* in population, not the total population after 6 hours. The increase would be $$2000 - 500 = 1500$$.\n\nOptions C and D are incorrect because they misinterpret the values of $$t$$ and $$p(t)$$. Option C incorrectly associates 6 bacteria with 2000 hours and misinterprets 2000 as an increase. Option D incorrectly associates 6 bacteria with 2000 hours and misinterprets 2000 as the time.\n\nThere are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium for an SAT Advanced Math question, as it requires understanding function notation and applying it to a real-world context of exponential growth."
+    }
+  },
+  {
+    "question_id": 608231,
+    "question_text": "The given equation relates the value of x and its corresponding value of function q. $$q(x) - 23 = -...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The given equation is $$q(x) - 23 = -x^2$$. To find the maximum value of the function q, we first isolate q(x): $$q(x) = -x^2 + 23$$. This is a quadratic function of the form $$q(x) = ax^2 + bx + c$$ where a = -1, b = 0, and c = 23. Since the coefficient of the $$x^2$$ term (a = -1) is negative, the parabola opens downwards, indicating that the function has a maximum value. The maximum value of a downward-opening parabola occurs at its vertex. The x-coordinate of the vertex is given by $$x = -b/(2a)$$. In this case, $$x = -0/(2 \times -1) = 0$$. To find the maximum value of q(x), we substitute x = 0 into the equation for q(x): $$q(0) = -(0)^2 + 23 = 0 + 23 = 23$$. Therefore, the maximum value of the function q is 23. Option B is correctly marked as the correct answer. Options A, C, and D are incorrect as they do not represent the maximum value of the function q. The question is clearly written, grammatically correct, and the difficulty level is appropriate for a 'Medium' SAT question in the 'Advanced Math' category, specifically 'Nonlinear Functions'."
+    }
+  },
+  {
+    "question_id": 258226,
+    "question_text": "The quadratic function f is defined as shown. In the xy-plane, the graph of y = f(x) intersects the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the value of 't' where the quadratic function f(x) intersects the x-axis at points (0,0) and (t,0). To find the x-intercepts, we set f(x) = 0 and solve for x: \n\n$-(x-3)^2 + 9 = 0$ \n\n$(x-3)^2 = 9$ \n\nTaking the square root of both sides, we get: \n\n$x-3 = ±3$ \n\nThis gives us two possible solutions for x: \n\nCase 1: $x-3 = 3  => x = 3 + 3 = 6$ \n\nCase 2: $x-3 = -3 => x = 3 - 3 = 0$ \n\nSo the graph intersects the x-axis at x = 0 and x = 6.  The question states the intersections are at (0,0) and (t,0). Therefore, t = 6. Option C is indeed the correct answer. Options A, B, and D are incorrect as they do not satisfy the equation f(x) = 0. The difficulty level is arguably appropriate for 'Hard' as it requires understanding of quadratic functions and x-intercepts, although it is a relatively straightforward problem for advanced math topics."
+    }
+  },
+  {
+    "question_id": 387315,
+    "question_text": "### g(t) = 500(1.05)^t  The given function g models the estimated population of rabbits in a park ea...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense in the context of an SAT math problem. The function g(t) = 500(1.05)^t models rabbit population growth, and the question asks for the interpretation of the y-intercept. The y-intercept occurs when t = 0. Substituting t = 0 into the function, we get g(0) = 500(1.05)^0 = 500 * 1 = 500. Since t represents the number of years since the year 2000, t = 0 corresponds to the year 2000. Therefore, the y-intercept represents the initial population in the year 2000, which is 500. Option B correctly states this interpretation.Options A, C, and D are incorrect interpretations of the y-intercept.- Option A describes the maximum population within the given time frame (0 ≤ t ≤ 5), which occurs at t = 5. g(5) = 500(1.05)^5 ≈ 638. This is not the y-intercept.- Option C describes the population in the year 2001 (t = 1). g(1) = 500(1.05)^1 = 525. This is not the y-intercept.- Option D describes the population in the year 2005 (t = 5), which is approximately 638 (same as option A). This is not the y-intercept.All options are grammatically correct and formatted well. The difficulty level is appropriately classified as 'Hard' because it requires understanding of function notation, y-intercept interpretation in context, and distinguishing the y-intercept from other values of the function within the given domain. The distractors are plausible and require careful reading and understanding of the question."
+    }
+  },
+  {
+    "question_id": 535000,
+    "question_text": "Function f is defined by $f(x) = -a^x + b$, where $a$ and $b$ are constants. In the xy-plane, the gr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To solve the problem, we use the given information step-by-step:\n\n1. **Y-intercept of y = f(x) - 5:** The y-intercept is at $(0, 54)$, which means when $x=0$, $y=54$. So, $54 = f(0) - 5$.\n2. **Find f(0):** Adding 5 to both sides, we get $f(0) = 54 + 5 = 59$.\n3. **Use the definition of f(x):** We are given $f(x) = -a^x + b$. Substituting $x=0$, we get $f(0) = -a^0 + b = -1 + b$ (since $a^0 = 1$ for any non-zero $a$).\n4. **Equate the two expressions for f(0):** We have $f(0) = 59$ and $f(0) = -1 + b$. Therefore, $59 = -1 + b$.\n5. **Solve for b:** Adding 1 to both sides, we get $b = 59 + 1 = 60$.\n6. **Use the product of a and b:** We are given that $ab = 300$. Substituting $b = 60$, we get $a \times 60 = 300$.\n7. **Solve for a:** Dividing both sides by 60, we get $a = 300 / 60 = 5$.\n\nTherefore, the value of $a$ is 5, which corresponds to option A. The other options would lead to different y-intercept values for $y = f(x) - 5$, making them incorrect. The difficulty level 'Hard' is appropriate as it requires understanding of function notation, transformations, and solving equations."
+    }
+  },
+  {
+    "question_id": 375663,
+    "question_text": "A model rocket is launched vertically from ground level. The rocket reaches a maximum height of 49 m...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The scenario describes a parabolic trajectory of a rocket launched vertically. We are given the maximum height (vertex of the parabola) and the time to reach maximum height, as well as the time to return to the ground. Using the vertex form of a parabola $h = a(t - k)^2 + m$, where (k, m) is the vertex, we can plug in the vertex (3.5, 49) to get $h = a(t - 3.5)^2 + 49$. Since the rocket starts at ground level (h=0 when t=0), we can substitute these values to find 'a': $0 = a(0 - 3.5)^2 + 49$, which simplifies to $0 = 12.25a + 49$. Solving for 'a' gives $a = -49 / 12.25 = -4$. Thus, the equation is $h = -4(t - 3.5)^2 + 49$, which is option D.Option A is incorrect because its vertex is at t = -3.5, implying the maximum height is reached before launch, which is not physically possible in this scenario.Option B is incorrect because its vertex is at t = 0, meaning the maximum height is reached at launch, and it returns to the ground at t = 3.5 seconds, not 7 seconds as stated in the problem.Option C is incorrect because the parabola opens downwards and is shifted downwards, resulting in negative heights, which does not represent the height above ground for a launched rocket.Option D correctly represents the given conditions:- At t=0, $h = -4(0 - 3.5)^2 + 49 = -4(12.25) + 49 = -49 + 49 = 0$ (ground level at launch).- Vertex is at t=3.5, $h = 49$ (maximum height of 49 meters at 3.5 seconds).- Returns to ground when h=0: $0 = -4(t - 3.5)^2 + 49 \\\\implies (t - 3.5)^2 = 49/4 \\\\implies t - 3.5 = \\\\pm 3.5 \\\\implies t = 7$ or $t = 0$ (returns to ground at 7 seconds).The difficulty level 'Hard' is appropriate as it requires understanding of quadratic functions, vertex form, and applying given conditions to find the correct equation."
+    }
+  },
+  {
+    "question_id": 300400,
+    "question_text": "The function f is defined by f(x) = aⁿ + b, where a and b are constants. In the xy-plane, the graph ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The function definition f(x) = aⁿ + b is slightly ambiguous as 'n' is not explicitly defined as 'x'. It is highly likely intended to be f(x) = aˣ + b for this question to be solvable in the context of exponential functions and intercepts. However, given the context of SAT questions and the provided solution, this ambiguity is minor and likely intended to be interpreted as f(x) = aˣ + b."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is solvable and logically consistent if we interpret the function as f(x) = aˣ + b. Given the y-intercept at (0, -10), we have -10 = a⁰ + b, which simplifies to -10 = 1 + b, so b = -11. Given the x-intercept at (1, 0), we have 0 = a¹ + b, which simplifies to 0 = a + b. Substituting b = -11 into the second equation, we get 0 = a - 11, so a = 11. Thus, the function is f(x) = 11ˣ - 11, and the value of b is -11. Option B, -11, is indeed the correct answer. Options A, C, and D are incorrect because they would lead to different y-intercept values when used in the function with the given conditions. The difficulty level 'Hard' is appropriate as it requires understanding of function intercepts and solving a system of equations, which is typical for advanced SAT math questions. The question is clearly written and formatted, with the only minor issue being the potential ambiguity of 'n' in the function definition, which is likely intended to be 'x'."
+    }
+  },
+  {
+    "question_id": 75250,
+    "question_text": "R(p) = -25p^2 + 1500p  The revenue $R(p)$, in dollars, a store earns from selling backpacks is given...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The function R(p) = -25p^2 + 1500p represents the revenue based on the price p. The question states that the graph of y = R(p) intersects the x-axis at p = 0 and p = c.  The x-axis intercepts occur when R(p) = 0.  Setting R(p) = 0, we get:-25p^2 + 1500p = 0p(-25p + 1500) = 0This gives two solutions for p: p = 0 or -25p + 1500 = 0.Solving -25p + 1500 = 0, we get:-25p = -1500p = 1500 / 25p = 60So, the graph intersects the x-axis at p = 0 and p = 60. Therefore, c = 60.Option A is incorrect because it describes the revenue when the price is $0, which is indeed $0, but it doesn't explain what 'c' represents in the context of the problem. 'c' is a price value, not a revenue value in this context.Option B is incorrect because it describes the price that results in maximum revenue. The price for maximum revenue would be the p-coordinate of the vertex of the parabola, which is -b/(2a) = -1500 / (2 * -25) = 30. This is not what 'c' represents.Option C is correct because it states that 'c' represents the price, in dollars, of a backpack that will result in a revenue of $0. We found that R(c) = R(60) = 0.Option D is incorrect because it describes the maximum revenue, which is the y-coordinate of the vertex. The maximum revenue would be R(30) = -25(30)^2 + 1500(30) = 22500. This is not what 'c' represents.The difficulty level of 'Hard' might be slightly overstated. This question is more likely of medium to medium-hard difficulty on the SAT, as it primarily tests understanding of quadratic functions and x-intercepts. However, it is not a trivial question and requires a few steps to solve, so 'Hard' is not entirely inappropriate. "
+    }
+  },
+  {
+    "question_id": 625679,
+    "question_text": "A population of insects is growing at an exponential rate, as shown in the table above. At this rate...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The table provides data for exponential growth, and the question asks to find the day when the insect population reaches a specific value. To solve this, we first determine the growth factor by dividing the population of Day 2 by Day 1 (or Day 3 by Day 2). The growth factor is $3.6 \times 10^4 / 1.2 \times 10^4 = 3$.  We can express the population on day $n$ as $P_n = P_1 \times 3^{n-1}$, where $P_1 = 1.2 \times 10^4$. We need to find $n$ such that $P_n = 8.748 \times 10^6$.  Setting up the equation: $8.748 \times 10^6 = (1.2 \times 10^4) \times 3^{n-1}$. Dividing both sides by $1.2 \times 10^4$ gives $729 = 3^{n-1}$. Since $3^6 = 729$, we have $n-1 = 6$, so $n = 7$. Therefore, Day 7 is the correct answer, which corresponds to option B.  Checking other options: Day 5 would have a population of $1.2 \times 10^4 \times 3^{5-1} = 9.72 \times 10^5$, Day 9 would have $1.2 \times 10^4 \times 3^{9-1} = 7.8732 \times 10^7$, and Day 11 would have $1.2 \times 10^4 \times 3^{11-1} = 7.08588 \times 10^8$.  Options A, C, and D are clearly incorrect. The difficulty level 'Hard' is appropriate as it requires understanding exponential growth and solving for an exponent, skills tested in the Advanced Math section of the SAT."
+    }
+  },
+  {
+    "question_id": 67056,
+    "question_text": "The function g is defined by the equation $$g(x) = (x - 8)(x + 4)$$ For what value of x does g(x) re...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the x-value at which the quadratic function g(x) = (x - 8)(x + 4) reaches its minimum. To find the minimum of this parabola, we can find the vertex. The x-coordinate of the vertex of a parabola in the form g(x) = a(x - r1)(x - r2) is the midpoint of the roots r1 and r2. The roots of g(x) are x = 8 and x = -4. The midpoint is (8 + (-4)) / 2 = 4 / 2 = 2. Alternatively, we can expand g(x) to g(x) = x^2 - 4x - 32 and use the formula for the x-coordinate of the vertex: x = -b / (2a) = -(-4) / (2 * 1) = 4 / 2 = 2.  Option C, which is 2, is indeed the correct answer. Options A, B, and D are incorrect. The difficulty level 'Hard' is appropriate as it requires understanding of quadratic functions and finding the vertex, which is typically considered an advanced math topic for SAT."
+    }
+  },
+  {
+    "question_id": 280612,
+    "question_text": "The value $V$ of a rare painting $t$ years after its purchase is modeled by the equation below, wher...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question states that the value of the painting decreases by a fixed percentage each year. The given formula is $V = V_0 (1 + k)^{t}$. For the value to decrease over time ($t$ increasing), the base of the exponentiation, $(1 + k)$, must be between 0 and 1 (exclusive of 0 and inclusive of values arbitrarily close to 0, but since value is about painting, value should be positive, so base should be positive).  If $0 < (1 + k) < 1$, then subtracting 1 from all parts of the inequality gives $-1 < k < 0$.Let's examine each option:A. $k < -1$: If $k < -1$, then $1 + k < 0$. In this case, the value $V$ would not consistently decrease by a fixed percentage. For instance, if $k = -2$, $V = V_0 (-1)^t$, which oscillates between $V_0$ and $-V_0$ (or $V_0$ and $V_0$ if we consider absolute value decrease, but percentage decrease is not well-defined for negative values in this context and it's not a fixed percentage decrease).B. $-1 < k < 0$: If $-1 < k < 0$, then $0 < 1 + k < 1$. Let $1 + k = r$, where $0 < r < 1$. Then $V = V_0 r^t$. As $t$ increases, $r^t$ decreases (since $0 < r < 1$), so $V$ decreases.  The percentage decrease each year is constant. For example, from year $t$ to year $t+1$, the value changes from $V_0 r^t$ to $V_0 r^{t+1} = (V_0 r^t) \times r$. The value is multiplied by a constant factor $r < 1$ each year, representing a fixed percentage decrease of $(1-r) \times 100\\\\% = (-k) \times 100\\\\%$.C. $0 < k < 1$: If $0 < k < 1$, then $1 < 1 + k < 2$. In this case, as $t$ increases, $(1 + k)^t$ increases, so $V$ increases, which contradicts the condition that the value decreases.D. $k > 1$: If $k > 1$, then $1 + k > 2$. In this case, as $t$ increases, $(1 + k)^t$ increases, so $V$ increases, which contradicts the condition that the value decreases.Therefore, option B is the only option that ensures the value of the painting decreases by a fixed percentage each year. The difficulty level 'Hard' is appropriate as it requires understanding of exponential functions and their behavior for different base values in the context of percentage decrease."
+    }
+  },
+  {
+    "question_id": 363546,
+    "question_text": "The table below gives selected values of a polynomial function $q$. Based on the values in the table...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a table of values that is not provided. Without the table, the question is unsolvable.",
+        "The question states 'No image', indicating that the table was intended to be an image but is missing."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question asks to identify a factor of a polynomial function $q$ based on a table of values. Option C, $(x-3)(x+2)$, is marked as correct. For $(x-3)(x+2)$ to be a factor of $q(x)$, it must be true that $q(3) = 0$ and $q(-2) = 0$.  If the missing table contained the points $(3, 0)$ and $(-2, 0)$, then option C would indeed be a valid answer. Options A, B, and D would be incorrect if the table contained other points that contradict them being factors (e.g., if $q(2) \neq 0$, $q(-3) \neq 0$, and $q(1) \neq 0$). However, the fundamental problem is the absence of the table.  Without the table, there is no information provided to determine which option, if any, must be a factor of $q$. Therefore, the question as presented is invalid due to missing crucial information."
+    }
+  },
+  {
+    "question_id": 180172,
+    "question_text": "The function g is defined by g(x) = (x - 5)(x - 1). The graph of g in the xy-plane is a parabola. Wh...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the x-coordinate of the vertex of the parabola g(x) = (x - 5)(x - 1), we can find the midpoint of the roots of the quadratic equation g(x) = 0. The roots are x = 5 and x = 1. The x-coordinate of the vertex is the average of the roots: (5 + 1) / 2 = 3. We need to check which interval contains x = 3.Option A: 2 < x < 4. This interval contains 3.Option B: 0 < x < 2. This interval does not contain 3.Option C: 4 < x < 6. This interval does not contain 3.Option D: -1 < x < 1. This interval does not contain 3.Therefore, option A is the correct answer. All other options are clearly incorrect as they do not contain the x-coordinate of the vertex, which is 3. There are no grammatical or formatting issues. The difficulty level is subjective, but 'Hard' is a reasonable assessment for SAT, especially for students who may not immediately recognize the relationship between the roots and the vertex of a parabola. It could also be considered 'Medium-Hard'. Overall, the question is valid and well-posed."
+    }
+  },
+  {
+    "question_id": 765283,
+    "question_text": "A rectangular piece of paper has a length that is twice its width. If the area of the piece of paper...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The option marked as correct, A (8 inches), is indeed the correct answer. Let the width of the rectangular piece of paper be 'w' inches. According to the problem, the length is twice the width, so the length is '2w' inches. The area of the rectangle is given by length * width, which is (2w) * w = 2w^2. We are given that the area is 128 square inches. So, we have the equation 2w^2 = 128. Dividing both sides by 2, we get w^2 = 64. Taking the square root of both sides, we get w = 8 (since width must be positive). Therefore, the width is 8 inches, which corresponds to option A.Options B, C, and D are incorrect.- If width = 6 inches, length = 12 inches, Area = 6 * 12 = 72 square inches (not 128).- If width = 12 inches, length = 24 inches, Area = 12 * 24 = 288 square inches (not 128).- If width = 16 inches, length = 32 inches, Area = 16 * 32 = 512 square inches (not 128).There are no grammatical or formatting issues.While the question is solvable and valid, classifying it as 'Hard' and under 'Advanced Math' -> 'Nonlinear Functions' might be slightly misleading. The math involved is basic algebra and solving a simple quadratic equation, which is typically considered a medium difficulty problem on the SAT.  It might be more appropriately categorized under 'Algebra' or 'Problem Solving' with a difficulty level of 'Medium' or 'Medium-Hard'. However, for validation purposes, the question itself is mathematically sound and has a unique correct answer among the options provided."
+    }
+  },
+  {
+    "question_id": 66688,
+    "question_text": "For the function g, g(0) = 200, and for each increase in x by 1, the value of g(x) decreases by 50%....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. For each increase in x by 1, the value of g(x) decreases by 50%, which means it is multiplied by 0.5. Given g(0) = 200, we can calculate g(1) = 200 * 0.5 = 100, g(2) = 100 * 0.5 = 50, and g(3) = 50 * 0.5 = 25. Option A, which is 25, is the correct answer. Options B, C, and D are incorrect. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate for SAT, as it requires understanding of exponential decay and function notation."
+    }
+  },
+  {
+    "question_id": 852155,
+    "question_text": "The equation $$P = 500(1.05)^t$$ models the population, P, of bacteria t years after a scientist sta...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The original equation models population growth per year. To convert it to months, we need to adjust the time variable. If 't' is in years and 'm' is in months, then t years is equal to m/12 years. Substituting t = m/12 into the original equation P = 500(1.05)^t gives P = 500(1.05)^(m/12). Option A, P = 500(1.05)^(m/12), correctly models the population after m months. Options B, C, and D are incorrect because they do not correctly convert the time unit from years to months in the exponential model. Option B incorrectly raises the exponent to 12m, Option C uses 'm' directly as years, and Option D incorrectly modifies the base instead of the exponent to account for the change in time unit. The difficulty level 'Hard' is appropriate as it requires understanding of exponential functions and unit conversion."
+    }
+  },
+  {
+    "question_id": 492244,
+    "question_text": "The functions m and n are defined by the given equations, where $x ≥ 0$. Which of the following equa...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is invalid because the equations for functions m and n, and equations labeled I and II are missing from the question text. This makes the question unanswerable.",
+        "The wording 'function it defines' is ambiguous and could be rephrased for clarity."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is fundamentally flawed because it refers to 'given equations' for functions m and n, and options I and II, but these equations are not provided in the question text.  Without these equations, it is impossible to determine the maximum values of the functions or whether the given options display these maximum values as constants or coefficients.  The question is therefore unanswerable as presented.  Assuming the marked answer 'B' is intended to be correct, it suggests that equation II, when provided, would display the maximum value of function n as a constant or coefficient, while equation I would not display the maximum value of function m in such a way. However, without the actual equations, this is just speculation.  Additionally, the phrase 'function it defines' is ambiguous and could be rephrased for clarity."
+    }
+  },
+  {
+    "question_id": 721721,
+    "question_text": "The graph of a quadratic function is shown in the xy-plane. Which of the following equations could r...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to identify the equation representing the given quadratic function's graph. The graph, as defined by the `asy` code, is a parabola with the equation $y = -0.5(x + 2)^2 + 4$. This is in vertex form $y = a(x-h)^2 + k$, where the vertex is $(h, k) = (-2, 4)$ and the coefficient $a = -0.5$ indicates that the parabola opens downwards.\n\nLet's examine each option:\n\nA. $y = -0.5(x + 2)^2 + 4$: This equation has a vertex at $(-2, 4)$ and opens downwards ($a = -0.5 < 0$). This matches the graph.\nB. $y = 0.5(x - 2)^2 + 4$: This equation has a vertex at $(2, 4)$ and opens upwards ($a = 0.5 > 0$). This does not match the graph.\nC. $y = -0.5(x - 2)^2 - 4$: This equation has a vertex at $(2, -4)$ and opens downwards ($a = -0.5 < 0$). This does not match the graph.\nD. $y = 0.5(x + 2)^2 - 4$: This equation has a vertex at $(-2, -4)$ and opens upwards ($a = 0.5 > 0$). This does not match the graph.\n\nOption A is the only equation that correctly represents a parabola with a vertex at $(-2, 4)$ and opening downwards, which corresponds to the graph described by the provided `asy` code. Therefore, option A is the correct answer, and options B, C, and D are clearly incorrect. The question is grammatically correct, well-formatted, and the difficulty level 'Hard' is appropriate for SAT as it requires understanding of quadratic functions in vertex form and graph interpretation."
+    }
+  },
+  {
+    "question_id": 372027,
+    "question_text": "The function g is defined by $g(x) = m \\cdot n^x$, where $m$ and $n$ are positive constants. The gra...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve it, we use the given points to find the values of $m$ and $n$. \n\nGiven the function $g(x) = m \\\\cdot n^x$, and the points $(0, 8)$ and $(2, 32)$.\n\nUsing the point $(0, 8)$: \n$g(0) = m \\\\cdot n^0 = m \\\\cdot 1 = m = 8$.\nSo, $m = 8$.\n\nUsing the point $(2, 32)$: \n$g(2) = m \\\\cdot n^2 = 32$.\nSubstitute $m = 8$ into this equation: \n$8 \\\\cdot n^2 = 32$.\nDivide both sides by 8: \n$n^2 = \frac{32}{8} = 4$.\nSince $n$ is a positive constant, we take the positive square root: \n$n = \\\\sqrt{4} = 2$.\n\nFinally, we calculate $m + n$: \n$m + n = 8 + 2 = 10$.\n\nThe correct answer is 10, which corresponds to option C. Options A, B, and D are incorrect. The difficulty level 'Hard' is appropriate for SAT, as it requires multiple steps and understanding of exponential functions. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 821258,
+    "question_text": "The table shows three values of x and their corresponding values of y, where $y = f(x) - 3$ and $f$ ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually correct. The calculated correct answer is -85, which is not among the options.",
+        "All options provided (A, B, C, D) are incorrect based on the problem statement and calculations."
+      ],
+      "correct_answer": null,
+      "explanation": "Let $y = f(x) - 3$. From the table, we have the following points for $f(x) = y + 3$:\nFor x=10, y=-8, so $f(10) = -8 + 3 = -5$.\nFor x=20, y=-8, so $f(20) = -8 + 3 = -5$.\nFor x=15, y=2, so $f(15) = 2 + 3 = 5$.\nSince $f(10) = f(20)$, the axis of symmetry of the quadratic function $f(x)$ is at $x = (10+20)/2 = 15$. Thus, the vertex form of the quadratic function is $f(x) = a(x-15)^2 + k$. From $f(15) = 5$, we have $k = 5$. So $f(x) = a(x-15)^2 + 5$. Using $f(10) = -5$, we get $-5 = a(10-15)^2 + 5 = 25a + 5$. This gives $25a = -10$, so $a = -10/25 = -2/5$. Therefore, $f(x) = -\frac{2}{5}(x-15)^2 + 5$. The y-intercept is the value of $f(0)$. $f(0) = -\frac{2}{5}(0-15)^2 + 5 = -\frac{2}{5}(-15)^2 + 5 = -\frac{2}{5}(225) + 5 = -2 \times 45 + 5 = -90 + 5 = -85$. The y-coordinate of the y-intercept is -85. None of the options match -85, and option A (-258) which is marked as correct is significantly different from -85. Therefore, the marked correct answer is incorrect, and none of the provided options are correct."
+    }
+  },
+  {
+    "question_id": 153676,
+    "question_text": "A quadratic function models the height, in feet, of a toy rocket above the ground in terms of the ti...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we can use the vertex form of a quadratic equation, h(t) = a(t - k)^2 + m, where (k, m) is the vertex.  Given that the maximum height is 520 feet at t=5 seconds, the vertex is (5, 520). So, h(t) = a(t - 5)^2 + 520. We are also given that the initial height is 20 feet at t=0. Plugging in t=0 and h(0)=20, we get 20 = a(0 - 5)^2 + 520, which simplifies to 20 = 25a + 520. Solving for 'a', we get 25a = 20 - 520 = -500, so a = -500 / 25 = -20. Thus, the quadratic function is h(t) = -20(t - 5)^2 + 520. To find the height at t=7 seconds, we plug in t=7: h(7) = -20(7 - 5)^2 + 520 = -20(2)^2 + 520 = -20(4) + 520 = -80 + 520 = 440.  Option A, 440, is indeed the correct answer. The other options (B, C, D) are clearly incorrect as they are significantly different from the calculated value. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of quadratic functions."
+    }
+  },
+  {
+    "question_id": 580372,
+    "question_text": "The area $A$ of a circular stain spreading on a fabric is modeled by a quadratic function of time $t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The area of the stain is modeled by a quadratic function $A(t) = at^2 + bt + c$. We are given that $A(0) = 0$, $A(2) = 12$, and $A(4) = 48$. From $A(0) = 0$, we get $c = 0$. So, $A(t) = at^2 + bt$. Using the other two points, we have:$A(2) = 4a + 2b = 12 \\\\Rightarrow 2a + b = 6$$A(4) = 16a + 4b = 48 \\\\Rightarrow 4a + b = 12$Subtracting the first equation from the second equation gives $2a = 6$, so $a = 3$. Substituting $a = 3$ into the first equation gives $2(3) + b = 6$, so $6 + b = 6$, and $b = 0$. Thus, the quadratic function is $A(t) = 3t^2$.To find the area at $t = 6$ minutes, we calculate $A(6) = 3(6)^2 = 3(36) = 108$.Option A, 108, is the correct answer. Options B, C, and D are incorrect. The difficulty level 'Hard' is appropriate as it requires setting up and solving a system of equations based on a word problem, which is typical of advanced SAT math questions."
+    }
+  },
+  {
+    "question_id": 3501,
+    "question_text": "The function g is defined above, where d, e, and f are integer constants. If the zeros of the functi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The zeros of the function g(x) are given as -1, 2, and -4. This means that g(-1) = 0, g(2) = 0, and g(-4) = 0.  Since these are the zeros of a cubic polynomial, we can write g(x) in factored form as g(x) = a(x - (-1))(x - 2)(x - (-4)) = a(x + 1)(x - 2)(x + 4), where 'a' is a constant.  Comparing this to the given form g(x) = x^3 + dx^2 + ex + f, we see that the leading coefficient of x^3 is 1, which implies that a = 1. Therefore, g(x) = (x + 1)(x - 2)(x + 4).  To find the value of f, we can expand this factored form and compare it to the standard form.  Expanding (x + 1)(x - 2)(x + 4):  First, multiply (x + 1)(x - 2) = x^2 - 2x + x - 2 = x^2 - x - 2.  Then, multiply (x^2 - x - 2)(x + 4) = x^3 + 4x^2 - x^2 - 4x - 2x - 8 = x^3 + 3x^2 - 6x - 8.  Comparing this expanded form x^3 + 3x^2 - 6x - 8 with g(x) = x^3 + dx^2 + ex + f, we can see that f = -8.  Option A, -8, is the correct answer. The other options are incorrect because they do not result in a polynomial with the given zeros."
+    }
+  },
+  {
+    "question_id": 878622,
+    "question_text": "Amelia measured the temperature of a cup of coffee placed in a room with a constant temperature of 2...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense in the context of exponential decay modeling cooling. Option D is indeed the correct answer as it accurately models the given temperature data points. Let's verify:\n\nFor m=0 (7:00 a.m.):\n$T(0) = 20 + 60 (0.75)^{\frac{0}{4}} = 20 + 60 (0.75)^0 = 20 + 60 \times 1 = 80°C$\n\nFor m=4 (7:04 a.m.):\n$T(4) = 20 + 60 (0.75)^{\frac{4}{4}} = 20 + 60 (0.75)^1 = 20 + 45 = 65°C$\n\nFor m=8 (7:08 a.m.):\n$T(8) = 20 + 60 (0.75)^{\frac{8}{4}} = 20 + 60 (0.75)^2 = 20 + 60 \times 0.5625 = 20 + 33.75 = 53.75°C$\n\nOption D correctly predicts all given temperatures. Let's examine why other options are incorrect:\n\nOption A: $T(m) = 80 (1.25)^m$. This function represents exponential growth, not decay, as the base (1.25) is greater than 1. The temperature would increase over time, which is contrary to the scenario of cooling coffee.\n\nOption B: $T(m) = 80 (0.85)^m$. This function represents exponential decay, but let's check if it fits the data. At m=4, $T(4) = 80 (0.85)^4 \\\\approx 41.76°C$, which is significantly lower than the given 65°C at 7:04 a.m.\n\nOption C: $T(m) = (80 - 20) (0.75)^{\frac{m}{4}} = 60 (0.75)^{\frac{m}{4}}$. At m=0, $T(0) = 60 (0.75)^0 = 60°C$. This function starts at 60°C, not 80°C as given in the problem statement.\n\nTherefore, options A, B, and C are clearly incorrect. Option D is the only function that accurately models the given data and represents exponential decay towards the room temperature of 20°C. The difficulty level of 'Hard' is appropriate as it requires understanding exponential functions and applying them to a real-world context, as well as testing each option against the given data."
+    }
+  },
+  {
+    "question_id": 219013,
+    "question_text": "An initial investment of $1,000 is placed in an account that earns 5% interest compounded annually. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. Option D, which is marked as correct, accurately represents the compound interest formula for this scenario. The formula for compound interest is A = P(1 + r)^t, where A is the final amount, P is the principal amount, r is the interest rate, and t is the time in years. In this case, P = $1,000, A = $1,200, and r = 0.05. Plugging these values into the formula gives 1,200 = 1,000(1 + 0.05)^t, which simplifies to 1,200 = 1,000(1.05)^t. Options A, B, and C are incorrect because they either reverse the initial and final amounts or incorrectly apply the interest rate in the formula. Option A reverses the initial and final amounts. Options B and C use the interest rate 'r' directly as the base instead of '1+r'. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding of compound interest and setting up the correct equation, which is typically considered an advanced math topic on the SAT."
+    }
+  },
+  {
+    "question_id": 285626,
+    "question_text": "The function $$f(t) = -16t^2 + 48t + 64$$ models the height above the ground $f$, in feet, of a ball...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and clearly written. To find the t-intercept of the graph of $y = f(t)$, we set $y = f(t) = 0$ and solve for $t$.$$ -16t^2 + 48t + 64 = 0 $$Divide the entire equation by -16:$$ t^2 - 3t - 4 = 0 $$Factor the quadratic equation:$$ (t - 4)(t + 1) = 0 $$This gives two solutions for $t$: $t = 4$ and $t = -1$.Since we are asked for the positive $t$-intercept, we consider $t = 4$.In the context of the problem, $f(t)$ represents the height of the ball above the ground at time $t$. The $t$-intercept occurs when $f(t) = 0$, which means the height of the ball above the ground is zero. This corresponds to the moment when the ball hits the ground.Let's examine each option:A. The initial height of the ball above the ground: This corresponds to $f(0)$. $f(0) = -16(0)^2 + 48(0) + 64 = 64$. This is the y-intercept, not the t-intercept.B. The maximum height of the ball above the ground: The maximum height occurs at the vertex of the parabola. The t-coordinate of the vertex is given by $t = -b/(2a) = -48 / (2 \times -16) = -48 / -32 = 3/2 = 1.5$.  The maximum height is $f(1.5) = -16(1.5)^2 + 48(1.5) + 64 = 100$. This is the maximum height value, not related to the t-intercept.C. The time at which the ball reaches its maximum height: As calculated above, the time at which the ball reaches its maximum height is $t = 1.5$. This is not the t-intercept.D. The time at which the ball hits the ground: As determined earlier, the positive t-intercept $t = 4$ corresponds to when $f(t) = 0$, which means the ball hits the ground. This option is correct.All other options are clearly incorrect as they represent different aspects of the function and its graph, not the positive t-intercept. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding of quadratic functions, intercepts, and real-world applications, which is typical of advanced SAT math questions."
+    }
+  },
+  {
+    "question_id": 783924,
+    "question_text": "For the exponential function f, the table above shows several values of x and their corresponding va...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The table provides values for an exponential function f(x). By observing the pattern in the table, we can deduce the form of the function. When x increases by 1, the exponent of 'a' increases by 4 (from 3 to 7, and from 7 to 11). This suggests a linear relationship in the exponent of the form 4x + c. Using the first point (1, a^3), we have 4(1) + c = 3, which gives c = -1. Thus, the function is f(x) = a^(4x - 1). We are given that f(k) = a^31. Substituting the function form, we get a^(4k - 1) = a^31. Equating the exponents, we have 4k - 1 = 31. Solving for k, we get 4k = 32, so k = 8. Option A, which is 8, is indeed the correct answer. Options B, C, and D are incorrect as substituting k = 7, 9, or 6 into f(k) = a^(4k - 1) does not yield a^31. The difficulty level 'Hard' is appropriate as it requires pattern recognition and algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 112943,
+    "question_text": "What is the maximum value of the function f defined by f(x) = -2(x + 1)^2 + 7 ?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the maximum value of the function f(x) = -2(x + 1)^2 + 7. This is a quadratic function in vertex form, f(x) = a(x - h)^2 + k, where the vertex is at (h, k). In this case, a = -2, h = -1, and k = 7. Since 'a' is negative, the parabola opens downwards, indicating a maximum value. The maximum value of the function is the y-coordinate of the vertex, which is k = 7. Option B, which is 7, is therefore the correct answer. Options A (-1), C (2), and D (-7) are incorrect because they are not the maximum value of the function. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding of quadratic functions and their vertex form, which is typically covered in advanced math topics for the SAT."
+    }
+  },
+  {
+    "question_id": 242866,
+    "question_text": "Let the function $q$ be defined as $q(x) = \\frac{(x-k)^2 + 80}{4x}$, where $k$ is a constant. If $q(...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first use the given condition $q(k) = 5$ to find the value of $k$. Substituting $x=k$ into the function definition, we get $q(k) = \frac{(k-k)^2 + 80}{4k} = \frac{0 + 80}{4k} = \frac{80}{4k}$. We are given that $q(k) = 5$, so we have $\frac{80}{4k} = 5$. Multiplying both sides by $4k$ gives $80 = 20k$, and dividing by 20 gives $k = \frac{80}{20} = 4$.Now that we know $k=4$, we can write the function as $q(x) = \frac{(x-4)^2 + 80}{4x}$. We need to find $q(10)$. Substituting $x=10$ into the function, we get $q(10) = \frac{(10-4)^2 + 80}{4 \times 10} = \frac{(6)^2 + 80}{40} = \frac{36 + 80}{40} = \frac{116}{40}$.To simplify $\frac{116}{40}$, we can divide both the numerator and the denominator by their greatest common divisor, which is 4. So, $\frac{116}{40} = \frac{116 \\\\div 4}{40 \\\\div 4} = \frac{29}{10} = 2.9$.The option marked as correct, D (2.9), is indeed the correct answer. The other options (A. 2.6, B. 3.2, C. 4.0) are clearly incorrect as they are not equal to 2.9. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of function notation and algebraic manipulation, which is typical for advanced math topics on the SAT."
+    }
+  },
+  {
+    "question_id": 618186,
+    "question_text": "The graph of the given equation in the xy-plane has a y-intercept of (r, s). Which of the following ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The y-intercept is found by setting x=0 in the equation. For all given options, when x=0, y = 16. Thus, the y-intercept is (0, 16), and s = 16. The question asks which equation displays the value of s (which is 16) as a coefficient.Option A: $y = 16 \\\\cdot (16^x)$. Here, 16 is clearly a coefficient multiplying the term $16^x$.Option B: $y = 16^{(x+1)}$. Here, 16 is the base of the exponent, not a coefficient.Option C: $y = 4^{(2x+2)}$. Here, 4 is the base of the exponent, not a coefficient.Option D: $y = 16 + 16 \\\\cdot (16^x - 1)$. While 16 is a coefficient in this equation (multiplying $(16^x - 1)$), and also a constant term, it is not displayed as a coefficient in the simplest form. Simplifying Option D, we get $y = 16 + 16 \\\\cdot 16^x - 16 = 16 \\\\cdot 16^x$, which is equivalent to Option A.  However, in the form presented, Option A more directly 'displays' 16 as a coefficient of the exponential term.Considering the context of SAT questions aiming for the 'best' answer, Option A is the most direct and clear choice that displays the y-intercept value (s=16) as a coefficient. Options B and C are clearly incorrect. Option D, while mathematically equivalent and also containing 16 as a coefficient, is less direct and more complex in its presentation. Therefore, Option A is the intended and best answer.The question is clearly written and makes sense. The difficulty level 'Hard' is appropriate as it requires understanding of y-intercepts, exponential functions, and recognizing coefficients in different forms of equations. There are no grammatical or formatting issues. Option A is indeed the correct answer based on the most straightforward interpretation of 'displays the value of s as a coefficient'."
+    }
+  },
+  {
+    "question_id": 803091,
+    "question_text": "The population of a town was initially 5000 people. An exponential model predicts that the populatio...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. Option D, P = 5000(1.08)^t, is the correct equation to model exponential growth of 8% per year from an initial population of 5000.  Here's why:\n- Exponential growth formula is P = P_0(1 + r)^t, where P_0 is the initial population, r is the growth rate (as a decimal), and t is the time in years.\n- In this case, P_0 = 5000 and r = 8% = 0.08.\n- Therefore, the equation becomes P = 5000(1 + 0.08)^t = 5000(1.08)^t, which matches option D.\n\nLet's examine why other options are incorrect:\n- Option A: P = 5000(1.16)^t uses a growth factor of 1.16, which corresponds to a 16% increase per year, not 8%.\n- Option B: P = 5000(0.08)^t uses 0.08 as the base, which represents exponential decay towards zero, not growth. It also misinterprets the growth rate as the base itself instead of the growth factor (1 + r).\n- Option C: P = 5000(9)^t uses a growth factor of 9, which corresponds to an 800% increase per year (9 = 1 + 8), not 8%.\n\nThere are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires understanding of exponential growth models and careful interpretation of percentages in the context of these models, which can be challenging for some students at the SAT level."
+    }
+  },
+  {
+    "question_id": 661898,
+    "question_text": "A rectangular garden has an area of 75 square feet. The length of the garden is 5 feet longer than t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we can set up a quadratic equation. Let 'w' be the width of the garden. The length is given as '2w + 5'. The area of the rectangle is length times width, so we have the equation: w * (2w + 5) = 75. This simplifies to 2w^2 + 5w - 75 = 0. Solving this quadratic equation, we find the positive solution for w to be 5. Let's check: if the width is 5 feet, the length is 2*5 + 5 = 15 feet, and the area is 5 * 15 = 75 square feet, which matches the given information. Option A, 5, is indeed the correct answer. Options B, C, and D can be checked similarly and will not result in an area of 75 square feet given the length-width relationship. The difficulty level 'Hard' is appropriate as it involves setting up and solving a quadratic equation from a word problem, which is a typical skill tested in the Advanced Math section of the SAT."
+    }
+  },
+  {
+    "question_id": 663023,
+    "question_text": "Which of the following functions has(have) a minimum value at x = -3?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is incomplete as it refers to functions labeled 'I' and 'II' which are not provided in the question text or description. Without knowing the definitions of functions I and II, the question cannot be answered.",
+        "The use of 'has(have)' is grammatically incorrect. It should be 'has' since 'function' is singular."
+      ],
+      "correct_answer": null,
+      "explanation": "The question asks about functions I and II having a minimum value at x = -3, but the actual definitions of functions I and II are missing.  Therefore, it is impossible to determine if option A (I only) is actually correct, or if any of the options are correct.  The question is fundamentally flawed due to the missing information.  Additionally, the phrasing 'has(have)' should be corrected to 'has' for grammatical accuracy when referring to a singular 'function'."
+    }
+  },
+  {
+    "question_id": 125628,
+    "question_text": "The functions f and g are defined by the given equations. $f(x) = 2 + |3x - x^2|$  $g(w) = |\\frac{w}...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first need to find the value of c by evaluating f(-2). \n\nStep 1: Calculate f(-2)\n$f(x) = 2 + |3x - x^2|$\\n$f(-2) = 2 + |3(-2) - (-2)^2|$\\n$f(-2) = 2 + |-6 - 4|$\\n$f(-2) = 2 + |-10|$\\n$f(-2) = 2 + 10$\\n$f(-2) = 12$\nSo, $c = 12$.\n\nStep 2: Calculate g(c) = g(12)\n$g(w) = |\frac{w}{5} - 2| + 3$\\n$g(12) = |\frac{12}{5} - 2| + 3$\\n$g(12) = |\frac{12}{5} - \frac{10}{5}| + 3$\\n$g(12) = |\frac{2}{5}| + 3$\\n$g(12) = \frac{2}{5} + 3$\\n$g(12) = \frac{2}{5} + \frac{15}{5}$\\n$g(12) = \frac{17}{5}$\n\nTo convert $\frac{17}{5}$ to decimal, we divide 17 by 5: $\frac{17}{5} = 3.4$.\n\nOption A is given as 3.4, 17/5, which matches our calculated value for g(c). Options B, C, and D are incorrect as they do not equal 3.4 or 17/5. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of function evaluation and absolute values. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 417580,
+    "question_text": "The function $$A(t) = 500(1.05)^{3t}$$ models the amount of money in an investment account, in dolla...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The given function is $$A(t) = 500(1.05)^{3t}$$. This function models the amount of money after $t$ years. We are told that the investment increases by 5% every $n$ months. A 5% increase corresponds to a growth factor of 1.05.Let's consider the growth over a period of time.After $t$ years, the amount is $A(t) = 500(1.05)^{3t}$.After $t+x$ years, the amount is $A(t+x) = 500(1.05)^{3(t+x)} = 500(1.05)^{3t+3x} = 500(1.05)^{3t} (1.05)^{3x}$.The growth factor over $x$ years is $\frac{A(t+x)}{A(t)} = \frac{500(1.05)^{3t} (1.05)^{3x}}{500(1.05)^{3t}} = (1.05)^{3x}$.We are given that the investment increases by 5% every $n$ months. Let's express $n$ months in years. $n$ months is equal to $\frac{n}{12}$ years.So, for a time period of $x = \frac{n}{12}$ years, the growth factor should be 1.05.Using the growth factor we derived above, $(1.05)^{3x} = 1.05$.Therefore, $3x = 1$.Substituting $x = \frac{n}{12}$, we get $3 \times \frac{n}{12} = 1$.$\frac{3n}{12} = 1$$\frac{n}{4} = 1$$n = 4$.Thus, the investment is predicted to increase by 5% every 4 months.Option A is 4, which is marked as correct.The question is clearly written and makes sense. The option marked as correct is indeed correct. The other options are clearly incorrect as we have derived a unique value for $n$. There are no grammatical or formatting issues. The difficulty level is appropriate for SAT advanced math questions as it requires understanding of exponential growth and unit conversion."
+    }
+  },
+  {
+    "question_id": 492570,
+    "question_text": "$$f(x) = (x + 2)(x - 3)(x + 1)$$In the xy-plane, the graph of the function f, where y = f(x), is shi...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually correct. The mathematically correct answer is -17, which is not among the provided options."
+      ],
+      "correct_answer": null,
+      "explanation": "To find the function g(x), we shift f(x) down by 5 units, so g(x) = f(x) - 5. Given f(x) = (x + 2)(x - 3)(x + 1), we have g(x) = (x + 2)(x - 3)(x + 1) - 5. To find the value of b when the graph of y = g(x) passes through the point (2, b), we need to evaluate g(2).  g(2) = (2 + 2)(2 - 3)(2 + 1) - 5 = (4)(-1)(3) - 5 = -12 - 5 = -17. Therefore, b = -17.  Option A, marked as correct, is -15, which is not the correct value of b. None of the provided options are correct for the question as written.  It is possible there was a typo in the question, and it was intended to shift down by 3 units instead of 5, which would result in b = -15. However, based on the question as written, the correct answer is -17, and option A is incorrect."
+    }
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "question_id": 903248,
+    "question_text": "A fruit basket contains different types of fruits as shown in the table below.  Fruits in a Basket  ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the probability of choosing an apple from a fruit basket. The table provides the number of apples (15) and the total number of fruits (50). The probability of choosing an apple is the ratio of the number of apples to the total number of fruits, which is $\frac{15}{50}$. Option A, $\frac{15}{50}$, is the correct answer. Options B, C, and D represent probabilities of choosing other combinations of fruits and are therefore incorrect. There are no grammatical or formatting issues, and the difficulty level is appropriately classified as 'Easy' for an SAT question."
+    }
+  },
+  {
+    "question_id": 338311,
+    "question_text": "#### Student Activities at a High School  |                        |    | Takes an Advanced Class   ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the probability that a randomly selected student participates in a club or sport.  From the table, the total number of students surveyed is 170. The number of students who participate in a club or sport is the sum of students who participate in a club or sport and take advanced classes (70) and those who participate in a club or sport and do not take advanced classes (30), which is 70 + 30 = 100.  The probability is therefore the ratio of the number of students who participate in a club or sport to the total number of students surveyed, which is $$\frac{100}{170}$$. This simplifies to $$\frac{10}{17}$$. Option D, $$\frac{10}{17}$$, is the correct answer. Options A, B, and C represent other probabilities that are not asked for in the question and are therefore incorrect. The question is of appropriate difficulty ('Easy') for the SAT, requiring basic probability calculation from a given table. There are no grammatical or significant formatting issues that would hinder understanding."
+    }
+  },
+  {
+    "question_id": 614782,
+    "question_text": "Types of Fruits Sold in June  | Market          | Month | Apples | Bananas | Oranges | |------------...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the fraction of fruits sold at Sunny Orchard Market out of all fruits sold in June. To solve this, we first calculate the total number of fruits sold at each market: Green Valley (60 + 45 + 30 = 135) and Sunny Orchard (40 + 55 + 70 = 165). The total number of fruits sold at both markets is 135 + 165 = 300. The fraction of fruits sold at Sunny Orchard is therefore $\frac{165}{300}$. Simplifying this fraction by dividing both the numerator and the denominator by their greatest common divisor (which is 15), we get $\frac{165 \\\\div 15}{300 \\\\div 15} = \frac{11}{20}$. Option A, $\frac{11}{20}$, is indeed the correct answer. The other options are incorrect as they do not simplify to $\frac{165}{300}$. The question is appropriate for the 'Easy' difficulty level on the SAT, as it involves basic arithmetic and fraction simplification."
+    }
+  },
+  {
+    "question_id": 940618,
+    "question_text": "A survey was conducted at Northwood High School to determine students' favorite subjects. The freque...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a frequency table that is not provided. Without the frequency table, it is impossible to determine the number of students who prefer Science and therefore calculate the probability. This makes the question unsolvable as presented."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is invalid because it is missing the frequency table that is essential to solve the problem.  While option B (0.20) is marked as correct, and it's possible to construct a frequency table where Science preference leads to a probability of 0.20 (e.g., if 12 out of 60 students prefer Science), without the actual table, we cannot verify this or any other option.  The question is incomplete and cannot be answered definitively in its current form.  To be valid, the question must include the frequency table it refers to."
+    }
+  },
+  {
+    "question_id": 309861,
+    "question_text": "A survey of 600 people at a library asked whether they prefer to read ebooks or physical books. The ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first need to find the total number of adults surveyed. We know that 600 people were surveyed in total, and 220 of them were teenagers. Therefore, the number of adults surveyed is 600 - 220 = 380.  From the table, we know that 180 adults prefer to read ebooks.  Let 'x' be the number of adults who prefer to read physical books. The total number of adults is the sum of adults who prefer ebooks and adults who prefer physical books. So, 380 = 180 + x. Solving for x, we get x = 380 - 180 = 200. Therefore, 200 adults surveyed responded that they prefer to read physical books. Option C is indeed the correct answer. Options A, B, and D are incorrect as they do not result from this calculation. The question is grammatically correct and the table is understandable despite potential formatting limitations in text. The difficulty level 'Easy' is appropriate because it involves basic subtraction and interpretation of a table."
+    }
+  },
+  {
+    "question_id": 35718,
+    "question_text": "A basket of 50 fruits contains apples, bananas, and oranges, as shown in the frequency table.  | Fru...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The probability of selecting a banana is calculated as the number of bananas divided by the total number of fruits. There are 25 bananas and 50 total fruits, so the probability is $\\\\frac{25}{50}$. Option D, $\\\\frac{25}{50}$, is the correct answer. Options A, B, and C are incorrect as they do not represent the probability of selecting a banana from the basket. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental concept of probability in a straightforward manner."
+    }
+  },
+  {
+    "question_id": 749132,
+    "question_text": "A classroom has 25 students.  Of these students, 15 are taking a math class. If a student is selecte...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks for the probability of selecting a student taking a math class from a classroom of 25 students, where 15 are taking math. The probability is calculated as the number of favorable outcomes (students taking math) divided by the total number of possible outcomes (total students), which is $\\\\frac{15}{25}$. This fraction simplifies to $\\\\frac{3}{5}$. Option B, $\\\\frac{3}{5}$, is indeed the correct answer. Options A, C, and D are clearly incorrect. Option A, $\\\\frac{2}{5}$, is not the correct probability. Option C, 10, and Option D, 15, are not probabilities as they are greater than 1 and do not represent a ratio of favorable outcomes to total outcomes. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' because it involves a straightforward probability calculation with simple numbers, suitable for an introductory probability problem on the SAT."
+    }
+  },
+  {
+    "question_id": 498996,
+    "question_text": "A local animal shelter recorded data on the types of animals adopted and the age group of the adopte...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the probability of a randomly selected adoption being a dog.  To find this probability, we need to divide the total number of dog adoptions by the total number of adoptions. From the table, the total number of dog adoptions is 150 (Adult) + 50 (Senior) = 200. The total number of adoptions is given as 500. Therefore, the probability is $\\\\frac{200}{500}$. Option B, $\\\\frac{200}{500}$, is the correct answer. Options A, C, and D are incorrect as they represent different ratios that are not relevant to the question asked. The difficulty level 'Easy' is appropriate as it involves a basic probability calculation from a provided table, which is typical for introductory probability problems on the SAT."
+    }
+  },
+  {
+    "question_id": 191790,
+    "question_text": "A bakery produced 800 bagels one morning, and during quality control, it was found that 6 bagels wer...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the probability of selecting a burnt bagel, we need to divide the number of burnt bagels by the total number of bagels.  The probability is calculated as 6 (burnt bagels) / 800 (total bagels) = 0.0075. Option A, 0.0075, is the correct answer. Options B, C, and D are clearly incorrect: 0.075 and 0.75 are significantly larger probabilities than what is expected given the small number of burnt bagels compared to the total, and 6 represents the number of burnt bagels, not a probability. The difficulty level is appropriately classified as 'Easy' because it involves a straightforward application of the basic probability formula. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 920224,
+    "question_text": "A fruit basket contains $m$ red apples and 20 green apples. If one apple is selected at random from ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks for the probability of selecting a red apple from a basket containing $m$ red apples and 20 green apples. \n\nTo find the probability of selecting a red apple, we need to divide the number of red apples by the total number of apples in the basket.\n\nNumber of red apples = $m$\nNumber of green apples = 20\nTotal number of apples = Number of red apples + Number of green apples = $m + 20$\n\nProbability of selecting a red apple = $\frac{\text{Number of red apples}}{\text{Total number of apples}} = \frac{m}{m+20}$\n\nOption B, $\frac{m}{m+20}$, matches this calculation and is therefore the correct answer.\n\nLet's examine the other options:\n\nOption A: $\frac{20}{m}$ - This represents the ratio of green apples to red apples, or potentially the probability of selecting a green apple if there were only $m$ total apples (which is not the case). It is not the probability of selecting a red apple.\n\nOption C: $\frac{20}{m+20}$ - This represents the probability of selecting a green apple, as it is the number of green apples divided by the total number of apples.\n\nOption D: $m+20$ - This represents the total number of apples in the basket, not a probability. Probabilities must be between 0 and 1, inclusive, unless representing odds.\n\nAll options except B are clearly incorrect as probabilities for selecting a red apple in this scenario. The question is grammatically correct and well-formatted. The difficulty level is appropriately classified as 'Easy' for an SAT question, as it involves a fundamental understanding of probability."
+    }
+  },
+  {
+    "question_id": 650924,
+    "question_text": "At Lakeside High School, the probability that a randomly selected student is a sophomore (10th grade...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the probability of a randomly selected student being a sophomore (0.4) and the total number of students in the school (150). To find the number of sophomores, we multiply the probability by the total number of students: 0.4 * 150 = 60. Option A, which is 60, is indeed the correct answer. Options B, C, and D are incorrect as they do not result from this calculation. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question as it involves a straightforward application of probability."
+    }
+  },
+  {
+    "question_id": 891939,
+    "question_text": "A classroom has 30 students. Of these students, 18 are taking Spanish, and the rest are taking Frenc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the probability of selecting a student taking French, we first need to determine the number of students taking French.  There are 30 students in total, and 18 are taking Spanish. Therefore, the number of students taking French is 30 - 18 = 12. The probability of selecting a student taking French is the ratio of the number of French students to the total number of students, which is $\frac{12}{30}$. This fraction can be simplified by dividing both the numerator and the denominator by their greatest common divisor, which is 6.  $\frac{12 \\\\div 6}{30 \\\\div 6} = \frac{2}{5}$. Option A, $\frac{2}{5}$, is indeed the correct answer. Options B, C, and D are incorrect as they do not represent the simplified probability of $\frac{2}{5}$. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this straightforward probability question."
+    }
+  },
+  {
+    "question_id": 254072,
+    "question_text": "A student has a collection of markers. The collection includes 5 permanent markers, 3 dry-erase mark...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the probability of selecting a dry-erase marker, we need to divide the number of dry-erase markers by the total number of markers. There are 3 dry-erase markers and a total of 5 + 3 + 2 = 10 markers. Therefore, the probability is $\\\\frac{3}{10}$, which corresponds to option A. Options B, C, and D are incorrect as they do not represent the correct probability based on the given information. The difficulty level 'Easy' is appropriate for this question as it involves basic probability concepts."
+    }
+  },
+  {
+    "question_id": 533015,
+    "question_text": "Enrollment in After-School Activities by Grade Level  | Grade Level | Enrolled in Sports | Enrolled ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the probability of selecting a 10th-grade student enrolled in Clubs from the total of 35 students.  From the table, we can see that there are 5 students who are in 10th grade and enrolled in Clubs. The total number of students is given as 35. Therefore, the probability is the ratio of the number of favorable outcomes (10th grade students in Clubs) to the total number of outcomes (total students), which is $\frac{5}{35}$. Simplifying this fraction gives $\frac{1}{7}$. Option A, $\frac{1}{7}$, is indeed the correct answer. Options B, C, and D are incorrect. Option B, $\frac{17}{35}$, is the probability of selecting a 10th-grade student (total 10th graders = 17). Option C, $\frac{13}{35}$, is the probability of selecting a student enrolled in Clubs (total club students = 13). Option D, $\frac{8}{35}$, is the probability of selecting a 9th-grade student enrolled in Clubs. The difficulty level 'Medium' is appropriate as it requires basic probability calculation and data interpretation from a table, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 272093,
+    "question_text": "A survey was conducted at a local coffee shop to understand customer preferences for pastry type and...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It asks for the fraction of customers who prefer croissants that also prefer iced coffee. From the table, the total number of customers who prefer croissants is 80, and among them, 47 prefer iced coffee. Therefore, the fraction is $$\frac{47}{80}$$, which corresponds to option A. Options B, C, and D are clearly incorrect as they use different numbers from the table and do not represent the requested probability. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium because it requires reading and interpreting data from a table and calculating a simple probability, which is a standard skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 151881,
+    "question_text": "The table below shows the number of students at a high school who participate in after-school clubs ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the probability, we first need to calculate the total number of students. Total students = 15 (participates in club and sport) + 7 (participates in club, not in sport) + 10 (does not participate in club, participates in sport) + 8 (does not participate in club, not in sport) = 40.  The question asks for the probability that a student participates in a club but does not participate in a sport. From the table, the number of students who participate in a club but do not participate in a sport is 7. Therefore, the probability is the number of favorable outcomes divided by the total number of outcomes, which is $\frac{7}{40}$. Option A, $\frac{7}{40}$, is the correct answer. Options B, C, and D are incorrect as they do not equal $\frac{7}{40}$. The difficulty level is appropriately marked as Medium, as it requires basic understanding of probability and data interpretation from a table, skills tested in the SAT Problem-Solving and Data Analysis section. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 490996,
+    "question_text": "In a jar, there are 12 green marbles, 8 red marbles, 5 blue marbles, and 15 yellow marbles. If one o...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the probability of selecting a marble that is neither blue nor yellow, we need to consider the marbles that are green or red. There are 12 green marbles and 8 red marbles, totaling 20 marbles that are neither blue nor yellow. The total number of marbles is 12 + 8 + 5 + 15 = 40. The probability is therefore the ratio of favorable outcomes to total outcomes, which is $\frac{20}{40} = \frac{1}{2}$. Option A, $\frac{1}{2}$, is indeed the correct answer. The other options (B, C, and D) are clearly incorrect as they do not equal $\frac{1}{2}$. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for this question as it involves basic probability concepts suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 467953,
+    "question_text": "A classroom has 25 students. Each student's name is written on a separate piece of paper and placed ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "1. **Clarity:** The question is clearly written and makes sense. It describes a standard probability scenario of selecting one item from a set of equally likely items. While it doesn't specify *which* name is being selected, it's implied that we are looking for the probability of selecting *any specific* name. This is a common way probability questions are phrased.2. **Correctness of marked answer:** Yes, the option marked as correct (B. 0.04) is indeed correct. There are 25 equally likely outcomes (each student's name). The probability of selecting any specific name is 1 out of 25, which is calculated as 1/25 = 0.04.3. **Incorrectness of other options:** Yes, all other options are clearly incorrect.    - A. 0.02 is half of the correct probability and would correspond to a probability of 1/50, not 1/25.    - C. 0.25 is equal to 1/4, which would be the probability if there were only 4 students, not 25.    - D. 0.50 is equal to 1/2, which would be the probability if there were only 2 students, not 25.4. **Grammatical or formatting issues:** There are no grammatical or formatting issues. The question is well-structured and easy to understand.5. **Difficulty level:** The difficulty level of 'Medium' is appropriate. The question requires a basic understanding of probability and a simple calculation. It is suitable for the Problem-Solving and Data Analysis section of the SAT, which often includes questions of this difficulty level.In conclusion, the question is valid, with a correct answer and appropriate difficulty for the SAT. There are no significant issues."
+    }
+  },
+  {
+    "question_id": 271853,
+    "question_text": "The students in the Math Club and the Science Club were surveyed about their favorite type of snack....",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (D) is not actually correct. The correct probability is 3/7, which is not among the provided options.",
+        "All provided options (A, B, C, D) are incorrect for the given question."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is clearly written and makes sense. To find the probability that a student is in the Science Club given they prefer Fruit, we need to divide the number of Science Club members who prefer Fruit by the total number of students who prefer Fruit.  From the table: \n- Number of Science Club members who prefer Fruit = 12\n- Total number of students who prefer Fruit = 16 (Math Club) + 12 (Science Club) = 28\nTherefore, the probability is 12/28, which simplifies to 3/7.  Option D, marked as correct, is 7/2, which is not a valid probability and is not equal to 3/7. Options A (7), B (5), and C (2) are also not equal to 3/7 and are not valid probabilities in this context. The difficulty level is appropriately marked as Medium for an SAT question of this type. The question itself is valid in terms of clarity and structure, but the provided options and the marked 'correct' answer are incorrect."
+    }
+  },
+  {
+    "question_id": 903898,
+    "question_text": "At a high school, a survey was conducted among all 450 students to determine their favorite subject ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. To find the number of students who reported English as their favorite subject, we first need to find the probability of a student choosing English. Since the probabilities of choosing Math, Science, and English must sum to 1, we can calculate the probability of choosing English as: P(English) = 1 - P(Math) - P(Science) = 1 - 0.32 - 0.48 = 1 - 0.80 = 0.20.  Then, to find the number of students who prefer English, we multiply this probability by the total number of students: Number of students (English) = P(English) * Total students = 0.20 * 450 = 90. Option A, 90, is indeed the correct answer. Options B, C, and D are incorrect. Option B (144) is the number of students who prefer Math (0.32 * 450). Option C (216) is the number of students who prefer Science (0.48 * 450). Option D (360) is the number of students who prefer Math or Science (0.80 * 450). The difficulty level is appropriately classified as Medium, as it requires a few steps of calculation but is not overly complex."
+    }
+  },
+  {
+    "question_id": 563784,
+    "question_text": "A bakery produces fresh bagels at a rate of 150 bagels per hour. If the bakery aims to produce 900 b...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. The bakery produces bagels at a rate of 150 bagels per hour. In the first 2 hours of production, the bakery will produce 150 bagels/hour * 2 hours = 300 bagels. The question asks for the fraction of the 900 bagels produced in the first 2 hours. This fraction is calculated as $\frac{\text{Number of bagels in first 2 hours}}{\text{Total bagels}} = \frac{300}{900}$. Simplifying this fraction by dividing both the numerator and the denominator by 300 gives $\frac{300 \\\\div 300}{900 \\\\div 300} = \frac{1}{3}$. Option B, $\frac{1}{3}$, is indeed the correct answer. The other options (A, C, and D) are clearly incorrect as they do not represent the simplified fraction $\frac{300}{900}$. The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as Medium for an SAT math question."
+    }
+  },
+  {
+    "question_id": 827465,
+    "question_text": "Daily Visitors to Redwood National Park by Age Group  | Age Group | Number of Visitors | |----------...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is not actually the correct answer based on the data provided in the table. The correct answer, calculated from the table, is $\\\\frac{8}{21}$, which is not among the options. Option A, $\\\\frac{16}{41}$, is close to the correct answer but not exactly equal. This discrepancy makes the question flawed as the marked correct answer is incorrect."
+      ],
+      "correct_answer": "A",
+      "explanation": "To solve this problem, we first need to find the total number of visitors who were at least 30 years old. This includes visitors in the age groups 30-39, 40-49, 50-59, and 60+. Summing the number of visitors in these age groups: 150 + 110 + 90 + 70 = 420.  Next, we need to find the number of visitors who were at least 50 years old. This includes visitors in the age groups 50-59 and 60+. Summing the number of visitors in these age groups: 90 + 70 = 160.  The question asks for the fraction of visitors who were at least 50 years old out of those who were at least 30 years old. This fraction is $\\\\frac{160}{420}$.  Simplifying this fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 20, we get: $\\\\frac{160 \\\\div 20}{420 \\\\div 20} = \\\\frac{8}{21}$.  The calculated correct answer is $\\\\frac{8}{21}$. However, option A is given as $\\\\frac{16}{41}$.  $\\\\frac{16}{41} \\\\approx 0.3902$ and $\\\\frac{8}{21} \\\\approx 0.3810$. While these values are close, they are not the same, and $\\\\frac{8}{21}$ is the exact answer based on the provided data. Therefore, the option marked as correct (A) is not actually correct.  The question itself is clear and makes sense, and the difficulty level is appropriate. The other options are clearly incorrect compared to the calculated correct answer of $\\\\frac{8}{21}$, but option A is also not precisely correct."
+    }
+  },
+  {
+    "question_id": 297988,
+    "question_text": "The number of books in a library, sorted by binding type and genre, is shown in the table above. Whi...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to a table ('table above') that is not provided, making it impossible to answer the question or verify the correctness of the marked answer.",
+        "Without the table data, it is impossible to determine if option C (Biography) is uniquely the correct answer or if other options might be equally or more correct.",
+        "Depending on the data in the missing table, there is a potential issue that multiple genres could be equally 'closest' to 1/4 of the total hardcover population, leading to ambiguity in the single correct answer format of SAT questions."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is invalid because it relies on a table that is not included in the question description.  Without the table, we cannot calculate the hardcover population for each genre or the total hardcover book population.  Therefore, we cannot determine which genre's hardcover population is closest to being 1/4 of the total.  While option C (Biography) is marked as correct, we cannot verify this without the table data.  Furthermore, even with a hypothetical table, it's possible that multiple options could be equally close, or that another option is actually closer, depending on the specific numbers in the table. The missing table is a critical flaw that prevents the question from being solvable and valid."
+    }
+  },
+  {
+    "question_id": 795224,
+    "question_text": "A bag contains a total of 60 marbles. If 24 of the marbles are yellow, and the rest are green, what ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and easy to understand. To solve it, first determine the number of green marbles.  Since there are 60 total marbles and 24 are yellow, the number of green marbles is 60 - 24 = 36. The probability of selecting a green marble is the ratio of the number of green marbles to the total number of marbles, which is 36/60. This fraction can be simplified by dividing both the numerator and the denominator by their greatest common divisor, which is 12.  36 ÷ 12 = 3 and 60 ÷ 12 = 5. Therefore, the simplified probability is 3/5. Option A, 3/5, is the correct answer. Option B, 2/5, is incorrect. Option C, 2/3, is incorrect. Option D, 3/2, is incorrect because a probability cannot be greater than 1. The difficulty level 'Medium' is appropriate as it requires basic subtraction and probability calculation, suitable for the SAT Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 692914,
+    "question_text": "The table below shows the number of students at a high school who participate in different extracurr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for a conditional probability. We are given that the student chosen is a junior.  From the table, there are 15 juniors in the Debate Club and 10 juniors in the Math Club. The total number of juniors participating in either Debate Club or Math Club (or both, although it's implied they are in different activities based on the table structure) is 15 + 10 = 25.  The probability that a randomly chosen junior participates in the Debate club is the number of juniors in the Debate Club divided by the total number of juniors in extracurricular activities listed. This is $\frac{15}{25}$. Simplifying this fraction by dividing both the numerator and the denominator by 5, we get $\frac{15 \\\\div 5}{25 \\\\div 5} = \frac{3}{5}$. Option C, $\frac{3}{5}$, is the simplified form of the correct probability and is marked as correct. Option A, $\frac{15}{25}$, is numerically equivalent to the correct answer but is not in simplified form. In SAT questions, simplified fractions are generally preferred. However, option A is also mathematically a correct representation of the probability. Options B and D are incorrect. Option B, $\frac{15}{55}$, uses a denominator that is not relevant to the conditional probability given that the student is a junior. Option D, $\frac{15}{75}$, also uses an incorrect denominator. The difficulty level 'Medium' is appropriate for this question as it requires understanding of conditional probability and reading data from a table, skills typically tested at a medium difficulty level on the SAT. While option A is also numerically correct, option C is the simplified and thus the expected answer in the context of SAT. Therefore, considering option C as the single 'correct' answer and A, B, D as incorrect options is reasonable in the SAT context."
+    }
+  },
+  {
+    "question_id": 701584,
+    "question_text": "### Customer Service Ratings by Week and Score  |          | 5<br>out<br>of 5 | 4<br>out<br>of 5 | 3...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 2426. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks for a conditional probability. We are asked to find the probability that a randoml..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 851968,
+    "question_text": "A school surveyed students about their favorite subjects and grade level. The table below shows the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the value of Y, we need to use the given probability. The probability that a 12th-grade student prefers History is given as $\frac{1}{6}$.  The number of 12th-grade students who prefer History is Y. The total number of 12th-grade students is the sum of students who prefer Math, English, Science, and History in the 12th grade, which is $30 + 45 + 35 + Y = 110 + Y$.  The probability is calculated as the number of favorable outcomes (students who prefer History) divided by the total number of possible outcomes (all 12th-grade students). So, we have the equation: $\frac{Y}{110 + Y} = \frac{1}{6}$.  To solve for Y, we can cross-multiply: $6Y = 1 \times (110 + Y)$. This simplifies to $6Y = 110 + Y$. Subtracting Y from both sides gives $5Y = 110$. Dividing by 5 gives $Y = \frac{110}{5} = 22$. Therefore, the value of Y is 22, and option B is indeed the correct answer. The other options are incorrect because substituting them back into the probability equation does not yield $\frac{1}{6}$. The difficulty level 'Hard' is appropriate as it requires setting up an equation and solving for a variable within a probability context, which is typical of SAT level problem-solving questions."
+    }
+  },
+  {
+    "question_id": 370863,
+    "question_text": "A customer feedback survey asked participants to rate their satisfaction with two online shopping we...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "Let $N_A$ be the number of users of Website A and $N_B$ be the number of users of Website B. We are given that $N_B = 3N_A$.From the table, the percentage of Website A users who preferred 'Fast Checkout' is 30%, and the percentage of Website B users who preferred 'Fast Checkout' is 40%.Number of Website A users who preferred 'Fast Checkout' = $0.30 \times N_A$Number of Website B users who preferred 'Fast Checkout' = $0.40 \times N_B = 0.40 \times (3N_A) = 1.2 N_A$Total number of users who preferred 'Fast Checkout' is the sum of users from Website A and Website B who preferred 'Fast Checkout':Total 'Fast Checkout' users = $0.30 N_A + 1.2 N_A = 1.5 N_A$We want to find the probability that a person who preferred 'Fast Checkout' preferred Website A. This is a conditional probability:P(Website A | Preferred 'Fast Checkout') = (Number of Website A users who preferred 'Fast Checkout') / (Total number of users who preferred 'Fast Checkout')P(Website A | Preferred 'Fast Checkout') = $\frac{0.30 N_A}{1.5 N_A} = \frac{0.30}{1.5} = \frac{30}{150} = \frac{1}{5}$Therefore, the probability is $\frac{1}{5}$, which corresponds to option A.All other options (B, C, D) are not equal to $\frac{1}{5}$ and are therefore incorrect given the provided data and relationships.The question is clearly written and makes sense. The difficulty level is appropriate for a 'Hard' SAT question as it requires understanding of weighted averages and probability concepts within the context of data analysis. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 869579,
+    "question_text": "The Grand Library has a collection of books categorized as Fiction, Non-Fiction, and Children's book...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the number of Fiction books, we multiply the total number of books by the probability of selecting a Fiction book: 55,000 * 0.68 = 37,400. Since $f$ represents the number of Fiction books in thousands, we have $f = 37,400 / 1,000 = 37.4$. Rounding $37.4$ to the nearest integer gives $37$. Therefore, the value of $f$ to the nearest integer is 37, which corresponds to option B.Let's check the other options:- Option A (35): This would mean 35,000 Fiction books. The probability would be 35,000 / 55,000 = 35/55 ≈ 0.636, which is further from 0.68 than the probability for option B.- Option C (39): This would mean 39,000 Fiction books. The probability would be 39,000 / 55,000 = 39/55 ≈ 0.709, which is further from 0.68 than the probability for option B.- Option D (40): This would mean 40,000 Fiction books. The probability would be 40,000 / 55,000 = 40/55 ≈ 0.727, which is further from 0.68 than the probability for option B.Option B (37) gives the closest probability to 0.68.  There are no grammatical or formatting issues. The difficulty level is appropriate for SAT 'Hard' level questions as it requires understanding of probability and rounding in a problem-solving context."
+    }
+  },
+  {
+    "question_id": 800490,
+    "question_text": "The table summarizes the distribution of extracurricular activity and grade level for 60 high school...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The table provides the necessary data to calculate the conditional probability. To find the probability of selecting a student who is in Grade 10, given that the student is in Math Club, we need to consider only the students in Math Club.  There are a total of 25 students in Math Club. Out of these 25 students, 12 are in Grade 10. Therefore, the conditional probability is the ratio of the number of Grade 10 students in Math Club to the total number of students in Math Club, which is 12/25.  Converting this fraction to a decimal, we get 12/25 = 0.48. Option A (0.48) is the correct answer. Options B, C, and D are incorrect. The difficulty level is arguably on the higher end of medium, but can be considered 'Hard' for students who are not comfortable with conditional probability or reading data from tables quickly under time constraints. However, for SAT standards, it is likely closer to medium difficulty. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 453403,
+    "question_text": "The table below shows the distribution of students in a high school according to whether they partic...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the percentage of students in the Math Club who do not participate in the Science Club, we first need to determine the total number of students in the Math Club. From the table, we can see that there are 25 students in both Math Club and Science Club, and 10 students in Math Club but not in Science Club. Therefore, the total number of students in the Math Club is 25 + 10 = 35.  Out of these 35 students in the Math Club, 10 do not participate in the Science Club. To find the percentage, we calculate (10 / 35) * 100%.  10 / 35 = 2 / 7 ≈ 0.2857. Multiplying by 100% gives 28.57%. Rounding to the nearest tenth of a percent, we get 28.6%. Option C, 28.6%, is indeed the correct answer. Options A, B, and D are clearly incorrect as they are significantly different from the calculated value. There are no grammatical or formatting issues in the question. The difficulty level 'Hard' is appropriate as it requires multiple steps of data extraction and calculation, which is typical of SAT problem-solving questions."
+    }
+  },
+  {
+    "question_id": 679340,
+    "question_text": "At a local high school, a survey was conducted among students to determine their participation in af...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a conditional probability. To find the probability that a student who participates in music clubs also participates in sports, we need to divide the number of students who participate in both sports and music clubs by the total number of students who participate in music clubs. From the table, there are 75 students who participate in both sports and music clubs, and there are 300 students who participate in music clubs in total. The probability is therefore 75/300 = 1/4 = 0.25. Option B, 0.25, is the correct answer. The other options (A, C, and D) are clearly incorrect as they are significantly different from 0.25. There are no grammatical errors or significant formatting issues that impede understanding. The difficulty level of 'Hard' is appropriate as it requires understanding of conditional probability and data interpretation from a table, which are skills tested in the SAT's Problem-Solving and Data Analysis section."
+    }
+  }
+]

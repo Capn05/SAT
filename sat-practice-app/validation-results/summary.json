@@ -1,0 +1,181 @@
+{
+  "total_questions": 1362,
+  "total_invalid": 214,
+  "percentage_invalid": "15.71",
+  "subcategories": [
+    {
+      "subcategoryId": "1",
+      "totalQuestions": 59,
+      "validQuestions": 56,
+      "invalidQuestions": 3
+    },
+    {
+      "subcategoryId": "14",
+      "totalQuestions": 47,
+      "validQuestions": 43,
+      "invalidQuestions": 4
+    },
+    {
+      "subcategoryId": "15",
+      "totalQuestions": 58,
+      "validQuestions": 45,
+      "invalidQuestions": 13
+    },
+    {
+      "subcategoryId": "16",
+      "totalQuestions": 62,
+      "validQuestions": 56,
+      "invalidQuestions": 6
+    },
+    {
+      "subcategoryId": "17",
+      "totalQuestions": 33,
+      "validQuestions": 27,
+      "invalidQuestions": 6
+    },
+    {
+      "subcategoryId": "18",
+      "totalQuestions": 49,
+      "validQuestions": 43,
+      "invalidQuestions": 6
+    },
+    {
+      "subcategoryId": "19",
+      "totalQuestions": 40,
+      "validQuestions": 30,
+      "invalidQuestions": 10
+    },
+    {
+      "subcategoryId": "2",
+      "totalQuestions": 60,
+      "validQuestions": 50,
+      "invalidQuestions": 10
+    },
+    {
+      "subcategoryId": "20",
+      "totalQuestions": 40,
+      "validQuestions": 28,
+      "invalidQuestions": 12
+    },
+    {
+      "subcategoryId": "21",
+      "totalQuestions": 32,
+      "validQuestions": 28,
+      "invalidQuestions": 4
+    },
+    {
+      "subcategoryId": "22",
+      "totalQuestions": 16,
+      "validQuestions": 15,
+      "invalidQuestions": 1
+    },
+    {
+      "subcategoryId": "23",
+      "totalQuestions": 10,
+      "validQuestions": 8,
+      "invalidQuestions": 2
+    },
+    {
+      "subcategoryId": "24",
+      "totalQuestions": 44,
+      "validQuestions": 41,
+      "invalidQuestions": 3
+    },
+    {
+      "subcategoryId": "25",
+      "totalQuestions": 51,
+      "validQuestions": 45,
+      "invalidQuestions": 6
+    },
+    {
+      "subcategoryId": "26",
+      "totalQuestions": 37,
+      "validQuestions": 21,
+      "invalidQuestions": 16
+    },
+    {
+      "subcategoryId": "27",
+      "totalQuestions": 20,
+      "validQuestions": 15,
+      "invalidQuestions": 5
+    },
+    {
+      "subcategoryId": "28",
+      "totalQuestions": 18,
+      "validQuestions": 16,
+      "invalidQuestions": 2
+    },
+    {
+      "subcategoryId": "29",
+      "totalQuestions": 39,
+      "validQuestions": 37,
+      "invalidQuestions": 2
+    },
+    {
+      "subcategoryId": "3",
+      "totalQuestions": 80,
+      "validQuestions": 67,
+      "invalidQuestions": 13
+    },
+    {
+      "subcategoryId": "30",
+      "totalQuestions": 49,
+      "validQuestions": 48,
+      "invalidQuestions": 1
+    },
+    {
+      "subcategoryId": "31",
+      "totalQuestions": 96,
+      "validQuestions": 72,
+      "invalidQuestions": 24
+    },
+    {
+      "subcategoryId": "32",
+      "totalQuestions": 52,
+      "validQuestions": 47,
+      "invalidQuestions": 5
+    },
+    {
+      "subcategoryId": "33",
+      "totalQuestions": 33,
+      "validQuestions": 28,
+      "invalidQuestions": 5
+    },
+    {
+      "subcategoryId": "34",
+      "totalQuestions": 55,
+      "validQuestions": 49,
+      "invalidQuestions": 6
+    },
+    {
+      "subcategoryId": "35",
+      "totalQuestions": 38,
+      "validQuestions": 34,
+      "invalidQuestions": 4
+    },
+    {
+      "subcategoryId": "36",
+      "totalQuestions": 64,
+      "validQuestions": 60,
+      "invalidQuestions": 4
+    },
+    {
+      "subcategoryId": "37",
+      "totalQuestions": 57,
+      "validQuestions": 54,
+      "invalidQuestions": 3
+    },
+    {
+      "subcategoryId": "38",
+      "totalQuestions": 64,
+      "validQuestions": 44,
+      "invalidQuestions": 20
+    },
+    {
+      "subcategoryId": "39",
+      "totalQuestions": 59,
+      "validQuestions": 41,
+      "invalidQuestions": 18
+    }
+  ]
+}

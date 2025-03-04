@@ -1,0 +1,404 @@
+[
+  {
+    "question_id": 246273,
+    "question_text": "The length of a rectangle is 12 centimeters (cm) and the width is 7 centimeters (cm). What is the ar...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear, well-written, and mathematically sound. The area of a rectangle is calculated by multiplying its length and width. In this case, Area = 12 cm * 7 cm = 84 cm$^2$. Option C, which is 84, is the correct answer. Options A, B, and D are incorrect as they do not represent the area of the rectangle. Option A is the sum of length and width, Option B is the perimeter, and Option D is not directly related to the correct calculation. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental geometry concept."
+    }
+  },
+  {
+    "question_id": 144987,
+    "question_text": "The area of a rectangular garden is 48 square feet. If the width of the garden is 6 feet, what is th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the area and width of a rectangle and asks for the length. To find the length, we can use the formula for the area of a rectangle: Area = Length × Width. Given Area = 48 square feet and Width = 6 feet, we can solve for Length: Length = Area / Width = 48 / 6 = 8 feet. Option A, which is marked as correct, is indeed 8. Options B, C, and D are clearly incorrect as they do not result from the correct application of the area formula. Option B (42) might be obtained by subtracting the width from the area, Option C (54) by adding the width to the area, and Option D (288) by multiplying the area and the width. None of these operations are relevant to finding the length given the area and width. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question, as it tests a fundamental concept of area calculation."
+    }
+  },
+  {
+    "question_id": 882318,
+    "question_text": "Triangle PQR and triangle XYZ are similar triangles, where PQ and XY are corresponding sides. If XY ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. Since triangles PQR and XYZ are similar and PQ and XY are corresponding sides, the ratio of their corresponding sides is XY/PQ = 3PQ/PQ = 3. For similar triangles, the ratio of their perimeters is equal to the ratio of their corresponding sides. Therefore, the perimeter of triangle XYZ is 3 times the perimeter of triangle PQR. Given that the perimeter of triangle PQR is 15, the perimeter of triangle XYZ is 3 * 15 = 45. Option C, 45, is indeed the correct answer. Options A, B, and D are clearly incorrect as they do not represent 3 times the perimeter of triangle PQR. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Easy, as it tests a fundamental property of similar triangles."
+    }
+  },
+  {
+    "question_id": 926750,
+    "question_text": "A rectangle has a length of 15 and a width of 7. What is the area of the rectangle?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It asks for the area of a rectangle given its length and width. The formula for the area of a rectangle is length * width. In this case, 15 * 7 = 105. Option C, which is 105, is indeed the correct answer. Options A, B, and D are clearly incorrect. Option A (22) is the sum of the length and width, Option B (44) is the perimeter of the rectangle, and Option D (15) is just the length. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental concept in geometry."
+    }
+  },
+  {
+    "question_id": 643385,
+    "question_text": "The triangle shown (figure not drawn to scale) has a perimeter of 31 units. If one side length is 12...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question refers to 'the triangle shown' but no image is provided, making the question incomplete and ambiguous.",
+        "The variable '$\\\\beta$' is used without context or visual representation. In geometry, '$\\\\beta$' typically represents an angle, but the question asks for its value 'in units', which is usually associated with length, not angles. This creates confusion about what '$\\\\beta$' represents.",
+        "The subcategory 'Area and Volume' is inappropriate. The question is about the perimeter and side lengths of a triangle, which falls under basic geometry, not necessarily area and volume.",
+        "The phrase 'in units' is redundant when asking for the value of a side length, as the perimeter and other side lengths are already given in 'units'. If '$\\\\beta$' were intended to be an angle, 'in units' would be incorrect.",
+        "Without an image, it is impossible to determine which angle or side '$\\\\beta$' refers to, even if we assume it's related to the triangle described."
+      ],
+      "correct_answer": "B",
+      "explanation": "While option B (10) is numerically the correct value for the missing side length if we assume $\\\\beta$ represents the third side (31 - 12 - 9 = 10), the question is fundamentally flawed due to the missing image and ambiguous use of $\\\\beta$.  The question is unclear and does not adhere to good question design principles for the SAT.  For an SAT question, especially one labeled 'Easy', clarity and unambiguousness are crucial. The lack of an image and the unclear definition of $\\\\beta$ make this question invalid despite the numerical answer potentially being derivable under certain assumptions."
+    }
+  },
+  {
+    "question_id": 818989,
+    "question_text": "A rectangular garden has a length of 15 meters and a width of 12 meters. What is the area, in square...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the area of a rectangle given its length and width. To find the area of a rectangle, we multiply the length by the width: Area = Length × Width = 15 meters × 12 meters = 180 square meters. Option B, 180, is indeed the correct answer.Option A (27) is incorrect as it represents the sum of the length and width (15 + 12), not the area.Option C (165) is incorrect and doesn't represent a common miscalculation based on the given dimensions.Option D (300) is incorrect and significantly larger than the actual area, possibly a result of multiplying by a wrong number or miscalculation.There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental concept of area calculation for a rectangle, which is typically covered in elementary or middle school mathematics and is considered a basic geometry concept for the SAT."
+    }
+  },
+  {
+    "question_id": 74369,
+    "question_text": "The area of a rectangular banner is 360 square centimeters. The width of the banner is 9 centimeters...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It provides the area and width of a rectangle and asks for the length. To find the length, we divide the area by the width: Length = Area / Width = 360 square centimeters / 9 centimeters = 40 centimeters. Option B, which is marked as correct, is indeed 40. The other options are clearly incorrect. Option A (36) is close but incorrect. Options C (90) and D (351) are significantly different and not plausible answers for the length given the area and width. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental concept of the area of a rectangle."
+    }
+  },
+  {
+    "question_id": 903360,
+    "question_text": "A square garden has a side length of 5 meters. What is the area of the garden in square meters?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clear and asks for the area of a square garden with a side length of 5 meters. The area of a square is calculated by side * side.  5 meters * 5 meters = 25 square meters. Option C, 25 m², is the correct answer and is marked as correct. Options A, B, and D are incorrect as they do not represent the area of a square with a side length of 5 meters. The question is grammatically correct, and the difficulty level 'Easy' is appropriate for an SAT question testing basic geometry concepts."
+    }
+  },
+  {
+    "question_id": 952781,
+    "question_text": "A square garden has a side length of 25 feet. What is the area, in square feet, of the garden?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It asks for the area of a square garden with a given side length. The correct area of a square is calculated by side length multiplied by side length (side²). In this case, 25 feet * 25 feet = 625 square feet. Option C, 625, is indeed the correct answer. Options A (50), B (100), and D (650) are clearly incorrect as they do not represent the area of a square with a side length of 25 feet. Option A might be confused with adding two sides, and Option B might be related to the perimeter or a miscalculation. Option D is close to the correct answer but still incorrect. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests a fundamental concept of area calculation for a square, which is typically taught in elementary or middle school and is considered a basic geometry concept for the SAT."
+    }
+  },
+  {
+    "question_id": 644150,
+    "question_text": "The figure shows the lengths, in centimeters (cm), of the edges of a right rectangular prism. The vo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the volume of a right rectangular prism. Given the formula V = lwh and assuming the dimensions from the figure are length, width, and height such that their product is 40 (e.g., 2 cm, 4 cm, and 5 cm), the volume is indeed 40 cubic centimeters. Option A, which is 40, is marked as correct. Options B, C, and D are clearly incorrect as they are not equal to 40 and are sufficiently different to be unambiguous distractors for a simple volume calculation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it involves a direct application of a given formula with presumably straightforward dimensions provided in the figure."
+    }
+  },
+  {
+    "question_id": 482527,
+    "question_text": "A sail on a sailboat is in the shape of a triangle. If the base of the sail is 25 feet and the heigh...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks for the area of a triangle given its base and height. The formula for the area of a triangle is (1/2) * base * height.  With a base of 25 feet and a height of 32 feet, the area is (1/2) * 25 feet * 32 feet = 25 feet * 16 feet = 400 square feet. Option B, which is marked as correct, is indeed 400. The other options are clearly incorrect as they do not represent the correct area calculation. Option A (200) is half the correct answer, potentially representing a student forgetting to multiply by 2 in the area formula or dividing by 2 twice. Option C (600) and D (800) are significantly different and are not plausible results of common errors in this calculation. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental geometric concept."
+    }
+  },
+  {
+    "question_id": 54841,
+    "question_text": "What is the area, in square feet, of a rectangular garden with a length of 12 feet and a width of 5 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the area of a rectangle given its length and width. The formula for the area of a rectangle is length * width. In this case, the area is 12 feet * 5 feet = 60 square feet. Option D, which is 60, is indeed the correct answer and is marked as correct. The other options represent common mistakes or misunderstandings: Option A (17) is the sum of length and width, Option B (34) is the perimeter, and Option C (50) is not a direct miscalculation related to area or perimeter but is also incorrect. The difficulty level 'Easy' is appropriate for this question as it tests a fundamental geometric concept."
+    }
+  },
+  {
+    "question_id": 225336,
+    "question_text": "A right circular cone has a volume of $24\\pi$ cubic inches. If the radius of the base of the cone is...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written. \n1. **Clarity:** The question is clear and unambiguous. It provides all necessary information (volume and radius) to solve for the height of a right circular cone. \n2. **Correct Answer:** The formula for the volume of a right circular cone is V = (1/3)πr^2h. Given V = 24π cubic inches and r = 3 inches, we can solve for h: \n   24π = (1/3)π(3)^2h \n   24π = (1/3)π(9)h \n   24π = 3πh \n   h = (24π) / (3π) \n   h = 8 inches. \n   Option A (8) is indeed the correct answer. \n3. **Incorrect Options:** The other options are clearly incorrect. We can check them by plugging them back into the volume formula: \n   - Option B (6): V = (1/3)π(3)^2(6) = 18π (Incorrect) \n   - Option C (12): V = (1/3)π(3)^2(12) = 36π (Incorrect) \n   - Option D (24): V = (1/3)π(3)^2(24) = 72π (Incorrect) \n   These options are plausible distractors but are mathematically incorrect. \n4. **Grammar and Formatting:** There are no grammatical or formatting issues. The question is written in standard English and is easy to read. \n5. **Difficulty Level:** The difficulty level is appropriately marked as 'Medium'. It requires recall of the volume formula for a cone and basic algebraic manipulation, which is typical of medium-difficulty SAT math questions."
+    }
+  },
+  {
+    "question_id": 125971,
+    "question_text": "A triangle has a base of 6 and a height of 4. What is the length of one side of a square that has th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-written.1. **Clarity:** The question is clear and easy to understand. It asks for the side length of a square with the same area as a given triangle.2. **Correctness of Option A:**   - Area of the triangle = (1/2) * base * height = (1/2) * 6 * 4 = 12.   - Let 's' be the side length of the square. Area of the square = s^2.   - We are given that the area of the square is equal to the area of the triangle, so s^2 = 12.   - Taking the square root of both sides, s = $\\\\sqrt{12} = \\\\sqrt{4 \times 3} = 2\\\\sqrt{3}$.   - Option A is $2\\\\sqrt{3}$, which is the correct side length.3. **Incorrectness of other options:**   - Option B: $\\\\sqrt{6}$. Area of square = $(\\\\sqrt{6})^2 = 6 \neq 12$.   - Option C: $\\\\sqrt{10}$. Area of square = $(\\\\sqrt{10})^2 = 10 \neq 12$.   - Option D: $\\\\sqrt{24}$. Area of square = $(\\\\sqrt{24})^2 = 24 \neq 12$.   All other options lead to squares with areas different from the triangle's area, making them incorrect.4. **Grammar and Formatting:** There are no grammatical or formatting issues.5. **Difficulty Level:** The difficulty level is appropriately marked as 'Medium'. It requires basic knowledge of the area formulas for triangles and squares and simplification of square roots, which is typical for medium-difficulty SAT math questions."
+    }
+  },
+  {
+    "question_id": 579416,
+    "question_text": "A shipping box is shaped like a right rectangular prism. The base of the box has a width of 8 inches...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the dimensions of the base (width and length) of a right rectangular prism and its volume, asking for the height. To solve this, we use the formula for the volume of a right rectangular prism: Volume = length * width * height. Plugging in the given values, we have 960 = 12 * 8 * height, which simplifies to 960 = 96 * height. Solving for height, we get height = 960 / 96 = 10 inches. Option A, which is 10, is indeed the correct answer. The other options (B, C, and D) are clearly incorrect as they would result in volumes significantly different from 960 cubic inches. The difficulty level of 'Medium' is appropriate for this question as it involves a straightforward application of the volume formula."
+    }
+  },
+  {
+    "question_id": 973925,
+    "question_text": "A company manufactures cylindrical pipes in two sizes. Both sizes have a length of 10 meters. The ra...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The correct answer is option C, which is 484,000π cubic centimeters.  The radius of pipe Y is calculated as 20 cm + (10% of 20 cm) = 22 cm. The length of pipe Y is given as 10 meters, which is equal to 1000 centimeters. The volume of a cylinder is given by the formula V = πr^2h. Therefore, the volume of pipe Y is V = π * (22 cm)^2 * (1000 cm) = π * 484 cm^2 * 1000 cm = 484,000π cubic centimeters. Options A, B, and D are clearly incorrect as they do not result from a correct calculation based on the problem description. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium, as it requires multiple steps including percentage calculation, unit conversion, and volume formula application."
+    }
+  },
+  {
+    "question_id": 877326,
+    "question_text": "A circular fountain has a diameter of 20 feet. What is the approximate circumference, in feet, of th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 239. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is clearly written and makes sense. It asks for the circumference of a circular fountain given its diameter an..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 436000,
+    "question_text": "A triangular prism has a height of 12 centimeters (cm) and a volume of 300 cm³. What is the area, in...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It provides the necessary information (height and volume of a triangular prism) and the formula for the volume (V = Bh). To find the area of the base (B), we can rearrange the formula to B = V/h. Plugging in the given values, B = 300 cm³ / 12 cm = 25 cm². Option C, which is 25, is indeed the correct answer. The other options (A, B, and D) are clearly incorrect as they would result in volumes different from 300 cm³ when multiplied by the height of 12 cm. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for an SAT question of this type, as it involves a single step calculation using a provided formula."
+    }
+  },
+  {
+    "question_id": 171450,
+    "question_text": "A rectangular box containing granola is filled to the top with milk after the granola is added. The ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the volume of the granola, we first need to calculate the total volume of the rectangular box. The volume of a rectangular box is given by the formula: Volume = length × width × height. In this case, the length is 8 cm, the width is 5 cm, and the height is 9 cm. So, the total volume of the box is 8 cm × 5 cm × 9 cm = 360 cm³.  We are told that 220 cm³ of milk is needed to fill the box after the granola is added. This means that the volume of the milk is the space not occupied by the granola. Therefore, the volume of the granola is the total volume of the box minus the volume of the milk: Volume of granola = Total volume of box - Volume of milk = 360 cm³ - 220 cm³ = 140 cm³. Option B, 140 cm³, is indeed the correct answer. Options A, C, and D are incorrect as they do not result from this calculation. The difficulty level is appropriate for a medium-level SAT question as it requires basic volume calculation and subtraction."
+    }
+  },
+  {
+    "question_id": 979600,
+    "question_text": "A party hat is shaped like a right circular cone. The party hat can hold a maximum volume of $125\\pi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The formula for the volume of a right circular cone is V = (1/3)πr^2h. Given V = 125π cubic centimeters and r = 5 centimeters, we can solve for the height (h): \n\n125π = (1/3)π(5)^2h\n125π = (1/3)π(25)h\n\nDivide both sides by π:\n125 = (1/3)(25)h\n\nMultiply both sides by 3:\n375 = 25h\n\nDivide both sides by 25:\nh = 375 / 25\nh = 15\n\nTherefore, the height of the party hat is 15 centimeters, which corresponds to option C. Options A, B, and D are incorrect because substituting these values back into the volume formula does not yield 125π cubic centimeters. The difficulty level is appropriately classified as medium, as it requires recall of the cone volume formula and basic algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 602390,
+    "question_text": "In the xy-plane shown, square ABCD has its diagonals on the x- and y-axes.  What is the area, in squ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The description of the square having its diagonals on the x- and y-axes is standard and unambiguous for SAT geometry questions.  Assuming the image (0__page_9_Picture_3_modified.jpeg) visually represents a square with vertices at points such as (4,0), (0,4), (-4,0), and (0,-4) or similar, the length of the diagonal is 8 units.  For a square with diagonal 'd', the area can be calculated as (d^2)/2. In this case, with a diagonal of 8, the area is (8^2)/2 = 64/2 = 32 square units. Option C, 32, is indeed the correct answer and is marked as correct. Options A (16), B (24), and D (64) are clearly incorrect as they do not correspond to the calculated area. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for this question, as it requires basic knowledge of square properties and area calculation, which is typical for SAT geometry questions."
+    }
+  },
+  {
+    "question_id": 60005,
+    "question_text": "A spherical water tank has a diameter of 10 feet. What is the volume, in cubic feet, of water the ta...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the volume of a spherical water tank given its diameter. To solve this, we first find the radius, which is half the diameter, so radius (r) = 10 feet / 2 = 5 feet. The formula for the volume of a sphere is V = (4/3)πr³. Substituting r = 5 feet, we get V = (4/3)π(5)³ = (4/3)π(125) = (500π/3) cubic feet. Option A, $\frac{500\\\\pi}{3}$, matches this calculation and is correctly marked as the correct answer. The other options are incorrect. Option B ($100\\\\pi$) and Option C ($\frac{100\\\\pi}{3}$) are significantly smaller than the correct volume, and Option D ($500\\\\pi$) is 3 times larger than the correct volume (it would be the volume if the formula was incorrectly remembered as $4\\\\pi r^3$). The difficulty level 'Medium' is appropriate as it requires recall of a formula and basic calculation, which is typical for SAT Math questions."
+    }
+  },
+  {
+    "question_id": 278325,
+    "question_text": "A right circular cylinder has a volume of 450 cubic centimeters. The area of the base of the cylinde...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It provides the volume and base area of a right circular cylinder and asks for the height. The formula for the volume of a cylinder is V = Base Area * height.  Given Volume = 450 cubic centimeters and Base Area = 15 square centimeters, we can find the height by dividing the volume by the base area: Height = Volume / Base Area = 450 / 15 = 30 centimeters. Option B, which is marked as correct, is indeed 30. Options A, C, and D are incorrect because they would result in volumes other than 450 cubic centimeters when multiplied by the base area of 15 square centimeters. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it involves a direct application of a basic geometry formula and simple arithmetic."
+    }
+  },
+  {
+    "question_id": 389441,
+    "question_text": "A right circular cylinder has a volume of 540 cubic centimeters. The base area of the cylinder is 36...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the height of a right circular cylinder, we can use the formula for the volume of a cylinder: Volume = Base Area × Height. We are given the volume (540 cubic centimeters) and the base area (36 square centimeters). To find the height, we can rearrange the formula to: Height = Volume / Base Area. Plugging in the given values, we get Height = 540 / 36 = 15 centimeters. Option C, which is marked as correct, is indeed 15. The other options are incorrect because: Option A (10 cm) gives a volume of 36 * 10 = 360 cubic centimeters, Option B (12 cm) gives a volume of 36 * 12 = 432 cubic centimeters, and Option D (18 cm) gives a volume of 36 * 18 = 648 cubic centimeters. None of these volumes match the given volume of 540 cubic centimeters. The question is grammatically correct, has no formatting issues, and the difficulty level is appropriately classified as Medium for an SAT question, as it involves a straightforward application of a basic geometry formula."
+    }
+  },
+  {
+    "question_id": 135799,
+    "question_text": "The table gives the perimeters of similar triangles $TUV$ and $XYZ$, where $TU$ corresponds to $XY$....",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is severely flawed due to missing crucial information: the table mentioned in the question text is not provided. Without the table containing the perimeters of triangles TUV and XYZ, the question is unsolvable as it is currently stated.",
+        "The question is ambiguously worded. It does not explicitly state what needs to be determined. While it can be inferred that it is asking for the perimeter of triangle XYZ, this is not explicitly stated, making the question unclear.",
+        "Assuming the question intends to provide the perimeter of triangle TUV in the missing table as 10, and is asking for the perimeter of triangle XYZ, and option D (30) is intended to be correct, then the ratio of perimeters would be consistent with the properties of similar triangles. However, this is a significant assumption to make due to the lack of information."
+      ],
+      "correct_answer": "D",
+      "explanation": "The question is invalid because it refers to a table that is not provided. This missing table is essential for solving the problem.  If we assume that the table implicitly states the perimeter of triangle TUV is 10, and the question is asking for the perimeter of triangle XYZ, and option D (30) is indeed the correct answer, then the solution would be as follows: For similar triangles, the ratio of perimeters is equal to the ratio of corresponding sides. Let $P_{TUV}$ and $P_{XYZ}$ be the perimeters of triangles $TUV$ and $XYZ$ respectively. Then, $P_{TUV} / P_{XYZ} = TU / XY$. If we assume $P_{TUV} = 10$ and $P_{XYZ} = 30$ (option D), then $P_{TUV} / P_{XYZ} = 10 / 30 = 1/3$. This implies $TU / XY = 1/3$. Given $TU = 10$, we have $10 / XY = 1/3$, which gives $XY = 30$.  While mathematically consistent under these assumptions, the question is fundamentally flawed due to the missing table and lack of clarity.  Therefore, despite option D being marked as correct, the question in its current form is not a valid SAT question."
+    }
+  },
+  {
+    "question_id": 171543,
+    "question_text": "The figure shown is a right circular cylinder with a radius of $r$ and height of $h$. A second right...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The volume of the first cylinder is $V_1 = \\\\pi r^2 h$. The volume of the second cylinder is given to be 108 times the volume of the first cylinder, so $V_2 = 108 V_1 = 108 \\\\pi r^2 h$. Let the radius and height of the second cylinder be $R$ and $H$ respectively. Then $V_2 = \\\\pi R^2 H$. We need to find which option for $R$ and $H$ satisfies $\\\\pi R^2 H = 108 \\\\pi r^2 h$. We can test each option:\n\nOption A: R = 6r and H = 2h\n$V_2 = \\\\pi (6r)^2 (2h) = \\\\pi (36r^2) (2h) = 72 \\\\pi r^2 h$. This is not equal to $108 \\\\pi r^2 h$.\n\nOption B: R = 4r and H = 3h\n$V_2 = \\\\pi (4r)^2 (3h) = \\\\pi (16r^2) (3h) = 48 \\\\pi r^2 h$. This is not equal to $108 \\\\pi r^2 h$.\n\nOption C: R = 6r and H = 3h\n$V_2 = \\\\pi (6r)^2 (3h) = \\\\pi (36r^2) (3h) = 108 \\\\pi r^2 h$. This is equal to $108 \\\\pi r^2 h$.\n\nOption D: R = 9r and H = 3h\n$V_2 = \\\\pi (9r)^2 (3h) = \\\\pi (81r^2) (3h) = 243 \\\\pi r^2 h$. This is not equal to $108 \\\\pi r^2 h$.\n\nTherefore, option C is the only correct option. The question is clearly written, all options except C are incorrect, and the difficulty level is appropriate for a 'Hard' SAT question."
+    }
+  },
+  {
+    "question_id": 101642,
+    "question_text": "A right circular cylinder has a height of 14 centimeters (cm) and a base with a diameter of 10 cm. T...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. It provides the height and diameter of a right circular cylinder and asks for the value of 'n' when the volume is expressed as $n\\\\pi$ cm$^3$. To solve this, we first find the radius from the diameter: radius (r) = diameter/2 = 10 cm / 2 = 5 cm. Then, we use the formula for the volume of a cylinder: V = $\\\\pi r^2 h$. Substituting the given values, V = $\\\\pi (5 cm)^2 (14 cm) = \\\\pi (25 cm^2) (14 cm) = 350\\\\pi$ cm$^3$.  Therefore, n = 350. Option D is indeed the correct answer. The other options (A, B, C) are clearly incorrect as they do not match the calculated value of n. There are no grammatical or formatting issues. The difficulty level 'Hard' is arguably appropriate for the SAT, as it requires knowledge of the cylinder volume formula and performing calculations without a calculator in a timed environment. While not extremely complex, it's beyond a basic level question."
+    }
+  },
+  {
+    "question_id": 588702,
+    "question_text": "A soup company designs cans in the shape of right cylinders. To optimize material, the height of eac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The volume of a right cylinder is given by the formula $V = \\\\pi r^2 h$, where $r$ is the radius of the base and $h$ is the height. The problem states that the height of the can is 1.5 times the diameter of its base. Since the diameter is $2r$, the height $h = 1.5 \times 2r = 3r$. Substituting this expression for $h$ into the volume formula, we get $V = \\\\pi r^2 (3r) = 3\\\\pi r^3$. Option B, V = $3\\\\pi r^3$, is therefore the correct answer. Options A, C, and D are incorrect as they do not match the derived volume expression. The difficulty level 'Hard' is appropriate for this question as it requires multiple steps involving geometric concepts and algebraic manipulation, which is typical of SAT math questions classified as hard."
+    }
+  },
+  {
+    "question_id": 158756,
+    "question_text": "A rectangular garden has an area of 500 square feet. To reduce water consumption, the gardener decid...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Let the original length and width of the rectangular garden be L and W, respectively. The original area is given as L * W = 500 square feet.  When both the length and the width are reduced by 10%, the new length becomes L' = L - 0.10L = 0.90L and the new width becomes W' = W - 0.10W = 0.90W. The area of the new garden is A' = L' * W' = (0.90L) * (0.90W) = 0.81 * (L * W). Since L * W = 500, the new area A' = 0.81 * 500 = 405 square feet. Option B, 405, is indeed the correct answer. Options A, C, and D are incorrect as they do not result from a 10% reduction in both dimensions. The difficulty level 'Hard' is appropriate as it requires understanding percentage reduction and its effect on area, which is a multi-step problem for SAT level."
+    }
+  },
+  {
+    "question_id": 267413,
+    "question_text": "A right circular cylinder has a radius of 5 centimeters (cm) and a height of 12 cm. What is the volu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the volume of a right circular cylinder in terms of $\\\\pi$. The formula for the volume of a right circular cylinder is $V = \\\\pi r^2 h$, where r is the radius and h is the height. Given r = 5 cm and h = 12 cm, the volume is $V = \\\\pi (5)^2 (12) = \\\\pi (25)(12) = 300\\\\pi$ cm$^3$. Option A, 300$\\\\pi$, is the correct answer. The other options are clearly incorrect as they do not result from a correct application of the volume formula with the given dimensions. There are no grammatical or formatting issues. While the question is straightforward and involves a direct application of a formula, the 'Hard' difficulty level might be slightly overstated for students well-prepared for the SAT. It is more likely to be considered a medium difficulty question, but it is not inappropriate as some students may still make errors in calculation or formula recall."
+    }
+  },
+  {
+    "question_id": 424831,
+    "question_text": "A right circular cone used as a party hat has a volume of $15\\pi$ cubic inches and a height of 5 inc...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the volume and height of a right circular cone and asks for the radius of the base. The formula for the volume of a cone is $V = \frac{1}{3}\\\\pi r^2 h$. Substituting the given values, we have $15\\\\pi = \frac{1}{3}\\\\pi r^2 (5)$. Solving for $r$: \n\n$15\\\\pi = \frac{5}{3}\\\\pi r^2$\nDivide both sides by $\\\\pi$:\n$15 = \frac{5}{3} r^2$\nMultiply both sides by $\frac{3}{5}$:\n$15 \times \frac{3}{5} = r^2$\\n$3 \times 3 = r^2$\\n$9 = r^2$\\n$r = \\\\sqrt{9} = 3$\n\nTherefore, the radius is 3 inches, which corresponds to option A. Options B, C, and D are incorrect as substituting them back into the volume formula does not yield $15\\\\pi$ cubic inches. The difficulty level 'Hard' is appropriate as it requires knowledge of the volume formula for a cone and algebraic manipulation to solve for the radius."
+    }
+  },
+  {
+    "question_id": 490156,
+    "question_text": "The volume of right circular cylinder A is 22 cubic centimeters. What is the volume, in cubic centim...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and mathematically sound. Let $V_A$, $r_A$, and $h_A$ be the volume, radius, and height of cylinder A, respectively. Let $V_B$, $r_B$, and $h_B$ be the volume, radius, and height of cylinder B, respectively. We are given that $V_A = 22$ cubic centimeters. The volume of a right circular cylinder is given by the formula $V = \\\\pi r^2 h$.For cylinder A, $V_A = \\\\pi r_A^2 h_A = 22$.For cylinder B, we are given that the radius is triple the radius of cylinder A, so $r_B = 3r_A$. We are also given that the height is one-third the height of cylinder A, so $h_B = \frac{1}{3}h_A$.We want to find the volume of cylinder B, $V_B = \\\\pi r_B^2 h_B$. Substituting the expressions for $r_B$ and $h_B$ in terms of $r_A$ and $h_A$:$V_B = \\\\pi (3r_A)^2 (\frac{1}{3}h_A)$$V_B = \\\\pi (9r_A^2) (\frac{1}{3}h_A)$$V_B = \\\\pi (9 \times \frac{1}{3}) r_A^2 h_A$$V_B = \\\\pi (3) r_A^2 h_A$$V_B = 3 (\\\\pi r_A^2 h_A)$Since $V_A = \\\\pi r_A^2 h_A = 22$, we can substitute this into the equation for $V_B$:$V_B = 3 \times V_A = 3 \times 22 = 66$Therefore, the volume of cylinder B is 66 cubic centimeters. Option C is indeed the correct answer. The other options are incorrect and serve as plausible distractors. The question is grammatically correct and appropriately formatted. The difficulty level is suitable for a 'Hard' SAT question as it requires understanding of volume formulas and proportional reasoning."
+    }
+  },
+  {
+    "question_id": 924990,
+    "question_text": "What is the area, in square units, of the triangle formed by connecting the three points shown: (1, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the area of a triangle given the coordinates of its three vertices. To verify the correct answer, we can use the formula for the area of a triangle with vertices (x1, y1), (x2, y2), and (x3, y3): Area = 0.5 * |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|. Plugging in the given points (1, 2), (6, 1), and (4, -2): Area = 0.5 * |1(1 - (-2)) + 6(-2 - 2) + 4(2 - 1)| = 0.5 * |1(3) + 6(-4) + 4(1)| = 0.5 * |3 - 24 + 4| = 0.5 * |-17| = 0.5 * 17 = 8.5. Option A, 8.5, is indeed the correct answer. The other options (B, C, and D) are clearly incorrect as they are significantly different from the calculated area. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate for the SAT, as it requires knowledge of coordinate geometry and the area formula for a triangle, which might not be immediately obvious to all students and requires a few steps to calculate."
+    }
+  },
+  {
+    "question_id": 689283,
+    "question_text": "The dimensions of a right rectangular prism are 7 inches by 8 inches by 9 inches. What is the surfac...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the surface area of a right rectangular prism with dimensions 7 inches, 8 inches, and 9 inches, we use the formula: Surface Area = 2(lw + lh + wh), where l=7, w=8, and h=9. \n\nSurface Area = 2 * ((7*8) + (7*9) + (8*9)) \nSurface Area = 2 * (56 + 63 + 72) \nSurface Area = 2 * (191) \nSurface Area = 382 square inches.\n\nOption C, 382, is the correct answer. \n\nOption A, 191, represents half the surface area (lw + lh + wh), likely a mistake of forgetting to multiply by 2. \nOption B, 380, is close but incorrect, possibly due to a minor calculation error. \nOption D, 504, is the volume of the prism (7*8*9), which is a common mistake of confusing surface area and volume. \n\nThe question is grammatically correct and well-formatted. The difficulty level 'Hard' is appropriate for an SAT question as it requires multiple steps and understanding of the surface area formula, making it more challenging than a basic recall question."
+    }
+  },
+  {
+    "question_id": 923086,
+    "question_text": "Circle P and Circle Q are similar. The radius of Circle P is one-third the radius of Circle Q. The a...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. All circles are similar, so stating that Circle P and Circle Q are similar is redundant but not incorrect. The radius of Circle P is one-third the radius of Circle Q, meaning $r_P = \frac{1}{3}r_Q$. The area of Circle Q is given as $81\\\\pi$ square inches. We know that the area of a circle is $A = \\\\pi r^2$. Therefore, for Circle Q, $A_Q = \\\\pi r_Q^2 = 81\\\\pi$. Solving for $r_Q$, we get $r_Q^2 = 81$, so $r_Q = 9$ inches. Now we can find the radius of Circle P: $r_P = \frac{1}{3}r_Q = \frac{1}{3}(9) = 3$ inches. The area of Circle P is $A_P = \\\\pi r_P^2 = \\\\pi (3)^2 = 9\\\\pi$ square inches. Option A, $9\\\\pi$, is indeed the correct answer. The other options are incorrect and serve as plausible distractors, possibly representing common errors in calculations involving ratios and areas. Option B ($27\\\\pi$) is $3$ times the correct answer, Option C ($243\\\\pi$) is $27$ times the correct answer, and Option D ($729\\\\pi$) is $81$ times the correct answer. The difficulty level is appropriately marked as 'Hard' as it requires understanding the relationship between radius and area and applying ratios correctly."
+    }
+  },
+  {
+    "question_id": 313833,
+    "question_text": "A cube has a surface area of 96 square meters. What is the volume, in cubic meters, of the cube?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-written. To solve it, we first find the side length of the cube from its surface area. The surface area of a cube is given by 6s², where s is the side length.  Given a surface area of 96 square meters, we have 6s² = 96. Dividing both sides by 6 gives s² = 16. Taking the square root of both sides gives s = 4 meters. The volume of a cube is given by s³, so the volume is 4³ = 64 cubic meters. Option C, 64, is indeed the correct answer. The other options are clearly incorrect as they do not represent the correct volume based on the given surface area. The question is grammatically sound and formatted correctly. The difficulty level 'Hard' is appropriate for the SAT as it requires multiple steps and understanding of geometric formulas."
+    }
+  },
+  {
+    "question_id": 962439,
+    "question_text": "A right circular cylinder has a radius of 3 units. The volume of the cylinder is $126\\pi$ cubic unit...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the radius and volume of a right circular cylinder and asks for the height. The formula for the volume of a right circular cylinder is V = $\\\\pi r^2 h$. Given radius r = 3 and volume V = $126\\\\pi$, we can solve for the height h: \n\n$126\\\\pi = \\\\pi (3)^2 h$\\n$126\\\\pi = 9\\\\pi h$\nDivide both sides by $9\\\\pi$:\n$h = \frac{126\\\\pi}{9\\\\pi} = \frac{126}{9} = 14$\n\nTherefore, the height of the cylinder is 14 units. Option A, which is marked as correct, is indeed the correct answer. The other options (B, C, and D) are incorrect as they would result in different volumes when plugged back into the volume formula. The difficulty level 'Hard' is arguably appropriate for an SAT question, as it requires understanding of the volume formula and performing a simple algebraic manipulation. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 926372,
+    "question_text": "The line segment shown in the xy-plane represents one of the legs of a right triangle. The line segm...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. The length of the given leg of the right triangle, connecting points (1, 1) and (4, 1), is calculated as the distance between these points, which is 4 - 1 = 3 units. Let the length of the other leg be 'b'. The area of a right triangle is given by (1/2) * base * height, where the legs are the base and height. In this case, the area is given as $12\\\\sqrt{2}$ square units. So, we have the equation: (1/2) * 3 * b = $12\\\\sqrt{2}$. Solving for b: b = ($12\\\\sqrt{2}$ * 2) / 3 = $24\\\\sqrt{2}$ / 3 = $8\\\\sqrt{2}$. Option C, $8\\\\sqrt{2}$, is indeed the correct answer. Options A, B, and D are incorrect as they would result in different areas for the triangle. The difficulty level 'Hard' is appropriate as it requires understanding of coordinate geometry, right triangle properties, and area calculation, which are typical concepts tested in the SAT math section."
+    }
+  },
+  {
+    "question_id": 760345,
+    "question_text": "Rectangles ABCD and EFGH are similar. The length of EFGH is 4 times the length of the corresponding ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense.  Since rectangles ABCD and EFGH are similar and the length of EFGH is 4 times the length of the corresponding side of ABCD, the ratio of their corresponding side lengths is 4:1.  For similar figures, the ratio of their areas is the square of the ratio of their corresponding side lengths. Therefore, the ratio of the area of EFGH to the area of ABCD is 4^2 : 1^2 = 16:1.  Given that the area of ABCD is 15 square units, the area of EFGH is 16 times the area of ABCD, which is 16 * 15 = 240 square units. Option D is indeed the correct answer.Options analysis:A. 60: This is obtained by multiplying the area of ABCD by the side length ratio (4), not the square of the ratio. This is a common mistake, making it a plausible distractor.B. 4: This option is significantly smaller than the area of ABCD and is not logically derived from the given information.C. 960: This might be obtained by cubing the side length ratio (4^3 = 64) and multiplying it by the area of ABCD (64 * 15 = 960). This is incorrect for area scaling but could be a distractor for students who might confuse area with volume scaling or make calculation errors.The difficulty level 'Hard' is appropriate as it requires understanding the relationship between side length ratio and area ratio for similar figures, and performing a multiplication. There are no grammatical or formatting issues."
+    }
+  }
+]

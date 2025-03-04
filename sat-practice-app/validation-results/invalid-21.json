@@ -1,0 +1,33 @@
+[
+  {
+    "question_id": 940618,
+    "question_text": "A survey was conducted at Northwood High School to determine students' favorite subjects. The freque...",
+    "issues": [
+      "The question refers to a frequency table that is not provided. Without the frequency table, it is impossible to determine the number of students who prefer Science and therefore calculate the probability. This makes the question unsolvable as presented."
+    ]
+  },
+  {
+    "question_id": 271853,
+    "question_text": "The students in the Math Club and the Science Club were surveyed about their favorite type of snack....",
+    "issues": [
+      "The option marked as correct (D) is not actually correct. The correct probability is 3/7, which is not among the provided options.",
+      "All provided options (A, B, C, D) are incorrect for the given question."
+    ]
+  },
+  {
+    "question_id": 827465,
+    "question_text": "Daily Visitors to Redwood National Park by Age Group  | Age Group | Number of Visitors | |----------...",
+    "issues": [
+      "The option marked as correct (A) is not actually the correct answer based on the data provided in the table. The correct answer, calculated from the table, is $\\\\frac{8}{21}$, which is not among the options. Option A, $\\\\frac{16}{41}$, is close to the correct answer but not exactly equal. This discrepancy makes the question flawed as the marked correct answer is incorrect."
+    ]
+  },
+  {
+    "question_id": 297988,
+    "question_text": "The number of books in a library, sorted by binding type and genre, is shown in the table above. Whi...",
+    "issues": [
+      "The question refers to a table ('table above') that is not provided, making it impossible to answer the question or verify the correctness of the marked answer.",
+      "Without the table data, it is impossible to determine if option C (Biography) is uniquely the correct answer or if other options might be equally or more correct.",
+      "Depending on the data in the missing table, there is a potential issue that multiple genres could be equally 'closest' to 1/4 of the total hardcover population, leading to ambiguity in the single correct answer format of SAT questions."
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "question_id": 288601,
+    "question_text": "A teacher recorded the scores of two quizzes for a group of students. The scores for Quiz 1 are: 70,...",
+    "issues": [
+      "The marked correct answer is incorrect. Option B (80) should be the correct answer, not Option C (85)."
+    ]
+  },
+  {
+    "question_id": 641264,
+    "question_text": "The number of hours per week students spend studying is summarized in the box plot above for a group...",
+    "issues": [
+      " and referencing an image file name. This makes the question impossible to answer as the visual information necessary to solve the problem is absent.",
+      " appearing after the question text is extraneous and unclear. It seems to be a formatting or processing error and does not contribute to the question's clarity.",
+      "Without the image, it is impossible to verify if option B (8) is actually the correct answer or if the other options are clearly incorrect. The correctness depends entirely on the missing box plot.",
+      "B",
+      "No image\\\\"
+    ]
+  },
+  {
+    "question_id": 746520,
+    "question_text": "The table gives the results of a survey of 200 students who were asked about the number of books the...",
+    "issues": [
+      "The question refers to a table that is not provided. Without the table, it is impossible to determine the correct answer.",
+      "Due to the missing table, it is impossible to verify if option C is actually the correct answer or if other options are incorrect."
+    ]
+  },
+  {
+    "question_id": 954540,
+    "question_text": "Scores of 25 Students on a History Quiz  | Score | Frequency | |-------|-----------| | 50    | 5    ...",
+    "issues": [
+      "The option marked as correct (C) is actually incorrect. Based on the provided data, the correct order of mean, median, and mode is mean < median = mode. None of the provided options perfectly represent this order. Option D (mean < mode < median) is the closest to being correct, as it correctly identifies the mean as the smallest value, but it incorrectly states mode < median instead of mode = median. Option C (median < mode < mean) is definitively incorrect.",
+      "None of the provided options are perfectly correct given the calculated mean, median, and mode."
+    ]
+  },
+  {
+    "question_id": 704144,
+    "question_text": "The table below shows the number of cupcakes sold each day at a bakery during one week. What is the ...",
+    "issues": [
+      "The option marked as correct (A. 50) is incorrect. The actual median is 52, which corresponds to option B."
+    ]
+  },
+  {
+    "question_id": 338007,
+    "question_text": "The frequency distribution below summarizes the number of books read by students in a summer reading...",
+    "issues": [
+      "The option marked as correct (B) is not exactly correct for the question as stated. The mean number of books read is 62/9, and the median number of books read is 8. The difference (mean - median) is 62/9 - 8 = -10/9, which is approximately -1.11.  None of the options are close to -10/9. However, if we calculate median - mean, we get 8 - 62/9 = 10/9, which is approximately 1.11. The closest integer option to 10/9 is 1, which is option B. It is possible the question intended to ask for 'how much greater is the median than the mean' or is looking for the closest integer to the absolute difference or median - mean, but as written, the mathematically correct answer for 'how much greater is the mean than the median' is -10/9, which is not among the options and not close to the marked correct answer.",
+      "The question might be interpreted as asking for the closest integer to the positive difference between the median and the mean, in which case option B (1) would be the closest integer to 10/9. However, this interpretation is not explicitly stated in the question, making it potentially ambiguous."
+    ]
+  },
+  {
+    "question_id": 726756,
+    "question_text": "The average height of 6 seedlings in a nursery is 25 centimeters. After the tallest seedling is tran...",
+    "issues": [
+      "The option marked as correct (A) is not actually the correct answer. The correct answer based on the problem description is 40 cm, which is not provided as an option.",
+      "None of the provided options (A, B, C, D) are the correct answer to the question as stated."
+    ]
+  },
+  {
+    "question_id": 4730,
+    "question_text": "The tables below show the quiz scores for Kevin and Ashley in six quizzes. The mean of Ashley’s quiz...",
+    "issues": [
+      "The provided correct answer (Option A: 68) is incorrect based on the problem description.",
+      "None of the provided options result in the mean of Ashley's quiz scores being exactly 3 points less than the mean of Kevin's quiz scores.",
+      "The question is missing the actual tables of quiz scores, which are essential to solve the problem. Assuming plausible example tables, the calculated value of y that satisfies the condition is not among the options."
+    ]
+  },
+  {
+    "question_id": 219949,
+    "question_text": "For a science project, students in class P and class Q recorded the number of seeds that sprouted fr...",
+    "issues": [
+      "The question is incomplete because it refers to a table that is not provided. Without the table, the question cannot be answered.",
+      "It is impossible to determine what statistical measure the question is asking for without the table.",
+      "The correctness of the marked answer (B) and the incorrectness of other options cannot be verified without the table."
+    ]
+  },
+  {
+    "question_id": 629018,
+    "question_text": "The dot plot represents a data set of the number of books read by 9 students during summer vacation....",
+    "issues": [
+      " is not universally true.",
+      " then option A could be considered correct, but the wording is still misleading and not mathematically precise for an SAT question.",
+      "A",
+      "Which of the following measures *could* be greater for the new data set than for the original data set?\\\\"
+    ]
+  }
+]

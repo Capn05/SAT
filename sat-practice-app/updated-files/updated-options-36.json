@@ -1,0 +1,1682 @@
+[
+  {
+    "id": 3462480,
+    "question_id": 346248,
+    "value": "A",
+    "label": "Ancient Egypt's primary agricultural products, wheat and barley, thrived due to the fertile silt deposited by the Nile's annual floods.",
+    "is_correct": true
+  },
+  {
+    "id": 3462481,
+    "question_id": 346248,
+    "value": "B",
+    "label": "The Nile River's annual flooding was essential for agriculture in ancient Egypt because it deposited fertile silt.",
+    "is_correct": false
+  },
+  {
+    "id": 3462482,
+    "question_id": 346248,
+    "value": "C",
+    "label": "Fertile silt, deposited by the Nile, enriched the soil of ancient Egypt and made it ideal for growing crops.",
+    "is_correct": false
+  },
+  {
+    "id": 3462483,
+    "question_id": 346248,
+    "value": "D",
+    "label": "Agriculture in ancient Egypt was heavily dependent on the Nile River.",
+    "is_correct": false
+  },
+  {
+    "id": 7642100,
+    "question_id": 764210,
+    "value": "A",
+    "label": "Arabica beans are known for their smooth, aromatic flavor and are grown at high altitudes, while Robusta beans are known for their strong, bitter flavor and higher caffeine content and are grown at lower altitudes.",
+    "is_correct": true
+  },
+  {
+    "id": 7642101,
+    "question_id": 764210,
+    "value": "B",
+    "label": "Arabica and Robusta are two different types of coffee beans.",
+    "is_correct": false
+  },
+  {
+    "id": 7642102,
+    "question_id": 764210,
+    "value": "C",
+    "label": "Coffee beans have different characteristics, including flavor, caffeine content, and growing altitude.",
+    "is_correct": false
+  },
+  {
+    "id": 7642103,
+    "question_id": 764210,
+    "value": "D",
+    "label": "Robusta beans are grown at lower altitudes and are known for their strong, bitter flavor and higher caffeine content.",
+    "is_correct": false
+  },
+  {
+    "id": 5519050,
+    "question_id": 551905,
+    "value": "A",
+    "label": "Renewable energy sources like solar, wind, hydro, and geothermal are clean and sustainable alternatives to fossil fuels.",
+    "is_correct": false
+  },
+  {
+    "id": 5519051,
+    "question_id": 551905,
+    "value": "B",
+    "label": "In 2021, solar, wind, hydro, and geothermal energy sources provided a substantial portion of the world's electricity.",
+    "is_correct": false
+  },
+  {
+    "id": 5519052,
+    "question_id": 551905,
+    "value": "C",
+    "label": "According to a recent IEA report, various renewable energy sources, including solar, wind, hydro, and geothermal, collectively generated 29% of global electricity in 2021, demonstrating their growing role.",
+    "is_correct": true
+  },
+  {
+    "id": 5519053,
+    "question_id": 551905,
+    "value": "D",
+    "label": "Hydropower is a long-established renewable energy source, while solar and wind energy are rapidly growing, and geothermal energy is another option.",
+    "is_correct": false
+  },
+  {
+    "id": 7599670,
+    "question_id": 759967,
+    "value": "A",
+    "label": "Urban community gardens are popular in cities, and surveys are conducted to understand gardener preferences.",
+    "is_correct": false
+  },
+  {
+    "id": 7599671,
+    "question_id": 759967,
+    "value": "B",
+    "label": "While zucchini is favored by 30% of gardeners, tomatoes are even more popular in community gardens.",
+    "is_correct": false
+  },
+  {
+    "id": 7599672,
+    "question_id": 759967,
+    "value": "C",
+    "label": "In a 2023 survey, tomatoes emerged as the most popular vegetable among community gardeners, favored by 45% of respondents.",
+    "is_correct": true
+  },
+  {
+    "id": 7599673,
+    "question_id": 759967,
+    "value": "D",
+    "label": "Community gardeners grow a variety of vegetables, including tomatoes and zucchini, with varying levels of popularity.",
+    "is_correct": false
+  },
+  {
+    "id": 9160610,
+    "question_id": 916061,
+    "value": "A",
+    "label": "Marie Curie won Nobel Prizes in two different scientific fields.",
+    "is_correct": false
+  },
+  {
+    "id": 9160611,
+    "question_id": 916061,
+    "value": "B",
+    "label": "Marie Curie was a pioneer in both physics and chemistry.",
+    "is_correct": false
+  },
+  {
+    "id": 9160612,
+    "question_id": 916061,
+    "value": "C",
+    "label": "Marie Curie's research significantly advanced the understanding of radioactivity.",
+    "is_correct": true
+  },
+  {
+    "id": 9160613,
+    "question_id": 916061,
+    "value": "D",
+    "label": "Marie Curie was the first woman to be awarded a Nobel Prize.",
+    "is_correct": false
+  },
+  {
+    "id": 7508090,
+    "question_id": 750809,
+    "value": "A",
+    "label": "The community garden project received $10,000 in funding in March and began donating vegetables to a food bank by June.",
+    "is_correct": true
+  },
+  {
+    "id": 7508091,
+    "question_id": 750809,
+    "value": "B",
+    "label": "Volunteers prepared the garden site in April, and the first vegetables were planted in May for the community garden project.",
+    "is_correct": false
+  },
+  {
+    "id": 7508092,
+    "question_id": 750809,
+    "value": "C",
+    "label": "Funded in March, the community garden project progressed from site preparation in April to vegetable planting in May and donations by June.",
+    "is_correct": false
+  },
+  {
+    "id": 7508093,
+    "question_id": 750809,
+    "value": "D",
+    "label": "The community garden project, which started with funding approval in March, was able to donate vegetables after volunteers planted them in May.",
+    "is_correct": false
+  },
+  {
+    "id": 8443960,
+    "question_id": 844396,
+    "value": "A",
+    "label": "Screen time for children aged 6-12 years drastically increased from an average of 10 hours per week in 1990 to 30 hours per week in 2020.",
+    "is_correct": true
+  },
+  {
+    "id": 8443961,
+    "question_id": 844396,
+    "value": "B",
+    "label": "Studies indicate that increased screen time in children is correlated with reduced physical activity.",
+    "is_correct": false
+  },
+  {
+    "id": 8443962,
+    "question_id": 844396,
+    "value": "C",
+    "label": "Childhood obesity, a growing health concern, can be linked to reduced physical activity in children.",
+    "is_correct": false
+  },
+  {
+    "id": 8443963,
+    "question_id": 844396,
+    "value": "D",
+    "label": "Children now spend significantly more time watching screens compared to in 1990, which may have health implications.",
+    "is_correct": false
+  },
+  {
+    "id": 1623970,
+    "question_id": 162397,
+    "value": "A",
+    "label": "Dr. Karen Oberhauser’s 2019 study in *Animal Migration* details the challenges monarch butterflies encounter during their migration.",
+    "is_correct": false
+  },
+  {
+    "id": 1623971,
+    "question_id": 162397,
+    "value": "B",
+    "label": "Taking multiple generations to complete, the monarch butterfly migration is detailed in Dr. Oberhauser's 2019 study.",
+    "is_correct": false
+  },
+  {
+    "id": 1623972,
+    "question_id": 162397,
+    "value": "C",
+    "label": "Monarch butterflies undertake a migration that spans thousands of miles from Canada and the US to Mexico.",
+    "is_correct": true
+  },
+  {
+    "id": 1623973,
+    "question_id": 162397,
+    "value": "D",
+    "label": "The monarch butterfly, whose biology is studied by Dr. Karen Oberhauser, migrates from Canada and the US to Mexico.",
+    "is_correct": false
+  },
+  {
+    "id": 3989140,
+    "question_id": 398914,
+    "value": "A",
+    "label": "Hydropower and biomass energy are both renewable energy sources derived from natural processes.",
+    "is_correct": false
+  },
+  {
+    "id": 3989141,
+    "question_id": 398914,
+    "value": "B",
+    "label": "While solar and wind energy are important, hydropower, like geothermal energy, is a renewable source that harnesses Earth's natural resources.",
+    "is_correct": true
+  },
+  {
+    "id": 3989142,
+    "question_id": 398914,
+    "value": "C",
+    "label": "Geothermal energy uses heat from the Earth, and hydropower, generated from dams, is a significant renewable energy source.",
+    "is_correct": false
+  },
+  {
+    "id": 3989143,
+    "question_id": 398914,
+    "value": "D",
+    "label": "Renewable energy sources such as solar, wind, biomass, geothermal, and hydropower are becoming increasingly important.",
+    "is_correct": false
+  },
+  {
+    "id": 8476920,
+    "question_id": 847692,
+    "value": "A",
+    "label": "Transit-Oriented Development focuses on creating dense communities around public transportation hubs to reduce car reliance.",
+    "is_correct": false
+  },
+  {
+    "id": 8476921,
+    "question_id": 847692,
+    "value": "B",
+    "label": "Traditional Neighborhood Development includes diverse housing types, while Transit-Oriented Development aims to reduce car use.",
+    "is_correct": false
+  },
+  {
+    "id": 8476922,
+    "question_id": 847692,
+    "value": "C",
+    "label": "Both Traditional Neighborhood Development and Transit-Oriented Development incorporate mixed-use development, combining residential, commercial, and civic spaces.",
+    "is_correct": true
+  },
+  {
+    "id": 8476923,
+    "question_id": 847692,
+    "value": "D",
+    "label": "Traditional Neighborhood Development emphasizes walkable streets, and Transit-Oriented Development prioritizes public transportation.",
+    "is_correct": false
+  },
+  {
+    "id": 8841820,
+    "question_id": 884182,
+    "value": "A",
+    "label": "Both zoning laws and mixed-use zoning were implemented with the intention of shaping urban neighborhoods, though they approached it in different ways.",
+    "is_correct": true
+  },
+  {
+    "id": 8841821,
+    "question_id": 884182,
+    "value": "B",
+    "label": "Zoning laws, established in the early 20th century, aimed to separate residential areas from industrial areas to improve living conditions.",
+    "is_correct": false
+  },
+  {
+    "id": 8841822,
+    "question_id": 884182,
+    "value": "C",
+    "label": "While zoning laws sought to separate different types of urban spaces, mixed-use zoning aimed to integrate them for more walkable neighborhoods.",
+    "is_correct": false
+  },
+  {
+    "id": 8841823,
+    "question_id": 884182,
+    "value": "D",
+    "label": "Mixed-use zoning, adopted later in the 20th century, sought to create more walkable and vibrant neighborhoods by combining residential and commercial spaces.",
+    "is_correct": false
+  },
+  {
+    "id": 8342380,
+    "question_id": 834238,
+    "value": "A",
+    "label": "Originating in Yemen, coffee spread through Persia, Egypt, Syria, and Turkey before becoming popular in Europe.",
+    "is_correct": false
+  },
+  {
+    "id": 8342381,
+    "question_id": 834238,
+    "value": "B",
+    "label": "By the 18th century, London alone boasted over 550 coffee houses, highlighting coffee's widespread appeal.",
+    "is_correct": false
+  },
+  {
+    "id": 8342382,
+    "question_id": 834238,
+    "value": "C",
+    "label": "Coffee houses in cities like London became hubs for diverse groups such as merchants, writers, artists, and politicians, demonstrating coffee's central role in social life.",
+    "is_correct": true
+  },
+  {
+    "id": 8342383,
+    "question_id": 834238,
+    "value": "D",
+    "label": "Coffee cultivation began in Yemen, and centuries later, European cities like London saw the rise of numerous coffee houses.",
+    "is_correct": false
+  },
+  {
+    "id": 1445780,
+    "question_id": 144578,
+    "value": "A",
+    "label": "Owls rely on auditory learning to locate prey in the darkness, and parrots use auditory learning to navigate social interactions.",
+    "is_correct": false
+  },
+  {
+    "id": 1445781,
+    "question_id": 144578,
+    "value": "B",
+    "label": "While owls are nocturnal hunters and parrots are social birds, both rely on auditory learning to acquire vital skills.",
+    "is_correct": true
+  },
+  {
+    "id": 1445782,
+    "question_id": 144578,
+    "value": "C",
+    "label": "Auditory learning is crucial for birds like owls and parrots because it helps them survive in their respective environments.",
+    "is_correct": false
+  },
+  {
+    "id": 1445783,
+    "question_id": 144578,
+    "value": "D",
+    "label": "Owls are known for hunting at night, and parrots are known for their social complexity, both requiring significant learning abilities.",
+    "is_correct": false
+  },
+  {
+    "id": 7482040,
+    "question_id": 748204,
+    "value": "A",
+    "label": "Dr. Emily Carter, who has published several papers on dark matter, also received the prestigious Stellar Award for her contributions to astrophysics.",
+    "is_correct": false
+  },
+  {
+    "id": 7482041,
+    "question_id": 748204,
+    "value": "B",
+    "label": "Among her many accomplishments, renowned astrophysicist Dr. Emily Carter has published papers on dark matter and received the prestigious Stellar Award.",
+    "is_correct": false
+  },
+  {
+    "id": 7482042,
+    "question_id": 748204,
+    "value": "C",
+    "label": "Dr. Emily Carter is best known for her 2020 TED Talk about the future of space exploration, which has been viewed millions of times online.",
+    "is_correct": true
+  },
+  {
+    "id": 7482043,
+    "question_id": 748204,
+    "value": "D",
+    "label": "The prestigious Stellar Award recognizes Dr. Emily Carter's contributions to astrophysics.",
+    "is_correct": false
+  },
+  {
+    "id": 3451470,
+    "question_id": 345147,
+    "value": "A",
+    "label": "Children aged 8-12 who used screens for over 3 hours a day reported a 15% increase in anxiety, highlighting a mental health concern.",
+    "is_correct": true
+  },
+  {
+    "id": 3451471,
+    "question_id": 345147,
+    "value": "B",
+    "label": "A study of 500 children aged 8-12 investigated the effects of screen time on various aspects of their lives.",
+    "is_correct": false
+  },
+  {
+    "id": 3451472,
+    "question_id": 345147,
+    "value": "C",
+    "label": "Researchers recommend reducing screen time for children, based on findings from a recent study.",
+    "is_correct": false
+  },
+  {
+    "id": 3451473,
+    "question_id": 345147,
+    "value": "D",
+    "label": "Excessive screen time, defined as more than 3 hours daily, was studied in relation to children's attention spans.",
+    "is_correct": false
+  },
+  {
+    "id": 4997230,
+    "question_id": 499723,
+    "value": "A",
+    "label": "Pleasantville, a city covering 100 square miles, has parks for its residents.",
+    "is_correct": false
+  },
+  {
+    "id": 4997231,
+    "question_id": 499723,
+    "value": "B",
+    "label": "Five of the parks in Pleasantville are nature preserves.",
+    "is_correct": false
+  },
+  {
+    "id": 4997232,
+    "question_id": 499723,
+    "value": "C",
+    "label": "Despite having 50 parks, Pleasantville only has 5 designated as nature preserves.",
+    "is_correct": true
+  },
+  {
+    "id": 4997233,
+    "question_id": 499723,
+    "value": "D",
+    "label": "Nature preserves are important green spaces in cities like Pleasantville.",
+    "is_correct": false
+  },
+  {
+    "id": 5505910,
+    "question_id": 550591,
+    "value": "A",
+    "label": "Urban gardening projects offer significant advantages for cities by increasing access to fresh produce in underserved areas, lessening food transportation emissions, and strengthening community relationships, thus aligning with key urban sustainability goals.",
+    "is_correct": true
+  },
+  {
+    "id": 5505911,
+    "question_id": 550591,
+    "value": "B",
+    "label": "Urban gardens can be implemented in various urban spaces, from rooftops to vacant lots, and they are defined as small-scale food production systems in cities.",
+    "is_correct": false
+  },
+  {
+    "id": 5505912,
+    "question_id": 550591,
+    "value": "C",
+    "label": "Improving mental well-being and reducing stress are notable benefits of urban gardening, as studies have demonstrated.",
+    "is_correct": false
+  },
+  {
+    "id": 5505913,
+    "question_id": 550591,
+    "value": "D",
+    "label": "Urban gardens are a form of small-scale food production in cities that utilizes various urban spaces to grow food locally.",
+    "is_correct": false
+  },
+  {
+    "id": 7525250,
+    "question_id": 752525,
+    "value": "A",
+    "label": "Across 50 test plots in Iowa, NitroBoost fertilizer resulted in a 20% increase in corn yield compared to standard fertilizer.",
+    "is_correct": true
+  },
+  {
+    "id": 7525251,
+    "question_id": 752525,
+    "value": "B",
+    "label": "Researchers studied corn yields in Iowa and found that some plots yielded 180 bushels per acre while others yielded 150 bushels per acre.",
+    "is_correct": false
+  },
+  {
+    "id": 7525252,
+    "question_id": 752525,
+    "value": "C",
+    "label": "NitroBoost fertilizer increased corn yield by 30 bushels per acre compared to standard fertilizer in a study.",
+    "is_correct": false
+  },
+  {
+    "id": 7525253,
+    "question_id": 752525,
+    "value": "D",
+    "label": "In Iowa, researchers testing fertilizers found that NitroBoost and standard fertilizer produced different corn yields across 50 test plots.",
+    "is_correct": false
+  },
+  {
+    "id": 7635220,
+    "question_id": 763522,
+    "value": "A",
+    "label": "Traditional media outlets, acting as gatekeepers, often filter information, whereas social media allows rapid dissemination.",
+    "is_correct": false
+  },
+  {
+    "id": 7635221,
+    "question_id": 763522,
+    "value": "B",
+    "label": "Social media platforms enable direct communication and bypass traditional media gatekeepers, potentially fostering more direct engagement in political discourse.",
+    "is_correct": true
+  },
+  {
+    "id": 7635222,
+    "question_id": 763522,
+    "value": "C",
+    "label": "The rapid dissemination of information on social media, while beneficial, is often counteracted by the spread of misinformation.",
+    "is_correct": false
+  },
+  {
+    "id": 7635223,
+    "question_id": 763522,
+    "value": "D",
+    "label": "Despite the efforts of fact-checking organizations, social media's lack of gatekeepers remains a significant problem in political discourse.",
+    "is_correct": false
+  },
+  {
+    "id": 4123440,
+    "question_id": 412344,
+    "value": "A",
+    "label": "Social media platforms facilitate the rapid spread of political information, both accurate and inaccurate.",
+    "is_correct": false
+  },
+  {
+    "id": 4123441,
+    "question_id": 412344,
+    "value": "B",
+    "label": "The design of social media algorithms to maximize user engagement can inadvertently contribute to the spread of political misinformation.",
+    "is_correct": true
+  },
+  {
+    "id": 4123442,
+    "question_id": 412344,
+    "value": "C",
+    "label": "Studies show that online echo chambers on social media reinforce users' pre-existing political beliefs.",
+    "is_correct": false
+  },
+  {
+    "id": 4123443,
+    "question_id": 412344,
+    "value": "D",
+    "label": "Political information, including misinformation and emotionally charged content, is readily available on social media.",
+    "is_correct": false
+  },
+  {
+    "id": 745890,
+    "question_id": 74589,
+    "value": "A",
+    "label": "According to a 2022 study, larger urban parks, specifically those over 10 acres, have a greater positive impact on nearby property values than smaller parks.",
+    "is_correct": true
+  },
+  {
+    "id": 745891,
+    "question_id": 74589,
+    "value": "B",
+    "label": "Researchers at the National Recreation and Park Association conducted a study in 2022 to investigate the impact of urban parks on home prices.",
+    "is_correct": false
+  },
+  {
+    "id": 745892,
+    "question_id": 74589,
+    "value": "C",
+    "label": "The study analyzed property values of homes located near urban parks of different sizes, from under 5 acres to over 10 acres.",
+    "is_correct": false
+  },
+  {
+    "id": 745893,
+    "question_id": 74589,
+    "value": "D",
+    "label": "Data from several US cities were used in the study to determine if there was a relationship between park size and property values.",
+    "is_correct": false
+  },
+  {
+    "id": 427850,
+    "question_id": 42785,
+    "value": "A",
+    "label": "The High Line, a public park built on an old rail line, has revitalized the surrounding neighborhoods and become a popular tourist destination since opening in 2009.",
+    "is_correct": true
+  },
+  {
+    "id": 427851,
+    "question_id": 42785,
+    "value": "B",
+    "label": "Before becoming a park featuring gardens and walkways, the High Line was an abandoned and overgrown rail line in New York City.",
+    "is_correct": false
+  },
+  {
+    "id": 427852,
+    "question_id": 42785,
+    "value": "C",
+    "label": "The High Line project, a model for urban green spaces, includes overlooks with views of the city.",
+    "is_correct": false
+  },
+  {
+    "id": 427853,
+    "question_id": 42785,
+    "value": "D",
+    "label": "Built on a historic elevated rail line, the High Line attracted new businesses and residents to the neighborhoods it runs through.",
+    "is_correct": false
+  },
+  {
+    "id": 6396500,
+    "question_id": 639650,
+    "value": "A",
+    "label": "Cityville's population grew from 50,000 in 1950 to 300,000 in 2020, with slower growth after 2000.",
+    "is_correct": false
+  },
+  {
+    "id": 6396501,
+    "question_id": 639650,
+    "value": "B",
+    "label": "Experiencing significant suburban expansion, Cityville's population increased from 50,000 residents in 1950 to 250,000 residents by 2000, its period of most rapid growth.",
+    "is_correct": true
+  },
+  {
+    "id": 6396502,
+    "question_id": 639650,
+    "value": "C",
+    "label": "Between 2000 and 2020, Cityville's population grew to 300,000 residents, a slower pace compared to the previous fifty years.",
+    "is_correct": false
+  },
+  {
+    "id": 6396503,
+    "question_id": 639650,
+    "value": "D",
+    "label": "Increased housing costs coincided with a population of 300,000 residents in Cityville by 2020, following a period of suburban expansion.",
+    "is_correct": false
+  },
+  {
+    "id": 5827320,
+    "question_id": 582732,
+    "value": "A",
+    "label": "Effective communication relies on clear language, avoiding jargon, and incorporating active listening techniques.",
+    "is_correct": false
+  },
+  {
+    "id": 5827321,
+    "question_id": 582732,
+    "value": "B",
+    "label": "Visual aids like charts and graphs are not just enhancements but crucial tools, as studies show presentations with visuals are rated significantly higher in clarity.",
+    "is_correct": true
+  },
+  {
+    "id": 5827322,
+    "question_id": 582732,
+    "value": "C",
+    "label": "To ensure effective communication, one must use clear and concise language, which is often improved by avoiding jargon.",
+    "is_correct": false
+  },
+  {
+    "id": 5827323,
+    "question_id": 582732,
+    "value": "D",
+    "label": "While clear language and active listening are important for presentations, visual aids can also be used to enhance audience understanding.",
+    "is_correct": false
+  },
+  {
+    "id": 2313510,
+    "question_id": 231351,
+    "value": "A",
+    "label": "Communication technologies have evolved over time, with postal mail being a traditional method and email and instant messaging being more recent digital forms.",
+    "is_correct": false
+  },
+  {
+    "id": 2313511,
+    "question_id": 231351,
+    "value": "B",
+    "label": "Both postal mail and instant messaging are used for communication, but they differ in that postal mail is for correspondence while instant messaging is for quick chats.",
+    "is_correct": false
+  },
+  {
+    "id": 2313512,
+    "question_id": 231351,
+    "value": "C",
+    "label": "Unlike postal mail, which requires the physical transportation of messages and has been used for centuries, instant messaging utilizes digital networks for real-time communication and is a more recent development.",
+    "is_correct": true
+  },
+  {
+    "id": 2313513,
+    "question_id": 231351,
+    "value": "D",
+    "label": "Email is another digital communication method that, like instant messaging, uses networks to send messages but was adopted earlier than instant messaging.",
+    "is_correct": false
+  },
+  {
+    "id": 1636110,
+    "question_id": 163611,
+    "value": "A",
+    "label": "Bus rapid transit systems are a form of public transportation that can be implemented in cities.",
+    "is_correct": false
+  },
+  {
+    "id": 1636111,
+    "question_id": 163611,
+    "value": "B",
+    "label": "Cities experiencing traffic congestion can consider implementing public transportation solutions.",
+    "is_correct": false
+  },
+  {
+    "id": 1636112,
+    "question_id": 163611,
+    "value": "C",
+    "label": "BRT systems, by utilizing dedicated lanes, improve travel times and thus help reduce traffic congestion.",
+    "is_correct": true
+  },
+  {
+    "id": 1636113,
+    "question_id": 163611,
+    "value": "D",
+    "label": "Public transportation, including BRT, is becoming increasingly important in modern urban development.",
+    "is_correct": false
+  },
+  {
+    "id": 5836520,
+    "question_id": 583652,
+    "value": "A",
+    "label": "Examples of investment asset classes include stocks, which represent company ownership, and bonds, which represent loans.",
+    "is_correct": false
+  },
+  {
+    "id": 5836521,
+    "question_id": 583652,
+    "value": "B",
+    "label": "While CDs are considered low-risk investments, real estate can involve significant capital.",
+    "is_correct": false
+  },
+  {
+    "id": 5836522,
+    "question_id": 583652,
+    "value": "C",
+    "label": "Investment asset classes vary in nature, ranging from ownership stakes in companies to loans and physical property.",
+    "is_correct": true
+  },
+  {
+    "id": 5836523,
+    "question_id": 583652,
+    "value": "D",
+    "label": "Bonds and CDs are both forms of debt instruments, whereas stocks and real estate are equity-based investments.",
+    "is_correct": false
+  },
+  {
+    "id": 730110,
+    "question_id": 73011,
+    "value": "A",
+    "label": "Crop rotation, which involves planting different crops sequentially, helps improve soil health, reducing the need for synthetic fertilizers.",
+    "is_correct": true
+  },
+  {
+    "id": 730111,
+    "question_id": 73011,
+    "value": "B",
+    "label": "Monoculture depletes soil nutrients, but crop rotation, especially with legumes, can help.",
+    "is_correct": false
+  },
+  {
+    "id": 730112,
+    "question_id": 73011,
+    "value": "C",
+    "label": "Legumes like beans and clover are used in crop rotation because they fix nitrogen, an essential nutrient for plant growth.",
+    "is_correct": false
+  },
+  {
+    "id": 730113,
+    "question_id": 73011,
+    "value": "D",
+    "label": "By planting different crops like legumes, crop rotation improves soil health and makes it unnecessary to grow a single crop repeatedly.",
+    "is_correct": false
+  },
+  {
+    "id": 9481320,
+    "question_id": 948132,
+    "value": "A",
+    "label": "The Altair 8800, Apple II, and IBM PC represent key milestones in the development of personal computers, with each contributing to the evolution of the technology.",
+    "is_correct": false
+  },
+  {
+    "id": 9481321,
+    "question_id": 948132,
+    "value": "B",
+    "label": "Although later models like the Apple II and IBM PC became more user-friendly and commercially successful, the Altair 8800, released in 1975 as a kit, is widely regarded as the first personal computer.",
+    "is_correct": true
+  },
+  {
+    "id": 9481322,
+    "question_id": 948132,
+    "value": "C",
+    "label": "Released in 1977, the Apple II offered a fully assembled and user-friendly alternative to the Altair 8800, which was released two years earlier and required assembly.",
+    "is_correct": false
+  },
+  {
+    "id": 9481323,
+    "question_id": 948132,
+    "value": "D",
+    "label": "The IBM PC, becoming dominant in 1981 and influencing future designs, followed the Altair 8800, which is considered the first personal computer and was released in 1975.",
+    "is_correct": false
+  },
+  {
+    "id": 478830,
+    "question_id": 47883,
+    "value": "A",
+    "label": "Dr. Sharma's belief that she had found a new plant species was initially based on the Amazon sample's unique leaf structures and flower colors, which were later confirmed by DNA analysis.",
+    "is_correct": true
+  },
+  {
+    "id": 478831,
+    "question_id": 47883,
+    "value": "B",
+    "label": "Though DNA analysis confirmed the plant sample was unique, Dr. Sharma's publication of her findings in a peer-reviewed journal was the most significant step in identifying *Amazonia mirabilis*.",
+    "is_correct": false
+  },
+  {
+    "id": 478832,
+    "question_id": 47883,
+    "value": "C",
+    "label": "Dr. Sharma collected plant samples in the Amazon in 2022, and after conducting DNA analysis in the lab, she determined that one sample was a new species.",
+    "is_correct": false
+  },
+  {
+    "id": 478833,
+    "question_id": 47883,
+    "value": "D",
+    "label": "The discovery of *Amazonia mirabilis*, a new plant species, involved field work in the Amazon, lab analysis, and eventual verification by other botanists.",
+    "is_correct": false
+  },
+  {
+    "id": 1465170,
+    "question_id": 146517,
+    "value": "A",
+    "label": "Artificial sweeteners are synthetic or refined sugar substitutes that are used in food and beverages to modify gut bacteria.",
+    "is_correct": false
+  },
+  {
+    "id": 1465171,
+    "question_id": 146517,
+    "value": "B",
+    "label": "Used in numerous products, artificial sweeteners are sugar substitutes created in labs or refined from natural sources.",
+    "is_correct": true
+  },
+  {
+    "id": 1465172,
+    "question_id": 146517,
+    "value": "C",
+    "label": "Due to their impact on gut bacteria, artificial sweeteners are being studied for their effects on digestion, nutrient absorption, and immunity.",
+    "is_correct": false
+  },
+  {
+    "id": 1465173,
+    "question_id": 146517,
+    "value": "D",
+    "label": "Artificial sweeteners, found in many foods, are sugar substitutes that may lead to changes in the composition of gut bacteria.",
+    "is_correct": false
+  },
+  {
+    "id": 6442650,
+    "question_id": 644265,
+    "value": "A",
+    "label": "While ride-sharing services offer the convenience of smartphone booking and real-time tracking, traditional taxi services often provide more wheelchair-accessible vehicles.",
+    "is_correct": true
+  },
+  {
+    "id": 6442651,
+    "question_id": 644265,
+    "value": "B",
+    "label": "Ride-sharing services have become popular in major cities, but traditional taxi services, which often required phone calls for booking, still exist.",
+    "is_correct": false
+  },
+  {
+    "id": 6442652,
+    "question_id": 644265,
+    "value": "C",
+    "label": "The rise of ride-sharing apps has led to a decrease in taxi usage, though both offer transportation options in urban areas.",
+    "is_correct": false
+  },
+  {
+    "id": 6442653,
+    "question_id": 644265,
+    "value": "D",
+    "label": "Studies show that ride-sharing is convenient, and traditional taxis are less convenient because they often required phone calls for booking.",
+    "is_correct": false
+  },
+  {
+    "id": 2790800,
+    "question_id": 279080,
+    "value": "A",
+    "label": "Community gardens in Chicago, as highlighted by a study, increase insect diversity, which is one of the ecological benefits of urban green spaces that help mitigate the heat island effect.",
+    "is_correct": false
+  },
+  {
+    "id": 2790801,
+    "question_id": 279080,
+    "value": "B",
+    "label": "Compared to paved areas, community gardens in Chicago have significantly higher insect diversity, leading to improved pollination and pest control, as demonstrated by a recent study.",
+    "is_correct": true
+  },
+  {
+    "id": 2790802,
+    "question_id": 279080,
+    "value": "C",
+    "label": "Urban green spaces, including community gardens, are known to support biodiversity and mitigate heat island effects, and a Chicago study focused on insect diversity in these areas.",
+    "is_correct": false
+  },
+  {
+    "id": 2790803,
+    "question_id": 279080,
+    "value": "D",
+    "label": "A recent study found that urban ecosystems, especially community gardens in cities like Chicago, benefit from increased insect diversity, contributing to pollination and natural pest control.",
+    "is_correct": false
+  },
+  {
+    "id": 9749590,
+    "question_id": 974959,
+    "value": "A",
+    "label": "Geothermal energy utilizes heat from the Earth's interior and is a significant energy source in Iceland.",
+    "is_correct": false
+  },
+  {
+    "id": 9749591,
+    "question_id": 974959,
+    "value": "B",
+    "label": "Unlike traditional hydropower, geothermal energy offers a renewable energy source with a smaller environmental footprint.",
+    "is_correct": true
+  },
+  {
+    "id": 9749592,
+    "question_id": 974959,
+    "value": "C",
+    "label": "Hydropower, a traditional renewable energy source relying on dams, can have environmental impacts, while geothermal energy is also renewable.",
+    "is_correct": false
+  },
+  {
+    "id": 9749593,
+    "question_id": 974959,
+    "value": "D",
+    "label": "Hydropower is a major renewable energy source worldwide, and geothermal energy is increasingly utilized in regions like Iceland.",
+    "is_correct": false
+  },
+  {
+    "id": 9530180,
+    "question_id": 953018,
+    "value": "A",
+    "label": "Gutenberg's printing press, which was completed around 1440, significantly changed how information was shared.",
+    "is_correct": false
+  },
+  {
+    "id": 9530181,
+    "question_id": 953018,
+    "value": "B",
+    "label": "The Gutenberg Bible, a famous example of early printed material, was completed around 1455 using the new printing press.",
+    "is_correct": false
+  },
+  {
+    "id": 9530182,
+    "question_id": 953018,
+    "value": "C",
+    "label": "Around 1440, Johannes Gutenberg completed his printing press, which greatly increased the speed at which books could be produced and distributed.",
+    "is_correct": true
+  },
+  {
+    "id": 9530183,
+    "question_id": 953018,
+    "value": "D",
+    "label": "The printing press, attributed to Johannes Gutenberg and completed around 1440, led to the creation of books such as the Gutenberg Bible around 1455.",
+    "is_correct": false
+  },
+  {
+    "id": 789040,
+    "question_id": 78904,
+    "value": "A",
+    "label": "Urban green spaces, including parks and green roofs, not only improve mental well-being but also offer opportunities for physical activity and reduce urban temperatures.",
+    "is_correct": true
+  },
+  {
+    "id": 789041,
+    "question_id": 78904,
+    "value": "B",
+    "label": "To combat the urban heat island effect and improve residents' mental well-being, cities are incorporating green roofs and vertical gardens into urban planning.",
+    "is_correct": false
+  },
+  {
+    "id": 789042,
+    "question_id": 78904,
+    "value": "C",
+    "label": "Studies show that while urban green spaces are areas with vegetation, they are crucial for physical activity, social interaction, and mitigating heat in cities.",
+    "is_correct": false
+  },
+  {
+    "id": 789043,
+    "question_id": 78904,
+    "value": "D",
+    "label": "Offering opportunities for stress reduction and social interaction, urban green spaces are increasingly being recognized for their role in improving mental well-being and lowering urban temperatures.",
+    "is_correct": false
+  },
+  {
+    "id": 3984670,
+    "question_id": 398467,
+    "value": "A",
+    "label": "Barack Obama's 2008 campaign demonstrated the effectiveness of social media for fundraising and grassroots organizing, a strategy now widely adopted.",
+    "is_correct": false
+  },
+  {
+    "id": 3984671,
+    "question_id": 398467,
+    "value": "B",
+    "label": "Social media's role in political campaigns is primarily to bypass traditional media and communicate directly with voters.",
+    "is_correct": false
+  },
+  {
+    "id": 3984672,
+    "question_id": 398467,
+    "value": "C",
+    "label": "Although challenges like misinformation exist, social media has become an important tool in modern political campaigns for direct voter communication, fundraising, and increasing voter turnout, particularly among younger people.",
+    "is_correct": true
+  },
+  {
+    "id": 3984673,
+    "question_id": 398467,
+    "value": "D",
+    "label": "Political campaigns use social media because studies show it increases voter turnout and allows them to fundraise more effectively than traditional methods.",
+    "is_correct": false
+  },
+  {
+    "id": 9260940,
+    "question_id": 926094,
+    "value": "A",
+    "label": "Keynesian economics suggests government intervention is sometimes necessary, while classical economics focuses on free markets.",
+    "is_correct": false
+  },
+  {
+    "id": 9260941,
+    "question_id": 926094,
+    "value": "B",
+    "label": "Because their approaches to economic regulation differ, it is difficult to reconcile classical and Keynesian economic theories.",
+    "is_correct": false
+  },
+  {
+    "id": 9260942,
+    "question_id": 926094,
+    "value": "C",
+    "label": "Classical economics posits that the economy is self-regulating and achieves full employment naturally, a view that contrasts with Keynesian economics.",
+    "is_correct": false
+  },
+  {
+    "id": 9260943,
+    "question_id": 926094,
+    "value": "D",
+    "label": "Classical economics views the economy as self-regulating and naturally returning to full employment, in contrast to Keynesian economics, which supports government intervention to manage demand and prevent prolonged unemployment.",
+    "is_correct": true
+  },
+  {
+    "id": 9068530,
+    "question_id": 906853,
+    "value": "A",
+    "label": "Sharma focused on teenagers and social media, while Carter studied adults and smartphone use in the workplace.",
+    "is_correct": false
+  },
+  {
+    "id": 9068531,
+    "question_id": 906853,
+    "value": "B",
+    "label": "Both Sharma and Carter investigated the effects of technology on communication within different age groups.",
+    "is_correct": false
+  },
+  {
+    "id": 9068532,
+    "question_id": 906853,
+    "value": "C",
+    "label": "Sharma's study on teenagers and Carter's research on adults both suggest that heavy technology use is associated with reduced in-person social engagement.",
+    "is_correct": true
+  },
+  {
+    "id": 9068533,
+    "question_id": 906853,
+    "value": "D",
+    "label": "The research of Sharma and Carter highlights the increasing role of technology in modern social interactions across various demographics.",
+    "is_correct": false
+  },
+  {
+    "id": 4589960,
+    "question_id": 458996,
+    "value": "A",
+    "label": "GDP is a fundamental measure in economics, representing the total monetary value of goods and services.",
+    "is_correct": false
+  },
+  {
+    "id": 4589961,
+    "question_id": 458996,
+    "value": "B",
+    "label": "The expenditure approach to calculating GDP includes consumption, investment, government spending, and net exports.",
+    "is_correct": false
+  },
+  {
+    "id": 4589962,
+    "question_id": 458996,
+    "value": "C",
+    "label": "Economists calculate GDP using different approaches, but the expenditure approach includes categories like consumption and government spending.",
+    "is_correct": false
+  },
+  {
+    "id": 4589963,
+    "question_id": 458996,
+    "value": "D",
+    "label": "Purchasing a new refrigerator for a household, which is considered consumption, is an example of an activity that contributes to a country's GDP.",
+    "is_correct": true
+  },
+  {
+    "id": 3902180,
+    "question_id": 390218,
+    "value": "A",
+    "label": "Urban green spaces, encompassing parks, gardens, and tree-lined streets in cities, are vital as they improve air quality, reduce urban heat, and provide recreational areas that enhance residents' well-being.",
+    "is_correct": true
+  },
+  {
+    "id": 3902181,
+    "question_id": 390218,
+    "value": "B",
+    "label": "Urban green spaces are defined by the presence of parks, gardens, and tree-lined streets within cities.",
+    "is_correct": false
+  },
+  {
+    "id": 3902182,
+    "question_id": 390218,
+    "value": "C",
+    "label": "Urban green spaces are important because they improve air quality by absorbing pollutants in urban areas.",
+    "is_correct": false
+  },
+  {
+    "id": 3902183,
+    "question_id": 390218,
+    "value": "D",
+    "label": "Urban green spaces offer benefits such as improved air quality, reduced heat, and areas for recreation and well-being.",
+    "is_correct": false
+  },
+  {
+    "id": 3724880,
+    "question_id": 372488,
+    "value": "A",
+    "label": "Thomas Edison patented the incandescent light bulb in 1879, and Joseph Swan began installing electric lighting in homes in 1881.",
+    "is_correct": true
+  },
+  {
+    "id": 3724881,
+    "question_id": 372488,
+    "value": "B",
+    "label": "Joseph Swan began installing electric lighting in homes in 1881, while Thomas Edison patented the incandescent light bulb.",
+    "is_correct": false
+  },
+  {
+    "id": 3724882,
+    "question_id": 372488,
+    "value": "C",
+    "label": "Thomas Edison and Joseph Swan both contributed to the development of the incandescent light bulb in the late 19th century.",
+    "is_correct": false
+  },
+  {
+    "id": 3724883,
+    "question_id": 372488,
+    "value": "D",
+    "label": "In the late 1800s, Thomas Edison patented the incandescent light bulb and Joseph Swan began installing electric lighting.",
+    "is_correct": false
+  },
+  {
+    "id": 2246150,
+    "question_id": 224615,
+    "value": "A",
+    "label": "Coffee cultivation started in Yemen, and by the 16th century, coffee had become popular in various countries in the Near East.",
+    "is_correct": false
+  },
+  {
+    "id": 2246151,
+    "question_id": 224615,
+    "value": "B",
+    "label": "Originating in Ethiopia, coffee's popularity spread to Persia, Egypt, Syria, and Turkey by the 16th century.",
+    "is_correct": false
+  },
+  {
+    "id": 2246152,
+    "question_id": 224615,
+    "value": "C",
+    "label": "Coffee, initially popular in the Near East, was introduced to Europe in the 17th century by European travelers.",
+    "is_correct": true
+  },
+  {
+    "id": 2246153,
+    "question_id": 224615,
+    "value": "D",
+    "label": "Coffeehouses in European cities became centers of social life after coffee was brought to Europe from the Near East.",
+    "is_correct": false
+  },
+  {
+    "id": 36200,
+    "question_id": 3620,
+    "value": "A",
+    "label": "Wind, hydropower, and geothermal energy all use turbines to generate electricity.",
+    "is_correct": true
+  },
+  {
+    "id": 36201,
+    "question_id": 3620,
+    "value": "B",
+    "label": "While solar energy directly converts sunlight, wind, hydropower, and geothermal energy rely on indirect methods.",
+    "is_correct": false
+  },
+  {
+    "id": 36202,
+    "question_id": 3620,
+    "value": "C",
+    "label": "Hydropower uses dams, geothermal uses Earth's heat, and wind uses turbines to create electricity.",
+    "is_correct": false
+  },
+  {
+    "id": 36203,
+    "question_id": 3620,
+    "value": "D",
+    "label": "Renewable energy sources like wind, water, and geothermal are becoming increasingly important.",
+    "is_correct": false
+  },
+  {
+    "id": 9769490,
+    "question_id": 976949,
+    "value": "A",
+    "label": "Neonicotinoids, a class of pesticides, are widely used in agriculture and can be present in pollen and nectar.",
+    "is_correct": false
+  },
+  {
+    "id": 9769491,
+    "question_id": 976949,
+    "value": "B",
+    "label": "Because neonicotinoid exposure impairs honeybee navigation and foraging, these pesticides may contribute to the decline of honeybee populations.",
+    "is_correct": true
+  },
+  {
+    "id": 9769492,
+    "question_id": 976949,
+    "value": "C",
+    "label": "Honeybees are important pollinators and their decline is a serious agricultural concern.",
+    "is_correct": false
+  },
+  {
+    "id": 9769493,
+    "question_id": 976949,
+    "value": "D",
+    "label": "Colony Collapse Disorder (CCD), characterized by the disappearance of worker bees, is a symptom of declining honeybee populations.",
+    "is_correct": false
+  },
+  {
+    "id": 9520420,
+    "question_id": 952042,
+    "value": "A",
+    "label": "Although legend credits an Ethiopian goat herder with discovering coffee, historical evidence indicates that coffee cultivation and consumption began in Yemen.",
+    "is_correct": true
+  },
+  {
+    "id": 9520421,
+    "question_id": 952042,
+    "value": "B",
+    "label": "Coffee beans are believed to have originated in Ethiopia, and coffee houses later became important social hubs in the Ottoman Empire.",
+    "is_correct": false
+  },
+  {
+    "id": 9520422,
+    "question_id": 952042,
+    "value": "C",
+    "label": "The discovery of coffee's stimulating effects is attributed to an Ethiopian goat herder named Kaldi, while coffee cultivation started in Yemen.",
+    "is_correct": false
+  },
+  {
+    "id": 9520423,
+    "question_id": 952042,
+    "value": "D",
+    "label": "Both Ethiopia and Yemen play significant roles in the history of coffee, from its legendary origins to its early cultivation.",
+    "is_correct": false
+  },
+  {
+    "id": 1841130,
+    "question_id": 184113,
+    "value": "A",
+    "label": "Heating accounts for the largest portion of household energy use, around 42%, while air conditioning uses about 17% of total energy.",
+    "is_correct": false
+  },
+  {
+    "id": 1841131,
+    "question_id": 184113,
+    "value": "B",
+    "label": "Household energy consumption in the US is distributed across heating, air conditioning, and lighting.",
+    "is_correct": false
+  },
+  {
+    "id": 1841132,
+    "question_id": 184113,
+    "value": "C",
+    "label": "Lighting makes up approximately 9% of household energy use, a smaller portion compared to other uses.",
+    "is_correct": false
+  },
+  {
+    "id": 1841133,
+    "question_id": 184113,
+    "value": "D",
+    "label": "While lighting constitutes only about 9% of household energy consumption, heating accounts for a much larger 42%.",
+    "is_correct": true
+  },
+  {
+    "id": 101160,
+    "question_id": 10116,
+    "value": "A",
+    "label": "Originating in Ethiopia and Sudan, coffee cultivation spread to Yemen by the 16th century, then to India in the 17th century, and finally to the Americas in the 18th century before becoming a global crop cultivated in over 50 countries today.",
+    "is_correct": true
+  },
+  {
+    "id": 101161,
+    "question_id": 10116,
+    "value": "B",
+    "label": "Coffee plants, which originated in Ethiopia and Sudan, are now cultivated in over 50 countries worldwide, including the Americas, where plantations were established in the 18th century.",
+    "is_correct": false
+  },
+  {
+    "id": 101162,
+    "question_id": 10116,
+    "value": "C",
+    "label": "In the 16th century, coffee cultivation was present in Yemen, and by the 17th and 18th centuries, it had reached India and the Americas, respectively.",
+    "is_correct": false
+  },
+  {
+    "id": 101163,
+    "question_id": 10116,
+    "value": "D",
+    "label": "The global spread of coffee cultivation began in the 18th century in the Americas, after originating in Ethiopia and Sudan, and then moving to Yemen and India.",
+    "is_correct": false
+  },
+  {
+    "id": 3307220,
+    "question_id": 330722,
+    "value": "A",
+    "label": "Amelia Earhart, who was flying a Lockheed Electra, disappeared in 1937 while attempting to fly around the world.",
+    "is_correct": true
+  },
+  {
+    "id": 3307221,
+    "question_id": 330722,
+    "value": "B",
+    "label": "In 1937, Amelia Earhart disappeared; she was a famous aviator.",
+    "is_correct": false
+  },
+  {
+    "id": 3307222,
+    "question_id": 330722,
+    "value": "C",
+    "label": "Amelia Earhart disappeared while attempting to fly around the world and was a famous aviator.",
+    "is_correct": false
+  },
+  {
+    "id": 3307223,
+    "question_id": 330722,
+    "value": "D",
+    "label": "Earhart, flying a Lockheed Electra, was a famous aviator who attempted an around-the-world flight.",
+    "is_correct": false
+  },
+  {
+    "id": 825700,
+    "question_id": 82570,
+    "value": "A",
+    "label": "Sharma's team sought to understand the role of pesticide use in the decline of pollinator populations, which are crucial for agriculture.",
+    "is_correct": true
+  },
+  {
+    "id": 825701,
+    "question_id": 82570,
+    "value": "B",
+    "label": "The researchers analyzed data from agricultural regions and compared pollinator population trends over ten years.",
+    "is_correct": false
+  },
+  {
+    "id": 825702,
+    "question_id": 82570,
+    "value": "C",
+    "label": "Concerns have been raised about the decline in pollinator populations, including bees and butterflies, crucial for agriculture.",
+    "is_correct": false
+  },
+  {
+    "id": 825703,
+    "question_id": 82570,
+    "value": "D",
+    "label": "A strong negative correlation was revealed between pesticide concentration in agricultural areas and pollinator species richness.",
+    "is_correct": false
+  },
+  {
+    "id": 148600,
+    "question_id": 14860,
+    "value": "A",
+    "label": "Social media algorithms prioritize engagement, which means users are often shown content that reinforces their pre-existing beliefs.",
+    "is_correct": false
+  },
+  {
+    "id": 148601,
+    "question_id": 14860,
+    "value": "B",
+    "label": "Although social media can offer access to diverse perspectives, algorithms that prioritize engagement may create echo chambers, leading users to become more extreme in their political views.",
+    "is_correct": true
+  },
+  {
+    "id": 148602,
+    "question_id": 14860,
+    "value": "C",
+    "label": "Exposure to diverse perspectives on social media could be increased if platforms adopted algorithms designed to promote a wider range of content.",
+    "is_correct": false
+  },
+  {
+    "id": 148603,
+    "question_id": 14860,
+    "value": "D",
+    "label": "Social media platforms, while offering access to various sources, utilize algorithms that can contribute to political polarization.",
+    "is_correct": false
+  },
+  {
+    "id": 7452150,
+    "question_id": 745215,
+    "value": "A",
+    "label": "While both Jacobs and Moses shaped New York City's urban landscape, Jacobs championed community-centered planning, whereas Moses favored large-scale, top-down development.",
+    "is_correct": true
+  },
+  {
+    "id": 7452151,
+    "question_id": 745215,
+    "value": "B",
+    "label": "Jacobs and Moses both had strong opinions about how cities should be developed and left lasting marks on New York City.",
+    "is_correct": false
+  },
+  {
+    "id": 7452152,
+    "question_id": 745215,
+    "value": "C",
+    "label": "Although they both influenced urban planning, Jacobs focused on neighborhoods and Moses focused on highways.",
+    "is_correct": false
+  },
+  {
+    "id": 7452153,
+    "question_id": 745215,
+    "value": "D",
+    "label": "Both Jacobs and Moses were influential figures in New York City's history, and their ideas about urban development are still debated today.",
+    "is_correct": false
+  },
+  {
+    "id": 6724190,
+    "question_id": 672419,
+    "value": "A",
+    "label": "Cloud classification depends on altitude and appearance; for example, cirrus clouds, found at high altitudes, are known for their wispy, feathery look.",
+    "is_correct": true
+  },
+  {
+    "id": 6724191,
+    "question_id": 672419,
+    "value": "B",
+    "label": "In cloud classification, different types are categorized by their altitude and appearance, ranging from high-altitude ice crystal clouds to low-altitude water droplet clouds.",
+    "is_correct": false
+  },
+  {
+    "id": 6724192,
+    "question_id": 672419,
+    "value": "C",
+    "label": "Characterized by their puffy, cotton-like shape, cumulus clouds are one type of low-altitude cloud formation.",
+    "is_correct": false
+  },
+  {
+    "id": 6724193,
+    "question_id": 672419,
+    "value": "D",
+    "label": "While both are cloud types, cirrus clouds are high-altitude and wispy, whereas stratus clouds are low-altitude and sheet-like.",
+    "is_correct": false
+  },
+  {
+    "id": 6418150,
+    "question_id": 641815,
+    "value": "A",
+    "label": "In 1879, British physicist and chemist Joseph Swan showcased his groundbreaking invention, a practical and enduring incandescent light bulb, in Newcastle, England.",
+    "is_correct": true
+  },
+  {
+    "id": 6418151,
+    "question_id": 641815,
+    "value": "B",
+    "label": "Joseph Swan, a British physicist and chemist, developed a practical and long-lasting incandescent light bulb, an invention that would later revolutionize indoor lighting alongside Thomas Edison's similar creation.",
+    "is_correct": false
+  },
+  {
+    "id": 6418152,
+    "question_id": 641815,
+    "value": "C",
+    "label": "Though Thomas Edison is widely known for the light bulb, Joseph Swan, also working in the late 1870s, successfully demonstrated his own version in Newcastle.",
+    "is_correct": false
+  },
+  {
+    "id": 6418153,
+    "question_id": 641815,
+    "value": "D",
+    "label": "The incandescent light bulb, a revolutionary invention for indoor lighting, was developed by both Joseph Swan and Thomas Edison in the late 1870s.",
+    "is_correct": false
+  },
+  {
+    "id": 2473160,
+    "question_id": 247316,
+    "value": "A",
+    "label": "Green roofs, which are rooftop gardens, help reduce the urban heat island effect.",
+    "is_correct": false
+  },
+  {
+    "id": 2473161,
+    "question_id": 247316,
+    "value": "B",
+    "label": "A 2024 study compared buildings with and without green roofs to analyze energy consumption.",
+    "is_correct": false
+  },
+  {
+    "id": 2473162,
+    "question_id": 247316,
+    "value": "C",
+    "label": "Researchers found that green roofs can lead to a 15% decrease in summer cooling costs due to the insulation and cooling properties of vegetation and soil.",
+    "is_correct": true
+  },
+  {
+    "id": 2473163,
+    "question_id": 247316,
+    "value": "D",
+    "label": "Buildings with green roofs have vegetation and soil on their rooftops, leading to reduced energy consumption, according to a recent study.",
+    "is_correct": false
+  },
+  {
+    "id": 5135900,
+    "question_id": 513590,
+    "value": "A",
+    "label": "Social media's algorithms are designed to create echo chambers that reinforce pre-existing political beliefs, according to some studies.",
+    "is_correct": false
+  },
+  {
+    "id": 5135901,
+    "question_id": 513590,
+    "value": "B",
+    "label": "The role of social media in political discourse is multifaceted, as it enables rapid information sharing and citizen engagement but also risks echo chambers, polarization, and misinformation.",
+    "is_correct": true
+  },
+  {
+    "id": 5135902,
+    "question_id": 513590,
+    "value": "C",
+    "label": "Researchers are concerned that the spread of misinformation on social media platforms could significantly influence election outcomes.",
+    "is_correct": false
+  },
+  {
+    "id": 5135903,
+    "question_id": 513590,
+    "value": "D",
+    "label": "While social media facilitates rapid dissemination of information, it also presents challenges related to exposure to diverse viewpoints.",
+    "is_correct": false
+  },
+  {
+    "id": 1822640,
+    "question_id": 182264,
+    "value": "A",
+    "label": "To study social media's role in the 2020 US presidential election, McCoy and Conner analyzed data from Twitter and Facebook, focusing on misinformation and echo chambers.",
+    "is_correct": false
+  },
+  {
+    "id": 1822641,
+    "question_id": 182264,
+    "value": "B",
+    "label": "McCoy and Conner's study on Twitter and Facebook during the 2020 US election revealed the prevalence of echo chambers and misinformation.",
+    "is_correct": false
+  },
+  {
+    "id": 1822642,
+    "question_id": 182264,
+    "value": "C",
+    "label": "Analyzing social media use during the 2020 US presidential election, McCoy and Conner found that algorithms amplify extreme content, leading to increased political polarization.",
+    "is_correct": false
+  },
+  {
+    "id": 1822643,
+    "question_id": 182264,
+    "value": "D",
+    "label": "According to McCoy and Conner's research, social media platforms contribute to political polarization by creating echo chambers where users mainly see belief-confirming content and algorithms boost extreme viewpoints.",
+    "is_correct": true
+  },
+  {
+    "id": 724420,
+    "question_id": 72442,
+    "value": "A",
+    "label": "The 2006 IAU definition of a planet, which led to Pluto's reclassification, represents a significant shift in astronomical understanding.",
+    "is_correct": false
+  },
+  {
+    "id": 724421,
+    "question_id": 72442,
+    "value": "B",
+    "label": "Different definitions of a planet can result in substantially different classifications and counts of planets within our solar system, as exemplified by varying perspectives on Pluto.",
+    "is_correct": true
+  },
+  {
+    "id": 724422,
+    "question_id": 72442,
+    "value": "C",
+    "label": "Although the IAU definition is widely adopted, a segment of astronomers supports a broader definition of a planet to encompass a larger number of celestial bodies.",
+    "is_correct": false
+  },
+  {
+    "id": 724423,
+    "question_id": 72442,
+    "value": "D",
+    "label": "The classification of celestial bodies into categories like planets and dwarf planets hinges on criteria such as orbit clearing and intrinsic physical characteristics.",
+    "is_correct": false
+  },
+  {
+    "id": 574000,
+    "question_id": 57400,
+    "value": "A",
+    "label": "In the early 20th century, Brazil became the world's largest coffee producer due to government policies and extensive deforestation.",
+    "is_correct": false
+  },
+  {
+    "id": 574001,
+    "question_id": 57400,
+    "value": "B",
+    "label": "Despite facing challenges later in the century, Brazil's coffee industry was significantly shaped by government support and exploitative labor practices in its early decades.",
+    "is_correct": true
+  },
+  {
+    "id": 574002,
+    "question_id": 57400,
+    "value": "C",
+    "label": "Extensive deforestation and exploitative labor conditions were negative aspects of Brazil's rise to become the world's largest coffee producer in the early 20th century.",
+    "is_correct": false
+  },
+  {
+    "id": 574003,
+    "question_id": 57400,
+    "value": "D",
+    "label": "Brazil's coffee industry, which became dominant in the early 20th century, experienced both government support and later challenges from price fluctuations.",
+    "is_correct": false
+  },
+  {
+    "id": 5024830,
+    "question_id": 502483,
+    "value": "A",
+    "label": "Mixed-use zoning, unlike single-use zoning, aims to integrate different types of spaces.",
+    "is_correct": false
+  },
+  {
+    "id": 5024831,
+    "question_id": 502483,
+    "value": "B",
+    "label": "Advocates claim that mixed-use zoning primarily benefits urban areas by encouraging walking.",
+    "is_correct": false
+  },
+  {
+    "id": 5024832,
+    "question_id": 502483,
+    "value": "C",
+    "label": "Mixed-use zoning is favored by some because it is believed to lessen the need for cars.",
+    "is_correct": true
+  },
+  {
+    "id": 5024833,
+    "question_id": 502483,
+    "value": "D",
+    "label": "While single-use zoning prioritizes privacy, mixed-use zoning focuses on combining different spaces.",
+    "is_correct": false
+  }
+]

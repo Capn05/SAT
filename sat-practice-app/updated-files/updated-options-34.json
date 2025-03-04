@@ -1,0 +1,1374 @@
+[
+  {
+    "id": 1397120,
+    "question_id": 139712,
+    "value": "A",
+    "label": "Quality",
+    "is_correct": true
+  },
+  {
+    "id": 1397121,
+    "question_id": 139712,
+    "value": "B",
+    "label": "Noise",
+    "is_correct": false
+  },
+  {
+    "id": 1397122,
+    "question_id": 139712,
+    "value": "C",
+    "label": "Volume",
+    "is_correct": false
+  },
+  {
+    "id": 1397123,
+    "question_id": 139712,
+    "value": "D",
+    "label": "Audibility",
+    "is_correct": false
+  },
+  {
+    "id": 2895640,
+    "question_id": 289564,
+    "value": "A",
+    "label": "summarize",
+    "is_correct": false
+  },
+  {
+    "id": 2895641,
+    "question_id": 289564,
+    "value": "B",
+    "label": "complicate",
+    "is_correct": false
+  },
+  {
+    "id": 2895642,
+    "question_id": 289564,
+    "value": "C",
+    "label": "disregard",
+    "is_correct": false
+  },
+  {
+    "id": 2895643,
+    "question_id": 289564,
+    "value": "D",
+    "label": "clarify",
+    "is_correct": true
+  },
+  {
+    "id": 6189580,
+    "question_id": 618958,
+    "value": "A",
+    "label": "routine",
+    "is_correct": true
+  },
+  {
+    "id": 6189581,
+    "question_id": 618958,
+    "value": "B",
+    "label": "unpredictable",
+    "is_correct": false
+  },
+  {
+    "id": 6189582,
+    "question_id": 618958,
+    "value": "C",
+    "label": "demanding",
+    "is_correct": false
+  },
+  {
+    "id": 6189583,
+    "question_id": 618958,
+    "value": "D",
+    "label": "laborious",
+    "is_correct": false
+  },
+  {
+    "id": 1481920,
+    "question_id": 148192,
+    "value": "A",
+    "label": "postulate",
+    "is_correct": false
+  },
+  {
+    "id": 1481921,
+    "question_id": 148192,
+    "value": "B",
+    "label": "estimate",
+    "is_correct": true
+  },
+  {
+    "id": 1481922,
+    "question_id": 148192,
+    "value": "C",
+    "label": "ignore",
+    "is_correct": false
+  },
+  {
+    "id": 1481923,
+    "question_id": 148192,
+    "value": "D",
+    "label": "destroy",
+    "is_correct": false
+  },
+  {
+    "id": 4676390,
+    "question_id": 467639,
+    "value": "A",
+    "label": "appealing",
+    "is_correct": true
+  },
+  {
+    "id": 4676391,
+    "question_id": 467639,
+    "value": "B",
+    "label": "necessary",
+    "is_correct": false
+  },
+  {
+    "id": 4676392,
+    "question_id": 467639,
+    "value": "C",
+    "label": "controversial",
+    "is_correct": false
+  },
+  {
+    "id": 4676393,
+    "question_id": 467639,
+    "value": "D",
+    "label": "novel",
+    "is_correct": false
+  },
+  {
+    "id": 780930,
+    "question_id": 78093,
+    "value": "A",
+    "label": "verbose",
+    "is_correct": false
+  },
+  {
+    "id": 780931,
+    "question_id": 78093,
+    "value": "B",
+    "label": "laconic",
+    "is_correct": true
+  },
+  {
+    "id": 780932,
+    "question_id": 78093,
+    "value": "C",
+    "label": "garrulous",
+    "is_correct": false
+  },
+  {
+    "id": 780933,
+    "question_id": 78093,
+    "value": "D",
+    "label": "loquacious",
+    "is_correct": false
+  },
+  {
+    "id": 1745680,
+    "question_id": 174568,
+    "value": "A",
+    "label": "catalyze",
+    "is_correct": false
+  },
+  {
+    "id": 1745681,
+    "question_id": 174568,
+    "value": "B",
+    "label": "impede",
+    "is_correct": true
+  },
+  {
+    "id": 1745682,
+    "question_id": 174568,
+    "value": "C",
+    "label": "amplify",
+    "is_correct": false
+  },
+  {
+    "id": 1745683,
+    "question_id": 174568,
+    "value": "D",
+    "label": "validate",
+    "is_correct": false
+  },
+  {
+    "id": 7892720,
+    "question_id": 789272,
+    "value": "A",
+    "label": "speculation",
+    "is_correct": false
+  },
+  {
+    "id": 7892721,
+    "question_id": 789272,
+    "value": "B",
+    "label": "evidence",
+    "is_correct": true
+  },
+  {
+    "id": 7892722,
+    "question_id": 789272,
+    "value": "C",
+    "label": "intuition",
+    "is_correct": false
+  },
+  {
+    "id": 7892723,
+    "question_id": 789272,
+    "value": "D",
+    "label": "imagination",
+    "is_correct": false
+  },
+  {
+    "id": 9542850,
+    "question_id": 954285,
+    "value": "A",
+    "label": "curious",
+    "is_correct": false
+  },
+  {
+    "id": 9542851,
+    "question_id": 954285,
+    "value": "B",
+    "label": "persistent",
+    "is_correct": true
+  },
+  {
+    "id": 9542852,
+    "question_id": 954285,
+    "value": "C",
+    "label": "recognized",
+    "is_correct": false
+  },
+  {
+    "id": 9542853,
+    "question_id": 954285,
+    "value": "D",
+    "label": "innovative",
+    "is_correct": false
+  },
+  {
+    "id": 2611010,
+    "question_id": 261101,
+    "value": "A",
+    "label": "outdated",
+    "is_correct": false
+  },
+  {
+    "id": 2611011,
+    "question_id": 261101,
+    "value": "B",
+    "label": "insightful",
+    "is_correct": true
+  },
+  {
+    "id": 2611012,
+    "question_id": 261101,
+    "value": "C",
+    "label": "complex",
+    "is_correct": false
+  },
+  {
+    "id": 2611013,
+    "question_id": 261101,
+    "value": "D",
+    "label": "simplistic",
+    "is_correct": false
+  },
+  {
+    "id": 6179680,
+    "question_id": 617968,
+    "value": "A",
+    "label": "restrict",
+    "is_correct": false
+  },
+  {
+    "id": 6179681,
+    "question_id": 617968,
+    "value": "B",
+    "label": "obfuscate",
+    "is_correct": false
+  },
+  {
+    "id": 6179682,
+    "question_id": 617968,
+    "value": "C",
+    "label": "illuminate",
+    "is_correct": true
+  },
+  {
+    "id": 6179683,
+    "question_id": 617968,
+    "value": "D",
+    "label": "complicate",
+    "is_correct": false
+  },
+  {
+    "id": 8109870,
+    "question_id": 810987,
+    "value": "A",
+    "label": "supremacy",
+    "is_correct": true
+  },
+  {
+    "id": 8109871,
+    "question_id": 810987,
+    "value": "B",
+    "label": "innovation",
+    "is_correct": false
+  },
+  {
+    "id": 8109872,
+    "question_id": 810987,
+    "value": "C",
+    "label": "obscurity",
+    "is_correct": false
+  },
+  {
+    "id": 8109873,
+    "question_id": 810987,
+    "value": "D",
+    "label": "vulnerability",
+    "is_correct": false
+  },
+  {
+    "id": 4894050,
+    "question_id": 489405,
+    "value": "A",
+    "label": "fostering",
+    "is_correct": false
+  },
+  {
+    "id": 4894051,
+    "question_id": 489405,
+    "value": "B",
+    "label": "diminishing",
+    "is_correct": true
+  },
+  {
+    "id": 4894052,
+    "question_id": 489405,
+    "value": "C",
+    "label": "amplifying",
+    "is_correct": false
+  },
+  {
+    "id": 4894053,
+    "question_id": 489405,
+    "value": "D",
+    "label": "guaranteeing",
+    "is_correct": false
+  },
+  {
+    "id": 4009700,
+    "question_id": 400970,
+    "value": "A",
+    "label": "bolstered",
+    "is_correct": false
+  },
+  {
+    "id": 4009701,
+    "question_id": 400970,
+    "value": "B",
+    "label": "undermined",
+    "is_correct": true
+  },
+  {
+    "id": 4009702,
+    "question_id": 400970,
+    "value": "C",
+    "label": "qualified",
+    "is_correct": false
+  },
+  {
+    "id": 4009703,
+    "question_id": 400970,
+    "value": "D",
+    "label": "reiterated",
+    "is_correct": false
+  },
+  {
+    "id": 7300700,
+    "question_id": 730070,
+    "value": "A",
+    "label": "utilized",
+    "is_correct": true
+  },
+  {
+    "id": 7300701,
+    "question_id": 730070,
+    "value": "B",
+    "label": "avoided",
+    "is_correct": false
+  },
+  {
+    "id": 7300702,
+    "question_id": 730070,
+    "value": "C",
+    "label": "questioned",
+    "is_correct": false
+  },
+  {
+    "id": 7300703,
+    "question_id": 730070,
+    "value": "D",
+    "label": "overlooked",
+    "is_correct": false
+  },
+  {
+    "id": 2641960,
+    "question_id": 264196,
+    "value": "A",
+    "label": "insightful",
+    "is_correct": false
+  },
+  {
+    "id": 2641961,
+    "question_id": 264196,
+    "value": "B",
+    "label": "practical",
+    "is_correct": true
+  },
+  {
+    "id": 2641962,
+    "question_id": 264196,
+    "value": "C",
+    "label": "conventional",
+    "is_correct": false
+  },
+  {
+    "id": 2641963,
+    "question_id": 264196,
+    "value": "D",
+    "label": "unexpected",
+    "is_correct": false
+  },
+  {
+    "id": 7817780,
+    "question_id": 781778,
+    "value": "A",
+    "label": "competitive",
+    "is_correct": false
+  },
+  {
+    "id": 7817781,
+    "question_id": 781778,
+    "value": "B",
+    "label": "independent",
+    "is_correct": false
+  },
+  {
+    "id": 7817782,
+    "question_id": 781778,
+    "value": "C",
+    "label": "solitary",
+    "is_correct": false
+  },
+  {
+    "id": 7817783,
+    "question_id": 781778,
+    "value": "D",
+    "label": "collaborative",
+    "is_correct": true
+  },
+  {
+    "id": 8548820,
+    "question_id": 854882,
+    "value": "A",
+    "label": "influenced",
+    "is_correct": true
+  },
+  {
+    "id": 8548821,
+    "question_id": 854882,
+    "value": "B",
+    "label": "resisted",
+    "is_correct": false
+  },
+  {
+    "id": 8548822,
+    "question_id": 854882,
+    "value": "C",
+    "label": "complicated",
+    "is_correct": false
+  },
+  {
+    "id": 8548823,
+    "question_id": 854882,
+    "value": "D",
+    "label": "mirrored",
+    "is_correct": false
+  },
+  {
+    "id": 17870,
+    "question_id": 1787,
+    "value": "A",
+    "label": "incidental",
+    "is_correct": false
+  },
+  {
+    "id": 17871,
+    "question_id": 1787,
+    "value": "B",
+    "label": "integral",
+    "is_correct": true
+  },
+  {
+    "id": 17872,
+    "question_id": 1787,
+    "value": "C",
+    "label": "peripheral",
+    "is_correct": false
+  },
+  {
+    "id": 17873,
+    "question_id": 1787,
+    "value": "D",
+    "label": "extraneous",
+    "is_correct": false
+  },
+  {
+    "id": 9023540,
+    "question_id": 902354,
+    "value": "A",
+    "label": "conforms",
+    "is_correct": true
+  },
+  {
+    "id": 9023541,
+    "question_id": 902354,
+    "value": "B",
+    "label": "changes",
+    "is_correct": false
+  },
+  {
+    "id": 9023542,
+    "question_id": 902354,
+    "value": "C",
+    "label": "reacts",
+    "is_correct": false
+  },
+  {
+    "id": 9023543,
+    "question_id": 902354,
+    "value": "D",
+    "label": "ignores",
+    "is_correct": false
+  },
+  {
+    "id": 3143220,
+    "question_id": 314322,
+    "value": "A",
+    "label": "complicated",
+    "is_correct": false
+  },
+  {
+    "id": 3143221,
+    "question_id": 314322,
+    "value": "B",
+    "label": "stagnated",
+    "is_correct": false
+  },
+  {
+    "id": 3143222,
+    "question_id": 314322,
+    "value": "C",
+    "label": "simplified",
+    "is_correct": true
+  },
+  {
+    "id": 3143223,
+    "question_id": 314322,
+    "value": "D",
+    "label": "expanded",
+    "is_correct": false
+  },
+  {
+    "id": 2785200,
+    "question_id": 278520,
+    "value": "A",
+    "label": "insinuated",
+    "is_correct": false
+  },
+  {
+    "id": 2785201,
+    "question_id": 278520,
+    "value": "B",
+    "label": "postulated",
+    "is_correct": false
+  },
+  {
+    "id": 2785202,
+    "question_id": 278520,
+    "value": "C",
+    "label": "demonstrated",
+    "is_correct": true
+  },
+  {
+    "id": 2785203,
+    "question_id": 278520,
+    "value": "D",
+    "label": "assumed",
+    "is_correct": false
+  },
+  {
+    "id": 2754590,
+    "question_id": 275459,
+    "value": "A",
+    "label": "substantial",
+    "is_correct": false
+  },
+  {
+    "id": 2754591,
+    "question_id": 275459,
+    "value": "B",
+    "label": "localized",
+    "is_correct": true
+  },
+  {
+    "id": 2754592,
+    "question_id": 275459,
+    "value": "C",
+    "label": "universal",
+    "is_correct": false
+  },
+  {
+    "id": 2754593,
+    "question_id": 275459,
+    "value": "D",
+    "label": "revolutionary",
+    "is_correct": false
+  },
+  {
+    "id": 7676550,
+    "question_id": 767655,
+    "value": "A",
+    "label": "misinterpretations",
+    "is_correct": false
+  },
+  {
+    "id": 7676551,
+    "question_id": 767655,
+    "value": "B",
+    "label": "reflections",
+    "is_correct": true
+  },
+  {
+    "id": 7676552,
+    "question_id": 767655,
+    "value": "C",
+    "label": "fabrications",
+    "is_correct": false
+  },
+  {
+    "id": 7676553,
+    "question_id": 767655,
+    "value": "D",
+    "label": "exaggerations",
+    "is_correct": false
+  },
+  {
+    "id": 148550,
+    "question_id": 14855,
+    "value": "A",
+    "label": "Distinguish",
+    "is_correct": false
+  },
+  {
+    "id": 148551,
+    "question_id": 14855,
+    "value": "B",
+    "label": "Depart",
+    "is_correct": true
+  },
+  {
+    "id": 148552,
+    "question_id": 14855,
+    "value": "C",
+    "label": "Deceive",
+    "is_correct": false
+  },
+  {
+    "id": 148553,
+    "question_id": 14855,
+    "value": "D",
+    "label": "Destroy",
+    "is_correct": false
+  },
+  {
+    "id": 1390420,
+    "question_id": 139042,
+    "value": "A",
+    "label": "augment",
+    "is_correct": false
+  },
+  {
+    "id": 1390421,
+    "question_id": 139042,
+    "value": "B",
+    "label": "exhaust",
+    "is_correct": false
+  },
+  {
+    "id": 1390422,
+    "question_id": 139042,
+    "value": "C",
+    "label": "deplete",
+    "is_correct": false
+  },
+  {
+    "id": 1390423,
+    "question_id": 139042,
+    "value": "D",
+    "label": "conserve",
+    "is_correct": true
+  },
+  {
+    "id": 627380,
+    "question_id": 62738,
+    "value": "A",
+    "label": "Thoughts",
+    "is_correct": false
+  },
+  {
+    "id": 627381,
+    "question_id": 62738,
+    "value": "B",
+    "label": "Consideration",
+    "is_correct": true
+  },
+  {
+    "id": 627382,
+    "question_id": 62738,
+    "value": "C",
+    "label": "Warnings",
+    "is_correct": false
+  },
+  {
+    "id": 627383,
+    "question_id": 62738,
+    "value": "D",
+    "label": "Challenges",
+    "is_correct": false
+  },
+  {
+    "id": 1819910,
+    "question_id": 181991,
+    "value": "A",
+    "label": "minimized",
+    "is_correct": false
+  },
+  {
+    "id": 1819911,
+    "question_id": 181991,
+    "value": "B",
+    "label": "obscured",
+    "is_correct": false
+  },
+  {
+    "id": 1819912,
+    "question_id": 181991,
+    "value": "C",
+    "label": "belied",
+    "is_correct": false
+  },
+  {
+    "id": 1819913,
+    "question_id": 181991,
+    "value": "D",
+    "label": "accentuated",
+    "is_correct": true
+  },
+  {
+    "id": 4511820,
+    "question_id": 451182,
+    "value": "A",
+    "label": "convoluted",
+    "is_correct": true
+  },
+  {
+    "id": 4511821,
+    "question_id": 451182,
+    "value": "B",
+    "label": "transparent",
+    "is_correct": false
+  },
+  {
+    "id": 4511822,
+    "question_id": 451182,
+    "value": "C",
+    "label": "conventional",
+    "is_correct": false
+  },
+  {
+    "id": 4511823,
+    "question_id": 451182,
+    "value": "D",
+    "label": "predictable",
+    "is_correct": false
+  },
+  {
+    "id": 7565150,
+    "question_id": 756515,
+    "value": "A",
+    "label": "discern",
+    "is_correct": true
+  },
+  {
+    "id": 7565151,
+    "question_id": 756515,
+    "value": "B",
+    "label": "ignore",
+    "is_correct": false
+  },
+  {
+    "id": 7565152,
+    "question_id": 756515,
+    "value": "C",
+    "label": "enhance",
+    "is_correct": false
+  },
+  {
+    "id": 7565153,
+    "question_id": 756515,
+    "value": "D",
+    "label": "question",
+    "is_correct": false
+  },
+  {
+    "id": 1682930,
+    "question_id": 168293,
+    "value": "A",
+    "label": "adaptable",
+    "is_correct": false
+  },
+  {
+    "id": 1682931,
+    "question_id": 168293,
+    "value": "B",
+    "label": "methodical",
+    "is_correct": true
+  },
+  {
+    "id": 1682932,
+    "question_id": 168293,
+    "value": "C",
+    "label": "impulsive",
+    "is_correct": false
+  },
+  {
+    "id": 1682933,
+    "question_id": 168293,
+    "value": "D",
+    "label": "indifferent",
+    "is_correct": false
+  },
+  {
+    "id": 7733490,
+    "question_id": 773349,
+    "value": "A",
+    "label": "Exercise",
+    "is_correct": false
+  },
+  {
+    "id": 7733491,
+    "question_id": 773349,
+    "value": "B",
+    "label": "Perform",
+    "is_correct": true
+  },
+  {
+    "id": 7733492,
+    "question_id": 773349,
+    "value": "C",
+    "label": "Rehearse",
+    "is_correct": false
+  },
+  {
+    "id": 7733493,
+    "question_id": 773349,
+    "value": "D",
+    "label": "Study",
+    "is_correct": false
+  },
+  {
+    "id": 7678970,
+    "question_id": 767897,
+    "value": "A",
+    "label": "radical",
+    "is_correct": true
+  },
+  {
+    "id": 7678971,
+    "question_id": 767897,
+    "value": "B",
+    "label": "tentative",
+    "is_correct": false
+  },
+  {
+    "id": 7678972,
+    "question_id": 767897,
+    "value": "C",
+    "label": "hesitant",
+    "is_correct": false
+  },
+  {
+    "id": 7678973,
+    "question_id": 767897,
+    "value": "D",
+    "label": "typical",
+    "is_correct": false
+  },
+  {
+    "id": 4550810,
+    "question_id": 455081,
+    "value": "A",
+    "label": "Noiseless",
+    "is_correct": false
+  },
+  {
+    "id": 4550811,
+    "question_id": 455081,
+    "value": "B",
+    "label": "Healthy",
+    "is_correct": false
+  },
+  {
+    "id": 4550812,
+    "question_id": 455081,
+    "value": "C",
+    "label": "Secure",
+    "is_correct": true
+  },
+  {
+    "id": 4550813,
+    "question_id": 455081,
+    "value": "D",
+    "label": "Durable",
+    "is_correct": false
+  },
+  {
+    "id": 9982320,
+    "question_id": 998232,
+    "value": "A",
+    "label": "Whim",
+    "is_correct": false
+  },
+  {
+    "id": 9982321,
+    "question_id": 998232,
+    "value": "B",
+    "label": "Understanding",
+    "is_correct": false
+  },
+  {
+    "id": 9982322,
+    "question_id": 998232,
+    "value": "C",
+    "label": "Idea",
+    "is_correct": true
+  },
+  {
+    "id": 9982323,
+    "question_id": 998232,
+    "value": "D",
+    "label": "Fact",
+    "is_correct": false
+  },
+  {
+    "id": 3028250,
+    "question_id": 302825,
+    "value": "A",
+    "label": "precision",
+    "is_correct": false
+  },
+  {
+    "id": 3028251,
+    "question_id": 302825,
+    "value": "B",
+    "label": "intensity",
+    "is_correct": true
+  },
+  {
+    "id": 3028252,
+    "question_id": 302825,
+    "value": "C",
+    "label": "restraint",
+    "is_correct": false
+  },
+  {
+    "id": 3028253,
+    "question_id": 302825,
+    "value": "D",
+    "label": "ornamentation",
+    "is_correct": false
+  },
+  {
+    "id": 9232790,
+    "question_id": 923279,
+    "value": "A",
+    "label": "bolster",
+    "is_correct": true
+  },
+  {
+    "id": 9232791,
+    "question_id": 923279,
+    "value": "B",
+    "label": "supplant",
+    "is_correct": false
+  },
+  {
+    "id": 9232792,
+    "question_id": 923279,
+    "value": "C",
+    "label": "disregard",
+    "is_correct": false
+  },
+  {
+    "id": 9232793,
+    "question_id": 923279,
+    "value": "D",
+    "label": "undermine",
+    "is_correct": false
+  },
+  {
+    "id": 3083980,
+    "question_id": 308398,
+    "value": "A",
+    "label": "Acquiring",
+    "is_correct": true
+  },
+  {
+    "id": 3083981,
+    "question_id": 308398,
+    "value": "B",
+    "label": "Benefiting",
+    "is_correct": false
+  },
+  {
+    "id": 3083982,
+    "question_id": 308398,
+    "value": "C",
+    "label": "Winning",
+    "is_correct": false
+  },
+  {
+    "id": 3083983,
+    "question_id": 308398,
+    "value": "D",
+    "label": "Appreciating",
+    "is_correct": false
+  },
+  {
+    "id": 9098370,
+    "question_id": 909837,
+    "value": "A",
+    "label": "rigorous",
+    "is_correct": false
+  },
+  {
+    "id": 9098371,
+    "question_id": 909837,
+    "value": "B",
+    "label": "untenable",
+    "is_correct": false
+  },
+  {
+    "id": 9098372,
+    "question_id": 909837,
+    "value": "C",
+    "label": "derivative",
+    "is_correct": false
+  },
+  {
+    "id": 9098373,
+    "question_id": 909837,
+    "value": "D",
+    "label": "speculative",
+    "is_correct": true
+  },
+  {
+    "id": 8147040,
+    "question_id": 814704,
+    "value": "A",
+    "label": "ancillary to",
+    "is_correct": false
+  },
+  {
+    "id": 8147041,
+    "question_id": 814704,
+    "value": "B",
+    "label": "independent of",
+    "is_correct": false
+  },
+  {
+    "id": 8147042,
+    "question_id": 814704,
+    "value": "C",
+    "label": "unaccounted for by",
+    "is_correct": false
+  },
+  {
+    "id": 8147043,
+    "question_id": 814704,
+    "value": "D",
+    "label": "adaptive to",
+    "is_correct": true
+  },
+  {
+    "id": 5425660,
+    "question_id": 542566,
+    "value": "A",
+    "label": "To relax",
+    "is_correct": false
+  },
+  {
+    "id": 5425661,
+    "question_id": 542566,
+    "value": "B",
+    "label": "To apply effort",
+    "is_correct": true
+  },
+  {
+    "id": 5425662,
+    "question_id": 542566,
+    "value": "C",
+    "label": "To boast",
+    "is_correct": false
+  },
+  {
+    "id": 5425663,
+    "question_id": 542566,
+    "value": "D",
+    "label": "To criticize",
+    "is_correct": false
+  },
+  {
+    "id": 335980,
+    "question_id": 33598,
+    "value": "A",
+    "label": "desultory",
+    "is_correct": false
+  },
+  {
+    "id": 335981,
+    "question_id": 33598,
+    "value": "B",
+    "label": "rigorous",
+    "is_correct": true
+  },
+  {
+    "id": 335982,
+    "question_id": 33598,
+    "value": "C",
+    "label": "perfunctory",
+    "is_correct": false
+  },
+  {
+    "id": 335983,
+    "question_id": 33598,
+    "value": "D",
+    "label": "intuitive",
+    "is_correct": false
+  },
+  {
+    "id": 2400880,
+    "question_id": 240088,
+    "value": "A",
+    "label": "context of",
+    "is_correct": true
+  },
+  {
+    "id": 2400881,
+    "question_id": 240088,
+    "value": "B",
+    "label": "duration of",
+    "is_correct": false
+  },
+  {
+    "id": 2400882,
+    "question_id": 240088,
+    "value": "C",
+    "label": "accessibility of",
+    "is_correct": false
+  },
+  {
+    "id": 2400883,
+    "question_id": 240088,
+    "value": "D",
+    "label": "novelty of",
+    "is_correct": false
+  },
+  {
+    "id": 89820,
+    "question_id": 8982,
+    "value": "A",
+    "label": "refining",
+    "is_correct": false
+  },
+  {
+    "id": 89821,
+    "question_id": 8982,
+    "value": "B",
+    "label": "solidifying",
+    "is_correct": false
+  },
+  {
+    "id": 89822,
+    "question_id": 8982,
+    "value": "C",
+    "label": "confirming",
+    "is_correct": false
+  },
+  {
+    "id": 89823,
+    "question_id": 8982,
+    "value": "D",
+    "label": "undermining",
+    "is_correct": true
+  },
+  {
+    "id": 1738900,
+    "question_id": 173890,
+    "value": "A",
+    "label": "predicament",
+    "is_correct": false
+  },
+  {
+    "id": 1738901,
+    "question_id": 173890,
+    "value": "B",
+    "label": "paradox",
+    "is_correct": false
+  },
+  {
+    "id": 1738902,
+    "question_id": 173890,
+    "value": "C",
+    "label": "anomaly",
+    "is_correct": true
+  },
+  {
+    "id": 1738903,
+    "question_id": 173890,
+    "value": "D",
+    "label": "validation",
+    "is_correct": false
+  },
+  {
+    "id": 2717410,
+    "question_id": 271741,
+    "value": "A",
+    "label": "cursory",
+    "is_correct": true
+  },
+  {
+    "id": 2717411,
+    "question_id": 271741,
+    "value": "B",
+    "label": "profound",
+    "is_correct": false
+  },
+  {
+    "id": 2717412,
+    "question_id": 271741,
+    "value": "C",
+    "label": "tenuous",
+    "is_correct": false
+  },
+  {
+    "id": 2717413,
+    "question_id": 271741,
+    "value": "D",
+    "label": "robust",
+    "is_correct": false
+  },
+  {
+    "id": 2751010,
+    "question_id": 275101,
+    "value": "A",
+    "label": "detriment",
+    "is_correct": true
+  },
+  {
+    "id": 2751011,
+    "question_id": 275101,
+    "value": "B",
+    "label": "expense",
+    "is_correct": false
+  },
+  {
+    "id": 2751012,
+    "question_id": 275101,
+    "value": "C",
+    "label": "auspice",
+    "is_correct": false
+  },
+  {
+    "id": 2751013,
+    "question_id": 275101,
+    "value": "D",
+    "label": "catalyst",
+    "is_correct": false
+  },
+  {
+    "id": 5653100,
+    "question_id": 565310,
+    "value": "A",
+    "label": "insignificant",
+    "is_correct": false
+  },
+  {
+    "id": 5653101,
+    "question_id": 565310,
+    "value": "B",
+    "label": "negligible",
+    "is_correct": false
+  },
+  {
+    "id": 5653102,
+    "question_id": 565310,
+    "value": "C",
+    "label": "localized",
+    "is_correct": true
+  },
+  {
+    "id": 5653103,
+    "question_id": 565310,
+    "value": "D",
+    "label": "detectable",
+    "is_correct": false
+  },
+  {
+    "id": 9786770,
+    "question_id": 978677,
+    "value": "A",
+    "label": "Intensifies",
+    "is_correct": true
+  },
+  {
+    "id": 9786771,
+    "question_id": 978677,
+    "value": "B",
+    "label": "Initiates",
+    "is_correct": false
+  },
+  {
+    "id": 9786772,
+    "question_id": 978677,
+    "value": "C",
+    "label": "Reverses",
+    "is_correct": false
+  },
+  {
+    "id": 9786773,
+    "question_id": 978677,
+    "value": "D",
+    "label": "Monitors",
+    "is_correct": false
+  }
+]

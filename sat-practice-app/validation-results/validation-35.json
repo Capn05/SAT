@@ -1,0 +1,416 @@
+[
+  {
+    "question_id": 805956,
+    "question_text": "### ID: 02fd3da8  #### Text 1  Many proponents of urban green spaces argue that they are essential f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for Weiss's (Text 2) likely response to the arguments in Text 1. Option B is the correct answer because it accurately reflects Weiss's main argument in Text 2. Weiss emphasizes the 'practicalities and potential drawbacks' of urban green spaces, specifically mentioning 'increased housing costs and reduced economic productivity.' Option B, 'The economic costs of urban green spaces may outweigh their social and health benefits,' directly addresses this concern and represents a likely response from Weiss to the proponents of green spaces in Text 1. \n\nOption A is incorrect because Weiss's argument is not limited to cities with high population densities; her concern is about the economic trade-offs of using valuable urban land for parks in general. Option C is incorrect because while Weiss prioritizes 'efficient urban planning and affordable housing,' she does not explicitly state that residents are *more* concerned with economic stability than green spaces. Option D is incorrect because it suggests a way to make green spaces economically viable, which is not Weiss's primary argument. Her argument is more about the opportunity cost of green spaces in terms of economic development and housing affordability. The difficulty level 'Easy' is appropriate as the texts are short and the contrast in viewpoints is relatively straightforward to identify."
+    }
+  },
+  {
+    "question_id": 374828,
+    "question_text": "### ID: New Question 1  #### Text 1  The advent of streaming services has dramatically changed how p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a point of agreement between Text 1 and Text 2 regarding streaming services. \n\nOption A, 'Streaming services have made television viewing more convenient for audiences,' is explicitly supported by both texts. Text 1 mentions 'on-demand access' and Text 2 acknowledges 'undeniable convenience' of streaming. \n\nOption B, 'Binge-watching is the primary way people now consume television content,' is not supported by both texts. While Text 2 mentions 'binge-watching culture,' neither text states it is the *primary* way people consume content. \n\nOption C, 'The quality of television programming has declined since the rise of streaming,' is not discussed in either text. Both texts focus on the *how* and *social aspects* of viewing, not the quality of the programming itself. \n\nOption D, 'Traditional broadcast television remains the most popular way to watch shows,' is contradicted by Text 1, which states streaming has 'dramatically changed how people consume television' and implies a shift away from traditional broadcasts. Neither text explicitly states which is *more* popular, but the overall tone suggests a significant impact of streaming, making Option D unlikely to be agreed upon by both authors. \n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the correct answer is directly supported by both texts and the incorrect options are clearly outside the scope or contradicted by the provided texts."
+    }
+  },
+  {
+    "question_id": 517606,
+    "question_text": "### Text 1\\n\\nRecent advancements in artificial intelligence have led to the development of sophisti...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks about Dr. Sharma's likely response to a specific claim in Text 1. Option D accurately reflects Dr. Sharma's viewpoint in Text 2, where she emphasizes that AI-generated art lacks the 'deeper meaning and emotional resonance' of human art and is merely a 'sophisticated mimic' lacking 'genuine artistic innovation' rooted in 'conscious thought and lived experience.' Option D directly addresses the idea of accessibility (making art creation more accessible) while contrasting it with the lack of 'deep, meaningful creativity' that Sharma attributes to human experience. Options A, B, and C are incorrect because they present ideas not supported by or directly contradicting Dr. Sharma's argument. Option A discusses the obsolescence of traditional art skills, which is not Sharma's focus. Option B speculates on AI surpassing human art in technical skill, which is also outside the scope of Sharma's argument about the nature of creativity. Option C talks about human interest in art, which is unrelated to Sharma's critique of AI art's lack of genuine creativity. There are no grammatical or formatting issues, and the 'Easy' difficulty level is appropriate as the answer can be directly inferred from Text 2."
+    }
+  },
+  {
+    "question_id": 794036,
+    "question_text": "### Text 1\\n\\nIn certain Indigenous cultures of North America, the oral tradition of storytelling se...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks about the accuracy of Text 1's portrayal of Indigenous knowledge transmission. Option B, marked as correct, is indeed the most accurate answer. Text 1 focuses solely on oral tradition, which, while important, may oversimplify the complex ways Indigenous knowledge is transmitted. Option A is incorrect because it assumes Text 1's view is accurately reflective of contemporary Indigenous storytellers, which is not guaranteed and is debatable. Option C is incorrect because Text 1 does not acknowledge a balance between oral and written traditions; it only discusses oral tradition. Option D is incorrect as it introduces a historically inaccurate and irrelevant concept of a shift from written to oral traditions in Indigenous cultures due to European contact.  The difficulty level 'Easy' might be slightly underestimated as it requires some critical reading to identify the nuance of potential oversimplification in Text 1, but it is still within the range of accessible SAT questions. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 278686,
+    "question_text": "### Text 1\\n\\nToday, the popularity of vinyl records is experiencing a resurgence, particularly amon...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 436. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-structured. \\n\\n1. **Clarity and Sense:** The question is clear and makes sense. It asks the..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 86227,
+    "question_text": "## ID: NEW_ID  ### Text 1  The use of renewable energy sources like solar and wind power is rapidly ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a point of agreement between both texts regarding renewable energy and fossil fuels. \n\nOption B, 'The transition to renewable energy is a complex issue with both advantages and disadvantages,' is indeed the correct answer. Text 1 highlights the advantages of renewable energy (reducing emissions, increasing reliability, cost-effectiveness) and the push for its adoption. Text 2, while acknowledging the growth of renewables, emphasizes the disadvantages and challenges (intermittency, environmental impact of infrastructure, scaling issues) and the continued reliance on fossil fuels. Both texts, therefore, implicitly agree that the transition is not simple and involves both positive and negative aspects, making it a complex issue.\n\nOption A, 'Renewable energy sources are currently more reliable than fossil fuels,' is incorrect. Text 1 argues that renewables are becoming *increasingly* reliable, not that they are *currently more* reliable than fossil fuels. Text 2 explicitly states the intermittency of renewables as a drawback, contrasting it with the dependability of fossil fuels. Thus, neither author would agree with Option A.\n\nOption C, 'Fossil fuels should be completely phased out within the next decade,' is incorrect. Text 1 advocates for a transition *away from* fossil fuels, but doesn't specify a complete phase-out within a decade. Text 2 argues against a *rapid* shift and highlights the continued importance of fossil fuels. Neither text suggests a complete phase-out within a specific timeframe like a decade, and Text 2 would likely disagree with such a strong statement.\n\nOption D, 'Environmental concerns are irrelevant when considering energy production,' is clearly incorrect. Text 1 explicitly mentions reducing carbon emissions and mitigating climate change, which are major environmental concerns. Text 2 also raises environmental concerns related to both renewable infrastructure and fossil fuels. Both texts demonstrate that environmental concerns are highly relevant, directly contradicting Option D.\n\nThere are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate because the question requires a straightforward understanding of the main points of each text and identifying a common theme, which is a basic skill tested in SAT Reading & Writing."
+    }
+  },
+  {
+    "question_id": 182058,
+    "question_text": "### Text 1\\n\\nFor decades, bluegrass musicians have debated whether their genre should exclude influ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The provided text snippet 'Text 1' is incomplete, ending mid-sentence with 'Such \\\\\\\\\\ No image'. This lack of completion makes it difficult to fully understand the context and intent of the passage.",
+        "While option D is marked as correct and is arguably the strongest option among the choices, it relies on an inference that the 'purists overlook crucial aspects of how the bluegrass sound first originated.' This is not explicitly stated in the provided text, making the correctness of option D debatable based solely on the given information.",
+        "Options A, B, and C are not definitively incorrect. They present alternative perspectives on the purist viewpoint that could be considered valid depending on further context or interpretation. Option A is a weak argument, but B and C offer reasonable critiques (unrealistic enforcement, missed opportunity for audience growth).",
+        "There are formatting issues. The passage ends abruptly with 'Such \\\\\\\\\\ No image', which is not standard or clear. This suggests missing content or a formatting error.",
+        "The difficulty level 'Easy' might be inappropriate. While the core concept is understandable, evaluating the nuances of each option and determining the 'most logical' critique requires more than basic comprehension, potentially making it more of a medium difficulty question.",
+        "D"
+      ],
+      "correct_answer": "D",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 880645,
+    "question_text": "### Text 1  In a study examining the effects of caffeine on athletic performance, researchers divide...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is correct because Text 1 concludes that caffeine enhances physical endurance (cycling), while Text 2 concludes that caffeine's cognitive benefits are overstated, implying no significant enhancement of mental tasks. Option B is incorrect as sample size is not mentioned in either text. Option C is incorrect because Text 1 found caffeine to be effective, not ineffective, and Text 2 found it not significantly effective, not highly effective. Option D is incorrect as both texts describe studies on the immediate effects of caffeine, not long-term effects. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as the question requires a straightforward comparison of the main ideas of two short texts."
+    }
+  },
+  {
+    "question_id": 827243,
+    "question_text": "### Text 1  Economists largely agree that globalization has increased overall economic output. Howev...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A accurately captures the differing viewpoints of Text 1 and Text 2. Text 1 emphasizes the negative environmental consequences of globalization, portraying it as a 'driver of environmental harm.' Text 2, conversely, highlights globalization's potential to facilitate 'environmental improvement' through technology diffusion and increased resources for environmental protection. Options B, C, and D are demonstrably incorrect. Option B misrepresents the focus of each text; Text 1 is not solely about consumption, and Text 2 is not solely about technological development. Option C introduces an exaggeration and a point not discussed in Text 2; Text 1 does not claim environmental problems are *solely* due to globalization, and Text 2 doesn't discuss the history of environmental issues. Option D misinterprets Text 2; Text 2 does not question the economic benefits outweighing environmental costs but rather argues for globalization's positive role in environmental sustainability. There are no grammatical or formatting issues. The 'Easy' difficulty level is appropriate as the question requires a basic understanding of the main ideas of two short texts and the ability to identify a clear contrast in their perspectives."
+    }
+  },
+  {
+    "question_id": 626672,
+    "question_text": "### Text 1\\n\\nIn a 2019 study, researchers examined the effects of urban green spaces on cognitive f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is valid and well-structured. Here's a breakdown:\n\n1. **Clarity:** The question is clearly written and easy to understand. It asks about the relationship between Text 1 and Text 2, specifically how Text 2 responds to Text 1. The texts themselves are concise and focused on the topic of cognitive benefits of green spaces.\n\n2. **Correctness of Option A:** Option A is indeed the correct answer. Text 2 begins by acknowledging the benefits of green spaces, aligning with Text 1's premise that nature enhances cognition. However, Text 2 then introduces nuance by pointing out other contributing factors and potential confounding variables. This directly questions whether the effects are as 'straightforward' as Text 1's conclusion suggests, which presents nature as a 'simple and effective way' and implies a more direct and less complex relationship.\n\n3. **Incorrectness of Other Options:**\n    * **Option B:** This option is incorrect. Text 2 does not argue that the benefits are *primarily physical*. It mentions physical activity as a *confounding variable* that could *contribute* to cognitive benefits observed in green spaces, but it doesn't shift the focus to physical benefits being primary over cognitive ones. Text 2 is still concerned with cognitive function, just with a more critical and nuanced perspective on the *source* of those benefits.\n    * **Option C:** This option is incorrect. Text 2 makes no mention of individuals being 'predisposed to enjoying nature.' This option introduces an idea that is not supported by either text and is irrelevant to the comparison between them.\n    * **Option D:** This option is incorrect. Text 2 explicitly states, 'While exposure to green spaces can be beneficial,' directly contradicting the idea that Text 2 dismisses any measurable impact. Text 2 refines and complicates the understanding of the impact, but it doesn't deny it.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues in the question text or options. The language is clear and standard for SAT-level questions.\n\n5. **Difficulty Level:** The difficulty level 'Easy' is arguable. While the texts are short and the core concepts are not overly complex, understanding the nuanced relationship between the two texts and correctly identifying the function of Text 2 in relation to Text 1 requires careful reading and analytical skills.  'Medium' might be a more accurate categorization, but 'Easy' is not entirely unreasonable as the core idea is relatively accessible.  The relationship between the texts is not deeply subtle or heavily implied, making it easier than some cross-text connection questions.\n\nIn conclusion, the question is valid, with a clear correct answer and distinctly incorrect distractors. The difficulty level is arguably slightly underestimated but still within a reasonable range."
+    }
+  },
+  {
+    "question_id": 769815,
+    "question_text": "## Text 1  Many believe that art's primary role is aesthetic pleasure, offering escape or decoration...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 2530. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"1. **Clarity:** The question is clearly written and makes sense. It asks for an inference based on two short texts, a commo..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 670233,
+    "question_text": "## ID: NewID_1  ### Text 1  In recent years, the popularity of online streaming services for movies ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a statement that both authors would most likely agree with based on the provided texts. \n\nOption A, 'Online streaming services have changed how people consume media,' is correct. Text 1 describes the 'surge' in popularity of streaming services and their accessibility, implying a change in consumption habits. Text 2 discusses the 'potential downside' and 'passive consumption,' also indicating a shift in how media is consumed. Both texts, from different perspectives, acknowledge the transformative impact of streaming services on media consumption.\n\nOption B, 'Traditional media expenses are always higher than streaming service costs,' is incorrect. Text 2 explicitly states that streaming costs 'can accumulate over time, potentially exceeding traditional media expenses,' directly contradicting the 'always higher' claim in Option B.\n\nOption C, 'Streaming services primarily benefit content creators,' is incorrect. Neither text focuses on the benefits for content creators. Text 1 emphasizes benefits for viewers (convenience, affordability, democratization), and Text 2 discusses potential negative impacts on viewers and costs.\n\nOption D, 'Attention spans have definitively declined due to streaming services,' is incorrect. Text 2 suggests a 'potential' decline in attention spans ('can lead to a decline'), which is not a definitive statement. Option D's use of 'definitively declined' is too strong and not supported by the cautious language in Text 2.\n\nThere are no grammatical or formatting issues that impede understanding. The difficulty level 'Easy' is appropriate as the texts are straightforward and the correct answer is readily inferable from both texts."
+    }
+  },
+  {
+    "question_id": 752715,
+    "question_text": "## Text 1  Botanist Maria Merian is recognized today for her detailed illustrations of plants and in...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a point of agreement between Text 1 and Text 2 regarding Maria Merian. \n\nOption B is the correct answer. Text 1 states that Merian's work was not widely celebrated during her lifetime but is recognized today. Text 2 explicitly mentions a 'resurgence of interest' and scholars 'highlighting her pioneering approach,' which implies a re-evaluation of her methods. Both texts agree that there is a shift in how Merian's work is perceived and valued, suggesting a re-evaluation is happening.\n\nOption A is incorrect. Text 1 mentions that some dismissed her work due to lack of formal training, but it doesn't state that this lack of training *hindered the quality* of her observations. In fact, it mentions that some admired the *accuracy* of her depictions, suggesting the quality was not necessarily hindered. Text 2 further emphasizes her 'meticulous observation,' contradicting the idea that her lack of training negatively impacted her work's quality.\n\nOption C is incorrect. Text 1 states that 'some naturalists admired the accuracy of her depictions,' indicating that scientific illustration was valued by some, even in Merian's time. The issue was not the value of illustration itself, but rather Merian's lack of formal training and independent status. Text 2 focuses on her methods of observation, not the general value of scientific illustration in her time.\n\nOption D is incorrect. Text 1 explicitly mentions 'detailed illustrations of plants and insects,' indicating that Merian studied both. There is no suggestion in either text that she neglected the study of insects. \n\nThe question is grammatically sound, well-formatted, and the difficulty level 'Easy' is appropriate for SAT Reading & Writing, particularly for a cross-text connection question where the agreement is relatively direct."
+    }
+  },
+  {
+    "question_id": 184195,
+    "question_text": "### Text 1  A recent study published in the journal *Nature Astronomy* suggests that the number of p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A accurately captures the contrasting perspectives of Text 1 and Text 2. Text 1 emphasizes the positive and 'groundbreaking implications' of the study, highlighting the potential for numerous habitable exoplanets. Text 2, on the other hand, emphasizes the 'speculative nature' of the conclusions by pointing out the limitations of the data and the factors not yet considered, suggesting definitive conclusions are 'premature'. Options B, C, and D are demonstrably incorrect. Option B misrepresents Text 2's critique as questioning the 'reliability' of Kepler data, when it's actually about the limited scope of the data and the definition of habitability. Option C is incorrect as neither text discusses whether focusing on Earth-sized planets is appropriate or not. Option D is incorrect because while Text 2 touches upon limitations related to studying exoplanets, its primary concern is not 'technological challenges' but rather the prematurity of definitive conclusions given current limitations in data and knowledge. The difficulty level 'Easy' is appropriate as the texts are short, the language is accessible, and the contrast in viewpoints is relatively straightforward to identify."
+    }
+  },
+  {
+    "question_id": 376453,
+    "question_text": "## ID: NEW_QUESTION_1\\n\\n### Text 1\\n\\nBees are well-known for their ability to produce honey, a swe...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        " which is incomplete and makes the question unclear. It's likely intended to refer to an idea, but without the image or a clearer statement, it's ambiguous.",
+        "While Option B is the best answer among the choices, the question's ambiguity due to the missing image/idea weakens its overall validity. The question relies on an inferred idea rather than a clearly stated one.",
+        "B"
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 626507,
+    "question_text": "#### Text 1  In 2023, the city of Oakhaven implemented a congestion pricing system for vehicles ente...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks about the authors' shared agreement regarding congestion pricing systems based on two provided texts. Option C is indeed the correct answer because both texts emphasize the need for comprehensive planning beyond just reducing downtown traffic. Text 1 highlights the negative consequences of simply shifting traffic and the impact on local businesses, implying that a successful system needs to consider these broader factors. Text 2 explicitly states the necessity of considering the 'broader transportation network,' investing in public transportation and alternative routes, and mitigating negative economic impacts.  Option A is incorrect because while Text 1 mentions traffic redistribution, Text 2 suggests that congestion pricing can be effective with proper planning, not inherently ineffective. Option B is incorrect as neither text suggests revenue generation as the primary goal; the focus is on managing congestion and broader impacts. Option D is directly contradicted by Text 1, which states local businesses reported decreased foot traffic, not benefits.  There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding and synthesizing information from two short texts to infer a shared viewpoint."
+    }
+  },
+  {
+    "question_id": 105500,
+    "question_text": "**Text 1** Classical economic theory suggests that minimum wage laws can lead to unemployment. Accor...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for an inference about how the author of Text 1 would respond to the findings in Text 2. Text 1 presents classical economic theory predicting unemployment from minimum wage increases. Text 2 presents a study contradicting this theory, finding no job losses. Option C, marked as correct, accurately captures the most likely response: recognizing the study as a challenge to the classical theory. \n\nLet's analyze why other options are less likely:\n\n* **Option A (Dismiss as limited scope):** While it's true that a study on specific cities is less broad than a national economic analysis, dismissing it *entirely* as limited in scope is too extreme and not the *most likely* initial response.  A classical economist might acknowledge the limitation but would still need to address the contradictory findings within those cities. It's a weaker response than acknowledging the challenge.\n\n* **Option B (Question methodology):** Questioning the methodology is a plausible response in academic discourse, especially when results contradict established theories. Difference-in-differences is a valid but not foolproof method, and could be critiqued. However, while plausible, it's not as direct a response as acknowledging the challenge.  It's a defensive tactic rather than a direct engagement with the findings' implications for the theory.\n\n* **Option D (Accept short-term, maintain long-term):** This is also a possible defense of classical theory.  One could argue that the study only captures short-term effects and that the long-term negative consequences predicted by classical theory will still emerge. However, the study in Text 2 doesn't explicitly focus on 'short-term' effects, and the question asks for the *most likely* response.  Acknowledging the study as a *challenge* (Option C) is a more direct and immediate reaction to contradictory evidence than deferring to long-term predictions.\n\nOption C is the most direct and accurate answer because it acknowledges the fundamental conflict between the classical theory and the study's findings. The other options represent more nuanced or defensive positions that are less likely to be the *most likely* initial response from someone adhering to the viewpoint in Text 1.\n\nThere are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires understanding both texts and making an inference about author perspective, which is a standard skill tested on the SAT Reading section."
+    }
+  },
+  {
+    "question_id": 877483,
+    "question_text": "**Text 1**  Over the past decade, urban beekeeping has seen a surge in popularity. Advocates cite it...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a point of agreement between Text 1 and Text 2 regarding urban beekeeping. Option B, 'Urban beekeeping presents both potential advantages and notable disadvantages,' accurately reflects the content of both texts. Text 1 focuses on the advantages (increased honey production, pollinator populations, education, environmental awareness), while Text 2 highlights the disadvantages (limited forage, competition with native pollinators, disease transmission, human-bee interaction concerns). Both texts acknowledge both sides of the issue, making Option B the statement they would most likely agree with. Options A, C, and D are incorrect because they represent extreme or unsupported viewpoints. Option A is too positive and contradicted by Text 2. Option C is too negative and not explicitly stated by either text as an agreed-upon conclusion. Option D overemphasizes education as the 'primary justification,' which is not the central point of agreement between the texts. The difficulty level 'Medium' is appropriate as it requires understanding the nuances of both texts and identifying a common theme, which is typical of SAT Reading comprehension questions."
+    }
+  },
+  {
+    "question_id": 878678,
+    "question_text": "#### Text 1  Economist Anya Petrova argues that increased automation in manufacturing will inevitabl...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is the correct answer because Tanaka argues that technological advancements 'ultimately create more jobs than they eliminate,' implying that while there might be initial job displacement (a societal cost), the long-term economic benefits (new industries, new roles) will eventually outweigh these costs.  Options B, C, and D are incorrect because they are not directly supported by Text 2. Option B introduces an ethical dimension not discussed by Tanaka. Option C makes a specific claim about skill levels that is not present in Tanaka's argument. Option D suggests a policy solution, which is also not explicitly mentioned by Tanaka; his focus is on the inherent job-creating nature of technological progress, not government intervention.  There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding and comparing two viewpoints and making an inference about one author's likely response to another's claim."
+    }
+  },
+  {
+    "question_id": 436193,
+    "question_text": "#### Text 1  In a 2022 study, Castillo and Schmidt analyzed data from 150 participants and concluded...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an inference based on the provided texts. Option B is the correct answer because Sharma's meta-analysis found a significantly smaller reduction in melatonin (8%) compared to Castillo and Schmidt's study (20%). Sharma also highlights other factors as potentially more significant, directly implying that Castillo and Schmidt's study might have overstated the impact of blue light. \n\nLet's look at why other options are incorrect:\n* **Option A:** While variations in pre-existing melatonin levels could be a factor, Sharma's main critique is about the *magnitude* of the effect and the importance of *other factors*. Questioning pre-existing levels is not the central point of Sharma's response based on the provided text. \n* **Option C:** Sharma's findings directly contradict Castillo and Schmidt's in terms of the *strength* of the correlation. Sharma's research suggests a weaker correlation, not support for the disruption of circadian rhythms *due to blue light alone* as emphasized by Castillo and Schmidt. \n* **Option D:** Sharma's study is a meta-analysis encompassing a larger sample size than Castillo and Schmidt's.  Therefore, it's unlikely Sharma would suggest Castillo and Schmidt need a *larger* sample size. Sharma's critique is based on the *interpretation* of existing data and the consideration of broader factors, not sample size alone. \n\nTherefore, Option B is the most accurate representation of how Sharma would likely respond to Castillo and Schmidt's findings, focusing on the overemphasis of blue light's impact."
+    }
+  },
+  {
+    "question_id": 627963,
+    "question_text": "#### Text 1  The conventional wisdom in the early 20th century held that improvements in technology ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is indeed the correct answer. Here's why:\n\n* **Option B is Correct:** Text 1 expresses an optimistic view that technology would lead to more leisure. Text 2 presents evidence that this hasn't happened, and in fact, work has intensified. Option B, by suggesting 'unforeseen societal or economic factors,' allows the author of Text 1 to acknowledge the findings of Text 2 without completely abandoning their initial premise. It suggests that the *intended* effect of technology (more leisure) was real, but other factors interfered. This is a nuanced and reasonable response.\n\n* **Option A is Incorrect:** Option A suggests dismissing Text 2's data as 'flawed.' This is a less sophisticated and less likely response from someone who initially held an optimistic view. Text 2 presents observations and studies, making a blanket dismissal less credible and less aligned with a reasoned response.\n\n* **Option C is Incorrect:** Option C claims the predictions were 'fundamentally correct' and dismisses the 'lack of leisure' as 'subjective.' This directly contradicts the evidence presented in Text 2, which points to objective changes in work culture and hours. It's an unrealistic and dismissive response.\n\n* **Option D is Incorrect:** Option D suggests technology redistributed labor rather than reduced demand. While redistribution might be a factor, it doesn't directly address the core prediction of Text 1, which was about *increased leisure*.  Redistribution doesn't inherently negate the idea that technology *should* have led to reduced overall labor and more leisure. It's a less direct and less relevant response to the core conflict between the texts compared to Option B.\n\n* **Difficulty Level:** 'Medium' is an appropriate difficulty level. The question requires understanding the nuances of both texts and inferring a logical response based on the author's initial viewpoint. It involves cross-textual analysis and isn't a simple recall question.\n\n* **Grammar and Formatting:** There are no grammatical or formatting issues in the question or options."
+    }
+  },
+  {
+    "question_id": 745270,
+    "question_text": "**Text 1** Studies suggest that social media platforms, with their algorithms prioritizing user enga...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense within the context of SAT Reading & Writing questions that assess cross-text connections. Option A is the correct answer because Text 2 acknowledges the concern raised in Text 1 about echo chambers but argues that social media also provides avenues for exposure to diverse viewpoints due to its vastness and user agency. This implies that Text 2 views Text 1 as an oversimplification, focusing primarily on the negative aspect of algorithms creating echo chambers without fully considering the potential for broader exposure. Option B is incorrect because Text 2 does not endorse Text 1's view; it presents a more nuanced perspective. Option C is incorrect because while Text 2 mentions user agency, it doesn't dismiss Text 1's argument entirely. Instead, it builds upon it by adding complexity. Option D is incorrect because Text 2 doesn't shift the focus away from algorithms; both texts are concerned with the effects of algorithms, but Text 2 broadens the scope to include other factors. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium because it requires understanding the nuances of both texts and inferring the relationship between their viewpoints, which is a typical skill tested at this level on the SAT."
+    }
+  },
+  {
+    "question_id": 249179,
+    "question_text": "Text 1\\n\\nEconomists have long debated the causes of economic inequality.  One prevailing view empha...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks how Carter and her team (Text 2) would respond to the prevailing view (Text 1). \n\n* **Option A:** This option accurately reflects Text 2's argument. Text 2 explicitly states that sociologists like Carter highlight social factors that the prevailing view (Text 1) overlooks. This is a direct contrast and critique of the perspective in Text 1.\n\n* **Option B:** This option is incorrect because Text 2 does not concede that market forces are primary. Instead, it argues for the significant influence of social structures *independent* of market dynamics, presenting an alternative, not a secondary, perspective.\n\n* **Option C:** While Text 2 mentions education and social networks, which could influence skills, Option C shifts the focus slightly. Text 2's primary argument is about social structures as *independent* factors causing inequality, not just as shapers of individual skills.  Furthermore, the question asks how they would respond to the *prevailing view*, and Option C doesn't directly address the prevailing view's emphasis on market forces and individual contributions as much as Option A does. Option A is a more direct and accurate response to the prevailing view described in Text 1.\n\n* **Option D:** This option is directly contradictory to Text 2. Text 2 explicitly challenges the prevailing view by introducing social structures as a significant factor. Supporting the prevailing view is the opposite of Carter's team's stance.\n\nThere are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate because it requires understanding and comparing two different viewpoints and making an inference about the authors' likely response."
+    }
+  },
+  {
+    "question_id": 902233,
+    "question_text": "Text 1\\n\\nStudies from the early 2000s suggested that listening to classical music, particularly Moz...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question stem is missing, making it impossible to understand what is being asked.",
+        "Option D is incomplete and abruptly cut off, rendering it unevaluable.",
+        "For a 'Cross-Text Connections' question, Text 2 is missing.  Without Text 2, it's impossible to assess how it relates to Text 1 or which option accurately describes its relationship.",
+        "While Option A is a plausible critique of the 'Mozart effect' studies, without a complete question stem and Text 2, it's unclear why it is definitively the 'correct' answer and the others are definitively 'incorrect'. Options B and C also present valid ways to respond to or critique the initial studies.",
+        "The question mentions 'No image' which might indicate missing visual content that could be relevant, although its impact on the current question is unclear without knowing what the image was intended to be."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is fundamentally flawed due to the missing question stem and incomplete Option D.  Without knowing what the question is actually asking, we can only speculate. Assuming the question is *intended* to ask how a hypothetical Text 2 might challenge or respond to Text 1, Option A presents a reasonable critique by suggesting an alternative explanation (mood enhancement) for the observed cognitive benefits, rather than attributing them specifically to classical music. Options B and C also offer plausible responses (limiting the scope, questioning methodology), but without the full question and Text 2, it's impossible to definitively validate Option A as the *only* correct answer or to definitively rule out B and C. The incompleteness of the question and Option D makes it invalid for SAT purposes."
+    }
+  },
+  {
+    "question_id": 788916,
+    "question_text": "**Text 1**  The conventional wisdom in urban planning has long favored maximizing green spaces withi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks about the researchers in Text 2's perspective on a claim made in Text 1. Option B is the correct answer because Text 2 directly argues that the claim in Text 1 (that simply increasing green space acreage directly and proportionally enhances urban livability) is overly simplistic. Text 2 emphasizes the importance of quality and accessibility, suggesting that quantity alone is not sufficient. Option A is incorrect because Text 2 contradicts the idea that increasing acreage is 'fundamentally accurate'. Option C is incorrect because Text 2 doesn't state that increased acreage has 'no discernible impact', but rather that quality and accessibility are more critical. Option D is incorrect as the texts present a current debate, not a shift that has already occurred, and the relevance to urban planning is central to the question. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium, as it requires understanding the nuances of both texts and their relationship."
+    }
+  },
+  {
+    "question_id": 862669,
+    "question_text": "### Text 1  Public transportation systems in urban areas are often criticized for being inefficient ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A is indeed the correct answer because Text 2 acknowledges the challenges of public transportation (as mentioned in Text 1's criticisms) but pivots to emphasize the broader societal benefits that Text 1 overlooks, such as environmental sustainability and social equity. Option B is incorrect because Text 2 does not claim public transportation is 'universally efficient and reliable' and actually acknowledges challenges. Option C is incorrect because while Text 1 mentions costs, its primary argument is about inefficiency and practicality of personal vehicles, not solely financial costs versus economic benefits. Option D is incorrect as Text 2 directly opposes the conclusion of Text 1 by advocating for public transportation and not agreeing that personal vehicles are a better solution.  All options except A are clearly incorrect, making A the only logical and accurate answer. The grammar and formatting are correct, and the 'Medium' difficulty level is appropriate for an SAT Reading & Writing question requiring cross-textual analysis and understanding of authorial perspective."
+    }
+  },
+  {
+    "question_id": 606153,
+    "question_text": "#### Text 1  Prior to the 1980s, the prevailing medical view held that peptic ulcers were primarily ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 308. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is valid and well-written. Let's analyze each option:\\n\\n* **Option A: The presence of bacteria within the sto..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 231548,
+    "question_text": "**Text 1**  Studies have consistently shown a correlation between increased screen time and decrease...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 934. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and makes..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 752387,
+    "question_text": "## ID: NEW_QUESTION_ID  #### Text 1  Economist Anya Sharma argues that the implementation of a unive...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is valid and well-structured. Here's a breakdown:\n\n1. **Clarity and Sense:** The question is clear and asks directly how Ben Carter would respond to Anya Sharma. Both texts are concise and present distinct viewpoints on UBI and its impact on productivity. The question stem is unambiguous.\n\n2. **Correctness of Option C:** Option C is indeed the correct answer. Text 2 explicitly states Carter's concern that UBI 'could lead to a decrease in overall labor force participation' and that this 'might disincentivize work... potentially offsetting any gains in productivity'. Option C directly reflects this concern by stating Carter would caution that reduced workforce participation 'could counteract any positive effects on national productivity'. This is a direct and accurate inference based on Text 2.\n\n3. **Incorrectness of Other Options:**\n    - **Option A:** While Carter acknowledges 'potential benefits of UBI', he doesn't 'concede' that it improves 'individual well-being'. His focus is on workforce participation and productivity.  Furthermore, he doesn't just 'question whether these improvements would translate into measurable gains', he expresses a stronger concern about *offsetting* gains due to reduced workforce participation. Option A is too weak and misrepresents Carter's primary concern.\n    - **Option B:** Carter does not challenge the assumption that financial security is a factor in pursuing education and entrepreneurship. He 'acknowledges the potential benefits of UBI', implying he accepts that financial security *could* be beneficial. His concern is about a *negative consequence* of UBI (reduced workforce participation) that could undermine the intended positive outcome (productivity gains). Option B misinterprets Carter's argument as challenging Sharma's premise rather than focusing on a potential negative side effect.\n    - **Option D:** This option is the opposite of Carter's argument. Carter does *not* agree that UBI could enhance productivity, even conditionally. He expresses concern that it might *reduce* productivity due to decreased workforce participation. Option D directly contradicts the core of Text 2.\n\n4. **Grammatical and Formatting Issues:** There are no grammatical or formatting issues. The question is well-written and presented.\n\n5. **Difficulty Level (Hard):** The difficulty level 'Hard' is appropriate. The question requires understanding nuanced arguments from two texts, identifying the core disagreement, and inferring a likely response. It tests cross-textual reasoning and the ability to distinguish between different perspectives on a complex topic, which aligns with the 'Hard' difficulty level on the SAT Reading and Writing section, particularly within the 'Cross-Text Connections' subcategory."
+    }
+  },
+  {
+    "question_id": 487252,
+    "question_text": "## ID: b98d21e6  #### Text 1  Researchers in a 2018 study investigated the impact of blue light expo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an inference based on two provided texts. Option B is the correct answer because it accurately reflects the findings of both studies. Text 1 demonstrates that blue light exposure negatively impacts sleep quality and increases sleep latency, while Text 2 shows that ambient temperature affects awakenings and REM sleep duration. Option B correctly generalizes that environmental factors (light and temperature) independently influence different aspects of sleep quality. \n\nOption A is incorrect because there is no information in either text to suggest that maintaining a specific room temperature can mitigate the negative effects of blue light. The two studies investigate separate factors affecting sleep. \n\nOption C is incorrect because it makes a comparison that is not supported by the texts. The texts do not provide a basis for comparing the relative detriment of blue light exposure versus suboptimal room temperature. Furthermore, 'less detrimental' is a subjective and unsupported comparison in this context.\n\nOption D is incorrect because it misrepresents the findings of Text 2. Text 2 indicates that cooler room temperatures (18°C) primarily affect awakenings and REM sleep duration, not sleep latency. Text 1 does show blue light affecting sleep latency, but Option D incorrectly claims that *both* factors primarily affect sleep latency and not REM sleep duration, which contradicts Text 2's findings. \n\nThe difficulty level 'Hard' is appropriate as it requires understanding and synthesizing information from two separate texts to make an inference about the researchers' potential agreement."
+    }
+  },
+  {
+    "question_id": 985182,
+    "question_text": "Text 1\\n\\nTraditional economic models often rely on the assumption of rational choice. This framewor...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 594. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"B\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clear and makes sense. It..."
+      ],
+      "correct_answer": "B",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 221120,
+    "question_text": "## ID: a1b2c3d4\\n\\n#### Text 1\\n\\nEconomists have long debated the optimal level of government inter...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option D is incomplete and does not present a full answer choice, making it impossible to evaluate as a potential answer. This is a significant flaw in the question design.",
+        "While Option B is the most plausible correct answer, the question could be improved by ensuring all options are complete and clearly distinct distractors."
+      ],
+      "correct_answer": "B",
+      "explanation": "Option B is the most likely correct answer because Text 2 explicitly argues that behavioral market failures are 'prevalent' and stem from 'systematic deviations from rational choice,' directly contradicting the idea that market failures are merely 'underestimated' as suggested in the underlined portion of Text 1. Text 2 researchers would likely argue that market failures are not just underestimated but are a fundamental aspect of real-world markets due to human behavior, which aligns with option B.\n\nOption A is incorrect because Text 2 challenges classical theory, not agrees with its adequacy in accounting for market failures. Text 2 argues for the *limitations* of classical theory due to its neglect of behavioral factors.\n\nOption C is incorrect because Text 2 doesn't concede the validity of classical theory's focus in the way described. Text 2 challenges the *assumptions* of classical theory about human rationality, which is foundational to its approach to market efficiency. While behavioral economics aims for market efficiency, it does so by addressing the flaws in the classical model, not by simply offering a 'more practical approach' within the same theoretical framework.\n\nOption D is incomplete and therefore cannot be considered a valid answer choice. This is a significant error in the question's construction.\n\nDespite the issue with Option D, the question, in principle, tests cross-text comprehension and inference at a level appropriate for 'Hard' difficulty. However, the flawed option and potential for slightly clearer distractor options slightly detract from its overall quality."
+    }
+  },
+  {
+    "question_id": 110679,
+    "question_text": "## ID: [New Question ID - e.g., a1b2c3d4]  #### Text 1  In many cultures, storytelling serves not on...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 2582. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and makes..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 354465,
+    "question_text": "## ID: NewQuestion1  Text 1  Public health interventions aimed at reducing sugar consumption often f...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Expected ',' or '}' after property value in JSON at position 332. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"C\",  \"explanation\": \"The question is valid and well-structured. Here's a breakdown:\\n\\n1. **Clarity:** The question is clearly written and easy ..."
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 365209,
+    "question_text": "## ID: 7b2e8d5a  #### Text 1  Technological advancements in artificial intelligence (AI) are rapidly...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the most likely response of the author of Text 2 to the predictions in Text 1.  Option B is indeed the correct answer because Text 2 acknowledges the 'intriguing possibilities' of AI in creative fields (aligning with 'potential benefits of AI tools') but immediately introduces a cautionary tone about 'over-reliance' and the importance of 'human ingenuity and emotional depth' ('cautioning against an overemphasis on technology at the expense of human elements in art').  Options A, C, and D are clearly incorrect. Option A is the opposite of Text 2's stance, as Text 2 is cautious, not fully embracing. Option C is too extreme; Text 2 doesn't dismiss AI's impact as negligible but rather warns against its potential negative consequences if not used thoughtfully. Option D introduces the idea of commercial vs. artistic pursuits, which is not discussed in either text, and incorrectly assumes Text 2 agrees with Text 1's optimistic predictions.  There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate because it requires careful reading and comparison of two texts to infer the author's implied response and distinguish nuanced differences between the answer choices."
+    }
+  },
+  {
+    "question_id": 671918,
+    "question_text": "#### Text 1  While often lauded for its economic growth, the fictional nation of Genovia, as depicte...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Option A accurately describes the difference in viewpoints between Text 1 and Text 2. Text 1 emphasizes the negative aspects of economic inequality in Genovia, focusing on the divide between rich and poor and limited access to resources for many. Text 2, conversely, highlights the positive aspects, pointing to improvements in overall quality of life, average income, and life expectancy, while acknowledging and downplaying existing inequalities by mentioning government efforts to address them. Options B, C, and D are demonstrably incorrect based on the content of the texts. Option B misinterprets Text 1 as blaming media portrayals for economic problems and misrepresents Text 2's focus. Option C incorrectly attributes views about government awareness and actions to Text 1 and Text 2 respectively. Option D introduces irrelevant concepts like political instability and lack of natural resources that are not discussed in either text. There are no grammatical or formatting issues, and the 'Hard' difficulty level is appropriate as it requires careful reading and comparison of nuanced perspectives."
+    }
+  },
+  {
+    "question_id": 864327,
+    "question_text": "Text 1  Analysis of tree rings from the American Southwest reveals a prolonged drought period around...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. Option B is indeed the correct answer because: \n- Text 1 argues for a single primary cause (drought) for the abandonment of Ancestral Puebloan settlements.\n- Text 2 argues for a more complex explanation, suggesting that pre-existing societal strains were also critical factors, with drought acting as a potential 'tipping point'. This implies multiple contributing factors rather than a single cause.\n\nLet's examine why other options are incorrect:\n- Option A is incorrect because Text 2 does not offer 'contradictory evidence' that 'undermines' Text 1's hypothesis. Text 2 acknowledges the drought (the evidence presented in Text 1) but offers a different interpretation of its role, suggesting it was not the sole cause but rather one factor among others. Text 2 offers an alternative perspective, not a direct contradiction of the evidence itself.\n- Option C is incorrect because there is no indication that Text 1 presents a 'widely accepted historical narrative' or that Text 2 challenges the 'accuracy' of that narrative based on 'new archaeological findings'. Text 2 offers a different interpretation of existing evidence and proposes alternative contributing factors, not necessarily new archaeological discoveries that invalidate Text 1's account.\n- Option D is partially true in that Text 1 focuses on an environmental aspect (drought), and Text 2 touches upon social aspects (intergroup conflict, resource depletion). However, Option D is not the *best* description of the relationship. The core difference is not simply environmental vs. social/political focus, but rather single-factor causation vs. multi-factor causation. Option B more accurately captures this central difference in how the two texts relate to each other.\n\nThe question is grammatically sound and appropriately formatted. The difficulty level 'Hard' is suitable as it requires careful reading, understanding of nuanced arguments, and the ability to differentiate between subtle differences in the options."
+    }
+  },
+  {
+    "question_id": 35764,
+    "question_text": "#### Text 1  In a study of urban noise pollution, researchers placed sound level meters at various l...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is valid and clearly written. Option D is the correct answer because Text 2 explicitly argues that focusing solely on decibel levels (as done by the researchers in Text 1) is insufficient and overlooks the qualitative differences between types of noise. Options A, B, and C are incorrect because they do not align with the central argument of Text 2. Option A focuses on the time of measurement, Option B on the location of impact, and Option C on the reliability of the measurement tool, none of which are the primary critique offered by the urban planners in Text 2. The difficulty level 'Hard' is appropriate as it requires understanding nuanced arguments from two different texts and identifying the point of disagreement, which is a higher-order reading comprehension skill tested on the SAT."
+    }
+  }
+]

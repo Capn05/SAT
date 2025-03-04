@@ -1,0 +1,537 @@
+[
+  {
+    "question_id": 845936,
+    "question_text": "For a hybrid car traveling a distance of $m$ miles, the amount of fuel consumed is $g$ gallons. The ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. The ratio of miles to gallons is given as 55 to 1, meaning for every 1 gallon of fuel consumed, the car travels 55 miles. To find out how many miles the car will travel if it consumes 3 gallons of fuel, we multiply the ratio by 3: 55 miles/gallon * 3 gallons = 165 miles. Option A, 165, is the correct answer and is marked as correct. Options B, C, and D are clearly incorrect as they do not result from a correct application of the given ratio. The question is grammatically correct, uses appropriate vocabulary for the SAT, and is indeed of 'Easy' difficulty level as it involves a straightforward application of ratios and multiplication."
+    }
+  },
+  {
+    "question_id": 167771,
+    "question_text": "A bakery produced 450 cakes in a 15-hour period. On average, how many cakes were produced per hour?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. It asks for the average number of cakes produced per hour given the total cakes produced in a specific time period. To find the average cakes per hour, we divide the total number of cakes (450) by the number of hours (15): 450 / 15 = 30. Option B, which is 30, is indeed the correct answer and is marked as correct. The other options are clearly incorrect: Option A (0.03) is too small and likely results from dividing hours by cakes instead of cakes by hours. Option C (465) is larger than the total number of cakes produced and doesn't logically represent cakes per hour. Option D (6,750) is significantly larger and likely results from multiplying the number of cakes by the number of hours. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for this question as it tests a basic understanding of rates and averages."
+    }
+  },
+  {
+    "question_id": 443124,
+    "question_text": "In a flower vase, the ratio of roses to tulips is 4 to 7. There are 12 roses in the vase. How many t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. The ratio of roses to tulips is given as 4:7. We are told there are 12 roses. To find the number of tulips, we can set up a proportion: 4/7 = 12/x, where x is the number of tulips. Solving for x, we get 4x = 7 * 12, which simplifies to 4x = 84. Dividing both sides by 4, we get x = 21. Therefore, there are 21 tulips in the vase. Option B, which is marked as correct, is indeed the correct answer. Options A, C, and D are incorrect as they do not maintain the given ratio of 4:7 when there are 12 roses. The difficulty level 'Easy' is appropriate for this straightforward ratio problem."
+    }
+  },
+  {
+    "question_id": 771256,
+    "question_text": "The book density on a bookshelf in a library is 40 books per meter. A librarian needs to shelve 12,0...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and easy to understand. The book density is given as 40 books per meter. To find the required length for 12,000 books, we need to divide the total number of books by the book density: \n\nLength = Total books / Book density\nLength = 12,000 books / (40 books/meter)\nLength = 300 meters\n\nOption C, which is 300, is the correct answer. The other options are clearly incorrect as they do not result from this calculation. Option A (3,000) is too large, Option B (400) is also too large, and Option D (30) is too small. The difficulty level is appropriately classified as 'Easy' for an SAT math question focusing on ratios and rates."
+    }
+  },
+  {
+    "question_id": 777942,
+    "question_text": "A student types 1,200 words in 30 minutes. At this rate, how many words per minute does the student ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the words per minute, we need to divide the total number of words (1,200) by the total number of minutes (30).  1200 / 30 = 40. Option C, which is 40, is indeed the correct answer. Options A, B, and D are clearly incorrect and serve as plausible distractors. There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' as it involves a straightforward division to calculate a rate."
+    }
+  },
+  {
+    "question_id": 211436,
+    "question_text": "The table below shows the number of hours a student studied and the number of practice problems they...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (C. 105) is actually incorrect based on the condition that the rate of practice problems completed per hour is constant.",
+        "None of the provided options are correct. The correct value of p, based on the constant rate derived from the other data points, should be 45, which is not among the options.",
+        "The question is flawed because the marked answer does not satisfy the condition of constant rate implied by the given data points. If we assume the rate is constant across the given data, the value of p should be 45, not a value that leads to option C being correct."
+      ],
+      "correct_answer": null,
+      "explanation": "To solve this problem, we need to find the constant rate of practice problems completed per hour. From the information given, we can infer two data points from the table (although the table itself is missing): (hours, problems). Let's assume there are at least two rows in the table, and we can use the given information to find the constant rate.  However, since we don't have the actual table, let's use the information provided in the question and options to deduce the intended logic.  If we assume the rate is constant across all entries in the table, we can use any two pairs of (hours, problems) to find the rate and then use it to find 'p'.  Let's assume the table has at least two rows where we know both hours and problems, and one row where we know hours (3) and need to find problems (p).  However, based on the question description and the marked answer being C (105), it seems there is an error either in the question itself, the marked answer, or the options provided.  If we assume the rate is constant, and we take two hypothetical rows from the table as (2, 30) and (5, 75) as suggested by typical rate problems, the rate is 30/2 = 15 problems per hour and also 75/5 = 15 problems per hour.  If the hours for the unknown value 'p' is 3, then p = rate * hours = 15 * 3 = 45.  However, 45 is not among the options, and option C (105) is marked as correct. If p = 105, the rate would be 105/3 = 35 problems per hour. This rate is not consistent with the rate derived from (2, 30) or (5, 75) unless the initial data points are incorrect or there is a misunderstanding of the question's intent.  Therefore, based on the clear wording of 'constant rate', the marked answer is incorrect, and the question as presented is flawed due to the discrepancy between the expected answer and the provided options and marked correct answer."
+    }
+  },
+  {
+    "question_id": 934418,
+    "question_text": "The ratio of boys to girls in a class is 2 to 3. If there are 12 boys, how many girls are in the cla...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is actually incorrect. The correct answer should be option C."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question states that the ratio of boys to girls is 2 to 3. This means for every 2 boys, there are 3 girls. If there are 12 boys, we can set up a proportion to find the number of girls. Let 'g' be the number of girls. The proportion is:  2/3 = 12/g. Cross-multiplying, we get 2 * g = 3 * 12, which simplifies to 2g = 36. Dividing both sides by 2, we find g = 18. Therefore, there are 18 girls in the class. Option C, which is 18, is the correct answer, not option B (15) as marked. Options A (8) and D (24) are also incorrect as they do not maintain the 2:3 ratio of boys to girls when there are 12 boys."
+    }
+  },
+  {
+    "question_id": 277206,
+    "question_text": "How many meters are equivalent to 3.5 kilometers? (1 kilometer = 1000 meters)...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for a straightforward unit conversion from kilometers to meters. The provided conversion factor (1 kilometer = 1000 meters) is accurate and necessary to solve the problem. To convert 3.5 kilometers to meters, you multiply 3.5 by 1000, which equals 3,500 meters. Option D is indeed the correct answer. Options A, B, and C are clearly incorrect as they represent values significantly smaller than 3.5 kilometers and demonstrate a misunderstanding of the kilometer to meter conversion. There are no grammatical or formatting issues, and the 'Easy' difficulty level is appropriate for this fundamental unit conversion question."
+    }
+  },
+  {
+    "question_id": 653388,
+    "question_text": "A bakery sells muffins and croissants. On a particular morning, they sold 35 muffins and 15 croissan...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the ratio of croissants sold to muffins sold. Given that 15 croissants and 35 muffins were sold, the ratio is 15:35. Simplifying this ratio by dividing both numbers by their greatest common divisor, which is 5, we get 3:7. Option A, '3 to 7', correctly represents this ratio. Options B, C, and D are incorrect as they represent different ratios or misinterpret the order requested in the question. The question is grammatically sound, and the 'Easy' difficulty level is appropriate for a straightforward ratio problem on the SAT."
+    }
+  },
+  {
+    "question_id": 103,
+    "question_text": "A hummingbird is 8 centimeters long. What is the hummingbird's length, in millimeters? (1 centimeter...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a straightforward unit conversion from centimeters to millimeters. Given that 1 centimeter equals 10 millimeters, 8 centimeters is equal to 8 * 10 = 80 millimeters. Option A, 80, is the correct answer. Options B, C, and D are clearly incorrect as they do not represent a correct conversion. The difficulty level is appropriately labeled as 'Easy' for an SAT question, as it tests a fundamental unit conversion concept."
+    }
+  },
+  {
+    "question_id": 259454,
+    "question_text": "The recommended daily intake of potassium for an adult is approximately $\\frac{7}{5}$ of the recomme...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A. 150) is incorrect based on the provided information. The calculated difference between the recommended daily intake of potassium and calcium is 750 milligrams, not 150 milligrams.  The question asks for 'how many more milligrams of calcium than potassium', which mathematically translates to Calcium intake - Potassium intake.  Based on the given ratios and sodium intake, Potassium intake = 3500 mg and Calcium intake = 2750 mg. Therefore, Calcium intake - Potassium intake = 2750 - 3500 = -750 mg.  If we consider the absolute difference, it is 750 mg.  Neither -750 nor 750 is option A. Option A (150) is exactly 1/5 of 750, which suggests a possible error in the question design or the intended answer was derived through an unstated operation (like dividing the actual difference by 5).  However, as the question is presented, option A is not the correct answer.  All other options are also incorrect as they are not close to the calculated difference of 750 or -750.",
+        "The question is clearly written and makes sense in its wording, but the numerical values provided lead to a different answer than the marked correct option. This discrepancy makes the question invalid as a correctly answered question should have one of the provided options as the accurate result of the calculation described in the question."
+      ],
+      "correct_answer": "Unknown",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 641810,
+    "question_text": "How many pints are equivalent to 5 gallons? (1 gallon = 8 pints)...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clear and well-written, asking for a straightforward unit conversion from gallons to pints. The provided conversion factor (1 gallon = 8 pints) makes the problem solvable. To find the number of pints in 5 gallons, we multiply 5 gallons by 8 pints/gallon, which equals 40 pints. Option B (40) is indeed the correct answer. Options A, C, and D are incorrect and do not represent plausible miscalculations based on the given information. The question is grammatically sound and appropriately formatted. The difficulty level 'Easy' is suitable for this type of single-step unit conversion problem on the SAT."
+    }
+  },
+  {
+    "question_id": 230721,
+    "question_text": "A car gets 30 miles per gallon of gasoline. How many quarts of gasoline are needed for the car to tr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes logical sense. It asks for the number of quarts of gasoline needed to travel a certain distance, given the car's fuel efficiency in miles per gallon and the conversion rate between gallons and quarts. \n\nThe option marked as correct, B (20), is indeed the correct answer. Here's the calculation:\n1. **Calculate gallons needed:** Divide the total distance (150 miles) by the car's mileage (30 miles per gallon): 150 miles / 30 miles/gallon = 5 gallons.\n2. **Convert gallons to quarts:** Multiply the number of gallons (5) by the number of quarts per gallon (4): 5 gallons * 4 quarts/gallon = 20 quarts.\n\nOptions A, C, and D are clearly incorrect. Option A (5) represents the number of gallons, not quarts. Options C (38) and D (120) are not easily derivable from simple miscalculations and seem to be distractors, though not particularly strong ones. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as it involves straightforward division and multiplication, suitable for early SAT math concepts."
+    }
+  },
+  {
+    "question_id": 32498,
+    "question_text": "A painter has 15 liters of paint and needs to convert it to gallons for a project. The conversion ra...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes logical sense. The question asks to convert liters to gallons and then account for a percentage of wastage.To solve the problem:1. **Convert liters to gallons:** Divide the number of liters by the conversion rate: 15 liters / 3.785 liters/gallon ≈ 3.963 gallons.2. **Calculate the wastage:** 10% of the paint is wasted, so calculate 10% of 3.963 gallons: 0.10 * 3.963 gallons ≈ 0.396 gallons.3. **Subtract the wastage from the initial gallons:** 3.963 gallons - 0.396 gallons ≈ 3.567 gallons.4. **Round to two decimal places to match the options:** 3.57 gallons.Option A (3.57 gallons) is very close to the calculated answer and is correctly marked as the correct option.Option B (3.96 gallons) represents the amount of paint in gallons *before* wastage, which is a plausible mistake if a student forgets to account for the wastage.Option C (0.40 gallons) is significantly smaller and doesn't represent a common mistake in this problem. It is clearly incorrect.Option D (4.36 gallons) is larger than the initial amount in gallons, which is impossible after wastage. It is also clearly incorrect.There are no grammatical or formatting issues. The difficulty level is appropriately classified as 'Easy' for the SAT, as it involves basic unit conversion and percentage calculation, skills expected at this level.Therefore, the question is valid, and option A is the correct answer."
+    }
+  },
+  {
+    "question_id": 181816,
+    "question_text": "A baker is making cookies for a large order. Each cookie requires 2.5 ounces of dough. If the baker ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. To find the maximum number of cookies the baker can make, we need to divide the total amount of dough available (75 ounces) by the amount of dough required for each cookie (2.5 ounces).  \n\nCalculation: 75 ounces / 2.5 ounces/cookie = 30 cookies.\n\nOption B, which is marked as correct, is indeed 30. \n\nLet's examine the other options:\n* **Option A (28):**  If the baker makes 28 cookies, they would use 28 * 2.5 = 70 ounces of dough, which is less than the available 75 ounces. While possible, it's not the *maximum* number of cookies.\n* **Option C (77.5):** If the baker makes 77.5 cookies, they would need 77.5 * 2.5 = 193.75 ounces of dough, which is more than the available 75 ounces. This is not possible.\n* **Option D (187.5):** If the baker makes 187.5 cookies, they would need 187.5 * 2.5 = 468.75 ounces of dough, which is also more than the available 75 ounces. This is not possible.\n\nOptions A, C, and D are clearly incorrect as they either do not represent the maximum possible cookies or require more dough than available. There are no grammatical or formatting issues. The difficulty level is appropriately categorized as 'Easy' for an SAT math question, as it involves a single, straightforward division operation."
+    }
+  },
+  {
+    "question_id": 656326,
+    "question_text": "If $p = 3q$, which of the following is equivalent to $4p$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clear and well-written. Given the equation $p = 3q$, we need to find an expression equivalent to $4p$. To do this, we can substitute $3q$ for $p$ in the expression $4p$. So, $4p = 4(3q) = 12q$. Option A, $12q$, is indeed the correct equivalent expression. Options B, C, and D are incorrect because substituting $p=3q$ into $4p$ does not yield $7q$, $4q$, or $3q$. The difficulty level 'Easy' is appropriate as it involves a straightforward substitution and multiplication, which is a fundamental algebraic skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 292708,
+    "question_text": "How many fluid ounces are equivalent to 5 cups? (8 fluid ounces = 1 cup)...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for a straightforward unit conversion from cups to fluid ounces. The conversion factor (8 fluid ounces = 1 cup) is provided. To solve, multiply the number of cups (5) by the conversion factor (8 fluid ounces/cup): 5 cups * 8 fluid ounces/cup = 40 fluid ounces. Option C, 40, is indeed the correct answer. Options A, B, and D are incorrect and serve as plausible distractors. Option A (5) is simply the number of cups without conversion. Option B (32) might be a result of multiplying 4 by 8 instead of 5. Option D (48) might be a result of multiplying 6 by 8 instead of 5. There are no grammatical or formatting issues, and the difficulty level 'Easy' is appropriate for an SAT question testing basic unit conversion."
+    }
+  },
+  {
+    "question_id": 206261,
+    "question_text": "A student is preparing a presentation. The presentation is designed to be 540 seconds in length. How...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To convert seconds to minutes, we divide the number of seconds by 60, since there are 60 seconds in a minute.  540 seconds / 60 seconds/minute = 9 minutes. Option A, which is 9, is the correct answer. Options B, C, and D are incorrect as they do not represent the correct conversion of 540 seconds to minutes. The difficulty level 'Easy' is appropriate for this question as it tests a basic unit conversion skill."
+    }
+  },
+  {
+    "question_id": 364635,
+    "question_text": "A store sells notebooks for $2.50 each. What is the total cost, in dollars, of buying 8 notebooks?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clear and well-written, asking for the total cost of buying 8 notebooks at $2.50 each. The option marked as correct, A ($20), is indeed correct because 8 notebooks * $2.50/notebook = $20. Options B ($10), C ($2.58), and D ($8.50) are clearly incorrect and serve as plausible distractors for students who might make common errors in calculation or misinterpret the question. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it tests a fundamental arithmetic skill within a simple word problem context."
+    }
+  },
+  {
+    "question_id": 925604,
+    "question_text": "A baker can decorate 5 cakes in 1 hour. At this rate, how many hours would it take the baker to deco...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes logical sense. The correct answer is indeed option C (7 hours). To decorate 35 cakes at a rate of 5 cakes per hour, we need to divide the total number of cakes by the rate: 35 cakes / (5 cakes/hour) = 7 hours. Options A, B, and D are incorrect because they would result in decorating 25, 30, and 40 cakes respectively, not 35. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this is a straightforward rate problem suitable for the SAT's Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 839237,
+    "question_text": "A chemist is conducting an experiment that requires her to convert a volume of liquid from millilite...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is not actually the correct answer when using the provided conversion factor and rounding to the nearest tenth. Based on the given information (1 fluid ounce ≈ 29.6 milliliters and 740 milliliters of liquid), the correct calculation is 740 / 29.6 = 25.0 fluid ounces. Option B, 24.9, is close but not mathematically accurate to the nearest tenth based on the provided data. While it might be considered an approximation, for a math question on the SAT, especially at 'Easy' difficulty, a more precise answer is expected, and option B deviates from the mathematically correct answer of 25.0 when rounded to the nearest tenth."
+      ],
+      "correct_answer": null,
+      "explanation": "The question is clearly written and makes sense. However, the option marked as correct (B, 24.9) is not mathematically accurate. When we divide 740 milliliters by 29.6 milliliters per fluid ounce, we get exactly 25 fluid ounces. Rounded to the nearest tenth, this is 25.0 fluid ounces. Option B, 24.9, is close, but not the precise answer when rounded to the nearest tenth using the given conversion factor. Options C and D are clearly incorrect as they are significantly larger and represent multiplication rather than division. Option A (23.3) is also incorrect and further from the correct answer than option B. While the question is easy in concept, the marked answer being slightly off from the mathematically correct answer makes the question flawed. The difficulty level 'Easy' is appropriate for the type of problem, but the accuracy of the options and the marked correct answer is questionable."
+    }
+  },
+  {
+    "question_id": 235841,
+    "question_text": "The ratio of the number of apples to the number of bananas in a fruit basket is 7 to 3. If there are...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. The ratio of apples to bananas is given as 7:3. With 42 apples, we can set up the proportion 7/3 = 42/x, where x is the number of bananas. Solving for x, we get x = (42 * 3) / 7 = 18. Option B is indeed the correct answer. Options A, C, and D are incorrect as they do not maintain the given ratio. The difficulty level 'Easy' is appropriate for this question type, which is a straightforward application of ratios."
+    }
+  },
+  {
+    "question_id": 549107,
+    "question_text": "A cheetah can run at a maximum speed of 120 kilometers per hour. What is the cheetah's maximum speed...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To convert kilometers per hour to meters per second, we need to multiply by 1000 (meters in a kilometer) and divide by 3600 (seconds in an hour). \n\nCalculation: 120 km/h * (1000 m / 1 km) * (1 h / 3600 s) = (120 * 1000) / 3600 m/s = 120000 / 3600 m/s = 1200 / 36 m/s = 100 / 3 m/s ≈ 33.33 m/s.\n\nOption C, 33.3, is the closest option to the correct answer when rounded to one decimal place. Options A (20), B (30), and D (40) are clearly incorrect as they are significantly different from the calculated value. The difficulty level 'Medium' is appropriate for this question as it tests a standard unit conversion skill expected at the SAT level. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 210237,
+    "question_text": "The population density of Cityville, in people per square kilometer of land area, increased from 60 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first calculate the population in 2010 and 2020 using the given population densities and land area. \n\nPopulation in 2010 = Population Density in 2010 * Land Area = 60 people/sq km * 300 sq km = 18,000 people.\nPopulation in 2020 = Population Density in 2020 * Land Area = 75 people/sq km * 300 sq km = 22,500 people.\n\nThe increase in population from 2010 to 2020 is the difference between the population in 2020 and 2010: 22,500 - 18,000 = 4,500 people.\n\nOption A, 4,500, is the correct answer. Options B, C, and D are incorrect. Option B (22,500) represents the population in 2020, not the increase. Option C (18,000) represents the population in 2010, not the increase. Option D (45,000) is not a value directly derived from the given information in a straightforward manner related to the question. The difficulty level 'Medium' is appropriate as it requires a few steps of calculation but involves basic arithmetic and understanding of population density. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 717525,
+    "question_text": "A car's fuel efficiency is rated at 30 miles per gallon. If the average price of gasoline is $4.50 p...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the cost of gasoline to drive one mile, we need to divide the cost per gallon by the car's fuel efficiency in miles per gallon.  The calculation is $4.50 per gallon / 30 miles per gallon = $0.15 per mile. Option A, $0.15, is indeed the correct answer. The other options are clearly incorrect: Option B ($0.67) and C ($1.50) are significantly higher than the correct answer and do not logically follow from the given information. Option D ($135.00) is the result of multiplying the fuel efficiency by the price per gallon (30 miles/gallon * $4.50/gallon = $135), which represents the cost to drive 30 miles, not one mile.  There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires a single-step calculation involving rates and unit conversion, which is typical for SAT Math problem-solving questions."
+    }
+  },
+  {
+    "question_id": 508728,
+    "question_text": "A family drove from City A to City B, a distance of 215 miles. The trip took 4 hours and 30 minutes....",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the average speed, we divide the total distance (215 miles) by the total time (4 hours and 30 minutes, which is 4.5 hours).  215 miles / 4.5 hours = 47.77... miles per hour. Rounding to the nearest whole number gives 48 miles per hour. Option A, 48, is indeed the correct answer. The other options (B, C, and D) are clearly incorrect as they are not the result of a correct calculation and rounding. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate for an SAT math question as it tests a fundamental concept of average speed and requires a simple calculation with unit conversion."
+    }
+  },
+  {
+    "question_id": 711911,
+    "question_text": "Rectangle P has a length of $x$ and a width of 6. Rectangle Q has a width of 9 and the same length-t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. To solve, we first find the length-to-width ratio of rectangle P, which is $\frac{x}{6}$. Rectangle Q has the same length-to-width ratio and a width of 9. Let the length of rectangle Q be L. Then the ratio for rectangle Q is $\frac{L}{9}$. Setting the ratios equal, we have $\frac{x}{6} = \frac{L}{9}$. Solving for L, we multiply both sides by 9: $L = 9 \times \frac{x}{6} = \frac{9}{6}x = \frac{3}{2}x$. Option A, $\frac{3}{2}x$, is indeed the correct answer. Options B, C, and D are incorrect because they do not result in the same length-to-width ratio as rectangle P. The difficulty level of 'Medium' is appropriate as it tests basic ratio and proportion concepts typically covered in middle school and early high school math, which is suitable for the SAT."
+    }
+  },
+  {
+    "question_id": 237924,
+    "question_text": "A train travels at a constant speed of 55 miles per hour. If the train travels for $z$ hours, it cov...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the relationship between distance, speed, and time and asks for the distance traveled in a different time duration. Option A, $\\\\frac{1}{2}(55z)$, is indeed the correct answer because if the train travels for $z$ hours and covers $55z$ miles, then for half the time, $\\\\frac{z}{2}$ hours, it will cover half the distance, which is $\\\\frac{1}{2}(55z)$. Options B, C, and D are incorrect. Option B subtracts a constant from the distance, which is not related to halving the time. Option C calculates the distance for $(z - \\\\frac{1}{2})$ hours, not $\\\\frac{z}{2}$ hours. Option D calculates the distance for twice the time, as dividing by $\\\\frac{1}{2}$ is equivalent to multiplying by 2. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires a basic understanding of distance, speed, and time relationships and simple algebraic manipulation."
+    }
+  },
+  {
+    "question_id": 952753,
+    "question_text": "A recipe for fruit punch requires 2 cups of orange juice per serving.  Maria is making a large batch...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve it, we first need to convert gallons to cups: 3 gallons * 16 cups/gallon = 48 cups. Then, we divide the total cups of orange juice by the amount needed per serving: 48 cups / 2 cups/serving = 24 servings. Option C, which is 24, is indeed the correct answer. The other options are clearly incorrect as they do not result from the correct calculation. Option A (8) might be obtained by incorrectly dividing gallons by cups per serving without conversion, or by some other miscalculation. Option B (16) might be obtained by considering only 1 gallon or 2 gallons instead of 3. Option D (32) might be obtained by multiplying instead of dividing or by some other miscalculation. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires a unit conversion and a simple division, skills typically tested at this difficulty level on the SAT."
+    }
+  },
+  {
+    "question_id": 557444,
+    "question_text": "A delivery truck uses 16 gallons of fuel for each delivery route it completes. A larger delivery tru...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. To solve it, first find the difference in fuel consumption per route between the larger and smaller trucks: 18 gallons - 16 gallons = 2 gallons. Then, multiply this difference by the number of routes each truck completes: 2 gallons/route * 32 routes = 64 gallons. Therefore, the larger delivery truck uses 64 more gallons of fuel than the smaller delivery truck. Option B (64) is the correct answer. Options A, C, and D are incorrect. Option A (32) might be a distractor based on the number of routes, but it doesn't represent the fuel difference. Option C (512) is the total fuel used by the smaller truck (16 * 32). Option D (576) is the total fuel used by the larger truck (18 * 32). The difficulty level 'Medium' is appropriate as it requires a few simple arithmetic steps and understanding of the problem context."
+    }
+  },
+  {
+    "question_id": 752598,
+    "question_text": "A cheetah is running at a speed of 30 miles per hour. Which of the following is equivalent to this s...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a unit conversion from miles per hour to feet per second. The provided conversion factor (1 mile = 5,280 feet) is helpful. To solve this, we need to convert miles to feet and hours to seconds.Step 1: Convert miles to feet: 30 miles = 30 * 5,280 feet = 158,400 feet.Step 2: Convert hours to seconds: 1 hour = 60 minutes = 60 * 60 seconds = 3,600 seconds.Step 3: Divide the total feet by the total seconds to find the speed in feet per second: 158,400 feet / 3,600 seconds = 44 feet per second.Option A, 44 feet per second, is indeed the correct answer. Options B, C, and D are incorrect and are sufficiently different from the correct answer to be clearly wrong. The question is grammatically correct, and the 'Medium' difficulty level is appropriate for SAT Math, particularly within the 'Ratios, Rates, Proportions, and Units' subcategory. There are no identified issues with this question."
+    }
+  },
+  {
+    "question_id": 558987,
+    "question_text": "A container holds 5 gallons of juice. How many milliliters of juice are in the container? (1 gallon ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The conversion process is as follows: 5 gallons * 4 liters/gallon = 20 liters. Then, 20 liters * 1000 milliliters/liter = 20,000 milliliters. Option A, 20,000, is indeed the correct answer. The other options are clearly incorrect as they represent values significantly different from the correct conversion and do not reflect plausible errors in the calculation process. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate for an SAT question involving unit conversion, as it requires multiple steps but uses straightforward arithmetic."
+    }
+  },
+  {
+    "question_id": 783891,
+    "question_text": "The table below shows the distance a scooter can travel on a full tank of gasoline and the cost to f...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is not actually correct. The correct ratio of cost per mile for Scooter X to Scooter Y is 1:1, which is not among the provided options.",
+        "All other options (A, C, D) are also incorrect as they are not equal to the correct ratio of 1:1."
+      ],
+      "correct_answer": null,
+      "explanation": "To find the cost per mile for each scooter, we divide the Tank Fill Cost by the Distance per Tank.\n\nFor Scooter X: Cost per mile = $6.00 / 150 miles = $0.04 per mile\nFor Scooter Y: Cost per mile = $4.00 / 100 miles = $0.04 per mile\n\nThe ratio of the cost per mile for Scooter X to the cost per mile for Scooter Y is therefore $0.04 : $0.04, which simplifies to 1 : 1.\n\nNone of the provided options (A. 3:4, B. 4:3, C. 9:8, D. 8:9) represent the correct ratio of 1:1. The option marked as correct, B. 4:3, is incorrect. The question is clearly written and makes sense, but the provided answer options are flawed as none of them are correct, and the marked correct answer is definitively wrong based on the given data."
+    }
+  },
+  {
+    "question_id": 810054,
+    "question_text": "A car has a fuel efficiency of 32 miles per gallon. If the car used 12.5 gallons of fuel on a trip, ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and easy to understand. It asks to calculate the distance traveled by a car given its fuel efficiency and the amount of fuel used. The calculation is straightforward: Distance = Fuel Efficiency × Fuel Used = 32 miles/gallon × 12.5 gallons = 400 miles. Option B, which is 400, is indeed the correct answer. The other options (A, C, and D) are clearly incorrect as they are not the result of this simple multiplication. There are no grammatical or formatting issues. The difficulty level is appropriately marked as Medium, as it requires a single step of multiplication and understanding of a basic rate problem, which is typical for the SAT's Problem-Solving and Data Analysis section."
+    }
+  },
+  {
+    "question_id": 555498,
+    "question_text": "A recipe calls for 5 gallons of water. If 1 gallon is equal to 4 quarts, 1 quart is equal to 2 pints...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It tests unit conversion, a standard topic for the SAT Math section. The option marked as correct, C (640), is indeed the correct answer, as 5 gallons is equivalent to 640 fluid ounces (5 gallons * 4 quarts/gallon * 2 pints/quart * 2 cups/pint * 8 fluid ounces/cup = 640 fluid ounces). The other options are incorrect but represent plausible mistakes a student might make during calculation, making them reasonable distractors. There are no grammatical or formatting issues, and the difficulty level of 'Medium' is appropriate for this question type on the SAT."
+    }
+  },
+  {
+    "question_id": 948954,
+    "question_text": "In a recipe for cookies, the ratio of cups of flour to cups of sugar is 5 to 2. If a baker decides t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The ratio of flour to sugar is given as 5:2. If the amount of flour is multiplied by 2.5, to maintain the same ratio, the amount of sugar must also be multiplied by the same factor, which is 2.5. Let F be the amount of flour and S be the amount of sugar. Initially, F/S = 5/2. If the new amount of flour is 2.5F, let the new amount of sugar be xS. To maintain the ratio, (2.5F) / (xS) = 5/2. Dividing both sides by F/S, we get (2.5/x) * (F/S) / (F/S) = (5/2) / (5/2), which simplifies to 2.5/x = 1. Solving for x, we get x = 2.5. Therefore, the amount of sugar should be multiplied by 2.5. Option A is indeed the correct answer. Options B, C, and D would result in different ratios and are therefore incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it requires a basic understanding of ratios and proportions, which is a standard topic in middle and high school mathematics and relevant to the SAT."
+    }
+  },
+  {
+    "question_id": 743561,
+    "question_text": "A carpenter is building a bookshelf. The design specifies that each shelf should be 2.5 feet long. H...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To convert feet to inches, we multiply the number of feet by 12 (since 1 foot = 12 inches).  2.5 feet * 12 inches/foot = 30 inches. Option C, which is 30, is the correct answer. Options A, B, and D are incorrect as they do not represent the correct conversion from feet to inches for 2.5 feet. The difficulty level of 'Medium' is appropriate for this question as it tests a fundamental unit conversion skill expected at the SAT level within the Problem-Solving and Data Analysis domain."
+    }
+  },
+  {
+    "question_id": 928391,
+    "question_text": "A runner completed a race at an average speed of 0.3 kilometers per minute. What was the average spe...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a unit conversion from kilometers per minute to meters per second. The provided average speed is 0.3 kilometers per minute. To convert this to meters per second, we first convert kilometers to meters: 0.3 kilometers = 0.3 * 1000 meters = 300 meters. Then, we convert minutes to seconds: 1 minute = 60 seconds. Therefore, 0.3 kilometers per minute is equal to 300 meters per 60 seconds. Dividing 300 by 60 gives us 5 meters per second. Option A, which is 5, is indeed the correct answer. The other options are incorrect: Option B (18) might arise from incorrectly multiplying 0.3 by 60 without considering the kilometer to meter conversion. Option C (50) and Option D (300) are also incorrect and likely represent other misunderstandings of the unit conversion process. Option D (300) is a plausible distractor as it represents the speed in meters per minute, forgetting the final conversion to seconds. The question is grammatically sound, and the 'Medium' difficulty level is appropriate for an SAT math question involving unit conversion."
+    }
+  },
+  {
+    "question_id": 654624,
+    "question_text": "A school district's total budget is $48.5 million, of which $12.8 million is allocated to administra...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the amount of money spent per student on non-administrative costs. To solve this, first subtract the administrative costs from the total budget to find the non-administrative costs: $48.5 million - $12.8 million = $35.7 million. Then, divide the non-administrative costs by the number of students to find the amount spent per student: $35.7 million / 8,200 students = $35,700,000 / 8,200 ≈ $4,353.66. Option A, $4,350, is the closest value to this result. Option B, $5,915, is close to the total budget per student ($48.5 million / 8,200 students ≈ $5,914.63), which could be a distractor for students who don't read the question carefully. Options C and D are significantly further from the correct answer and are clearly incorrect. The difficulty level is appropriate for 'Medium' as it requires multiple steps but involves straightforward arithmetic."
+    }
+  },
+  {
+    "question_id": 506328,
+    "question_text": "$$$C = 25n$  The equation above can be used to calculate the cost $C, in dollars, of purchasing n no...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The equation C = 25n correctly represents the cost of purchasing notebooks at $25 each. To find the cost of purchasing 12p notebooks, we substitute n = 12p into the equation: C_(12p) = 25 * (12p) = 300p. Similarly, for 3p notebooks, we substitute n = 3p: C_(3p) = 25 * (3p) = 75p. To find how many times the cost of purchasing 12p notebooks is compared to the cost of purchasing 3p notebooks, we calculate the ratio: C_(12p) / C_(3p) = (300p) / (75p). The constant 'p' cancels out, and the ratio simplifies to 300 / 75 = 4. Therefore, the cost of purchasing 12p notebooks is 4 times the cost of purchasing 3p notebooks. Option A, which is 4, is indeed the correct answer. Options B, C, and D are incorrect as they do not represent the correct ratio. The difficulty level 'Medium' is appropriate as it requires basic algebraic substitution and ratio calculation, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 649065,
+    "question_text": "A bakery produces croissants at a rate of 15 dozens per hour. What is this production rate in croiss...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is actually incorrect.",
+        "The correct answer (3 croissants per minute) is not among the provided options.",
+        "Option B (180) represents the production rate in croissants per hour, not per minute, which is what the question asks for.",
+        "Options A, C, and D are also incorrect and not logically derived from the given information."
+      ],
+      "correct_answer": null,
+      "explanation": "The question asks for the production rate in croissants per minute.  First, convert dozens to croissants: 15 dozens = 15 * 12 = 180 croissants. So, the bakery produces 180 croissants per hour. To convert this to croissants per minute, divide by the number of minutes in an hour (60): 180 croissants / 60 minutes = 3 croissants per minute.  The correct answer is 3, which is not listed as an option. Option B, marked as correct, is 180, which is the production rate in croissants per hour, not per minute. Therefore, the marked answer is incorrect, and the question is invalid due to the absence of the correct option and the incorrect marking."
+    }
+  },
+  {
+    "question_id": 137990,
+    "question_text": "How many inches are equivalent to 3 miles? (1 mile = 5280 feet and 1 foot = 12 inches)...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for a straightforward unit conversion from miles to inches. The necessary conversion factors (1 mile = 5280 feet and 1 foot = 12 inches) are provided. To solve, we first convert miles to feet: 3 miles * 5280 feet/mile = 15,840 feet. Then, we convert feet to inches: 15,840 feet * 12 inches/foot = 190,080 inches. Option D (190,080) is indeed the correct answer. Option A (15,840) represents the number of feet in 3 miles, a common mistake of stopping at the intermediate step. Option B (63,360) represents the number of inches in 1 mile (5280 * 12), which is also a plausible distractor. Option C (174,240) is incorrect and less obviously derived from a simple error, but is numerically different from the correct answer and other distractors. There are no grammatical or formatting issues. The difficulty level of 'Medium' is appropriate as it requires two simple multiplication steps and tests a fundamental unit conversion skill expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 34867,
+    "question_text": "A grocery store sells honey in large jars. A jar contains 3 pints of honey and costs $12. What is th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the price per fluid ounce, we first need to convert pints to fluid ounces. Since 1 pint equals 16 fluid ounces, 3 pints equal 3 * 16 = 48 fluid ounces. The jar of honey costs $12 and contains 48 fluid ounces. Therefore, the price per fluid ounce is $12 / 48 = $0.25. Option A, $0.25, is indeed the correct answer. Options B, C, and D are clearly incorrect as they represent significantly higher prices per fluid ounce and do not logically follow from the given information and required calculation. The difficulty level 'Medium' is appropriate as it requires a simple unit conversion and division, skills expected at the SAT level."
+    }
+  },
+  {
+    "question_id": 26783,
+    "question_text": "The ratio of 15 to $x$ is equivalent to the ratio of 3 to 12. What is the value of $x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. It asks for the value of $x$ in a proportion problem. The ratio of 15 to $x$ is set equivalent to the ratio of 3 to 12.  To solve for $x$, we set up the proportion: $\\\\frac{15}{x} = \\\\frac{3}{12}$. Cross-multiplying gives $15 \times 12 = 3 \times x$, which simplifies to $180 = 3x$. Dividing both sides by 3 gives $x = 60$. Option C is indeed the correct answer. Options A, B, and D are incorrect because substituting these values for $x$ does not result in equivalent ratios. The question is grammatically correct, has no formatting issues, and is of medium difficulty, appropriate for the SAT."
+    }
+  },
+  {
+    "question_id": 314416,
+    "question_text": "One method of calculating the approximate age, in years, of a tree of a particular species is to mul...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        " is used in a counter-intuitive way. Typically, a higher growth factor would imply slower growth, but in this question, it seems to imply faster growth. This could be misleading and confusing for students.",
+        "The question implicitly assumes a direct proportionality between the growth factor and the diameter increase over a fixed period (10 years), without explicitly stating this relationship. Students need to infer this relationship to arrive at the marked correct answer.",
+        "C"
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 78055,
+    "question_text": "A biologist starts an experiment with a colony of bacteria. The number of bacteria triples every hou...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The problem describes exponential growth where the bacteria colony triples every hour. To find the initial number of bacteria, we can work backwards from the number of bacteria after 3 hours. Let 'x' be the initial number of bacteria. After 1 hour, there are 3x bacteria. After 2 hours, there are 3*(3x) = 9x bacteria. After 3 hours, there are 3*(9x) = 27x bacteria. We are given that after 3 hours, there are 8,100 bacteria. So, 27x = 8100. Solving for x, we get x = 8100 / 27 = 300. Therefore, there were 300 bacteria at the start of the experiment. Option A, 300, is indeed the correct answer. Options B, C, and D are incorrect as they do not lead to 8,100 bacteria after 3 hours of tripling. The difficulty level 'Hard' is appropriate for SAT as it requires understanding of exponential growth and working backwards to solve the problem."
+    }
+  },
+  {
+    "question_id": 13531,
+    "question_text": "The table shows the daily water usage rate per acre and the number of acres planted for three differ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the total water usage for Region B in a week, we need to perform the following calculation:\n\n1. **Calculate daily water usage for Region B:**\n   Water Usage Rate (Region B) = 600 gallons per acre per day\n   Acres Planted (Region B) = 150 acres\n   Daily Water Usage (Region B) = Water Usage Rate * Acres Planted = 600 gallons/acre/day * 150 acres = 90,000 gallons per day\n\n2. **Calculate weekly water usage for Region B:**\n   Weekly Water Usage (Region B) = Daily Water Usage * Number of days in a week = 90,000 gallons/day * 7 days = 630,000 gallons\n\nOption C, 630,000, is the correct answer. \n\nLet's examine the other options:\n- Option A (600): This is only the water usage rate per acre per day and does not account for the number of acres or the number of days.\n- Option B (90,000): This is the daily water usage for Region B, but the question asks for the weekly usage.\n- Option D (840,000): This option is incorrect as it doesn't result from a logical calculation based on the given data. \n\nThe question is grammatically correct and well-formatted. The difficulty level 'Hard' is appropriate for the SAT as it requires multiple steps and understanding of rates and units. While not extremely complex, it requires careful reading and calculation, making it suitable for the 'Hard' category on the SAT."
+    }
+  },
+  {
+    "question_id": 600669,
+    "question_text": "If $\\frac{\\Psi}{\\Omega} = 2.5$ and $\\frac{\\Phi}{\\Omega} = 7.5$, what is the value of $n = \\frac{\\Psi...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The difficulty level might be slightly overstated. This question is likely to be perceived as medium difficulty by many SAT test-takers."
+      ],
+      "correct_answer": "A",
+      "explanation": "Given $\frac{\\\\Psi}{\\\\Omega} = 2.5$ and $\frac{\\\\Phi}{\\\\Omega} = 7.5$, we want to find $n = \frac{\\\\Psi}{\\\\Phi}$. We can express $\\\\Psi = 2.5\\\\Omega$ and $\\\\Phi = 7.5\\\\Omega$. Substituting these into the expression for $n$, we get $n = \frac{2.5\\\\Omega}{7.5\\\\Omega} = \frac{2.5}{7.5} = \frac{25}{75} = \frac{1}{3}$. Therefore, option A is the correct answer."
+    }
+  },
+  {
+    "question_id": 703590,
+    "question_text": "The density of gold is approximately 19,300 kilograms per cubic meter. A sample of pure gold is in t...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To find the length of one edge of the cube, we need to use the formula for density: Density = Mass / Volume. First, we need to find the volume of the gold sample. Rearranging the formula, we get Volume = Mass / Density. Plugging in the given values, Volume = 25 kg / 19,300 kg/m³ ≈ 0.001295 m³. Since the sample is a cube, its volume is given by V = s³, where s is the length of an edge. To find s, we take the cube root of the volume: s = ³√V = ³√0.001295 m³ ≈ 0.1090 m. Rounding to the nearest hundredth of a meter, we get 0.11 meters. Therefore, option C is the correct answer. Options A, B, and D are incorrect as they would result in masses significantly different from 25 kg when calculated using the given density. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of density and volume concepts."
+    }
+  },
+  {
+    "question_id": 313002,
+    "question_text": "A gardener is preparing a fertilizer mixture by combining nitrogen and phosphorus in a ratio of 5 pa...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The ratio of nitrogen to phosphorus is given as 5:2.  If the gardener uses 12.5 pounds of nitrogen, we can set up a proportion to find the amount of phosphorus needed to maintain the ratio: \n\n(Nitrogen ratio) / (Phosphorus ratio) = (Nitrogen amount) / (Phosphorus amount)\n\n5 / 2 = 12.5 / x\n\nTo solve for x (phosphorus amount), we can cross-multiply:\n\n5 * x = 2 * 12.5\n5x = 25\nx = 25 / 5\nx = 5\n\nTherefore, the gardener should use 5 pounds of phosphorus. Option A is indeed the correct answer. The other options (B, C, and D) are incorrect because they do not maintain the 5:2 ratio when 12.5 pounds of nitrogen is used. The difficulty level is arguably on the higher end of medium or lower end of hard for SAT, as it requires setting up and solving a proportion, which is a common skill tested on the SAT.  There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 643351,
+    "question_text": "A jewelry maker is crafting pendants using pure gold. She melts gold and pours it into cubic molds. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. To solve it, first calculate the volume of the cubic mold: Volume = (edge length)^3 = (2.00 cm)^3 = 8.00 cubic centimeters. Then, use the density formula: Mass = Density × Volume = 19.3 grams/cm³ × 8.00 cm³ = 154.4 grams. Option D (154.4) is the correct answer. Options A, B, and C are incorrect and represent plausible distractors based on common errors (like using density directly or miscalculating volume). There are no grammatical or formatting issues. While the calculation is straightforward, the question requires understanding of density, volume, and unit conversion, making 'Hard' a potentially justifiable, though perhaps slightly overstated, difficulty level for the SAT. A more precise difficulty might be 'Medium-Hard'."
+    }
+  }
+]

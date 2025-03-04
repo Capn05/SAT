@@ -1,0 +1,422 @@
+[
+  {
+    "id": 3603180,
+    "question_id": 360318,
+    "value": "A",
+    "label": "3",
+    "is_correct": false
+  },
+  {
+    "id": 3603181,
+    "question_id": 360318,
+    "value": "B",
+    "label": "12",
+    "is_correct": false
+  },
+  {
+    "id": 3603182,
+    "question_id": 360318,
+    "value": "C",
+    "label": "48",
+    "is_correct": true
+  },
+  {
+    "id": 3603183,
+    "question_id": 360318,
+    "value": "D",
+    "label": "75",
+    "is_correct": false
+  },
+  {
+    "id": 4030560,
+    "question_id": 403056,
+    "value": "A",
+    "label": "50",
+    "is_correct": false
+  },
+  {
+    "id": 4030561,
+    "question_id": 403056,
+    "value": "B",
+    "label": "150",
+    "is_correct": true
+  },
+  {
+    "id": 4030562,
+    "question_id": 403056,
+    "value": "C",
+    "label": "300",
+    "is_correct": false
+  },
+  {
+    "id": 4030563,
+    "question_id": 403056,
+    "value": "D",
+    "label": "600",
+    "is_correct": false
+  },
+  {
+    "id": 2879790,
+    "question_id": 287979,
+    "value": "A",
+    "label": "The percent of the students at the school whose favorite subject is Science is 60%.",
+    "is_correct": false
+  },
+  {
+    "id": 2879791,
+    "question_id": 287979,
+    "value": "B",
+    "label": "The percent of the students at the school whose favorite subject is Science is less than 60%.",
+    "is_correct": false
+  },
+  {
+    "id": 2879792,
+    "question_id": 287979,
+    "value": "C",
+    "label": "Plausible values of the percent of the students at the school whose favorite subject is Science are between 56% and 64%.",
+    "is_correct": true
+  },
+  {
+    "id": 2879793,
+    "question_id": 287979,
+    "value": "D",
+    "label": "Plausible values of the number of students at the school who reported Science as their favorite subject are between 200 and 220.",
+    "is_correct": false
+  },
+  {
+    "id": 3036490,
+    "question_id": 303649,
+    "value": "A",
+    "label": "It is less than 25 hours.",
+    "is_correct": false
+  },
+  {
+    "id": 3036491,
+    "question_id": 303649,
+    "value": "B",
+    "label": "It is greater than 25 hours.",
+    "is_correct": false
+  },
+  {
+    "id": 3036492,
+    "question_id": 303649,
+    "value": "C",
+    "label": "It is between 21 hours and 29 hours.",
+    "is_correct": true
+  },
+  {
+    "id": 3036493,
+    "question_id": 303649,
+    "value": "D",
+    "label": "It is less than 21 hours or greater than 29 hours.",
+    "is_correct": false
+  },
+  {
+    "id": 323830,
+    "question_id": 32383,
+    "value": "A",
+    "label": "200",
+    "is_correct": false
+  },
+  {
+    "id": 323831,
+    "question_id": 32383,
+    "value": "B",
+    "label": "240",
+    "is_correct": true
+  },
+  {
+    "id": 323832,
+    "question_id": 32383,
+    "value": "C",
+    "label": "280",
+    "is_correct": false
+  },
+  {
+    "id": 323833,
+    "question_id": 32383,
+    "value": "D",
+    "label": "500",
+    "is_correct": false
+  },
+  {
+    "id": 6312660,
+    "question_id": 631266,
+    "value": "A",
+    "label": "Exactly 8% of all light bulbs produced by the factory are defective.",
+    "is_correct": false
+  },
+  {
+    "id": 6312661,
+    "question_id": 631266,
+    "value": "B",
+    "label": "Fewer than 10% of all light bulbs produced by the factory are defective.",
+    "is_correct": false
+  },
+  {
+    "id": 6312662,
+    "question_id": 631266,
+    "value": "C",
+    "label": "Approximately 8% of the light bulbs in this production batch are defective.",
+    "is_correct": true
+  },
+  {
+    "id": 6312663,
+    "question_id": 631266,
+    "value": "D",
+    "label": "Approximately 8% of all light bulbs produced by all factories are defective.",
+    "is_correct": false
+  },
+  {
+    "id": 4775480,
+    "question_id": 477548,
+    "value": "A",
+    "label": "It is likely that all employees commute between 25 and 31 minutes daily.",
+    "is_correct": false
+  },
+  {
+    "id": 4775481,
+    "question_id": 477548,
+    "value": "B",
+    "label": "It is likely that most employees commute exactly 28 minutes daily.",
+    "is_correct": false
+  },
+  {
+    "id": 4775482,
+    "question_id": 477548,
+    "value": "C",
+    "label": "It is not possible that any employee commutes less than 20 minutes daily.",
+    "is_correct": false
+  },
+  {
+    "id": 4775483,
+    "question_id": 477548,
+    "value": "D",
+    "label": "It is plausible that the mean commute time for all employees is between 25 and 31 minutes.",
+    "is_correct": true
+  },
+  {
+    "id": 4742800,
+    "question_id": 474280,
+    "value": "A",
+    "label": "More than 28% of all adults who read books prefer mystery novels.",
+    "is_correct": false
+  },
+  {
+    "id": 4742801,
+    "question_id": 474280,
+    "value": "B",
+    "label": "Between 22% and 28% of all adults who read books prefer mystery novels.",
+    "is_correct": true
+  },
+  {
+    "id": 4742802,
+    "question_id": 474280,
+    "value": "C",
+    "label": "Less than 20% of all adults who read books prefer mystery novels.",
+    "is_correct": false
+  },
+  {
+    "id": 4742803,
+    "question_id": 474280,
+    "value": "D",
+    "label": "More than 30% of all adults who read books prefer mystery novels.",
+    "is_correct": false
+  },
+  {
+    "id": 2283820,
+    "question_id": 228382,
+    "value": "A",
+    "label": "d > 300",
+    "is_correct": false
+  },
+  {
+    "id": 2283821,
+    "question_id": 228382,
+    "value": "B",
+    "label": "125 < d < 275",
+    "is_correct": true
+  },
+  {
+    "id": 2283822,
+    "question_id": 228382,
+    "value": "C",
+    "label": "50 < d < 150",
+    "is_correct": false
+  },
+  {
+    "id": 2283823,
+    "question_id": 228382,
+    "value": "D",
+    "label": "d < 100",
+    "is_correct": false
+  },
+  {
+    "id": 312360,
+    "question_id": 31236,
+    "value": "A",
+    "label": "Exactly 200 light bulbs in the entire batch are defective.",
+    "is_correct": false
+  },
+  {
+    "id": 312361,
+    "question_id": 31236,
+    "value": "B",
+    "label": "Exactly 6 light bulbs in the entire batch are defective.",
+    "is_correct": false
+  },
+  {
+    "id": 312362,
+    "question_id": 31236,
+    "value": "C",
+    "label": "The best estimate for the number of defective light bulbs in the entire batch is 200.",
+    "is_correct": true
+  },
+  {
+    "id": 312363,
+    "question_id": 31236,
+    "value": "D",
+    "label": "The best estimate for the number of defective light bulbs in the entire batch is 6.",
+    "is_correct": false
+  },
+  {
+    "id": 9251930,
+    "question_id": 925193,
+    "value": "A",
+    "label": "12,000",
+    "is_correct": true
+  },
+  {
+    "id": 9251931,
+    "question_id": 925193,
+    "value": "B",
+    "label": "13,000",
+    "is_correct": false
+  },
+  {
+    "id": 9251932,
+    "question_id": 925193,
+    "value": "C",
+    "label": "10,000",
+    "is_correct": false
+  },
+  {
+    "id": 9251933,
+    "question_id": 925193,
+    "value": "D",
+    "label": "15,000",
+    "is_correct": false
+  },
+  {
+    "id": 4142280,
+    "question_id": 414228,
+    "value": "A",
+    "label": "Approximately 4% of the students in the study who eat breakfast regularly and achieve good grades do not actually eat breakfast regularly or achieve good grades.",
+    "is_correct": false
+  },
+  {
+    "id": 4142281,
+    "question_id": 414228,
+    "value": "B",
+    "label": "It is not possible that the percent of all US high school students who eat breakfast regularly and achieve good grades is less than 26%.",
+    "is_correct": true
+  },
+  {
+    "id": 4142282,
+    "question_id": 414228,
+    "value": "C",
+    "label": "The percent of all US high school students who eat breakfast regularly and achieve good grades is 34%.",
+    "is_correct": false
+  },
+  {
+    "id": 4142283,
+    "question_id": 414228,
+    "value": "D",
+    "label": "It is doubtful that the percent of all US high school students who eat breakfast regularly and achieve good grades is 35%.",
+    "is_correct": false
+  },
+  {
+    "id": 2637590,
+    "question_id": 263759,
+    "value": "A",
+    "label": "0.6",
+    "is_correct": true
+  },
+  {
+    "id": 2637591,
+    "question_id": 263759,
+    "value": "B",
+    "label": "0.4",
+    "is_correct": false
+  },
+  {
+    "id": 2637592,
+    "question_id": 263759,
+    "value": "C",
+    "label": "1.6",
+    "is_correct": false
+  },
+  {
+    "id": 2637593,
+    "question_id": 263759,
+    "value": "D",
+    "label": "1.1",
+    "is_correct": false
+  },
+  {
+    "id": 3908230,
+    "question_id": 390823,
+    "value": "A",
+    "label": "Survey P had a smaller number of respondents who completed the entire survey.",
+    "is_correct": false
+  },
+  {
+    "id": 3908231,
+    "question_id": 390823,
+    "value": "B",
+    "label": "Survey P had a lower percent of customers reporting satisfaction.",
+    "is_correct": false
+  },
+  {
+    "id": 3908232,
+    "question_id": 390823,
+    "value": "C",
+    "label": "Survey P had a larger sample size.",
+    "is_correct": false
+  },
+  {
+    "id": 3908233,
+    "question_id": 390823,
+    "value": "D",
+    "label": "Survey P had a smaller sample size.",
+    "is_correct": true
+  },
+  {
+    "id": 3994430,
+    "question_id": 399443,
+    "value": "A",
+    "label": "570",
+    "is_correct": false
+  },
+  {
+    "id": 3994431,
+    "question_id": 399443,
+    "value": "B",
+    "label": "630",
+    "is_correct": false
+  },
+  {
+    "id": 3994432,
+    "question_id": 399443,
+    "value": "C",
+    "label": "870",
+    "is_correct": true
+  },
+  {
+    "id": 3994433,
+    "question_id": 399443,
+    "value": "D",
+    "label": "1170",
+    "is_correct": false
+  }
+]

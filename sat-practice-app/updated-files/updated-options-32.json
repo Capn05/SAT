@@ -1,0 +1,1318 @@
+[
+  {
+    "id": 1828570,
+    "question_id": 182857,
+    "value": "A",
+    "label": "some social media platforms may be more effective than others at fostering feelings of social connection among users.",
+    "is_correct": true
+  },
+  {
+    "id": 1828571,
+    "question_id": 182857,
+    "value": "B",
+    "label": "spending 30 minutes a day on social media is generally beneficial for improving feelings of social connection.",
+    "is_correct": false
+  },
+  {
+    "id": 1828572,
+    "question_id": 182857,
+    "value": "C",
+    "label": "users who already have strong social connections are more likely to choose platform A over platform B.",
+    "is_correct": false
+  },
+  {
+    "id": 1828573,
+    "question_id": 182857,
+    "value": "D",
+    "label": "platforms like platform B are fundamentally flawed in their design and should be redesigned to promote social connection.",
+    "is_correct": false
+  },
+  {
+    "id": 1640650,
+    "question_id": 164065,
+    "value": "A",
+    "label": "overlooks the crucial contributions of governmental and public institutions.",
+    "is_correct": true
+  },
+  {
+    "id": 1640651,
+    "question_id": 164065,
+    "value": "B",
+    "label": "accurately reflects the limited capacity of public institutions to foster true innovation.",
+    "is_correct": false
+  },
+  {
+    "id": 1640652,
+    "question_id": 164065,
+    "value": "C",
+    "label": "is primarily supported by evidence from sectors outside of technology and pharmaceuticals.",
+    "is_correct": false
+  },
+  {
+    "id": 1640653,
+    "question_id": 164065,
+    "value": "D",
+    "label": "underestimates the financial risks that private companies undertake in technological development.",
+    "is_correct": false
+  },
+  {
+    "id": 593350,
+    "question_id": 59335,
+    "value": "A",
+    "label": "handwriting was no longer taught in schools.",
+    "is_correct": false
+  },
+  {
+    "id": 593351,
+    "question_id": 59335,
+    "value": "B",
+    "label": "the demand for handwritten books increased.",
+    "is_correct": false
+  },
+  {
+    "id": 593352,
+    "question_id": 59335,
+    "value": "C",
+    "label": "the cost of books decreased significantly.",
+    "is_correct": true
+  },
+  {
+    "id": 593353,
+    "question_id": 59335,
+    "value": "D",
+    "label": "authors became less important in the book creation process.",
+    "is_correct": false
+  },
+  {
+    "id": 61180,
+    "question_id": 6118,
+    "value": "A",
+    "label": "reading comprehension is primarily determined by prior knowledge and vocabulary, not environmental factors.",
+    "is_correct": false
+  },
+  {
+    "id": 61181,
+    "question_id": 6118,
+    "value": "B",
+    "label": "background noise may negatively impact the ability to understand and process written information.",
+    "is_correct": true
+  },
+  {
+    "id": 61182,
+    "question_id": 6118,
+    "value": "C",
+    "label": "people who are easily distracted should avoid reading altogether.",
+    "is_correct": false
+  },
+  {
+    "id": 61183,
+    "question_id": 6118,
+    "value": "D",
+    "label": "the volume of background noise is the only factor affecting reading comprehension.",
+    "is_correct": false
+  },
+  {
+    "id": 2020840,
+    "question_id": 202084,
+    "value": "A",
+    "label": "Zizzles are able to consciously change their beak size depending on the available food.",
+    "is_correct": false
+  },
+  {
+    "id": 2020841,
+    "question_id": 202084,
+    "value": "B",
+    "label": "environmental changes related to food sources drive shifts in the beak size of Zizzle populations over generations.",
+    "is_correct": true
+  },
+  {
+    "id": 2020842,
+    "question_id": 202084,
+    "value": "C",
+    "label": "Zizzles only eat seeds, and their beak size is irrelevant to other food sources.",
+    "is_correct": false
+  },
+  {
+    "id": 2020843,
+    "question_id": 202084,
+    "value": "D",
+    "label": "the method of measuring Zizzle beak size changes every generation.",
+    "is_correct": false
+  },
+  {
+    "id": 6872870,
+    "question_id": 687287,
+    "value": "A",
+    "label": "fostered rapid innovation and the emergence of diverse online communities.",
+    "is_correct": true
+  },
+  {
+    "id": 6872871,
+    "question_id": 687287,
+    "value": "B",
+    "label": "made it difficult to establish clear standards for online communication and security.",
+    "is_correct": false
+  },
+  {
+    "id": 6872872,
+    "question_id": 687287,
+    "value": "C",
+    "label": "primarily benefited large corporations who were able to quickly monopolize online services.",
+    "is_correct": false
+  },
+  {
+    "id": 6872873,
+    "question_id": 687287,
+    "value": "D",
+    "label": "initially struggled to gain widespread adoption due to the complexity of the technology.",
+    "is_correct": false
+  },
+  {
+    "id": 9222980,
+    "question_id": 922298,
+    "value": "A",
+    "label": "Harappan potters primarily used clay sources from Mohenjo-daro for all their pottery production.",
+    "is_correct": false
+  },
+  {
+    "id": 9222981,
+    "question_id": 922298,
+    "value": "B",
+    "label": "trade between Harappa and Mohenjo-daro likely involved the southward movement of higher quality pottery from Mohenjo-daro to Harappa.",
+    "is_correct": true
+  },
+  {
+    "id": 9222982,
+    "question_id": 922298,
+    "value": "C",
+    "label": "Mohenjo-daro was likely more dependent on trade with Harappa than Harappa was on trade with Mohenjo-daro.",
+    "is_correct": false
+  },
+  {
+    "id": 9222983,
+    "question_id": 922298,
+    "value": "D",
+    "label": "the clay sources near Harappa were completely unsuitable for pottery making, forcing Harappans to import clay from the south.",
+    "is_correct": false
+  },
+  {
+    "id": 5172080,
+    "question_id": 517208,
+    "value": "A",
+    "label": "they are primarily focused on improving the visual attractiveness of the city.",
+    "is_correct": false
+  },
+  {
+    "id": 5172081,
+    "question_id": 517208,
+    "value": "B",
+    "label": "they believe green spaces contribute to the health and happiness of city dwellers.",
+    "is_correct": true
+  },
+  {
+    "id": 5172082,
+    "question_id": 517208,
+    "value": "C",
+    "label": "constructing new buildings is becoming too expensive in densely populated areas.",
+    "is_correct": false
+  },
+  {
+    "id": 5172083,
+    "question_id": 517208,
+    "value": "D",
+    "label": "green spaces are easier to maintain than concrete infrastructure.",
+    "is_correct": false
+  },
+  {
+    "id": 8981950,
+    "question_id": 898195,
+    "value": "A",
+    "label": "relies on favorable wind patterns to assist its transpacific journeys.",
+    "is_correct": false
+  },
+  {
+    "id": 8981951,
+    "question_id": 898195,
+    "value": "B",
+    "label": "has developed highly efficient metabolic processes for long-distance flight.",
+    "is_correct": true
+  },
+  {
+    "id": 8981952,
+    "question_id": 898195,
+    "value": "C",
+    "label": "is the only bird species capable of migrating over such vast distances.",
+    "is_correct": false
+  },
+  {
+    "id": 8981953,
+    "question_id": 898195,
+    "value": "D",
+    "label": "faces significant challenges from predators during its lengthy migrations.",
+    "is_correct": false
+  },
+  {
+    "id": 6072340,
+    "question_id": 607234,
+    "value": "A",
+    "label": "publish her findings in more prestigious scientific journals.",
+    "is_correct": false
+  },
+  {
+    "id": 6072341,
+    "question_id": 607234,
+    "value": "B",
+    "label": "conduct preliminary analyses of her samples immediately after collection.",
+    "is_correct": true
+  },
+  {
+    "id": 6072342,
+    "question_id": 607234,
+    "value": "C",
+    "label": "reduce the overall cost of her research expedition significantly.",
+    "is_correct": false
+  },
+  {
+    "id": 6072343,
+    "question_id": 607234,
+    "value": "D",
+    "label": "train local community members in advanced laboratory techniques.",
+    "is_correct": false
+  },
+  {
+    "id": 3646320,
+    "question_id": 364632,
+    "value": "A",
+    "label": "surprisingly accurate in its depiction of electron behavior.",
+    "is_correct": false
+  },
+  {
+    "id": 3646321,
+    "question_id": 364632,
+    "value": "B",
+    "label": "fundamentally flawed in its understanding of atomic structure.",
+    "is_correct": true
+  },
+  {
+    "id": 3646322,
+    "question_id": 364632,
+    "value": "C",
+    "label": "partially correct but needed refinement in understanding isotopes.",
+    "is_correct": false
+  },
+  {
+    "id": 3646323,
+    "question_id": 364632,
+    "value": "D",
+    "label": "consistent with observations of chemical reactions but not physical phenomena.",
+    "is_correct": false
+  },
+  {
+    "id": 8885070,
+    "question_id": 888507,
+    "value": "A",
+    "label": "classical music is the only genre that can positively affect plant growth.",
+    "is_correct": false
+  },
+  {
+    "id": 8885071,
+    "question_id": 888507,
+    "value": "B",
+    "label": "exposure to any type of music is detrimental to plant growth.",
+    "is_correct": false
+  },
+  {
+    "id": 8885072,
+    "question_id": 888507,
+    "value": "C",
+    "label": "certain types of music may have a beneficial effect on the growth of basil plants.",
+    "is_correct": true
+  },
+  {
+    "id": 8885073,
+    "question_id": 888507,
+    "value": "D",
+    "label": "heavy metal music inhibits the growth of all types of plants.",
+    "is_correct": false
+  },
+  {
+    "id": 9807030,
+    "question_id": 980703,
+    "value": "A",
+    "label": "red light alone.",
+    "is_correct": false
+  },
+  {
+    "id": 9807031,
+    "question_id": 980703,
+    "value": "B",
+    "label": "blue light alone or combined with red light.",
+    "is_correct": true
+  },
+  {
+    "id": 9807032,
+    "question_id": 980703,
+    "value": "C",
+    "label": "increasing red light intensity.",
+    "is_correct": false
+  },
+  {
+    "id": 9807033,
+    "question_id": 980703,
+    "value": "D",
+    "label": "the length of light exposure.",
+    "is_correct": false
+  },
+  {
+    "id": 8008420,
+    "question_id": 800842,
+    "value": "A",
+    "label": "the judicious integration of digital tools may offer pedagogical advantages that counteract concerns about screen time.",
+    "is_correct": true
+  },
+  {
+    "id": 8008421,
+    "question_id": 800842,
+    "value": "B",
+    "label": "digital technology is inherently superior to traditional teaching methods in promoting student learning.",
+    "is_correct": false
+  },
+  {
+    "id": 8008422,
+    "question_id": 800842,
+    "value": "C",
+    "label": "students' preference for digital devices is the primary factor determining the effectiveness of educational technology.",
+    "is_correct": false
+  },
+  {
+    "id": 8008423,
+    "question_id": 800842,
+    "value": "D",
+    "label": "eliminating screen time entirely is the most effective way to improve students' academic performance.",
+    "is_correct": false
+  },
+  {
+    "id": 4979510,
+    "question_id": 497951,
+    "value": "A",
+    "label": "improves focus for individuals accustomed to working in busy environments.",
+    "is_correct": false
+  },
+  {
+    "id": 4979511,
+    "question_id": 497951,
+    "value": "B",
+    "label": "increases the cognitive effort required to maintain the same level of accuracy.",
+    "is_correct": true
+  },
+  {
+    "id": 4979512,
+    "question_id": 497951,
+    "value": "C",
+    "label": "primarily affects individuals who are new to complex mathematical tasks.",
+    "is_correct": false
+  },
+  {
+    "id": 4979513,
+    "question_id": 497951,
+    "value": "D",
+    "label": "leads to a significant decrease in accuracy over extended periods of task completion.",
+    "is_correct": false
+  },
+  {
+    "id": 657750,
+    "question_id": 65775,
+    "value": "A",
+    "label": "the Moai were likely transported using a combination of ropes, manpower, and wooden sled technology.",
+    "is_correct": true
+  },
+  {
+    "id": 657751,
+    "question_id": 65775,
+    "value": "B",
+    "label": "computer simulations are not reliable tools for understanding ancient transportation methods.",
+    "is_correct": false
+  },
+  {
+    "id": 657752,
+    "question_id": 65775,
+    "value": "C",
+    "label": "the initial hypothesis about Moai transport was entirely incorrect and should be disregarded.",
+    "is_correct": false
+  },
+  {
+    "id": 657753,
+    "question_id": 65775,
+    "value": "D",
+    "label": "Easter Island lacked the necessary resources to develop any form of advanced transportation technology.",
+    "is_correct": false
+  },
+  {
+    "id": 3398050,
+    "question_id": 339805,
+    "value": "A",
+    "label": "the radiometric dating method is inherently more accurate than geological stratum dating.",
+    "is_correct": false
+  },
+  {
+    "id": 3398051,
+    "question_id": 339805,
+    "value": "B",
+    "label": "the *Tyrannosaurus Rex* species lived for a shorter period than previously thought.",
+    "is_correct": false
+  },
+  {
+    "id": 3398052,
+    "question_id": 339805,
+    "value": "C",
+    "label": "the geological stratum where the fossils were found is likely younger than initially determined.",
+    "is_correct": false
+  },
+  {
+    "id": 3398053,
+    "question_id": 339805,
+    "value": "D",
+    "label": "the initial age estimate of the fossils was likely inaccurate.",
+    "is_correct": true
+  },
+  {
+    "id": 5388710,
+    "question_id": 538871,
+    "value": "A",
+    "label": "even small amounts of caffeine can noticeably improve cognitive functions like attention and reaction time.",
+    "is_correct": false
+  },
+  {
+    "id": 5388711,
+    "question_id": 538871,
+    "value": "B",
+    "label": "the benefits of caffeine for cognitive performance plateau at a moderate dose, beyond which there may be no additional improvement.",
+    "is_correct": true
+  },
+  {
+    "id": 5388712,
+    "question_id": 538871,
+    "value": "C",
+    "label": "caffeine's impact on cognitive performance is primarily due to its effect on reaction time, with minimal impact on accuracy.",
+    "is_correct": false
+  },
+  {
+    "id": 5388713,
+    "question_id": 538871,
+    "value": "D",
+    "label": "individuals who regularly consume caffeine require higher doses to experience any measurable cognitive enhancement.",
+    "is_correct": false
+  },
+  {
+    "id": 147180,
+    "question_id": 14718,
+    "value": "A",
+    "label": "the complete migration route of monarch butterflies is now fully understood by researchers.",
+    "is_correct": false
+  },
+  {
+    "id": 147181,
+    "question_id": 14718,
+    "value": "B",
+    "label": "monarch butterflies' ability to navigate is primarily based on learned behaviors passed down through generations.",
+    "is_correct": false
+  },
+  {
+    "id": 147182,
+    "question_id": 14718,
+    "value": "C",
+    "label": "monarch butterflies possess an inherent navigational capability that allows them to migrate without prior experience.",
+    "is_correct": true
+  },
+  {
+    "id": 147183,
+    "question_id": 14718,
+    "value": "D",
+    "label": "future research should focus solely on the environmental cues used by monarch butterflies during migration.",
+    "is_correct": false
+  },
+  {
+    "id": 3195420,
+    "question_id": 319542,
+    "value": "A",
+    "label": "exposure to elevated levels of environmental noise is associated with reduced song complexity in song sparrows.",
+    "is_correct": true
+  },
+  {
+    "id": 3195421,
+    "question_id": 319542,
+    "value": "B",
+    "label": "song sparrows in urban environments compensate for noise pollution by increasing the volume of their songs, rather than altering complexity.",
+    "is_correct": false
+  },
+  {
+    "id": 3195422,
+    "question_id": 319542,
+    "value": "C",
+    "label": "the complexity of sparrow songs is primarily determined by genetic factors and is largely unaffected by environmental noise.",
+    "is_correct": false
+  },
+  {
+    "id": 3195423,
+    "question_id": 319542,
+    "value": "D",
+    "label": "a noise level of 55 decibels represents a critical threshold above which sparrow song complexity begins to decline sharply.",
+    "is_correct": false
+  },
+  {
+    "id": 9865150,
+    "question_id": 986515,
+    "value": "A",
+    "label": "the initial reception of a scientific breakthrough can sometimes underestimate its long-term impact.",
+    "is_correct": true
+  },
+  {
+    "id": 9865151,
+    "question_id": 986515,
+    "value": "B",
+    "label": "Fleming’s personal limitations prevented the rapid development of penicillin.",
+    "is_correct": false
+  },
+  {
+    "id": 9865152,
+    "question_id": 986515,
+    "value": "C",
+    "label": "accidental discoveries are inherently difficult to translate into practical applications.",
+    "is_correct": false
+  },
+  {
+    "id": 9865153,
+    "question_id": 986515,
+    "value": "D",
+    "label": "the scientific community is resistant to innovations from individual researchers.",
+    "is_correct": false
+  },
+  {
+    "id": 3544520,
+    "question_id": 354452,
+    "value": "A",
+    "label": "exposure to a wide range of perspectives can mitigate the polarizing effects of social media algorithms.",
+    "is_correct": true
+  },
+  {
+    "id": 3544521,
+    "question_id": 354452,
+    "value": "B",
+    "label": "individuals are inherently resistant to changing their political beliefs, regardless of media consumption.",
+    "is_correct": false
+  },
+  {
+    "id": 3544522,
+    "question_id": 354452,
+    "value": "C",
+    "label": "social media platforms are the sole drivers of political polarization in contemporary society.",
+    "is_correct": false
+  },
+  {
+    "id": 3544523,
+    "question_id": 354452,
+    "value": "D",
+    "label": "consuming news from sources aligning with pre-existing beliefs is beneficial for maintaining political stability.",
+    "is_correct": false
+  },
+  {
+    "id": 7773120,
+    "question_id": 777312,
+    "value": "A",
+    "label": "tree ring width alone may not be a definitive indicator of regional rainfall patterns.",
+    "is_correct": true
+  },
+  {
+    "id": 7773121,
+    "question_id": 777312,
+    "value": "B",
+    "label": "tree rings are generally unreliable for reconstructing past climate conditions.",
+    "is_correct": false
+  },
+  {
+    "id": 7773122,
+    "question_id": 777312,
+    "value": "C",
+    "label": "the period with wider tree rings necessarily experienced unusually high levels of rainfall.",
+    "is_correct": false
+  },
+  {
+    "id": 7773123,
+    "question_id": 777312,
+    "value": "D",
+    "label": "climate scientists should focus on other methods besides tree rings to study past climate.",
+    "is_correct": false
+  },
+  {
+    "id": 8829430,
+    "question_id": 882943,
+    "value": "A",
+    "label": "oral traditions are often dismissed as unreliable sources of historical information compared to written documents.",
+    "is_correct": false
+  },
+  {
+    "id": 8829431,
+    "question_id": 882943,
+    "value": "B",
+    "label": "the fluidity of oral narratives allows for cultural values to be continually re-examined and reinterpreted.",
+    "is_correct": true
+  },
+  {
+    "id": 8829432,
+    "question_id": 882943,
+    "value": "C",
+    "label": "anthropologists prioritize the study of oral traditions over written history to gain a deeper understanding of a culture.",
+    "is_correct": false
+  },
+  {
+    "id": 8829433,
+    "question_id": 882943,
+    "value": "D",
+    "label": "storytellers in oral traditions are primarily concerned with preserving the literal accuracy of historical events.",
+    "is_correct": false
+  },
+  {
+    "id": 8036410,
+    "question_id": 803641,
+    "value": "A",
+    "label": "is as detrimental as early reports led many to believe.",
+    "is_correct": false
+  },
+  {
+    "id": 8036411,
+    "question_id": 803641,
+    "value": "B",
+    "label": "is considerably more complex than initial interpretations indicated.",
+    "is_correct": true
+  },
+  {
+    "id": 8036412,
+    "question_id": 803641,
+    "value": "C",
+    "label": "is primarily determined by the nature of content teenagers engage with on social media platforms.",
+    "is_correct": false
+  },
+  {
+    "id": 8036413,
+    "question_id": 803641,
+    "value": "D",
+    "label": "can be effectively managed through simple restrictions on teenagers’ screen time.",
+    "is_correct": false
+  },
+  {
+    "id": 7054050,
+    "question_id": 705405,
+    "value": "A",
+    "label": "coastal migratory paths pose an intrinsically higher predation risk for songbirds compared to inland paths.",
+    "is_correct": true
+  },
+  {
+    "id": 7054051,
+    "question_id": 705405,
+    "value": "B",
+    "label": "the primary factor driving songbird route selection is the availability of food resources, which are scarcer along coastlines.",
+    "is_correct": false
+  },
+  {
+    "id": 7054052,
+    "question_id": 705405,
+    "value": "C",
+    "label": "weather conditions, rather than predation, are the overriding determinant of successful songbird migration regardless of the route chosen.",
+    "is_correct": false
+  },
+  {
+    "id": 7054053,
+    "question_id": 705405,
+    "value": "D",
+    "label": "songbird populations that rely on coastal migration are inevitably facing a steep decline due to predator pressure.",
+    "is_correct": false
+  },
+  {
+    "id": 3376010,
+    "question_id": 337601,
+    "value": "A",
+    "label": "habitat preservation is no longer sufficient to protect migratory birds.",
+    "is_correct": false
+  },
+  {
+    "id": 3376011,
+    "question_id": 337601,
+    "value": "B",
+    "label": "reducing artificial light at night may be crucial for migratory bird conservation.",
+    "is_correct": true
+  },
+  {
+    "id": 3376012,
+    "question_id": 337601,
+    "value": "C",
+    "label": "migratory birds are primarily threatened by urban development and expansion.",
+    "is_correct": false
+  },
+  {
+    "id": 3376013,
+    "question_id": 337601,
+    "value": "D",
+    "label": "light pollution is a more significant threat to bird populations than climate change.",
+    "is_correct": false
+  },
+  {
+    "id": 3335340,
+    "question_id": 333534,
+    "value": "A",
+    "label": "the altered seasonal availability of their food resources in Europe.",
+    "is_correct": true
+  },
+  {
+    "id": 3335341,
+    "question_id": 333534,
+    "value": "B",
+    "label": "a reduction in the energy expenditure required for their migration journey.",
+    "is_correct": false
+  },
+  {
+    "id": 3335342,
+    "question_id": 333534,
+    "value": "C",
+    "label": "increasing competition from other bird species in their wintering grounds.",
+    "is_correct": false
+  },
+  {
+    "id": 3335343,
+    "question_id": 333534,
+    "value": "D",
+    "label": "a natural fluctuation in their internal biological clocks over time.",
+    "is_correct": false
+  },
+  {
+    "id": 7123530,
+    "question_id": 712353,
+    "value": "A",
+    "label": "produce a defensive spray only when both hydroquinone and hydrogen peroxide are available in the environment.",
+    "is_correct": false
+  },
+  {
+    "id": 7123531,
+    "question_id": 712353,
+    "value": "B",
+    "label": "effectively deter predators with a rapid and potent chemical defense without risking self-harm.",
+    "is_correct": true
+  },
+  {
+    "id": 7123532,
+    "question_id": 712353,
+    "value": "C",
+    "label": "store the irritating chemical spray in its abdomen and release it directly when attacked.",
+    "is_correct": false
+  },
+  {
+    "id": 7123533,
+    "question_id": 712353,
+    "value": "D",
+    "label": "develop immunity to the irritating effects of its own chemical spray over its lifespan.",
+    "is_correct": false
+  },
+  {
+    "id": 3624780,
+    "question_id": 362478,
+    "value": "A",
+    "label": "exhibit superior recall of event dates due to the clarity of the visual structure.",
+    "is_correct": false
+  },
+  {
+    "id": 3624781,
+    "question_id": 362478,
+    "value": "B",
+    "label": "demonstrate a weaker understanding of the causal links between events compared to those with densely packed timelines.",
+    "is_correct": true
+  },
+  {
+    "id": 3624782,
+    "question_id": 362478,
+    "value": "C",
+    "label": "report feeling less overwhelmed by the amount of historical information presented.",
+    "is_correct": false
+  },
+  {
+    "id": 3624783,
+    "question_id": 362478,
+    "value": "D",
+    "label": "process the information at a faster rate, leading to quicker comprehension of the timeline.",
+    "is_correct": false
+  },
+  {
+    "id": 2991930,
+    "question_id": 299193,
+    "value": "A",
+    "label": "lead to the complete elimination of all infectious diseases.",
+    "is_correct": false
+  },
+  {
+    "id": 2991931,
+    "question_id": 299193,
+    "value": "B",
+    "label": "provide effective treatments for a broad range of previously untreatable conditions.",
+    "is_correct": true
+  },
+  {
+    "id": 2991932,
+    "question_id": 299193,
+    "value": "C",
+    "label": "diminish the importance of preventative healthcare measures in favor of curative treatments.",
+    "is_correct": false
+  },
+  {
+    "id": 2991933,
+    "question_id": 299193,
+    "value": "D",
+    "label": "overshadow the contributions of other fields of science to overall human well-being.",
+    "is_correct": false
+  },
+  {
+    "id": 9896630,
+    "question_id": 989663,
+    "value": "A",
+    "label": "instinctual behaviors are more adaptable to environmental changes than are learned behaviors.",
+    "is_correct": false
+  },
+  {
+    "id": 9896631,
+    "question_id": 989663,
+    "value": "B",
+    "label": "the seemingly complex social organization of these colonies was, in fact, the result of numerous simple, genetically determined actions.",
+    "is_correct": true
+  },
+  {
+    "id": 9896632,
+    "question_id": 989663,
+    "value": "C",
+    "label": "individual insects within these colonies displayed no significant variation in their behavior, contributing to the overall efficiency of the colony.",
+    "is_correct": false
+  },
+  {
+    "id": 9896633,
+    "question_id": 989663,
+    "value": "D",
+    "label": "laboratory experiments were less reliable than direct field observations for understanding the true nature of insect social behavior.",
+    "is_correct": false
+  },
+  {
+    "id": 1030360,
+    "question_id": 103036,
+    "value": "A",
+    "label": "the technical specifications of railroad construction in the South were significantly less advanced than those in the Northeast, hindering their economic impact.",
+    "is_correct": false
+  },
+  {
+    "id": 1030361,
+    "question_id": 103036,
+    "value": "B",
+    "label": "economies in the Southern United States had already reached a peak level of development prior to the introduction of railroads, thus limiting the potential for further growth.",
+    "is_correct": false
+  },
+  {
+    "id": 1030362,
+    "question_id": 103036,
+    "value": "C",
+    "label": "the economic models used to predict the impact of railroads failed to consider the diverse range of regional economic structures that existed across the United States.",
+    "is_correct": true
+  },
+  {
+    "id": 1030363,
+    "question_id": 103036,
+    "value": "D",
+    "label": "the economic benefits of railroad expansion were not universally applicable and were instead dependent on the pre-existing economic characteristics of specific regions.",
+    "is_correct": false
+  },
+  {
+    "id": 2925070,
+    "question_id": 292507,
+    "value": "A",
+    "label": "are inadequate for meeting the current demands of commuters.",
+    "is_correct": true
+  },
+  {
+    "id": 2925071,
+    "question_id": 292507,
+    "value": "B",
+    "label": "will likely become obsolete as more people switch to private vehicles.",
+    "is_correct": false
+  },
+  {
+    "id": 2925072,
+    "question_id": 292507,
+    "value": "C",
+    "label": "are already operating at maximum efficiency and cannot be improved.",
+    "is_correct": false
+  },
+  {
+    "id": 2925073,
+    "question_id": 292507,
+    "value": "D",
+    "label": "primarily serve the needs of commuters during off-peak hours.",
+    "is_correct": false
+  },
+  {
+    "id": 3357360,
+    "question_id": 335736,
+    "value": "A",
+    "label": "is most likely deep underground, accessed through an extensive taproot system.",
+    "is_correct": false
+  },
+  {
+    "id": 3357361,
+    "question_id": 335736,
+    "value": "B",
+    "label": "must be atmospheric moisture, absorbed directly through its specialized skin.",
+    "is_correct": true
+  },
+  {
+    "id": 3357362,
+    "question_id": 335736,
+    "value": "C",
+    "label": "is definitely obtained from a hidden underground spring that Rodriguez has yet to discover.",
+    "is_correct": false
+  },
+  {
+    "id": 3357363,
+    "question_id": 335736,
+    "value": "D",
+    "label": "is probably transported from distant, wetter regions via unknown biological mechanisms.",
+    "is_correct": false
+  },
+  {
+    "id": 7567010,
+    "question_id": 756701,
+    "value": "A",
+    "label": "actively seeking out online platforms with stronger privacy protections.",
+    "is_correct": false
+  },
+  {
+    "id": 7567011,
+    "question_id": 756701,
+    "value": "B",
+    "label": "willing to trade some privacy for the benefits of internet access.",
+    "is_correct": true
+  },
+  {
+    "id": 7567012,
+    "question_id": 756701,
+    "value": "C",
+    "label": "largely unaware of the extent to which their online activity is tracked.",
+    "is_correct": false
+  },
+  {
+    "id": 7567013,
+    "question_id": 756701,
+    "value": "D",
+    "label": "becoming increasingly vocal about government regulations on data privacy.",
+    "is_correct": false
+  },
+  {
+    "id": 7975170,
+    "question_id": 797517,
+    "value": "A",
+    "label": "intensifying their emotional engagement through a heightened focus on the characters' expressions and actions.",
+    "is_correct": false
+  },
+  {
+    "id": 7975171,
+    "question_id": 797517,
+    "value": "B",
+    "label": "weakening their emotional connection to the Tramp, fostering a sense of emotional distance.",
+    "is_correct": true
+  },
+  {
+    "id": 7975172,
+    "question_id": 797517,
+    "value": "C",
+    "label": "prompting them to focus on the film's visual aspects rather than its emotional undercurrents.",
+    "is_correct": false
+  },
+  {
+    "id": 7975173,
+    "question_id": 797517,
+    "value": "D",
+    "label": "encouraging a detached, intellectual appreciation of Chaplin’s minimalist artistic choices.",
+    "is_correct": false
+  },
+  {
+    "id": 9347690,
+    "question_id": 934769,
+    "value": "A",
+    "label": "muscle growth is likely influenced by factors beyond just the repair of damaged muscle tissue.",
+    "is_correct": true
+  },
+  {
+    "id": 9347691,
+    "question_id": 934769,
+    "value": "B",
+    "label": "excessive muscle damage is the primary driver of significant long-term muscle growth.",
+    "is_correct": false
+  },
+  {
+    "id": 9347692,
+    "question_id": 934769,
+    "value": "C",
+    "label": "current methods for measuring muscle damage in exercise studies are fundamentally flawed.",
+    "is_correct": false
+  },
+  {
+    "id": 9347693,
+    "question_id": 934769,
+    "value": "D",
+    "label": "resistance training is ultimately a less efficient method of muscle building compared to other forms of exercise.",
+    "is_correct": false
+  },
+  {
+    "id": 4617950,
+    "question_id": 461795,
+    "value": "A",
+    "label": "battery technology must be significantly advanced to provide reliable and affordable large-scale energy storage.",
+    "is_correct": true
+  },
+  {
+    "id": 4617951,
+    "question_id": 461795,
+    "value": "B",
+    "label": "governments should reduce investment in renewable energy sources and focus on nuclear power.",
+    "is_correct": false
+  },
+  {
+    "id": 4617952,
+    "question_id": 461795,
+    "value": "C",
+    "label": "fossil fuel power plants must be kept operational to ensure grid stability during periods of low renewable energy production.",
+    "is_correct": false
+  },
+  {
+    "id": 4617953,
+    "question_id": 461795,
+    "value": "D",
+    "label": "energy consumers should reduce their overall energy consumption to match the fluctuating supply of renewable energy.",
+    "is_correct": false
+  },
+  {
+    "id": 3835340,
+    "question_id": 383534,
+    "value": "A",
+    "label": "utilized different types of ink and pigments for enhanced color variation.",
+    "is_correct": false
+  },
+  {
+    "id": 3835341,
+    "question_id": 383534,
+    "value": "B",
+    "label": "were less fragile and provided a more consistent and cleaner writing process.",
+    "is_correct": true
+  },
+  {
+    "id": 3835342,
+    "question_id": 383534,
+    "value": "C",
+    "label": "could be manufactured on a larger scale and at a lower cost of production.",
+    "is_correct": false
+  },
+  {
+    "id": 3835343,
+    "question_id": 383534,
+    "value": "D",
+    "label": "were adopted for specialized purposes beyond general writing and calligraphy.",
+    "is_correct": false
+  },
+  {
+    "id": 2443120,
+    "question_id": 244312,
+    "value": "A",
+    "label": "uniformly diminishes the adaptability of all bird species to new habitats.",
+    "is_correct": false
+  },
+  {
+    "id": 2443121,
+    "question_id": 244312,
+    "value": "B",
+    "label": "may have multifaceted physiological and behavioral consequences for urban bird populations.",
+    "is_correct": true
+  },
+  {
+    "id": 2443122,
+    "question_id": 244312,
+    "value": "C",
+    "label": "primarily affects the gut microbiome of birds without significantly altering stress hormone levels.",
+    "is_correct": false
+  },
+  {
+    "id": 2443123,
+    "question_id": 244312,
+    "value": "D",
+    "label": "is solely attributable to noise pollution and has minimal impact on foraging behaviors.",
+    "is_correct": false
+  },
+  {
+    "id": 1894530,
+    "question_id": 189453,
+    "value": "A",
+    "label": "patrons are returning books more promptly, leading to a decrease in the total number of overdue books.",
+    "is_correct": false
+  },
+  {
+    "id": 1894531,
+    "question_id": 189453,
+    "value": "B",
+    "label": "a smaller number of books are being kept overdue for longer periods, resulting in higher total fines despite fewer overdue books overall.",
+    "is_correct": true
+  },
+  {
+    "id": 1894532,
+    "question_id": 189453,
+    "value": "C",
+    "label": "the library system's operational costs have significantly decreased due to the reduced handling of overdue books.",
+    "is_correct": false
+  },
+  {
+    "id": 1894533,
+    "question_id": 189453,
+    "value": "D",
+    "label": "patrons are borrowing fewer books to avoid the risk of incurring higher fines, which has also incidentally reduced the number of overdue returns.",
+    "is_correct": false
+  },
+  {
+    "id": 3026930,
+    "question_id": 302693,
+    "value": "A",
+    "label": "placebos have no discernible effect on memory recall performance.",
+    "is_correct": false
+  },
+  {
+    "id": 3026931,
+    "question_id": 302693,
+    "value": "B",
+    "label": "caffeine consumption has no correlation with enhanced memory recall.",
+    "is_correct": false
+  },
+  {
+    "id": 3026932,
+    "question_id": 302693,
+    "value": "C",
+    "label": "consuming 200mg of caffeine may lead to a measurable improvement in memory recall.",
+    "is_correct": true
+  },
+  {
+    "id": 3026933,
+    "question_id": 302693,
+    "value": "D",
+    "label": "memory recall tests are not a reliable method for assessing cognitive enhancement.",
+    "is_correct": false
+  },
+  {
+    "id": 5675720,
+    "question_id": 567572,
+    "value": "A",
+    "label": "the decay rate of potassium-40 is significantly slower than that of carbon-14.",
+    "is_correct": true
+  },
+  {
+    "id": 5675721,
+    "question_id": 567572,
+    "value": "B",
+    "label": "potassium-argon dating is more susceptible to contamination from the surrounding environment.",
+    "is_correct": false
+  },
+  {
+    "id": 5675722,
+    "question_id": 567572,
+    "value": "C",
+    "label": "radiocarbon dating equipment is more readily available and easier to use in the field.",
+    "is_correct": false
+  },
+  {
+    "id": 5675723,
+    "question_id": 567572,
+    "value": "D",
+    "label": "the argon-40 produced is a gas and can diffuse out of the sample over very long periods.",
+    "is_correct": false
+  },
+  {
+    "id": 8828710,
+    "question_id": 882871,
+    "value": "A",
+    "label": "expert and grounded in a deep understanding of smartphone technology compared to celebrities.",
+    "is_correct": false
+  },
+  {
+    "id": 8828711,
+    "question_id": 882871,
+    "value": "B",
+    "label": "trustworthy and reflective of genuine user experience, in contrast to celebrity endorsements which are often perceived as purely transactional.",
+    "is_correct": true
+  },
+  {
+    "id": 8828712,
+    "question_id": 882871,
+    "value": "C",
+    "label": "aspirational and representative of a lifestyle that consumers desire, making them more appealing than celebrity endorsements.",
+    "is_correct": false
+  },
+  {
+    "id": 8828713,
+    "question_id": 882871,
+    "value": "D",
+    "label": "technically detailed and informative about the smartphone's features, while celebrity endorsements focus more on brand image.",
+    "is_correct": false
+  },
+  {
+    "id": 4365950,
+    "question_id": 436595,
+    "value": "A",
+    "label": "*P. oceanica* is incapable of utilizing wavelengths longer than 550 nm for photosynthesis, unlike most terrestrial plants.",
+    "is_correct": false
+  },
+  {
+    "id": 4365951,
+    "question_id": 436595,
+    "value": "B",
+    "label": "the depth at which *P. oceanica* can thrive in the ocean is likely limited by the penetration of blue light.",
+    "is_correct": true
+  },
+  {
+    "id": 4365952,
+    "question_id": 436595,
+    "value": "C",
+    "label": "exposure to red light is detrimental to the photosynthetic machinery of *P. oceanica* and may cause cellular damage.",
+    "is_correct": false
+  },
+  {
+    "id": 4365953,
+    "question_id": 436595,
+    "value": "D",
+    "label": "the photosynthetic rate of *P. oceanica* would continue to increase if exposed to wavelengths shorter than 450 nm.",
+    "is_correct": false
+  },
+  {
+    "id": 5789310,
+    "question_id": 578931,
+    "value": "A",
+    "label": "consumers are generally less willing to repurchase a ticket they have already lost compared to proceeding with a purchase after losing an equivalent amount of cash.",
+    "is_correct": true
+  },
+  {
+    "id": 5789311,
+    "question_id": 578931,
+    "value": "B",
+    "label": "the perceived value of a concert ticket decreases significantly once a consumer has experienced any form of financial loss on the day of the event.",
+    "is_correct": false
+  },
+  {
+    "id": 5789312,
+    "question_id": 578931,
+    "value": "C",
+    "label": "individuals are equally likely to proceed with a purchase regardless of whether they lose the cash intended for the purchase or the purchased item itself.",
+    "is_correct": false
+  },
+  {
+    "id": 5789313,
+    "question_id": 578931,
+    "value": "D",
+    "label": "the price of concert tickets is often considered too expensive, leading a majority of consumers to reconsider purchasing after experiencing a loss.",
+    "is_correct": false
+  }
+]

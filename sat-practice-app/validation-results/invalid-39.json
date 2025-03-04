@@ -1,0 +1,139 @@
+[
+  {
+    "question_id": 228174,
+    "question_text": "The novel \\...",
+    "issues": [
+      "The question is incomplete as the title of the novel is missing. This lack of context makes the question feel unfinished and less clear than it could be. While 'The novel' as a subject is present, a complete sentence would include the novel's title to provide full context.",
+      "While option B ('is') is grammatically correct for the subject 'The novel' in isolation, the missing context could potentially lead to ambiguity in a real test scenario.  Without knowing the full sentence, we are assuming a simple present tense context.",
+      "The phrase 'No image' is unclear and irrelevant to the grammatical question. It should be removed as it adds no value and might be confusing.",
+      "Although options A, C, and D are grammatically incorrect for the singular subject 'The novel' in a simple present tense context, the lack of a complete sentence makes it slightly less definitively clear why they are wrong in a real-world scenario.  In a complete sentence, the incorrectness would be even more obvious."
+    ]
+  },
+  {
+    "question_id": 452356,
+    "question_text": "Attributed to the ancient Greek mathematician Pythagoras, the Pythagorean theorem, relating the side...",
+    "issues": [
+      "Option A ('is') is also a grammatically correct and logically sound option, making the question ambiguous. While option D ('has been') might be slightly preferable due to the emphasis on duration implied by 'for millennia,' option A is not clearly incorrect. This makes the question potentially flawed as it may not have a single, definitively correct answer, or the distinction is too subtle for an 'easy' level question."
+    ]
+  },
+  {
+    "question_id": 570229,
+    "question_text": "With its enigmatic smile and soft sfumato technique, the Mona Lisa is one of the most recognizable p...",
+    "issues": [
+      "The question, as presented, is a sentence fragment. The second part of the sentence, 'However, many people are unaware that painted by Leonardo da Vinci in the early 16th century,' is grammatically incomplete and lacks a subject and verb to form a complete clause.",
+      "While option A ('it was') does grammatically complete the sentence and is the intended correct answer, the original sentence structure is flawed and relies on the test-taker to recognize and correct a pre-existing grammatical error rather than simply identifying the correct word choice within a grammatically sound sentence.",
+      "Option B ('she has been') is grammatically incorrect in this context. 'She' could refer to the Mona Lisa, but 'has been painted' implies a present perfect passive voice, suggesting an ongoing or recently completed action, which is not appropriate for describing a historical painting. 'Was painted' (simple past passive) is more suitable.",
+      "Option C ('they were') is incorrect because 'they' is plural and does not agree with the singular subject 'Mona Lisa'.",
+      "Option D ('one is') is grammatically awkward and less precise than 'it was'. 'One' is vague and doesn't clearly refer back to 'Mona Lisa' as effectively as 'it'. Additionally, 'is painted' (present simple passive) is less appropriate than 'was painted' (simple past passive) for describing a historical event."
+    ]
+  },
+  {
+    "question_id": 837888,
+    "question_text": "Recent studies have shown a correlation between increased screen time and decreased attention spans ...",
+    "issues": [
+      "The option marked as correct (A. its) is not the most contextually appropriate answer. Option B (their) is a stronger and more natural choice in this context.",
+      "While option A (its) can be grammatically interpreted, it is less clear and direct in its reference compared to option B (their).",
+      "Option D (one's) is grammatically correct but less specific and less directly related to the subject 'adolescents' which is central to the passage."
+    ]
+  },
+  {
+    "question_id": 995566,
+    "question_text": "A pivotal moment in the history of flight, _________ revolutionized air travel and military strategy...",
+    "issues": [
+      "Option D is also a grammatically correct and semantically valid answer, making the question ambiguous as it implies only one correct answer. Both options A and D effectively complete the sentence and are grammatically sound.",
+      "Option B is grammatically awkward due to the placement of dashes, disrupting the natural flow of the sentence and making the subject less clear.",
+      "Option C creates a sentence fragment and is grammatically incorrect in this context. It does not form a complete and coherent sentence when inserted into the blank."
+    ]
+  },
+  {
+    "question_id": 624017,
+    "question_text": "In the early 20th century, advancements in physics led to a groundbreaking understanding of the atom...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 38621,
+    "question_text": "The average distance from Earth to Mars, a measurement that fluctuates based on the planets' ellipti...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 983751,
+    "question_text": "Occurring in various marine organisms, from bacteria to fish, ______________________________________...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 941617,
+    "question_text": "In the late nineteenth century, the groundbreaking work of Marie Curie and her husband Pierre, parti...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 205393,
+    "question_text": "The effects of social media on teenage mental health, a subject of ongoing debate in popular media, ...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 578058,
+    "question_text": "The intricate patterns of migration observed in monarch butterflies, a phenomenon that involves gene...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 365095,
+    "question_text": "Developed to withstand extreme temperatures and pressures, specialized deep-sea probes are deployed ...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 756720,
+    "question_text": "In the realm of modern physics, the concept of spacetime, initially proposed by Hermann Minkowski in...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 184739,
+    "question_text": "Biologist Rachel Carson, _ _ to alert the public to the dangers of pesticide use, meticulously detai...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 163302,
+    "question_text": "By the time the Wright brothers successfully flew their airplane at Kitty Hawk in 1903, they _______...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 886382,
+    "question_text": "In 1903, years after Marie Curie's initial discoveries, the Nobel Committee _______________ her pion...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 613821,
+    "question_text": "In recent decades, rising sea surface temperatures have led to increased coral bleaching events. Cor...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  },
+  {
+    "question_id": 305072,
+    "question_text": "The ancient library of Alexandria, once a beacon of knowledge and scholarship, _____ thousands of sc...",
+    "issues": [
+      "Error during validation: Gemini API error: {\"error\":{\"code\":429,\"message\":\"Resource has been exhausted (e.g. check quota).\",\"status\":\"RESOURCE_EXHAUSTED\"}}"
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "question_id": 230213,
+    "question_text": "Which of the following is an equation of the graph shown in the xy-plane above?  ![](_page_6_Figure_...",
+    "issues": [
+      "The question refers to a graph in the xy-plane, but the image of the graph is missing. This makes the question impossible to answer as intended.",
+      "Without the image, it is impossible to definitively verify if option A is the correct equation for the missing graph.",
+      "While the question structure and options are valid for a linear equation problem, the missing visual component is a critical flaw."
+    ]
+  },
+  {
+    "question_id": 398998,
+    "question_text": "The graph shows the possible combinations of the number of cups of coffee and tea that could be purc...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. The correct answer should be option C (9)."
+    ]
+  },
+  {
+    "question_id": 281839,
+    "question_text": "A landscaping company is designing a rectangular garden bed and considering four types of mulch to u...",
+    "issues": [
+      "The question is poorly written and confusing due to the contradictory definition of variables 'p' and 'c'. The question states that 'p' and 'c' represent the 'number of bags' of pine and cedar mulch respectively, but the equation `6.00(p/2) + 7.50(c/1.5) + 108 = T` is structured as if 'p' and 'c' represent the *volume* of pine and cedar mulch in cubic feet. If 'p' were the number of bags of pine mulch, the cost of pine mulch should be represented as `6.00p`, not `6.00(p/2)`. Similarly for cedar mulch. This inconsistency makes the question ambiguous and difficult to understand.",
+      "While option A is likely the intended correct answer based on the structure of the equation and the process of elimination, the question's flawed wording undermines its validity as a clear and unambiguous SAT question.",
+      "The difficulty level is likely miscategorized as 'Easy'. The ambiguity and potential misinterpretation of variables make it more of a medium difficulty question, as students need to infer the intended meaning despite the confusing wording."
+    ]
+  },
+  {
+    "question_id": 74957,
+    "question_text": "The table below shows the number of hours Leo worked each day and the amount he earned. Assuming Leo...",
+    "issues": [
+      "The question refers to a table that is not provided. Without the table showing the number of hours Leo worked and the amount he earned, the question is unsolvable.",
+      "It is impossible to verify if option A is actually correct or if other options are incorrect without the data from the missing table."
+    ]
+  },
+  {
+    "question_id": 545294,
+    "question_text": "The graph of a line is shown below.  ![](1__page_24_Figure_4.jpeg)  What is the x-intercept of the l...",
+    "issues": [
+      "The question refers to a graph that is not provided. The image file '1__page_24_Figure_4.jpeg' is missing, making the question unsolvable as it is presented.",
+      "Without the graph, it is impossible to verify if option A is indeed the correct x-intercept or if other options are incorrect based on the visual representation of the line."
+    ]
+  },
+  {
+    "question_id": 763027,
+    "question_text": "At a local bakery, each muffin costs $3 and each loaf of bread costs $7.  A customer buys $m$ muffin...",
+    "issues": [
+      "The question is based on an inconsistent premise. If a customer buys 4 muffins at $3 each, the cost is $12. To reach a total cost of $44, the cost of loaves of bread must be $44 - $12 = $32. Since each loaf of bread costs $7, the number of loaves would be $32 / $7, which is not an integer. Therefore, there is no integer solution for the number of loaves of bread when the customer buys 4 muffins and the total cost is $44.",
+      "The option marked as correct (C. 4) is incorrect. If the customer bought 4 muffins and 4 loaves of bread, the total cost would be (4 * $3) + (4 * $7) = $12 + $28 = $40, not $44.",
+      "All options are technically incorrect because none of them lead to a total cost of $44 when combined with 4 muffins and integer loaves of bread."
+    ]
+  },
+  {
+    "question_id": 775900,
+    "question_text": "A bakery sells custom cakes. The price C, in dollars, of a custom cake is a linear function of the n...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. Option B is the correct answer."
+    ]
+  },
+  {
+    "question_id": 909965,
+    "question_text": "Line $k$ in the xy-plane has an x-intercept at $(3, 0)$ and a y-intercept at $(0, -5)$. What is the ...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. The correct answer is option D."
+    ]
+  },
+  {
+    "question_id": 538751,
+    "question_text": "The table shows three values of $x$ and their corresponding values of $y$, where $k$ is a constant, ...",
+    "issues": [
+      "The question refers to a table that is not provided. Without the table, the question cannot be solved.",
+      "The question is incomplete due to the missing table, making it unclear and unsolvable as presented."
+    ]
+  },
+  {
+    "question_id": 19271,
+    "question_text": " ![](_page_4_Figure_1.jpeg) The graph above shows the possible numbers of bagels and muffins that so...",
+    "issues": [
+      "The question is invalid because the image referenced in the question text is missing. The question refers to 'The graph above' but no graph is provided. Without the graph, it is impossible to determine the relationship between the number of bagels and muffins and solve for the price of a bagel.",
+      "Due to the missing image, it is impossible to verify if option B is actually the correct answer based on the intended graph.",
+      "Without the graph, we cannot definitively say that other options are incorrect. Different graphs could lead to different correct answers.",
+      "There is a formatting issue as the image is missing, which is crucial for solving the problem."
+    ]
+  },
+  {
+    "question_id": 883539,
+    "question_text": "The table below shows the coordinates of three points on a line in the xy-plane, where a and b are c...",
+    "issues": [
+      "The option marked as correct (A) is not actually correct. The correct value of a + b is 6, which is not among the options provided.",
+      "None of the provided options (A, B, C, D) are correct for the given question.",
+      "The question states that option A is the correct answer, but based on calculations, it is incorrect."
+    ]
+  },
+  {
+    "question_id": 923757,
+    "question_text": "A coffee shop wants to create a new blend of coffee by mixing two types of beans. They have Colombia...",
+    "issues": [
+      "The option marked as correct (A) is incorrect. The correct answer should be option B."
+    ]
+  },
+  {
+    "question_id": 169564,
+    "question_text": "The table shows two values of x and their corresponding values of y. In the xy-plane, the graph of t...",
+    "issues": [
+      "The question is incomplete as it refers to a table of values for x and y, but the table itself is missing from the question text. Without the table, it is impossible to determine the linear relationship between x and y and solve for the value of 'a'.",
+      "Due to the missing table, it is impossible to verify if option A is actually the correct answer based on the provided information alone."
+    ]
+  }
+]

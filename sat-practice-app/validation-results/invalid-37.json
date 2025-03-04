@@ -1,0 +1,31 @@
+[
+  {
+    "question_id": 557211,
+    "question_text": "Botanist Barbara McClintock revolutionized the field of genetics with her discovery of mobile geneti...",
+    "issues": [
+      "The question is poorly written and does not clearly require a transition word to connect two contrasting or related ideas. The sentence structure suggests that 'mobile genetic elements' is meant to clarify or elaborate on 'revolutionized the field of genetics,' not to be connected by a typical transition word.",
+      "Option B ('Nevertheless'), which is marked as correct, is definitively incorrect. 'Nevertheless' indicates contrast or contradiction, and there is no contrast implied between Barbara McClintock revolutionizing genetics and her discovery of mobile genetic elements. Her discovery is the *reason* for the revolution, not something contrasting with it.",
+      "Options A ('Consequently'), C ('Subsequently'), and D ('Similarly') are also not strong fits in the context of a typical transition question. While 'Consequently' could be *loosely* interpreted if one forces a causal reading (her discovery *led to* her revolutionizing the field), it's still not a natural or clear fit for a standard transition question. 'Subsequently' implies a temporal sequence which is not the primary relationship here, and 'Similarly' implies comparison which is also not relevant.",
+      "The question seems to misunderstand the function of transition words or misapplies them in this sentence structure. It's more of a sentence completion question requiring a word that clarifies a preceding phrase rather than a true transition between clauses or sentences."
+    ]
+  },
+  {
+    "question_id": 791073,
+    "question_text": "In the early 20th century, some physicists believed that light required a medium, called \\...",
+    "issues": [
+      "The question is incomplete and lacks crucial context. The sentence abruptly ends after 'called \\\\\\\\\\', making it impossible to determine the intended relationship between ideas and thus the correct transition word.",
+      "Without the complete sentence, it is impossible to definitively confirm if option A ('however') is the correct transition or if other options could also be plausible depending on the missing context.",
+      "Due to the incompleteness, it's difficult to definitively say if options B, C, and D are clearly incorrect.  Their appropriateness depends entirely on the missing part of the sentence.",
+      "There is a formatting issue: the sentence is cut off mid-phrase after 'called \\\\\\\\\\'. This makes the question ungrammatical and nonsensical in its current form.",
+      "A"
+    ]
+  },
+  {
+    "question_id": 599621,
+    "question_text": "The advent of social media has drastically altered communication patterns. Initially, it was seen as...",
+    "issues": [
+      "The option marked as correct (B. subsequently) is not the most appropriate transition word in this context. While 'subsequently' is grammatically acceptable, 'however' (Option A) more accurately reflects the intended contrast between the initial perception of social media and its current pervasive influence. 'Subsequently' implies a chronological sequence, whereas the sentence structure suggests a shift in understanding or a contrast in scope.",
+      "Option A (however) is a stronger and more semantically accurate answer choice than Option B (subsequently)."
+    ]
+  }
+]

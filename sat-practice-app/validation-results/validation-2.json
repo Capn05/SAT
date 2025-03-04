@@ -1,0 +1,658 @@
+[
+  {
+    "question_id": 91761,
+    "question_text": "Which of the following inequalities is equivalent to the inequality below?  $$10x + 5y < 20$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The subcategory 'Nonlinear Equations and Systems' is not appropriate for this question, which involves a linear inequality. A more suitable subcategory would be 'Linear Equations and Inequalities' or 'Linear Inequalities'."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for an equivalent inequality to 10x + 5y < 20. To find an equivalent inequality, we can divide all terms of the given inequality by a positive number. Dividing by 5, we get: (10x + 5y) / 5 < 20 / 5, which simplifies to 2x + y < 4. Option B, 2x + y < 4, is therefore the correct equivalent inequality. Options A, C, and D are not equivalent to the original inequality. Option A has the inequality sign reversed. Option C has a subtraction sign instead of addition between 2x and y. Option D has the coefficients of x and y swapped. The difficulty level 'Easy' is appropriate as it requires a single straightforward simplification step. While the question itself is valid and well-designed, the subcategory 'Nonlinear Equations and Systems' is inaccurate. This question falls under the domain of linear inequalities, not nonlinear equations or systems."
+    }
+  },
+  {
+    "question_id": 150226,
+    "question_text": "The graph of a system of a linear equation and a nonlinear equation is shown. What is the solution (...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The phrase '(മു ഗു)' in the question text is nonsensical and likely a character encoding error. It should be replaced with the word 'solution' or 'solutions'.",
+        "The question asks for 'the solution', implying a unique solution. However, systems of linear and nonlinear equations can have multiple solutions. If the graph shows multiple intersection points, the question is ambiguous unless it is implied to select one of the intersection points from the options.",
+        "Without seeing the actual graph (placeholder_image_url_1.png), it's impossible to definitively confirm if option C (3, 2) is the *only* correct solution and if options A, B, and D are definitively incorrect. It is assumed based on the 'Easy' difficulty and single correct answer format of SAT that the graph is designed to have (3, 2) as the visually clear and intended solution among the provided options, and other options are not visually represented as intersection points on the graph.",
+        "If the graph actually shows other intersection points corresponding to options A, B, or D, then the question is flawed as it implies a single solution while multiple options might be valid."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question is mostly clear in asking for the solution to a system of equations represented graphically. However, the presence of '(മു ഗു)' is a significant issue and needs correction. Assuming this is a typo and should be 'solution', and assuming the graph is designed such that (3, 2) is the intended and visually clear intersection point, then option C is indeed the correct answer. Options A, B, and D are incorrect under this assumption. The 'Easy' difficulty level is appropriate for reading intersection points from a graph. However, the question's validity heavily relies on the content of the image at 'placeholder_image_url_1.png'. If the graph does not uniquely support option C as the solution among the given options, or if it shows multiple intersection points corresponding to other options, the question becomes invalid. For this analysis, we are proceeding under the assumption that the graph is designed to make option C the uniquely correct answer among the given choices, and the '(മു ഗു)' is a typographical error."
+    }
+  },
+  {
+    "question_id": 269059,
+    "question_text": "Which of the following is a solution to the equation $4z^2 - 20 = z^2 + 7$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for a solution to the equation $4z^2 - 20 = z^2 + 7$. To verify the correct answer, we substitute each option into the equation. For option B, $z=3$: Left side: $4(3)^2 - 20 = 4(9) - 20 = 36 - 20 = 16$. Right side: $(3)^2 + 7 = 9 + 7 = 16$. Since the left side equals the right side, $z=3$ is a solution. For option A, $z=2$: Left side: $4(2)^2 - 20 = -4$. Right side: $(2)^2 + 7 = 11$. Not equal. For option C, $z=4$: Left side: $4(4)^2 - 20 = 44$. Right side: $(4)^2 + 7 = 23$. Not equal. For option D, $z=5$: Left side: $4(5)^2 - 20 = 80$. Right side: $(5)^2 + 7 = 32$. Not equal. Therefore, option B is the only correct answer and all other options are incorrect. The question is grammatically correct, formatted well, and the difficulty level 'Easy' is appropriate for this type of single-variable quadratic equation on the SAT."
+    }
+  },
+  {
+    "question_id": 663374,
+    "question_text": "The given equation relates the positive numbers $p$, $m$, and $n$.  $$3p + 5m = n$$  Which equation ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks to express $p$ in terms of $m$ and $n$ from the given linear equation $3p + 5m = n$. To solve for $p$, we need to isolate $p$ on one side of the equation. Subtracting $5m$ from both sides gives $3p = n - 5m$. Then, dividing both sides by $3$ gives $p = \frac{n - 5m}{3}$. Option B matches this derived expression for $p$. Options A, C, and D are incorrect as they do not result from correctly isolating $p$ in the given equation. The difficulty level 'Easy' is appropriate because it involves a straightforward single-step algebraic manipulation, which is typically expected at the beginning of the SAT math section."
+    }
+  },
+  {
+    "question_id": 47248,
+    "question_text": "If (x, y) is a solution to the system of equations above, which of the following is a possible value...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for a possible value of x for the solution to the given system of equations. To solve the system, we can substitute the second equation (y = x^2) into the first equation (x + y = 6). This gives us x + x^2 = 6, which rearranges to the quadratic equation x^2 + x - 6 = 0. Factoring this quadratic equation, we get (x + 3)(x - 2) = 0. The solutions for x are x = -3 and x = 2. Among the given options, only option D (2) is a possible value of x. Options A (-1), B (0), and C (1) are not solutions for x. Therefore, option D is the correct answer, and the other options are clearly incorrect. The question is grammatically correct and well-formatted. The difficulty level is appropriately classified as 'Easy' for the SAT, as it involves solving a simple quadratic equation by factoring."
+    }
+  },
+  {
+    "question_id": 405771,
+    "question_text": "The density $D$ of an object is given by the formula $D = \frac{m}{V}$, where $m$ is the mass of the ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. It provides the formula for density and asks to rearrange it to solve for volume. Option A, $V = \\\\frac{m}{D}$, is indeed the correct algebraic manipulation of $D = \\\\frac{m}{V}$. Multiplying both sides of the density formula by $V$ gives $DV = m$, and then dividing both sides by $D$ gives $V = \\\\frac{m}{D}$. Options B, C, and D are all clearly incorrect as they do not result from a valid rearrangement of the given formula. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate for this question, as it involves a straightforward algebraic manipulation of a basic formula."
+    }
+  },
+  {
+    "question_id": 851846,
+    "question_text": "What is one possible solution to the given equation?  $$|2x + 3| = 7$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for one possible solution to the absolute value equation |2x + 3| = 7. Solving the equation, we consider two cases: 2x + 3 = 7 and 2x + 3 = -7. For 2x + 3 = 7, we get 2x = 4, so x = 2. For 2x + 3 = -7, we get 2x = -10, so x = -5. Therefore, the possible solutions are x = 2 and x = -5. Option A, which is 2, is a correct solution. Options B (5), C (-2), and D (4) are not solutions to the equation. The difficulty level 'Easy' is appropriate for this question as it involves a basic absolute value equation."
+    }
+  },
+  {
+    "question_id": 952032,
+    "question_text": "$$\\sqrt{x + 5} = 4$$Which of the following values of $x$ satisfies the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 232. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and mathematically sound. Option A, x=11, is the correct solution because substituting x=11..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 327379,
+    "question_text": "The area of a rectangle can be calculated using the formula $$A = LW$$, where $$A$$ is the area, $$L...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks to rearrange the formula for the area of a rectangle ($$A = LW$$) to solve for the width ($$W$$) in terms of area ($$A$$) and length ($$L$$). Option B, $$W = \frac{A}{L}$$, is indeed the correct rearrangement, obtained by dividing both sides of the original equation by $$L$$. Options A, C, and D are clearly incorrect as they do not represent the correct algebraic manipulation of the area formula. There are no grammatical or formatting issues. The difficulty level 'Easy' is appropriate as this question tests a fundamental algebraic skill of rearranging a simple formula."
+    }
+  },
+  {
+    "question_id": 655039,
+    "question_text": "The given equation relates the positive numbers p, q, and r.  $$p = 75qr$$ Which equation correctly ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to express 'q' in terms of 'p' and 'r' given the equation p = 75qr. To solve for q, we divide both sides of the equation by 75r, resulting in q = p / (75r). Option A, q = $\frac{p}{75r}$, is the correct answer. Options B, C, and D are incorrect as they do not represent the correct algebraic manipulation to isolate q. Option B (q = 75pr) would lead to p = 75 * (75pr) * r = 75^2 pr^2, which is not equivalent to the original equation. Option C (q = 75 - $\frac{p}{r}$) and Option D (q = $\frac{75r}{p}$) also do not result from correctly solving the original equation for q. The difficulty level 'Easy' is appropriate as it involves a single, straightforward algebraic step."
+    }
+  },
+  {
+    "question_id": 299092,
+    "question_text": "If $(x + 3)^2 = 9$, which of the following is a possible value of $x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and mathematically sound. To solve $(x + 3)^2 = 9$, we take the square root of both sides to get $x + 3 = \\\\pm 3$. This gives two possible cases: $x + 3 = 3$ which leads to $x = 0$, and $x + 3 = -3$ which leads to $x = -6$. Among the given options, only option C, which is 0, is a possible value of $x$. Options A (3), B (-3), and D (6) are not solutions to the equation. Therefore, option C is the correct answer, and the other options are clearly incorrect. The difficulty level 'Easy' is appropriate for this question type on the SAT."
+    }
+  },
+  {
+    "question_id": 368961,
+    "question_text": "What value of $x$ satisfies the equation above?  $$\\sqrt{x+5} = 7$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 170. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks for the value of x that satisfies the equation \\\\\\\\\\(\\\\\\\\\\sqrt{x+5} = 7\\\\\\\\\\). To ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 448636,
+    "question_text": "x2 = (15)(15) What is the positive solution to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and mathematically sound. The equation given is x² = (15)(15), which simplifies to x² = 225. To find the positive solution for x, we take the square root of 225, which is 15. Option A, 15, is indeed the correct positive solution. Option B, -15, is the negative solution and thus incorrect for this question. Option C, 225, is the value of x², not x. Option D, 30, is not a solution to the equation as 30² = 900, not 225.  The question is grammatically correct, well-formatted, and the difficulty level is appropriately classified as 'Easy' for an SAT math question."
+    }
+  },
+  {
+    "question_id": 691082,
+    "question_text": "### 2x - 15 = y + z  The given equation relates the variables $x$, $y$, and $z$. Which equation corr...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to express $x$ in terms of $y$ and $z$ from the given linear equation $2x - 15 = y + z$. To solve for $x$, we first add 15 to both sides of the equation: $2x = y + z + 15$. Then, we divide both sides by 2 to isolate $x$: $x = \frac{y + z + 15}{2}$. Option A, $x = \frac{y + z + 15}{2}$, correctly expresses $x$ in terms of $y$ and $z$. Options B, C, and D are incorrect as they do not result from correctly isolating $x$ in the given equation. The difficulty level 'Easy' is appropriate for this question as it involves a straightforward algebraic manipulation of a linear equation, suitable for the SAT Math section. While the category 'Advanced Math' and subcategory 'Nonlinear Equations and Systems' are miscategorizations (as this is a linear equation), it does not affect the validity of the question itself in terms of its clarity, correctness, and difficulty for the intended audience."
+    }
+  },
+  {
+    "question_id": 667047,
+    "question_text": "A system of equations consists of a quadratic equation representing a circle and a linear equation. ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 544. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks for the number of solutions to a system of equations consisting of a circle and a ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 313617,
+    "question_text": "If $(x, y)$ is a solution to the system of equations above, which of the following could be the valu...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for a possible value of x for the solution to the given system of equations. To solve the system, we set the two expressions for y equal to each other:  $2x - 1 = x^2 - 1$. Simplifying this equation, we get $x^2 - 2x = 0$, which factors to $x(x - 2) = 0$. This gives two possible values for x: $x = 0$ and $x = 2$. Among the given options, only $x = 2$ is a possible value. Let's check if x=2 is indeed a solution. If $x=2$, then from the first equation $y = 2(2) - 1 = 3$. From the second equation $y = (2)^2 - 1 = 4 - 1 = 3$. Since we get the same y value for both equations, $(2, 3)$ is a solution. Option C, which is 2, is indeed the correct answer. Let's check the other options. For option A, $x = -2$, $y = 2(-2) - 1 = -5$ and $y = (-2)^2 - 1 = 3$. The y values are not the same. For option B, $x = 1$, $y = 2(1) - 1 = 1$ and $y = (1)^2 - 1 = 0$. The y values are not the same. For option D, $x = 3$, $y = 2(3) - 1 = 5$ and $y = (3)^2 - 1 = 8$. The y values are not the same. Therefore, only option C is a possible value of x from the given options, and the marked answer is correct. The difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 115741,
+    "question_text": "$$|\\% - 2| = \\%^2 - 4$$ \\n\\n$$\\mathsf{What \\text{\\\\textquotedblleft}values\\text{\\\\textquotedblright{...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text contains unnecessary and distracting formatting issues, such as excessive use of LaTeX commands for quotation marks and the use of \\\\\\\\\\mathsf which is not needed. Specifically, the phrases \\\\\\\\text{\\\\\\\\textquotedblleft}values\\\\\\\\text{\\\\\\\\textquotedblright{}}, \\\\\\\\text{\\\\\\\\textless{}\\\\\\\\%\\textgreater{}}, and \\\\\\\\text{\\\\\\\\textquotedblleft}satisfy\\\\\\\\text{\\\\\\\\textquotedblleft{}}\\\\\\\\\\mathsf{the}\\\\\\\\\\mathsf{equation\\\\\\\\text{\\\\\\\\textquotedblright{}}} are poorly formatted and reduce clarity.",
+        "While mathematically the use of '%' as a variable is acceptable, it is unconventional and might be confusing or distracting for students in a standardized test setting. Using 'x' or another standard variable would improve clarity.",
+        "The question, despite the formatting issues, is mathematically solvable and has a correct answer among the options. However, the presentation detracts from the question's quality.",
+        "A"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 80412,
+    "question_text": "What is the product of the solutions to the given equation? $$(x+3)(x-5)(x+1) = 0$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the product of the solutions to the given equation. The equation is already factored, so the solutions are easily found by setting each factor to zero: x+3=0 => x=-3, x-5=0 => x=5, and x+1=0 => x=-1. The product of these solutions is (-3) * (5) * (-1) = 15. Option A, which is 15, is correctly marked as the correct answer. Options B, C, and D are incorrect as they do not represent the product of the solutions. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it requires basic understanding of solving factored polynomial equations and calculating the product of roots, which is a standard topic for the SAT."
+    }
+  },
+  {
+    "question_id": 61035,
+    "question_text": "The graph of a nonlinear equation is shown below. What is the solution to the equation when $y = 4$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and asks for the solution to the equation when y=4, given the graph of a nonlinear equation. To find the solution, we need to locate y=4 on the y-axis of the graph and find the corresponding x-value(s) on the graph. Assuming the image '_page_5_Figure_1.jpeg' shows a graph where at y=4, the graph intersects at x=2, then option D is indeed the correct answer.  If we assume the graph is designed such that when y=4, the x-value is clearly 2, and for x = -1, 0, 1, the y values are not 4, then options A, B, and C are clearly incorrect.  There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires understanding of graphs and function evaluation, which is a standard topic for the SAT Math section, particularly in the Advanced Math category.  Without seeing the actual image, we are assuming it is a standard question type where the graph is designed to have a clear solution corresponding to the correct option."
+    }
+  },
+  {
+    "question_id": 209846,
+    "question_text": "If the ordered pair (x, y) satisfies the system of equations above, what is one possible value of x?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a possible value of x for the given system of equations. To solve the system, we set the two expressions for y equal to each other: $x^2 - x - 2 = 2 - x$. Simplifying this equation, we get $x^2 = 4$. Taking the square root of both sides gives $x = ±2$. Therefore, possible values for x are 2 and -2. Option A, -2, is one of the possible values of x and is correctly marked as the correct answer. Options B, C, and D are not solutions to the system. The difficulty level is appropriate as it requires solving a quadratic equation, which is a standard skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 250245,
+    "question_text": "In physics, the force $F$ in Newtons required to accelerate an object is related to its acceleration...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "The subcategory 'Nonlinear Equations and Systems' is inaccurate. This question involves a linear equation and basic algebraic manipulation. A more appropriate subcategory would be 'Linear Equations' or 'Algebraic Manipulation'."
+      ],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. The given equation is $F = \frac{3}{5}a$. To express acceleration $a$ in terms of force $F$, we need to solve for $a$. Multiplying both sides of the equation by $\frac{5}{3}$, we get: $\frac{5}{3}F = \frac{5}{3} \times \frac{3}{5}a$, which simplifies to $a = \frac{5}{3}F$. Option A, $a = \frac{5}{3}F$, is the correct answer. Options B, C, and D are incorrect as they do not represent the correct algebraic manipulation of the given equation. The difficulty level 'Medium' is appropriate for an SAT question of this type, which tests basic algebraic skills. However, the subcategory is mislabeled."
+    }
+  },
+  {
+    "question_id": 907944,
+    "question_text": "In the xy-plane, what is a possible y-coordinate of a point of intersection of the graphs of $y = (x...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option B is also a possible y-coordinate of a point of intersection, making options A and B both correct. In a standard SAT multiple-choice question, there should ideally be only one correct answer among the options provided. While the question asks for 'a possible y-coordinate', implying there could be more than one, in the context of single-best-answer multiple choice tests like the SAT, this question is flawed because it has more than one correct option presented, but only option A is marked as correct."
+      ],
+      "correct_answer": "A",
+      "explanation": "To find the y-coordinates of the intersection points, we set the two equations equal to each other: $(x + 2)^2 = x + 4$. Expanding and simplifying, we get $x^2 + 4x + 4 = x + 4$, which simplifies to $x^2 + 3x = 0$. Factoring out x, we have $x(x + 3) = 0$. Thus, the x-coordinates of the intersection points are $x = 0$ and $x = -3$. Substituting these x-values into $y = x + 4$, we get: For $x = 0$, $y = 0 + 4 = 4$. For $x = -3$, $y = -3 + 4 = 1$. The possible y-coordinates are 4 and 1. Options A (4) and B (1) are both valid y-coordinates. However, only option A is marked as correct, which is inconsistent as option B is also a valid answer. Options C (2) and D (0) are not valid y-coordinates."
+    }
+  },
+  {
+    "question_id": 385529,
+    "question_text": "Which of the following is a solution to the equation $(x + 1)(x + 4) = (x - 1)(x - 2) + 18$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a solution to the given equation. To verify the correctness of option A (x=2), we substitute x=2 into the equation: \nLeft side: (2 + 1)(2 + 4) = (3)(6) = 18\nRight side: (2 - 1)(2 - 2) + 18 = (1)(0) + 18 = 18\nSince both sides are equal, x=2 is indeed a solution. \nTo check other options:\nFor option B (x=0): (0 + 1)(0 + 4) = 4, (0 - 1)(0 - 2) + 18 = 2 + 18 = 20. 4 ≠ 20.\nFor option C (x=-2): (-2 + 1)(-2 + 4) = -2, (-2 - 1)(-2 - 2) + 18 = 12 + 18 = 30. -2 ≠ 30.\nFor option D (x=4): (4 + 1)(4 + 4) = 40, (4 - 1)(4 - 2) + 18 = 6 + 18 = 24. 40 ≠ 24.\nTherefore, only option A is correct, and the other options are incorrect. The question is grammatically correct, and the difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 350903,
+    "question_text": "In the equation above, b is a constant and b > 0. If the equation $x^2 - bx + 18 = 0$ has two intege...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a possible value of b such that the quadratic equation $x^2 - bx + 18 = 0$ has two integer solutions, given that b is a positive constant. Let the two integer solutions be $x_1$ and $x_2$. According to Vieta's formulas, for a quadratic equation of the form $x^2 - bx + 18 = 0$, the sum of the roots is $x_1 + x_2 = b$ and the product of the roots is $x_1 \\\\cdot x_2 = 18$. We need to find pairs of integers whose product is 18. The pairs of positive integer factors of 18 are (1, 18), (2, 9), and (3, 6). The corresponding sums are:  1 + 18 = 19  2 + 9 = 11  3 + 6 = 9  Thus, possible positive integer values for b are 19, 11, and 9.  Checking the options:  A. 9 - This is a possible value of b, corresponding to integer solutions 3 and 6 (since 3*6=18 and 3+6=9). If b=9, the equation is $x^2 - 9x + 18 = 0$, which factors to $(x-3)(x-6) = 0$, giving integer solutions x=3 and x=6.  B. 10 - If b=10, we need to find two integers that multiply to 18 and add up to 10. Let's check factors of 18: 1 and 18 (sum=19), 2 and 9 (sum=11), 3 and 6 (sum=9). No integer pair sums to 10.  C. 12 - If b=12, we need to find two integers that multiply to 18 and add up to 12.  Factors of 18: 1 and 18 (sum=19), 2 and 9 (sum=11), 3 and 6 (sum=9). No integer pair sums to 12.  D. 20 - If b=20, we need to find two integers that multiply to 18 and add up to 20. Factors of 18: 1 and 18 (sum=19), 2 and 9 (sum=11), 3 and 6 (sum=9). No integer pair sums to 20.  Option A, 9, is the only possible value of b among the given options. The question is clear, the marked answer is correct, and the other options are incorrect. The difficulty level is appropriate for a medium-difficulty SAT question."
+    }
+  },
+  {
+    "question_id": 659251,
+    "question_text": "In electrical circuits, the voltage $V$ across a resistor is related to the current $I$ flowing thro...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 753. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and makes sense. It correctly states Ohm's Law ($V=IR$) and asks to express resistance $R$ ..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 219351,
+    "question_text": "The power $P$ (in watts) dissipated by a resistor in an electrical circuit is given by the formula $...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to rearrange the given formula $P = \frac{V^2}{R}$ to solve for $R$ in terms of $P$ and $V$. Option A, $R = \frac{V^2}{P}$, is the correct rearrangement of the formula. To derive this, we can multiply both sides of the original equation by $R$ to get $PR = V^2$, and then divide both sides by $P$ to isolate $R$, resulting in $R = \frac{V^2}{P}$. Options B, C, and D are incorrect rearrangements of the formula. Option B is $R = \frac{P}{V^2}$, Option C is $R = \frac{V}{P^2}$, and Option D is $R = \\\\sqrt{\frac{P}{V}}$, none of which are algebraically equivalent to solving the original equation for $R$. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it requires a straightforward algebraic manipulation which is expected at the SAT level, particularly within the 'Advanced Math' category."
+    }
+  },
+  {
+    "question_id": 440080,
+    "question_text": "If one solution to the system of equations above is (x, y), what is one possible value of x?  $$ x +...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for a possible value of x for the given system of equations: x + y = 13 and xy = 40. To solve this, we can substitute y = 13 - x into the second equation, resulting in x(13 - x) = 40. This simplifies to the quadratic equation x^2 - 13x + 40 = 0. Factoring this equation gives (x - 8)(x - 5) = 0. Thus, the possible values for x are 8 and 5. Option A, 8, is one of the possible values of x and is correctly marked as the correct answer. Options B, C, and D are not possible values of x for this system of equations. The difficulty level is appropriately classified as Medium, as it involves solving a system of nonlinear equations, which is a standard topic for the SAT."
+    }
+  },
+  {
+    "question_id": 448022,
+    "question_text": "A solution to the given system of equations is (x,y). Which of the following is a possible value of ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question is ambiguous because the variable 'y' is introduced in the question stem and options, but the given system of equations only involves 'χ' and 'ω' (or 'x' and 'ω' if we assume 'χ' is a typo for 'x'). There is no equation or constraint provided for 'y', making 'y' effectively a free variable. Consequently, multiple values for 'xy' are possible, and the question does not have a single definitive answer without making unstated assumptions about the relationship between 'x' and 'y'.",
+        "The use of the Greek letter 'χ' instead of 'x' is unusual and could be a typo or cause confusion for students. Similarly, 'ω' is used without context; while it could be intended as a parameter, it is not explicitly defined, which adds to the ambiguity.",
+        "If we assume 'χ' is 'x' and solve the system with x=3 in the first equation, we get 3<sup>ω</sup> = 9*3 = 27, which implies 3<sup>ω</sup> = 3<sup>3</sup>, so ω = 3.  With ω=3, the first equation becomes x<sup>3</sup> = 9x, which simplifies to x<sup>3</sup> - 9x = 0 or x(x<sup>2</sup> - 9) = 0. This gives solutions x = 0, x = 3, and x = -3. However, the second equation explicitly states x = 3, so x=3 is the intended solution for 'x'.",
+        "Since 'y' is unconstrained, options A, B, C, and D could all be possible values of 'xy' depending on the value of 'y'. For example, if y=0, xy=0 (Option A); if y=3, xy=9 (Option B); if y=6, xy=18 (Option C); if y=9, xy=27 (Option D).  Therefore, marking only option B as correct is misleading unless there is an unstated assumption that 'y' should be related to 'x' in a specific way (e.g., y=x or y=3), which is not justified by the question text.",
+        "The question is not clearly written due to the ambiguity surrounding 'y' and the lack of context for 'ω'. It does not adhere to the standard of clarity expected in SAT questions."
+      ],
+      "correct_answer": "B",
+      "explanation": "The question is flawed due to the introduction of an unconstrained variable 'y'.  From the given system, we find x=3.  The question asks for a possible value of 'xy'. Since 'y' can be any value, multiple options are possible for 'xy'. Option B (9) is marked as correct, which would be true if y=3. However, there is no justification within the problem to assume y=3. Options A, C, and D are also possible values of 'xy' for different values of 'y'.  Therefore, the question is ambiguous and does not have a single definitively correct answer among the options without making unjustified assumptions about 'y'. The question is not clearly written and is not suitable for an SAT question in its current form."
+    }
+  },
+  {
+    "question_id": 924660,
+    "question_text": "If $$m$$ is a solution of the equation $$x^2 - 7x - 18 = 0$$ and $$m < 0$$, what is the value of $$m...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the negative solution of the quadratic equation $$x^2 - 7x - 18 = 0$$. We can solve this equation by factoring: $$(x-9)(x+2) = 0$$. The solutions are $$x = 9$$ and $$x = -2$$. Since we are given that $$m < 0$$, we must choose the negative solution, which is $$m = -2$$. Option A, -2, is indeed the correct answer. Option B, 9, is a solution but not less than 0. Options C, 2, and D, -9, are not solutions to the equation. Therefore, options B, C, and D are clearly incorrect. There are no grammatical or formatting issues. The difficulty level is appropriately classified as Medium, as it involves solving a basic quadratic equation and selecting a solution based on a simple condition, which is a standard skill tested on the SAT."
+    }
+  },
+  {
+    "question_id": 613790,
+    "question_text": "The cost $C$, in dollars, to convert euros to dollars at a foreign exchange kiosk is given by the fo...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "The question is clearly written and makes sense. The given formula is $C = 0.05(E - 10)$. To express $E$ in terms of $C$, we need to solve for $E$. \n\nStep 1: Divide both sides by 0.05:\n$C / 0.05 = E - 10$\n\nStep 2: Simplify $1 / 0.05$. Since $0.05 = 5/100 = 1/20$, then $1 / 0.05 = 20$. So, we have:\n$20C = E - 10$\n\nStep 3: Add 10 to both sides to isolate $E$:\n$20C + 10 = E$\n\nTherefore, $E = 20C + 10$, which corresponds to option D. Options A, B, and C are incorrect as they do not result from the correct algebraic manipulation of the given formula. The difficulty level is appropriately marked as medium, as it requires a straightforward algebraic manipulation of a linear equation, a skill expected at the SAT level. While the subcategory is listed as 'Nonlinear Equations and Systems', this question involves a linear equation. However, the question is still valid for the SAT math section, testing algebraic manipulation skills."
+    }
+  },
+  {
+    "question_id": 793534,
+    "question_text": "The power $P$ dissipated by a resistor in a circuit is given by the formula $P = \frac{V^2}{R}$, wher...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks to rearrange the given formula $P = \\\\frac{V^2}{R}$ to solve for $R$ in terms of $P$ and $V$. To isolate $R$, we can multiply both sides of the equation by $R$ to get $PR = V^2$, and then divide both sides by $P$ to get $R = \\\\frac{V^2}{P}$. Option A, $R = \\\\frac{V^2}{P}$, is the correct answer and matches our derivation. Options B, C, and D are incorrect as they do not represent the correct algebraic manipulation of the given formula. The difficulty level 'Medium' is appropriate for this question as it requires a basic understanding of algebraic manipulation, which is expected in the SAT Math section, particularly in the 'Advanced Math' category."
+    }
+  },
+  {
+    "question_id": 697190,
+    "question_text": "If (x, y) is a solution of the system of equations above and x > 0, what is the value of xy ?  $$y =...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and makes sense. To solve the system of equations, we can substitute the first equation, y = x^2, into the second equation:  x^2 - 5 = x - 3.  Rearranging the terms, we get a quadratic equation: x^2 - x - 2 = 0.  Factoring this equation, we get (x - 2)(x + 1) = 0.  This gives us two possible values for x: x = 2 or x = -1.  Since the question states that x > 0, we take x = 2.  Substituting x = 2 into the first equation, y = x^2, we get y = 2^2 = 4.  Therefore, xy = 2 * 4 = 8.  Option C, which is 8, is indeed the correct answer. Options A (2), B (4), and D (16) are incorrect. There are no grammatical or formatting issues. The difficulty level 'Medium' is appropriate as it requires solving a system of nonlinear equations, which is a standard topic for the SAT Advanced Math section."
+    }
+  },
+  {
+    "question_id": 238136,
+    "question_text": "$$\\frac{\\text{miles} \\cdot \\text{123456789}}{3x^2 - 7x + 2 = 0}$$\\n\\n2.19\\n\\n$$\\mathsf{What are the ...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The question text includes irrelevant and confusing information: the fraction '$\\\\\\\\frac{\\\\\\\\text{miles} \\\\\\\\cdot \\\\\\\\text{123456789}}{3x^2 - 7x + 2 = 0}$' and the number '2.19' are extraneous and do not contribute to the mathematical problem. The presence of 'miles' is particularly nonsensical in this context.",
+        "There is a typographical error in the word 'given', which is misspelled as 'giv\\\\\\\\\\eun'.",
+        "While option A is mathematically correct for the quadratic equation $3x^2 - 7x + 2 = 0$, the overall question presentation is poor due to the extraneous and confusing elements.",
+        "A"
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 325957,
+    "question_text": "$$\\begin{array}{c} \\text{lD:} \\ 9 \\text{m} 2 \\text{cd} \\text{p} \\text{81f} \\\\ \\hline y = \\text{x}^2 ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the intersection points of the graphs of the equations y = x^2 + 5 and y = 9. To find the intersection points, we set the two expressions for y equal to each other: x^2 + 5 = 9. Solving for x, we get x^2 = 4, which gives x = 2 or x = -2. Since y = 9 for both equations at the intersection points, the coordinates of the intersection points are (2, 9) and (-2, 9). Option A, (2, 9) and (-2, 9), is the correct answer. Options B, C, and D are incorrect because they do not satisfy both equations simultaneously. The difficulty level is appropriate for a medium-difficulty SAT math question."
+    }
+  },
+  {
+    "question_id": 121353,
+    "question_text": "2.21  $7x^2 = 112$  What is the positive solution to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the positive solution to the equation $7x^2 = 112$. To solve for x, we first divide both sides of the equation by 7: $x^2 = 112 / 7 = 16$. Then, we take the square root of both sides: $x = \\\\pm \\\\sqrt{16} = \\\\pm 4$. The question asks for the positive solution, which is $x = 4$. Option A, 4, is indeed the correct positive solution and is marked as correct. Option B, -4, is the negative solution. Options C, 16, and D, -16, are incorrect because if we substitute $x=16$ or $x=-16$ into the original equation, we get $7(16)^2 = 7(256) = 1792$, which is not equal to 112. Therefore, options B, C, and D are clearly incorrect. The question is grammatically sound and formatted correctly. The difficulty level is appropriately classified as Medium for the SAT, as it involves basic algebraic manipulation and solving a quadratic equation."
+    }
+  },
+  {
+    "question_id": 875317,
+    "question_text": "In the equation above, $m$ and $n$ are positive constants. How many times does the graph of the equa...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "To find the number of intersections, we set the two equations equal to each other: $mx^2 + n = -2n$. This simplifies to $mx^2 = -3n$, and then $x^2 = -3n/m$. Since $m$ and $n$ are positive constants, $-3n/m$ is a negative number.  The equation $x^2 = \text{negative number}$ has no real solutions for $x$. Therefore, the graphs of the two equations do not intersect in the xy-plane, meaning there are zero intersections. Option A is the correct answer."
+    }
+  },
+  {
+    "question_id": 319380,
+    "question_text": "What is the positive solution to the equation $3x^2 - x - 10 = 0$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the positive solution to the quadratic equation $3x^2 - x - 10 = 0$. Solving this equation using the quadratic formula or factoring yields two solutions: $x = 2$ and $x = -\frac{5}{3}$. The positive solution is $x = 2$, which corresponds to option C. Options A, B, and D are incorrect because substituting these values into the equation does not result in zero. The difficulty level of 'Medium' is appropriate for an SAT math question involving solving a quadratic equation."
+    }
+  },
+  {
+    "question_id": 156499,
+    "question_text": "The equation $$m = \\\\frac{7\\\\sqrt{n}}{p}$$ relates the distinct positive numbers m, n, and p. Which ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 191. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks to express p in terms of m and n given the equation $$m = \\\\\\\\frac{7\\\\\\\\\\sqrt{n}}{..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 431251,
+    "question_text": "In the $xy$-plane, a line with equation $3y = -9$ intersects a parabola at exactly one point. If the...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (B) is mathematically incorrect. For option B (m=4), the line and parabola do not intersect at exactly one point. In fact, they do not intersect at all. The mathematically correct value for m that results in exactly one intersection point is $4\\\\sqrt{2}$, which is not among the options. Therefore, the question is flawed due to incorrect answer options."
+      ],
+      "correct_answer": "B",
+      "explanation": "The line equation is $y = -3$. Substituting this into the parabola equation $y = x^2 - mx + 5$, we get $-3 = x^2 - mx + 5$, which simplifies to $x^2 - mx + 8 = 0$. For the line and parabola to intersect at exactly one point, this quadratic equation must have exactly one solution, which means its discriminant must be zero. The discriminant is $\\\\Delta = (-m)^2 - 4(1)(8) = m^2 - 32$. Setting $\\\\Delta = 0$, we get $m^2 - 32 = 0$, so $m^2 = 32$, and $m = \\\\sqrt{32} = 4\\\\sqrt{2}$ (since $m$ is positive). The value $m = 4\\\\sqrt{2}$ is not among the options A, B, C, or D. Option B, marked as correct, is $m=4$. For $m=4$, the discriminant is $\\\\Delta = 4^2 - 32 = 16 - 32 = -16 < 0$, which means there are no real solutions for $x$, and thus no intersection points, not one. Therefore, option B is incorrect, and none of the provided options are correct for the given condition."
+    }
+  },
+  {
+    "question_id": 184506,
+    "question_text": "Which ordered pair is a solution to the system of equations below?  $x + y = 2$ $x - y = y^2 - 4$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 185. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks for the solution to a system of two equations. Option A, (3 - \\\\\\\\\\sqrt{7}, -1 + \\..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 716276,
+    "question_text": "$$\frac{9}{x^2 - 14x + 49} = 1$$   If x is a solution to the given equation, which of the following i...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option B (-3) is also a correct answer, but it is not marked as correct. The question asks for a 'possible value', and there are two possible values among the options (3 and -3).  This makes the question ambiguous or incorrectly keyed, as it implies only one correct answer when there are multiple valid options present."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 954642,
+    "question_text": "The voltage $V$ across a circuit component with resistance $R$ and current $I$ is given by Ohm's Law...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. Ohm's Law is given as V = IR. With R = 7 ohms, we have V = 7I. To rewrite this in the form I = kV + c, we solve for I: I = V/7. Comparing I = V/7 with I = kV + c, we find k = 1/7 and c = 0. Option A, which is $\frac{1}{7}$, is the correct value for k. Options B, C, and D are incorrect as they do not result in the correct rearrangement of Ohm's Law. There are no grammatical or formatting issues. The difficulty level is arguable, it might be considered Medium to Hard depending on the student's background, but 'Hard' is not entirely inappropriate for SAT Advanced Math."
+    }
+  },
+  {
+    "question_id": 43707,
+    "question_text": "Which of the following is a solution to the equation $$3x^2 - 5 = x + 1$$?...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Option B is also a correct solution to the equation, meaning there are two correct answers instead of one. This violates the standard format of single correct answer multiple-choice questions on the SAT."
+      ],
+      "correct_answer": "C",
+      "explanation": "The question asks for a solution to the equation $$3x^2 - 5 = x + 1$$. To find the solutions, we first rewrite the equation in the standard quadratic form $$ax^2 + bx + c = 0$$: $$3x^2 - x - 6 = 0$$. We can use the quadratic formula to find the solutions: $$x = \frac{-b \\\\pm \\\\sqrt{b^2 - 4ac}}{2a}$$ In this case, $$a = 3$$, $$b = -1$$, and $$c = -6$$. Plugging these values into the quadratic formula, we get: $$x = \frac{-(-1) \\\\pm \\\\sqrt{(-1)^2 - 4(3)(-6)}}{2(3)} = \frac{1 \\\\pm \\\\sqrt{1 + 72}}{6} = \frac{1 \\\\pm \\\\sqrt{73}}{6}$$ The two solutions are $$x = \frac{1 + \\\\sqrt{73}}{6}$$ and $$x = \frac{1 - \\\\sqrt{73}}{6}$$. Option C, \\\\$\\\\frac{1 + \\\\sqrt{73}}{6}\\\\$, is indeed one of the solutions and is marked as correct. However, Option B, \\\\$\\\\frac{1 - \\\\sqrt{73}}{6}\\\\$, is also a correct solution. Option A, 2, is incorrect because $$3(2)^2 - 5 = 12 - 5 = 7$$ and $$2 + 1 = 3$$, and $$7 \neq 3$$. Option D, \\\\$\\\\frac{1 + \\\\sqrt{70}}{6}\\\\$, is incorrect because it is not one of the solutions derived from the quadratic formula. The question is clearly written and the difficulty level is appropriate for 'Hard' in the context of SAT math, but the presence of two correct options (B and C) is a significant issue for a multiple-choice question."
+    }
+  },
+  {
+    "question_id": 831444,
+    "question_text": "If $5x^2 - 25x + 15 = 0$, what is the value of $x^2 - 5x$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To find the value of $x^2 - 5x$, we start with the given equation $5x^2 - 25x + 15 = 0$. We can simplify this equation by dividing every term by 5, which gives us $x^2 - 5x + 3 = 0$. To find the value of $x^2 - 5x$, we can subtract 3 from both sides of the simplified equation: $x^2 - 5x = -3$. Therefore, the correct answer is -3, which corresponds to option A. Options B, C, and D are incorrect because they do not equal -3. The difficulty level is arguably appropriate for 'Hard' on the SAT, as it requires algebraic manipulation and recognizing the relationship between the given equation and the expression to be evaluated, although some might consider it medium difficulty."
+    }
+  },
+  {
+    "question_id": 249515,
+    "question_text": "In the equation $3x^2 + 6x = k$, where k is a constant, if the equation has no real solutions, which...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "To find the values of k for which the equation $3x^2 + 6x = k$ has no real solutions, we first rewrite the equation in the standard quadratic form $ax^2 + bx + c = 0$: $3x^2 + 6x - k = 0$. For a quadratic equation to have no real solutions, its discriminant ($D = b^2 - 4ac$) must be negative. In this equation, $a = 3$, $b = 6$, and $c = -k$.The discriminant is $D = 6^2 - 4(3)(-k) = 36 + 12k$.For no real solutions, we need $D < 0$:$36 + 12k < 0$$12k < -36$$k < -3$Now we check the options:A. -5:  Since -5 < -3, this value of k will result in no real solutions.B. -2:  Since -2 is not less than -3, this value of k will result in real solutions.C. 0:   Since 0 is not less than -3, this value of k will result in real solutions.D. 2:   Since 2 is not less than -3, this value of k will result in real solutions.Therefore, option A (-5) is the only value of k among the options that results in no real solutions. The option marked as correct (A) is indeed the correct answer, and all other options are clearly incorrect. The question is clearly written, grammatically correct, and the difficulty level is appropriate for a 'Hard' SAT math question."
+    }
+  },
+  {
+    "question_id": 783344,
+    "question_text": "What is the solution set of the equation $\\sqrt{3x+7}+5=x+4$?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and mathematically sound. To solve the equation $\\\\sqrt{3x+7}+5=x+4$, we first isolate the square root term: $\\\\sqrt{3x+7} = x-1$. Squaring both sides gives $3x+7 = (x-1)^2 = x^2 - 2x + 1$. Rearranging terms to form a quadratic equation, we get $x^2 - 5x - 6 = 0$. Factoring this quadratic equation, we have $(x-6)(x+1) = 0$, which gives potential solutions $x=6$ and $x=-1$. We must check for extraneous solutions by substituting these values back into the original equation. For $x=6$: $\\\\sqrt{3(6)+7}+5 = \\\\sqrt{25}+5 = 5+5 = 10$, and $x+4 = 6+4 = 10$. So $x=6$ is a valid solution. For $x=-1$: $\\\\sqrt{3(-1)+7}+5 = \\\\sqrt{4}+5 = 2+5 = 7$, and $x+4 = -1+4 = 3$. Since $7 \neq 3$, $x=-1$ is an extraneous solution. Therefore, the only solution is $x=6$, and the solution set is {6}, which corresponds to option B. Options A, C, and D are incorrect because they include $x=-1$ or $x=0$ which are not valid solutions to the given equation. The difficulty level 'Hard' is appropriate as it requires multiple steps including solving a quadratic equation and checking for extraneous solutions."
+    }
+  },
+  {
+    "question_id": 800211,
+    "question_text": "The graph of the function f, defined by $f(x) = -(x-3)^2 + 6$, is shown in the xy-plane above. If th...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. We are given two functions, f(x) = -(x-3)^2 + 6 and g(x) = x + 1, and asked to find a value 'a' such that f(a) = g(a). To solve this, we set the two functions equal to each other: -(a-3)^2 + 6 = a + 1. Simplifying this equation leads to a quadratic equation: a^2 - 5a + 4 = 0. Factoring the quadratic equation gives (a-4)(a-1) = 0. The solutions are a = 1 and a = 4. Option A, which is 1, is one of the possible values of 'a' and is marked as correct. Options B, C, and D are not solutions to f(a) = g(a). Therefore, option A is indeed the correct answer, and the other options are incorrect. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate as it requires algebraic manipulation and solving a quadratic equation, which is considered an advanced math topic for the SAT."
+    }
+  },
+  {
+    "question_id": 578591,
+    "question_text": "In the given equation, $4x^2 + 12x + k = 0$, where k is a constant, the equation has exactly one sol...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of k for which the quadratic equation $4x^2 + 12x + k = 0$ has exactly one solution. For a quadratic equation to have exactly one solution, its discriminant must be equal to zero. The discriminant of a quadratic equation $ax^2 + bx + c = 0$ is given by $D = b^2 - 4ac$. In this case, $a = 4$, $b = 12$, and $c = k$. Setting the discriminant to zero, we have $12^2 - 4(4)(k) = 0$, which simplifies to $144 - 16k = 0$. Solving for k, we get $16k = 144$, so $k = \frac{144}{16} = 9$. Therefore, option A is the correct answer. Options B, C, and D lead to discriminants that are not zero, resulting in either two distinct solutions or no real solutions, thus they are incorrect. The difficulty level 'Hard' is appropriate as it requires understanding of the discriminant and its relation to the number of solutions of a quadratic equation."
+    }
+  },
+  {
+    "question_id": 385020,
+    "question_text": "How many distinct real solutions does the given equation have?  $$|x^2 - 4| = x$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and asks for the number of distinct real solutions to the equation $|x^2 - 4| = x$. To solve this, we consider two cases based on the definition of absolute value.Case 1: $x^2 - 4 \\\\ge 0$. In this case, $|x^2 - 4| = x^2 - 4$. The equation becomes $x^2 - 4 = x$, or $x^2 - x - 4 = 0$. Using the quadratic formula, $x = \frac{-(-1) \\\\pm \\\\sqrt{(-1)^2 - 4(1)(-4)}}{2(1)} = \frac{1 \\\\pm \\\\sqrt{17}}{2}$. We need to check if these solutions satisfy $x^2 - 4 \\\\ge 0$ and $x \\\\ge 0$ (since $|x^2-4|=x$ implies $x \\\\ge 0$). The condition $x^2 - 4 \\\\ge 0$ is equivalent to $x \\\\ge 2$ or $x \\\\le -2$. Combining with $x \\\\ge 0$, we need $x \\\\ge 2$.For $x = \frac{1 + \\\\sqrt{17}}{2} \\\\approx \frac{1 + 4.12}{2} = 2.56 \\\\ge 2$, this solution is valid.For $x = \frac{1 - \\\\sqrt{17}}{2} \\\\approx \frac{1 - 4.12}{2} = -1.56$, this solution is not $\\\\ge 2$.Case 2: $x^2 - 4 < 0$. In this case, $|x^2 - 4| = -(x^2 - 4) = 4 - x^2$. The equation becomes $4 - x^2 = x$, or $x^2 + x - 4 = 0$. Using the quadratic formula, $x = \frac{-1 \\\\pm \\\\sqrt{1^2 - 4(1)(-4)}}{2(1)} = \frac{-1 \\\\pm \\\\sqrt{17}}{2}$. We need to check if these solutions satisfy $x^2 - 4 < 0$ and $x \\\\ge 0$. The condition $x^2 - 4 < 0$ is equivalent to $-2 < x < 2$. Combining with $x \\\\ge 0$, we need $0 \\\\le x < 2$.For $x = \frac{-1 + \\\\sqrt{17}}{2} \\\\approx \frac{-1 + 4.12}{2} = 1.56$, this solution satisfies $0 \\\\le x < 2$, so it is valid.For $x = \frac{-1 - \\\\sqrt{17}}{2} \\\\approx \frac{-1 - 4.12}{2} = -2.56$, this solution is not $\\\\ge 0$.We have found two distinct real solutions: $x = \frac{1 + \\\\sqrt{17}}{2}$ and $x = \frac{-1 + \\\\sqrt{17}}{2}$. Therefore, there are exactly two distinct real solutions. Option B is indeed the correct answer. All other options are incorrect. The difficulty level 'Hard' is appropriate as it requires understanding of absolute value and solving quadratic equations with consideration of conditions. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 334607,
+    "question_text": "y = x^2 - 4x + 3 x+2y=4  If $(x_1, y_1)$ and $(x_2, y_2)$ are the two solutions to the system of equ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "C",
+      "explanation": "The question is clearly written and asks for the sum of the y-coordinates of the solutions to the given system of equations. To solve, we can substitute the expression for x from the second equation into the first equation. From x + 2y = 4, we get x = 4 - 2y. Substituting this into y = x^2 - 4x + 3, we get y = (4 - 2y)^2 - 4(4 - 2y) + 3. Expanding and simplifying: y = 16 - 16y + 4y^2 - 16 + 8y + 3. Combining like terms gives 4y^2 - 8y + 3 = y, which simplifies to 4y^2 - 9y + 3 = 0. For a quadratic equation of the form ay^2 + by + c = 0, the sum of the roots (y1 + y2) is given by -b/a. In this equation, a = 4 and b = -9. Therefore, y1 + y2 = -(-9)/4 = 9/4. Option C, $rac{9}{4}$, is indeed the correct answer. The other options are not equal to $rac{9}{4}$ and are therefore incorrect. The difficulty level 'Hard' is appropriate as it requires multiple steps and understanding of quadratic equations and systems of equations, suitable for the Advanced Math section of the SAT."
+    }
+  },
+  {
+    "question_id": 491042,
+    "question_text": "At $\\phi - \\lambda = \\frac{4}{\\tau - \\lambda}$, what is $\\tau$ in terms of $\\psi$?\\n\\n$$\\mathbf{A} \\...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "Variable mismatch: The equation uses $\\\\\\\\\\phi$ but the question asks for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$. Assuming $\\\\\\\\\\phi$ is a typo and should be $\\\\\\\\\\psi$.",
+        "Question asks for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$ but the given equation $\\\\\\\\\\psi - \\\\\\\\\\lambda = \\\\\\\\frac{4}{\\\\\\\\tau - \\\\\\\\\\lambda}$ involves an additional variable $\\\\\\\\\\lambda$. It is impossible to express $\\\\\\\\tau$ solely in terms of $\\\\\\\\\\psi$ from this equation without further information or assumptions about $\\\\\\\\\\lambda$.",
+        "For option C to be mathematically correct as the solution for $\\\\\\\\tau$ in terms of $\\\\\\\\\\psi$ only, there must be an implicit assumption that $\\\\\\\\\\lambda$ is a constant that simplifies the equation to allow for an answer in terms of $\\\\\\\\\\psi$ alone. If we assume $\\\\\\\\\\lambda = 1$, then option C becomes the correct answer. However, this assumption is not stated in the question, making it ambiguous and potentially misleading.",
+        "The question is poorly written due to the ambiguity regarding the variable $\\\\\\\\\\lambda$ and the expectation of an answer in terms of $\\\\\\\\\\psi$ only.",
+        "C"
+      ],
+      "correct_answer": "C",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 583146,
+    "question_text": "In the xy-plane, the graph of $$y = x^2 - 5x + 7$$ intersects line q at (2, c) and (4, d), where c a...",
+    "validation": {
+      "is_valid": false,
+      "issues": [
+        "The option marked as correct (A) is incorrect. The correct slope is 1, which is not provided as an option.",
+        "The difficulty level 'Hard' might be slightly overstated; 'Medium' could be more appropriate."
+      ],
+      "correct_answer": "A",
+      "explanation": "To find the slope of line q, we first need to find the coordinates of the intersection points (2, c) and (4, d). We substitute x = 2 and x = 4 into the equation of the parabola y = x^2 - 5x + 7.\nFor x = 2, y = (2)^2 - 5(2) + 7 = 4 - 10 + 7 = 1. So, c = 1, and the first point is (2, 1).\nFor x = 4, y = (4)^2 - 5(4) + 7 = 16 - 20 + 7 = 3. So, d = 3, and the second point is (4, 3).\nThe slope of line q passing through points (2, 1) and (4, 3) is given by m = (d - c) / (4 - 2) = (3 - 1) / (4 - 2) = 2 / 2 = 1.\nThe correct slope is 1. However, option A is given as 2, which is incorrect. None of the provided options are actually correct.  The option marked as correct is therefore incorrect."
+    }
+  },
+  {
+    "question_id": 169115,
+    "question_text": "The formula for the volume $$V$$ of a cone is given by $$V = \\frac{1}{3}\\pi r^2 h$$, where $$r$$ is ...",
+    "validation": {
+      "is_valid": true,
+      "issues": [
+        "Failed to parse validation result: Bad escaped character in JSON at position 288. Original content: {  \"is_valid\": true,  \"issues\": [],  \"correct_answer\": \"A\",  \"explanation\": \"The question is clearly written and asks a valid mathematical question: to rearrange the formula for the volume of a cone t..."
+      ],
+      "correct_answer": "A",
+      "explanation": "Validation failed due to JSON parsing error"
+    }
+  },
+  {
+    "question_id": 859381,
+    "question_text": "In the xy-plane, the graph of $$y = 2x^2 - 13x$$ intersects the graph of $$y = x$$ at the points $$(...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "B",
+      "explanation": "The question is clearly written and makes sense. To find the value of 'a', we need to find the x-coordinate of the intersection point of the two graphs other than (0, 0). We set the two equations equal to each other: $$2x^2 - 13x = x$$. Simplifying this equation gives $$2x^2 - 14x = 0$$. Factoring out $$2x$$ yields $$2x(x - 7) = 0$$. The solutions are $$x = 0$$ and $$x = 7$$. Since we are given that one intersection point is (0, 0) and the other is (a, a), we can conclude that $$a = 7$$. Option B, which is 7, is indeed the correct answer. The other options (A, C, and D) are clearly incorrect as they are not the solution to the equation. There are no grammatical or formatting issues. The difficulty level 'Hard' is appropriate for this question as it requires setting up and solving a quadratic equation, which is a common topic in the Advanced Math section of the SAT."
+    }
+  },
+  {
+    "question_id": 925807,
+    "question_text": "What is the sum of the solutions to the following equation?  $$x^2 + 16x - 3 = 0$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the sum of the solutions to the quadratic equation $$x^2 + 16x - 3 = 0$$. For a quadratic equation in the form $$ax^2 + bx + c = 0$$, the sum of the roots is given by $$-b/a$$. In this equation, $$a = 1$$, $$b = 16$$, and $$c = -3$$. Therefore, the sum of the solutions is $$-16/1 = -16$$. Option A, -16, is correctly marked as the correct answer. Options B, C, and D are incorrect as they do not represent the sum of the roots based on Vieta's formulas or the quadratic formula. The difficulty level 'Hard' is appropriate for this question as it requires understanding of quadratic equations and the relationship between coefficients and roots."
+    }
+  },
+  {
+    "question_id": 727446,
+    "question_text": "$$\\begin{aligned} y &= \\chi^2 + 2\\chi + 3 \\\\ y - \\chi + 2 &= 0 \\end{aligned}$$ \\n\\nHow many solution...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "D",
+      "explanation": "To find the number of solutions to the given system of equations, we can substitute the expression for y from the second equation into the first equation. \n\nFrom the second equation, we have: \n$$y - \\\\chi + 2 = 0 \\\\implies y = \\\\chi - 2$$ \n\nSubstitute this into the first equation: \n$$\\\\chi - 2 = \\\\chi^2 + 2\\\\chi + 3$$ \n\nRearrange the equation to form a quadratic equation: \n$$\\\\chi^2 + 2\\\\chi + 3 - \\\\chi + 2 = 0$$ \n$$\\\\chi^2 + \\\\chi + 5 = 0$$ \n\nTo determine the number of real solutions for this quadratic equation, we examine the discriminant, which is given by Δ = b^2 - 4ac, where a = 1, b = 1, and c = 5 in this equation. \n\nΔ = (1)^2 - 4(1)(5) = 1 - 20 = -19 \n\nSince the discriminant Δ = -19 is negative (Δ < 0), the quadratic equation $\\\\chi^2 + \\\\chi + 5 = 0$ has no real solutions for $\\\\chi$.  \n\nBecause there are no real solutions for $\\\\chi$, there are also no real solutions for the system of equations (in real numbers). Therefore, there are no solutions to the system of equations. \n\nThe option marked as correct, D. There are no solutions, is indeed the correct answer. The other options (A, B, C) are clearly incorrect as they suggest the existence of solutions when there are none. The question is clearly written, makes sense, and has no grammatical or formatting issues. The difficulty level 'Hard' is appropriate for this question as it requires solving a system of nonlinear equations and understanding the discriminant of a quadratic equation to determine the number of solutions."
+    }
+  },
+  {
+    "question_id": 343883,
+    "question_text": "What value of x satisfies the equation above? $$\frac{2x^2}{x^2-1} - \frac{x}{x-1} = \frac{-2}{x+1}$$...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of x that satisfies the given rational equation. To solve the equation, we first find a common denominator and combine the terms on the left side: \n\n$$\frac{2x^2}{(x-1)(x+1)} - \frac{x(x+1)}{(x-1)(x+1)} = \frac{-2}{x+1}$$ \n$$\frac{2x^2 - x(x+1)}{(x-1)(x+1)} = \frac{-2}{x+1}$$ \n$$\frac{2x^2 - x^2 - x}{(x-1)(x+1)} = \frac{-2}{x+1}$$ \n$$\frac{x^2 - x}{(x-1)(x+1)} = \frac{-2}{x+1}$$ \n\nWe must consider the values of x that make the denominator zero, which are x = 1 and x = -1. These values are excluded from the domain. Assuming $x \neq -1$ and $x \neq 1$, we can multiply both sides by $(x+1)$: \n\n$$\frac{x^2 - x}{x-1} = -2$$ \n\nSince $x^2 - x = x(x-1)$, and assuming $x \neq 1$, we can simplify the left side: \n\n$$\frac{x(x-1)}{x-1} = -2$$ \n$$x = -2$$ \n\nWe need to check if $x=-2$ is a valid solution by substituting it back into the original equation: \n\n$$\frac{2(-2)^2}{(-2)^2-1} - \frac{-2}{-2-1} = \frac{2(4)}{4-1} - \frac{-2}{-3} = \frac{8}{3} - \frac{2}{3} = \frac{6}{3} = 2$$ \n$$\frac{-2}{-2+1} = \frac{-2}{-1} = 2$$ \n\nSince both sides are equal to 2 when $x=-2$, $x=-2$ is a valid solution. Option A, -2, is indeed the correct answer. \n\nLet's check why other options are incorrect:\n- Option B (x=1): If x=1, the denominators $x-1$ and $x^2-1$ become zero, making the equation undefined. Thus, x=1 is not a valid solution.\n- Option C (x=2):  $$\frac{2(2)^2}{2^2-1} - \frac{2}{2-1} = \frac{8}{3} - 2 = \frac{2}{3}$$ and $$\frac{-2}{2+1} = \frac{-2}{3}$$.  $\frac{2}{3} \neq \frac{-2}{3}$, so x=2 is not a solution.\n- Option D (x=3): $$\frac{2(3)^2}{3^2-1} - \frac{3}{3-1} = \frac{18}{8} - \frac{3}{2} = \frac{9}{4} - \frac{6}{4} = \frac{3}{4}$$ and $$\frac{-2}{3+1} = \frac{-2}{4} = -\frac{1}{2}$$. $\frac{3}{4} \neq -\frac{1}{2}$, so x=3 is not a solution.\n\nThe question is clear, mathematically sound, and the difficulty level is appropriate for a 'Hard' SAT question in the Advanced Math category. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 995870,
+    "question_text": "The solution to the given system of equations is (x, y). What is the value of x?  $$ x^2 - y + 5 = 5...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the value of x in the solution to the given system of equations. To solve the system, we can simplify the first equation to  $$x^2 - y = 0$$, which means $$y = x^2$$. The second equation can be rewritten as $$y = 10x - 25$$. Setting these two expressions for y equal to each other, we get $$x^2 = 10x - 25$$. Rearranging this equation gives $$x^2 - 10x + 25 = 0$$, which factors to $$(x - 5)^2 = 0$$. Thus, $$x = 5$$. Substituting x = 5 into $$y = x^2$$ gives $$y = 5^2 = 25$$.  The solution is (x, y) = (5, 25), and the value of x is 5. Option A is indeed the correct answer. Options B, C, and D are incorrect because substituting x = -5, 25, or -25 into the equations does not yield a valid solution for the system. The difficulty level 'Hard' is appropriate as it requires solving a system of nonlinear equations, which is an advanced math topic for the SAT."
+    }
+  },
+  {
+    "question_id": 222344,
+    "question_text": "$$3(x - 2) = 12(x + 3)(x - 2)$$ What is the sum of the solutions to the given equation?...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and asks for the sum of the solutions to the equation $$3(x - 2) = 12(x + 3)(x - 2)$$. To solve this equation, we can first bring all terms to one side: $$3(x - 2) - 12(x + 3)(x - 2) = 0$$. Factor out the common term $(x - 2)$: $$(x - 2)[3 - 12(x + 3)] = 0$$. This gives us two possible cases: \n\nCase 1: $x - 2 = 0$, which means $x = 2$.\n\nCase 2: $3 - 12(x + 3) = 0$. Simplify this equation: $$3 - 12x - 36 = 0$$ $$-12x - 33 = 0$$ $$-12x = 33$$ $$x = -\frac{33}{12} = -\frac{11}{4} = -2.75$$.\n\nThe solutions are $x = 2$ and $x = -2.75$. The sum of the solutions is $2 + (-2.75) = -0.75$. Option A, -0.75, is indeed the correct answer. Options B, C, and D are incorrect. Option B and C are individual solutions, not the sum, and Option D is not related to the solutions. The difficulty level 'Hard' is appropriate for SAT as it requires algebraic manipulation and solving a non-linear equation. There are no grammatical or formatting issues."
+    }
+  },
+  {
+    "question_id": 616306,
+    "question_text": "The solutions to $x^2 - 2x - 1 = 0$ are $p$ and $q$, where $p < q$. The solutions to $x^2 - 6x + 7 =...",
+    "validation": {
+      "is_valid": true,
+      "issues": [],
+      "correct_answer": "A",
+      "explanation": "The question is clearly written and makes sense. To verify the correct answer, we first solve the quadratic equations $x^2 - 2x - 1 = 0$ and $x^2 - 6x + 7 = 0$.For $x^2 - 2x - 1 = 0$, using the quadratic formula, the solutions are $x = \frac{-(-2) \\\\pm \\\\sqrt{(-2)^2 - 4(1)(-1)}}{2(1)} = \frac{2 \\\\pm \\\\sqrt{4 + 4}}{2} = \frac{2 \\\\pm \\\\sqrt{8}}{2} = 1 \\\\pm \\\\sqrt{2}$. Since $p < q$, we have $p = 1 - \\\\sqrt{2}$ and $q = 1 + \\\\sqrt{2}$.For $x^2 - 6x + 7 = 0$, using the quadratic formula, the solutions are $x = \frac{-(-6) \\\\pm \\\\sqrt{(-6)^2 - 4(1)(7)}}{2(1)} = \frac{6 \\\\pm \\\\sqrt{36 - 28}}{2} = \frac{6 \\\\pm \\\\sqrt{8}}{2} = 3 \\\\pm \\\\sqrt{2}$. Since $v < w$, we have $v = 3 - \\\\sqrt{2}$ and $w = 3 + \\\\sqrt{2}$.The solutions to $x^2 + kx + c = 0$ are given as $p + v$ and $q + w$.$p + v = (1 - \\\\sqrt{2}) + (3 - \\\\sqrt{2}) = 4 - 2\\\\sqrt{2}$$q + w = (1 + \\\\sqrt{2}) + (3 + \\\\sqrt{2}) = 4 + 2\\\\sqrt{2}$For a quadratic equation $x^2 + kx + c = 0$, the product of the roots is equal to $c$. Therefore, $c = (p + v)(q + w) = (4 - 2\\\\sqrt{2})(4 + 2\\\\sqrt{2})$.Using the difference of squares formula $(a - b)(a + b) = a^2 - b^2$, we get $c = 4^2 - (2\\\\sqrt{2})^2 = 16 - (4 \times 2) = 16 - 8 = 8$.The value of $c$ is 8, which corresponds to option A. All other options are incorrect as there is a unique value for $c$. The question is grammatically correct and appropriately categorized as 'Hard' for the SAT. There are no formatting issues."
+    }
+  }
+]
