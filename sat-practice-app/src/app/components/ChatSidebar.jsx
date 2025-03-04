@@ -136,41 +136,48 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   return (
     <aside style={styles.sidebar}>
       <div style={styles.header}>
-        <h3>Ollie: Your AI Tutor</h3>
+        <h3>Review your Answers with Ollie</h3>
       </div>
       <div style={styles.chatContainer}>
         <div style={styles.responseContainer} dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />
         {loading && <div style={styles.loadingIndicator}>Loading...</div>}
       </div>
-      <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputForm}>
-        <MessageCircle style={styles.messageIcon} />
-        <input
-          type="text"
-          placeholder="Ask me anything about this question..."
-          style={styles.inputField}
-          value={userQuestion}
-          onChange={(e) => setUserQuestion(e.target.value)}
-        />
-        {userQuestion && (
-          <button 
-            type="button" 
-            onClick={handleClearInput} 
-            style={styles.clearButton}
-          >
-            <X size={16} />
+      
+      {/* Combined input and suggestions container */}
+      <div style={styles.inputContainer}>
+        {/* Input form - now placed first */}
+        <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputForm}>
+          <MessageCircle style={styles.messageIcon} />
+          <input
+            type="text"
+            placeholder="Ask me anything about the question selected..."
+            style={styles.inputField}
+            value={userQuestion}
+            onChange={(e) => setUserQuestion(e.target.value)}
+          />
+          {userQuestion && (
+            <button 
+              type="button" 
+              onClick={handleClearInput} 
+              style={styles.clearButton}
+            >
+              <X size={16} />
+            </button>
+          )}
+          <button type="submit" style={styles.sendButton}>
+            <Send size={20} />
           </button>
-        )}
-        <button type="submit" style={styles.sendButton}>
-          <Send size={20} />
-        </button>
-      </form>
-      <div style={styles.suggestions}>
-        <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.suggestionButton}>
-          Explain
-        </button>
-        <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.suggestionButton}>
-          Why is my answer incorrect
-        </button>
+        </form>
+        
+        {/* Suggestions - now placed below the input */}
+        <div style={styles.suggestions}>
+          <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.suggestionButton}>
+            Explain
+          </button>
+          <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.suggestionButton}>
+            Why is my answer incorrect
+          </button>
+        </div>
       </div>
     </aside>
   );
@@ -200,127 +207,155 @@ const styles = {
     flex: 1,
     padding: '16px',
     overflowY: 'auto',
-    marginBottom: '120px',
+    marginBottom: '0px',
+    backgroundColor: 'white'
   },
-
-    responseContainer: {
-      fontSize: '14px',
-      backgroundColor: '#fff',
-      padding: '24px',  // Increased padding
-      borderRadius: '8px',
-      marginBottom: '12px',
-      lineHeight: '1.8',  // Increased line height
-      '& h1, & h2, & h3, & h4': {
-        marginTop: '24px',    // Increased margin
-        marginBottom: '16px', // Increased margin
-        fontWeight: '600',
-        color: '#111827',
-      },
-      '& h1': { fontSize: '1.8em' },
-      '& h2': { 
-        fontSize: '1.5em',
-        borderBottom: '1px solid #e5e7eb',
-        paddingBottom: '8px'
-      },
-      '& h3': { fontSize: '1.3em' },
-      '& p': {
-        marginBottom: '16px',  // Increased margin
-        color: '#374151',
-      },
-      '& ul, & ol': {
-        marginTop: '12px',     // Added top margin
-        marginBottom: '16px',  // Increased margin
-        paddingLeft: '24px',   // Increased padding
-      },
-      '& li': {
-        marginBottom: '12px',  // Increased margin
-        paddingLeft: '4px',    // Added padding
-      },
-      '& li:last-child': {
-        marginBottom: '0',     // Remove margin from last list item
-      },
-      '& strong, & b': {
-        color: '#111827',
-        fontWeight: '600',
-        backgroundColor: '#f3f4f6',
-        padding: '0 4px',
-        borderRadius: '4px',
-      },
-      '& code': {
-        backgroundColor: '#f3f4f6',
-        padding: '2px 6px',
-        borderRadius: '4px',
-        fontSize: '0.9em',
-        color: '#ef4444',
-      },
-      '& blockquote': {
-        borderLeft: '4px solid #e5e7eb',
-        paddingLeft: '16px',   // Increased padding
-        marginLeft: '0',
-        marginTop: '16px',     // Added top margin
-        marginBottom: '16px',  // Increased margin
-        color: '#6b7280',
-        fontStyle: 'italic',
-        backgroundColor: '#f9fafb',
-        padding: '12px 16px',  // Added padding
-        borderRadius: '0 4px 4px 0',
-      },
-      '& .explanation-section': {
-        marginTop: '24px',
-        padding: '16px',
-        backgroundColor: '#f9fafb',
-        borderRadius: '8px',
-        border: '1px solid #e5e7eb',
-      },
-      '& .option-analysis': {
-        marginTop: '12px',
-        paddingLeft: '16px',
-        borderLeft: '3px solid #10b981',
-      },
-      '& .conclusion': {
-        marginTop: '24px',
-        paddingTop: '16px',
-        borderTop: '1px solid #e5e7eb',
-        fontWeight: '500',
-      },
-      '& table': {
-        width: '100%',
-        borderCollapse: 'collapse',
-        marginTop: '16px',     // Added top margin
-        marginBottom: '16px',  // Increased margin
-      },
-      '& th, & td': {
-        border: '1px solid #e5e7eb',
-        padding: '12px',       // Increased padding
-        textAlign: 'left',
-      },
-      '& th': {
-        backgroundColor: '#f3f4f6',
-        fontWeight: '600',
-      },
-      '& hr': {
-        margin: '24px 0',      // Increased margin
-        border: 'none',
-        borderTop: '1px solid #e5e7eb',
-      },
+  responseContainer: {
+    fontSize: '14px',
+    backgroundColor: '#fff',
+    padding: '24px',
+    borderRadius: '8px',
+    marginBottom: '120px',
+    lineHeight: '1.8',
+    '& h1, & h2, & h3, & h4': {
+      marginTop: '24px',
+      marginBottom: '16px',
+      fontWeight: '600',
+      color: '#111827',
     },
+    '& h1': { fontSize: '1.8em' },
+    '& h2': { 
+      fontSize: '1.5em',
+      borderBottom: '1px solid #e5e7eb',
+      paddingBottom: '8px'
+    },
+    '& h3': { fontSize: '1.3em' },
+    '& p': {
+      marginBottom: '16px',
+      color: '#374151',
+    },
+    '& ul, & ol': {
+      marginTop: '12px',
+      marginBottom: '16px',
+      paddingLeft: '24px',
+    },
+    '& li': {
+      marginBottom: '12px',
+      paddingLeft: '4px',
+    },
+    '& li:lastChild': {
+      marginBottom: '0',
+    },
+    '& strong, & b': {
+      color: '#111827',
+      fontWeight: '600',
+      backgroundColor: '#f3f4f6',
+      padding: '0 4px',
+      borderRadius: '4px',
+    },
+    '& code': {
+      backgroundColor: '#f3f4f6',
+      padding: '2px 6px',
+      borderRadius: '4px',
+      fontSize: '0.9em',
+      color: '#ef4444',
+    },
+    '& blockquote': {
+      borderLeft: '4px solid #e5e7eb',
+      paddingLeft: '16px',
+      marginLeft: '0',
+      marginTop: '16px',
+      marginBottom: '16px',
+      color: '#6b7280',
+      fontStyle: 'italic',
+      backgroundColor: '#f9fafb',
+      padding: '12px 16px',
+      borderRadius: '0 4px 4px 0',
+    },
+    '& .explanationSection': {
+      marginTop: '24px',
+      padding: '16px',
+      backgroundColor: '#f9fafb',
+      borderRadius: '8px',
+      border: '1px solid #e5e7eb',
+    },
+    '& .optionAnalysis': {
+      marginTop: '12px',
+      paddingLeft: '16px',
+      borderLeft: '3px solid #10b981',
+    },
+    '& .conclusion': {
+      marginTop: '24px',
+      paddingTop: '16px',
+      borderTop: '1px solid #e5e7eb',
+      fontWeight: '500',
+    },
+    '& table': {
+      width: '100%',
+      borderCollapse: 'collapse',
+      marginTop: '16px',
+      marginBottom: '16px',
+    },
+    '& th, & td': {
+      border: '1px solid #e5e7eb',
+      padding: '12px',
+      textAlign: 'left',
+    },
+    '& th': {
+      backgroundColor: '#f3f4f6',
+      fontWeight: '600',
+    },
+    '& hr': {
+      margin: '24px 0',
+      border: 'none',
+      borderTop: '1px solid #e5e7eb',
+    },
+  },
   loadingIndicator: {
     fontSize: '14px',
     color: '#aaa',
     padding: '12px',
     textAlign: 'center',
   },
-  inputForm: {
+  // Container that holds both input form and suggestions
+  inputContainer: {
     position: 'fixed',
-    bottom: 0,
-    right: 0,
-    width: '40%',
-    padding: '12px',
-    borderTop: '1px solid #ddd',
-    backgroundColor: '#fff',
+    bottom: '1.5%',
+    right: '1.3%',
+    width: '37%',
+    backgroundColor: 'white',
+    border: '1px solid #e5e7eb',
+    zIndex: 11,
+    padding: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '12px',
+    boxShadow: '0 0 8px 0 rgba(0, 0, 0, 0.1)',
+  },
+  // Updated styles for the input form
+  inputForm: {
     display: 'flex',
     alignItems: 'center',
-    zIndex: 11,
+    padding: '8px',
+    borderRadius: '12px',
+    // border: '1px solid #ddd',
+    marginBottom: '8px', // Added margin to create space between input and suggestions
+  },
+  // Updated styles for suggestions
+  suggestions: {
+    display: 'flex',
+    padding: '8px 0',
+    marginTop: '4px', // Added margin to create space between input and suggestions
+  },
+  suggestionButton: {
+    padding: '8px 12px',
+    backgroundColor: '#e6f0e6',
+    color: '#333',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    marginRight: '8px',
   },
   messageIcon: {
     width: '20px',
@@ -332,9 +367,11 @@ const styles = {
     flex: 1,
     padding: '8px',
     borderRadius: '4px',
-    border: '1px solid #ddd',
+    border: '0px solid #ddd',
     marginRight: '8px',
     fontSize: '14px',
+    backgroundColor: 'white',
+    outline: 'none', // Removes the blue highlight on focus
   },
   sendButton: {
     padding: '8px 12px',
@@ -344,26 +381,6 @@ const styles = {
     color: '#fff',
     cursor: 'pointer',
     fontSize: '14px',
-  },
-  suggestions: {
-    position: 'fixed',
-    bottom: '60px', // Changed from 120px to 60px
-    right: 0,
-    width: '40%',
-    padding: '8px 16px',
-    borderTop: '1px solid #ddd',
-    backgroundColor: '#fff',
-    zIndex: 11,
-  },
-  suggestionButton: {
-    padding: '8px 12px',
-    backgroundColor: '#e6f0e6',
-    color: '#333',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '14px',
-    marginRight: '8px',
   },
   clearButton: {
     background: 'none',

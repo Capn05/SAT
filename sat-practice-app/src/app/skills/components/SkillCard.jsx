@@ -9,12 +9,15 @@ const masteryColors = {
   'Needs More Attempts': '#f59e0b'
 };
 
-export default function SkillCard({ skill }) {
+export default function SkillCard({ skill, subject }) {
   const router = useRouter();
 
   const handleClick = () => {
+    // Determine the subject ID based on the subject prop
+    const subjectId = subject === "Math" ? "1" : "4";
+    
     console.log('Navigating to skill practice:', skill.name);
-    const url = `/practice?mode=skill&subject=1&category=${encodeURIComponent(skill.name)}`;
+    const url = `/practice?mode=skill&subject=${subjectId}&category=${encodeURIComponent(skill.name)}`;
     console.log('Navigation URL:', url);
     router.push(url);
   };

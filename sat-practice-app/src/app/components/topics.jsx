@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import { 
   BookOpen, Calculator, FlaskRoundIcon as Flask, PenTool, Brain, 
   FunctionSquare, PieChart, Shapes, BarChart, FileText, Lightbulb, 
-  NetworkIcon as Network, ArrowRight 
+  NetworkIcon as Network, ArrowRight, Sigma, Infinity, Ruler, 
+  Percent, Divide, LineChart, CircleSquare, Box
 } from "lucide-react";
 import Link from 'next/link';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
@@ -14,6 +15,9 @@ const categoryIcons = {
   'Algebra': Calculator,
   'Advanced Math': FunctionSquare,
   'Problem Solving': Brain,
+  'Problem-Solving and Data Analysis': BarChart,
+  'Geometry and Trigonometry': Shapes,
+  
   // Math Subcategories
   'Linear Equations': Calculator,
   'Systems of Equations': Network,
@@ -21,23 +25,50 @@ const categoryIcons = {
   'Exponential Functions': PieChart,
   'Geometry & Trigonometry': Shapes,
   'Data Analysis': BarChart,
+  
+  // Specific Math Topics
+  'Equivalent Expressions': Sigma,
+  'Nonlinear Equations and Systems': Infinity,
+  'Nonlinear Functions': LineChart,
+  'Linear Equations in One Variable': Calculator,
+  'Linear Equations in Two Variables': Network,
+  'Linear Functions': LineChart,
+  'Systems of Linear Equations': Network,
+  'One-Variable Data': BarChart,
+  'Two-Variable Data': PieChart,
+  'Probability': Percent,
+  'Sample Statistics and Margin of Error': BarChart,
+  'Evaluating Statistical Claims': Brain,
+  'Percentages': Percent,
+  'Ratios': Divide,
+  'Rates': Divide,
+  'Proportions, and Units': Divide,
+  'Lines, Angles, and Triangles': Shapes,
+  'Right Triangles and Trigonometry': Shapes,
+  'Circles': CircleSquare,
+  'Area and Volume': Box,
+  
   // Reading Categories
   'Information and Ideas': BookOpen,
   'Craft and Structure': FileText,
   'Expression of Ideas': PenTool,
   'Standard English Conventions': Flask,
+  
   // Reading Subcategories
   'Central Ideas and Details': BookOpen,
   'Command of Evidence (Textual)': FileText,
   'Command of Evidence (Quantitative)': BarChart,
+  'Command of Evidence': FileText,
   'Inferences': Lightbulb,
   'Words in Context': PenTool,
   'Text Structure and Purpose': Network,
+  'Text, Structure, and Purpose': Network,
   'Cross-Text Connections': Network,
   'Rhetorical Synthesis': PenTool,
   'Transitions': Network,
   'Boundaries': Flask,
   'Form, Structure, and Sense': Shapes,
+  'Linear Inequalities': Calculator,
 };
 
 const masteryColors = {
@@ -52,7 +83,7 @@ function calculateMasteryLevel(accuracy, totalAttempts) {
   if (totalAttempts === 0) {
     return 'Not Started';
   }
-  if (totalAttempts < 5) {
+  if (totalAttempts < 2) {
     return 'Needs More Attempts';
   }
   if (accuracy >= 90) {
@@ -265,7 +296,7 @@ export default function TestCategories() {
             // If same mastery level, sort by accuracy
             return b.accuracy - a.accuracy;
           })
-          .slice(0, 2); // Show top 2 categories
+          .slice(1, 3); // Show top 2 categories
 
         setSkillPerformance(sortedCategories);
       } catch (error) {
@@ -316,7 +347,8 @@ export default function TestCategories() {
             </div>
             <div style={styles.grid}>
               {category.subcategories.map((skill) => {
-                const Icon = skill.icon;
+                // Add a fallback icon if skill.icon is undefined
+                const Icon = skill.icon || Calculator; // Use Calculator as fallback
                 const masteryColor = masteryColors[skill.mastery];
                 
                 return (

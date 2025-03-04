@@ -13,7 +13,7 @@ const navItems = [
     icon: Rabbit,
     subItems: [
       { name: "Math", icon: Calculator, path: "/questions?subject=1&mode=quick" },
-      { name: "Reading/Writing", icon: BookOpen, path: "/questions?subject=2&mode=quick" },
+      { name: "Reading/Writing", icon: BookOpen, path: "/questions?subject=4&mode=quick" },
     ],
   },
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },

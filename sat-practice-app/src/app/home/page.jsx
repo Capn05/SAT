@@ -21,18 +21,17 @@ export default function Dashboard() {
           <div style={styles.leftColumn}>
             <div style={styles.subjects}>
               <SubjectSection title="Quick Practice" value="Math Section" buttonText="Start Practice" subject_id="1" />
-              <SubjectSection title="Quick Practice" value="Reading/Writing Section" buttonText="Start Practice" subject_id="2" />
+              <SubjectSection title="Quick Practice" value="Reading/Writing Section" buttonText="Start Practice" subject_id="4" />
             </div>
             <TimedTestButton/>
 
             <div style={styles.analytics}>
               <TestCategories />
             </div>
-            <AnalyticsCard />
           </div>
           <div style={styles.rightColumn}>
-            <WeeklyTrack />
-            <AIChat/>
+          <AnalyticsCard />
+          <AIChat/>
           </div>
         </div>
       </div>

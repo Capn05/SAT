@@ -147,7 +147,7 @@ const styles = {
     justifyContent: 'center',
     cursor: 'pointer',
     fontSize: '12px',
-    outline: isSelected ? '3px solid #3b82f6' : 'none',
+    outline: isSelected ? '3px solid #4338ca' : 'none',
     outlineOffset: '2px',
   }),
   pagination: {

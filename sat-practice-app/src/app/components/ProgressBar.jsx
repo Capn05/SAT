@@ -28,8 +28,9 @@ const styles = {
     backgroundColor: "white",
     borderRadius: "12px",
     padding: "20px 40px  20px 40px",
-    // boxShadow: "0 3px 6px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0 3px 6px rgba(0, 0, 0, 0.1)",
     fontFamily: "Arial, sans-serif",
+
   },
   labelContainer: {
     display: "flex",
