@@ -8,10 +8,21 @@ import AIChat from "../components/AIChatGeneral"
 import AnalyticsCard from "../components/AnalyticsCard"
 import Footer from "../components/Footer"
 import TimedTestButton from "../components/TimedPractice"
-
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import TopBar from '../components/TopBar';
+import DifficultyModal from '../components/DifficultyModal';
 
 export default function Dashboard() {
   useAuth()
+  const [showDifficultyModal, setShowDifficultyModal] = useState(false);
+  const [selectedSubject, setSelectedSubject] = useState(null);
+  const router = useRouter();
+
+  const handleStartPractice = (subject) => {
+    setSelectedSubject(subject);
+    setShowDifficultyModal(true);
+  };
 
   return (
     <div style={styles.container}>
@@ -20,8 +31,20 @@ export default function Dashboard() {
         <div style={styles.grid}>
           <div style={styles.leftColumn}>
             <div style={styles.subjects}>
-              <SubjectSection title="Quick Practice" value="Math Section" buttonText="Start Practice" subject_id="1" />
-              <SubjectSection title="Quick Practice" value="Reading/Writing Section" buttonText="Start Practice" subject_id="4" />
+              <SubjectSection 
+                title="Quick Practice" 
+                value="Math Section" 
+                buttonText="Start Practice" 
+                subject_id="1" 
+                onStartPractice={handleStartPractice}
+              />
+              <SubjectSection 
+                title="Quick Practice" 
+                value="Reading/Writing Section" 
+                buttonText="Start Practice" 
+                subject_id="4" 
+                onStartPractice={handleStartPractice}
+              />
             </div>
             <TimedTestButton/>
 
@@ -37,6 +60,12 @@ export default function Dashboard() {
       </div>
       <Footer />
 
+      {/* Difficulty selection modal */}
+      <DifficultyModal 
+        isOpen={showDifficultyModal} 
+        onClose={() => setShowDifficultyModal(false)}
+        subject={selectedSubject}
+      />
     </div>
   )
 }
@@ -45,7 +74,6 @@ const styles = {
   container: {
     minHeight: "100vh",
     backgroundColor: "#f9fafb",
-
   },
   content: {
     padding: "24px",

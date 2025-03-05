@@ -14,7 +14,7 @@ import Modal from './Modal';
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
-export default function Question({ subject, mode, skillName, questions: initialQuestions }) {
+export default function Question({ subject, mode, skillName, questions: initialQuestions, difficulty }) {
   const [questions, setQuestions] = useState(initialQuestions || []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [feedback, setFeedback] = useState(null);
@@ -145,11 +145,69 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         return;
       }
 
-      console.log('Fetching questions for:', { subject: subjectId, mode, skillName });
+      // First, fetch the user's answered questions
+      console.log('Fetching user answered questions...');
+      const { data: userAnswers, error: userAnswersError } = await supabase
+        .from('user_answers')
+        .select('question_id')
+        .eq('user_id', session.user.id);
+      
+      if (userAnswersError) {
+        console.error('Error fetching user answers:', userAnswersError);
+        setError('Error fetching user answer history');
+        return;
+      }
+      
+      // Create a set of answered question IDs for quick lookup
+      const answeredQuestionIds = new Set(userAnswers?.map(a => a.question_id) || []);
+      console.log(`User has answered ${answeredQuestionIds.size} questions previously`);
+
+      // Capitalize the difficulty if it exists and isn't 'mixed'
+      let capitalizedDifficulty = difficulty;
+      if (difficulty && difficulty !== 'mixed') {
+        capitalizedDifficulty = difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
+        console.log('Capitalized difficulty:', capitalizedDifficulty);
+      }
+
+      console.log('Fetching questions for:', { 
+        subject: subjectId, 
+        mode, 
+        skillName, 
+        difficulty: capitalizedDifficulty || 'mixed' 
+      });
+      
       let questionsData;
 
-      if (mode === "quick") {
-        console.log('Fetching quick practice questions for subject:', subjectId);
+      if (mode === "test") {
+        console.log('Fetching test question...');
+        const { data: testQuestions, error: fetchError } = await supabase
+          .from('questions')
+          .select(`
+            *,
+            options (*)
+          `)
+          .eq('subject_id', 1) // Math questions
+          .eq('subcategory_id', 1) // Equivalent Expressions
+          .order('id', { ascending: false })
+          .limit(1);
+
+        if (fetchError) {
+          console.error('Error fetching test question:', fetchError);
+          setError('Error fetching test question');
+          return;
+        }
+
+        if (!testQuestions || testQuestions.length === 0) {
+          console.error('No test questions found');
+          setError('No test questions found');
+          return;
+        }
+
+        console.log('Found test question:', testQuestions[0]);
+        questionsData = testQuestions;
+      }
+      else if (mode === "quick") {
+        console.log('Fetching quick practice questions for subject:', subjectId, 'with difficulty:', capitalizedDifficulty || 'mixed');
         
         const { count, error: countError } = await supabase
           .from('questions')
@@ -162,23 +220,36 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           return;
         }
 
-        const limit = Math.min(15, count || 0);
-        console.log(`Using ${limit} questions for quick practice mode (${count} total available)`);
+        // Fetch more questions than needed to account for filtering out answered ones
+        const fetchLimit = Math.min(30, count || 0); // Fetch up to 30 questions
+        const targetLimit = Math.min(15, count || 0); // But only use up to 15
+        
+        console.log(`Fetching ${fetchLimit} questions to find ${targetLimit} unanswered ones`);
 
-        if (limit === 0) {
+        if (fetchLimit === 0) {
           setError('No questions available for this subject');
           return;
         }
 
-        const { data: allQuestions, error: allQuestionsError } = await supabase
+        let query = supabase
           .from('questions')
           .select(`
             *,
             options(*)
           `)
-          .eq('subject_id', subjectId)
+          .eq('subject_id', subjectId);
+        
+        // Add difficulty filter if not mixed
+        if (capitalizedDifficulty && capitalizedDifficulty !== 'Mixed') {
+          console.log(`Applying difficulty filter: ${capitalizedDifficulty}`);
+          query = query.eq('difficulty', capitalizedDifficulty);
+        } else {
+          console.log('Using mixed difficulty (no filter applied)');
+        }
+        
+        const { data: allQuestions, error: allQuestionsError } = await query
           .order('id', { ascending: true })
-          .limit(limit);
+          .limit(fetchLimit);
 
         if (allQuestionsError) {
           console.error('Error fetching questions:', allQuestionsError);
@@ -190,13 +261,38 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           setError('No questions available for this subject');
           return;
         }
-
-        questionsData = shuffleArray(allQuestions);
-
-      } else if (mode === "skill") {
+        
+        // Filter out questions that have already been answered
+        const unansweredQuestions = allQuestions.filter(q => !answeredQuestionIds.has(q.id));
+        console.log(`Filtered out ${allQuestions.length - unansweredQuestions.length} previously answered questions`);
+        
+        // If we don't have enough unanswered questions, include some answered ones
+        let finalQuestions = unansweredQuestions;
+        if (unansweredQuestions.length < targetLimit) {
+          console.log(`Not enough unanswered questions (${unansweredQuestions.length}), including some answered ones`);
+          const answeredQuestions = allQuestions.filter(q => answeredQuestionIds.has(q.id));
+          const neededAnsweredQuestions = targetLimit - unansweredQuestions.length;
+          finalQuestions = [
+            ...unansweredQuestions,
+            ...answeredQuestions.slice(0, neededAnsweredQuestions)
+          ];
+        }
+        
+        // Limit to target number and shuffle
+        finalQuestions = finalQuestions.slice(0, targetLimit);
+        questionsData = shuffleArray(finalQuestions);
+        
+        console.log(`Successfully prepared ${questionsData.length} questions (${unansweredQuestions.length} unanswered) with difficulty: ${capitalizedDifficulty || 'mixed'}`);
+      } 
+      else if (mode === "skill") {
         console.log('Fetching skill practice questions for category:', skillName);
         
-        const apiUrl = `/api/skill-questions?category=${encodeURIComponent(skillName)}&subject=${subject}`;
+        if (!skillName) {
+          setError('Skill name is required for skill practice mode');
+          return;
+        }
+        
+        const apiUrl = `/api/skill-questions?category=${encodeURIComponent(skillName)}&subject=${subjectId}`;
         console.log('API URL:', apiUrl);
         
         const response = await fetch(apiUrl);
@@ -211,12 +307,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           throw new Error(`No questions available for ${skillName}`);
         }
 
-        if (data.questions.length < 5) {
-          throw new Error(`Not enough questions available for ${skillName}. Need 5, got ${data.questions.length}`);
-        }
-
         questionsData = data.questions;
         console.log(`Successfully fetched ${questionsData.length} questions for ${skillName}`);
+      } 
+      else {
+        setError(`Unsupported mode: ${mode}`);
+        return;
       }
 
       if (!questionsData || questionsData.length === 0) {
@@ -250,18 +346,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   };
 
   useEffect(() => {
-    if (initialQuestions && initialQuestions.length > 0) {
-      console.log('Using provided questions:', initialQuestions);
-      setQuestions(initialQuestions);
-      setLoading(false);  // Set loading to false when using initial questions
-      return;
-    }
-
+    console.log('Question component initialized with:', { subject, mode, skillName, difficulty });
+    
     if (subject) {
-      console.log('Fetching questions for:', { subject, mode, skillName });
+      console.log('Fetching questions for:', { subject, mode, skillName, difficulty });
       fetchUnansweredQuestions(subject);  
     }
-  }, [subject, initialQuestions]);
+  }, [subject, mode, skillName, difficulty]);
 
   useEffect(() => {
     const limit = mode === "skill" ? 5 : 15;

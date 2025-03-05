@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { supabase } from '../../../lib/supabase'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import TopBar from '../components/TopBar'
 import {
   BarChart,
@@ -12,6 +12,7 @@ import {
   Tooltip,
   ResponsiveContainer
 } from 'recharts'
+import { useRouter } from 'next/navigation'
 
 export default function AnalyticsPage() {
   const [stats, setStats] = useState({
@@ -20,41 +21,50 @@ export default function AnalyticsPage() {
     accuracyPercentage: 0
   })
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  const router = useRouter()
+  
+  const supabase = createClientComponentClient()
 
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const { data: sessionData, error: sessionError } = await supabase.auth.getSession()
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession()
         
-        if (sessionError || !sessionData.session) {
+        if (sessionError) {
+          console.error('Session error:', sessionError)
+          router.push('/login')
+          return
+        }
+        
+        if (!session) {
           console.log('No valid session found')
+          router.push('/login')
           return
         }
 
-        const { user } = sessionData.session
-
-        if (!user) {
-          console.log('No user found in session')
-          return
-        }
-
-        const response = await fetch(`/api/user-stats?userId=${user.id}`)
+        const response = await fetch(`/api/user-stats?userId=${session.user.id}`)
         const data = await response.json()
 
         if (!response.ok) {
+          if (response.status === 401) {
+            router.push('/login')
+            return
+          }
           throw new Error(data.error || 'Failed to fetch stats')
         }
 
         setStats(data.stats)
       } catch (error) {
         console.error('Error fetching user stats:', error)
+        setError('Failed to load analytics data')
       } finally {
         setLoading(false)
       }
     }
 
     fetchStats()
-  }, [])
+  }, [router])
 
   const chartData = [
     {
@@ -67,6 +77,10 @@ export default function AnalyticsPage() {
 
   if (loading) {
     return <div>Loading...</div>
+  }
+  
+  if (error) {
+    return <div>{error}</div>
   }
 
   return (

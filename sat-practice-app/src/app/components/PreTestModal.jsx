@@ -1,34 +1,66 @@
 import { useEffect, useState } from "react";
 import { Timer, ClipboardList, Accessibility, Lock, X } from "lucide-react"
-import { supabase } from '../../../lib/supabase';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import SubjectSection from "./SubjectSection";
 
 export default function PreTestModal({ testType, onStart, onClose }) {
   const [selectedSubject, setSelectedSubject] = useState(testType); // Set initial state to null
   const [availableTests, setAvailableTests] = useState([]);
   const [selectedTest, setSelectedTest] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const supabase = createClientComponentClient();
 
   useEffect(() => {
     const fetchAvailableTests = async () => {
-      const { data: { user }, error } = await supabase.auth.getUser();
-      console.log("selected subject:" + selectedSubject)
-      if (selectedSubject) { // Only fetch if a subject is selected
-        const response = await fetch(`/api/untaken-tests?userId=${user.id}&subject=${selectedSubject}`);
-        const data = await response.json();
-
-        if (response.ok) {
-          console.log("untaken tests:" + data)
-          setAvailableTests(data);
-        } else {
-          console.error('Error fetching available tests:', data.error);
+      try {
+        setLoading(true);
+        setError(null);
+        
+        if (!selectedSubject) {
+          setAvailableTests([]);
+          return;
         }
-      } else {
-        setAvailableTests([]); // Clear available tests if no subject is selected
+        
+        console.log("Fetching tests for subject:", selectedSubject);
+        
+        // Use the createClientComponentClient approach
+        const { data: { user }, error: userError } = await supabase.auth.getUser();
+        
+        if (userError) {
+          console.error("Auth error:", userError);
+          setError("Authentication error. Please try logging in again.");
+          return;
+        }
+        
+        if (!user) {
+          console.error("No user found");
+          setError("You must be logged in to view available tests.");
+          return;
+        }
+        
+        const response = await fetch(`/api/untaken-tests?userId=${user.id}&subject=${selectedSubject}`);
+        
+        if (!response.ok) {
+          const errorData = await response.json();
+          console.error('Error fetching available tests:', errorData);
+          setError(`Failed to load tests: ${errorData.error || response.statusText}`);
+          return;
+        }
+        
+        const data = await response.json();
+        console.log("Fetched untaken tests:", data);
+        setAvailableTests(data);
+      } catch (err) {
+        console.error("Error in fetchAvailableTests:", err);
+        setError("An unexpected error occurred. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchAvailableTests();
-  }, [selectedSubject]); // Fetch tests whenever the selected subject changes
+  }, [selectedSubject, supabase.auth]);
 
   const handleTestSelection = (testId) => {
     setSelectedTest(testId);

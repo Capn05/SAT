@@ -24,6 +24,8 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     html: true,
     linkify: true,
     typographer: true,
+    breaks: true,  // Recognize line breaks
+    listIndent: 2  // Proper indentation for lists
   }).use(markdownItKatex);
 
   const handleQuestionPreset = (presetQuestion) => {
@@ -64,7 +66,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
 
       // Create a streaming chat completion using the OpenAI instance
       const stream = await openai.chat.completions.create({
-        model: 'gpt-4-turbo-preview',
+        model: 'gpt-4o-mini',
         messages,
         stream: true,
       });
@@ -115,6 +117,9 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
 
   // Render the output response applying math conversions and Markdown formatting
   const renderResponse = (responseText) => {
+    if (!responseText) return '';
+    
+    // Process math expressions first
     const inlineMathRegex = /\$([^$]+)\$/g;
     const blockMathRegex = /\$\$([^$]+)\$\$/g;
 
@@ -125,8 +130,19 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     formattedText = formattedText.replace(inlineMathRegex, (match, p1) => {
       return renderMathInline(p1);
     });
-
-    return md.render(formattedText);
+    
+    // Ensure proper list formatting in markdown
+    // Fix common issues with lists not having proper spacing
+    formattedText = formattedText
+      // Ensure there's a blank line before lists
+      .replace(/([^\n])\n([\s]*[-*+])/g, '$1\n\n$2')
+      // Ensure proper indentation for nested lists
+      .replace(/\n([\s]*)([-*+])([\s]+)/g, '\n$1$2 ');
+    
+    // Render markdown with the enhanced formatting
+    const renderedHtml = md.render(formattedText);
+    
+    return renderedHtml;
   };
 
   const handleClearInput = () => {
@@ -171,12 +187,16 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
         
         {/* Suggestions - now placed below the input */}
         <div style={styles.suggestions}>
+        <button onClick={() => handleQuestionPreset("Give me a hint for the question without revealing the answer")} style={styles.suggestionButton}>
+            Hint
+          </button>
           <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.suggestionButton}>
             Explain
           </button>
           <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.suggestionButton}>
             Why is my answer incorrect
           </button>
+
         </div>
       </div>
     </aside>
@@ -195,6 +215,7 @@ const styles = {
     borderLeft: '1px solid #ddd',
     backgroundColor: '#f7f7f7',
     zIndex: 10,
+    fontFamily: '"Roboto", sans-serif',
   },
   header: {
     padding: '16px',
@@ -217,11 +238,13 @@ const styles = {
     borderRadius: '8px',
     marginBottom: '120px',
     lineHeight: '1.8',
+    fontFamily: '"Roboto", sans-serif',
     '& h1, & h2, & h3, & h4': {
       marginTop: '24px',
       marginBottom: '16px',
       fontWeight: '600',
       color: '#111827',
+      fontFamily: '"Roboto", sans-serif',
     },
     '& h1': { fontSize: '1.8em' },
     '& h2': { 
@@ -242,8 +265,14 @@ const styles = {
     '& li': {
       marginBottom: '12px',
       paddingLeft: '4px',
+      position: 'relative',
+      listStylePosition: 'outside',
     },
     '& li:lastChild': {
+      marginBottom: '0',
+    },
+    '& li > ul, & li > ol': {
+      marginTop: '8px',
       marginBottom: '0',
     },
     '& strong, & b': {

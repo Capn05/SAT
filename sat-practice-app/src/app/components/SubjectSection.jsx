@@ -1,21 +1,21 @@
 import { InfoIcon } from "lucide-react"
-import Link from 'next/link';
+import { useContext } from 'react'
 
-export default function SubjectSection({ title, value, buttonText, subject_id }) {
+export default function SubjectSection({ title, value, buttonText, subject_id, onStartPractice }) {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
         <span style={styles.sectionTitle}>{title}</span>
-
-
-        
       </div>
       <div style={styles.content}>
         <span style={styles.value}>{value}</span>
       </div>
-      <Link href={{ pathname: '/practice', query: { subject: subject_id, mode: 'quick' } }} style={styles.button}>
+      <button 
+        onClick={() => onStartPractice(subject_id)} 
+        style={styles.button}
+      >
         {buttonText}    
-      </Link>
+      </button>
     </div>
   )
 }
@@ -59,6 +59,9 @@ const styles = {
     color: "#10b981",
     cursor: "pointer",
     fontSize: "14px",
+    textAlign: "center",
+    textDecoration: "none",
+    display: "inline-block",
   },
 }
 

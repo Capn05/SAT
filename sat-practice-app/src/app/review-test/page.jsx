@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { useSearchParams } from 'next/navigation'
-import { supabase } from '../../../lib/supabase'
+import { useSearchParams, useRouter } from 'next/navigation'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import TopBar from '../components/TopBar'
 import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
@@ -13,10 +13,16 @@ export default function ReviewTestPage() {
   const [userAnswers, setUserAnswers] = useState([])
   const [selectedQuestion, setSelectedQuestion] = useState(null)
   const [metrics, setMetrics] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
   const searchParams = useSearchParams()
+  const router = useRouter()
   const testId = searchParams.get('testId')
   const [currentPage, setCurrentPage] = useState(1)
   const questionsPerPage = 10
+
+  // Create the Supabase client
+  const supabase = createClientComponentClient()
 
   // Calculate pagination indexes
   const indexOfLastQuestion = currentPage * questionsPerPage
@@ -32,10 +38,35 @@ export default function ReviewTestPage() {
   useEffect(() => {
     const fetchTestData = async () => {
       try {
-        const { data: { user } } = await supabase.auth.getUser()
+        setLoading(true)
+        setError(null)
+        
+        // Get the current session
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession()
+        
+        if (sessionError) {
+          console.error('Session error:', sessionError)
+          router.push('/login')
+          return
+        }
+        
+        if (!session) {
+          console.log('No valid session found')
+          router.push('/login')
+          return
+        }
 
         // Fetch questions using the existing API route
         const questionsResponse = await fetch(`/api/fetch-test-questions?testId=${testId}`)
+        
+        if (!questionsResponse.ok) {
+          if (questionsResponse.status === 401) {
+            router.push('/login')
+            return
+          }
+          throw new Error('Failed to fetch test questions')
+        }
+        
         const questionsData = await questionsResponse.json()
         
         // Fetch user answers
@@ -43,7 +74,7 @@ export default function ReviewTestPage() {
           .from('official_user_answers')
           .select('*')
           .eq('test_id', testId)
-          .eq('user_id', user.id)
+          .eq('user_id', session.user.id)
 
         if (answersError) throw answersError
 
@@ -85,13 +116,16 @@ export default function ReviewTestPage() {
 
       } catch (error) {
         console.error('Error fetching test data:', error)
+        setError('Failed to load test data')
+      } finally {
+        setLoading(false)
       }
     }
 
     if (testId) {
       fetchTestData()
     }
-  }, [testId])
+  }, [testId, router])
 
   // Add the parseQuestionText function from TestMode
   const parseQuestionText = (text) => {
@@ -101,6 +135,24 @@ export default function ReviewTestPage() {
     const question = parts[1] ? parts[1] : '';
     return { passage, question };
   };
+
+  if (loading) {
+    return (
+      <div className="review-container">
+        <TopBar title="Test Review" />
+        <div className="loading-state">Loading test data...</div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="review-container">
+        <TopBar title="Test Review" />
+        <div className="error-state">{error}</div>
+      </div>
+    )
+  }
 
   return (
     <div className="review-container" style={{ marginRight: '41%' }}>

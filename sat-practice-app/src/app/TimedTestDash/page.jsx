@@ -7,8 +7,7 @@ import { useRouter } from 'next/navigation'
 import TopBar from "../components/TopBar"
 import PreTestModal from "../components/PreTestModal"
 import SubjectTabs from './component/tabs'
-import { supabase } from '../../../lib/supabase';
-
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 import "../global.css"
 
@@ -25,60 +24,75 @@ export default function PracticeTestsPage() {
   const [activeTab, setActiveTab] = useState('Past')
   const [completedTests, setCompletedTests] = useState([])
   const [incompleteTests, setIncompleteTests] = useState([])
+  
+  const supabase = createClientComponentClient()
 
   useEffect(() => {
     // Fetch completed tests for the specific user
     const fetchCompletedTests = async () => {
-      const { data: { user }, error } = await supabase.auth.getUser();
-
-      if (error) {
-        console.error('Error fetching user:', error);
-        return;
-      }
-
-      if (!user) {
-        console.error('No user is logged in');
-        return;
-      }
-      const response = await fetch(`/api/pasts-tests?userId=${user.id}`);
-      const data = await response.json();
-      
-      if (response.ok) {
-        setCompletedTests(data);
-        console.log("completed tests: "+ JSON.stringify(data))
-      } else {
-        console.error('Error fetching completed tests:', data.error);
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          console.error('Error fetching session:', error);
+          router.push('/login');
+          return;
+        }
+        
+        if (!session) {
+          console.error('No session found, redirecting to login');
+          router.push('/login');
+          return;
+        }
+        
+        const response = await fetch(`/api/pasts-tests?userId=${session.user.id}`);
+        const data = await response.json();
+        
+        if (response.ok) {
+          setCompletedTests(data);
+          console.log("completed tests: "+ JSON.stringify(data))
+        } else {
+          console.error('Error fetching completed tests:', data.error);
+        }
+      } catch (err) {
+        console.error('Error in fetchCompletedTests:', err);
       }
     };
 
     // Fetch all tests
     const fetchIncompleteTests = async () => {
-      const { data: { user }, error } = await supabase.auth.getUser();
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          console.error('Error fetching session:', error);
+          router.push('/login');
+          return;
+        }
+        
+        if (!session) {
+          console.error('No session found, redirecting to login');
+          router.push('/login');
+          return;
+        }
 
-      if (error) {
-        console.error('Error fetching user:', error);
-        return;
-      }
+        const response = await fetch(`/api/incomplete-tests?userId=${session.user.id}`);
+        const data = await response.json();
+        console.log("incomplete tests:  "+ JSON.stringify(data) )
 
-      if (!user) {
-        console.error('No user is logged in');
-        return;
-      }
-
-      const response = await fetch(`/api/incomplete-tests?userId=${user.id}`);
-      const data = await response.json();
-      console.log("incomplete tests:  "+ JSON.stringify(data) )
-
-      if (response.ok) {
-        setIncompleteTests(data);
-      } else {
-        console.error('Error fetching incomplete tests:', data.error);
+        if (response.ok) {
+          setIncompleteTests(data);
+        } else {
+          console.error('Error fetching incomplete tests:', data.error);
+        }
+      } catch (err) {
+        console.error('Error in fetchIncompleteTests:', err);
       }
     };
 
     fetchCompletedTests();
     fetchIncompleteTests();
-  }, []);
+  }, [router]);
 
   const handleTestClick = (type) => {
     setCurrentTestType(type)

@@ -6,7 +6,7 @@ import { formatTime } from "../lib/utils"
 import "./test.css"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
-import { supabase } from '../../../lib/supabase'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 const mockQuestions = [
   {
@@ -40,6 +40,7 @@ export default function TestPage({ params }) {
   const [showResultsModal, setShowResultsModal] = useState(false)
   const [testResults, setTestResults] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
+  const supabase = createClientComponentClient()
 
   useEffect(() => {
     if (testId) {
@@ -86,7 +87,7 @@ export default function TestPage({ params }) {
     if (testId) {
       fetchTestData();
     }
-  }, [testId]);
+  }, [testId, supabase]);
 
   const handleAnswer = async (questionId, choice) => {
     // Update local state first
