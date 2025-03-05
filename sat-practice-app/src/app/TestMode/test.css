@@ -59,6 +59,14 @@
     margin: 0 auto;
   }
   
+  .passage-container {
+    grid-column: 1;
+  }
+  
+  .question-container {
+    grid-column: 2;
+  }
+  
   .content-card {
     background-color: white;
     border-radius: 8px;
@@ -452,5 +460,16 @@ body {
   background-color: #e5e7eb;
   color: #374151;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .passage-container,
+  .question-container {
+    grid-column: 1;
+  }
 }
 
