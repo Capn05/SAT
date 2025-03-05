@@ -31,7 +31,7 @@ const styles = {
   },
   domainHeader: {
     backgroundColor: "#4338ca",
-    padding: "20px 24px",
+    padding: "5px 24px",
   },
   headerContent: {
     display: "flex",
@@ -91,7 +91,7 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
     gap: "20px",
     padding: "24px",
-    backgroundColor: "#f8fafc",
+    backgroundColor: "white",
   },
 }
 
