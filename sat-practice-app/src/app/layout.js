@@ -24,14 +24,21 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // Special handling for the landing page route - we don't need the sidebar there
+  const isLandingPage = children?.props?.childProp?.segment === 'landing';
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}
         style={{ margin: 0, display: "flex" }}
       >
-        <Sidebar />
-        <div style={{ marginLeft: "0px", flex: 1 }}>
+        {!isLandingPage && <Sidebar />}
+        <div style={{ 
+          marginLeft: isLandingPage ? "0px" : "0px",
+          flex: 1,
+          width: isLandingPage ? "100%" : "auto" 
+        }}>
           {children}
         </div>
       </body>
