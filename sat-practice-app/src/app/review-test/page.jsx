@@ -165,28 +165,29 @@ export default function ReviewTestPage() {
           </div>
 
           {selectedQuestion !== null ? (
-              <div className="question-box">
-                {(() => {
-                  const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                  return (
-                    <>
-                      <div className="passage">{passage}</div>
-                      <p className="question-text">{question}</p>
-                    </>
-                  )
-                })()}
-                <div className="choices">
-                  {questions[selectedQuestion].options.map((option) => (
-                    <div
-                      key={option.id}
-                      className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
-                    >
-                      <span className="choice-letter">{option.value}.</span> {option.text}
-                    </div>
-                  ))}
-                </div>
-              
-
+            <div className="question-box">
+              <div className="question-header">
+                <div className="question-number">Question {selectedQuestion + 1}</div>
+              </div>
+              {(() => {
+                const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
+                return (
+                  <>
+                    <div className="passage">{passage}</div>
+                    <p className="question-text">{question}</p>
+                  </>
+                )
+              })()}
+              <div className="choices">
+                {questions[selectedQuestion].options.map((option) => (
+                  <div
+                    key={option.id}
+                    className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
+                  >
+                    <span className="choice-letter">{option.value}.</span> {option.text}
+                  </div>
+                ))}
+              </div>
             </div>
           ) : (
             <div className="question-placeholder">
