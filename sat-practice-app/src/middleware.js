@@ -5,7 +5,8 @@ export async function middleware(req) {
   const res = NextResponse.next()
   const supabase = createMiddlewareClient({ req, res })
 
-  const publicRoutes = ['/login', '/signup', '/forgot-password']
+  // Add landing to the public routes
+  const publicRoutes = ['/login', '/signup', '/forgot-password', '/landing-template']
   const isPublicRoute = publicRoutes.some(route => req.nextUrl.pathname.startsWith(route))
   const isApiRoute = req.nextUrl.pathname.startsWith('/api/')
   const isStaticRoute = req.nextUrl.pathname.startsWith('/_next') || 
@@ -15,6 +16,11 @@ export async function middleware(req) {
   // Skip middleware for static routes and API routes
   if (isStaticRoute || isApiRoute) {
     return res
+  }
+
+  // If it's the root path, redirect to the landing page template
+  if (req.nextUrl.pathname === '/') {
+    return NextResponse.redirect(new URL('/landing-template/index.html', req.url))
   }
 
   try {
@@ -27,8 +33,10 @@ export async function middleware(req) {
       return NextResponse.redirect(redirectUrl)
     }
 
-    // If user is signed in and trying to access a public route, redirect to home
-    if (session && isPublicRoute) {
+    // If user is signed in and trying to access a public route (except landing),
+    // redirect to home, but allow access to landing-template
+    if (session && isPublicRoute && 
+        !req.nextUrl.pathname.startsWith('/landing-template')) {
       return NextResponse.redirect(new URL('/home', req.url))
     }
 
