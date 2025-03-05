@@ -74,6 +74,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const renderResponse = (response) => {
     if (!response) return '';
     
+    // Normalize underscores - replace more than 5 consecutive underscores with just 5
+    response = response.replace(/_{6,}/g, '_____');
+    
     response = processTableFormat(response);
     
     const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
@@ -673,7 +676,7 @@ const styles = {
     flex: 1,
     backgroundColor: 'white',
     borderRadius: '12px',
-    padding: '20px',
+    padding: '30px',
     margin: '10px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
   },

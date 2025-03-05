@@ -274,7 +274,7 @@ export default function SkillsPage() {
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundColor: "white",
+    backgroundColor: "#f9fafb",
   },
   content: {
     padding: "24px",
