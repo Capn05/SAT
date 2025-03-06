@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function DifficultyModal({ isOpen, onClose, subject }) {
+export default function DifficultyModal({ isOpen, onClose, subject, title, mode = "quick", category = null }) {
   const [selectedDifficulty, setSelectedDifficulty] = useState('mixed');
   const router = useRouter();
 
@@ -14,7 +14,16 @@ export default function DifficultyModal({ isOpen, onClose, subject }) {
   };
 
   const handleStartPractice = () => {
-    router.push(`/practice?subject=${subject}&mode=quick&difficulty=${selectedDifficulty}`);
+    // Build the URL based on the mode
+    let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}`;
+    
+    // Add category parameter if provided (for skill mode)
+    if (category && mode === "skill") {
+      url += `&category=${encodeURIComponent(category)}`;
+    }
+    
+    console.log(`Navigating to: ${url}`);
+    router.push(url);
     onClose();
   };
 
@@ -22,7 +31,7 @@ export default function DifficultyModal({ isOpen, onClose, subject }) {
     <div className="modal-overlay">
       <div className="difficulty-modal">
         <div className="modal-header">
-          <h2>Select Difficulty Level</h2>
+          <h2>{title || "Select Difficulty Level"}</h2>
           <button className="close-button" onClick={onClose}>×</button>
         </div>
         

@@ -132,16 +132,17 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       setLoading(true);
       setError(null);
       
-      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-      if (!session) {
-        console.log('No session found, redirecting to login');
-        router.push('/login');
-        return;
-      }
-
+      const { data: { user }, error: sessionError } = await supabase.auth.getUser();
+      
       if (sessionError) {
         console.error('Session error:', sessionError);
         setError('Authentication error');
+        return;
+      }
+
+      if (!user) {
+        console.log('No user found, redirecting to login');
+        router.push('/login');
         return;
       }
 
@@ -150,7 +151,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       const { data: userAnswers, error: userAnswersError } = await supabase
         .from('user_answers')
         .select('question_id')
-        .eq('user_id', session.user.id);
+        .eq('user_id', user.id);
       
       if (userAnswersError) {
         console.error('Error fetching user answers:', userAnswersError);
@@ -205,8 +206,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
         console.log('Found test question:', testQuestions[0]);
         questionsData = testQuestions;
-      }
-      else if (mode === "quick") {
+      } else if (mode === "quick") {
         console.log('Fetching quick practice questions for subject:', subjectId, 'with difficulty:', capitalizedDifficulty || 'mixed');
         
         const { count, error: countError } = await supabase
@@ -283,34 +283,30 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         questionsData = shuffleArray(finalQuestions);
         
         console.log(`Successfully prepared ${questionsData.length} questions (${unansweredQuestions.length} unanswered) with difficulty: ${capitalizedDifficulty || 'mixed'}`);
-      } 
-      else if (mode === "skill") {
-        console.log('Fetching skill practice questions for category:', skillName);
+      } else if (mode === "skill" && skillName) {
+        console.log(`Fetching skill questions for ${skillName} with difficulty ${difficulty || 'mixed'}`);
         
-        if (!skillName) {
-          setError('Skill name is required for skill practice mode');
+        // Use the API route that now supports difficulty
+        const response = await fetch(`/api/skill-questions?subject=${subjectId}&category=${encodeURIComponent(skillName)}&difficulty=${difficulty || 'mixed'}`);
+        
+        if (!response.ok) {
+          const errorData = await response.json();
+          console.error('Error fetching skill questions:', errorData);
+          setError(`Failed to load questions: ${errorData.error || response.statusText}`);
           return;
         }
         
-        const apiUrl = `/api/skill-questions?category=${encodeURIComponent(skillName)}&subject=${subjectId}`;
-        console.log('API URL:', apiUrl);
-        
-        const response = await fetch(apiUrl);
         const data = await response.json();
-
-        if (!response.ok) {
-          console.error('API Error:', data);
-          throw new Error(data.error || 'Error fetching skill questions');
-        }
-
+        console.log("Fetched skill questions:", data);
+        
         if (!data.questions || data.questions.length === 0) {
-          throw new Error(`No questions available for ${skillName}`);
+          setError(`No questions available for ${skillName}`);
+          return;
         }
-
+        
         questionsData = data.questions;
-        console.log(`Successfully fetched ${questionsData.length} questions for ${skillName}`);
-      } 
-      else {
+        console.log(`Successfully fetched ${questionsData.length} skill questions`);
+      } else {
         setError(`Unsupported mode: ${mode}`);
         return;
       }
