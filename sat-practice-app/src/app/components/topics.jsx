@@ -9,6 +9,7 @@ import {
 import Link from 'next/link';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
+import DifficultyModal from './DifficultyModal';
 
 const categoryIcons = {
   // Math Categories
@@ -255,6 +256,9 @@ export default function TestCategories() {
   const [skillPerformance, setSkillPerformance] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showDifficultyModal, setShowDifficultyModal] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedSubcategory, setSelectedSubcategory] = useState(null);
   const router = useRouter();
   const supabase = createClientComponentClient();
 
@@ -320,12 +324,20 @@ export default function TestCategories() {
         return;
       }
 
-      const url = `/practice?mode=skill&subject=1&category=${encodeURIComponent(subcategory)}`;
-      window.location.href = url;
+      // Instead of navigating directly, show the difficulty modal
+      setSelectedCategory(category);
+      setSelectedSubcategory(subcategory);
+      setShowDifficultyModal(true);
     } catch (error) {
       console.error('Error in handleSkillClick:', error);
       router.push('/login');
     }
+  };
+
+  const handleDifficultyModalClose = () => {
+    setShowDifficultyModal(false);
+    setSelectedCategory(null);
+    setSelectedSubcategory(null);
   };
 
   if (loading) {
@@ -380,11 +392,26 @@ export default function TestCategories() {
           </div>
         ))}
       </div>
-      <Link href="/skills" style={styles.seeMoreText}>
-        <div style={styles.seeMore}>
-          All Skills<ArrowRight style={styles.arrowIcon} />
+      
+      <Link href="/skills" style={styles.seeMoreLink}>
+        <div style={styles.viewAllButton}>
+          <BookOpen style={styles.viewAllIcon} />
+          <span style={styles.viewAllText}>View All Skills</span>
+          <ArrowRight style={styles.viewAllArrow} />
         </div>
       </Link>
+
+      {/* Add the DifficultyModal component */}
+      {showDifficultyModal && (
+        <DifficultyModal
+          isOpen={showDifficultyModal}
+          onClose={handleDifficultyModalClose}
+          subject="1" // Assuming Math subject
+          title={`Select Difficulty Level for ${selectedSubcategory}`}
+          mode="skill"
+          category={selectedSubcategory}
+        />
+      )}
     </div>
   );
 }
@@ -479,22 +506,44 @@ const styles = {
     fontSize: "11px",
     color: "#9ca3af",
   },
-  seeMore: {
+  seeMoreLink: {
+    textDecoration: "none",
+    display: "block",
+    marginTop: "24px",
+  },
+  viewAllButton: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "flex-end",
-    marginTop: "24px",
+    justifyContent: "center",
+    backgroundColor: "#f3f4f6",
+    borderRadius: "8px",
+    padding: "12px 20px",
+    transition: "all 0.2s ease",
+    border: "1px solid #e5e7eb",
     cursor: "pointer",
+    boxShadow: "0 1px 2px rgba(0, 0, 0, 0.05)",
+    "&:hover": {
+      backgroundColor: "#e5e7eb",
+      transform: "translateY(-1px)",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    },
+  },
+  viewAllIcon: {
+    width: "20px",
+    height: "20px",
+    color: "#4b5563",
+    marginRight: "10px",
+  },
+  viewAllText: {
+    fontSize: "16px",
+    fontWeight: "500",
     color: "#374151",
-    fontSize: "14px",
+    flex: "1",
   },
-  arrowIcon: {
-    marginLeft: "8px",
-    width: "16px",
-    height: "16px",
-  },
-  seeMoreText: {
-    textDecoration: "none",
+  viewAllArrow: {
+    width: "18px",
+    height: "18px",
+    color: "#4b5563",
   },
 };
 
