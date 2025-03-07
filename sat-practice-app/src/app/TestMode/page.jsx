@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle } from "lucide-react"
+import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle, Clock } from "lucide-react"
 import { formatTime } from "../lib/utils"
 import "./test.css"
 import TopBar from "../components/TopBar"
@@ -26,7 +26,7 @@ const mockQuestions = [
 
 export default function TestPage({ params }) {
   const [currentQuestion, setCurrentQuestion] = useState(1)
-  const [timeRemaining, setTimeRemaining] = useState(params.type === "math" ? 4200 : 3840) // 70 or 64 minutes
+  const [timeRemaining, setTimeRemaining] = useState(params.type === "math" ? 2100 : 1920) // 70 or 64 minutes
   const [answers, setAnswers] = useState({})
   const [flaggedQuestions, setFlaggedQuestions] = useState(new Set())
   const [showQuestionNav, setShowQuestionNav] = useState(false)
@@ -41,6 +41,7 @@ export default function TestPage({ params }) {
   const [testResults, setTestResults] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
   const supabase = createClientComponentClient()
+  const [showTimerWarning, setShowTimerWarning] = useState(false)
 
   useEffect(() => {
     if (testId) {
@@ -50,10 +51,27 @@ export default function TestPage({ params }) {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeRemaining((prev) => (prev > 0 ? prev - 1 : 0))
+      setTimeRemaining((prev) => {
+        if (prev === 300) {
+          setShowTimerWarning(true)
+        }
+        if (prev <= 1) {
+          clearInterval(timer)
+          handleSubmitTest()
+          return 0
+        }
+        return prev > 0 ? prev - 1 : 0
+      })
     }, 1000)
     return () => clearInterval(timer)
   }, [])
+
+  useEffect(() => {
+    if (showTimerWarning) {
+      alert("5 minutes remaining!")
+      setShowTimerWarning(false)
+    }
+  }, [showTimerWarning])
 
   useEffect(() => {
     const fetchTestData = async () => {
@@ -243,6 +261,21 @@ export default function TestPage({ params }) {
     }
   };
 
+  // Format time display function
+  const formatTimeDisplay = (seconds) => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const remainingSeconds = seconds % 60;
+    
+    return `${hours > 0 ? `${hours}:` : ''}${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+  };
+
+  // Add a pause timer function (optional feature)
+  const pauseTimer = () => {
+    // Implementation for pausing timer if needed
+    // This would require additional state management
+  };
+
   return (
     <div className="test-container">
       {isLoading ? (
@@ -250,6 +283,7 @@ export default function TestPage({ params }) {
       ) : (
         <>
           <TopBar title="Full Length Practice Test" />
+          
           <div className="main-content">
             <div className="content-card">
               {/* Parse the question text */}
@@ -429,6 +463,11 @@ export default function TestPage({ params }) {
                 </button>
               </div>
               <div className="nav-buttons">
+                {/* Enhanced timer in bottom nav */}
+                <div className={`bottom-timer ${timeRemaining < 300 ? 'timer-warning' : ''}`}>
+                  <Clock className="timer-icon" size={16} />
+                  <span className="timer-text">{formatTimeDisplay(timeRemaining)}</span>
+                </div>
                 <button
                   onClick={() => setCurrentQuestion((prev) => Math.max(1, prev - 1))}
                   disabled={currentQuestion === 1}
