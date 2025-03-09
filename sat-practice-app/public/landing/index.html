@@ -67,9 +67,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
                         </div>
                         <span class="ml-2 text-white text-sm">Rating from our users</span>
                     </div>
@@ -828,264 +825,555 @@
     </section>
     
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20">
+    <section id="pricing" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-4">
-                    Explore our Pro Plans by Exam
+                <h2 class="text-3xl sm:text-5xl font-bold text-indigo-900 mb-6">
+                    Choose Your Plan
                 </h2>
-                <p class="text-gray-700 max-w-2xl mx-auto">
-                    All plans have access to SAT Prep Pro's cutting edge tools like projected scores, hints and explanations, performance data, and more!
+                <p class="text-gray-700 max-w-3xl mx-auto text-lg">
+                    Both plans include full access to all SAT Prep Pro features, including AI-powered study plans, 
+                    extensive practice questions, performance analytics, and personalized tutoring.
                 </p>
-                <a href="#" class="inline-block mt-4 text-indigo-600 font-medium hover:text-indigo-800">
-                    Compare All Plans
-                </a>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- SAT + ACT Plan -->
-                <div class="bg-indigo-600 rounded-lg overflow-hidden shadow-lg">
-                    <div class="p-6 text-white">
-                        <h3 class="text-xl font-bold mb-4">SAT + ACT</h3>
-                        <p class="mb-6">
-                            Access to 10,000+ SAT and ACT practice questions and 26 full-length practice exams. Plus, PSAT practice questions and practice exams.
-                        </p>
-                        
-                        <div class="mb-4">
-                            <p class="text-sm text-indigo-200">starts at</p>
-                            <div class="flex items-baseline">
-                                <span class="text-3xl font-bold">$49.92</span>
-                                <span class="ml-1 text-indigo-200">per month</span>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Monthly Plan -->
+                    <div class="bg-white border border-indigo-100 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
+                        <div class="p-10">
+                            <div class="flex justify-between items-start mb-6">
+                                <h3 class="text-2xl font-bold text-indigo-900">Monthly Plan</h3>
+                                <span class="bg-indigo-100 text-indigo-600 text-xs font-medium px-3 py-1 rounded-full">Flexible</span>
                             </div>
+                            
+                            <div class="mb-8">
+                                <div class="flex items-baseline">
+                                    <span class="text-5xl font-bold text-indigo-900">$49</span>
+                                    <span class="ml-2 text-gray-500 font-medium">/month</span>
+                                </div>
+                                <p class="text-gray-500 text-sm mt-2">Billed monthly</p>
+                            </div>
+                            
+                            <ul class="space-y-4 mb-10">
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">10,000+ SAT practice questions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">26 full-length adaptive practice exams</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">AI tutor with hints and explanations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Personalized study plans</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Performance analytics dashboard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Cancel anytime</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="/signup" class="block w-full bg-indigo-600 text-white text-center py-4 px-6 rounded-full text-base font-medium hover:bg-indigo-700 transition-colors duration-200">
+                                Start Monthly Plan
+                            </a>
+                            <p class="text-center text-gray-500 text-sm mt-4">7-day free trial</p>
                         </div>
-                        
-                        <a href="#" class="block w-full bg-lime-300 text-indigo-900 text-center py-2 rounded-full font-medium hover:bg-lime-400">
-                            Start SAT + ACT Free Trial
-                        </a>
                     </div>
-                </div>
-                
-                <!-- SAT Only Plan -->
-                <div class="bg-white border border-indigo-100 rounded-lg overflow-hidden shadow-lg">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-indigo-900 mb-4">SAT Only</h3>
-                        <p class="text-gray-700 mb-6">
-                            Access to 6,000+ SAT practice questions and 20 full-length, adaptive practice exams. Plus, PSAT practice questions and practice exams.
-                        </p>
-                        
-                        <div class="mb-4">
-                            <p class="text-sm text-gray-500">starts at</p>
-                            <div class="flex items-baseline">
-                                <span class="text-3xl font-bold text-indigo-900">$41.58</span>
-                                <span class="ml-1 text-gray-500">per month</span>
+                    
+                    <!-- 6-Month Plan -->
+                    <div class="bg-indigo-600 rounded-2xl overflow-hidden shadow-xl relative transform hover:scale-[1.01] transition-all duration-300">
+                        <div class="p-10 text-white">
+                            <div class="flex justify-between items-start mb-6">
+                                <h3 class="text-2xl font-bold">6-Month Plan</h3>
+                                <span class="bg-indigo-500 text-white text-xs font-medium px-3 py-1 rounded-full">Best Value</span>
                             </div>
-                        </div>
-                        
-                        <a href="#" class="block w-full bg-indigo-600 text-white text-center py-2 rounded-full font-medium hover:bg-indigo-700">
-                            Start SAT Free Trial
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- ACT Only Plan -->
-                <div class="bg-white border border-indigo-100 rounded-lg overflow-hidden shadow-lg">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-indigo-900 mb-4">ACT Only</h3>
-                        <p class="text-gray-700 mb-6">
-                            Access to 3,600+ ACT practice questions and 6 full-length, adaptive practice exams.
-                        </p>
-                        
-                        <div class="mb-4">
-                            <p class="text-sm text-gray-500">starts at</p>
-                            <div class="flex items-baseline">
-                                <span class="text-3xl font-bold text-indigo-900">$20.75</span>
-                                <span class="ml-1 text-gray-500">per month</span>
+                            
+                            <div class="mb-8">
+                                <div class="flex items-baseline">
+                                    <span class="text-5xl font-bold">$32</span>
+                                    <span class="ml-2 text-indigo-200 font-medium">/month</span>
+                                </div>
+                                <p class="text-indigo-200 text-sm mt-2">$192 billed upfront</p>
                             </div>
+                            
+                            <ul class="space-y-4 mb-10">
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>10,000+ SAT practice questions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>26 full-length adaptive practice exams</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>AI tutor with hints and explanations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Personalized study plans</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Performance analytics dashboard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-lime-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Money-back score improvement guarantee</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="/signup" class="block w-full bg-green-400 text-indigo-900 text-center py-4 px-6 rounded-full text-base font-medium hover:bg-green-300 transition-colors duration-200">
+                                Start 6-Month Plan
+                            </a>
+                            <p class="text-center text-indigo-200 text-sm mt-4">7-day free trial</p>
                         </div>
-                        
-                        <a href="#" class="block w-full bg-indigo-600 text-white text-center py-2 rounded-full font-medium hover:bg-indigo-700">
-                            Start ACT Free Trial
-                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-12 flex flex-wrap justify-center gap-6">
-                <div class="bg-lime-200 text-indigo-900 rounded-full px-6 py-3 font-medium inline-flex items-center">
-                    <span>SAT Prep Pro's money-back guarantee*</span>
+            <div class="mt-20 text-center">
+                <h3 class="text-2xl font-bold text-indigo-900 mb-8">Our Guarantee</h3>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="bg-lime-200 text-indigo-900 rounded-full px-8 py-4 font-medium inline-flex items-center shadow-sm">
+                        <span>Money-back guarantee for 6-month plans*</span>
+                    </div>
+                    
+                    <div class="bg-indigo-600 text-white rounded-full px-8 py-4 font-medium inline-flex items-center shadow-sm">
+                        <span>+200pts on the SAT or your money back*</span>
+                    </div>
                 </div>
-                
-                <div class="bg-indigo-600 text-white rounded-full px-6 py-3 font-medium inline-flex items-center">
-                    <span>+200pts on the SAT*</span>
-                </div>
-                
-                <div class="bg-purple-200 text-indigo-900 rounded-full px-6 py-3 font-medium inline-flex items-center">
-                    <span>+5pts on the ACT*</span>
-                </div>
+                <p class="text-gray-500 text-sm mt-8 max-w-2xl mx-auto">*Money-back guarantee applies to 6-month plans only. Requires completion of at least 15 practice tests and 500 practice questions. See terms for details.</p>
             </div>
         </div>
     </section>
     
     <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-gray-50">
+    <section id="reviews" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-lg shadow-lg p-8">
-                <div class="flex items-center mb-6">
-                    <div class="h-12 w-12 bg-gray-200 rounded-full overflow-hidden mr-4">
-                        <svg class="h-full w-full text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">Student Review</h3>
-                        <div class="flex mt-1">
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-6">
+                    What Our Students Say
+                </h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Thousands of students have boosted their SAT scores with SAT Prep Pro. Here's what they have to say.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Carousel container -->
+                <div id="reviewsCarousel" class="relative overflow-hidden">
+                    <!-- Carousel Track -->
+                    <div class="reviews-track flex transition-transform duration-300 ease-in-out">
+                        <!-- Review 1 -->
+                        <div class="review-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div class="h-14 w-14 bg-indigo-100 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Emma Rodriguez</h3>
+                                        <div class="flex mt-1">
+                                            <!-- 5 stars -->
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="text-indigo-600 font-medium mt-1">
+                                            Improved from 1320 to 1520 in 3 months
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="text-xl font-bold text-indigo-900 mb-4">SAT Prep Pro transformed my study approach</h4>
+                                
+                                <div class="text-gray-700 space-y-4">
+                                    <p>
+                                        I was struggling with time management and consistency before finding SAT Prep Pro. The personalized study plan was a game-changer - it identified my weak areas in math (particularly advanced algebra) and created targeted practice sessions I could complete in just 15-20 minutes daily.
+                                    </p>
+                                    
+                                    <p>
+                                        The AI tutor feature was incredible when I got stuck on problems. Instead of just giving me the answer, Ollie would provide hints that helped me understand the underlying concepts. The performance tracking also kept me motivated by showing my steady improvement over time.
+                                    </p>
+                                    
+                                    <p>
+                                        What really set this apart was the quality of the practice questions and tests. They perfectly mimicked the actual SAT format and difficulty, so when I took the real test, everything felt familiar. No surprises! The question difficulty control feature helped me gradually build confidence by mastering easier problems before tackling the harder ones.
+                                    </p>
+                                    
+                                    <p>
+                                        In just 3 months, I improved my score from 1320 to 1520, which helped me get into my dream school. The 6-month plan was worth every penny with its money-back guarantee (which I obviously didn't need to use)!
+                                    </p>
+                                </div>
+                                
+                                <p class="text-gray-500 mt-6 text-sm">
+                                    Review verified • March 15, 2024
+                                </p>
                             </div>
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+                        </div>
+                        
+                        <!-- Review 2 -->
+                        <div class="review-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div class="h-14 w-14 bg-indigo-100 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Jason Chen</h3>
+                                        <div class="flex mt-1">
+                                            <!-- 5 stars -->
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="text-indigo-600 font-medium mt-1">
+                                            Improved from 1280 to 1450 in 2 months
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="text-xl font-bold text-indigo-900 mb-4">The performance analytics made all the difference</h4>
+                                
+                                <div class="text-gray-700 space-y-4">
+                                    <p>
+                                        What separates SAT Prep Pro from other study tools is the detailed performance tracking. The analytics dashboard showed me exactly which areas I needed to focus on, particularly in the reading section. I could see exactly where I was improving and where I needed more work.
+                                    </p>
+                                    
+                                    <p>
+                                        The practice questions are outstanding – they perfectly replicate the actual SAT format and difficulty. The full-length practice tests helped me build stamina, and the personalized feedback after each test allowed me to fine-tune my strategy.
+                                    </p>
+                                    
+                                    <p>
+                                        I went from 1280 to 1450 in just 2 months of consistent practice. The score improvement was more than I expected in such a short time. Highly recommend to any serious student!
+                                    </p>
+                                </div>
+                                
+                                <p class="text-gray-500 mt-6 text-sm">
+                                    Review verified • February 9, 2024
+                                </p>
                             </div>
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            </div>
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            </div>
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            </div>
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+                        </div>
+                        
+                        <!-- Review 3 -->
+                        <div class="review-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div class="h-14 w-14 bg-indigo-100 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Sophia Williams</h3>
+                                        <div class="flex mt-1">
+                                            <!-- 5 stars -->
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                            <div class="mr-1 text-yellow-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="text-indigo-600 font-medium mt-1">
+                                            Improved from 1100 to 1420 in 5 months
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="text-xl font-bold text-indigo-900 mb-4">Ollie the AI tutor is like having a private teacher</h4>
+                                
+                                <div class="text-gray-700 space-y-4">
+                                    <p>
+                                        I started with a low score and was really struggling with math concepts. The AI tutor Ollie was a game-changer for me. It helped me understand concepts step-by-step instead of just giving answers. I could ask questions at any time and get instant, personalized help.
+                                    </p>
+                                    
+                                    <p>
+                                        The question difficulty control was also incredibly helpful. It let me gradually build confidence by starting with easier questions and working my way up. The detailed explanations for each question helped me understand why I got things wrong.
+                                    </p>
+                                    
+                                    <p>
+                                        The 6-month plan gave me plenty of time to make steady progress, and I ended up improving by over 300 points! I wouldn't have believed it was possible. My college counselor was amazed at my improvement.
+                                    </p>
+                                </div>
+                                
+                                <p class="text-gray-500 mt-6 text-sm">
+                                    Review verified • January 28, 2024
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <h4 class="text-xl font-bold mb-4">100% worth it</h4>
+                <!-- Navigation buttons -->
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                    <button id="prevButton" class="bg-indigo-600 text-white rounded-full p-2 focus:outline-none hover:bg-indigo-700 transition-colors duration-200 transform -translate-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                    <button id="nextButton" class="bg-indigo-600 text-white rounded-full p-2 focus:outline-none hover:bg-indigo-700 transition-colors duration-200 transform translate-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
                 
-                <p class="text-gray-700 mb-4">
-                    I bought this service right after I took the March Digital SAT and immediately realized how helpful it was. I got a 1300 on the March SAT and knew I needed more than one month. So, I upgraded from the one month plan to the three month plan and grinded hundreds of questions over the summer getting my accuracy up. The best part of the program is definitely the individual questions and how they have them mapped out in the subsections that College Board has laid out on their SAT practice question bank. The AI tool giving hints is also helpful and is good at giving step by steps to help solve difficult questions. 
-                </p>
-                
-                <p class="text-gray-700">
-                    The only minor concern I have is that some of the practice tests do have questions that are extremely difficult, especially in module 1 which doesn't exactly mimic the real exam but this might not even be a flaw. Preparing with these harder practice tests(harder than bluebook practice tests) was super helpful on the real test and I got a 1510 on the October Exam. I'd recommend this for anyone who needs help getting those hard module 2 questions down and anyone who wants to learn the fundamental questions of the exam.
-                </p>
-                
-                <p class="text-gray-500 mt-4 text-sm">
-                    Date of experience: October 05, 2024
-                </p>
-                
-                <a href="#" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-indigo-700">
-                    Read More Reviews
-                </a>
+                <!-- Carousel indicators -->
+                <div class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 -mb-12">
+                    <button class="indicator w-3 h-3 rounded-full bg-indigo-600 focus:outline-none transition-colors duration-200" data-index="0"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-indigo-300 focus:outline-none transition-colors duration-200" data-index="1"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-indigo-300 focus:outline-none transition-colors duration-200" data-index="2"></button>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Tutors Section -->
-    <section id="for-tutors" class="py-20 bg-indigo-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-                        Are you a counselor, tutor or test prep center?
-                    </h2>
+    <!-- Add carousel script to bottom of page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.reviews-track');
+            const slides = document.querySelectorAll('.review-slide');
+            const nextButton = document.getElementById('nextButton');
+            const prevButton = document.getElementById('prevButton');
+            const indicators = document.querySelectorAll('.indicator');
+            let currentIndex = 0;
+            
+            // Set the initial position
+            updateCarousel();
+            
+            // Handle next button click
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            });
+            
+            // Handle prev button click
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateCarousel();
+            });
+            
+            // Handle indicator clicks
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            function updateCarousel() {
+                // Move the track
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.remove('bg-indigo-300');
+                        indicator.classList.add('bg-indigo-600');
+                    } else {
+                        indicator.classList.remove('bg-indigo-600');
+                        indicator.classList.add('bg-indigo-300');
+                    }
+                });
+            }
+            
+            // Auto-advance carousel
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }, 8000); // Change slides every 8 seconds
+        });
+    </script>
+    
+    <!-- Final CTA Section Update -->
+    <section class="py-24" style="background: linear-gradient(to right, #163300, #0d114d);">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-12 shadow-xl border border-white/20">
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mb-8">
+                    Ready to boost your SAT score?
+                </h2>
+                
+                <p class="text-xl text-indigo-100 mb-10 max-w-3xl mx-auto">
+                    Join thousands of students who have improved their scores with our AI-powered practice platform. Start your journey to SAT success today.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="/signup" class="inline-block bg-green-400 text-indigo-900 px-10 py-5 rounded-full text-xl font-bold hover:bg-green-300 transform transition-all duration-300 hover:scale-105 shadow-lg">
+                        Start Prepping Today
+                    </a>
+                    <a href="#pricing" class="inline-block bg-white/20 text-white border border-white/40 px-10 py-5 rounded-full text-xl font-medium hover:bg-white/30 transition-all duration-300">
+                        View Plans
+                    </a>
                 </div>
                 
-                <div class="md:w-1/2">
-                    <p class="text-indigo-100 mb-6">
-                        We'd love to work with you! Contact us to learn how we partner with educators and the unique tools we can offer you.
+                <p class="text-indigo-200 mt-8 text-sm">
+                    No credit card required • 7-day free trial • Cancel anytime
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Improvement -->
+    <footer class="py-16" style="background-color: #0d114d;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <span class="text-white text-3xl font-bold">SAT Prep Pro</span>
+                    </div>
+                    <p class="mb-6 max-w-md" style="color: #f2f7ff;">
+                        Our AI-powered platform helps students maximize their SAT scores through personalized study plans, adaptive practice tests, and real-time performance analytics.
                     </p>
-                    
+                    <p class="text-xs mb-4" style="color: #f2f7ff; opacity: 0.9;">
+                        *Money-back guarantee applies to 6-month plans only. Requires completion of at least 15 practice tests and 500 practice questions. Terms and conditions apply.
+                    </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="inline-block bg-lime-300 text-indigo-900 px-6 py-3 rounded-full text-base font-medium hover:bg-lime-400">
-                            Contact Us
+                        <a href="#" class="hover:text-white transition-colors" style="color: #f2f7ff;">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
                         </a>
-                        <a href="#" class="inline-block text-white border border-white px-6 py-3 rounded-full text-base font-medium hover:bg-indigo-800">
-                            Learn More
+                        <a href="#" class="hover:text-white transition-colors" style="color: #f2f7ff;">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:text-white transition-colors" style="color: #f2f7ff;">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Final CTA -->
-    <section class="py-20 bg-gray-100">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-8">
-                Ace the SAT & ACT with our AI-powered practice tool
-            </h2>
-            
-            <p class="text-lg text-gray-700 mb-10">
-                Prep smarter with thousands of questions and personalized guidance, all at your command. Your digital study buddy is here to guide you to success, one practice question at a time.
-            </p>
-            
-            <a href="/signup" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-indigo-700">
-                Start Prepping Now
-            </a>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-indigo-950 text-indigo-300 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <div class="col-span-2">
-                    <div class="text-white text-2xl font-bold mb-4">SAT Prep Pro</div>
-                    <p class="mb-4">
-                        We help students ace the SAT and ACT through AI-powered practice and personalized guidance.
-                    </p>
-                    <p class="text-xs">
-                        *Money-back guarantee applies to annual plans only. Terms and conditions apply.
-                    </p>
-                </div>
                 
                 <div>
-                    <h3 class="text-white font-semibold mb-4">Product</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">Features</a></li>
-                        <li><a href="#" class="hover:text-white">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white">How It Works</a></li>
-                        <li><a href="#" class="hover:text-white">For Tutors</a></li>
+                    <h3 class="text-white font-semibold text-lg mb-4">Product</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Features</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Pricing</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Success Stories</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Study Resources</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-white font-semibold mb-4">Resources</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">Blog</a></li>
-                        <li><a href="#" class="hover:text-white">Help Center</a></li>
-                        <li><a href="#" class="hover:text-white">FAQ</a></li>
-                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-white font-semibold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">About Us</a></li>
-                        <li><a href="#" class="hover:text-white">Careers</a></li>
-                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                    <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">About Us</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Blog</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Help Center</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Contact</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Privacy Policy</a></li>
+                        <li><a href="#" class="transition-colors" style="color: #f2f7ff; opacity: 0.9;">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="mt-12 pt-8 border-t border-indigo-800 text-center text-sm">
-                <p>&copy; 2025 SAT Prep Pro. All rights reserved.</p>
+            <div class="mt-12 pt-8 border-t text-center" style="border-color: #202a7a;">
+                <p class="text-sm" style="color: #f2f7ff; opacity: 0.9;">&copy; 2024 SAT Prep Pro. All rights reserved.</p>
             </div>
         </div>
     </footer>
