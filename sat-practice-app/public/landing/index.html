@@ -152,57 +152,93 @@
     </section>
     
     <!-- Question Bank Section -->
-    <section class="py-16 bg-white">
+    <section class="py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:space-x-12">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm relative">
-                        <div class="flex items-end space-x-4">
-                            <div class="bg-white h-32 w-24 rounded-lg flex items-center justify-center p-4 shadow-sm">
-                                <span class="text-gray-400 text-xs text-center">UWorld</span>
+            <!-- Diagram and text in flex layout -->
+            <div class="md:flex md:items-center md:space-x-16 mb-20">
+                <!-- Left column: Larger square diagram -->
+                <div class="md:w-1/2 mb-12 md:mb-0 flex justify-center">
+                    <div class="bg-gray-50 p-12 rounded-xl shadow-sm relative aspect-square max-w-xl w-full">
+                        <!-- Reverted workflow diagram with improvements -->
+                        <div class="flex flex-col items-center justify-between h-full">
+                            <!-- Step 1: Question Generation - with a more distinct color -->
+                            <div class="bg-lime-300 rounded-xl p-6 w-4/5 text-center">
+                                <p class="text-gray-600 mb-2 text-sm">step one</p>
+                                <h3 class="text-indigo-900 text-xl font-medium mb-2">human-generated +</h3>
+                                <h3 class="text-indigo-900 text-xl font-medium">AI-generated questions</h3>
                             </div>
-                            <div class="bg-sky-100 h-40 w-24 rounded-lg flex items-center justify-center p-4 shadow-sm">
-                                <span class="text-gray-400 text-xs text-center">College Board</span>
-                            </div>
-                            <div class="bg-indigo-600 h-56 w-40 rounded-lg flex flex-col items-center justify-center p-4 shadow-md">
-                                <span class="text-white font-bold mb-2 text-center">SAT Prep Pro</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white mb-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                            
+                            <!-- Arrow down with arrow head -->
+                            <div class="h-16 flex items-center justify-center relative w-full">
+                                <div class="border-l-2 border-dashed border-indigo-400 h-12 absolute top-0"></div>
+                                <svg class="w-6 h-6 text-indigo-400 absolute bottom-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                 </svg>
+                            </div>
+                            
+                            <!-- Step 2: Human Verification -->
+                            <div class="bg-blue-100 rounded-xl p-6 w-4/5 text-center">
+                                <p class="text-gray-600 mb-2 text-sm">step two</p>
+                                <h3 class="text-indigo-900 text-xl font-medium">human-verification</h3>
+                            </div>
+                            
+                            <!-- Arrow down with arrow head -->
+                            <div class="h-16 flex items-center justify-center relative w-full">
+                                <div class="border-l-2 border-dashed border-indigo-400 h-12 absolute top-0"></div>
+                                <svg class="w-6 h-6 text-indigo-400 absolute bottom-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+                            
+                            <!-- Step 3: Question Bank -->
+                            <div class="bg-indigo-600 rounded-xl p-8 w-4/5 text-center">
+                                <p class="text-indigo-200 mb-2 text-sm">step three</p>
+                                <div class="flex items-center justify-center mb-2">
+                                    <span class="text-white text-2xl font-bold mr-2">SAT Prep Pro</span>
+                                    <!-- Fixed slider/equalizer icon -->
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                                        <rect x="3" y="10" width="18" height="2" rx="1" fill="currentColor"/>
+                                        <rect x="6" y="5" width="12" height="2" rx="1" fill="currentColor"/>
+                                        <rect x="9" y="15" width="6" height="2" rx="1" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-white text-2xl font-bold">Question Bank</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Right column: Text only (stats moved below) -->
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-4">
-                        Unrivaled preparation with <span class="text-indigo-600">the largest question bank</span>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-indigo-900 mb-6">
+                        Never run out of preparation with our question bank with <span class="text-indigo-600">2,000+ questions</span>
                     </h2>
                     
-                    <p class="text-gray-700 mb-4">
-                        SAT Prep Pro provides over twice as many SAT practice questions as the College Board, ensuring students are thoroughly prepared for test day.
+                    <p class="text-gray-700 text-md mb-6">
+                        Our question bank combines AI precision with human expertise. Every question is generated using advanced AI trained on official SAT questions, then meticulously validated by education professionals.
                     </p>
                     
-                    <p class="text-gray-700 mb-8">
-                        SAT Prep Pro also offers thousands of ACT questions, so students can have an all-in-one platform for their test prep. Whether they're preparing for SAT module 2 or the optional ACT science section, SAT Prep Pro has everything they need to succeed.
+                    <p class="text-gray-700 text-md">
+                        Experience practice questions indistinguishable from the real SAT. Our proprietary algorithm ensures each question accurately reflects the style, difficulty, and cognitive demands of the official exam—giving you authentic preparation that directly translates to test day success.
                     </p>
-                    
-                    <div class="mt-8 grid grid-cols-3 gap-6 text-center">
-                        <div>
-                            <p class="text-4xl font-bold text-indigo-600">10k+</p>
-                            <p class="text-sm text-gray-600 mt-2">human-verified practice questions</p>
-                        </div>
-                        
-                        <div>
-                            <p class="text-4xl font-bold text-indigo-600">1.48mn+</p>
-                            <p class="text-sm text-gray-600 mt-2">questions answered by users</p>
-                        </div>
-                        
-                        <div>
-                            <p class="text-4xl font-bold text-indigo-600">185k+</p>
-                            <p class="text-sm text-gray-600 mt-2">hints given by our AI practice tool</p>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics moved below both diagram and text -->
+            <div class="grid grid-cols-3 gap-16 text-center max-w-6xl mx-auto mt-12 border-t border-gray-100 pt-16">
+                <div>
+                    <p class="text-6xl font-bold text-indigo-600">2,000+</p>
+                    <p class="text-base text-gray-600 mt-4">human-verified practice questions</p>
+                </div>
+                
+                <div>
+                    <p class="text-6xl font-bold text-indigo-600">100+</p>
+                    <p class="text-base text-gray-600 mt-4">practice tests curated</p>
+                </div>
+                
+                <div>
+                    <p class="text-6xl font-bold text-indigo-600">10,000+</p>
+                    <p class="text-base text-gray-600 mt-4">hints given by Ollie, our AI tutor</p>
                 </div>
             </div>
         </div>
