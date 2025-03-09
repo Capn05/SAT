@@ -524,139 +524,304 @@
     </section>
     
     <!-- Performance Tracking -->
-    <section class="py-20" style="background-color: #0d114d;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-16">
-                See your performance as you practice
-            </h2>
+    <section class="py-24 relative" style="background: linear-gradient(180deg, #0d114d 0%, #191e6e 100%);">
+        <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mb-6">
+                    Track your journey to success
+                </h2>
+                <p class="text-indigo-200 max-w-3xl mx-auto">
+                    Our intelligent analytics dashboard helps you understand your progress and prioritize your study time effectively.
+                </p>
+            </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Left Column: Score Card -->
-                <div class="bg-indigo-800 rounded-2xl p-8">
-                    <h3 class="text-lg font-medium mb-3 text-white opacity-90">Total Score</h3>
-                    <p class="text-6xl font-bold mb-6 text-white">1520</p>
-                    
-                    <div class="flex items-center mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
-                        </svg>
-                        <span class="font-medium text-white">40 pts from Your Last Test</span>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Main Score Card -->
+                <div class="md:col-span-5 bg-indigo-800 rounded-2xl p-8 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-medium text-white">Current SAT Score</h3>
+                        <span class="text-xs bg-indigo-700 text-indigo-200 px-3 py-1 rounded-full">Updated 2 days ago</span>
                     </div>
                     
-                    <div class="flex items-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-sky-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
-                        </svg>
-                        <span class="font-medium text-white">40 pts from Goal</span>
-                    </div>
-                    
-                    <div class="mt-6 mb-8">
-                        <p class="text-sm text-white opacity-80 mb-1">Goal: 1560</p>
-                        <div class="w-full bg-indigo-900 rounded-full h-2.5 mb-2">
-                            <div class="bg-indigo-500 h-2.5 rounded-full" style="width: 75%"></div>
+                    <div class="flex items-end mb-6">
+                        <p class="text-7xl font-bold text-white">1480</p>
+                        <div class="flex items-center ml-4 pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                            <span class="font-medium text-green-400 ml-1">+70</span>
                         </div>
-                        <div class="flex justify-between text-xs text-white opacity-70">
-                            <span>400</span>
-                            <span>1600</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-white">70 pts from last test</span>
+                        </div>
+                        <span class="text-xs text-indigo-300">March 12</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-sky-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-white">40 pts from goal</span>
+                        </div>
+                        <span class="text-xs text-indigo-300">Goal: 1520</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-1">
+                            <p class="text-sm text-indigo-200">Progress to Goal</p>
+                            <p class="text-sm text-indigo-200">81%</p>
+                        </div>
+                        <div class="w-full bg-indigo-900 rounded-full h-3 mb-1">
+                            <div class="bg-indigo-400 h-3 rounded-full" style="width: 81%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-indigo-300">
+                            <span>1310</span>
+                            <span>1520</span>
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-2 gap-8 pt-4 border-t border-indigo-700">
                         <div>
-                            <h4 class="text-sm text-white opacity-75 mb-1">Reading & Writing</h4>
-                            <p class="text-3xl font-bold text-white mb-1">750</p>
-                            <p class="text-xs text-white opacity-70">50/54</p>
+                            <h4 class="text-sm text-indigo-200 mb-1">Reading & Writing</h4>
+                            <p class="text-3xl font-bold text-white mb-1">730</p>
+                            <p class="text-xs text-indigo-300">49/54</p>
+                            <div class="mt-2 w-full bg-indigo-900 rounded-full h-1.5">
+                                <div class="bg-blue-400 h-1.5 rounded-full" style="width: 91%"></div>
+                            </div>
                         </div>
                         
                         <div>
-                            <h4 class="text-sm text-white opacity-75 mb-1">Math</h4>
-                            <p class="text-3xl font-bold text-white mb-1">770</p>
-                            <p class="text-xs text-white opacity-70">42/44</p>
+                            <h4 class="text-sm text-indigo-200 mb-1">Math</h4>
+                            <p class="text-3xl font-bold text-white mb-1">750</p>
+                            <p class="text-xs text-indigo-300">41/44</p>
+                            <div class="mt-2 w-full bg-indigo-900 rounded-full h-1.5">
+                                <div class="bg-purple-400 h-1.5 rounded-full" style="width: 94%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Right Column: Performance Chart -->
-                <div class="bg-indigo-800 rounded-2xl p-8">
-                    <h3 class="text-lg font-medium mb-1 text-white opacity-90">Your Score & SAT Prep Pro</h3>
-                    <p class="text-sm text-white opacity-80 mb-6">You scored higher than 90% of SAT Prep Pro users.</p>
-                    
-                    <div class="relative h-56 mb-4">
-                        <!-- Chart visualization -->
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-full max-w-md">
-                                <div class="relative h-40">
-                                    <!-- Simplified histogram chart with highlight on user position -->
-                                    <div class="absolute inset-x-0 bottom-0 flex items-end justify-between">
-                                        <div class="w-1/6 h-10 bg-indigo-700 rounded-t"></div>
-                                        <div class="w-1/6 h-16 bg-indigo-700 rounded-t"></div>
-                                        <div class="w-1/6 h-24 bg-indigo-700 rounded-t"></div>
-                                        <div class="w-1/6 h-32 bg-indigo-700 rounded-t"></div>
-                                        <div class="w-1/6 h-40 bg-indigo-600 rounded-t relative">
-                                            <!-- User marker -->
-                                            <div class="absolute -top-3 inset-x-0 flex justify-center">
-                                                <div class="h-3 w-3 bg-white rounded-full"></div>
-                                            </div>
-                                            <div class="absolute -top-8 inset-x-0 flex justify-center">
-                                                <span class="text-xs text-white font-medium">You</span>
+                <!-- Progress & Charts Area -->
+                <div class="md:col-span-7 grid grid-cols-1 md:grid-cols-7 gap-8">
+                    <!-- Score Progress Chart -->
+                    <div class="md:col-span-7 bg-indigo-800 rounded-2xl p-8 shadow-lg border border-indigo-700">
+                        <h3 class="text-xl font-medium text-white mb-4">Score Progress</h3>
+                        
+                        <div class="relative h-64 mb-4">
+                            <!-- Score progress chart -->
+                            <div class="absolute inset-0 flex items-end">
+                                <div class="w-full h-56 flex items-end">
+                                    <!-- Chart bars representing tests -->
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-blue-400 rounded-t h-32"></div>
+                                        <p class="text-xs text-indigo-300 mt-2">Jan</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-blue-500 rounded-t h-40"></div>
+                                        <p class="text-xs text-indigo-300 mt-2">Feb</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-blue-600 rounded-t h-44"></div>
+                                        <p class="text-xs text-indigo-300 mt-2">Mar</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-blue-700 rounded-t h-48"></div>
+                                        <p class="text-xs text-indigo-300 mt-2">Apr</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center relative">
+                                        <div class="absolute -top-6 inset-x-0 flex justify-center">
+                                            <div class="bg-white text-indigo-900 text-xs font-bold rounded-md px-2 py-1">
+                                                1480
                                             </div>
                                         </div>
-                                        <div class="w-1/6 h-20 bg-indigo-700 rounded-t"></div>
+                                        <div class="w-full bg-green-400 rounded-t h-52"></div>
+                                        <p class="text-xs text-indigo-300 mt-2">May</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-indigo-700 rounded-xl p-3">
+                                <p class="text-sm text-indigo-200">Starting Score</p>
+                                <p class="text-xl font-bold text-white">1310</p>
+                            </div>
+                            <div class="bg-indigo-700 rounded-xl p-3">
+                                <p class="text-sm text-indigo-200">Total Improvement</p>
+                                <p class="text-xl font-bold text-white">+170 pts</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <p class="text-xs text-white opacity-60 italic">
-                        Aggregate data has been normalized to remove outliers and abstracted for ease of reading. Differences can exist between SAT Prep Pro users and general test-takers.
-                    </p>
+                    <!-- Accuracy Card -->
+                    <div class="md:col-span-4 rounded-2xl p-8 shadow-lg border border-lime-400" style="background-color: #d3fa65;">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-medium text-indigo-900">Accuracy</h3>
+                            <div class="flex items-center">
+                                <span class="text-green-700 text-sm font-medium">+5.2%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-700 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col items-center justify-center">
+                            <p class="text-8xl font-bold text-indigo-900">91%</p>
+                            <p class="text-sm text-indigo-700 mt-1">Last 100 questions</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Time Card -->
+                    <div class="md:col-span-3 bg-purple-100 rounded-2xl p-8 shadow-lg border border-purple-200">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-medium text-indigo-900">Avg. Time</h3>
+                            <div class="flex items-center">
+                                <span class="text-green-700 text-sm font-medium">-18s</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-700 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0v-8m0 8l-8-8-4 4-6-6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col items-center justify-center">
+                            <p class="text-8xl font-bold text-indigo-900">1:42</p>
+                            <p class="text-sm text-indigo-700 mt-1">Per question</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <!-- Metrics Cards Row -->
-            <div class="grid grid-cols-1 md:grid-cols-6 gap-6 mt-6">
-                <!-- Accuracy Card -->
-                <div class="md:col-span-3 rounded-2xl" style="background-color: #d3fa65;">
-                    <div class="p-8">
-                        <h3 class="text-lg font-medium mb-2 text-indigo-900">Accuracy</h3>
-                        <p class="text-7xl font-bold text-indigo-900">94%</p>
+            <!-- Skill Analysis Section -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-8 gap-8">
+                <!-- Strength & Weakness Card -->
+                <div class="md:col-span-4 bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <h3 class="text-xl font-medium text-white mb-4">Skill Breakdown</h3>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Algebra</p>
+                                <p class="text-sm text-green-400">Strong</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-green-400 h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">24/26 correct</p>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Data Analysis</p>
+                                <p class="text-sm text-blue-400">Proficient</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">17/20 correct</p>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Advanced Math</p>
+                                <p class="text-sm text-yellow-400">Developing</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 74%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">14/19 correct</p>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Time Card -->
-                <div class="md:col-span-3 bg-purple-100 rounded-2xl">
-                    <div class="p-8">
-                        <h3 class="text-lg font-medium mb-2 text-indigo-900">Total Time</h3>
-                        <p class="text-7xl font-bold text-indigo-900">2:30</p>
+                <!-- Study Time Card -->
+                <div class="md:col-span-4 bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <h3 class="text-xl font-medium text-white mb-4">Reading Breakdown</h3>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Info & Ideas</p>
+                                <p class="text-sm text-green-400">Strong</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-green-400 h-2.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">16/17 correct</p>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Craft & Structure</p>
+                                <p class="text-sm text-blue-400">Proficient</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 83%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">15/18 correct</p>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-sm text-white">Standard English</p>
+                                <p class="text-sm text-red-400">Focus Area</p>
+                            </div>
+                            <div class="w-full bg-indigo-900 rounded-full h-2.5">
+                                <div class="bg-red-400 h-2.5 rounded-full" style="width: 68%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">13/19 correct</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Additional Metrics Row -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
-                <div class="bg-indigo-800 rounded-2xl p-6">
-                    <h3 class="text-lg font-medium mb-2 text-white opacity-90">Questions Answered</h3>
-                    <p class="text-4xl font-bold text-white">247</p>
-                    <p class="text-sm text-white opacity-70 mt-1">Last 30 days</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
+                <div class="bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-medium text-white opacity-90">Questions Completed</h3>
+                        <span class="text-xs bg-indigo-700 text-indigo-300 px-2 py-1 rounded-full">+52 this week</span>
+                    </div>
+                    <p class="text-5xl font-bold text-white mt-4">368</p>
+                    <p class="text-sm text-indigo-300 mt-1">Last 30 days</p>
                 </div>
                 
-                <div class="bg-indigo-800 rounded-2xl p-6">
-                    <h3 class="text-lg font-medium mb-2 text-white opacity-90">Practice Time</h3>
-                    <p class="text-4xl font-bold text-white">12.5h</p>
-                    <p class="text-sm text-white opacity-70 mt-1">Last 30 days</p>
+                <div class="bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-medium text-white opacity-90">Practice Hours</h3>
+                        <span class="text-xs bg-indigo-700 text-indigo-300 px-2 py-1 rounded-full">+3.5 this week</span>
+                    </div>
+                    <p class="text-5xl font-bold text-white mt-4">18.5</p>
+                    <p class="text-sm text-indigo-300 mt-1">Last 30 days</p>
                 </div>
                 
-                <div class="bg-indigo-800 rounded-2xl p-6">
-                    <h3 class="text-lg font-medium mb-2 text-white opacity-90">Tests Completed</h3>
-                    <p class="text-4xl font-bold text-white">4</p>
-                    <p class="text-sm text-white opacity-70 mt-1">Since start</p>
+                <div class="bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-medium text-white opacity-90">Tests Completed</h3>
+                        <span class="text-xs bg-indigo-700 text-indigo-300 px-2 py-1 rounded-full">+1 this week</span>
+                    </div>
+                    <p class="text-5xl font-bold text-white mt-4">6</p>
+                    <p class="text-sm text-indigo-300 mt-1">Since starting</p>
                 </div>
                 
-                <div class="bg-indigo-800 rounded-2xl p-6">
-                    <h3 class="text-lg font-medium mb-2 text-white opacity-90">Progress</h3>
-                    <p class="text-4xl font-bold text-white">74%</p>
-                    <p class="text-sm text-white opacity-70 mt-1">To goal score</p>
+                <div class="bg-indigo-800 rounded-2xl p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-medium text-white opacity-90">Test Day Readiness</h3>
+                        <div class="text-xs bg-green-400 text-green-900 px-2 py-1 rounded-full font-medium">On Track</div>
+                    </div>
+                    <p class="text-5xl font-bold text-white mt-4">92%</p>
+                    <div class="mt-1 flex items-center text-green-400 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Ready for June SAT</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -774,11 +939,6 @@
                     <div>
                         <h3 class="font-semibold">Student Review</h3>
                         <div class="flex mt-1">
-                            <div class="mr-1 text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                            </div>
                             <div class="mr-1 text-green-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
