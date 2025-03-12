@@ -94,6 +94,16 @@ export default function PracticeTestsPage() {
     fetchIncompleteTests();
   }, [router]);
 
+  // Add this separate effect to log when completedTests changes
+  useEffect(() => {
+    console.log("Completed tests array:", completedTests);
+    if (completedTests.length > 0) {
+      console.log("First test object example:", completedTests[0]);
+      // Log all property names of the first test object
+      console.log("Available properties:", Object.keys(completedTests[0]));
+    }
+  }, [completedTests]);
+
   const handleTestClick = (type) => {
     setCurrentTestType(type)
     setIsModalOpen(true)
@@ -121,9 +131,37 @@ export default function PracticeTestsPage() {
  
   };
 
+  // Add this function to format dates
+  const formatDate = (dateString) => {
+    if (!dateString) return 'No date available';
+    
+    try {
+      const date = new Date(dateString);
+      
+      // Check if date is valid
+      if (isNaN(date.getTime())) return 'Invalid date';
+      
+      // Format options
+      const options = { 
+        year: 'numeric', 
+        month: 'short', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      };
+      
+      return date.toLocaleDateString('en-US', options);
+    } catch (error) {
+      console.error('Error formatting date:', error);
+      return 'Date error';
+    }
+  };
+
   return (
+    <div>
+            <TopBar title={"Full Length Practice Tests"}/>
+
     <div style={styles.container}>
-      <TopBar title={"Full Length Practice Tests"}/>
 
       <div style={styles.content}>
         <div style={styles.mainSection}>
@@ -191,24 +229,50 @@ export default function PracticeTestsPage() {
                   {/* <span style={styles.startNewTestText}>Start New Test</span> */}
                 </div>
               </div>
-              {currentTests.map((test) => (
-                <div 
-                  key={test.id} 
-                  style={styles.testHistoryItem}
-                  onClick={() => handleTestHistoryClick(test)}
-                  role="button"
-                  tabIndex={0}
-                >
-                  <div style={styles.testHistoryInfo}>
-                    <h3 style={styles.testHistoryName}>{test.name}</h3>
-                    <p style={styles.testHistoryDate}>{test.date}</p>
+              {currentTests.map((test) => {
+                // Determine the test name with fallbacks
+                const testName = test.test_name || test.name || test.title || `Test #${test.test_id || test.id}`;
+                
+                return (
+                  <div 
+                    key={test.id} 
+                    style={{
+                      ...styles.testHistoryItem,
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                      position: 'relative',
+                      borderLeft: activeTab === "Past" ? '4px solid #10b981' : '4px solid transparent',
+                    }}
+                    onClick={() => handleTestHistoryClick(test)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyPress={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
+                  >
+                    <div style={styles.testHistoryInfo}>
+                      <h3 style={styles.testHistoryName}>{testName}</h3>
+                      <p style={styles.testHistoryDate}>
+                        {formatDate(test.created_at || test.test_date || test.date)}
+                      </p>
+                    </div>
+                    <div style={styles.testHistoryDetails}>
+                      <span style={styles.testHistoryType}>{test.type || test.test_type || 'Practice Test'}</span>
+                      <span style={styles.testHistoryScore}>Score: {test.score || '—'}</span>
+                      
+                      {activeTab === "Past" && (
+                        <div style={styles.reviewButton}>
+                          <span style={styles.reviewText}>Review Test</span>
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 12L9 8V16L15 12Z" fill="#10b981" />
+                            <circle cx="12" cy="12" r="9" stroke="#10b981" strokeWidth="2" fill="none" />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <div style={styles.testHistoryDetails}>
-                    <span style={styles.testHistoryType}>{test.type}</span>
-                    <span style={styles.testHistoryScore}>Score: {test.score}</span>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
 
 
             </div>
@@ -279,6 +343,7 @@ export default function PracticeTestsPage() {
         </div>
       </div>
     </div>
+    </div>
   )
 }
 
@@ -303,7 +368,7 @@ const recentTests = [
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundColor: "white",
+    backgroundColor: "#f9fafb",
     padding: "24px",
   },
   header: {
@@ -329,7 +394,8 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "1fr 300px",
     gap: "24px",
-    paddingTop:"20px"
+    paddingTop:"20px",
+    margin:"0 1vh  0 1vh",
   },
   mainSection: {
     display: "flex",
@@ -340,7 +406,7 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
     gap: "24px",
-    backgroundColor: "white",
+    backgroundColor: "#f9fafb",
     borderRadius: "8px",
   },
   testCard: {
@@ -378,16 +444,17 @@ const styles = {
     marginBottom: "16px",
   },
   startButton: {
-    width: "100%",
-    padding: "12px",
-    backgroundColor: "#e6f0e6",
-    color: "#065f46",
-    border: "none",
-    borderRadius: "8px",
-    fontSize: "14px",
+    backgroundColor: "#10b981",
+    color: "white", 
+    padding: "0.5rem 1.25rem",
+    borderRadius: "0.375rem",
     fontWeight: 500,
+    width: "100%",
+    border: "none",
     cursor: "pointer",
-    transition: "background-color 0.2s ease",
+    textAlign: "center",
+    textDecoration: "none",
+    display: "inline-block",
   },
   featuresGrid: {
     display: "grid",
@@ -502,14 +569,11 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "12px",
-    backgroundColor: "#f3f4f6",
+    padding: "16px",
+    backgroundColor: "#f9fafb",
     borderRadius: "8px",
-    cursor: 'pointer',
-    transition: 'background-color 0.2s ease',
-    '&:hover': {
-      backgroundColor: '#f3f4f6',
-    },
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    marginBottom: "8px",
   },
   testHistoryItemHover: {
     backgroundColor: "#e5e7eb",
@@ -582,6 +646,17 @@ const styles = {
     fontWeight: 500,
     cursor: "pointer",
     transition: "background-color 0.2s ease",
+  },
+  reviewButton: {
+    display: "flex",
+    alignItems: "center",
+    marginTop: "8px",
+    color: "#10b981",
+    fontWeight: 500,
+    fontSize: "14px",
+  },
+  reviewText: {
+    marginRight: "6px",
   },
 }
 
