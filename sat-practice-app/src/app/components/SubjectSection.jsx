@@ -10,12 +10,14 @@ export default function SubjectSection({ title, value, buttonText, subject_id, o
       <div style={styles.content}>
         <span style={styles.value}>{value}</span>
       </div>
-      <button 
-        onClick={() => onStartPractice(subject_id)} 
-        style={styles.button}
-      >
-        {buttonText}    
-      </button>
+      <div style={styles.buttonContainer}>
+        <button 
+          onClick={() => onStartPractice(subject_id)} 
+          style={styles.button}
+        >
+          {buttonText}    
+        </button>
+      </div>
     </div>
   )
 }
@@ -26,6 +28,9 @@ const styles = {
     backgroundColor: "white",
     borderRadius: "8px",
     boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "200px", // Set minimum height to ensure consistent card size
   },
   header: {
     display: "flex",
@@ -44,24 +49,27 @@ const styles = {
   },
   content: {
     marginBottom: "16px",
+    flex: 1, // Takes up remaining space
   },
   value: {
     fontSize: "24px",
     fontWeight: 600,
     color: "#111827",
   },
+  buttonContainer: {
+    marginTop: "auto", // Pushes button to bottom
+  },
   button: {
+    backgroundColor: "#10b981",
+    color: "white", 
+    padding: "0.5rem 1.25rem",
+    borderRadius: "0.375rem",
+    fontWeight: 500,
     width: "100%",
-    padding: "8px",
-    backgroundColor: "#e6f0e6",
     border: "none",
-    borderRadius: "4px",
-    color: "#10b981",
     cursor: "pointer",
-    fontSize: "14px",
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
   },
 }
-

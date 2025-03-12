@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit } from "lucide-react"
 import styles from "./sidebar.module.css"
+import DifficultyModal from "../app/components/DifficultyModal"
 
 const navItems = [
   { name: "Dashboard", icon: Home, path: "/home" },
@@ -12,8 +13,8 @@ const navItems = [
     name: "Quick Practice",
     icon: Rabbit,
     subItems: [
-      { name: "Math", icon: Calculator, path: "/questions?subject=1&mode=quick" },
-      { name: "Reading/Writing", icon: BookOpen, path: "/questions?subject=4&mode=quick" },
+      { name: "Math", icon: Calculator, subject: "1" },
+      { name: "Reading/Writing", icon: BookOpen, subject: "4" },
     ],
   },
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },
@@ -25,6 +26,11 @@ export default function Sidebar() {
   const [isExpanded, setIsExpanded] = useState(false)
   const [expandedSubMenu, setExpandedSubMenu] = useState<string | null>(null)
   const pathname = usePathname()
+  const router = useRouter()
+  
+  // Add states for difficulty modal
+  const [showDifficultyModal, setShowDifficultyModal] = useState(false)
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
 
   const toggleSubMenu = (name: string) => {
     if (expandedSubMenu === name) {
@@ -32,6 +38,21 @@ export default function Sidebar() {
     } else {
       setExpandedSubMenu(name)
     }
+  }
+
+  // Add this to your component or import from a styles file
+  const sidebarStyles = {
+    active: {
+      backgroundColor: "#10b981",
+      color: "white",
+      borderRadius: "0.375rem",
+    }
+  };
+
+  // Handle quick practice item click
+  const handleQuickPracticeClick = (subject: string) => {
+    setSelectedSubject(subject)
+    setShowDifficultyModal(true)
   }
 
   // Add scroll event listener to handle sidebar position
@@ -87,27 +108,51 @@ export default function Sidebar() {
                     )}
                   </div>
                 ) : (
-                  <Link href={item.path!} className={`${styles.navItem} ${isActive ? styles.active : ""}`}>
+                  <Link 
+                    href={item.path!} 
+                    className={`${styles.navItem} ${isActive ? styles.active : ""}`}
+                    style={isActive ? sidebarStyles.active : {}}
+                  >
                     <div className={styles.iconWrapper}>
-                      <item.icon className={styles.icon} />
+                      <item.icon className={styles.icon} style={isActive ? { color: "white" } : {}} />
                     </div>
                     <span className={styles.label}>{item.name}</span>
                   </Link>
                 )}
                 {hasSubItems && (expandedSubMenu === item.name || !isExpanded) && (
                   <div className={styles.subItems}>
-                    {item.subItems!.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        href={subItem.path}
-                        className={`${styles.navItem} ${styles.subItem} ${pathname === subItem.path ? styles.active : ""}`}
-                      >
-                        <div className={styles.iconWrapper}>
-                          <subItem.icon className={styles.icon} />
-                        </div>
-                        <span className={styles.label}>{subItem.name}</span>
-                      </Link>
-                    ))}
+                    {item.subItems!.map((subItem) => {
+                      // Check if this is a Quick Practice subitem (has subject property)
+                      if (subItem.subject) {
+                        return (
+                          <div
+                            key={subItem.name}
+                            className={`${styles.navItem} ${styles.subItem}`}
+                            onClick={() => handleQuickPracticeClick(subItem.subject)}
+                            style={{ cursor: 'pointer' }}
+                          >
+                            <div className={styles.iconWrapper}>
+                              <subItem.icon className={styles.icon} />
+                            </div>
+                            <span className={styles.label}>{subItem.name}</span>
+                          </div>
+                        );
+                      }
+                      
+                      // Regular link for other subitems
+                      return (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.path || "#"}
+                          className={`${styles.navItem} ${styles.subItem} ${pathname === subItem.path ? styles.active : ""}`}
+                        >
+                          <div className={styles.iconWrapper}>
+                            <subItem.icon className={styles.icon} />
+                          </div>
+                          <span className={styles.label}>{subItem.name}</span>
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </React.Fragment>
@@ -123,6 +168,17 @@ export default function Sidebar() {
       >
         <ChevronRight />
       </button>
+      
+      {/* Difficulty Modal */}
+      {showDifficultyModal && (
+        <DifficultyModal
+          isOpen={showDifficultyModal}
+          onClose={() => setShowDifficultyModal(false)}
+          subject={selectedSubject}
+          mode="quick"
+          title="Quick Practice"
+        />
+      )}
     </div>
   )
 }

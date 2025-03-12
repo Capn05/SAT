@@ -240,7 +240,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           .eq('subject_id', subjectId);
         
         // Add difficulty filter if not mixed
-        if (capitalizedDifficulty && capitalizedDifficulty !== 'Mixed') {
+        if (capitalizedDifficulty && capitalizedDifficulty !== 'mixed') {
           console.log(`Applying difficulty filter: ${capitalizedDifficulty}`);
           query = query.eq('difficulty', capitalizedDifficulty);
         } else {
@@ -268,6 +268,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         
         // If we don't have enough unanswered questions, include some answered ones
         let finalQuestions = unansweredQuestions;
+
         if (unansweredQuestions.length < targetLimit) {
           console.log(`Not enough unanswered questions (${unansweredQuestions.length}), including some answered ones`);
           const answeredQuestions = allQuestions.filter(q => answeredQuestionIds.has(q.id));
