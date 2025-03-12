@@ -18,6 +18,7 @@ export default function AnalyticsCard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
+        setLoading(true);
         const { data: { session }, error: sessionError } = await supabase.auth.getSession()
         
         if (sessionError || !session) {
@@ -29,27 +30,51 @@ export default function AnalyticsCard() {
         console.log('Fetching stats for user:', session.user.id)
 
         const response = await fetch(`/api/user-stats?userId=${session.user.id}`)
-        const data = await response.json()
-
+        
         if (!response.ok) {
           if (response.status === 401) {
             router.push('/login')
             return
           }
-          throw new Error(data.error || 'Failed to fetch stats')
+          
+          // Set default stats on error instead of throwing
+          console.error(`API error: ${response.status} - ${response.statusText}`)
+          setStats({
+            questionsAnswered: 0,
+            correctAnswers: 0,
+            accuracyPercentage: 0
+          })
+          return
         }
-
+        
+        const data = await response.json()
         console.log('Received stats:', data)
-        setStats(data.stats)
+        
+        if (data && data.stats) {
+          setStats(data.stats)
+        } else {
+          // Fallback if data structure is unexpected
+          setStats({
+            questionsAnswered: 0,
+            correctAnswers: 0,
+            accuracyPercentage: 0
+          })
+        }
       } catch (error) {
         console.error('Error fetching user stats:', error)
+        // Set default values on error
+        setStats({
+          questionsAnswered: 0,
+          correctAnswers: 0,
+          accuracyPercentage: 0
+        })
       } finally {
         setLoading(false)
       }
     }
 
     fetchStats()
-  }, [router])
+  }, [router, supabase])
 
   const handleViewAnalytics = () => {
     router.push('/analytics')
