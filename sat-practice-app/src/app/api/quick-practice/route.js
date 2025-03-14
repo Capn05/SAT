@@ -15,6 +15,7 @@ export async function GET(request) {
 
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject');
+    const difficulty = searchParams.get('difficulty') || 'mixed';
 
     console.log('Fetching quick practice questions for subject:', subject);
 
@@ -22,36 +23,53 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Subject is required' }, { status: 400 });
     }
 
-    // Get user's answer history for this subject
-    const { data: userAnswers, error: answersError } = await supabase
-      .from('user_answers')
-      .select('question_id, is_correct')
-      .eq('user_id', session.user.id);
+    // Get user's skill analytics to prioritize questions from weaker areas
+    const { data: skillAnalytics, error: analyticsError } = await supabase
+      .from('user_skill_analytics')
+      .select('*')
+      .eq('user_id', session.user.id)
+      .eq('subject_id', subject);
 
-    if (answersError) {
-      console.error('Error fetching user answers:', answersError);
-      return NextResponse.json({ error: 'Failed to fetch user history' }, { status: 500 });
+    if (analyticsError) {
+      console.error('Error fetching skill analytics:', analyticsError);
+      return NextResponse.json({ error: 'Failed to fetch user analytics' }, { status: 500 });
     }
 
-    // Create a map of question IDs to their success rate
-    const questionAttempts = new Map();
-    userAnswers?.forEach(answer => {
-      if (!questionAttempts.has(answer.question_id)) {
-        questionAttempts.set(answer.question_id, {
-          attempts: 0,
-          correct: 0
-        });
-      }
-      const stats = questionAttempts.get(answer.question_id);
-      stats.attempts++;
-      if (answer.is_correct) stats.correct++;
+    // Create a map of subcategory IDs to their mastery level
+    const subcategoryMastery = new Map();
+    skillAnalytics?.forEach(record => {
+      const masteryScore = 
+        record.mastery_level === 'Needs Practice' ? 1 :
+        record.mastery_level === 'Needs More Attempts' ? 2 :
+        record.mastery_level === 'On Track' ? 3 :
+        record.mastery_level === 'Mastered' ? 4 : 0;
+      subcategoryMastery.set(record.subcategory_id, masteryScore);
     });
 
-    // Get all questions for this subject
-    const { data: allQuestions, error: questionsError } = await supabase
+    // Get questions with their domain and subcategory information
+    let query = supabase
       .from('questions')
-      .select('*, options(*)')
+      .select(`
+        *,
+        options(*),
+        domains!inner (
+          id,
+          domain_name
+        ),
+        subcategories!inner (
+          id,
+          subcategory_name
+        )
+      `)
       .eq('subject_id', subject);
+
+    // Add difficulty filter if specified
+    if (difficulty && difficulty !== 'mixed') {
+      const capitalizedDifficulty = difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
+      query = query.eq('difficulty', capitalizedDifficulty);
+    }
+
+    const { data: allQuestions, error: questionsError } = await query;
 
     if (questionsError) {
       console.error('Error fetching questions:', questionsError);
@@ -66,29 +84,24 @@ export async function GET(request) {
     }
 
     // Sort questions by priority:
-    // 1. Never attempted
-    // 2. Low success rate
-    // 3. Not attempted recently
+    // 1. Questions from subcategories with lower mastery levels
+    // 2. Random within each mastery level
     const sortedQuestions = allQuestions.sort((a, b) => {
-      const statsA = questionAttempts.get(a.id);
-      const statsB = questionAttempts.get(b.id);
-
-      // If neither has been attempted, maintain original order
-      if (!statsA && !statsB) return 0;
+      const masteryA = subcategoryMastery.get(a.subcategory_id) || 0;
+      const masteryB = subcategoryMastery.get(b.subcategory_id) || 0;
       
-      // Prioritize never attempted questions
-      if (!statsA) return -1;
-      if (!statsB) return 1;
-
-      // Then sort by success rate
-      const rateA = statsA.correct / statsA.attempts;
-      const rateB = statsB.correct / statsB.attempts;
-      return rateA - rateB;
+      if (masteryA !== masteryB) {
+        return masteryA - masteryB; // Lower mastery scores first
+      }
+      
+      return Math.random() - 0.5; // Random within same mastery level
     });
 
-    // Take the first 15 questions (or less if not enough available)
+    // Take the first 15 questions
     const selectedQuestions = sortedQuestions.slice(0, 15).map(q => ({
       ...q,
+      domain_name: q.domains.domain_name,
+      subcategory_name: q.subcategories.subcategory_name,
       options: q.options.sort(() => Math.random() - 0.5) // Shuffle options
     }));
 

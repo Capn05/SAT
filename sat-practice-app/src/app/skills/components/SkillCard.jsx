@@ -25,7 +25,7 @@ export default function SkillCard({ skill, subject }) {
   };
 
   // Determine the subject ID based on the subject prop
-  const subjectId = subject === "Math" ? "1" : "4";
+  const subjectId = subject === "Math" ? "1" : "2";
 
   return (
     <>

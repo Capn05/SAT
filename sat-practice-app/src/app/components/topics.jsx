@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { 
-  BookOpen, Calculator, FlaskRoundIcon as Flask, PenTool, Brain, 
+  BookOpen, Calculator, FlaskRoundIcon as FlaskRoundIcon, PenTool, Brain, 
   FunctionSquare, PieChart, Shapes, BarChart, FileText, Lightbulb, 
   NetworkIcon as Network, ArrowRight, Sigma, Infinity, Ruler, 
-  Percent, Divide, LineChart, CircleSquare, Box
+  Percent, Divide, LineChart, Circle, Box
 } from "lucide-react";
 import Link from 'next/link';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
@@ -46,14 +46,14 @@ const categoryIcons = {
   'Proportions, and Units': Divide,
   'Lines, Angles, and Triangles': Shapes,
   'Right Triangles and Trigonometry': Shapes,
-  'Circles': CircleSquare,
+  'Circles': Circle,
   'Area and Volume': Box,
   
   // Reading Categories
   'Information and Ideas': BookOpen,
   'Craft and Structure': FileText,
   'Expression of Ideas': PenTool,
-  'Standard English Conventions': Flask,
+  'Standard English Conventions': FlaskRoundIcon,
   
   // Reading Subcategories
   'Central Ideas and Details': BookOpen,
@@ -67,7 +67,7 @@ const categoryIcons = {
   'Cross-Text Connections': Network,
   'Rhetorical Synthesis': PenTool,
   'Transitions': Network,
-  'Boundaries': Flask,
+  'Boundaries': FlaskRoundIcon,
   'Form, Structure, and Sense': Shapes,
   'Linear Inequalities': Calculator,
 };
@@ -113,10 +113,23 @@ async function fetchSkillPerformance() {
 
     console.log('Fetching performance for user:', session.user.id);
 
-    // Get all questions to ensure we have complete category data
+    // Get all questions with their domain and subcategory information
     const { data: questions, error: questionsError } = await supabase
       .from('questions')
-      .select('id, subject_id, main_category, subcategory')
+      .select(`
+        id,
+        subject_id,
+        domain_id,
+        domains!inner (
+          id,
+          domain_name
+        ),
+        subcategory_id,
+        subcategories!inner (
+          id,
+          subcategory_name
+        )
+      `)
       .eq('subject_id', '1'); // 1 is for Math
 
     if (questionsError) {
@@ -124,25 +137,28 @@ async function fetchSkillPerformance() {
       return [];
     }
 
-    // Get all user answers
-    const { data: answers, error: answersError } = await supabase
-      .from('user_answers')
+    // Get user's skill analytics
+    const { data: skillAnalytics, error: analyticsError } = await supabase
+      .from('user_skill_analytics')
       .select('*')
-      .eq('user_id', session.user.id);
+      .eq('user_id', session.user.id)
+      .eq('subject_id', 1);
 
-    if (answersError) {
-      console.error('Error fetching answers:', answersError);
+    if (analyticsError) {
+      console.error('Error fetching skill analytics:', analyticsError);
       return [];
     }
 
-    // Group questions by category
+    // Group questions by domain and subcategory
     const categoryQuestions = questions.reduce((acc, q) => {
-      const key = `${q.main_category}-${q.subcategory}`;
+      const key = `${q.domains.domain_name}-${q.subcategories.subcategory_name}`;
       if (!acc[key]) {
         acc[key] = {
           subject_id: q.subject_id,
-          main_category: q.main_category,
-          subcategory: q.subcategory,
+          domain_name: q.domains.domain_name,
+          domain_id: q.domain_id,
+          subcategory_name: q.subcategories.subcategory_name,
+          subcategory_id: q.subcategory_id,
           questions: new Set()
         };
       }
@@ -152,21 +168,14 @@ async function fetchSkillPerformance() {
 
     // Calculate performance for each category
     const categoryPerformance = Object.values(categoryQuestions).map(category => {
-      // Filter answers for this category's questions
-      const categoryAnswers = answers.filter(a => 
-        category.questions.has(a.question_id)
+      // Find analytics for this subcategory
+      const analytics = skillAnalytics?.find(a => 
+        a.domain_id === category.domain_id && 
+        a.subcategory_id === category.subcategory_id
       );
 
-      // Get unique question attempts
-      const uniqueAttempts = new Map();
-      categoryAnswers.forEach(answer => {
-        if (!uniqueAttempts.has(answer.question_id)) {
-          uniqueAttempts.set(answer.question_id, answer.is_correct);
-        }
-      });
-
-      const totalAttempts = uniqueAttempts.size;
-      const correctAnswers = Array.from(uniqueAttempts.values()).filter(isCorrect => isCorrect).length;
+      const totalAttempts = analytics?.total_attempts || 0;
+      const correctAnswers = analytics?.correct_attempts || 0;
       const accuracyPercentage = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
 
       let masteryLevel;
@@ -182,19 +191,17 @@ async function fetchSkillPerformance() {
 
       return {
         subject: 'Math',
-        main_category: category.main_category,
-        subcategory: category.subcategory,
+        main_category: category.domain_name,
+        subcategory: category.subcategory_name,
         total_attempts: totalAttempts,
         correct_answers: correctAnswers,
         accuracy_percentage: accuracyPercentage,
         mastery_level: masteryLevel,
-        last_attempt_at: categoryAnswers.length > 0 ? 
-          Math.max(...categoryAnswers.map(a => new Date(a.answered_at).getTime())) : 
-          null
+        last_attempt_at: analytics?.last_practiced || null
       };
     });
 
-    // Group by main category
+    // Group by main category (domain)
     const groupedByMainCategory = categoryPerformance.reduce((acc, perf) => {
       if (!acc[perf.main_category]) {
         acc[perf.main_category] = [];
