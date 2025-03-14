@@ -52,7 +52,7 @@ export default function AnalyticsCard() {
   }, [router])
 
   const handleViewAnalytics = () => {
-    router.push('/analytics')
+    router.push('/progress')
   }
 
   return (

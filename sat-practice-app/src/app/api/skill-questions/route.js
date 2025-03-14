@@ -101,7 +101,7 @@ export async function GET(request) {
 
 export async function POST(request) {
   try {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
     const body = await request.json();
     const { questionId, selectedAnswerId, isCorrect } = body;

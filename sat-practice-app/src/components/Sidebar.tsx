@@ -19,7 +19,7 @@ const navItems = [
   },
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },
   { name: "Targeted Skill Practice", icon: Crosshair, path: "/skills" },
-  { name: "Progress", icon: BarChart2, path: "/analytics" },
+  { name: "Progress", icon: BarChart2, path: "/progress" },
 ]
 
 export default function Sidebar() {
