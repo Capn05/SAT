@@ -42,7 +42,7 @@ export default function Dashboard() {
                 title="Quick Practice" 
                 value="Reading/Writing Section" 
                 buttonText="Start Practice" 
-                subject_id="4" 
+                subject_id="2" 
                 onStartPractice={handleStartPractice}
               />
             </div>

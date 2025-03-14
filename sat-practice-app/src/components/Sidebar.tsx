@@ -14,7 +14,7 @@ const navItems = [
     icon: Rabbit,
     subItems: [
       { name: "Math", icon: Calculator, subject: "1" },
-      { name: "Reading/Writing", icon: BookOpen, subject: "4" },
+      { name: "Reading/Writing", icon: BookOpen, subject: "2" },
     ],
   },
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },
