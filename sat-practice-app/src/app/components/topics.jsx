@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { 
-  BookOpen, Calculator, FlaskRoundIcon as Flask, PenTool, Brain, 
+  BookOpen, Calculator, FlaskRoundIcon as FlaskRoundIcon, PenTool, Brain, 
   FunctionSquare, PieChart, Shapes, BarChart, FileText, Lightbulb, 
   NetworkIcon as Network, ArrowRight, Sigma, Infinity, Ruler, 
-  Percent, Divide, LineChart, CircleSquare, Box
+  Percent, Divide, LineChart, Circle, Box
 } from "lucide-react";
 import Link from 'next/link';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
@@ -46,14 +46,14 @@ const categoryIcons = {
   'Proportions, and Units': Divide,
   'Lines, Angles, and Triangles': Shapes,
   'Right Triangles and Trigonometry': Shapes,
-  'Circles': CircleSquare,
+  'Circles': Circle,
   'Area and Volume': Box,
   
   // Reading Categories
   'Information and Ideas': BookOpen,
   'Craft and Structure': FileText,
   'Expression of Ideas': PenTool,
-  'Standard English Conventions': Flask,
+  'Standard English Conventions': FlaskRoundIcon,
   
   // Reading Subcategories
   'Central Ideas and Details': BookOpen,
@@ -67,7 +67,7 @@ const categoryIcons = {
   'Cross-Text Connections': Network,
   'Rhetorical Synthesis': PenTool,
   'Transitions': Network,
-  'Boundaries': Flask,
+  'Boundaries': FlaskRoundIcon,
   'Form, Structure, and Sense': Shapes,
   'Linear Inequalities': Calculator,
 };

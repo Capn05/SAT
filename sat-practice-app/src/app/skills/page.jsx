@@ -20,10 +20,10 @@ import {
   Percent,
   Divide,
   LineChart,
-  CircleSquare,
+  Circle,
   Box,
   PenTool,
-  Flask,
+  FlaskRoundIcon,
   Infinity,
   Sigma,
 } from "lucide-react"
@@ -70,14 +70,14 @@ const categoryIcons = {
   'Proportions, and Units': Divide,
   'Lines, Angles, and Triangles': Shapes,
   'Right Triangles and Trigonometry': Shapes,
-  'Circles': CircleSquare,
+  'Circles': Circle,
   'Area and Volume': Box,
   
   // Reading Categories
   'Information and Ideas': BookOpen,
   'Craft and Structure': FileText,
   'Expression of Ideas': PenTool,
-  'Standard English Conventions': Flask,
+  'Standard English Conventions': FlaskRoundIcon,
   
   // Reading Subcategories
   'Central Ideas and Details': BookOpen,
@@ -91,7 +91,7 @@ const categoryIcons = {
   'Cross-Text Connections': Network,
   'Rhetorical Synthesis': PenTool,
   'Transitions': Network,
-  'Boundaries': Flask,
+  'Boundaries': FlaskRoundIcon,
   'Form, Structure, and Sense': Shapes,
   'Linear Inequalities': Calculator,
 };
@@ -133,92 +133,82 @@ export default function SkillsPage() {
         return
       }
 
-      // Get performance data
+      // Get performance data from user_skill_analytics
       const { data: performance, error } = await supabase
-        .from('skill_performance')
+        .from('user_skill_analytics')
         .select('*')
         .eq('user_id', session.user.id)
-        .eq('subject_id', subjectId.toString())
+        .eq('subject_id', subjectId)
 
       if (error) {
-        console.error(`Error fetching skill performance for subject ${subjectId}:`, error)
-        setError('Failed to fetch skill performance')
+        console.error(`Error fetching skill analytics for subject ${subjectId}:`, error)
+        setError('Failed to fetch skill analytics')
         return
       }
 
-      // Get all available questions for this subject
-      const { data: questions, error: questionsError } = await supabase
-        .from('questions')
-        .select('subject_id, main_category, subcategory')
-        .eq('subject_id', subjectId.toString())
+      // Get all domains and their subcategories for this subject
+      const { data: domainsData, error: domainsError } = await supabase
+        .from('domains')
+        .select(`
+          id,
+          domain_name,
+          subcategories (
+            id,
+            subcategory_name
+          )
+        `)
+        .eq('subject_id', subjectId)
 
-      if (questionsError) {
-        console.error(`Error fetching questions for subject ${subjectId}:`, questionsError)
-        setError('Failed to fetch questions')
+      if (domainsError) {
+        console.error(`Error fetching domains for subject ${subjectId}:`, domainsError)
+        setError('Failed to fetch domains')
         return
       }
 
-      // Group questions by main category and subcategory
-      const groupedData = questions.reduce((acc, q) => {
-        if (!q.main_category || !q.subcategory) return acc
-        
-        if (!acc[q.main_category]) {
-          acc[q.main_category] = {
-            name: q.main_category,
-            skills: new Set(),
-            count: 0
-          }
-        }
-        acc[q.main_category].skills.add(q.subcategory)
-        acc[q.main_category].count++
-        return acc
-      }, {})
-      
-      // Transform into final format with performance data and hard-coded distributions
-      const domains = Object.entries(groupedData).map(([category, data]) => {
-        // Use hard-coded distribution if available, otherwise use a default
-        const distribution = satDistributions[category] 
-          ? `≈${satDistributions[category].percentage}%` 
-          : "N/A";
-          
-        // Use hard-coded question count if available, otherwise use count from database
-        const questionCount = satDistributions[category] 
-          ? satDistributions[category].questions + " questions" 
-          : `${Math.round(data.count * 0.9)}-${data.count} questions`;
-          
-        const skills = Array.from(data.skills).map(subcategory => {
+      // Transform the data into the format expected by the UI
+      const domains = domainsData.map(domain => {
+        const skills = domain.subcategories.map(subcategory => {
           const skillPerf = performance?.find(p => 
-            p.main_category === category && 
-            p.subcategory === subcategory
+            p.domain_id === domain.id && 
+            p.subcategory_id === subcategory.id
           ) || {
-            accuracy_percentage: 0,
-            last_attempt_at: null,
-            mastery_level: 'Not Started',
-            total_attempts: 0
+            total_attempts: 0,
+            correct_attempts: 0,
+            last_practiced: null,
+            mastery_level: 'Not Started'
           }
+
+          // Calculate accuracy percentage
+          const accuracy = skillPerf.total_attempts > 0 
+            ? Math.round((skillPerf.correct_attempts / skillPerf.total_attempts) * 100)
+            : 0
 
           // Get the icon component or use a fallback
-          const IconComponent = categoryIcons[subcategory] || (
+          const IconComponent = categoryIcons[subcategory.subcategory_name] || (
             subjectId === 1 ? Calculator : BookOpen
           )
           
           return {
-            name: subcategory,
+            name: subcategory.subcategory_name,
             icon: <IconComponent size={20} color="#4f46e5" />,
             needsPractice: skillPerf.total_attempts < 5 || skillPerf.mastery_level === 'Needs Practice',
-            accuracy: skillPerf.accuracy_percentage || 0,
-            lastPracticed: skillPerf.last_attempt_at ? 
-              new Date(skillPerf.last_attempt_at).toLocaleDateString() : 
+            accuracy: accuracy,
+            lastPracticed: skillPerf.last_practiced ? 
+              new Date(skillPerf.last_practiced).toLocaleDateString() : 
               'Never practiced',
-            progress: skillPerf.accuracy_percentage || 0,
+            progress: accuracy,
             mastery: skillPerf.mastery_level || 'Not Started'
           }
         })
 
         return {
-          name: category,
-          distribution: distribution,
-          questions: questionCount,
+          name: domain.domain_name,
+          distribution: satDistributions[domain.domain_name]?.percentage 
+            ? `≈${satDistributions[domain.domain_name].percentage}%` 
+            : "N/A",
+          questions: satDistributions[domain.domain_name]?.questions 
+            ? satDistributions[domain.domain_name].questions + " questions" 
+            : `${Math.round(skills.length * 0.9)}-${skills.length} questions`,
           skills
         }
       })
@@ -236,7 +226,7 @@ export default function SkillsPage() {
     if (activeSubject === "math") {
       fetchSkills(1, setMathDomains)
     } else if (activeSubject === "reading") {
-      fetchSkills(4, setReadingDomains)
+      fetchSkills(2, setReadingDomains)
     }
   }, [activeSubject, router])
 
