@@ -53,6 +53,9 @@ export default function Sidebar() {
   const handleQuickPracticeClick = (subject: string) => {
     setSelectedSubject(subject)
     setShowDifficultyModal(true)
+    // Close the sidebar when opening the modal
+    setIsExpanded(false)
+    setExpandedSubMenu(null)
   }
 
   // Add scroll event listener to handle sidebar position
@@ -77,11 +80,11 @@ export default function Sidebar() {
         setIsExpanded(false)
         setExpandedSubMenu(null)
       }}
-      style={{ overflow: 'hidden', width: isExpanded ? '240px' : '60px' }}
+      style={{ overflow: 'hidden', width: isExpanded ? '240px' : '53px' }}
     >
       <div className={styles.sidebarContent} style={{ 
         position: 'fixed', 
-        width: isExpanded ? '240px' : '60px',
+        width: isExpanded ? '240px' : '53px',
         overflow: 'hidden'
       }}>
         <div className={styles.header}>
@@ -164,7 +167,7 @@ export default function Sidebar() {
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className={`${styles.toggleButton} ${isExpanded ? styles.rotated : ""}`}
-        style={{ position: 'fixed', left: isExpanded ? '220px' : '40px' }}
+        style={{ position: 'fixed', left: isExpanded ? '220px' : '30px' }}
       >
         <ChevronRight />
       </button>
@@ -173,7 +176,12 @@ export default function Sidebar() {
       {showDifficultyModal && (
         <DifficultyModal
           isOpen={showDifficultyModal}
-          onClose={() => setShowDifficultyModal(false)}
+          onClose={() => {
+            setShowDifficultyModal(false)
+            // Ensure sidebar is collapsed when modal is closed
+            setIsExpanded(false)
+            setExpandedSubMenu(null)
+          }}
           subject={selectedSubject}
           mode="quick"
           title="Quick Practice"
