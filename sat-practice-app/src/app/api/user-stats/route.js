@@ -28,41 +28,28 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
     }
 
-    // Get answers from both tables
-    const [officialResponse, practiceResponse] = await Promise.all([
-      supabase
-        .from('official_user_answers')
-        .select('is_correct')
-        .eq('user_id', userId),
-      supabase
-        .from('user_answers')
-        .select('is_correct')
-        .eq('user_id', userId)
-    ]);
+    // Get user's performance data from user_skill_analytics
+    const { data: skillAnalytics, error: analyticsError } = await supabase
+      .from('user_skill_analytics')
+      .select('total_attempts, correct_attempts')
+      .eq('user_id', userId);
 
-    if (officialResponse.error || practiceResponse.error) {
-      console.error('Error fetching answers:', { 
-        official: officialResponse.error, 
-        practice: practiceResponse.error 
-      });
-      return NextResponse.json({ error: 'Failed to fetch answers' }, { status: 500 });
+    if (analyticsError) {
+      console.error('Error fetching skill analytics:', analyticsError);
+      return NextResponse.json({ error: 'Failed to fetch analytics' }, { status: 500 });
     }
 
-    const allAnswers = [
-      ...(officialResponse.data || []),
-      ...(practiceResponse.data || [])
-    ];
-
-    const questionsAnswered = allAnswers.length;
-    const correctAnswers = allAnswers.filter(answer => answer.is_correct).length;
-    const accuracyPercentage = questionsAnswered > 0
-      ? Math.round((correctAnswers / questionsAnswered) * 100)
+    // Calculate overall statistics
+    const totalAttempts = skillAnalytics.reduce((sum, record) => sum + record.total_attempts, 0);
+    const correctAttempts = skillAnalytics.reduce((sum, record) => sum + record.correct_attempts, 0);
+    const accuracyPercentage = totalAttempts > 0
+      ? Math.round((correctAttempts / totalAttempts) * 100)
       : 0;
 
     return NextResponse.json({
       stats: {
-        questionsAnswered,
-        correctAnswers,
+        questionsAnswered: totalAttempts,
+        correctAnswers: correctAttempts,
         accuracyPercentage
       }
     });

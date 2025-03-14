@@ -14,12 +14,12 @@ const navItems = [
     icon: Rabbit,
     subItems: [
       { name: "Math", icon: Calculator, subject: "1" },
-      { name: "Reading/Writing", icon: BookOpen, subject: "4" },
+      { name: "Reading/Writing", icon: BookOpen, subject: "2" },
     ],
   },
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },
   { name: "Targeted Skill Practice", icon: Crosshair, path: "/skills" },
-  { name: "Progress", icon: BarChart2, path: "/analytics" },
+  { name: "Progress", icon: BarChart2, path: "/progress" },
 ]
 
 export default function Sidebar() {
