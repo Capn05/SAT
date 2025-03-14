@@ -12,30 +12,31 @@ export async function POST(request) {
     // Get the current session
     const { data: { session }, error: sessionError } = await supabase.auth.getSession();
     
-    // Handle missing session or session error
     if (!session || sessionError) {
       console.error('Auth session missing or error:', sessionError);
-      return new NextResponse(
-        JSON.stringify({ 
-          error: 'Authentication required',
-          code: 'AUTH_REQUIRED'
-        }), 
-        { 
-          status: 401,
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        }
-      );
+      return NextResponse.json({ 
+        error: 'Authentication required',
+        code: 'AUTH_REQUIRED'
+      }, { status: 401 });
     }
 
-    const { questionId, optionId, isCorrect, subject, category, mode } = await request.json();
-    console.log('Processing answer:', { questionId, optionId, isCorrect, subject, category, mode });
+    const { questionId, optionId, isCorrect, subject, mode } = await request.json();
+    console.log('Processing answer:', { questionId, optionId, isCorrect, subject, mode });
 
-    // Get question details to ensure we're updating the correct category
+    // Get question details to get domain and subcategory info
     const { data: question, error: questionError } = await supabase
       .from('questions')
-      .select('subject_id, main_category, subcategory')
+      .select(`
+        *,
+        domains!inner (
+          id,
+          domain_name
+        ),
+        subcategories!inner (
+          id,
+          subcategory_name
+        )
+      `)
       .eq('id', questionId)
       .single();
 
@@ -44,150 +45,80 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Failed to fetch question details' }, { status: 500 });
     }
 
-    // Verify the question belongs to the specified category
-    if (mode === 'skill' && question.subcategory !== category) {
-      console.error('Category mismatch:', { expected: category, actual: question.subcategory });
-      return NextResponse.json({ error: 'Question category mismatch' }, { status: 400 });
-    }
-
     // Record the user's answer
     const { error: answerError } = await supabase
       .from('user_answers')
-      .upsert({
+      .insert({
         user_id: session.user.id,
         question_id: questionId,
-        option_id: optionId,
+        selected_option_id: optionId,
         is_correct: isCorrect,
-        answered_at: new Date().toISOString(),
-        category: question.subcategory
-      }, {
-        onConflict: 'user_id,question_id'
+        practice_type: mode,
+        test_id: null,
+        answered_at: new Date().toISOString()
       });
 
     if (answerError) {
       console.error('Error recording answer:', answerError);
-      return NextResponse.json({ error: 'Failed to record answer', details: answerError }, { status: 500 });
+      return NextResponse.json({ error: 'Failed to record answer' }, { status: 500 });
     }
 
-    // Get all questions for this subject to ensure we have complete category data
-    const { data: questions, error: questionsError } = await supabase
-      .from('questions')
-      .select('id, subject_id, main_category, subcategory')
-      .eq('subject_id', question.subject_id);
-
-    if (questionsError) {
-      console.error('Error fetching questions:', questionsError);
-      return NextResponse.json({ error: 'Failed to fetch questions' }, { status: 500 });
-    }
-
-    // Get all user answers for this subject
-    const { data: answers, error: answersError } = await supabase
-      .from('user_answers')
-      .select('*')
-      .eq('user_id', session.user.id);
-
-    if (answersError) {
-      console.error('Error fetching answers:', answersError);
-      return NextResponse.json({ error: 'Failed to fetch answers' }, { status: 500 });
-    }
-
-    // Group questions by category
-    const categoryQuestions = questions.reduce((acc, q) => {
-      const key = `${q.main_category}-${q.subcategory}`;
-      if (!acc[key]) {
-        acc[key] = {
-          subject_id: q.subject_id,
-          main_category: q.main_category,
-          subcategory: q.subcategory,
-          questions: new Set()
-        };
-      }
-      acc[key].questions.add(q.id);
-      return acc;
-    }, {});
-
-    // Calculate performance for each category
-    for (const key of Object.keys(categoryQuestions)) {
-      const category = categoryQuestions[key];
-      
-      // Filter answers for this category's questions
-      const categoryAnswers = answers.filter(a => 
-        category.questions.has(a.question_id)
-      );
-
-      // Get unique question attempts
-      const uniqueAttempts = new Map();
-      categoryAnswers.forEach(answer => {
-        if (!uniqueAttempts.has(answer.question_id)) {
-          uniqueAttempts.set(answer.question_id, answer.is_correct);
-        }
-      });
-
-      const totalAttempts = uniqueAttempts.size;
-      const correctAnswers = Array.from(uniqueAttempts.values()).filter(isCorrect => isCorrect).length;
-      const accuracyPercentage = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
-
-      let masteryLevel;
-      if (totalAttempts < 5) {
-        masteryLevel = 'Needs More Attempts';
-      } else if (accuracyPercentage >= 90) {
-        masteryLevel = 'Mastered';
-      } else if (accuracyPercentage >= 70) {
-        masteryLevel = 'On Track';
-      } else {
-        masteryLevel = 'Needs Practice';
-      }
-
-      // Update skill performance
-      const { error: updateError } = await supabase
-        .from('skill_performance')
-        .upsert({
-          user_id: session.user.id,
-          subject_id: category.subject_id,
-          main_category: category.main_category,
-          subcategory: category.subcategory,
-          total_attempts: totalAttempts,
-          correct_answers: correctAnswers,
-          accuracy_percentage: accuracyPercentage,
-          mastery_level: masteryLevel,
-          last_attempt_at: new Date().toISOString()
-        }, {
-          onConflict: 'user_id,subject_id,subcategory'
-        });
-
-      if (updateError) {
-        console.error('Error updating performance for category:', category, updateError);
-      }
-    }
-
-    // Get the updated performance for the current category
-    const { data: currentPerformance, error: perfError } = await supabase
-      .from('skill_performance')
+    // Get user's current skill analytics for this subcategory
+    const { data: currentAnalytics, error: analyticsError } = await supabase
+      .from('user_skill_analytics')
       .select('*')
       .eq('user_id', session.user.id)
-      .eq('subject_id', question.subject_id)
-      .eq('subcategory', question.subcategory)
+      .eq('subcategory_id', question.subcategory_id)
       .single();
 
-    if (perfError) {
-      console.error('Error fetching updated performance:', perfError);
+    // Calculate new mastery level
+    let total_attempts = 1;
+    let correct_attempts = isCorrect ? 1 : 0;
+
+    if (currentAnalytics) {
+      total_attempts = currentAnalytics.total_attempts + 1;
+      correct_attempts = currentAnalytics.correct_attempts + (isCorrect ? 1 : 0);
+    }
+
+    const accuracy = (correct_attempts / total_attempts) * 100;
+    let mastery_level;
+    if (accuracy < 60) mastery_level = 'Needs Practice';
+    else if (accuracy < 80) mastery_level = 'Needs More Attempts';
+    else if (accuracy < 90) mastery_level = 'On Track';
+    else mastery_level = 'Mastered';
+
+    // Update user_skill_analytics
+    const { error: updateError } = await supabase
+      .from('user_skill_analytics')
+      .upsert({
+        user_id: session.user.id,
+        subject_id: question.subject_id,
+        domain_id: question.domain_id,
+        subcategory_id: question.subcategory_id,
+        total_attempts,
+        correct_attempts,
+        last_practiced: new Date().toISOString(),
+        mastery_level
+      }, {
+        onConflict: ['user_id', 'subcategory_id']
+      });
+
+    if (updateError) {
+      console.error('Error updating analytics:', updateError);
+      return NextResponse.json({ error: 'Failed to update skill analytics' }, { status: 500 });
     }
 
     return NextResponse.json({ 
       success: true,
-      performance: currentPerformance || {
-        totalAttempts: 1,
-        correctAnswers: isCorrect ? 1 : 0,
-        accuracyPercentage: isCorrect ? 100 : 0,
-        masteryLevel: 'Needs More Attempts'
-      }
+      mastery_level,
+      accuracy: Math.round(accuracy)
     });
 
   } catch (error) {
-    console.error('API error:', error);
+    console.error('Server error:', error);
     return NextResponse.json({ 
       error: 'Internal server error',
-      details: error.message
+      details: error.message 
     }, { status: 500 });
   }
 } 

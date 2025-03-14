@@ -445,7 +445,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             optionId: selectedOption.id,
             isCorrect: selectedOption.is_correct,
             subject: subject,
-            category: skillName,
             mode: mode
           }),
         });
@@ -462,6 +461,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           
           throw new Error(data.error || 'Failed to submit answer');
         }
+
+        console.log('Answer recorded successfully:', data);
       }
 
       setAttempts(prev => ({
