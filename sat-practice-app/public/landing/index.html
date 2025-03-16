@@ -30,6 +30,186 @@
             box-shadow: var(--card-shadow);
             padding: 1.25rem;
         }
+        
+        /* Logo Scroll Animation */
+        .logo-scroll-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .logo-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+        
+        .logo-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Pause animation on hover */
+        .logo-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Fade-in animations for hero section */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 {
+            transition-delay: 0.1s;
+        }
+        
+        .delay-200 {
+            transition-delay: 0.2s;
+        }
+        
+        .delay-300 {
+            transition-delay: 0.3s;
+        }
+        
+        .delay-400 {
+            transition-delay: 0.4s;
+        }
+        
+        .delay-500 {
+            transition-delay: 0.5s;
+        }
+        
+        /* New animations */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pulse-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .slide-in-left.active, .slide-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .scale-in.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* Animated background for sections */
+        .animated-bg {
+            background: linear-gradient(-45deg, #0d114d, #191e6e, #4553fa, #0d114d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Typing animation for hero text */
+        .typing-container {
+            display: inline-block;
+        }
+        
+        .typing-text {
+            border-right: 3px solid #10b981;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #10b981 }
+        }
+        
+        /* Parallax effect */
+        .parallax {
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
     </style>
 </head>
 <body class="font-sans antialiased bg-gray-50">
@@ -65,53 +245,61 @@
     </header>
     
     <!-- Hero Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-full mx-auto px-4 sm:px-10 lg:px-16">
             <div class="md:flex md:items-center md:justify-between md:space-x-6">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-4">
-                    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                        Get Your Best SAT Score, Faster: <br>AI-Personalized Prep
+                    <h1 class="text-5xl sm:text-6xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8 fade-in">
+                        Get Your Best <span class="text-green-500">SAT</span> Score, Faster: <br>
+                        <span class="typing-text">AI-Personalized Prep</span>
                     </h1>
-                    <div class="flex items-center mb-6">
-  
+                    
+                    <p class="text-2xl md:text-2xl text-gray-700 mb-10 leading-relaxed fade-in delay-100">
+                        Master SAT concepts faster with AI-powered guidance tailored to your learning needs.
+                    </p>
+                    
+                    <div class="mb-12"></div>
+                    
+                    <!-- User Review Card -->
+                    <div class="bg-white rounded-xl shadow-md p-6 mb-10 max-w-xl border border-gray-100 fade-in delay-200">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <img src="/landing/assets/images/santi-aguirre.jpeg" alt="Student" class="h-16 w-16 rounded-full object-cover border-2 border-emerald-400" style="transform: rotate(-90deg);">
+                            </div>
+                            <div>
+                                <p class="text-gray-700 italic mb-2 text-xl">"The AI tutor helped me go from 1290 to a 1510 after 3 weeks "</p>
+                                <div class="flex items-center">
+                                    <p class="font-medium text-gray-900 text-xl">Santi A.</p>
+                                    <div class="ml-3 flex">
+                                        <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="ml-2 text-emerald-600 font-semibold text-xl">+220 pts</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <ul class="space-y-4 text-gray-700 mb-8">
-                        <li class="flex items-start">
-                            <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Exclusive question bank of 2,000+ authentic SAT practice problems</span>
-                        </li>
-
-                        <li class="flex items-start">
-                            <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Hints and Detailed Explanations from our incredible SAT AI model</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Full-length Practice Tests just like the real thing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Learn faster with personalized AI that identifies and targets your weak areas</span>
-                        </li>
-                    </ul>
-                    
-                    <a href="/signup" class="btn-primary">
-                        Start Prepping Now
+                    <a href="/signup" class="btn-primary text-xl md:text-2xl px-10 py-6 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-r from-emerald-500 to-emerald-600 border-2 border-emerald-400 flex items-center justify-center w-full md:w-3/4 lg:w-3/4 mx-auto md:mx-0 hover:brightness-110 fade-in delay-300 pulse-btn">
+                        <span class="mr-2"></span> Sign up  <span class="ml-2">→</span>
                     </a>
                 </div>
-                
-                <div class="md:w-8/12 relative">
-                    <!-- Product Demo Video -->
-                    <div class="w-full rounded-xl overflow-hidden shadow-xl">
+                <div class="md:w-7/12 relative fade-in delay-400">
+                    <!-- Product Demo Video - Removed float animation -->
+                    <div class="w-full rounded-xl overflow-hidden shadow-xl" style="max-width: 90%; margin: 0 auto;">
                         <video 
                             class="w-full h-auto object-cover"
                             autoplay 
@@ -122,40 +310,191 @@
                             <source src="/landing/assets/videos/quick_practice_demo.mp4" type="video/mp4">
                             <!-- Fallback content -->
                             <img src="/landing/assets/images/ai-tutor.png" alt="SAT Prep Pro Demo" class="w-full h-auto">
-                            <p class="text-center text-sm mt-2">Your browser doesn't support HTML5 video</p>
+                            <p class="text-center text-2xl mt-2">Your browser doesn't support HTML5 video</p>
                         </video>
                     </div>
                     
                     <!-- Optional caption -->
-                    <p class="text-sm text-gray-500 mt-3 text-center">See SAT Prep Pro in action</p>
+                    <p class="text-2xl text-gray-500 mt-3 text-center fade-in delay-500">See SAT Prep Pro in action</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- AI Tutor Section -->
-    <section class="py-16 md:py-24 relative" style="background: linear-gradient(180deg, #0d114d 0%, #191e6e 100%);">
+    <script>
+        // Activate fade-in animations when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const fadeElements = document.querySelectorAll('.fade-in');
+                fadeElements.forEach(function(element) {
+                    element.classList.add('active');
+                });
+            }, 100); // Small delay to ensure DOM is fully ready
+            
+            // Activate slide-in and scale-in animations on scroll
+            const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .scale-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Parallax effect for hero section
+            const parallaxElements = document.querySelectorAll('.parallax');
+            
+            window.addEventListener('mousemove', function(e) {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                parallaxElements.forEach(element => {
+                    const depth = element.getAttribute('data-depth') || 20;
+                    const moveX = (mouseX - 0.5) * depth;
+                    const moveY = (mouseY - 0.5) * depth;
+                    
+                    element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                });
+            });
+            
+            // Counter animation for statistics
+            const counters = document.querySelectorAll('.counter');
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000; // ms
+                const increment = target / (duration / 16); // 60fps
+                
+                const updateCounter = () => {
+                    const count = +counter.innerText.replace(/,/g, '');
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment).toLocaleString();
+                        setTimeout(updateCounter, 16);
+                    } else {
+                        counter.innerText = target.toLocaleString();
+                    }
+                };
+                
+                const counterObserver = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        updateCounter();
+                        counterObserver.unobserve(counter);
+                    }
+                }, { threshold: 0.5 });
+                
+                counterObserver.observe(counter);
+            });
+            
+            // Reviews carousel
+            const reviewsTrack = document.querySelector('.reviews-track');
+            const reviewSlides = document.querySelectorAll('.review-slide');
+            
+            if (reviewsTrack && reviewSlides.length > 1) {
+                let currentSlide = 0;
+                const slideWidth = 100; // percentage
+                
+                function goToSlide(index) {
+                    if (index < 0) index = reviewSlides.length - 1;
+                    if (index >= reviewSlides.length) index = 0;
+                    
+                    reviewsTrack.style.transform = `translateX(-${index * slideWidth}%)`;
+                    currentSlide = index;
+                }
+                
+                // Auto-advance carousel
+                setInterval(() => {
+                    goToSlide(currentSlide + 1);
+                }, 8000);
+                
+                // Add navigation buttons
+                const carousel = document.getElementById('reviewsCarousel');
+                const prevBtn = document.createElement('button');
+                const nextBtn = document.createElement('button');
+                
+                prevBtn.className = 'absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10';
+                nextBtn.className = 'absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10';
+                
+                prevBtn.innerHTML = '<svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>';
+                nextBtn.innerHTML = '<svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>';
+                
+                prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+                
+                carousel.appendChild(prevBtn);
+                carousel.appendChild(nextBtn);
+            }
+        });
+    </script>
+    
+    <!-- University Logos Section -->
+    <section class="py-16 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-10">
+                Trusted by students accepted to <span class="text-indigo-600">Ivy+</span> universities
+            </h2>
+            
+            <div class="logo-scroll-container relative">
+                <!-- Fade effect overlays -->
+                <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
+                
+                <div class="logo-scroll">
+                    <!-- First set of logos -->
+                    <div class="logo-group">
+                        <img src="/landing/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/uiuc.png" alt="uiuc University" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/washu.png" alt="washu" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/jhu.jpg" alt="jhu University" class="h-28 md:h-32  object-contain">
+                        <img src="/landing/assets/images/universities/git.png" alt="git" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/arkansas.png" alt="Arkansas" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/rice.svg.png" alt="Rice" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/usc.svg.png" alt="USC" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-16 md:h-20 mx-8 object-contain">
+                    </div>
+                    <div class="logo-group">
+                        <img src="/landing/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/uiuc.png" alt="uiuc University" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/washu.png" alt="washu" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/jhu.jpg" alt="jhu University" class="h-20 md:h-24  object-contain">
+                        <img src="/landing/assets/images/universities/git.png" alt="git" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/arkansas.png" alt="Arkansas" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/rice.svg.png" alt="Rice" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/usc.svg.png" alt="USC" class="h-16 md:h-20 mx-8 object-contain">
+                        <img src="/landing/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-16 md:h-20 mx-8 object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AI Tutor Section - Add animated background -->
+    <section class="py-16 md:py-24 relative animated-bg">
         <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Text content -->
             <div class="text-center mb-12 max-w-3xl mx-auto">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                    Chat with your 24/7 AI Tutor
+                    Meet Ollie: your 24/7 AI Tutor
                 </h2>
                 
-                <p class="text-indigo-200 text-sm md:text-lg mb-8">
-                    Ollie analyzes your answers to provide intelligent hints and detailed explanations 
-                    tailored to your learning style. Get unstuck instantly and review your practice tests 
-                    with personalized insights.
+                <p class="text-indigo-200 text-2xl mb-8">
+                     Ask for hints during practice, 
+                    get detailed explanations tailored to you, review your practice tests, or simply ask any general SAT questions. Ollie is always ready to help you succeed.
                 </p>
-                
-                <a href="/signup" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg text-base md:text-lg font-medium hover:bg-indigo-700 shadow-lg transition-all duration-300">
+                <a href="/signup" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg text-2xl font-medium hover:bg-indigo-700 shadow-lg transition-all duration-300">
                     Start Prepping Today
                 </a>
             </div>
             
-            
+
             <!-- Smaller secondary image below (optional) -->
             <div class="max-w-4xl mx-auto mt-8">
                 <img src="/landing/assets/images/ollie.png" alt="AI Hint Example" class="w-full h-auto rounded-lg shadow-xl">
@@ -163,161 +502,156 @@
         </div>
     </section>
     
-    <!-- Control Question Difficulty Section (added from Acely) -->
-    <section class="py-36 bg-white">
+    <!-- Control Question Difficulty Section - Add slide-in animations -->
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex md:items-center md:space-x-20">
-                <div class="md:w-1/2 mb-16 md:mb-0">
-                    <div class="card">
-                        <img src="/landing/assets/images/difficulty.png" alt="Select Difficulty" class="w-full">
+                <div class="md:w-1/2 mb-16 md:mb-0 slide-in-left">
+                    <div class="relative hover-lift">
+                        <div class="card shadow-xl rounded-xl overflow-hidden mb-8">
+                            <img src="/landing/assets/images/quick-practice.png" alt="Quick Practice Sessions" class="w-full">
+                        </div>
+                        <div class="card shadow-xl rounded-xl overflow-hidden absolute bottom-0 right-0 w-2/3 transform translate-x-1/6 translate-y-1/4">
+                            <img src="/landing/assets/images/difficulty.png" alt="Select Difficulty" class="w-full">
+                        </div>
                     </div>
                 </div>
                 
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 slide-in-right">
                     <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-gray-900">
-                        Control Question Difficulty
+                        Practice at Your Own Pace
                     </h2>
                     
-                    <p class="mb-8 text-md text-gray-700">
-                            Transform your SAT preparation with personalized difficulty levels. Start with questions designed to build your confidence, then advance to more challenging problems that strategically enhance your score potential.
-                    </p>
-                    
+                    <ul class="space-y-4 text-2xl text-gray-700 mb-8">
+                        <li class="flex items-start">
+                            <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>'Quick practice' modules allow for flexible session lengths. Study effectively whether you have 20 minutes or 2 hours.</span>
 
-                    
-                    <a href="/signup" class="btn-primary">
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Difficulty controls ensure beginners can build confidence with fundamentals while advanced students can skip straight to challenging content.</span>
+                        </li>
+                    </ul>
+                    <a href="/signup" class="btn-primary text-2xl">
                         Start Prepping Today
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Full-Length Practice Tests Section -->
-<section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="md:flex md:items-center md:space-x-20">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-6">
-                    Full-Length Practice Tests in a Real Testing Environment
-                </h2>
-                
-                <p class="text-gray-700 mb-6">
-                    Experience the exact Digital SAT interface with our full-length tests - from adaptive questions to testing tools, it's the most authentic practice available.
-                </p>
-                
-                <p class="text-gray-700 mb-8">
-                    After submitting your test, review each question with our AI tutor to understand your mistakes and learn the concepts you missed.
-                </p>
-                
-                <ul class="space-y-4 text-gray-700 mb-8">
+    
+    <!-- Full-Length Practice Tests Section - Add slide-in animations -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-20">
+                <div class="md:w-1/2 mb-10 md:mb-0 slide-in-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
+                        Walk into Test Day with Complete Confidence
+                    </h2>
+            
+
+                <ul class="space-y-4 text-2xl text-gray-700 mb-8">
                     <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span>Exact replica of the official Digital SAT interface</span>
+                        <span>Full-length practice tests replicate Digital SAT interface, ensuring you'll feel prepared.</span>
                     </li>
+
                     <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span>AI-powered review of your answers</span>
+                        <span>                         After each test, review your answers with our AI tutor to master concepts and boost your score.
+                        </span>
                     </li>
-                    <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Realistic calculator, timer, and marking tools</span>
-                    </li>
+     
                 </ul>
-                
-                <a href="/signup" class="btn-primary">
+                <a href="/signup" class="btn-primary text-2xl">
                     Try a Practice Test
                 </a>
             </div>
-            
-            <div class="md:w-7/12">
-                <div class="rounded-xl overflow-hidden shadow-xl">
-                    <video 
-                        class="w-full h-auto object-cover"
-                        autoplay 
-                        loop 
-                        muted 
-                        playsinline
-                        poster="/landing/assets/images/practice-test.png">
-                        <source src="/landing/assets/videos/full_test_demo.mp4" type="video/mp4">
-                        <!-- Fallback content -->
-                        <img src="/landing/assets/images/practice-test.png" alt="Full Length Practice Test" class="w-full h-auto">
-                        <p class="text-center text-sm mt-2">Your browser doesn't support HTML5 video</p>
-                    </video>
-                </div>
-                
-                <p class="text-sm text-gray-500 mt-3 text-center">Experience our authentic Digital SAT testing environment</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Targeted Domain Practice Section -->
-<section id="study-smarter" class="py-36 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="md:flex md:items-center md:space-x-20">
-            <div class="md:w-7/12 mb-16 md:mb-0">
-                <div class="card">
-                    <img src="/landing/assets/images/targeted-practice.png" alt="Targeted Domain Practice" class="w-full">
+                <div class="md:w-7/12 slide-in-right">
+                    <div class="rounded-xl overflow-hidden shadow-xl hover-lift">
+                        <video 
+                            class="w-full h-auto object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                            poster="/landing/assets/images/practice-test.png">
+                            <source src="/landing/assets/videos/full_test_demo.mp4" type="video/mp4">
+                            <!-- Fallback content -->
+                            <img src="/landing/assets/images/practice-test.png" alt="Full Length Practice Test" class="w-full h-auto">
+                            <p class="text-center text-2xl mt-2">Your browser doesn't support HTML5 video</p>
+                        </video>
+                    </div>
+                    
+                    <p class="text-2xl text-gray-500 mt-3 text-center">Experience our authentic Digital SAT testing environment</p>
                 </div>
             </div>
-            <div class="md:w-1/2">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-gray-900">
-                    Target Your Weaknesses with Domain-Specific Practice
-                </h2>
-                
-                <p class="mb-8 text-md text-gray-700">
-                    Our AI identifies your knowledge gaps and creates personalized practice sessions focused on your weak areas.
-                </p>
-                
-                <ul class="space-y-4 text-gray-700 mb-8">
-                    <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Smart assessment of strengths and weaknesses</span>
-                    </li>
+        </div>
+    </section>
+
+    <!-- Targeted Domain Practice Section - Add scale-in animation -->
+    <section id="study-smarter" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-20">
+                <div class="md:w-7/12 mb-16 md:mb-0 scale-in">
+                    <div class="card hover-lift">
+                        <img src="/landing/assets/images/targeted-practice.png" alt="Targeted Domain Practice" class="w-full">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-gray-900">
+                        Boost Your Score Faster by Focusing on What Matters Most
+                    </h2>
+    
+                    <ul class="space-y-4 text-2xl text-gray-700 mb-8">
+                        <li class="flex items-start">
+                            <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Save hours of study time with personalized weakness detection</span>
+                        </li>
  
-                    <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Track progress across all skills</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Clear explanations for your mistakes</span>
-                    </li>
-                </ul>
-                
-                <a href="/signup" class="btn-primary">
-                    Start Targeted Practice
-                </a>
+                        <li class="flex items-start">
+                            <svg class="h-7 w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Watch your confidence grow as you master each skill area</span>
+                        </li>
+       
+                    </ul>
+                    
+                    <a href="/signup" class="btn-primary text-2xl">
+                        Start Targeted Practice
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-    <!-- Question Bank Section -->
-    <section id="practice-library"class="py-28 bg-gray-50">
+    </section>
+    
+    <!-- Question Bank Section - Add counter animations -->
+    <section id="practice-library" class="py-28 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Diagram and text in flex layout -->
             <div class="md:flex md:items-center md:space-x-16 mb-20">
-                <!-- Left column: Larger square diagram -->
+                <!-- Left column: New quality assurance diagram -->
                 <div class="md:w-1/2 mb-12 md:mb-0 flex justify-center">
                     <div class="bg-gray-50 p-12 rounded-xl shadow-sm relative aspect-square max-w-xl w-full">
-                        <!-- Reverted workflow diagram with improvements -->
+                        <!-- Quality assurance process diagram -->
                         <div class="flex flex-col items-center justify-between h-full">
-                            <!-- Step 1: Question Generation - with a more distinct color -->
-                            <div class="bg-lime-300 rounded-xl p-6 w-4/5 text-center">
-                                <p class="text-gray-600 mb-2 text-sm">step one</p>
-                                <h3 class="text-indigo-900 text-xl font-medium mb-2">human-generated +</h3>
-                                <h3 class="text-indigo-900 text-xl font-medium">AI-generated questions</h3>
+                            <!-- Step 1: Question Creation -->
+                            <div class="bg-indigo-100 rounded-xl p-6 w-4/5 text-center">
+                                <p class="text-gray-600 mb-2 text-2xl">step one</p>
+                                <h3 class="text-indigo-900 text-xl font-medium">Expert Question Creation</h3>
                             </div>
                             
                             <!-- Arrow down with arrow head -->
@@ -328,10 +662,10 @@
                                 </svg>
                             </div>
                             
-                            <!-- Step 2: Human Verification -->
-                            <div class="bg-blue-100 rounded-xl p-6 w-4/5 text-center">
-                                <p class="text-gray-600 mb-2 text-sm">step two</p>
-                                <h3 class="text-indigo-900 text-xl font-medium">human-verification</h3>
+                            <!-- Step 2: College Board Alignment -->
+                            <div class="bg-blue-200 rounded-xl p-6 w-4/5 text-center">
+                                <p class="text-gray-600 mb-2 text-2xl">step two</p>
+                                <h3 class="text-indigo-900 text-xl font-medium">College Board Standards Alignment</h3>
                             </div>
                             
                             <!-- Arrow down with arrow head -->
@@ -344,17 +678,15 @@
                             
                             <!-- Step 3: Question Bank -->
                             <div class="bg-indigo-600 rounded-xl p-8 w-4/5 text-center">
-                                <p class="text-indigo-200 mb-2 text-sm">step three</p>
+                                <p class="text-indigo-200 mb-2 text-2xl">step three</p>
                                 <div class="flex items-center justify-center mb-2">
                                     <span class="text-white text-2xl font-bold mr-2">SAT Prep Pro</span>
-                                    <!-- Fixed slider/equalizer icon -->
+                                    <!-- Quality check icon -->
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
-                                        <rect x="3" y="10" width="18" height="2" rx="1" fill="currentColor"/>
-                                        <rect x="6" y="5" width="12" height="2" rx="1" fill="currentColor"/>
-                                        <rect x="9" y="15" width="6" height="2" rx="1" fill="currentColor"/>
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 class="text-white text-2xl font-bold">Question Bank</h3>
+                                <h3 class="text-white text-2xl font-bold">Premium Question Bank</h3>
                             </div>
                         </div>
                     </div>
@@ -363,42 +695,40 @@
                 <!-- Right column: Text only (stats moved below) -->
                 <div class="md:w-1/2">
                     <h2 class="text-4xl sm:text-5xl font-bold text-indigo-900 mb-6">
-                        Never run out of preparation with our question bank with <span class="text-indigo-600">2,000+ questions</span>
+                        Never run out of preparation with our premium question bank of <span class="text-indigo-600">2,000+ questions</span>
                     </h2>
                     
-                    <p class="text-gray-700 text-md mb-6">
-                        Our question bank combines AI precision with human expertise. Every question is generated using advanced AI trained on official SAT questions, then meticulously validated by education professionals.
+                    <p class="text-2xl text-gray-700 mb-6">
+                        Our question bank represents the gold standard in SAT preparation. Every question is meticulously reviewed by individuals with years of expertise in the SAT format.
                     </p>
                     
-                    <p class="text-gray-700 text-md">
-                        Experience practice questions indistinguishable from the real SAT. Our proprietary algorithm ensures each question accurately reflects the style, difficulty, and cognitive demands of the official exam—giving you authentic preparation that directly translates to test day success.
+                    <p class="text-2xl text-gray-700">
+                        Experience practice questions that perfectly mirror the real SAT. Our rigorous quality assurance process ensures each question accurately reflects College Board standards in topics, accuracy, difficulty, and structure—giving you authentic preparation that directly translates to test day success.
                     </p>
                 </div>
             </div>
-            <!-- Statistics moved below both diagram and text -->
+            <!-- Statistics with counter animation -->
             <div class="grid grid-cols-3 gap-16 text-center max-w-6xl mx-auto mt-12 border-t border-gray-100 pt-16">
-                <div>
-                    <p class="text-6xl font-bold text-indigo-600">2,000+</p>
-                    <p class="text-base text-gray-600 mt-4">human-verified practice questions</p>
+                <div class="hover-lift">
+                    <p class="text-6xl font-bold text-indigo-600 counter" data-target="2000">0</p>
+                    <p class="text-2xl text-gray-600 mt-4">expert-verified practice questions</p>
                 </div>
                 
-                <div>
-                    <p class="text-6xl font-bold text-indigo-600">15+</p>
-                    <p class="text-base text-gray-600 mt-4">practice tests curated</p>
+                <div class="hover-lift">
+                    <p class="text-6xl font-bold text-indigo-600 counter" data-target="15">0</p>
+                    <p class="text-2xl text-gray-600 mt-4">practice tests curated</p>
                 </div>
                 
-                <div>
-                    <p class="text-6xl font-bold text-indigo-600">10,000+</p>
-                    <p class="text-base text-gray-600 mt-4">hints given by Ollie, our AI tutor</p>
+                <div class="hover-lift">
+                    <p class="text-6xl font-bold text-indigo-600 counter" data-target="10000">0</p>
+                    <p class="text-2xl text-gray-600 mt-4">hints given by Ollie, our AI tutor</p>
                 </div>
             </div>
         </div>
     </section>
     
-    
-   
-    <!-- Performance Tracking -->
-    <section class="py-16 md:py-24 relative" style="background: linear-gradient(180deg, #0d114d 0%, #191e6e 100%);">
+    <!-- Performance Tracking - Add animated background -->
+    <section class="py-16 md:py-24 relative animated-bg">
         <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -406,7 +736,7 @@
                 <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
                     Track your journey to success
                 </h2>
-                <p class="text-indigo-200 max-w-3xl mx-auto text-sm md:text-base">
+                <p class="text-indigo-200 max-w-3xl mx-auto text-2xl">
                     Our intelligent analytics dashboard helps you understand your progress and prioritize your study time effectively.
                 </p>
             </div>
@@ -546,7 +876,7 @@
                             <div class="flex items-center">
                                 <span class="text-xs md:text-sm text-indigo-200 font-medium">+5.2%</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 md:h-4 md-w-4 text-indigo-200 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4 4-6 6" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                 </svg>
                             </div>
                         </div>
@@ -664,34 +994,8 @@
         </div>
     </section>
 
-    <!-- Practice Questions Section -->
-    <section class="py-20 md:py-36 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:space-x-20">
-                <div class="md:w-1/2 order-2 md:order-1 md:pr-8">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-indigo-900 mb-4 md:mb-6">
-                        Continuously Expanding Question Bank
-                    </h2>
-                    
-                    <p class="text-gray-700 mb-6 md:mb-8 text-sm md:text-md">
-                        Gain access to our industry-leading collection of 2,000+ SAT questions, with new content added daily. Our team constantly generates and validates fresh questions through our AI-human collaboration process, ensuring you'll never run out of high-quality practice material.
-                    </p>
-                    
-                    <a href="/signup" class="w-full md:w-auto inline-block text-center btn-primary">
-                        Start Prepping Today
-                    </a>
-                </div>
-                
-                <div class="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2 md:pl-8">
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden">
-                        <img src="/landing/assets/images/question.png" alt="Sample SAT Question" class="w-full h-auto">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
-    <!-- Pricing Section -->
+    <!-- Pricing Section - Add hover effects -->
     <section id="pricing" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -707,7 +1011,7 @@
             <div class="max-w-5xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-10">
                     <!-- Monthly Plan -->
-                    <div class="bg-white border border-indigo-100 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div class="bg-white border border-indigo-100 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover-lift">
                         <div class="p-10">
                             <div class="flex justify-between items-start mb-6">
                                 <h3 class="text-2xl font-bold text-indigo-900">Monthly Plan</h3>
@@ -763,7 +1067,7 @@
                     </div>
                     
                     <!-- 6-Month Plan -->
-                    <div class="bg-indigo-600 rounded-2xl overflow-hidden shadow-xl relative transform hover:scale-[1.01] transition-all duration-300">
+                    <div class="bg-indigo-600 rounded-2xl overflow-hidden shadow-xl relative transform hover:scale-[1.01] transition-all duration-300 hover-lift">
                         <div class="p-10 text-white">
                             <div class="flex justify-between items-start mb-6">
                                 <h3 class="text-2xl font-bold">6-Month Plan</h3>
@@ -1050,14 +1354,14 @@
                 <div class="absolute inset-y-0 left-0 flex items-center">
                     <button id="prevButton" class="bg-indigo-600 text-white rounded-full p-2 focus:outline-none hover:bg-indigo-700 transition-colors duration-200 transform -translate-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center">
                     <button id="nextButton" class="bg-indigo-600 text-white rounded-full p-2 focus:outline-none hover:bg-indigo-700 transition-colors duration-200 transform translate-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
                 </div>
