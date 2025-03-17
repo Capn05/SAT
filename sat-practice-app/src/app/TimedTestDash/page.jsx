@@ -8,6 +8,7 @@ import TopBar from "../components/TopBar"
 import PreTestModal from "../components/PreTestModal"
 import SubjectTabs from './component/tabs'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { formatDate, formatTime } from '../lib/utils'
 
 import "../global.css"
 
@@ -27,6 +28,7 @@ export default function PracticeTestsPage() {
   const [availablePracticeTests, setAvailablePracticeTests] = useState([]);
   const [selectedPracticeTest, setSelectedPracticeTest] = useState(null);
   const [isPracticeTestModalOpen, setIsPracticeTestModalOpen] = useState(false);
+  const [pausedTests, setPausedTests] = useState([]);
   
   const supabase = createClientComponentClient()
 
@@ -146,6 +148,42 @@ export default function PracticeTestsPage() {
     fetchAvailablePracticeTests();
   }, [supabase.auth]);
 
+  useEffect(() => {
+    // Fetch paused tests
+    const fetchPausedTests = async () => {
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          console.error('Error fetching session:', error);
+          return;
+        }
+        
+        if (!session) {
+          console.error('No session found');
+          return;
+        }
+        
+        const response = await fetch('/api/paused-test', {
+          method: 'POST'
+        });
+        
+        if (!response.ok) {
+          console.error('Error fetching paused tests:', response.statusText);
+          return;
+        }
+        
+        const data = await response.json();
+        setPausedTests(data.pausedTests || []);
+        console.log("Paused tests:", data.pausedTests);
+      } catch (err) {
+        console.error('Error in fetchPausedTests:', err);
+      }
+    };
+
+    fetchPausedTests();
+  }, [supabase.auth]);
+
   const handleTestClick = (subjectId) => {
     // Filter available practice tests by subject
     const subjectTests = availablePracticeTests.filter(test => 
@@ -165,8 +203,51 @@ export default function PracticeTestsPage() {
     router.push(`/TestMode?testId=${testId}`)
   }
 
-  const handleSubjectChange = (subject) => {
-    setActiveTab(subject)
+  // Add a SubjectTabs component
+  const SubjectTabs = ({ activeTest, onSubjectChange }) => (
+    <div style={styles.subjectTabs}>
+      <div
+        style={{
+          ...styles.subjectTab,
+          backgroundColor: activeTest === "Past" ? "#10b981" : "transparent",
+          color: activeTest === "Past" ? "white" : "#4b5563",
+        }}
+        onClick={() => onSubjectChange("Past")}
+      >
+        Past Tests
+      </div>
+      <div
+        style={{
+          ...styles.subjectTab,
+          backgroundColor: activeTest === "Active" ? "#10b981" : "transparent",
+          color: activeTest === "Active" ? "white" : "#4b5563",
+        }}
+        onClick={() => onSubjectChange("Active")}
+      >
+        Active Tests
+      </div>
+      <div
+        style={{
+          ...styles.subjectTab,
+          backgroundColor: activeTest === "Paused" ? "#10b981" : "transparent",
+          color: activeTest === "Paused" ? "white" : "#4b5563",
+        }}
+        onClick={() => onSubjectChange("Paused")}
+      >
+        Paused Tests
+      </div>
+    </div>
+  );
+
+  const handleSubjectChange = (test) => {
+    setActiveTab(test);
+    if (test === "Past") {
+      setCurrentTests(completedTests);
+    } else if (test === "Active") {
+      setCurrentTests(incompleteTests);
+    } else if (test === "Paused") {
+      setCurrentTests(pausedTests);
+    }
   }
 
   const filteredTests = incompleteTests
@@ -210,6 +291,10 @@ export default function PracticeTestsPage() {
   const handleStartPracticeTest = (testId) => {
     setIsPracticeTestModalOpen(false);
     router.push(`/PracticeTestMode?testId=${testId}`);
+  };
+
+  const handleResumePausedTest = (pausedTest) => {
+    router.push(`/PracticeTestMode?testId=${pausedTest.practice_test_id}&moduleId=${pausedTest.test_module_id}`);
   };
 
   // Add a PracticeTestModal component with MST explanation
@@ -369,6 +454,58 @@ export default function PracticeTestsPage() {
                     </button>
                   </div>
                 </div>
+                
+                {activeTab === "Paused" && pausedTests.length > 0 ? (
+                  pausedTests.map((test) => {
+                    // Extract test details
+                    const testName = test.practice_tests?.name || `Test #${test.practice_test_id}`;
+                    const moduleNumber = test.test_modules?.module_number || '';
+                    const moduleType = test.test_modules?.is_harder ? 'Higher Difficulty' : 'Lower Difficulty';
+                    const subjectName = test.practice_tests?.subjects?.subject_name || 
+                      (test.practice_tests?.subject_id === 1 ? 'Math' : 
+                       test.practice_tests?.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                       
+                    return (
+                      <div 
+                        key={test.id} 
+                        style={{
+                          ...styles.testHistoryItem,
+                          cursor: 'pointer',
+                          transition: 'all 0.2s ease',
+                          position: 'relative',
+                          borderLeft: '4px solid #f59e0b',
+                        }}
+                        onClick={() => handleResumePausedTest(test)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyPress={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
+                      >
+                        <div style={styles.testHistoryInfo}>
+                          <h3 style={styles.testHistoryName}>{testName} - Module {moduleNumber}</h3>
+                          <p style={styles.testHistoryDate}>
+                            Paused on {formatDate(test.paused_at)} - {formatTime(test.time_remaining)} remaining
+                          </p>
+                          <p style={styles.testHistorySubject}>
+                            {subjectName} {moduleNumber === 2 ? `(${moduleType})` : ''}
+                          </p>
+                        </div>
+                        <div style={styles.testHistoryDetails}>
+                          <span style={styles.pausedLabel}>Resume</span>
+                          <ChevronRight size={16} style={styles.testHistoryArrow} />
+                        </div>
+                      </div>
+                    );
+                  })
+                ) : activeTab === "Paused" ? (
+                  <div style={styles.emptyState}>
+                    <div style={styles.emptyStateIcon}>
+                      <Clock size={24} />
+                    </div>
+                    <p style={styles.emptyStateText}>No paused tests found</p>
+                  </div>
+                ) : null}
                 
                 {currentTests.map((test) => {
                   // Determine the test name with fallbacks
@@ -952,5 +1089,40 @@ const styles = {
     fontSize: '0.75rem',
     color: '#6b7280',
     marginBottom: '0.75rem',
+  },
+  pausedLabel: {
+    backgroundColor: '#fdba74',
+    color: '#7c2d12',
+    padding: '4px 8px',
+    borderRadius: '4px',
+    fontSize: '12px',
+    fontWeight: '500',
+  },
+  emptyState: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '2rem',
+    borderRadius: '8px',
+    backgroundColor: '#f3f4f6',
+  },
+  emptyStateIcon: {
+    marginBottom: '1rem',
+  },
+  emptyStateText: {
+    fontSize: '1rem',
+    color: '#6b7280',
+    textAlign: 'center',
+  },
+  subjectTabs: {
+    display: 'flex',
+    gap: '8px',
+    marginBottom: '16px',
+  },
+  subjectTab: {
+    padding: '8px 16px',
+    borderRadius: '4px',
+    cursor: 'pointer',
   },
 }

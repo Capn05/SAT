@@ -46,15 +46,7 @@ export async function POST(request) {
     // Calculate the score
     const totalQuestions = moduleData.practice_tests.length;  // Total available questions in the module
     const attemptedQuestions = answers.length;  // Questions the user actually answered
-    const correctAnswers = answers.filter(answer => answer.isCorrect).length;
-    
-    // Create a score object that includes both attempted and total information
-    const score = {
-      correct: correctAnswers,
-      attempted: attemptedQuestions,
-      total: totalQuestions,
-      percentage: (correctAnswers / totalQuestions) * 100
-    };
+    let correctAnswers = 0;  // Start with 0 and increment for each correct answer
     
     // Record each answer in user_answers table
     for (const answer of answers) {
@@ -82,6 +74,14 @@ export async function POST(request) {
         // Continue with other answers even if one fails
       }
     }
+    
+    // Create a score object that includes both attempted and total information
+    const score = {
+      correct: correctAnswers,
+      attempted: attemptedQuestions,
+      total: totalQuestions,
+      percentage: (correctAnswers / totalQuestions) * 100
+    };
     
     // If this was Module 1, determine which Module 2 to use next
     if (moduleData.module_number === 1) {

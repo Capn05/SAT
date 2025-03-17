@@ -25,6 +25,7 @@ export default function PracticeTestPage() {
   const [showSubmitModal, setShowSubmitModal] = useState(false)
   const [practiceTestInfo, setPracticeTestInfo] = useState(null)
   const [showScoreModal, setShowScoreModal] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
   const timerRef = useRef(null)
   
   const router = useRouter()
@@ -289,6 +290,156 @@ export default function PracticeTestPage() {
     }
   }
   
+  const handlePauseTest = async () => {
+    // Pause the timer
+    clearInterval(timerRef.current)
+    setIsPaused(true)
+    
+    try {
+      // Save the current test state to the database
+      const response = await fetch('/api/pause-test', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          testId,
+          moduleId,
+          currentQuestion,
+          timeRemaining,
+          answers: Object.entries(answers).map(([questionId, data]) => ({
+            questionId: parseInt(questionId),
+            selectedOptionId: data.optionId,
+            isCorrect: data.isCorrect
+          })),
+          flaggedQuestions: Array.from(flaggedQuestions)
+        })
+      })
+      
+      if (!response.ok) {
+        throw new Error('Failed to save test progress')
+      }
+      
+      // Redirect to dashboard
+      router.push('/TimedTestDash')
+    } catch (err) {
+      console.error('Error pausing test:', err)
+      // Resume the timer if there was an error
+      if (!testComplete && timeRemaining > 0) {
+        timerRef.current = setInterval(() => {
+          setTimeRemaining(prev => {
+            if (prev <= 1) {
+              clearInterval(timerRef.current)
+              handleSubmitModule()
+              return 0
+            }
+            return prev - 1
+          })
+        }, 1000)
+      }
+      setIsPaused(false)
+      alert('Failed to save your progress. Please try again.')
+    }
+  }
+  
+  // Check for existing paused test on component mount
+  useEffect(() => {
+    const checkForPausedTest = async () => {
+      if (!moduleId || !testId) return;
+      
+      try {
+        const response = await fetch(`/api/paused-test?testId=${testId}&moduleId=${moduleId}`);
+        
+        if (!response.ok) {
+          console.log('No paused test found or error occurred');
+          return; // No paused test found or error occurred
+        }
+        
+        const data = await response.json();
+        console.log('Paused test data:', data);
+        
+        if (data.pausedTest) {
+          // Ask the user if they want to resume
+          const shouldResume = confirm('You have a paused test. Would you like to resume where you left off?');
+          
+          if (shouldResume) {
+            // Load questions first to ensure we have the questions data
+            await fetchQuestionsForModule(moduleId);
+            
+            // After questions are loaded, restore the test state
+            setTimeout(() => {
+              setCurrentQuestion(parseInt(data.pausedTest.current_question) || 0);
+              setTimeRemaining(parseInt(data.pausedTest.time_remaining) || 3600);
+              
+              // Parse answers
+              const parsedAnswers = {};
+              if (data.pausedTest.answers && Array.isArray(data.pausedTest.answers)) {
+                data.pausedTest.answers.forEach(answer => {
+                  if (answer && answer.questionId) {
+                    parsedAnswers[answer.questionId] = {
+                      optionId: answer.selectedOptionId,
+                      isCorrect: answer.isCorrect
+                    };
+                  }
+                });
+              }
+              setAnswers(parsedAnswers);
+              
+              // Parse flagged questions
+              const flaggedArray = data.pausedTest.flaggedQuestions || [];
+              setFlaggedQuestions(new Set(flaggedArray.map(id => parseInt(id))));
+              
+              console.log('Test state restored:', {
+                currentQuestion: data.pausedTest.current_question,
+                answers: parsedAnswers,
+                flagged: flaggedArray
+              });
+            }, 500); // Short delay to ensure questions are loaded
+          } else {
+            // Delete the paused test
+            await fetch(`/api/pause-test?testId=${testId}&moduleId=${moduleId}`, {
+              method: 'DELETE'
+            });
+          }
+        }
+      } catch (err) {
+        console.error('Error checking for paused test:', err);
+      }
+    };
+    
+    // Function to fetch questions for the module
+    const fetchQuestionsForModule = async (moduleId) => {
+      if (!moduleId) return;
+      
+      setIsLoading(true);
+      setError(null);
+      
+      try {
+        const response = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
+        const data = await response.json();
+        
+        if (!response.ok) {
+          setError(data.error || "Failed to load questions");
+          setIsLoading(false);
+          return;
+        }
+        
+        // Set the questions and module info
+        setQuestions(data.questions);
+        setModuleInfo(data.moduleInfo);
+        setIsLoading(false);
+        
+        return data;
+      } catch (err) {
+        console.error("Error fetching questions:", err);
+        setError("An unexpected error occurred while loading questions");
+        setIsLoading(false);
+      }
+    };
+    
+    checkForPausedTest();
+  }, [moduleId, testId, router]);
+  
   const ScoreModal = ({ score, isModule1, onClose }) => (
     <div style={styles.modalOverlay}>
       <div style={styles.modal}>
@@ -299,13 +450,16 @@ export default function PracticeTestPage() {
         <div style={styles.scoreContainer}>
           <h3 style={styles.scoreLabel}>Your Score:</h3>
           <p style={styles.scoreValue}>
-            {score.correct} / {score.total} ({Math.round(score.percentage)}%)
+            {score.correct} correct / {score.attempted} attempted / {score.total} total
+          </p>
+          <p style={styles.scorePercent}>
+            {Math.round(score.percentage)}%
           </p>
           
           {testComplete && overallScore && (
             <>
               <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
-              <p style={styles.scoreValue}>
+              <p style={styles.scorePercent}>
                 {Math.round(overallScore.percentage)}%
               </p>
             </>
@@ -415,9 +569,18 @@ export default function PracticeTestPage() {
           </div>
         </div>
         
-        <div style={styles.timer}>
-          <Clock size={20} />
-          <span>{formatTime(timeRemaining)}</span>
+        <div style={styles.timerContainer}>
+          <div style={styles.timer}>
+            <Clock size={20} />
+            <span>{formatTime(timeRemaining)}</span>
+          </div>
+          <button 
+            style={styles.pauseButton}
+            onClick={handlePauseTest}
+            title="Pause test and save progress"
+          >
+            Pause
+          </button>
         </div>
       </div>
       
@@ -582,6 +745,11 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
     marginTop: '4px',
+  },
+  timerContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
   },
   timer: {
     display: 'flex',
@@ -822,5 +990,22 @@ const styles = {
     fontWeight: '500',
     cursor: 'pointer',
     marginTop: '1rem',
+  },
+  pauseButton: {
+    padding: '8px 16px',
+    borderRadius: '6px',
+    border: '1px solid #d1d5db',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+  },
+  scorePercent: {
+    fontSize: '28px',
+    fontWeight: '700',
+    color: '#3b82f6',
+    marginBottom: '1.5rem',
   },
 } 
