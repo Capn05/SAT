@@ -20,20 +20,43 @@ export async function POST(request) {
     }
     
     const userId = session.user.id;
-    const { testId, moduleId, currentQuestion, timeRemaining, answers, flaggedQuestions } = await request.json();
+    const requestBody = await request.json();
     
-    // Check if the test belongs to the user
+    // Log the request data for debugging
+    console.log('Pause test request:', {
+      userId,
+      testId: requestBody.testId,
+      moduleId: requestBody.moduleId,
+      currentQuestion: requestBody.currentQuestion,
+      answersCount: requestBody.answers?.length
+    });
+    
+    const { 
+      testId, 
+      moduleId, 
+      currentQuestion, 
+      timeRemaining, 
+      answers = [], 
+      flaggedQuestions = []
+    } = requestBody;
+    
+    if (!testId || !moduleId) {
+      return NextResponse.json({ error: 'Test ID and Module ID are required' }, { status: 400 });
+    }
+    
+    // Check if the test exists
     const { data: testData, error: testError } = await supabase
       .from('practice_tests')
       .select('id')
       .eq('id', testId)
       .single();
       
-    if (testError || !testData) {
+    if (testError) {
+      console.error('Error checking test:', testError);
       return NextResponse.json({ error: 'Test not found' }, { status: 404 });
     }
     
-    // Check if the module belongs to the test
+    // Check if the module exists
     const { data: moduleData, error: moduleError } = await supabase
       .from('test_modules')
       .select('id')
@@ -41,7 +64,8 @@ export async function POST(request) {
       .eq('practice_test_id', testId)
       .single();
       
-    if (moduleError || !moduleData) {
+    if (moduleError) {
+      console.error('Error checking module:', moduleError);
       return NextResponse.json({ error: 'Module not found' }, { status: 404 });
     }
     
@@ -55,8 +79,13 @@ export async function POST(request) {
       .maybeSingle();
       
     if (existingError) {
+      console.error('Error checking existing paused test:', existingError);
       return NextResponse.json({ error: 'Error checking existing paused test' }, { status: 500 });
     }
+    
+    // Stringify the answers and flagged questions arrays for storage
+    const answersString = JSON.stringify(answers);
+    const flaggedQuestionsString = JSON.stringify(flaggedQuestions);
     
     let result;
     
@@ -67,14 +96,15 @@ export async function POST(request) {
         .update({
           current_question: currentQuestion,
           time_remaining: timeRemaining,
-          answers: JSON.stringify(answers),
-          flagged_questions: JSON.stringify(flaggedQuestions),
+          answers: answersString,
+          flagged_questions: flaggedQuestionsString,
           paused_at: new Date().toISOString()
         })
         .eq('id', existingPausedTest.id)
         .select();
         
       if (error) {
+        console.error('Error updating paused test:', error);
         return NextResponse.json({ error: 'Error updating paused test' }, { status: 500 });
       }
       
@@ -89,18 +119,21 @@ export async function POST(request) {
           test_module_id: moduleId,
           current_question: currentQuestion,
           time_remaining: timeRemaining,
-          answers: JSON.stringify(answers),
-          flagged_questions: JSON.stringify(flaggedQuestions),
+          answers: answersString,
+          flagged_questions: flaggedQuestionsString,
           paused_at: new Date().toISOString()
         })
         .select();
         
       if (error) {
+        console.error('Error creating paused test:', error);
         return NextResponse.json({ error: 'Error creating paused test' }, { status: 500 });
       }
       
       result = data;
     }
+    
+    console.log('Paused test saved successfully:', result);
     
     return NextResponse.json({ 
       message: 'Test paused successfully',
@@ -132,12 +165,14 @@ export async function DELETE(request) {
     
     const userId = session.user.id;
     const url = new URL(request.url);
-    const testId = url.searchParams.get('testId');
-    const moduleId = url.searchParams.get('moduleId');
+    const testId = parseInt(url.searchParams.get('testId'));
+    const moduleId = parseInt(url.searchParams.get('moduleId'));
     
     if (!testId || !moduleId) {
       return NextResponse.json({ error: 'Test ID and Module ID are required' }, { status: 400 });
     }
+    
+    console.log(`Deleting paused test for user ${userId}, test ${testId}, module ${moduleId}`);
     
     // Delete the paused test
     const { error: deleteError } = await supabase
@@ -148,6 +183,7 @@ export async function DELETE(request) {
       .eq('test_module_id', moduleId);
       
     if (deleteError) {
+      console.error('Error deleting paused test:', deleteError);
       return NextResponse.json({ error: 'Error deleting paused test' }, { status: 500 });
     }
     

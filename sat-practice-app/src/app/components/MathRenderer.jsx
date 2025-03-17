@@ -1,40 +1,44 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import katex from 'katex';
 import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
 
 /**
- * A component that renders LaTeX mathematical expressions using KaTeX
- * 
- * @param {Object} props - Component props
- * @param {string} props.math - The LaTeX math string to render
- * @param {boolean} props.block - Whether to render as a block (centered) or inline
- * @param {Object} props.katexOptions - Additional options to pass to KaTeX
- * @returns {React.ReactElement} - The rendered math component
+ * A component that renders LaTeX mathematical expressions using KaTeX directly
  */
-const MathRenderer = ({ math, block = false, katexOptions = {}, className = '' }) => {
-  // Default KaTeX options with error handling
-  const defaultOptions = {
-    throwOnError: false,
-    strict: false,
-    ...katexOptions
-  };
-
-  try {
-    return block ? (
-      <BlockMath math={math} errorColor={'#cc0000'} settings={defaultOptions} className={className} />
-    ) : (
-      <InlineMath math={math} errorColor={'#cc0000'} settings={defaultOptions} className={className} />
-    );
-  } catch (error) {
-    console.error('Error rendering math:', error);
-    return <span style={{ color: '#cc0000' }}>Math rendering error: {math}</span>;
-  }
+const MathRenderer = ({ math, block = false, options = {}, className = '' }) => {
+  const elementRef = useRef(null);
+  
+  useEffect(() => {
+    if (elementRef.current && math) {
+      try {
+        const defaultOptions = {
+          throwOnError: false,
+          errorColor: '#cc0000',
+          displayMode: block,
+          ...options
+        };
+        
+        katex.render(math.trim(), elementRef.current, defaultOptions);
+      } catch (error) {
+        console.error('Error rendering math:', error);
+        elementRef.current.textContent = `Math rendering error: ${math}`;
+        elementRef.current.style.color = '#cc0000';
+      }
+    }
+  }, [math, block, options]);
+  
+  return (
+    <span 
+      ref={elementRef} 
+      className={`math-renderer ${block ? 'math-block' : 'math-inline'} ${className}`}
+    ></span>
+  );
 };
 
 /**
- * Enhanced processMathInText function to handle diagrams and more complex notation
+ * Enhanced processMathInText function to handle diagrams and math expressions
  */
 export const processMathInText = (content) => {
   if (typeof content !== 'string') return content;
@@ -55,8 +59,7 @@ export const processMathInText = (content) => {
     );
   }
 
-  // Now process math in the content
-  // Split the content by math delimiters
+  // Process math expressions
   const blockMathRegex = /\$\$(.*?)\$\$/gs; // Note the 's' flag for multiline support
   const inlineMathRegex = /\$(.*?)\$/g;
   

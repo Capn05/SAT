@@ -22,13 +22,15 @@ export default function PracticeTestsPage() {
   const router = useRouter()
   const [currentTestType, setCurrentTestType] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [activeTab, setActiveTab] = useState('Past')
+  const [activeTab, setActiveTab] = useState("Complete")
+  const [currentTests, setCurrentTests] = useState([])
   const [completedTests, setCompletedTests] = useState([])
   const [incompleteTests, setIncompleteTests] = useState([])
-  const [availablePracticeTests, setAvailablePracticeTests] = useState([]);
-  const [selectedPracticeTest, setSelectedPracticeTest] = useState(null);
-  const [isPracticeTestModalOpen, setIsPracticeTestModalOpen] = useState(false);
-  const [pausedTests, setPausedTests] = useState([]);
+  const [availablePracticeTests, setAvailablePracticeTests] = useState([])
+  const [selectedPracticeTest, setSelectedPracticeTest] = useState(null)
+  const [isPracticeTestModalOpen, setIsPracticeTestModalOpen] = useState(false)
+  const [pausedTests, setPausedTests] = useState([])
+  const [isLoadingTests, setIsLoadingTests] = useState(true)
   
   const supabase = createClientComponentClient()
 
@@ -85,6 +87,11 @@ export default function PracticeTestsPage() {
         
         setCompletedTests(formattedTests);
         console.log("completed tests:", formattedTests);
+        
+        // Initialize currentTests with completed tests
+        if (activeTab === "Complete") {
+          setCurrentTests(formattedTests);
+        }
       } catch (err) {
         console.error('Error in fetchCompletedTests:', err);
       }
@@ -95,7 +102,7 @@ export default function PracticeTestsPage() {
     setIncompleteTests([]);
 
     fetchCompletedTests();
-  }, [router, supabase.auth]);
+  }, [router, supabase.auth, activeTab]);
 
   // Add this separate effect to log when completedTests changes
   useEffect(() => {
@@ -110,6 +117,7 @@ export default function PracticeTestsPage() {
   // Update how we handle available practice tests
   useEffect(() => {
     const fetchAvailablePracticeTests = async () => {
+      setIsLoadingTests(true);
       try {
         const { data: { session }, error } = await supabase.auth.getSession();
         
@@ -142,6 +150,8 @@ export default function PracticeTestsPage() {
         setAvailablePracticeTests(validTests);
       } catch (err) {
         console.error('Error in fetchAvailablePracticeTests:', err);
+      } finally {
+        setIsLoadingTests(false);
       }
     };
 
@@ -174,17 +184,41 @@ export default function PracticeTestsPage() {
         }
         
         const data = await response.json();
-        setPausedTests(data.pausedTests || []);
-        console.log("Paused tests:", data.pausedTests);
+        const pausedTestsData = data.pausedTests || [];
+        setPausedTests(pausedTestsData);
+        
+        // Update currentTests if on Paused tab
+        if (activeTab === "Paused") {
+          setCurrentTests(pausedTestsData);
+        }
+        
       } catch (err) {
         console.error('Error in fetchPausedTests:', err);
       }
     };
 
     fetchPausedTests();
-  }, [supabase.auth]);
+  }, [supabase.auth, activeTab]);
+
+  // Add this useEffect to handle pagination for the current tests
+  useEffect(() => {
+    // Get the correct source of tests based on active tab
+    const allTests = activeTab === "Complete" ? completedTests : 
+                     activeTab === "Paused" ? pausedTests : [];
+    
+    // Apply pagination
+    const paginatedTests = allTests.slice(indexOfFirstTest, indexOfLastTest);
+    setCurrentTests(paginatedTests);
+  }, [activeTab, currentPage, completedTests, pausedTests, indexOfFirstTest, indexOfLastTest]);
 
   const handleTestClick = (subjectId) => {
+    // If tests are still loading, show loading modal instead
+    if (isLoadingTests) {
+      setSelectedPracticeTest([]);
+      setIsPracticeTestModalOpen(true);
+      return;
+    }
+    
     // Filter available practice tests by subject
     const subjectTests = availablePracticeTests.filter(test => 
       test.subject_id === subjectId
@@ -209,22 +243,12 @@ export default function PracticeTestsPage() {
       <div
         style={{
           ...styles.subjectTab,
-          backgroundColor: activeTest === "Past" ? "#10b981" : "transparent",
-          color: activeTest === "Past" ? "white" : "#4b5563",
+          backgroundColor: activeTest === "Complete" ? "#10b981" : "transparent",
+          color: activeTest === "Complete" ? "white" : "#4b5563",
         }}
-        onClick={() => onSubjectChange("Past")}
+        onClick={() => onSubjectChange("Complete")}
       >
-        Past Tests
-      </div>
-      <div
-        style={{
-          ...styles.subjectTab,
-          backgroundColor: activeTest === "Active" ? "#10b981" : "transparent",
-          color: activeTest === "Active" ? "white" : "#4b5563",
-        }}
-        onClick={() => onSubjectChange("Active")}
-      >
-        Active Tests
+        Completed Tests
       </div>
       <div
         style={{
@@ -241,21 +265,11 @@ export default function PracticeTestsPage() {
 
   const handleSubjectChange = (test) => {
     setActiveTab(test);
-    if (test === "Past") {
-      setCurrentTests(completedTests);
-    } else if (test === "Active") {
-      setCurrentTests(incompleteTests);
-    } else if (test === "Paused") {
-      setCurrentTests(pausedTests);
-    }
+    setCurrentPage(1); // Reset to first page when changing tabs
   }
 
-  const filteredTests = incompleteTests
-
-  const totalTests = activeTab === "Past" ? completedTests.length : incompleteTests.length;
+  const totalTests = activeTab === "Complete" ? completedTests.length : pausedTests.length;
   const totalPages = Math.ceil(totalTests / testsPerPage);
-
-  const currentTests = (activeTab === "Past" ? completedTests : incompleteTests).slice(indexOfFirstTest, indexOfLastTest);
 
   const handleTestHistoryClick = (test) => {
     // Navigate to review page
@@ -294,6 +308,13 @@ export default function PracticeTestsPage() {
   };
 
   const handleResumePausedTest = (pausedTest) => {
+    if (!pausedTest || !pausedTest.practice_test_id || !pausedTest.test_module_id) {
+      console.error('Invalid paused test data:', pausedTest);
+      alert('Error resuming test. Please try starting a new test.');
+      return;
+    }
+    
+    console.log('Resuming test:', pausedTest);
     router.push(`/PracticeTestMode?testId=${pausedTest.practice_test_id}&moduleId=${pausedTest.test_module_id}`);
   };
 
@@ -320,7 +341,12 @@ export default function PracticeTestsPage() {
             </ol>
           </div>
           
-          {testsToShow.length === 0 ? (
+          {isLoadingTests ? (
+            <div style={styles.loadingContainer}>
+              <div style={styles.loadingSpinner}></div>
+              <p style={styles.loadingText}>Loading available tests...</p>
+            </div>
+          ) : testsToShow.length === 0 ? (
             <p style={styles.modalText}>No practice tests available. Please check back later.</p>
           ) : (
             <>
@@ -386,10 +412,14 @@ export default function PracticeTestsPage() {
                   Full-length adaptive test with Module 1 (22 questions) and Module 2 (22 questions).
                 </p>
                 <button
-                  style={styles.startButton}
+                  style={{
+                    ...styles.startButton,
+                    opacity: isLoadingTests ? 0.7 : 1,
+                    cursor: isLoadingTests ? 'default' : 'pointer',
+                  }}
                   onClick={() => handleTestClick(1)}
                 >
-                  Start Math Test
+                  {isLoadingTests ? 'Loading Tests...' : 'Start Math Test'}
                 </button>
               </div>
 
@@ -406,10 +436,14 @@ export default function PracticeTestsPage() {
                   Full-length adaptive test with Module 1 (27 questions) and Module 2 (27 questions).
                 </p>
                 <button
-                  style={styles.startButton}
+                  style={{
+                    ...styles.startButton,
+                    opacity: isLoadingTests ? 0.7 : 1,
+                    cursor: isLoadingTests ? 'default' : 'pointer',
+                  }}
                   onClick={() => handleTestClick(2)}
                 >
-                  Start Reading & Writing Test
+                  {isLoadingTests ? 'Loading Tests...' : 'Start Reading & Writing Test'}
                 </button>
               </div>
             </div>
@@ -439,18 +473,26 @@ export default function PracticeTestsPage() {
                   <h3 style={styles.startNewTestTitle}>Start a New Test</h3>
                   <div style={styles.startNewTestOptions}>
                     <button 
-                      style={styles.startNewTestButton}
+                      style={{
+                        ...styles.startNewTestButton,
+                        opacity: isLoadingTests ? 0.7 : 1,
+                        cursor: isLoadingTests ? 'default' : 'pointer',
+                      }}
                       onClick={() => handleTestClick(1)}
                     >
                       <Brain size={16} style={styles.startNewTestIcon} />
-                      Math Adaptive Test
+                      {isLoadingTests ? 'Loading...' : 'Math Adaptive Test'}
                     </button>
                     <button 
-                      style={styles.startNewTestButton}
+                      style={{
+                        ...styles.startNewTestButton,
+                        opacity: isLoadingTests ? 0.7 : 1,
+                        cursor: isLoadingTests ? 'default' : 'pointer',
+                      }}
                       onClick={() => handleTestClick(2)}
                     >
                       <BookOpen size={16} style={styles.startNewTestIcon} />
-                      Reading & Writing Adaptive Test
+                      {isLoadingTests ? 'Loading...' : 'Reading & Writing Adaptive Test'}
                     </button>
                   </div>
                 </div>
@@ -478,7 +520,7 @@ export default function PracticeTestsPage() {
                         onClick={() => handleResumePausedTest(test)}
                         role="button"
                         tabIndex={0}
-                        onKeyPress={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
+                        onKeyDown={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
                         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
                         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
                       >
@@ -507,7 +549,7 @@ export default function PracticeTestsPage() {
                   </div>
                 ) : null}
                 
-                {currentTests.map((test) => {
+                {activeTab === "Complete" && currentTests.map((test) => {
                   // Determine the test name with fallbacks
                   const testName = test.test_name || `Test #${test.test_id}`;
                   
@@ -519,12 +561,12 @@ export default function PracticeTestsPage() {
                         cursor: 'pointer',
                         transition: 'all 0.2s ease',
                         position: 'relative',
-                        borderLeft: activeTab === "Past" ? '4px solid #10b981' : '4px solid transparent',
+                        borderLeft: activeTab === "Complete" ? '4px solid #10b981' : '4px solid transparent',
                       }}
                       onClick={() => handleTestHistoryClick(test)}
                       role="button"
                       tabIndex={0}
-                      onKeyPress={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
+                      onKeyDown={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
                       onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
                       onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
                     >
@@ -1124,5 +1166,25 @@ const styles = {
     padding: '8px 16px',
     borderRadius: '4px',
     cursor: 'pointer',
+  },
+  loadingContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '2rem',
+  },
+  loadingSpinner: {
+    width: '40px',
+    height: '40px',
+    border: '4px solid #f3f3f3',
+    borderTop: '4px solid #10b981',
+    borderRadius: '50%',
+    animation: 'spin 1s linear infinite',
+    marginBottom: '1rem',
+  },
+  loadingText: {
+    fontSize: '1rem',
+    color: '#6b7280',
   },
 }

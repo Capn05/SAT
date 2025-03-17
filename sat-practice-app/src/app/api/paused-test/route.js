@@ -21,12 +21,14 @@ export async function GET(request) {
     
     const userId = session.user.id;
     const url = new URL(request.url);
-    const testId = url.searchParams.get('testId');
-    const moduleId = url.searchParams.get('moduleId');
+    const testId = parseInt(url.searchParams.get('testId'));
+    const moduleId = parseInt(url.searchParams.get('moduleId'));
     
     if (!testId || !moduleId) {
       return NextResponse.json({ error: 'Test ID and Module ID are required' }, { status: 400 });
     }
+    
+    console.log(`Fetching paused test for user ${userId}, test ${testId}, module ${moduleId}`);
     
     // Get the paused test
     const { data: pausedTest, error: pausedError } = await supabase
@@ -38,16 +40,41 @@ export async function GET(request) {
       .maybeSingle();
       
     if (pausedError) {
+      console.error('Error retrieving paused test:', pausedError);
       return NextResponse.json({ error: 'Error retrieving paused test' }, { status: 500 });
     }
     
     if (!pausedTest) {
+      console.log('No paused test found');
       return NextResponse.json({ message: 'No paused test found' }, { status: 404 });
     }
     
+    console.log('Found paused test:', pausedTest);
+    
     // Parse the JSON strings for answers and flagged questions
-    const answers = JSON.parse(pausedTest.answers || '[]');
-    const flaggedQuestions = JSON.parse(pausedTest.flagged_questions || '[]');
+    let answers = [];
+    let flaggedQuestions = [];
+    
+    try {
+      if (pausedTest.answers) {
+        if (typeof pausedTest.answers === 'string') {
+          answers = JSON.parse(pausedTest.answers);
+        } else {
+          answers = pausedTest.answers;
+        }
+      }
+      
+      if (pausedTest.flagged_questions) {
+        if (typeof pausedTest.flagged_questions === 'string') {
+          flaggedQuestions = JSON.parse(pausedTest.flagged_questions);
+        } else {
+          flaggedQuestions = pausedTest.flagged_questions;
+        }
+      }
+    } catch (parseError) {
+      console.error('Error parsing JSON data:', parseError);
+      // Continue with empty arrays rather than failing
+    }
     
     return NextResponse.json({ 
       pausedTest: {

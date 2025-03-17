@@ -440,6 +440,71 @@ export default function PracticeTestPage() {
     checkForPausedTest();
   }, [moduleId, testId, router]);
   
+  // Use an effect to handle auto-pausing when navigating away or closing the page
+  useEffect(() => {
+    // Event handlers for page visibility change and beforeunload
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden' && !testComplete) {
+        console.log('Page hidden, auto-pausing test');
+        handleAutoPause();
+      }
+    };
+    
+    const handleBeforeUnload = (event) => {
+      if (!testComplete) {
+        // Pause the test
+        handleAutoPause();
+        
+        // Standard way to show a confirmation dialog
+        event.preventDefault();
+        event.returnValue = 'Your test progress will be automatically saved. Are you sure you want to leave?';
+      }
+    };
+    
+    // Handler function for auto-pausing
+    const handleAutoPause = async () => {
+      try {
+        // Only pause if we're not already at the end of a test
+        if (testComplete) return;
+        
+        // Pause the timer
+        clearInterval(timerRef.current);
+        
+        // Save the current test state
+        await fetch('/api/pause-test', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            testId,
+            moduleId,
+            currentQuestion,
+            timeRemaining,
+            answers: Object.entries(answers).map(([questionId, data]) => ({
+              questionId: parseInt(questionId),
+              selectedOptionId: data.optionId,
+              isCorrect: data.isCorrect
+            })),
+            flaggedQuestions: Array.from(flaggedQuestions)
+          })
+        });
+        
+        console.log('Test auto-paused successfully');
+      } catch (error) {
+        console.error('Error auto-pausing test:', error);
+      }
+    };
+    
+    // Add event listeners
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    
+    // Clean up event listeners
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [testId, moduleId, currentQuestion, timeRemaining, answers, flaggedQuestions, testComplete]);
+  
   const ScoreModal = ({ score, isModule1, onClose }) => (
     <div style={styles.modalOverlay}>
       <div style={styles.modal}>
@@ -450,10 +515,10 @@ export default function PracticeTestPage() {
         <div style={styles.scoreContainer}>
           <h3 style={styles.scoreLabel}>Your Score:</h3>
           <p style={styles.scoreValue}>
-            {score.correct} correct / {score.attempted} attempted / {score.total} total
+            {score.correct} / {score.total}
           </p>
           <p style={styles.scorePercent}>
-            {Math.round(score.percentage)}%
+            {Math.round((score.correct / score.total) * 100)}%
           </p>
           
           {testComplete && overallScore && (
