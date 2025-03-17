@@ -24,6 +24,9 @@ export default function PracticeTestsPage() {
   const [activeTab, setActiveTab] = useState('Past')
   const [completedTests, setCompletedTests] = useState([])
   const [incompleteTests, setIncompleteTests] = useState([])
+  const [availablePracticeTests, setAvailablePracticeTests] = useState([]);
+  const [selectedPracticeTest, setSelectedPracticeTest] = useState(null);
+  const [isPracticeTestModalOpen, setIsPracticeTestModalOpen] = useState(false);
   
   const supabase = createClientComponentClient()
 
@@ -45,54 +48,52 @@ export default function PracticeTestsPage() {
           return;
         }
         
-        const response = await fetch(`/api/pasts-tests?userId=${session.user.id}`);
-        const data = await response.json();
-        
-        if (response.ok) {
-          setCompletedTests(data);
-          console.log("completed tests: "+ JSON.stringify(data))
-        } else {
-          console.error('Error fetching completed tests:', data.error);
+        // Fetch test analytics from the user_test_analytics table
+        const { data, error: analyticsError } = await supabase
+          .from('user_test_analytics')
+          .select(`
+            id,
+            user_id,
+            practice_test_id,
+            taken_at,
+            module1_score,
+            module2_score,
+            used_harder_module,
+            total_score,
+            practice_tests(id, name, subject_id, subjects(subject_name))
+          `)
+          .eq('user_id', session.user.id)
+          .order('taken_at', { ascending: false });
+          
+        if (analyticsError) {
+          console.error('Error fetching completed tests:', analyticsError);
+          return;
         }
+        
+        // Format the data to match the expected structure
+        const formattedTests = data.map(test => ({
+          id: test.id,
+          test_id: test.practice_test_id,
+          user_id: test.user_id,
+          taken_at: test.taken_at,
+          total_score: test.total_score,
+          test_name: test.practice_tests?.name || `Test #${test.practice_test_id}`,
+          subject_name: test.practice_tests?.subjects?.subject_name || 'Unknown'
+        }));
+        
+        setCompletedTests(formattedTests);
+        console.log("completed tests:", formattedTests);
       } catch (err) {
         console.error('Error in fetchCompletedTests:', err);
       }
     };
 
-    // Fetch all tests
-    const fetchIncompleteTests = async () => {
-      try {
-        const { data: { session }, error } = await supabase.auth.getSession();
-        
-        if (error) {
-          console.error('Error fetching session:', error);
-          router.push('/login');
-          return;
-        }
-        
-        if (!session) {
-          console.error('No session found, redirecting to login');
-          router.push('/login');
-          return;
-        }
-
-        const response = await fetch(`/api/incomplete-tests?userId=${session.user.id}`);
-        const data = await response.json();
-        console.log("incomplete tests:  "+ JSON.stringify(data) )
-
-        if (response.ok) {
-          setIncompleteTests(data);
-        } else {
-          console.error('Error fetching incomplete tests:', data.error);
-        }
-      } catch (err) {
-        console.error('Error in fetchIncompleteTests:', err);
-      }
-    };
+    // We don't need to fetch incomplete tests separately for the new model
+    // Adaptive tests are either completed or not tracked
+    setIncompleteTests([]);
 
     fetchCompletedTests();
-    fetchIncompleteTests();
-  }, [router]);
+  }, [router, supabase.auth]);
 
   // Add this separate effect to log when completedTests changes
   useEffect(() => {
@@ -103,6 +104,47 @@ export default function PracticeTestsPage() {
       console.log("Available properties:", Object.keys(completedTests[0]));
     }
   }, [completedTests]);
+
+  // Update how we handle available practice tests
+  useEffect(() => {
+    const fetchAvailablePracticeTests = async () => {
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          console.error('Error fetching session:', error);
+          return;
+        }
+        
+        if (!session) {
+          console.error('No session found');
+          return;
+        }
+        
+        // Use our API endpoint instead of direct Supabase queries
+        const response = await fetch('/api/practice-tests');
+        
+        if (!response.ok) {
+          console.error('Error fetching practice tests:', response.statusText);
+          return;
+        }
+        
+        const data = await response.json();
+        console.log("Practice tests:", data);
+        
+        // Filter tests that have modules and are complete but not completed by user
+        const validTests = data.filter(test => 
+          test.hasModules && test.isComplete && !test.completed
+        );
+        
+        setAvailablePracticeTests(validTests);
+      } catch (err) {
+        console.error('Error in fetchAvailablePracticeTests:', err);
+      }
+    };
+
+    fetchAvailablePracticeTests();
+  }, [supabase.auth]);
 
   const handleTestClick = (type) => {
     setCurrentTestType(type)
@@ -126,9 +168,8 @@ export default function PracticeTestsPage() {
   const currentTests = (activeTab === "Past" ? completedTests : incompleteTests).slice(indexOfFirstTest, indexOfLastTest);
 
   const handleTestHistoryClick = (test) => {
-      // If the test is completed, navigate to review page
-      router.push(`/review-test?testId=${test.test_id}`);
- 
+    // Navigate to review page
+    router.push(`/review-test?testId=${test.test_id}`);
   };
 
   // Add this function to format dates
@@ -157,192 +198,243 @@ export default function PracticeTestsPage() {
     }
   };
 
+  const handlePracticeTestClick = () => {
+    setIsPracticeTestModalOpen(true);
+  };
+
+  const handleStartPracticeTest = (testId) => {
+    setIsPracticeTestModalOpen(false);
+    router.push(`/PracticeTestMode?testId=${testId}`);
+  };
+
+  // Add a PracticeTestModal component
+  const PracticeTestModal = ({ onClose, onStart }) => (
+    <div style={styles.modalOverlay}>
+      <div style={styles.modal}>
+        <div style={styles.modalClose} onClick={onClose}>×</div>
+        <h2 style={styles.modalTitle}>Select a Practice Test</h2>
+        
+        {availablePracticeTests.length === 0 ? (
+          <p style={styles.modalText}>No practice tests available. Please check back later.</p>
+        ) : (
+          <>
+            <p style={styles.modalText}>Choose a practice test to start:</p>
+            <div style={styles.testList}>
+              {availablePracticeTests.map(test => (
+                <div 
+                  key={test.id} 
+                  style={styles.testItem}
+                  onClick={() => onStart(test.id)}
+                >
+                  <h3 style={styles.testItemTitle}>{test.name}</h3>
+                  <p style={styles.testItemSubject}>
+                    {test.subjects?.subject_name || 
+                      (test.subject_id === 1 ? 'Math' : 
+                       test.subject_id === 2 ? 'Reading & Writing' : 
+                       'Unknown Subject')}
+                  </p>
+                  <div style={styles.testItemInfo}>
+                    <span style={styles.testItemType}>
+                      Adaptive Test
+                    </span>
+                    <span style={styles.testItemModules}>
+                      {test.hasModules ? 'Complete' : 'Incomplete'}
+                    </span>
+                  </div>
+                  <button style={styles.startTestButton}>Start Test</button>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        
+        <button style={styles.modalCloseButton} onClick={onClose}>Cancel</button>
+      </div>
+    </div>
+  );
+
   return (
     <div>
-            <TopBar title={"Full Length Practice Tests"}/>
+      <TopBar title={"Full Length Practice Tests"}/>
 
-    <div style={styles.container}>
-
-      <div style={styles.content}>
-        <div style={styles.mainSection}>
-          <div style={styles.testTypes}>
-            <div
-              style={{
-                ...styles.testCard,
-                ...(selectedSection === "math" ? styles.selectedCard : {}),
-              }}
-              onClick={() => handleTestClick("Math")}
-            >
-              <div style={styles.testIcon}>
-                <Brain size={24} />
+      <div style={styles.container}>
+        <div style={styles.content}>
+          <div style={styles.mainSection}>
+            <div style={styles.testTypes}>
+              <div
+                style={styles.testCard}
+                onClick={handlePracticeTestClick}
+              >
+                <div style={styles.testIcon}>
+                  <Brain size={24} />
+                </div>
+                <h2 style={styles.testTitle}>Full Practice Test</h2>
+                <p style={styles.testInfo}>Adaptive Test with Module 1 and Module 2</p>
+                <button
+                  style={styles.startButton}
+                  onClick={handlePracticeTestClick}
+                >
+                  Start Test
+                </button>
               </div>
-              <h2 style={styles.testTitle}>Math Section</h2>
-              <p style={styles.testInfo}>20 Questions • 35 Minutes</p>
-              <button
-                style={styles.startButton}
+
+              <div
+                style={{
+                  ...styles.testCard,
+                  ...(selectedSection === "math" ? styles.selectedCard : {}),
+                }}
                 onClick={() => handleTestClick("Math")}
               >
-                Start Test
-              </button>
-            </div>
-
-            <div
-              style={{
-                ...styles.testCard,
-                ...(selectedSection === "reading" ? styles.selectedCard : {}),
-              }}
-              onClick={() => handleTestClick("Reading/Writing")}
-            >
-              <div style={styles.testIcon}>
-                <BookOpen size={24} />
+                <div style={styles.testIcon}>
+                  <Brain size={24} />
+                </div>
+                <h2 style={styles.testTitle}>Math Section</h2>
+                <p style={styles.testInfo}>20 Questions • 35 Minutes</p>
+                <button
+                  style={styles.startButton}
+                  onClick={() => handleTestClick("Math")}
+                >
+                  Start Test
+                </button>
               </div>
-              <h2 style={styles.testTitle}>Reading & Writing</h2>
-              <p style={styles.testInfo}>25 Questions • 32 Minutes</p>
-              <button
-                style={styles.startButton}
+
+              <div
+                style={{
+                  ...styles.testCard,
+                  ...(selectedSection === "reading" ? styles.selectedCard : {}),
+                }}
                 onClick={() => handleTestClick("Reading/Writing")}
               >
-                Start Test
-              </button>
-            </div>
-          </div>
-
-          {isModalOpen && (
-            <PreTestModal
-              testType={currentTestType}
-              onStart={handleStartTest}
-              onClose={() => setIsModalOpen(false)}
-            />
-          )}
-
-          <div style={styles.testHistorySection}>
-            <h2 style={styles.sectionTitle}>Test History</h2>
-            <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
-            <div style={styles.testHistoryList}>
-                            {/* New Row for Starting a New Test */}
-                            <div style={styles.testHistoryItem} onClick={() => handleTestClick()} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && handleStartTest()}>
-                <div style={styles.testHistoryInfo}>
-                  <h3 style={styles.testHistoryName}>Start a New Test</h3>
-                  <p style={styles.testHistoryDate}>Click here to begin a new test</p>
+                <div style={styles.testIcon}>
+                  <BookOpen size={24} />
                 </div>
-                <div style={styles.testHistoryDetails}>
-                  {/* <span style={styles.startNewTestText}>Start New Test</span> */}
-                </div>
+                <h2 style={styles.testTitle}>Reading & Writing</h2>
+                <p style={styles.testInfo}>25 Questions • 32 Minutes</p>
+                <button
+                  style={styles.startButton}
+                  onClick={() => handleTestClick("Reading/Writing")}
+                >
+                  Start Test
+                </button>
               </div>
-              {currentTests.map((test) => {
-                // Determine the test name with fallbacks
-                const testName = test.test_name || test.name || test.title || `Test #${test.test_id || test.id}`;
-                
-                return (
-                  <div 
-                    key={test.id} 
-                    style={{
-                      ...styles.testHistoryItem,
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                      position: 'relative',
-                      borderLeft: activeTab === "Past" ? '4px solid #10b981' : '4px solid transparent',
-                    }}
-                    onClick={() => handleTestHistoryClick(test)}
-                    role="button"
-                    tabIndex={0}
-                    onKeyPress={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
-                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
-                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
-                  >
-                    <div style={styles.testHistoryInfo}>
-                      <h3 style={styles.testHistoryName}>{testName}</h3>
-                      <p style={styles.testHistoryDate}>
-                        {formatDate(test.created_at || test.test_date || test.date)}
-                      </p>
-                    </div>
-                    <div style={styles.testHistoryDetails}>
-                      <span style={styles.testHistoryType}>{test.type || test.test_type || 'Practice Test'}</span>
-                      <span style={styles.testHistoryScore}>Score: {test.score || '—'}</span>
-                      
-                      {activeTab === "Past" && (
-                        <div style={styles.reviewButton}>
-                          <span style={styles.reviewText}>Review Test</span>
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 12L9 8V16L15 12Z" fill="#10b981" />
-                            <circle cx="12" cy="12" r="9" stroke="#10b981" strokeWidth="2" fill="none" />
-                          </svg>
-                        </div>
-                      )}
-                    </div>
+            </div>
+
+            {/* Add the practice test modal */}
+            {isPracticeTestModalOpen && (
+              <PracticeTestModal
+                onStart={handleStartPracticeTest}
+                onClose={() => setIsPracticeTestModalOpen(false)}
+              />
+            )}
+
+            {isModalOpen && (
+              <PreTestModal
+                testType={currentTestType}
+                onStart={handleStartTest}
+                onClose={() => setIsModalOpen(false)}
+              />
+            )}
+
+            <div style={styles.testHistorySection}>
+              <h2 style={styles.sectionTitle}>Test History</h2>
+              <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
+              <div style={styles.testHistoryList}>
+                              {/* New Row for Starting a New Test */}
+                              <div style={styles.testHistoryItem} onClick={() => handleTestClick()} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && handleStartTest()}>
+                  <div style={styles.testHistoryInfo}>
+                    <h3 style={styles.testHistoryName}>Start a New Test</h3>
+                    <p style={styles.testHistoryDate}>Click here to begin a new test</p>
                   </div>
-                );
-              })}
-
-
-            </div>
-            <div style={styles.pagination}>
-              <button
-                onClick={() => paginate(currentPage - 1)}
-                disabled={currentPage === 1}
-                style={{
-                  ...styles.paginationButton,
-                  ...(currentPage === 1 ? styles.paginationButtonDisabled : {}),
-                }}
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <span style={styles.paginationInfo}>
-                Page {currentPage} of {totalPages}
-              </span>
-              <button
-                onClick={() => paginate(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                style={{
-                  ...styles.paginationButton,
-                  ...(currentPage === totalPages ? styles.paginationButtonDisabled : {}),
-                }}
-              >
-                <ChevronRight size={20} />
-              </button>
-            </div>
-          </div>
-        </div>
-  
-
-        <div style={styles.sidebar}>
-          <div style={styles.recentTests}>
-            <h2 style={styles.sidebarTitle}>Recent Tests</h2>
-            {completedTests.slice(0, 3).map((test) => (
-              <div key={test.id} style={styles.recentTest}>
-                <div style={styles.testMeta}>
-                  <h3 style={styles.testName}>{test.name}</h3>
-                  <span style={styles.testDate}>{test.date}</span>
+                  <div style={styles.testHistoryDetails}>
+                    {/* <span style={styles.startNewTestText}>Start New Test</span> */}
+                  </div>
                 </div>
-                <div style={styles.testScore}>
-                  <span style={styles.scoreLabel}>Score</span>
-                  <span style={styles.scoreValue}>{test.score}</span>
-                </div>
+                {currentTests.map((test) => {
+                  // Determine the test name with fallbacks
+                  const testName = test.test_name || `Test #${test.test_id}`;
+                  
+                  return (
+                    <div 
+                      key={test.id} 
+                      style={{
+                        ...styles.testHistoryItem,
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease',
+                        position: 'relative',
+                        borderLeft: activeTab === "Past" ? '4px solid #10b981' : '4px solid transparent',
+                      }}
+                      onClick={() => handleTestHistoryClick(test)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyPress={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
+                    >
+                      <div style={styles.testHistoryInfo}>
+                        <h3 style={styles.testHistoryName}>{testName}</h3>
+                        <p style={styles.testHistoryDate}>
+                          {formatDate(test.taken_at)}
+                        </p>
+                        <p style={styles.testHistorySubject}>
+                          {test.subject_name || 
+                            (test.subject_id === 1 ? 'Math' : 
+                             test.subject_id === 2 ? 'Reading & Writing' : 
+                             'Subject not available')}
+                        </p>
+                      </div>
+                      <div style={styles.testHistoryDetails}>
+                        <span style={styles.testHistoryScore}>
+                          {test.total_score !== undefined ? `${Math.round(test.total_score)}%` : 'N/A'}
+                        </span>
+                        <ChevronRight size={16} style={styles.testHistoryArrow} />
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            ))}
-          </div>
-          <div style={styles.featureCard}>
-            <Timer size={20} />
-            <h3 style={styles.featureTitle}>Learn about the SAT</h3>
-            <p style={styles.featureText}>Learn strategies to effectively manage your time during the test</p>
-          </div>
-          <div style={styles.featureCard}>
-            <BarChart3 size={20} />
-            <h3 style={styles.featureTitle}>Performance Analytics</h3>
-            <p style={styles.featureText}>Get detailed insights into your strengths and areas for improvement</p>
-          </div>
-          <div style={styles.tips}>
-            <h2 style={styles.sidebarTitle}>Test Day Tips</h2>
-            <ul style={styles.tipsList}>
-              <li>Get a good night's sleep before the test</li>
-              <li>Read all instructions carefully</li>
-              <li>Pace yourself - don't spend too much time on one question</li>
-              <li>Review your answers if time permits</li>
-            </ul>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div style={styles.pagination}>
+                  <button 
+                    onClick={() => paginate(currentPage - 1)} 
+                    disabled={currentPage === 1}
+                    style={{
+                      ...styles.paginationButton,
+                      opacity: currentPage === 1 ? 0.5 : 1,
+                    }}
+                  >
+                    <ChevronLeft size={16} />
+                  </button>
+                  {[...Array(totalPages)].map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => paginate(index + 1)}
+                      style={{
+                        ...styles.paginationButton,
+                        backgroundColor: currentPage === index + 1 ? '#4f46e5' : 'white',
+                        color: currentPage === index + 1 ? 'white' : '#1f2937',
+                      }}
+                    >
+                      {index + 1}
+                    </button>
+                  ))}
+                  <button 
+                    onClick={() => paginate(currentPage + 1)} 
+                    disabled={currentPage === totalPages}
+                    style={{
+                      ...styles.paginationButton,
+                      opacity: currentPage === totalPages ? 0.5 : 1,
+                    }}
+                  >
+                    <ChevronRight size={16} />
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }
@@ -587,10 +679,20 @@ const styles = {
     fontSize: "16px",
     fontWeight: 500,
     color: "#111827",
+    marginBottom: "4px",
   },
   testHistoryDate: {
     fontSize: "14px",
     color: "#6b7280",
+    marginBottom: "4px",
+  },
+  testHistorySubject: {
+    fontSize: "12px",
+    color: "#6b7280",
+    backgroundColor: "#f3f4f6",
+    padding: "2px 6px",
+    borderRadius: "4px",
+    display: "inline-block",
   },
   testHistoryDetails: {
     display: "flex",
@@ -657,5 +759,117 @@ const styles = {
   },
   reviewText: {
     marginRight: "6px",
+  },
+  modalOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1000,
+  },
+  modal: {
+    backgroundColor: 'white',
+    borderRadius: '8px',
+    padding: '2rem',
+    maxWidth: '600px',
+    width: '90%',
+    maxHeight: '90vh',
+    overflow: 'auto',
+    position: 'relative',
+  },
+  modalClose: {
+    position: 'absolute',
+    top: '1rem',
+    right: '1rem',
+    fontSize: '1.5rem',
+    cursor: 'pointer',
+    color: '#6b7280',
+  },
+  modalTitle: {
+    fontSize: '1.5rem',
+    fontWeight: '600',
+    marginBottom: '1rem',
+    color: '#111827',
+  },
+  modalText: {
+    fontSize: '1rem',
+    color: '#4b5563',
+    marginBottom: '1.5rem',
+  },
+  testList: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+    gap: '1rem',
+    marginBottom: '1.5rem',
+  },
+  testItem: {
+    padding: '1rem',
+    border: '1px solid #e5e7eb',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+  },
+  testItemTitle: {
+    fontSize: '1rem',
+    fontWeight: '600',
+    margin: '0 0 0.5rem 0',
+  },
+  testItemSubject: {
+    fontSize: '0.875rem',
+    color: '#6b7280',
+    margin: '0 0 1rem 0',
+  },
+  startTestButton: {
+    width: '100%',
+    padding: '0.5rem 0',
+    borderRadius: '4px',
+    border: 'none',
+    backgroundColor: '#4f46e5',
+    color: 'white',
+    fontSize: '0.875rem',
+    fontWeight: '500',
+    cursor: 'pointer',
+  },
+  modalCloseButton: {
+    width: '100%',
+    padding: '0.75rem 0',
+    borderRadius: '6px',
+    border: '1px solid #d1d5db',
+    backgroundColor: 'white',
+    color: '#4b5563',
+    fontSize: '0.875rem',
+    fontWeight: '500',
+    cursor: 'pointer',
+  },
+  testHistoryArrow: {
+    width: '16px',
+    height: '16px',
+    fill: '#4b5563',
+  },
+  testItemInfo: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '0.75rem',
+    fontSize: '0.75rem',
+    color: '#6b7280',
+  },
+  testItemType: {
+    backgroundColor: '#e0f2fe',
+    color: '#0369a1',
+    padding: '0.125rem 0.375rem',
+    borderRadius: '0.25rem',
+    fontWeight: '500',
+  },
+  testItemModules: {
+    backgroundColor: '#dcfce7',
+    color: '#16a34a',
+    padding: '0.125rem 0.375rem',
+    borderRadius: '0.25rem',
+    fontWeight: '500',
   },
 }
