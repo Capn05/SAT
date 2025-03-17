@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 @import url('/landing-assets/css/tailwind-build.css');
-@import url('/landing-assets/css/index.css'); */
+@import url('/landing-assets/css/index.css');
 
 @layer base {
   :root {
