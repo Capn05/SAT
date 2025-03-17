@@ -144,21 +144,15 @@ export async function GET(request) {
         module1?.question_count > 0 && 
         (module2Easier?.question_count > 0 || module2Harder?.question_count > 0);
       
-      // Determine required question count based on subject
-      const requiredQuestionCount = test.subject_id === 1 ? 22 : 27; // Math = 22, Reading & Writing = 27
-      
-      // Check if modules have the required number of questions
-      const hasCompleteModules = 
-        module1?.question_count === requiredQuestionCount &&
-        (module2Easier?.question_count === requiredQuestionCount || module2Harder?.question_count === requiredQuestionCount);
-      
+      // We're no longer using isComplete to filter tests, just checking if they have the basic modules
       return {
         ...test,
         module1,
         module2Easier,
         module2Harder,
         hasModules: !!hasRequiredQuestions,
-        isComplete: !!hasCompleteModules,
+        // Don't filter based on this property
+        isComplete: true,
       };
     }));
     

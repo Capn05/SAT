@@ -132,9 +132,9 @@ export default function PracticeTestsPage() {
         const data = await response.json();
         console.log("Practice tests:", data);
         
-        // Filter tests that have modules and are complete but not completed by user
+        // Filter tests that have modules and are not completed by user - don't require "isComplete"
         const validTests = data.filter(test => 
-          test.hasModules && test.isComplete && !test.completed
+          test.hasModules && !test.completed
         );
         
         setAvailablePracticeTests(validTests);
@@ -259,7 +259,7 @@ export default function PracticeTestsPage() {
                         Adaptive Test
                       </span>
                       <span style={styles.testItemModules}>
-                        {test.hasModules ? 'Complete' : 'Incomplete'}
+                        Ready to Take
                       </span>
                     </div>
                     <p style={styles.testItemDetail}>

@@ -44,8 +44,17 @@ export async function POST(request) {
     }
     
     // Calculate the score
-    let totalQuestions = answers.length;
-    let correctAnswers = 0;
+    const totalQuestions = moduleData.practice_tests.length;  // Total available questions in the module
+    const attemptedQuestions = answers.length;  // Questions the user actually answered
+    const correctAnswers = answers.filter(answer => answer.isCorrect).length;
+    
+    // Create a score object that includes both attempted and total information
+    const score = {
+      correct: correctAnswers,
+      attempted: attemptedQuestions,
+      total: totalQuestions,
+      percentage: (correctAnswers / totalQuestions) * 100
+    };
     
     // Record each answer in user_answers table
     for (const answer of answers) {
@@ -73,8 +82,6 @@ export async function POST(request) {
         // Continue with other answers even if one fails
       }
     }
-    
-    const percentageScore = (correctAnswers / totalQuestions) * 100;
     
     // If this was Module 1, determine which Module 2 to use next
     if (moduleData.module_number === 1) {
@@ -104,8 +111,9 @@ export async function POST(request) {
         moduleComplete: true,
         score: {
           correct: correctAnswers,
+          attempted: attemptedQuestions,
           total: totalQuestions,
-          percentage: percentageScore
+          percentage: score.percentage
         },
         nextModule: {
           id: module2Data.id,
@@ -144,7 +152,7 @@ export async function POST(request) {
           practice_test_id: moduleData.practice_test_id,
           taken_at: new Date().toISOString(),
           module1_score: (correctModuleAnswers / totalModuleAnswers) * 100,
-          module2_score: percentageScore,
+          module2_score: score.percentage,
           used_harder_module: moduleData.is_harder,
           total_score: overallPercentage
         });
@@ -160,8 +168,9 @@ export async function POST(request) {
         testComplete: true,
         score: {
           correct: correctAnswers,
+          attempted: attemptedQuestions,
           total: totalQuestions,
-          percentage: percentageScore
+          percentage: score.percentage
         },
         overallScore: {
           percentage: overallPercentage

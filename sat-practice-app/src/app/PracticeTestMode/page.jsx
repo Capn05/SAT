@@ -1,11 +1,13 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle, Clock } from "lucide-react"
 import { formatTime } from "../lib/utils"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { processMathInText } from '../components/MathRenderer'
+import 'katex/dist/katex.min.css'
 
 export default function PracticeTestPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -431,62 +433,60 @@ export default function PracticeTestPage() {
             </div>
           )}
           
-          <div style={styles.questionText}>
-            {currentQuestionData.question_text}
+          <div style={{ padding: '2rem', fontSize: '1.125rem', lineHeight: '1.5' }}>
+            {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
           </div>
           
-          <div style={styles.optionsContainer}>
-            {currentQuestionData.options.map((option) => (
+          <div className="options-container" style={styles.optionsContainer}>
+            {currentQuestionData.options.map(option => (
               <div
                 key={option.id}
-                style={{
-                  ...styles.option,
-                  ...(selectedOptionId === option.id ? styles.selectedOption : {})
-                }}
+                className={`option-card ${selectedOptionId === option.id ? 'selected' : ''}`}
                 onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
               >
                 <div style={styles.optionLetter}>{option.value}</div>
-                <div style={styles.optionText}>{option.label}</div>
+                <div style={styles.optionText}>
+                  {option.label ? processMathInText(option.label) : 'Loading...'}
+                </div>
               </div>
             ))}
           </div>
         </div>
         
-        <div style={styles.questionNavigation}>
-          <button
-            style={styles.navButton}
+        <div className="question-nav" style={styles.navigation}>
+          <button 
             onClick={() => navigateQuestion(-1)}
             disabled={currentQuestion === 0}
+            className="question-nav-button"
           >
-            <ChevronLeft size={20} />
+            <ChevronLeft size={16} />
             Previous
           </button>
           
-          <button
-            style={styles.flagButton}
+          <button 
             onClick={() => toggleFlagged(currentQuestionData.id)}
+            className="question-nav-button"
+            style={flaggedQuestions.has(currentQuestionData.id) ? { borderColor: '#ef4444', color: '#ef4444' } : {}}
           >
-            <Flag
-              size={20}
-              style={{ fill: flaggedQuestions.has(currentQuestionData.id) ? "#ef4444" : "none" }}
-            />
-            {flaggedQuestions.has(currentQuestionData.id) ? "Unflag" : "Flag"}
+            <Flag size={16} />
+            {flaggedQuestions.has(currentQuestionData.id) ? 'Unflag' : 'Flag'}
           </button>
           
           {currentQuestion < totalQuestions - 1 ? (
             <button
-              style={styles.navButton}
+              className="question-nav-button"
               onClick={() => navigateQuestion(1)}
             >
               Next
-              <ChevronRight size={20} />
+              <ChevronRight size={16} />
             </button>
           ) : (
             <button
-              style={styles.submitButton}
+              className="question-nav-button"
+              style={{ backgroundColor: '#4f46e5', color: 'white' }}
               onClick={handleSubmitClick}
             >
-              Submit
+              Finish Test
             </button>
           )}
         </div>
@@ -499,15 +499,17 @@ export default function PracticeTestPage() {
         </button>
         
         {showQuestionNav && (
-          <div style={styles.questionList}>
+          <div className="question-list" style={styles.questionList}>
             {questions.map((_, index) => (
               <div
                 key={index}
-                style={{
-                  ...styles.questionItem,
-                  ...(currentQuestion === index ? styles.currentQuestionItem : {}),
-                  ...styles[getQuestionStatus(index)]
-                }}
+                className={`question-number ${
+                  index === currentQuestion ? 'current' : ''
+                } ${
+                  answers[questions[index].id] !== undefined ? 'answered' : ''
+                } ${
+                  flaggedQuestions.has(questions[index].id) ? 'flagged' : ''
+                }`}
                 onClick={() => setCurrentQuestion(index)}
               >
                 {index + 1}
@@ -614,20 +616,14 @@ const styles = {
     maxWidth: '100%',
     borderRadius: '4px',
   },
-  questionText: {
-    fontSize: '16px',
-    lineHeight: '1.6',
-    color: '#111827',
-    marginBottom: '2rem',
-  },
   optionsContainer: {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
   },
-  option: {
+  optionCard: {
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: '1rem',
     padding: '1rem',
     borderRadius: '6px',
@@ -657,49 +653,22 @@ const styles = {
     fontSize: '15px',
     color: '#1f2937',
   },
-  questionNavigation: {
+  navigation: {
     display: 'flex',
     justifyContent: 'space-between',
     gap: '1rem',
     marginBottom: '2rem',
   },
-  navButton: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
-    border: '1px solid #d1d5db',
-    backgroundColor: 'white',
-    color: '#4b5563',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-  },
   submitButton: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    gap: '8px',
     padding: '0.75rem 1.5rem',
     borderRadius: '6px',
     border: 'none',
     backgroundColor: '#4f46e5',
     color: 'white',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-  },
-  flagButton: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
-    border: '1px solid #d1d5db',
-    backgroundColor: 'white',
-    color: '#4b5563',
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
@@ -721,37 +690,6 @@ const styles = {
     gap: '0.5rem',
     marginTop: '1rem',
     justifyContent: 'center',
-  },
-  questionItem: {
-    width: '40px',
-    height: '40px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '50%',
-    border: '1px solid #d1d5db',
-    backgroundColor: 'white',
-    color: '#4b5563',
-    fontSize: '14px',
-    cursor: 'pointer',
-  },
-  currentQuestionItem: {
-    border: '2px solid #4f46e5',
-  },
-  answered: {
-    backgroundColor: '#bbf7d0',
-    borderColor: '#4ade80',
-    color: '#166534',
-  },
-  flagged: {
-    backgroundColor: '#fee2e2',
-    borderColor: '#ef4444',
-    color: '#b91c1c',
-  },
-  'answered-flagged': {
-    backgroundImage: 'linear-gradient(135deg, #bbf7d0 50%, #fee2e2 50%)',
-    borderColor: '#4f46e5',
-    color: '#1f2937',
   },
   modalOverlay: {
     position: 'fixed',
@@ -798,17 +736,6 @@ const styles = {
     border: '1px solid #d1d5db',
     backgroundColor: 'white',
     color: '#4b5563',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-  },
-  submitButton: {
-    flex: 1,
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
-    border: 'none',
-    backgroundColor: '#4f46e5',
-    color: 'white',
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
