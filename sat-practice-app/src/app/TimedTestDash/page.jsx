@@ -146,10 +146,19 @@ export default function PracticeTestsPage() {
     fetchAvailablePracticeTests();
   }, [supabase.auth]);
 
-  const handleTestClick = (type) => {
-    setCurrentTestType(type)
-    setIsModalOpen(true)
-  }
+  const handleTestClick = (subjectId) => {
+    // Filter available practice tests by subject
+    const subjectTests = availablePracticeTests.filter(test => 
+      test.subject_id === subjectId
+    );
+    
+    if (subjectTests.length > 0) {
+      setSelectedPracticeTest(subjectTests);
+      setIsPracticeTestModalOpen(true);
+    } else {
+      alert("No available tests for this subject. Please check back later.");
+    }
+  };
 
   const handleStartTest = (testId) => {
     setIsModalOpen(false)
@@ -198,60 +207,78 @@ export default function PracticeTestsPage() {
     }
   };
 
-  const handlePracticeTestClick = () => {
-    setIsPracticeTestModalOpen(true);
-  };
-
   const handleStartPracticeTest = (testId) => {
     setIsPracticeTestModalOpen(false);
     router.push(`/PracticeTestMode?testId=${testId}`);
   };
 
-  // Add a PracticeTestModal component
-  const PracticeTestModal = ({ onClose, onStart }) => (
-    <div style={styles.modalOverlay}>
-      <div style={styles.modal}>
-        <div style={styles.modalClose} onClick={onClose}>×</div>
-        <h2 style={styles.modalTitle}>Select a Practice Test</h2>
-        
-        {availablePracticeTests.length === 0 ? (
-          <p style={styles.modalText}>No practice tests available. Please check back later.</p>
-        ) : (
-          <>
-            <p style={styles.modalText}>Choose a practice test to start:</p>
-            <div style={styles.testList}>
-              {availablePracticeTests.map(test => (
-                <div 
-                  key={test.id} 
-                  style={styles.testItem}
-                  onClick={() => onStart(test.id)}
-                >
-                  <h3 style={styles.testItemTitle}>{test.name}</h3>
-                  <p style={styles.testItemSubject}>
-                    {test.subjects?.subject_name || 
-                      (test.subject_id === 1 ? 'Math' : 
-                       test.subject_id === 2 ? 'Reading & Writing' : 
-                       'Unknown Subject')}
-                  </p>
-                  <div style={styles.testItemInfo}>
-                    <span style={styles.testItemType}>
-                      Adaptive Test
-                    </span>
-                    <span style={styles.testItemModules}>
-                      {test.hasModules ? 'Complete' : 'Incomplete'}
-                    </span>
+  // Add a PracticeTestModal component with MST explanation
+  const PracticeTestModal = ({ onClose, onStart }) => {
+    const testsToShow = selectedPracticeTest || availablePracticeTests;
+    
+    return (
+      <div style={styles.modalOverlay}>
+        <div style={styles.modal}>
+          <div style={styles.modalClose} onClick={onClose}>×</div>
+          <h2 style={styles.modalTitle}>Select a Practice Test</h2>
+          
+          {/* Add MST explanation */}
+          <div style={styles.mstExplanation}>
+            <h3 style={styles.mstExplanationTitle}>About Multistage Adaptive Testing (MST)</h3>
+            <p style={styles.mstExplanationText}>
+              The SAT uses a multistage adaptive testing approach:
+            </p>
+            <ol style={styles.mstExplanationList}>
+              <li>You'll first complete <strong>Module 1</strong> with questions of mixed difficulty.</li>
+              <li>Based on your performance in Module 1, you'll be directed to either an <strong>easier</strong> or <strong>harder</strong> Module 2.</li>
+              <li>Your score is calculated based on your performance across both modules, with the harder module offering potential for higher scoring.</li>
+            </ol>
+          </div>
+          
+          {testsToShow.length === 0 ? (
+            <p style={styles.modalText}>No practice tests available. Please check back later.</p>
+          ) : (
+            <>
+              <p style={styles.modalText}>Choose a practice test to start:</p>
+              <div style={styles.testList}>
+                {testsToShow.map(test => (
+                  <div 
+                    key={test.id} 
+                    style={styles.testItem}
+                    onClick={() => onStart(test.id)}
+                  >
+                    <h3 style={styles.testItemTitle}>{test.name}</h3>
+                    <p style={styles.testItemSubject}>
+                      {test.subjects?.subject_name || 
+                        (test.subject_id === 1 ? 'Math' : 
+                        test.subject_id === 2 ? 'Reading & Writing' : 
+                        'Unknown Subject')}
+                    </p>
+                    <div style={styles.testItemInfo}>
+                      <span style={styles.testItemType}>
+                        Adaptive Test
+                      </span>
+                      <span style={styles.testItemModules}>
+                        {test.hasModules ? 'Complete' : 'Incomplete'}
+                      </span>
+                    </div>
+                    <p style={styles.testItemDetail}>
+                      {test.subject_id === 1 ? 
+                        '44 questions • 70 minutes' : 
+                        '54 questions • 64 minutes'}
+                    </p>
+                    <button style={styles.startTestButton}>Start Test</button>
                   </div>
-                  <button style={styles.startTestButton}>Start Test</button>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
-        
-        <button style={styles.modalCloseButton} onClick={onClose}>Cancel</button>
+                ))}
+              </div>
+            </>
+          )}
+          
+          <button style={styles.modalCloseButton} onClick={onClose}>Cancel</button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div>
@@ -263,58 +290,41 @@ export default function PracticeTestsPage() {
             <div style={styles.testTypes}>
               <div
                 style={styles.testCard}
-                onClick={handlePracticeTestClick}
+                onClick={() => handleTestClick(1)}
               >
                 <div style={styles.testIcon}>
                   <Brain size={24} />
                 </div>
-                <h2 style={styles.testTitle}>Full Practice Test</h2>
-                <p style={styles.testInfo}>Adaptive Test with Module 1 and Module 2</p>
+                <h2 style={styles.testTitle}>Math Adaptive Test</h2>
+                <p style={styles.testInfo}>44 Questions • 70 Minutes</p>
+                <p style={styles.testDescription}>
+                  Full-length adaptive test with Module 1 (22 questions) and Module 2 (22 questions).
+                </p>
                 <button
                   style={styles.startButton}
-                  onClick={handlePracticeTestClick}
+                  onClick={() => handleTestClick(1)}
                 >
-                  Start Test
+                  Start Math Test
                 </button>
               </div>
 
               <div
-                style={{
-                  ...styles.testCard,
-                  ...(selectedSection === "math" ? styles.selectedCard : {}),
-                }}
-                onClick={() => handleTestClick("Math")}
-              >
-                <div style={styles.testIcon}>
-                  <Brain size={24} />
-                </div>
-                <h2 style={styles.testTitle}>Math Section</h2>
-                <p style={styles.testInfo}>20 Questions • 35 Minutes</p>
-                <button
-                  style={styles.startButton}
-                  onClick={() => handleTestClick("Math")}
-                >
-                  Start Test
-                </button>
-              </div>
-
-              <div
-                style={{
-                  ...styles.testCard,
-                  ...(selectedSection === "reading" ? styles.selectedCard : {}),
-                }}
-                onClick={() => handleTestClick("Reading/Writing")}
+                style={styles.testCard}
+                onClick={() => handleTestClick(2)}
               >
                 <div style={styles.testIcon}>
                   <BookOpen size={24} />
                 </div>
-                <h2 style={styles.testTitle}>Reading & Writing</h2>
-                <p style={styles.testInfo}>25 Questions • 32 Minutes</p>
+                <h2 style={styles.testTitle}>Reading & Writing Adaptive Test</h2>
+                <p style={styles.testInfo}>54 Questions • 64 Minutes</p>
+                <p style={styles.testDescription}>
+                  Full-length adaptive test with Module 1 (27 questions) and Module 2 (27 questions).
+                </p>
                 <button
                   style={styles.startButton}
-                  onClick={() => handleTestClick("Reading/Writing")}
+                  onClick={() => handleTestClick(2)}
                 >
-                  Start Test
+                  Start Reading & Writing Test
                 </button>
               </div>
             </div>
@@ -339,16 +349,27 @@ export default function PracticeTestsPage() {
               <h2 style={styles.sectionTitle}>Test History</h2>
               <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
               <div style={styles.testHistoryList}>
-                              {/* New Row for Starting a New Test */}
-                              <div style={styles.testHistoryItem} onClick={() => handleTestClick()} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && handleStartTest()}>
-                  <div style={styles.testHistoryInfo}>
-                    <h3 style={styles.testHistoryName}>Start a New Test</h3>
-                    <p style={styles.testHistoryDate}>Click here to begin a new test</p>
-                  </div>
-                  <div style={styles.testHistoryDetails}>
-                    {/* <span style={styles.startNewTestText}>Start New Test</span> */}
+                {/* New Row for Starting a New Test with two options */}
+                <div style={styles.startNewTestContainer}>
+                  <h3 style={styles.startNewTestTitle}>Start a New Test</h3>
+                  <div style={styles.startNewTestOptions}>
+                    <button 
+                      style={styles.startNewTestButton}
+                      onClick={() => handleTestClick(1)}
+                    >
+                      <Brain size={16} style={styles.startNewTestIcon} />
+                      Math Adaptive Test
+                    </button>
+                    <button 
+                      style={styles.startNewTestButton}
+                      onClick={() => handleTestClick(2)}
+                    >
+                      <BookOpen size={16} style={styles.startNewTestIcon} />
+                      Reading & Writing Adaptive Test
+                    </button>
                   </div>
                 </div>
+                
                 {currentTests.map((test) => {
                   // Determine the test name with fallbacks
                   const testName = test.test_name || `Test #${test.test_id}`;
@@ -737,17 +758,42 @@ const styles = {
     fontSize: "14px",
     color: "#4b5563",
   },
+  startNewTestContainer: {
+    backgroundColor: '#f9fafb',
+    borderRadius: '8px',
+    padding: '16px',
+    marginBottom: '16px',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+  },
+  startNewTestTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '12px',
+  },
+  startNewTestOptions: {
+    display: 'flex',
+    gap: '12px',
+    flexWrap: 'wrap',
+  },
   startNewTestButton: {
-    width: "100%",
-    padding: "12px",
-    backgroundColor: "#e6f0e6",
-    color: "#065f46",
-    border: "none",
-    borderRadius: "8px",
-    fontSize: "14px",
-    fontWeight: 500,
-    cursor: "pointer",
-    transition: "background-color 0.2s ease",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '8px',
+    padding: '10px 16px',
+    backgroundColor: '#10b981',
+    color: 'white',
+    border: 'none',
+    borderRadius: '6px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'background-color 0.2s ease',
+    flex: '1',
+    minWidth: '180px',
+  },
+  startNewTestIcon: {
+    color: 'white',
   },
   reviewButton: {
     display: "flex",
@@ -871,5 +917,40 @@ const styles = {
     padding: '0.125rem 0.375rem',
     borderRadius: '0.25rem',
     fontWeight: '500',
+  },
+  testDescription: {
+    fontSize: '14px',
+    color: '#6b7280',
+    marginBottom: '16px',
+    lineHeight: '1.4',
+  },
+  mstExplanation: {
+    backgroundColor: '#f0f9ff',
+    borderRadius: '8px',
+    padding: '1rem',
+    marginBottom: '1.5rem',
+    border: '1px solid #bae6fd',
+  },
+  mstExplanationTitle: {
+    fontSize: '1rem',
+    fontWeight: '600',
+    color: '#0369a1',
+    marginBottom: '0.5rem',
+  },
+  mstExplanationText: {
+    fontSize: '0.875rem',
+    color: '#0c4a6e',
+    marginBottom: '0.5rem',
+  },
+  mstExplanationList: {
+    paddingLeft: '1.5rem',
+    fontSize: '0.875rem',
+    color: '#0c4a6e',
+    lineHeight: '1.4',
+  },
+  testItemDetail: {
+    fontSize: '0.75rem',
+    color: '#6b7280',
+    marginBottom: '0.75rem',
   },
 }
