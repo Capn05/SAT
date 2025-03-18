@@ -19,6 +19,14 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
   const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
   const [graphExpressions, setGraphExpressions] = useState([]);
+  
+  // Clear response when question changes
+  useEffect(() => {
+    setResponse('');
+    setUserQuestion('');
+    setGraphExpressions([]);
+  }, [question]);
+  
   console.log(process.env.NEXT_PUBLIC_OPEN_AI_API_KEY)
   const openai = new OpenAI({
     apiKey: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,

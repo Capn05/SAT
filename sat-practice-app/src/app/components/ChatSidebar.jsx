@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MessageCircle, Send, X } from 'lucide-react';
 import OpenAI from 'openai';
 import MarkdownIt from 'markdown-it';
@@ -12,6 +12,12 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
+
+  // Clear response when question changes
+  useEffect(() => {
+    setResponse('');
+    setUserQuestion('');
+  }, [questionText]);
 
   // Initialize the OpenAI instance
   const openai = new OpenAI({
