@@ -111,10 +111,73 @@ const satDistributions = {
   "Geometry and Trigonometry": { percentage: 15, questions: "5-7" }
 };
 
+// Define the known domains and distributions with the correct skill counts
+const mathDomainData = [
+  {
+    name: 'Advanced Math',
+    distribution: '≈35%',
+    questions: '13-15 questions',
+    skills: [],
+    loadingCount: 3
+  },
+  {
+    name: 'Algebra',
+    distribution: '≈35%',
+    questions: '13-15 questions',
+    skills: [],
+    loadingCount: 5
+  },
+  {
+    name: 'Geometry and Trigonometry',
+    distribution: '≈15%',
+    questions: '5-7 questions',
+    skills: [],
+    loadingCount: 4
+  },
+  {
+    name: 'Problem-Solving and Data Analysis',
+    distribution: '≈15%',
+    questions: '5-7 questions',
+    skills: [],
+    loadingCount: 7
+  }
+];
+
+const readingDomainData = [
+  {
+    name: 'Craft and Structure',
+    distribution: '≈28%',
+    questions: '13-15 questions',
+    skills: [],
+    loadingCount: 3
+  },
+  {
+    name: 'Expression of Ideas',
+    distribution: '≈20%',
+    questions: '8-12 questions',
+    skills: [],
+    loadingCount: 2
+  },
+  {
+    name: 'Information and Ideas',
+    distribution: '≈26%',
+    questions: '12-14 questions',
+    skills: [],
+    loadingCount: 3
+  },
+  {
+    name: 'Standard English Conventions',
+    distribution: '≈26%',
+    questions: '11-15 questions',
+    skills: [],
+    loadingCount: 2
+  }
+];
+
 export default function SkillsPage() {
   const [activeSubject, setActiveSubject] = useState("reading")
-  const [mathDomains, setMathDomains] = useState([])
-  const [readingDomains, setReadingDomains] = useState([])
+  const [mathDomains, setMathDomains] = useState(mathDomainData)
+  const [readingDomains, setReadingDomains] = useState(readingDomainData)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const router = useRouter()
@@ -149,7 +212,7 @@ export default function SkillsPage() {
   };
 
   // Helper function to fetch skills for a specific subject
-  const fetchSkills = async (subjectId, setDomains) => {
+  const fetchSkills = async (subjectId, setDomains, initialDomains) => {
     try {
       setLoading(true)
       setError(null)
@@ -196,9 +259,11 @@ export default function SkillsPage() {
         return
       }
 
-      // Transform the data into the format expected by the UI
-      const domains = domainsData.map(domain => {
-        const skills = domain.subcategories.map(subcategory => {
+      // Build a map of domain name to skills for easier lookup
+      const domainSkillsMap = {};
+      
+      domainsData.forEach(domain => {
+        domainSkillsMap[domain.domain_name] = domain.subcategories.map(subcategory => {
           const skillPerf = performance?.find(p => 
             p.domain_id === domain.id && 
             p.subcategory_id === subcategory.id
@@ -235,21 +300,16 @@ export default function SkillsPage() {
               skillPerf.mastery_level === 'mastered' ? 'Mastered' : 
               'Not Started'
           }
-        })
+        });
+      });
 
-        return {
-          name: domain.domain_name,
-          distribution: satDistributions[domain.domain_name]?.percentage 
-            ? `≈${satDistributions[domain.domain_name].percentage}%` 
-            : "N/A",
-          questions: satDistributions[domain.domain_name]?.questions 
-            ? satDistributions[domain.domain_name].questions + " questions" 
-            : `${Math.round(skills.length * 0.9)}-${skills.length} questions`,
-          skills
-        }
-      })
+      // Merge skills into the initial domains
+      const updatedDomains = initialDomains.map(domain => ({
+        ...domain,
+        skills: domainSkillsMap[domain.name] || []
+      }));
 
-      setDomains(domains)
+      setDomains(updatedDomains)
     } catch (error) {
       console.error(`Error in fetchSkills for subject ${subjectId}:`, error)
       setError('An error occurred while fetching skills data')
@@ -260,21 +320,24 @@ export default function SkillsPage() {
 
   useEffect(() => {
     if (activeSubject === "math") {
-      fetchSkills(1, setMathDomains)
+      fetchSkills(1, setMathDomains, mathDomainData)
     } else if (activeSubject === "reading") {
-      fetchSkills(2, setReadingDomains)
+      fetchSkills(2, setReadingDomains, readingDomainData)
     }
   }, [activeSubject, router])
 
+  // Get the domains based on active subject
   const domains = activeSubject === "reading" ? readingDomains : mathDomains
+  
+  // Generate a placeholder loading skill
+  const getLoadingSkill = (index) => ({
+    name: `Loading Skill ${index + 1}`,
+    isLoading: true
+  });
 
-  if (loading) {
-    return <div style={styles.container}>Loading skills data...</div>
-  }
-
-  if (error) {
-    return <div style={styles.container}>Error: {error}</div>
-  }
+  // Generate loading skills for each domain
+  const getLoadingSkills = (count) => 
+    Array(count).fill().map((_, index) => getLoadingSkill(index));
 
   return (
     <div style={styles.container}>
@@ -282,17 +345,60 @@ export default function SkillsPage() {
       <SubjectTabs activeSubject={activeSubject} onSubjectChange={setActiveSubject} />
       
       <div style={styles.content}>
-        {domains.map((domain) => (
-          <DomainSection key={domain.name} domain={domain}>
-            {domain.skills.map((skill) => (
-              <SkillCard
-                key={skill.name}
-                skill={skill}
-                subject={activeSubject === "math" ? "Math" : "Reading & Writing"}
-              />
-            ))}
-          </DomainSection>
-        ))}
+        {error ? (
+          <div style={styles.errorContainer}>
+            <div style={styles.errorMessage}>Error: {error}</div>
+            <button 
+              style={styles.retryButton}
+              onClick={() => {
+                setLoading(true);
+                if (activeSubject === "math") {
+                  fetchSkills(1, setMathDomains, mathDomainData);
+                } else {
+                  fetchSkills(2, setReadingDomains, readingDomainData);
+                }
+              }}
+            >
+              Retry
+            </button>
+          </div>
+        ) : (
+          domains.map((domain) => (
+            <DomainSection key={domain.name} domain={domain}>
+              {loading ? 
+                // Display the exact number of loading cards based on domain.loadingCount
+                Array(domain.loadingCount).fill().map((_, index) => (
+                  <div key={`loading-skill-${index}`} style={styles.loadingCard}>
+                    <div style={styles.loadingHeader}>
+                      <div style={styles.loadingIcon}></div>
+                      <div style={styles.loadingTitle}></div>
+                    </div>
+                    <div style={styles.loadingStats}>
+                      <div style={styles.loadingLine}></div>
+                      <div style={styles.loadingLine}></div>
+                      <div style={styles.loadingLine}></div>
+                    </div>
+                    <div style={styles.loadingFooter}></div>
+                  </div>
+                ))
+                :
+                // Show actual skills if available or a message if none
+                domain.skills.length > 0 ? 
+                  domain.skills.map((skill) => (
+                    <SkillCard
+                      key={skill.name}
+                      skill={skill}
+                      subject={activeSubject === "math" ? "Math" : "Reading & Writing"}
+                    />
+                  ))
+                  :
+                  <div style={styles.noSkillsMessage}>
+                    No skills available for this domain
+                  </div>
+              }
+            </DomainSection>
+          ))
+        )}
       </div>
     </div>
   )
@@ -308,5 +414,88 @@ const styles = {
     maxWidth: "1400px",
     margin: "0 auto",
   },
+  errorContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "32px",
+    backgroundColor: "white",
+    borderRadius: "12px",
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+    marginTop: "24px",
+  },
+  errorMessage: {
+    color: "#dc2626",
+    marginBottom: "16px",
+    fontWeight: "500",
+  },
+  retryButton: {
+    padding: "8px 16px",
+    backgroundColor: "#4f46e5",
+    color: "white",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
+    fontWeight: "500",
+  },
+  loadingCard: {
+    backgroundColor: 'white',
+    borderRadius: '8px',
+    padding: '16px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    height: '160px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    borderLeft: '3px solid #e5e7eb'
+  },
+  loadingHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    marginBottom: '16px',
+  },
+  loadingIcon: {
+    width: '32px',
+    height: '32px',
+    borderRadius: '50%',
+    backgroundColor: '#e5e7eb',
+    animation: 'pulse 1.5s infinite ease-in-out',
+  },
+  loadingTitle: {
+    height: '20px',
+    width: '70%',
+    backgroundColor: '#e5e7eb',
+    borderRadius: '4px',
+    animation: 'pulse 1.5s infinite ease-in-out',
+  },
+  loadingStats: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  loadingLine: {
+    height: '14px',
+    backgroundColor: '#e5e7eb',
+    borderRadius: '4px',
+    animation: 'pulse 1.5s infinite ease-in-out',
+  },
+  loadingFooter: {
+    height: '16px',
+    width: '40%',
+    marginLeft: 'auto',
+    backgroundColor: '#e5e7eb',
+    borderRadius: '4px',
+    marginTop: '16px',
+    animation: 'pulse 1.5s infinite ease-in-out',
+  },
+  noSkillsMessage: {
+    padding: '24px',
+    textAlign: 'center',
+    color: '#6b7280',
+    gridColumn: '1 / -1',
+    fontStyle: 'italic'
+  }
 }
 
