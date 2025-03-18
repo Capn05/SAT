@@ -37,6 +37,55 @@ export default function PracticeTestPage() {
   
   const totalQuestions = questions.length
   
+  // Define all callbacks at the top level 
+  const handleQuestionNumberClick = useCallback((e) => {
+    if (e) e.stopPropagation();
+    const newValue = !showQuestionNav;
+    console.log("Question number box clicked - changing navigation to:", newValue);
+    setShowQuestionNav(newValue);
+  }, [showQuestionNav]);
+  
+  const toggleFlagged = useCallback((questionId) => {
+    if (!questionId) return;
+    setFlaggedQuestions(prev => {
+      const newFlagged = new Set(prev);
+      if (newFlagged.has(questionId)) {
+        newFlagged.delete(questionId);
+      } else {
+        newFlagged.add(questionId);
+      }
+      return newFlagged;
+    });
+  }, []);
+
+  const navigateQuestion = useCallback((direction) => {
+    setCurrentQuestion(prev => {
+      const next = prev + direction;
+      return Math.max(0, Math.min(totalQuestions - 1, next));
+    });
+  }, [totalQuestions]);
+
+  const handleAnswer = useCallback((questionId, optionId, isCorrect) => {
+    if (!questionId) return;
+    setAnswers(prev => ({
+      ...prev,
+      [questionId]: { optionId, isCorrect }
+    }));
+  }, []);
+  
+  const getQuestionStatus = useCallback((index) => {
+    const question = questions[index];
+    if (!question) return 'unanswered';
+    
+    const answered = answers[question.id] !== undefined;
+    const flagged = flaggedQuestions.has(question.id);
+    
+    if (answered && flagged) return 'answered-flagged';
+    if (answered) return 'answered';
+    if (flagged) return 'flagged';
+    return 'unanswered';
+  }, [questions, answers, flaggedQuestions]);
+
   useEffect(() => {
     // Fetch practice test info
     const fetchPracticeTestInfo = async () => {
@@ -167,45 +216,6 @@ export default function PracticeTestPage() {
       if (timerRef.current) clearInterval(timerRef.current)
     }
   }, [timeRemaining, isLoading, error, testComplete])
-  
-  const handleAnswer = (questionId, optionId, isCorrect) => {
-    setAnswers(prev => ({
-      ...prev,
-      [questionId]: { optionId, isCorrect }
-    }))
-  }
-  
-  const toggleFlagged = (questionId) => {
-    setFlaggedQuestions(prev => {
-      const newFlagged = new Set(prev)
-      if (newFlagged.has(questionId)) {
-        newFlagged.delete(questionId)
-      } else {
-        newFlagged.add(questionId)
-      }
-      return newFlagged
-    })
-  }
-  
-  const getQuestionStatus = (index) => {
-    const question = questions[index]
-    if (!question) return 'unanswered'
-    
-    const answered = answers[question.id] !== undefined
-    const flagged = flaggedQuestions.has(question.id)
-    
-    if (answered && flagged) return 'answered-flagged'
-    if (answered) return 'answered'
-    if (flagged) return 'flagged'
-    return 'unanswered'
-  }
-  
-  const navigateQuestion = (direction) => {
-    setCurrentQuestion(prev => {
-      const next = prev + direction
-      return Math.max(0, Math.min(totalQuestions - 1, next))
-    })
-  }
   
   const handleSubmitClick = () => {
     // Only open submit modal if at least one question is answered
@@ -342,32 +352,39 @@ export default function PracticeTestPage() {
     }
   }
   
-  // Check for existing paused test on component mount
-  useEffect(() => {
-    const checkForPausedTest = async () => {
-      if (!moduleId || !testId) return;
+  // Update the useEffect hook that checks for a paused test
+  // Around line 474, modify the checkForPausedTest function by wrapping it in a useCallback
+  const checkForPausedTest = useCallback(async () => {
+    if (!moduleId || !testId) return;
+    
+    try {
+      const response = await fetch(`/api/paused-test?testId=${testId}&moduleId=${moduleId}`);
       
-      try {
-        const response = await fetch(`/api/paused-test?testId=${testId}&moduleId=${moduleId}`);
+      if (!response.ok) {
+        console.log('No paused test found or error occurred');
+        return; // No paused test found or error occurred
+      }
+      
+      const data = await response.json();
+      console.log('Paused test data:', data);
+      
+      if (data.pausedTest) {
+        // Ask the user if they want to resume
+        const shouldResume = confirm('You have a paused test. Would you like to resume where you left off?');
         
-        if (!response.ok) {
-          console.log('No paused test found or error occurred');
-          return; // No paused test found or error occurred
-        }
-        
-        const data = await response.json();
-        console.log('Paused test data:', data);
-        
-        if (data.pausedTest) {
-          // Ask the user if they want to resume
-          const shouldResume = confirm('You have a paused test. Would you like to resume where you left off?');
+        if (shouldResume) {
+          // Update the state in a more consistent manner
+          setIsLoading(true);
           
-          if (shouldResume) {
-            // Load questions first to ensure we have the questions data
-            await fetchQuestionsForModule(moduleId);
+          try {
+            // Fetch questions first
+            const questionsResponse = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
+            const questionsData = await questionsResponse.json();
             
-            // After questions are loaded, restore the test state
-            setTimeout(() => {
+            if (questionsResponse.ok) {
+              // Set all state updates together to avoid inconsistent renders
+              setQuestions(questionsData.questions);
+              setModuleInfo(questionsData.moduleInfo);
               setCurrentQuestion(parseInt(data.pausedTest.current_question) || 0);
               setTimeRemaining(parseInt(data.pausedTest.time_remaining) || 3600);
               
@@ -394,51 +411,28 @@ export default function PracticeTestPage() {
                 answers: parsedAnswers,
                 flagged: flaggedArray
               });
-            }, 500); // Short delay to ensure questions are loaded
-          } else {
-            // Delete the paused test
-            await fetch(`/api/pause-test?testId=${testId}&moduleId=${moduleId}`, {
-              method: 'DELETE'
-            });
+            }
+          } catch (err) {
+            console.error('Error loading questions for paused test:', err);
+          } finally {
+            setIsLoading(false);
           }
+        } else {
+          // Delete the paused test
+          await fetch(`/api/pause-test?testId=${testId}&moduleId=${moduleId}`, {
+            method: 'DELETE'
+          });
         }
-      } catch (err) {
-        console.error('Error checking for paused test:', err);
       }
-    };
-    
-    // Function to fetch questions for the module
-    const fetchQuestionsForModule = async (moduleId) => {
-      if (!moduleId) return;
-      
-      setIsLoading(true);
-      setError(null);
-      
-      try {
-        const response = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
-        const data = await response.json();
-        
-        if (!response.ok) {
-          setError(data.error || "Failed to load questions");
-          setIsLoading(false);
-          return;
-        }
-        
-        // Set the questions and module info
-        setQuestions(data.questions);
-        setModuleInfo(data.moduleInfo);
-        setIsLoading(false);
-        
-        return data;
-      } catch (err) {
-        console.error("Error fetching questions:", err);
-        setError("An unexpected error occurred while loading questions");
-        setIsLoading(false);
-      }
-    };
-    
+    } catch (err) {
+      console.error('Error checking for paused test:', err);
+    }
+  }, [testId, moduleId]);
+
+  // Use this function in the useEffect
+  useEffect(() => {
     checkForPausedTest();
-  }, [moduleId, testId, router]);
+  }, [checkForPausedTest]);
   
   // Use an effect to handle auto-pausing when navigating away or closing the page
   useEffect(() => {
@@ -505,67 +499,11 @@ export default function PracticeTestPage() {
     };
   }, [testId, moduleId, currentQuestion, timeRemaining, answers, flaggedQuestions, testComplete]);
   
-  const ScoreModal = ({ score, isModule1, onClose }) => (
-    <div style={styles.modalOverlay}>
-      <div style={styles.modal}>
-        <h2 style={styles.modalTitle}>
-          {testComplete ? "Test Complete!" : "Module Complete!"}
-        </h2>
-        
-        <div style={styles.scoreContainer}>
-          <h3 style={styles.scoreLabel}>Your Score:</h3>
-          <p style={styles.scoreValue}>
-            {score.correct} / {score.total}
-          </p>
-          <p style={styles.scorePercent}>
-            {Math.round((score.correct / score.total) * 100)}%
-          </p>
-          
-          {testComplete && overallScore && (
-            <>
-              <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
-              <p style={styles.scoreValue}>
-                {overallScore.correct} / {overallScore.total}
-              </p>
-              <p style={styles.scorePercent}>
-                {Math.round((overallScore.correct / overallScore.total) * 100)}%
-              </p>
-            </>
-          )}
-        </div>
-        
-        {!testComplete && (
-          <p style={styles.modalMessage}>
-            Proceeding to {isModule1 ? "Module 2" : "next module"} in 5 seconds...
-          </p>
-        )}
-        
-        <button style={styles.modalButton} onClick={onClose}>
-          {testComplete ? "Return to Dashboard" : "Continue Now"}
-        </button>
-      </div>
-    </div>
-  )
-  
-  const SubmitModal = ({ onSubmit, onCancel }) => (
-    <div style={styles.modalOverlay}>
-      <div style={styles.modal}>
-        <h2 style={styles.modalTitle}>Submit Module?</h2>
-        <p style={styles.modalText}>
-          You have answered {Object.keys(answers).length} of {totalQuestions} questions.
-          Are you sure you want to submit?
-        </p>
-        <div style={styles.modalButtons}>
-          <button style={styles.cancelButton} onClick={onCancel}>
-            Return to Test
-          </button>
-          <button style={styles.submitButton} onClick={onSubmit}>
-            Submit Module
-          </button>
-        </div>
-      </div>
-    </div>
-  )
+  // Move the debug logging to within useEffect hooks rather than at render time
+  useEffect(() => {
+    console.log("Current question:", currentQuestion); 
+    console.log("Rendering question", currentQuestion + 1, "Math subject:", practiceTestInfo?.subjects?.subject_name === 'Math');
+  }, [currentQuestion, practiceTestInfo]);
   
   if (isLoading) {
     return (
@@ -618,6 +556,87 @@ export default function PracticeTestPage() {
   }
   
   const selectedOptionId = answers[currentQuestionData.id]?.optionId
+  
+  console.log("Current question:", currentQuestion); 
+  console.log("Showing question nav:", showQuestionNav);
+  
+  // Create the modal components inside the component function
+  const renderScoreModal = () => (
+    <div style={styles.modalOverlay}>
+      <div style={styles.modal}>
+        <h2 style={styles.modalTitle}>
+          {testComplete ? "Test Complete!" : "Module Complete!"}
+        </h2>
+        
+        <div style={styles.scoreContainer}>
+          <h3 style={styles.scoreLabel}>Your Score:</h3>
+          <p style={styles.scoreValue}>
+            {currentScore.correct} / {currentScore.total}
+          </p>
+          <p style={styles.scorePercent}>
+            {Math.round((currentScore.correct / currentScore.total) * 100)}%
+          </p>
+          
+          {testComplete && overallScore && (
+            <>
+              <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+              <p style={styles.scoreValue}>
+                {overallScore.correct} / {overallScore.total}
+              </p>
+              <p style={styles.scorePercent}>
+                {Math.round((overallScore.correct / overallScore.total) * 100)}%
+              </p>
+            </>
+          )}
+        </div>
+        
+        {!testComplete && (
+          <p style={styles.modalMessage}>
+            Proceeding to {moduleInfo?.moduleNumber === 1 ? "Module 2" : "next module"} in 5 seconds...
+          </p>
+        )}
+        
+        <button style={styles.modalButton} onClick={handleScoreModalClose}>
+          {testComplete ? "Return to Dashboard" : "Continue Now"}
+        </button>
+      </div>
+    </div>
+  );
+
+  const renderSubmitModal = () => (
+    <div style={styles.modalOverlay}>
+      <div style={styles.modal}>
+        <h2 style={styles.modalTitle}>Submit Module?</h2>
+        <p style={styles.modalText}>
+          You have answered {Object.keys(answers).length} of {totalQuestions} questions.
+          Are you sure you want to submit?
+        </p>
+        <div style={styles.modalButtons}>
+          <button style={styles.cancelButton} onClick={() => {
+            setShowSubmitModal(false);
+            // Resume timer
+            if (!testComplete && timeRemaining > 0) {
+              timerRef.current = setInterval(() => {
+                setTimeRemaining(prev => {
+                  if (prev <= 1) {
+                    clearInterval(timerRef.current);
+                    handleSubmitModule();
+                    return 0;
+                  }
+                  return prev - 1;
+                });
+              }, 1000);
+            }
+          }}>
+            Return to Test
+          </button>
+          <button style={styles.submitButton} onClick={handleSubmitModule}>
+            Submit Module
+          </button>
+        </div>
+      </div>
+    </div>
+  );
   
   return (
     <div style={styles.container}>
@@ -690,21 +709,18 @@ export default function PracticeTestPage() {
         <>
           <div style={styles.mainContent}>
             <div style={styles.questionContainer}>
-              <div style={styles.questionHeader}>
-                <div style={styles.questionNumberBox} onClick={() => setShowQuestionNav(!showQuestionNav)}>
-                  {currentQuestion + 1}
-                  {flaggedQuestions.has(currentQuestionData.id) && (
-                    <div style={styles.flagIcon}>
-                      <Bookmark size={16} />
-                    </div>
-                  )}
-                </div>
-                <button
-                  style={styles.markForReviewButton}
-                  onClick={() => toggleFlagged(currentQuestionData.id)}
+              <div style={styles.markReviewTextOnly}>
+                <span 
+                  style={styles.markReviewText}
+                  onClick={(e) => {
+                    if (currentQuestionData && currentQuestionData.id) {
+                      toggleFlagged(currentQuestionData.id);
+                    }
+                  }}
                 >
+                  <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
                   Mark for Review
-                </button>
+                </span>
               </div>
               
               {currentQuestionData.image_url && (
@@ -772,6 +788,15 @@ export default function PracticeTestPage() {
           </div>
           
           <div style={styles.navigationFooter}>
+            <div style={styles.bottomQuestionBox} onClick={handleQuestionNumberClick}>
+              <span style={{ marginRight: '16px' }}>Question {currentQuestion + 1} of {totalQuestions}</span>
+              <div style={styles.upArrow}>▲</div>
+              {flaggedQuestions.has(currentQuestionData?.id) && (
+                <div style={styles.bottomBookmarkIcon}>
+                  <Bookmark size={12} />
+                </div>
+              )}
+            </div>
             {currentQuestion > 0 && (
               <button 
                 style={styles.backButton}
@@ -805,9 +830,15 @@ export default function PracticeTestPage() {
             </div>
             
             <div style={styles.questionNavTabs}>
-              <div style={styles.tabActive}>Current</div>
-              <div style={styles.tab}>Unanswered</div>
-              <div style={styles.tab}>For Review</div>
+              <div style={styles.tabLegend}>
+                <span style={styles.legendDot}>●</span> Current
+              </div>
+              <div style={styles.tabLegend}>
+                <span style={styles.legendBox}></span> Unanswered
+              </div>
+              <div style={styles.tabLegend}>
+                <span><Bookmark size={12} /></span> For Review
+              </div>
             </div>
             
             <div style={styles.questionGrid}>
@@ -830,9 +861,7 @@ export default function PracticeTestPage() {
                   >
                     {index + 1}
                     {index === currentQuestion && (
-                      <div style={styles.currentLocationIcon}>
-                        ●
-                      </div>
+                      <span style={styles.currentLocationIcon}>●</span>
                     )}
                     {(status === 'flagged' || status === 'answered-flagged') && (
                       <div style={styles.flaggedBookmark}>
@@ -846,10 +875,18 @@ export default function PracticeTestPage() {
             
             <div style={styles.questionNavFooter}>
               <button 
-                style={styles.goToReviewButton}
+                style={{
+                  padding: '0.6rem 1.2rem',
+                  borderRadius: '4px',
+                  border: 'none',
+                  backgroundColor: '#3b82f6',
+                  color: 'white',
+                  fontSize: '14px',
+                  fontWeight: '500',
+                  cursor: 'pointer',
+                }}
                 onClick={() => {
                   setShowQuestionNav(false);
-                  // Confirm all questions are answered and submit the test
                   handleSubmitClick();
                 }}
               >
@@ -860,35 +897,9 @@ export default function PracticeTestPage() {
         </div>
       )}
       
-      {showSubmitModal && (
-        <SubmitModal
-          onSubmit={handleSubmitModule}
-          onCancel={() => {
-            setShowSubmitModal(false);
-            // Resume timer
-            if (!testComplete && timeRemaining > 0) {
-              timerRef.current = setInterval(() => {
-                setTimeRemaining(prev => {
-                  if (prev <= 1) {
-                    clearInterval(timerRef.current);
-                    handleSubmitModule();
-                    return 0;
-                  }
-                  return prev - 1;
-                });
-              }, 1000);
-            }
-          }}
-        />
-      )}
+      {showSubmitModal && renderSubmitModal()}
       
-      {showScoreModal && currentScore && (
-        <ScoreModal
-          score={currentScore}
-          isModule1={moduleInfo?.moduleNumber === 1}
-          onClose={handleScoreModalClose}
-        />
-      )}
+      {showScoreModal && currentScore && renderScoreModal()}
     </div>
   )
 }
@@ -954,39 +965,16 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    height: 'auto',
+    overflow: 'visible',
   },
-  questionHeader: {
+  markReviewTextOnly: {
+    padding: '1rem 0 0 1rem',
     display: 'flex',
-    alignItems: 'center',
-    padding: '1rem',
-    borderBottom: '1px solid #e5e7eb',
   },
-  questionNumberBox: {
-    width: '28px',
-    height: '28px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#000',
-    color: '#fff',
-    fontWeight: 'bold',
+  markReviewText: {
     fontSize: '14px',
-    borderRadius: '4px',
-    marginRight: '10px',
-    cursor: 'pointer',
-    position: 'relative',
-  },
-  flagIcon: {
-    position: 'absolute',
-    top: '-8px',
-    right: '-8px',
-    color: '#ef4444',
-  },
-  markForReviewButton: {
-    border: 'none',
-    background: 'none',
-    color: '#4b5563',
-    fontSize: '14px',
+    color: '#6b7280',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
@@ -1001,7 +989,7 @@ const styles = {
     borderRadius: '4px',
   },
   mathQuestion: {
-    padding: '1rem',
+    padding: '0 2rem 2rem 2rem',
     maxWidth: '1000px',
     margin: '0 auto',
     width: '100%',
@@ -1092,6 +1080,8 @@ const styles = {
     backgroundColor: 'white',
     borderTop: '1px solid #e5e7eb',
     gap: '0.5rem',
+    position: 'relative',
+    minHeight: '60px',
   },
   backButton: {
     padding: '0.5rem 1.5rem',
@@ -1127,23 +1117,24 @@ const styles = {
   },
   questionNavContainer: {
     width: '80%',
-    maxWidth: '600px',
+    maxWidth: '500px',
     backgroundColor: 'white',
-    borderRadius: '8px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    borderRadius: '6px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
     display: 'flex',
     flexDirection: 'column',
     overflow: 'hidden',
+    zIndex: 2000,
   },
   questionNavHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '1rem',
+    padding: '0.8rem 1rem',
     borderBottom: '1px solid #e5e7eb',
   },
   questionNavTitle: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontWeight: '600',
     margin: 0,
   },
@@ -1158,41 +1149,49 @@ const styles = {
     display: 'flex',
     borderBottom: '1px solid #e5e7eb',
   },
-  tab: {
+  tabLegend: {
     padding: '0.75rem 1rem',
-    cursor: 'pointer',
     color: '#6b7280',
     fontSize: '14px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    userSelect: 'none',
   },
-  tabActive: {
-    padding: '0.75rem 1rem',
-    color: '#4f46e5',
-    borderBottom: '2px solid #4f46e5',
-    fontWeight: '500',
+  legendDot: {
+    color: '#4b5563',
     fontSize: '14px',
+  },
+  legendBox: {
+    width: '14px',
+    height: '14px',
+    border: '1px dashed #d1d5db',
+    display: 'inline-block',
   },
   questionGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(10, 1fr)',
-    gap: '0.75rem',
-    padding: '1rem 1.5rem',
-    maxHeight: '300px',
+    gap: '10px 8px',
+    padding: '1rem',
+    maxHeight: '280px',
     overflowY: 'auto',
+    justifyItems: 'center',
   },
   questionButton: {
-    width: '32px',
-    height: '32px',
+    width: '30px',
+    height: '30px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     border: '1px dashed #d1d5db',
-    borderRadius: '4px',
+    borderRadius: '2px',
     cursor: 'pointer',
     position: 'relative',
     fontSize: '14px',
-    fontWeight: '500',
-    color: '#6b7280',
-    margin: '0 auto',
+    fontWeight: '400',
+    color: '#4b5563',
+    backgroundColor: 'white',
+    margin: '0',
   },
   currentQuestion: {
     backgroundColor: '#f3f4f6',
@@ -1201,11 +1200,12 @@ const styles = {
   },
   currentLocationIcon: {
     position: 'absolute',
-    top: '-14px', 
+    top: '-12px', 
     left: '50%',
     transform: 'translateX(-50%)',
     fontSize: '14px',
     color: '#4b5563',
+    lineHeight: 1,
   },
   answeredQuestion: {
     backgroundColor: '#3b82f6',
@@ -1233,15 +1233,6 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     borderTop: '1px solid #e5e7eb',
-  },
-  goToReviewButton: {
-    padding: '0.5rem 1rem',
-    borderRadius: '4px',
-    border: '1px solid #d1d5db',
-    backgroundColor: '#f3f4f6',
-    color: '#1f2937',
-    fontSize: '14px',
-    cursor: 'pointer',
   },
   loadingContainer: {
     flex: 1,
@@ -1382,6 +1373,41 @@ const styles = {
     fontSize: '14px',
     fontWeight: '600',
     color: 'white',
+  },
+  bottomQuestionBox: {
+    padding: '0.5rem 1.5rem',
+    width: '180px',
+    height: '36px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    fontWeight: 'normal',
+    fontSize: '14px',
+    position: 'absolute',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    bottom: '0.95rem',
+    cursor: 'pointer',
+    borderRadius: '4px',
+    zIndex: 10,
+  },
+  upArrow: {
+    position: 'absolute',
+    right: '10px',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    color: '#fff',
+    fontSize: '10px',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  bottomBookmarkIcon: {
+    position: 'absolute',
+    top: '-8px',
+    right: '-8px',
+    color: '#ef4444',
   },
   // Global styles for animations
   '@global': {
