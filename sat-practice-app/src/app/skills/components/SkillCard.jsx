@@ -5,9 +5,9 @@ import DifficultyModal from '../../components/DifficultyModal';
 
 const masteryColors = {
   'Mastered': '#22c55e',
-  'Proficient': '#65a30d',
-  'Improving': '#f59e0b',
+  'Improving': '#65a30d',
   'Needs Work': '#dc2626',
+  'Needs More Attempts': '#f59e0b',
   'Not Started': '#6b7280'
 };
 
@@ -31,16 +31,14 @@ export default function SkillCard({ skill, subject }) {
   let tooltipText = '';
   if (skill.mastery === 'Not Started') {
     tooltipText = 'You have not practiced this skill yet.';
+  } else if (skill.mastery === 'Needs More Attempts') {
+    tooltipText = 'You need to attempt at least 5 questions in this skill to get a true mastery level.';
   } else if (skill.mastery === 'Needs Work') {
-    tooltipText = skill.accuracy >= 50 ? 
-      'You need more practice to master this skill (need at least 5 practice questions).' : 
-      'You need to improve your accuracy in this skill.';
+    tooltipText = 'Your accuracy is below 60%. Keep practicing to improve this skill.';
   } else if (skill.mastery === 'Improving') {
-    tooltipText = 'You\'re making good progress with this skill.';
-  } else if (skill.mastery === 'Proficient') {
-    tooltipText = 'You\'re doing well with this skill.';
+    tooltipText = 'Your accuracy is between 60-85%. You\'re making good progress with this skill.';
   } else if (skill.mastery === 'Mastered') {
-    tooltipText = 'Great job! You\'ve mastered this skill.';
+    tooltipText = 'Great job! You\'ve mastered this skill with 85% or higher accuracy.';
   }
 
   return (

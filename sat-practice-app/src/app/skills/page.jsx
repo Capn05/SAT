@@ -35,6 +35,23 @@ import './styles.css'; // Adjust the path as necessary
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 
+// Consistent mastery level calculation function
+function calculateMasteryLevel(accuracy, totalAttempts) {
+  if (totalAttempts === 0) {
+    return 'Not Started';
+  }
+  if (totalAttempts < 5) {
+    return 'Needs More Attempts';
+  }
+  if (accuracy >= 85) {
+    return 'Mastered';
+  }
+  if (accuracy >= 60) {
+    return 'Improving';
+  }
+  return 'Needs Work';
+}
+
 const categoryIcons = {
   // Math Categories
   'Algebra': Calculator,
@@ -284,21 +301,20 @@ export default function SkillsPage() {
             subjectId === 1 ? Calculator : BookOpen
           )
           
+          // Use the consistent mastery calculation function instead of relying on DB value
+          // This ensures UI shows the correct mastery level even if DB hasn't been updated
+          const masteryLevel = calculateMasteryLevel(accuracy, skillPerf.total_attempts);
+          
           return {
             name: subcategory.subcategory_name,
             icon: <IconComponent size={20} color="#4f46e5" />,
-            needsPractice: skillPerf.total_attempts < 5 || skillPerf.mastery_level === 'needs_work',
+            needsPractice: masteryLevel === 'Needs Work' || masteryLevel === 'Needs More Attempts',
             accuracy: accuracy,
             lastPracticed: skillPerf.last_practiced ? 
               new Date(skillPerf.last_practiced).toLocaleDateString() : 
               'Never practiced',
             progress: accuracy,
-            mastery: skillPerf.mastery_level === 'Not Started' ? 'Not Started' : 
-              skillPerf.mastery_level === 'needs_work' ? 'Needs Work' :
-              skillPerf.mastery_level === 'improving' ? 'Improving' :
-              skillPerf.mastery_level === 'proficient' ? 'Proficient' :
-              skillPerf.mastery_level === 'mastered' ? 'Mastered' : 
-              'Not Started'
+            mastery: masteryLevel
           }
         });
       });

@@ -61,8 +61,8 @@ export async function GET(request) {
       console.log(`Filtering by difficulty: ${capitalizedDifficulty}`);
     }
 
-    // Limit to 15 questions
-    const { data: questions, error: questionsError } = await query.limit(15);
+    // Limit to 5 questions for skill practice
+    const { data: questions, error: questionsError } = await query.limit(5);
 
     if (questionsError) {
       console.error('Error fetching questions:', questionsError);

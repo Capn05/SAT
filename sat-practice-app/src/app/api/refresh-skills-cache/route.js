@@ -92,31 +92,18 @@ export async function POST(request) {
         const correctAnswers = Array.from(uniqueAttempts.values()).filter(isCorrect => isCorrect).length;
         const accuracyPercentage = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
 
-        // Determine mastery level based on documentation, with special handling for 100% accuracy
+        // Determine mastery level based on consistent rules
         let masteryLevel;
-        if (accuracyPercentage === 100 && totalAttempts > 0) {
-          // Always show mastered for 100% accuracy with at least one attempt
-          masteryLevel = 'mastered';
+        if (totalAttempts === 0) {
+          masteryLevel = 'Not Started';
         } else if (totalAttempts < 5) {
-          // For skills with fewer than 5 attempts, use a simplified mastery scale
-          if (accuracyPercentage >= 80) {
-            masteryLevel = 'proficient';
-          } else if (accuracyPercentage >= 50) {
-            masteryLevel = 'improving';
-          } else {
-            masteryLevel = 'needs_work';
-          }
+          masteryLevel = 'Needs More Attempts';
+        } else if (accuracyPercentage >= 85) {
+          masteryLevel = 'Mastered';
+        } else if (accuracyPercentage >= 60) {
+          masteryLevel = 'Improving';
         } else {
-          // Standard mastery calculation for 5+ attempts
-          if (accuracyPercentage >= 90) {
-            masteryLevel = 'mastered';
-          } else if (accuracyPercentage >= 80) {
-            masteryLevel = 'proficient';
-          } else if (accuracyPercentage >= 60) {
-            masteryLevel = 'improving';
-          } else {
-            masteryLevel = 'needs_work';
-          }
+          masteryLevel = 'Needs Work';
         }
 
         // Update user_skill_analytics
