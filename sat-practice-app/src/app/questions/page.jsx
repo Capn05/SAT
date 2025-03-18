@@ -1,11 +1,13 @@
 "use client"
 
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 import TopBar from '../components/TopBar'
 import Question from '../components/Question'
 import useAuth from '../../../lib/useAuth'
 
-export default function QuestionPage() {
+// Create a client component for content
+function QuestionPageContent() {
   useAuth()
   const searchParams = useSearchParams()
 
@@ -26,6 +28,25 @@ export default function QuestionPage() {
       </main>
     </div>
   )
+}
+
+// Main component with Suspense boundary
+export default function QuestionPage() {
+  return (
+    <Suspense fallback={
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        backgroundColor: 'white'
+      }}>
+        <div>Loading question...</div>
+      </div>
+    }>
+      <QuestionPageContent />
+    </Suspense>
+  );
 }
 
 const styles = {

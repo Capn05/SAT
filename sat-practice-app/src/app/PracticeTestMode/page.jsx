@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef, useCallback } from "react"
+import { useState, useEffect, useRef, useCallback, Suspense } from "react"
 import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle, Clock } from "lucide-react"
 import { formatTime } from "../lib/utils"
 import TopBar from "../components/TopBar"
@@ -9,7 +9,8 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { processMathInText } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
 
-export default function PracticeTestPage() {
+// Create a client component that uses useSearchParams
+function PracticeTestContent() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [timeRemaining, setTimeRemaining] = useState(null)
   const [answers, setAnswers] = useState({})
@@ -781,6 +782,15 @@ export default function PracticeTestPage() {
       )}
     </div>
   )
+}
+
+// Main page component
+export default function PracticeTestPage() {
+  return (
+    <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading practice test...</div>}>
+      <PracticeTestContent />
+    </Suspense>
+  );
 }
 
 const styles = {
