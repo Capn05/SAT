@@ -647,11 +647,7 @@ export default function PracticeTestPage() {
           <div style={styles.testHeader}>
             <div style={styles.testInfo}>
               <h2 style={styles.testName}>
-                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
-                  ? 'Section 1, Module 1: Reading and Writing' 
-                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
-                    ? 'Section 2, Module 1: Math'
-                    : 'Section 1, Module 2: Reading and Writing'}
+                {practiceTestInfo?.name} Module {moduleInfo?.moduleNumber}
               </h2>
             </div>
             
@@ -870,11 +866,7 @@ export default function PracticeTestPage() {
           <div style={styles.questionNavContainer} onClick={(e) => e.stopPropagation()}>
             <div style={styles.questionNavHeader}>
               <h2 style={styles.questionNavTitle}>
-                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
-                  ? 'Section 1, Module 1: Reading and Writing Questions' 
-                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
-                    ? 'Section 2, Module 1: Math Questions'
-                    : 'Section 1, Module 2: Reading and Writing Questions'}
+                {practiceTestInfo?.name} Module {moduleInfo?.moduleNumber} Questions
               </h2>
               <button style={styles.closeButton} onClick={() => setShowQuestionNav(false)}>×</button>
             </div>
