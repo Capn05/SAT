@@ -500,7 +500,7 @@ export default function PracticeTestsPage() {
                 onClick={() => handleTestClick(1)}
               >
                 <div style={{...styles.testIcon, backgroundColor: '#e0f2fe'}}>
-                  <Brain size={28} color="#0369a1" />
+                  <Brain size={28} color="#10b981" />
                 </div>
                 <h2 style={styles.testTitle}>Math Adaptive Test</h2>
                 <p style={styles.testInfo}>44 Questions • 70 Minutes</p>
@@ -526,7 +526,7 @@ export default function PracticeTestsPage() {
                 onClick={() => handleTestClick(2)}
               >
                 <div style={{...styles.testIcon, backgroundColor: '#fee2e2'}}>
-                  <BookOpen size={28} color="#b91c1c" />
+                  <BookOpen size={28} color="#10b981" />
                 </div>
                 <h2 style={styles.testTitle}>Reading & Writing Adaptive Test</h2>
                 <p style={styles.testInfo}>54 Questions • 64 Minutes</p>

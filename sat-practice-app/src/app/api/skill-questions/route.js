@@ -17,12 +17,33 @@ export async function GET(request) {
     const subject = searchParams.get('subject');
     const category = searchParams.get('category');
     const difficulty = searchParams.get('difficulty') || 'mixed';
+    const includePreviouslyAnswered = searchParams.get('previouslyAnswered') === 'true';
 
-    console.log('Fetching questions with params:', { subject, category, difficulty });
+    console.log('Fetching questions with params:', { 
+      subject, 
+      category, 
+      difficulty, 
+      includePreviouslyAnswered
+    });
 
     if (!subject || !category) {
       return NextResponse.json({ error: 'Subject and category are required' }, { status: 400 });
     }
+
+    // Get user's previously answered questions
+    const { data: userAnswers, error: userAnswersError } = await supabase
+      .from('user_answers')
+      .select('question_id')
+      .eq('user_id', session.user.id);
+
+    if (userAnswersError) {
+      console.error('Error fetching user answers:', userAnswersError);
+      return NextResponse.json({ error: 'Failed to fetch user answer history' }, { status: 500 });
+    }
+
+    // Create a set of answered question IDs for quick lookup
+    const answeredQuestionIds = new Set(userAnswers?.map(a => a.question_id) || []);
+    console.log(`User has answered ${answeredQuestionIds.size} questions previously in the database`);
 
     // First, get the subcategory ID for the given category name
     const { data: subcategory, error: subcategoryError } = await supabase
@@ -36,7 +57,7 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Invalid category' }, { status: 400 });
     }
 
-    // Get questions that match the subcategory and haven't been answered yet
+    // Get questions that match the subcategory
     let query = supabase
       .from('questions')
       .select(`
@@ -61,8 +82,8 @@ export async function GET(request) {
       console.log(`Filtering by difficulty: ${capitalizedDifficulty}`);
     }
 
-    // Limit to 5 questions for skill practice
-    const { data: questions, error: questionsError } = await query.limit(5);
+    // Get all matching questions
+    const { data: questions, error: questionsError } = await query;
 
     if (questionsError) {
       console.error('Error fetching questions:', questionsError);
@@ -80,10 +101,42 @@ export async function GET(request) {
       });
     }
 
-    console.log(`Returning ${questions.length} questions for category ${category} with difficulty ${difficulty}`);
+    // Separate unanswered and answered questions
+    const unansweredQuestions = questions.filter(q => !answeredQuestionIds.has(q.id));
+    const answeredQuestions = questions.filter(q => answeredQuestionIds.has(q.id));
+    
+    console.log(`Found ${unansweredQuestions.length} unanswered questions and ${answeredQuestions.length} previously answered questions for category ${category}`);
+    
+    // Prioritize unanswered questions
+    let selectedQuestions = [];
+    const questionCount = 5; // For skill practice, we want 5 questions
+    
+    // If we have enough unanswered questions, use only those
+    if (unansweredQuestions.length >= questionCount) {
+      // Randomize the selection of unanswered questions
+      selectedQuestions = unansweredQuestions.sort(() => Math.random() - 0.5).slice(0, questionCount);
+      console.log(`Using ${selectedQuestions.length} unanswered questions`);
+    } 
+    // Otherwise, if we allow previously answered questions, fill in with those
+    else if (includePreviouslyAnswered && answeredQuestions.length > 0) {
+      // Use all unanswered questions plus some answered ones to reach the target count
+      const shuffledAnsweredQuestions = answeredQuestions.sort(() => Math.random() - 0.5);
+      selectedQuestions = [
+        ...unansweredQuestions,
+        ...shuffledAnsweredQuestions.slice(0, questionCount - unansweredQuestions.length)
+      ];
+      console.log(`Using ${unansweredQuestions.length} unanswered questions and ${selectedQuestions.length - unansweredQuestions.length} previously answered questions`);
+    }
+    // If we don't allow previously answered, just use what we have
+    else {
+      selectedQuestions = unansweredQuestions;
+      console.log(`Only using ${selectedQuestions.length} unanswered questions (not enough for a full set)`);
+    }
+
+    console.log(`Returning ${selectedQuestions.length} questions for category ${category} with difficulty ${difficulty}`);
 
     // Shuffle the options for each question
-    const shuffledQuestions = questions.map(q => ({
+    const shuffledQuestions = selectedQuestions.map(q => ({
       ...q,
       options: q.options.sort(() => Math.random() - 0.5)
     }));

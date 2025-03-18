@@ -40,7 +40,7 @@ export default function Dashboard() {
               />
               <SubjectSection 
                 title="Quick Practice" 
-                value="Reading/Writing Section" 
+                value="Reading & Writing Section" 
                 buttonText="Start Practice" 
                 subject_id="2" 
                 onStartPractice={handleStartPractice}

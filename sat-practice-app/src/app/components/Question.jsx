@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { supabase } from '../../../lib/supabase';
 import { CheckCircle, XCircle } from 'lucide-react';
 import ChatSidebar from './ChatSidebar';
@@ -15,6 +15,7 @@ import QuickPracticeCompleteModal from './QuickPracticeCompleteModal';
 import SkillsCompleteModal from './SkillsCompleteModal';
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import DifficultyModal from './DifficultyModal';
 
 export default function Question({ subject, mode, skillName, questions: initialQuestions, difficulty }) {
   const [questions, setQuestions] = useState(initialQuestions || []);
@@ -41,6 +42,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const supabase = createClientComponentClient();
   const [showQuickPracticeModal, setShowQuickPracticeModal] = useState(false);
   const [showSkillsModal, setShowSkillsModal] = useState(false);
+  const [showPostCompleteDifficultyModal, setShowPostCompleteDifficultyModal] = useState(false);
+  const [sessionCorrectAnswers, setSessionCorrectAnswers] = useState({});
 
   const md = new MarkdownIt({
     html: true,
@@ -165,7 +168,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       
       // Create a set of answered question IDs for quick lookup
       const answeredQuestionIds = new Set(userAnswers?.map(a => a.question_id) || []);
-      console.log(`User has answered ${answeredQuestionIds.size} questions previously`);
+      console.log(`User has answered ${answeredQuestionIds.size} questions previously in the database`);
 
       // Capitalize the difficulty if it exists and isn't 'mixed'
       let capitalizedDifficulty = difficulty;
@@ -213,6 +216,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       } else if (mode === "quick") {
         console.log('Fetching quick practice questions for subject:', subjectId, 'with difficulty:', capitalizedDifficulty || 'mixed');
         
+        // First, count all available questions matching the criteria
         const { count, error: countError } = await supabase
           .from('questions')
           .select('*', { count: 'exact' })
@@ -224,17 +228,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           return;
         }
 
-        // Fetch more questions than needed to account for filtering out answered ones
-        const fetchLimit = Math.min(30, count || 0); // Fetch up to 30 questions
-        const targetLimit = Math.min(15, count || 0); // But only use up to 15
-        
-        console.log(`Fetching ${fetchLimit} questions to find ${targetLimit} unanswered ones`);
-
-        if (fetchLimit === 0) {
+        if (count === 0) {
           setError('No questions available for this subject');
           return;
         }
 
+        // Fetch all questions matching the criteria to sort unanswered vs answered
         let query = supabase
           .from('questions')
           .select(`
@@ -247,13 +246,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         if (capitalizedDifficulty && capitalizedDifficulty !== 'mixed') {
           console.log(`Applying difficulty filter: ${capitalizedDifficulty}`);
           query = query.eq('difficulty', capitalizedDifficulty);
-        } else {
-          console.log('Using mixed difficulty (no filter applied)');
         }
         
-        const { data: allQuestions, error: allQuestionsError } = await query
-          .order('id', { ascending: true })
-          .limit(fetchLimit);
+        const { data: allQuestions, error: allQuestionsError } = await query;
 
         if (allQuestionsError) {
           console.error('Error fetching questions:', allQuestionsError);
@@ -262,37 +257,50 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         }
 
         if (!allQuestions || allQuestions.length === 0) {
-          setError('No questions available for this subject');
+          setError('No questions available for this subject and difficulty');
           return;
         }
         
-        // Filter out questions that have already been answered
-        const unansweredQuestions = allQuestions.filter(q => !answeredQuestionIds.has(q.id));
-        console.log(`Filtered out ${allQuestions.length - unansweredQuestions.length} previously answered questions`);
+        console.log(`Found ${allQuestions.length} total questions matching criteria`);
         
-        // If we don't have enough unanswered questions, include some answered ones
-        let finalQuestions = unansweredQuestions;
-
-        if (unansweredQuestions.length < targetLimit) {
-          console.log(`Not enough unanswered questions (${unansweredQuestions.length}), including some answered ones`);
-          const answeredQuestions = allQuestions.filter(q => answeredQuestionIds.has(q.id));
-          const neededAnsweredQuestions = targetLimit - unansweredQuestions.length;
+        // Separate questions into unanswered and previously answered
+        const unansweredQuestions = allQuestions.filter(q => !answeredQuestionIds.has(q.id));
+        const previouslyAnsweredQuestions = allQuestions.filter(q => answeredQuestionIds.has(q.id));
+        
+        console.log(`Found ${unansweredQuestions.length} unanswered questions and ${previouslyAnsweredQuestions.length} previously answered questions`);
+        
+        const targetLimit = 15; // Number of questions for quick practice
+        
+        // Create the final set of questions
+        let finalQuestions = [];
+        
+        // If we have enough unanswered questions, use only those
+        if (unansweredQuestions.length >= targetLimit) {
+          console.log(`Using ${targetLimit} unanswered questions`);
+          finalQuestions = shuffleArray(unansweredQuestions).slice(0, targetLimit);
+        }
+        // Otherwise, use all available unanswered questions and fill the rest with previously answered ones
+        else {
+          console.log(`Using all ${unansweredQuestions.length} unanswered questions and ${targetLimit - unansweredQuestions.length} previously answered questions`);
+          const shuffledPreviouslyAnswered = shuffleArray(previouslyAnsweredQuestions);
           finalQuestions = [
             ...unansweredQuestions,
-            ...answeredQuestions.slice(0, neededAnsweredQuestions)
+            ...shuffledPreviouslyAnswered.slice(0, targetLimit - unansweredQuestions.length)
           ];
         }
         
-        // Limit to target number and shuffle
-        finalQuestions = finalQuestions.slice(0, targetLimit);
-        questionsData = shuffleArray(finalQuestions);
+        // Shuffle the options for each question
+        questionsData = finalQuestions.map(q => ({
+          ...q,
+          options: shuffleArray(q.options)
+        }));
         
-        console.log(`Successfully prepared ${questionsData.length} questions (${unansweredQuestions.length} unanswered) with difficulty: ${capitalizedDifficulty || 'mixed'}`);
+        console.log(`Prepared ${questionsData.length} questions for practice`);
       } else if (mode === "skill" && skillName) {
         console.log(`Fetching skill questions for ${skillName} with difficulty ${difficulty || 'mixed'}`);
         
-        // Use the API route that now supports difficulty
-        const response = await fetch(`/api/skill-questions?subject=${subjectId}&category=${encodeURIComponent(skillName)}&difficulty=${difficulty || 'mixed'}`);
+        // Use the API route that supports difficulty
+        const response = await fetch(`/api/skill-questions?subject=${subjectId}&category=${encodeURIComponent(skillName)}&difficulty=${difficulty || 'mixed'}&previouslyAnswered=true`);
         
         if (!response.ok) {
           const errorData = await response.json();
@@ -321,6 +329,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         return;
       }
 
+      // Reset only the session-specific state
+      // When loading previously answered questions, they should appear as new
       setAnsweredQuestions(new Set());
       setAnsweredCount(0);
       setUserAnswers({});
@@ -367,11 +377,43 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     };
   }, [subject, mode, skillName, difficulty]);
 
+  // Add this function to refresh skills cache
+  const refreshSkillsCache = useCallback(async () => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+
+      console.log('Refreshing skills cache...');
+      const response = await fetch('/api/refresh-skills-cache', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: user.id,
+          subject: subject
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to refresh skills cache:', await response.json());
+      } else {
+        console.log('Skills cache refreshed successfully');
+      }
+    } catch (error) {
+      console.error('Error refreshing skills cache:', error);
+    }
+  }, [subject]);
+
+  // Update the useEffect that shows the completion modals to also refresh the skills cache
   useEffect(() => {
     const limit = mode === "skill" ? 5 : 15;
 
     if (answeredCount === limit) {
-      // Show the appropriate modal based on the mode
+      // First refresh the skills cache
+      refreshSkillsCache();
+      
+      // Then show the appropriate modal based on the mode
       if (mode === "skill") {
         setShowSkillsModal(true);
       } else {
@@ -384,33 +426,104 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       setShowSkillsModal(false);
       setShowQuickPracticeModal(false);
     }
-  }, [answeredCount, mode]);
+  }, [answeredCount, mode, refreshSkillsCache]);
 
   useEffect(() => {
     if (questions.length > 0) {
-      const questionId = questions[currentIndex].id;
-      setCurrentQuestionAnswer(userAnswers[questionId] || null);
-      setFeedback(answeredFeedback[questionId] || null);
+      // Get the current question ID
+      const currentQuestionId = questions[currentIndex].id;
+      
+      // Only reset the state if this is a new question set or if the question hasn't been answered
+      if (!answeredQuestions.has(currentQuestionId)) {
+        resetQuestionState(currentQuestionId);
+      }
     }
-  }, [currentIndex, questions, userAnswers, answeredFeedback]);
+  }, [questions]);
 
-  useEffect(() => {
+  const resetQuestionState = (questionId) => {
+    // Check if this question was already answered in this session
+    const isAnsweredInSession = answeredQuestions.has(questionId);
+    
+    // If already answered in this session, don't reset the state
+    if (isAnsweredInSession) {
+      // Just restore the feedback and selectedOption if it exists
+      if (answeredFeedback[questionId]) {
+        setFeedback(answeredFeedback[questionId]);
+        setTimeout(() => {
+          setShowFeedback(true);
+        }, 50);
+      }
+      
+      // Try to find the selected option for this question
+      const selectedOptionId = userAnswers[questionId];
+      if (selectedOptionId) {
+        // Find the option from the current question's options
+        const currentQuestion = questions.find(q => q.id === questionId);
+        if (currentQuestion) {
+          const option = currentQuestion.options.find(o => o.id === selectedOptionId);
+          if (option) {
+            setSelectedOption(option);
+            setCurrentQuestionAnswer(option.value);
+            setSelectedAnswer(option.value);
+          }
+        }
+      }
+      return;
+    }
+    
+    // Only reset if not answered in this session
     setSelectedOption(null);
-    setShowFeedback(false);
+    setSelectedAnswer(null);
     setFeedback(null);
+    setCurrentQuestionAnswer(null);
+    setShowFeedback(false);
     setSubmitted(false);
-  }, [currentIndex]);
+  };
 
   const nextQuestion = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % questions.length);
-    setSelectedAnswer(null);
-    setCurrentQuestionAnswer(null);
+    if (currentIndex < questions.length - 1) {
+      // Hide feedback first before changing index to avoid flicker
+      setShowFeedback(false);
+      
+      // Use setTimeout to ensure the feedback is hidden before changing the question
+      setTimeout(() => {
+        setCurrentIndex(currentIndex + 1);
+        
+        // Reset or restore state based on whether this question was answered in this session
+        const nextQuestionId = questions[currentIndex + 1].id;
+        resetQuestionState(nextQuestionId);
+      }, 50);
+    }
   };
 
   const prevQuestion = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);
-    setSelectedAnswer(null);
-    setCurrentQuestionAnswer(null);
+    if (currentIndex > 0) {
+      // Hide feedback first before changing index to avoid flicker
+      setShowFeedback(false);
+      
+      // Use setTimeout to ensure the feedback is hidden before changing the question
+      setTimeout(() => {
+        setCurrentIndex(currentIndex - 1);
+        
+        // Reset or restore state based on whether this question was answered in this session
+        const prevQuestionId = questions[currentIndex - 1].id;
+        resetQuestionState(prevQuestionId);
+      }, 50);
+    }
+  };
+
+  const selectQuestion = (index) => {
+    // Hide feedback first before changing index to avoid flicker
+    setShowFeedback(false);
+    
+    // Use setTimeout to ensure the feedback is hidden before changing the question
+    setTimeout(() => {
+      setCurrentIndex(index);
+      
+      // Reset or restore state based on whether this question was answered in this session
+      const selectedQuestionId = questions[index].id;
+      resetQuestionState(selectedQuestionId);
+    }, 50);
   };
 
   const fetchUserAnswers = async () => {
@@ -462,6 +575,14 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
     try {
       if (isFirstAttempt) {
+        console.log('Submitting answer to API with data:', {
+          questionId: currentQuestionId,
+          optionId: selectedOption.id,
+          isCorrect: selectedOption.is_correct,
+          subject: subject,
+          mode: mode
+        });
+        
         const response = await fetch('/api/user-answers', {
           method: 'POST',
           headers: {
@@ -489,7 +610,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           throw new Error(data.error || 'Failed to submit answer');
         }
 
-        console.log('Answer recorded successfully:', data);
+        console.log('Answer recorded successfully with details:', {
+          data,
+          mode,
+          subject,
+          skillName: skillName || 'N/A',
+          questionId: currentQuestionId
+        });
       }
 
       setAttempts(prev => ({
@@ -508,6 +635,11 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           [currentQuestionId]: selectedOption.id
         }));
         
+        // Store the answer as correct in the session
+        setSessionCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: true
+        }));
         setShowFeedback(true);
         setFeedback({
           type: 'success',
@@ -522,6 +654,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           }
         }));
       } else {
+        // Store the answer as incorrect in the session
+        setSessionCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: false
+        }));
+        
         setShowFeedback(true);
         setFeedback({
           type: 'error',
@@ -550,19 +688,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
   };
 
-  const selectQuestion = (index) => {
-    setCurrentIndex(index);
-    setSelectedAnswer(null);
-    setCurrentQuestionAnswer(null);
-  };
-
   const fetchNewQuestions = async () => {
     // First close all modals
     setShowModal(false);
     setShowQuickPracticeModal(false);
     setShowSkillsModal(false);
     
-    // Reset state
+    // Complete reset of all state for a new question set
     setCurrentIndex(0);
     setAnsweredCount(0);
     setAnsweredQuestions(new Set());
@@ -574,10 +706,61 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setSelectedAnswer(null);
     setSubmitted(false);
     setAttempts({});
+    setShowFeedback(false);
+    setSessionCorrectAnswers({}); // Reset session correct answers
+    
+    // Log that we're starting a new question set
+    console.log('Starting a new set of practice questions');
     
     // Then fetch new questions
     await fetchUnansweredQuestions(subject);
   };
+
+  // Add a useEffect to ensure feedback is properly displayed for questions already answered
+  useEffect(() => {
+    if (questions.length > 0) {
+      const currentQuestionId = questions[currentIndex].id;
+      
+      // If this question has been answered in this session, show the appropriate feedback
+      if (answeredQuestions.has(currentQuestionId) && answeredFeedback[currentQuestionId]) {
+        // Wait a short moment to ensure UI has updated
+        setTimeout(() => {
+          setFeedback(answeredFeedback[currentQuestionId]);
+          setShowFeedback(true);
+        }, 50);
+      }
+    }
+  }, [currentIndex, questions, answeredQuestions]);
+
+  // Add handlers for more practice option
+  const handleMorePractice = useCallback(() => {
+    // Close the complete modals
+    setShowQuickPracticeModal(false);
+    setShowSkillsModal(false);
+    
+    // Show the difficulty modal after a brief delay
+    setTimeout(() => {
+      setShowPostCompleteDifficultyModal(true);
+    }, 50);
+  }, []);
+
+  // Add handler for difficulty selection after completion
+  const handlePostCompleteDifficultySelected = useCallback((selectedDifficulty) => {
+    setShowPostCompleteDifficultyModal(false);
+    
+    // Navigate to restart practice with the selected difficulty
+    setTimeout(() => {
+      // Add a timestamp to force a refresh even when URL parameters are the same
+      const timestamp = Date.now();
+      
+      if (mode === 'quick') {
+        // Use window.location instead of router to force a full page refresh
+        window.location.href = `/practice?subject=${subject}&mode=quick&difficulty=${selectedDifficulty}&t=${timestamp}`;
+      } else if (mode === 'skill' && skillName) {
+        window.location.href = `/practice?subject=${subject}&mode=skill&difficulty=${selectedDifficulty}&category=${encodeURIComponent(skillName)}&t=${timestamp}`;
+      }
+    }, 100);
+  }, [subject, mode, skillName]);
 
   if (loading) {
     return (
@@ -689,6 +872,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         subject={subject}
         difficulty={difficulty}
         mode={mode}
+        onMorePractice={handleMorePractice}
       />
 
       <SkillsCompleteModal
@@ -698,7 +882,20 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         skillName={skillName}
         difficulty={difficulty}
         mode={mode}
+        onMorePractice={handleMorePractice}
       />
+
+      {showPostCompleteDifficultyModal && (
+        <DifficultyModal
+          isOpen={showPostCompleteDifficultyModal}
+          onClose={() => setShowPostCompleteDifficultyModal(false)}
+          subject={subject}
+          title={`Select Difficulty Level for ${mode === 'skill' ? 'Skill' : 'Quick'} Practice`}
+          mode={mode}
+          category={mode === 'skill' ? skillName : null}
+          onDifficultySelected={handlePostCompleteDifficultySelected}
+        />
+      )}
 
       <div style={styles.container}>
         <QuestionStatus 
@@ -707,6 +904,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           fetchUserAnswers={fetchUserAnswers} 
           onSelectQuestion={selectQuestion}
           questions={questions}
+          answeredQuestionsInSession={answeredQuestions}
+          sessionAnswers={sessionCorrectAnswers}
         />
 
         <div style={styles.questionContent}>
@@ -732,25 +931,26 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             </button>
           </form>
 
-          <AnimatePresence>
-            {showFeedback && (
+          <AnimatePresence mode="wait">
+            {showFeedback && feedback && (
               <motion.div
+                key={`feedback-${currentIndex}-${feedback.type}`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
                 style={{ 
                   ...styles.feedbackBox, 
-                  backgroundColor: feedback?.type === "success" ? '#d4edda' : '#f8d7da',
-                  color: feedback?.type === "success" ? '#155724' : '#721c24',
-                  borderColor: feedback?.type === "success" ? '#c3e6cb' : '#f5c6cb'
+                  backgroundColor: feedback.type === "success" ? '#d4edda' : '#f8d7da',
+                  color: feedback.type === "success" ? '#155724' : '#721c24',
+                  borderColor: feedback.type === "success" ? '#c3e6cb' : '#f5c6cb'
                 }}
               >
-                {feedback?.type === "success" ? 
+                {feedback.type === "success" ? 
                   <CheckCircle style={{ ...styles.icon, color: '#155724' }} /> : 
                   <XCircle style={{ ...styles.icon, color: '#721c24' }} />
                 }
-                <span>{feedback?.message}</span>
+                <span>{feedback.message}</span>
               </motion.div>
             )}
           </AnimatePresence>
