@@ -564,36 +564,38 @@ export default function PracticeTestPage() {
   const renderScoreModal = () => (
     <div style={styles.modalOverlay}>
       <div style={styles.modal}>
-        <h2 style={styles.modalTitle}>
-          {testComplete ? "Test Complete!" : "Module Complete!"}
-        </h2>
-        
-        <div style={styles.scoreContainer}>
-          <h3 style={styles.scoreLabel}>Your Score:</h3>
-          <p style={styles.scoreValue}>
-            {currentScore.correct} / {currentScore.total}
-          </p>
-          <p style={styles.scorePercent}>
-            {Math.round((currentScore.correct / currentScore.total) * 100)}%
-          </p>
-          
-          {testComplete && overallScore && (
-            <>
-              <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+        {testComplete ? (
+          <>
+            <h2 style={styles.modalTitle}>Test Complete!</h2>
+            <div style={styles.scoreContainer}>
+              <h3 style={styles.scoreLabel}>Your Score:</h3>
               <p style={styles.scoreValue}>
-                {overallScore.correct} / {overallScore.total}
+                {currentScore.correct} / {currentScore.total}
               </p>
               <p style={styles.scorePercent}>
-                {Math.round((overallScore.correct / overallScore.total) * 100)}%
+                {Math.round((currentScore.correct / currentScore.total) * 100)}%
               </p>
-            </>
-          )}
-        </div>
-        
-        {!testComplete && (
-          <p style={styles.modalMessage}>
-            Proceeding to {moduleInfo?.moduleNumber === 1 ? "Module 2" : "next module"} in 5 seconds...
-          </p>
+              
+              {overallScore && (
+                <>
+                  <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+                  <p style={styles.scoreValue}>
+                    {overallScore.correct} / {overallScore.total}
+                  </p>
+                  <p style={styles.scorePercent}>
+                    {Math.round((overallScore.correct / overallScore.total) * 100)}%
+                  </p>
+                </>
+              )}
+            </div>
+          </>
+        ) : (
+          <>
+            <h2 style={styles.modalTitle}>Module Complete</h2>
+            <p style={styles.modalMessage}>
+              Proceeding to Module 2 in 5 seconds...
+            </p>
+          </>
         )}
         
         <button style={styles.modalButton} onClick={handleScoreModalClose}>
