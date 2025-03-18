@@ -279,6 +279,46 @@ export default function PracticeTestsPage() {
     router.push(`/review-test?testId=${test.test_id}`);
   };
 
+  // Add this function to calculate SAT score (200-800 scale)
+  const calculateSATScore = (subject, module1Correct, module2Correct, totalModule1, totalModule2, usedHarderModule) => {
+    // Default base score
+    let baseScore = 200;
+    
+    // Calculate points based on subject and modules
+    if (subject === 'Math' || subject === 'Mathematics') {
+      // Math scoring
+      const module1Points = module1Correct * 16.8; // Each question in module 1 is worth ~16.8 points
+      const module2Points = module2Correct * 10.1; // Each question in module 2 is worth ~10.1 points
+      
+      // Calculate raw score
+      let rawScore = baseScore + module1Points + module2Points;
+      
+      // Cap the score based on module 2 difficulty
+      // (This is a simplification - actual SAT scoring is more complex)
+      if (!usedHarderModule) {
+        rawScore = Math.min(rawScore, 650); // Cap at 650 for easier module 2
+      }
+      
+      // Round to nearest 10
+      return Math.min(800, Math.max(200, Math.round(rawScore / 10) * 10));
+    } else {
+      // Reading & Writing scoring
+      const module1Points = module1Correct * 13.3; // Each question in module 1 is worth ~13.3 points
+      const module2Points = module2Correct * 8.9; // Each question in module 2 is worth ~8.9 points
+      
+      // Calculate raw score
+      let rawScore = baseScore + module1Points + module2Points;
+      
+      // Cap the score based on module 2 difficulty
+      if (!usedHarderModule) {
+        rawScore = Math.min(rawScore, 650); // Cap at 650 for easier module 2
+      }
+      
+      // Round to nearest 10
+      return Math.min(800, Math.max(200, Math.round(rawScore / 10) * 10));
+    }
+  };
+
   // Add this function to format dates
   const formatDate = (dateString) => {
     if (!dateString) return 'No date available';
@@ -663,6 +703,28 @@ export default function PracticeTestsPage() {
                   const module1Score = test.module1_score !== undefined ? Math.round(test.module1_score) : 'N/A';
                   const module2Score = test.module2_score !== undefined ? Math.round(test.module2_score) : 'N/A';
                   
+                  // Calculate SAT scaled score (200-800)
+                  const subjectName = test.subject_name || 
+                    (test.subject_id === 1 ? 'Math' : 
+                    test.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                  
+                  // Calculate correct answers for each module (based on percentages)
+                  const defaultModuleQuestions = subjectName === 'Math' ? 22 : 27;
+                  const module1Total = defaultModuleQuestions;
+                  const module2Total = defaultModuleQuestions;
+                  
+                  const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
+                  const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
+                  
+                  const satScore = calculateSATScore(
+                    subjectName, 
+                    module1Correct, 
+                    module2Correct, 
+                    module1Total, 
+                    module2Total, 
+                    test.used_harder_module
+                  );
+                  
                   return (
                     <div 
                       key={test.id} 
@@ -697,10 +759,7 @@ export default function PracticeTestsPage() {
                             fontSize: '12px',
                             fontWeight: '500'
                           }}>
-                            {test.subject_name || 
-                              (test.subject_id === 1 ? 'Math' : 
-                              test.subject_id === 2 ? 'Reading & Writing' : 
-                              'Subject not available')}
+                            {subjectName}
                           </span>
                           {test.module2_score !== undefined && (
                             <span style={{
@@ -717,10 +776,15 @@ export default function PracticeTestsPage() {
                         </div>
                       </div>
                       <div style={styles.testHistoryDetails}>
-                        <span style={{...styles.testHistoryScore, fontSize: '20px', fontWeight: '600'}}>
-                          {totalScore !== 'N/A' ? `${totalScore}%` : 'N/A'}
-                        </span>
-                        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginTop: '4px', fontSize: '12px', color: '#6b7280'}}>
+                        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}}>
+                          <span style={{...styles.testHistoryScore, fontSize: '20px', fontWeight: '600', color: '#0f172a'}}>
+                            {satScore} / 800
+                          </span>
+                          <span style={{fontSize: '12px', color: '#64748b', marginTop: '2px'}}>
+                            {totalScore !== 'N/A' ? `${totalScore}% accuracy` : 'N/A'}
+                          </span>
+                        </div>
+                        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginTop: '8px', fontSize: '12px', color: '#6b7280'}}>
                           {module1Score !== 'N/A' && (
                             <span>Module 1: {module1Score}%</span>
                           )}
