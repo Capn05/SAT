@@ -43,10 +43,16 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Failed to fetch module data' }, { status: 500 });
     }
     
-    // Calculate the score
-    const totalQuestions = moduleData.practice_tests.length;  // Total available questions in the module
-    const attemptedQuestions = answers.length;  // Questions the user actually answered
-    let correctAnswers = 0;  // Start with 0 and increment for each correct answer
+    // Determine subject and use proper question counts
+    const isSubjectMath = moduleData.practice_tests.subject_id === 1;
+    
+    // Hard-code question counts based on subject and module
+    const singleModuleQuestions = isSubjectMath ? 22 : 27; // Math has 22, Reading has 27 per module
+    
+    // Set total questions for this module
+    const totalQuestions = singleModuleQuestions;
+    const attemptedQuestions = answers.length;
+    let correctAnswers = 0;
     
     // Record each answer in user_answers table
     for (const answer of answers) {
@@ -86,7 +92,6 @@ export async function POST(request) {
     // If this was Module 1, determine which Module 2 to use next
     if (moduleData.module_number === 1) {
       // Different thresholds based on subject
-      const isSubjectMath = moduleData.practice_tests.subject_id === 1;
       const correctThreshold = isSubjectMath ? 15 : 18; // Math: 15/22, Reading & Writing: 18/27
       
       // Decide whether to use the harder Module 2
@@ -104,6 +109,19 @@ export async function POST(request) {
       if (module2Error) {
         console.error('Error fetching Module 2:', module2Error);
         return NextResponse.json({ error: 'Failed to fetch next module' }, { status: 500 });
+      }
+      
+      // Delete the paused test for this module if it exists
+      const { error: deletePausedError } = await supabase
+        .from('paused_tests')
+        .delete()
+        .eq('user_id', user_id)
+        .eq('practice_test_id', moduleData.practice_test_id)
+        .eq('test_module_id', moduleId);
+      
+      if (deletePausedError) {
+        console.error('Error deleting paused test:', deletePausedError);
+        // Continue anyway even if there's an error with deleting
       }
       
       // Return the score and next module ID
@@ -136,13 +154,29 @@ export async function POST(request) {
         return NextResponse.json({ error: 'Failed to fetch previous module data' }, { status: 500 });
       }
       
-      // Calculate the overall score
-      const allAnswers = module1Answers || [];
-      const totalModuleAnswers = allAnswers.length;
-      const correctModuleAnswers = allAnswers.filter(a => a.is_correct).length;
-      const overallPercentage = totalModuleAnswers > 0 
-        ? (correctModuleAnswers / totalModuleAnswers) * 100 
-        : 0;
+      // Get the total questions for the entire test (both modules)
+      const totalTestQuestions = singleModuleQuestions * 2; // Double for both modules
+      
+      // Calculate Module 1 score
+      const module1Correct = module1Answers.filter(a => a.is_correct).length;
+      
+      // Calculate the combined score (Module 1 + Module 2)
+      const totalCorrect = module1Correct + correctAnswers;
+      
+      // Calculate overall percentage based on total questions in both modules
+      const overallPercentage = (totalCorrect / totalTestQuestions) * 100;
+        
+      // Delete all paused tests for this test (both modules)
+      const { error: deletePausedError } = await supabase
+        .from('paused_tests')
+        .delete()
+        .eq('user_id', user_id)
+        .eq('practice_test_id', moduleData.practice_test_id);
+      
+      if (deletePausedError) {
+        console.error('Error deleting paused tests:', deletePausedError);
+        // Continue anyway even if there's an error with deleting
+      }
         
       // Record test analytics
       const { error: analyticsError } = await supabase
@@ -151,8 +185,8 @@ export async function POST(request) {
           user_id,
           practice_test_id: moduleData.practice_test_id,
           taken_at: new Date().toISOString(),
-          module1_score: (correctModuleAnswers / totalModuleAnswers) * 100,
-          module2_score: score.percentage,
+          module1_score: (module1Correct / singleModuleQuestions) * 100,
+          module2_score: (correctAnswers / singleModuleQuestions) * 100,
           used_harder_module: moduleData.is_harder,
           total_score: overallPercentage
         });
@@ -173,6 +207,8 @@ export async function POST(request) {
           percentage: score.percentage
         },
         overallScore: {
+          correct: totalCorrect,
+          total: totalTestQuestions,
           percentage: overallPercentage
         }
       });

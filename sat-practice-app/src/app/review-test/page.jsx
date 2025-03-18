@@ -7,10 +7,10 @@ import TopBar from '../components/TopBar'
 import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
+import MathRenderer from '../components/MathRenderer'
 
 export default function ReviewTestPage() {
   const [questions, setQuestions] = useState([])
-  const [userAnswers, setUserAnswers] = useState([])
   const [selectedQuestion, setSelectedQuestion] = useState(null)
   const [metrics, setMetrics] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -19,7 +19,7 @@ export default function ReviewTestPage() {
   const router = useRouter()
   const testId = searchParams.get('testId')
   const [currentPage, setCurrentPage] = useState(1)
-  const questionsPerPage = 10
+  const questionsPerPage = 24
 
   // Create the Supabase client
   const supabase = createClientComponentClient()
@@ -27,7 +27,6 @@ export default function ReviewTestPage() {
   // Calculate pagination indexes
   const indexOfLastQuestion = currentPage * questionsPerPage
   const indexOfFirstQuestion = indexOfLastQuestion - questionsPerPage
-  const currentQuestions = questions.slice(indexOfFirstQuestion, indexOfLastQuestion)
   const totalPages = Math.ceil(questions.length / questionsPerPage)
 
   // Pagination controls
@@ -69,38 +68,54 @@ export default function ReviewTestPage() {
         
         const questionsData = await questionsResponse.json()
         
-        // Fetch user answers
-        const { data: userAnswersData, error: answersError } = await supabase
-          .from('official_user_answers')
-          .select('*')
-          .eq('test_id', testId)
-          .eq('user_id', session.user.id)
-
-        if (answersError) throw answersError
-
-        // Match questions with user answers
-        const matchedQuestions = questionsData.map(question => {
-          const userAnswer = userAnswersData.find(answer => answer.question_id === question.id)
-          return {
-            ...question,
-            userAnswer: userAnswer || null
+        // Sort questions by module number and question ID to ensure order
+        questionsData.sort((a, b) => {
+          if (a.moduleNumber !== b.moduleNumber) {
+            return a.moduleNumber - b.moduleNumber;
           }
-        })
-
+          return a.id - b.id;
+        });
+        
+        // Recalculate question numbers to be sequential: 1-22 for module 1, 23-44 for module 2
+        const moduleQuestionsCount = {}; // Track question count per module
+        
+        questionsData.forEach((question, index) => {
+          // Initialize counter for this module if not exists
+          if (!moduleQuestionsCount[question.moduleNumber]) {
+            moduleQuestionsCount[question.moduleNumber] = 0;
+          }
+          
+          // Calculate proper display number based on module and previous questions
+          moduleQuestionsCount[question.moduleNumber]++;
+          
+          // Store display number in the question object
+          if (question.moduleNumber === 1) {
+            question.displayNumber = moduleQuestionsCount[question.moduleNumber];
+          } else {
+            // For module 2, start from the total count of module 1 questions + 1
+            const module1Count = moduleQuestionsCount[1] || 0;
+            question.displayNumber = module1Count + moduleQuestionsCount[question.moduleNumber];
+          }
+        });
+        
         // Calculate metrics
-        const totalQuestions = matchedQuestions.length
-        const correctAnswers = userAnswersData.filter(a => a.is_correct).length
+        const totalQuestions = questionsData.length
+        const correctAnswers = questionsData.filter(q => q.userAnswer?.isCorrect).length
         const incorrectAnswers = totalQuestions - correctAnswers
         const accuracy = totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0
 
-        // Group questions by topic/skill
-        const topicPerformance = matchedQuestions.reduce((acc, question) => {
-          const topic = question.topic || 'Unknown'
+        // Group questions by domain/skill area
+        const topicPerformance = questionsData.reduce((acc, question) => {
+          // Use the domain name from the API response
+          const topic = question.domainName || 'Unknown'
+          
           if (!acc[topic]) {
             acc[topic] = { total: 0, correct: 0 }
           }
+          
           acc[topic].total++
-          if (question.userAnswer?.is_correct) acc[topic].correct++
+          if (question.userAnswer?.isCorrect) acc[topic].correct++
+          
           return acc
         }, {})
 
@@ -108,15 +123,18 @@ export default function ReviewTestPage() {
           accuracy,
           correctAnswers,
           incorrectAnswers,
+          totalQuestions,
           topicPerformance
         })
 
-        setQuestions(matchedQuestions)
-        setUserAnswers(userAnswersData)
+        setQuestions(questionsData)
+        setCurrentPage(1)
+        setSelectedQuestion(0)
+        setLoading(false)
 
       } catch (error) {
         console.error('Error fetching test data:', error)
-        setError('Failed to load test data')
+        setError('Failed to load test data: ' + (error.message || 'Unknown error'))
       } finally {
         setLoading(false)
       }
@@ -169,8 +187,8 @@ export default function ReviewTestPage() {
             <div className="metric-card">
               <h3>Questions</h3>
               <div className="metric-details">
-                <p>Correct: {metrics?.correctAnswers}</p>
-                <p>Incorrect: {metrics?.incorrectAnswers}</p>
+                <p>Correct: <span className="correct-count">{metrics?.correctAnswers}</span></p>
+                <p>Incorrect: <span className="incorrect-count">{metrics?.incorrectAnswers}</span></p>
               </div>
             </div>
           </div>
@@ -180,18 +198,22 @@ export default function ReviewTestPage() {
           <div className="questions-section">
             <h2>Questions</h2>
             <div className="questions-grid">
-              {currentQuestions.map((question, index) => (
-                <button
-                  key={question.id}
-                  className={`question-card ${question.userAnswer?.is_correct ? 'correct' : 'incorrect'}`}
-                  onClick={() => setSelectedQuestion(indexOfFirstQuestion + index)}
-                >
-                  <span className="question-number">Q {indexOfFirstQuestion + index + 1}</span>
-                  <span className="status-indicator">
-                    {question.userAnswer?.is_correct ? '✓' : '✗'}
-                  </span>
-                </button>
-              ))}
+              {questions.slice(indexOfFirstQuestion, indexOfLastQuestion).map((question, index) => {
+                const questionNumber = question.displayNumber;
+                const hasUserAnswer = !!question.userAnswer;
+                const isCorrect = question.userAnswer?.isCorrect;
+                
+                return (
+                  <button
+                    key={question.id}
+                    className={`question-button ${selectedQuestion === indexOfFirstQuestion + index ? 'selected' : ''} 
+                      ${isCorrect ? 'correct' : hasUserAnswer ? 'incorrect' : ''}`}
+                    onClick={() => setSelectedQuestion(indexOfFirstQuestion + index)}
+                  >
+                    {questionNumber}
+                  </button>
+                );
+              })}
             </div>
             <div className="pagination">
               <button 
@@ -219,26 +241,77 @@ export default function ReviewTestPage() {
           {selectedQuestion !== null ? (
             <div className="question-box">
               <div className="question-header">
-                <div className="question-number">Question {selectedQuestion + 1}</div>
+                <div className="question-number">{questions[selectedQuestion].displayNumber}</div>
+                <div className="question-topic">
+                  {questions[selectedQuestion].domainName} - {questions[selectedQuestion].subcategoryName}
+                  {questions[selectedQuestion].moduleNumber === 2 && (
+                    <span className="module-tag">
+                      {questions[selectedQuestion].isHarderModule ? ' - Higher Difficulty' : ' - Lower Difficulty'}
+                    </span>
+                  )}
+                </div>
               </div>
               {(() => {
-                const { passage, question } = parseQuestionText(questions[selectedQuestion].question_text);
-                return (
-                  <>
-                    <div className="passage">{passage}</div>
-                    <p className="question-text">{question}</p>
-                  </>
-                )
+                const question = questions[selectedQuestion];
+                let content = '';
+                
+                try {
+                  const parsedContent = parseQuestionText(question.text);
+                  const passage = parsedContent.passage;
+                  const questionText = parsedContent.question || question.text;
+                  
+                  return (
+                    <>
+                      {passage && passage.trim() !== '' && (
+                        <div className="passage">
+                          <MathRenderer>{passage}</MathRenderer>
+                        </div>
+                      )}
+                      <div className="question-text">
+                        <MathRenderer>{questionText}</MathRenderer>
+                      </div>
+                      {question.imageUrl && (
+                        <div className="question-image">
+                          <img src={question.imageUrl} alt="Question diagram" />
+                        </div>
+                      )}
+                    </>
+                  );
+                } catch (err) {
+                  console.error("Error rendering question:", err);
+                  // Fallback display
+                  return (
+                    <div className="question-text">
+                      {question.text}
+                    </div>
+                  );
+                }
               })()}
               <div className="choices">
-                {questions[selectedQuestion].options.map((option) => (
-                  <div
-                    key={option.id}
-                    className={`choice-button ${option.isCorrect ? 'correct' : ''} ${questions[selectedQuestion].userAnswer?.option_id === option.id ? 'selected' : ''}`}
-                  >
-                    <span className="choice-letter">{option.value}.</span> {option.text}
-                  </div>
-                ))}
+                {questions[selectedQuestion].options.map((option) => {
+                  const isSelected = questions[selectedQuestion].userAnswer?.selectedOptionId === option.id;
+                  const isCorrectOption = option.isCorrect;
+                  
+                  let choiceClass = 'choice-button';
+                  if (isCorrectOption) {
+                    choiceClass += ' correct-option';
+                  } else if (isSelected) {
+                    choiceClass += ' incorrect-option';
+                  }
+                  if (isSelected) {
+                    choiceClass += ' selected-option';
+                  }
+                  
+                  return (
+                    <div
+                      key={option.id}
+                      className={choiceClass}
+                    >
+                      <span className="choice-letter">{option.value}</span>
+                      <span>{option.text}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ) : (
@@ -254,10 +327,10 @@ export default function ReviewTestPage() {
       </div>
       
       <ChatSidebar 
-        questionText={selectedQuestion !== null ? questions[selectedQuestion].question_text : ''}
-        selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.option_id : ''}
+        questionText={selectedQuestion !== null ? questions[selectedQuestion].text : ''}
+        selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.selectedOptionId : ''}
         options={selectedQuestion !== null ? questions[selectedQuestion].options : []}
-        imageURL={selectedQuestion !== null ? questions[selectedQuestion].image_url : ''}
+        imageURL={selectedQuestion !== null ? questions[selectedQuestion].imageUrl : ''}
       />
     </div>
   )

@@ -524,8 +524,11 @@ export default function PracticeTestPage() {
           {testComplete && overallScore && (
             <>
               <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+              <p style={styles.scoreValue}>
+                {overallScore.correct} / {overallScore.total}
+              </p>
               <p style={styles.scorePercent}>
-                {Math.round(overallScore.percentage)}%
+                {Math.round((overallScore.correct / overallScore.total) * 100)}%
               </p>
             </>
           )}

@@ -138,7 +138,27 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Error retrieving paused tests' }, { status: 500 });
     }
     
-    return NextResponse.json({ pausedTests });
+    // Get list of completed tests for this user
+    const { data: completedTests, error: completedError } = await supabase
+      .from('user_test_analytics')
+      .select('practice_test_id')
+      .eq('user_id', userId);
+      
+    if (completedError) {
+      console.error('Error fetching completed tests:', completedError);
+      // Continue with all paused tests if we can't filter
+      return NextResponse.json({ pausedTests });
+    }
+    
+    // Create a set of completed test IDs for fast lookup
+    const completedTestIds = new Set(completedTests.map(test => test.practice_test_id));
+    
+    // Filter out any paused tests that have been completed
+    const filteredPausedTests = pausedTests.filter(test => 
+      !completedTestIds.has(test.practice_test_id)
+    );
+    
+    return NextResponse.json({ pausedTests: filteredPausedTests });
     
   } catch (error) {
     console.error('Unexpected error in paused-test POST:', error);
