@@ -164,9 +164,36 @@ function ReviewTestContent() {
 
   if (loading) {
     return (
-      <div className="review-container">
-        <TopBar title="Test Review" />
-        <div className="loading-state">Loading test data...</div>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: '#f8f9fa'
+      }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1rem'
+        }}>
+          <div style={{
+            width: '50px',
+            height: '50px',
+            border: '5px solid #e2e8f0',
+            borderTopColor: '#4f46e5',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite'
+          }}></div>
+          <div style={{
+            fontSize: '1.2rem',
+            color: '#6b7280',
+            fontFamily: '"Myriad Pro", Arial, sans-serif'
+          }}>
+            Loading test data...
+          </div>
+        </div>
       </div>
     )
   }
@@ -175,13 +202,15 @@ function ReviewTestContent() {
     return (
       <div className="review-container">
         <TopBar title="Test Review" />
-        <div className="error-state">{error}</div>
+        <div className="review-content">
+          <div className="error-state">{error}</div>
+        </div>
       </div>
     )
   }
 
   return (
-    <div className="review-container" style={{ marginRight: '41%' }}>
+    <div className="review-container">
       <TopBar title="Test Review" />
       
       <div className="review-content">
@@ -341,6 +370,14 @@ function ReviewTestContent() {
         selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.selectedOptionId : ''}
         options={selectedQuestion !== null ? questions[selectedQuestion].options : []}
         imageURL={selectedQuestion !== null ? questions[selectedQuestion].imageUrl : ''}
+        style={{
+          position: 'fixed',
+          top: 0,
+          right: 0,
+          width: '41%',
+          height: '100vh',
+          zIndex: 50
+        }}
       />
     </div>
   )

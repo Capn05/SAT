@@ -508,11 +508,22 @@ function PracticeTestContent() {
   
   if (isLoading) {
     return (
-      <div style={styles.loadingContainer}>
-        <TopBar title="Practice Test" />
+      <div style={{
+        width: '100%',
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f9fafb',
+      }}>
         <div style={styles.loadingContent}>
           <div style={styles.loadingSpinner}></div>
-          <p>Loading test questions...</p>
+          <p style={{ 
+            color: '#6b7280', 
+            fontSize: '16px',
+            fontFamily: '"Myriad Pro", Arial, sans-serif',
+            marginTop: '1rem'
+          }}>Loading test questions...</p>
         </div>
       </div>
     )
@@ -521,7 +532,6 @@ function PracticeTestContent() {
   if (error) {
     return (
       <div style={styles.errorContainer}>
-        <TopBar title="Practice Test" />
         <div style={styles.errorContent}>
           <h2>Error</h2>
           <p>{error}</p>
@@ -565,36 +575,38 @@ function PracticeTestContent() {
   const renderScoreModal = () => (
     <div style={styles.modalOverlay}>
       <div style={styles.modal}>
-        <h2 style={styles.modalTitle}>
-          {testComplete ? "Test Complete!" : "Module Complete!"}
-        </h2>
-        
-        <div style={styles.scoreContainer}>
-          <h3 style={styles.scoreLabel}>Your Score:</h3>
-          <p style={styles.scoreValue}>
-            {currentScore.correct} / {currentScore.total}
-          </p>
-          <p style={styles.scorePercent}>
-            {Math.round((currentScore.correct / currentScore.total) * 100)}%
-          </p>
-          
-          {testComplete && overallScore && (
-            <>
-              <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+        {testComplete ? (
+          <>
+            <h2 style={styles.modalTitle}>Test Complete!</h2>
+            <div style={styles.scoreContainer}>
+              <h3 style={styles.scoreLabel}>Your Score:</h3>
               <p style={styles.scoreValue}>
-                {overallScore.correct} / {overallScore.total}
+                {currentScore.correct} / {currentScore.total}
               </p>
               <p style={styles.scorePercent}>
-                {Math.round((overallScore.correct / overallScore.total) * 100)}%
+                {Math.round((currentScore.correct / currentScore.total) * 100)}%
               </p>
-            </>
-          )}
-        </div>
-        
-        {!testComplete && (
-          <p style={styles.modalMessage}>
-            Proceeding to {moduleInfo?.moduleNumber === 1 ? "Module 2" : "next module"} in 5 seconds...
-          </p>
+              
+              {overallScore && (
+                <>
+                  <h3 style={styles.scoreLabel}>Overall Test Score:</h3>
+                  <p style={styles.scoreValue}>
+                    {overallScore.correct} / {overallScore.total}
+                  </p>
+                  <p style={styles.scorePercent}>
+                    {Math.round((overallScore.correct / overallScore.total) * 100)}%
+                  </p>
+                </>
+              )}
+            </div>
+          </>
+        ) : (
+          <>
+            <h2 style={styles.modalTitle}>Module Complete</h2>
+            <p style={styles.modalMessage}>
+              Proceeding to Module 2 in 5 seconds...
+            </p>
+          </>
         )}
         
         <button style={styles.modalButton} onClick={handleScoreModalClose}>
@@ -646,11 +658,7 @@ function PracticeTestContent() {
           <div style={styles.testHeader}>
             <div style={styles.testInfo}>
               <h2 style={styles.testName}>
-                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
-                  ? 'Section 1, Module 1: Reading and Writing' 
-                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
-                    ? 'Section 2, Module 1: Math'
-                    : 'Section 1, Module 2: Reading and Writing'}
+                {practiceTestInfo?.name} Module {moduleInfo?.moduleNumber}
               </h2>
             </div>
             
@@ -726,16 +734,6 @@ function PracticeTestContent() {
                 </div>
               )}
               
-              {currentQuestionData.image_url && (
-                <div style={styles.imageContainer}>
-                  <img 
-                    src={currentQuestionData.image_url} 
-                    alt="Question visual" 
-                    style={styles.questionImage} 
-                  />
-                </div>
-              )}
-              
               {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
                 <div style={styles.mathQuestion}>
                   <div style={styles.questionHeader}>
@@ -802,7 +800,13 @@ function PracticeTestContent() {
                       lineHeight: '1.6',
                       fontFamily: '"Minion Pro", Times, serif',
                       color: '#1f2937',
-                      marginBottom: '1.5rem'
+                      marginBottom: '1.5rem',
+                      overflowWrap: 'break-word',
+                      wordWrap: 'break-word',
+                      wordBreak: 'break-word',
+                      hyphens: 'auto',
+                      whiteSpace: 'pre-wrap',
+                      maxWidth: '100%'
                     }}>
                       {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
                     </div>
@@ -824,7 +828,12 @@ function PracticeTestContent() {
                           fontFamily: '"Minion Pro", Times, serif',
                           color: '#1f2937',
                           fontSize: '1rem',
-                          lineHeight: '1.5'
+                          lineHeight: '1.5',
+                          overflowWrap: 'break-word',
+                          wordWrap: 'break-word',
+                          wordBreak: 'break-word',
+                          whiteSpace: 'pre-wrap',
+                          width: '100%'
                         }}>
                           {option.label ? processMathInText(option.label) : 'Loading...'}
                         </div>
@@ -869,11 +878,7 @@ function PracticeTestContent() {
           <div style={styles.questionNavContainer} onClick={(e) => e.stopPropagation()}>
             <div style={styles.questionNavHeader}>
               <h2 style={styles.questionNavTitle}>
-                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
-                  ? 'Section 1, Module 1: Reading and Writing Questions' 
-                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
-                    ? 'Section 2, Module 1: Math Questions'
-                    : 'Section 1, Module 2: Reading and Writing Questions'}
+                {practiceTestInfo?.name} Module {moduleInfo?.moduleNumber} Questions
               </h2>
               <button style={styles.closeButton} onClick={() => setShowQuestionNav(false)}>×</button>
             </div>
@@ -1017,8 +1022,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     padding: '1rem',
-    overflowY: 'auto',
+    overflowY: 'hidden',
     backgroundColor: '#f9fafb',
+    minHeight: 0,
   },
   questionContainer: {
     backgroundColor: 'white',
@@ -1028,7 +1034,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: 'auto',
-    overflow: 'visible',
+    overflow: 'hidden',
+    minHeight: 0,
   },
   markReviewTextOnly: {
     padding: '1rem 0 0 1rem',
@@ -1043,14 +1050,6 @@ const styles = {
     gap: '4px',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
-  imageContainer: {
-    maxWidth: '100%',
-    marginBottom: '1rem',
-  },
-  questionImage: {
-    maxWidth: '100%',
-    borderRadius: '4px',
-  },
   mathQuestion: {
     padding: '0 2rem 2rem 2rem',
     maxWidth: '1000px',
@@ -1062,17 +1061,26 @@ const styles = {
     flexDirection: 'row',
     flex: 1,
     backgroundColor: 'white',
-    height: '100%',
-    gap: '2rem',
+    height: 'auto',
+    minHeight: 'calc(100vh - 180px)',
+    maxHeight: 'calc(100vh - 180px)',
+    gap: '0',
     padding: '1rem',
+    overflow: 'hidden',
   },
   rwQuestionContainer: {
-    flex: 1,
+    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: 'white',
     borderRight: '1px solid #e5e7eb',
     paddingRight: '2rem',
+    overflowY: 'auto',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'auto',
+    maxHeight: '100%',
   },
   rwQuestion: {
     flex: 1,
@@ -1100,11 +1108,13 @@ const styles = {
     backgroundColor: 'white',
   },
   rwOptionsContainer: {
-    flex: 1,
+    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
-    padding: '3rem 2rem 1rem 0',
+    padding: '3rem 2rem 1rem 2rem',
+    overflowY: 'auto',
+    maxHeight: '100%',
   },
   rwOptionCard: {
     display: 'flex',
@@ -1115,6 +1125,9 @@ const styles = {
     borderRadius: '0.25rem',
     backgroundColor: 'white',
     border: '1px solid #e5e7eb',
+    alignItems: 'flex-start',
+    wordBreak: 'break-word',
+    width: '100%',
   },
   rwSelectedOption: {
     backgroundColor: '#eef2ff',
@@ -1159,6 +1172,10 @@ const styles = {
     flex: 1,
     fontSize: '15px',
     color: '#1f2937',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    minWidth: 0,
   },
   navigationFooter: {
     display: 'flex',

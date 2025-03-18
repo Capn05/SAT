@@ -1,16 +1,26 @@
 'use client'
 import Link from "next/link"
 import { GraduationCap } from 'lucide-react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const [signupSuccess, setSignupSuccess] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
   const supabase = createClientComponentClient();
+
+  useEffect(() => {
+    // Check if coming from successful signup
+    const fromSignup = searchParams.get('signup');
+    if (fromSignup === 'success') {
+      setSignupSuccess(true);
+    }
+  }, [searchParams]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -28,7 +38,11 @@ export default function Login() {
       });
 
       if (error) {
-        setError(error.message);
+        if (error.message.includes('email') && error.message.includes('confirm')) {
+          setError('Email not confirmed. Please check your inbox and confirm your email before logging in.');
+        } else {
+          setError(error.message);
+        }
         return;
       }
 
@@ -61,7 +75,7 @@ export default function Login() {
     logo: {
       width: '32px',
       height: '32px',
-      color: '#65a30d',
+      color: '#10b981',
     },
     title: {
       fontSize: '24px',
@@ -109,7 +123,7 @@ export default function Login() {
     button: {
       width: '100%',
       padding: '10px',
-      backgroundColor: '#65a30d',
+      backgroundColor: '#10b981',
       color: 'white',
       border: 'none',
       borderRadius: '4px',
@@ -117,6 +131,10 @@ export default function Login() {
       fontWeight: 500,
       cursor: 'pointer',
       marginTop: '8px',
+      transition: 'background-color 0.3s ease',
+    },
+    buttonHover: {
+      backgroundColor: '#0d9488',
     },
     links: {
       display: 'flex',
@@ -124,13 +142,31 @@ export default function Login() {
       marginTop: '16px',
     },
     link: {
-      color: '#65a30d',
+      color: '#10b981',
       textDecoration: 'none',
       fontSize: '14px',
+      transition: 'color 0.3s ease',
     },
     message: {
       marginTop: '16px',
       fontSize: '14px',
+    },
+    errorMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#fef2f2',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #dc2626',
+      color: '#b91c1c',
+    },
+    successMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#ecfdf5',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #10b981',
     },
   };
 
@@ -172,23 +208,47 @@ export default function Login() {
           <button 
             type="submit" 
             style={styles.button}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#10b981';
+            }}
           >
             Login
           </button>
         </form>
         
-        {error && <p style={{ color: 'red', ...styles.message }}>{error}</p>}
+        {signupSuccess && (
+          <div style={styles.successMessage}>
+            Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.
+          </div>
+        )}
+        
+        {error && <div style={styles.errorMessage}>{error}</div>}
         
         <div style={styles.links}>
           <Link 
             href="/signup" 
             style={styles.link}
+            onMouseOver={(e) => {
+              e.currentTarget.style.color = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.color = '#10b981';
+            }}
           >
             Register
           </Link>
           <Link 
             href="/forgot-password" 
             style={styles.link}
+            onMouseOver={(e) => {
+              e.currentTarget.style.color = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.color = '#10b981';
+            }}
           >
             Forgot Password?
           </Link>

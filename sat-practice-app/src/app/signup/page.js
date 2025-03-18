@@ -23,20 +23,34 @@ export default function SignUp() {
       return;
     }
 
-    const { user, error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
     });
 
     if (error) {
-      setError(error.message);
+      if (
+        error.message.includes('email already registered') ||
+        error.message.includes('already been registered') ||
+        error.message.includes('already exists')
+      ) {
+        setError('This email is already registered. Please log in or use a different email.');
+      } else {
+        setError(error.message);
+      }
       setSuccess(null);
     } else {
-      setSuccess('Sign up successful! Please check your email for confirmation.');
-      setEmail('');
-      setPassword('');
-      router.push('/questions');
-
+      if (data?.user?.identities?.length === 0) {
+        setError('This email is already registered. Please log in or use a different email.');
+      } else {
+        setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
+        setEmail('');
+        setPassword('');
+        
+        setTimeout(() => {
+          router.push('/login?signup=success');
+        }, 2000);
+      }
     }
   };
 
@@ -73,7 +87,7 @@ export default function SignUp() {
     logo: {
       width: '32px',
       height: '32px',
-      color: '#65a30d',
+      color: '#10b981',
     },
     title: {
       fontSize: '24px',
@@ -121,7 +135,7 @@ export default function SignUp() {
     button: {
       width: '100%',
       padding: '10px',
-      backgroundColor: '#65a30d',
+      backgroundColor: '#10b981',
       color: 'white',
       border: 'none',
       borderRadius: '4px',
@@ -129,6 +143,10 @@ export default function SignUp() {
       fontWeight: 500,
       cursor: 'pointer',
       marginTop: '8px',
+      transition: 'background-color 0.3s ease',
+    },
+    buttonHover: {
+      backgroundColor: '#0d9488',
     },
     links: {
       display: 'flex',
@@ -136,13 +154,31 @@ export default function SignUp() {
       marginTop: '16px',
     },
     link: {
-      color: '#65a30d',
+      color: '#10b981',
       textDecoration: 'none',
       fontSize: '14px',
+      transition: 'color 0.3s ease',
     },
     message: {
       marginTop: '16px',
       fontSize: '14px',
+    },
+    successMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#ecfdf5',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #10b981',
+    },
+    errorMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#fef2f2',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #dc2626',
+      color: '#b91c1c',
     },
   };
 
@@ -184,24 +220,42 @@ export default function SignUp() {
           <button 
             type="submit" 
             style={styles.button}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#10b981';
+            }}
           >
             Sign Up
           </button>
         </form>
         
-        {error && <p style={{ color: 'red', ...styles.message }}>{error}</p>}
-        {success && <p style={{ color: 'green', ...styles.message }}>{success}</p>}
+        {error && <div style={styles.errorMessage}>{error}</div>}
+        {success && <div style={styles.successMessage}>{success}</div>}
         
         <div style={styles.links}>
           <Link 
             href="/login" 
             style={styles.link}
+            onMouseOver={(e) => {
+              e.currentTarget.style.color = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.color = '#10b981';
+            }}
           >
             Login
           </Link>
           <Link 
             href="/forgot-password" 
             style={styles.link}
+            onMouseOver={(e) => {
+              e.currentTarget.style.color = '#0d9488';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.color = '#10b981';
+            }}
           >
             Forgot Password?
           </Link>
