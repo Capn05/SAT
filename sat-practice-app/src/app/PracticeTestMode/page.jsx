@@ -719,7 +719,7 @@ export default function PracticeTestPage() {
               
               {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
                 <div style={styles.mathQuestion}>
-                  <div style={{ padding: '1rem', fontSize: '1rem', lineHeight: '1.5' }}>
+                  <div style={{ padding: '1rem 4rem', fontSize: '1rem', lineHeight: '1.5', maxWidth: '1000px', margin: '0 auto' }}>
                     {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
                   </div>
                   
@@ -830,7 +830,14 @@ export default function PracticeTestPage() {
                   >
                     {index + 1}
                     {index === currentQuestion && (
-                      <div style={styles.currentQuestionIndicator}>•</div>
+                      <div style={styles.currentLocationIcon}>
+                        ●
+                      </div>
+                    )}
+                    {(status === 'flagged' || status === 'answered-flagged') && (
+                      <div style={styles.flaggedBookmark}>
+                        <Bookmark size={12} />
+                      </div>
                     )}
                   </div>
                 );
@@ -955,14 +962,15 @@ const styles = {
     borderBottom: '1px solid #e5e7eb',
   },
   questionNumberBox: {
-    width: '32px',
-    height: '32px',
+    width: '28px',
+    height: '28px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#000',
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: '14px',
     borderRadius: '4px',
     marginRight: '10px',
     cursor: 'pointer',
@@ -994,6 +1002,9 @@ const styles = {
   },
   mathQuestion: {
     padding: '1rem',
+    maxWidth: '1000px',
+    margin: '0 auto',
+    width: '100%',
   },
   rwQuestion: {
     padding: '1rem',
@@ -1003,12 +1014,15 @@ const styles = {
     flexDirection: 'column',
     gap: '0.75rem',
     marginTop: '1rem',
+    maxWidth: '700px',
+    margin: '1rem auto 0',
+    padding: '0 1rem',
   },
   optionCard: {
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    padding: '0.75rem',
+    padding: '0.75rem 1rem',
     borderRadius: '6px',
     border: '1px solid #e5e7eb',
     cursor: 'pointer',
@@ -1119,6 +1133,7 @@ const styles = {
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     display: 'flex',
     flexDirection: 'column',
+    overflow: 'hidden',
   },
   questionNavHeader: {
     display: 'flex',
@@ -1158,15 +1173,15 @@ const styles = {
   },
   questionGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(5, 1fr)',
-    gap: '0.5rem',
-    padding: '1rem',
+    gridTemplateColumns: 'repeat(10, 1fr)',
+    gap: '0.75rem',
+    padding: '1rem 1.5rem',
     maxHeight: '300px',
     overflowY: 'auto',
   },
   questionButton: {
-    width: '40px',
-    height: '40px',
+    width: '32px',
+    height: '32px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -1177,19 +1192,20 @@ const styles = {
     fontSize: '14px',
     fontWeight: '500',
     color: '#6b7280',
+    margin: '0 auto',
   },
   currentQuestion: {
     backgroundColor: '#f3f4f6',
     fontWeight: 'bold',
     position: 'relative',
   },
-  currentQuestionIndicator: {
+  currentLocationIcon: {
     position: 'absolute',
-    bottom: '-22px',
+    top: '-14px', 
     left: '50%',
     transform: 'translateX(-50%)',
-    fontSize: '32px',
-    color: '#6b7280',
+    fontSize: '14px',
+    color: '#4b5563',
   },
   answeredQuestion: {
     backgroundColor: '#3b82f6',
@@ -1198,7 +1214,14 @@ const styles = {
   },
   flaggedQuestion: {
     border: '1px solid #ef4444',
+    position: 'relative',
+  },
+  flaggedBookmark: {
+    position: 'absolute',
+    top: '-8px',
+    right: '-4px',
     color: '#ef4444',
+    fontSize: '12px',
   },
   answeredFlaggedQuestion: {
     backgroundColor: '#3b82f6',
