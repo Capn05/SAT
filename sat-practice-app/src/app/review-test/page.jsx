@@ -7,7 +7,7 @@ import TopBar from '../components/TopBar'
 import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
-import MathRenderer from '../components/MathRenderer'
+import MathRenderer, { processMathInText } from '../components/MathRenderer'
 
 export default function ReviewTestPage() {
   const [questions, setQuestions] = useState([])
@@ -148,10 +148,17 @@ export default function ReviewTestPage() {
   // Add the parseQuestionText function from TestMode
   const parseQuestionText = (text) => {
     if (!text) return { passage: '', question: '' };
-    const parts = text.split(/<br\s*\/?>/i);
-    const passage = parts[0];
-    const question = parts[1] ? parts[1] : '';
-    return { passage, question };
+    
+    // First check if there's a <br> tag
+    if (text.includes('<br>') || text.includes('<br/>') || text.includes('<br />')) {
+      const parts = text.split(/<br\s*\/?>/i);
+      if (parts.length > 1) {
+        return { passage: parts[0], question: parts.slice(1).join(' ') };
+      }
+    }
+    
+    // If no br tag or only one part, just return the whole text as question
+    return { passage: '', question: text };
   };
 
   if (loading) {
@@ -264,11 +271,11 @@ export default function ReviewTestPage() {
                     <>
                       {passage && passage.trim() !== '' && (
                         <div className="passage">
-                          <MathRenderer>{passage}</MathRenderer>
+                          {processMathInText(passage)}
                         </div>
                       )}
                       <div className="question-text">
-                        <MathRenderer>{questionText}</MathRenderer>
+                        {processMathInText(questionText)}
                       </div>
                       {question.imageUrl && (
                         <div className="question-image">
@@ -308,7 +315,9 @@ export default function ReviewTestPage() {
                       className={choiceClass}
                     >
                       <span className="choice-letter">{option.value}</span>
-                      <span>{option.text}</span>
+                      <div className="option-text">
+                        {processMathInText(option.text)}
+                      </div>
                     </div>
                   );
                 })}

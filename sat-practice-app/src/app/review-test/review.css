@@ -255,11 +255,16 @@
   line-height: 1.5;
 }
 
+.option-text {
+  flex: 1;
+  margin-left: 5px;
+}
+
 .choice-letter {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 25px;
+  min-width: 25px;
   height: 25px;
   border-radius: 100%;
   background-color: #e2e8f0;
