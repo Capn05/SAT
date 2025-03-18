@@ -507,11 +507,22 @@ export default function PracticeTestPage() {
   
   if (isLoading) {
     return (
-      <div style={styles.loadingContainer}>
-        <TopBar title="Practice Test" />
+      <div style={{
+        width: '100%',
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f9fafb',
+      }}>
         <div style={styles.loadingContent}>
           <div style={styles.loadingSpinner}></div>
-          <p>Loading test questions...</p>
+          <p style={{ 
+            color: '#6b7280', 
+            fontSize: '16px',
+            fontFamily: '"Myriad Pro", Arial, sans-serif',
+            marginTop: '1rem'
+          }}>Loading test questions...</p>
         </div>
       </div>
     )
@@ -520,7 +531,6 @@ export default function PracticeTestPage() {
   if (error) {
     return (
       <div style={styles.errorContainer}>
-        <TopBar title="Practice Test" />
         <div style={styles.errorContent}>
           <h2>Error</h2>
           <p>{error}</p>
