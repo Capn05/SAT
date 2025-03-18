@@ -709,19 +709,21 @@ export default function PracticeTestPage() {
         <>
           <div style={styles.mainContent}>
             <div style={styles.questionContainer}>
-              <div style={styles.markReviewTextOnly}>
-                <span 
-                  style={styles.markReviewText}
-                  onClick={(e) => {
-                    if (currentQuestionData && currentQuestionData.id) {
-                      toggleFlagged(currentQuestionData.id);
-                    }
-                  }}
-                >
-                  <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                  Mark for Review
-                </span>
-              </div>
+              {practiceTestInfo?.subjects?.subject_name !== 'Math' && (
+                <div style={styles.markReviewTextOnly}>
+                  <span 
+                    style={styles.markReviewText}
+                    onClick={(e) => {
+                      if (currentQuestionData && currentQuestionData.id) {
+                        toggleFlagged(currentQuestionData.id);
+                      }
+                    }}
+                  >
+                    <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
+                    Mark for Review
+                  </span>
+                </div>
+              )}
               
               {currentQuestionData.image_url && (
                 <div style={styles.imageContainer}>
@@ -735,7 +737,23 @@ export default function PracticeTestPage() {
               
               {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
                 <div style={styles.mathQuestion}>
-                  <div style={{ padding: '1rem 4rem', fontSize: '1rem', lineHeight: '1.5', maxWidth: '1000px', margin: '0 auto' }}>
+                  <div style={styles.questionHeader}>
+                    <div style={styles.questionNumberBox}>
+                      {currentQuestion + 1}
+                    </div>
+                    <div style={styles.markReviewBox}>
+                      <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
+                      <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
+                    </div>
+                  </div>
+                  <div style={{ 
+                    padding: '1rem 4rem', 
+                    fontSize: '1rem', 
+                    lineHeight: '1.5', 
+                    maxWidth: '1000px', 
+                    margin: '0 auto', 
+                    fontFamily: '"Minion Pro", Times, serif' 
+                  }}>
                     {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
                   </div>
                   
@@ -750,7 +768,7 @@ export default function PracticeTestPage() {
                         onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
                       >
                         <div style={styles.optionLetter}>{option.value}</div>
-                        <div style={styles.optionText}>
+                        <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
                           {option.label ? processMathInText(option.label) : 'Loading...'}
                         </div>
                       </div>
@@ -758,31 +776,61 @@ export default function PracticeTestPage() {
                   </div>
                 </div>
               ) : (
-                <>
-                  <div style={styles.rwQuestion}>
-                    <div style={{ padding: '1rem', fontSize: '1rem', lineHeight: '1.5' }}>
+                <div style={styles.rwSplitContainer}>
+                  <div style={styles.rwQuestionContainer}>
+                    <div style={styles.questionHeader}>
+                      <span style={styles.questionNumberBox}>Question {currentQuestion + 1}</span>
+                      <span 
+                        style={styles.markReviewBox}
+                        onClick={() => toggleFlagged(currentQuestionData.id)}
+                      >
+                        <Bookmark 
+                          size={16} 
+                          style={{ 
+                            width: '16px', 
+                            height: '16px',
+                            color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' 
+                          }} 
+                        />
+                        <span>Mark for Review</span>
+                      </span>
+                    </div>
+                    <div style={{ 
+                      padding: '1rem', 
+                      fontSize: '1rem', 
+                      lineHeight: '1.6',
+                      fontFamily: '"Minion Pro", Times, serif',
+                      color: '#1f2937',
+                      marginBottom: '1.5rem'
+                    }}>
                       {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
                     </div>
-                    
-                    <div style={styles.rwOptionsContainer}>
-                      {currentQuestionData.options.map(option => (
-                        <div
-                          key={option.id}
-                          style={{
-                            ...styles.rwOptionCard,
-                            ...(selectedOptionId === option.id ? styles.rwSelectedOption : {})
-                          }}
-                          onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
-                        >
-                          <div style={styles.rwOptionLetter}>{option.value}</div>
-                          <div style={styles.rwOptionText}>
-                            {option.label ? processMathInText(option.label) : 'Loading...'}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
                   </div>
-                </>
+                  
+                  <div style={styles.rwOptionsContainer}>
+                    {currentQuestionData.options.map(option => (
+                      <div
+                        key={option.id}
+                        style={{
+                          ...styles.rwOptionCard,
+                          ...(selectedOptionId === option.id ? styles.rwSelectedOption : {})
+                        }}
+                        onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
+                      >
+                        <div style={styles.rwOptionLetter}>{option.value}</div>
+                        <div style={{ 
+                          ...styles.rwOptionText, 
+                          fontFamily: '"Minion Pro", Times, serif',
+                          color: '#1f2937',
+                          fontSize: '1rem',
+                          lineHeight: '1.5'
+                        }}>
+                          {option.label ? processMathInText(option.label) : 'Loading...'}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
             </div>
           </div>
@@ -911,6 +959,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#f9fafb',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   testHeader: {
     display: 'flex',
@@ -929,6 +978,7 @@ const styles = {
     fontWeight: '600',
     color: '#111827',
     margin: 0,
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   timerContainer: {
     display: 'flex',
@@ -939,6 +989,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: '500',
     color: '#111827',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   pauseButton: {
     padding: '0.4rem 0.8rem',
@@ -949,6 +1000,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   mainContent: {
     flex: 1,
@@ -979,6 +1031,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '4px',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   imageContainer: {
     maxWidth: '100%',
@@ -994,8 +1047,27 @@ const styles = {
     margin: '0 auto',
     width: '100%',
   },
-  rwQuestion: {
+  rwSplitContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flex: 1,
+    backgroundColor: 'white',
+    height: '100%',
+    gap: '2rem',
     padding: '1rem',
+  },
+  rwQuestionContainer: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: 'white',
+    borderRight: '1px solid #e5e7eb',
+    paddingRight: '2rem',
+  },
+  rwQuestion: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
   },
   optionsContainer: {
     display: 'flex',
@@ -1018,22 +1090,25 @@ const styles = {
     backgroundColor: 'white',
   },
   rwOptionsContainer: {
+    flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.5rem',
-    marginTop: '1rem',
+    gap: '1rem',
+    padding: '3rem 2rem 1rem 0',
   },
   rwOptionCard: {
     display: 'flex',
     gap: '0.75rem',
-    padding: '0.75rem',
+    padding: '0.75rem 1rem',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     borderRadius: '0.25rem',
     backgroundColor: 'white',
+    border: '1px solid #e5e7eb',
   },
   rwSelectedOption: {
     backgroundColor: '#eef2ff',
+    border: '2px solid #4f46e5',
   },
   selectedOption: {
     border: '2px solid #4f46e5',
@@ -1050,6 +1125,7 @@ const styles = {
     color: '#4b5563',
     fontSize: '14px',
     fontWeight: '600',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   rwOptionLetter: {
     width: '24px',
@@ -1062,6 +1138,7 @@ const styles = {
     color: '#4b5563',
     fontSize: '14px',
     fontWeight: '500',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   optionText: {
     flex: 1,
@@ -1092,6 +1169,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   nextButton: {
     padding: '0.5rem 1.5rem',
@@ -1102,6 +1180,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   questionNavOverlay: {
     position: 'fixed',
@@ -1137,6 +1216,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: '600',
     margin: 0,
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   closeButton: {
     background: 'none',
@@ -1157,6 +1237,7 @@ const styles = {
     alignItems: 'center',
     gap: '6px',
     userSelect: 'none',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   legendDot: {
     color: '#4b5563',
@@ -1373,6 +1454,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: '600',
     color: 'white',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   bottomQuestionBox: {
     padding: '0.5rem 1.5rem',
@@ -1392,6 +1474,7 @@ const styles = {
     cursor: 'pointer',
     borderRadius: '4px',
     zIndex: 10,
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
   upArrow: {
     position: 'absolute',
@@ -1415,5 +1498,44 @@ const styles = {
       '0%': { transform: 'rotate(0deg)' },
       '100%': { transform: 'rotate(360deg)' },
     },
+  },
+  questionNumber: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '0.5rem 1rem',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '4px',
+    marginBottom: '1rem',
+    fontSize: '1rem',
+    fontWeight: '600',
+    color: '#1f2937',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+  },
+  questionHeader: {
+    width: '100%',
+    marginBottom: '1.5rem',
+  },
+  questionNumberBox: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    padding: '0.5rem 1rem',
+    fontSize: '1rem',
+    fontWeight: '500',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+  },
+  markReviewBox: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px',
+    backgroundColor: '#f3f4f6',
+    padding: '0.5rem 1rem',
+    cursor: 'pointer',
+    color: '#6b7280',
+    fontSize: '0.875rem',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+    marginLeft: '1px',
   },
 } 
