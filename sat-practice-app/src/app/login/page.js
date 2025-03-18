@@ -1,16 +1,26 @@
 'use client'
 import Link from "next/link"
 import { GraduationCap } from 'lucide-react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const [signupSuccess, setSignupSuccess] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
   const supabase = createClientComponentClient();
+
+  useEffect(() => {
+    // Check if coming from successful signup
+    const fromSignup = searchParams.get('signup');
+    if (fromSignup === 'success') {
+      setSignupSuccess(true);
+    }
+  }, [searchParams]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -150,6 +160,14 @@ export default function Login() {
       borderLeft: '4px solid #dc2626',
       color: '#b91c1c',
     },
+    successMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#ecfdf5',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #10b981',
+    },
   };
 
   return (
@@ -200,6 +218,12 @@ export default function Login() {
             Login
           </button>
         </form>
+        
+        {signupSuccess && (
+          <div style={styles.successMessage}>
+            Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.
+          </div>
+        )}
         
         {error && <div style={styles.errorMessage}>{error}</div>}
         

@@ -29,6 +29,7 @@ export default function Sidebar() {
   const pathname = usePathname()
   const router = useRouter()
   const [userEmail, setUserEmail] = useState<string | null>(null)
+  const [isLoadingUser, setIsLoadingUser] = useState(true)
   const [showUserMenu, setShowUserMenu] = useState(false)
   
   // Create Supabase client
@@ -41,13 +42,42 @@ export default function Sidebar() {
   // Get user email on mount
   useEffect(() => {
     const getUserInfo = async () => {
+      setIsLoadingUser(true)
       const { data: { session } } = await supabase.auth.getSession()
+      console.log("User session:", session)
       if (session?.user) {
+        console.log("User email:", session.user.email)
         setUserEmail(session.user.email)
+      } else {
+        // If no session, try to get user data
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user?.email) {
+          console.log("User email from getUser:", user.email)
+          setUserEmail(user.email)
+        }
       }
+      setIsLoadingUser(false)
     }
     
     getUserInfo()
+    
+    // Subscribe to auth changes to update email when user logs in/out
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        console.log("Auth state changed:", event)
+        setIsLoadingUser(true)
+        if (session?.user) {
+          setUserEmail(session.user.email)
+        } else {
+          setUserEmail(null)
+        }
+        setIsLoadingUser(false)
+      }
+    )
+    
+    return () => {
+      subscription.unsubscribe()
+    }
   }, [supabase])
 
   const handleLogout = async () => {
@@ -206,7 +236,10 @@ export default function Sidebar() {
             onClick={() => setShowUserMenu(!showUserMenu)}
             style={{ cursor: 'pointer' }}
           >
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} style={{ 
+              backgroundColor: userEmail ? '#ecfdf5' : '#f3f4f6',
+              color: userEmail ? '#10b981' : '#9ca3af'
+            }}>
               <User className={styles.icon} />
             </div>
             <span className={styles.label} style={{ 
@@ -216,10 +249,17 @@ export default function Sidebar() {
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
-              maxWidth: '170px'
+              maxWidth: '170px',
+              fontSize: '14px'
             }}>
-              {userEmail || 'User'}
+              {isLoadingUser ? 'Loading...' : userEmail || 'Not signed in'}
             </span>
+            {isExpanded && (
+              <ChevronRight
+                className={`${styles.chevron} ${showUserMenu ? styles.rotated : ""}`}
+                style={{ marginLeft: 'auto', opacity: 0.5 }}
+              />
+            )}
           </div>
           
           {isExpanded && showUserMenu && (
@@ -232,7 +272,20 @@ export default function Sidebar() {
               borderRadius: '8px',
               boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
               border: '1px solid #e5e7eb',
+              padding: '8px 0',
+              zIndex: 100
             }}>
+              {userEmail && (
+                <div style={{
+                  padding: '8px 16px',
+                  fontSize: '13px',
+                  color: '#6b7280',
+                  borderBottom: '1px solid #e5e7eb',
+                  wordBreak: 'break-all'
+                }}>
+                  {userEmail}
+                </div>
+              )}
               <div 
                 onClick={handleLogout}
                 style={{
@@ -242,7 +295,8 @@ export default function Sidebar() {
                   gap: '8px',
                   cursor: 'pointer',
                   color: '#dc2626',
-                  borderRadius: '8px',
+                  borderRadius: '4px',
+                  margin: '4px 8px'
                 }}
                 onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#fee2e2'}
                 onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}

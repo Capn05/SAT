@@ -23,18 +23,34 @@ export default function SignUp() {
       return;
     }
 
-    const { user, error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
     });
 
     if (error) {
-      setError(error.message);
+      if (
+        error.message.includes('email already registered') ||
+        error.message.includes('already been registered') ||
+        error.message.includes('already exists')
+      ) {
+        setError('This email is already registered. Please log in or use a different email.');
+      } else {
+        setError(error.message);
+      }
       setSuccess(null);
     } else {
-      setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
-      setEmail('');
-      setPassword('');
+      if (data?.user?.identities?.length === 0) {
+        setError('This email is already registered. Please log in or use a different email.');
+      } else {
+        setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
+        setEmail('');
+        setPassword('');
+        
+        setTimeout(() => {
+          router.push('/login?signup=success');
+        }, 2000);
+      }
     }
   };
 
@@ -155,6 +171,15 @@ export default function SignUp() {
       borderRadius: '4px',
       borderLeft: '4px solid #10b981',
     },
+    errorMessage: {
+      marginTop: '16px',
+      fontSize: '14px',
+      backgroundColor: '#fef2f2',
+      padding: '12px',
+      borderRadius: '4px',
+      borderLeft: '4px solid #dc2626',
+      color: '#b91c1c',
+    },
   };
 
   return (
@@ -206,7 +231,7 @@ export default function SignUp() {
           </button>
         </form>
         
-        {error && <p style={{ color: 'red', ...styles.message }}>{error}</p>}
+        {error && <div style={styles.errorMessage}>{error}</div>}
         {success && <div style={styles.successMessage}>{success}</div>}
         
         <div style={styles.links}>
