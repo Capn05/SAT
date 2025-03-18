@@ -74,26 +74,26 @@ const categoryIcons = {
 
 const masteryColors = {
   'Mastered': '#22c55e',
-  'On Track': '#65a30d',
-  'Needs Practice': '#dc2626',
-  'Not Started': '#6b7280',
-  'Needs More Attempts': '#f59e0b'
+  'Proficient': '#65a30d',
+  'Improving': '#f59e0b',
+  'Needs Work': '#dc2626',
+  'Not Started': '#6b7280'
 };
 
 function calculateMasteryLevel(accuracy, totalAttempts) {
   if (totalAttempts === 0) {
     return 'Not Started';
   }
-  if (totalAttempts < 2) {
-    return 'Needs More Attempts';
+  if (totalAttempts < 5) {
+    return 'Improving';
   }
-  if (accuracy >= 90) {
+  if (accuracy >= 85) {
     return 'Mastered';
   }
   if (accuracy >= 70) {
-    return 'On Track';
+    return 'Proficient';
   }
-  return 'Needs Practice';
+  return 'Needs Work';
 }
 
 async function fetchSkillPerformance() {
@@ -178,16 +178,8 @@ async function fetchSkillPerformance() {
       const correctAnswers = analytics?.correct_attempts || 0;
       const accuracyPercentage = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
 
-      let masteryLevel;
-      if (totalAttempts < 5) {
-        masteryLevel = 'Needs More Attempts';
-      } else if (accuracyPercentage >= 90) {
-        masteryLevel = 'Mastered';
-      } else if (accuracyPercentage >= 70) {
-        masteryLevel = 'On Track';
-      } else {
-        masteryLevel = 'Needs Practice';
-      }
+      // Apply our updated mastery level calculation
+      const masteryLevel = calculateMasteryLevel(accuracyPercentage, totalAttempts);
 
       return {
         subject: 'Math',
@@ -216,16 +208,8 @@ async function fetchSkillPerformance() {
       const averageAccuracy = Math.round(totalAccuracy / subcategories.length);
       const totalAttempts = subcategories.reduce((sum, sub) => sum + sub.total_attempts, 0);
       
-      let categoryMastery;
-      if (totalAttempts < 5) {
-        categoryMastery = 'Needs More Attempts';
-      } else if (averageAccuracy >= 90) {
-        categoryMastery = 'Mastered';
-      } else if (averageAccuracy >= 70) {
-        categoryMastery = 'On Track';
-      } else {
-        categoryMastery = 'Needs Practice';
-      }
+      // Apply our updated mastery level calculation to the main category
+      const categoryMastery = calculateMasteryLevel(averageAccuracy, totalAttempts);
 
       return {
         name: mainCategory,
@@ -234,9 +218,7 @@ async function fetchSkillPerformance() {
         accuracy: averageAccuracy,
         mastery: categoryMastery,
         total_attempts: totalAttempts,
-        needsPractice: categoryMastery === 'Needs Practice' || 
-                      categoryMastery === 'Needs More Attempts' || 
-                      categoryMastery === 'Not Started',
+        needsPractice: categoryMastery === 'Needs Work' || categoryMastery === 'Improving',
         subcategories: subcategories.map(sub => ({
           name: sub.subcategory,
           icon: categoryIcons[sub.subcategory],
@@ -246,9 +228,7 @@ async function fetchSkillPerformance() {
             'Never practiced',
           mastery: sub.mastery_level,
           total_attempts: sub.total_attempts,
-          needsPractice: sub.mastery_level === 'Needs Practice' || 
-                        sub.mastery_level === 'Needs More Attempts' || 
-                        sub.mastery_level === 'Not Started'
+          needsPractice: sub.mastery_level === 'Needs Work' || sub.mastery_level === 'Improving'
         }))
       };
     });
@@ -290,11 +270,11 @@ export default function TestCategories() {
           .sort((a, b) => {
             // Sort by mastery level priority
             const masteryPriority = {
-              'Needs Practice': 0,
-              'Needs More Attempts': 1,
-              'Not Started': 2,
-              'On Track': 3,
-              'Mastered': 4
+              'Needs Work': 0,
+              'Improving': 1,
+              'Proficient': 2,
+              'Mastered': 3,
+              'Not Started': 4
             };
             
             const aPriority = masteryPriority[a.mastery];
@@ -370,6 +350,20 @@ export default function TestCategories() {
                 const Icon = skill.icon || Calculator; // Use Calculator as fallback
                 const masteryColor = masteryColors[skill.mastery];
                 
+                // Add tooltip text based on mastery level
+                let tooltipText = '';
+                if (skill.mastery === 'Not Started') {
+                  tooltipText = 'You have not practiced this skill yet.';
+                } else if (skill.mastery === 'Needs Work') {
+                  tooltipText = 'You need to improve your accuracy in this skill.';
+                } else if (skill.mastery === 'Improving') {
+                  tooltipText = 'You\'re making good progress with this skill.';
+                } else if (skill.mastery === 'Proficient') {
+                  tooltipText = 'You\'re doing well with this skill.';
+                } else if (skill.mastery === 'Mastered') {
+                  tooltipText = 'Great job! You\'ve mastered this skill.';
+                }
+                
                 return (
                   <div 
                     key={skill.name} 
@@ -378,19 +372,37 @@ export default function TestCategories() {
                       borderLeft: `3px solid ${masteryColor}`
                     }}
                     onClick={() => handleSkillClick(category.name, skill.name)}
+                    title={tooltipText}
                   >
-                    <Icon style={{ ...styles.icon, color: masteryColor }} />
-                    <span style={styles.label}>{skill.name}</span>
-                    <div style={styles.stats}>
-                      <span style={styles.accuracy}>
-                        {skill.accuracy}% accuracy
-                      </span>
-                      <span style={{ ...styles.mastery, color: masteryColor }}>
-                        {skill.mastery}
-                      </span>
-                      <span style={styles.lastPracticed}>
-                        Last: {skill.lastPracticed}
-                      </span>
+                    <div style={styles.cardHeader}>
+                      <div style={styles.iconContainer}>
+                        <Icon style={{ color: masteryColor }} />
+                      </div>
+                      <span style={styles.skillName}>{skill.name}</span>
+                    </div>
+                    <div style={styles.skillStats}>
+                      <div style={styles.statRow}>
+                        <span style={styles.statLabel}>Accuracy:</span>
+                        <span style={styles.statValue}>{skill.accuracy}%</span>
+                      </div>
+                      <div style={styles.statRow}>
+                        <span style={styles.statLabel}>Last Practice:</span>
+                        <span style={styles.statValue}>{skill.lastPracticed}</span>
+                      </div>
+                      <div style={styles.statRow}>
+                        <span style={styles.statLabel}>Status:</span>
+                        <span style={{
+                          ...styles.statValue,
+                          color: masteryColor,
+                          fontWeight: 600
+                        }}>
+                          {skill.mastery}
+                        </span>
+                      </div>
+                    </div>
+                    <div style={styles.skillFooter}>
+                      <span style={styles.practiceText}>Practice Now</span>
+                      <ArrowRight size={16} />
                     </div>
                   </div>
                 );
@@ -477,41 +489,63 @@ const styles = {
     backgroundColor: "white",
     borderRadius: "8px",
     cursor: "pointer",
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+    minHeight: "180px",
+    position: "relative",
     '&:hover': {
       transform: 'translateY(-2px)',
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
     },
   },
-  icon: {
+  cardHeader: {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    marginBottom: "16px",
+    width: "100%",
+  },
+  iconContainer: {
     width: "24px",
     height: "24px",
-    marginBottom: "8px",
+    color: "#4b5563",
   },
-  label: {
+  skillName: {
     fontSize: "14px",
     color: "#111827",
     fontWeight: 500,
-    marginBottom: "8px",
   },
-  stats: {
+  skillStats: {
     display: "flex",
     flexDirection: "column",
-    gap: "4px",
+    gap: "8px",
     width: "100%",
   },
-  accuracy: {
+  statRow: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  statLabel: {
     fontSize: "12px",
     color: "#6b7280",
   },
-  mastery: {
+  statValue: {
     fontSize: "12px",
-    fontWeight: 500,
+    color: "#111827",
   },
-  lastPracticed: {
-    fontSize: "11px",
-    color: "#9ca3af",
+  skillFooter: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    gap: "8px",
+    marginTop: "auto",
+    paddingTop: "16px",
+    width: "100%",
+    color: "#10b981",
+  },
+  practiceText: {
+    fontSize: "14px",
+    fontWeight: 500,
   },
   seeMoreLink: {
     textDecoration: "none",
