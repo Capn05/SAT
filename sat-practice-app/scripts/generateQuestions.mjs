@@ -417,7 +417,7 @@ Think step by step about how to create these questions. First, understand the pa
 `;
 
     // Get the Gemini API key from environment variables
-    const apiKey = process.env.GEMINI_API_KEY_2;
+    const apiKey = "";
     log.info(`Using Gemini API key: ${apiKey.substring(0, 5)}...`);
     
     // Call Gemini API with retry logic

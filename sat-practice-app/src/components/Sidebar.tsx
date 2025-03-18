@@ -146,7 +146,7 @@ export default function Sidebar() {
                       return (
                         <Link
                           key={subItem.name}
-                          href={subItem.path || "#"}
+                          href={ "#"}
                           className={`${styles.navItem} ${styles.subItem} ${pathname === subItem.path ? styles.active : ""}`}
                         >
                           <div className={styles.iconWrapper}>
