@@ -568,41 +568,6 @@ export default function PracticeTestsPage() {
               <h2 style={styles.sectionTitle}>Test History</h2>
               <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
               <div style={styles.testHistoryList}>
-                {/* New Row for Starting a New Test with two options */}
-                <div style={{...styles.startNewTestContainer, borderRadius: '10px', boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)'}}>
-                  <h3 style={styles.startNewTestTitle}>Start a New Test</h3>
-                  <div style={styles.startNewTestOptions}>
-                    <button 
-                      style={{
-                        ...styles.startNewTestButton,
-                        opacity: isLoadingTests ? 0.7 : 1,
-                        cursor: isLoadingTests ? 'default' : 'pointer',
-                        backgroundColor: '#10b981',
-                        transition: 'background-color 0.2s ease, transform 0.1s ease',
-                        ':hover': { backgroundColor: '#0db380', transform: 'scale(1.02)' },
-                      }}
-                      onClick={() => handleTestClick(1)}
-                    >
-                      <Brain size={18} style={styles.startNewTestIcon} />
-                      {isLoadingTests ? 'Loading...' : 'Math Adaptive Test'}
-                    </button>
-                    <button 
-                      style={{
-                        ...styles.startNewTestButton,
-                        opacity: isLoadingTests ? 0.7 : 1,
-                        cursor: isLoadingTests ? 'default' : 'pointer',
-                        backgroundColor: '#10b981',
-                        transition: 'background-color 0.2s ease, transform 0.1s ease',
-                        ':hover': { backgroundColor: '#0db380', transform: 'scale(1.02)' },
-                      }}
-                      onClick={() => handleTestClick(2)}
-                    >
-                      <BookOpen size={18} style={styles.startNewTestIcon} />
-                      {isLoadingTests ? 'Loading...' : 'Reading & Writing Adaptive Test'}
-                    </button>
-                  </div>
-                </div>
-                
                 {/* Display paused tests in a grid */}
                 {activeTab === "Paused" && (
                   <div style={{...styles.testsGrid, marginTop: '16px'}}>
