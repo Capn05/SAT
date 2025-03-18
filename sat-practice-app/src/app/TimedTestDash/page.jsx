@@ -603,200 +603,262 @@ export default function PracticeTestsPage() {
                   </div>
                 </div>
                 
-                {activeTab === "Paused" && pausedTests.length > 0 ? (
-                  pausedTests.map((test) => {
-                    // Extract test details
-                    const testName = test.practice_tests?.name || `Test #${test.practice_test_id}`;
-                    const moduleNumber = test.test_modules?.module_number || '';
-                    const moduleType = test.test_modules?.is_harder ? 'Higher Difficulty' : 'Lower Difficulty';
-                    const subjectName = test.practice_tests?.subjects?.subject_name || 
-                      (test.practice_tests?.subject_id === 1 ? 'Math' : 
-                       test.practice_tests?.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
-                       
-                    return (
-                      <div 
-                        key={test.id} 
-                        style={{
-                          ...styles.testHistoryItem,
-                          cursor: 'pointer',
-                          transition: 'all 0.2s ease',
-                          position: 'relative',
-                          borderLeft: '4px solid #f59e0b',
-                          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
-                          borderRadius: '8px',
-                          margin: '8px 0',
-                        }}
-                        onClick={() => handleResumePausedTest(test)}
-                        role="button"
-                        tabIndex={0}
-                        onKeyDown={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
-                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
-                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
-                      >
-                        <div style={styles.testHistoryInfo}>
-                          <h3 style={{...styles.testHistoryName, fontSize: '18px', marginBottom: '5px'}}>{testName} - Module {moduleNumber}</h3>
-                          <p style={{...styles.testHistoryDate, color: '#6b7280', fontSize: '14px'}}>
-                            Paused on {formatDate(test.paused_at)} - {formatTime(test.time_remaining)} remaining
-                          </p>
-                          <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px'}}>
-                            <span style={{
-                              backgroundColor: '#e0f2fe', 
-                              color: '#0369a1', 
-                              padding: '2px 8px',
-                              borderRadius: '4px',
-                              fontSize: '12px',
-                              fontWeight: '500'
-                            }}>
-                              {subjectName}
-                            </span>
-                            {moduleNumber === 2 && (
+                {/* Display paused tests in a grid */}
+                {activeTab === "Paused" && (
+                  <div style={{...styles.testsGrid, marginTop: '16px'}}>
+                    {pausedTests.length > 0 ? pausedTests.map((test) => {
+                      // Extract test details
+                      const testName = test.practice_tests?.name || `Test #${test.practice_test_id}`;
+                      const moduleNumber = test.test_modules?.module_number || '';
+                      const moduleType = test.test_modules?.is_harder ? 'Higher Difficulty' : 'Lower Difficulty';
+                      const subjectName = test.practice_tests?.subjects?.subject_name || 
+                        (test.practice_tests?.subject_id === 1 ? 'Math' : 
+                         test.practice_tests?.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                         
+                      return (
+                        <div 
+                          key={test.id} 
+                          style={{
+                            ...styles.testCard,
+                            cursor: 'pointer',
+                            borderTop: '4px solid #f59e0b',
+                            marginBottom: '0',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                          }}
+                          onClick={() => handleResumePausedTest(test)}
+                          role="button"
+                          tabIndex={0}
+                          onKeyDown={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
+                          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
+                          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                        >
+                          <div>
+                            <h3 style={{fontSize: '18px', fontWeight: '600', marginBottom: '8px', color: '#0f172a'}}>{testName}</h3>
+                            <div style={{marginBottom: '12px'}}>
+                              <div style={{display: 'flex', alignItems: 'center', marginBottom: '4px'}}>
+                                <Clock size={14} style={{color: '#64748b', marginRight: '6px'}} />
+                                <span style={{fontSize: '14px', color: '#64748b'}}>{formatTime(test.time_remaining)} remaining</span>
+                              </div>
+                              <div style={{fontSize: '14px', color: '#64748b'}}>Paused on {formatDate(test.paused_at)}</div>
+                            </div>
+                            <div style={{display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '8px'}}>
                               <span style={{
-                                backgroundColor: moduleType === 'Higher Difficulty' ? '#dcfce7' : '#fee2e2',
-                                color: moduleType === 'Higher Difficulty' ? '#16a34a' : '#b91c1c',
-                                padding: '2px 8px',
+                                backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
+                                color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
+                                padding: '4px 8px',
                                 borderRadius: '4px',
                                 fontSize: '12px',
                                 fontWeight: '500'
                               }}>
-                                {moduleType}
+                                {subjectName}
                               </span>
-                            )}
+                              <span style={{
+                                backgroundColor: '#f1f5f9',
+                                color: '#64748b',
+                                padding: '4px 8px',
+                                borderRadius: '4px',
+                                fontSize: '12px',
+                                fontWeight: '500'
+                              }}>
+                                Module {moduleNumber}
+                              </span>
+                              {moduleNumber === 2 && (
+                                <span style={{
+                                  backgroundColor: moduleType === 'Higher Difficulty' ? '#dcfce7' : '#fee2e2',
+                                  color: moduleType === 'Higher Difficulty' ? '#16a34a' : '#b91c1c',
+                                  padding: '4px 8px',
+                                  borderRadius: '4px',
+                                  fontSize: '12px',
+                                  fontWeight: '500'
+                                }}>
+                                  {moduleType}
+                                </span>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                        <div style={styles.testHistoryDetails}>
-                          <span style={{
-                            backgroundColor: '#fdba74',
-                            color: '#9a3412',
-                            padding: '4px 10px',
-                            borderRadius: '4px',
-                            fontSize: '14px',
-                            fontWeight: '600',
+                          <button style={{
                             display: 'flex',
                             alignItems: 'center',
-                            gap: '6px'
+                            justifyContent: 'center',
+                            gap: '8px',
+                            padding: '10px 0',
+                            backgroundColor: '#f59e0b',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '6px',
+                            fontWeight: '600',
+                            cursor: 'pointer',
+                            marginTop: '16px',
+                            width: '100%'
                           }}>
-                            <Clock size={16} />
-                            Resume
-                          </span>
-                          <ChevronRight size={18} style={{...styles.testHistoryArrow, marginTop: '8px', color: '#6b7280'}} />
+                            <Clock size={18} />
+                            Resume Test
+                          </button>
                         </div>
+                      );
+                    }) : (
+                      <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
+                        <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
+                          <Clock size={32} color="#64748b" />
+                        </div>
+                        <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No paused tests found</p>
+                        <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test and pause it to see it here</p>
                       </div>
-                    );
-                  })
-                ) : activeTab === "Paused" ? (
-                  <div style={{...styles.emptyState, padding: '40px 0'}}>
-                    <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
-                      <Clock size={32} color="#64748b" />
-                    </div>
-                    <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No paused tests found</p>
-                    <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test and pause it to see it here</p>
+                    )}
                   </div>
-                ) : null}
+                )}
                 
-                {activeTab === "Complete" && currentTests.map((test) => {
-                  // Determine the test name with fallbacks
-                  const testName = test.test_name || `Test #${test.test_id}`;
-                  const moduleType = test.used_harder_module ? 'Harder Module' : 'Easier Module';
-                  
-                  // Calculate correct percentage for overall and module scores
-                  const totalScore = test.total_score !== undefined ? Math.round(test.total_score) : 'N/A';
-                  const module1Score = test.module1_score !== undefined ? Math.round(test.module1_score) : 'N/A';
-                  const module2Score = test.module2_score !== undefined ? Math.round(test.module2_score) : 'N/A';
-                  
-                  // Calculate SAT scaled score (200-800)
-                  const subjectName = test.subject_name || 
-                    (test.subject_id === 1 ? 'Math' : 
-                    test.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
-                  
-                  // Calculate correct answers for each module (based on percentages)
-                  const defaultModuleQuestions = subjectName === 'Math' ? 22 : 27;
-                  const module1Total = defaultModuleQuestions;
-                  const module2Total = defaultModuleQuestions;
-                  
-                  const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
-                  const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
-                  
-                  const satScore = calculateSATScore(
-                    subjectName, 
-                    module1Correct, 
-                    module2Correct, 
-                    module1Total, 
-                    module2Total, 
-                    test.used_harder_module
-                  );
-                  
-                  return (
-                    <div 
-                      key={test.id} 
-                      style={{
-                        ...styles.testHistoryItem,
-                        cursor: 'pointer',
-                        transition: 'all 0.2s ease',
-                        position: 'relative',
-                        borderLeft: activeTab === "Complete" ? '4px solid #10b981' : '4px solid transparent',
-                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
-                        borderRadius: '8px',
-                        margin: '8px 0',
-                      }}
-                      onClick={() => handleTestHistoryClick(test)}
-                      role="button"
-                      tabIndex={0}
-                      onKeyDown={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
-                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
-                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
-                    >
-                      <div style={styles.testHistoryInfo}>
-                        <h3 style={{...styles.testHistoryName, fontSize: '18px', marginBottom: '5px'}}>{testName}</h3>
-                        <p style={{...styles.testHistoryDate, color: '#6b7280', fontSize: '14px'}}>
-                          {formatDate(test.taken_at)}
-                        </p>
-                        <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px'}}>
-                          <span style={{
-                            backgroundColor: '#e0f2fe', 
-                            color: '#0369a1', 
-                            padding: '2px 8px',
-                            borderRadius: '4px',
-                            fontSize: '12px',
-                            fontWeight: '500'
+                {/* Display completed tests in a grid */}
+                {activeTab === "Complete" && (
+                  <div style={{...styles.testsGrid, marginTop: '16px'}}>
+                    {currentTests.length > 0 ? currentTests.map((test) => {
+                      // Determine the test name with fallbacks
+                      const testName = test.test_name || `Test #${test.test_id}`;
+                      const moduleType = test.used_harder_module ? 'Harder Module' : 'Easier Module';
+                      
+                      // Calculate correct percentage for overall and module scores
+                      const totalScore = test.total_score !== undefined ? Math.round(test.total_score) : 'N/A';
+                      const module1Score = test.module1_score !== undefined ? Math.round(test.module1_score) : 'N/A';
+                      const module2Score = test.module2_score !== undefined ? Math.round(test.module2_score) : 'N/A';
+                      
+                      // Calculate SAT scaled score (200-800)
+                      const subjectName = test.subject_name || 
+                        (test.subject_id === 1 ? 'Math' : 
+                        test.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                      
+                      // Calculate correct answers for each module (based on percentages)
+                      const defaultModuleQuestions = subjectName === 'Math' ? 22 : 27;
+                      const module1Total = defaultModuleQuestions;
+                      const module2Total = defaultModuleQuestions;
+                      
+                      const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
+                      const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
+                      
+                      const satScore = calculateSATScore(
+                        subjectName, 
+                        module1Correct, 
+                        module2Correct, 
+                        module1Total, 
+                        module2Total, 
+                        test.used_harder_module
+                      );
+                      
+                      return (
+                        <div 
+                          key={test.id} 
+                          style={{
+                            ...styles.testCard,
+                            cursor: 'pointer',
+                            borderTop: '4px solid #10b981',
+                            marginBottom: '0',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                          }}
+                          onClick={() => handleTestHistoryClick(test)}
+                          role="button"
+                          tabIndex={0}
+                          onKeyDown={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
+                          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
+                          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                        >
+                          <div>
+                            <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '12px'}}>
+                              <h3 style={{fontSize: '18px', fontWeight: '600', color: '#0f172a', marginRight: '8px'}}>{testName}</h3>
+                              <div style={{
+                                backgroundColor: '#f1f5f9',
+                                padding: '6px 10px',
+                                borderRadius: '8px',
+                                fontSize: '20px',
+                                fontWeight: '700',
+                                color: '#0f172a',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                minWidth: '90px',
+                              }}>
+                                {satScore}/800
+                              </div>
+                            </div>
+                            <div style={{fontSize: '14px', color: '#64748b', marginBottom: '12px'}}>
+                              {formatDate(test.taken_at)}
+                            </div>
+                            <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px'}}>
+                              <span style={{
+                                backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
+                                color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
+                                padding: '4px 8px',
+                                borderRadius: '4px',
+                                fontSize: '12px',
+                                fontWeight: '500'
+                              }}>
+                                {subjectName}
+                              </span>
+                              {test.module2_score !== undefined && (
+                                <span style={{
+                                  backgroundColor: test.used_harder_module ? '#dcfce7' : '#fee2e2',
+                                  color: test.used_harder_module ? '#16a34a' : '#b91c1c',
+                                  padding: '4px 8px',
+                                  borderRadius: '4px',
+                                  fontSize: '12px',
+                                  fontWeight: '500'
+                                }}>
+                                  {moduleType}
+                                </span>
+                              )}
+                              <span style={{
+                                backgroundColor: '#f1f5f9',
+                                color: '#64748b',
+                                padding: '4px 8px',
+                                borderRadius: '4px',
+                                fontSize: '12px',
+                                fontWeight: '500'
+                              }}>
+                                {totalScore}% accuracy
+                              </span>
+                            </div>
+                            <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b', marginBottom: '4px'}}>
+                              <span>Module 1:</span>
+                              <span>{module1Score}%</span>
+                            </div>
+                            <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b'}}>
+                              <span>Module 2:</span>
+                              <span>{module2Score}%</span>
+                            </div>
+                          </div>
+                          <button style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '8px',
+                            padding: '10px 0',
+                            backgroundColor: '#10b981',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '6px',
+                            fontWeight: '600',
+                            cursor: 'pointer',
+                            marginTop: '16px',
+                            width: '100%'
                           }}>
-                            {subjectName}
-                          </span>
-                          {test.module2_score !== undefined && (
-                            <span style={{
-                              backgroundColor: test.used_harder_module ? '#dcfce7' : '#fee2e2',
-                              color: test.used_harder_module ? '#16a34a' : '#b91c1c',
-                              padding: '2px 8px',
-                              borderRadius: '4px',
-                              fontSize: '12px',
-                              fontWeight: '500'
-                            }}>
-                              {moduleType}
-                            </span>
-                          )}
+                            <BarChart3 size={18} />
+                            View Results
+                          </button>
                         </div>
+                      );
+                    }) : (
+                      <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
+                        <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
+                          <History size={32} color="#64748b" />
+                        </div>
+                        <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No completed tests found</p>
+                        <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test to see your results here</p>
                       </div>
-                      <div style={styles.testHistoryDetails}>
-                        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}}>
-                          <span style={{...styles.testHistoryScore, fontSize: '20px', fontWeight: '600', color: '#0f172a'}}>
-                            {satScore} / 800
-                          </span>
-                          <span style={{fontSize: '12px', color: '#64748b', marginTop: '2px'}}>
-                            {totalScore !== 'N/A' ? `${totalScore}% accuracy` : 'N/A'}
-                          </span>
-                        </div>
-                        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginTop: '8px', fontSize: '12px', color: '#6b7280'}}>
-                          {module1Score !== 'N/A' && (
-                            <span>Module 1: {module1Score}%</span>
-                          )}
-                          {module2Score !== 'N/A' && (
-                            <span>Module 2: {module2Score}%</span>
-                          )}
-                        </div>
-                        <ChevronRight size={18} style={{...styles.testHistoryArrow, marginTop: '8px', color: '#6b7280'}} />
-                      </div>
-                    </div>
-                  );
-                })}
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Pagination */}
@@ -1076,7 +1138,11 @@ const styles = {
   testHistoryList: {
     display: "flex",
     flexDirection: "column",
-    gap: "12px",
+  },
+  testsGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+    gap: "16px",
   },
   testHistoryItem: {
     display: "flex",
@@ -1369,6 +1435,7 @@ const styles = {
     padding: '2rem',
     borderRadius: '8px',
     backgroundColor: '#f3f4f6',
+    width: '100%',
   },
   emptyStateIcon: {
     marginBottom: '1rem',
