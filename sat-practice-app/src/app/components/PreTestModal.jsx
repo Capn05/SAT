@@ -24,22 +24,16 @@ export default function PreTestModal({ testType, onStart, onClose }) {
         
         console.log("Fetching tests for subject:", selectedSubject);
         
-        // Use the createClientComponentClient approach
-        const { data: { user }, error: userError } = await supabase.auth.getUser();
+        // Map UI subject name to subject_id
+        const subject_id = selectedSubject === "Math" ? 1 : selectedSubject === "Reading/Writing" ? 2 : null;
         
-        if (userError) {
-          console.error("Auth error:", userError);
-          setError("Authentication error. Please try logging in again.");
+        if (!subject_id) {
+          setError("Invalid subject selected");
           return;
         }
         
-        if (!user) {
-          console.error("No user found");
-          setError("You must be logged in to view available tests.");
-          return;
-        }
-        
-        const response = await fetch(`/api/untaken-tests?userId=${user.id}&subject=${selectedSubject}`);
+        // Fetch practice tests for the selected subject
+        const response = await fetch(`/api/practice-tests?subject_id=${subject_id}`);
         
         if (!response.ok) {
           const errorData = await response.json();
@@ -49,8 +43,16 @@ export default function PreTestModal({ testType, onStart, onClose }) {
         }
         
         const data = await response.json();
-        console.log("Fetched untaken tests:", data);
-        setAvailableTests(data);
+        console.log("Fetched practice tests:", data);
+        
+        // Filter tests that have complete modules and haven't been completed yet
+        const validTests = data.filter(test => 
+          test.hasModules && 
+          test.isComplete && 
+          !test.completed
+        );
+        
+        setAvailableTests(validTests);
       } catch (err) {
         console.error("Error in fetchAvailableTests:", err);
         setError("An unexpected error occurred. Please try again later.");
@@ -60,7 +62,7 @@ export default function PreTestModal({ testType, onStart, onClose }) {
     };
 
     fetchAvailableTests();
-  }, [selectedSubject, supabase.auth]);
+  }, [selectedSubject]);
 
   const handleTestSelection = (testId) => {
     setSelectedTest(testId);
@@ -98,14 +100,26 @@ export default function PreTestModal({ testType, onStart, onClose }) {
 
         <div style={styles.formGroup}>
           <label style={styles.label}>Select Test:</label>
-          <select onChange={(e) => handleTestSelection(e.target.value)} value={selectedTest} style={styles.select}>
-            <option value="none">Select a test</option>
+          <select 
+            onChange={(e) => handleTestSelection(e.target.value)} 
+            value={selectedTest || 'none'} 
+            style={styles.select}
+            disabled={availableTests.length === 0}
+          >
+            <option value="none">
+              {loading ? 'Loading tests...' : 
+               availableTests.length === 0 ? 'No tests available' : 'Select a test'}
+            </option>
             {availableTests.map((test) => (
               <option key={test.id} value={test.id}>
                 {test.name}
               </option>
             ))}
           </select>
+          {error && <p style={styles.errorText}>{error}</p>}
+          {!loading && availableTests.length === 0 && !error && selectedSubject && (
+            <p style={styles.infoText}>No practice tests available for this subject.</p>
+          )}
         </div>
 
         <div style={styles.testInfo}>
@@ -334,6 +348,16 @@ const styles = {
     fontSize: "20px",
     fontWeight: "500",
     cursor: "pointer",
+  },
+  errorText: {
+    color: '#ef4444',
+    fontSize: '14px',
+    marginTop: '4px',
+  },
+  infoText: {
+    color: '#6B7280',
+    fontSize: '14px',
+    marginTop: '4px',
   },
 }
 

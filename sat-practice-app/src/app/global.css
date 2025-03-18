@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 @import url('/landing-assets/css/tailwind-build.css');
-@import url('/landing-assets/css/index.css'); */
+@import url('/landing-assets/css/index.css');
 
 @layer base {
   :root {
@@ -203,4 +203,153 @@ a {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Math rendering styles */
+.katex-display {
+  margin: 1em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+/* For math expressions that might be large */
+.math-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+/* Responsive font sizing for math */
+@media (max-width: 768px) {
+  .katex {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .katex {
+    font-size: 0.9em;
+  }
+  
+  .option-card {
+    padding: 0.75rem;
+  }
+}
+
+/* Math diagram support */
+.math-diagram {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.math-diagram img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Option selection styles */
+.option-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-card:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.option-card.selected {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+}
+
+/* Question navigation styles */
+.question-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.question-nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.question-nav-button:hover {
+  background-color: #e5e7eb;
+}
+
+.question-nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Question list styles */
+.question-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.question-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.question-number:hover {
+  background-color: #e5e7eb;
+}
+
+.question-number.current {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.question-number.answered {
+  background-color: #10b981;
+  color: white;
+}
+
+.question-number.flagged {
+  border: 2px solid #ef4444;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

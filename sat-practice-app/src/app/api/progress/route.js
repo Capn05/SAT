@@ -29,6 +29,7 @@ export async function GET(request) {
       .select(`
         answered_at,
         is_correct,
+        practice_type,
         questions!inner (
           subject_id,
           domains!inner (
@@ -41,6 +42,7 @@ export async function GET(request) {
       `)
       .eq('user_id', session.user.id)
       .gte('answered_at', startDateStr)
+      .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`)
       .order('answered_at', { ascending: true });
 
     // Add subject filter if provided

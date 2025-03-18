@@ -39,12 +39,37 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Failed to fetch analytics' }, { status: 500 });
     }
 
-    // Calculate overall statistics
-    const totalAttempts = skillAnalytics.reduce((sum, record) => sum + record.total_attempts, 0);
-    const correctAttempts = skillAnalytics.reduce((sum, record) => sum + record.correct_attempts, 0);
+    // Get user's test answers from user_answers table
+    const { data: testAnswers, error: testAnswersError } = await supabase
+      .from('user_answers')
+      .select('is_correct')
+      .eq('user_id', userId)
+      .eq('practice_type', 'test');
+
+    if (testAnswersError) {
+      console.error('Error fetching test answers:', testAnswersError);
+      return NextResponse.json({ error: 'Failed to fetch test answers' }, { status: 500 });
+    }
+
+    // Calculate total from skill analytics
+    const skillTotalAttempts = skillAnalytics.reduce((sum, record) => sum + record.total_attempts, 0);
+    const skillCorrectAttempts = skillAnalytics.reduce((sum, record) => sum + record.correct_attempts, 0);
+    
+    // Calculate total from test answers
+    const testTotalAttempts = testAnswers.length;
+    const testCorrectAttempts = testAnswers.filter(answer => answer.is_correct).length;
+    
+    // Calculate combined statistics
+    const totalAttempts = skillTotalAttempts + testTotalAttempts;
+    const correctAttempts = skillCorrectAttempts + testCorrectAttempts;
     const accuracyPercentage = totalAttempts > 0
-      ? Math.round((correctAttempts / totalAttempts) * 100)
+      ? (correctAttempts / totalAttempts) * 100
       : 0;
+
+    console.log(`User stats: Total attempts = ${totalAttempts} (${skillTotalAttempts} from skills + ${testTotalAttempts} from tests)`);
+    console.log(`User stats: Correct answers = ${correctAttempts} (${skillCorrectAttempts} from skills + ${testCorrectAttempts} from tests)`);
+    console.log(`User stats: Accuracy = ${accuracyPercentage.toFixed(2)}%`);
+    console.log(`User stats: Test answers make up ${((testTotalAttempts / totalAttempts) * 100).toFixed(2)}% of all attempts`);
 
     return NextResponse.json({
       stats: {

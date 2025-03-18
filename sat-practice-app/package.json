@@ -25,7 +25,7 @@
     "dotenv": "^16.4.7",
     "framer-motion": "^11.16.4",
     "glob": "^11.0.1",
-    "katex": "^0.16.19",
+    "katex": "^0.16.21",
     "lucide-react": "^0.469.0",
     "markdown-it": "^14.1.0",
     "markdown-it-katex": "^2.0.3",

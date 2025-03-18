@@ -120,6 +120,34 @@ export default function SkillsPage() {
   const router = useRouter()
   const supabase = createClientComponentClient()
 
+  // Helper function to refresh skills cache automatically
+  const refreshSkillsCache = async (subjectId) => {
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        console.log('No session found, redirecting to login');
+        router.push('/login');
+        return;
+      }
+      
+      await fetch('/api/refresh-skills-cache', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: session.user.id,
+          subject: subjectId
+        }),
+      });
+      
+      // Data has been refreshed in the backend
+    } catch (error) {
+      console.error('Error refreshing skills cache:', error);
+      // Continue with fetching skills anyway to show existing data
+    }
+  };
+
   // Helper function to fetch skills for a specific subject
   const fetchSkills = async (subjectId, setDomains) => {
     try {
@@ -132,6 +160,9 @@ export default function SkillsPage() {
         router.push('/login')
         return
       }
+
+      // First refresh the skills cache to include test answers
+      await refreshSkillsCache(subjectId);
 
       // Get performance data from user_skill_analytics
       const { data: performance, error } = await supabase
@@ -191,13 +222,18 @@ export default function SkillsPage() {
           return {
             name: subcategory.subcategory_name,
             icon: <IconComponent size={20} color="#4f46e5" />,
-            needsPractice: skillPerf.total_attempts < 5 || skillPerf.mastery_level === 'Needs Practice',
+            needsPractice: skillPerf.total_attempts < 5 || skillPerf.mastery_level === 'needs_work',
             accuracy: accuracy,
             lastPracticed: skillPerf.last_practiced ? 
               new Date(skillPerf.last_practiced).toLocaleDateString() : 
               'Never practiced',
             progress: accuracy,
-            mastery: skillPerf.mastery_level || 'Not Started'
+            mastery: skillPerf.mastery_level === 'Not Started' ? 'Not Started' : 
+              skillPerf.mastery_level === 'needs_work' ? 'Needs Work' :
+              skillPerf.mastery_level === 'improving' ? 'Improving' :
+              skillPerf.mastery_level === 'proficient' ? 'Proficient' :
+              skillPerf.mastery_level === 'mastered' ? 'Mastered' : 
+              'Not Started'
           }
         })
 
@@ -244,6 +280,7 @@ export default function SkillsPage() {
     <div style={styles.container}>
       <SkillsHeader title={"SAT Skills"}/>
       <SubjectTabs activeSubject={activeSubject} onSubjectChange={setActiveSubject} />
+      
       <div style={styles.content}>
         {domains.map((domain) => (
           <DomainSection key={domain.name} domain={domain}>
