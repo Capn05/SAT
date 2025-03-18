@@ -733,16 +733,6 @@ export default function PracticeTestPage() {
                 </div>
               )}
               
-              {currentQuestionData.image_url && (
-                <div style={styles.imageContainer}>
-                  <img 
-                    src={currentQuestionData.image_url} 
-                    alt="Question visual" 
-                    style={styles.questionImage} 
-                  />
-                </div>
-              )}
-              
               {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
                 <div style={styles.mathQuestion}>
                   <div style={styles.questionHeader}>
@@ -809,7 +799,13 @@ export default function PracticeTestPage() {
                       lineHeight: '1.6',
                       fontFamily: '"Minion Pro", Times, serif',
                       color: '#1f2937',
-                      marginBottom: '1.5rem'
+                      marginBottom: '1.5rem',
+                      overflowWrap: 'break-word',
+                      wordWrap: 'break-word',
+                      wordBreak: 'break-word',
+                      hyphens: 'auto',
+                      whiteSpace: 'pre-wrap',
+                      maxWidth: '100%'
                     }}>
                       {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
                     </div>
@@ -831,7 +827,12 @@ export default function PracticeTestPage() {
                           fontFamily: '"Minion Pro", Times, serif',
                           color: '#1f2937',
                           fontSize: '1rem',
-                          lineHeight: '1.5'
+                          lineHeight: '1.5',
+                          overflowWrap: 'break-word',
+                          wordWrap: 'break-word',
+                          wordBreak: 'break-word',
+                          whiteSpace: 'pre-wrap',
+                          width: '100%'
                         }}>
                           {option.label ? processMathInText(option.label) : 'Loading...'}
                         </div>
@@ -1011,8 +1012,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     padding: '1rem',
-    overflowY: 'auto',
+    overflowY: 'hidden',
     backgroundColor: '#f9fafb',
+    minHeight: 0,
   },
   questionContainer: {
     backgroundColor: 'white',
@@ -1022,7 +1024,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: 'auto',
-    overflow: 'visible',
+    overflow: 'hidden',
+    minHeight: 0,
   },
   markReviewTextOnly: {
     padding: '1rem 0 0 1rem',
@@ -1037,14 +1040,6 @@ const styles = {
     gap: '4px',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
-  imageContainer: {
-    maxWidth: '100%',
-    marginBottom: '1rem',
-  },
-  questionImage: {
-    maxWidth: '100%',
-    borderRadius: '4px',
-  },
   mathQuestion: {
     padding: '0 2rem 2rem 2rem',
     maxWidth: '1000px',
@@ -1056,17 +1051,26 @@ const styles = {
     flexDirection: 'row',
     flex: 1,
     backgroundColor: 'white',
-    height: '100%',
-    gap: '2rem',
+    height: 'auto',
+    minHeight: 'calc(100vh - 180px)',
+    maxHeight: 'calc(100vh - 180px)',
+    gap: '0',
     padding: '1rem',
+    overflow: 'hidden',
   },
   rwQuestionContainer: {
-    flex: 1,
+    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: 'white',
     borderRight: '1px solid #e5e7eb',
     paddingRight: '2rem',
+    overflowY: 'auto',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'auto',
+    maxHeight: '100%',
   },
   rwQuestion: {
     flex: 1,
@@ -1094,11 +1098,13 @@ const styles = {
     backgroundColor: 'white',
   },
   rwOptionsContainer: {
-    flex: 1,
+    width: '50%',
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
-    padding: '3rem 2rem 1rem 0',
+    padding: '3rem 2rem 1rem 2rem',
+    overflowY: 'auto',
+    maxHeight: '100%',
   },
   rwOptionCard: {
     display: 'flex',
@@ -1109,6 +1115,9 @@ const styles = {
     borderRadius: '0.25rem',
     backgroundColor: 'white',
     border: '1px solid #e5e7eb',
+    alignItems: 'flex-start',
+    wordBreak: 'break-word',
+    width: '100%',
   },
   rwSelectedOption: {
     backgroundColor: '#eef2ff',
@@ -1153,6 +1162,10 @@ const styles = {
     flex: 1,
     fontSize: '15px',
     color: '#1f2937',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    minWidth: 0,
   },
   navigationFooter: {
     display: 'flex',
