@@ -68,6 +68,8 @@ export async function GET(request) {
 
     console.log(`User stats: Total attempts = ${totalAttempts} (${skillTotalAttempts} from skills + ${testTotalAttempts} from tests)`);
     console.log(`User stats: Correct answers = ${correctAttempts} (${skillCorrectAttempts} from skills + ${testCorrectAttempts} from tests)`);
+    console.log(`User stats: Accuracy = ${accuracyPercentage.toFixed(2)}%`);
+    console.log(`User stats: Test answers make up ${((testTotalAttempts / totalAttempts) * 100).toFixed(2)}% of all attempts`);
 
     return NextResponse.json({
       stats: {

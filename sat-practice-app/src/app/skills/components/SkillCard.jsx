@@ -5,10 +5,10 @@ import DifficultyModal from '../../components/DifficultyModal';
 
 const masteryColors = {
   'Mastered': '#22c55e',
-  'On Track': '#65a30d',
-  'Needs Practice': '#dc2626',
-  'Not Started': '#6b7280',
-  'Needs More Attempts': '#f59e0b'
+  'Proficient': '#65a30d',
+  'Improving': '#f59e0b',
+  'Needs Work': '#dc2626',
+  'Not Started': '#6b7280'
 };
 
 export default function SkillCard({ skill, subject }) {
@@ -27,6 +27,22 @@ export default function SkillCard({ skill, subject }) {
   // Determine the subject ID based on the subject prop
   const subjectId = subject === "Math" ? "1" : "2";
 
+  // Add a tooltip text based on the mastery level and accuracy
+  let tooltipText = '';
+  if (skill.mastery === 'Not Started') {
+    tooltipText = 'You have not practiced this skill yet.';
+  } else if (skill.mastery === 'Needs Work') {
+    tooltipText = skill.accuracy >= 50 ? 
+      'You need more practice to master this skill (need at least 5 practice questions).' : 
+      'You need to improve your accuracy in this skill.';
+  } else if (skill.mastery === 'Improving') {
+    tooltipText = 'You\'re making good progress with this skill.';
+  } else if (skill.mastery === 'Proficient') {
+    tooltipText = 'You\'re doing well with this skill.';
+  } else if (skill.mastery === 'Mastered') {
+    tooltipText = 'Great job! You\'ve mastered this skill.';
+  }
+
   return (
     <>
       <div
@@ -35,6 +51,7 @@ export default function SkillCard({ skill, subject }) {
           borderLeft: `3px solid ${masteryColors[skill.mastery] || masteryColors['Not Started']}`
         }}
         onClick={handleClick}
+        title={tooltipText}
       >
         <div style={styles.header}>
           <div style={styles.iconContainer}>{skill.icon}</div>
