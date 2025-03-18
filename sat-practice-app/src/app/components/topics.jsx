@@ -74,10 +74,150 @@ const categoryIcons = {
 
 const masteryColors = {
   'Mastered': '#22c55e',
-  'Proficient': '#65a30d',
-  'Improving': '#f59e0b',
+  'Improving': '#65a30d',
   'Needs Work': '#dc2626',
+  'Needs More Attempts': '#f59e0b',
   'Not Started': '#6b7280'
+};
+
+// Add styles object
+const styles = {
+  container: {
+    padding: '1rem',
+    maxWidth: '100%',
+    margin: '0 auto'
+  },
+  title: {
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+    fontFamily: '"Myriad Pro", Arial, sans-serif'
+  },
+  categories: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2rem'
+  },
+  categorySection: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem'
+  },
+  categoryHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem'
+  },
+  categoryIcon: {
+    color: '#4b5563'
+  },
+  categoryTitle: {
+    margin: 0,
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+    fontFamily: '"Myriad Pro", Arial, sans-serif'
+  },
+  categoryAccuracy: {
+    marginLeft: 'auto',
+    fontSize: '0.875rem',
+    color: '#6b7280'
+  },
+  grid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+    gap: '0.75rem'
+  },
+  card: {
+    backgroundColor: 'white',
+    borderRadius: '0.5rem',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    padding: '0.75rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.5rem',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      transform: 'translateY(-2px)'
+    }
+  },
+  cardHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem'
+  },
+  iconContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  skillName: {
+    fontWeight: '500',
+    fontSize: '0.9rem',
+    fontFamily: '"Myriad Pro", Arial, sans-serif'
+  },
+  skillStats: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.5rem'
+  },
+  statRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    fontSize: '0.8rem'
+  },
+  statLabel: {
+    color: '#6b7280'
+  },
+  statValue: {
+    fontWeight: '500'
+  },
+  skillFooter: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '0.5rem',
+    marginTop: 'auto',
+    paddingTop: '0.5rem',
+    borderTop: '1px solid #f3f4f6'
+  },
+  practiceText: {
+    fontSize: '0.8rem',
+    fontWeight: '500',
+    color: '#4f46e5'
+  },
+  seeMoreLink: {
+    textDecoration: 'none',
+    display: 'block',
+    marginTop: '2rem'
+  },
+  viewAllButton: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    backgroundColor: '#f3f4f6',
+    borderRadius: '0.5rem',
+    padding: '0.75rem 1.5rem',
+    width: 'fit-content',
+    margin: '0 auto',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#e5e7eb'
+    }
+  },
+  viewAllIcon: {
+    color: '#4b5563'
+  },
+  viewAllText: {
+    fontWeight: '500',
+    color: '#4b5563',
+    fontFamily: '"Myriad Pro", Arial, sans-serif'
+  },
+  viewAllArrow: {
+    color: '#4b5563'
+  }
 };
 
 function calculateMasteryLevel(accuracy, totalAttempts) {
@@ -85,13 +225,13 @@ function calculateMasteryLevel(accuracy, totalAttempts) {
     return 'Not Started';
   }
   if (totalAttempts < 5) {
-    return 'Improving';
+    return 'Needs More Attempts';
   }
   if (accuracy >= 85) {
     return 'Mastered';
   }
-  if (accuracy >= 70) {
-    return 'Proficient';
+  if (accuracy >= 60) {
+    return 'Improving';
   }
   return 'Needs Work';
 }
@@ -354,14 +494,14 @@ export default function TestCategories() {
                 let tooltipText = '';
                 if (skill.mastery === 'Not Started') {
                   tooltipText = 'You have not practiced this skill yet.';
+                } else if (skill.mastery === 'Needs More Attempts') {
+                  tooltipText = 'You need to attempt at least 5 questions in this skill to get a true mastery level.';
                 } else if (skill.mastery === 'Needs Work') {
-                  tooltipText = 'You need to improve your accuracy in this skill.';
+                  tooltipText = 'Your accuracy is below 60%. Keep practicing to improve this skill.';
                 } else if (skill.mastery === 'Improving') {
-                  tooltipText = 'You\'re making good progress with this skill.';
-                } else if (skill.mastery === 'Proficient') {
-                  tooltipText = 'You\'re doing well with this skill.';
+                  tooltipText = 'Your accuracy is between 60-85%. You\'re making good progress with this skill.';
                 } else if (skill.mastery === 'Mastered') {
-                  tooltipText = 'Great job! You\'ve mastered this skill.';
+                  tooltipText = 'Great job! You\'ve mastered this skill with 85% or higher accuracy.';
                 }
                 
                 return (
@@ -426,7 +566,7 @@ export default function TestCategories() {
           isOpen={showDifficultyModal}
           onClose={handleDifficultyModalClose}
           subject="1" // Assuming Math subject
-          title={`Select Difficulty Level for ${selectedSubcategory}`}
+          title={`Select Difficulty Level for ${selectedCategory} - ${selectedSubcategory}`}
           mode="skill"
           category={selectedSubcategory}
         />
@@ -434,157 +574,3 @@ export default function TestCategories() {
     </div>
   );
 }
-
-const styles = {
-  container: {
-    padding: "20px",
-  },
-  title: {
-    fontSize: "18px",
-    fontWeight: 600,
-    marginBottom: "16px",
-    color: "#111827",
-  },
-  categories: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "24px",
-  },
-  categorySection: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "12px",
-  },
-  categoryHeader: {
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
-    padding: "8px 0",
-  },
-  categoryIcon: {
-    width: "20px",
-    height: "20px",
-    color: "#4b5563",
-  },
-  categoryTitle: {
-    fontSize: "16px",
-    fontWeight: 500,
-    color: "#111827",
-    flex: 1,
-  },
-  categoryAccuracy: {
-    fontSize: "14px",
-    color: "#6b7280",
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: "16px",
-  },
-  card: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    padding: "16px",
-    backgroundColor: "white",
-    borderRadius: "8px",
-    cursor: "pointer",
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-    minHeight: "180px",
-    position: "relative",
-    '&:hover': {
-      transform: 'translateY(-2px)',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-    },
-  },
-  cardHeader: {
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
-    marginBottom: "16px",
-    width: "100%",
-  },
-  iconContainer: {
-    width: "24px",
-    height: "24px",
-    color: "#4b5563",
-  },
-  skillName: {
-    fontSize: "14px",
-    color: "#111827",
-    fontWeight: 500,
-  },
-  skillStats: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "8px",
-    width: "100%",
-  },
-  statRow: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  statLabel: {
-    fontSize: "12px",
-    color: "#6b7280",
-  },
-  statValue: {
-    fontSize: "12px",
-    color: "#111827",
-  },
-  skillFooter: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-    gap: "8px",
-    marginTop: "auto",
-    paddingTop: "16px",
-    width: "100%",
-    color: "#10b981",
-  },
-  practiceText: {
-    fontSize: "14px",
-    fontWeight: 500,
-  },
-  seeMoreLink: {
-    textDecoration: "none",
-    display: "block",
-    marginTop: "24px",
-  },
-  viewAllButton: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#f3f4f6",
-    borderRadius: "8px",
-    padding: "12px 20px",
-    transition: "all 0.2s ease",
-    border: "1px solid #e5e7eb",
-    cursor: "pointer",
-    boxShadow: "0 1px 2px rgba(0, 0, 0, 0.05)",
-    "&:hover": {
-      backgroundColor: "#e5e7eb",
-      transform: "translateY(-1px)",
-      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-    },
-  },
-  viewAllIcon: {
-    width: "20px",
-    height: "20px",
-    color: "#4b5563",
-    marginRight: "10px",
-  },
-  viewAllText: {
-    fontSize: "16px",
-    fontWeight: "500",
-    color: "#374151",
-    flex: "1",
-  },
-  viewAllArrow: {
-    width: "18px",
-    height: "18px",
-    color: "#4b5563",
-  },
-};
-
