@@ -165,7 +165,9 @@ export default function ReviewTestPage() {
     return (
       <div className="review-container">
         <TopBar title="Test Review" />
-        <div className="loading-state">Loading test data...</div>
+        <div className="review-content">
+          <div className="loading-state">Loading test data...</div>
+        </div>
       </div>
     )
   }
@@ -174,13 +176,15 @@ export default function ReviewTestPage() {
     return (
       <div className="review-container">
         <TopBar title="Test Review" />
-        <div className="error-state">{error}</div>
+        <div className="review-content">
+          <div className="error-state">{error}</div>
+        </div>
       </div>
     )
   }
 
   return (
-    <div className="review-container" style={{ marginRight: '41%' }}>
+    <div className="review-container">
       <TopBar title="Test Review" />
       
       <div className="review-content">
@@ -340,6 +344,14 @@ export default function ReviewTestPage() {
         selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.selectedOptionId : ''}
         options={selectedQuestion !== null ? questions[selectedQuestion].options : []}
         imageURL={selectedQuestion !== null ? questions[selectedQuestion].imageUrl : ''}
+        style={{
+          position: 'fixed',
+          top: 0,
+          right: 0,
+          width: '41%',
+          height: '100vh',
+          zIndex: 50
+        }}
       />
     </div>
   )
