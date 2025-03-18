@@ -33,14 +33,24 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Failed to fetch questions' }, { status: 500 });
     }
 
-    // Get all user answers for this subject
-    const { data: answers, error: answersError } = await supabase
+    // Fetch all user answers for this user
+    const { data: userAnswers, error: answerError } = await supabase
       .from('user_answers')
-      .select('*')
-      .eq('user_id', userId);
+      .select(`
+        question_id,
+        is_correct,
+        practice_type,
+        questions!inner (
+          subject_id,
+          domain_id,
+          subcategory_id
+        )
+      `)
+      .eq('user_id', userId)
+      .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`);
 
-    if (answersError) {
-      console.error('Error fetching answers:', answersError);
+    if (answerError) {
+      console.error('Error fetching answers:', answerError);
       return NextResponse.json({ error: 'Failed to fetch answers' }, { status: 500 });
     }
 
@@ -64,7 +74,7 @@ export async function POST(request) {
       const category = categoryQuestions[key];
       
       // Filter answers for this category
-      const categoryAnswers = answers.filter(a => {
+      const categoryAnswers = userAnswers.filter(a => {
         const question = questions.find(q => q.id === a.question_id);
         return question && 
                question.main_category === category.main_category && 
