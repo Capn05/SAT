@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { Bookmark, ChevronLeft, ChevronRight, Eye, MoreVertical, Flag, MessageCircle, Clock } from "lucide-react"
 import { formatTime } from "../lib/utils"
 import "./test.css"
@@ -24,15 +24,18 @@ const mockQuestions = [
   // Add more mock questions as needed
 ]
 
-export default function TestPage({ params }) {
-  const [currentQuestion, setCurrentQuestion] = useState(1)
-  const [timeRemaining, setTimeRemaining] = useState(params.type === "math" ? 2100 : 1920) // 70 or 64 minutes
-  const [answers, setAnswers] = useState({})
-  const [flaggedQuestions, setFlaggedQuestions] = useState(new Set())
-  const [showQuestionNav, setShowQuestionNav] = useState(false)
+// Create a client component for the content
+function TestModeContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const testId = searchParams.get('testId')
+  const testType = searchParams.get('type') // Get type from searchParams
+  
+  const [currentQuestion, setCurrentQuestion] = useState(1)
+  const [timeRemaining, setTimeRemaining] = useState(testType === "math" ? 2100 : 1920) // 70 or 64 minutes
+  const [answers, setAnswers] = useState({})
+  const [flaggedQuestions, setFlaggedQuestions] = useState(new Set())
+  const [showQuestionNav, setShowQuestionNav] = useState(false)
   const [questions, setQuestions] = useState([])
   const totalQuestions = questions.length
   const [testName, setTestName] = useState('')
@@ -493,4 +496,17 @@ export default function TestPage({ params }) {
     </div>
   )
 }
+
+// Main page component with Suspense boundary
+export default function TestMode() {
+  return (
+    <Suspense fallback={<div className="flex h-screen w-full items-center justify-center">
+      <div className="text-xl font-semibold">Loading test...</div>
+    </div>}>
+      <TestModeContent />
+    </Suspense>
+  );
+}
+
+export const dynamic = 'force-dynamic';
 

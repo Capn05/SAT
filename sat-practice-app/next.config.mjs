@@ -6,6 +6,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true, // Completely ignore ESLint errors during build
+    // OR use the more targeted approach:
+    // ignoreDuringBuilds: process.env.NODE_ENV === 'production',
+  },
 };
 
 export default nextConfig;

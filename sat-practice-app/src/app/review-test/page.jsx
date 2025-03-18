@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import TopBar from '../components/TopBar'
@@ -9,7 +9,8 @@ import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 import MathRenderer, { processMathInText } from '../components/MathRenderer'
 
-export default function ReviewTestPage() {
+// Create a client component for content
+function ReviewTestContent() {
   const [questions, setQuestions] = useState([])
   const [selectedQuestion, setSelectedQuestion] = useState(null)
   const [metrics, setMetrics] = useState(null)
@@ -343,4 +344,27 @@ export default function ReviewTestPage() {
       />
     </div>
   )
+}
+
+// Main component with Suspense boundary
+export default function ReviewTestPage() {
+  return (
+    <Suspense fallback={
+      <div className="review-container">
+        <TopBar title="Test Review" />
+        <div className="loading-state" style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '70vh',
+          fontSize: '18px',
+          color: '#4b5563'
+        }}>
+          Loading test review data...
+        </div>
+      </div>
+    }>
+      <ReviewTestContent />
+    </Suspense>
+  );
 } 

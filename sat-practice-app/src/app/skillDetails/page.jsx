@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { ArrowLeft, BookOpen, Brain, TrendingUp, Clock, CheckCircle, AlertCircle, RotateCcw, Play } from "lucide-react"
 import { readingDomains } from '../skills/domains'; // Import readingDomains
@@ -17,7 +17,8 @@ async function getSkillData(skillName) {
   });
 }
 
-export default function SkillDetailPage() {
+// Create a client component for the content
+function SkillDetailsContent() {
   const searchParams = useSearchParams()
   const skillName = searchParams.get('page')
   const [skill, setSkill] = useState(null)
@@ -190,6 +191,15 @@ console.log(skill.name)
       </div>
     </div>
   )
+}
+
+// Main page component
+export default function SkillDetailsPage() {
+  return (
+    <Suspense fallback={<div>Loading skill details...</div>}>
+      <SkillDetailsContent />
+    </Suspense>
+  );
 }
 
 const styles = {

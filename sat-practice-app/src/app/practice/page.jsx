@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Question from '../components/Question';
 import TopBar from '../components/TopBar';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
-export default function PracticePage() {
+// Split into a content component that uses client hooks
+function PracticePageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const supabase = createClientComponentClient();
@@ -121,6 +122,19 @@ export default function PracticePage() {
         difficulty={difficulty}
       />
     </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function PracticePage() {
+  return (
+    <Suspense fallback={
+      <div style={styles.loadingContainer}>
+        <div style={styles.loadingText}>Loading practice page...</div>
+      </div>
+    }>
+      <PracticePageContent />
+    </Suspense>
   );
 }
 
