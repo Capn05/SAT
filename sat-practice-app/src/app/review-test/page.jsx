@@ -163,10 +163,35 @@ export default function ReviewTestPage() {
 
   if (loading) {
     return (
-      <div className="review-container">
-        <TopBar title="Test Review" />
-        <div className="review-content">
-          <div className="loading-state">Loading test data...</div>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: '#f8f9fa'
+      }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1rem'
+        }}>
+          <div style={{
+            width: '50px',
+            height: '50px',
+            border: '5px solid #e2e8f0',
+            borderTopColor: '#4f46e5',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite'
+          }}></div>
+          <div style={{
+            fontSize: '1.2rem',
+            color: '#6b7280',
+            fontFamily: '"Myriad Pro", Arial, sans-serif'
+          }}>
+            Loading test data...
+          </div>
         </div>
       </div>
     )

@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit } from "lucide-react"
+import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit, LogOut, User } from "lucide-react"
 import styles from "./sidebar.module.css"
 import DifficultyModal from "../app/components/DifficultyModal"
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 const navItems = [
   { name: "Dashboard", icon: Home, path: "/home" },
@@ -27,10 +28,36 @@ export default function Sidebar() {
   const [expandedSubMenu, setExpandedSubMenu] = useState<string | null>(null)
   const pathname = usePathname()
   const router = useRouter()
+  const [userEmail, setUserEmail] = useState<string | null>(null)
+  const [showUserMenu, setShowUserMenu] = useState(false)
+  
+  // Create Supabase client
+  const supabase = createClientComponentClient()
   
   // Add states for difficulty modal
   const [showDifficultyModal, setShowDifficultyModal] = useState(false)
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
+
+  // Get user email on mount
+  useEffect(() => {
+    const getUserInfo = async () => {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (session?.user) {
+        setUserEmail(session.user.email)
+      }
+    }
+    
+    getUserInfo()
+  }, [supabase])
+
+  const handleLogout = async () => {
+    try {
+      await supabase.auth.signOut()
+      router.push('/login')
+    } catch (error) {
+      console.error('Error logging out:', error)
+    }
+  }
 
   const toggleSubMenu = (name: string) => {
     if (expandedSubMenu === name) {
@@ -79,19 +106,23 @@ export default function Sidebar() {
       onMouseLeave={() => {
         setIsExpanded(false)
         setExpandedSubMenu(null)
+        setShowUserMenu(false)
       }}
       style={{ overflow: 'hidden', width: isExpanded ? '240px' : '53px' }}
     >
       <div className={styles.sidebarContent} style={{ 
         position: 'fixed', 
         width: isExpanded ? '240px' : '53px',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh'
       }}>
         <div className={styles.header}>
           <span className={styles.logoIcon}>S</span>
         </div>
 
-        <nav className={styles.nav} style={{ width: '100%' }}>
+        <nav className={styles.nav} style={{ width: '100%', flex: 1 }}>
           {navItems.map((item) => {
             const isActive = item.path ? pathname === item.path : false
             const hasSubItems = item.subItems && item.subItems.length > 0
@@ -162,6 +193,66 @@ export default function Sidebar() {
             )
           })}
         </nav>
+        
+        {/* User profile section at bottom */}
+        <div className={styles.userSection} style={{ 
+          marginTop: 'auto', 
+          padding: '16px 8px',
+          borderTop: '1px solid #e5e7eb',
+          position: 'relative'
+        }}>
+          <div 
+            className={styles.navItem} 
+            onClick={() => setShowUserMenu(!showUserMenu)}
+            style={{ cursor: 'pointer' }}
+          >
+            <div className={styles.iconWrapper}>
+              <User className={styles.icon} />
+            </div>
+            <span className={styles.label} style={{ 
+              opacity: isExpanded ? 1 : 0,
+              transform: isExpanded ? 'translateX(0)' : 'translateX(-20px)',
+              transition: 'opacity 0.3s ease, transform 0.3s ease',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              maxWidth: '170px'
+            }}>
+              {userEmail || 'User'}
+            </span>
+          </div>
+          
+          {isExpanded && showUserMenu && (
+            <div style={{
+              position: 'absolute',
+              bottom: '60px',
+              left: '10px',
+              right: '10px',
+              backgroundColor: 'white',
+              borderRadius: '8px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+              border: '1px solid #e5e7eb',
+            }}>
+              <div 
+                onClick={handleLogout}
+                style={{
+                  padding: '10px 16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  cursor: 'pointer',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#fee2e2'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+              >
+                <LogOut size={16} />
+                <span style={{ fontSize: '14px' }}>Logout</span>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       <button
