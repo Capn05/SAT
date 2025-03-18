@@ -33,17 +33,29 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Missing required data' }, { status: 400 });
     }
     
-    // Calculate total score as an average of the two modules
-    const total_score = (module1_score + module2_score) / 2;
+    // Calculate total score based on the total number of correct answers out of total questions
+    const totalCorrectAnswers = 
+      module1_answers.filter(a => a.is_correct).length + 
+      module2_answers.filter(a => a.is_correct).length;
     
-    // 1. Record the test analytics
+    const totalQuestions = module1_answers.length + module2_answers.length;
+    const total_score = (totalCorrectAnswers / totalQuestions) * 100;
+    
+    // Recalculate module scores to ensure accuracy
+    const module1_correct = module1_answers.filter(a => a.is_correct).length;
+    const module2_correct = module2_answers.filter(a => a.is_correct).length;
+    
+    const recalculated_module1_score = (module1_correct / module1_answers.length) * 100;
+    const recalculated_module2_score = (module2_correct / module2_answers.length) * 100;
+    
+    // 1. Record the test analytics with the recalculated scores
     const { data: testAnalytics, error: analyticsError } = await supabase
       .from('user_test_analytics')
       .insert({
         user_id,
         practice_test_id,
-        module1_score,
-        module2_score,
+        module1_score: recalculated_module1_score,
+        module2_score: recalculated_module2_score,
         used_harder_module,
         total_score,
         taken_at: new Date().toISOString()
@@ -199,12 +211,12 @@ export async function POST(request) {
       testSummary: {
         id: testAnalytics.id,
         score: total_score,
-        module1Score: module1_score,
-        module2Score: module2_score,
+        module1Score: recalculated_module1_score,
+        module2Score: recalculated_module2_score,
         usedHarderModule: used_harder_module,
-        correctAnswers: allAnswers.filter(a => a.is_correct).length,
-        incorrectAnswers: allAnswers.filter(a => !a.is_correct).length,
-        totalQuestions: allAnswers.length
+        correctAnswers: totalCorrectAnswers,
+        incorrectAnswers: totalQuestions - totalCorrectAnswers,
+        totalQuestions
       }
     });
   } catch (error) {
