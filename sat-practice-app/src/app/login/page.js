@@ -1,11 +1,13 @@
-'use client'
+"use client"
+
 import Link from "next/link"
 import { GraduationCap } from 'lucide-react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function Login() {
+// Create a content component for login functionality
+function LoginContent() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -255,5 +257,27 @@ export default function Login() {
         </div>
       </div>
     </div>
+  )
+}
+
+// Main component with Suspense boundary
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-white">
+        <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-xl shadow-lg">
+          <div className="text-center">
+            <h2 className="mt-6 text-3xl font-bold text-gray-900">
+              Loading...
+            </h2>
+            <p className="mt-2 text-sm text-gray-600">
+              Please wait while we prepare the login page
+            </p>
+          </div>
+        </div>
+      </div>
+    }>
+      <LoginContent />
+    </Suspense>
   )
 }
