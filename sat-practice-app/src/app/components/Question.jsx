@@ -11,6 +11,8 @@ import 'katex/dist/katex.min.css';
 import QuestionStatus from './QuestionStatus';
 import ProgressBar from './ProgressBar';
 import Modal from './Modal';
+import QuickPracticeCompleteModal from './QuickPracticeCompleteModal';
+import SkillsCompleteModal from './SkillsCompleteModal';
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
@@ -37,6 +39,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [attempts, setAttempts] = useState({});
   const MAX_ATTEMPTS = 2;  // Maximum attempts before showing correct answer
   const supabase = createClientComponentClient();
+  const [showQuickPracticeModal, setShowQuickPracticeModal] = useState(false);
+  const [showSkillsModal, setShowSkillsModal] = useState(false);
 
   const md = new MarkdownIt({
     html: true,
@@ -345,17 +349,40 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   useEffect(() => {
     console.log('Question component initialized with:', { subject, mode, skillName, difficulty });
     
+    let mounted = true;
+    
     if (subject) {
       console.log('Fetching questions for:', { subject, mode, skillName, difficulty });
       fetchUnansweredQuestions(subject);  
     }
+    
+    // Cleanup function to reset state when the component unmounts
+    return () => {
+      mounted = false;
+      setAnsweredCount(0);
+      setAnsweredQuestions(new Set());
+      setShowModal(false);
+      setShowQuickPracticeModal(false);
+      setShowSkillsModal(false);
+    };
   }, [subject, mode, skillName, difficulty]);
 
   useEffect(() => {
     const limit = mode === "skill" ? 5 : 15;
 
     if (answeredCount === limit) {
-      setShowModal(true);
+      // Show the appropriate modal based on the mode
+      if (mode === "skill") {
+        setShowSkillsModal(true);
+      } else {
+        setShowQuickPracticeModal(true);
+      }
+    }
+    
+    // Reset modal visibility when answeredCount changes but isn't at the limit
+    if (answeredCount > 0 && answeredCount < limit) {
+      setShowSkillsModal(false);
+      setShowQuickPracticeModal(false);
     }
   }, [answeredCount, mode]);
 
@@ -530,13 +557,26 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   };
 
   const fetchNewQuestions = async () => {
+    // First close all modals
+    setShowModal(false);
+    setShowQuickPracticeModal(false);
+    setShowSkillsModal(false);
+    
+    // Reset state
     setCurrentIndex(0);
     setAnsweredCount(0);
     setAnsweredQuestions(new Set());
-
+    setUserAnswers({});
+    setAnsweredFeedback({});
+    setCurrentQuestionAnswer(null);
+    setFeedback(null);
+    setSelectedOption(null);
+    setSelectedAnswer(null);
+    setSubmitted(false);
+    setAttempts({});
+    
+    // Then fetch new questions
     await fetchUnansweredQuestions(subject);
-
-    setShowModal(false);
   };
 
   if (loading) {
@@ -643,6 +683,23 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         onConfirm={fetchNewQuestions}
       />
 
+      <QuickPracticeCompleteModal
+        isOpen={showQuickPracticeModal}
+        onClose={() => setShowQuickPracticeModal(false)}
+        subject={subject}
+        difficulty={difficulty}
+        mode={mode}
+      />
+
+      <SkillsCompleteModal
+        isOpen={showSkillsModal}
+        onClose={() => setShowSkillsModal(false)}
+        subject={subject}
+        skillName={skillName}
+        difficulty={difficulty}
+        mode={mode}
+      />
+
       <div style={styles.container}>
         <QuestionStatus 
           currentIndex={currentIndex} 
@@ -728,9 +785,15 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
       {answeredCount === (mode === "skill" ? 5 : 15) && (
         <div style={styles.RefreshQuestionsContainer}>
-          <button onClick={() => setShowModal(true)} style={styles.newQuestionsButton}>
-            Continue
-          </button>
+          {mode === "skill" ? (
+            <button onClick={() => setShowSkillsModal(true)} style={styles.newQuestionsButton}>
+              Continue
+            </button>
+          ) : (
+            <button onClick={() => setShowQuickPracticeModal(true)} style={styles.newQuestionsButton}>
+              Continue
+            </button>
+          )}
           <button style={styles.secondaryButton} onClick={handleDashboardClick}>
             Return to Dashboard
           </button>
@@ -914,6 +977,21 @@ const styles = {
     fontSize: '14px',
     margin: '5px',
     width: '10%',
+  },
+  secondaryButton: {
+    padding: '8px 16px',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    margin: '5px',
+    width: '10%',
+    transition: 'background-color 0.2s',
+    '&:hover': {
+      backgroundColor: '#e5e7eb',
+    },
   },
   correctIndicator: {
     marginLeft: 'auto',

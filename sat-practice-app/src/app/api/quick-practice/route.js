@@ -16,8 +16,9 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject');
     const difficulty = searchParams.get('difficulty') || 'mixed';
+    const mode = searchParams.get('mode') || 'quick';
 
-    console.log('Fetching quick practice questions for subject:', subject);
+    console.log('Fetching questions for subject:', subject, 'mode:', mode);
 
     if (!subject) {
       return NextResponse.json({ error: 'Subject is required' }, { status: 400 });
@@ -97,15 +98,18 @@ export async function GET(request) {
       return Math.random() - 0.5; // Random within same mastery level
     });
 
-    // Take the first 15 questions
-    const selectedQuestions = sortedQuestions.slice(0, 15).map(q => ({
+    // Determine number of questions based on mode
+    const questionCount = mode === 'skill' ? 5 : 15;
+    
+    // Take the first N questions
+    const selectedQuestions = sortedQuestions.slice(0, questionCount).map(q => ({
       ...q,
       domain_name: q.domains.domain_name,
       subcategory_name: q.subcategories.subcategory_name,
       options: q.options.sort(() => Math.random() - 0.5) // Shuffle options
     }));
 
-    console.log(`Returning ${selectedQuestions.length} questions for quick practice`);
+    console.log(`Returning ${selectedQuestions.length} questions for ${mode} practice`);
     
     return NextResponse.json({ questions: selectedQuestions });
 
