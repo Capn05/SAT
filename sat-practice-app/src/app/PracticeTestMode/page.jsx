@@ -621,152 +621,255 @@ export default function PracticeTestPage() {
   
   return (
     <div style={styles.container}>
-      <TopBar 
-        title={`${practiceTestInfo?.name || 'Practice Test'} - Module ${moduleInfo?.moduleNumber || ''}`} 
-      />
-      
-      <div style={styles.testHeader}>
-        <div style={styles.testInfo}>
-          <h2 style={styles.testName}>
-            {practiceTestInfo?.subjects?.subject_name || 'Test'} - 
-            {moduleInfo?.moduleNumber === 1 ? ' Module 1' : 
-             moduleInfo?.isHarder ? ' Module 2 (Higher Difficulty)' : ' Module 2 (Lower Difficulty)'}
-          </h2>
-          <div style={styles.questionNumber}>
-            Question {currentQuestion + 1} of {totalQuestions}
-          </div>
-        </div>
-        
-        <div style={styles.timerContainer}>
-          <div style={styles.timer}>
-            <Clock size={20} />
-            <span>{formatTime(timeRemaining)}</span>
-          </div>
-          <button 
-            style={styles.pauseButton}
-            onClick={handlePauseTest}
-            title="Pause test and save progress"
-          >
-            Pause
-          </button>
-        </div>
-      </div>
-      
-      <div style={styles.mainContent}>
-        <div style={styles.questionContainer}>
-          {currentQuestionData.image_url && (
-            <div style={styles.imageContainer}>
-              <img 
-                src={currentQuestionData.image_url} 
-                alt="Question visual" 
-                style={styles.questionImage} 
-              />
+      {!isLoading && !error && currentQuestionData && (
+        <>
+          <div style={styles.testHeader}>
+            <div style={styles.testInfo}>
+              <h2 style={styles.testName}>
+                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
+                  ? 'Section 1, Module 1: Reading and Writing' 
+                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
+                    ? 'Section 2, Module 1: Math'
+                    : 'Section 1, Module 2: Reading and Writing'}
+              </h2>
             </div>
-          )}
-          
-          <div style={{ padding: '2rem', fontSize: '1.125rem', lineHeight: '1.5' }}>
-            {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
+            
+            <div style={styles.timerContainer}>
+              <div style={styles.timer}>
+                {formatTime(timeRemaining)}
+              </div>
+              <button 
+                style={styles.pauseButton}
+                onClick={handlePauseTest}
+              >
+                Pause
+              </button>
+            </div>
           </div>
           
-          <div className="options-container" style={styles.optionsContainer}>
-            {currentQuestionData.options.map(option => (
-              <div
-                key={option.id}
-                className={`option-card ${selectedOptionId === option.id ? 'selected' : ''}`}
-                onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
-              >
-                <div style={styles.optionLetter}>{option.value}</div>
-                <div style={styles.optionText}>
-                  {option.label ? processMathInText(option.label) : 'Loading...'}
-                </div>
-              </div>
-            ))}
+          <div style={styles.practiceTestBanner}>
+            THIS IS A PRACTICE TEST
+          </div>
+        </>
+      )}
+      
+      {isLoading ? (
+        <div style={styles.loadingContainer}>
+          <div style={styles.loadingContent}>
+            <div style={styles.loadingSpinner}></div>
+            <p>Loading test questions...</p>
           </div>
         </div>
-        
-        <div className="question-nav" style={styles.navigation}>
-          <button 
-            onClick={() => navigateQuestion(-1)}
-            disabled={currentQuestion === 0}
-            className="question-nav-button"
-          >
-            <ChevronLeft size={16} />
-            Previous
-          </button>
+      ) : error ? (
+        <div style={styles.errorContainer}>
+          <div style={styles.errorContent}>
+            <h2>Error</h2>
+            <p>{error}</p>
+            <button 
+              style={styles.backButton} 
+              onClick={() => router.push('/TimedTestDash')}
+            >
+              Return to Dashboard
+            </button>
+          </div>
+        </div>
+      ) : !currentQuestionData ? (
+        <div style={styles.errorContainer}>
+          <div style={styles.errorContent}>
+            <h2>No Questions Available</h2>
+            <p>This test module doesn't have any questions.</p>
+            <button 
+              style={styles.backButton} 
+              onClick={() => router.push('/TimedTestDash')}
+            >
+              Return to Dashboard
+            </button>
+          </div>
+        </div>
+      ) : (
+        <>
+          <div style={styles.mainContent}>
+            <div style={styles.questionContainer}>
+              <div style={styles.questionHeader}>
+                <div style={styles.questionNumberBox} onClick={() => setShowQuestionNav(!showQuestionNav)}>
+                  {currentQuestion + 1}
+                  {flaggedQuestions.has(currentQuestionData.id) && (
+                    <div style={styles.flagIcon}>
+                      <Bookmark size={16} />
+                    </div>
+                  )}
+                </div>
+                <button
+                  style={styles.markForReviewButton}
+                  onClick={() => toggleFlagged(currentQuestionData.id)}
+                >
+                  Mark for Review
+                </button>
+              </div>
+              
+              {currentQuestionData.image_url && (
+                <div style={styles.imageContainer}>
+                  <img 
+                    src={currentQuestionData.image_url} 
+                    alt="Question visual" 
+                    style={styles.questionImage} 
+                  />
+                </div>
+              )}
+              
+              {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
+                <div style={styles.mathQuestion}>
+                  <div style={{ padding: '1rem', fontSize: '1rem', lineHeight: '1.5' }}>
+                    {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
+                  </div>
+                  
+                  <div className="options-container" style={styles.optionsContainer}>
+                    {currentQuestionData.options.map(option => (
+                      <div
+                        key={option.id}
+                        style={{
+                          ...styles.optionCard,
+                          ...(selectedOptionId === option.id ? styles.selectedOption : {})
+                        }}
+                        onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
+                      >
+                        <div style={styles.optionLetter}>{option.value}</div>
+                        <div style={styles.optionText}>
+                          {option.label ? processMathInText(option.label) : 'Loading...'}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <div style={styles.rwQuestion}>
+                    <div style={{ padding: '1rem', fontSize: '1rem', lineHeight: '1.5' }}>
+                      {currentQuestionData.question_text ? processMathInText(currentQuestionData.question_text) : 'Loading question...'}
+                    </div>
+                    
+                    <div style={styles.rwOptionsContainer}>
+                      {currentQuestionData.options.map(option => (
+                        <div
+                          key={option.id}
+                          style={{
+                            ...styles.rwOptionCard,
+                            ...(selectedOptionId === option.id ? styles.rwSelectedOption : {})
+                          }}
+                          onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
+                        >
+                          <div style={styles.rwOptionLetter}>{option.value}</div>
+                          <div style={styles.rwOptionText}>
+                            {option.label ? processMathInText(option.label) : 'Loading...'}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
           
-          <button 
-            onClick={() => toggleFlagged(currentQuestionData.id)}
-            className="question-nav-button"
-            style={flaggedQuestions.has(currentQuestionData.id) ? { borderColor: '#ef4444', color: '#ef4444' } : {}}
-          >
-            <Flag size={16} />
-            {flaggedQuestions.has(currentQuestionData.id) ? 'Unflag' : 'Flag'}
-          </button>
-          
-          {currentQuestion < totalQuestions - 1 ? (
+          <div style={styles.navigationFooter}>
+            {currentQuestion > 0 && (
+              <button 
+                style={styles.backButton}
+                onClick={() => navigateQuestion(-1)}
+              >
+                Back
+              </button>
+            )}
             <button
-              className="question-nav-button"
-              onClick={() => navigateQuestion(1)}
+              style={styles.nextButton}
+              onClick={currentQuestion < totalQuestions - 1 ? () => navigateQuestion(1) : handleSubmitClick}
             >
               Next
-              <ChevronRight size={16} />
             </button>
-          ) : (
-            <button
-              className="question-nav-button"
-              style={{ backgroundColor: '#4f46e5', color: 'white' }}
-              onClick={handleSubmitClick}
-            >
-              Finish Test
-            </button>
-          )}
-        </div>
-        
-        <button
-          style={styles.questionListToggle}
-          onClick={() => setShowQuestionNav(!showQuestionNav)}
-        >
-          {showQuestionNav ? "Hide Question List" : "Show Question List"}
-        </button>
-        
-        {showQuestionNav && (
-          <div className="question-list" style={styles.questionList}>
-            {questions.map((_, index) => (
-              <div
-                key={index}
-                className={`question-number ${
-                  index === currentQuestion ? 'current' : ''
-                } ${
-                  answers[questions[index].id] !== undefined ? 'answered' : ''
-                } ${
-                  flaggedQuestions.has(questions[index].id) ? 'flagged' : ''
-                }`}
-                onClick={() => setCurrentQuestion(index)}
-              >
-                {index + 1}
-              </div>
-            ))}
           </div>
-        )}
-      </div>
+        </>
+      )}
+      
+      {showQuestionNav && (
+        <div style={styles.questionNavOverlay} onClick={() => setShowQuestionNav(false)}>
+          <div style={styles.questionNavContainer} onClick={(e) => e.stopPropagation()}>
+            <div style={styles.questionNavHeader}>
+              <h2 style={styles.questionNavTitle}>
+                {moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Reading and Writing' 
+                  ? 'Section 1, Module 1: Reading and Writing Questions' 
+                  : moduleInfo?.moduleNumber === 1 && practiceTestInfo?.subjects?.subject_name === 'Math'
+                    ? 'Section 2, Module 1: Math Questions'
+                    : 'Section 1, Module 2: Reading and Writing Questions'}
+              </h2>
+              <button style={styles.closeButton} onClick={() => setShowQuestionNav(false)}>×</button>
+            </div>
+            
+            <div style={styles.questionNavTabs}>
+              <div style={styles.tabActive}>Current</div>
+              <div style={styles.tab}>Unanswered</div>
+              <div style={styles.tab}>For Review</div>
+            </div>
+            
+            <div style={styles.questionGrid}>
+              {questions.map((q, index) => {
+                const status = getQuestionStatus(index);
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      ...styles.questionButton,
+                      ...(index === currentQuestion ? styles.currentQuestion : {}),
+                      ...(status === 'answered' ? styles.answeredQuestion : {}),
+                      ...(status === 'flagged' ? styles.flaggedQuestion : {}),
+                      ...(status === 'answered-flagged' ? styles.answeredFlaggedQuestion : {})
+                    }}
+                    onClick={() => {
+                      setCurrentQuestion(index);
+                      setShowQuestionNav(false);
+                    }}
+                  >
+                    {index + 1}
+                    {index === currentQuestion && (
+                      <div style={styles.currentQuestionIndicator}>•</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            
+            <div style={styles.questionNavFooter}>
+              <button 
+                style={styles.goToReviewButton}
+                onClick={() => {
+                  setShowQuestionNav(false);
+                  // Confirm all questions are answered and submit the test
+                  handleSubmitClick();
+                }}
+              >
+                Go to Review Page
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       
       {showSubmitModal && (
         <SubmitModal
           onSubmit={handleSubmitModule}
           onCancel={() => {
-            setShowSubmitModal(false)
+            setShowSubmitModal(false);
             // Resume timer
             if (!testComplete && timeRemaining > 0) {
               timerRef.current = setInterval(() => {
                 setTimeRemaining(prev => {
                   if (prev <= 1) {
-                    clearInterval(timerRef.current)
-                    handleSubmitModule()
-                    return 0
+                    clearInterval(timerRef.current);
+                    handleSubmitModule();
+                    return 0;
                   }
-                  return prev - 1
-                })
-              }, 1000)
+                  return prev - 1;
+                });
+              }, 1000);
             }
           }}
         />
@@ -795,8 +898,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '1rem 2rem',
-    backgroundColor: 'white',
+    padding: '0.5rem 1.5rem',
+    backgroundColor: '#f0f2f5',
     borderBottom: '1px solid #e5e7eb',
   },
   testInfo: {
@@ -804,15 +907,10 @@ const styles = {
     flexDirection: 'column',
   },
   testName: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontWeight: '600',
     color: '#111827',
     margin: 0,
-  },
-  questionNumber: {
-    fontSize: '14px',
-    color: '#6b7280',
-    marginTop: '4px',
   },
   timerContainer: {
     display: 'flex',
@@ -820,61 +918,128 @@ const styles = {
     gap: '1rem',
   },
   timer: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
     fontSize: '16px',
     fontWeight: '500',
     color: '#111827',
-    backgroundColor: '#f3f4f6',
-    padding: '8px 16px',
-    borderRadius: '6px',
+  },
+  pauseButton: {
+    padding: '0.4rem 0.8rem',
+    borderRadius: '4px',
+    border: '1px solid #d1d5db',
+    backgroundColor: 'white',
+    color: '#1f2937',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
   },
   mainContent: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    padding: '2rem',
+    padding: '1rem',
     overflowY: 'auto',
+    backgroundColor: '#f9fafb',
   },
   questionContainer: {
     backgroundColor: 'white',
-    borderRadius: '8px',
+    borderRadius: '0',
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
-    padding: '2rem',
-    marginBottom: '1.5rem',
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  questionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '1rem',
+    borderBottom: '1px solid #e5e7eb',
+  },
+  questionNumberBox: {
+    width: '32px',
+    height: '32px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#000',
+    color: '#fff',
+    fontWeight: 'bold',
+    borderRadius: '4px',
+    marginRight: '10px',
+    cursor: 'pointer',
+    position: 'relative',
+  },
+  flagIcon: {
+    position: 'absolute',
+    top: '-8px',
+    right: '-8px',
+    color: '#ef4444',
+  },
+  markForReviewButton: {
+    border: 'none',
+    background: 'none',
+    color: '#4b5563',
+    fontSize: '14px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
   },
   imageContainer: {
     maxWidth: '100%',
-    marginBottom: '1.5rem',
+    marginBottom: '1rem',
   },
   questionImage: {
     maxWidth: '100%',
     borderRadius: '4px',
   },
+  mathQuestion: {
+    padding: '1rem',
+  },
+  rwQuestion: {
+    padding: '1rem',
+  },
   optionsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '1rem',
+    gap: '0.75rem',
+    marginTop: '1rem',
   },
   optionCard: {
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    padding: '1rem',
+    padding: '0.75rem',
     borderRadius: '6px',
     border: '1px solid #e5e7eb',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     backgroundColor: 'white',
   },
+  rwOptionsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.5rem',
+    marginTop: '1rem',
+  },
+  rwOptionCard: {
+    display: 'flex',
+    gap: '0.75rem',
+    padding: '0.75rem',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    borderRadius: '0.25rem',
+    backgroundColor: 'white',
+  },
+  rwSelectedOption: {
+    backgroundColor: '#eef2ff',
+  },
   selectedOption: {
     border: '2px solid #4f46e5',
     backgroundColor: '#eef2ff',
   },
   optionLetter: {
-    width: '28px',
-    height: '28px',
+    width: '24px',
+    height: '24px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -884,50 +1049,57 @@ const styles = {
     fontSize: '14px',
     fontWeight: '600',
   },
+  rwOptionLetter: {
+    width: '24px',
+    height: '24px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '50%',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    fontSize: '14px',
+    fontWeight: '500',
+  },
   optionText: {
     flex: 1,
     fontSize: '15px',
     color: '#1f2937',
   },
-  navigation: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    gap: '1rem',
-    marginBottom: '2rem',
+  rwOptionText: {
+    flex: 1,
+    fontSize: '15px',
+    color: '#1f2937',
   },
-  submitButton: {
+  navigationFooter: {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '8px',
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
+    justifyContent: 'flex-end',
+    padding: '1rem',
+    backgroundColor: 'white',
+    borderTop: '1px solid #e5e7eb',
+    gap: '0.5rem',
+  },
+  backButton: {
+    padding: '0.5rem 1.5rem',
+    borderRadius: '4px',
+    border: '1px solid #d1d5db',
+    backgroundColor: '#f3f4f6',
+    color: '#1f2937',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+  },
+  nextButton: {
+    padding: '0.5rem 1.5rem',
+    borderRadius: '4px',
     border: 'none',
-    backgroundColor: '#4f46e5',
+    backgroundColor: '#3b82f6',
     color: 'white',
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
-    transition: 'all 0.2s ease',
   },
-  questionListToggle: {
-    alignSelf: 'center',
-    padding: '0.5rem 1rem',
-    borderRadius: '6px',
-    border: '1px solid #d1d5db',
-    backgroundColor: 'white',
-    color: '#4b5563',
-    fontSize: '14px',
-    cursor: 'pointer',
-  },
-  questionList: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: '0.5rem',
-    marginTop: '1rem',
-    justifyContent: 'center',
-  },
-  modalOverlay: {
+  questionNavOverlay: {
     position: 'fixed',
     top: 0,
     left: 0,
@@ -935,145 +1107,264 @@ const styles = {
     bottom: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1000,
+  },
+  questionNavContainer: {
+    width: '80%',
+    maxWidth: '600px',
+    backgroundColor: 'white',
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  questionNavHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '1rem',
+    borderBottom: '1px solid #e5e7eb',
+  },
+  questionNavTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    margin: 0,
+  },
+  closeButton: {
+    background: 'none',
+    border: 'none',
+    fontSize: '24px',
+    cursor: 'pointer',
+    color: '#6b7280',
+  },
+  questionNavTabs: {
+    display: 'flex',
+    borderBottom: '1px solid #e5e7eb',
+  },
+  tab: {
+    padding: '0.75rem 1rem',
+    cursor: 'pointer',
+    color: '#6b7280',
+    fontSize: '14px',
+  },
+  tabActive: {
+    padding: '0.75rem 1rem',
+    color: '#4f46e5',
+    borderBottom: '2px solid #4f46e5',
+    fontWeight: '500',
+    fontSize: '14px',
+  },
+  questionGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gap: '0.5rem',
+    padding: '1rem',
+    maxHeight: '300px',
+    overflowY: 'auto',
+  },
+  questionButton: {
+    width: '40px',
+    height: '40px',
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    border: '1px dashed #d1d5db',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    position: 'relative',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#6b7280',
+  },
+  currentQuestion: {
+    backgroundColor: '#f3f4f6',
+    fontWeight: 'bold',
+    position: 'relative',
+  },
+  currentQuestionIndicator: {
+    position: 'absolute',
+    bottom: '-22px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    fontSize: '32px',
+    color: '#6b7280',
+  },
+  answeredQuestion: {
+    backgroundColor: '#3b82f6',
+    color: 'white',
+    border: 'none',
+  },
+  flaggedQuestion: {
+    border: '1px solid #ef4444',
+    color: '#ef4444',
+  },
+  answeredFlaggedQuestion: {
+    backgroundColor: '#3b82f6',
+    color: 'white',
+    border: '2px solid #ef4444',
+  },
+  questionNavFooter: {
+    padding: '1rem',
+    display: 'flex',
+    justifyContent: 'center',
+    borderTop: '1px solid #e5e7eb',
+  },
+  goToReviewButton: {
+    padding: '0.5rem 1rem',
+    borderRadius: '4px',
+    border: '1px solid #d1d5db',
+    backgroundColor: '#f3f4f6',
+    color: '#1f2937',
+    fontSize: '14px',
+    cursor: 'pointer',
+  },
+  loadingContainer: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '1rem',
+  },
+  loadingSpinner: {
+    width: '40px',
+    height: '40px',
+    border: '4px solid #f3f4f6',
+    borderTopColor: '#3b82f6',
+    borderRadius: '50%',
+    animation: 'spin 1s linear infinite',
+  },
+  errorContainer: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  errorContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '1rem',
+    textAlign: 'center',
+    maxWidth: '500px',
+    padding: '2rem',
+  },
+  modalOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     zIndex: 1000,
   },
   modal: {
     backgroundColor: 'white',
     borderRadius: '8px',
     padding: '2rem',
-    maxWidth: '500px',
     width: '90%',
+    maxWidth: '500px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   },
   modalTitle: {
-    fontSize: '20px',
+    fontSize: '24px',
     fontWeight: '600',
-    color: '#111827',
     marginTop: 0,
     marginBottom: '1.5rem',
     textAlign: 'center',
   },
   modalText: {
     fontSize: '16px',
-    color: '#4b5563',
+    lineHeight: '1.5',
     marginBottom: '1.5rem',
     textAlign: 'center',
   },
   modalButtons: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     gap: '1rem',
   },
   cancelButton: {
-    flex: 1,
     padding: '0.75rem 1.5rem',
     borderRadius: '6px',
     border: '1px solid #d1d5db',
     backgroundColor: 'white',
-    color: '#4b5563',
+    color: '#1f2937',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+  },
+  submitButton: {
+    padding: '0.75rem 1.5rem',
+    borderRadius: '6px',
+    border: 'none',
+    backgroundColor: '#4f46e5',
+    color: 'white',
     fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
   },
   scoreContainer: {
-    marginBottom: '1.5rem',
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginBottom: '2rem',
   },
   scoreLabel: {
-    fontSize: '16px',
-    color: '#4b5563',
-    marginBottom: '0.5rem',
+    fontSize: '18px',
+    fontWeight: '600',
+    margin: '0 0 0.5rem 0',
   },
   scoreValue: {
-    fontSize: '24px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '1.5rem',
-  },
-  modalMessage: {
-    fontSize: '16px',
-    color: '#4b5563',
-    marginBottom: '1.5rem',
-    textAlign: 'center',
-  },
-  modalButton: {
-    display: 'block',
-    width: '100%',
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
-    border: 'none',
-    backgroundColor: '#4f46e5',
-    color: 'white',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    textAlign: 'center',
-  },
-  loadingContainer: {
-    width: '100%',
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  loadingContent: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '1rem',
-  },
-  loadingSpinner: {
-    width: '40px',
-    height: '40px',
-    border: '3px solid rgba(0, 0, 0, 0.1)',
-    borderTop: '3px solid #4f46e5',
-    borderRadius: '50%',
-    animation: 'spin 1s linear infinite',
-  },
-  errorContainer: {
-    width: '100%',
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  errorContent: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '1rem',
-    padding: '2rem',
-    textAlign: 'center',
-  },
-  backButton: {
-    padding: '0.75rem 1.5rem',
-    borderRadius: '6px',
-    border: 'none',
-    backgroundColor: '#4f46e5',
-    color: 'white',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    marginTop: '1rem',
-  },
-  pauseButton: {
-    padding: '8px 16px',
-    borderRadius: '6px',
-    border: '1px solid #d1d5db',
-    backgroundColor: '#f3f4f6',
-    color: '#4b5563',
-    fontSize: '14px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
+    fontSize: '32px',
+    fontWeight: '700',
+    margin: '0 0 0.25rem 0',
   },
   scorePercent: {
     fontSize: '28px',
     fontWeight: '700',
-    color: '#3b82f6',
+    color: '#4f46e5',
+    margin: 0,
+  },
+  modalMessage: {
+    fontSize: '16px',
     marginBottom: '1.5rem',
+    textAlign: 'center',
+    color: '#6b7280',
+  },
+  modalButton: {
+    padding: '0.75rem 1.5rem',
+    borderRadius: '6px',
+    border: 'none',
+    backgroundColor: '#4f46e5',
+    color: 'white',
+    fontSize: '16px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    width: '100%',
+  },
+  practiceTestBanner: {
+    padding: '0.75rem',
+    backgroundColor: '#0f172a',
+    textAlign: 'center',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: 'white',
+  },
+  // Global styles for animations
+  '@global': {
+    '@keyframes spin': {
+      '0%': { transform: 'rotate(0deg)' },
+      '100%': { transform: 'rotate(360deg)' },
+    },
   },
 } 
