@@ -552,7 +552,7 @@ export default function TestCategories() {
         ))}
       </div>
       
-      <Link href="/skills" style={styles.seeMoreLink}>
+      <Link href="/skills?subject=1" style={styles.seeMoreLink}>
         <div style={styles.viewAllButton}>
           <BookOpen style={styles.viewAllIcon} />
           <span style={styles.viewAllText}>View All Skills</span>

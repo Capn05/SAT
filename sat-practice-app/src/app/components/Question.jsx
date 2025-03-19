@@ -572,8 +572,10 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
     const currentQuestionId = questions[currentIndex].id;
     const isFirstAttempt = !(currentQuestionId in attempts);
+    const isAlreadyCountedAsCorrect = sessionCorrectAnswers[currentQuestionId] === true;
 
     try {
+      // Only on first attempt, record the answer in the database
       if (isFirstAttempt) {
         console.log('Submitting answer to API with data:', {
           questionId: currentQuestionId,
@@ -617,8 +619,37 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           skillName: skillName || 'N/A',
           questionId: currentQuestionId
         });
+        
+        // Mark the question as answered in our session tracking on first attempt only
+        setAnsweredQuestions(prev => new Set([...prev, currentQuestionId]));
+        
+        // Store the first-attempt correctness in session
+        setSessionCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: selectedOption.is_correct
+        }));
+        
+        // Store the answer for this question regardless of correctness
+        setUserAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: selectedOption.id
+        }));
+        
+        // Increment answered count if correct on first attempt
+        if (selectedOption.is_correct) {
+          setAnsweredCount(prev => prev + 1);
+        }
+      } else if (selectedOption.is_correct && !isAlreadyCountedAsCorrect) {
+        // If this is a correct answer on a subsequent attempt and we haven't counted it yet,
+        // update the answered count and mark it as correct in our session
+        setAnsweredCount(prev => prev + 1);
+        setSessionCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: true
+        }));
       }
 
+      // Track attempt count and selected options for all attempts
       setAttempts(prev => ({
         ...prev,
         [currentQuestionId]: {
@@ -627,19 +658,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         }
       }));
       
+      // Show feedback based on correctness
       if (selectedOption.is_correct) {
-        setAnsweredQuestions(prev => new Set([...prev, currentQuestionId]));
-        setAnsweredCount(prev => prev + 1);
-        setUserAnswers(prev => ({
-          ...prev,
-          [currentQuestionId]: selectedOption.id
-        }));
-        
-        // Store the answer as correct in the session
-        setSessionCorrectAnswers(prev => ({
-          ...prev,
-          [currentQuestionId]: true
-        }));
         setShowFeedback(true);
         setFeedback({
           type: 'success',
@@ -654,12 +674,6 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           }
         }));
       } else {
-        // Store the answer as incorrect in the session
-        setSessionCorrectAnswers(prev => ({
-          ...prev,
-          [currentQuestionId]: false
-        }));
-        
         setShowFeedback(true);
         setFeedback({
           type: 'error',
@@ -808,14 +822,17 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
   const renderOptions = () => {
     const currentQuestionId = questions[currentIndex].id;
-    const isAnswered = answeredQuestions.has(currentQuestionId);
+    const isAnswered = answeredQuestions.has(currentQuestionId) && sessionCorrectAnswers[currentQuestionId] === true;
     const currentAttempts = attempts[currentQuestionId];
-    const correctAnswerId = userAnswers[currentQuestionId];
-
+    
+    // Find the correct answer option
+    const correctOption = sortedOptions.find(option => option.is_correct);
+    
     return sortedOptions.map((option) => {
       const wasSelected = currentAttempts?.selectedOptions?.includes(option.id);
       const showIncorrectFeedback = wasSelected && !option.is_correct;
-      const isCorrectAnswer = option.id === correctAnswerId;
+      // Only show the correct answer with checkmark if the user actually got it right
+      const isCorrectAnswerForDisplay = option.is_correct && sessionCorrectAnswers[currentQuestionId] === true;
       const isSelected = selectedOption?.id === option.id;
       
       return (
@@ -836,7 +853,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
               transform: isSelected ? 'scale(1.05)' : 'scale(1)',
               transition: 'transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border 0.2s ease',
               cursor: isAnswered ? 'default' : 'pointer',
-              color: isAnswered && isCorrectAnswer ? '#65a30d' : 
+              color: isCorrectAnswerForDisplay ? '#65a30d' : 
                      showIncorrectFeedback ? '#dc2626' : '#374151',
             }}
           >
@@ -845,7 +862,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
               style={styles.choiceText}
               dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
             />
-            {isAnswered && isCorrectAnswer && (
+            {isCorrectAnswerForDisplay && (
               <span style={styles.correctIndicator}>✓</span>
             )}
           </button>
@@ -925,9 +942,11 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             <button 
               style={styles.submitButton}
               type="submit"
-              disabled={isSubmitting || !selectedOption || answeredQuestions.has(questions[currentIndex].id)}
+              disabled={isSubmitting || !selectedOption || (answeredQuestions.has(questions[currentIndex].id) && sessionCorrectAnswers[questions[currentIndex].id] === true)}
             >
-              {isSubmitting ? 'Submitting...' : answeredQuestions.has(questions[currentIndex].id) ? 'Answered' : 'Submit Answer'}
+              {isSubmitting ? 'Submitting...' : 
+                (answeredQuestions.has(questions[currentIndex].id) && sessionCorrectAnswers[questions[currentIndex].id] === true) ? 
+                'Answered' : 'Submit Answer'}
             </button>
           </form>
 

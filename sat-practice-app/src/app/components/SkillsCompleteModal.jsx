@@ -17,7 +17,9 @@ const SkillsCompleteModal = ({ isOpen, onClose, subject, skillName, mode, diffic
   const handleImDone = useCallback(() => {
     // First close the modal
     onClose();
+    
     // Then navigate back to the skills page for the specific subject
+    // Use the subject ID from props, ensuring it's passed as a query parameter
     const url = `/skills?subject=${subject}`;
     console.log('Navigating to:', url);
     router.push(url);

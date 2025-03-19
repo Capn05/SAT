@@ -1,4 +1,17 @@
+import { useRouter } from 'next/navigation';
+
 export default function SubjectTabs({ activeSubject, onSubjectChange }) {
+    const router = useRouter();
+    
+    const handleSubjectChange = (subject) => {
+      // Call the state change function
+      onSubjectChange(subject);
+      
+      // Update URL with the appropriate subject_id
+      const subjectId = subject === "math" ? "1" : "2";
+      router.push(`/skills?subject=${subjectId}`);
+    };
+    
     return (
       <div style={styles.container}>
         <div style={styles.tabs}>
@@ -7,7 +20,7 @@ export default function SubjectTabs({ activeSubject, onSubjectChange }) {
               ...styles.tab,
               ...(activeSubject === "math" ? styles.activeTab : {}),
             }}
-            onClick={() => onSubjectChange("math")}
+            onClick={() => handleSubjectChange("math")}
           >
             Mathematics
           </button>
@@ -16,7 +29,7 @@ export default function SubjectTabs({ activeSubject, onSubjectChange }) {
               ...styles.tab,
               ...(activeSubject === "reading" ? styles.activeTab : {}),
             }}
-            onClick={() => onSubjectChange("reading")}
+            onClick={() => handleSubjectChange("reading")}
           >
             Reading & Writing
           </button>

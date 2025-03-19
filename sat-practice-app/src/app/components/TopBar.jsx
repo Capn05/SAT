@@ -12,7 +12,7 @@ export default function TopBar({ title }) {
   }
 
   const handleReturnToSkills = () => {
-    router.push('/skills')
+    router.push('/skills?subject=1')
   }
   
   const handleReturnTotestDash = () => {

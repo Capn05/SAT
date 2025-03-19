@@ -20,6 +20,7 @@ async function getSkillData(skillName) {
 export default function SkillDetailPage() {
   const searchParams = useSearchParams()
   const skillName = searchParams.get('page')
+  const subjectId = searchParams.get('subject_id') || '1'; // Default to math if not specified
   const [skill, setSkill] = useState(null)
   const [activeTab, setActiveTab] = useState("overview")
   const router = useRouter()
@@ -42,16 +43,12 @@ console.log(skill.name)
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-      <Link href="/skills" style={styles.seeMoreText}>
-
+      <Link href={`/skills?subject=${subjectId}`} style={styles.seeMoreText}>
         <button style={styles.backButton} >
-
           <ArrowLeft size={20} />
-
           <span>Back to Skills</span>
         </button>
-        </Link>
-
+      </Link>
       </header>
 
       <div style={styles.content}>
@@ -166,7 +163,7 @@ console.log(skill.name)
             </p>
             <button 
               style={styles.actionButton}
-              onClick={() => router.push(`/practice?mode=skill&subject=2&category=${encodeURIComponent(skill.name)}`)}
+              onClick={() => router.push(`/practice?mode=skill&subject=${subjectId}&category=${encodeURIComponent(skill.name)}`)}
             >
               <Play size={16} />
               Start Practice Session

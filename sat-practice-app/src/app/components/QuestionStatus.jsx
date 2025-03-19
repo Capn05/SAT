@@ -67,23 +67,20 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
   }, [currentIndex, questionsPerPage]);
 
   const getStatus = (questionId) => {
-    // Check if the question has been answered in the current session
-    const isAnsweredInCurrentSession = answeredQuestionsInSession?.has(questionId);
-    
-    if (isAnsweredInCurrentSession) {
-      // First check if we have current session data for this question
-      if (sessionAnswers && sessionAnswers[questionId] !== undefined) {
-        return sessionAnswers[questionId] ? 'correct' : 'incorrect';
-      }
-      
-      // Fall back to database data if session data not available
-      const answer = userAnswers.find((ans) => ans.question_id === questionId);
-      if (answer) {
-        return answer.is_correct ? 'correct' : 'incorrect';
+    // Check if the question was answered in this session
+    if (answeredQuestionsInSession && answeredQuestionsInSession.has(questionId)) {
+      // If in session answers, use that result (which reflects first attempt only)
+      if (sessionAnswers && questionId in sessionAnswers) {
+        // This status reflects first attempt only, which is stored in sessionAnswers
+        return sessionAnswers[questionId] === true ? 'correct' : 'incorrect';
       }
     }
     
-    // If not answered in current session or no record found, show as not_answered
+    // Not answered in current session, check user's previous answers
+    if (userAnswers && questionId in userAnswers) {
+      return userAnswers[questionId] ? 'correct' : 'incorrect';
+    }
+    
     return 'not_answered';
   };
 

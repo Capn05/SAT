@@ -192,13 +192,36 @@ const readingDomainData = [
 ];
 
 export default function SkillsPage() {
-  const [activeSubject, setActiveSubject] = useState("reading")
+  const [activeSubject, setActiveSubject] = useState("math")
   const [mathDomains, setMathDomains] = useState(mathDomainData)
   const [readingDomains, setReadingDomains] = useState(readingDomainData)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const router = useRouter()
   const supabase = createClientComponentClient()
+
+  // Check URL for subject parameter
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const subjectParam = params.get('subject');
+    
+    if (subjectParam) {
+      // Set active subject based on subject_id from URL
+      if (subjectParam === '1' || subjectParam === 1) {
+        setActiveSubject("math");
+      } else if (subjectParam === '2' || subjectParam === 2) {
+        setActiveSubject("reading");
+      }
+    } else {
+      // Default to math if no subject provided
+      setActiveSubject("math");
+      
+      // Update URL to include the default subject
+      const newUrl = new URL(window.location);
+      newUrl.searchParams.set('subject', '1');
+      window.history.replaceState({}, '', newUrl);
+    }
+  }, []);
 
   // Helper function to refresh skills cache automatically
   const refreshSkillsCache = async (subjectId) => {
