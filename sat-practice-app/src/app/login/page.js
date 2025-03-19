@@ -49,7 +49,16 @@ function LoginContent() {
       }
 
       if (data?.session) {
-        router.push('/home');
+        // Check if we need to redirect to pricing page
+        const redirectToPricing = typeof window !== 'undefined' ? localStorage.getItem('redirectToPricing') : null;
+        
+        if (redirectToPricing) {
+          // Clear the flag from localStorage
+          localStorage.removeItem('redirectToPricing');
+          router.push('/pricing');
+        } else {
+          router.push('/home');
+        }
       } else {
         setError('Login failed - no session created');
       }

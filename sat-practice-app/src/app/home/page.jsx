@@ -8,13 +8,14 @@ import AIChat from "../components/AIChatGeneral"
 import AnalyticsCard from "../components/AnalyticsCard"
 import Footer from "../components/Footer"
 import TimedTestButton from "../components/TimedPractice"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import TopBar from '../components/TopBar';
 import DifficultyModal from '../components/DifficultyModal';
+import { supabase } from '../../../lib/supabase';
 
 export default function Dashboard() {
-  useAuth()
+  const { user, subscription, loading } = useAuth();
   const [showDifficultyModal, setShowDifficultyModal] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const router = useRouter();
@@ -24,9 +25,29 @@ export default function Dashboard() {
     setShowDifficultyModal(true);
   };
 
+  if (loading) {
+    return (
+      <div style={{ ...styles.container, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div>Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div style={styles.container}>
       <Header />
+      
+      {subscription && (
+        <div style={styles.subscriptionBanner}>
+          <div style={styles.subscriptionInfo}>
+            <span>
+              <strong>{subscription.plan === 'monthly' ? 'Monthly' : '6-Month'} Plan</strong>
+              {subscription.expires && ` · Expires: ${new Date(subscription.expires).toLocaleDateString()}`}
+            </span>
+          </div>
+        </div>
+      )}
+      
       <div style={styles.content}>
         <div style={styles.grid}>
           <div style={styles.leftColumn}>
@@ -103,6 +124,18 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "24px",
+  },
+  subscriptionBanner: {
+    backgroundColor: "#10b981",
+    color: "white",
+    padding: "8px 24px",
+    textAlign: "center",
+    fontSize: "14px",
+  },
+  subscriptionInfo: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }
 

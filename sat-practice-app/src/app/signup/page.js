@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { GraduationCap } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../../lib/supabase';
 import { useRouter } from 'next/navigation';
 
@@ -12,6 +12,15 @@ export default function SignUp() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  useEffect(() => {
+    // Check if a plan was selected before redirecting to signup
+    const storedPlan = typeof window !== 'undefined' ? localStorage.getItem('selectedPlan') : null;
+    if (storedPlan) {
+      setSelectedPlan(storedPlan);
+    }
+  }, []);
 
   const handleSignUp = async (e) => {
     e.preventDefault();
@@ -46,6 +55,11 @@ export default function SignUp() {
         setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
         setEmail('');
         setPassword('');
+        
+        // Store the selected plan in localStorage for after login if it exists
+        if (selectedPlan) {
+          localStorage.setItem('redirectToPricing', 'true');
+        }
         
         setTimeout(() => {
           router.push('/login?signup=success');
@@ -180,6 +194,16 @@ export default function SignUp() {
       borderLeft: '4px solid #dc2626',
       color: '#b91c1c',
     },
+    planInfo: {
+      marginTop: '16px',
+      marginBottom: '16px',
+      backgroundColor: '#10b981',
+      color: 'white',
+      padding: '12px',
+      borderRadius: '4px',
+      textAlign: 'center',
+      fontSize: '14px',
+    }
   };
 
   return (
@@ -191,6 +215,12 @@ export default function SignUp() {
       
       <div style={styles.card}>
         <h2 style={styles.heading}>Sign Up</h2>
+        
+        {selectedPlan && (
+          <div style={styles.planInfo}>
+            You're signing up for the {selectedPlan === 'monthly' ? 'Monthly' : '6-Month'} Plan
+          </div>
+        )}
         
         <form onSubmit={handleSignUp} style={styles.form}>
           <div style={styles.inputGroup}>
