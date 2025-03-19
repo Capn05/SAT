@@ -39,6 +39,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [showFeedback, setShowFeedback] = useState(false);
   const [attempts, setAttempts] = useState({});
   const [submittedOptions, setSubmittedOptions] = useState({});
+  const [questionsInNewSession, setQuestionsInNewSession] = useState(new Set());
   const MAX_ATTEMPTS = 2;  // Maximum attempts before showing correct answer
   const supabase = createClientComponentClient();
   const [showQuickPracticeModal, setShowQuickPracticeModal] = useState(false);
@@ -649,6 +650,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         if (selectedOption.is_correct) {
           setAnsweredCount(prev => prev + 1);
         }
+
+        // After submitting, remove this question from the new session tracking
+        setQuestionsInNewSession(prev => {
+          const updated = new Set(prev);
+          updated.delete(currentQuestionId);
+          return updated;
+        });
       } else if (selectedOption.is_correct && !isAlreadyCountedAsCorrect) {
         // If this is a correct answer on a subsequent attempt and we haven't counted it yet,
         // update the answered count but DO NOT change the sessionCorrectAnswers state
@@ -735,8 +743,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setShowFeedback(false);
     setSessionCorrectAnswers({}); // Reset session correct answers
     setSubmittedOptions({}); // Reset submitted options
+    setQuestionsInNewSession(new Set()); // Reset the new session questions tracking
     
-    // Log that we're starting a new question set
+    // Log that we're starting a new set of practice questions
     console.log('Starting a new set of practice questions');
     
     // Then fetch new questions
@@ -788,6 +797,15 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       }
     }, 100);
   }, [subject, mode, skillName]);
+
+  // Update to handle adding questions to the new session tracking
+  useEffect(() => {
+    if (questions.length > 0) {
+      // Add all questions to the new session tracking when questions are loaded
+      const allQuestionIds = questions.map(q => q.id);
+      setQuestionsInNewSession(new Set(allQuestionIds));
+    }
+  }, [questions]);
 
   if (loading) {
     return (
@@ -943,6 +961,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           questions={questions}
           answeredQuestionsInSession={answeredQuestions}
           sessionAnswers={sessionCorrectAnswers}
+          questionsInNewSession={questionsInNewSession}
         />
 
         <div style={styles.questionContent}>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
-const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions, answeredQuestionsInSession, sessionAnswers }) => {
+const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions, answeredQuestionsInSession, sessionAnswers, questionsInNewSession }) => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
@@ -67,6 +67,12 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
   }, [currentIndex, questionsPerPage]);
 
   const getStatus = (questionId) => {
+    // If this question is in the new session and hasn't been answered yet,
+    // show it as not_answered regardless of past history
+    if (questionsInNewSession && questionsInNewSession.has(questionId)) {
+      return 'not_answered';
+    }
+    
     // Check if the question was answered in this session
     if (answeredQuestionsInSession && answeredQuestionsInSession.has(questionId)) {
       // If in session answers, use that result (which reflects first attempt only)
