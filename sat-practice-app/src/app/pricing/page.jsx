@@ -11,26 +11,15 @@ export default function PricingPage() {
   const router = useRouter();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        console.log('Checking auth in pricing page');
-        const { data: { user }, error: authError } = await supabase.auth.getUser();
-        
-        if (authError) {
-          console.error('Auth error in pricing page:', authError);
-          setError('Authentication error. Please try again.');
-        } else {
-          console.log('User in pricing page:', user?.email || 'No user');
-          setUser(user);
-        }
-        
+        const { data: { user } } = await supabase.auth.getUser();
+        setUser(user);
         setLoading(false);
       } catch (error) {
-        console.error('Error checking auth in pricing page:', error);
-        setError('An unexpected error occurred. Please try again.');
+        console.error('Error checking auth:', error);
         setLoading(false);
       }
     };
@@ -39,11 +28,8 @@ export default function PricingPage() {
   }, []);
 
   const handleSubscribe = (planType) => {
-    console.log('Handling subscription for plan:', planType);
-    
     // If user is not logged in, redirect to signup
     if (!user) {
-      console.log('User not logged in, redirecting to signup');
       // Store the plan type in localStorage to redirect back after signup
       localStorage.setItem('selectedPlan', planType);
       router.push('/signup');
@@ -51,9 +37,7 @@ export default function PricingPage() {
     }
 
     // User is logged in, redirect to Stripe
-    const paymentLink = getPaymentLink(planType);
-    console.log('Redirecting to payment link:', paymentLink);
-    window.location.href = paymentLink;
+    window.location.href = getPaymentLink(planType);
   };
 
   const styles = {
@@ -112,6 +96,9 @@ export default function PricingPage() {
       display: 'flex',
       flexDirection: 'column',
       gap: '24px',
+      '@media (minWidth: 768px)': {
+        flexDirection: 'row',
+      },
     },
     planCard: {
       backgroundColor: 'white',
@@ -122,6 +109,10 @@ export default function PricingPage() {
       flexDirection: 'column',
       flex: 1,
       transition: 'transform 0.2s, box-shadow 0.2s',
+    },
+    planCardHover: {
+      transform: 'translateY(-5px)',
+      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
     },
     planName: {
       fontSize: '24px',
@@ -174,10 +165,16 @@ export default function PricingPage() {
       color: 'white',
       border: 'none',
     },
+    primaryButtonHover: {
+      backgroundColor: '#0d9488',
+    },
     secondaryButton: {
       backgroundColor: 'white',
       color: '#10b981',
       border: '2px solid #10b981',
+    },
+    secondaryButtonHover: {
+      backgroundColor: '#f0fdfa',
     },
     bestValue: {
       display: 'inline-block',
@@ -203,33 +200,7 @@ export default function PricingPage() {
       color: '#10b981',
       textDecoration: 'none',
     },
-    errorMessage: {
-      backgroundColor: '#fee2e2',
-      color: '#b91c1c',
-      padding: '12px',
-      borderRadius: '8px',
-      marginBottom: '24px',
-      fontSize: '14px',
-    },
   };
-
-  // Apply media query for responsive layout using inline styles
-  useEffect(() => {
-    const handleResize = () => {
-      const planRowEl = document.getElementById('plan-row');
-      if (planRowEl) {
-        if (window.innerWidth >= 768) {
-          planRowEl.style.flexDirection = 'row';
-        } else {
-          planRowEl.style.flexDirection = 'column';
-        }
-      }
-    };
-
-    handleResize(); // Initial call
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   if (loading) {
     return (
@@ -258,10 +229,8 @@ export default function PricingPage() {
           Full access to all features with either plan. Choose what works for your preparation timeline.
         </p>
 
-        {error && <div style={styles.errorMessage}>{error}</div>}
-
         <div style={styles.plansContainer}>
-          <div id="plan-row" style={styles.planRow}>
+          <div style={styles.planRow}>
             {/* Monthly Plan Card */}
             <div 
               style={styles.planCard}
@@ -392,11 +361,7 @@ export default function PricingPage() {
 
       <div style={styles.footer}>
         <p style={styles.footerText}>
-          {user ? (
-            <span>Want to go back? <Link href="/home" style={styles.footerLink}>Return to Dashboard</Link></span>
-          ) : (
-            <span>Already have an account? <Link href="/login" style={styles.footerLink}>Log in</Link></span>
-          )}
+          Already have an account? <Link href="/login" style={styles.footerLink}>Log in</Link>
         </p>
       </div>
     </div>
