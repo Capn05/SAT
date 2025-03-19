@@ -21,7 +21,14 @@ export async function POST(request) {
     }
 
     const { questionId, optionId, isCorrect, subject, mode } = await request.json();
-    console.log('Processing answer:', { questionId, optionId, isCorrect, subject, mode });
+    console.log('Processing answer with details:', { 
+      questionId, 
+      optionId, 
+      isCorrect, 
+      subject, 
+      mode, 
+      userId: session.user.id 
+    });
 
     // Get question details to get domain and subcategory info
     const { data: question, error: questionError } = await supabase
@@ -82,10 +89,28 @@ export async function POST(request) {
 
     const accuracy = (correct_attempts / total_attempts) * 100;
     let mastery_level;
-    if (accuracy < 60) mastery_level = 'Needs Practice';
-    else if (accuracy < 80) mastery_level = 'Needs More Attempts';
-    else if (accuracy < 90) mastery_level = 'On Track';
-    else mastery_level = 'Mastered';
+    
+    // Use consistent mastery level logic across the app
+    if (total_attempts === 0) {
+      mastery_level = 'Not Started';
+    } else if (total_attempts < 5) {
+      mastery_level = 'Needs More Attempts';
+    } else if (accuracy >= 85) {
+      mastery_level = 'Mastered';
+    } else if (accuracy >= 60) {
+      mastery_level = 'Improving';
+    } else {
+      mastery_level = 'Needs Work';
+    }
+
+    console.log('Updating user_skill_analytics with:', {
+      subcategory_id: question.subcategory_id,
+      subcategory_name: question.subcategories.subcategory_name,
+      total_attempts,
+      correct_attempts,
+      accuracy: Math.round(accuracy),
+      mastery_level
+    });
 
     // Update user_skill_analytics
     const { error: updateError } = await supabase

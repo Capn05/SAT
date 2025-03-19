@@ -1,37 +1,29 @@
-import React, { useState, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 
-const SkillsCompleteModal = ({ isOpen, onClose, subject, skillName, mode, difficulty }) => {
+const SkillsCompleteModal = ({ isOpen, onClose, subject, skillName, mode, difficulty, onMorePractice }) => {
   const router = useRouter();
-  const [selectedDifficulty, setSelectedDifficulty] = useState(difficulty || 'mixed');
-  const [showDifficultyOptions, setShowDifficultyOptions] = useState(false);
 
-  const handleReturnToSkills = useCallback(() => {
+  const handleMorePractice = useCallback(() => {
+    // Close this modal
+    onClose();
+    
+    // Call the parent's handler
+    if (onMorePractice) {
+      onMorePractice();
+    }
+  }, [onClose, onMorePractice]);
+
+  const handleImDone = useCallback(() => {
     // First close the modal
     onClose();
+    
     // Then navigate back to the skills page for the specific subject
+    // Use the subject ID from props, ensuring it's passed as a query parameter
     const url = `/skills?subject=${subject}`;
     console.log('Navigating to:', url);
     router.push(url);
   }, [router, onClose, subject]);
-
-  const handlePracticeMore = useCallback(() => {
-    if (showDifficultyOptions) {
-      // First close the modal
-      onClose();
-      // Then start new practice with selected difficulty
-      const url = `/practice?mode=${mode || 'skill'}&subject=${subject}&category=${encodeURIComponent(skillName)}&difficulty=${selectedDifficulty}`;
-      console.log('Navigating to:', url);
-      router.push(url);
-    } else {
-      // Show difficulty selection options
-      setShowDifficultyOptions(true);
-    }
-  }, [router, onClose, showDifficultyOptions, mode, subject, skillName, selectedDifficulty]);
-
-  const handleDifficultyChange = useCallback((e) => {
-    setSelectedDifficulty(e.target.value);
-  }, []);
   
   // Conditional return after all hook declarations
   if (!isOpen) return null;
@@ -41,73 +33,14 @@ const SkillsCompleteModal = ({ isOpen, onClose, subject, skillName, mode, diffic
       <div style={styles.modal}>
         <h2 style={styles.title}>Skill Practice Completed!</h2>
         <p style={styles.message}>
-          Great job completing this skill practice! What would you like to do next?
+          Great job completing this skill practice! Would you like to practice more?
         </p>
-        
-        {showDifficultyOptions ? (
-          <div style={styles.difficultySection}>
-            <p style={styles.difficultyLabel}>Select difficulty for next practice:</p>
-            <div style={styles.radioGroup}>
-              <label style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="difficulty"
-                  value="easy"
-                  checked={selectedDifficulty === 'easy'}
-                  onChange={handleDifficultyChange}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText}>Easy</span>
-              </label>
-              <label style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="difficulty"
-                  value="medium"
-                  checked={selectedDifficulty === 'medium'}
-                  onChange={handleDifficultyChange}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText}>Medium</span>
-              </label>
-              <label style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="difficulty"
-                  value="hard"
-                  checked={selectedDifficulty === 'hard'}
-                  onChange={handleDifficultyChange}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText}>Hard</span>
-              </label>
-              <label style={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="difficulty"
-                  value="mixed"
-                  checked={selectedDifficulty === 'mixed'}
-                  onChange={handleDifficultyChange}
-                  style={styles.radioInput}
-                />
-                <span style={styles.radioText}>Mixed</span>
-              </label>
-            </div>
-          </div>
-        ) : null}
-
         <div style={styles.buttonContainer}>
-          {showDifficultyOptions ? (
-            <button onClick={handlePracticeMore} style={styles.confirmButton}>
-              Start Practice
-            </button>
-          ) : (
-            <button onClick={handlePracticeMore} style={styles.confirmButton}>
-              Practice More
-            </button>
-          )}
-          <button onClick={handleReturnToSkills} style={styles.cancelButton}>
-            Return to Skills
+          <button onClick={handleMorePractice} style={styles.confirmButton}>
+            More Practice
+          </button>
+          <button onClick={handleImDone} style={styles.cancelButton}>
+            I'm Done
           </button>
         </div>
       </div>
@@ -200,6 +133,20 @@ const styles = {
     transition: 'background-color 0.2s',
     '&:hover': {
       backgroundColor: '#4d7c0f',
+    },
+  },
+  secondaryButton: {
+    padding: '12px 24px',
+    backgroundColor: '#f3f4f6',
+    color: '#1f2937',
+    border: 'none',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: '500',
+    transition: 'background-color 0.2s',
+    '&:hover': {
+      backgroundColor: '#e5e7eb',
     },
   },
   cancelButton: {

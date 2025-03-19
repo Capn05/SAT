@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function DifficultyModal({ isOpen, onClose, subject, title, mode = "quick", category = null }) {
+export default function DifficultyModal({ isOpen, onClose, subject, title, mode = "quick", category = null, onDifficultySelected = null }) {
   const [selectedDifficulty, setSelectedDifficulty] = useState('mixed');
   const router = useRouter();
 
@@ -14,17 +14,30 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
   };
 
   const handleStartPractice = () => {
-    // Build the URL based on the mode
-    let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}`;
-    
-    // Add category parameter if provided (for skill mode)
-    if (category && mode === "skill") {
-      url += `&category=${encodeURIComponent(category)}`;
+    // If the parent provided a callback, use it
+    if (onDifficultySelected) {
+      onDifficultySelected(selectedDifficulty);
+      onClose();
+      return;
     }
     
-    console.log(`Navigating to: ${url}`);
-    router.push(url);
+    // Otherwise, use the default behavior
+    // Close the modal first
     onClose();
+    
+    // Force a small delay before navigation to ensure modal state is updated
+    setTimeout(() => {
+      // Build the URL based on the mode
+      let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}`;
+      
+      // Add category parameter if provided (for skill mode)
+      if (category && mode === "skill") {
+        url += `&category=${encodeURIComponent(category)}`;
+      }
+      
+      console.log(`Navigating to: ${url}`);
+      router.push(url);
+    }, 100);
   };
 
   return (

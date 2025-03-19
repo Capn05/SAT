@@ -54,8 +54,7 @@ export async function POST(request) {
           subcategory_id
         )
       `)
-      .eq('user_id', userId)
-      .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`);
+      .eq('user_id', userId);
 
     if (answerError) {
       console.error('Error fetching answers:', answerError);
@@ -80,6 +79,9 @@ export async function POST(request) {
           a.questions.subcategory_id === subcategory.id
         );
         
+        console.log(`Processing subcategory ${subcategory.subcategory_name} (ID: ${subcategory.id})`);
+        console.log(`Found ${subcategoryAnswers.length} answers for this subcategory`);
+        
         // Get unique question attempts
         const uniqueAttempts = new Map();
         subcategoryAnswers.forEach(answer => {
@@ -91,6 +93,8 @@ export async function POST(request) {
         const totalAttempts = uniqueAttempts.size;
         const correctAnswers = Array.from(uniqueAttempts.values()).filter(isCorrect => isCorrect).length;
         const accuracyPercentage = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
+
+        console.log(`Subcategory stats - Total attempts: ${totalAttempts}, Correct: ${correctAnswers}, Accuracy: ${accuracyPercentage}%`);
 
         // Determine mastery level based on consistent rules
         let masteryLevel;
@@ -106,8 +110,10 @@ export async function POST(request) {
           masteryLevel = 'Needs Work';
         }
 
+        console.log(`Setting mastery level to: ${masteryLevel}`);
+
         // Update user_skill_analytics
-        const { error: updateError } = await supabase
+        const { data: updateData, error: updateError } = await supabase
           .from('user_skill_analytics')
           .upsert({
             user_id: userId,
@@ -119,11 +125,13 @@ export async function POST(request) {
             last_practiced: totalAttempts > 0 ? new Date().toISOString() : null,
             mastery_level: masteryLevel
           }, {
-            onConflict: 'user_id,subcategory_id'
+            onConflict: ['user_id', 'subcategory_id']
           });
 
         if (updateError) {
           console.error('Error updating analytics for subcategory:', subcategory.subcategory_name, updateError);
+        } else {
+          console.log(`Successfully updated analytics for ${subcategory.subcategory_name}`);
         }
       }
     }

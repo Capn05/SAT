@@ -1,20 +1,20 @@
 import React, { useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 
-const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode }) => {
+const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode, onMorePractice }) => {
   const router = useRouter();
 
-  // Use useCallback to memoize the handlers
-  const handleStartNewPractice = useCallback(() => {
-    // First close the modal
+  const handleMorePractice = useCallback(() => {
+    // Close this modal
     onClose();
-    // Then navigate to a new quick practice session with the same parameters
-    const url = `/practice?mode=${mode || 'quick'}&subject=${subject}&difficulty=${difficulty || 'mixed'}`;
-    console.log('Navigating to:', url);
-    router.push(url);
-  }, [router, onClose, mode, subject, difficulty]);
+    
+    // Call the parent's handler
+    if (onMorePractice) {
+      onMorePractice();
+    }
+  }, [onClose, onMorePractice]);
 
-  const handleReturnHome = useCallback(() => {
+  const handleImDone = useCallback(() => {
     // First close the modal
     onClose();
     // Then navigate to home
@@ -29,14 +29,14 @@ const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode
       <div style={styles.modal}>
         <h2 style={styles.title}>Practice Completed!</h2>
         <p style={styles.message}>
-          Great job completing this practice session! Would you like to start a new practice of the same type?
+          Great job completing this practice session! Would you like to practice more?
         </p>
         <div style={styles.buttonContainer}>
-          <button onClick={handleStartNewPractice} style={styles.confirmButton}>
-            Start New Practice
+          <button onClick={handleMorePractice} style={styles.confirmButton}>
+            More Practice
           </button>
-          <button onClick={handleReturnHome} style={styles.cancelButton}>
-            Return to Dashboard
+          <button onClick={handleImDone} style={styles.cancelButton}>
+            I'm Done
           </button>
         </div>
       </div>

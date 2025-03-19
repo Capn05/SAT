@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
-const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions }) => {
+const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions, answeredQuestionsInSession, sessionAnswers, questionsInNewSession }) => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
@@ -56,11 +56,40 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
     fetchUserAnswersData();
   }, [fetchUserAnswers]);
 
-  const getStatus = (questionId) => {
-    const answer = userAnswers.find((ans) => ans.question_id === questionId);
-    if (answer) {
-      return answer.is_correct ? 'correct' : 'incorrect';
+  useEffect(() => {
+    // Calculate which page the current question should be on
+    const targetPage = Math.floor(currentIndex / questionsPerPage);
+    
+    // Update the page if needed
+    if (targetPage !== currentPage) {
+      setCurrentPage(targetPage);
     }
+  }, [currentIndex, questionsPerPage]);
+
+  const getStatus = (questionId) => {
+    // If this question is in the new session and hasn't been answered yet,
+    // show it as not_answered regardless of past history
+    if (questionsInNewSession && questionsInNewSession.has(questionId)) {
+      return 'not_answered';
+    }
+    
+    // Check if the question was answered in this session
+    if (answeredQuestionsInSession && answeredQuestionsInSession.has(questionId)) {
+      // If in session answers, use that result (which reflects first attempt only)
+      if (sessionAnswers && questionId in sessionAnswers) {
+        // This status reflects first attempt only, which is stored in sessionAnswers
+        return sessionAnswers[questionId] === true ? 'correct' : 'incorrect';
+      }
+    }
+    
+    // Not answered in current session, check user's previous answers
+    if (userAnswers && userAnswers.length > 0) {
+      const answer = userAnswers.find(ans => ans.question_id === questionId);
+      if (answer) {
+        return answer.is_correct ? 'correct' : 'incorrect';
+      }
+    }
+    
     return 'not_answered';
   };
 
@@ -92,7 +121,7 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
       <div style={styles.statusContainer}>
         {displayedQuestions.map((question, index) => {
           const status = getStatus(question.id);
-          const isSelected = index === currentIndex;
+          const isSelected = startIndex + index === currentIndex;
           return (
             <button
               key={question.id}

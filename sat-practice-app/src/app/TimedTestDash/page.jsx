@@ -499,8 +499,8 @@ export default function PracticeTestsPage() {
                 style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
                 onClick={() => handleTestClick(1)}
               >
-                <div style={{...styles.testIcon, backgroundColor: '#e0f2fe'}}>
-                  <Brain size={28} color="#0369a1" />
+                <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
+                  <Brain size={28} color="#10b981" />
                 </div>
                 <h2 style={styles.testTitle}>Math Adaptive Test</h2>
                 <p style={styles.testInfo}>44 Questions • 70 Minutes</p>
@@ -525,8 +525,8 @@ export default function PracticeTestsPage() {
                 style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
                 onClick={() => handleTestClick(2)}
               >
-                <div style={{...styles.testIcon, backgroundColor: '#fee2e2'}}>
-                  <BookOpen size={28} color="#b91c1c" />
+                <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
+                  <BookOpen size={28} color="#10b981" />
                 </div>
                 <h2 style={styles.testTitle}>Reading & Writing Adaptive Test</h2>
                 <p style={styles.testInfo}>54 Questions • 64 Minutes</p>
