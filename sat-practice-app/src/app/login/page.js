@@ -5,6 +5,7 @@ import { GraduationCap } from 'lucide-react'
 import { useState, useEffect, Suspense } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { checkSubscription } from '../../../lib/payment';
 
 // Create a content component for login functionality
 function LoginContent() {
@@ -33,6 +34,16 @@ function LoginContent() {
           console.error('Error getting user on login page:', error.message);
         } else if (user) {
           console.log('User already logged in on login page:', user.email);
+          
+          // Check if user has an active subscription
+          const subscriptionData = await checkSubscription(user.id);
+          if (subscriptionData.active) {
+            console.log('User has active subscription, redirecting to home');
+            router.push('/home');
+          } else {
+            console.log('User has no active subscription, redirecting to pricing');
+            router.push('/pricing');
+          }
         } else {
           console.log('No user authenticated on login page');
         }
@@ -42,7 +53,7 @@ function LoginContent() {
     };
     
     checkAuth();
-  }, [searchParams, supabase.auth]);
+  }, [searchParams, supabase.auth, router]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -76,11 +87,15 @@ function LoginContent() {
       if (data?.session) {
         console.log('Login successful, session created');
         
+        // Check if the user has an active subscription
+        const subscriptionData = await checkSubscription(data.user.id);
+        console.log('Subscription check after login:', subscriptionData);
+        
         // Check if we need to redirect to pricing page
         const redirectToPricing = typeof window !== 'undefined' ? localStorage.getItem('redirectToPricing') : null;
         const selectedPlan = typeof window !== 'undefined' ? localStorage.getItem('selectedPlan') : null;
         
-        if (redirectToPricing || selectedPlan) {
+        if (redirectToPricing || selectedPlan || !subscriptionData.active) {
           // Clear the flags from localStorage
           console.log('Redirecting to pricing page after login');
           localStorage.removeItem('redirectToPricing');

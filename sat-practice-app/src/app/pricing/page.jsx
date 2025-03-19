@@ -5,13 +5,15 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { GraduationCap } from 'lucide-react';
 import { supabase } from '../../../lib/supabase';
-import { getPaymentLink } from '../../../lib/payment';
+import { getPaymentLink, checkSubscription } from '../../../lib/payment';
 
 export default function PricingPage() {
   const router = useRouter();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [processingPayment, setProcessingPayment] = useState(false);
 
   useEffect(() => {
     const checkAuth = async () => {
@@ -22,9 +24,26 @@ export default function PricingPage() {
         if (authError) {
           console.error('Auth error in pricing page:', authError);
           setError('Authentication error. Please try again.');
-        } else {
-          console.log('User in pricing page:', user?.email || 'No user');
+          setLoading(false);
+          return;
+        }
+
+        if (user) {
+          console.log('User in pricing page:', user.email);
           setUser(user);
+          
+          // Check if user already has an active subscription
+          const { active } = await checkSubscription(user.id);
+          setIsSubscribed(active);
+          
+          if (active) {
+            console.log('User already has an active subscription, redirecting to home');
+            setTimeout(() => {
+              router.push('/home');
+            }, 2000);
+          }
+        } else {
+          console.log('No user on pricing page');
         }
         
         setLoading(false);
@@ -36,10 +55,11 @@ export default function PricingPage() {
     };
 
     checkAuth();
-  }, []);
+  }, [router]);
 
   const handleSubscribe = (planType) => {
     console.log('Handling subscription for plan:', planType);
+    setProcessingPayment(true);
     
     // If user is not logged in, redirect to signup
     if (!user) {
@@ -50,10 +70,24 @@ export default function PricingPage() {
       return;
     }
 
-    // User is logged in, redirect to Stripe
-    const paymentLink = getPaymentLink(planType);
-    console.log('Redirecting to payment link:', paymentLink);
-    window.location.href = paymentLink;
+    try {
+      // User is logged in, redirect to Stripe
+      const paymentLink = getPaymentLink(planType);
+      console.log('Redirecting to payment link:', paymentLink);
+      
+      if (paymentLink === 'https://buy.stripe.com/test') {
+        // For development without actual Stripe links set
+        setError('Payment links not configured. In a production environment, you would be redirected to Stripe.');
+        setProcessingPayment(false);
+      } else {
+        // Actually redirect to Stripe
+        window.location.href = paymentLink;
+      }
+    } catch (error) {
+      console.error('Error redirecting to payment:', error);
+      setError('Error processing payment request. Please try again.');
+      setProcessingPayment(false);
+    }
   };
 
   const styles = {
@@ -179,6 +213,12 @@ export default function PricingPage() {
       color: '#10b981',
       border: '2px solid #10b981',
     },
+    disabledButton: {
+      backgroundColor: '#9ca3af',
+      color: 'white',
+      border: 'none',
+      cursor: 'not-allowed',
+    },
     bestValue: {
       display: 'inline-block',
       backgroundColor: '#10b981',
@@ -206,6 +246,14 @@ export default function PricingPage() {
     errorMessage: {
       backgroundColor: '#fee2e2',
       color: '#b91c1c',
+      padding: '12px',
+      borderRadius: '8px',
+      marginBottom: '24px',
+      fontSize: '14px',
+    },
+    successMessage: {
+      backgroundColor: '#ecfdf5',
+      color: '#047857',
       padding: '12px',
       borderRadius: '8px',
       marginBottom: '24px',
@@ -259,6 +307,12 @@ export default function PricingPage() {
         </p>
 
         {error && <div style={styles.errorMessage}>{error}</div>}
+        
+        {isSubscribed && (
+          <div style={styles.successMessage}>
+            You already have an active subscription! Redirecting to dashboard...
+          </div>
+        )}
 
         <div style={styles.plansContainer}>
           <div id="plan-row" style={styles.planRow}>
@@ -266,8 +320,10 @@ export default function PricingPage() {
             <div 
               style={styles.planCard}
               onMouseOver={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                if (!processingPayment && !isSubscribed) {
+                  e.currentTarget.style.transform = 'translateY(-5px)';
+                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                }
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'none';
@@ -311,16 +367,24 @@ export default function PricingPage() {
               </ul>
 
               <button 
-                style={{ ...styles.ctaButton, ...styles.secondaryButton }}
+                style={{ 
+                  ...styles.ctaButton, 
+                  ...(processingPayment || isSubscribed ? styles.disabledButton : styles.secondaryButton) 
+                }}
                 onClick={() => handleSubscribe('monthly')}
+                disabled={processingPayment || isSubscribed}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = '#f0fdfa';
+                  if (!processingPayment && !isSubscribed) {
+                    e.currentTarget.style.backgroundColor = '#f0fdfa';
+                  }
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = 'white';
+                  if (!processingPayment && !isSubscribed) {
+                    e.currentTarget.style.backgroundColor = 'white';
+                  }
                 }}
               >
-                Start Monthly Plan
+                {processingPayment ? 'Processing...' : isSubscribed ? 'Already Subscribed' : 'Start Monthly Plan'}
               </button>
             </div>
 
@@ -328,8 +392,10 @@ export default function PricingPage() {
             <div 
               style={styles.planCard}
               onMouseOver={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                if (!processingPayment && !isSubscribed) {
+                  e.currentTarget.style.transform = 'translateY(-5px)';
+                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                }
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'none';
@@ -374,16 +440,24 @@ export default function PricingPage() {
               </ul>
 
               <button 
-                style={{ ...styles.ctaButton, ...styles.primaryButton }}
+                style={{ 
+                  ...styles.ctaButton, 
+                  ...(processingPayment || isSubscribed ? styles.disabledButton : styles.primaryButton) 
+                }}
                 onClick={() => handleSubscribe('six_month')}
+                disabled={processingPayment || isSubscribed}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = '#0d9488';
+                  if (!processingPayment && !isSubscribed) {
+                    e.currentTarget.style.backgroundColor = '#0d9488';
+                  }
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = '#10b981';
+                  if (!processingPayment && !isSubscribed) {
+                    e.currentTarget.style.backgroundColor = '#10b981';
+                  }
                 }}
               >
-                Save With 6-Month Plan
+                {processingPayment ? 'Processing...' : isSubscribed ? 'Already Subscribed' : 'Save With 6-Month Plan'}
               </button>
             </div>
           </div>
