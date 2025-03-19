@@ -559,32 +559,41 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     
-    if (!selectedOption) {
-      setError('Please select an answer');
-      return;
-    }
-
+    if (!selectedOption) return;
+    
     setIsSubmitting(true);
-    setError(null);
-
-    const currentQuestionId = questions[currentIndex].id;
-    const isFirstAttempt = !(currentQuestionId in attempts);
-    const isAlreadyCountedAsCorrect = sessionCorrectAnswers[currentQuestionId] === true;
-
+    setShowFeedback(false);
+    
     try {
-      // Only on first attempt, record the answer in the database
+      const currentQuestionId = questions[currentIndex].id;
+      
+      // Check if this is first attempt at this question
+      const isFirstAttempt = !answeredQuestions.has(currentQuestionId);
+      
+      // Check if this question was already counted as correct in our progress
+      const isAlreadyCountedAsCorrect = sessionCorrectAnswers[currentQuestionId] === true;
+      
+      // Only submit to database on first attempt
       if (isFirstAttempt) {
-        console.log('Submitting answer to API with data:', {
-          questionId: currentQuestionId,
-          optionId: selectedOption.id,
-          isCorrect: selectedOption.is_correct,
-          subject: subject,
-          mode: mode
-        });
+        const { data: { user } } = await supabase.auth.getUser();
         
+        if (!user) {
+          console.error('No user found');
+          router.push('/login');
+          return;
+        }
+        
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+          console.error('No session found');
+          router.push('/login');
+          return;
+        }
+        
+        // Record the answer in the database
         const response = await fetch('/api/user-answers', {
           method: 'POST',
           headers: {
@@ -594,8 +603,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             questionId: currentQuestionId,
             optionId: selectedOption.id,
             isCorrect: selectedOption.is_correct,
-            subject: subject,
-            mode: mode
+            mode: mode || 'practice',
+            subject: subject
           }),
         });
 
@@ -623,7 +632,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         // Mark the question as answered in our session tracking on first attempt only
         setAnsweredQuestions(prev => new Set([...prev, currentQuestionId]));
         
-        // Store the first-attempt correctness in session
+        // Store the first-attempt correctness in session - NEVER change this on subsequent attempts
         setSessionCorrectAnswers(prev => ({
           ...prev,
           [currentQuestionId]: selectedOption.is_correct
@@ -641,12 +650,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         }
       } else if (selectedOption.is_correct && !isAlreadyCountedAsCorrect) {
         // If this is a correct answer on a subsequent attempt and we haven't counted it yet,
-        // update the answered count and mark it as correct in our session
+        // update the answered count but DO NOT change the sessionCorrectAnswers state
         setAnsweredCount(prev => prev + 1);
-        setSessionCorrectAnswers(prev => ({
-          ...prev,
-          [currentQuestionId]: true
-        }));
       }
 
       // Track attempt count and selected options for all attempts

@@ -77,8 +77,11 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
     }
     
     // Not answered in current session, check user's previous answers
-    if (userAnswers && questionId in userAnswers) {
-      return userAnswers[questionId] ? 'correct' : 'incorrect';
+    if (userAnswers && userAnswers.length > 0) {
+      const answer = userAnswers.find(ans => ans.question_id === questionId);
+      if (answer) {
+        return answer.is_correct ? 'correct' : 'incorrect';
+      }
     }
     
     return 'not_answered';
