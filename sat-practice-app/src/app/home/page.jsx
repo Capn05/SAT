@@ -15,19 +15,24 @@ import DifficultyModal from '../components/DifficultyModal';
 import { supabase } from '../../../lib/supabase';
 
 export default function Dashboard() {
-  const { user, subscription, loading, enforceSubscription } = useAuth();
+  const { user, subscription, loading, requireAuth, requireSubscription } = useAuth();
   const [showDifficultyModal, setShowDifficultyModal] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const router = useRouter();
 
-  // Check auth and subscription status on mount
+  // Check auth status on mount
   useEffect(() => {
     // Only check after initial loading is complete
     if (!loading) {
-      console.log('Dashboard: checking subscription status');
-      enforceSubscription();
+      if (!requireAuth()) {
+        // Will redirect to login if not authenticated
+        return;
+      }
+
+      // Check subscription only if authenticated
+      requireSubscription();
     }
-  }, [loading, enforceSubscription]);
+  }, [loading, requireAuth, requireSubscription]);
 
   const handleStartPractice = (subject) => {
     setSelectedSubject(subject);
@@ -38,24 +43,6 @@ export default function Dashboard() {
     return (
       <div style={{ ...styles.container, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div>Loading...</div>
-      </div>
-    );
-  }
-
-  // Don't render content until we've confirmed subscription
-  if (!subscription || !subscription.active) {
-    return (
-      <div style={{ ...styles.container, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div style={styles.redirectingMessage}>
-          <h2>Subscription Required</h2>
-          <p>You need an active subscription to access this content.</p>
-          <button 
-            onClick={() => router.push('/pricing')}
-            style={styles.redirectButton}
-          >
-            View Pricing Options
-          </button>
-        </div>
       </div>
     );
   }
@@ -164,23 +151,5 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
   },
-  redirectingMessage: {
-    textAlign: "center",
-    backgroundColor: "white",
-    padding: "24px",
-    borderRadius: "8px",
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
-    maxWidth: "400px",
-  },
-  redirectButton: {
-    backgroundColor: "#10b981",
-    color: "white",
-    border: "none",
-    padding: "12px 24px",
-    borderRadius: "6px",
-    cursor: "pointer",
-    fontSize: "16px",
-    marginTop: "16px",
-  }
 }
 

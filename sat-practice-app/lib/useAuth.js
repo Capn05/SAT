@@ -61,7 +61,6 @@ const useAuth = () => {
   // Separate function to handle required authentication redirects
   const requireAuth = () => {
     if (!loading && !authenticated) {
-      console.log('Authentication required - redirecting to login');
       router.push('/login');
       return false;
     }
@@ -71,34 +70,10 @@ const useAuth = () => {
   // Function to check if user has subscription
   const requireSubscription = () => {
     if (!loading && authenticated && !subscribed) {
-      console.log('Subscription required - redirecting to pricing');
       router.push('/pricing');
       return false;
     }
     return authenticated && subscribed;
-  };
-
-  // Function to enforce both auth and subscription
-  // This is the main function components should use
-  const enforceSubscription = () => {
-    // First check if authenticated
-    if (!loading) {
-      if (!authenticated) {
-        console.log('Not authenticated - redirecting to login');
-        router.push('/login');
-        return false;
-      }
-      
-      // Then check if subscribed
-      if (!subscribed) {
-        console.log('Not subscribed - redirecting to pricing');
-        router.push('/pricing');
-        return false;
-      }
-      
-      return true;
-    }
-    return false;
   };
 
   return { 
@@ -108,8 +83,7 @@ const useAuth = () => {
     authenticated, 
     subscribed,
     requireAuth,
-    requireSubscription,
-    enforceSubscription
+    requireSubscription
   };
 };
 

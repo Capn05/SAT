@@ -9,8 +9,12 @@ const DEFAULT_LINKS = {
 
 // Stripe payment URLs from environment variables with fallbacks
 const getPaymentLinks = () => {
+  // Only run this in the browser
+  if (typeof window === 'undefined') {
+    return DEFAULT_LINKS;
+  }
+
   try {
-    // Need to access NEXT_PUBLIC vars through window as they're injected at build time
     return {
       MONTHLY_PLAN: process.env.NEXT_PUBLIC_STRIPE_MONTHLY_LINK || DEFAULT_LINKS.MONTHLY_PLAN,
       SIX_MONTH_PLAN: process.env.NEXT_PUBLIC_STRIPE_SIX_MONTH_LINK || DEFAULT_LINKS.SIX_MONTH_PLAN
@@ -65,11 +69,6 @@ export const checkSubscription = async (userId) => {
 export const getPaymentLink = (planType) => {
   console.log('Getting payment link for plan:', planType);
   const PAYMENT_LINKS = getPaymentLinks();
-  
-  // For testing/debug purposes - replace these with your actual Stripe payment links
-  if (PAYMENT_LINKS.MONTHLY_PLAN === DEFAULT_LINKS.MONTHLY_PLAN) {
-    console.warn('Using default payment links - make sure to set NEXT_PUBLIC_STRIPE_MONTHLY_LINK and NEXT_PUBLIC_STRIPE_SIX_MONTH_LINK environment variables');
-  }
   
   try {
     switch (planType) {
