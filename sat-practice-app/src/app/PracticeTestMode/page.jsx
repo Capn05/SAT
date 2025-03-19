@@ -353,7 +353,6 @@ export default function PracticeTestPage() {
   }
   
   // Update the useEffect hook that checks for a paused test
-  // Around line 474, modify the checkForPausedTest function by wrapping it in a useCallback
   const checkForPausedTest = useCallback(async () => {
     if (!moduleId || !testId) return;
     
@@ -369,65 +368,57 @@ export default function PracticeTestPage() {
       console.log('Paused test data:', data);
       
       if (data.pausedTest) {
-        // Ask the user if they want to resume
-        const shouldResume = confirm('You have a paused test. Would you like to resume where you left off?');
+        // Set loading state immediately
+        setIsLoading(true);
         
-        if (shouldResume) {
-          // Update the state in a more consistent manner
-          setIsLoading(true);
+        try {
+          // Fetch questions first
+          const questionsResponse = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
+          const questionsData = await questionsResponse.json();
           
-          try {
-            // Fetch questions first
-            const questionsResponse = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
-            const questionsData = await questionsResponse.json();
+          if (questionsResponse.ok) {
+            // Set all state updates together to avoid inconsistent renders
+            setQuestions(questionsData.questions);
+            setModuleInfo(questionsData.moduleInfo);
+            setCurrentQuestion(parseInt(data.pausedTest.current_question) || 0);
+            setTimeRemaining(parseInt(data.pausedTest.time_remaining) || 3600);
             
-            if (questionsResponse.ok) {
-              // Set all state updates together to avoid inconsistent renders
-              setQuestions(questionsData.questions);
-              setModuleInfo(questionsData.moduleInfo);
-              setCurrentQuestion(parseInt(data.pausedTest.current_question) || 0);
-              setTimeRemaining(parseInt(data.pausedTest.time_remaining) || 3600);
-              
-              // Parse answers
-              const parsedAnswers = {};
-              if (data.pausedTest.answers && Array.isArray(data.pausedTest.answers)) {
-                data.pausedTest.answers.forEach(answer => {
-                  if (answer && answer.questionId) {
-                    parsedAnswers[answer.questionId] = {
-                      optionId: answer.selectedOptionId,
-                      isCorrect: answer.isCorrect
-                    };
-                  }
-                });
-              }
-              setAnswers(parsedAnswers);
-              
-              // Parse flagged questions
-              const flaggedArray = data.pausedTest.flaggedQuestions || [];
-              setFlaggedQuestions(new Set(flaggedArray.map(id => parseInt(id))));
-              
-              console.log('Test state restored:', {
-                currentQuestion: data.pausedTest.current_question,
-                answers: parsedAnswers,
-                flagged: flaggedArray
+            // Parse answers
+            const parsedAnswers = {};
+            if (data.pausedTest.answers && Array.isArray(data.pausedTest.answers)) {
+              data.pausedTest.answers.forEach(answer => {
+                if (answer && answer.questionId) {
+                  parsedAnswers[answer.questionId] = {
+                    optionId: answer.selectedOptionId,
+                    isCorrect: answer.isCorrect
+                  };
+                }
               });
             }
-          } catch (err) {
-            console.error('Error loading questions for paused test:', err);
-          } finally {
-            setIsLoading(false);
+            setAnswers(parsedAnswers);
+            
+            // Parse flagged questions
+            const flaggedArray = data.pausedTest.flaggedQuestions || [];
+            setFlaggedQuestions(new Set(flaggedArray.map(id => parseInt(id))));
+            
+            console.log('Test state restored:', {
+              currentQuestion: data.pausedTest.current_question,
+              answers: parsedAnswers,
+              flagged: flaggedArray
+            });
           }
-        } else {
-          // Delete the paused test
-          await fetch(`/api/pause-test?testId=${testId}&moduleId=${moduleId}`, {
-            method: 'DELETE'
-          });
+        } catch (err) {
+          console.error('Error loading questions for paused test:', err);
+          // Redirect to dashboard in case of error
+          router.push('/TimedTestDash');
+        } finally {
+          setIsLoading(false);
         }
       }
     } catch (err) {
       console.error('Error checking for paused test:', err);
     }
-  }, [testId, moduleId]);
+  }, [testId, moduleId, router]);
 
   // Use this function in the useEffect
   useEffect(() => {
