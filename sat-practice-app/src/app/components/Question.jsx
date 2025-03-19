@@ -38,6 +38,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [submitted, setSubmitted] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [attempts, setAttempts] = useState({});
+  const [submittedOptions, setSubmittedOptions] = useState({});
   const MAX_ATTEMPTS = 2;  // Maximum attempts before showing correct answer
   const supabase = createClientComponentClient();
   const [showQuickPracticeModal, setShowQuickPracticeModal] = useState(false);
@@ -663,6 +664,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         }
       }));
       
+      // Track which option was just submitted for this question
+      setSubmittedOptions(prev => ({
+        ...prev,
+        [currentQuestionId]: selectedOption.id
+      }));
+      
       // Show feedback based on correctness
       if (selectedOption.is_correct) {
         setShowFeedback(true);
@@ -727,6 +734,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setAttempts({});
     setShowFeedback(false);
     setSessionCorrectAnswers({}); // Reset session correct answers
+    setSubmittedOptions({}); // Reset submitted options
     
     // Log that we're starting a new question set
     console.log('Starting a new set of practice questions');
@@ -834,10 +842,17 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     const correctOption = sortedOptions.find(option => option.is_correct);
     
     return sortedOptions.map((option) => {
+      // Check if this specific option has been submitted
       const wasSelected = currentAttempts?.selectedOptions?.includes(option.id);
       const showIncorrectFeedback = wasSelected && !option.is_correct;
-      // Only show the correct answer with checkmark if the user actually got it right
-      const isCorrectAnswerForDisplay = option.is_correct && sessionCorrectAnswers[currentQuestionId] === true;
+      
+      // Only show checkmark if:
+      // 1. The option is correct
+      // 2. This option is the most recently submitted option
+      // 3. The submitted option is correct
+      const isSubmittedOption = submittedOptions[currentQuestionId] === option.id;
+      const isCorrectAnswerForDisplay = option.is_correct && isSubmittedOption;
+      
       const isSelected = selectedOption?.id === option.id;
       
       return (
