@@ -11,6 +11,7 @@ function LoginContent() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [signupSuccess, setSignupSuccess] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -22,49 +23,82 @@ function LoginContent() {
     if (fromSignup === 'success') {
       setSignupSuccess(true);
     }
-  }, [searchParams]);
+    
+    // Log auth state for debugging
+    const checkAuth = async () => {
+      console.log('Checking auth state on login page load');
+      try {
+        const { data: { user }, error } = await supabase.auth.getUser();
+        if (error) {
+          console.error('Error getting user on login page:', error.message);
+        } else if (user) {
+          console.log('User already logged in on login page:', user.email);
+        } else {
+          console.log('No user authenticated on login page');
+        }
+      } catch (error) {
+        console.error('Unexpected error checking auth on login page:', error);
+      }
+    };
+    
+    checkAuth();
+  }, [searchParams, supabase.auth]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
+    setLoading(true);
 
     if (!email || !password) {
       setError('Email and password are required.');
+      setLoading(false);
       return;
     }
 
     try {
+      console.log('Attempting login for:', email);
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
       if (error) {
+        console.error('Login error:', error.message);
         if (error.message.includes('email') && error.message.includes('confirm')) {
           setError('Email not confirmed. Please check your inbox and confirm your email before logging in.');
         } else {
           setError(error.message);
         }
+        setLoading(false);
         return;
       }
 
       if (data?.session) {
+        console.log('Login successful, session created');
+        
         // Check if we need to redirect to pricing page
         const redirectToPricing = typeof window !== 'undefined' ? localStorage.getItem('redirectToPricing') : null;
+        const selectedPlan = typeof window !== 'undefined' ? localStorage.getItem('selectedPlan') : null;
         
-        if (redirectToPricing) {
-          // Clear the flag from localStorage
+        if (redirectToPricing || selectedPlan) {
+          // Clear the flags from localStorage
+          console.log('Redirecting to pricing page after login');
           localStorage.removeItem('redirectToPricing');
+          // Keep selectedPlan for the pricing page to use
           router.push('/pricing');
         } else {
+          console.log('Redirecting to home page after login');
           router.push('/home');
         }
       } else {
+        console.error('Login failed - no session created');
         setError('Login failed - no session created');
+        setLoading(false);
       }
     } catch (error) {
+      console.error('Unexpected login error:', error);
       setError('An error occurred during login.');
-      console.error('Login error:', error);
+      setLoading(false);
     }
   };
 
@@ -144,8 +178,9 @@ function LoginContent() {
       marginTop: '8px',
       transition: 'background-color 0.3s ease',
     },
-    buttonHover: {
-      backgroundColor: '#0d9488',
+    buttonDisabled: {
+      backgroundColor: '#9ca3af',
+      cursor: 'not-allowed',
     },
     links: {
       display: 'flex',
@@ -193,14 +228,15 @@ function LoginContent() {
         
         <form onSubmit={handleLogin} style={styles.form}>
           <div style={styles.inputGroup}>
-            <label htmlFor="username" style={styles.label}>Username</label>
+            <label htmlFor="username" style={styles.label}>Email</label>
             <input 
               id="username"
-              type="text" 
+              type="email" 
               style={styles.input}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              disabled={loading}
             />
           </div>
           
@@ -213,20 +249,25 @@ function LoginContent() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              disabled={loading}
             />
           </div>
           
           <button 
             type="submit" 
-            style={styles.button}
+            style={{
+              ...styles.button,
+              ...(loading ? styles.buttonDisabled : {})
+            }}
+            disabled={loading}
             onMouseOver={(e) => {
-              e.currentTarget.style.backgroundColor = '#0d9488';
+              if (!loading) e.currentTarget.style.backgroundColor = '#0d9488';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.backgroundColor = '#10b981';
+              if (!loading) e.currentTarget.style.backgroundColor = '#10b981';
             }}
           >
-            Login
+            {loading ? 'Logging in...' : 'Login'}
           </button>
         </form>
         

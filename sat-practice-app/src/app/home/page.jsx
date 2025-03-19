@@ -15,10 +15,24 @@ import DifficultyModal from '../components/DifficultyModal';
 import { supabase } from '../../../lib/supabase';
 
 export default function Dashboard() {
-  const { user, subscription, loading } = useAuth();
+  const { user, subscription, loading, requireAuth, requireSubscription } = useAuth();
   const [showDifficultyModal, setShowDifficultyModal] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const router = useRouter();
+
+  // Check auth status on mount
+  useEffect(() => {
+    // Only check after initial loading is complete
+    if (!loading) {
+      if (!requireAuth()) {
+        // Will redirect to login if not authenticated
+        return;
+      }
+
+      // Check subscription only if authenticated
+      requireSubscription();
+    }
+  }, [loading, requireAuth, requireSubscription]);
 
   const handleStartPractice = (subject) => {
     setSelectedSubject(subject);
