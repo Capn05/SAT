@@ -27,6 +27,7 @@ export default function PracticeTestPage() {
   const [showScoreModal, setShowScoreModal] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const timerRef = useRef(null)
+  const loadedFromPausedTest = useRef(false)
   
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -176,13 +177,17 @@ export default function PracticeTestPage() {
         // Reset state for new module
         setQuestions(data.questions)
         setModuleInfo(data.moduleInfo)
-        setCurrentQuestion(0)
-        setAnswers({})
-        setFlaggedQuestions(new Set())
         
-        // Set time limit based on subject
-        const subjectId = data.moduleInfo.subjectId
-        setTimeRemaining(subjectId === 1 ? 35 * 60 : 32 * 60) // 35 min for Math, 32 min for Reading & Writing
+        // Only reset these states if we're not loading from a paused test
+        if (!loadedFromPausedTest.current) {
+          setCurrentQuestion(0)
+          setAnswers({})
+          setFlaggedQuestions(new Set())
+          
+          // Set time limit based on subject
+          const subjectId = data.moduleInfo.subjectId
+          setTimeRemaining(subjectId === 1 ? 35 * 60 : 32 * 60) // 35 min for Math, 32 min for Reading & Writing
+        }
         
         setIsLoading(false)
       } catch (err) {
@@ -371,6 +376,9 @@ export default function PracticeTestPage() {
         // Set loading state immediately
         setIsLoading(true);
         
+        // Mark that we're loading from a paused test to prevent timer reset
+        loadedFromPausedTest.current = true;
+        
         try {
           // Fetch questions first
           const questionsResponse = await fetch(`/api/practice-test-questions?moduleId=${moduleId}`);
@@ -418,7 +426,7 @@ export default function PracticeTestPage() {
     } catch (err) {
       console.error('Error checking for paused test:', err);
     }
-  }, [testId, moduleId, router]);
+  }, [testId, moduleId, router, loadedFromPausedTest]);
 
   // Use this function in the useEffect
   useEffect(() => {
