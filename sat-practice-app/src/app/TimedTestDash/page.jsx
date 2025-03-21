@@ -9,6 +9,7 @@ import PreTestModal from "../components/PreTestModal"
 import SubjectTabs from './component/tabs'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { formatDate, formatTime } from '../../../lib/utils'
+import SubscriptionCheck from '../../components/SubscriptionCheck';
 
 export default function PracticeTestsPage() {
   const [selectedSection, setSelectedSection] = useState(null)
@@ -456,11 +457,11 @@ export default function PracticeTestsPage() {
   };
 
   return (
-    <div>
-      <TopBar title={"Full Length Practice Tests"}/>
-
-      <div style={{...styles.container, backgroundColor: '#f8fafc'}}>
-        <div style={{...styles.content, maxWidth: '1200px'}}>
+    <SubscriptionCheck>
+    <div style={styles.container}>
+      <TopBar title="Practice Tests" />
+      
+        <div style={styles.content}>
           <div style={styles.mainSection}>
             <h1 style={styles.pageTitle}>SAT Practice Tests</h1>
             <p style={styles.pageDescription}>
@@ -845,8 +846,9 @@ export default function PracticeTestsPage() {
             </div>
           </div>
         </div>
-      </div>
     </div>
+    </SubscriptionCheck>
+
   )
 }
 

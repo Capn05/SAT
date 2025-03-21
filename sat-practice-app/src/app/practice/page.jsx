@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Question from '../components/Question';
 import TopBar from '../components/TopBar';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import SubscriptionCheck from '../components/SubscriptionCheck';
 
 // Split into a content component that uses client hooks
 function PracticePageContent() {
@@ -115,12 +116,14 @@ function PracticePageContent() {
   return (
     <div style={styles.container}>
       <TopBar title={title} />
-      <Question 
-        mode={mode}
-        subject={subject}
-        skillName={category}
-        difficulty={difficulty}
-      />
+      <SubscriptionCheck>
+        <Question 
+          mode={mode}
+          subject={subject}
+          skillName={category}
+          difficulty={difficulty}
+        />
+      </SubscriptionCheck>
     </div>
   );
 }
