@@ -33,7 +33,7 @@ export default function Dashboard() {
         console.warn("Dashboard loading timed out after 7 seconds");
         setLocalLoading(false);
       }
-    }, 7000);
+    }, 100  );
     
     return () => clearTimeout(timeout);
   }, [loading]);
