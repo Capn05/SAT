@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import TopBar from "../components/TopBar";
-import SubscriptionCheck from '../components/SubscriptionCheck';
+import SubscriptionCheck from '../../components/SubscriptionCheck';
 
 // Import Recharts with needed components
 import { 

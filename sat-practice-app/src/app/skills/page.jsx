@@ -34,7 +34,7 @@ import SubjectTabs from "./components/SubjectTabs"
 import './styles.css'; // Adjust the path as necessary
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
-import SubscriptionCheck from '../components/SubscriptionCheck'
+import SubscriptionCheck from '../../components/SubscriptionCheck'
 
 // Consistent mastery level calculation function
 function calculateMasteryLevel(accuracy, totalAttempts) {
