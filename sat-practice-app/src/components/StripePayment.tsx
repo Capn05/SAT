@@ -29,14 +29,30 @@ export default function StripePayment({
   const supabase = createClientComponentClient();
   const [user, setUser] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isAuthChecking, setIsAuthChecking] = useState(true);
 
   useEffect(() => {
     // Get current user on component mount
     const getUser = async () => {
-      const { data } = await supabase.auth.getUser();
-      console.log('Current user:', data.user);
-      setUser(data.user);
+      try {
+        setIsAuthChecking(true);
+        const { data, error } = await supabase.auth.getUser();
+        
+        if (error) {
+          console.error('Error fetching user:', error);
+          setUser(null);
+        } else {
+          console.log('Current user:', data.user);
+          setUser(data.user);
+        }
+      } catch (err) {
+        console.error('Exception in getUser:', err);
+        setUser(null);
+      } finally {
+        setIsAuthChecking(false);
+      }
     };
+    
     getUser();
   }, [supabase]);
 
@@ -49,13 +65,16 @@ export default function StripePayment({
       if (!user) {
         console.log('User not logged in, redirecting to login page');
         // Store the plan type in local storage so we can redirect after login
-        localStorage.setItem('selectedPlan', planType);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('selectedPlan', planType);
+        }
         // Redirect to login page
         router.push('/login?redirect=/pricing');
         return;
       }
       
       // User is logged in, redirect to appropriate Stripe payment link
+      console.log(`User is logged in. User ID: ${user.id}`);
       console.log(`Redirecting to payment link: ${PAYMENT_LINKS[planType]}`);
       window.location.href = PAYMENT_LINKS[planType];
     } catch (error) {
@@ -64,6 +83,19 @@ export default function StripePayment({
       setIsLoading(false);
     }
   };
+
+  // Don't render anything while checking auth to prevent flicker
+  if (isAuthChecking) {
+    return (
+      <button
+        id={id}
+        disabled={true}
+        className={className}
+      >
+        Checking authentication...
+      </button>
+    );
+  }
 
   return (
     <button

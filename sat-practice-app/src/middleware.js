@@ -11,7 +11,8 @@ export async function middleware(req) {
     '/favicon.ico',
     '/login',
     '/signup',
-    '/forgot-password'
+    '/forgot-password',
+    '/pricing'
   ];
   
   if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
@@ -38,6 +39,7 @@ export async function middleware(req) {
     
     // Only redirect if we're certain there's no user
     if (!data.user && !error) {
+      console.log('User not authenticated, redirecting to login from:', req.nextUrl.pathname);
       const redirectUrl = new URL('/login', req.url);
       // Pass the original URL as a redirect parameter
       redirectUrl.searchParams.set('redirect', req.nextUrl.pathname);

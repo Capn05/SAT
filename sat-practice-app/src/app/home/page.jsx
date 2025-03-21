@@ -12,6 +12,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import TopBar from '../components/TopBar';
 import DifficultyModal from '../components/DifficultyModal';
+import SubscriptionCheck from '../../components/SubscriptionCheck';
 
 export default function Dashboard() {
   // Use the new centralized auth context
@@ -54,48 +55,50 @@ export default function Dashboard() {
   }
 
   return (
-    <div style={styles.container}>
-      <Header />
-      <div style={styles.content}>
-        <div style={styles.grid}>
-          <div style={styles.leftColumn}>
-            <div style={styles.subjects}>
-              <SubjectSection 
-                title="Quick Practice" 
-                value="Math Section" 
-                buttonText="Start Practice" 
-                subject_id="1" 
-                onStartPractice={handleStartPractice}
-              />
-              <SubjectSection 
-                title="Quick Practice" 
-                value="Reading & Writing Section" 
-                buttonText="Start Practice" 
-                subject_id="2" 
-                onStartPractice={handleStartPractice}
-              />
-            </div>
-            <TimedTestButton/>
+    <SubscriptionCheck>
+      <div style={styles.container}>
+        <Header />
+        <div style={styles.content}>
+          <div style={styles.grid}>
+            <div style={styles.leftColumn}>
+              <div style={styles.subjects}>
+                <SubjectSection 
+                  title="Quick Practice" 
+                  value="Math Section" 
+                  buttonText="Start Practice" 
+                  subject_id="1" 
+                  onStartPractice={handleStartPractice}
+                />
+                <SubjectSection 
+                  title="Quick Practice" 
+                  value="Reading & Writing Section" 
+                  buttonText="Start Practice" 
+                  subject_id="2" 
+                  onStartPractice={handleStartPractice}
+                />
+              </div>
+              <TimedTestButton/>
 
-            <div style={styles.analytics}>
-              <TestCategories />
+              <div style={styles.analytics}>
+                <TestCategories />
+              </div>
             </div>
-          </div>
-          <div style={styles.rightColumn}>
-          <AnalyticsCard />
-          <AIChat/>
+            <div style={styles.rightColumn}>
+            <AnalyticsCard />
+            <AIChat/>
+            </div>
           </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
 
-      {/* Difficulty selection modal */}
-      <DifficultyModal 
-        isOpen={showDifficultyModal} 
-        onClose={() => setShowDifficultyModal(false)}
-        subject={selectedSubject}
-      />
-    </div>
+        {/* Difficulty selection modal */}
+        <DifficultyModal 
+          isOpen={showDifficultyModal} 
+          onClose={() => setShowDifficultyModal(false)}
+          subject={selectedSubject}
+        />
+      </div>
+    </SubscriptionCheck>
   )
 }
 
