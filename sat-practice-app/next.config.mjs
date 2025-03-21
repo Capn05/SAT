@@ -11,6 +11,10 @@ const nextConfig = {
     // OR use the more targeted approach:
     // ignoreDuringBuilds: process.env.NODE_ENV === 'production',
   },
+  // Required for Stripe webhook processing to get raw body
+  api: {
+    bodyParser: false,
+  },
 };
 
 export default nextConfig;
