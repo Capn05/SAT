@@ -2,24 +2,23 @@ export default function SubjectTabs({ activeTest, onSubjectChange }) {
     return (
       <div style={styles.container}>
         <div style={styles.tabs}>
-
           <button
             style={{
               ...styles.tab,
-              ...(activeTest === "Past" ? styles.activeTab : {}),
+              ...(activeTest === "Complete" ? styles.activeTab : {}),
             }}
-            onClick={() => onSubjectChange("Past")}
+            onClick={() => onSubjectChange("Complete")}
           >
-            Past
+            Completed Tests
           </button>
           <button
             style={{
               ...styles.tab,
-              ...(activeTest=== "Active" ? styles.activeTab : {}),
+              ...(activeTest === "Paused" ? styles.activeTab : {}),
             }}
-            onClick={() => onSubjectChange("Active")}
+            onClick={() => onSubjectChange("Paused")}
           >
-            Active
+            Paused Tests
           </button>
         </div>
         {/* <div style={styles.info}>
@@ -57,7 +56,7 @@ export default function SubjectTabs({ activeTest, onSubjectChange }) {
       transition: "all 0.2s ease",
     },
     activeTab: {
-      backgroundColor: "#4338ca",
+      backgroundColor: "#10b981",
       color: "white",
     },
     info: {

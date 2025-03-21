@@ -8,9 +8,7 @@ import TopBar from "../components/TopBar"
 import PreTestModal from "../components/PreTestModal"
 import SubjectTabs from './component/tabs'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import { formatDate, formatTime } from '../lib/utils'
-
-import "../global.css"
+import { formatDate, formatTime } from '../../../lib/utils'
 
 export default function PracticeTestsPage() {
   const [selectedSection, setSelectedSection] = useState(null)
@@ -239,32 +237,6 @@ export default function PracticeTestsPage() {
     setIsModalOpen(false)
     router.push(`/TestMode?testId=${testId}`)
   }
-
-  // Add a SubjectTabs component
-  const SubjectTabs = ({ activeTest, onSubjectChange }) => (
-    <div style={styles.subjectTabs}>
-      <div
-        style={{
-          ...styles.subjectTab,
-          backgroundColor: activeTest === "Complete" ? "#10b981" : "transparent",
-          color: activeTest === "Complete" ? "white" : "#4b5563",
-        }}
-        onClick={() => onSubjectChange("Complete")}
-      >
-        Completed Tests
-      </div>
-      <div
-        style={{
-          ...styles.subjectTab,
-          backgroundColor: activeTest === "Paused" ? "#10b981" : "transparent",
-          color: activeTest === "Paused" ? "white" : "#4b5563",
-        }}
-        onClick={() => onSubjectChange("Paused")}
-      >
-        Paused Tests
-      </div>
-    </div>
-  );
 
   const handleSubjectChange = (test) => {
     setActiveTab(test);

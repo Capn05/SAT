@@ -56,50 +56,127 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
   md.enable('table');
 
-  const renderMath = (mathString) => {
+  // Helper function to determine if question is math
+  const isMathQuestion = (question) => {
+    return question && question.subject_id === 1; // Math questions have subject_id of 1
+  };
+
+  // Simplified rendering for math questions
+  const renderMathContent = (content) => {
+    if (!content) return '';
+    
     try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: false,
-      });
+      // Process tables first to ensure they render correctly
+      content = processTableFormat(content);
+      
+      // Handle special cases in math content
+      
+      // 1. Dollar signs in math expressions
+      content = content.replace(/\$(\\+\$\d+)\$/g, '\\$$1');
+      
+      // 2. Check if content already has math delimiters
+      if (!content.includes('$')) {
+        // If no delimiters, we need to be careful about wrapping the entire content
+        
+        // First handle any existing markdown tables, which shouldn't be wrapped in math
+        const parts = [];
+        const lines = content.split('\n');
+        let inTable = false;
+        let currentNonTable = '';
+        
+        for (const line of lines) {
+          if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            // We found a table line
+            if (!inTable) {
+              // If we were building non-table content, add it
+              if (currentNonTable.trim()) {
+                parts.push({type: 'math', content: currentNonTable});
+                currentNonTable = '';
+              }
+              inTable = true;
+              parts.push({type: 'table', content: line});
+            } else {
+              // Continue adding to table
+              parts.push({type: 'table', content: line});
+            }
+          } else {
+            // Not a table line
+            if (inTable) {
+              inTable = false;
+            }
+            currentNonTable += line + '\n';
+          }
+        }
+        
+        // Add any remaining non-table content
+        if (currentNonTable.trim()) {
+          parts.push({type: 'math', content: currentNonTable});
+        }
+        
+        // Now render each part accordingly
+        return parts.map(part => {
+          if (part.type === 'table') {
+            return md.render(part.content);
+          } else {
+            // For math content, wrap in KaTeX
+            try {
+              return katex.renderToString(part.content, {
+                throwOnError: false,
+                displayMode: true,
+                output: 'html'
+              });
+            } catch (err) {
+              // If KaTeX fails, fall back to markdown
+              return md.render(part.content);
+            }
+          }
+        }).join('\n');
+      }
+      
+      // If we got here, the content has math delimiters, so use markdown-it-katex
+      return md.render(content);
     } catch (error) {
-      console.error('Error rendering math:', error);
-      return mathString;
+      console.error('Error rendering math content:', error);
+      // Fallback to regular markdown rendering if our processing fails
+      return md.render(content);
     }
   };
 
-  const renderBlockMath = (mathString) => {
-    try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: true,
-      });
-    } catch (error) {
-      console.error('Error rendering block math:', error);
-      return mathString;
-    }
+  // Simplified rendering for reading/writing questions
+  const renderReadingContent = (content) => {
+    if (!content) return '';
+    
+    // Process tables first
+    content = processTableFormat(content);
+    
+    // Simple markdown rendering for reading content
+    return md.render(content);
   };
 
-  const renderResponse = (response) => {
+  // Unified rendering method that chooses the right renderer based on question type
+  const renderResponse = (response, question) => {
     if (!response) return '';
     
     // Normalize underscores - replace more than 5 consecutive underscores with just 5
     response = response.replace(/_{6,}/g, '_____');
     
-    response = processTableFormat(response);
-    
-    const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
-    const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
-
-    response = response.replace(blockMathRegex, (match, p1) => {
-      return renderBlockMath(p1);
-    });
-
-    response = response.replace(inlineMathRegex, (match, p1) => {
-      return renderMath(p1);
-    });
-
-    return md.render(response);
+    if (question && isMathQuestion(question)) {
+      if (response.includes('$')) {
+        // If it already has math delimiters, use regular markdown with KaTeX
+        return md.render(response);
+      } else {
+        // For pure math without delimiters, try direct KaTeX rendering
+        try {
+          return renderMathContent(response);
+        } catch (err) {
+          // Fallback to markdown if direct KaTeX fails
+          return md.render(response);
+        }
+      }
+    } else {
+      // For reading/writing questions, use markdown rendering
+      return renderReadingContent(response);
+    }
   };
 
   const processTableFormat = (text) => {
@@ -898,7 +975,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             <span style={styles.choiceLetter}>{option.value}.</span>
             <span 
               style={styles.choiceText}
-              dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }}
+              dangerouslySetInnerHTML={{ __html: renderResponse(option.label, questions[currentIndex]) }}
+              className={`question-text-container ${isMathQuestion(questions[currentIndex]) ? 'math-content' : 'reading-content'}`}
             />
             {isCorrectAnswerForDisplay && (
               <span style={styles.correctIndicator}>✓</span>
@@ -969,8 +1047,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           
           <div 
             style={styles.questionText}
-            dangerouslySetInnerHTML={{ __html: renderResponse(question_text) }}
-            className="question-text-container"
+            dangerouslySetInnerHTML={{ __html: renderResponse(question_text, questions[currentIndex]) }}
+            className={`question-text-container ${isMathQuestion(questions[currentIndex]) ? 'math-question' : 'reading-question'}`}
           />
 
           <form onSubmit={handleSubmit} style={styles.form}>
@@ -1353,6 +1431,71 @@ const globalStyles = `
   
   .question-text-container tr:hover {
     background-color: #f3f4f6;
+  }
+
+  /* Math content styles */
+  .question-text-container .katex {
+    font-size: 1.1em;
+    line-height: 1.5;
+    display: inline-block;
+    text-rendering: auto;
+  }
+
+  .question-text-container .katex-display {
+    display: block;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  /* Improved paragraph spacing */
+  .question-text-container p {
+    margin: 0.5em 0;
+    display: inline;
+  }
+
+  /* Make sure non-block elements don't cause unwanted breaks */
+  .question-text-container span,
+  .question-text-container strong,
+  .question-text-container em,
+  .question-text-container a,
+  .question-text-container code {
+    display: inline;
+  }
+
+  /* Ensure block elements maintain their formatting */
+  .question-text-container ul,
+  .question-text-container ol,
+  .question-text-container blockquote,
+  .question-text-container pre,
+  .question-text-container table {
+    display: block;
+    margin: 1em 0;
+  }
+
+  /* Subject-specific styles */
+  .math-question {
+    font-family: 'KaTeX_Main', serif;
+    line-height: 1.6;
+  }
+
+  .reading-question {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.8;
+  }
+
+  .math-content {
+    font-family: 'KaTeX_Main', serif;
+  }
+
+  .reading-content {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  /* Fix for dollar signs in math content */
+  .math-question .katex .mord, 
+  .math-content .katex .mord {
+    display: inline-block;
+    margin-right: 0.05em;
   }
 `;
 

@@ -1,9 +1,18 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { BarChart2, TrendingUp, CheckCircle } from "lucide-react"
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
+
+// Create a stats cache to reduce repeated API calls
+const statsCache = {
+  data: null,
+  lastFetched: 0
+};
+
+// Cache stats for 5 minutes
+const STATS_CACHE_DURATION = 300000;
 
 export default function AnalyticsCard() {
   const [stats, setStats] = useState({
@@ -14,71 +23,99 @@ export default function AnalyticsCard() {
   const [loading, setLoading] = useState(true)
   const router = useRouter()
   const supabase = createClientComponentClient()
+  const fetchInProgress = useRef(false);
 
   useEffect(() => {
+    // Skip if a fetch is already in progress
+    if (fetchInProgress.current) return;
+    
     const fetchStats = async () => {
+      // Return cached stats if recent
+      const now = Date.now();
+      if (statsCache.data && now - statsCache.lastFetched < STATS_CACHE_DURATION) {
+        console.log('Using cached stats data');
+        setStats(statsCache.data);
+        setLoading(false);
+        return;
+      }
+      
+      fetchInProgress.current = true;
+      
       try {
         setLoading(true);
-        const { data: { session }, error: sessionError } = await supabase.auth.getSession()
         
-        if (sessionError || !session) {
-          console.log('No valid session found')
-          router.push('/login')
-          return
-        }
-
-        console.log('Fetching stats for user:', session.user.id)
-
-        const response = await fetch(`/api/user-stats?userId=${session.user.id}`)
-        
-        if (!response.ok) {
-          if (response.status === 401) {
-            router.push('/login')
-            return
+        // Check if we have a session already cached in localStorage
+        const localSession = localStorage.getItem('supabase.auth.token');
+        if (!localSession) {
+          console.log('No session found in local storage');
+          // No session cached, check with the server
+          const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+          
+          if (sessionError || !session) {
+            console.log('No valid session found');
+            return;
           }
           
-          // Set default stats on error instead of throwing
-          console.error(`API error: ${response.status} - ${response.statusText}`)
-          setStats({
-            questionsAnswered: 0,
-            correctAnswers: 0,
-            accuracyPercentage: 0
-          })
-          return
-        }
-        
-        const data = await response.json()
-        console.log('Received stats:', data)
-        
-        if (data && data.stats) {
-          setStats(data.stats)
+          console.log('Fetching stats for user:', session.user.id);
+          
+          const response = await fetch(`/api/user-stats?userId=${session.user.id}`);
+          
+          if (!response.ok) {
+            throw new Error(`API error: ${response.status}`);
+          }
+          
+          const data = await response.json();
+          
+          if (data && data.stats) {
+            // Cache the stats data
+            statsCache.data = data.stats;
+            statsCache.lastFetched = Date.now();
+            
+            setStats(data.stats);
+          }
         } else {
-          // Fallback if data structure is unexpected
-          setStats({
-            questionsAnswered: 0,
-            correctAnswers: 0,
-            accuracyPercentage: 0
-          })
+          // We already have a session in localStorage, parse it
+          const session = JSON.parse(localSession);
+          if (session?.user) {
+            console.log('Using cached session for user:', session.user.id);
+            
+            const response = await fetch(`/api/user-stats?userId=${session.user.id}`);
+            
+            if (!response.ok) {
+              throw new Error(`API error: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if (data && data.stats) {
+              // Cache the stats data
+              statsCache.data = data.stats;
+              statsCache.lastFetched = Date.now();
+              
+              setStats(data.stats);
+            }
+          }
         }
       } catch (error) {
-        console.error('Error fetching user stats:', error)
+        console.error('Error fetching user stats:', error);
         // Set default values on error
         setStats({
           questionsAnswered: 0,
           correctAnswers: 0,
           accuracyPercentage: 0
-        })
+        });
       } finally {
-        setLoading(false)
+        setLoading(false);
+        fetchInProgress.current = false;
       }
-    }
+    };
 
-    fetchStats()
-  }, [router, supabase])
+    fetchStats();
+  }, [router, supabase]);
 
   const handleViewAnalytics = () => {
-    router.push('/progress')
-  }
+    router.push('/progress');
+  };
 
   return (
     <div style={styles.container}>
@@ -117,7 +154,7 @@ export default function AnalyticsCard() {
         <span>View Detailed Analytics</span>
       </button>
     </div>
-  )
+  );
 }
 
 const styles = {
