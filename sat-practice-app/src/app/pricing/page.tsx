@@ -6,15 +6,22 @@ import StripePayment from '../../components/StripePayment';
 export default function PricingPage() {
   useEffect(() => {
     // Check if user came from a redirect after login with a selected plan
-    const selectedPlan = localStorage.getItem('selectedPlan');
-    if (selectedPlan) {
-      // Clear the selected plan from local storage
-      localStorage.removeItem('selectedPlan');
+    if (typeof window !== 'undefined') {
+      const selectedPlan = localStorage.getItem('selectedPlan');
+      console.log('Selected plan from localStorage:', selectedPlan);
       
-      // Find the button for the selected plan and click it
-      const planButton = document.getElementById(`${selectedPlan}-plan-button`);
-      if (planButton) {
-        planButton.click();
+      if (selectedPlan) {
+        // Clear the selected plan from local storage
+        localStorage.removeItem('selectedPlan');
+        
+        // Find the button for the selected plan and click it
+        const planButton = document.getElementById(`${selectedPlan}-plan-button`);
+        console.log('Found plan button:', planButton);
+        
+        if (planButton) {
+          console.log('Clicking plan button');
+          planButton.click();
+        }
       }
     }
   }, []);
