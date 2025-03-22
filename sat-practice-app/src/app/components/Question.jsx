@@ -1413,6 +1413,28 @@ const styles = {
   
   
 const globalStyles = `
+  /* Font declarations */
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunrm.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunti.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunbx.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+
   /* Core styling for math and text content */
   .question-text-container {
     font-family: 'Noto Sans', sans-serif;
@@ -1422,7 +1444,14 @@ const globalStyles = `
   
   /* KaTeX styling */
   .katex {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
     font-size: 1.1em !important;
+  }
+
+  .math-question,
+  .question-text-container .katex,
+  .math-content .katex {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
   }
   
   .katex-display {
@@ -1472,6 +1501,15 @@ const globalStyles = `
   /* Fix spacing for the radical symbols and exponents */
   .katex .mfrac .sqrt {
     padding: 0.1em 0 !important;
+  }
+
+  .katex .mord {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
+  }
+
+  .katex .mord.mathit {
+    font-family: 'Computer Modern', KaTeX_Math, serif !important;
+    font-style: italic !important;
   }
 
   .katex .mord + .mord {
