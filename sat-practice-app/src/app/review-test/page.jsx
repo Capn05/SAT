@@ -8,6 +8,10 @@ import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 import MathRenderer, { processMathInText } from '../components/MathRenderer'
+import MarkdownIt from 'markdown-it'
+import markdownItKatex from 'markdown-it-katex'
+import katex from 'katex'
+import 'katex/dist/katex.min.css'
 
 // Create a client component for content
 function ReviewTestContent() {
@@ -34,6 +38,174 @@ function ReviewTestContent() {
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber)
   }
+
+  // Set up the Markdown renderer with KaTeX support
+  const md = new MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+    breaks: true,
+    listIndent: 2  // Proper indentation for lists
+  }).use(markdownItKatex);
+
+  // Helper function to determine if question is math
+  const isMathQuestion = (question) => {
+    return question && (question.subjectId === 1 || question.subject_id === 1); // Math questions have subject_id of 1
+  };
+
+  // Simplified rendering for math questions
+  const renderMathContent = (content) => {
+    if (!content) return '';
+    
+    try {
+      // Process tables first to ensure they render correctly
+      content = processTableFormat(content);
+      
+      // Handle special cases in math content
+      
+      // 1. Dollar signs in math expressions
+      content = content.replace(/\$(\\+\$\d+)\$/g, '\\$$1');
+      
+      // 2. Check if content already has math delimiters
+      if (!content.includes('$')) {
+        // If no delimiters, we need to be careful about wrapping the entire content
+        
+        // First handle any existing markdown tables, which shouldn't be wrapped in math
+        const parts = [];
+        const lines = content.split('\n');
+        let inTable = false;
+        let currentNonTable = '';
+        
+        for (const line of lines) {
+          if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            // We found a table line
+            if (!inTable) {
+              // If we were building non-table content, add it
+              if (currentNonTable.trim()) {
+                parts.push({type: 'math', content: currentNonTable});
+                currentNonTable = '';
+              }
+              inTable = true;
+              parts.push({type: 'table', content: line});
+            } else {
+              // Continue adding to table
+              parts.push({type: 'table', content: line});
+            }
+          } else {
+            // Not a table line
+            if (inTable) {
+              inTable = false;
+            }
+            currentNonTable += line + '\n';
+          }
+        }
+        
+        // Add any remaining non-table content
+        if (currentNonTable.trim()) {
+          parts.push({type: 'math', content: currentNonTable});
+        }
+        
+        // Now render each part accordingly
+        return parts.map(part => {
+          if (part.type === 'table') {
+            return md.render(part.content);
+          } else {
+            // For math content, wrap in KaTeX
+            try {
+              return katex.renderToString(part.content, {
+                throwOnError: false,
+                displayMode: true,
+                output: 'html'
+              });
+            } catch (err) {
+              // If KaTeX fails, fall back to markdown
+              return md.render(part.content);
+            }
+          }
+        }).join('\n');
+      }
+      
+      // If we got here, the content has math delimiters, so use markdown-it-katex
+      return md.render(content);
+    } catch (error) {
+      console.error('Error rendering math content:', error);
+      // Fallback to regular markdown rendering if our processing fails
+      return md.render(content);
+    }
+  };
+
+  // Simplified rendering for reading/writing questions
+  const renderReadingContent = (content) => {
+    if (!content) return '';
+    
+    // Process tables first
+    content = processTableFormat(content);
+    
+    // Simple markdown rendering for reading content
+    return md.render(content);
+  };
+
+  // Unified rendering method that chooses the right renderer based on question type
+  const renderResponse = (response, question) => {
+    if (!response) return '';
+    
+    // Normalize underscores - replace more than 5 consecutive underscores with just 5
+    response = response.replace(/_{6,}/g, '_____');
+    
+    if (question && isMathQuestion(question)) {
+      if (response.includes('$')) {
+        // If it already has math delimiters, use regular markdown with KaTeX
+        return md.render(response);
+      } else {
+        // For pure math without delimiters, try direct KaTeX rendering
+        try {
+          return renderMathContent(response);
+        } catch (err) {
+          // Fallback to markdown if direct KaTeX fails
+          return md.render(response);
+        }
+      }
+    } else {
+      // For reading/writing questions, use markdown rendering
+      return renderReadingContent(response);
+    }
+  };
+
+  const processTableFormat = (text) => {
+    if (!text) return '';
+    
+    if (text.includes('|---') || text.includes('| ---')) {
+      return text;
+    }
+    
+    const lines = text.split('\n');
+    let tableStartIndex = -1;
+    let tableEndIndex = -1;
+    
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
+        if (tableStartIndex === -1) {
+          tableStartIndex = i;
+        }
+        tableEndIndex = i;
+      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
+        break;
+      }
+    }
+    
+    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
+      const headerRow = lines[tableStartIndex].trim();
+      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
+      
+      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
+      
+      lines.splice(tableStartIndex + 1, 0, separatorRow);
+      
+      return lines.join('\n');
+    }
+    
+    return text;
+  };
 
   useEffect(() => {
     const fetchTestData = async () => {
@@ -67,7 +239,24 @@ function ReviewTestContent() {
           throw new Error('Failed to fetch test questions')
         }
         
-        const questionsData = await questionsResponse.json()
+        const responseData = await questionsResponse.json()
+        
+        // Check if the response contains an error message but with empty data
+        if (responseData.error && responseData.data && responseData.data.length === 0) {
+          setQuestions([])
+          setMetrics({
+            accuracy: 0,
+            correctAnswers: 0,
+            incorrectAnswers: 0,
+            totalQuestions: 0,
+            topicPerformance: {}
+          })
+          setError(responseData.error)
+          setLoading(false)
+          return
+        }
+        
+        const questionsData = responseData.data || responseData
         
         // Sort questions by module number and question ID to ensure order
         questionsData.sort((a, b) => {
@@ -162,6 +351,65 @@ function ReviewTestContent() {
     return { passage: '', question: text };
   };
 
+  // Add global styles for KaTeX rendering
+  useEffect(() => {
+    const globalStyles = `
+      /* Math content styles */
+      .question-text-container .katex {
+        font-size: 1.1em;
+        line-height: 1.5;
+        display: inline-block;
+        text-rendering: auto;
+      }
+    
+      .question-text-container .katex-display {
+        display: block;
+        margin: 1em 0;
+        text-align: center;
+      }
+    
+      /* Ensure block elements maintain their formatting */
+      .question-text-container ul,
+      .question-text-container ol,
+      .question-text-container blockquote,
+      .question-text-container pre,
+      .question-text-container table {
+        display: block;
+        margin: 1em 0;
+      }
+    
+      /* Math question styling */
+      .math-question {
+        font-family: 'KaTeX_Main', serif;
+        line-height: 1.6;
+      }
+    
+      .reading-question {
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.8;
+      }
+    
+      /* Fix for dollar signs in math content */
+      .math-question .katex .mord, 
+      .math-content .katex .mord {
+        display: inline-block;
+        margin-right: 0.05em;
+      }
+    `;
+
+    // Create a style element and append it to the head
+    if (typeof document !== 'undefined') {
+      const styleElement = document.createElement('style');
+      styleElement.innerHTML = globalStyles;
+      document.head.appendChild(styleElement);
+      
+      // Return a cleanup function to remove the style when the component unmounts
+      return () => {
+        document.head.removeChild(styleElement);
+      };
+    }
+  }, []);
+
   if (loading) {
     return (
       <div style={{
@@ -202,8 +450,65 @@ function ReviewTestContent() {
     return (
       <div className="review-container">
         <TopBar title="Test Review" />
-        <div className="review-content">
-          <div className="error-state">{error}</div>
+        <div className="review-content" style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: 'calc(100vh - 60px)' // Subtracting header height
+        }}>
+          <div className="error-state" style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '1.5rem',
+              padding: '2.5rem',
+              borderRadius: '0.75rem',
+              backgroundColor: '#f8f9fa',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
+              maxWidth: '600px',
+              width: '90%',
+              textAlign: 'center'
+            }}>
+              <div style={{
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                color: '#4b5563'
+              }}>
+                No Test Data Available
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: '#6b7280',
+                marginBottom: '1rem'
+              }}>
+                {error}
+              </div>
+              <button
+                onClick={() => router.push('/TimedTestDash')}
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  backgroundColor: '#4f46e5',
+                  color: 'white',
+                  borderRadius: '0.375rem',
+                  fontWeight: '500',
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'background-color 0.2s'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#4338ca'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#4f46e5'}
+              >
+                Return to Tests
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -290,7 +595,6 @@ function ReviewTestContent() {
               </div>
               {(() => {
                 const question = questions[selectedQuestion];
-                let content = '';
                 
                 try {
                   const parsedContent = parseQuestionText(question.text);
@@ -300,16 +604,31 @@ function ReviewTestContent() {
                   return (
                     <>
                       {passage && passage.trim() !== '' && (
-                        <div className="passage">
-                          {processMathInText(passage)}
-                        </div>
+                        <div 
+                          className="passage"
+                          dangerouslySetInnerHTML={{ __html: renderResponse(passage, question) }}
+                        />
                       )}
-                      <div className="question-text">
-                        {processMathInText(questionText)}
-                      </div>
+                      <div 
+                        className="question-text"
+                        dangerouslySetInnerHTML={{ __html: renderResponse(questionText, question) }}
+                      />
                       {question.imageUrl && (
                         <div className="question-image">
-                          <img src={question.imageUrl} alt="Question diagram" />
+                          <img 
+                            src={question.imageUrl} 
+                            alt="Question diagram" 
+                            style={{
+                              maxWidth: '100%',
+                              maxHeight: '400px',
+                              borderRadius: '8px',
+                              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                            }}
+                            onError={(e) => {
+                              console.error('Failed to load image:', question.imageUrl);
+                              e.target.style.display = 'none';
+                            }}
+                          />
                         </div>
                       )}
                     </>
@@ -345,9 +664,10 @@ function ReviewTestContent() {
                       className={choiceClass}
                     >
                       <span className="choice-letter">{option.value}</span>
-                      <div className="option-text">
-                        {processMathInText(option.text)}
-                      </div>
+                      <div 
+                        className="option-text"
+                        dangerouslySetInnerHTML={{ __html: renderResponse(option.text, questions[selectedQuestion]) }}
+                      />
                     </div>
                   );
                 })}
