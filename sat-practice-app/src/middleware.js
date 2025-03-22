@@ -2,49 +2,55 @@ import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
 import { NextResponse } from 'next/server'
 
 export async function middleware(req) {
-  const res = NextResponse.next()
-  const supabase = createMiddlewareClient({ req, res })
-
-  // Add landing to the public routes
-  const publicRoutes = ['/login', '/signup', '/forgot-password', '/landing']
-  const isPublicRoute = publicRoutes.some(route => req.nextUrl.pathname.startsWith(route))
-  const isApiRoute = req.nextUrl.pathname.startsWith('/api/')
-  const isStaticRoute = req.nextUrl.pathname.startsWith('/_next') || 
-                       req.nextUrl.pathname.startsWith('/static') ||
-                       req.nextUrl.pathname === '/favicon.ico'
-
-  // Skip middleware for static routes and API routes
-  if (isStaticRoute || isApiRoute) {
-    return res
+  // Skip middleware for these paths to prevent auth loops and token refreshes
+  const bypassPaths = [
+    '/auth/callback', 
+    '/_next', 
+    '/static', 
+    '/api',
+    '/favicon.ico',
+    '/login',
+    '/signup',
+    '/forgot-password',
+    '/pricing'
+  ];
+  
+  if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
+    return NextResponse.next();
   }
-
-  // If it's the root path, redirect to the landing page
+  
+  // Special case for root path
   if (req.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/landing/index.html', req.url))
+    return NextResponse.redirect(new URL('/landing/index.html', req.url));
   }
-
+  
+  // Landing pages should bypass auth check 
+  if (req.nextUrl.pathname === '/landing' || req.nextUrl.pathname.startsWith('/landing/')) {
+    return NextResponse.next();
+  }
+  
+  // Only remaining paths are protected routes - check auth
+  const res = NextResponse.next();
+  const supabase = createMiddlewareClient({ req, res });
+  
   try {
-    const { data: { session } } = await supabase.auth.getSession()
-
-    // If user is not signed in and trying to access a protected route, redirect to login
-    if (!session && !isPublicRoute) {
-      const redirectUrl = new URL('/login', req.url)
-      redirectUrl.searchParams.set('redirect', req.nextUrl.pathname)
-      return NextResponse.redirect(redirectUrl)
+    // Simple lightweight check without token refresh
+    const { data, error } = await supabase.auth.getUser();
+    
+    // Only redirect if we're certain there's no user
+    if (!data.user && !error) {
+      console.log('User not authenticated, redirecting to login from:', req.nextUrl.pathname);
+      const redirectUrl = new URL('/login', req.url);
+      // Pass the original URL as a redirect parameter
+      redirectUrl.searchParams.set('redirect', req.nextUrl.pathname);
+      return NextResponse.redirect(redirectUrl);
     }
-
-    // If user is signed in and trying to access a public route (except landing),
-    // redirect to home, but allow access to landing
-    if (session && isPublicRoute && 
-        !req.nextUrl.pathname.startsWith('/landing')) {
-      return NextResponse.redirect(new URL('/home', req.url))
-    }
-
-    return res
+    
+    return res;
   } catch (error) {
-    console.error('Middleware error:', error)
+    console.error('Middleware error:', error);
     // On error, allow the request to proceed
-    return res
+    return res;
   }
 }
 
@@ -52,11 +58,11 @@ export const config = {
   matcher: [
     /*
      * Match all request paths except for the ones starting with:
+     * - api (API routes)
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
-     * - public (public files)
      */
-    '/((?!_next/static|_next/image|favicon.ico|public).*)',
+    '/((?!_next/static|_next/image).*)',
   ],
 } 

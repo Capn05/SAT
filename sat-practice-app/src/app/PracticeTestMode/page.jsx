@@ -8,9 +8,15 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { processMathInText } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
+<<<<<<< HEAD
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
 import katex from 'katex';
+=======
+import MarkdownIt from 'markdown-it'
+import markdownItKatex from 'markdown-it-katex'
+import katex from 'katex'
+>>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
 
 // Create a client component that uses useSearchParams
 function PracticeTestContent() {
@@ -602,6 +608,96 @@ function PracticeTestContent() {
     console.log("Rendering question", currentQuestion + 1, "Math subject:", practiceTestInfo?.subjects?.subject_name === 'Math');
   }, [currentQuestion, practiceTestInfo]);
   
+  // Initialize markdown renderer
+  const md = new MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+    breaks: true,
+  }).use(markdownItKatex);
+
+  md.enable('table');
+
+  const renderMath = (mathString) => {
+    try {
+      return katex.renderToString(mathString, {
+        throwOnError: false,
+        displayMode: false,
+      });
+    } catch (error) {
+      console.error('Error rendering math:', error);
+      return mathString;
+    }
+  };
+
+  const renderBlockMath = (mathString) => {
+    try {
+      return katex.renderToString(mathString, {
+        throwOnError: false,
+        displayMode: true,
+      });
+    } catch (error) {
+      console.error('Error rendering block math:', error);
+      return mathString;
+    }
+  };
+
+  const processTableFormat = (text) => {
+    if (text.includes('|---') || text.includes('| ---')) {
+      return text;
+    }
+    
+    const lines = text.split('\n');
+    let tableStartIndex = -1;
+    let tableEndIndex = -1;
+    
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
+        if (tableStartIndex === -1) {
+          tableStartIndex = i;
+        }
+        tableEndIndex = i;
+      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
+        break;
+      }
+    }
+    
+    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
+      const headerRow = lines[tableStartIndex].trim();
+      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
+      
+      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
+      
+      lines.splice(tableStartIndex + 1, 0, separatorRow);
+      
+      return lines.join('\n');
+    }
+    
+    return text;
+  };
+
+  const renderResponse = (response) => {
+    if (!response) return '';
+    
+    // Normalize underscores - replace more than 5 consecutive underscores with just 5
+    response = response.replace(/_{6,}/g, '_____');
+    
+    response = processTableFormat(response);
+    
+    const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
+    const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
+
+    response = response.replace(blockMathRegex, (match, p1) => {
+      return renderBlockMath(p1);
+    });
+
+    response = response.replace(inlineMathRegex, (match, p1) => {
+      return renderMath(p1);
+    });
+
+    return md.render(response);
+  };
+  
   if (isLoading) {
     return (
       <div style={{
@@ -852,6 +948,7 @@ function PracticeTestContent() {
                         <div dangerouslySetInnerHTML={{ __html: processMathInText(currentQuestionData.question_text) }} /> : 
                         'Loading question...'}
                     </div>
+<<<<<<< HEAD
                     
                     {/* Add image display if image_url exists */}
                     {currentQuestionData.image_url && (
@@ -886,6 +983,33 @@ function PracticeTestContent() {
                               <div dangerouslySetInnerHTML={{ __html: processMathInText(option.label) }} /> : 
                               'Loading...'}
                           </div>
+=======
+                  </div>
+                  <div style={{ 
+                    padding: '1rem 4rem', 
+                    fontSize: '1rem', 
+                    lineHeight: '1.5', 
+                    maxWidth: '1000px', 
+                    margin: '0 auto', 
+                    fontFamily: '"Minion Pro", Times, serif' 
+                  }}>
+                    <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+                  </div>
+                  
+                  <div className="options-container" style={styles.optionsContainer}>
+                    {currentQuestionData.options.map(option => (
+                      <div
+                        key={option.id}
+                        style={{
+                          ...styles.optionCard,
+                          ...(selectedOptionId === option.id ? styles.selectedOption : {})
+                        }}
+                        onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
+                      >
+                        <div style={styles.optionLetter}>{option.value}</div>
+                        <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+>>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                         </div>
                       ))}
                     </div>
@@ -909,9 +1033,13 @@ function PracticeTestContent() {
                       lineHeight: '1.5', 
                       fontFamily: '"Noto Sans", sans-serif' 
                     }}>
+<<<<<<< HEAD
                       {currentQuestionData.question_text ? 
                         <div dangerouslySetInnerHTML={{ __html: renderResponse(currentQuestionData.question_text) }} className="question-text-container" /> : 
                         'Loading question...'}
+=======
+                      <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+>>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                     </div>
                     
                     {/* Add image display if image_url exists */}
@@ -930,6 +1058,7 @@ function PracticeTestContent() {
                     )}
                   </div>
                   
+<<<<<<< HEAD
                   <div style={styles.optionsContent}>
                     <div className="options-container" style={styles.optionsContainer}>
                       {currentQuestionData.options.map(option => (
@@ -947,6 +1076,32 @@ function PracticeTestContent() {
                               <div dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }} /> : 
                               'Loading...'}
                           </div>
+=======
+                  <div style={styles.rwOptionsContainer}>
+                    {currentQuestionData.options.map(option => (
+                      <div
+                        key={option.id}
+                        style={{
+                          ...styles.rwOptionCard,
+                          ...(selectedOptionId === option.id ? styles.rwSelectedOption : {})
+                        }}
+                        onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
+                      >
+                        <div style={styles.rwOptionLetter}>{option.value}</div>
+                        <div style={{ 
+                          ...styles.rwOptionText, 
+                          fontFamily: '"Minion Pro", Times, serif',
+                          color: '#1f2937',
+                          fontSize: '1rem',
+                          lineHeight: '1.5',
+                          overflowWrap: 'break-word',
+                          wordWrap: 'break-word',
+                          wordBreak: 'break-word',
+                          whiteSpace: 'pre-wrap',
+                          width: '100%'
+                        }}>
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+>>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                         </div>
                       ))}
                     </div>
@@ -1076,6 +1231,42 @@ export default function PracticeTestPage() {
       <PracticeTestContent />
     </Suspense>
   );
+}
+
+// Add global styles for markdown rendering
+const globalStyles = `
+  .question-text-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  
+  .question-text-container th,
+  .question-text-container td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  .question-text-container th {
+    background-color: #f9fafb;
+    font-weight: 600;
+  }
+  
+  .question-text-container tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  .question-text-container tr:hover {
+    background-color: #f3f4f6;
+  }
+`;
+
+if (typeof document !== 'undefined') {
+  const styleElement = document.createElement('style');
+  styleElement.innerHTML = globalStyles;
+  document.head.appendChild(styleElement);
 }
 
 const styles = {

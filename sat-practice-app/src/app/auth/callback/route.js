@@ -7,10 +7,26 @@ export async function GET(request) {
   const code = requestUrl.searchParams.get('code')
 
   if (code) {
-    const supabase = createRouteHandlerClient({ cookies })
-    await supabase.auth.exchangeCodeForSession(code)
+    try {
+      const cookieStore = cookies()
+      const supabase = createRouteHandlerClient({ cookies: () => cookieStore })
+      await supabase.auth.exchangeCodeForSession(code)
+      
+      // Add cache headers to prevent caching this redirect
+      const response = NextResponse.redirect(new URL('/home', request.url))
+      response.headers.set('Cache-Control', 'no-store, max-age=0')
+      return response
+    } catch (error) {
+      console.error('Auth callback error:', error)
+      // Redirect to login on error
+      const response = NextResponse.redirect(new URL('/login', request.url))
+      response.headers.set('Cache-Control', 'no-store, max-age=0')
+      return response
+    }
   }
 
-  // URL to redirect to after sign in process completes
-  return NextResponse.redirect(new URL('/home', request.url))
+  // No code, just redirect to home
+  const response = NextResponse.redirect(new URL('/home', request.url))
+  response.headers.set('Cache-Control', 'no-store, max-age=0')
+  return response
 } 

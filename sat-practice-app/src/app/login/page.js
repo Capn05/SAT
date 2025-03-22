@@ -27,6 +27,8 @@ function LoginContent() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
+    
+    console.log('Login attempt started');
 
     if (!email || !password) {
       setError('Email and password are required.');
@@ -34,12 +36,14 @@ function LoginContent() {
     }
 
     try {
+      console.log('Calling Supabase auth.signInWithPassword');
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
       if (error) {
+        console.error('Login error:', error);
         if (error.message.includes('email') && error.message.includes('confirm')) {
           setError('Email not confirmed. Please check your inbox and confirm your email before logging in.');
         } else {
@@ -49,13 +53,16 @@ function LoginContent() {
       }
 
       if (data?.session) {
-        router.push('/home');
+        console.log('Session created successfully, redirecting to home');
+        // Use replace instead of push to avoid adding to history stack
+        router.replace('/home');
       } else {
+        console.error('No session data returned');
         setError('Login failed - no session created');
       }
     } catch (error) {
+      console.error('Login exception:', error);
       setError('An error occurred during login.');
-      console.error('Login error:', error);
     }
   };
 

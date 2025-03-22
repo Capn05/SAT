@@ -34,6 +34,7 @@ import SubjectTabs from "./components/SubjectTabs"
 import './styles.css'; // Adjust the path as necessary
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
+import SubscriptionCheck from '../../components/SubscriptionCheck'
 
 // Consistent mastery level calculation function
 function calculateMasteryLevel(accuracy, totalAttempts) {
@@ -383,62 +384,64 @@ export default function SkillsPage() {
       <SkillsHeader title={"SAT Skills"}/>
       <SubjectTabs activeSubject={activeSubject} onSubjectChange={setActiveSubject} />
       
-      <div style={styles.content}>
-        {error ? (
-          <div style={styles.errorContainer}>
-            <div style={styles.errorMessage}>Error: {error}</div>
-            <button 
-              style={styles.retryButton}
-              onClick={() => {
-                setLoading(true);
-                if (activeSubject === "math") {
-                  fetchSkills(1, setMathDomains, mathDomainData);
-                } else {
-                  fetchSkills(2, setReadingDomains, readingDomainData);
-                }
-              }}
-            >
-              Retry
-            </button>
-          </div>
-        ) : (
-          domains.map((domain) => (
-            <DomainSection key={domain.name} domain={domain}>
-              {loading ? 
-                // Display the exact number of loading cards based on domain.loadingCount
-                Array(domain.loadingCount).fill().map((_, index) => (
-                  <div key={`loading-skill-${index}`} style={styles.loadingCard}>
-                    <div style={styles.loadingHeader}>
-                      <div style={styles.loadingIcon}></div>
-                      <div style={styles.loadingTitle}></div>
+      <SubscriptionCheck>
+        <div style={styles.content}>
+          {error ? (
+            <div style={styles.errorContainer}>
+              <div style={styles.errorMessage}>Error: {error}</div>
+              <button 
+                style={styles.retryButton}
+                onClick={() => {
+                  setLoading(true);
+                  if (activeSubject === "math") {
+                    fetchSkills(1, setMathDomains, mathDomainData);
+                  } else {
+                    fetchSkills(2, setReadingDomains, readingDomainData);
+                  }
+                }}
+              >
+                Retry
+              </button>
+            </div>
+          ) : (
+            domains.map((domain) => (
+              <DomainSection key={domain.name} domain={domain}>
+                {loading ? 
+                  // Display the exact number of loading cards based on domain.loadingCount
+                  Array(domain.loadingCount).fill().map((_, index) => (
+                    <div key={`loading-skill-${index}`} style={styles.loadingCard}>
+                      <div style={styles.loadingHeader}>
+                        <div style={styles.loadingIcon}></div>
+                        <div style={styles.loadingTitle}></div>
+                      </div>
+                      <div style={styles.loadingStats}>
+                        <div style={styles.loadingLine}></div>
+                        <div style={styles.loadingLine}></div>
+                        <div style={styles.loadingLine}></div>
+                      </div>
+                      <div style={styles.loadingFooter}></div>
                     </div>
-                    <div style={styles.loadingStats}>
-                      <div style={styles.loadingLine}></div>
-                      <div style={styles.loadingLine}></div>
-                      <div style={styles.loadingLine}></div>
-                    </div>
-                    <div style={styles.loadingFooter}></div>
-                  </div>
-                ))
-                :
-                // Show actual skills if available or a message if none
-                domain.skills.length > 0 ? 
-                  domain.skills.map((skill) => (
-                    <SkillCard
-                      key={skill.name}
-                      skill={skill}
-                      subject={activeSubject === "math" ? "Math" : "Reading & Writing"}
-                    />
                   ))
                   :
-                  <div style={styles.noSkillsMessage}>
-                    No skills available for this domain
-                  </div>
-              }
-            </DomainSection>
-          ))
-        )}
-      </div>
+                  // Show actual skills if available or a message if none
+                  domain.skills.length > 0 ? 
+                    domain.skills.map((skill) => (
+                      <SkillCard
+                        key={skill.name}
+                        skill={skill}
+                        subject={activeSubject === "math" ? "Math" : "Reading & Writing"}
+                      />
+                    ))
+                    :
+                    <div style={styles.noSkillsMessage}>
+                      No skills available for this domain
+                    </div>
+                }
+              </DomainSection>
+            ))
+          )}
+        </div>
+      </SubscriptionCheck>
     </div>
   )
 }
