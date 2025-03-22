@@ -1516,6 +1516,48 @@ const globalStyles = `
     margin-left: 0.05em !important;
   }
 
+  .katex .mclose + .msup {
+    margin-left: 0.08em !important;
+  }
+
+  .katex .msup + .mclose,
+  .katex .msup + .mord,
+  .katex .msup + .mbin,
+  .katex .msup + .mrel,
+  .katex .msup + .mpunct {
+    margin-left: 0.08em !important;
+  }
+
+  .katex .msup + .mpunct {
+    margin-left: 0.12em !important; 
+  }
+
+  .katex .minner {
+    padding: 0 0.05em !important;
+  }
+
+  /* Fix not equal signs (\neq) */
+  .katex .mrel.negated {
+    position: relative !important;
+    margin-left: 0.15em !important;
+    margin-right: 0.15em !important;
+  }
+
+  /* Ensure the slash in the not equal sign is properly positioned */
+  .katex .mrel .vlist-t2 {
+    position: relative !important;
+  }
+
+  /* Make the line in not equal signs more visible */
+  .katex .mrel.negated .vlist-t2 .vlist-r .vlist {
+    height: 0.25em !important;
+  }
+
+  /* Adjust the positioning of the line in not equal signs */
+  .katex .mrel.negated .vlist-t2 .vlist-r:nth-child(2) .vlist {
+    transform: translateY(0.05em) !important;
+  }
+
   .katex .msupsub .msup {
     margin-right: 0.1em !important;
   }
