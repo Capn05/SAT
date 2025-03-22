@@ -109,7 +109,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
   // Process content with KaTeX rendering
   const processWithKaTeX = (content) => {
-    // Replace escaped dollar signs with a placeholder
+    // Replace escaped dollar signs with a placeholder BEFORE processing math
     const DOLLAR_PLACEHOLDER = '___DOLLAR_SIGN___';
     content = content.replace(/\\\$/g, DOLLAR_PLACEHOLDER);
     
@@ -165,8 +165,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         // For math segments, use KaTeX
         try {
           const isDisplay = segment.type === 'display-math';
+
+          // Replace the placeholder with the actual KaTeX command for dollar sign
+          const processedMathContent = segment.content
+            .replace(new RegExp(DOLLAR_PLACEHOLDER, 'g'), '\\$');
           
-          return katex.renderToString(segment.content, {
+          return katex.renderToString(processedMathContent, {
             throwOnError: false,
             displayMode: isDisplay,
             output: 'html'
@@ -1426,10 +1430,27 @@ const globalStyles = `
     overflow-x: auto !important;
     overflow-y: hidden !important;
   }
+
+  .katex-display + :not(.katex-display),
+  :not(.katex-display) + .katex {
+    margin-left: 0.2em !important;
+  }
   
   /* Fix for fractions and exponents */
   .katex .mfrac .frac-line {
     border-bottom-width: 1px !important;
+  }
+
+  .katex .mord + .mord {
+    margin-left: 0.05em !important;
+  }
+
+  .katex .msupsub .msup {
+    margin-right: 0.1em !important;
+  }
+
+  .katex .msup {
+    padding-right: 0.05em !important;
   }
   
   .katex .msupsub {
