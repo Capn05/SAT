@@ -1435,10 +1435,43 @@ const globalStyles = `
   :not(.katex-display) + .katex {
     margin-left: 0.2em !important;
   }
-  
-  /* Fix for fractions and exponents */
+
+  /* Improved fraction styling */
+  .katex .mfrac {
+    vertical-align: -0.5em !important;
+    font-size: 1.2em !important;
+  }
+
+  /* Fix fraction line */
   .katex .mfrac .frac-line {
     border-bottom-width: 1px !important;
+    margin-top: 0.15em !important;
+    margin-bottom: 0.15em !important;
+  }
+
+  /* Fix numerator positioning */
+  .katex .mfrac .mfracnum {
+    display: inline-block !important;
+    min-height: 1.2em !important;
+    margin-bottom: 0.15em !important;
+  }
+
+  /* Fix denominator positioning */
+  .katex .mfrac .mfracdenom {
+    display: inline-block !important;
+    min-height: 1.2em !important;
+    margin-top: 0.15em !important;
+  }
+
+  /* Handle exponents in fractions better */
+  .katex .mfrac .msup {
+    display: inline-block !important;
+    position: relative !important;
+  }
+
+  /* Fix spacing for the radical symbols and exponents */
+  .katex .mfrac .sqrt {
+    padding: 0.1em 0 !important;
   }
 
   .katex .mord + .mord {
