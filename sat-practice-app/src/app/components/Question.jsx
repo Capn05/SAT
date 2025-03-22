@@ -1435,10 +1435,15 @@ const globalStyles = `
   .katex .msupsub {
     text-align: left !important;
     position: absolute !important;
+    margin-right: 0.1em !important;
   }
   
   .katex .mfrac > span {
     display: inline-block !important;
+  }
+
+  .katex .mbin, .katex .mrel {
+    margin: 0 0.2em !important;
   }
   
   /* Table styling */
