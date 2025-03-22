@@ -6,7 +6,7 @@ import { formatTime } from "../lib/utils"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import { processMathInText } from '../components/MathRenderer'
+import { processMathInText, renderMathString } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
@@ -518,84 +518,13 @@ function PracticeTestContent() {
 
   md.enable('table');
 
-  const renderMath = (mathString) => {
-    try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: false,
-      });
-    } catch (error) {
-      console.error('Error rendering math:', error);
-      return mathString;
-    }
-  };
-
-  const renderBlockMath = (mathString) => {
-    try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: true,
-      });
-    } catch (error) {
-      console.error('Error rendering block math:', error);
-      return mathString;
-    }
-  };
-
-  const processTableFormat = (text) => {
-    if (text.includes('|---') || text.includes('| ---')) {
-      return text;
-    }
-    
-    const lines = text.split('\n');
-    let tableStartIndex = -1;
-    let tableEndIndex = -1;
-    
-    for (let i = 0; i < lines.length; i++) {
-      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
-        if (tableStartIndex === -1) {
-          tableStartIndex = i;
-        }
-        tableEndIndex = i;
-      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
-        break;
-      }
-    }
-    
-    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
-      const headerRow = lines[tableStartIndex].trim();
-      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
-      
-      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
-      
-      lines.splice(tableStartIndex + 1, 0, separatorRow);
-      
-      return lines.join('\n');
-    }
-    
-    return text;
-  };
-
   const renderResponse = (response) => {
     if (!response) return '';
     
     // Normalize underscores - replace more than 5 consecutive underscores with just 5
     response = response.replace(/_{6,}/g, '_____');
     
-    response = processTableFormat(response);
-    
-    const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
-    const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
-
-    response = response.replace(blockMathRegex, (match, p1) => {
-      return renderBlockMath(p1);
-    });
-
-    response = response.replace(inlineMathRegex, (match, p1) => {
-      return renderMath(p1);
-    });
-
-    return md.render(response);
+    return renderMathString(response);
   };
   
   if (isLoading) {

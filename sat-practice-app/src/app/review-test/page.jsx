@@ -7,7 +7,7 @@ import TopBar from '../components/TopBar'
 import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
-import MathRenderer, { processMathInText } from '../components/MathRenderer'
+import { processMathInText, renderMathString } from '../components/MathRenderer'
 
 // Create a client component for content
 function ReviewTestContent() {
