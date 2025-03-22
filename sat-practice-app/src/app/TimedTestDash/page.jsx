@@ -459,393 +459,395 @@ export default function PracticeTestsPage() {
   return (
     <SubscriptionCheck>
     <div style={styles.container}>
-      <TopBar title="Practice Tests" />
+      <div style={styles.topBarContainer}>
+        <TopBar title="Practice Tests" />
+      </div>
       
-        <div style={styles.content}>
-          <div style={styles.mainSection}>
-            <h1 style={styles.pageTitle}>SAT Practice Tests</h1>
-            <p style={styles.pageDescription}>
-              Take full-length adaptive SAT practice tests that simulate the real testing experience
-            </p>
-            <div style={styles.testTypes}>
-              <div
-                style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
+      <div style={styles.content}>
+        <div style={styles.mainSection}>
+          <h1 style={styles.pageTitle}>SAT Practice Tests</h1>
+          <p style={styles.pageDescription}>
+            Take full-length adaptive SAT practice tests that simulate the real testing experience
+          </p>
+          <div style={styles.testTypes}>
+            <div
+              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
+              onClick={() => handleTestClick(1)}
+            >
+              <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
+                <Brain size={28} color="#10b981" />
+              </div>
+              <h2 style={styles.testTitle}>Math Adaptive Test</h2>
+              <p style={styles.testInfo}>44 Questions • 70 Minutes</p>
+              <p style={styles.testDescription}>
+                Full-length adaptive test with Module 1 (22 questions) and Module 2 (22 questions).
+              </p>
+              <button
+                style={{
+                  ...styles.startButton,
+                  opacity: isLoadingTests ? 0.7 : 1,
+                  cursor: isLoadingTests ? 'default' : 'pointer',
+                  backgroundColor: '#10b981',
+                  transition: 'background-color 0.2s ease',
+                }}
                 onClick={() => handleTestClick(1)}
               >
-                <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
-                  <Brain size={28} color="#10b981" />
-                </div>
-                <h2 style={styles.testTitle}>Math Adaptive Test</h2>
-                <p style={styles.testInfo}>44 Questions • 70 Minutes</p>
-                <p style={styles.testDescription}>
-                  Full-length adaptive test with Module 1 (22 questions) and Module 2 (22 questions).
-                </p>
-                <button
-                  style={{
-                    ...styles.startButton,
-                    opacity: isLoadingTests ? 0.7 : 1,
-                    cursor: isLoadingTests ? 'default' : 'pointer',
-                    backgroundColor: '#10b981',
-                    transition: 'background-color 0.2s ease',
-                  }}
-                  onClick={() => handleTestClick(1)}
-                >
-                  {isLoadingTests ? 'Loading Tests...' : 'Start Math Test'}
-                </button>
-              </div>
-
-              <div
-                style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
-                onClick={() => handleTestClick(2)}
-              >
-                <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
-                  <BookOpen size={28} color="#10b981" />
-                </div>
-                <h2 style={styles.testTitle}>Reading & Writing Adaptive Test</h2>
-                <p style={styles.testInfo}>54 Questions • 64 Minutes</p>
-                <p style={styles.testDescription}>
-                  Full-length adaptive test with Module 1 (27 questions) and Module 2 (27 questions).
-                </p>
-                <button
-                  style={{
-                    ...styles.startButton,
-                    opacity: isLoadingTests ? 0.7 : 1,
-                    cursor: isLoadingTests ? 'default' : 'pointer',
-                    backgroundColor: '#10b981',
-                    transition: 'background-color 0.2s ease',
-                  }}
-                  onClick={() => handleTestClick(2)}
-                >
-                  {isLoadingTests ? 'Loading Tests...' : 'Start Reading & Writing Test'}
-                </button>
-              </div>
+                {isLoadingTests ? 'Loading Tests...' : 'Start Math Test'}
+              </button>
             </div>
 
-            {/* Add the practice test modal */}
-            {isPracticeTestModalOpen && (
-              <PracticeTestModal
-                onStart={handleStartPracticeTest}
-                onClose={() => setIsPracticeTestModalOpen(false)}
-              />
-            )}
-
-            {isModalOpen && (
-              <PreTestModal
-                testType={currentTestType}
-                onStart={handleStartTest}
-                onClose={() => setIsModalOpen(false)}
-              />
-            )}
-
-            <div style={{...styles.testHistorySection, backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)'}}>
-              <h2 style={styles.sectionTitle}>Test History</h2>
-              <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
-              <div style={styles.testHistoryList}>
-                {/* Display paused tests in a grid */}
-                {activeTab === "Paused" && (
-                  <div style={{...styles.testsGrid, marginTop: '16px'}}>
-                    {pausedTests.length > 0 ? pausedTests.map((test) => {
-                      // Extract test details
-                      const testName = test.practice_tests?.name || `Test #${test.practice_test_id}`;
-                      const moduleNumber = test.test_modules?.module_number || '';
-                      const moduleType = test.test_modules?.is_harder ? 'Higher Difficulty' : 'Lower Difficulty';
-                      const subjectName = test.practice_tests?.subjects?.subject_name || 
-                        (test.practice_tests?.subject_id === 1 ? 'Math' : 
-                         test.practice_tests?.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
-                         
-                      return (
-                        <div 
-                          key={test.id} 
-                          style={{
-                            ...styles.testCard,
-                            cursor: 'pointer',
-                            borderTop: '4px solid #f59e0b',
-                            marginBottom: '0',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-between',
-                          }}
-                          onClick={() => handleResumePausedTest(test)}
-                          role="button"
-                          tabIndex={0}
-                          onKeyDown={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
-                          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                        >
-                          <div>
-                            <h3 style={{fontSize: '18px', fontWeight: '600', marginBottom: '8px', color: '#0f172a'}}>{testName}</h3>
-                            <div style={{marginBottom: '12px'}}>
-                              <div style={{display: 'flex', alignItems: 'center', marginBottom: '4px'}}>
-                                <Clock size={14} style={{color: '#64748b', marginRight: '6px'}} />
-                                <span style={{fontSize: '14px', color: '#64748b'}}>{formatTime(test.time_remaining)} remaining</span>
-                              </div>
-                              <div style={{fontSize: '14px', color: '#64748b'}}>Paused on {formatDate(test.paused_at)}</div>
-                            </div>
-                            <div style={{display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '8px'}}>
-                              <span style={{
-                                backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
-                                color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
-                                padding: '4px 8px',
-                                borderRadius: '4px',
-                                fontSize: '12px',
-                                fontWeight: '500'
-                              }}>
-                                {subjectName}
-                              </span>
-                              <span style={{
-                                backgroundColor: '#f1f5f9',
-                                color: '#64748b',
-                                padding: '4px 8px',
-                                borderRadius: '4px',
-                                fontSize: '12px',
-                                fontWeight: '500'
-                              }}>
-                                Module {moduleNumber}
-                              </span>
-                              {moduleNumber === 2 && (
-                                <span style={{
-                                  backgroundColor: moduleType === 'Higher Difficulty' ? '#dcfce7' : '#fee2e2',
-                                  color: moduleType === 'Higher Difficulty' ? '#16a34a' : '#b91c1c',
-                                  padding: '4px 8px',
-                                  borderRadius: '4px',
-                                  fontSize: '12px',
-                                  fontWeight: '500'
-                                }}>
-                                  {moduleType}
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                          <button style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '8px',
-                            padding: '10px 0',
-                            backgroundColor: '#f59e0b',
-                            color: 'white',
-                            border: 'none',
-                            borderRadius: '6px',
-                            fontWeight: '600',
-                            cursor: 'pointer',
-                            marginTop: '16px',
-                            width: '100%'
-                          }}>
-                            <Clock size={18} />
-                            Resume Test
-                          </button>
-                        </div>
-                      );
-                    }) : (
-                      <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
-                        <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
-                          <Clock size={32} color="#64748b" />
-                        </div>
-                        <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No paused tests found</p>
-                        <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test and pause it to see it here</p>
-                      </div>
-                    )}
-                  </div>
-                )}
-                
-                {/* Display completed tests in a grid */}
-                {activeTab === "Complete" && (
-                  <div style={{...styles.testsGrid, marginTop: '16px'}}>
-                    {currentTests.length > 0 ? currentTests.map((test) => {
-                      // Determine the test name with fallbacks
-                      const testName = test.test_name || `Test #${test.test_id}`;
-                      const moduleType = test.used_harder_module ? 'Harder Module' : 'Easier Module';
-                      
-                      // Calculate correct percentage for overall and module scores
-                      const totalScore = test.total_score !== undefined ? Math.round(test.total_score) : 'N/A';
-                      const module1Score = test.module1_score !== undefined ? Math.round(test.module1_score) : 'N/A';
-                      const module2Score = test.module2_score !== undefined ? Math.round(test.module2_score) : 'N/A';
-                      
-                      // Calculate SAT scaled score (200-800)
-                      const subjectName = test.subject_name || 
-                        (test.subject_id === 1 ? 'Math' : 
-                        test.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
-                      
-                      // Calculate correct answers for each module (based on percentages)
-                      const defaultModuleQuestions = subjectName === 'Math' ? 22 : 27;
-                      const module1Total = defaultModuleQuestions;
-                      const module2Total = defaultModuleQuestions;
-                      
-                      const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
-                      const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
-                      
-                      const satScore = calculateSATScore(
-                        subjectName, 
-                        module1Correct, 
-                        module2Correct, 
-                        module1Total, 
-                        module2Total, 
-                        test.used_harder_module
-                      );
-                      
-                      return (
-                        <div 
-                          key={test.id} 
-                          style={{
-                            ...styles.testCard,
-                            cursor: 'pointer',
-                            borderTop: '4px solid #10b981',
-                            marginBottom: '0',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-between',
-                          }}
-                          onClick={() => handleTestHistoryClick(test)}
-                          role="button"
-                          tabIndex={0}
-                          onKeyDown={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
-                          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                        >
-                          <div>
-                            <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '12px'}}>
-                              <h3 style={{fontSize: '18px', fontWeight: '600', color: '#0f172a', marginRight: '8px'}}>{testName}</h3>
-                              <div style={{
-                                backgroundColor: '#f1f5f9',
-                                padding: '6px 10px',
-                                borderRadius: '8px',
-                                fontSize: '20px',
-                                fontWeight: '700',
-                                color: '#0f172a',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                minWidth: '90px',
-                              }}>
-                                {satScore}/800
-                              </div>
-                            </div>
-                            <div style={{fontSize: '14px', color: '#64748b', marginBottom: '12px'}}>
-                              {formatDate(test.taken_at)}
-                            </div>
-                            <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px'}}>
-                              <span style={{
-                                backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
-                                color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
-                                padding: '4px 8px',
-                                borderRadius: '4px',
-                                fontSize: '12px',
-                                fontWeight: '500'
-                              }}>
-                                {subjectName}
-                              </span>
-                              {test.module2_score !== undefined && (
-                                <span style={{
-                                  backgroundColor: test.used_harder_module ? '#dcfce7' : '#fee2e2',
-                                  color: test.used_harder_module ? '#16a34a' : '#b91c1c',
-                                  padding: '4px 8px',
-                                  borderRadius: '4px',
-                                  fontSize: '12px',
-                                  fontWeight: '500'
-                                }}>
-                                  {moduleType}
-                                </span>
-                              )}
-                              <span style={{
-                                backgroundColor: '#f1f5f9',
-                                color: '#64748b',
-                                padding: '4px 8px',
-                                borderRadius: '4px',
-                                fontSize: '12px',
-                                fontWeight: '500'
-                              }}>
-                                {totalScore}% accuracy
-                              </span>
-                            </div>
-                            <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b', marginBottom: '4px'}}>
-                              <span>Module 1:</span>
-                              <span>{module1Score}%</span>
-                            </div>
-                            <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b'}}>
-                              <span>Module 2:</span>
-                              <span>{module2Score}%</span>
-                            </div>
-                          </div>
-                          <button style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '8px',
-                            padding: '10px 0',
-                            backgroundColor: '#10b981',
-                            color: 'white',
-                            border: 'none',
-                            borderRadius: '6px',
-                            fontWeight: '600',
-                            cursor: 'pointer',
-                            marginTop: '16px',
-                            width: '100%'
-                          }}>
-                            <BarChart3 size={18} />
-                            View Results
-                          </button>
-                        </div>
-                      );
-                    }) : (
-                      <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
-                        <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
-                          <History size={32} color="#64748b" />
-                        </div>
-                        <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No completed tests found</p>
-                        <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test to see your results here</p>
-                      </div>
-                    )}
-                  </div>
-                )}
+            <div
+              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
+              onClick={() => handleTestClick(2)}
+            >
+              <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
+                <BookOpen size={28} color="#10b981" />
               </div>
+              <h2 style={styles.testTitle}>Reading & Writing Adaptive Test</h2>
+              <p style={styles.testInfo}>54 Questions • 64 Minutes</p>
+              <p style={styles.testDescription}>
+                Full-length adaptive test with Module 1 (27 questions) and Module 2 (27 questions).
+              </p>
+              <button
+                style={{
+                  ...styles.startButton,
+                  opacity: isLoadingTests ? 0.7 : 1,
+                  cursor: isLoadingTests ? 'default' : 'pointer',
+                  backgroundColor: '#10b981',
+                  transition: 'background-color 0.2s ease',
+                }}
+                onClick={() => handleTestClick(2)}
+              >
+                {isLoadingTests ? 'Loading Tests...' : 'Start Reading & Writing Test'}
+              </button>
+            </div>
+          </div>
 
-              {/* Pagination */}
-              {totalPages > 1 && (
-                <div style={styles.pagination}>
-                  <button 
-                    onClick={() => paginate(currentPage - 1)} 
-                    disabled={currentPage === 1}
-                    style={{
-                      ...styles.paginationButton,
-                      ...(currentPage === 1 ? {
-                        backgroundColor: '#f1f5f9',
-                        color: '#94a3b8',
-                        cursor: 'not-allowed'
-                      } : {
-                        backgroundColor: '#e0f2fe',
-                        color: '#0369a1',
-                        cursor: 'pointer'
-                      })
-                    }}
-                  >
-                    <ChevronLeft size={18} />
-                  </button>
-                  <span style={{...styles.paginationInfo, color: '#64748b'}}>
-                    Page {currentPage} of {totalPages}
-                  </span>
-                  <button 
-                    onClick={() => paginate(currentPage + 1)} 
-                    disabled={currentPage === totalPages}
-                    style={{
-                      ...styles.paginationButton,
-                      ...(currentPage === totalPages ? {
-                        backgroundColor: '#f1f5f9',
-                        color: '#94a3b8',
-                        cursor: 'not-allowed'
-                      } : {
-                        backgroundColor: '#e0f2fe',
-                        color: '#0369a1',
-                        cursor: 'pointer'
-                      })
-                    }}
-                  >
-                    <ChevronRight size={18} />
-                  </button>
+          {/* Add the practice test modal */}
+          {isPracticeTestModalOpen && (
+            <PracticeTestModal
+              onStart={handleStartPracticeTest}
+              onClose={() => setIsPracticeTestModalOpen(false)}
+            />
+          )}
+
+          {isModalOpen && (
+            <PreTestModal
+              testType={currentTestType}
+              onStart={handleStartTest}
+              onClose={() => setIsModalOpen(false)}
+            />
+          )}
+
+          <div style={{...styles.testHistorySection, backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)'}}>
+            <h2 style={styles.sectionTitle}>Test History</h2>
+            <SubjectTabs activeTest={activeTab} onSubjectChange={handleSubjectChange} />
+            <div style={styles.testHistoryList}>
+              {/* Display paused tests in a grid */}
+              {activeTab === "Paused" && (
+                <div style={{...styles.testsGrid, marginTop: '16px'}}>
+                  {pausedTests.length > 0 ? pausedTests.map((test) => {
+                    // Extract test details
+                    const testName = test.practice_tests?.name || `Test #${test.practice_test_id}`;
+                    const moduleNumber = test.test_modules?.module_number || '';
+                    const moduleType = test.test_modules?.is_harder ? 'Higher Difficulty' : 'Lower Difficulty';
+                    const subjectName = test.practice_tests?.subjects?.subject_name || 
+                      (test.practice_tests?.subject_id === 1 ? 'Math' : 
+                       test.practice_tests?.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                       
+                    return (
+                      <div 
+                        key={test.id} 
+                        style={{
+                          ...styles.testCard,
+                          cursor: 'pointer',
+                          borderTop: '4px solid #f59e0b',
+                          marginBottom: '0',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          justifyContent: 'space-between',
+                        }}
+                        onClick={() => handleResumePausedTest(test)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={(e) => e.key === 'Enter' && handleResumePausedTest(test)}
+                        onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
+                        onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                      >
+                        <div>
+                          <h3 style={{fontSize: '18px', fontWeight: '600', marginBottom: '8px', color: '#0f172a'}}>{testName}</h3>
+                          <div style={{marginBottom: '12px'}}>
+                            <div style={{display: 'flex', alignItems: 'center', marginBottom: '4px'}}>
+                              <Clock size={14} style={{color: '#64748b', marginRight: '6px'}} />
+                              <span style={{fontSize: '14px', color: '#64748b'}}>{formatTime(test.time_remaining)} remaining</span>
+                            </div>
+                            <div style={{fontSize: '14px', color: '#64748b'}}>Paused on {formatDate(test.paused_at)}</div>
+                          </div>
+                          <div style={{display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '8px'}}>
+                            <span style={{
+                              backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
+                              color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
+                              fontSize: '12px',
+                              fontWeight: '500'
+                            }}>
+                              {subjectName}
+                            </span>
+                            <span style={{
+                              backgroundColor: '#f1f5f9',
+                              color: '#64748b',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
+                              fontSize: '12px',
+                              fontWeight: '500'
+                            }}>
+                              Module {moduleNumber}
+                            </span>
+                            {moduleNumber === 2 && (
+                              <span style={{
+                                backgroundColor: moduleType === 'Higher Difficulty' ? '#dcfce7' : '#fee2e2',
+                                color: moduleType === 'Higher Difficulty' ? '#16a34a' : '#b91c1c',
+                                padding: '4px 8px',
+                                borderRadius: '4px',
+                                fontSize: '12px',
+                                fontWeight: '500'
+                              }}>
+                                {moduleType}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        <button style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '8px',
+                          padding: '10px 0',
+                          backgroundColor: '#f59e0b',
+                          color: 'white',
+                          border: 'none',
+                          borderRadius: '6px',
+                          fontWeight: '600',
+                          cursor: 'pointer',
+                          marginTop: '16px',
+                          width: '100%'
+                        }}>
+                          <Clock size={18} />
+                          Resume Test
+                        </button>
+                      </div>
+                    );
+                  }) : (
+                    <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
+                      <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
+                        <Clock size={32} color="#64748b" />
+                      </div>
+                      <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No paused tests found</p>
+                      <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test and pause it to see it here</p>
+                    </div>
+                  )}
+                </div>
+              )}
+              
+              {/* Display completed tests in a grid */}
+              {activeTab === "Complete" && (
+                <div style={{...styles.testsGrid, marginTop: '16px'}}>
+                  {currentTests.length > 0 ? currentTests.map((test) => {
+                    // Determine the test name with fallbacks
+                    const testName = test.test_name || `Test #${test.test_id}`;
+                    const moduleType = test.used_harder_module ? 'Harder Module' : 'Easier Module';
+                    
+                    // Calculate correct percentage for overall and module scores
+                    const totalScore = test.total_score !== undefined ? Math.round(test.total_score) : 'N/A';
+                    const module1Score = test.module1_score !== undefined ? Math.round(test.module1_score) : 'N/A';
+                    const module2Score = test.module2_score !== undefined ? Math.round(test.module2_score) : 'N/A';
+                    
+                    // Calculate SAT scaled score (200-800)
+                    const subjectName = test.subject_name || 
+                      (test.subject_id === 1 ? 'Math' : 
+                      test.subject_id === 2 ? 'Reading & Writing' : 'Unknown');
+                    
+                    // Calculate correct answers for each module (based on percentages)
+                    const defaultModuleQuestions = subjectName === 'Math' ? 22 : 27;
+                    const module1Total = defaultModuleQuestions;
+                    const module2Total = defaultModuleQuestions;
+                    
+                    const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
+                    const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
+                    
+                    const satScore = calculateSATScore(
+                      subjectName, 
+                      module1Correct, 
+                      module2Correct, 
+                      module1Total, 
+                      module2Total, 
+                      test.used_harder_module
+                    );
+                    
+                    return (
+                      <div 
+                        key={test.id} 
+                        style={{
+                          ...styles.testCard,
+                          cursor: 'pointer',
+                          borderTop: '4px solid #10b981',
+                          marginBottom: '0',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          justifyContent: 'space-between',
+                        }}
+                        onClick={() => handleTestHistoryClick(test)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={(e) => e.key === 'Enter' && handleTestHistoryClick(test)}
+                        onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
+                        onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                      >
+                        <div>
+                          <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '12px'}}>
+                            <h3 style={{fontSize: '18px', fontWeight: '600', color: '#0f172a', marginRight: '8px'}}>{testName}</h3>
+                            <div style={{
+                              backgroundColor: '#f1f5f9',
+                              padding: '6px 10px',
+                              borderRadius: '8px',
+                              fontSize: '20px',
+                              fontWeight: '700',
+                              color: '#0f172a',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              minWidth: '90px',
+                            }}>
+                              {satScore}/800
+                            </div>
+                          </div>
+                          <div style={{fontSize: '14px', color: '#64748b', marginBottom: '12px'}}>
+                            {formatDate(test.taken_at)}
+                          </div>
+                          <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px'}}>
+                            <span style={{
+                              backgroundColor: subjectName === 'Math' ? '#e0f2fe' : '#fee2e2',
+                              color: subjectName === 'Math' ? '#0369a1' : '#b91c1c',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
+                              fontSize: '12px',
+                              fontWeight: '500'
+                            }}>
+                              {subjectName}
+                            </span>
+                            {test.module2_score !== undefined && (
+                              <span style={{
+                                backgroundColor: test.used_harder_module ? '#dcfce7' : '#fee2e2',
+                                color: test.used_harder_module ? '#16a34a' : '#b91c1c',
+                                padding: '4px 8px',
+                                borderRadius: '4px',
+                                fontSize: '12px',
+                                fontWeight: '500'
+                              }}>
+                                {moduleType}
+                              </span>
+                            )}
+                            <span style={{
+                              backgroundColor: '#f1f5f9',
+                              color: '#64748b',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
+                              fontSize: '12px',
+                              fontWeight: '500'
+                            }}>
+                              {totalScore}% accuracy
+                            </span>
+                          </div>
+                          <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b', marginBottom: '4px'}}>
+                            <span>Module 1:</span>
+                            <span>{module1Score}%</span>
+                          </div>
+                          <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#64748b'}}>
+                            <span>Module 2:</span>
+                            <span>{module2Score}%</span>
+                          </div>
+                        </div>
+                        <button style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '8px',
+                          padding: '10px 0',
+                          backgroundColor: '#10b981',
+                          color: 'white',
+                          border: 'none',
+                          borderRadius: '6px',
+                          fontWeight: '600',
+                          cursor: 'pointer',
+                          marginTop: '16px',
+                          width: '100%'
+                        }}>
+                          <BarChart3 size={18} />
+                          View Results
+                        </button>
+                      </div>
+                    );
+                  }) : (
+                    <div style={{...styles.emptyState, padding: '40px 0', gridColumn: '1 / -1'}}>
+                      <div style={{...styles.emptyStateIcon, backgroundColor: '#f1f5f9', padding: '16px', borderRadius: '50%'}}>
+                        <History size={32} color="#64748b" />
+                      </div>
+                      <p style={{...styles.emptyStateText, fontSize: '16px', color: '#64748b', marginTop: '16px'}}>No completed tests found</p>
+                      <p style={{fontSize: '14px', color: '#94a3b8', marginTop: '8px'}}>Start a test to see your results here</p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div style={styles.pagination}>
+                <button 
+                  onClick={() => paginate(currentPage - 1)} 
+                  disabled={currentPage === 1}
+                  style={{
+                    ...styles.paginationButton,
+                    ...(currentPage === 1 ? {
+                      backgroundColor: '#f1f5f9',
+                      color: '#94a3b8',
+                      cursor: 'not-allowed'
+                    } : {
+                      backgroundColor: '#e0f2fe',
+                      color: '#0369a1',
+                      cursor: 'pointer'
+                    })
+                  }}
+                >
+                  <ChevronLeft size={18} />
+                </button>
+                <span style={{...styles.paginationInfo, color: '#64748b'}}>
+                  Page {currentPage} of {totalPages}
+                </span>
+                <button 
+                  onClick={() => paginate(currentPage + 1)} 
+                  disabled={currentPage === totalPages}
+                  style={{
+                    ...styles.paginationButton,
+                    ...(currentPage === totalPages ? {
+                      backgroundColor: '#f1f5f9',
+                      color: '#94a3b8',
+                      cursor: 'not-allowed'
+                    } : {
+                      backgroundColor: '#e0f2fe',
+                      color: '#0369a1',
+                      cursor: 'pointer'
+                    })
+                  }}
+                >
+                  <ChevronRight size={18} />
+                </button>
+              </div>
+            )}
           </div>
         </div>
+      </div>
     </div>
     </SubscriptionCheck>
 
@@ -874,12 +876,16 @@ const styles = {
   container: {
     minHeight: "100vh",
     backgroundColor: "#f8fafc",
-    padding: "20px 0",
+    padding: "0",
+    display: "flex",
+    flexDirection: "column",
   },
   content: {
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "0 20px",
+    padding: "20px",
+    width: "100%",
+    flex: "1",
   },
   pageTitle: {
     fontSize: "28px", 
@@ -1420,5 +1426,10 @@ const styles = {
   loadingText: {
     fontSize: '1rem',
     color: '#6b7280',
+  },
+  topBarContainer: {
+    position: 'sticky',
+    top: 0,
+    zIndex: 100,
   },
 }

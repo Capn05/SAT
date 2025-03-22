@@ -46,7 +46,10 @@ export async function GET(request) {
     
     if (!userTestAnswers || userTestAnswers.length === 0) {
       console.error(`No answers found for test ID ${testId} for user ${userId}`);
-      return NextResponse.json({ error: 'No completed questions found for this test' }, { status: 404 });
+      return NextResponse.json({ 
+        error: 'No completed questions found for this test',
+        data: [] 
+      }, { status: 200 });
     }
     
     // Extract the unique module IDs that the user answered questions for
@@ -59,7 +62,10 @@ export async function GET(request) {
     console.log(`User completed ${userModuleIds.length} module(s) for test ID ${testId}:`, userModuleIds);
     
     if (userModuleIds.length === 0) {
-      return NextResponse.json({ error: 'No modules found for this test' }, { status: 404 });
+      return NextResponse.json({ 
+        error: 'No modules found for this test',
+        data: [] 
+      }, { status: 200 });
     }
     
     // Now fetch questions for only these modules

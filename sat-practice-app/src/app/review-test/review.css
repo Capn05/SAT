@@ -10,21 +10,23 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: #f8f9fa;
+  padding: 0;
+  margin: 0;
 }
 
-/* Remove the custom TopBar styling */
-/* .review-container > div:first-child {
-  position: fixed;
+/* TopBar styling */
+.review-container > div:first-child {
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  width: auto;
-} */
+  width: 100%;
+}
 
 .review-content {
   padding: 20px;
-  margin-top: 60px; /* Adjust for TopBar height */
+  margin-top: 0; /* Removed margin-top */
   margin-right: 41%; /* Space for the chat sidebar */
 }
 
@@ -343,6 +345,59 @@
 
 .question-text span.katex {
   font-size: 1.1rem;
+}
+
+/* KaTeX and math rendering styles */
+.passage .katex,
+.question-text .katex,
+.option-text .katex {
+  font-size: 1.1em;
+  line-height: 1.5;
+  display: inline-block;
+  text-rendering: auto;
+}
+
+.passage .katex-display,
+.question-text .katex-display,
+.option-text .katex-display {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* Improved paragraph spacing */
+.passage p,
+.question-text p,
+.option-text p {
+  margin: 0.5em 0;
+}
+
+/* Table styles */
+.passage table,
+.question-text table,
+.option-text table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.passage th,
+.passage td,
+.question-text th,
+.question-text td,
+.option-text th,
+.option-text td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.passage th,
+.question-text th,
+.option-text th {
+  background-color: #f9fafb;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

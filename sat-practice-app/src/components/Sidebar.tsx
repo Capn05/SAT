@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit, LogOut, User } from "lucide-react"
+import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit, LogOut, User, Settings, CreditCard } from "lucide-react"
 import styles from "./sidebar.module.css"
 import DifficultyModal from "../app/components/DifficultyModal"
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
@@ -21,6 +21,7 @@ const navItems = [
   { name: "Timed Practice Test", icon: Clock, path: "/TimedTestDash" },
   { name: "Targeted Skill Practice", icon: Crosshair, path: "/skills" },
   { name: "Progress", icon: BarChart2, path: "/progress" },
+  { name: "Settings", icon: Settings, path: "/subscription" },
 ]
 
 export default function Sidebar() {
