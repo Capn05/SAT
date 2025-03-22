@@ -64,11 +64,22 @@ function PracticeTestContent() {
   }, []);
 
   const navigateQuestion = useCallback((direction) => {
+    // If on the last question and trying to go to next question, 
+    // open the submit modal instead of redirecting
+    if (direction > 0 && currentQuestion === totalQuestions - 1) {
+      // Show the submit modal for review
+      setShowSubmitModal(true);
+      // Pause timer
+      clearInterval(timerRef.current);
+      return;
+    }
+    
+    // Normal navigation between questions
     setCurrentQuestion(prev => {
       const next = prev + direction;
       return Math.max(0, Math.min(totalQuestions - 1, next));
     });
-  }, [totalQuestions]);
+  }, [totalQuestions, currentQuestion, timerRef]);
 
   const handleAnswer = useCallback((questionId, optionId, isCorrect) => {
     if (!questionId) return;
@@ -645,6 +656,7 @@ function PracticeTestContent() {
           You have answered {Object.keys(answers).length} of {totalQuestions} questions.
           Are you sure you want to submit?
         </p>
+        
         <div style={styles.modalButtons}>
           <button style={styles.cancelButton} onClick={() => {
             setShowSubmitModal(false);
@@ -662,10 +674,10 @@ function PracticeTestContent() {
               }, 1000);
             }
           }}>
-            Return to Test
+            Cancel
           </button>
           <button style={styles.submitButton} onClick={handleSubmitModule}>
-            Submit Module
+            Submit
           </button>
         </div>
       </div>
@@ -766,6 +778,22 @@ function PracticeTestContent() {
                       <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
                     </div>
                   </div>
+                  
+                  {/* Display image if available */}
+                  {currentQuestionData.image_url && (
+                    <div style={styles.imageContainer}>
+                      <img 
+                        src={currentQuestionData.image_url} 
+                        alt="Question diagram" 
+                        style={styles.questionImage}
+                        onError={(e) => {
+                          console.error('Failed to load image:', currentQuestionData.image_url);
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
+                  
                   <div style={{ 
                     padding: '1rem 4rem', 
                     fontSize: '1rem', 
@@ -815,6 +843,22 @@ function PracticeTestContent() {
                         <span>Mark for Review</span>
                       </span>
                     </div>
+                    
+                    {/* Display image if available */}
+                    {currentQuestionData.image_url && (
+                      <div style={styles.imageContainer}>
+                        <img 
+                          src={currentQuestionData.image_url} 
+                          alt="Question diagram" 
+                          style={styles.questionImage}
+                          onError={(e) => {
+                            console.error('Failed to load image:', currentQuestionData.image_url);
+                            e.target.style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    )}
+                    
                     <div style={{ 
                       padding: '1rem', 
                       fontSize: '1rem', 
@@ -886,9 +930,9 @@ function PracticeTestContent() {
             )}
             <button
               style={styles.nextButton}
-              onClick={currentQuestion < totalQuestions - 1 ? () => navigateQuestion(1) : handleSubmitClick}
+              onClick={() => navigateQuestion(1)}
             >
-              Next
+              {currentQuestion < totalQuestions - 1 ? 'Next' : 'Go to Review'}
             </button>
           </div>
         </>
@@ -962,7 +1006,10 @@ function PracticeTestContent() {
                 }}
                 onClick={() => {
                   setShowQuestionNav(false);
-                  handleSubmitClick();
+                  // Show the submit modal instead of redirecting
+                  setShowSubmitModal(true);
+                  // Pause timer
+                  clearInterval(timerRef.current);
                 }}
               >
                 Go to Review Page
@@ -1079,7 +1126,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     padding: '1rem',
-    overflowY: 'hidden',
+    overflowY: 'auto',
     backgroundColor: '#f9fafb',
     minHeight: 0,
   },
@@ -1091,7 +1138,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: 'auto',
-    overflow: 'hidden',
+    overflow: 'auto',
     minHeight: 0,
   },
   markReviewTextOnly: {
@@ -1112,6 +1159,8 @@ const styles = {
     maxWidth: '1000px',
     margin: '0 auto',
     width: '100%',
+    overflowY: 'auto',
+    maxHeight: 'calc(100vh - 180px)',
   },
   rwSplitContainer: {
     display: 'flex',
@@ -1169,9 +1218,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
-    padding: '3rem 2rem 1rem 2rem',
+    padding: '1rem',
     overflowY: 'auto',
-    maxHeight: '100%',
+    maxHeight: 'calc(100vh - 180px)',
   },
   rwOptionCard: {
     display: 'flex',
@@ -1621,5 +1670,54 @@ const styles = {
     fontSize: '0.875rem',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
     marginLeft: '1px',
+  },
+  imageContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '1rem 0',
+    margin: '0 auto 1rem auto',
+    maxWidth: '800px',
+  },
+  questionImage: {
+    maxWidth: '100%',
+    maxHeight: '400px',
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  },
+  reviewQuestionList: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+    gap: '0.75rem',
+    padding: '1rem',
+    maxHeight: '300px',
+    overflowY: 'auto',
+  },
+  reviewQuestionItem: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '0.75rem 1rem',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    border: '1px solid #e5e7eb',
+    transition: 'all 0.2s ease',
+  },
+  reviewQuestionNumber: {
+    minWidth: '24px',
+    height: '24px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '50%',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    fontSize: '14px',
+    fontWeight: '600',
+    marginRight: '8px',
+  },
+  reviewQuestionStatus: {
+    flex: 1,
+    fontSize: '15px',
+    color: '#1f2937',
   },
 } 

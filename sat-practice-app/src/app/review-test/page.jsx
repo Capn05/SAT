@@ -8,6 +8,10 @@ import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 import { processMathInText, renderMathString } from '../components/MathRenderer'
+import MarkdownIt from 'markdown-it'
+import markdownItKatex from 'markdown-it-katex'
+import katex from 'katex'
+import 'katex/dist/katex.min.css'
 
 // Create a client component for content
 function ReviewTestContent() {
@@ -599,6 +603,21 @@ function ReviewTestContent() {
                   
                   return (
                     <>
+                      {/* Display image first if available */}
+                      {question.imageUrl && (
+                        <div className="question-image-container">
+                          <img 
+                            src={question.imageUrl} 
+                            alt="Question diagram" 
+                            className="question-image"
+                            onError={(e) => {
+                              console.error('Failed to load image:', question.imageUrl);
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                      )}
+                      
                       {passage && passage.trim() !== '' && (
                         <div 
                           className="passage"
@@ -609,24 +628,6 @@ function ReviewTestContent() {
                         className="question-text"
                         dangerouslySetInnerHTML={{ __html: renderResponse(questionText, question) }}
                       />
-                      {question.imageUrl && (
-                        <div className="question-image">
-                          <img 
-                            src={question.imageUrl} 
-                            alt="Question diagram" 
-                            style={{
-                              maxWidth: '100%',
-                              maxHeight: '400px',
-                              borderRadius: '8px',
-                              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                            }}
-                            onError={(e) => {
-                              console.error('Failed to load image:', question.imageUrl);
-                              e.target.style.display = 'none';
-                            }}
-                          />
-                        </div>
-                      )}
                     </>
                   );
                 } catch (err) {
