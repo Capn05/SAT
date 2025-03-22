@@ -972,6 +972,21 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             dangerouslySetInnerHTML={{ __html: renderResponse(question_text) }}
             className="question-text-container"
           />
+          
+          {/* Add image display if image_url exists */}
+          {image_url && (
+            <div style={styles.imageContainer}>
+              <img 
+                src={image_url} 
+                alt="Question illustration" 
+                style={styles.questionImage}
+                onError={(e) => {
+                  console.error('Failed to load image:', image_url);
+                  e.target.style.display = 'none';
+                }}
+              />
+            </div>
+          )}
 
           <form onSubmit={handleSubmit} style={styles.form}>
             <div style={styles.optionsContainer}>
@@ -1125,9 +1140,9 @@ const styles = {
   },
   questionImage: {
     maxWidth: '100%',
-    height: 'auto',
-    marginBottom: '24px',
-    borderRadius: '4px',
+    maxHeight: '400px',
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   },
   form: {
     display: 'flex',
@@ -1323,6 +1338,12 @@ const styles = {
     color: '#65a30d',
     fontWeight: 'bold',
     fontSize: '18px',
+  },
+  imageContainer: {
+    width: '100%',
+    marginBottom: '20px',
+    display: 'flex',
+    justifyContent: 'center',
   },
 };
   
