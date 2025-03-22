@@ -61,124 +61,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     return question && question.subject_id === 1; // Math questions have subject_id of 1
   };
 
-  // Simplified rendering for math questions
-  const renderMathContent = (content) => {
-    if (!content) return '';
-    
-    try {
-      // Process tables first to ensure they render correctly
-      content = processTableFormat(content);
-      
-      // Handle special cases in math content
-      
-      // 1. Dollar signs in math expressions
-      content = content.replace(/\$(\\+\$\d+)\$/g, '\\$$1');
-      
-      // 2. Check if content already has math delimiters
-      if (!content.includes('$')) {
-        // If no delimiters, we need to be careful about wrapping the entire content
-        
-        // First handle any existing markdown tables, which shouldn't be wrapped in math
-        const parts = [];
-        const lines = content.split('\n');
-        let inTable = false;
-        let currentNonTable = '';
-        
-        for (const line of lines) {
-          if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
-            // We found a table line
-            if (!inTable) {
-              // If we were building non-table content, add it
-              if (currentNonTable.trim()) {
-                parts.push({type: 'math', content: currentNonTable});
-                currentNonTable = '';
-              }
-              inTable = true;
-              parts.push({type: 'table', content: line});
-            } else {
-              // Continue adding to table
-              parts.push({type: 'table', content: line});
-            }
-          } else {
-            // Not a table line
-            if (inTable) {
-              inTable = false;
-            }
-            currentNonTable += line + '\n';
-          }
-        }
-        
-        // Add any remaining non-table content
-        if (currentNonTable.trim()) {
-          parts.push({type: 'math', content: currentNonTable});
-        }
-        
-        // Now render each part accordingly
-        return parts.map(part => {
-          if (part.type === 'table') {
-            return md.render(part.content);
-          } else {
-            // For math content, wrap in KaTeX
-            try {
-              return katex.renderToString(part.content, {
-                throwOnError: false,
-                displayMode: true,
-                output: 'html'
-              });
-            } catch (err) {
-              // If KaTeX fails, fall back to markdown
-              return md.render(part.content);
-            }
-          }
-        }).join('\n');
-      }
-      
-      // If we got here, the content has math delimiters, so use markdown-it-katex
-      return md.render(content);
-    } catch (error) {
-      console.error('Error rendering math content:', error);
-      // Fallback to regular markdown rendering if our processing fails
-      return md.render(content);
-    }
-  };
-
-  // Simplified rendering for reading/writing questions
-  const renderReadingContent = (content) => {
-    if (!content) return '';
-    
-    // Process tables first
-    content = processTableFormat(content);
-    
-    // Simple markdown rendering for reading content
-    return md.render(content);
-  };
-
-  // Unified rendering method that chooses the right renderer based on question type
-  const renderResponse = (response, question) => {
-    if (!response) return '';
-    
-    // Normalize underscores - replace more than 5 consecutive underscores with just 5
-    response = response.replace(/_{6,}/g, '_____');
-    
-    if (question && isMathQuestion(question)) {
-      if (response.includes('$')) {
-        // If it already has math delimiters, use regular markdown with KaTeX
-        return md.render(response);
-      } else {
-        // For pure math without delimiters, try direct KaTeX rendering
-        try {
-          return renderMathContent(response);
-        } catch (err) {
-          // Fallback to markdown if direct KaTeX fails
-          return md.render(response);
-        }
-      }
-    } else {
-      // For reading/writing questions, use markdown rendering
-      return renderReadingContent(response);
-    }
-  };
-
+  // Process table formatting in content
   const processTableFormat = (text) => {
     if (text.includes('|---') || text.includes('| ---')) {
       return text;
@@ -211,6 +94,109 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     }
     
     return text;
+  };
+
+  // Main content rendering function using KaTeX
+  const renderMathContent = (content) => {
+    if (!content) return '';
+    
+    // First handle special cases like tables
+    content = processTableFormat(content);
+    
+    // Process the content to handle math expressions with KaTeX
+    return processWithKaTeX(content);
+  };
+
+  // Process content with KaTeX rendering
+  const processWithKaTeX = (content) => {
+    // Replace escaped dollar signs with a placeholder BEFORE processing math
+    const DOLLAR_PLACEHOLDER = '___DOLLAR_SIGN___';
+    content = content.replace(/\\\$/g, DOLLAR_PLACEHOLDER);
+    
+    // Split the content into segments: math or text
+    const segments = [];
+    let currentPos = 0;
+    
+    // Find all math expressions: both display ($$..$$) and inline ($...$)
+    const mathRegex = /(\$\$[\s\S]+?\$\$)|(\$[\s\S]+?\$)/g;
+    let match;
+    
+    while ((match = mathRegex.exec(content)) !== null) {
+      // Add text before the math expression
+      if (match.index > currentPos) {
+        segments.push({
+          type: 'text',
+          content: content.slice(currentPos, match.index)
+        });
+      }
+      
+      // Determine if it's display or inline math
+      const isDisplay = match[0].startsWith('$$');
+      
+      // Extract the math expression without the delimiters
+      const mathContent = isDisplay 
+        ? match[0].slice(2, -2) // Remove $$ at both ends
+        : match[0].slice(1, -1); // Remove $ at both ends
+      
+      segments.push({
+        type: isDisplay ? 'display-math' : 'inline-math',
+        content: mathContent
+      });
+      
+      currentPos = match.index + match[0].length;
+    }
+    
+    // Add any remaining text
+    if (currentPos < content.length) {
+      segments.push({
+        type: 'text',
+        content: content.slice(currentPos)
+      });
+    }
+    
+    // Render each segment
+    const renderedContent = segments.map(segment => {
+      if (segment.type === 'text') {
+        // For text segments, handle basic HTML formatting
+        return segment.content
+          .replace(/\n/g, '<br>')
+          .replace(new RegExp(DOLLAR_PLACEHOLDER, 'g'), '$');
+      } else {
+        // For math segments, use KaTeX
+        try {
+          const isDisplay = segment.type === 'display-math';
+
+          // Replace the placeholder with the actual KaTeX command for dollar sign
+          const processedMathContent = segment.content
+            .replace(new RegExp(DOLLAR_PLACEHOLDER, 'g'), '\\$');
+          
+          return katex.renderToString(processedMathContent, {
+            throwOnError: false,
+            displayMode: isDisplay,
+            output: 'html'
+          });
+        } catch (err) {
+          console.error('KaTeX error:', err);
+          return `<span class="katex-error">${segment.content}</span>`;
+        }
+      }
+    }).join('');
+    
+    return renderedContent;
+  };
+
+  // Use the same function for both math and reading content
+  const renderReadingContent = renderMathContent;
+
+  // Main rendering function for all content
+  const renderResponse = (response, question) => {
+    if (!response) return '';
+    
+    // Normalize underscores
+    response = response.replace(/_{6,}/g, '_____');
+    
+    // Use the KaTeX processor for everything
+    return renderMathContent(response);
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
@@ -1427,11 +1413,191 @@ const styles = {
   
   
 const globalStyles = `
+  /* Font declarations */
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunrm.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunti.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Computer Modern';
+    src: url('../../public/fonts/cmunbx.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  /* Core styling for math and text content */
+  .question-text-container {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* KaTeX styling */
+  .katex {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
+    font-size: 1.1em !important;
+  }
+
+  .math-question,
+  .question-text-container .katex,
+  .math-content .katex {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
+  }
+  
+  .katex-display {
+    margin: 1em 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+
+  .katex-display + :not(.katex-display),
+  :not(.katex-display) + .katex {
+    margin-left: 0.2em !important;
+  }
+
+  /* Improved fraction styling to match Image 2 */
+  .katex .mfrac {
+    vertical-align: middle !important; /* Center the fraction vertically */
+    font-size: 1.2em !important; /* Slightly larger for better readability */
+  }
+
+  /* Make the fraction bar look like the reference image */
+  .katex .mfrac .frac-line {
+    border-top-width: 1px !important;
+    border-bottom-width: 1px !important;
+    margin-top: 0.15em !important;
+    margin-bottom: 0.15em !important;
+    min-width: 0.7em !important; /* Ensure minimum width for the line */
+  }
+
+  /* Position the numerator properly */
+  .katex .mfrac .mfracnum {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.2em !important;
+    min-height: 1em !important;
+  }
+
+  /* Position the denominator properly */
+  .katex .mfrac .mfracdenom {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0.2em !important;
+    min-height: 1em !important;
+  }
+
+  /* Ensure proper spacing for negative fractions */
+  .katex .mfrac .mord.mtight {
+    padding: 0 0.05em !important;
+  }
+
+  /* Fix spacing for the radical symbols and exponents */
+  .katex .mfrac .sqrt {
+    padding: 0.1em 0 !important;
+  }
+
+  .katex .mord {
+    font-family: 'Computer Modern', KaTeX_Main, serif !important;
+  }
+
+  .katex .mord.mathit {
+    font-family: 'Computer Modern', KaTeX_Math, serif !important;
+    font-style: italic !important;
+  }
+
+  .katex .mord + .mord {
+    margin-left: 0.05em !important;
+  }
+
+  .katex .mclose + .msup {
+    margin-left: 0.08em !important;
+  }
+
+  .katex .msup + .mclose,
+  .katex .msup + .mord,
+  .katex .msup + .mbin,
+  .katex .msup + .mrel,
+  .katex .msup + .mpunct {
+    margin-left: 0.08em !important;
+  }
+
+  .katex .msup + .mpunct {
+    margin-left: 0.12em !important; 
+  }
+
+  .katex .minner {
+    padding: 0 0.05em !important;
+  }
+
+  /* Complete redo of not equal signs styling */
+  .katex .mrel.negated {
+    position: relative !important;
+    display: inline-block !important;
+    margin: 0 0.2em !important;
+  }
+
+  /* Hide the default diagonal implementation which isn't working */
+  .katex .mrel.negated .vlist-t2 .vlist-r:nth-child(2) .vlist {
+    opacity: 0 !important;
+  }
+
+  /* Create a new clean diagonal line with pseudo-element */
+  .katex .mrel.negated:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to top right, 
+      transparent calc(50% - 0.5px), 
+      currentColor, 
+      transparent calc(50% + 0.5px)) !important;
+    transform: rotate(-10deg) !important; /* Slight rotation for better alignment */
+    pointer-events: none !important;
+  }
+
+  /* Ensure the equals sign itself is properly displayed */
+  .katex .mrel.negated .vlist-t2 .vlist-r:first-child .vlist {
+    display: block !important;
+  }
+
+  .katex .msupsub .msup {
+    margin-right: 0.1em !important;
+  }
+
+  .katex .msup {
+    padding-right: 0.05em !important;
+  }
+  
+  .katex .msupsub {
+    text-align: left !important;
+    position: absolute !important;
+    margin-right: 0.1em !important;
+  }
+  
+  .katex .mfrac > span {
+    display: inline-block !important;
+  }
+
+  .katex .mbin, .katex .mrel {
+    margin: 0 0.2em !important;
+  }
+  
+  /* Table styling */
   .question-text-container table {
     border-collapse: collapse;
-    width: 100%;
-    margin: 16px 0;
-    font-size: 16px;
+    margin: 1em 0;
   }
   
   .question-text-container th,
@@ -1446,77 +1612,18 @@ const globalStyles = `
     font-weight: 600;
   }
   
-  .question-text-container tr:nth-child(even) {
-    background-color: #f9fafb;
+  /* Error indication */
+  .katex-error {
+    color: #cc0000;
+    background-color: #ffeeee;
+    padding: 2px 4px;
+    border-radius: 3px;
   }
   
-  .question-text-container tr:hover {
-    background-color: #f3f4f6;
-  }
-
-  /* Math content styles */
-  .question-text-container .katex {
-    font-size: 1.1em;
-    line-height: 1.5;
-    display: inline-block;
-    text-rendering: auto;
-  }
-
-  .question-text-container .katex-display {
-    display: block;
-    margin: 1em 0;
-    text-align: center;
-  }
-
-  /* Improved paragraph spacing */
-  .question-text-container p {
-    margin: 0.5em 0;
-    display: inline;
-  }
-
-  /* Make sure non-block elements don't cause unwanted breaks */
-  .question-text-container span,
-  .question-text-container strong,
-  .question-text-container em,
-  .question-text-container a,
-  .question-text-container code {
-    display: inline;
-  }
-
-  /* Ensure block elements maintain their formatting */
-  .question-text-container ul,
-  .question-text-container ol,
-  .question-text-container blockquote,
-  .question-text-container pre,
-  .question-text-container table {
-    display: block;
-    margin: 1em 0;
-  }
-
-  /* Subject-specific styles */
-  .math-question {
-    font-family: 'KaTeX_Main', serif;
-    line-height: 1.6;
-  }
-
-  .reading-question {
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 1.8;
-  }
-
-  .math-content {
-    font-family: 'KaTeX_Main', serif;
-  }
-
-  .reading-content {
-    font-family: 'Noto Sans', sans-serif;
-  }
-
-  /* Fix for dollar signs in math content */
-  .math-question .katex .mord, 
-  .math-content .katex .mord {
-    display: inline-block;
-    margin-right: 0.05em;
+  /* Better spacing between elements */
+  .question-text-container p, 
+  .question-text-container br + br {
+    margin-top: 0.5em;
   }
 `;
 
@@ -1525,5 +1632,3 @@ if (typeof document !== 'undefined') {
   styleElement.innerHTML = globalStyles;
   document.head.appendChild(styleElement);
 }
-  
-  
