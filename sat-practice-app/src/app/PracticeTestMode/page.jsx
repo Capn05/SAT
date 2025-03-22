@@ -8,15 +8,9 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { processMathInText } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
-<<<<<<< HEAD
-import MarkdownIt from 'markdown-it';
-import markdownItKatex from 'markdown-it-katex';
-import katex from 'katex';
-=======
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
 import katex from 'katex'
->>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
 
 // Create a client component that uses useSearchParams
 function PracticeTestContent() {
@@ -47,101 +41,7 @@ function PracticeTestContent() {
   const supabase = createClientComponentClient()
   
   const totalQuestions = questions.length
-
-  // Initialize markdown-it with KaTeX support
-  const md = new MarkdownIt({
-    html: true,
-    linkify: true,
-    typographer: true,
-    breaks: true,
-  }).use(markdownItKatex);
-
-  md.enable('table');
-
-  // Function to render inline math expressions
-  const renderMath = (mathString) => {
-    try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: false,
-      });
-    } catch (error) {
-      console.error('Error rendering math:', error);
-      return mathString;
-    }
-  };
-
-  // Function to render block math expressions
-  const renderBlockMath = (mathString) => {
-    try {
-      return katex.renderToString(mathString, {
-        throwOnError: false,
-        displayMode: true,
-      });
-    } catch (error) {
-      console.error('Error rendering block math:', error);
-      return mathString;
-    }
-  };
-
-  // Function to process and render text with markdown and math
-  const renderResponse = (response) => {
-    if (!response) return '';
-    
-    // Normalize underscores - replace more than 5 consecutive underscores with just 5
-    response = response.replace(/_{6,}/g, '_____');
-    
-    response = processTableFormat(response);
-    
-    const inlineMathRegex = /(?<!\w)\$([^$]+)\$(?!\w)/g; // Matches inline math
-    const blockMathRegex = /(?<!\w)\$\$([^$]+)\$\$(?!\w)/g; // Matches block math
-
-    response = response.replace(blockMathRegex, (match, p1) => {
-      return renderBlockMath(p1);
-    });
-
-    response = response.replace(inlineMathRegex, (match, p1) => {
-      return renderMath(p1);
-    });
-
-    return md.render(response);
-  };
-
-  // Function to process table format in markdown
-  const processTableFormat = (text) => {
-    if (text.includes('|---') || text.includes('| ---')) {
-      return text;
-    }
-    
-    const lines = text.split('\n');
-    let tableStartIndex = -1;
-    let tableEndIndex = -1;
-    
-    for (let i = 0; i < lines.length; i++) {
-      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
-        if (tableStartIndex === -1) {
-          tableStartIndex = i;
-        }
-        tableEndIndex = i;
-      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
-        break;
-      }
-    }
-    
-    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
-      const headerRow = lines[tableStartIndex].trim();
-      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
-      
-      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
-      
-      lines.splice(tableStartIndex + 1, 0, separatorRow);
-      
-      return lines.join('\n');
-    }
-    
-    return text;
-  };
-
+  
   // Define all callbacks at the top level 
   const handleQuestionNumberClick = useCallback((e) => {
     if (e) e.stopPropagation();
@@ -927,63 +827,15 @@ function PracticeTestContent() {
               )}
               
               {practiceTestInfo?.subjects?.subject_name === 'Math' ? (
-                <div style={styles.mathContainer}>
-                  <div style={styles.mathQuestionContent}>
-                    <div style={styles.questionHeader}>
-                      <div style={styles.questionNumberBox}>
-                        {currentQuestion + 1}
-                      </div>
-                      <div style={styles.markReviewBox}>
-                        <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                        <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
-                      </div>
+                <div style={styles.mathQuestion}>
+                  <div style={styles.questionHeader}>
+                    <div style={styles.questionNumberBox}>
+                      {currentQuestion + 1}
                     </div>
-                    <div style={{ 
-                      padding: '1rem 1rem', 
-                      fontSize: '1rem', 
-                      lineHeight: '1.5', 
-                      fontFamily: '"Minion Pro", Times, serif' 
-                    }}>
-                      {currentQuestionData.question_text ? 
-                        <div dangerouslySetInnerHTML={{ __html: processMathInText(currentQuestionData.question_text) }} /> : 
-                        'Loading question...'}
+                    <div style={styles.markReviewBox}>
+                      <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
+                      <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
                     </div>
-<<<<<<< HEAD
-                    
-                    {/* Add image display if image_url exists */}
-                    {currentQuestionData.image_url && (
-                      <div style={styles.imageContainer}>
-                        <img 
-                          src={currentQuestionData.image_url} 
-                          alt="Question illustration" 
-                          style={styles.questionImage}
-                          onError={(e) => {
-                            console.error('Failed to load image:', currentQuestionData.image_url);
-                            e.target.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                    )}
-                  </div>
-                  
-                  <div style={styles.mathOptionsContent}>
-                    <div className="options-container" style={styles.optionsContainer}>
-                      {currentQuestionData.options.map((option) => (
-                        <div
-                          key={option.id}
-                          style={{
-                            ...styles.optionCard,
-                            ...(selectedOptionId === option.id ? styles.selectedOption : {})
-                          }}
-                          onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
-                        >
-                          <div style={styles.optionLetter}>{option.value}</div>
-                          <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
-                            {option.label ? 
-                              <div dangerouslySetInnerHTML={{ __html: processMathInText(option.label) }} /> : 
-                              'Loading...'}
-                          </div>
-=======
                   </div>
                   <div style={{ 
                     padding: '1rem 4rem', 
@@ -1009,74 +861,49 @@ function PracticeTestContent() {
                         <div style={styles.optionLetter}>{option.value}</div>
                         <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
                           <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
->>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ) : (
-                <div style={styles.splitContainer}>
-                  <div style={styles.questionContent}>
+                <div style={styles.rwSplitContainer}>
+                  <div style={styles.rwQuestionContainer}>
                     <div style={styles.questionHeader}>
-                      <div style={styles.questionNumberBox}>
-                        {currentQuestion + 1}
-                      </div>
-                      <div style={styles.markReviewBox}>
-                        <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                        <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
-                      </div>
+                      <span style={styles.questionNumberBox}>Question {currentQuestion + 1}</span>
+                      <span 
+                        style={styles.markReviewBox}
+                        onClick={() => toggleFlagged(currentQuestionData.id)}
+                      >
+                        <Bookmark 
+                          size={16} 
+                          style={{ 
+                            width: '16px', 
+                            height: '16px',
+                            color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' 
+                          }} 
+                        />
+                        <span>Mark for Review</span>
+                      </span>
                     </div>
                     <div style={{ 
-                      padding: '1rem 1rem', 
+                      padding: '1rem', 
                       fontSize: '1rem', 
-                      lineHeight: '1.5', 
-                      fontFamily: '"Noto Sans", sans-serif' 
+                      lineHeight: '1.6',
+                      fontFamily: '"Minion Pro", Times, serif',
+                      color: '#1f2937',
+                      marginBottom: '1.5rem',
+                      overflowWrap: 'break-word',
+                      wordWrap: 'break-word',
+                      wordBreak: 'break-word',
+                      hyphens: 'auto',
+                      whiteSpace: 'pre-wrap',
+                      maxWidth: '100%'
                     }}>
-<<<<<<< HEAD
-                      {currentQuestionData.question_text ? 
-                        <div dangerouslySetInnerHTML={{ __html: renderResponse(currentQuestionData.question_text) }} className="question-text-container" /> : 
-                        'Loading question...'}
-=======
                       <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
->>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                     </div>
-                    
-                    {/* Add image display if image_url exists */}
-                    {currentQuestionData.image_url && (
-                      <div style={styles.imageContainer}>
-                        <img 
-                          src={currentQuestionData.image_url} 
-                          alt="Question illustration" 
-                          style={styles.questionImage}
-                          onError={(e) => {
-                            console.error('Failed to load image:', currentQuestionData.image_url);
-                            e.target.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                    )}
                   </div>
                   
-<<<<<<< HEAD
-                  <div style={styles.optionsContent}>
-                    <div className="options-container" style={styles.optionsContainer}>
-                      {currentQuestionData.options.map(option => (
-                        <div
-                          key={option.id}
-                          style={{
-                            ...styles.optionCard,
-                            ...(selectedOptionId === option.id ? styles.selectedOption : {})
-                          }}
-                          onClick={() => handleAnswer(currentQuestionData.id, option.id, option.isCorrect)}
-                        >
-                          <div style={styles.optionLetter}>{option.value}</div>
-                          <div style={styles.optionText}>
-                            {option.label ? 
-                              <div dangerouslySetInnerHTML={{ __html: renderResponse(option.label) }} /> : 
-                              'Loading...'}
-                          </div>
-=======
                   <div style={styles.rwOptionsContainer}>
                     {currentQuestionData.options.map(option => (
                       <div
@@ -1101,10 +928,9 @@ function PracticeTestContent() {
                           width: '100%'
                         }}>
                           <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
->>>>>>> e8c01be1e7911701303e5f00dbf43be3a4cb5711
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -1352,66 +1178,42 @@ const styles = {
     gap: '4px',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
-  splitContainer: {
+  mathQuestion: {
+    padding: '0 2rem 2rem 2rem',
+    maxWidth: '1000px',
+    margin: '0 auto',
+    width: '100%',
+  },
+  rwSplitContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
+    backgroundColor: 'white',
     height: 'auto',
     minHeight: 'calc(100vh - 180px)',
     maxHeight: 'calc(100vh - 180px)',
+    gap: '0',
+    padding: '1rem',
     overflow: 'hidden',
   },
-  questionContent: {
+  rwQuestionContainer: {
     width: '50%',
-    height: '100%',
-    padding: '1rem 2rem',
-    borderRight: '1px solid #e5e7eb',
-    overflowY: 'auto',
-  },
-  optionsContent: {
-    width: '50%',
-    height: '100%',
-    padding: '1rem 2rem',
-    overflowY: 'auto',
-  },
-  questionHeader: {
-    width: '100%',
-    marginBottom: '1.5rem',
-  },
-  questionNumberBox: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    backgroundColor: 'black',
-    color: 'white',
-    padding: '0.5rem 1rem',
-    fontSize: '1rem',
-    fontWeight: '500',
-    fontFamily: '"Myriad Pro", Arial, sans-serif',
-  },
-  markReviewBox: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px',
-    backgroundColor: '#f3f4f6',
-    padding: '0.5rem 1rem',
-    cursor: 'pointer',
-    color: '#6b7280',
-    fontSize: '0.875rem',
-    fontFamily: '"Myriad Pro", Arial, sans-serif',
-    marginLeft: '1px',
-  },
-  imageContainer: {
-    width: '100%',
-    height: 'auto',
-    maxHeight: '300px',
-    margin: '1rem 0',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    backgroundColor: 'white',
+    borderRight: '1px solid #e5e7eb',
+    paddingRight: '2rem',
+    overflowY: 'auto',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'auto',
+    maxHeight: '100%',
   },
-  questionImage: {
-    maxWidth: '100%',
-    maxHeight: '300px',
-    objectFit: 'contain',
+  rwQuestion: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
   },
   optionsContainer: {
     display: 'flex',
@@ -1433,6 +1235,32 @@ const styles = {
     transition: 'all 0.2s ease',
     backgroundColor: 'white',
   },
+  rwOptionsContainer: {
+    width: '50%',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+    padding: '3rem 2rem 1rem 2rem',
+    overflowY: 'auto',
+    maxHeight: '100%',
+  },
+  rwOptionCard: {
+    display: 'flex',
+    gap: '0.75rem',
+    padding: '0.75rem 1rem',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    borderRadius: '0.25rem',
+    backgroundColor: 'white',
+    border: '1px solid #e5e7eb',
+    alignItems: 'flex-start',
+    wordBreak: 'break-word',
+    width: '100%',
+  },
+  rwSelectedOption: {
+    backgroundColor: '#eef2ff',
+    border: '2px solid #4f46e5',
+  },
   selectedOption: {
     border: '2px solid #4f46e5',
     backgroundColor: '#eef2ff',
@@ -1450,10 +1278,32 @@ const styles = {
     fontWeight: '600',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
+  rwOptionLetter: {
+    width: '24px',
+    height: '24px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '50%',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    fontSize: '14px',
+    fontWeight: '500',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+  },
   optionText: {
     flex: 1,
     fontSize: '15px',
     color: '#1f2937',
+  },
+  rwOptionText: {
+    flex: 1,
+    fontSize: '15px',
+    color: '#1f2937',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    minWidth: 0,
   },
   navigationFooter: {
     display: 'flex',
@@ -1799,10 +1649,10 @@ const styles = {
   },
   // Global styles for animations
   '@global': {
-  '@keyframes spin': {
-    '0%': { transform: 'rotate(0deg)' },
-    '100%': { transform: 'rotate(360deg)' },
-  },
+    '@keyframes spin': {
+      '0%': { transform: 'rotate(0deg)' },
+      '100%': { transform: 'rotate(360deg)' },
+    },
   },
   questionNumber: {
     display: 'flex',
@@ -1817,23 +1667,30 @@ const styles = {
     color: '#1f2937',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
   },
-  mathContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    flex: 1,
-    height: 'auto',
-    overflow: 'hidden',
-    padding: '1rem',
-  },
-  mathQuestionContent: {
+  questionHeader: {
     width: '100%',
-    padding: '1rem 2rem',
-    marginBottom: '1rem',
-    borderBottom: '1px solid #e5e7eb',
+    marginBottom: '1.5rem',
   },
-  mathOptionsContent: {
-    width: '100%',
-    padding: '1rem 2rem',
-    overflowY: 'auto',
+  questionNumberBox: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    padding: '0.5rem 1rem',
+    fontSize: '1rem',
+    fontWeight: '500',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+  },
+  markReviewBox: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px',
+    backgroundColor: '#f3f4f6',
+    padding: '0.5rem 1rem',
+    cursor: 'pointer',
+    color: '#6b7280',
+    fontSize: '0.875rem',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+    marginLeft: '1px',
   },
 } 
