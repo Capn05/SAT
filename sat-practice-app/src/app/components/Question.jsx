@@ -1465,37 +1465,40 @@ const globalStyles = `
     margin-left: 0.2em !important;
   }
 
-  /* Improved fraction styling */
+  /* Improved fraction styling to match Image 2 */
   .katex .mfrac {
-    vertical-align: -0.5em !important;
-    font-size: 1.2em !important;
+    vertical-align: middle !important; /* Center the fraction vertically */
+    font-size: 1.2em !important; /* Slightly larger for better readability */
   }
 
-  /* Fix fraction line */
+  /* Make the fraction bar look like the reference image */
   .katex .mfrac .frac-line {
+    border-top-width: 1px !important;
     border-bottom-width: 1px !important;
     margin-top: 0.15em !important;
     margin-bottom: 0.15em !important;
+    min-width: 0.7em !important; /* Ensure minimum width for the line */
   }
 
-  /* Fix numerator positioning */
+  /* Position the numerator properly */
   .katex .mfrac .mfracnum {
-    display: inline-block !important;
-    min-height: 1.2em !important;
-    margin-bottom: 0.15em !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 0.2em !important;
+    min-height: 1em !important;
   }
 
-  /* Fix denominator positioning */
+  /* Position the denominator properly */
   .katex .mfrac .mfracdenom {
-    display: inline-block !important;
-    min-height: 1.2em !important;
-    margin-top: 0.15em !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0.2em !important;
+    min-height: 1em !important;
   }
 
-  /* Handle exponents in fractions better */
-  .katex .mfrac .msup {
-    display: inline-block !important;
-    position: relative !important;
+  /* Ensure proper spacing for negative fractions */
+  .katex .mfrac .mord.mtight {
+    padding: 0 0.05em !important;
   }
 
   /* Fix spacing for the radical symbols and exponents */
@@ -1536,26 +1539,37 @@ const globalStyles = `
     padding: 0 0.05em !important;
   }
 
-  /* Fix not equal signs (\neq) */
+  /* Complete redo of not equal signs styling */
   .katex .mrel.negated {
     position: relative !important;
-    margin-left: 0.15em !important;
-    margin-right: 0.15em !important;
+    display: inline-block !important;
+    margin: 0 0.2em !important;
   }
 
-  /* Ensure the slash in the not equal sign is properly positioned */
-  .katex .mrel .vlist-t2 {
-    position: relative !important;
-  }
-
-  /* Make the line in not equal signs more visible */
-  .katex .mrel.negated .vlist-t2 .vlist-r .vlist {
-    height: 0.25em !important;
-  }
-
-  /* Adjust the positioning of the line in not equal signs */
+  /* Hide the default diagonal implementation which isn't working */
   .katex .mrel.negated .vlist-t2 .vlist-r:nth-child(2) .vlist {
-    transform: translateY(0.05em) !important;
+    opacity: 0 !important;
+  }
+
+  /* Create a new clean diagonal line with pseudo-element */
+  .katex .mrel.negated:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to top right, 
+      transparent calc(50% - 0.5px), 
+      currentColor, 
+      transparent calc(50% + 0.5px)) !important;
+    transform: rotate(-10deg) !important; /* Slight rotation for better alignment */
+    pointer-events: none !important;
+  }
+
+  /* Ensure the equals sign itself is properly displayed */
+  .katex .mrel.negated .vlist-t2 .vlist-r:first-child .vlist {
+    display: block !important;
   }
 
   .katex .msupsub .msup {
