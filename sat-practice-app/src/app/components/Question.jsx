@@ -16,6 +16,7 @@ import SkillsCompleteModal from './SkillsCompleteModal';
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import DifficultyModal from './DifficultyModal';
+import { renderMathContent, processTableFormat } from './MathRenderer';
 
 export default function Question({ subject, mode, skillName, questions: initialQuestions, difficulty }) {
   const [questions, setQuestions] = useState(initialQuestions || []);
@@ -61,156 +62,15 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     return question && question.subject_id === 1; // Math questions have subject_id of 1
   };
 
-  // Simplified rendering for math questions
-  const renderMathContent = (content) => {
-    if (!content) return '';
-    
-    try {
-      // Process tables first to ensure they render correctly
-      content = processTableFormat(content);
-      
-      // Handle special cases in math content
-      
-      // 1. Dollar signs in math expressions
-      content = content.replace(/\$(\\+\$\d+)\$/g, '\\$$1');
-      
-      // 2. Check if content already has math delimiters
-      if (!content.includes('$')) {
-        // If no delimiters, we need to be careful about wrapping the entire content
-        
-        // First handle any existing markdown tables, which shouldn't be wrapped in math
-        const parts = [];
-        const lines = content.split('\n');
-        let inTable = false;
-        let currentNonTable = '';
-        
-        for (const line of lines) {
-          if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
-            // We found a table line
-            if (!inTable) {
-              // If we were building non-table content, add it
-              if (currentNonTable.trim()) {
-                parts.push({type: 'math', content: currentNonTable});
-                currentNonTable = '';
-              }
-              inTable = true;
-              parts.push({type: 'table', content: line});
-            } else {
-              // Continue adding to table
-              parts.push({type: 'table', content: line});
-            }
-          } else {
-            // Not a table line
-            if (inTable) {
-              inTable = false;
-            }
-            currentNonTable += line + '\n';
-          }
-        }
-        
-        // Add any remaining non-table content
-        if (currentNonTable.trim()) {
-          parts.push({type: 'math', content: currentNonTable});
-        }
-        
-        // Now render each part accordingly
-        return parts.map(part => {
-          if (part.type === 'table') {
-            return md.render(part.content);
-          } else {
-            // For math content, wrap in KaTeX
-            try {
-              return katex.renderToString(part.content, {
-                throwOnError: false,
-                displayMode: true,
-                output: 'html'
-              });
-            } catch (err) {
-              // If KaTeX fails, fall back to markdown
-              return md.render(part.content);
-            }
-          }
-        }).join('\n');
-      }
-      
-      // If we got here, the content has math delimiters, so use markdown-it-katex
-      return md.render(content);
-    } catch (error) {
-      console.error('Error rendering math content:', error);
-      // Fallback to regular markdown rendering if our processing fails
-      return md.render(content);
-    }
-  };
-
-  // Simplified rendering for reading/writing questions
-  const renderReadingContent = (content) => {
-    if (!content) return '';
-    
-    // Process tables first
-    content = processTableFormat(content);
-    
-    // Simple markdown rendering for reading content
-    return md.render(content);
-  };
-
-  // Unified rendering method that chooses the right renderer based on question type
+  // Main rendering function for all content
   const renderResponse = (response, question) => {
     if (!response) return '';
     
-    // Normalize underscores - replace more than 5 consecutive underscores with just 5
+    // Normalize underscores
     response = response.replace(/_{6,}/g, '_____');
     
-    if (question && isMathQuestion(question)) {
-      if (response.includes('$')) {
-        // If it already has math delimiters, use regular markdown with KaTeX
-        return md.render(response);
-      } else {
-        // For pure math without delimiters, try direct KaTeX rendering
-        try {
-          return renderMathContent(response);
-        } catch (err) {
-          // Fallback to markdown if direct KaTeX fails
-          return md.render(response);
-        }
-      }
-    } else {
-      // For reading/writing questions, use markdown rendering
-      return renderReadingContent(response);
-    }
-  };
-
-  const processTableFormat = (text) => {
-    if (text.includes('|---') || text.includes('| ---')) {
-      return text;
-    }
-    
-    const lines = text.split('\n');
-    let tableStartIndex = -1;
-    let tableEndIndex = -1;
-    
-    for (let i = 0; i < lines.length; i++) {
-      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
-        if (tableStartIndex === -1) {
-          tableStartIndex = i;
-        }
-        tableEndIndex = i;
-      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
-        break;
-      }
-    }
-    
-    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
-      const headerRow = lines[tableStartIndex].trim();
-      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
-      
-      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
-      
-      lines.splice(tableStartIndex + 1, 0, separatorRow);
-      
-      return lines.join('\n');
-    }
-    
-    return text;
+    // Use the renderMathContent function from MathRenderer
+    return renderMathContent(response);
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
@@ -1424,106 +1284,3 @@ const styles = {
     justifyContent: 'center',
   },
 };
-  
-  
-const globalStyles = `
-  .question-text-container table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 16px 0;
-    font-size: 16px;
-  }
-  
-  .question-text-container th,
-  .question-text-container td {
-    border: 1px solid #e5e7eb;
-    padding: 8px 12px;
-    text-align: left;
-  }
-  
-  .question-text-container th {
-    background-color: #f9fafb;
-    font-weight: 600;
-  }
-  
-  .question-text-container tr:nth-child(even) {
-    background-color: #f9fafb;
-  }
-  
-  .question-text-container tr:hover {
-    background-color: #f3f4f6;
-  }
-
-  /* Math content styles */
-  .question-text-container .katex {
-    font-size: 1.1em;
-    line-height: 1.5;
-    display: inline-block;
-    text-rendering: auto;
-  }
-
-  .question-text-container .katex-display {
-    display: block;
-    margin: 1em 0;
-    text-align: center;
-  }
-
-  /* Improved paragraph spacing */
-  .question-text-container p {
-    margin: 0.5em 0;
-    display: inline;
-  }
-
-  /* Make sure non-block elements don't cause unwanted breaks */
-  .question-text-container span,
-  .question-text-container strong,
-  .question-text-container em,
-  .question-text-container a,
-  .question-text-container code {
-    display: inline;
-  }
-
-  /* Ensure block elements maintain their formatting */
-  .question-text-container ul,
-  .question-text-container ol,
-  .question-text-container blockquote,
-  .question-text-container pre,
-  .question-text-container table {
-    display: block;
-    margin: 1em 0;
-  }
-
-  /* Subject-specific styles */
-  .math-question {
-    font-family: 'KaTeX_Main', serif;
-    line-height: 1.6;
-  }
-
-  .reading-question {
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 1.8;
-  }
-
-  .math-content {
-    font-family: 'KaTeX_Main', serif;
-  }
-
-  .reading-content {
-    font-family: 'Noto Sans', sans-serif;
-  }
-
-  /* Fix for dollar signs in math content */
-  .math-question .katex .mord, 
-  .math-content .katex .mord {
-    display: inline-block;
-    margin-right: 0.05em;
-  }
-`;
-
-if (typeof document !== 'undefined') {
-  const styleElement = document.createElement('style');
-  styleElement.innerHTML = globalStyles;
-  document.head.appendChild(styleElement);
-}
-  
-  
