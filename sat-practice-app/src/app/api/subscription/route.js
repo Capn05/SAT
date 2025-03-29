@@ -166,59 +166,53 @@ export async function DELETE(request) {
       console.log('Updating subscription in Supabase:', {
         id: subscription.id,
         user_id: subscription.user_id,
-        stripe_subscription_id: subscription.stripe_subscription_id
+        stripe_subscription_id: subscription.stripe_subscription_id,
+        table: 'subscriptions'
       });
       
-      // Update the subscription status in our database
-      // First try updating by ID
-      let updateResult = await supabase
-        .from('subscriptions')
-        .update({
-          status: 'canceled',
-          canceled_at: new Date().toISOString()
-        })
-        .eq('id', subscription.id)
-        .select();
-      
-      // Check if the update affected any rows
-      if (!updateResult.data || updateResult.data.length === 0) {
-        console.log('Update by ID failed, trying to update by stripe_subscription_id');
-        
-        // Try updating by stripe_subscription_id as fallback
-        updateResult = await supabase
+      // Try a simpler approach - just update by user_id and don't select
+      try {
+        const { error: updateError } = await supabase
           .from('subscriptions')
-          .update({
-            status: 'canceled',
-            canceled_at: new Date().toISOString()
-          })
-          .eq('stripe_subscription_id', subscription.stripe_subscription_id)
-          .select();
-      }
-      
-      // Check if either update succeeded
-      if (updateResult.error) {
-        console.error('Error updating subscription status in database:', updateResult.error);
+          .update({ status: 'canceled' })
+          .eq('user_id', user.id);
+        
+        if (updateError) {
+          console.error('Error updating by user_id:', updateError);
+          
+          // If that fails, try directly by id
+          const { error: idUpdateError } = await supabase
+            .from('subscriptions')
+            .update({ status: 'canceled' })
+            .eq('id', subscription.id);
+          
+          if (idUpdateError) {
+            console.error('Error updating by id:', idUpdateError);
+            return NextResponse.json(
+              { error: 'Failed to update subscription status in database: ' + idUpdateError.message }, 
+              { status: 500 }
+            );
+          }
+        }
+        
+        console.log('Subscription cancellation completed successfully');
+        
+        // Return success with period end date for the client to update
+        return NextResponse.json({ 
+          message: 'Subscription canceled successfully',
+          current_period_end: currentPeriodEnd
+        }, { status: 200 });
+        
+      } catch (dbError) {
+        console.error('Database operation error:', dbError);
         return NextResponse.json(
-          { error: 'Failed to update subscription status in database' }, 
+          { 
+            error: 'Database error when updating subscription',
+            details: dbError.message
+          }, 
           { status: 500 }
         );
       }
-      
-      // Log the update results
-      console.log('Supabase update result:', {
-        success: !updateResult.error,
-        data: updateResult.data ? `Updated ${updateResult.data.length} records` : 'No data returned',
-        error: updateResult.error
-      });
-      
-      console.log('Subscription cancellation completed successfully');
-      
-      // Return success with period end date for the client to update
-      return NextResponse.json({ 
-        message: 'Subscription canceled successfully',
-        canceled_at: new Date().toISOString(),
-        current_period_end: currentPeriodEnd
-      }, { status: 200 });
       
     } catch (stripeError) {
       console.error('Stripe error details:', {
@@ -283,8 +277,7 @@ export async function PATCH(request) {
     const { data, error } = await supabase
       .from('subscriptions')
       .update({
-        status: status || 'canceled',
-        canceled_at: status === 'canceled' ? new Date().toISOString() : null
+        status: status || 'canceled'
       })
       .eq('stripe_subscription_id', stripe_subscription_id)
       .eq('user_id', user.id)

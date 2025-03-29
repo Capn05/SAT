@@ -436,7 +436,8 @@ function SubscriptionContent() {
       setSubscription({
         ...subscription,
         status: 'canceled',
-        canceledAt: data?.canceled_at || new Date().toISOString(),
+        // Use the current date instead of data.canceled_at since it's not provided
+        canceledAt: new Date().toISOString(),
         endDate: data?.current_period_end || subscription.endDate
       });
     }
