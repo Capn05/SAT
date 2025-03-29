@@ -13,8 +13,8 @@ interface StripePaymentProps {
 
 // Payment links should be stored in environment variables, but for testing we'll hardcode them
 const PAYMENT_LINKS = {
-  monthly: process.env.NEXT_PUBLIC_MONTHLY_PLAN_PAYMENT_LINK || 'https://buy.stripe.com/test_8wM01s22i4hV5zi4gg',
-  quarterly: process.env.NEXT_PUBLIC_QUARTERLY_PLAN_PAYMENT_LINK || 'https://buy.stripe.com/test_8wMcOedL015J2n6cMN',
+  monthly: process.env.NEXT_PUBLIC_MONTHLY_PLAN_PAYMENT_LINK || 'https://buy.stripe.com/test_3cs01sdL0cOrf9SfZ0',
+  quarterly: process.env.NEXT_PUBLIC_QUARTERLY_PLAN_PAYMENT_LINK || 'https://buy.stripe.com/test_cN26pQ8qG6q3e5O6or',
 };
 
 console.log('Payment Links:', PAYMENT_LINKS);

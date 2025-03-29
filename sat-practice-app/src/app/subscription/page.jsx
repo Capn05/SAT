@@ -145,6 +145,104 @@ function FeedbackModal({ isOpen, onClose, onSuccess }) {
   );
 }
 
+// New CancelSubscriptionModal Component
+function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(null);
+  
+  const handleCancel = async () => {
+    setIsSubmitting(true);
+    setError(null);
+    
+    try {
+      const response = await fetch('/api/subscription', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        onCancelSubscription();
+        onClose();
+      } else {
+        setError(data.error || 'Failed to cancel subscription. Please try again.');
+      }
+    } catch (error) {
+      setError('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div style={modalStyles.overlay}>
+      <div style={modalStyles.modal}>
+        <div style={modalStyles.header}>
+          <h2 style={modalStyles.title}>Cancel Subscription</h2>
+          <button style={modalStyles.closeButton} onClick={onClose} aria-label="Close">
+            <X size={20} />
+          </button>
+        </div>
+        
+        <div style={modalStyles.content}>
+          <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+            <AlertCircle size={48} style={{ color: '#f43f5e', marginBottom: '16px' }} />
+            <h3 style={{ margin: '0 0 8px 0' }}>Are you sure you want to cancel?</h3>
+            <p style={{ margin: '0', color: '#4b5563' }}>
+              You'll lose access to all premium features when your current billing period ends.
+            </p>
+          </div>
+          
+          {error && (
+            <div style={modalStyles.errorMessage}>
+              <AlertCircle size={20} />
+              <span>{error}</span>
+            </div>
+          )}
+          
+          <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginTop: '24px' }}>
+            <button 
+              onClick={onClose}
+              style={{
+                padding: '10px 16px',
+                background: '#f3f4f6',
+                color: '#374151',
+                border: 'none',
+                borderRadius: '6px',
+                fontWeight: '500',
+                cursor: 'pointer',
+              }}
+            >
+              Keep Subscription
+            </button>
+            <button 
+              onClick={handleCancel}
+              disabled={isSubmitting}
+              style={{
+                padding: '10px 16px',
+                background: '#f43f5e',
+                color: 'white',
+                border: 'none',
+                borderRadius: '6px',
+                fontWeight: '500',
+                cursor: 'pointer',
+                opacity: isSubmitting ? '0.7' : '1',
+              }}
+            >
+              {isSubmitting ? 'Cancelling...' : 'Yes, Cancel Subscription'}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Content component that uses client hooks
 function SubscriptionContent() {
   const supabase = createClientComponentClient()
@@ -156,6 +254,8 @@ function SubscriptionContent() {
   const [showThankYou, setShowThankYou] = useState(false)
   const [showFeedbackModal, setShowFeedbackModal] = useState(false)
   const [showFeedbackSuccess, setShowFeedbackSuccess] = useState(false)
+  const [showCancelModal, setShowCancelModal] = useState(false)
+  const [showCancelSuccess, setShowCancelSuccess] = useState(false)
   
   useEffect(() => {
     // Check if user just subscribed
@@ -272,6 +372,25 @@ function SubscriptionContent() {
     }, 5000);
   };
   
+  const handleSubscriptionCancel = () => {
+    // Update subscription status locally
+    if (subscription) {
+      setSubscription({
+        ...subscription,
+        status: 'canceled',
+        canceledAt: new Date().toISOString()
+      });
+    }
+    
+    // Show success message
+    setShowCancelSuccess(true);
+    
+    // Auto-hide cancel success message after 5 seconds
+    setTimeout(() => {
+      setShowCancelSuccess(false);
+    }, 5000);
+  };
+  
   if (loading) {
     return (
       <div style={styles.loadingContainer}>
@@ -370,6 +489,20 @@ function SubscriptionContent() {
         </div>
       )}
       
+      {showCancelSuccess && (
+        <div style={styles.thankYouBanner}>
+          <CheckCircle size={20} style={{ color: '#10b981' }} />
+          <span>Your subscription has been canceled. You will have access until the end of your billing period.</span>
+          <button 
+            style={styles.dismissButton} 
+            onClick={() => setShowCancelSuccess(false)}
+            aria-label="Dismiss"
+          >
+            ×
+          </button>
+        </div>
+      )}
+      
       <div style={styles.content}>
         <div style={styles.card}>
           <div style={styles.cardHeader}>
@@ -387,10 +520,13 @@ function SubscriptionContent() {
                 <div style={styles.infoLabel}>Status</div>
                 <div style={{
                   ...styles.statusBadge,
-                  backgroundColor: subscription?.status === 'active' ? '#ecfdf5' : '#fef2f2',
-                  color: subscription?.status === 'active' ? '#10b981' : '#ef4444'
+                  backgroundColor: subscription?.status === 'active' ? '#ecfdf5' : 
+                                  subscription?.status === 'canceled' ? '#fef2f2' : '#fef3c7',
+                  color: subscription?.status === 'active' ? '#10b981' : 
+                        subscription?.status === 'canceled' ? '#ef4444' : '#d97706'
                 }}>
-                  {subscription?.status === 'active' ? 'Active' : 'Inactive'}
+                  {subscription?.status === 'active' ? 'Active' : 
+                   subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
                 </div>
               </div>
             </div>
@@ -411,7 +547,7 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  Renewal Date
+                  {subscription?.status === 'canceled' ? 'Access Until' : 'Renewal Date'}
                 </div>
                 <div style={styles.infoValue}>
                   {formatDate(subscription?.endDate)}
@@ -454,11 +590,29 @@ function SubscriptionContent() {
               </div>
             )}
             
-            <Link href="/pricing">
-              <button style={styles.renewButton}>
-                {subscription?.status === 'active' ? 'Renew Subscription' : 'Reactivate Subscription'} <ExternalLink size={16} style={{ marginLeft: '4px' }} />
-              </button>
-            </Link>
+            <div style={{ display: 'flex', gap: '16px', marginTop: '20px' }}>
+              {subscription?.status === 'active' ? (
+                <>
+                  <Link href="/pricing" style={{ flex: 1 }}>
+                    <button style={styles.renewButton}>
+                      Change Plan <ExternalLink size={16} style={{ marginLeft: '4px' }} />
+                    </button>
+                  </Link>
+                  <button 
+                    style={styles.cancelButton}
+                    onClick={() => setShowCancelModal(true)}
+                  >
+                    Cancel Subscription
+                  </button>
+                </>
+              ) : (
+                <Link href="/pricing" style={{ width: '100%' }}>
+                  <button style={styles.renewButton}>
+                    {subscription?.status === 'canceled' ? 'Resubscribe' : 'Reactivate Subscription'} <ExternalLink size={16} style={{ marginLeft: '4px' }} />
+                  </button>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
         
@@ -517,6 +671,13 @@ function SubscriptionContent() {
         isOpen={showFeedbackModal} 
         onClose={() => setShowFeedbackModal(false)}
         onSuccess={handleFeedbackSuccess}
+      />
+      
+      {/* Render cancel subscription modal */}
+      <CancelSubscriptionModal
+        isOpen={showCancelModal}
+        onClose={() => setShowCancelModal(false)}
+        onCancelSubscription={handleSubscriptionCancel}
       />
     </div>
   )
@@ -929,5 +1090,20 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     margin: '0 auto 24px',
-  }
+  },
+  cancelButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    padding: '12px 20px',
+    backgroundColor: 'white',
+    color: '#ef4444',
+    border: '1px solid #fecaca',
+    borderRadius: '8px',
+    fontSize: '16px',
+    fontWeight: 500,
+    cursor: 'pointer',
+    transition: 'background-color 0.2s',
+  },
 } 
