@@ -7,7 +7,7 @@ import TopBar from '../components/TopBar'
 import ChatSidebar from '../components/ChatSidebar'
 import './review.css'
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
-import MathRenderer, { processMathInText } from '../components/MathRenderer'
+import { processMathInText, renderMathContent as renderMathFromModule, processTableFormat, processWithKaTeX } from '../components/MathRenderer'
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
 import katex from 'katex'
@@ -58,75 +58,8 @@ function ReviewTestContent() {
     if (!content) return '';
     
     try {
-      // Process tables first to ensure they render correctly
-      content = processTableFormat(content);
-      
-      // Handle special cases in math content
-      
-      // 1. Dollar signs in math expressions
-      content = content.replace(/\$(\\+\$\d+)\$/g, '\\$$1');
-      
-      // 2. Check if content already has math delimiters
-      if (!content.includes('$')) {
-        // If no delimiters, we need to be careful about wrapping the entire content
-        
-        // First handle any existing markdown tables, which shouldn't be wrapped in math
-        const parts = [];
-        const lines = content.split('\n');
-        let inTable = false;
-        let currentNonTable = '';
-        
-        for (const line of lines) {
-          if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
-            // We found a table line
-            if (!inTable) {
-              // If we were building non-table content, add it
-              if (currentNonTable.trim()) {
-                parts.push({type: 'math', content: currentNonTable});
-                currentNonTable = '';
-              }
-              inTable = true;
-              parts.push({type: 'table', content: line});
-            } else {
-              // Continue adding to table
-              parts.push({type: 'table', content: line});
-            }
-          } else {
-            // Not a table line
-            if (inTable) {
-              inTable = false;
-            }
-            currentNonTable += line + '\n';
-          }
-        }
-        
-        // Add any remaining non-table content
-        if (currentNonTable.trim()) {
-          parts.push({type: 'math', content: currentNonTable});
-        }
-        
-        // Now render each part accordingly
-        return parts.map(part => {
-          if (part.type === 'table') {
-            return md.render(part.content);
-          } else {
-            // For math content, wrap in KaTeX
-            try {
-              return katex.renderToString(part.content, {
-                throwOnError: false,
-                displayMode: true,
-                output: 'html'
-              });
-            } catch (err) {
-              // If KaTeX fails, fall back to markdown
-              return md.render(part.content);
-            }
-          }
-        }).join('\n');
-      }
-      
-      // If we got here, the content has math delimiters, so use markdown-it-katex
-      return md.render(content);
+      // Use the imported renderMathContent from MathRenderer
+      return renderMathFromModule(content);
     } catch (error) {
       console.error('Error rendering math content:', error);
       // Fallback to regular markdown rendering if our processing fails
@@ -153,58 +86,12 @@ function ReviewTestContent() {
     response = response.replace(/_{6,}/g, '_____');
     
     if (question && isMathQuestion(question)) {
-      if (response.includes('$')) {
-        // If it already has math delimiters, use regular markdown with KaTeX
-        return md.render(response);
-      } else {
-        // For pure math without delimiters, try direct KaTeX rendering
-        try {
-          return renderMathContent(response);
-        } catch (err) {
-          // Fallback to markdown if direct KaTeX fails
-          return md.render(response);
-        }
-      }
+      // Use the imported renderMathContent from MathRenderer for math questions
+      return renderMathFromModule(response);
     } else {
       // For reading/writing questions, use markdown rendering
       return renderReadingContent(response);
     }
-  };
-
-  const processTableFormat = (text) => {
-    if (!text) return '';
-    
-    if (text.includes('|---') || text.includes('| ---')) {
-      return text;
-    }
-    
-    const lines = text.split('\n');
-    let tableStartIndex = -1;
-    let tableEndIndex = -1;
-    
-    for (let i = 0; i < lines.length; i++) {
-      if (lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|') && lines[i].split('|').length > 2) {
-        if (tableStartIndex === -1) {
-          tableStartIndex = i;
-        }
-        tableEndIndex = i;
-      } else if (tableStartIndex !== -1 && tableEndIndex !== -1 && !lines[i].includes('|')) {
-        break;
-      }
-    }
-    
-    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
-      const headerRow = lines[tableStartIndex].trim();
-      const columnCount = headerRow.split('|').filter(cell => cell.trim()).length;
-      
-      const separatorRow = '|' + Array(columnCount).fill(' --- ').join('|') + '|';
-      
-      lines.splice(tableStartIndex + 1, 0, separatorRow);
-      
-      return lines.join('\n');
-    }
-    
-    return text;
   };
 
   useEffect(() => {
@@ -603,6 +490,21 @@ function ReviewTestContent() {
                   
                   return (
                     <>
+                      {/* Display image first if available */}
+                      {question.imageUrl && (
+                        <div className="question-image-container">
+                          <img 
+                            src={question.imageUrl} 
+                            alt="Question diagram" 
+                            className="question-image"
+                            onError={(e) => {
+                              console.error('Failed to load image:', question.imageUrl);
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                      )}
+                      
                       {passage && passage.trim() !== '' && (
                         <div 
                           className="passage"
@@ -613,24 +515,6 @@ function ReviewTestContent() {
                         className="question-text"
                         dangerouslySetInnerHTML={{ __html: renderResponse(questionText, question) }}
                       />
-                      {question.imageUrl && (
-                        <div className="question-image">
-                          <img 
-                            src={question.imageUrl} 
-                            alt="Question diagram" 
-                            style={{
-                              maxWidth: '100%',
-                              maxHeight: '400px',
-                              borderRadius: '8px',
-                              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                            }}
-                            onError={(e) => {
-                              console.error('Failed to load image:', question.imageUrl);
-                              e.target.style.display = 'none';
-                            }}
-                          />
-                        </div>
-                      )}
                     </>
                   );
                 } catch (err) {
@@ -644,33 +528,40 @@ function ReviewTestContent() {
                 }
               })()}
               <div className="choices">
-                {questions[selectedQuestion].options.map((option) => {
-                  const isSelected = questions[selectedQuestion].userAnswer?.selectedOptionId === option.id;
-                  const isCorrectOption = option.isCorrect;
-                  
-                  let choiceClass = 'choice-button';
-                  if (isCorrectOption) {
-                    choiceClass += ' correct-option';
-                  } else if (isSelected) {
-                    choiceClass += ' incorrect-option';
-                  }
-                  if (isSelected) {
-                    choiceClass += ' selected-option';
-                  }
-                  
-                  return (
-                    <div
-                      key={option.id}
-                      className={choiceClass}
-                    >
-                      <span className="choice-letter">{option.value}</span>
-                      <div 
-                        className="option-text"
-                        dangerouslySetInnerHTML={{ __html: renderResponse(option.text, questions[selectedQuestion]) }}
-                      />
-                    </div>
-                  );
-                })}
+                {[...questions[selectedQuestion].options]
+                  .sort((a, b) => {
+                    // Sort by option value (A, B, C, D)
+                    return a.value.localeCompare(b.value);
+                  })
+                  .map((option) => {
+                    const isSelected = questions[selectedQuestion].userAnswer?.selectedOptionId === option.id;
+                    const isCorrectOption = option.isCorrect;
+                    
+                    let choiceClass = 'choice-button';
+                    if (isCorrectOption) {
+                      choiceClass += ' correct-option';
+                    } else if (isSelected) {
+                      choiceClass += ' incorrect-option';
+                    }
+                    if (isSelected) {
+                      choiceClass += ' selected-option';
+                    }
+                    
+                    return (
+                      <div
+                        key={option.id}
+                        className={choiceClass}
+                      >
+                        <span className="choice-letter">{option.value}</span>
+                        <div 
+                          className="option-text"
+                          dangerouslySetInnerHTML={{ __html: isMathQuestion(questions[selectedQuestion]) 
+                            ? renderMathFromModule(option.text)
+                            : renderReadingContent(option.text) }}
+                        />
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           ) : (
