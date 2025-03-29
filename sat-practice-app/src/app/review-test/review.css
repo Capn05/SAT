@@ -419,4 +419,54 @@
   .questions-section {
     max-width: 100%;
   }
+}
+
+/* Math rendering styles to match practice page */
+.math-renderer {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.math-block {
+  margin: 1rem 0;
+}
+
+.math-inline {
+  display: inline-block;
+}
+
+.math-diagram {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.math-diagram img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure katex styles are consistent */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+/* Fix for katex overflow in questions */
+.question-text .katex-display,
+.passage .katex-display {
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 0.5rem 0;
+}
+
+/* Fix for katex in options */
+.choice-button .katex {
+  font-size: 1em;
 } 
