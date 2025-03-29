@@ -162,23 +162,54 @@ export async function DELETE(request) {
         });
       }
       
+      // Log the subscription details before updating
+      console.log('Updating subscription in Supabase:', {
+        id: subscription.id,
+        user_id: subscription.user_id,
+        stripe_subscription_id: subscription.stripe_subscription_id
+      });
+      
       // Update the subscription status in our database
-      // Even if Stripe fails, we still want to update our database status
-      const { error: updateError } = await supabase
+      // First try updating by ID
+      let updateResult = await supabase
         .from('subscriptions')
         .update({
           status: 'canceled',
           canceled_at: new Date().toISOString()
         })
-        .eq('id', subscription.id);
+        .eq('id', subscription.id)
+        .select();
       
-      if (updateError) {
-        console.error('Error updating subscription status in database:', updateError);
+      // Check if the update affected any rows
+      if (!updateResult.data || updateResult.data.length === 0) {
+        console.log('Update by ID failed, trying to update by stripe_subscription_id');
+        
+        // Try updating by stripe_subscription_id as fallback
+        updateResult = await supabase
+          .from('subscriptions')
+          .update({
+            status: 'canceled',
+            canceled_at: new Date().toISOString()
+          })
+          .eq('stripe_subscription_id', subscription.stripe_subscription_id)
+          .select();
+      }
+      
+      // Check if either update succeeded
+      if (updateResult.error) {
+        console.error('Error updating subscription status in database:', updateResult.error);
         return NextResponse.json(
           { error: 'Failed to update subscription status in database' }, 
           { status: 500 }
         );
       }
+      
+      // Log the update results
+      console.log('Supabase update result:', {
+        success: !updateResult.error,
+        data: updateResult.data ? `Updated ${updateResult.data.length} records` : 'No data returned',
+        error: updateResult.error
+      });
       
       console.log('Subscription cancellation completed successfully');
       
@@ -214,6 +245,68 @@ export async function DELETE(request) {
         error: 'An unexpected error occurred',
         details: error.message
       }, 
+      { status: 500 }
+    );
+  }
+}
+
+// Add a PATCH endpoint to update subscription status directly
+export async function PATCH(request) {
+  const cookieStore = cookies();
+  const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+  
+  try {
+    // Parse request body
+    const requestData = await request.json();
+    const { status, stripe_subscription_id } = requestData;
+    
+    if (!stripe_subscription_id) {
+      return NextResponse.json(
+        { error: 'Stripe subscription ID is required' }, 
+        { status: 400 }
+      );
+    }
+    
+    // Get the current user
+    const { data: { user }, error: userError } = await supabase.auth.getUser();
+    
+    if (userError || !user) {
+      return NextResponse.json(
+        { error: 'User not authenticated' }, 
+        { status: 401 }
+      );
+    }
+    
+    console.log(`Manually updating subscription ${stripe_subscription_id} to status: ${status}`);
+    
+    // Update the subscription in the database
+    const { data, error } = await supabase
+      .from('subscriptions')
+      .update({
+        status: status || 'canceled',
+        canceled_at: status === 'canceled' ? new Date().toISOString() : null
+      })
+      .eq('stripe_subscription_id', stripe_subscription_id)
+      .eq('user_id', user.id)
+      .select();
+    
+    if (error) {
+      console.error('Error updating subscription status:', error);
+      return NextResponse.json(
+        { error: 'Failed to update subscription' }, 
+        { status: 500 }
+      );
+    }
+    
+    return NextResponse.json({ 
+      message: 'Subscription updated successfully',
+      updated: !!data && data.length > 0
+    }, { status: 200 });
+    
+  } catch (error) {
+    console.error('Unexpected error:', error);
+    return NextResponse.json(
+      { error: 'An unexpected error occurred' }, 
       { status: 500 }
     );
   }

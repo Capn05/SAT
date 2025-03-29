@@ -276,6 +276,7 @@ function SubscriptionContent() {
   const [showFeedbackSuccess, setShowFeedbackSuccess] = useState(false)
   const [showCancelModal, setShowCancelModal] = useState(false)
   const [showCancelSuccess, setShowCancelSuccess] = useState(false)
+  const [syncingStatus, setSyncingStatus] = useState(false);
   
   useEffect(() => {
     // Check if user just subscribed
@@ -316,6 +317,23 @@ function SubscriptionContent() {
             stripeCustomerId: data.subscription.stripe_customer_id,
             stripeSubscriptionId: data.subscription.stripe_subscription_id
           }
+          
+          // Check URL for cancel status (for when Supabase update might have failed)
+          const cancelStatus = searchParams.get('canceled')
+          if (cancelStatus === 'true' && subscriptionData.status !== 'canceled') {
+            console.log('URL indicates canceled subscription, updating local state');
+            subscriptionData.status = 'canceled'
+            
+            // Show cancellation success message
+            setTimeout(() => {
+              setShowCancelSuccess(true)
+              // Hide after 5 seconds
+              setTimeout(() => {
+                setShowCancelSuccess(false)
+              }, 5000)
+            }, 500)
+          }
+          
           setSubscription(subscriptionData)
         } else {
           // No subscription found
@@ -423,6 +441,12 @@ function SubscriptionContent() {
       });
     }
     
+    // Add a canceled flag to the URL to persist the cancellation state
+    // This helps if Supabase update failed but Stripe cancel succeeded
+    const newUrl = new URL(window.location.href);
+    newUrl.searchParams.set('canceled', 'true');
+    window.history.replaceState({}, '', newUrl);
+    
     // Show success message
     setShowCancelSuccess(true);
     
@@ -430,6 +454,44 @@ function SubscriptionContent() {
     setTimeout(() => {
       setShowCancelSuccess(false);
     }, 5000);
+  };
+  
+  // Function to manually sync subscription status with Stripe
+  const syncSubscriptionStatus = async () => {
+    if (!subscription?.stripeSubscriptionId) return;
+    
+    try {
+      setSyncingStatus(true);
+      
+      const response = await fetch('/api/subscription', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          stripe_subscription_id: subscription.stripeSubscriptionId,
+          status: 'canceled'
+        })
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok && data.updated) {
+        // Refresh the page to get updated data
+        window.location.reload();
+      } else {
+        console.error('Failed to sync subscription status:', data);
+        // Still update local state even if the API call failed
+        setSubscription({
+          ...subscription,
+          status: 'canceled'
+        });
+      }
+    } catch (error) {
+      console.error('Error syncing subscription status:', error);
+    } finally {
+      setSyncingStatus(false);
+    }
   };
   
   if (loading) {
@@ -545,6 +607,39 @@ function SubscriptionContent() {
             aria-label="Dismiss"
           >
             ×
+          </button>
+        </div>
+      )}
+      
+      {subscription?.status !== 'canceled' && searchParams.get('canceled') === 'true' && (
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '10px',
+          backgroundColor: '#fff7ed',
+          color: '#9a3412',
+          borderRadius: '6px',
+          margin: '10px 0',
+          fontSize: '14px',
+          alignItems: 'center',
+          gap: '10px'
+        }}>
+          <AlertCircle size={18} />
+          <span>Your subscription was canceled in Stripe but not updated in our records.</span>
+          <button
+            onClick={syncSubscriptionStatus}
+            disabled={syncingStatus}
+            style={{
+              border: 'none',
+              background: '#ea580c',
+              color: 'white',
+              padding: '6px 12px',
+              borderRadius: '4px',
+              fontSize: '13px',
+              cursor: 'pointer'
+            }}
+          >
+            {syncingStatus ? 'Syncing...' : 'Sync Status'}
           </button>
         </div>
       )}
