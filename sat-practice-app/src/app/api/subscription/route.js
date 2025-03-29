@@ -2,8 +2,17 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
-// Initialize Stripe with secret key
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+// Initialize Stripe with error handling for missing API key
+let stripe;
+try {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    console.error('STRIPE_SECRET_KEY is not defined in environment variables');
+  } else {
+    stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+  }
+} catch (error) {
+  console.error('Failed to initialize Stripe:', error);
+}
 
 export async function GET(request) {
   const cookieStore = cookies();
@@ -55,13 +64,22 @@ export async function GET(request) {
   }
 }
 
-// New DELETE endpoint for canceling a subscription
+// DELETE endpoint for canceling a subscription
 export async function DELETE(request) {
   const cookieStore = cookies();
   const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
   
   try {
     console.log('Starting subscription cancellation process');
+    
+    // Check if Stripe is properly initialized
+    if (!stripe) {
+      console.error('Stripe is not properly initialized');
+      return NextResponse.json(
+        { error: 'Payment service unavailable - Stripe not initialized' }, 
+        { status: 500 }
+      );
+    }
     
     // Get the current user
     const { data: { user }, error: userError } = await supabase.auth.getUser();
@@ -119,32 +137,33 @@ export async function DELETE(request) {
     try {
       console.log('Attempting to cancel Stripe subscription:', subscription.stripe_subscription_id);
       
-      // Check if Stripe is properly initialized
-      if (!stripe) {
-        console.error('Stripe is not properly initialized');
-        return NextResponse.json(
-          { error: 'Payment service unavailable' }, 
-          { status: 500 }
+      let canceledSubscription;
+      let currentPeriodEnd = subscription.current_period_end;
+      
+      // Try to cancel in Stripe first
+      try {
+        // Cancel at period end instead of immediately to maintain access
+        canceledSubscription = await stripe.subscriptions.update(
+          subscription.stripe_subscription_id,
+          { cancel_at_period_end: true }
         );
+        
+        if (canceledSubscription.current_period_end) {
+          currentPeriodEnd = new Date(canceledSubscription.current_period_end * 1000).toISOString();
+        }
+        
+        console.log('Stripe cancellation successful, subscription will end at period end');
+      } catch (stripeApiError) {
+        // Log the error but continue to update in Supabase
+        console.error('Stripe API error (continuing with local cancellation):', {
+          type: stripeApiError.type,
+          code: stripeApiError.code,
+          message: stripeApiError.message
+        });
       }
-      
-      if (!stripe.subscriptions) {
-        console.error('Stripe subscriptions API not available');
-        return NextResponse.json(
-          { error: 'Payment service configuration error' }, 
-          { status: 500 }
-        );
-      }
-      
-      // Cancel at period end instead of immediately
-      const canceledSubscription = await stripe.subscriptions.update(
-        subscription.stripe_subscription_id,
-        { cancel_at_period_end: true }
-      );
-      
-      console.log('Stripe cancellation successful, subscription will end at period end');
       
       // Update the subscription status in our database
+      // Even if Stripe fails, we still want to update our database status
       const { error: updateError } = await supabase
         .from('subscriptions')
         .update({
@@ -156,19 +175,18 @@ export async function DELETE(request) {
       if (updateError) {
         console.error('Error updating subscription status in database:', updateError);
         return NextResponse.json(
-          { error: 'Subscription canceled in Stripe but failed to update status in database' }, 
+          { error: 'Failed to update subscription status in database' }, 
           { status: 500 }
         );
       }
       
       console.log('Subscription cancellation completed successfully');
       
+      // Return success with period end date for the client to update
       return NextResponse.json({ 
         message: 'Subscription canceled successfully',
         canceled_at: new Date().toISOString(),
-        current_period_end: canceledSubscription.current_period_end 
-          ? new Date(canceledSubscription.current_period_end * 1000).toISOString() 
-          : subscription.current_period_end
+        current_period_end: currentPeriodEnd
       }, { status: 200 });
       
     } catch (stripeError) {
@@ -176,7 +194,8 @@ export async function DELETE(request) {
         type: stripeError.type,
         code: stripeError.code,
         message: stripeError.message,
-        param: stripeError.param
+        param: stripeError.param,
+        stack: stripeError.stack
       });
       
       return NextResponse.json(

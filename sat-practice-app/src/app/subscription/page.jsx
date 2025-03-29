@@ -383,6 +383,24 @@ function SubscriptionContent() {
     return diffDays
   }
   
+  // Add a helper function to determine if user has active access
+  const hasActiveAccess = (sub) => {
+    if (!sub) return false;
+    
+    // User has access if:
+    // 1. Subscription is active, OR
+    // 2. Subscription is canceled but end date is in the future
+    if (sub.status === 'active') return true;
+    
+    if (sub.status === 'canceled' && sub.endDate) {
+      const endDate = new Date(sub.endDate);
+      const now = new Date();
+      return endDate > now;
+    }
+    
+    return false;
+  };
+  
   const handleFeedbackSuccess = () => {
     setShowFeedbackModal(false);
     setShowFeedbackSuccess(true);
@@ -516,7 +534,7 @@ function SubscriptionContent() {
         <div style={styles.thankYouBanner}>
           <CheckCircle size={20} style={{ color: '#10b981' }} />
           <span>
-            Your subscription has been canceled successfully. You'll have access until {formatDate(subscription?.endDate)} and won't be charged again. 
+            Your subscription has been canceled successfully. You'll continue to have access until {formatDate(subscription?.endDate)} and won't be charged again. 
             <Link href="/pricing" style={{ marginLeft: '5px', color: '#047857', textDecoration: 'underline' }}>
               Resubscribe anytime
             </Link>
@@ -549,12 +567,15 @@ function SubscriptionContent() {
                 <div style={{
                   ...styles.statusBadge,
                   backgroundColor: subscription?.status === 'active' ? '#ecfdf5' : 
+                                  (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? '#fff7ed' : 
                                   subscription?.status === 'canceled' ? '#fef2f2' : '#fef3c7',
                   color: subscription?.status === 'active' ? '#10b981' : 
+                        (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? '#f97316' : 
                         subscription?.status === 'canceled' ? '#ef4444' : '#d97706'
                 }}>
                   {subscription?.status === 'active' ? 'Active' : 
-                   subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
+                  (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? 'Active (Canceled)' : 
+                  subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
                 </div>
               </div>
             </div>
@@ -602,6 +623,7 @@ function SubscriptionContent() {
               </div>
             </div>
             
+            {/* For active subscription - show days remaining and progress bar */}
             {subscription?.status === 'active' && (
               <div style={styles.timeRemaining}>
                 <div style={styles.progressBarContainer}>
@@ -614,6 +636,18 @@ function SubscriptionContent() {
                 </div>
                 <div style={styles.timeRemainingText}>
                   {calculateDaysRemaining(subscription?.endDate)} days remaining
+                </div>
+              </div>
+            )}
+            
+            {/* For canceled subscription - show access until date */}
+            {subscription?.status === 'canceled' && (
+              <div style={styles.accessUntil}>
+                <div style={styles.accessUntilIcon}>
+                  <Calendar size={20} style={{ color: '#9ca3af' }} />
+                </div>
+                <div style={styles.accessUntilText}>
+                  Your access will end on {formatDate(subscription?.endDate)}
                 </div>
               </div>
             )}
@@ -1133,5 +1167,28 @@ const styles = {
     fontWeight: 500,
     cursor: 'pointer',
     transition: 'background-color 0.2s',
+  },
+  accessUntil: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    padding: '12px 16px',
+    backgroundColor: '#f9fafb',
+    borderRadius: '8px',
+    marginTop: '20px',
+    marginBottom: '4px',
+  },
+  accessUntilIcon: {
+    width: '40px',
+    height: '40px',
+    borderRadius: '50%',
+    backgroundColor: '#f3f4f6',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  accessUntilText: {
+    fontSize: '15px',
+    color: '#4b5563',
   },
 } 
