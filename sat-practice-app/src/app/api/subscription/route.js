@@ -174,7 +174,9 @@ export async function DELETE(request) {
       try {
         const { error: updateError } = await supabase
           .from('subscriptions')
-          .update({ status: 'canceled' })
+          .update({ 
+            status: 'canceled_with_access'
+          })
           .eq('user_id', user.id);
         
         if (updateError) {
@@ -183,7 +185,9 @@ export async function DELETE(request) {
           // If that fails, try directly by id
           const { error: idUpdateError } = await supabase
             .from('subscriptions')
-            .update({ status: 'canceled' })
+            .update({ 
+              status: 'canceled_with_access'
+            })
             .eq('id', subscription.id);
           
           if (idUpdateError) {
@@ -244,7 +248,7 @@ export async function DELETE(request) {
   }
 }
 
-// Add a PATCH endpoint to update subscription status directly
+// Update the PATCH endpoint to handle more specific statuses
 export async function PATCH(request) {
   const cookieStore = cookies();
   const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
@@ -271,13 +275,17 @@ export async function PATCH(request) {
       );
     }
     
-    console.log(`Manually updating subscription ${stripe_subscription_id} to status: ${status}`);
+    // Validate status - only accept valid values
+    const validStatuses = ['active', 'canceled_with_access', 'canceled'];
+    const newStatus = validStatuses.includes(status) ? status : 'canceled_with_access';
+    
+    console.log(`Manually updating subscription ${stripe_subscription_id} to status: ${newStatus}`);
     
     // Update the subscription in the database
     const { data, error } = await supabase
       .from('subscriptions')
       .update({
-        status: status || 'canceled'
+        status: newStatus
       })
       .eq('stripe_subscription_id', stripe_subscription_id)
       .eq('user_id', user.id)
@@ -293,7 +301,8 @@ export async function PATCH(request) {
     
     return NextResponse.json({ 
       message: 'Subscription updated successfully',
-      updated: !!data && data.length > 0
+      updated: !!data && data.length > 0,
+      status: newStatus
     }, { status: 200 });
     
   } catch (error) {

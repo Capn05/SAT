@@ -91,8 +91,13 @@ export async function POST(req: NextRequest) {
         break;
       
       case 'customer.subscription.updated':
-      case 'customer.subscription.deleted':
         await handleSubscriptionUpdate(event.data.object);
+        break;
+        
+      case 'customer.subscription.deleted':
+        // This event is fired when a subscription has completely ended
+        debug('Subscription fully ended, updating status to canceled');
+        await handleSubscriptionEnded(event.data.object);
         break;
         
       default:
@@ -329,4 +334,31 @@ function calculatePeriodEnd(planType: 'monthly' | 'quarterly'): Date {
   }
   
   return currentPeriodEnd;
+}
+
+// Add this function after the other handler functions
+async function handleSubscriptionEnded(subscription: any) {
+  try {
+    if (!subscription || !subscription.id) {
+      debug('Invalid subscription data for ended subscription');
+      return;
+    }
+    
+    const subscriptionId = subscription.id;
+    
+    const { error: endedSubError } = await supabase
+      .from('subscriptions')
+      .update({ 
+        status: 'canceled'
+      })
+      .eq('stripe_subscription_id', subscriptionId);
+    
+    if (endedSubError) {
+      debug('Error updating subscription to canceled:', endedSubError);
+    } else {
+      debug('Successfully updated subscription to canceled status');
+    }
+  } catch (error: any) {
+    debug('Error processing subscription ended event:', error);
+  }
 } 

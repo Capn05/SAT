@@ -407,8 +407,9 @@ function SubscriptionContent() {
     
     // User has access if:
     // 1. Subscription is active, OR
-    // 2. Subscription is canceled but end date is in the future
-    if (sub.status === 'active') return true;
+    // 2. Subscription is canceled_with_access, OR
+    // 3. Subscription is canceled but end date is in the future
+    if (sub.status === 'active' || sub.status === 'canceled_with_access') return true;
     
     if (sub.status === 'canceled' && sub.endDate) {
       const endDate = new Date(sub.endDate);
@@ -435,8 +436,7 @@ function SubscriptionContent() {
     if (subscription) {
       setSubscription({
         ...subscription,
-        status: 'canceled',
-        // Use the current date instead of data.canceled_at since it's not provided
+        status: 'canceled_with_access',
         canceledAt: new Date().toISOString(),
         endDate: data?.current_period_end || subscription.endDate
       });
@@ -471,7 +471,7 @@ function SubscriptionContent() {
         },
         body: JSON.stringify({
           stripe_subscription_id: subscription.stripeSubscriptionId,
-          status: 'canceled'
+          status: 'canceled_with_access'
         })
       });
       
@@ -485,7 +485,7 @@ function SubscriptionContent() {
         // Still update local state even if the API call failed
         setSubscription({
           ...subscription,
-          status: 'canceled'
+          status: 'canceled_with_access'
         });
       }
     } catch (error) {
@@ -663,15 +663,15 @@ function SubscriptionContent() {
                 <div style={{
                   ...styles.statusBadge,
                   backgroundColor: subscription?.status === 'active' ? '#ecfdf5' : 
-                                  (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? '#fff7ed' : 
+                                  subscription?.status === 'canceled_with_access' ? '#fff7ed' : 
                                   subscription?.status === 'canceled' ? '#fef2f2' : '#fef3c7',
                   color: subscription?.status === 'active' ? '#10b981' : 
-                        (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? '#f97316' : 
+                        subscription?.status === 'canceled_with_access' ? '#f97316' : 
                         subscription?.status === 'canceled' ? '#ef4444' : '#d97706'
                 }}>
                   {subscription?.status === 'active' ? 'Active' : 
-                  (subscription?.status === 'canceled' && hasActiveAccess(subscription)) ? 'Active (Canceled)' : 
-                  subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
+                   subscription?.status === 'canceled_with_access' ? 'Active (Canceled)' : 
+                   subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
                 </div>
               </div>
             </div>
