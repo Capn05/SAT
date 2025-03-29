@@ -149,12 +149,15 @@ function FeedbackModal({ isOpen, onClose, onSuccess }) {
 function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const [errorDetails, setErrorDetails] = useState(null);
   
   const handleCancel = async () => {
     setIsSubmitting(true);
     setError(null);
+    setErrorDetails(null);
     
     try {
+      console.log('Sending cancellation request to API');
       const response = await fetch('/api/subscription', {
         method: 'DELETE',
         headers: {
@@ -163,14 +166,20 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
       });
       
       const data = await response.json();
+      console.log('Cancellation API response:', data);
       
       if (response.ok) {
-        onCancelSubscription();
+        onCancelSubscription(data);
         onClose();
       } else {
+        console.error('Cancellation failed:', data);
         setError(data.error || 'Failed to cancel subscription. Please try again.');
+        if (data.details) {
+          setErrorDetails(data.details);
+        }
       }
     } catch (error) {
+      console.error('Cancellation request error:', error);
       setError('Network error. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);
@@ -193,15 +202,25 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
           <div style={{ textAlign: 'center', marginBottom: '24px' }}>
             <AlertCircle size={48} style={{ color: '#f43f5e', marginBottom: '16px' }} />
             <h3 style={{ margin: '0 0 8px 0' }}>Are you sure you want to cancel?</h3>
-            <p style={{ margin: '0', color: '#4b5563' }}>
+            <p style={{ margin: '0 0 8px 0', color: '#4b5563' }}>
               You'll lose access to all premium features when your current billing period ends.
+            </p>
+            <p style={{ margin: '0', color: '#4b5563', fontSize: '14px' }}>
+              Your subscription will remain active until the end of your current billing period, and you won't be charged again.
             </p>
           </div>
           
           {error && (
             <div style={modalStyles.errorMessage}>
               <AlertCircle size={20} />
-              <span>{error}</span>
+              <div>
+                <span>{error}</span>
+                {errorDetails && (
+                  <p style={{ margin: '4px 0 0 0', fontSize: '13px' }}>
+                    {errorDetails}
+                  </p>
+                )}
+              </div>
             </div>
           )}
           
@@ -217,6 +236,7 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
                 fontWeight: '500',
                 cursor: 'pointer',
               }}
+              disabled={isSubmitting}
             >
               Keep Subscription
             </button>
@@ -234,7 +254,7 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
                 opacity: isSubmitting ? '0.7' : '1',
               }}
             >
-              {isSubmitting ? 'Cancelling...' : 'Yes, Cancel Subscription'}
+              {isSubmitting ? 'Processing...' : 'Yes, Cancel Subscription'}
             </button>
           </div>
         </div>
@@ -372,13 +392,16 @@ function SubscriptionContent() {
     }, 5000);
   };
   
-  const handleSubscriptionCancel = () => {
-    // Update subscription status locally
+  const handleSubscriptionCancel = (data) => {
+    console.log('Handling successful cancellation:', data);
+    
+    // Update subscription status locally with data from the API
     if (subscription) {
       setSubscription({
         ...subscription,
         status: 'canceled',
-        canceledAt: new Date().toISOString()
+        canceledAt: data?.canceled_at || new Date().toISOString(),
+        endDate: data?.current_period_end || subscription.endDate
       });
     }
     
@@ -492,7 +515,12 @@ function SubscriptionContent() {
       {showCancelSuccess && (
         <div style={styles.thankYouBanner}>
           <CheckCircle size={20} style={{ color: '#10b981' }} />
-          <span>Your subscription has been canceled. You will have access until the end of your billing period.</span>
+          <span>
+            Your subscription has been canceled successfully. You'll have access until {formatDate(subscription?.endDate)} and won't be charged again. 
+            <Link href="/pricing" style={{ marginLeft: '5px', color: '#047857', textDecoration: 'underline' }}>
+              Resubscribe anytime
+            </Link>
+          </span>
           <button 
             style={styles.dismissButton} 
             onClick={() => setShowCancelSuccess(false)}
