@@ -528,33 +528,40 @@ function ReviewTestContent() {
                 }
               })()}
               <div className="choices">
-                {questions[selectedQuestion].options.map((option) => {
-                  const isSelected = questions[selectedQuestion].userAnswer?.selectedOptionId === option.id;
-                  const isCorrectOption = option.isCorrect;
-                  
-                  let choiceClass = 'choice-button';
-                  if (isCorrectOption) {
-                    choiceClass += ' correct-option';
-                  } else if (isSelected) {
-                    choiceClass += ' incorrect-option';
-                  }
-                  if (isSelected) {
-                    choiceClass += ' selected-option';
-                  }
-                  
-                  return (
-                    <div
-                      key={option.id}
-                      className={choiceClass}
-                    >
-                      <span className="choice-letter">{option.value}</span>
-                      <div 
-                        className="option-text"
-                        dangerouslySetInnerHTML={{ __html: renderResponse(option.text, questions[selectedQuestion]) }}
-                      />
-                    </div>
-                  );
-                })}
+                {[...questions[selectedQuestion].options]
+                  .sort((a, b) => {
+                    // Sort by option value (A, B, C, D)
+                    return a.value.localeCompare(b.value);
+                  })
+                  .map((option) => {
+                    const isSelected = questions[selectedQuestion].userAnswer?.selectedOptionId === option.id;
+                    const isCorrectOption = option.isCorrect;
+                    
+                    let choiceClass = 'choice-button';
+                    if (isCorrectOption) {
+                      choiceClass += ' correct-option';
+                    } else if (isSelected) {
+                      choiceClass += ' incorrect-option';
+                    }
+                    if (isSelected) {
+                      choiceClass += ' selected-option';
+                    }
+                    
+                    return (
+                      <div
+                        key={option.id}
+                        className={choiceClass}
+                      >
+                        <span className="choice-letter">{option.value}</span>
+                        <div 
+                          className="option-text"
+                          dangerouslySetInnerHTML={{ __html: isMathQuestion(questions[selectedQuestion]) 
+                            ? renderMathFromModule(option.text)
+                            : renderReadingContent(option.text) }}
+                        />
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           ) : (

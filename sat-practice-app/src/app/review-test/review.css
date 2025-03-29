@@ -288,7 +288,9 @@
 
 .option-text {
   flex: 1;
-  margin-left: 5px;
+  margin-left: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .choice-letter {
@@ -468,5 +470,18 @@
 
 /* Fix for katex in options */
 .choice-button .katex {
-  font-size: 1em;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.choice-button .katex-display {
+  margin: 1em 0;
+  text-align: center;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Ensure consistent spacing in math options */
+.option-text p {
+  margin: 0.75em 0;
 } 
