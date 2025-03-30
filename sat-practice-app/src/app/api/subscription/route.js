@@ -190,13 +190,14 @@ export async function DELETE(request) {
       
       // Try a simpler approach - just update by user_id and don't select
       try {
-        const { error: updateError } = await supabase
+        const { data: updateData, error: updateError } = await supabase
           .from('subscriptions')
           .update({ 
             status: 'canceled_with_access'
           })
           .eq('id', subscription.id);
         
+        console.log('Subscription update result:', { data: updateData, error: updateError });
         if (updateError) {
           console.error('Error updating by user_id:', updateError);
           
