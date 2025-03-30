@@ -193,8 +193,11 @@ function PracticeTestContent() {
         setQuestions(data.questions)
         setModuleInfo(data.moduleInfo)
         
-        // Only reset these states if we're not loading from a paused test
-        if (!loadedFromPausedTest.current) {
+        // Check if this is Module 2
+        const isModule2 = data.moduleInfo && data.moduleInfo.moduleNumber === 2
+        
+        // Only reset these states if we're not loading from a paused test, or if this is Module 2
+        if (!loadedFromPausedTest.current || isModule2) {
           setCurrentQuestion(0)
           setAnswers({})
           setFlaggedQuestions(new Set())
@@ -238,8 +241,9 @@ function PracticeTestContent() {
   }, [timeRemaining, isLoading, error, testComplete])
   
   const handleSubmitClick = () => {
-    // Only open submit modal if at least one question is answered
-    if (Object.keys(answers).length > 0) {
+    // Only open submit modal if at least one question in the current module is answered
+    const currentModuleAnsweredCount = questions.filter(q => answers[q.id] !== undefined).length;
+    if (currentModuleAnsweredCount > 0) {
       setShowSubmitModal(true)
       // Pause timer
       clearInterval(timerRef.current)
@@ -251,12 +255,19 @@ function PracticeTestContent() {
     setIsLoading(true)
     
     try {
-      // Format answers for submission
-      const formattedAnswers = Object.entries(answers).map(([questionId, data]) => ({
+      // Format answers for submission - only include answers for the current module
+      const currentModuleAnswers = {};
+      questions.forEach(q => {
+        if (answers[q.id]) {
+          currentModuleAnswers[q.id] = answers[q.id];
+        }
+      });
+
+      const formattedAnswers = Object.entries(currentModuleAnswers).map(([questionId, data]) => ({
         questionId: parseInt(questionId),
         selectedOptionId: data.optionId,
         isCorrect: data.isCorrect
-      }))
+      }));
       
       const response = await fetch('/api/submit-practice-module', {
         method: 'POST',
@@ -294,6 +305,10 @@ function PracticeTestContent() {
           // Automatically continue to next module after 5 seconds
           setTimeout(() => {
             if (!testComplete) {
+              // Clear loaded from paused test flag when going to Module 2
+              if (data.nextModule.moduleNumber === 2) {
+                loadedFromPausedTest.current = false
+              }
               router.push(`/PracticeTestMode?testId=${testId}&moduleId=${data.nextModule.id}`)
               setShowScoreModal(false)
             }
@@ -420,14 +435,30 @@ function PracticeTestContent() {
             }
             setAnswers(parsedAnswers);
             
-            // Parse flagged questions
-            const flaggedArray = data.pausedTest.flaggedQuestions || [];
-            setFlaggedQuestions(new Set(flaggedArray.map(id => parseInt(id))));
+            // Parse flagged questions - ensure they're numbers
+            let flaggedArray = [];
+            try {
+              if (data.pausedTest.flaggedQuestions) {
+                flaggedArray = Array.isArray(data.pausedTest.flaggedQuestions) 
+                  ? data.pausedTest.flaggedQuestions 
+                  : JSON.parse(data.pausedTest.flaggedQuestions);
+              }
+            } catch (e) {
+              console.error('Error parsing flagged questions:', e);
+              flaggedArray = [];
+            }
+            
+            // Convert to numbers and create a Set
+            const flaggedSet = new Set(flaggedArray.map(id => 
+              typeof id === 'string' ? parseInt(id) : id
+            ).filter(id => !isNaN(id)));
+            
+            setFlaggedQuestions(flaggedSet);
             
             console.log('Test state restored:', {
               currentQuestion: data.pausedTest.current_question,
               answers: parsedAnswers,
-              flagged: flaggedArray
+              flagged: Array.from(flaggedSet)
             });
           }
         } catch (err) {
@@ -653,7 +684,10 @@ function PracticeTestContent() {
       <div style={styles.modal}>
         <h2 style={styles.modalTitle}>Submit Module?</h2>
         <p style={styles.modalText}>
-          You have answered {Object.keys(answers).length} of {totalQuestions} questions.
+          You have answered {
+            // Only count answers for questions in the current module
+            questions.filter(q => answers[q.id] !== undefined).length
+          } of {totalQuestions} questions.
           Are you sure you want to submit?
         </p>
         

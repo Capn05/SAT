@@ -62,22 +62,42 @@ export async function POST(request) {
         correctAnswers++;
       }
       
-      // Record the answer
-      const { error: answerError } = await supabase
+      // Check if this answer already exists to avoid duplicates
+      const { data: existingAnswer, error: existingError } = await supabase
         .from('user_answers')
-        .insert({
-          user_id,
-          question_id: questionId,
-          selected_option_id: selectedOptionId,
-          is_correct: isCorrect,
-          practice_type: 'test',
-          test_id: moduleData.practice_test_id,
-          answered_at: new Date().toISOString()
-        });
+        .select('id')
+        .eq('user_id', user_id)
+        .eq('question_id', questionId)
+        .eq('test_id', moduleData.practice_test_id)
+        .eq('practice_type', 'test')
+        .maybeSingle();
       
-      if (answerError) {
-        console.error('Error recording answer:', answerError);
-        // Continue with other answers even if one fails
+      if (existingError) {
+        console.error('Error checking existing answer:', existingError);
+        // Continue with recording the answer
+      }
+      
+      // Only insert if this answer doesn't already exist
+      if (!existingAnswer) {
+        // Record the answer
+        const { error: answerError } = await supabase
+          .from('user_answers')
+          .insert({
+            user_id,
+            question_id: questionId,
+            selected_option_id: selectedOptionId,
+            is_correct: isCorrect,
+            practice_type: 'test',
+            test_id: moduleData.practice_test_id,
+            answered_at: new Date().toISOString()
+          });
+        
+        if (answerError) {
+          console.error('Error recording answer:', answerError);
+          // Continue with other answers even if one fails
+        }
+      } else {
+        console.log(`Skipping duplicate answer for question ${questionId}`);
       }
     }
     
@@ -141,31 +161,44 @@ export async function POST(request) {
     } 
     // If this was Module 2, update test analytics
     else if (moduleData.module_number === 2) {
-      // Get the Module 1 score from user_answers
-      const { data: module1Answers, error: module1Error } = await supabase
+      // Get the Module 1 results from user_answers, making sure to only count each question once
+      const { data: moduleAnswers, error: answersError } = await supabase
         .from('user_answers')
-        .select('is_correct')
+        .select('question_id, is_correct')
         .eq('user_id', user_id)
         .eq('test_id', moduleData.practice_test_id)
         .eq('practice_type', 'test');
       
-      if (module1Error) {
-        console.error('Error fetching previous answers:', module1Error);
+      if (answersError) {
+        console.error('Error fetching previous answers:', answersError);
         return NextResponse.json({ error: 'Failed to fetch previous module data' }, { status: 500 });
+      }
+      
+      // Deduplicate answers by keeping only one record per question_id
+      // This ensures we don't double-count if an answer was saved both during pause and submit
+      const moduleAnswersMap = new Map();
+      
+      // Only keep the most recent answer for each question_id
+      for (const answer of moduleAnswers) {
+        moduleAnswersMap.set(answer.question_id, answer.is_correct);
       }
       
       // Get the total questions for the entire test (both modules)
       const totalTestQuestions = singleModuleQuestions * 2; // Double for both modules
       
-      // Calculate Module 1 score
-      const module1Correct = module1Answers.filter(a => a.is_correct).length;
-      
-      // Calculate the combined score (Module 1 + Module 2)
-      const totalCorrect = module1Correct + correctAnswers;
+      // Calculate total correct answers across all modules (deduplicated)
+      const totalCorrect = [...moduleAnswersMap.values()].filter(isCorrect => isCorrect).length;
       
       // Calculate overall percentage based on total questions in both modules
       const overallPercentage = (totalCorrect / totalTestQuestions) * 100;
-        
+      
+      // Count Module 1 answers by filtering out Module 2 question IDs
+      const module2QuestionIds = new Set(answers.map(a => a.questionId));
+      const module1Correct = [...moduleAnswersMap.entries()]
+        .filter(([questionId, _]) => !module2QuestionIds.has(questionId))
+        .filter(([_, isCorrect]) => isCorrect)
+        .length;
+      
       // Delete all paused tests for this test (both modules)
       const { error: deletePausedError } = await supabase
         .from('paused_tests')
