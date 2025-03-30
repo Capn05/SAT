@@ -16,7 +16,16 @@ try {
 
 export async function GET(request) {
   const cookieStore = cookies();
-  const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+  const supabase = createRouteHandlerClient({ 
+    cookies: () => cookieStore,
+    options: {
+      global: {
+        headers: {
+          'Authorization': `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`
+        }
+      }
+    }
+  });
   
   try {
     // Get the current user
@@ -67,7 +76,16 @@ export async function GET(request) {
 // DELETE endpoint for canceling a subscription
 export async function DELETE(request) {
   const cookieStore = cookies();
-  const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+  const supabase = createRouteHandlerClient({ 
+    cookies: () => cookieStore,
+    options: {
+      global: {
+        headers: {
+          'Authorization': `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`
+        }
+      }
+    }
+  });
   
   try {
     console.log('Starting subscription cancellation process');
@@ -251,7 +269,16 @@ export async function DELETE(request) {
 // Update the PATCH endpoint to handle more specific statuses
 export async function PATCH(request) {
   const cookieStore = cookies();
-  const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+  const supabase = createRouteHandlerClient({ 
+    cookies: () => cookieStore,
+    options: {
+      global: {
+        headers: {
+          'Authorization': `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`
+        }
+      }
+    }
+  });
   
   try {
     // Parse request body
