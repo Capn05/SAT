@@ -6,7 +6,7 @@ import { formatTime } from "../lib/utils"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import { processMathInText, renderMathString } from '../components/MathRenderer'
+import { processMathInText, renderMathString, processTableFormat } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
@@ -560,13 +560,45 @@ function PracticeTestContent() {
 
   md.enable('table');
 
-  const renderResponse = (response) => {
+  // Helper function to determine if question is math
+  const isMathQuestion = (question) => {
+    return question && (
+      question.subject_id === 1 || 
+      practiceTestInfo?.subjects?.subject_name === 'Math'
+    );
+  };
+
+  // Render Reading & Writing content with markdown-it
+  const renderReadingContent = (content) => {
+    if (!content) return '';
+    
+    // Process tables first
+    content = processTableFormat(content);
+    
+    // Simple markdown rendering for reading content
+    return md.render(content);
+  };
+
+  // This is specifically for rendering option text in Reading & Writing questions
+  const renderOptionText = (optionText) => {
+    if (!optionText) return '';
+    
+    // Always use markdown rendering for Reading & Writing options
+    return renderReadingContent(optionText);
+  };
+
+  const renderResponse = (response, question) => {
     if (!response) return '';
     
     // Normalize underscores - replace more than 5 consecutive underscores with just 5
     response = response.replace(/_{6,}/g, '_____');
     
-    return renderMathString(response);
+    // Different rendering for Math vs Reading & Writing
+    if (isMathQuestion(question)) {
+      return renderMathString(response);
+    } else {
+      return renderReadingContent(response);
+    }
   };
   
   if (isLoading) {
@@ -836,11 +868,13 @@ function PracticeTestContent() {
                     margin: '0 auto', 
                     fontFamily: '"Minion Pro", Times, serif' 
                   }}>
-                    <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+                    <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text, currentQuestionData) : 'Loading question...' }} className="question-text-container" />
                   </div>
                   
                   <div className="options-container" style={styles.optionsContainer}>
-                    {currentQuestionData.options.map(option => (
+                    {currentQuestionData.options
+                      .sort((a, b) => a.value.localeCompare(b.value)) // Sort options alphabetically (A, B, C, D)
+                      .map(option => (
                       <div
                         key={option.id}
                         style={{
@@ -851,7 +885,7 @@ function PracticeTestContent() {
                       >
                         <div style={styles.optionLetter}>{option.value}</div>
                         <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
-                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label, currentQuestionData) : 'Loading...' }} className="question-text-container" />
                         </div>
                       </div>
                     ))}
@@ -907,12 +941,14 @@ function PracticeTestContent() {
                       whiteSpace: 'pre-wrap',
                       maxWidth: '100%'
                     }}>
-                      <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+                      <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text, currentQuestionData) : 'Loading question...' }} className="question-text-container" />
                     </div>
                   </div>
                   
-                  <div style={styles.rwOptionsContainer}>
-                    {currentQuestionData.options.map(option => (
+                  <div style={styles.rwOptionsContainer} className="rwOptionsContainer">
+                    {currentQuestionData.options
+                      .sort((a, b) => a.value.localeCompare(b.value)) // Sort options alphabetically (A, B, C, D)
+                      .map(option => (
                       <div
                         key={option.id}
                         style={{
@@ -934,7 +970,7 @@ function PracticeTestContent() {
                           whiteSpace: 'pre-wrap',
                           width: '100%'
                         }}>
-                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderOptionText(option.label) : 'Loading...' }} className="question-text-container" />
                         </div>
                       </div>
                     ))}
@@ -1096,6 +1132,57 @@ const globalStyles = `
   
   .question-text-container tr:hover {
     background-color: #f3f4f6;
+  }
+
+  /* Reading & Writing specific styles */
+  .question-text-container p {
+    margin: 0.75em 0;
+  }
+  
+  .question-text-container ul, 
+  .question-text-container ol {
+    padding-left: 1.5rem;
+    margin: 0.75em 0;
+  }
+  
+  .question-text-container li {
+    margin: 0.5em 0;
+  }
+  
+  .question-text-container blockquote {
+    margin: 1em 0;
+    padding-left: 1rem;
+    border-left: 4px solid #e5e7eb;
+    color: #4b5563;
+  }
+  
+  .question-text-container h1, 
+  .question-text-container h2, 
+  .question-text-container h3, 
+  .question-text-container h4 {
+    margin: 1.5em 0 0.5em;
+    font-weight: 600;
+  }
+  
+  /* Answer options styling for Reading & Writing */
+  .rwOptionsContainer .question-text-container p:first-child {
+    margin-top: 0;
+  }
+  
+  .rwOptionsContainer .question-text-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* KaTeX styles */
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0;
+    max-width: 100%;
+  }
+  
+  .katex {
+    font-size: 1.1em;
   }
 `;
 
