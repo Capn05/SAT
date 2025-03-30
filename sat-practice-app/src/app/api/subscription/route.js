@@ -177,7 +177,7 @@ export async function DELETE(request) {
           .update({ 
             status: 'canceled_with_access'
           })
-          .eq('user_id', user.id);
+          .eq('id', subscription.id);
         
         if (updateError) {
           console.error('Error updating by user_id:', updateError);
