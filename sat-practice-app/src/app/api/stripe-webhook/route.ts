@@ -210,7 +210,7 @@ async function handleSubscriptionUpdate(subscription: any) {
     // Get the user_id and current status from the subscription record
     const { data: subData, error: subError } = await supabase
       .from('subscriptions')
-      .select('user_id, status')
+      .select('user_id, status, cancellation_requested')
       .eq('stripe_subscription_id', subscription.id)
       .single();
     
@@ -219,9 +219,9 @@ async function handleSubscriptionUpdate(subscription: any) {
       throw new Error(`Subscription not found: ${subscription.id}`);
     }
     
-    // Don't override canceled_with_access status from Stripe webhook
-    if (subData.status === 'canceled_with_access') {
-      debug('Keeping canceled_with_access status (not overriding with Stripe status)');
+    // Don't override status when cancellation was requested by the user
+    if (subData.cancellation_requested) {
+      debug('User requested cancellation, keeping status as is');
       
       // Only update the period_end if needed, but keep the status
       if (subscription.current_period_end) {
@@ -237,7 +237,7 @@ async function handleSubscriptionUpdate(subscription: any) {
           .eq('stripe_subscription_id', subscription.id);
         
         if (updateError) {
-          debug('Error updating period end for canceled_with_access subscription:', updateError);
+          debug('Error updating period end for cancellation_requested subscription:', updateError);
         }
       }
       return;
@@ -374,7 +374,8 @@ async function handleSubscriptionEnded(subscription: any) {
     const { error: endedSubError } = await supabase
       .from('subscriptions')
       .update({ 
-        status: 'canceled'
+        status: 'canceled',
+        // Keep the cancellation_requested flag as is
       })
       .eq('stripe_subscription_id', subscriptionId);
     

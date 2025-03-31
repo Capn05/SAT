@@ -188,25 +188,29 @@ export async function DELETE(request) {
         table: 'subscriptions'
       });
       
-      // Try a simpler approach - just update by user_id and don't select
+      // Update the subscription with cancellation_requested flag instead of changing status
       try {
         const { data: updateData, error: updateError } = await supabase
           .from('subscriptions')
           .update({ 
-            status: 'canceled_with_access'
+            cancellation_requested: true,
+            // Keep the status as 'active' since they still have access
+            status: 'active'
           })
           .eq('id', subscription.id)
           .select();
         
         console.log('Subscription update result:', { data: updateData, error: updateError });
         if (updateError) {
-          console.error('Error updating by user_id:', updateError);
+          console.error('Error updating subscription:', updateError);
           
           // If that fails, try directly by id
           const { error: idUpdateError } = await supabase
             .from('subscriptions')
             .update({ 
-              status: 'canceled_with_access'
+              cancellation_requested: true,
+              // Keep the status as 'active' since they still have access
+              status: 'active'
             })
             .eq('id', subscription.id);
           
@@ -224,7 +228,8 @@ export async function DELETE(request) {
         // Return success with period end date for the client to update
         return NextResponse.json({ 
           message: 'Subscription canceled successfully',
-          current_period_end: currentPeriodEnd
+          current_period_end: currentPeriodEnd,
+          cancellation_requested: true
         }, { status: 200 });
         
       } catch (dbError) {
@@ -285,7 +290,7 @@ export async function PATCH(request) {
   try {
     // Parse request body
     const requestData = await request.json();
-    const { status, stripe_subscription_id } = requestData;
+    const { status, stripe_subscription_id, cancellation_requested } = requestData;
     
     if (!stripe_subscription_id) {
       return NextResponse.json(
@@ -305,17 +310,26 @@ export async function PATCH(request) {
     }
     
     // Validate status - only accept valid values
-    const validStatuses = ['active', 'canceled_with_access', 'canceled'];
-    const newStatus = validStatuses.includes(status) ? status : 'canceled_with_access';
+    const validStatuses = ['active', 'canceled'];
+    const newStatus = validStatuses.includes(status) ? status : 'active';
     
     console.log(`Manually updating subscription ${stripe_subscription_id} to status: ${newStatus}`);
+    
+    // Create update object
+    const updateData = {
+      status: newStatus
+    };
+    
+    // Only add cancellation_requested if it's explicitly included
+    if (cancellation_requested !== undefined) {
+      updateData.cancellation_requested = !!cancellation_requested;
+      console.log(`Setting cancellation_requested to: ${updateData.cancellation_requested}`);
+    }
     
     // Update the subscription in the database
     const { data, error } = await supabase
       .from('subscriptions')
-      .update({
-        status: newStatus
-      })
+      .update(updateData)
       .eq('stripe_subscription_id', stripe_subscription_id)
       .eq('user_id', user.id)
       .select();
@@ -331,7 +345,8 @@ export async function PATCH(request) {
     return NextResponse.json({ 
       message: 'Subscription updated successfully',
       updated: !!data && data.length > 0,
-      status: newStatus
+      status: newStatus,
+      cancellation_requested: updateData.cancellation_requested
     }, { status: 200 });
     
   } catch (error) {
