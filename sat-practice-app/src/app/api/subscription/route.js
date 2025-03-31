@@ -158,98 +158,31 @@ export async function DELETE(request) {
       let canceledSubscription;
       let currentPeriodEnd = subscription.current_period_end;
       
-      // Try to cancel in Stripe first
-      try {
-        // Cancel at period end instead of immediately to maintain access
-        canceledSubscription = await stripe.subscriptions.update(
-          subscription.stripe_subscription_id,
-          { cancel_at_period_end: true }
-        );
-        
-        if (canceledSubscription.current_period_end) {
-          currentPeriodEnd = new Date(canceledSubscription.current_period_end * 1000).toISOString();
-        }
-        
-        console.log('Stripe cancellation successful, subscription will end at period end');
-      } catch (stripeApiError) {
-        // Log the error but continue to update in Supabase
-        console.error('Stripe API error (continuing with local cancellation):', {
-          type: stripeApiError.type,
-          code: stripeApiError.code,
-          message: stripeApiError.message
-        });
+      // Cancel at period end instead of immediately to maintain access
+      canceledSubscription = await stripe.subscriptions.update(
+        subscription.stripe_subscription_id,
+        { cancel_at_period_end: true }
+      );
+      
+      if (canceledSubscription.current_period_end) {
+        currentPeriodEnd = new Date(canceledSubscription.current_period_end * 1000).toISOString();
       }
       
-      // Log the subscription details before updating
-      console.log('Updating subscription in Supabase:', {
-        id: subscription.id,
-        user_id: subscription.user_id,
-        stripe_subscription_id: subscription.stripe_subscription_id,
-        table: 'subscriptions'
-      });
+      console.log('Stripe cancellation successful, subscription will end at period end');
       
-      // Update the subscription with cancellation_requested flag instead of changing status
-      try {
-        const { data: updateData, error: updateError } = await supabase
-          .from('subscriptions')
-          .update({ 
-            cancellation_requested: true,
-            // Keep the status as 'active' since they still have access
-            status: 'active'
-          })
-          .eq('id', subscription.id)
-          .select();
-        
-        console.log('Subscription update result:', { data: updateData, error: updateError });
-        if (updateError) {
-          console.error('Error updating subscription:', updateError);
-          
-          // If that fails, try directly by id
-          const { error: idUpdateError } = await supabase
-            .from('subscriptions')
-            .update({ 
-              cancellation_requested: true,
-              // Keep the status as 'active' since they still have access
-              status: 'active'
-            })
-            .eq('id', subscription.id);
-          
-          if (idUpdateError) {
-            console.error('Error updating by id:', idUpdateError);
-            return NextResponse.json(
-              { error: 'Failed to update subscription status in database: ' + idUpdateError.message }, 
-              { status: 500 }
-            );
-          }
-        }
-        
-        console.log('Subscription cancellation completed successfully');
-        
-        // Return success with period end date for the client to update
-        return NextResponse.json({ 
-          message: 'Subscription canceled successfully',
-          current_period_end: currentPeriodEnd,
-          cancellation_requested: true
-        }, { status: 200 });
-        
-      } catch (dbError) {
-        console.error('Database operation error:', dbError);
-        return NextResponse.json(
-          { 
-            error: 'Database error when updating subscription',
-            details: dbError.message
-          }, 
-          { status: 500 }
-        );
-      }
+      // Return success with period end date for the client to update
+      // Don't update Supabase here - let the webhook handle that
+      return NextResponse.json({ 
+        message: 'Subscription canceled successfully',
+        current_period_end: currentPeriodEnd
+      }, { status: 200 });
       
     } catch (stripeError) {
       console.error('Stripe error details:', {
         type: stripeError.type,
         code: stripeError.code,
         message: stripeError.message,
-        param: stripeError.param,
-        stack: stripeError.stack
+        param: stripeError.param
       });
       
       return NextResponse.json(
