@@ -28,48 +28,55 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
     }
 
+    // Calculate the start date (last 30 days)
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - 30);
+    const startDateStr = startDate.toISOString();
+
     // Get user's performance data from user_skill_analytics
     const { data: skillAnalytics, error: analyticsError } = await supabase
       .from('user_skill_analytics')
-      .select('total_attempts, correct_attempts')
-      .eq('user_id', userId);
+      .select('total_attempts, correct_attempts, last_practiced')
+      .eq('user_id', userId)
+      .gte('last_practiced', startDateStr);
 
     if (analyticsError) {
       console.error('Error fetching skill analytics:', analyticsError);
       return NextResponse.json({ error: 'Failed to fetch analytics' }, { status: 500 });
     }
 
-    // Get user's test answers from user_answers table
-    const { data: testAnswers, error: testAnswersError } = await supabase
+    // Get user's answers from user_answers table
+    const { data: answers, error: answersError } = await supabase
       .from('user_answers')
       .select('is_correct')
       .eq('user_id', userId)
-      .eq('practice_type', 'test');
+      .gte('answered_at', startDateStr)
+      .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`);
 
-    if (testAnswersError) {
-      console.error('Error fetching test answers:', testAnswersError);
-      return NextResponse.json({ error: 'Failed to fetch test answers' }, { status: 500 });
+    if (answersError) {
+      console.error('Error fetching answers:', answersError);
+      return NextResponse.json({ error: 'Failed to fetch answers' }, { status: 500 });
     }
 
     // Calculate total from skill analytics
     const skillTotalAttempts = skillAnalytics.reduce((sum, record) => sum + record.total_attempts, 0);
     const skillCorrectAttempts = skillAnalytics.reduce((sum, record) => sum + record.correct_attempts, 0);
     
-    // Calculate total from test answers
-    const testTotalAttempts = testAnswers.length;
-    const testCorrectAttempts = testAnswers.filter(answer => answer.is_correct).length;
+    // Calculate total from answers
+    const answersTotalAttempts = answers.length;
+    const answersCorrectAttempts = answers.filter(answer => answer.is_correct).length;
     
     // Calculate combined statistics
-    const totalAttempts = skillTotalAttempts + testTotalAttempts;
-    const correctAttempts = skillCorrectAttempts + testCorrectAttempts;
+    const totalAttempts = skillTotalAttempts + answersTotalAttempts;
+    const correctAttempts = skillCorrectAttempts + answersCorrectAttempts;
     const accuracyPercentage = totalAttempts > 0
       ? (correctAttempts / totalAttempts) * 100
       : 0;
 
-    console.log(`User stats: Total attempts = ${totalAttempts} (${skillTotalAttempts} from skills + ${testTotalAttempts} from tests)`);
-    console.log(`User stats: Correct answers = ${correctAttempts} (${skillCorrectAttempts} from skills + ${testCorrectAttempts} from tests)`);
+    console.log(`User stats: Total attempts = ${totalAttempts} (${skillTotalAttempts} from skills + ${answersTotalAttempts} from answers)`);
+    console.log(`User stats: Correct answers = ${correctAttempts} (${skillCorrectAttempts} from skills + ${answersCorrectAttempts} from answers)`);
     console.log(`User stats: Accuracy = ${accuracyPercentage.toFixed(2)}%`);
-    console.log(`User stats: Test answers make up ${((testTotalAttempts / totalAttempts) * 100).toFixed(2)}% of all attempts`);
+    console.log(`User stats: Answers make up ${((answersTotalAttempts / totalAttempts) * 100).toFixed(2)}% of all attempts`);
 
     return NextResponse.json({
       stats: {

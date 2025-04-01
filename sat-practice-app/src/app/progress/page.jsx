@@ -93,16 +93,22 @@ export default function ProgressPage() {
     if (progressData?.dailyData) {
       calculateStats(progressData.dailyData);
     }
+    if (progressData?.overallStats) {
+      setStats(prevStats => ({
+        ...prevStats,
+        totalQuestions: progressData.overallStats.totalQuestions,
+        totalCorrect: progressData.overallStats.totalCorrect
+      }));
+    }
   }, [progressData]);
 
   const calculateStats = (dailyData) => {
     if (!dailyData || !dailyData.length) {
-      setStats({
-        totalQuestions: 0,
-        totalCorrect: 0,
+      setStats(prevStats => ({
+        ...prevStats,
         accuracyTrend: null,
         correctToday: null
-      });
+      }));
       return;
     }
     
@@ -126,21 +132,10 @@ export default function ProgressPage() {
     const lastDayWithData = sortedData[0];
     const previousDayWithData = sortedData[1];
     
-    // Calculate totals
-    const totalQuestions = sortedData.reduce((sum, day) => sum + (day.total || 0), 0);
-    const totalCorrect = sortedData.reduce((sum, day) => sum + (day.correct || 0), 0);
-    
     // Calculate accuracy trend (if we have at least 2 days of data)
     let accuracyTrend = null;
     if (lastDayWithData && previousDayWithData) {
-      const lastDayAccuracy = lastDayWithData.total > 0 
-        ? (lastDayWithData.correct / lastDayWithData.total) * 100 
-        : 0;
-      const previousDayAccuracy = previousDayWithData.total > 0 
-        ? (previousDayWithData.correct / previousDayWithData.total) * 100 
-        : 0;
-      
-      accuracyTrend = lastDayAccuracy - previousDayAccuracy;
+      accuracyTrend = lastDayWithData.accuracy - previousDayWithData.accuracy;
     }
     
     // Calculate correct answers added today
@@ -149,12 +144,11 @@ export default function ProgressPage() {
       correctToday = todayData.correct;
     }
     
-    setStats({
-      totalQuestions,
-      totalCorrect,
+    setStats(prevStats => ({
+      ...prevStats,
       accuracyTrend,
       correctToday
-    });
+    }));
   };
 
   const generateFallbackData = () => {
