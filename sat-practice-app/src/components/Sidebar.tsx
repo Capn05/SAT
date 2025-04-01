@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOpen, Crosshair, Rabbit, LogOut, User, Settings, CreditCard } from "lucide-react"
 import styles from "./sidebar.module.css"
@@ -150,7 +151,15 @@ export default function Sidebar() {
         height: '100vh'
       }}>
         <div className={styles.header}>
-          <span className={styles.logoIcon}>S</span>
+          <div className={styles.logoWrapper}>
+            <Image
+              src="/landing/assets/images/logo.png"
+              alt="SAT Study Logo"
+              width={40}
+              height={40}
+              className={styles.logo}
+            />
+          </div>
         </div>
 
         <nav className={styles.nav} style={{ width: '100%', flex: 1 }}>

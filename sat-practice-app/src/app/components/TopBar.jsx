@@ -25,8 +25,7 @@ export default function TopBar({ title }) {
   
   return (
     <div style={styles.header}>
-      <div style={styles.logoContainer}>
-        <GraduationCap style={styles.logo} />
+      <div style={styles.titleContainer}>
         <h1 style={styles.title}>{title}</h1>
       </div>
     </div>
@@ -42,19 +41,14 @@ const styles = {
     backgroundColor: 'white',
     borderBottom: '1px solid #e5e7eb',
   },
-  logoContainer: {
+  titleContainer: {
     display: 'flex',
     alignItems: 'center',
-    gap: '12px',
-  },
-  logo: {
-    width: '24px',
-    height: '24px',
-    color: '#65a30d',
   },
   title: {
     fontSize: '20px',
     fontWeight: 600,
+    color: '#111827',
     margin: 0,
   }
 }

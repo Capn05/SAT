@@ -15,14 +15,15 @@ const Component = () => {
       padding: '0 20px',
       textAlign: 'center'
     }}>
-      <h1 style={{
-        fontSize: '2.5rem',
-        fontWeight: 'bold',
-        marginBottom: '1.5rem',
-        color: 'black'
-      }}>
-        Brill
-      </h1>
+      <img 
+        src="/landing/assets/images/logo.png" 
+        alt="Brill Logo" 
+        style={{
+          height: '48px',
+          width: 'auto',
+          marginBottom: '1.5rem'
+        }}
+      />
       <p style={{
         fontSize: '1.25rem',
         marginBottom: '2rem',

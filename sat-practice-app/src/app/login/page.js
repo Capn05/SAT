@@ -79,7 +79,7 @@ function LoginContent() {
       display: 'flex',
       alignItems: 'center',
       gap: '8px',
-      marginBottom: '32px',
+      marginBottom: '15px',
     },
     logo: {
       width: '32px',
@@ -182,8 +182,7 @@ function LoginContent() {
   return (
     <div style={styles.container}>
       <div style={styles.logoContainer}>
-        <GraduationCap style={styles.logo} />
-        <h1 style={styles.title}>Brill</h1>
+        <img src="/landing/assets/images/logo.png" alt="Brill Logo" style={{ height: '80px', width: 'auto' }} />
       </div>
       
       <div style={styles.card}>
