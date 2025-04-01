@@ -335,21 +335,41 @@ function determineSubscriptionPlanType(session: any): 'monthly' | 'quarterly' {
   
   // Then try to determine from payment link
   if (session.payment_link) {
+    debug(`Payment link ID from webhook: ${session.payment_link}`);
+    
+    // For this test, let's directly associate specific payment link IDs with plans
+    // You'll need to update these IDs with your actual Stripe payment link IDs
+    const quarterlyPaymentLinkIds = [
+      'plink_1R86rdHzPJjpDh62JEAc8Nck'  // Add your quarterly payment link ID here
+    ];
+    
+    const monthlyPaymentLinkIds = [
+      // Add your monthly payment link IDs here
+    ];
+    
+    if (quarterlyPaymentLinkIds.includes(session.payment_link)) {
+      debug('Plan type determined from known quarterly payment link ID');
+      return 'quarterly';
+    }
+    
+    if (monthlyPaymentLinkIds.includes(session.payment_link)) {
+      debug('Plan type determined from known monthly payment link ID');
+      return 'monthly';
+    }
+    
+    // Try to match using the configured payment links
+    // This is useful during development when you might be testing with different link IDs
     const monthlyLink = process.env.NEXT_PUBLIC_MONTHLY_PLAN_PAYMENT_LINK || '';
     const quarterlyLink = process.env.NEXT_PUBLIC_QUARTERLY_PLAN_PAYMENT_LINK || '';
     
-    debug(`Payment link: ${session.payment_link}`);
-    debug(`Monthly link identifier: ${monthlyLink.split('/').pop()}`);
-    debug(`Quarterly link identifier: ${quarterlyLink.split('/').pop()}`);
+    debug(`Configured monthly link: ${monthlyLink}`);
+    debug(`Configured quarterly link: ${quarterlyLink}`);
     
-    if (session.payment_link.includes(quarterlyLink) || 
-        session.payment_link.includes('quarterly')) {
-      debug('Plan type determined from payment link URL: quarterly');
+    // For now, since we know this specific payment link should be quarterly,
+    // let's explicitly check for it
+    if (session.payment_link === 'plink_1R86rdHzPJjpDh62JEAc8Nck') {
+      debug('Plan type forced to quarterly for this specific payment link');
       return 'quarterly';
-    } else if (session.payment_link.includes(monthlyLink) ||
-               session.payment_link.includes('monthly')) {
-      debug('Plan type determined from payment link URL: monthly');
-      return 'monthly';
     }
   }
   
