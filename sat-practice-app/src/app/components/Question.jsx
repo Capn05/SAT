@@ -903,7 +903,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         />
 
         <div style={styles.questionContent}>
-          <h2 style={styles.title}>Question {currentIndex + 1}:</h2>
+          <h2 style={styles.title}>Question {currentIndex + 1}</h2>
           
           <div 
             style={styles.questionText}
