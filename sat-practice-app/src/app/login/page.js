@@ -182,7 +182,7 @@ function LoginContent() {
   return (
     <div style={styles.container}>
       <div style={styles.logoContainer}>
-        <img src="/landing/assets/images/logo.png" alt="Brill Logo" style={{ height: '80px', width: 'auto' }} />
+        <img src="/assets/images/logo.png" alt="Brill Logo" style={{ height: '80px', width: 'auto' }} />
       </div>
       
       <div style={styles.card}>

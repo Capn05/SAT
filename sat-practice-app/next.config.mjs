@@ -15,6 +15,20 @@ const nextConfig = {
   api: {
     bodyParser: false,
   },
+  async rewrites() {
+    return [
+      // The welcome page will be the static landing page
+      {
+        source: '/welcome',
+        destination: '/index.html',
+      },
+      // Legacy support for landing path
+      {
+        source: '/landing',
+        destination: '/index.html',
+      }
+    ]
+  },
 };
 
 export default nextConfig;

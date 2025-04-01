@@ -226,11 +226,11 @@
 <body class="font-sans antialiased bg-gray-50 text-base text-gray-700"> <!-- Added base text size -->
     <!-- Conversion-optimized Navigation Bar with section links -->
     <header class="bg-white sticky top-0 z-50 shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="max-w-7xl mx-auto pl-0 pr-4 sm:pr-6 lg:pr-8">
             <div class="flex justify-between h-16 items-center">
                 <!-- Logo - Left side -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img src="/landing/assets/images/logo.png" alt="Brill Logo" class="h-16 w-auto">
+                    <img src="/assets/images/logo.png" alt="Brill Logo" class="h-20 w-auto ml-0"> <!-- Increased height from h-16 to h-20 and removed any potential right margin with ml-0 -->
                 </div>
                 
                 <!-- Middle section with page navigation - desktop only -->
@@ -284,7 +284,7 @@
     
     <!-- Hero Section -->
     <section class="py-12 md:py-16 lg:py-24 bg-white"> <!-- Adjusted padding -->
-        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16"> <!-- Adjusted padding -->
+        <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-24"> <!-- Increased left and right margins -->
             <div class="md:flex md:items-center md:justify-between md:space-x-6">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-4 text-center md:text-left"> <!-- Centered text on mobile -->
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 md:mb-8 fade-in"> <!-- Adjusted font size and margin -->
@@ -302,7 +302,7 @@
                     <div class="bg-white rounded-xl shadow-md p-4 md:p-6 mb-8 md:mb-10 max-w-md md:max-w-xl mx-auto md:mx-0 border border-gray-100 fade-in delay-200"> <!-- Adjusted padding, max-width, margin -->
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mr-3 md:mr-4">
-                                <img src="/landing/assets/images/santi-aguirre.jpeg" alt="Student" class="h-12 w-12 md:h-16 md:w-16 rounded-full object-cover border-2 border-emerald-400" style="transform: rotate(-90deg);"> <!-- Adjusted size -->
+                                <img src="/assets/images/santi-aguirre.jpeg" alt="Student" class="h-12 w-12 md:h-16 md:w-16 rounded-full object-cover border-2 border-emerald-400" style="transform: rotate(-90deg);"> <!-- Adjusted size -->
                             </div>
                             <div>
                                 <p class="text-gray-700 italic mb-2 text-base md:text-lg lg:text-xl">"The AI tutor helped me go from 1290 to a 1510 after 6 weeks "</p> <!-- Adjusted font size -->
@@ -330,18 +330,20 @@
                 <div class="md:w-7/12 relative fade-in delay-400 mt-10 md:mt-0"> <!-- Added top margin for mobile -->
                     <!-- Product Demo Video - Removed float animation -->
                     <div class="w-full rounded-xl overflow-hidden shadow-xl" style="max-width: 90%; margin: 0 auto;">
-                        <video
-                            class="w-full h-auto object-cover"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            poster="/landing/assets/images/ai-tutor.png">
-                            <source src="/landing/assets/videos/quick_practice_demo.mp4" type="video/mp4">
-                            <!-- Fallback content -->
-                            <img src="/landing/assets/images/ai-tutor.png" alt="Brill Demo" class="w-full h-auto">
-                            <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
-                        </video>
+                        <div style="width: 100%; aspect-ratio: 16/13; position: relative; overflow: hidden;">
+                            <video
+                                class="w-full h-full object-cover absolute inset-0"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                poster="/assets/images/ai-tutor.png">
+                                <source src="/assets/videos/quick_practice_demo.mp4" type="video/mp4">
+                                <!-- Fallback content -->
+                                <img src="/assets/images/ai-tutor.png" alt="Brill Demo" class="w-full h-full object-cover">
+                                <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
+                            </video>
+                        </div>
                     </div>
 
                     <!-- Optional caption -->
@@ -478,27 +480,27 @@
                 <div class="logo-scroll">
                     <!-- First set of logos -->
                     <div class="logo-group">
-                        <img src="/landing/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-24 lg:h-28 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-24 lg:h-28 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
                     </div>
                     <!-- Second set of logos (duplicate for smooth scroll) -->
                     <div class="logo-group">
-                        <img src="/landing/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-20 lg:h-24 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
-                        <img src="/landing/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-20 lg:h-24 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
                     </div>
                 </div>
             </div>
@@ -528,7 +530,7 @@
 
             <!-- Smaller secondary image below (optional) -->
             <div class="max-w-md md:max-w-2xl lg:max-w-4xl mx-auto mt-8"> <!-- Adjusted max-width -->
-                <img src="/landing/assets/images/ollie.png" alt="AI Hint Example" class="w-full h-auto rounded-lg shadow-xl">
+                <img src="/assets/images/ollie.png" alt="AI Hint Example" class="w-full h-auto rounded-lg shadow-xl">
             </div>
         </div>
     </section>
@@ -540,10 +542,10 @@
                 <div class="md:w-1/2 mb-12 md:mb-16 lg:mb-0 slide-in-left"> <!-- Adjusted margin -->
                     <div class="relative hover-lift max-w-md mx-auto md:max-w-none"> <!-- Added max-width and centering for mobile -->
                         <div class="card shadow-xl rounded-xl overflow-hidden mb-8">
-                            <img src="/landing/assets/images/quick-practice.png" alt="Quick Practice Sessions" class="w-full">
+                            <img src="/assets/images/quick-practice.png" alt="Quick Practice Sessions" class="w-full">
                         </div>
                         <div class="card shadow-xl rounded-xl overflow-hidden absolute bottom-0 right-0 w-2/3 transform translate-x-1/6 translate-y-1/4 hidden md:block"> <!-- Hide smaller image on mobile -->
-                            <img src="/landing/assets/images/difficulty.png" alt="Select Difficulty" class="w-full">
+                            <img src="/assets/images/difficulty.png" alt="Select Difficulty" class="w-full">
                         </div>
                     </div>
                 </div>
@@ -616,10 +618,10 @@
                             loop
                             muted
                             playsinline
-                            poster="/landing/assets/images/practice-test.png">
-                            <source src="/landing/assets/videos/full_test_demo.mp4" type="video/mp4">
+                            poster="/assets/images/practice-test.png">
+                            <source src="/assets/videos/full_test_demo.mp4" type="video/mp4">
                             <!-- Fallback content -->
-                            <img src="/landing/assets/images/practice-test.png" alt="Full Length Practice Test" class="w-full h-auto">
+                            <img src="/assets/images/practice-test.png" alt="Full Length Practice Test" class="w-full h-auto">
                             <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
                         </video>
                     </div>
@@ -636,7 +638,7 @@
             <div class="md:flex md:items-center md:space-x-12 lg:space-x-20">
                 <div class="md:w-7/12 mb-12 md:mb-16 lg:mb-0 scale-in"> <!-- Adjusted margin -->
                     <div class="card hover-lift max-w-xl mx-auto md:max-w-none"> <!-- Added max-width and centering for mobile -->
-                        <img src="/landing/assets/images/targeted-practice.png" alt="Targeted Domain Practice" class="w-full">
+                        <img src="/assets/images/targeted-practice.png" alt="Targeted Domain Practice" class="w-full">
                     </div>
                 </div>
                 <div class="md:w-1/2 text-center md:text-left"> <!-- Centered text on mobile -->
@@ -1338,7 +1340,7 @@
                         <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Elite Education</h3> <!-- Adjusted font size -->
                         <div class="space-y-4 md:space-y-6"> <!-- Adjusted spacing -->
                             <div class="flex items-center">
-                                <img src="/landing/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
+                                <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
                                 <div>
                                     <p class="text-gray-900 font-medium text-sm md:text-base">Harvard Educated</p> <!-- Adjusted font size -->
                                     <p class="text-gray-500 text-xs md:text-sm">Computer Science</p> <!-- Adjusted font size -->
@@ -1346,7 +1348,7 @@
                             </div>
 
                             <div class="flex items-center">
-                                <img src="/landing/assets/images/universities/rice.svg.png" alt="Rice University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
+                                <img src="/assets/images/universities/rice.svg.png" alt="Rice University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
                                 <div>
                                     <p class="text-gray-900 font-medium text-sm md:text-base">Rice Educated</p> <!-- Adjusted font size -->
                                     <p class="text-gray-500 text-xs md:text-sm">Computer Science</p> <!-- Adjusted font size -->
@@ -1465,7 +1467,7 @@
         </div>
     </footer>
 
-    <script src="/landing/js/main.js"></script>
+    <script src="/js/main.js"></script>
 
 
 </body>

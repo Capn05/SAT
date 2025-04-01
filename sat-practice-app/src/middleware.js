@@ -12,20 +12,16 @@ export async function middleware(req) {
     '/login',
     '/signup',
     '/forgot-password',
-    '/pricing'
+    '/pricing',
+    '/welcome'  // New landing page path
   ];
   
   if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
     return NextResponse.next();
   }
   
-  // Special case for root path
+  // Root path (/) now redirects to /welcome via the page component
   if (req.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/landing/index.html', req.url));
-  }
-  
-  // Landing pages should bypass auth check 
-  if (req.nextUrl.pathname === '/landing' || req.nextUrl.pathname.startsWith('/landing/')) {
     return NextResponse.next();
   }
   
