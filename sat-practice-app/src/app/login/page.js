@@ -183,7 +183,7 @@ function LoginContent() {
     <div style={styles.container}>
       <div style={styles.logoContainer}>
         <GraduationCap style={styles.logo} />
-        <h1 style={styles.title}>SATPrepPro</h1>
+        <h1 style={styles.title}>Brill</h1>
       </div>
       
       <div style={styles.card}>

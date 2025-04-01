@@ -21,7 +21,7 @@ const Component = () => {
         marginBottom: '1.5rem',
         color: 'black'
       }}>
-        SAT Prep Pro
+        Brill
       </h1>
       <p style={{
         fontSize: '1.25rem',

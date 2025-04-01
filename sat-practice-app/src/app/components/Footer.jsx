@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer style={styles.footer}>
       <div style={styles.content}>
-        <p style={styles.text}>© 2025 SATPrepPro. All rights reserved.</p>
+        <p style={styles.text}>© 2025 Brill. All rights reserved.</p>
         <div style={styles.links}>
           <a href="/terms" style={styles.link}>
             Terms of Service
@@ -20,7 +20,7 @@ export default function Footer() {
       <div style={styles.love}>
         <span>Made with </span>
         <Heart style={styles.heartIcon} />
-        <span> by the SATPrepPro Team</span>
+        <span> by the Brill Team</span>
       </div>
     </footer>
   )

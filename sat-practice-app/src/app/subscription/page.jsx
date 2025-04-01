@@ -579,7 +579,7 @@ function SubscriptionContent() {
                 You don't have an active subscription
               </h3>
               <p style={{ fontSize: '16px', color: '#4b5563', marginBottom: '24px', maxWidth: '500px', margin: '0 auto 24px' }}>
-                Subscribe to SAT Prep Pro to get full access to all practice questions, tests, and analytics features.
+                Subscribe to Brill to get full access to all practice questions, tests, and analytics features.
               </p>
               
               <Link href="/pricing">
@@ -870,7 +870,7 @@ function SubscriptionContent() {
               <h3 style={styles.feedbackTitle}>We Value Your Feedback</h3>
               <p style={styles.feedbackText}>
                 Your feedback helps us improve our service. 
-                Let us know how we can make SAT Prep Pro better for you.
+                Let us know how we can make Brill better for you.
               </p>
               <button 
                 style={styles.secondaryButton} 
