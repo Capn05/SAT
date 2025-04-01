@@ -340,7 +340,7 @@ function determineSubscriptionPlanType(session: any): 'monthly' | 'quarterly' {
     // For this test, let's directly associate specific payment link IDs with plans
     // You'll need to update these IDs with your actual Stripe payment link IDs
     const quarterlyPaymentLinkIds = [
-      'plink_1R86rdHzPJjpDh62JEAc8Nck'  // Add your quarterly payment link ID here
+      'plink_1R8raYHzPJjpDh62N5ekIljI'  // Add your quarterly payment link ID here
     ];
     
     const monthlyPaymentLinkIds = [

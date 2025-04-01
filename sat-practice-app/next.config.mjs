@@ -15,6 +15,14 @@ const nextConfig = {
   api: {
     bodyParser: false,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/landing/index.html',
+      },
+    ]
+  },
 };
 
 export default nextConfig;
