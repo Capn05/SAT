@@ -17,10 +17,16 @@ const nextConfig = {
   },
   async rewrites() {
     return [
+      // The welcome page will be the static landing page
       {
-        source: '/',
+        source: '/welcome',
         destination: '/index.html',
       },
+      // Legacy support for landing path
+      {
+        source: '/landing',
+        destination: '/index.html',
+      }
     ]
   },
 };
