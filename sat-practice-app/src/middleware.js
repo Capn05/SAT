@@ -12,21 +12,16 @@ export async function middleware(req) {
     '/login',
     '/signup',
     '/forgot-password',
-    '/pricing'
+    '/pricing',
+    '/welcome'  // New landing page path
   ];
   
   if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
     return NextResponse.next();
   }
   
-  // Root path (/) now serves the landing page directly through next.config.mjs rewrites
-  // so we just need to let it pass through
+  // Root path (/) now redirects to /welcome via the page component
   if (req.nextUrl.pathname === '/') {
-    return NextResponse.next();
-  }
-  
-  // Landing pages should bypass auth check (keeping this for backward compatibility)
-  if (req.nextUrl.pathname === '/landing' || req.nextUrl.pathname.startsWith('/landing/')) {
     return NextResponse.next();
   }
   
