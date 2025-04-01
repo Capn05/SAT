@@ -310,6 +310,7 @@ function SubscriptionContent() {
             id: data.subscription.id,
             plan: getPlanName(data.subscription.plan_type),
             status: data.subscription.status,
+            cancellation_requested: data.subscription.cancellation_requested || false,
             startDate: data.subscription.current_period_start || data.subscription.created_at,
             endDate: data.subscription.current_period_end,
             price: formatPrice(data.subscription.plan_type),
@@ -320,9 +321,9 @@ function SubscriptionContent() {
           
           // Check URL for cancel status (for when Supabase update might have failed)
           const cancelStatus = searchParams.get('canceled')
-          if (cancelStatus === 'true' && subscriptionData.status !== 'canceled') {
+          if (cancelStatus === 'true' && !subscriptionData.cancellation_requested) {
             console.log('URL indicates canceled subscription, updating local state');
-            subscriptionData.status = 'canceled'
+            subscriptionData.cancellation_requested = true
             
             // Show cancellation success message
             setTimeout(() => {
@@ -405,19 +406,54 @@ function SubscriptionContent() {
   const hasActiveAccess = (sub) => {
     if (!sub) return false;
     
-    // User has access if:
-    // 1. Subscription is active, OR
-    // 2. Subscription is canceled_with_access, OR
-    // 3. Subscription is canceled but end date is in the future
-    if (sub.status === 'active' || sub.status === 'canceled_with_access') return true;
-    
-    if (sub.status === 'canceled' && sub.endDate) {
+    // User has access if subscription is active and end date is in the future
+    if (sub.status === 'active') {
       const endDate = new Date(sub.endDate);
       const now = new Date();
       return endDate > now;
     }
     
     return false;
+  };
+  
+  // Get subscription display status
+  const getSubscriptionDisplayStatus = (sub) => {
+    if (!sub) return 'Inactive';
+    
+    if (sub.status === 'active') {
+      if (sub.cancellation_requested) {
+        return 'Active (Canceled)';
+      }
+      return 'Active';
+    }
+    
+    return 'Canceled';
+  };
+  
+  // Get subscription status badge style
+  const getStatusBadgeStyle = (sub) => {
+    if (!sub) return {};
+    
+    if (sub.status === 'active') {
+      if (sub.cancellation_requested) {
+        // Orange for canceled but still active
+        return {
+          backgroundColor: '#fff7ed',
+          color: '#f97316'
+        };
+      }
+      // Green for active
+      return {
+        backgroundColor: '#ecfdf5',
+        color: '#10b981'
+      };
+    }
+    
+    // Red for canceled
+    return {
+      backgroundColor: '#fef2f2',
+      color: '#ef4444'
+    };
   };
   
   const handleFeedbackSuccess = () => {
@@ -436,8 +472,7 @@ function SubscriptionContent() {
     if (subscription) {
       setSubscription({
         ...subscription,
-        status: 'canceled_with_access',
-        canceledAt: new Date().toISOString(),
+        cancellation_requested: true,
         endDate: data?.current_period_end || subscription.endDate
       });
     }
@@ -471,7 +506,7 @@ function SubscriptionContent() {
         },
         body: JSON.stringify({
           stripe_subscription_id: subscription.stripeSubscriptionId,
-          status: 'canceled_with_access'
+          cancellation_requested: true
         })
       });
       
@@ -485,7 +520,7 @@ function SubscriptionContent() {
         // Still update local state even if the API call failed
         setSubscription({
           ...subscription,
-          status: 'canceled_with_access'
+          cancellation_requested: true
         });
       }
     } catch (error) {
@@ -544,7 +579,7 @@ function SubscriptionContent() {
                 You don't have an active subscription
               </h3>
               <p style={{ fontSize: '16px', color: '#4b5563', marginBottom: '24px', maxWidth: '500px', margin: '0 auto 24px' }}>
-                Subscribe to SAT Prep Pro to get full access to all practice questions, tests, and analytics features.
+                Subscribe to Brill to get full access to all practice questions, tests, and analytics features.
               </p>
               
               <Link href="/pricing">
@@ -612,7 +647,26 @@ function SubscriptionContent() {
         </div>
       )}
       
-      {subscription?.status !== 'canceled' && searchParams.get('canceled') === 'true' && (
+      {subscription?.cancellation_requested && searchParams.get('canceled') !== 'true' && (
+        <div style={{
+          display: 'flex',
+          padding: '12px 24px',
+          backgroundColor: '#fff7ed',
+          color: '#c2410c',
+          borderRadius: '6px',
+          margin: '10px 24px',
+          fontSize: '14px',
+          alignItems: 'center',
+          gap: '10px'
+        }}>
+          <AlertCircle size={18} />
+          <span>
+            Your subscription has been canceled. You'll continue to have access until {formatDate(subscription?.endDate)}.
+          </span>
+        </div>
+      )}
+      
+      {subscription?.status === 'active' && !subscription?.cancellation_requested && searchParams.get('canceled') === 'true' && (
         <div style={{
           display: 'flex',
           justifyContent: 'center',
@@ -620,7 +674,7 @@ function SubscriptionContent() {
           backgroundColor: '#fff7ed',
           color: '#9a3412',
           borderRadius: '6px',
-          margin: '10px 0',
+          margin: '10px 24px',
           fontSize: '14px',
           alignItems: 'center',
           gap: '10px'
@@ -662,16 +716,9 @@ function SubscriptionContent() {
                 <div style={styles.infoLabel}>Status</div>
                 <div style={{
                   ...styles.statusBadge,
-                  backgroundColor: subscription?.status === 'active' ? '#ecfdf5' : 
-                                  subscription?.status === 'canceled_with_access' ? '#fff7ed' : 
-                                  subscription?.status === 'canceled' ? '#fef2f2' : '#fef3c7',
-                  color: subscription?.status === 'active' ? '#10b981' : 
-                        subscription?.status === 'canceled_with_access' ? '#f97316' : 
-                        subscription?.status === 'canceled' ? '#ef4444' : '#d97706'
+                  ...getStatusBadgeStyle(subscription)
                 }}>
-                  {subscription?.status === 'active' ? 'Active' : 
-                   subscription?.status === 'canceled_with_access' ? 'Active (Canceled)' : 
-                   subscription?.status === 'canceled' ? 'Canceled' : 'Inactive'}
+                  {getSubscriptionDisplayStatus(subscription)}
                 </div>
               </div>
             </div>
@@ -692,7 +739,7 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  {subscription?.status === 'canceled' ? 'Access Until' : 'Renewal Date'}
+                  {subscription?.cancellation_requested ? 'Access Until' : 'Renewal Date'}
                 </div>
                 <div style={styles.infoValue}>
                   {formatDate(subscription?.endDate)}
@@ -720,7 +767,7 @@ function SubscriptionContent() {
             </div>
             
             {/* For active subscription - show days remaining and progress bar */}
-            {subscription?.status === 'active' && (
+            {subscription?.status === 'active' && !subscription?.cancellation_requested && (
               <div style={styles.timeRemaining}>
                 <div style={styles.progressBarContainer}>
                   <div 
@@ -736,20 +783,32 @@ function SubscriptionContent() {
               </div>
             )}
             
-            {/* For canceled subscription - show access until date */}
+            {/* For canceled but still active subscription - show access until banner */}
+            {subscription?.status === 'active' && subscription?.cancellation_requested && (
+              <div style={styles.accessUntil}>
+                <div style={styles.accessUntilIcon}>
+                  <Calendar size={20} style={{ color: '#f97316' }} />
+                </div>
+                <div style={styles.accessUntilText}>
+                  Your subscription is canceled. Access ends on {formatDate(subscription?.endDate)}
+                </div>
+              </div>
+            )}
+            
+            {/* For fully canceled subscription - show access until date */}
             {subscription?.status === 'canceled' && (
               <div style={styles.accessUntil}>
                 <div style={styles.accessUntilIcon}>
                   <Calendar size={20} style={{ color: '#9ca3af' }} />
                 </div>
                 <div style={styles.accessUntilText}>
-                  Your access will end on {formatDate(subscription?.endDate)}
+                  Your access has ended
                 </div>
               </div>
             )}
             
             <div style={{ display: 'flex', gap: '16px', marginTop: '20px' }}>
-              {subscription?.status === 'active' ? (
+              {subscription?.status === 'active' && !subscription?.cancellation_requested ? (
                 <>
                   <Link href="/pricing" style={{ flex: 1 }}>
                     <button style={styles.renewButton}>
@@ -811,7 +870,7 @@ function SubscriptionContent() {
               <h3 style={styles.feedbackTitle}>We Value Your Feedback</h3>
               <p style={styles.feedbackText}>
                 Your feedback helps us improve our service. 
-                Let us know how we can make SAT Prep Pro better for you.
+                Let us know how we can make Brill better for you.
               </p>
               <button 
                 style={styles.secondaryButton} 

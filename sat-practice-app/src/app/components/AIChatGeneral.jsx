@@ -48,7 +48,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
       const messages = [
         {
           role: 'system',
-          content: `Your name is Ollie, You are a helpful SAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. 
+          content: `Your name is Brill, You are a helpful SAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. 
            Use markdown for all output.When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`,
         },
         { role: 'user', content: questionToUse },
@@ -137,7 +137,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
 
   return (
     <div style={styles.container}>
-      <h3 style={styles.title}>Ollie: Your Personalized AI Tutor</h3>
+      <h3 style={styles.title}>Brill: Your Personalized AI Tutor</h3>
       <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputContainer}>
         <MessageCircle style={styles.icon} />
         <input

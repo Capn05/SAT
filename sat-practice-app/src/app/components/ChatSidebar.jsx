@@ -51,7 +51,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
       const messages = [
         {
           role: 'system',
-          content: `Your name is Ollie. You are a helpful SAT tutoring assistant. Your answers should be crafted to be understood by a 15 year old kid. Format your responses with clear structure:
+          content: `Your name is Brill. You are a helpful SAT tutoring assistant. Your answers should be crafted to be understood by a 15 year old kid. Format your responses with clear structure:
           - Use headers (##) for main sections
           - Use bullet points for lists
           - **Bold** important concepts
@@ -158,7 +158,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   return (
     <aside style={styles.sidebar}>
       <div style={styles.header}>
-        <h3>Review your Answers with Ollie</h3>
+        <h3>Review your Answers with Brill</h3>
       </div>
       <div style={styles.chatContainer}>
         <div style={styles.responseContainer} dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />

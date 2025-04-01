@@ -66,7 +66,7 @@ export default function FeedbackPage() {
             <h2 style={styles.successTitle}>Thank You for Your Feedback!</h2>
             <p style={styles.successMessage}>
               We appreciate you taking the time to share your thoughts with us.
-              Your feedback helps us improve SAT Prep Pro for everyone.
+              Your feedback helps us improve Brill for everyone.
             </p>
             <p style={styles.redirectMessage}>
               Redirecting you back to the subscription page...
@@ -96,7 +96,7 @@ export default function FeedbackPage() {
           <div style={styles.cardContent}>
             <p style={styles.introText}>
               Your feedback is valuable to us. Please let us know how we can improve 
-              your experience with SAT Prep Pro.
+              your experience with Brill.
             </p>
             
             <form onSubmit={handleSubmit} style={styles.form}>

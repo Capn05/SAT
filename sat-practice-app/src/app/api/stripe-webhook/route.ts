@@ -91,6 +91,7 @@ export async function POST(req: NextRequest) {
         break;
       
       case 'customer.subscription.updated':
+        debug('Processing subscription update event');
         await handleSubscriptionUpdate(event.data.object);
         break;
         
@@ -210,7 +211,7 @@ async function handleSubscriptionUpdate(subscription: any) {
     // Get the user_id and current status from the subscription record
     const { data: subData, error: subError } = await supabase
       .from('subscriptions')
-      .select('user_id, status')
+      .select('user_id, status, cancellation_requested')
       .eq('stripe_subscription_id', subscription.id)
       .single();
     
@@ -219,56 +220,63 @@ async function handleSubscriptionUpdate(subscription: any) {
       throw new Error(`Subscription not found: ${subscription.id}`);
     }
     
-    // Don't override canceled_with_access status from Stripe webhook
-    if (subData.status === 'canceled_with_access') {
-      debug('Keeping canceled_with_access status (not overriding with Stripe status)');
+    // Convert Unix timestamp to Date if it's a number
+    const periodEndDate = typeof subscription.current_period_end === 'number' 
+      ? new Date(subscription.current_period_end * 1000) 
+      : subscription.current_period_end ? new Date(subscription.current_period_end) : null;
       
-      // Only update the period_end if needed, but keep the status
-      if (subscription.current_period_end) {
-        const periodEndDate = typeof subscription.current_period_end === 'number' 
-          ? new Date(subscription.current_period_end * 1000) 
-          : new Date(subscription.current_period_end);
-        
-        const { error: updateError } = await supabase
-          .from('subscriptions')
-          .update({
-            current_period_end: periodEndDate.toISOString(),
-          })
-          .eq('stripe_subscription_id', subscription.id);
-        
-        if (updateError) {
-          debug('Error updating period end for canceled_with_access subscription:', updateError);
-        }
+    // Check if this is a cancellation - Stripe sets cancel_at_period_end flag
+    if (subscription.cancel_at_period_end === true) {
+      debug('Detected subscription is set to cancel at period end');
+      
+      const { error: cancelUpdateError } = await supabase
+        .from('subscriptions')
+        .update({
+          cancellation_requested: true,
+          // Keep status as active since they still have access
+          status: 'active',
+          // Update period end if provided
+          ...(periodEndDate && { current_period_end: periodEndDate.toISOString() })
+        })
+        .eq('stripe_subscription_id', subscription.id);
+      
+      if (cancelUpdateError) {
+        debug('Error updating subscription for cancellation:', cancelUpdateError);
+      } else {
+        debug('Successfully marked subscription as cancellation_requested');
       }
       return;
     }
     
-    // Original logic for other statuses
-    // Validate current_period_end is available for updates
+    // If subscription is canceled immediately
     if (subscription.status === 'canceled') {
-      // For canceled subscriptions, we don't need to update the period end
+      debug('Subscription is fully canceled');
+      
       const { error: updateError } = await supabase
         .from('subscriptions')
         .update({
-          status: subscription.status,
+          status: 'canceled',
+          // If it was already marked for cancellation, keep that flag
+          cancellation_requested: true
         })
         .eq('stripe_subscription_id', subscription.id);
       
       if (updateError) {
-        debug('Error updating subscription status:', updateError);
-        throw new Error(`Database error: ${updateError.message}`);
+        debug('Error updating subscription status to canceled:', updateError);
       }
-    } else if (subscription.current_period_end) {
-      // Convert Unix timestamp to Date if it's a number
-      const periodEndDate = typeof subscription.current_period_end === 'number' 
-        ? new Date(subscription.current_period_end * 1000) 
-        : new Date(subscription.current_period_end);
-      
+      return;
+    }
+    
+    // Handle normal subscription updates
+    if (periodEndDate) {
       const { error: updateError } = await supabase
         .from('subscriptions')
         .update({
           status: subscription.status,
           current_period_end: periodEndDate.toISOString(),
+          // If it's active and not set to cancel, ensure cancellation_requested is false
+          ...(subscription.status === 'active' && !subscription.cancel_at_period_end 
+            ? { cancellation_requested: false } : {})
         })
         .eq('stripe_subscription_id', subscription.id);
       
@@ -283,6 +291,9 @@ async function handleSubscriptionUpdate(subscription: any) {
         .from('subscriptions')
         .update({
           status: subscription.status,
+          // If it's active and not set to cancel, ensure cancellation_requested is false
+          ...(subscription.status === 'active' && !subscription.cancel_at_period_end 
+            ? { cancellation_requested: false } : {})
         })
         .eq('stripe_subscription_id', subscription.id);
       
@@ -370,11 +381,14 @@ async function handleSubscriptionEnded(subscription: any) {
     }
     
     const subscriptionId = subscription.id;
+    debug(`Processing fully ended subscription: ${subscriptionId}`);
     
     const { error: endedSubError } = await supabase
       .from('subscriptions')
       .update({ 
-        status: 'canceled'
+        status: 'canceled',
+        // Ensure cancellation_requested is also set since the subscription has ended
+        cancellation_requested: true
       })
       .eq('stripe_subscription_id', subscriptionId);
     
