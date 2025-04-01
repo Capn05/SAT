@@ -21,6 +21,7 @@ const styles = {
     fontSize: "24px",
     fontWeight: 600,
     color: "#111827",
+    margin: 0,
   }
 }
 
