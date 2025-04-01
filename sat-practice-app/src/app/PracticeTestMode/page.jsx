@@ -6,7 +6,7 @@ import { formatTime } from "../lib/utils"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import { processMathInText, renderMathString } from '../components/MathRenderer'
+import { processMathInText, renderMathString, processTableFormat } from '../components/MathRenderer'
 import 'katex/dist/katex.min.css'
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
@@ -193,8 +193,11 @@ function PracticeTestContent() {
         setQuestions(data.questions)
         setModuleInfo(data.moduleInfo)
         
-        // Only reset these states if we're not loading from a paused test
-        if (!loadedFromPausedTest.current) {
+        // Check if this is Module 2
+        const isModule2 = data.moduleInfo && data.moduleInfo.moduleNumber === 2
+        
+        // Only reset these states if we're not loading from a paused test, or if this is Module 2
+        if (!loadedFromPausedTest.current || isModule2) {
           setCurrentQuestion(0)
           setAnswers({})
           setFlaggedQuestions(new Set())
@@ -238,8 +241,9 @@ function PracticeTestContent() {
   }, [timeRemaining, isLoading, error, testComplete])
   
   const handleSubmitClick = () => {
-    // Only open submit modal if at least one question is answered
-    if (Object.keys(answers).length > 0) {
+    // Only open submit modal if at least one question in the current module is answered
+    const currentModuleAnsweredCount = questions.filter(q => answers[q.id] !== undefined).length;
+    if (currentModuleAnsweredCount > 0) {
       setShowSubmitModal(true)
       // Pause timer
       clearInterval(timerRef.current)
@@ -251,12 +255,19 @@ function PracticeTestContent() {
     setIsLoading(true)
     
     try {
-      // Format answers for submission
-      const formattedAnswers = Object.entries(answers).map(([questionId, data]) => ({
+      // Format answers for submission - only include answers for the current module
+      const currentModuleAnswers = {};
+      questions.forEach(q => {
+        if (answers[q.id]) {
+          currentModuleAnswers[q.id] = answers[q.id];
+        }
+      });
+
+      const formattedAnswers = Object.entries(currentModuleAnswers).map(([questionId, data]) => ({
         questionId: parseInt(questionId),
         selectedOptionId: data.optionId,
         isCorrect: data.isCorrect
-      }))
+      }));
       
       const response = await fetch('/api/submit-practice-module', {
         method: 'POST',
@@ -294,6 +305,10 @@ function PracticeTestContent() {
           // Automatically continue to next module after 5 seconds
           setTimeout(() => {
             if (!testComplete) {
+              // Clear loaded from paused test flag when going to Module 2
+              if (data.nextModule.moduleNumber === 2) {
+                loadedFromPausedTest.current = false
+              }
               router.push(`/PracticeTestMode?testId=${testId}&moduleId=${data.nextModule.id}`)
               setShowScoreModal(false)
             }
@@ -420,14 +435,30 @@ function PracticeTestContent() {
             }
             setAnswers(parsedAnswers);
             
-            // Parse flagged questions
-            const flaggedArray = data.pausedTest.flaggedQuestions || [];
-            setFlaggedQuestions(new Set(flaggedArray.map(id => parseInt(id))));
+            // Parse flagged questions - ensure they're numbers
+            let flaggedArray = [];
+            try {
+              if (data.pausedTest.flaggedQuestions) {
+                flaggedArray = Array.isArray(data.pausedTest.flaggedQuestions) 
+                  ? data.pausedTest.flaggedQuestions 
+                  : JSON.parse(data.pausedTest.flaggedQuestions);
+              }
+            } catch (e) {
+              console.error('Error parsing flagged questions:', e);
+              flaggedArray = [];
+            }
+            
+            // Convert to numbers and create a Set
+            const flaggedSet = new Set(flaggedArray.map(id => 
+              typeof id === 'string' ? parseInt(id) : id
+            ).filter(id => !isNaN(id)));
+            
+            setFlaggedQuestions(flaggedSet);
             
             console.log('Test state restored:', {
               currentQuestion: data.pausedTest.current_question,
               answers: parsedAnswers,
-              flagged: flaggedArray
+              flagged: Array.from(flaggedSet)
             });
           }
         } catch (err) {
@@ -529,13 +560,45 @@ function PracticeTestContent() {
 
   md.enable('table');
 
-  const renderResponse = (response) => {
+  // Helper function to determine if question is math
+  const isMathQuestion = (question) => {
+    return question && (
+      question.subject_id === 1 || 
+      practiceTestInfo?.subjects?.subject_name === 'Math'
+    );
+  };
+
+  // Render Reading & Writing content with markdown-it
+  const renderReadingContent = (content) => {
+    if (!content) return '';
+    
+    // Process tables first
+    content = processTableFormat(content);
+    
+    // Simple markdown rendering for reading content
+    return md.render(content);
+  };
+
+  // This is specifically for rendering option text in Reading & Writing questions
+  const renderOptionText = (optionText) => {
+    if (!optionText) return '';
+    
+    // Always use markdown rendering for Reading & Writing options
+    return renderReadingContent(optionText);
+  };
+
+  const renderResponse = (response, question) => {
     if (!response) return '';
     
     // Normalize underscores - replace more than 5 consecutive underscores with just 5
     response = response.replace(/_{6,}/g, '_____');
     
-    return renderMathString(response);
+    // Different rendering for Math vs Reading & Writing
+    if (isMathQuestion(question)) {
+      return renderMathString(response);
+    } else {
+      return renderReadingContent(response);
+    }
   };
   
   if (isLoading) {
@@ -653,7 +716,10 @@ function PracticeTestContent() {
       <div style={styles.modal}>
         <h2 style={styles.modalTitle}>Submit Module?</h2>
         <p style={styles.modalText}>
-          You have answered {Object.keys(answers).length} of {totalQuestions} questions.
+          You have answered {
+            // Only count answers for questions in the current module
+            questions.filter(q => answers[q.id] !== undefined).length
+          } of {totalQuestions} questions.
           Are you sure you want to submit?
         </p>
         
@@ -802,11 +868,13 @@ function PracticeTestContent() {
                     margin: '0 auto', 
                     fontFamily: '"Minion Pro", Times, serif' 
                   }}>
-                    <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+                    <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text, currentQuestionData) : 'Loading question...' }} className="question-text-container" />
                   </div>
                   
                   <div className="options-container" style={styles.optionsContainer}>
-                    {currentQuestionData.options.map(option => (
+                    {currentQuestionData.options
+                      .sort((a, b) => a.value.localeCompare(b.value)) // Sort options alphabetically (A, B, C, D)
+                      .map(option => (
                       <div
                         key={option.id}
                         style={{
@@ -817,7 +885,7 @@ function PracticeTestContent() {
                       >
                         <div style={styles.optionLetter}>{option.value}</div>
                         <div style={{ ...styles.optionText, fontFamily: '"Minion Pro", Times, serif' }}>
-                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label, currentQuestionData) : 'Loading...' }} className="question-text-container" />
                         </div>
                       </div>
                     ))}
@@ -873,12 +941,14 @@ function PracticeTestContent() {
                       whiteSpace: 'pre-wrap',
                       maxWidth: '100%'
                     }}>
-                      <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text) : 'Loading question...' }} className="question-text-container" />
+                      <div dangerouslySetInnerHTML={{ __html: currentQuestionData.question_text ? renderResponse(currentQuestionData.question_text, currentQuestionData) : 'Loading question...' }} className="question-text-container" />
                     </div>
                   </div>
                   
-                  <div style={styles.rwOptionsContainer}>
-                    {currentQuestionData.options.map(option => (
+                  <div style={styles.rwOptionsContainer} className="rwOptionsContainer">
+                    {currentQuestionData.options
+                      .sort((a, b) => a.value.localeCompare(b.value)) // Sort options alphabetically (A, B, C, D)
+                      .map(option => (
                       <div
                         key={option.id}
                         style={{
@@ -900,7 +970,7 @@ function PracticeTestContent() {
                           whiteSpace: 'pre-wrap',
                           width: '100%'
                         }}>
-                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderResponse(option.label) : 'Loading...' }} className="question-text-container" />
+                          <div dangerouslySetInnerHTML={{ __html: option.label ? renderOptionText(option.label) : 'Loading...' }} className="question-text-container" />
                         </div>
                       </div>
                     ))}
@@ -1062,6 +1132,57 @@ const globalStyles = `
   
   .question-text-container tr:hover {
     background-color: #f3f4f6;
+  }
+
+  /* Reading & Writing specific styles */
+  .question-text-container p {
+    margin: 0.75em 0;
+  }
+  
+  .question-text-container ul, 
+  .question-text-container ol {
+    padding-left: 1.5rem;
+    margin: 0.75em 0;
+  }
+  
+  .question-text-container li {
+    margin: 0.5em 0;
+  }
+  
+  .question-text-container blockquote {
+    margin: 1em 0;
+    padding-left: 1rem;
+    border-left: 4px solid #e5e7eb;
+    color: #4b5563;
+  }
+  
+  .question-text-container h1, 
+  .question-text-container h2, 
+  .question-text-container h3, 
+  .question-text-container h4 {
+    margin: 1.5em 0 0.5em;
+    font-weight: 600;
+  }
+  
+  /* Answer options styling for Reading & Writing */
+  .rwOptionsContainer .question-text-container p:first-child {
+    margin-top: 0;
+  }
+  
+  .rwOptionsContainer .question-text-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* KaTeX styles */
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0;
+    max-width: 100%;
+  }
+  
+  .katex {
+    font-size: 1.1em;
   }
 `;
 
