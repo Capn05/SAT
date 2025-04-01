@@ -226,11 +226,11 @@
 <body class="font-sans antialiased bg-gray-50 text-base text-gray-700"> <!-- Added base text size -->
     <!-- Conversion-optimized Navigation Bar with section links -->
     <header class="bg-white sticky top-0 z-50 shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="max-w-7xl mx-auto pl-0 pr-4 sm:pr-6 lg:pr-8">
             <div class="flex justify-between h-16 items-center">
                 <!-- Logo - Left side -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img src="/assets/images/logo.png" alt="Brill Logo" class="h-16 w-auto">
+                    <img src="/assets/images/logo.png" alt="Brill Logo" class="h-20 w-auto ml-0"> <!-- Increased height from h-16 to h-20 and removed any potential right margin with ml-0 -->
                 </div>
                 
                 <!-- Middle section with page navigation - desktop only -->
@@ -284,7 +284,7 @@
     
     <!-- Hero Section -->
     <section class="py-12 md:py-16 lg:py-24 bg-white"> <!-- Adjusted padding -->
-        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16"> <!-- Adjusted padding -->
+        <div class="max-w-full mx-auto px-6 sm:px-10 lg:px-24"> <!-- Increased left and right margins -->
             <div class="md:flex md:items-center md:justify-between md:space-x-6">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-4 text-center md:text-left"> <!-- Centered text on mobile -->
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 md:mb-8 fade-in"> <!-- Adjusted font size and margin -->
@@ -330,18 +330,20 @@
                 <div class="md:w-7/12 relative fade-in delay-400 mt-10 md:mt-0"> <!-- Added top margin for mobile -->
                     <!-- Product Demo Video - Removed float animation -->
                     <div class="w-full rounded-xl overflow-hidden shadow-xl" style="max-width: 90%; margin: 0 auto;">
-                        <video
-                            class="w-full h-auto object-cover"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            poster="/assets/images/ai-tutor.png">
-                            <source src="/assets/videos/quick_practice_demo.mp4" type="video/mp4">
-                            <!-- Fallback content -->
-                            <img src="/assets/images/ai-tutor.png" alt="Brill Demo" class="w-full h-auto">
-                            <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
-                        </video>
+                        <div style="width: 100%; aspect-ratio: 16/13; position: relative; overflow: hidden;">
+                            <video
+                                class="w-full h-full object-cover absolute inset-0"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                poster="/assets/images/ai-tutor.png">
+                                <source src="/assets/videos/quick_practice_demo.mp4" type="video/mp4">
+                                <!-- Fallback content -->
+                                <img src="/assets/images/ai-tutor.png" alt="Brill Demo" class="w-full h-full object-cover">
+                                <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
+                            </video>
+                        </div>
                     </div>
 
                     <!-- Optional caption -->
