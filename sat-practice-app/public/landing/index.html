@@ -238,7 +238,7 @@
                 
                 <!-- Middle section with page navigation - desktop only -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="#practice-at-your-own-pace" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">Product</a>
+                    <a href="#meet-brill" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">Product</a>
                     <a href="#pricing" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors relative group">
                         Pricing
                         <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-1/2 transition-all duration-300"></span>
@@ -279,7 +279,7 @@
             <div class="bg-gray-50 py-2 text-center border-t border-gray-100">
                 <div class="flex items-center justify-center">
                     <span class="text-yellow-500 mr-1">★★★★★</span>
-                    <span class="text-gray-600 text-xs font-medium">4.9/5 from 2,000+ students</span>
+                    <span class="text-gray-600 text-xs font-medium">4.9/5 from ourstudents</span>
                 </div>
             </div>
         </div>
@@ -509,7 +509,7 @@
     </section>
     
     <!-- AI Tutor Section - Add animated background -->
-    <section class="py-12 md:py-16 lg:py-24 relative animated-bg"> <!-- Adjusted padding -->
+    <section id='meet-brill'class="py-12 md:py-16 lg:py-24 relative animated-bg"> <!-- Adjusted padding -->
         <div class="absolute top-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div> <!-- Adjusted height -->
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -1281,6 +1281,45 @@
     <!-- JavaScript for FAQ Toggle Functionality -->
     <script>
         // ... existing FAQ script ...
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                // Collapse the content
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                // Expand the content
+                // Set max-height to the scroll height to allow for dynamic content height
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
+
+                // Optional: Close other open FAQs when one is opened
+                // document.querySelectorAll('.faq-toggle[aria-expanded="true"]').forEach(openButton => {
+                //     if (openButton !== button) {
+                //         const openContent = openButton.nextElementSibling;
+                //         const openIcon = openButton.querySelector('.faq-icon');
+                //         openContent.style.maxHeight = '0px';
+                //         openIcon.style.transform = 'rotate(0deg)';
+                //         openButton.setAttribute('aria-expanded', 'false');
+                //     }
+                // });
+            }
+        }
+
+        // Initialize all FAQs to collapsed state and set aria attributes
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            const content = button.nextElementSibling;
+            content.style.maxHeight = '0px'; // Ensure it starts collapsed
+            content.style.transition = 'max-height 0.5s ease-in-out'; // Add smooth transition via JS
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-controls', content.id || ''); // Add aria-controls if content has an ID
+            const icon = button.querySelector('.faq-icon');
+            icon.style.transition = 'transform 0.3s ease-in-out'; // Add transition for icon rotation
+        });
     </script>
 </section>
     <!-- Team/Founders Section - Updated to match hero style -->
