@@ -153,7 +153,7 @@ export default function Sidebar() {
         <div className={styles.header}>
           <div className={styles.logoWrapper}>
             <Image
-              src="/landing/assets/images/logo.png"
+              src="/assets/images/logo.png"
               alt="SAT Study Logo"
               width={40}
               height={40}
