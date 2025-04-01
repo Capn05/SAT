@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brill - Get Your Best SAT Score, Faster:
+        AI-Personalized Prep</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #10b981;
+            --primary-light: #e6f0e6;
+            --text-dark: #111827;
+            --text-muted: #4b5563;
+            --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: var(--card-shadow);
+            padding: 1.25rem;
+        }
+        
+        /* Logo Scroll Animation */
+        .logo-scroll-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .logo-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+        
+        .logo-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Pause animation on hover */
+        .logo-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Fade-in animations for hero section */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 {
+            transition-delay: 0.1s;
+        }
+        
+        .delay-200 {
+            transition-delay: 0.2s;
+        }
+        
+        .delay-300 {
+            transition-delay: 0.3s;
+        }
+        
+        .delay-400 {
+            transition-delay: 0.4s;
+        }
+        
+        .delay-500 {
+            transition-delay: 0.5s;
+        }
+        
+        /* New animations */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pulse-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .slide-in-left.active, .slide-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .scale-in.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* Animated background for sections */
+        .animated-bg {
+            background: linear-gradient(-45deg, #0d114d, #191e6e, #4553fa, #0d114d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Typing animation for hero text */
+        .typing-container {
+            display: inline-block;
+        }
+        
+        .typing-text {
+            /* Ensure the typing text wraps on smaller screens if needed */
+            white-space: normal; /* Changed from nowrap */
+            overflow: hidden;
+            border-right: 3px solid #10b981;
+            /* Adjust animation timing if needed for mobile */
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+            display: inline-block; /* Keep inline-block for animation */
+            vertical-align: bottom; /* Align better with wrapped text */
+        }
+        
+        @media (min-width: 768px) { /* Apply nowrap only on md screens and up */
+            .typing-text {
+                white-space: nowrap;
+            }
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #10b981 }
+        }
+        
+        /* Parallax effect */
+        .parallax {
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-base text-gray-700"> <!-- Added base text size -->
+    <!-- Conversion-optimized Navigation Bar with section links -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo - Left side -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="/assets/images/logo.png" alt="Brill Logo" class="h-16 w-auto">
+                </div>
+                
+                <!-- Middle section with page navigation - desktop only -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#meet-brill" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">Product</a>
+                    <a href="#pricing" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors relative group">
+                        Pricing
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-1/2 transition-all duration-300"></span>
+                        <span class="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-1/2 transition-all duration-300"></span>
+                    </a>
+                    <a href="#faq" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">FAQ</a>
+                    
+
+                    <a href="#team" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">Team</a>
+
+                </div>
+                
+                <!-- Right side with social proof + CTA -->
+                <div class="flex items-center">
+  
+                    
+                    <!-- CTA Buttons -->
+                    <!-- Adjusted padding and text size for mobile -->
+                    <a href="/login" class="mr-2 md:mr-3 px-3 py-2 md:px-5 md:py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-emerald-600 hover:text-emerald-700 transition-all duration-200">Log in</a>
+                    <a href="/signup" class="btn-primary bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-sm hover:shadow-md px-3 py-2 md:px-5 md:py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 hover:brightness-105 whitespace-nowrap">Sign up →</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mobile navigation menu (optimized for conversions) -->
+        <div class="md:hidden border-t border-gray-100">
+            <div class="flex justify-center items-center p-2 space-x-1 sm:space-x-2"> <!-- Adjusted spacing -->
+                <a href="#meet-brill" class="px-2 sm:px-3 py-1.5 text-xs font-medium text-gray-700 hover:text-emerald-600 transition-colors">Product</a>
+                <span class="text-gray-300">|</span>
+                <a href="#team" class="px-2 sm:px-3 py-1.5 text-xs font-medium text-gray-700 hover:text-emerald-600 transition-colors">Team</a>
+                <span class="text-gray-300">|</span>
+                <a href="#faq" class="px-2 sm:px-3 py-1.5 text-xs font-medium text-gray-700 hover:text-emerald-600 transition-colors">FAQ</a>
+                <span class="text-gray-300">|</span>
+                <a href="#pricing" class="px-2 sm:px-3 py-1.5 text-xs font-medium text-gray-700 hover:text-emerald-600 transition-colors">Pricing</a>
+            </div>
+            
+            <!-- Mobile social proof banner below navbar -->
+            <div class="bg-gray-50 py-2 text-center border-t border-gray-100">
+                <div class="flex items-center justify-center">
+                    <span class="text-yellow-500 mr-1">★★★★★</span>
+                    <span class="text-gray-600 text-xs font-medium">4.9/5 from our students</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="py-12 md:py-16 lg:py-24 bg-white"> <!-- Adjusted padding -->
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16"> <!-- Adjusted padding -->
+            <div class="md:flex md:items-center md:justify-between md:space-x-6">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-4 text-center md:text-left"> <!-- Centered text on mobile -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 md:mb-8 fade-in"> <!-- Adjusted font size and margin -->
+                        Get Your Best <span class="text-green-500">SAT</span> Score, Faster: <br class="hidden md:inline"> <!-- Hide break on mobile -->
+                        <span class="typing-container"><span class="typing-text">AI-Personalized Prep</span></span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 md:mb-10 leading-relaxed fade-in delay-100"> <!-- Adjusted font size and margin -->
+                        Master SAT concepts faster with AI-powered guidance tailored to your learning needs.
+                    </p>
+
+                    <div class="mb-8 md:mb-12"></div> <!-- Adjusted margin -->
+
+                    <!-- User Review Card -->
+                    <div class="bg-white rounded-xl shadow-md p-4 md:p-6 mb-8 md:mb-10 max-w-md md:max-w-xl mx-auto md:mx-0 border border-gray-100 fade-in delay-200"> <!-- Adjusted padding, max-width, margin -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-3 md:mr-4">
+                                <img src="/assets/images/santi-aguirre.jpeg" alt="Student" class="h-12 w-12 md:h-16 md:w-16 rounded-full object-cover border-2 border-emerald-400" style="transform: rotate(-90deg);"> <!-- Adjusted size -->
+                            </div>
+                            <div>
+                                <p class="text-gray-700 italic mb-2 text-base md:text-lg lg:text-xl">"The AI tutor helped me go from 1290 to a 1510 after 6 weeks "</p> <!-- Adjusted font size -->
+                                <div class="flex items-center flex-wrap"> <!-- Allow wrapping -->
+                                    <p class="font-medium text-gray-900 text-base md:text-lg lg:text-xl mr-2">Santi A.</p> <!-- Adjusted font size -->
+                                    <div class="flex my-1 md:my-0"> <!-- Added margin for wrap -->
+                                        <svg class="h-5 w-5 md:h-6 md:w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"> <!-- Adjusted size -->
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"> <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path> </svg>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"> <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path> </svg>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"> <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path> </svg>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"> <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path> </svg>
+                                    </div>
+                                    <span class="ml-2 text-emerald-600 font-semibold text-base md:text-lg lg:text-xl">+220 pts</span> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/signup" class="btn-primary text-lg md:text-xl lg:text-2xl px-8 py-4 md:px-10 md:py-6 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-r from-emerald-500 to-emerald-600 border-2 border-emerald-400 flex items-center justify-center w-full sm:w-3/4 lg:w-2/3 mx-auto md:mx-0 hover:brightness-110 fade-in delay-300 pulse-btn"> <!-- Adjusted size, width, margin -->
+                        <span class="mr-2"></span> Sign up  <span class="ml-2">→</span>
+                    </a>
+                </div>
+                <div class="md:w-7/12 relative fade-in delay-400 mt-10 md:mt-0"> <!-- Added top margin for mobile -->
+                    <!-- Product Demo Video - Removed float animation -->
+                    <div class="w-full rounded-xl overflow-hidden shadow-xl" style="max-width: 90%; margin: 0 auto;">
+                        <video
+                            class="w-full h-auto object-cover"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="/assets/images/ai-tutor.png">
+                            <source src="/assets/videos/quick_practice_demo.mp4" type="video/mp4">
+                            <!-- Fallback content -->
+                            <img src="/assets/images/ai-tutor.png" alt="Brill Demo" class="w-full h-auto">
+                            <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
+                        </video>
+                    </div>
+
+                    <!-- Optional caption -->
+                    <p class="text-base md:text-lg lg:text-2xl text-gray-500 mt-3 text-center fade-in delay-500">See Brill in action</p> <!-- Adjusted font size -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Activate fade-in animations when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const fadeElements = document.querySelectorAll('.fade-in');
+                fadeElements.forEach(function(element) {
+                    element.classList.add('active');
+                });
+            }, 100); // Small delay to ensure DOM is fully ready
+            
+            // Activate slide-in and scale-in animations on scroll
+            const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .scale-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Parallax effect for hero section
+            const parallaxElements = document.querySelectorAll('.parallax');
+            
+            window.addEventListener('mousemove', function(e) {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                parallaxElements.forEach(element => {
+                    const depth = element.getAttribute('data-depth') || 20;
+                    const moveX = (mouseX - 0.5) * depth;
+                    const moveY = (mouseY - 0.5) * depth;
+                    
+                    element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                });
+            });
+            
+            // Counter animation for statistics
+            const counters = document.querySelectorAll('.counter');
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000; // ms
+                const increment = target / (duration / 16); // 60fps
+                
+                const updateCounter = () => {
+                    const count = +counter.innerText.replace(/,/g, '');
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment).toLocaleString();
+                        setTimeout(updateCounter, 16);
+                    } else {
+                        counter.innerText = target.toLocaleString();
+                    }
+                };
+                
+                const counterObserver = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        updateCounter();
+                        counterObserver.unobserve(counter);
+                    }
+                }, { threshold: 0.5 });
+                
+                counterObserver.observe(counter);
+            });
+            
+            // Reviews carousel
+            const reviewsTrack = document.querySelector('.reviews-track');
+            const reviewSlides = document.querySelectorAll('.review-slide');
+            
+            if (reviewsTrack && reviewSlides.length > 1) {
+                let currentSlide = 0;
+                const slideWidth = 100; // percentage
+                
+                function goToSlide(index) {
+                    if (index < 0) index = reviewSlides.length - 1;
+                    if (index >= reviewSlides.length) index = 0;
+                    
+                    reviewsTrack.style.transform = `translateX(-${index * slideWidth}%)`;
+                    currentSlide = index;
+                }
+                
+                // Auto-advance carousel
+                setInterval(() => {
+                    goToSlide(currentSlide + 1);
+                }, 8000);
+                
+                // Add navigation buttons
+                const carousel = document.getElementById('reviewsCarousel');
+                const prevBtn = document.createElement('button');
+                const nextBtn = document.createElement('button');
+                
+                prevBtn.className = 'absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10';
+                nextBtn.className = 'absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10';
+                
+                prevBtn.innerHTML = '<svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>';
+                nextBtn.innerHTML = '<svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>';
+                
+                prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+                
+                carousel.appendChild(prevBtn);
+                carousel.appendChild(nextBtn);
+            }
+        });
+    </script>
+    
+    <!-- University Logos Section -->
+    <section class="py-12 md:py-16 bg-white overflow-hidden"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-10"> <!-- Adjusted font size and margin -->
+                Trusted by students accepted to <span class="text-indigo-600">Ivy+</span> universities
+            </h2>
+
+            <div class="logo-scroll-container relative">
+                <!-- Fade effect overlays -->
+                <div class="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-white to-transparent z-10"></div> <!-- Adjusted width -->
+                <div class="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-white to-transparent z-10"></div> <!-- Adjusted width -->
+
+                <div class="logo-scroll">
+                    <!-- First set of logos -->
+                    <div class="logo-group">
+                        <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-24 lg:h-28 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                    </div>
+                    <!-- Second set of logos (duplicate for smooth scroll) -->
+                    <div class="logo-group">
+                        <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/uiuc.png" alt="uiuc University" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/washu.png" alt="washu" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/jhu.jpg" alt="jhu University" class="h-16 md:h-20 lg:h-24 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/git.png" alt="git" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/arkansas.png" alt="Arkansas" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/rice.svg.png" alt="Rice" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/usc.svg.png" alt="USC" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                        <img src="/assets/images/universities/purdue.svg.png" alt="Purdue" class="h-12 md:h-16 lg:h-20 mx-4 md:mx-8 object-contain"> <!-- Adjusted size and margin -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AI Tutor Section - Add animated background -->
+    <section id='meet-brill'class="py-12 md:py-16 lg:py-24 relative animated-bg"> <!-- Adjusted padding -->
+        <div class="absolute top-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div> <!-- Adjusted height -->
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Text content -->
+            <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto"> <!-- Adjusted margin -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                    Meet Brill: your 24/7 AI Tutor
+                </h2>
+
+                <p class="text-indigo-200 text-lg md:text-xl lg:text-2xl mb-6 md:mb-8"> <!-- Adjusted font size and margin -->
+                     Ask for hints during practice,
+                    get detailed explanations tailored to you, review your practice tests, or simply ask any general SAT questions. Brill is always ready to help you succeed.
+                </p>
+                <a href="/signup" class="inline-block bg-indigo-600 text-white px-6 py-3 md:px-8 md:py-3 rounded-lg text-lg md:text-xl lg:text-2xl font-medium hover:bg-indigo-700 shadow-lg transition-all duration-300"> <!-- Adjusted padding and font size -->
+                    Start Prepping Today
+                </a>
+            </div>
+
+
+            <!-- Smaller secondary image below (optional) -->
+            <div class="max-w-md md:max-w-2xl lg:max-w-4xl mx-auto mt-8"> <!-- Adjusted max-width -->
+                <img src="/assets/images/ollie.png" alt="AI Hint Example" class="w-full h-auto rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Control Question Difficulty Section - Add slide-in animations -->
+    <section id='practice-at-your-own-pace' class="py-12 md:py-16 lg:py-20 bg-white"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12 lg:space-x-20"> <!-- Adjusted spacing -->
+                <div class="md:w-1/2 mb-12 md:mb-16 lg:mb-0 slide-in-left"> <!-- Adjusted margin -->
+                    <div class="relative hover-lift max-w-md mx-auto md:max-w-none"> <!-- Added max-width and centering for mobile -->
+                        <div class="card shadow-xl rounded-xl overflow-hidden mb-8">
+                            <img src="/assets/images/quick-practice.png" alt="Quick Practice Sessions" class="w-full">
+                        </div>
+                        <div class="card shadow-xl rounded-xl overflow-hidden absolute bottom-0 right-0 w-2/3 transform translate-x-1/6 translate-y-1/4 hidden md:block"> <!-- Hide smaller image on mobile -->
+                            <img src="/assets/images/difficulty.png" alt="Select Difficulty" class="w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 slide-in-right text-center md:text-left"> <!-- Centered text on mobile -->
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 md:mb-10 text-gray-900"> <!-- Adjusted font size and margin -->
+                        Practice at Your Own Pace
+                    </h2>
+
+                    <ul class="space-y-4 text-base md:text-lg lg:text-xl text-gray-700 mb-8 text-left"> <!-- Adjusted font size, margin, text-align -->
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>'Quick practice' modules allow for flexible session lengths. Study effectively whether you have 20 minutes or 2 hours.</span>
+
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Difficulty controls ensure beginners can build confidence with fundamentals while advanced students can skip straight to challenging content.</span>
+                        </li>
+                    </ul>
+                    <a href="/signup" class="btn-primary text-lg md:text-xl lg:text-2xl inline-block"> <!-- Adjusted font size, display -->
+                        Start Prepping Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Length Practice Tests Section - Add slide-in animations -->
+    <section class="py-12 md:py-16 bg-white"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12 lg:space-x-20 flex-col-reverse md:flex-row"> <!-- Reverse column order on mobile -->
+                <div class="md:w-1/2 mb-10 md:mb-0 slide-in-left text-center md:text-left mt-10 md:mt-0"> <!-- Centered text, added margin top -->
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-10"> <!-- Adjusted font size and margin -->
+                        Walk into Test Day with Complete Confidence
+                    </h2>
+
+
+                <ul class="space-y-4 text-base md:text-lg lg:text-xl text-gray-700 mb-8 text-left"> <!-- Adjusted font size, margin, text-align -->
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Full-length practice tests replicate Digital SAT interface, ensuring you'll feel prepared.</span>
+                    </li>
+
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>                         After each test, review your answers with our AI tutor to master concepts and boost your score.
+                        </span>
+                    </li>
+
+                </ul>
+                <a href="/signup" class="btn-primary text-lg md:text-xl lg:text-2xl inline-block"> <!-- Adjusted font size, display -->
+                    Try a Practice Test
+                </a>
+            </div>
+
+                <div class="md:w-7/12 slide-in-right">
+                    <div class="rounded-xl overflow-hidden shadow-xl hover-lift max-w-xl mx-auto md:max-w-none"> <!-- Added max-width and centering for mobile -->
+                        <video
+                            class="w-full h-auto object-cover"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="/assets/images/practice-test.png">
+                            <source src="/assets/videos/full_test_demo.mp4" type="video/mp4">
+                            <!-- Fallback content -->
+                            <img src="/assets/images/practice-test.png" alt="Full Length Practice Test" class="w-full h-auto">
+                            <p class="text-center text-sm md:text-lg lg:text-2xl mt-2">Your browser doesn't support HTML5 video</p> <!-- Adjusted font size -->
+                        </video>
+                    </div>
+
+                    <p class="text-base md:text-lg lg:text-2xl text-gray-500 mt-3 text-center">Experience our authentic Digital SAT testing environment</p> <!-- Adjusted font size -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Targeted Domain Practice Section - Add scale-in animation -->
+    <section id="study-smarter" class="py-12 md:py-16 lg:py-20 bg-white"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12 lg:space-x-20">
+                <div class="md:w-7/12 mb-12 md:mb-16 lg:mb-0 scale-in"> <!-- Adjusted margin -->
+                    <div class="card hover-lift max-w-xl mx-auto md:max-w-none"> <!-- Added max-width and centering for mobile -->
+                        <img src="/assets/images/targeted-practice.png" alt="Targeted Domain Practice" class="w-full">
+                    </div>
+                </div>
+                <div class="md:w-1/2 text-center md:text-left"> <!-- Centered text on mobile -->
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 md:mb-10 text-gray-900"> <!-- Adjusted font size and margin -->
+                        Boost Your Score Faster by Focusing on What Matters Most
+                    </h2>
+
+                    <ul class="space-y-4 text-base md:text-lg lg:text-xl text-gray-700 mb-8 text-left"> <!-- Adjusted font size, margin, text-align -->
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Save hours of study time with personalized weakness detection</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 md:h-7 md:w-7 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Gain quick, easy point boosts by identifying and fixing simple concepts you haven't mastered yet</span>
+                        </li>
+
+                    </ul>
+
+                    <a href="/signup" class="btn-primary text-lg md:text-xl lg:text-2xl inline-block"> <!-- Adjusted font size, display -->
+                        Start Targeted Practice
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Bank Section - Add counter animations -->
+    <section id="practice-library" class="py-16 md:py-20 lg:py-28 bg-gray-50"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Diagram and text in flex layout -->
+            <div class="md:flex md:items-center md:space-x-12 lg:space-x-16 mb-12 md:mb-20"> <!-- Adjusted margin -->
+                <!-- Left column: New quality assurance diagram -->
+                <div class="md:w-1/2 mb-12 md:mb-0 flex justify-center">
+                    <div class="bg-gray-50 p-6 md:p-12 rounded-xl shadow-sm relative aspect-square max-w-sm sm:max-w-md md:max-w-xl w-full"> <!-- Adjusted padding and max-width -->
+                        <!-- Quality assurance process diagram -->
+                        <div class="flex flex-col items-center justify-between h-full">
+                            <!-- Step 1: Question Creation -->
+                            <div class="bg-indigo-100 rounded-xl p-4 md:p-6 w-full md:w-4/5 text-center"> <!-- Adjusted padding -->
+                                <p class="text-gray-600 mb-1 md:mb-2 text-lg md:text-xl lg:text-2xl">step one</p> <!-- Adjusted font size -->
+                                <h3 class="text-indigo-900 text-base md:text-lg lg:text-xl font-medium">Expert Question Creation</h3> <!-- Adjusted font size -->
+                            </div>
+
+                            <!-- Arrow down with arrow head -->
+                            <div class="h-12 md:h-16 flex items-center justify-center relative w-full"> <!-- Adjusted height -->
+                                <div class="border-l-2 border-dashed border-indigo-400 h-8 md:h-12 absolute top-0"></div> <!-- Adjusted height -->
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-indigo-400 absolute bottom-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Step 2: College Board Alignment -->
+                            <div class="bg-blue-200 rounded-xl p-4 md:p-6 w-full md:w-4/5 text-center"> <!-- Adjusted padding -->
+                                <p class="text-gray-600 mb-1 md:mb-2 text-lg md:text-xl lg:text-2xl">step two</p> <!-- Adjusted font size -->
+                                <h3 class="text-indigo-900 text-base md:text-lg lg:text-xl font-medium">College Board Standards Alignment</h3> <!-- Adjusted font size -->
+                            </div>
+
+                            <!-- Arrow down with arrow head -->
+                            <div class="h-12 md:h-16 flex items-center justify-center relative w-full"> <!-- Adjusted height -->
+                                <div class="border-l-2 border-dashed border-indigo-400 h-8 md:h-12 absolute top-0"></div> <!-- Adjusted height -->
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-indigo-400 absolute bottom-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Step 3: Question Bank -->
+                            <div class="bg-indigo-600 rounded-xl p-6 md:p-8 w-full md:w-4/5 text-center"> <!-- Adjusted padding -->
+                                <p class="text-indigo-200 mb-1 md:mb-2 text-lg md:text-xl lg:text-2xl">step three</p> <!-- Adjusted font size -->
+                                <div class="flex items-center justify-center mb-1 md:mb-2">
+                                    <span class="text-white text-lg md:text-xl lg:text-2xl font-bold mr-2">Brill</span> <!-- Adjusted font size -->
+                                    <!-- Quality check icon -->
+                                    <svg width="20" height="20" md:width="24" md:height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white"> <!-- Adjusted size -->
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-white text-lg md:text-xl lg:text-2xl font-bold">Premium Question Bank</h3> <!-- Adjusted font size -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column: Text only (stats moved below) -->
+                <div class="md:w-1/2 text-center md:text-left"> <!-- Centered text on mobile -->
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                        Never run out of preparation with our premium question bank of <span class="text-indigo-600">2,000+ questions</span>
+                    </h2>
+
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-700 mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                        Our question bank represents the gold standard in SAT preparation. Every question is meticulously reviewed by individuals with years of expertise in the SAT format.
+                    </p>
+
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-700"> <!-- Adjusted font size -->
+                        Experience practice questions that perfectly mirror the real SAT. Our rigorous quality assurance process ensures each question accurately reflects College Board standards in topics, accuracy, difficulty, and structure—giving you authentic preparation that directly translates to test day success.
+                    </p>
+                </div>
+            </div>
+            <!-- Statistics with counter animation -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 text-center max-w-6xl mx-auto mt-12 border-t border-gray-200 pt-12 md:pt-16"> <!-- Adjusted gap, border color, padding -->
+                <div class="hover-lift">
+                    <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-indigo-600 counter" data-target="2000">0</p> <!-- Adjusted font size -->
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 mt-3 md:mt-4">expert-verified practice questions</p> <!-- Adjusted font size -->
+                </div>
+
+                <div class="hover-lift">
+                    <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-indigo-600 counter" data-target="15">0</p> <!-- Adjusted font size -->
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 mt-3 md:mt-4">practice tests curated</p> <!-- Adjusted font size -->
+                </div>
+
+                <div class="hover-lift">
+                    <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-indigo-600 counter" data-target="10000">0</p> <!-- Adjusted font size -->
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 mt-3 md:mt-4">hints given by Brill, our AI tutor</p> <!-- Adjusted font size -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Tracking - Add animated background -->
+    <section class="py-12 md:py-16 lg:py-24 relative animated-bg"> <!-- Adjusted padding -->
+        <div class="absolute top-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-b from-blue-900 to-transparent opacity-20"></div> <!-- Adjusted height -->
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6"> <!-- Adjusted font size -->
+                    Track your journey to success
+                </h2>
+                <p class="text-indigo-200 max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl"> <!-- Adjusted font size -->
+                    Our intelligent analytics dashboard helps you understand your progress and prioritize your study time effectively.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+                <!-- Main Score Card -->
+                <div class="col-span-1 md:col-span-5 bg-indigo-900 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-indigo-700"> <!-- Adjusted padding -->
+                    <div class="flex justify-between items-start mb-2 flex-wrap"> <!-- Allow wrapping -->
+                        <h3 class="text-base sm:text-lg md:text-xl font-medium text-white mr-2 mb-1">Current SAT Score</h3> <!-- Adjusted font size -->
+                        <span class="text-xs bg-indigo-800 text-indigo-200 px-2 md:px-3 py-1 rounded-full whitespace-nowrap">Updated 2 days ago</span>
+                    </div>
+
+                    <div class="flex items-end mb-4 md:mb-6">
+                        <p class="text-5xl sm:text-6xl md:text-7xl font-bold text-white">1480</p> <!-- Adjusted font size -->
+                        <div class="flex items-center ml-2 md:ml-3 lg:ml-4 pb-1 md:pb-2 lg:pb-3"> <!-- Adjusted margin and padding -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                            <span class="font-medium text-indigo-400 ml-1 text-sm md:text-base">+70</span> <!-- Adjusted font size -->
+                        </div>
+                    </div>
+
+                    <!-- Additional score details (responsive adjustments for font sizes) -->
+                    <div class="flex justify-between items-center mb-2 flex-wrap"> <!-- Allow wrapping -->
+                        <div class="flex items-center mr-2 mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md-w-5 text-indigo-400 mr-1 md:mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-white text-xs sm:text-sm md:text-base">70 pts from last test</span> <!-- Adjusted font size -->
+                        </div>
+                        <span class="text-xs text-indigo-300 whitespace-nowrap">March 12</span>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-4 md:mb-6 flex-wrap"> <!-- Allow wrapping -->
+                        <div class="flex items-center mr-2 mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md-w-5 text-indigo-400 mr-1 md:mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-white text-xs sm:text-sm md:text-base">40 pts from goal</span> <!-- Adjusted font size -->
+                        </div>
+                        <span class="text-xs text-indigo-300 whitespace-nowrap">Goal: 1520</span>
+                    </div>
+
+                    <!-- Progress bar (simplified for mobile) -->
+                    <div class="mb-6 md:mb-8">
+                        <div class="flex justify-between items-center mb-1">
+                            <p class="text-xs md:text-sm text-indigo-200">Progress to Goal</p>
+                            <p class="text-xs md:text-sm text-indigo-200">81%</p>
+                        </div>
+                        <div class="w-full bg-indigo-950 rounded-full h-2 md:h-3 mb-1">
+                            <div class="bg-indigo-500 h-2 md:h-3 rounded-full" style="width: 81%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-indigo-300">
+                            <span>1310</span>
+                            <span>1520</span>
+                        </div>
+                    </div>
+
+                    <!-- Subject breakdown (simplified grid for mobile) -->
+                    <div class="grid grid-cols-2 gap-4 md:gap-6 lg:gap-8 pt-4 border-t border-indigo-700"> <!-- Adjusted gap -->
+                        <div>
+                            <h4 class="text-xs md:text-sm text-indigo-200 mb-1">Reading & Writing</h4>
+                            <p class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">730</p> <!-- Adjusted font size -->
+                            <p class="text-xs text-indigo-300">49/54</p>
+                            <div class="mt-2 w-full bg-indigo-950 rounded-full h-1.5">
+                                <div class="bg-indigo-400 h-1.5 rounded-full" style="width: 91%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs md:text-sm text-indigo-200 mb-1">Math</h4>
+                            <p class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">750</p> <!-- Adjusted font size -->
+                            <p class="text-xs text-indigo-300">41/44</p>
+                            <div class="mt-2 w-full bg-indigo-950 rounded-full h-1.5">
+                                <div class="bg-indigo-400 h-1.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress & Charts Area -->
+                <div class="col-span-1 md:col-span-7 grid grid-cols-1 gap-6 md:gap-8">
+                    <!-- Score Progress Chart (simplified height for mobile) -->
+                    <div class="bg-indigo-900 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-indigo-700"> <!-- Adjusted padding -->
+                        <h3 class="text-base sm:text-lg md:text-xl font-medium text-white mb-3 md:mb-4">Score Progress</h3> <!-- Adjusted font size -->
+
+                        <div class="relative h-40 sm:h-48 md:h-64 mb-4"> <!-- Adjusted height -->
+                            <!-- Score progress chart -->
+                            <div class="absolute inset-0 flex items-end">
+                                <div class="w-full h-32 sm:h-40 md:h-56 flex items-end"> <!-- Adjusted height -->
+                                    <!-- Chart bars representing tests -->
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-indigo-700 rounded-t h-16 sm:h-20 md:h-32"></div> <!-- Adjusted height -->
+                                        <p class="text-xs text-indigo-300 mt-1 md:mt-2">Jan</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-indigo-600 rounded-t h-20 sm:h-24 md:h-40"></div> <!-- Adjusted height -->
+                                        <p class="text-xs text-indigo-300 mt-1 md:mt-2">Feb</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-indigo-500 rounded-t h-24 sm:h-28 md:h-44"></div> <!-- Adjusted height -->
+                                        <p class="text-xs text-indigo-300 mt-1 md:mt-2">Mar</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center">
+                                        <div class="w-full bg-indigo-400 rounded-t h-28 sm:h-32 md:h-48"></div> <!-- Adjusted height -->
+                                        <p class="text-xs text-indigo-300 mt-1 md:mt-2">Apr</p>
+                                    </div>
+                                    <div class="flex-1 mx-1 flex flex-col items-center relative">
+                                        <div class="absolute -top-6 inset-x-0 flex justify-center">
+                                            <div class="bg-white text-indigo-900 text-xs font-bold rounded-md px-2 py-1">
+                                                1480
+                                            </div>
+                                        </div>
+                                        <div class="w-full bg-indigo-400 rounded-t h-32 sm:h-36 md:h-52"></div> <!-- Adjusted height -->
+                                        <p class="text-xs text-indigo-300 mt-1 md:mt-2">May</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 md:gap-4 text-center">
+                            <div class="bg-indigo-800 rounded-xl p-2 md:p-3">
+                                <p class="text-xs md:text-sm text-indigo-200">Starting Score</p>
+                                <p class="text-base sm:text-lg md:text-xl font-bold text-white">1310</p> <!-- Adjusted font size -->
+                            </div>
+                            <div class="bg-indigo-800 rounded-xl p-2 md:p-3">
+                                <p class="text-xs md:text-sm text-indigo-200">Total Improvement</p>
+                                <p class="text-base sm:text-lg md:text-xl font-bold text-white">+170 pts</p> <!-- Adjusted font size -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accuracy Card -->
+                    <div class="rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-indigo-300" style="background-color: #4553fa;"> <!-- Adjusted padding -->
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base sm:text-lg md:text-xl font-medium text-white">Accuracy</h3> <!-- Adjusted font size -->
+                            <div class="flex items-center">
+                                <span class="text-xs md:text-sm text-indigo-200 font-medium">+5.2%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 md:h-4 md-w-4 text-indigo-200 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col items-center justify-center">
+                            <p class="text-5xl sm:text-6xl md:text-8xl font-bold text-white">91%</p> <!-- Adjusted font size -->
+                            <p class="text-xs md:text-sm text-indigo-200 mt-1">Last 100 questions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Analysis Section -->
+            <div class="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-8">
+                <!-- Strength & Weakness Card -->
+                <div class="col-span-1 md:col-span-4 bg-indigo-900 rounded-2xl p-4 md:p-6 shadow-lg border border-indigo-700">
+                    <h3 class="text-base sm:text-lg md:text-xl font-medium text-white mb-3 md:mb-4">Skill Breakdown</h3> <!-- Adjusted font size -->
+
+                    <div class="space-y-4 md:space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Algebra</p>
+                                <p class="text-xs md:text-sm text-indigo-400">Strong</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-400 h-2 md:h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">24/26 correct</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Data Analysis</p>
+                                <p class="text-xs md:text-sm text-indigo-400">Proficient</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-500 h-2 md:h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">17/20 correct</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Advanced Math</p>
+                                <p class="text-xs md:text-sm text-indigo-500">Developing</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-600 h-2 md:h-2.5 rounded-full" style="width: 74%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">14/19 correct</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reading Breakdown Card -->
+                <div class="col-span-1 md:col-span-4 bg-indigo-900 rounded-2xl p-4 md:p-6 shadow-lg border border-indigo-700">
+                    <h3 class="text-base sm:text-lg md:text-xl font-medium text-white mb-3 md:mb-4">Reading Breakdown</h3> <!-- Adjusted font size -->
+
+                    <div class="space-y-4 md:space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Info & Ideas</p>
+                                <p class="text-xs md:text-sm text-indigo-400">Strong</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-400 h-2 md:h-2.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">16/17 correct</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Craft & Structure</p>
+                                <p class="text-xs md:text-sm text-indigo-400">Proficient</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-500 h-2 md:h-2.5 rounded-full" style="width: 83%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">15/18 correct</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <p class="text-xs md:text-sm text-white">Standard English</p>
+                                <p class="text-xs md:text-sm text-indigo-500">Focus Area</p>
+                            </div>
+                            <div class="w-full bg-indigo-950 rounded-full h-2 md:h-2.5">
+                                <div class="bg-indigo-600 h-2 md:h-2.5 rounded-full" style="width: 68%"></div>
+                            </div>
+                            <p class="text-xs text-indigo-300 mt-1">13/19 correct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Metrics Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-4 md:gap-6 mt-6 md:mt-8">
+                <div class="col-span-1 sm:col-span-1 md:col-span-4 bg-indigo-900 rounded-2xl p-4 md:p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start flex-wrap"> <!-- Allow wrapping -->
+                        <h3 class="text-sm sm:text-base md:text-lg font-medium text-white opacity-90 mr-2 mb-1">Questions Completed</h3> <!-- Adjusted font size -->
+                        <span class="text-xs bg-indigo-800 text-indigo-300 px-2 py-0.5 md:py-1 rounded-full whitespace-nowrap">+52 this week</span>
+                    </div>
+                    <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 md:mt-4">368</p> <!-- Adjusted font size -->
+                    <p class="text-xs md:text-sm text-indigo-300 mt-1">Last 30 days</p>
+                </div>
+
+                <div class="col-span-1 sm:col-span-1 md:col-span-4 bg-indigo-900 rounded-2xl p-4 md:p-6 shadow-lg border border-indigo-700">
+                    <div class="flex justify-between items-start flex-wrap"> <!-- Allow wrapping -->
+                        <h3 class="text-sm sm:text-base md:text-lg font-medium text-white opacity-90 mr-2 mb-1">Tests Completed</h3> <!-- Adjusted font size -->
+                        <span class="text-xs bg-indigo-800 text-indigo-300 px-2 py-0.5 md:py-1 rounded-full whitespace-nowrap">+1 this week</span>
+                    </div>
+                    <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 md:mt-4">6</p> <!-- Adjusted font size -->
+                    <p class="text-xs md:text-sm text-indigo-300 mt-1">Since starting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Updated Pricing Section with hero-matching style -->
+    <section id="pricing" class="py-16 md:py-24 bg-white"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16"> <!-- Adjusted margin -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                    Simple, Transparent <span class="text-green-500">Pricing</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto"> <!-- Adjusted font size -->
+                    Full access to all features with either plan. Choose what works for your preparation timeline.
+                </p>
+            </div>
+
+            <div class="max-w-md md:max-w-5xl mx-auto"> <!-- Adjusted max-width -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <!-- Stack cards on mobile -->
+                    <!-- Monthly Plan -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover-lift border border-gray-100"> <!-- Added border -->
+                        <div class="p-6 md:p-8"> <!-- Adjusted padding -->
+                            <div class="flex justify-between items-start mb-4 md:mb-6"> <!-- Adjusted margin -->
+                                <h3 class="text-xl md:text-2xl font-bold text-gray-900">Monthly Plan</h3> <!-- Adjusted font size -->
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">Flexible</span>
+                            </div>
+
+                            <div class="mb-6 md:mb-8"> <!-- Adjusted margin -->
+                                <div class="flex items-baseline">
+                                    <span class="text-4xl md:text-5xl font-bold text-gray-900">$29</span> <!-- Adjusted font size -->
+                                    <span class="ml-2 text-gray-500 font-medium">/month</span>
+                                </div>
+                                <p class="text-gray-500 text-sm mt-2">Cancel anytime</p>
+                            </div>
+
+                            <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10 text-sm md:text-base"> <!-- Adjusted spacing, font size, margin -->
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">2,000+ SAT practice questions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">15+ full-length adaptive practice exams</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">AI tutor with hints and explanations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Performance analytics dashboard</span>
+                                </li>
+                            </ul>
+
+                            <a href="/pricing" class="block w-full bg-white border-2 border-green-500 text-green-500 text-center py-3 md:py-4 px-6 rounded-xl text-base md:text-lg font-medium hover:bg-green-50 transition-colors duration-200"> <!-- Adjusted padding and font size -->
+                                Start Monthly Plan
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3-Month Plan - Featured Plan -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md relative transform hover:scale-[1.01] transition-all duration-300 hover-lift border-2 border-green-500"> <!-- Added border -->
+                        <!-- Best value tag -->
+                        <div class="absolute top-0 right-0 mr-1 mt-1 md:mr-0 md:mt-0"> <!-- Adjusted position -->
+                            <div class="bg-green-500 text-white px-4 py-1 md:px-6 md:py-1 transform rotate-45 translate-x-4 translate-y-2 md:translate-x-5 md:translate-y-3 text-xs md:text-sm font-semibold"> <!-- Adjusted padding, transform, font size -->
+                                SAVE 17%
+                            </div>
+                        </div>
+
+                        <div class="p-6 md:p-8"> <!-- Adjusted padding -->
+                            <div class="flex justify-between items-start mb-4 md:mb-6"> <!-- Adjusted margin -->
+                                <h3 class="text-xl md:text-2xl font-bold text-gray-900">3-Month Plan</h3> <!-- Adjusted font size -->
+                                <span class="bg-green-100 text-green-700 text-xs font-medium px-3 py-1 rounded-full">BEST VALUE</span>
+                            </div>
+
+                            <div class="mb-6 md:mb-8"> <!-- Adjusted margin -->
+                                <div class="flex items-baseline">
+                                    <span class="text-4xl md:text-5xl font-bold text-gray-900">$24</span> <!-- Adjusted font size -->
+                                    <span class="ml-2 text-gray-500 font-medium">/month</span>
+                                </div>
+                                <div class="flex items-center mt-2 flex-wrap"> <!-- Allow wrapping -->
+                                    <p class="text-gray-500 text-sm mr-2">$72 billed every 3 months</p>
+                                    <span class="line-through text-gray-400 text-xs">$174</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10 text-sm md:text-base"> <!-- Adjusted spacing, font size, margin -->
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">2,000+ SAT practice questions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">15+ full-length adaptive practice exams</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">AI tutor with hints and explanations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 md:h-6 md:w-6 text-green-500 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Performance analytics dashboard</span>
+                                </li>
+
+                            </ul>
+
+                            <a href="/pricing" class="block w-full bg-green-500 text-white text-center py-3 md:py-4 px-6 rounded-xl text-base md:text-lg font-medium hover:bg-green-600 transition-colors duration-200 shadow-md"> <!-- Adjusted padding and font size -->
+                                Save With 3-Month Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FAQ Section - Updated with side-by-side layout -->
+<section id="faq" class="py-12 md:py-16 bg-gray-50"> <!-- Adjusted padding -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+            <!-- Left column with heading and subtext -->
+            <div class="md:col-span-4 md:sticky md:top-24 md:self-start text-center md:text-left"> <!-- Centered text on mobile -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                    Frequently <span class="text-purple-600">Asked</span> Questions
+                </h2>
+
+
+                <!-- Contact section moved to left column -->
+                <div class="mt-8">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Have more questions?</h3> <!-- Adjusted font size and margin -->
+                    <p class="text-base md:text-lg text-gray-700 mb-4 md:mb-6"> <!-- Adjusted font size and margin -->
+                        Send us an email or text!
+                    </p>
+                    <div class="flex flex-col space-y-3 md:space-y-4 max-w-xs mx-auto md:max-w-none md:mx-0"> <!-- Adjusted spacing, max-width, margin -->
+                        <a href="mailto:gxalvarado2013@gmail.com" class="inline-flex items-center justify-center md:justify-start px-4 py-2 md:px-5 md:py-3 border border-gray-300 rounded-lg text-sm md:text-base font-medium text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200"> <!-- Adjusted padding, font size, justification -->
+                            <svg class="h-4 w-4 md:h-5 md:w-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            gxalvarado2013@gmail.com
+                        </a>
+                        <a href="tel:+18322805259" class="inline-flex items-center justify-center md:justify-start px-4 py-2 md:px-5 md:py-3 border border-gray-300 rounded-lg text-sm md:text-base font-medium text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200"> <!-- Adjusted padding, font size, justification -->
+                            <svg class="h-4 w-4 md:h-5 md:w-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            +1 (479) 544-4410
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column with FAQ accordion -->
+            <div class="md:col-span-8">
+                <!-- Question 1 -->
+                <div class="mb-4 bg-white rounded-xl overflow-hidden shadow-sm border border-indigo-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 md:p-6 text-left" onclick="toggleFAQ(this)"> <!-- Adjusted padding -->
+                        <h3 class="text-base md:text-lg lg:text-xl font-bold text-gray-900 mr-2"> <!-- Adjusted font size -->
+                            How is Brill different from other prep services?
+                        </h3>
+                        <svg class="faq-icon h-5 w-5 md:h-6 md:w-6 text-purple-500 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 md:p-6 text-sm md:text-base text-gray-700 border-t border-indigo-50"> <!-- Adjusted padding and font size -->
+                            Our AI identifies your specific weaknesses and creates a personalized study path. It's like having a 24/7 tutor who adapts to your progress. Students typically learn twice as fast with us compared to traditional methods.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="mb-4 bg-white rounded-xl overflow-hidden shadow-sm border border-indigo-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 md:p-6 text-left" onclick="toggleFAQ(this)"> <!-- Adjusted padding -->
+                        <h3 class="text-base md:text-lg lg:text-xl font-bold text-gray-900 mr-2"> <!-- Adjusted font size -->
+                            How accurate are your full-length practice tests and score predictions?
+                        </h3>
+                        <svg class="faq-icon h-5 w-5 md:h-6 md:w-6 text-purple-500 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 md:p-6 text-sm md:text-base text-gray-700 border-t border-indigo-50"> <!-- Adjusted padding and font size -->
+                            Our full-length practice tests are highly accurate representations of the Digital SAT. Students consistently report that their scores on our platform are within 30-50 points of their actual SAT results. We calibrate our scoring algorithms using real test data to ensure you get the most realistic prediction of your performance on test day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="mb-4 bg-white rounded-xl overflow-hidden shadow-sm border border-indigo-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 md:p-6 text-left" onclick="toggleFAQ(this)"> <!-- Adjusted padding -->
+                        <h3 class="text-base md:text-lg lg:text-xl font-bold text-gray-900 mr-2"> <!-- Adjusted font size -->
+                            I'm already doing well on practice tests. Can you still help?
+                        </h3>
+                        <svg class="faq-icon h-5 w-5 md:h-6 md:w-6 text-purple-500 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 md:p-6 text-sm md:text-base text-gray-700 border-t border-indigo-50"> <!-- Adjusted padding and font size -->
+                            Absolutely! We help many students push from 1350-1400 to 1500+. Our system identifies subtle mistakes that are holding you back from those final crucial points.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="mb-4 bg-white rounded-xl overflow-hidden shadow-sm border border-indigo-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 md:p-6 text-left" onclick="toggleFAQ(this)"> <!-- Adjusted padding -->
+                        <h3 class="text-base md:text-lg lg:text-xl font-bold text-gray-900 mr-2"> <!-- Adjusted font size -->
+                            How accurate are your practice questions compared to the real SAT?
+                        </h3>
+                        <svg class="faq-icon h-5 w-5 md:h-6 md:w-6 text-purple-500 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 md:p-6 text-sm md:text-base text-gray-700 border-t border-indigo-50"> <!-- Adjusted padding and font size -->
+                            Extremely accurate. Our team includes former SAT tutors, and we regularly update our questions to match the latest Digital SAT format. Students consistently report that the real test feels familiar after using our platform.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="mb-4 bg-white rounded-xl overflow-hidden shadow-sm border border-indigo-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 md:p-6 text-left" onclick="toggleFAQ(this)"> <!-- Adjusted padding -->
+                        <h3 class="text-base md:text-lg lg:text-xl font-bold text-gray-900 mr-2"> <!-- Adjusted font size -->
+                            What if I don't have much time before my test date?
+                        </h3>
+                        <svg class="faq-icon h-5 w-5 md:h-6 md:w-6 text-purple-500 transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 md:p-6 text-sm md:text-base text-gray-700 border-t border-indigo-50"> <!-- Adjusted padding and font size -->
+                            We're ideal for last-minute prep! Our platform quickly identifies your "low-hanging fruit" - areas where you can gain the most points quickly. Even with just 2-3 weeks, students typically improve by 50-100 points with just 15-20 minutes of daily practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript for FAQ Toggle Functionality -->
+    <script>
+        // ... existing FAQ script ...
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                // Collapse the content
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                // Expand the content
+                // Set max-height to the scroll height to allow for dynamic content height
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
+
+                // Optional: Close other open FAQs when one is opened
+                // document.querySelectorAll('.faq-toggle[aria-expanded="true"]').forEach(openButton => {
+                //     if (openButton !== button) {
+                //         const openContent = openButton.nextElementSibling;
+                //         const openIcon = openButton.querySelector('.faq-icon');
+                //         openContent.style.maxHeight = '0px';
+                //         openIcon.style.transform = 'rotate(0deg)';
+                //         openButton.setAttribute('aria-expanded', 'false');
+                //     }
+                // });
+            }
+        }
+
+        // Initialize all FAQs to collapsed state and set aria attributes
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            const content = button.nextElementSibling;
+            content.style.maxHeight = '0px'; // Ensure it starts collapsed
+            content.style.transition = 'max-height 0.5s ease-in-out'; // Add smooth transition via JS
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-controls', content.id || ''); // Add aria-controls if content has an ID
+            const icon = button.querySelector('.faq-icon');
+            icon.style.transition = 'transform 0.3s ease-in-out'; // Add transition for icon rotation
+        });
+    </script>
+</section>
+    <!-- Team/Founders Section - Updated to match hero style -->
+    <section id="team" class="py-12 md:py-16 bg-white relative overflow-hidden"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10 md:mb-12 slide-in-left"> <!-- Adjusted margin -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-3 md:mb-4"> <!-- Adjusted font size and margin -->
+                    Created By <span class="text-green-500">Education & Engineering Experts</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto"> <!-- Adjusted font size -->
+                    Our small team of founders combine elite education with industry experience to deliver the most effective SAT prep platform.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-md md:max-w-5xl mx-auto mb-10 md:mb-12"> <!-- Adjusted gap, max-width, margin -->
+                <!-- Education Column -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:shadow-lg transition-all duration-300 scale-in border border-gray-100"> <!-- Added border -->
+                    <div class="p-4 md:p-6"> <!-- Adjusted padding -->
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Elite Education</h3> <!-- Adjusted font size -->
+                        <div class="space-y-4 md:space-y-6"> <!-- Adjusted spacing -->
+                            <div class="flex items-center">
+                                <img src="/assets/images/universities/harvard.svg.png" alt="Harvard University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">Harvard Educated</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">Computer Science</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <img src="/assets/images/universities/rice.svg.png" alt="Rice University" class="h-10 md:h-12 mr-3 md:mr-4"> <!-- Adjusted size -->
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">Rice Educated</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">Computer Science</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Experience Column -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:shadow-lg transition-all duration-300 scale-in border border-gray-100"> <!-- Added border -->
+                    <div class="p-4 md:p-6"> <!-- Adjusted padding -->
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Industry Experience</h3> <!-- Adjusted font size -->
+                        <div class="space-y-4 md:space-y-6"> <!-- Adjusted spacing -->
+                            <div class="flex items-center">
+                                <svg class="h-10 w-10 md:h-12 md:w-12 text-green-500 mr-3 md:mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">Tech Experience</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">Netflix & Meta Alumni</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <svg class="h-10 w-10 md:h-12 md:w-12 text-green-500 mr-3 md:mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">SAT Expertise</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">5+ Years Experience</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Column -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:shadow-lg transition-all duration-300 scale-in border border-gray-100"> <!-- Added border -->
+                    <div class="p-4 md:p-6"> <!-- Adjusted padding -->
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Proven Results</h3> <!-- Adjusted font size -->
+                        <div class="space-y-4 md:space-y-6"> <!-- Adjusted spacing -->
+                            <div class="flex items-center">
+                                <svg class="h-10 w-10 md:h-12 md:w-12 text-green-500 mr-3 md:mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">Perfect Scorers</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">Founders Scores: 1550+</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <svg class="h-10 w-10 md:h-12 md:w-12 text-green-500 mr-3 md:mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                                <div>
+                                    <p class="text-gray-900 font-medium text-sm md:text-base">Student Success</p> <!-- Adjusted font size -->
+                                    <p class="text-gray-500 text-xs md:text-sm">300+ Point Improvements</p> <!-- Adjusted font size -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission statement with cleaner design -->
+            <div class="mt-8 text-center max-w-lg md:max-w-2xl mx-auto slide-in-right"> <!-- Adjusted max-width -->
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100"> <!-- Adjusted padding, added border -->
+                    <svg class="h-8 w-8 md:h-10 md:w-10 text-green-500 mx-auto mb-3 md:mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <!-- Adjusted size -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                    </svg>
+                    <p class="text-gray-700 text-base md:text-lg italic"> <!-- Adjusted font size -->
+                        "We combined our tutoring experience with cutting-edge technology to create the tool we wished existed for us."
+                    </p>
+                    <div class="mt-4 flex justify-center items-center text-sm md:text-base"> <!-- Adjusted font size -->
+                        <span class="text-green-600 font-medium">- Gabriel and Nico</span>
+                        <span class="mx-2 text-gray-300">|</span>
+                        <span class="text-gray-600 font-medium">Founders</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplified Call to Action Section -->
+    <section class="py-8 md:py-10 bg-gradient-to-r from-indigo-600 to-purple-600 text-white"> <!-- Adjusted padding -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left"> <!-- Centered text on mobile -->
+                <div class="mb-4 md:mb-0 md:mr-8"> <!-- Adjusted margin -->
+                    <h2 class="text-2xl md:text-3xl font-bold mb-1 md:mb-2">Ready to improve your SAT score?</h2> <!-- Adjusted font size and margin -->
+                    <p class="text-indigo-100 text-base md:text-lg">Join students achieving their target scores with Brill.</p> <!-- Adjusted font size -->
+                </div>
+                <div class="flex-shrink-0 mt-4 md:mt-0"> <!-- Added margin top for mobile -->
+                    <a href="/signup" class="inline-block bg-white text-indigo-600 font-bold px-6 py-2 md:px-8 md:py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-base md:text-lg"> <!-- Adjusted padding and font size -->
+                        Get Started Today →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplified Footer -->
+    <footer class="bg-gray-50 py-6 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="flex items-center justify-center bg-green-500 text-white w-8 h-8 rounded-md mr-2">
+                        <span class="font-bold">S</span>
+                    </div>
+                    <span class="text-gray-900 text-lg font-bold">Brill</span>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-sm text-gray-500">© 2023 Brill. All rights reserved.</p>
+                    <p class="text-xs text-gray-400 mt-1">SAT is a registered trademark of the College Board.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+
+
+</body>
+</html>

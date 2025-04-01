@@ -19,7 +19,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/landing/index.html',
+        destination: '/index.html',
       },
     ]
   },
