@@ -335,7 +335,7 @@ function PracticeTestContent() {
     }
   }
   
-  const handlePauseTest = async () => {
+  const handlePauseTest = async (destination = '/TimedTestDash') => {
     // Pause the timer
     clearInterval(timerRef.current)
     setIsPaused(true)
@@ -365,8 +365,8 @@ function PracticeTestContent() {
         throw new Error('Failed to save test progress')
       }
       
-      // Redirect to dashboard
-      router.push('/TimedTestDash')
+      // Redirect to destination (defaults to dashboard if not specified)
+      router.push(destination)
     } catch (err) {
       console.error('Error pausing test:', err)
       // Resume the timer if there was an error
@@ -486,6 +486,20 @@ function PracticeTestContent() {
       if (document.visibilityState === 'hidden' && !testComplete) {
         console.log('Page hidden, auto-pausing test');
         handleAutoPause();
+      } else if (document.visibilityState === 'visible' && !testComplete && timeRemaining > 0) {
+        console.log('Page visible, resuming test');
+        // Resume the timer if the test is not complete
+        clearInterval(timerRef.current); // Clear any existing timer first
+        timerRef.current = setInterval(() => {
+          setTimeRemaining(prev => {
+            if (prev <= 1) {
+              clearInterval(timerRef.current);
+              handleSubmitModule();
+              return 0;
+            }
+            return prev - 1;
+          });
+        }, 1000);
       }
     };
     
@@ -543,6 +557,36 @@ function PracticeTestContent() {
       window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, [testId, moduleId, currentQuestion, timeRemaining, answers, flaggedQuestions, testComplete]);
+
+  // Handle navigation with App Router
+  useEffect(() => {
+    // Intercept navigation attempts with the router
+    const handleNavigation = (e) => {
+      if (!testComplete) {
+        // Pause test when clicking any link
+        const target = e.target.closest('a');
+        if (target && !target.getAttribute('href')?.includes('/PracticeTestMode')) {
+          console.log('Navigation link clicked, pausing test');
+          
+          // Get the intended destination
+          const destination = target.getAttribute('href');
+          
+          // Prevent default navigation
+          e.preventDefault();
+          
+          // Pause the test and redirect to the intended destination
+          handlePauseTest(destination);
+        }
+      }
+    };
+
+    // Listen for click events on the document to catch all link clicks
+    document.addEventListener('click', handleNavigation);
+
+    return () => {
+      document.removeEventListener('click', handleNavigation);
+    };
+  }, [testComplete, handlePauseTest]);
   
   // Move the debug logging to within useEffect hooks rather than at render time
   useEffect(() => {
@@ -767,7 +811,7 @@ function PracticeTestContent() {
               </div>
               <button 
                 style={styles.pauseButton}
-                onClick={handlePauseTest}
+                onClick={() => handlePauseTest()}
               >
                 Pause
               </button>
@@ -821,6 +865,7 @@ function PracticeTestContent() {
                 <div style={styles.markReviewTextOnly}>
                   <span 
                     style={styles.markReviewText}
+                    className="text-review-button"
                     onClick={(e) => {
                       if (currentQuestionData && currentQuestionData.id) {
                         toggleFlagged(currentQuestionData.id);
@@ -839,9 +884,13 @@ function PracticeTestContent() {
                     <div style={styles.questionNumberBox}>
                       {currentQuestion + 1}
                     </div>
-                    <div style={styles.markReviewBox}>
+                    <div 
+                      style={styles.markReviewBox}
+                      className="math-review-button"
+                      onClick={() => toggleFlagged(currentQuestionData.id)}
+                    >
                       <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                      <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
+                      <span>Mark for Review</span>
                     </div>
                   </div>
                   
@@ -898,6 +947,7 @@ function PracticeTestContent() {
                       <span style={styles.questionNumberBox}>Question {currentQuestion + 1}</span>
                       <span 
                         style={styles.markReviewBox}
+                        className="math-review-button"
                         onClick={() => toggleFlagged(currentQuestionData.id)}
                       >
                         <Bookmark 
@@ -1173,6 +1223,44 @@ const globalStyles = `
     margin-bottom: 0;
   }
   
+  /* Mark for Review button hover states */
+  .math-review-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f3f4f6;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    margin-left: 1px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  
+  .math-review-button:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .text-review-button {
+    font-size: 14px;
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    transition: all 0.2s ease;
+    user-select: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .text-review-button:hover {
+    background-color: #f3f4f6;
+  }
+  
   /* KaTeX styles */
   .katex-display {
     overflow-x: auto;
@@ -1274,6 +1362,13 @@ const styles = {
     alignItems: 'center',
     gap: '4px',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
+    transition: 'all 0.2s ease',
+    userSelect: 'none',
+    padding: '0.25rem 0.5rem',
+    borderRadius: '4px',
+    ':hover': {
+      backgroundColor: '#f3f4f6',
+    }
   },
   mathQuestion: {
     padding: '0 2rem 2rem 2rem',
@@ -1791,6 +1886,11 @@ const styles = {
     fontSize: '0.875rem',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
     marginLeft: '1px',
+    transition: 'all 0.2s ease',
+    userSelect: 'none',
+    ':hover': {
+      backgroundColor: '#e5e7eb',
+    }
   },
   imageContainer: {
     width: '100%',
