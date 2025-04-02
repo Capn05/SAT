@@ -335,7 +335,7 @@ function PracticeTestContent() {
     }
   }
   
-  const handlePauseTest = async () => {
+  const handlePauseTest = async (destination = '/TimedTestDash') => {
     // Pause the timer
     clearInterval(timerRef.current)
     setIsPaused(true)
@@ -365,8 +365,8 @@ function PracticeTestContent() {
         throw new Error('Failed to save test progress')
       }
       
-      // Redirect to dashboard
-      router.push('/TimedTestDash')
+      // Redirect to destination (defaults to dashboard if not specified)
+      router.push(destination)
     } catch (err) {
       console.error('Error pausing test:', err)
       // Resume the timer if there was an error
@@ -557,6 +557,36 @@ function PracticeTestContent() {
       window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, [testId, moduleId, currentQuestion, timeRemaining, answers, flaggedQuestions, testComplete]);
+
+  // Handle navigation with App Router
+  useEffect(() => {
+    // Intercept navigation attempts with the router
+    const handleNavigation = (e) => {
+      if (!testComplete) {
+        // Pause test when clicking any link
+        const target = e.target.closest('a');
+        if (target && !target.getAttribute('href')?.includes('/PracticeTestMode')) {
+          console.log('Navigation link clicked, pausing test');
+          
+          // Get the intended destination
+          const destination = target.getAttribute('href');
+          
+          // Prevent default navigation
+          e.preventDefault();
+          
+          // Pause the test and redirect to the intended destination
+          handlePauseTest(destination);
+        }
+      }
+    };
+
+    // Listen for click events on the document to catch all link clicks
+    document.addEventListener('click', handleNavigation);
+
+    return () => {
+      document.removeEventListener('click', handleNavigation);
+    };
+  }, [testComplete, handlePauseTest]);
   
   // Move the debug logging to within useEffect hooks rather than at render time
   useEffect(() => {
@@ -781,7 +811,7 @@ function PracticeTestContent() {
               </div>
               <button 
                 style={styles.pauseButton}
-                onClick={handlePauseTest}
+                onClick={() => handlePauseTest()}
               >
                 Pause
               </button>
