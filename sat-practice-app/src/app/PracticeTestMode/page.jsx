@@ -486,6 +486,20 @@ function PracticeTestContent() {
       if (document.visibilityState === 'hidden' && !testComplete) {
         console.log('Page hidden, auto-pausing test');
         handleAutoPause();
+      } else if (document.visibilityState === 'visible' && !testComplete && timeRemaining > 0) {
+        console.log('Page visible, resuming test');
+        // Resume the timer if the test is not complete
+        clearInterval(timerRef.current); // Clear any existing timer first
+        timerRef.current = setInterval(() => {
+          setTimeRemaining(prev => {
+            if (prev <= 1) {
+              clearInterval(timerRef.current);
+              handleSubmitModule();
+              return 0;
+            }
+            return prev - 1;
+          });
+        }, 1000);
       }
     };
     
