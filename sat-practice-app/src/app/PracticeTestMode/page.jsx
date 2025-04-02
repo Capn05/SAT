@@ -865,6 +865,7 @@ function PracticeTestContent() {
                 <div style={styles.markReviewTextOnly}>
                   <span 
                     style={styles.markReviewText}
+                    className="text-review-button"
                     onClick={(e) => {
                       if (currentQuestionData && currentQuestionData.id) {
                         toggleFlagged(currentQuestionData.id);
@@ -883,9 +884,13 @@ function PracticeTestContent() {
                     <div style={styles.questionNumberBox}>
                       {currentQuestion + 1}
                     </div>
-                    <div style={styles.markReviewBox}>
+                    <div 
+                      style={styles.markReviewBox}
+                      className="math-review-button"
+                      onClick={() => toggleFlagged(currentQuestionData.id)}
+                    >
                       <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                      <span onClick={() => toggleFlagged(currentQuestionData.id)}>Mark for Review</span>
+                      <span>Mark for Review</span>
                     </div>
                   </div>
                   
@@ -942,6 +947,7 @@ function PracticeTestContent() {
                       <span style={styles.questionNumberBox}>Question {currentQuestion + 1}</span>
                       <span 
                         style={styles.markReviewBox}
+                        className="math-review-button"
                         onClick={() => toggleFlagged(currentQuestionData.id)}
                       >
                         <Bookmark 
@@ -1217,6 +1223,44 @@ const globalStyles = `
     margin-bottom: 0;
   }
   
+  /* Mark for Review button hover states */
+  .math-review-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f3f4f6;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    margin-left: 1px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  
+  .math-review-button:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .text-review-button {
+    font-size: 14px;
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    transition: all 0.2s ease;
+    user-select: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .text-review-button:hover {
+    background-color: #f3f4f6;
+  }
+  
   /* KaTeX styles */
   .katex-display {
     overflow-x: auto;
@@ -1318,6 +1362,13 @@ const styles = {
     alignItems: 'center',
     gap: '4px',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
+    transition: 'all 0.2s ease',
+    userSelect: 'none',
+    padding: '0.25rem 0.5rem',
+    borderRadius: '4px',
+    ':hover': {
+      backgroundColor: '#f3f4f6',
+    }
   },
   mathQuestion: {
     padding: '0 2rem 2rem 2rem',
@@ -1835,6 +1886,11 @@ const styles = {
     fontSize: '0.875rem',
     fontFamily: '"Myriad Pro", Arial, sans-serif',
     marginLeft: '1px',
+    transition: 'all 0.2s ease',
+    userSelect: 'none',
+    ':hover': {
+      backgroundColor: '#e5e7eb',
+    }
   },
   imageContainer: {
     width: '100%',
