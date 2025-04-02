@@ -395,7 +395,7 @@ const styles = {
   messageIcon: {
     width: '20px',
     height: '20px',
-    color: '#65a30d',
+    color: '#10b981',
     marginRight: '8px',
   },
   inputField: {
@@ -410,7 +410,7 @@ const styles = {
   },
   sendButton: {
     padding: '8px 12px',
-    backgroundColor: '#65a30d',
+    backgroundColor: '#10b981',
     border: 'none',
     borderRadius: '4px',
     color: '#fff',

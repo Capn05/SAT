@@ -46,7 +46,7 @@ const styles = {
   percentage: {
     fontSize: "18px",
     fontWeight: "bold",
-    color: "#65a30d",
+    color: "#4f46e5",
   },
   barContainer: {
     height: "12px",
@@ -57,7 +57,7 @@ const styles = {
   },
   progress: {
     height: "100%",
-    background: "linear-gradient(90deg, #65a30d 0%, #34d399 100%)",
+    backgroundColor: "#4f46e5",
     borderRadius: "6px",
     transition: "width 0.5s ease-in-out",
   },
@@ -80,7 +80,7 @@ const styles = {
   completedText: {
     fontSize: "24px",
     fontWeight: "bold",
-    color: "#65a30d",
+    color: "#4f46e5",
     marginRight: "8px",
   },
   totalText: {
