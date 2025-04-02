@@ -23,7 +23,19 @@ export async function GET(request) {
     startDate.setDate(startDate.getDate() - days);
     const startDateStr = startDate.toISOString();
 
-    // Build the base query
+    // Get user's performance data from user_skill_analytics
+    const { data: skillAnalytics, error: analyticsError } = await supabase
+      .from('user_skill_analytics')
+      .select('total_attempts, correct_attempts, last_practiced')
+      .eq('user_id', session.user.id)
+      .gte('last_practiced', startDateStr);
+
+    if (analyticsError) {
+      console.error('Error fetching skill analytics:', analyticsError);
+      return NextResponse.json({ error: 'Failed to fetch skill analytics' }, { status: 500 });
+    }
+
+    // Build the base query for user_answers
     let query = supabase
       .from('user_answers')
       .select(`
@@ -61,6 +73,26 @@ export async function GET(request) {
     const dailyStats = {};
     const subcategoryStats = {};
 
+    // Process skill analytics
+    skillAnalytics.forEach(analytics => {
+      const date = new Date(analytics.last_practiced).toISOString().split('T')[0];
+      
+      // Initialize daily stats if not exists
+      if (!dailyStats[date]) {
+        dailyStats[date] = {
+          total: 0,
+          correct: 0,
+          accuracy: 0
+        };
+      }
+
+      // Add skill analytics to daily stats
+      dailyStats[date].total += analytics.total_attempts;
+      dailyStats[date].correct += analytics.correct_attempts;
+      dailyStats[date].accuracy = (dailyStats[date].correct / dailyStats[date].total) * 100;
+    });
+
+    // Process user answers
     answers.forEach(answer => {
       const date = new Date(answer.answered_at).toISOString().split('T')[0];
       const subcategory = answer.questions.subcategories.subcategory_name;
@@ -113,9 +145,19 @@ export async function GET(request) {
       ...stats
     }));
 
+    // Calculate overall stats to match AnalyticsCard
+    const totalQuestions = dailyData.reduce((sum, day) => sum + day.total, 0);
+    const totalCorrect = dailyData.reduce((sum, day) => sum + day.correct, 0);
+    const overallAccuracy = totalQuestions > 0 ? (totalCorrect / totalQuestions) * 100 : 0;
+
     return NextResponse.json({
       dailyData,
       subcategoryData,
+      overallStats: {
+        totalQuestions,
+        totalCorrect,
+        accuracyPercentage: overallAccuracy
+      },
       dateRange: {
         start: startDateStr,
         end: new Date().toISOString()

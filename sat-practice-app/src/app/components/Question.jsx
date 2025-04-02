@@ -903,7 +903,16 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         />
 
         <div style={styles.questionContent}>
-          <h2 style={styles.title}>Question {currentIndex + 1}:</h2>
+          <h2 style={styles.title}>Question {currentIndex + 1}</h2>
+          
+          <div className="flex justify-between items-center mb-2">
+            <h2 className="text-xl font-semibold text-gray-800">Question {currentIndex + 1}</h2>
+            {process.env.NODE_ENV === 'development' && (
+              <span className="px-2 py-1 bg-gray-200 text-gray-700 text-xs rounded-md font-mono">
+                ID: {questions[currentIndex].id}
+              </span>
+            )}
+          </div>
           
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-xl font-semibold text-gray-800">Question {currentIndex + 1}</h2>
