@@ -151,32 +151,6 @@ export default function ProgressPage() {
     }));
   };
 
-  const generateFallbackData = () => {
-    const sampleData = Array.from({ length: 30 }, (_, i) => {
-      const date = new Date();
-      date.setDate(date.getDate() - (30-i));
-      return {
-        date: date.toISOString().split('T')[0],
-        accuracy: Math.floor(Math.random() * 40 + 60),
-        total: Math.floor(Math.random() * 20 + 5),
-        correct: Math.floor(Math.random() * 15 + 5)
-      };
-    });
-
-    const sampleSubcategories = [
-      { name: 'Algebra', accuracy: 85, total: 50, correct: 42, domain: 'Math' },
-      { name: 'Geometry', accuracy: 75, total: 40, correct: 30, domain: 'Math' },
-      { name: 'Statistics', accuracy: 90, total: 30, correct: 27, domain: 'Math' },
-      { name: 'Grammar', accuracy: 82, total: 45, correct: 37, domain: 'English' },
-      { name: 'Vocabulary', accuracy: 88, total: 35, correct: 31, domain: 'English' }
-    ];
-
-    return {
-      dailyData: sampleData,
-      subcategoryData: sampleSubcategories
-    };
-  };
-
   const fetchProgressData = async () => {
     try {
       setLoading(true);
@@ -186,15 +160,15 @@ export default function ProgressPage() {
       
       const data = await response.json();
       
-      // Use real data if it exists, otherwise fallback to generated data
-      if (data.dailyData?.length > 0 || data.subcategoryData?.length > 0) {
-        setProgressData(data);
-      } else {
-        setProgressData(generateFallbackData());
-      }
+      // Always use the actual data from the API, even if empty
+      setProgressData(data);
     } catch (err) {
       setError(err.message);
-      setProgressData(generateFallbackData());
+      // Instead of using generated data, use empty data
+      setProgressData({
+        dailyData: [],
+        subcategoryData: []
+      });
     } finally {
       setLoading(false);
     }
