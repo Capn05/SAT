@@ -15,8 +15,18 @@ const nextConfig = {
   api: {
     bodyParser: false,
   },
+  // This setting helps prevent Next.js from rendering its app shell
+  // for the routes we're handling with static HTML
+  skipTrailingSlashRedirect: true,
+  skipMiddlewareUrlNormalize: true,
+  
   async rewrites() {
     return [
+      // Root path serves the static HTML directly
+      {
+        source: '/',
+        destination: '/index.html',
+      },
       // Handle password reset tokens on welcome page
       {
         source: '/welcome',
@@ -29,7 +39,7 @@ const nextConfig = {
           },
         ],
       },
-      // The welcome page will be the static landing page
+      // Serve the static HTML for the welcome page
       {
         source: '/welcome',
         destination: '/index.html',

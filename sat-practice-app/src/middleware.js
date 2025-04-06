@@ -2,6 +2,25 @@ import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
 import { NextResponse } from 'next/server'
 
 export async function middleware(req) {
+  // Direct static HTML serving for root and welcome routes
+  if (req.nextUrl.pathname === '/' || req.nextUrl.pathname === '/welcome') {
+    // Check if there's a recovery token in the URL
+    const searchParams = req.nextUrl.searchParams;
+    const hash = req.nextUrl.hash;
+
+    if (searchParams.get('type') === 'recovery' || (hash && hash.includes('type=recovery'))) {
+      // If there's a recovery token, allow the auth handler to process it
+      const url = req.nextUrl.clone();
+      url.pathname = '/auth/handle-auth';
+      return NextResponse.rewrite(url);
+    } else {
+      // For normal visitors, serve the static HTML directly
+      const url = req.nextUrl.clone();
+      url.pathname = '/index.html';
+      return NextResponse.rewrite(url);
+    }
+  }
+
   // Skip middleware for these paths to prevent auth loops and token refreshes
   const bypassPaths = [
     '/auth/callback', 
@@ -20,11 +39,6 @@ export async function middleware(req) {
   ];
   
   if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
-    return NextResponse.next();
-  }
-  
-  // Root path (/) now redirects to /welcome via the page component
-  if (req.nextUrl.pathname === '/') {
     return NextResponse.next();
   }
   
