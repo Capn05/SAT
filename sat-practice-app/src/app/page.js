@@ -8,9 +8,9 @@ export default function Home() {
     if (typeof window !== 'undefined') {
       const hash = window.location.hash;
       
-      // Handle reset password token
-      if (hash && hash.includes('type=recovery') && hash.includes('access_token')) {
-        console.log('Root page - Recovery token found, redirecting to reset-password');
+      // If there's a token in the URL hash, redirect to reset-password
+      if (hash && hash.includes('access_token')) {
+        console.log('Root page - Access token found, redirecting to reset-password');
         window.location.href = `/reset-password${hash}`;
         return;
       }
