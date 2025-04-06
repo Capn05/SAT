@@ -14,102 +14,63 @@ export default function ResetPassword() {
   const [hasSession, setHasSession] = useState(false);
 
   useEffect(() => {
-    // Log URL info for debugging
     if (typeof window !== 'undefined') {
       console.log('Reset Password - URL Hash:', window.location.hash);
       console.log('Reset Password - URL Search:', window.location.search);
       console.log('Reset Password - Full URL:', window.location.href);
-      
-      // Check for errors in the URL hash or query params
-      const hash = window.location.hash;
+
       const searchParams = new URLSearchParams(window.location.search);
-      
-      if (hash && hash.includes('error=')) {
-        console.log('Error detected in hash, redirecting to forgot-password');
-        const errorParams = new URLSearchParams(hash.substring(1));
-        const errorMessage = errorParams.get('error_description') || 'Authentication error';
-        window.location.href = `/forgot-password?error=${encodeURIComponent(errorMessage)}`;
-        return;
-      }
-      
-      if (searchParams.get('error')) {
-        console.log('Error detected in search params, redirecting to forgot-password');
-        const errorMessage = searchParams.get('error_description') || 'Authentication error';
-        window.location.href = `/forgot-password?error=${encodeURIComponent(errorMessage)}`;
-        return;
-      }
-      
-      // First try to handle token from query parameters (from /auth/callback)
       const token = searchParams.get('access_token');
       const refreshToken = searchParams.get('refresh_token');
       const type = searchParams.get('type');
-      
+
       if (token && type === 'recovery') {
         console.log('Recovery token found in query params, processing...');
-        try {
-          // Exchange the token for a session
-          supabase.auth.setSession({
-            access_token: token,
-            refresh_token: refreshToken || '',
-          }).then(({ data, error }) => {
+        supabase.auth.setSession({
+          access_token: token,
+          refresh_token: refreshToken || '',
+        }).then(({ data, error }) => {
+          if (error) {
+            console.error('Session error:', error);
+            setHasSession(false);
+          } else if (data && data.session) {
+            console.log('Successfully set session from query params');
+            setHasSession(true);
+          } else {
+            console.log('No session found despite token in query params');
+            setHasSession(false);
+          }
+          setLoading(false);
+        });
+        return;
+      }
+
+      // Handle hash fragment for backward compatibility
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
+        console.log('Access token found in hash, attempting to set session');
+        supabase.auth.getSession()
+          .then(({ data, error }) => {
             if (error) {
               console.error('Session error:', error);
               setHasSession(false);
             } else if (data && data.session) {
-              console.log('Successfully set session from query params');
+              console.log('Successfully set session from access token in hash');
               setHasSession(true);
             } else {
-              console.log('No session found despite token in query params');
+              console.log('No session found despite access token in hash');
               setHasSession(false);
             }
             setLoading(false);
           });
-          return;
-        } catch (error) {
-          console.error('Error setting session from query params:', error);
-        }
-      }
-      
-      // Check for access token in hash fragment (for password reset flow)
-      if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
-        console.log('Access token found in hash, attempting to set session');
-        
-        // Extract the access token and use it to set the session
-        try {
-          // Let Supabase auth library handle the token parsing from the URL
-          // This should trigger the onAuthStateChange listener
-          supabase.auth.getSession()
-            .then(({ data, error }) => {
-              if (error) {
-                console.error('Session error:', error);
-                setHasSession(false);
-              } else if (data && data.session) {
-                console.log('Successfully set session from access token in hash');
-                setHasSession(true);
-              } else {
-                console.log('No session found despite access token in hash');
-                setHasSession(false);
-              }
-              setLoading(false);
-            });
-        } catch (error) {
-          console.error('Error setting session from hash:', error);
-          setHasSession(false);
-          setLoading(false);
-        }
       } else {
-        // No hash with access token, proceed with normal session check
         checkSession();
       }
     } else {
-      // Server-side rendering, set loading false
       setLoading(false);
     }
-    
-    // Listen for auth state changes
-    const {
-      data: { subscription }
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       console.log('Auth state changed:', _event, !!session);
       setHasSession(!!session);
       setLoading(false);
