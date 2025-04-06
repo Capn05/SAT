@@ -8,11 +8,26 @@ export async function middleware(req) {
     const searchParams = req.nextUrl.searchParams;
     const hash = req.nextUrl.hash;
 
-    if (searchParams.get('type') === 'recovery' || (hash && hash.includes('type=recovery'))) {
-      // If there's a recovery token, allow the auth handler to process it
-      const url = req.nextUrl.clone();
-      url.pathname = '/auth/handle-auth';
-      return NextResponse.rewrite(url);
+    // Handle both recovery tokens and error conditions
+    if (
+      searchParams.get('type') === 'recovery' || 
+      (hash && hash.includes('type=recovery')) ||
+      searchParams.get('error') || 
+      (hash && hash.includes('error='))
+    ) {
+      // If there's a token or error, redirect to the appropriate page
+      if (hash && hash.includes('error=')) {
+        // For error cases, redirect to forgot-password with the error
+        const url = req.nextUrl.clone();
+        url.pathname = '/forgot-password';
+        url.search = hash.replace('#', '?');
+        return NextResponse.redirect(url);
+      } else {
+        // For normal recovery tokens, use the auth handler
+        const url = req.nextUrl.clone();
+        url.pathname = '/auth/handle-auth';
+        return NextResponse.rewrite(url);
+      }
     } else {
       // For normal visitors, serve the static HTML directly
       const url = req.nextUrl.clone();

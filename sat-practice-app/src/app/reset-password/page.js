@@ -20,8 +20,26 @@ export default function ResetPassword() {
       console.log('Reset Password - URL Search:', window.location.search);
       console.log('Reset Password - Full URL:', window.location.href);
       
-      // Check for access token in hash fragment (for password reset flow)
+      // Check for errors in the URL hash or query params
       const hash = window.location.hash;
+      const searchParams = new URLSearchParams(window.location.search);
+      
+      if (hash && hash.includes('error=')) {
+        console.log('Error detected in hash, redirecting to forgot-password');
+        const errorParams = new URLSearchParams(hash.substring(1));
+        const errorMessage = errorParams.get('error_description') || 'Authentication error';
+        window.location.href = `/forgot-password?error=${encodeURIComponent(errorMessage)}`;
+        return;
+      }
+      
+      if (searchParams.get('error')) {
+        console.log('Error detected in search params, redirecting to forgot-password');
+        const errorMessage = searchParams.get('error_description') || 'Authentication error';
+        window.location.href = `/forgot-password?error=${encodeURIComponent(errorMessage)}`;
+        return;
+      }
+      
+      // Check for access token in hash fragment (for password reset flow)
       if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
         console.log('Access token found, attempting to set session');
         
