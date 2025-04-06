@@ -1,8 +1,11 @@
 'use client'
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+
   useEffect(() => {
     // Handle tokens at the root URL
     if (typeof window !== 'undefined') {
@@ -24,7 +27,18 @@ export default function Home() {
         return;
       }
     }
-  }, []);
+
+    // Check if we have a recovery token in the URL hash
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash && hash.includes('type=recovery')) {
+        console.log('Recovery token found on homepage, redirecting to reset-password page');
+        // Use window.location to preserve the hash fragment
+        window.location.href = `/reset-password${hash}`;
+        return;
+      }
+    }
+  }, [router]);
 
   // This component is not rendered if we redirect
   // Otherwise it will be replaced by the static HTML from middleware

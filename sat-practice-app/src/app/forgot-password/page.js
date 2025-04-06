@@ -35,11 +35,14 @@ export default function ForgotPassword() {
     }
 
     try {
-      // Get the base URL for redirects
-      const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+      // Get the base URL for redirects - ensure it has the correct domain with www if needed
+      const baseUrl = typeof window !== 'undefined' 
+        ? (window.location.origin.includes('www') ? window.location.origin : window.location.origin.replace('://', '://www.'))
+        : 'https://www.brilltutor.com';
+
+      console.log('Using redirect URL:', `${baseUrl}/reset-password`);
 
       // Call the password reset function with direct reset-password path
-      // This will overrides Supabase's default redirect behavior
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${baseUrl}/reset-password`,
       });
