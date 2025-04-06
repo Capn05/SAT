@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
   const pathname = usePathname();
   
   // Public paths that don't require authentication
-  const publicPaths = ['/login', '/signup', '/forgot-password'];
+  const publicPaths = ['/login', '/signup', '/forgot-password', '/reset-password', '/auth/reset-redirect', '/auth/handle-auth'];
   const isPublicPath = 
     publicPaths.includes(pathname) || 
     pathname === '/' || 

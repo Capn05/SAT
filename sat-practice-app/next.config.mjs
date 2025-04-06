@@ -17,6 +17,18 @@ const nextConfig = {
   },
   async rewrites() {
     return [
+      // Handle password reset tokens on welcome page
+      {
+        source: '/welcome',
+        destination: '/auth/handle-auth',
+        has: [
+          {
+            type: 'query',
+            key: 'type',
+            value: 'recovery',
+          },
+        ],
+      },
       // The welcome page will be the static landing page
       {
         source: '/welcome',

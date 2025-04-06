@@ -16,34 +16,46 @@ export default function ResetPassword() {
   useEffect(() => {
     // Log URL info for debugging
     if (typeof window !== 'undefined') {
-      console.log('URL Hash:', window.location.hash);
-      console.log('URL Search:', window.location.search);
-      console.log('Full URL:', window.location.href);
-    }
-
-    // Check if we have a valid session
-    const checkSession = async () => {
-      setLoading(true);
-      try {
-        const { data, error } = await supabase.auth.getSession();
-        console.log('Session data:', data);
-        if (error) {
-          console.error('Session error:', error);
+      console.log('Reset Password - URL Hash:', window.location.hash);
+      console.log('Reset Password - URL Search:', window.location.search);
+      console.log('Reset Password - Full URL:', window.location.href);
+      
+      // Check for access token in hash fragment (for password reset flow)
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
+        console.log('Access token found, attempting to set session');
+        
+        // Extract the access token and use it to set the session
+        try {
+          // Let Supabase auth library handle the token parsing from the URL
+          // This should trigger the onAuthStateChange listener
+          supabase.auth.getSession()
+            .then(({ data, error }) => {
+              if (error) {
+                console.error('Session error:', error);
+                setHasSession(false);
+              } else if (data && data.session) {
+                console.log('Successfully set session from access token');
+                setHasSession(true);
+              } else {
+                console.log('No session found despite access token');
+                setHasSession(false);
+              }
+              setLoading(false);
+            });
+        } catch (error) {
+          console.error('Error setting session from hash:', error);
           setHasSession(false);
-        } else if (data && data.session) {
-          setHasSession(true);
-        } else {
-          setHasSession(false);
+          setLoading(false);
         }
-      } catch (err) {
-        console.error('Error checking session:', err);
-        setHasSession(false);
-      } finally {
-        setLoading(false);
+      } else {
+        // No hash with access token, proceed with normal session check
+        checkSession();
       }
-    };
-    
-    checkSession();
+    } else {
+      // Server-side rendering, set loading false
+      setLoading(false);
+    }
     
     // Listen for auth state changes
     const {
@@ -56,6 +68,28 @@ export default function ResetPassword() {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  // Check if we have a valid session
+  const checkSession = async () => {
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.auth.getSession();
+      console.log('Session data:', data);
+      if (error) {
+        console.error('Session error:', error);
+        setHasSession(false);
+      } else if (data && data.session) {
+        setHasSession(true);
+      } else {
+        setHasSession(false);
+      }
+    } catch (err) {
+      console.error('Error checking session:', err);
+      setHasSession(false);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleResetPassword = async (e) => {
     e.preventDefault();

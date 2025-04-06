@@ -5,6 +5,8 @@ export async function middleware(req) {
   // Skip middleware for these paths to prevent auth loops and token refreshes
   const bypassPaths = [
     '/auth/callback', 
+    '/auth/reset-redirect',
+    '/auth/handle-auth',
     '/_next', 
     '/static', 
     '/api',
@@ -12,6 +14,7 @@ export async function middleware(req) {
     '/login',
     '/signup',
     '/forgot-password',
+    '/reset-password',
     '/pricing',
     '/welcome'  // New landing page path
   ];
