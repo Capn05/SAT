@@ -2,8 +2,25 @@ import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
 import { NextResponse } from 'next/server'
 
 export async function middleware(req) {
+  // Get URL hash for Supabase auth detection
+  // Note: middleware can't access hash directly, but we can check if there are auth params
+  const url = req.nextUrl.clone();
+  
   // Direct static HTML serving for root and welcome routes
   if (req.nextUrl.pathname === '/' || req.nextUrl.pathname === '/welcome') {
+    // Don't rewrite root requests that might have auth tokens
+    // Let the client-side code handle auth tokens
+    const hasAuthParams = url.searchParams.has('access_token') || 
+                         url.searchParams.has('refresh_token') ||
+                         url.searchParams.has('type') ||
+                         url.searchParams.has('error');
+    
+    // For root path with potential auth tokens, let the page component handle it
+    if (req.nextUrl.pathname === '/' && (hasAuthParams || req.headers.get('referer')?.includes('supabase'))) {
+      console.log('Potential auth token at root, skipping middleware rewrite');
+      return NextResponse.next();
+    }
+    
     // Check if there's a recovery token in the URL
     const searchParams = req.nextUrl.searchParams;
     const hash = req.nextUrl.hash;
@@ -11,26 +28,22 @@ export async function middleware(req) {
     // Handle both recovery tokens and error conditions
     if (
       searchParams.get('type') === 'recovery' || 
-      (hash && hash.includes('type=recovery')) ||
       searchParams.get('error') || 
-      (hash && hash.includes('error='))
+      (hash && (hash.includes('type=recovery') || hash.includes('error=')))
     ) {
       // If there's a token or error, redirect to the appropriate page
-      if (hash && hash.includes('error=')) {
+      if (searchParams.get('error') || (hash && hash.includes('error='))) {
         // For error cases, redirect to forgot-password with the error
-        const url = req.nextUrl.clone();
         url.pathname = '/forgot-password';
-        url.search = hash.replace('#', '?');
+        if (hash) url.search = hash.replace('#', '?');
         return NextResponse.redirect(url);
       } else {
         // For normal recovery tokens, use the auth handler
-        const url = req.nextUrl.clone();
         url.pathname = '/auth/handle-auth';
         return NextResponse.rewrite(url);
       }
     } else {
       // For normal visitors, serve the static HTML directly
-      const url = req.nextUrl.clone();
       url.pathname = '/index.html';
       return NextResponse.rewrite(url);
     }

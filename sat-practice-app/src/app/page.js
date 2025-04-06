@@ -1,8 +1,32 @@
-export const dynamic = 'force-static';
+'use client'
+
+import { useEffect } from 'react';
 
 export default function Home() {
-  // This is a dummy component that won't be rendered
-  // because the middleware will intercept the request 
-  // and serve the static HTML file directly
+  useEffect(() => {
+    // Handle tokens at the root URL
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      
+      // Handle reset password token
+      if (hash && hash.includes('type=recovery') && hash.includes('access_token')) {
+        console.log('Root page - Recovery token found, redirecting to reset-password');
+        window.location.href = `/reset-password${hash}`;
+        return;
+      }
+      
+      // Handle error conditions
+      if (hash && hash.includes('error=')) {
+        console.log('Root page - Error in hash, redirecting to forgot-password');
+        const errorParams = new URLSearchParams(hash.substring(1));
+        const errorMessage = errorParams.get('error_description') || 'Authentication error';
+        window.location.href = `/forgot-password?error=${encodeURIComponent(errorMessage)}`;
+        return;
+      }
+    }
+  }, []);
+
+  // This component is not rendered if we redirect
+  // Otherwise it will be replaced by the static HTML from middleware
   return null;
 }

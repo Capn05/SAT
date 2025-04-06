@@ -38,9 +38,10 @@ export default function ForgotPassword() {
       // Get the base URL for redirects
       const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
 
-      // Call the password reset function with the reset-redirect path that will handle the token properly
+      // Call the password reset function with direct reset-password path
+      // This will overrides Supabase's default redirect behavior
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${baseUrl}/auth/reset-redirect`,
+        redirectTo: `${baseUrl}/reset-password`,
       });
 
       if (error) {
