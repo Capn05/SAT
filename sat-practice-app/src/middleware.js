@@ -66,6 +66,12 @@ export async function middleware(req) {
     '/welcome'  // New landing page path
   ];
   
+  // Special handling for auth callback
+  if (req.nextUrl.pathname === '/auth/callback') {
+    // Let the auth callback route handle the token processing
+    return NextResponse.next();
+  }
+  
   if (bypassPaths.some(path => req.nextUrl.pathname === path || req.nextUrl.pathname.startsWith(path))) {
     return NextResponse.next();
   }

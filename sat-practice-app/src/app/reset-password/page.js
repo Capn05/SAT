@@ -39,9 +39,40 @@ export default function ResetPassword() {
         return;
       }
       
+      // First try to handle token from query parameters (from /auth/callback)
+      const token = searchParams.get('access_token');
+      const refreshToken = searchParams.get('refresh_token');
+      const type = searchParams.get('type');
+      
+      if (token && type === 'recovery') {
+        console.log('Recovery token found in query params, processing...');
+        try {
+          // Exchange the token for a session
+          supabase.auth.setSession({
+            access_token: token,
+            refresh_token: refreshToken || '',
+          }).then(({ data, error }) => {
+            if (error) {
+              console.error('Session error:', error);
+              setHasSession(false);
+            } else if (data && data.session) {
+              console.log('Successfully set session from query params');
+              setHasSession(true);
+            } else {
+              console.log('No session found despite token in query params');
+              setHasSession(false);
+            }
+            setLoading(false);
+          });
+          return;
+        } catch (error) {
+          console.error('Error setting session from query params:', error);
+        }
+      }
+      
       // Check for access token in hash fragment (for password reset flow)
       if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
-        console.log('Access token found, attempting to set session');
+        console.log('Access token found in hash, attempting to set session');
         
         // Extract the access token and use it to set the session
         try {
@@ -53,10 +84,10 @@ export default function ResetPassword() {
                 console.error('Session error:', error);
                 setHasSession(false);
               } else if (data && data.session) {
-                console.log('Successfully set session from access token');
+                console.log('Successfully set session from access token in hash');
                 setHasSession(true);
               } else {
-                console.log('No session found despite access token');
+                console.log('No session found despite access token in hash');
                 setHasSession(false);
               }
               setLoading(false);
