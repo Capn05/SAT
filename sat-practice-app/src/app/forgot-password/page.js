@@ -1,13 +1,28 @@
 'use client'
 
 import Link from "next/link";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../../lib/supabase';
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('');
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+
+  useEffect(() => {
+    // Check for error in URL params when component mounts
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const errorParam = params.get('error');
+      if (errorParam) {
+        try {
+          setError(decodeURIComponent(errorParam));
+        } catch (e) {
+          setError('Your password reset link is invalid or has expired. Please request a new one.');
+        }
+      }
+    }
+  }, []);
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
@@ -20,10 +35,14 @@ export default function ForgotPassword() {
     }
 
     try {
-      // Get the base URL for redirects
-      const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+      // Get the base URL for redirects - ensure it has the correct domain with www if needed
+      const baseUrl = typeof window !== 'undefined' 
+        ? (window.location.origin.includes('www') ? window.location.origin : window.location.origin.replace('://', '://www.'))
+        : 'https://www.brilltutor.com';
 
-      // Call the password reset function
+      console.log('Using redirect URL:', `${baseUrl}/reset-password`);
+
+      // Call the password reset function with direct reset-password path
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${baseUrl}/reset-password`,
       });

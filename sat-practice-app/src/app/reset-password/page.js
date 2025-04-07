@@ -14,41 +14,63 @@ export default function ResetPassword() {
   const [hasSession, setHasSession] = useState(false);
 
   useEffect(() => {
-    // Log URL info for debugging
     if (typeof window !== 'undefined') {
-      console.log('URL Hash:', window.location.hash);
-      console.log('URL Search:', window.location.search);
-      console.log('Full URL:', window.location.href);
+      console.log('Reset Password - URL Hash:', window.location.hash);
+      console.log('Reset Password - URL Search:', window.location.search);
+      console.log('Reset Password - Full URL:', window.location.href);
+
+      const searchParams = new URLSearchParams(window.location.search);
+      const token = searchParams.get('access_token');
+      const refreshToken = searchParams.get('refresh_token');
+      const type = searchParams.get('type');
+
+      if (token && type === 'recovery') {
+        console.log('Recovery token found in query params, processing...');
+        supabase.auth.setSession({
+          access_token: token,
+          refresh_token: refreshToken || '',
+        }).then(({ data, error }) => {
+          if (error) {
+            console.error('Session error:', error);
+            setHasSession(false);
+          } else if (data && data.session) {
+            console.log('Successfully set session from query params');
+            setHasSession(true);
+          } else {
+            console.log('No session found despite token in query params');
+            setHasSession(false);
+          }
+          setLoading(false);
+        });
+        return;
+      }
+
+      // Handle hash fragment for backward compatibility
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token') && hash.includes('type=recovery')) {
+        console.log('Access token found in hash, attempting to set session');
+        supabase.auth.getSession()
+          .then(({ data, error }) => {
+            if (error) {
+              console.error('Session error:', error);
+              setHasSession(false);
+            } else if (data && data.session) {
+              console.log('Successfully set session from access token in hash');
+              setHasSession(true);
+            } else {
+              console.log('No session found despite access token in hash');
+              setHasSession(false);
+            }
+            setLoading(false);
+          });
+      } else {
+        checkSession();
+      }
+    } else {
+      setLoading(false);
     }
 
-    // Check if we have a valid session
-    const checkSession = async () => {
-      setLoading(true);
-      try {
-        const { data, error } = await supabase.auth.getSession();
-        console.log('Session data:', data);
-        if (error) {
-          console.error('Session error:', error);
-          setHasSession(false);
-        } else if (data && data.session) {
-          setHasSession(true);
-        } else {
-          setHasSession(false);
-        }
-      } catch (err) {
-        console.error('Error checking session:', err);
-        setHasSession(false);
-      } finally {
-        setLoading(false);
-      }
-    };
-    
-    checkSession();
-    
-    // Listen for auth state changes
-    const {
-      data: { subscription }
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       console.log('Auth state changed:', _event, !!session);
       setHasSession(!!session);
       setLoading(false);
@@ -56,6 +78,28 @@ export default function ResetPassword() {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  // Check if we have a valid session
+  const checkSession = async () => {
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.auth.getSession();
+      console.log('Session data:', data);
+      if (error) {
+        console.error('Session error:', error);
+        setHasSession(false);
+      } else if (data && data.session) {
+        setHasSession(true);
+      } else {
+        setHasSession(false);
+      }
+    } catch (err) {
+      console.error('Error checking session:', err);
+      setHasSession(false);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
