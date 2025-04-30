@@ -171,6 +171,19 @@ async function handleCheckoutSessionCompleted(session: any) {
       debug(`Found user in users table with ID: ${userId}`);
     }
     
+    // Determine if this is a trial subscription
+    const isTrialing = session.amount_total === 0;
+    
+    // Get the subscription details from Stripe to get trial end date
+    const stripeSubscription = await stripe.subscriptions.retrieve(
+      session.subscription
+    );
+    
+    // Determine trial end date if applicable
+    const trialEnd = stripeSubscription.trial_end 
+      ? new Date(stripeSubscription.trial_end * 1000).toISOString()
+      : null;
+
     // Determine plan type from various sources
     let planType = determineSubscriptionPlanType(session);
     
@@ -178,18 +191,20 @@ async function handleCheckoutSessionCompleted(session: any) {
     const currentPeriodEnd = calculatePeriodEnd(planType);
     
     debug(`Storing subscription for user ${userId} with plan type: ${planType}`);
-    debug(`Current period end: ${currentPeriodEnd.toISOString()}`);
+    debug(`Trial status: ${isTrialing}, Trial end: ${trialEnd}`);
     
-    // Store subscription info in the database with better error handling
+    // Store subscription info in the database with trial information
     const { error: subscriptionError } = await supabase
       .from('subscriptions')
       .upsert({
         user_id: userId,
         stripe_customer_id: customerId,
-        stripe_subscription_id: session.subscription || session.id, // Use subscription ID or session ID
-        status: 'active',
+        stripe_subscription_id: session.subscription || session.id,
+        status: isTrialing ? 'trialing' : 'active',
         plan_type: planType,
         current_period_end: currentPeriodEnd.toISOString(),
+        is_trialing: isTrialing,
+        trial_end: trialEnd
       });
     
     if (subscriptionError) {
@@ -224,6 +239,12 @@ async function handleSubscriptionUpdate(subscription: any) {
     const periodEndDate = typeof subscription.current_period_end === 'number' 
       ? new Date(subscription.current_period_end * 1000) 
       : subscription.current_period_end ? new Date(subscription.current_period_end) : null;
+
+    // Add trial-related fields
+    const isTrialing = subscription.status === 'trialing';
+    const trialEnd = subscription.trial_end 
+      ? new Date(subscription.trial_end * 1000).toISOString()
+      : null;
       
     // Check if this is a cancellation - Stripe sets cancel_at_period_end flag
     if (subscription.cancel_at_period_end === true) {
@@ -236,7 +257,10 @@ async function handleSubscriptionUpdate(subscription: any) {
           // Keep status as active since they still have access
           status: 'active',
           // Update period end if provided
-          ...(periodEndDate && { current_period_end: periodEndDate.toISOString() })
+          ...(periodEndDate && { current_period_end: periodEndDate.toISOString() }),
+          // Add trial fields
+          is_trialing: isTrialing,
+          trial_end: trialEnd
         })
         .eq('stripe_subscription_id', subscription.id);
       
@@ -257,7 +281,10 @@ async function handleSubscriptionUpdate(subscription: any) {
         .update({
           status: 'canceled',
           // If it was already marked for cancellation, keep that flag
-          cancellation_requested: true
+          cancellation_requested: true,
+          // Add trial fields
+          is_trialing: false,
+          trial_end: trialEnd
         })
         .eq('stripe_subscription_id', subscription.id);
       
@@ -274,6 +301,9 @@ async function handleSubscriptionUpdate(subscription: any) {
         .update({
           status: subscription.status,
           current_period_end: periodEndDate.toISOString(),
+          // Add trial fields
+          is_trialing: isTrialing,
+          trial_end: trialEnd,
           // If it's active and not set to cancel, ensure cancellation_requested is false
           ...(subscription.status === 'active' && !subscription.cancel_at_period_end 
             ? { cancellation_requested: false } : {})
@@ -291,6 +321,9 @@ async function handleSubscriptionUpdate(subscription: any) {
         .from('subscriptions')
         .update({
           status: subscription.status,
+          // Add trial fields
+          is_trialing: isTrialing,
+          trial_end: trialEnd,
           // If it's active and not set to cancel, ensure cancellation_requested is false
           ...(subscription.status === 'active' && !subscription.cancel_at_period_end 
             ? { cancellation_requested: false } : {})

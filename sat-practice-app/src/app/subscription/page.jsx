@@ -316,7 +316,10 @@ function SubscriptionContent() {
             price: formatPrice(data.subscription.plan_type),
             billingCycle: getBillingCycle(data.subscription.plan_type),
             stripeCustomerId: data.subscription.stripe_customer_id,
-            stripeSubscriptionId: data.subscription.stripe_subscription_id
+            stripeSubscriptionId: data.subscription.stripe_subscription_id,
+            // Add trial information
+            isTrialing: data.subscription.is_trialing || false,
+            trialEnd: data.subscription.trial_end
           }
           
           // Check URL for cancel status (for when Supabase update might have failed)
@@ -393,14 +396,14 @@ function SubscriptionContent() {
   
   // Calculate days remaining
   const calculateDaysRemaining = (endDate) => {
-    if (!endDate) return 0
+    if (!endDate) return 0;
     
-    const today = new Date()
-    const end = new Date(endDate)
-    const diffTime = Math.abs(end - today)
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-    return diffDays
-  }
+    const today = new Date();
+    const end = new Date(endDate);
+    const diffTime = Math.abs(end - today);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays;
+  };
   
   // Add a helper function to determine if user has active access
   const hasActiveAccess = (sub) => {
@@ -420,6 +423,10 @@ function SubscriptionContent() {
   const getSubscriptionDisplayStatus = (sub) => {
     if (!sub) return 'Inactive';
     
+    if (sub.isTrialing) {
+      return 'Trial';
+    }
+    
     if (sub.status === 'active') {
       if (sub.cancellation_requested) {
         return 'Active (Canceled)';
@@ -433,6 +440,14 @@ function SubscriptionContent() {
   // Get subscription status badge style
   const getStatusBadgeStyle = (sub) => {
     if (!sub) return {};
+    
+    if (sub.isTrialing) {
+      // Purple for trial
+      return {
+        backgroundColor: '#f5f3ff',
+        color: '#7c3aed'
+      };
+    }
     
     if (sub.status === 'active') {
       if (sub.cancellation_requested) {
@@ -699,6 +714,28 @@ function SubscriptionContent() {
         </div>
       )}
       
+      {subscription?.isTrialing && (
+        <div style={{
+          display: 'flex',
+          padding: '12px 24px',
+          backgroundColor: '#f5f3ff',
+          color: '#6d28d9',
+          borderRadius: '6px',
+          margin: '10px 24px',
+          fontSize: '14px',
+          alignItems: 'center',
+          gap: '10px'
+        }}>
+          <AlertCircle size={18} />
+          <span>
+            You're currently on a free trial. Your trial ends on {formatDate(subscription?.trialEnd)}.
+            {subscription?.cancellation_requested 
+              ? " Your subscription will be canceled after the trial."
+              : " You'll be billed after the trial period ends."}
+          </span>
+        </div>
+      )}
+      
       <div style={styles.content}>
         <div style={styles.card}>
           <div style={styles.cardHeader}>
@@ -729,7 +766,7 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  Start Date
+                  {subscription?.isTrialing ? 'Trial Started' : 'Start Date'}
                 </div>
                 <div style={styles.infoValue}>
                   {formatDate(subscription?.startDate)}
@@ -739,13 +776,33 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  {subscription?.cancellation_requested ? 'Access Until' : 'Renewal Date'}
+                  {subscription?.isTrialing 
+                    ? 'Trial Ends' 
+                    : subscription?.cancellation_requested 
+                      ? 'Access Until' 
+                      : 'Renewal Date'}
                 </div>
                 <div style={styles.infoValue}>
-                  {formatDate(subscription?.endDate)}
+                  {subscription?.isTrialing 
+                    ? formatDate(subscription?.trialEnd)
+                    : formatDate(subscription?.endDate)}
                 </div>
               </div>
             </div>
+            
+            {/* Show trial price info if in trial */}
+            {subscription?.isTrialing && (
+              <div style={styles.infoRow}>
+                <div style={styles.infoItem}>
+                  <div style={styles.infoLabel}>Trial Period</div>
+                  <div style={styles.infoValue}>7 Days Free</div>
+                </div>
+                <div style={styles.infoItem}>
+                  <div style={styles.infoLabel}>After Trial</div>
+                  <div style={styles.infoValue}>{subscription?.price}</div>
+                </div>
+              </div>
+            )}
             
             <div style={styles.divider}></div>
             
@@ -773,12 +830,13 @@ function SubscriptionContent() {
                   <div 
                     style={{
                       ...styles.progressBar,
-                      width: `${100 - (calculateDaysRemaining(subscription?.endDate) / 365 * 100)}%`
+                      backgroundColor: '#7c3aed', // Purple for trial
+                      width: `${100 - (calculateDaysRemaining(subscription?.trialEnd) / 7 * 100)}%`
                     }}
                   ></div>
                 </div>
                 <div style={styles.timeRemainingText}>
-                  {calculateDaysRemaining(subscription?.endDate)} days remaining
+                  {calculateDaysRemaining(subscription?.trialEnd)} days left in trial
                 </div>
               </div>
             )}
