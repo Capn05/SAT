@@ -20,7 +20,7 @@ export async function checkSubscription() {
       .from('subscriptions')
       .select('status, plan_type, current_period_end')
       .eq('user_id', user.id)
-      .eq('status', 'active')
+      .in('status', ['active', 'trialing'])
       .order('created_at', { ascending: false })
       .limit(1)
       .single();
