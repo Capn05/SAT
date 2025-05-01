@@ -45,7 +45,10 @@ export default function PricingPage() {
             <div className={styles.planContent}>
               <div className={styles.planHeader}>
                 <h3 className={styles.planTitle}>Monthly Plan</h3>
-                <span className={styles.planTag}>Flexible</span>
+                <div className={styles.tagContainer}>
+                  <span className={styles.planTag}>Flexible</span>
+                  <span className={`${styles.planTag} ${styles.trialTag}`}>7-Day Free Trial</span>
+                </div>
               </div>
               
               <div className={styles.pricingDetail}>
@@ -54,6 +57,9 @@ export default function PricingPage() {
                   <span className={styles.pricePeriod}>/month</span>
                 </div>
                 <p className={styles.priceSubtext}>Cancel anytime</p>
+                <p className={`${styles.priceSubtext} ${styles.trialText}`}>
+                  Start with a 7-day free trial
+                </p>
               </div>
               
               <ul className={styles.featureList}>
