@@ -21,6 +21,7 @@ export default function Dashboard() {
   const [showDifficultyModal, setShowDifficultyModal] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [localLoading, setLocalLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
 
   // Add a safety timeout to prevent infinite loading
@@ -34,10 +35,26 @@ export default function Dashboard() {
         console.warn("Dashboard loading timed out after 7 seconds");
         setLocalLoading(false);
       }
-    }, 100  );
+    }, 100);
     
     return () => clearTimeout(timeout);
   }, [loading]);
+
+  // Check for mobile viewport on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Check on initial load
+    checkMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleStartPractice = (subject) => {
     setSelectedSubject(subject);
@@ -59,9 +76,9 @@ export default function Dashboard() {
       <div style={styles.container}>
         <Header />
         <div style={styles.content}>
-          <div style={styles.grid}>
+          <div style={isMobile ? styles.gridMobile : styles.grid}>
             <div style={styles.leftColumn}>
-              <div style={styles.subjects}>
+              <div style={isMobile ? styles.subjectsMobile : styles.subjects}>
                 <SubjectSection 
                   title="Quick Practice" 
                   value="Math Section" 
@@ -84,8 +101,8 @@ export default function Dashboard() {
               </div>
             </div>
             <div style={styles.rightColumn}>
-            <AnalyticsCard />
-            <AIChat/>
+              <AnalyticsCard />
+              <AIChat/>
             </div>
           </div>
         </div>
@@ -108,12 +125,17 @@ const styles = {
     backgroundColor: "#f9fafb",
   },
   content: {
-    padding: "24px",
-    margin:"0 1vh  0 1vh",
+    padding: "16px",
+    margin: "0 1vh 0 1vh",
   },
   grid: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
+    gap: "24px",
+  },
+  gridMobile: {
+    display: "flex",
+    flexDirection: "column",
     gap: "24px",
   },
   leftColumn: {
@@ -125,6 +147,11 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     gap: "24px",
+  },
+  subjectsMobile: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "16px",
   },
   analytics: {
     backgroundColor: "white",
@@ -138,10 +165,12 @@ const styles = {
   },
   loadingContainer: {
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
     backgroundColor: "#f9fafb",
+    gap: "16px",
   },
   loadingSpinner: {
     border: "4px solid rgba(0, 0, 0, 0.1)",
@@ -152,23 +181,32 @@ const styles = {
     animation: "spin 1s linear infinite",
   },
   loadingText: {
-    fontSize: "18px",
+    fontSize: "16px",
     color: "#4b5563",
+    textAlign: "center",
+    padding: "0 16px",
   }
 }
 
-// Add a global style for the spinner animation
-const spinnerStyle = `
+// Add a global style for the spinner animation and responsive styles
+const globalStyles = `
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
   }
 `;
 
 if (typeof document !== 'undefined') {
   // Only run in browser environment
   const style = document.createElement('style');
-  style.innerHTML = spinnerStyle;
+  style.innerHTML = globalStyles;
   document.head.appendChild(style);
 }
 

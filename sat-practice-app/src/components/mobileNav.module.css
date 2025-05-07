@@ -1,0 +1,326 @@
+.mobileNav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 60px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Mobile Warning Banner */
+.mobileBanner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fef2f2;
+  padding: 8px 16px;
+  z-index: 1200;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #b91c1c;
+  border-bottom: 1px solid #fee2e2;
+}
+
+.bannerContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bannerIcon {
+  flex-shrink: 0;
+  color: #dc2626;
+}
+
+.bannerCloseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.bannerCloseButton:hover {
+  background-color: #fee2e2;
+}
+
+/* This class can be added to any element that needs padding to avoid being hidden under the banner */
+.bannerSpacing {
+  padding-top: 37px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  padding: 8px 0;
+  color: #4b5563;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navItem:hover, .navItem:focus {
+  background-color: #f3f4f6;
+}
+
+.navItem.active {
+  color: #10b981;
+  position: relative;
+}
+
+.navItem.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: #10b981;
+  border-radius: 2px 2px 0 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* More Menu Styling */
+.moreMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.moreMenu {
+  width: 100%;
+  max-height: 75vh;
+  background-color: white;
+  border-radius: 16px 16px 0 0;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease;
+}
+
+.moreMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.moreMenuHeader h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.closeButton:hover {
+  background-color: #f3f4f6;
+}
+
+.moreMenuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.moreMenuItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  color: #4b5563;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.moreMenuSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.moreMenuItem:hover {
+  background-color: #f3f4f6;
+}
+
+.moreMenuIcon {
+  width: 20px;
+  height: 20px;
+  color: #10b981;
+  margin-right: 12px;
+}
+
+.subItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.subItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subItem:hover {
+  background-color: #f3f4f6;
+}
+
+.subItemIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  color: #10b981;
+}
+
+/* User Section Styling */
+.userSection {
+  padding: 16px 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.userIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.userEmail {
+  font-size: 14px;
+  color: #4b5563;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Hide on desktop, show on mobile */
+@media (min-width: 768px) {
+  .mobileNav, .mobileBanner {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobileNav {
+    display: flex;
+  }
+  
+  .mobileBanner {
+    display: flex;
+  }
+  
+  .navItem {
+    padding: 8px 4px;
+  }
+  
+  .label {
+    font-size: 9px;
+  }
+} 

@@ -196,4 +196,11 @@
     color: white;
   }
   
+  /* Hide sidebar on mobile screens */
+  @media (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+  }
+  
   

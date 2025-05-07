@@ -1,4 +1,5 @@
 import Sidebar from "../components/Sidebar.tsx";
+import MobileNav from "../components/MobileNav.tsx";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Noto_Sans, Roboto } from "next/font/google";
 import "./global.css";
@@ -40,7 +41,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Special handling for the landing page route - we don't need the sidebar there
+  // Special handling for the landing page route - we don't need the sidebar/nav there
   const isLandingPage = children?.props?.childProp?.segment === 'landing';
 
   return (
@@ -49,14 +50,20 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}
         style={{ margin: 0, display: "flex" }}
       >
+        {/* Desktop Sidebar - hidden on mobile */}
         {!isLandingPage && <Sidebar />}
+        
         <div style={{ 
           marginLeft: isLandingPage ? "0px" : "0px",
           flex: 1,
-          width: isLandingPage ? "100%" : "auto" 
+          width: isLandingPage ? "100%" : "auto",
+          paddingBottom: isLandingPage ? "0" : "60px" // Add padding for mobile nav
         }}>
           {children}
         </div>
+        
+        {/* Mobile Navigation - hidden on desktop */}
+        {!isLandingPage && <MobileNav />}
       </body>
     </html>
   );
