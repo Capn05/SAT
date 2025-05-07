@@ -35,11 +35,68 @@ export default function PricingPage() {
             Simple, Transparent <span className={styles.headerTitleHighlight}>Pricing</span>
           </h2>
           <p className={styles.headerDescription}>
-            Full access to all features with either plan. Choose what works for your preparation timeline.
+            Full access to all features with any plan. Choose what works for your preparation timeline.
           </p>
         </div>
         
-        <div className={styles.pricingGrid}>
+        <div className={styles.pricingGridThree}>
+          {/* 7-Day Free Trial */}
+          <div className={styles.planCard}>
+            <div className={styles.planContent}>
+              <div className={styles.planHeader}>
+                <h3 className={styles.planTitle}>Free Trial</h3>
+                <div className={styles.tagContainer}>
+                  <span className={`${styles.planTag} ${styles.trialTag}`}>7 Days</span>
+                </div>
+              </div>
+              
+              <div className={styles.pricingDetail}>
+                <div className={styles.price}>
+                  <span className={styles.priceAmount}>$0</span>
+                  <span className={styles.pricePeriod}>/7 days</span>
+                </div>
+                <p className={styles.priceSubtext}>Credit card required</p>
+                <p className={`${styles.priceSubtext} ${styles.trialText}`}>
+                  Cancel anytime, no charge
+                </p>
+              </div>
+              
+              <ul className={styles.featureList}>
+                <li className={styles.featureItem}>
+                  <svg className={styles.featureIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span className={styles.featureText}>2,000+ SAT practice questions</span>
+                </li>
+                <li className={styles.featureItem}>
+                  <svg className={styles.featureIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span className={styles.featureText}>15+ full-length adaptive practice exams</span>
+                </li>
+                <li className={styles.featureItem}>
+                  <svg className={styles.featureIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span className={styles.featureText}>AI tutor with hints and explanations</span>
+                </li>
+                <li className={styles.featureItem}>
+                  <svg className={styles.featureIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span className={styles.featureText}>Performance analytics dashboard</span>
+                </li>
+              </ul>
+              
+              <StripePayment
+                id="free-trial-button"
+                planType="monthly"
+                buttonText="Start Free Trial"
+                className={styles.trialButton}
+              />
+            </div>
+          </div>
+          
           {/* Monthly Plan */}
           <div className={styles.planCard}>
             <div className={styles.planContent}>
@@ -47,7 +104,6 @@ export default function PricingPage() {
                 <h3 className={styles.planTitle}>Monthly Plan</h3>
                 <div className={styles.tagContainer}>
                   <span className={styles.planTag}>Flexible</span>
-                  <span className={`${styles.planTag} ${styles.trialTag}`}>7-Day Free Trial</span>
                 </div>
               </div>
               
@@ -57,9 +113,6 @@ export default function PricingPage() {
                   <span className={styles.pricePeriod}>/month</span>
                 </div>
                 <p className={styles.priceSubtext}>Cancel anytime</p>
-                <p className={`${styles.priceSubtext} ${styles.trialText}`}>
-                  Start with a 7-day free trial
-                </p>
               </div>
               
               <ul className={styles.featureList}>
