@@ -56,6 +56,7 @@ export async function middleware(req) {
     '/auth/handle-auth',
     '/_next', 
     '/static', 
+    '/assets',
     '/api',
     '/favicon.ico',
     '/login',
@@ -78,14 +79,20 @@ export async function middleware(req) {
   
   // Only remaining paths are protected routes - check auth
   const res = NextResponse.next();
-  const supabase = createMiddlewareClient({ req, res });
+  const supabase = createMiddlewareClient({ req, res }, {
+    // Disable automatic refresh in middleware to prevent refresh loops
+    auth: {
+      autoRefreshToken: false,
+      persistSession: true
+    }
+  });
   
   try {
     // Simple lightweight check without token refresh
-    const { data, error } = await supabase.auth.getUser();
+    const { data, error } = await supabase.auth.getSession();
     
-    // Only redirect if we're certain there's no user
-    if (!data.user && !error) {
+    // Only redirect if we're certain there's no session
+    if (!data.session && !error) {
       console.log('User not authenticated, redirecting to login from:', req.nextUrl.pathname);
       const redirectUrl = new URL('/login', req.url);
       // Pass the original URL as a redirect parameter
@@ -109,7 +116,8 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
+     * - assets (public assets like images and videos)
      */
-    '/((?!_next/static|_next/image).*)',
+    '/((?!_next/static|_next/image|assets|favicon.ico).*)',
   ],
 } 

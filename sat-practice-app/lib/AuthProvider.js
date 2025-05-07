@@ -25,39 +25,76 @@ export function AuthProvider({ children }) {
     pathname.startsWith('/landing');
   
   useEffect(() => {
+    // Prevent multiple simultaneous auth checks
+    let isMounted = true;
+    let checkInProgress = false;
+    
+    // Track the last auth check time to throttle requests
+    const AUTH_CHECK_THROTTLE = 10000; // 10 seconds
+    let lastAuthCheck = 0;
+    
     // Check for existing session
     const checkUser = async () => {
+      // Prevent concurrent checks and throttle checks
+      if (checkInProgress || (Date.now() - lastAuthCheck < AUTH_CHECK_THROTTLE && user)) {
+        return;
+      }
+      
+      checkInProgress = true;
+      
       try {
         // Try to get user from localStorage first
         const localUser = localStorage.getItem('supabase.auth.user');
+        const now = Date.now();
+        lastAuthCheck = now;
         
         if (localUser) {
           try {
             const parsedUser = JSON.parse(localUser);
             // Validate the user object has expected properties
             if (parsedUser && parsedUser.id && parsedUser.email) {
-              setUser(parsedUser);
-              // Even with local storage data, still verify with server in background
-              const { data: { user: serverUser }, error } = await supabase.auth.getUser();
-              if (serverUser) {
-                // Update if server has newer data
-                localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-                setUser(serverUser);
-              } else if (!isPublicPath && !error) {
-                // Local storage has user but server doesn't - user likely signed out elsewhere
-                localStorage.removeItem('supabase.auth.user');
-                setUser(null);
-                router.replace('/login');
+              // Only update state if component is still mounted
+              if (isMounted) {
+                setUser(parsedUser);
+              }
+              
+              // Check if we need to verify with the server
+              // Only do this if we haven't checked recently
+              const lastServerCheck = localStorage.getItem('supabase.auth.lastServerCheck');
+              if (!lastServerCheck || (now - parseInt(lastServerCheck, 10)) > 60000) { // 1 minute
+                const { data: { user: serverUser }, error } = await supabase.auth.getUser();
+                localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+                
+                if (serverUser) {
+                  // Update if server has newer data
+                  localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
+                  if (isMounted) {
+                    setUser(serverUser);
+                  }
+                } else if (!isPublicPath && !error) {
+                  // Local storage has user but server doesn't - user likely signed out elsewhere
+                  localStorage.removeItem('supabase.auth.user');
+                  if (isMounted) {
+                    setUser(null);
+                    router.replace('/login');
+                  }
+                }
               }
             } else {
               // Invalid user data in localStorage
               localStorage.removeItem('supabase.auth.user');
               const { data: { user: serverUser }, error } = await supabase.auth.getUser();
+              localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+              
               if (serverUser) {
                 localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-                setUser(serverUser);
+                if (isMounted) {
+                  setUser(serverUser);
+                }
               } else if (!isPublicPath) {
-                router.replace('/login');
+                if (isMounted) {
+                  router.replace('/login');
+                }
               }
             }
           } catch (parseError) {
@@ -65,11 +102,17 @@ export function AuthProvider({ children }) {
             console.error('Failed to parse user from localStorage:', parseError);
             localStorage.removeItem('supabase.auth.user');
             const { data: { user: serverUser }, error } = await supabase.auth.getUser();
+            localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+            
             if (serverUser) {
               localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-              setUser(serverUser);
+              if (isMounted) {
+                setUser(serverUser);
+              }
             } else if (!isPublicPath) {
-              router.replace('/login');
+              if (isMounted) {
+                router.replace('/login');
+              }
             }
           }
         } else {
@@ -85,7 +128,10 @@ export function AuthProvider({ children }) {
           if (serverUser) {
             // Store user in local storage for future quick access
             localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-            setUser(serverUser);
+            localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+            if (isMounted) {
+              setUser(serverUser);
+            }
           } else if (!isPublicPath) {
             router.replace('/login');
           }
@@ -96,7 +142,10 @@ export function AuthProvider({ children }) {
           router.replace('/login');
         }
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
+        checkInProgress = false;
       }
     };
 
@@ -104,7 +153,7 @@ export function AuthProvider({ children }) {
     
     // Add a safety timeout to prevent infinite loading
     const safetyTimeout = setTimeout(() => {
-      if (loading) {
+      if (loading && isMounted) {
         console.warn('Auth loading timed out, forcing completion');
         setLoading(false);
         
@@ -122,24 +171,31 @@ export function AuthProvider({ children }) {
         
         if (event === 'SIGNED_IN' && session?.user) {
           localStorage.setItem('supabase.auth.user', JSON.stringify(session.user));
-          setUser(session.user);
+          localStorage.setItem('supabase.auth.lastServerCheck', Date.now().toString());
+          if (isMounted) {
+            setUser(session.user);
+          }
         } else if (event === 'SIGNED_OUT') {
           localStorage.removeItem('supabase.auth.user');
-          setUser(null);
+          localStorage.removeItem('supabase.auth.lastServerCheck');
+          if (isMounted) {
+            setUser(null);
           
-          // Only redirect to login if not already on a public path
-          if (!isPublicPath) {
-            router.replace('/login');
+            // Only redirect to login if not already on a public path
+            if (!isPublicPath) {
+              router.replace('/login');
+            }
           }
         }
       }
     );
 
     return () => {
+      isMounted = false;
       subscription.unsubscribe();
       clearTimeout(safetyTimeout);
     };
-  }, [router, isPublicPath, pathname, loading]);
+  }, [router, isPublicPath, pathname]);
 
   return (
     <AuthContext.Provider value={{ user, loading }}>
