@@ -54,8 +54,12 @@ function LoginContent() {
 
       if (data?.session) {
         console.log('Session created successfully, redirecting to home');
-        // Use replace instead of push to avoid adding to history stack
-        router.replace('/home');
+        
+        // Get redirect path from URL parameters if it exists
+        const redirectPath = searchParams.get('redirect') || '/home';
+        
+        // Use window.location.href instead of router.replace for a full page reload
+        window.location.href = redirectPath;
       } else {
         console.error('No session data returned');
         setError('Login failed - no session created');
