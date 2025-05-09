@@ -7,6 +7,7 @@ import { Home, Clock, BarChart2, Calculator, BookOpen, Crosshair, Rabbit, Settin
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import DifficultyModal from "../app/components/DifficultyModal.jsx"
 import styles from "./mobileNav.module.css"
+import { usePostHog } from 'posthog-js/react'
 
 // Share the same nav items as sidebar for consistency
 const primaryNavItems = [
@@ -34,6 +35,7 @@ const secondaryNavItems = [
 export default function MobileNav() {
   const pathname = usePathname()
   const router = useRouter()
+  const posthog = usePostHog()
   const [showMoreMenu, setShowMoreMenu] = useState(false)
   const [showDifficultyModal, setShowDifficultyModal] = useState(false)
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
@@ -86,11 +88,19 @@ export default function MobileNav() {
     setSelectedSubject(subject)
     setShowDifficultyModal(true)
     setShowMoreMenu(false)
+    
+    // Track quick practice selection with PostHog
+    posthog?.capture('quick_practice_selected', { 
+      subject: subject === "1" ? "Math" : "Reading/Writing" 
+    })
   }
 
   // Handle logout
   const handleLogout = async () => {
     try {
+      // Track logout event
+      posthog?.capture('user_logout')
+      
       await supabase.auth.signOut()
       router.push('/login')
     } catch (error) {
@@ -101,15 +111,32 @@ export default function MobileNav() {
   // Toggle more menu
   const toggleMoreMenu = () => {
     setShowMoreMenu(!showMoreMenu)
+    
+    // Track menu toggle event
+    posthog?.capture('mobile_menu_toggled', { 
+      action: !showMoreMenu ? 'opened' : 'closed' 
+    })
   }
 
   // Close the mobile warning banner
   const closeMobileBanner = () => {
     setShowMobileBanner(false)
+    
+    // Track banner dismissal
+    posthog?.capture('mobile_banner_dismissed')
   }
 
   // Add bannerSpacing class if banner is showing
   const mobileNavWrapperClass = showMobileBanner ? styles.bannerSpacing : '';
+
+  // Identify user when email is available
+  useEffect(() => {
+    if (userEmail && !isLoadingUser) {
+      posthog?.identify(userEmail, {
+        email: userEmail
+      })
+    }
+  }, [userEmail, isLoadingUser, posthog])
 
   return (
     <div className={mobileNavWrapperClass}>

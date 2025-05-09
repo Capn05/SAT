@@ -8,6 +8,7 @@ import { Home, Clock, BarChart2, MessageSquare, ChevronRight, Calculator, BookOp
 import styles from "./sidebar.module.css"
 import DifficultyModal from "../app/components/DifficultyModal"
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { usePostHog } from 'posthog-js/react'
 
 const navItems = [
   { name: "Dashboard", icon: Home, path: "/home" },
@@ -30,6 +31,7 @@ export default function Sidebar() {
   const [expandedSubMenu, setExpandedSubMenu] = useState<string | null>(null)
   const pathname = usePathname()
   const router = useRouter()
+  const posthog = usePostHog()
   const [userEmail, setUserEmail] = useState<string | null>(null)
   const [isLoadingUser, setIsLoadingUser] = useState(true)
   const [showUserMenu, setShowUserMenu] = useState(false)
@@ -82,8 +84,20 @@ export default function Sidebar() {
     }
   }, [supabase])
 
+  // Identify user when email is available
+  useEffect(() => {
+    if (userEmail && !isLoadingUser) {
+      posthog?.identify(userEmail, {
+        email: userEmail
+      })
+    }
+  }, [userEmail, isLoadingUser, posthog])
+
   const handleLogout = async () => {
     try {
+      // Track logout event
+      posthog?.capture('user_logout', { source: 'sidebar' })
+      
       await supabase.auth.signOut()
       router.push('/login')
     } catch (error) {
@@ -97,6 +111,12 @@ export default function Sidebar() {
     } else {
       setExpandedSubMenu(name)
     }
+    
+    // Track submenu toggle event
+    posthog?.capture('sidebar_submenu_toggled', { 
+      menu_name: name,
+      action: expandedSubMenu === name ? 'closed' : 'opened'
+    })
   }
 
   // Add this to your component or import from a styles file
@@ -115,6 +135,22 @@ export default function Sidebar() {
     // Close the sidebar when opening the modal
     setIsExpanded(false)
     setExpandedSubMenu(null)
+    
+    // Track quick practice selection with PostHog
+    posthog?.capture('quick_practice_selected', { 
+      subject: subject === "1" ? "Math" : "Reading/Writing",
+      source: 'sidebar'
+    })
+  }
+
+  // Toggle sidebar expanded state
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded)
+    
+    // Track sidebar toggle event
+    posthog?.capture('sidebar_toggled', { 
+      action: !isExpanded ? 'expanded' : 'collapsed' 
+    })
   }
 
   // Add scroll event listener to handle sidebar position
@@ -134,11 +170,15 @@ export default function Sidebar() {
   return (
     <div
       className={`${styles.sidebar} ${isExpanded ? styles.expanded : ""}`}
-      onMouseEnter={() => setIsExpanded(true)}
+      onMouseEnter={() => {
+        setIsExpanded(true)
+        posthog?.capture('sidebar_hovered', { action: 'expanded' })
+      }}
       onMouseLeave={() => {
         setIsExpanded(false)
         setExpandedSubMenu(null)
         setShowUserMenu(false)
+        posthog?.capture('sidebar_hovered', { action: 'collapsed' })
       }}
       style={{ overflow: 'hidden', width: isExpanded ? '240px' : '53px' }}
     >
@@ -320,7 +360,7 @@ export default function Sidebar() {
       </div>
 
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={toggleSidebar}
         className={`${styles.toggleButton} ${isExpanded ? styles.rotated : ""}`}
         style={{ position: 'fixed', left: isExpanded ? '220px' : '30px' }}
       >
