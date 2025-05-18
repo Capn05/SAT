@@ -69,8 +69,16 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     // Normalize underscores
     response = response.replace(/_{6,}/g, '_____');
     
-    // Use the renderMathContent function from MathRenderer
-    return renderMathContent(response);
+    // Different rendering for Math vs Reading & Writing
+    if (isMathQuestion(question)) {
+      // Use the renderMathContent function from MathRenderer for math questions
+      return renderMathContent(response);
+    } else {
+      // For reading/writing questions, first process table format
+      response = processTableFormat(response);
+      // Then use markdown-it for rendering
+      return md.render(response);
+    }
   };
 
   const fetchUnansweredQuestions = async (subjectId) => {
