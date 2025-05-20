@@ -824,7 +824,7 @@ function SubscriptionContent() {
             </div>
             
             {/* For active subscription - show days remaining and progress bar */}
-            {subscription?.status === 'active' && !subscription?.cancellation_requested && (
+            {/* {subscription?.status === 'active' && !subscription?.cancellation_requested && (
               <div style={styles.timeRemaining}>
                 <div style={styles.progressBarContainer}>
                   <div 
@@ -836,10 +836,10 @@ function SubscriptionContent() {
                   ></div>
                 </div>
                 <div style={styles.timeRemainingText}>
-                  {calculateDaysRemaining(subscription?.trialEnd)} days left in trial
+                  {calculateDaysRemaining(subscription?.trialEnd)} days left
                 </div>
               </div>
-            )}
+            )} */}
             
             {/* For canceled but still active subscription - show access until banner */}
             {subscription?.status === 'active' && subscription?.cancellation_requested && (
