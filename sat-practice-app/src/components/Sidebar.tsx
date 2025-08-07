@@ -106,16 +106,24 @@ export default function Sidebar() {
   }
 
   const toggleSubMenu = (name: string) => {
-    if (expandedSubMenu === name) {
-      setExpandedSubMenu(null)
-    } else {
+    // If sidebar is collapsed, expand it first and then show the submenu
+    if (!isExpanded) {
+      setIsExpanded(true)
       setExpandedSubMenu(name)
+    } else {
+      // If sidebar is expanded, toggle the submenu normally
+      if (expandedSubMenu === name) {
+        setExpandedSubMenu(null)
+      } else {
+        setExpandedSubMenu(name)
+      }
     }
     
     // Track submenu toggle event
     posthog?.capture('sidebar_submenu_toggled', { 
       menu_name: name,
-      action: expandedSubMenu === name ? 'closed' : 'opened'
+      action: expandedSubMenu === name ? 'closed' : 'opened',
+      sidebar_expanded: isExpanded
     })
   }
 
@@ -145,11 +153,18 @@ export default function Sidebar() {
 
   // Toggle sidebar expanded state
   const toggleSidebar = () => {
-    setIsExpanded(!isExpanded)
+    const willExpand = !isExpanded
+    setIsExpanded(willExpand)
+    
+    // Close submenus and user menu when collapsing
+    if (!willExpand) {
+      setExpandedSubMenu(null)
+      setShowUserMenu(false)
+    }
     
     // Track sidebar toggle event
     posthog?.capture('sidebar_toggled', { 
-      action: !isExpanded ? 'expanded' : 'collapsed' 
+      action: willExpand ? 'expanded' : 'collapsed' 
     })
   }
 
@@ -170,16 +185,6 @@ export default function Sidebar() {
   return (
     <div
       className={`${styles.sidebar} ${isExpanded ? styles.expanded : ""}`}
-      onMouseEnter={() => {
-        setIsExpanded(true)
-        posthog?.capture('sidebar_hovered', { action: 'expanded' })
-      }}
-      onMouseLeave={() => {
-        setIsExpanded(false)
-        setExpandedSubMenu(null)
-        setShowUserMenu(false)
-        posthog?.capture('sidebar_hovered', { action: 'collapsed' })
-      }}
       style={{ overflow: 'hidden', width: isExpanded ? '240px' : '53px' }}
     >
       <div className={styles.sidebarContent} style={{ 
@@ -233,7 +238,7 @@ export default function Sidebar() {
                     <span className={styles.label}>{item.name}</span>
                   </Link>
                 )}
-                {hasSubItems && (expandedSubMenu === item.name || !isExpanded) && (
+                {hasSubItems && expandedSubMenu === item.name && (
                   <div className={styles.subItems}>
                     {item.subItems!.map((subItem) => {
                       // Check if this is a Quick Practice subitem (has subject property)
