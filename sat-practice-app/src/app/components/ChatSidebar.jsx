@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useEffect } from 'react';
-import { MessageCircle, Send, X } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { MessageCircle, Send, X, Square } from 'lucide-react';
 import OpenAI from 'openai';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
@@ -12,11 +12,26 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
+  const abortControllerRef = useRef(null);
+  const streamRef = useRef(null);
 
-  // Clear response when question changes
+  // Clear response when question changes and abort any ongoing request
   useEffect(() => {
+    
+    // Abort any ongoing request when question changes
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+    
+    // Cancel any ongoing stream
+    if (streamRef.current) {
+      streamRef.current = null;
+    }
+    
     setResponse('');
     setUserQuestion('');
+    setLoading(false);
   }, [questionText]);
 
   // Initialize the OpenAI instance
@@ -35,6 +50,12 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   }).use(markdownItKatex);
 
   const handleQuestionPreset = (presetQuestion) => {
+    
+    // Prevent preset clicks while loading or shortly after abort
+    if (loading) {
+      return;
+    }
+    
     setUserQuestion(presetQuestion);
     handleUserQuestionSubmit(null, presetQuestion);
   };
@@ -43,6 +64,26 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     if (event) event.preventDefault();
     const questionToUse = presetQuestion || userQuestion;
     if (!questionToUse) return;
+    
+    
+    // Prevent multiple simultaneous requests
+    if (loading) {
+      return;
+    }
+    
+    // Abort any existing request
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    
+    // Cancel any existing stream
+    if (streamRef.current) {
+      streamRef.current = null;
+    }
+    
+    // Create new AbortController for this request
+    abortControllerRef.current = new AbortController();
+    
     setLoading(true);
     setResponse('');
 
@@ -77,22 +118,43 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
         stream: true,
       });
 
-      // Stream the response piece by piece
+      // Store the stream reference for cancellation
+      streamRef.current = stream;
+
+      // Stream the response piece by piece with abort checking
+      let chunkCount = 0;
       for await (const chunk of stream) {
+        chunkCount++;
+        
+        // Check if we should abort before processing each chunk
+        if (abortControllerRef.current?.signal.aborted || !streamRef.current) {
+          setResponse('');
+          return;
+        }
+        
         const content = chunk.choices[0]?.delta?.content;
         if (content) {
           setResponse((prev) => prev + content);
         }
+        
+        // Debug log every 10 chunks to see progress
+        if (chunkCount % 10 === 0) {
+        }
       }
+      
     } catch (error) {
-      if (error.status === 429) {
+      if (error.name === 'AbortError' || abortControllerRef.current?.signal.aborted || !streamRef.current) {
+        setResponse('Request was cancelled.');
+      } else if (error.status === 429) {
         setResponse('You are sending requests too quickly. Please wait a moment and try again.');
       } else {
-        console.error('Error fetching AI response:', error);
+        console.error('💥 Unexpected error fetching AI response:', error);
         setResponse('Error fetching response from AI.');
       }
     } finally {
       setLoading(false);
+      abortControllerRef.current = null;
+      streamRef.current = null;
     }
   };
 
@@ -155,6 +217,32 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     setUserQuestion('');
   };
 
+  const handleAbort = (event) => {
+    // Prevent any event bubbling or default behavior
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    
+    
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+    
+    // Cancel the stream by setting reference to null
+    if (streamRef.current) {
+      streamRef.current = null;
+    }
+    
+    setLoading(false);
+    setResponse('');
+    
+    // Small delay to ensure state updates before any potential new requests
+    setTimeout(() => {
+    }, 50);
+  };
+
   return (
     <aside style={styles.sidebar}>
       <div style={styles.header}>
@@ -177,7 +265,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
             value={userQuestion}
             onChange={(e) => setUserQuestion(e.target.value)}
           />
-          {userQuestion && (
+          {userQuestion && !loading && (
             <button 
               type="button" 
               onClick={handleClearInput} 
@@ -186,20 +274,54 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
               <X size={16} />
             </button>
           )}
-          <button type="submit" style={styles.sendButton}>
-            <Send size={20} />
-          </button>
+          {loading ? (
+            <button 
+              type="button" 
+              onClick={(e) => handleAbort(e)} 
+              style={styles.stopButton}
+            >
+              <Square size={16} />
+            </button>
+          ) : (
+            <button type="submit" style={styles.sendButton}>
+              <Send size={20} />
+            </button>
+          )}
         </form>
         
         {/* Suggestions - now placed below the input */}
         <div style={styles.suggestions}>
-        <button onClick={() => handleQuestionPreset("Give me a hint for the question without revealing the answer")} style={styles.suggestionButton}>
+        <button 
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            handleQuestionPreset("Give me a hint for the question without revealing the answer");
+          }} 
+          style={styles.suggestionButton}
+          disabled={loading}
+        >
             Hint
           </button>
-          <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.suggestionButton}>
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleQuestionPreset("Explain the answer");
+            }} 
+            style={styles.suggestionButton}
+            disabled={loading}
+          >
             Explain
           </button>
-          <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.suggestionButton}>
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer");
+            }} 
+            style={styles.suggestionButton}
+            disabled={loading}
+          >
             Why is my answer incorrect
           </button>
 
@@ -416,6 +538,18 @@ const styles = {
     color: '#fff',
     cursor: 'pointer',
     fontSize: '14px',
+  },
+  stopButton: {
+    padding: '8px 12px',
+    backgroundColor: '#ef4444',
+    border: 'none',
+    borderRadius: '4px',
+    color: '#fff',
+    cursor: 'pointer',
+    fontSize: '14px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   clearButton: {
     background: 'none',
