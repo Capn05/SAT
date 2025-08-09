@@ -475,7 +475,7 @@ function ReviewTestContent() {
                   {questions[selectedQuestion].domainName} - {questions[selectedQuestion].subcategoryName}
                   {questions[selectedQuestion].moduleNumber === 2 && (
                     <span className="module-tag">
-                      {questions[selectedQuestion].isHarderModule ? ' - Higher Difficulty' : ' - Lower Difficulty'}
+                      {questions[selectedQuestion].isHarderModule ? 'Higher Difficulty' : 'Lower Difficulty'}
                     </span>
                   )}
                 </div>
