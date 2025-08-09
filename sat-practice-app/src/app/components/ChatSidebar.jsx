@@ -2,160 +2,75 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { MessageCircle, Send, X, Square } from 'lucide-react';
-import OpenAI from 'openai';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
+import { useChat } from '../hooks/useChat';
 
 export default function ChatSidebar({ questionText, selectedAnswer, options, imageURL }) {
-  const [response, setResponse] = useState('');
-  const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
-  const abortControllerRef = useRef(null);
-  const streamRef = useRef(null);
+  const messagesEndRef = useRef(null);
 
-  // Clear response when question changes and abort any ongoing request
-  useEffect(() => {
-    
-    // Abort any ongoing request when question changes
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-      abortControllerRef.current = null;
-    }
-    
-    // Cancel any ongoing stream
-    if (streamRef.current) {
-      streamRef.current = null;
-    }
-    
-    setResponse('');
-    setUserQuestion('');
-    setLoading(false);
-  }, [questionText]);
+  // Question context for the API
+  const questionContext = {
+    questionText,
+    selectedAnswer,
+    options,
+    imageURL
+  };
 
-  // Initialize the OpenAI instance
-  const openai = new OpenAI({
-    apiKey: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,
-    dangerouslyAllowBrowser: true,
+  const { 
+    messages, 
+    input, 
+    setInput, 
+    handleSubmit, 
+    isLoading, 
+    stop, 
+    append,
+    clear 
+  } = useChat({
+    api: '/api/chat',
+    questionContext,
+    onFinish: () => {
+      scrollToBottom();
+    }
   });
+
+  // Clear conversation when question changes
+  useEffect(() => {
+    clear();
+    setUserQuestion('');
+  }, [questionText, clear]);
 
   // Set up the Markdown renderer with KaTeX support
   const md = new MarkdownIt({
     html: true,
     linkify: true,
     typographer: true,
-    breaks: true,  // Recognize line breaks
-    listIndent: 2  // Proper indentation for lists
+    breaks: true,
+    listIndent: 2
   }).use(markdownItKatex);
 
-  const handleQuestionPreset = (presetQuestion) => {
-    
-    // Prevent preset clicks while loading or shortly after abort
-    if (loading) {
-      return;
-    }
-    
-    setUserQuestion(presetQuestion);
-    handleUserQuestionSubmit(null, presetQuestion);
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleUserQuestionSubmit = async (event, presetQuestion) => {
-    if (event) event.preventDefault();
-    const questionToUse = presetQuestion || userQuestion;
-    if (!questionToUse) return;
-    
-    
-    // Prevent multiple simultaneous requests
-    if (loading) {
-      return;
-    }
-    
-    // Abort any existing request
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-    }
-    
-    // Cancel any existing stream
-    if (streamRef.current) {
-      streamRef.current = null;
-    }
-    
-    // Create new AbortController for this request
-    abortControllerRef.current = new AbortController();
-    
-    setLoading(true);
-    setResponse('');
+  const handleQuestionPreset = (presetQuestion) => {
+    if (isLoading) return;
+    append({ content: presetQuestion });
+  };
 
-    try {
-      // Construct messages for the OpenAI chat call
-      const messages = [
-        {
-          role: 'system',
-          content: `Your name is Brill. You are a helpful SAT tutoring assistant. Your answers should be crafted to be understood by a 15 year old kid. Format your responses with clear structure:
-          - Use headers (##) for main sections
-          - Use bullet points for lists
-          - **Bold** important concepts
-          - Use line breaks for readability
-          - Include examples in \`code\` blocks
-          - Use tables when comparing concepts
-          The question: ${questionText}. The answer the user selected: ${selectedAnswer}. All answer choices: ${JSON.stringify(options)}. Use markdown for all output. When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`,
-        },
-        { role: 'user', content: questionToUse },
-      ];
+  const handleUserSubmit = (e) => {
+    e.preventDefault();
+    if (!userQuestion.trim() || isLoading) return;
+    
+    append({ content: userQuestion });
+    setUserQuestion('');
+  };
 
-      if (imageURL) {
-        messages.push({
-          role: 'user',
-          content: `Additionally, here is an image: ${imageURL}`,
-        });
-      }
-
-      // Create a streaming chat completion using the OpenAI instance
-      const stream = await openai.chat.completions.create({
-        model: 'gpt-4o-mini',
-        messages,
-        stream: true,
-      });
-
-      // Store the stream reference for cancellation
-      streamRef.current = stream;
-
-      // Stream the response piece by piece with abort checking
-      let chunkCount = 0;
-      for await (const chunk of stream) {
-        chunkCount++;
-        
-        // Check if we should abort before processing each chunk
-        if (abortControllerRef.current?.signal.aborted || !streamRef.current) {
-          setResponse('');
-          return;
-        }
-        
-        const content = chunk.choices[0]?.delta?.content;
-        if (content) {
-          setResponse((prev) => prev + content);
-        }
-        
-        // Debug log every 10 chunks to see progress
-        if (chunkCount % 10 === 0) {
-        }
-      }
-      
-    } catch (error) {
-      if (error.name === 'AbortError' || abortControllerRef.current?.signal.aborted || !streamRef.current) {
-        setResponse('Request was cancelled.');
-      } else if (error.status === 429) {
-        setResponse('You are sending requests too quickly. Please wait a moment and try again.');
-      } else {
-        console.error('💥 Unexpected error fetching AI response:', error);
-        setResponse('Error fetching response from AI.');
-      }
-    } finally {
-      setLoading(false);
-      abortControllerRef.current = null;
-      streamRef.current = null;
-    }
+  const handleClearInput = () => {
+    setUserQuestion('');
   };
 
   // Helper functions for rendering math using KaTeX
@@ -200,11 +115,8 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     });
     
     // Ensure proper list formatting in markdown
-    // Fix common issues with lists not having proper spacing
     formattedText = formattedText
-      // Ensure there's a blank line before lists
       .replace(/([^\n])\n([\s]*[-*+])/g, '$1\n\n$2')
-      // Ensure proper indentation for nested lists
       .replace(/\n([\s]*)([-*+])([\s]+)/g, '\n$1$2 ');
     
     // Render markdown with the enhanced formatting
@@ -213,59 +125,52 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     return renderedHtml;
   };
 
-  const handleClearInput = () => {
-    setUserQuestion('');
-  };
-
-  const handleAbort = (event) => {
-    // Prevent any event bubbling or default behavior
-    if (event) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    
-    
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-      abortControllerRef.current = null;
-    }
-    
-    // Cancel the stream by setting reference to null
-    if (streamRef.current) {
-      streamRef.current = null;
-    }
-    
-    setLoading(false);
-    setResponse('');
-    
-    // Small delay to ensure state updates before any potential new requests
-    setTimeout(() => {
-    }, 50);
-  };
-
   return (
     <aside style={styles.sidebar}>
       <div style={styles.header}>
-        <h3>Review your Answers with Brill</h3>
+        <h3>Chat with Brill</h3>
       </div>
+      
       <div style={styles.chatContainer}>
-        <div style={styles.responseContainer} dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />
-        {loading && <div style={styles.loadingIndicator}>Loading...</div>}
+        <div style={styles.messagesContainer}>
+          {messages.map((message) => (
+            <div 
+              key={message.id} 
+              style={message.role === 'user' ? styles.userMessage : styles.assistantMessage}
+            >
+              <div style={styles.messageHeader}>
+                <strong>{message.role === 'user' ? 'You' : 'Brill'}</strong>
+                <span style={styles.timestamp}>
+                  {message.createdAt ? new Date(message.createdAt).toLocaleTimeString() : ''}
+                </span>
+              </div>
+              <div style={styles.messageContent}>
+                {message.role === 'assistant' ? (
+                  <div dangerouslySetInnerHTML={{ __html: renderResponse(message.content) }} />
+                ) : (
+                  message.content
+                )}
+              </div>
+            </div>
+          ))}
+          {isLoading && <div style={styles.loadingIndicator}>Brill is typing...</div>}
+          <div ref={messagesEndRef} />
+        </div>
       </div>
       
       {/* Combined input and suggestions container */}
       <div style={styles.inputContainer}>
-        {/* Input form - now placed first */}
-        <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputForm}>
+        {/* Input form */}
+        <form onSubmit={handleUserSubmit} style={styles.inputForm}>
           <MessageCircle style={styles.messageIcon} />
           <input
             type="text"
-            placeholder="Ask me anything about the question selected..."
+            placeholder="Ask me anything about the question..."
             style={styles.inputField}
             value={userQuestion}
             onChange={(e) => setUserQuestion(e.target.value)}
           />
-          {userQuestion && !loading && (
+          {userQuestion && !isLoading && (
             <button 
               type="button" 
               onClick={handleClearInput} 
@@ -274,10 +179,10 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
               <X size={16} />
             </button>
           )}
-          {loading ? (
+          {isLoading ? (
             <button 
               type="button" 
-              onClick={(e) => handleAbort(e)} 
+              onClick={stop} 
               style={styles.stopButton}
             >
               <Square size={16} />
@@ -291,15 +196,15 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
         
         {/* Suggestions - now placed below the input */}
         <div style={styles.suggestions}>
-        <button 
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            handleQuestionPreset("Give me a hint for the question without revealing the answer");
-          }} 
-          style={styles.suggestionButton}
-          disabled={loading}
-        >
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleQuestionPreset("Give me a hint for the question without revealing the answer");
+            }} 
+            style={styles.suggestionButton}
+            disabled={isLoading}
+          >
             Hint
           </button>
           <button 
@@ -309,7 +214,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
               handleQuestionPreset("Explain the answer");
             }} 
             style={styles.suggestionButton}
-            disabled={loading}
+            disabled={isLoading}
           >
             Explain
           </button>
@@ -320,11 +225,10 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
               handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer");
             }} 
             style={styles.suggestionButton}
-            disabled={loading}
+            disabled={isLoading}
           >
             Why is my answer incorrect
           </button>
-
         </div>
       </div>
     </aside>
@@ -354,125 +258,60 @@ const styles = {
   },
   chatContainer: {
     flex: 1,
-    padding: '16px',
-    overflowY: 'auto',
-    marginBottom: '0px',
-    backgroundColor: 'white'
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden',
   },
-  responseContainer: {
+  messagesContainer: {
+    flex: 1,
+    overflowY: 'auto',
+    padding: '16px',
+    paddingBottom: '150px', // Extra space so content isn't covered by input box
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px',
+    backgroundColor: 'white',
+  },
+  userMessage: {
+    alignSelf: 'flex-end',
+    maxWidth: '80%',
+    backgroundColor: '#10b981',
+    color: 'white',
+    padding: '16px 20px',
+    borderRadius: '18px 18px 4px 18px',
+    wordWrap: 'break-word',
+  },
+  assistantMessage: {
+    alignSelf: 'flex-start',
+    maxWidth: '80%',
+    backgroundColor: '#f3f4f6',
+    color: '#111827',
+    padding: '16px 24px',
+    borderRadius: '18px 18px 18px 4px',
+    wordWrap: 'break-word',
+  },
+  messageHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '4px',
+    fontSize: '12px',
+    opacity: 0.7,
+  },
+  messageContent: {
     fontSize: '14px',
-    backgroundColor: '#fff',
-    padding: '24px',
-    borderRadius: '8px',
-    marginBottom: '120px',
-    lineHeight: '1.8',
-    fontFamily: '"Roboto", sans-serif',
-    '& h1, & h2, & h3, & h4': {
-      marginTop: '24px',
-      marginBottom: '16px',
-      fontWeight: '600',
-      color: '#111827',
-      fontFamily: '"Roboto", sans-serif',
-    },
-    '& h1': { fontSize: '1.8em' },
-    '& h2': { 
-      fontSize: '1.5em',
-      borderBottom: '1px solid #e5e7eb',
-      paddingBottom: '8px'
-    },
-    '& h3': { fontSize: '1.3em' },
-    '& p': {
-      marginBottom: '16px',
-      color: '#374151',
-    },
-    '& ul, & ol': {
-      marginTop: '12px',
-      marginBottom: '16px',
-      paddingLeft: '24px',
-    },
-    '& li': {
-      marginBottom: '12px',
-      paddingLeft: '4px',
-      position: 'relative',
-      listStylePosition: 'outside',
-    },
-    '& li:lastChild': {
-      marginBottom: '0',
-    },
-    '& li > ul, & li > ol': {
-      marginTop: '8px',
-      marginBottom: '0',
-    },
-    '& strong, & b': {
-      color: '#111827',
-      fontWeight: '600',
-      backgroundColor: '#f3f4f6',
-      padding: '0 4px',
-      borderRadius: '4px',
-    },
-    '& code': {
-      backgroundColor: '#f3f4f6',
-      padding: '2px 6px',
-      borderRadius: '4px',
-      fontSize: '0.9em',
-      color: '#ef4444',
-    },
-    '& blockquote': {
-      borderLeft: '4px solid #e5e7eb',
-      paddingLeft: '16px',
-      marginLeft: '0',
-      marginTop: '16px',
-      marginBottom: '16px',
-      color: '#6b7280',
-      fontStyle: 'italic',
-      backgroundColor: '#f9fafb',
-      padding: '12px 16px',
-      borderRadius: '0 4px 4px 0',
-    },
-    '& .explanationSection': {
-      marginTop: '24px',
-      padding: '16px',
-      backgroundColor: '#f9fafb',
-      borderRadius: '8px',
-      border: '1px solid #e5e7eb',
-    },
-    '& .optionAnalysis': {
-      marginTop: '12px',
-      paddingLeft: '16px',
-      borderLeft: '3px solid #10b981',
-    },
-    '& .conclusion': {
-      marginTop: '24px',
-      paddingTop: '16px',
-      borderTop: '1px solid #e5e7eb',
-      fontWeight: '500',
-    },
-    '& table': {
-      width: '100%',
-      borderCollapse: 'collapse',
-      marginTop: '16px',
-      marginBottom: '16px',
-    },
-    '& th, & td': {
-      border: '1px solid #e5e7eb',
-      padding: '12px',
-      textAlign: 'left',
-    },
-    '& th': {
-      backgroundColor: '#f3f4f6',
-      fontWeight: '600',
-    },
-    '& hr': {
-      margin: '24px 0',
-      border: 'none',
-      borderTop: '1px solid #e5e7eb',
-    },
+    lineHeight: '1.5',
+  },
+  timestamp: {
+    fontSize: '10px',
+    opacity: 0.5,
   },
   loadingIndicator: {
     fontSize: '14px',
     color: '#aaa',
     padding: '12px',
     textAlign: 'center',
+    fontStyle: 'italic',
   },
   // Container that holds both input form and suggestions
   inputContainer: {
@@ -495,14 +334,13 @@ const styles = {
     alignItems: 'center',
     padding: '8px',
     borderRadius: '12px',
-    // border: '1px solid #ddd',
-    marginBottom: '8px', // Added margin to create space between input and suggestions
+    marginBottom: '8px',
   },
   // Updated styles for suggestions
   suggestions: {
     display: 'flex',
     padding: '8px 0',
-    marginTop: '4px', // Added margin to create space between input and suggestions
+    marginTop: '4px',
   },
   suggestionButton: {
     padding: '8px 12px',
@@ -513,6 +351,7 @@ const styles = {
     cursor: 'pointer',
     fontSize: '14px',
     marginRight: '8px',
+    opacity: 1,
   },
   messageIcon: {
     width: '20px',
@@ -528,7 +367,7 @@ const styles = {
     marginRight: '8px',
     fontSize: '14px',
     backgroundColor: 'white',
-    outline: 'none', // Removes the blue highlight on focus
+    outline: 'none',
   },
   sendButton: {
     padding: '8px 12px',
@@ -562,8 +401,5 @@ const styles = {
     justifyContent: 'center',
     borderRadius: '50%',
     marginRight: '4px',
-    ':hover': {
-      backgroundColor: '#f0f0f0',
-    }
   },
 };
