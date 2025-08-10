@@ -32,6 +32,7 @@ function PracticeTestContent() {
   const [showScoreModal, setShowScoreModal] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const [showDesmos, setShowDesmos] = useState(false)
+  const [showReferenceSheet, setShowReferenceSheet] = useState(false)
   const timerRef = useRef(null)
   const loadedFromPausedTest = useRef(false)
   const desmosRef = useRef(null)
@@ -899,6 +900,18 @@ function PracticeTestContent() {
                       <button
                         style={{
                           ...styles.desmosToggleButton,
+                          backgroundColor: showReferenceSheet ? '#10b981' : 'white',
+                          color: showReferenceSheet ? 'white' : '#10b981',
+                          borderColor: '#10b981',
+                        }}
+                        onClick={() => setShowReferenceSheet(!showReferenceSheet)}
+                        title={showReferenceSheet ? "Hide Reference Sheet" : "Show Reference Sheet"}
+                      >
+                        {showReferenceSheet ? 'Hide' : 'Show'} Reference Sheet
+                      </button>
+                      <button
+                        style={{
+                          ...styles.desmosToggleButton,
                           backgroundColor: showDesmos ? '#4f46e5' : 'white',
                           color: showDesmos ? 'white' : '#4f46e5',
                         }}
@@ -909,6 +922,33 @@ function PracticeTestContent() {
                       </button>
                     </div>
                   </div>
+                  
+                  {/* Collapsible Reference Sheet Panel */}
+                  {showReferenceSheet && (
+                    <div style={styles.referenceSheetPanel}>
+                      <div style={styles.desmosPanelHeader}>
+                        <span style={styles.desmosPanelTitle}>SAT Math Reference Sheet</span>
+                        <button
+                          style={styles.desmosPanelCloseButton}
+                          onClick={() => setShowReferenceSheet(false)}
+                          title="Hide Reference Sheet"
+                        >
+                          −
+                        </button>
+                      </div>
+                      <div style={styles.referenceSheetContent}>
+                        <img 
+                          src="/assets/images/free-sat-math-worksheet-19.png"
+                          alt="SAT Math Reference Sheet" 
+                          style={styles.referenceSheetImage}
+                          onError={(e) => {
+                            console.error('Failed to load reference sheet image');
+                            e.target.style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    </div>
+                  )}
                   
                   {/* Collapsible Desmos Calculator Panel */}
                   {showDesmos && (
@@ -2072,5 +2112,28 @@ const styles = {
     flex: 1,
     fontSize: '15px',
     color: '#1f2937',
+  },
+  referenceSheetPanel: {
+    marginBottom: '1.5rem',
+    border: '1px solid #e5e7eb',
+    borderRadius: '8px',
+    backgroundColor: 'white',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
+    overflow: 'hidden',
+    animation: 'slideDown 0.3s ease-out',
+  },
+  referenceSheetContent: {
+    padding: '1rem',
+    backgroundColor: 'white',
+    maxHeight: '500px',
+    overflowY: 'auto',
+  },
+  referenceSheetImage: {
+    width: '100%',
+    maxWidth: '700px',
+    height: 'auto',
+    display: 'block',
+    margin: '0 auto',
+    borderRadius: '4px',
   },
 } 
