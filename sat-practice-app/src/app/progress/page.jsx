@@ -178,34 +178,7 @@ export default function ProgressPage() {
     ? Math.round((stats.totalCorrect / stats.totalQuestions) * 100)
     : 0;
 
-  // Loading state
-  if (loading) {
-    return (
-      <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-        <TopBar title="Progress Tracking" />
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
-          height: 'calc(100vh - 80px)' 
-        }}>
-          <div style={{ 
-            width: '48px', 
-            height: '48px', 
-            border: '4px solid rgba(16, 185, 129, 0.2)', 
-            borderRadius: '50%', 
-            borderTopColor: '#10b981', 
-            animation: 'spin 1s linear infinite' 
-          }}></div>
-          <style jsx>{`
-            @keyframes spin {
-              to { transform: rotate(360deg); }
-            }
-          `}</style>
-        </div>
-      </div>
-    );
-  }
+
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
