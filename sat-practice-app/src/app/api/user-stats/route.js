@@ -28,29 +28,22 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
     }
 
-    // Calculate the start date (last 30 days)
-    const startDate = new Date();
-    startDate.setDate(startDate.getDate() - 30);
-    const startDateStr = startDate.toISOString();
-
-    // Get user's performance data from user_skill_analytics
+    // Get user's performance data from user_skill_analytics (all time)
     const { data: skillAnalytics, error: analyticsError } = await supabase
       .from('user_skill_analytics')
       .select('total_attempts, correct_attempts, last_practiced')
-      .eq('user_id', userId)
-      .gte('last_practiced', startDateStr);
+      .eq('user_id', userId);
 
     if (analyticsError) {
       console.error('Error fetching skill analytics:', analyticsError);
       return NextResponse.json({ error: 'Failed to fetch analytics' }, { status: 500 });
     }
 
-    // Get user's answers from user_answers table
+    // Get user's answers from user_answers table (all time)
     const { data: answers, error: answersError } = await supabase
       .from('user_answers')
       .select('is_correct')
       .eq('user_id', userId)
-      .gte('answered_at', startDateStr)
       .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`);
 
     if (answersError) {
@@ -73,10 +66,6 @@ export async function GET(request) {
       ? (correctAttempts / totalAttempts) * 100
       : 0;
 
-    console.log(`User stats: Total attempts = ${totalAttempts} (${skillTotalAttempts} from skills + ${answersTotalAttempts} from answers)`);
-    console.log(`User stats: Correct answers = ${correctAttempts} (${skillCorrectAttempts} from skills + ${answersCorrectAttempts} from answers)`);
-    console.log(`User stats: Accuracy = ${accuracyPercentage.toFixed(2)}%`);
-    console.log(`User stats: Answers make up ${((answersTotalAttempts / totalAttempts) * 100).toFixed(2)}% of all attempts`);
 
     return NextResponse.json({
       stats: {
