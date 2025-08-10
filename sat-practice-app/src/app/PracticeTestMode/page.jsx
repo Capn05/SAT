@@ -7,6 +7,7 @@ import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { processMathInText, renderMathString, processTableFormat } from '../components/MathRenderer'
+import DesmosGraph from '../components/DesmosGraph'
 import 'katex/dist/katex.min.css'
 import MarkdownIt from 'markdown-it'
 import markdownItKatex from 'markdown-it-katex'
@@ -30,8 +31,10 @@ function PracticeTestContent() {
   const [practiceTestInfo, setPracticeTestInfo] = useState(null)
   const [showScoreModal, setShowScoreModal] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
+  const [showDesmos, setShowDesmos] = useState(false)
   const timerRef = useRef(null)
   const loadedFromPausedTest = useRef(false)
+  const desmosRef = useRef(null)
   
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -884,15 +887,57 @@ function PracticeTestContent() {
                     <div style={styles.questionNumberBox}>
                       {currentQuestion + 1}
                     </div>
-                    <div 
-                      style={styles.markReviewBox}
-                      className="math-review-button"
-                      onClick={() => toggleFlagged(currentQuestionData.id)}
-                    >
-                      <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
-                      <span>Mark for Review</span>
+                    <div style={styles.questionHeaderActions}>
+                      <div 
+                        style={styles.markReviewBox}
+                        className="math-review-button"
+                        onClick={() => toggleFlagged(currentQuestionData.id)}
+                      >
+                        <Bookmark size={14} style={{ color: flaggedQuestions.has(currentQuestionData.id) ? '#ef4444' : '#6b7280' }} />
+                        <span>Mark for Review</span>
+                      </div>
+                      <button
+                        style={{
+                          ...styles.desmosToggleButton,
+                          backgroundColor: showDesmos ? '#4f46e5' : 'white',
+                          color: showDesmos ? 'white' : '#4f46e5',
+                        }}
+                        onClick={() => setShowDesmos(!showDesmos)}
+                        title={showDesmos ? "Hide Calculator" : "Show Calculator"}
+                      >
+                        {showDesmos ? 'Hide' : 'Show'} Calculator
+                      </button>
                     </div>
                   </div>
+                  
+                  {/* Collapsible Desmos Calculator Panel */}
+                  {showDesmos && (
+                    <div style={styles.desmosPanel}>
+                      <div style={styles.desmosPanelHeader}>
+                        <span style={styles.desmosPanelTitle}>Graphing Calculator</span>
+                        <button
+                          style={styles.desmosPanelCloseButton}
+                          onClick={() => setShowDesmos(false)}
+                          title="Hide Calculator"
+                        >
+                          −
+                        </button>
+                      </div>
+                      <div style={styles.desmosPanelContent}>
+                        <DesmosGraph
+                          ref={desmosRef}
+                          width="100%"
+                          height="320px"
+                          interactive={true}
+                          keypad={true}
+                          settingsMenu={true}
+                          zoomButtons={true}
+                          mathBounds={{ left: -10, right: 10, bottom: -10, top: 10 }}
+                          style={{ margin: 0 }}
+                        />
+                      </div>
+                    </div>
+                  )}
                   
                   {/* Display image if available */}
                   {currentQuestionData.image_url && (
@@ -1271,6 +1316,20 @@ const globalStyles = `
   
   .katex {
     font-size: 1.1em;
+  }
+  
+  /* Desmos panel animation */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 500px;
+    }
   }
 `;
 
@@ -1864,6 +1923,14 @@ const styles = {
   questionHeader: {
     width: '100%',
     marginBottom: '1.5rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  questionHeaderActions: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
   },
   questionNumberBox: {
     display: 'inline-flex',
@@ -1905,6 +1972,71 @@ const styles = {
     maxHeight: '400px',
     borderRadius: '8px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  },
+  desmosToggleButton: {
+    padding: '0.5rem 1rem',
+    borderRadius: '6px',
+    border: '2px solid #4f46e5',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+    transition: 'all 0.2s ease',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    userSelect: 'none',
+    ':hover': {
+      transform: 'translateY(-1px)',
+      boxShadow: '0 2px 8px rgba(79, 70, 229, 0.2)',
+    }
+  },
+  desmosPanel: {
+    marginBottom: '1.5rem',
+    border: '1px solid #e5e7eb',
+    borderRadius: '8px',
+    backgroundColor: 'white',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
+    overflow: 'hidden',
+    animation: 'slideDown 0.3s ease-out',
+  },
+  desmosPanelHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '0.75rem 1rem',
+    backgroundColor: '#f8f9fa',
+    borderBottom: '1px solid #e5e7eb',
+  },
+  desmosPanelTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#1f2937',
+    fontFamily: '"Myriad Pro", Arial, sans-serif',
+  },
+  desmosPanelCloseButton: {
+    background: 'none',
+    border: 'none',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    color: '#6b7280',
+    padding: '0',
+    width: '28px',
+    height: '28px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '4px',
+    transition: 'all 0.2s ease',
+    ':hover': {
+      backgroundColor: '#e5e7eb',
+      color: '#1f2937',
+    }
+  },
+  desmosPanelContent: {
+    padding: '1rem',
+    backgroundColor: 'white',
   },
   reviewQuestionList: {
     display: 'grid',
