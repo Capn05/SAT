@@ -67,7 +67,7 @@ const styles = {
   },
   loadingSpinner: {
     border: "4px solid rgba(0, 0, 0, 0.1)",
-    borderTop: "4px solid #4b5563",
+    borderTop: "4px solid #10b981",
     borderRadius: "50%",
     width: "40px",
     height: "40px",
