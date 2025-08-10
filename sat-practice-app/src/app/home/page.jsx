@@ -61,15 +61,7 @@ export default function Dashboard() {
     setShowDifficultyModal(true);
   };
 
-  // Show loading state while auth is being checked
-  if (localLoading) {
-    return (
-      <div style={styles.loadingContainer}>
-        <div style={styles.loadingSpinner}></div>
-        <div style={styles.loadingText}>Loading your dashboard...</div>
-      </div>
-    );
-  }
+
 
   return (
     <SubscriptionCheck>
