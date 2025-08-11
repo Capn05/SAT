@@ -7,6 +7,8 @@ import "./test.css"
 import TopBar from "../components/TopBar"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import 'katex/dist/katex.min.css'
+import { renderMathContent as renderMathFromModule } from '../components/MathRenderer'
 
 const mockQuestions = [
   {
@@ -109,6 +111,8 @@ function TestModeContent() {
       fetchTestData();
     }
   }, [testId, supabase]);
+
+  const hasMath = (content) => typeof content === 'string' && /\$/.test(content);
 
   const handleAnswer = async (questionId, choice) => {
     // Update local state first
@@ -294,7 +298,14 @@ function TestModeContent() {
                 const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
                 return (
                   <>
-                    <p className="passage">{passage}</p>
+                    {hasMath(passage) ? (
+                      <div
+                        className="passage question-text-container"
+                        dangerouslySetInnerHTML={{ __html: renderMathFromModule(passage) }}
+                      />
+                    ) : (
+                      <p className="passage">{passage}</p>
+                    )}
                   </>
                 );
               })()}
@@ -314,7 +325,14 @@ function TestModeContent() {
                 const { passage, question } = parseQuestionText(questions[currentQuestion - 1]?.question_text);
                 return (
                   <>
-                    <p className="question-text">{question}</p>
+                    {hasMath(question) ? (
+                      <div
+                        className="question-text question-text-container"
+                        dangerouslySetInnerHTML={{ __html: renderMathFromModule(question) }}
+                      />
+                    ) : (
+                      <p className="question-text">{question}</p>
+                    )}
                   </>
                 );
               })()}
@@ -325,7 +343,15 @@ function TestModeContent() {
                     onClick={() => handleAnswer(currentQuestion, choice.id)}
                     className={`choice-button ${answers[currentQuestion] === choice.id ? "selected" : ""}`}
                   >
-                    <span className="choice-letter">{choice.value}.</span> {choice.text}
+                    <span className="choice-letter">{choice.value}.</span>
+                    {hasMath(choice.text || choice.label) ? (
+                      <span
+                        className="option-text"
+                        dangerouslySetInnerHTML={{ __html: renderMathFromModule(choice.text || choice.label) }}
+                      />
+                    ) : (
+                      <span className="option-text">{choice.text || choice.label}</span>
+                    )}
                   </button>
                 ))}
               </div>
