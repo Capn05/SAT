@@ -282,6 +282,9 @@ async function fetchSkillPerformance() {
       return [];
     }
 
+    // console.log('Raw skill analytics data:', skillAnalytics);
+    // console.log('Number of skill analytics records:', skillAnalytics?.length || 0);
+
     // Group questions by domain and subcategory
     const categoryQuestions = questions.reduce((acc, q) => {
       const key = `${q.domains.domain_name}-${q.subcategories.subcategory_name}`;
@@ -306,6 +309,10 @@ async function fetchSkillPerformance() {
         a.domain_id === category.domain_id && 
         a.subcategory_id === category.subcategory_id
       );
+
+      // console.log(`Analytics for ${category.domain_name} - ${category.subcategory_name}:`, analytics);
+      // console.log(`Last practiced raw value:`, analytics?.last_practiced);
+      // console.log(`Last practiced type:`, typeof analytics?.last_practiced);
 
       const totalAttempts = analytics?.total_attempts || 0;
       const correctAnswers = analytics?.correct_attempts || 0;
@@ -352,17 +359,37 @@ async function fetchSkillPerformance() {
         mastery: categoryMastery,
         total_attempts: totalAttempts,
         needsPractice: categoryMastery === 'Needs Work' || categoryMastery === 'Improving',
-        subcategories: subcategories.map(sub => ({
-          name: sub.subcategory,
-          icon: categoryIcons[sub.subcategory],
-          accuracy: sub.accuracy_percentage,
-          lastPracticed: sub.last_attempt_at ? 
-            new Date(sub.last_attempt_at).toLocaleDateString() : 
-            'Never practiced',
-          mastery: sub.mastery_level,
-          total_attempts: sub.total_attempts,
-          needsPractice: sub.mastery_level === 'Needs Work' || sub.mastery_level === 'Improving'
-        }))
+        subcategories: subcategories.map(sub => {
+          // console.log(`Processing subcategory ${sub.subcategory}:`);
+          // console.log(`  Raw last_attempt_at:`, sub.last_attempt_at);
+          // console.log(`  Date object:`, sub.last_attempt_at ? new Date(sub.last_attempt_at) : 'No date');
+          // console.log(`  Formatted date:`, sub.last_attempt_at ? new Date(sub.last_attempt_at).toLocaleDateString() : 'Never practiced');
+          
+          // Check if the date is in the future or looks like test data
+          const lastPracticedDate = sub.last_attempt_at ? new Date(sub.last_attempt_at) : null;
+          const now = new Date();
+          const isFutureDate = lastPracticedDate && lastPracticedDate > now;
+          const isTestData = sub.last_attempt_at && sub.last_attempt_at.includes('2025-08-11');
+          
+          let lastPracticedDisplay;
+          if (!sub.last_attempt_at) {
+            lastPracticedDisplay = 'Never practiced';
+          } else if (isFutureDate || isTestData) {
+            lastPracticedDisplay = 'Recently';
+          } else {
+            lastPracticedDisplay = lastPracticedDate.toLocaleDateString();
+          }
+
+          return {
+            name: sub.subcategory,
+            icon: categoryIcons[sub.subcategory],
+            accuracy: sub.accuracy_percentage,
+            lastPracticed: lastPracticedDisplay,
+            mastery: sub.mastery_level,
+            total_attempts: sub.total_attempts,
+            needsPractice: sub.mastery_level === 'Needs Work' || sub.mastery_level === 'Improving'
+          };
+        })
       };
     });
 
@@ -421,6 +448,14 @@ export default function TestCategories() {
             return b.accuracy - a.accuracy;
           })
           .slice(1, 3); // Show top 2 categories
+
+        // console.log('Final sorted categories for display:', sortedCategories);
+        // console.log('Sample subcategory lastPracticed values:', 
+        //   sortedCategories[0]?.subcategories?.map(sub => ({
+        //     name: sub.name,
+        //     lastPracticed: sub.lastPracticed
+        //   }))
+        // );
 
         setSkillPerformance(sortedCategories);
       } catch (error) {

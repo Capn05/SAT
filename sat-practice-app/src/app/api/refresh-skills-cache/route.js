@@ -112,7 +112,15 @@ export async function POST(request) {
 
         console.log(`Setting mastery level to: ${masteryLevel}`);
 
-        // Update user_skill_analytics
+        // Get existing analytics to preserve last_practiced
+        const { data: existingAnalytics } = await supabase
+          .from('user_skill_analytics')
+          .select('last_practiced')
+          .eq('user_id', userId)
+          .eq('subcategory_id', subcategory.id)
+          .single();
+
+        // Update user_skill_analytics (preserve existing last_practiced date)
         const { data: updateData, error: updateError } = await supabase
           .from('user_skill_analytics')
           .upsert({
@@ -122,7 +130,7 @@ export async function POST(request) {
             subcategory_id: subcategory.id,
             total_attempts: totalAttempts,
             correct_attempts: correctAnswers,
-            last_practiced: totalAttempts > 0 ? new Date().toISOString() : null,
+            last_practiced: existingAnalytics?.last_practiced || (totalAttempts > 0 ? new Date().toISOString() : null),
             mastery_level: masteryLevel
           }, {
             onConflict: ['user_id', 'subcategory_id']
