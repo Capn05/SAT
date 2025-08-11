@@ -47,6 +47,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [showSkillsModal, setShowSkillsModal] = useState(false);
   const [showPostCompleteDifficultyModal, setShowPostCompleteDifficultyModal] = useState(false);
   const [sessionCorrectAnswers, setSessionCorrectAnswers] = useState({});
+  const [shouldShakeFeedback, setShouldShakeFeedback] = useState(false);
 
   const md = new MarkdownIt({
     html: true,
@@ -388,6 +389,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   }, [questions]);
 
   const resetQuestionState = (questionId) => {
+    // Always reset shake animation when changing questions
+    setShouldShakeFeedback(false);
+    
     // Check if this question was already answered in this session
     const isAnsweredInSession = answeredQuestions.has(questionId);
     
@@ -639,6 +643,18 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           }
         }));
       } else {
+        // Check if this is a second consecutive distinct incorrect answer
+        const currentAttempts = attempts[currentQuestionId];
+        const isSecondDistinctIncorrectAnswer = currentAttempts && 
+          currentAttempts.count >= 1 && 
+          !currentAttempts.selectedOptions.includes(selectedOption.id);
+        
+        // Trigger shake animation for second distinct incorrect answer
+        if (isSecondDistinctIncorrectAnswer) {
+          setShouldShakeFeedback(true);
+          setTimeout(() => setShouldShakeFeedback(false), 600);
+        }
+        
         setShowFeedback(true);
         setFeedback({
           type: 'error',
@@ -689,6 +705,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setSessionCorrectAnswers({}); // Reset session correct answers
     setSubmittedOptions({}); // Reset submitted options
     setQuestionsInNewSession(new Set()); // Reset the new session questions tracking
+    setShouldShakeFeedback(false); // Reset shake animation
     
     // Log that we're starting a new set of practice questions
     console.log('Starting a new set of practice questions');
@@ -955,9 +972,21 @@ export default function Question({ subject, mode, skillName, questions: initialQ
               <motion.div
                 key={`feedback-${currentIndex}-${feedback.type}`}
                 initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ 
+                  opacity: 1, 
+                  y: 0,
+                  x: shouldShakeFeedback ? [-10, 10, -10, 10, -5, 5, 0] : 0
+                }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ 
+                  duration: shouldShakeFeedback ? 0.6 : 0.3,
+                  x: shouldShakeFeedback ? { 
+                    type: "spring", 
+                    stiffness: 500, 
+                    damping: 10,
+                    duration: 0.6 
+                  } : {}
+                }}
                 style={{ 
                   ...styles.feedbackBox, 
                   backgroundColor: feedback.type === "success" ? '#d4edda' : '#f8d7da',
