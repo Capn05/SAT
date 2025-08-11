@@ -3,7 +3,18 @@ import { useContext } from 'react'
 
 export default function SubjectSection({ title, value, buttonText, subject_id, onStartPractice }) {
   return (
-    <div style={styles.container}>
+    <div 
+      style={styles.container}
+      onClick={() => onStartPractice(subject_id)}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-4px)';
+        // e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        // e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.1)';
+      }}
+    >
       <div style={styles.header}>
         <span style={styles.sectionTitle}>{title}</span>
       </div>
@@ -12,8 +23,13 @@ export default function SubjectSection({ title, value, buttonText, subject_id, o
       </div>
       <div style={styles.buttonContainer}>
         <button 
-          onClick={() => onStartPractice(subject_id)} 
           style={styles.button}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#0d9768';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#10b981';
+          }}
         >
           {buttonText}    
         </button>
@@ -31,6 +47,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     minHeight: "200px", // Set minimum height to ensure consistent card size
+    transition: "transform 0.2s ease, box-shadow 0.2s ease",
+    cursor: "pointer",
   },
   header: {
     display: "flex",
@@ -71,5 +89,6 @@ const styles = {
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
+    transition: "background-color 0.2s ease",
   },
 }

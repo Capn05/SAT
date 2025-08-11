@@ -471,8 +471,15 @@ export default function PracticeTestsPage() {
           </p>
           <div style={styles.testTypes}>
             <div
-              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
+              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}
               onClick={() => handleTestClick(1)}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+              }}
             >
               <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
                 <Brain size={28} color="#10b981" />
@@ -488,17 +495,36 @@ export default function PracticeTestsPage() {
                   opacity: isLoadingTests ? 0.7 : 1,
                   cursor: isLoadingTests ? 'default' : 'pointer',
                   backgroundColor: '#10b981',
-                  transition: 'background-color 0.2s ease',
+                  transition: 'background-color 0.2s ease, transform 0.2s ease',
                 }}
                 onClick={() => handleTestClick(1)}
+                onMouseEnter={(e) => {
+                  if (!isLoadingTests) {
+                    e.currentTarget.style.backgroundColor = '#0d9768';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isLoadingTests) {
+                    e.currentTarget.style.backgroundColor = '#10b981';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }
+                }}
               >
                 {isLoadingTests ? 'Loading Tests...' : 'Start Math Test'}
               </button>
             </div>
 
             <div
-              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease', ':hover': {transform: 'translateY(-4px)'}}}
+              style={{...styles.testCard, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}
               onClick={() => handleTestClick(2)}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+              }}
             >
               <div style={{...styles.testIcon, backgroundColor: '#dcfce7'}}>
                 <BookOpen size={28} color="#10b981" />
@@ -514,9 +540,21 @@ export default function PracticeTestsPage() {
                   opacity: isLoadingTests ? 0.7 : 1,
                   cursor: isLoadingTests ? 'default' : 'pointer',
                   backgroundColor: '#10b981',
-                  transition: 'background-color 0.2s ease',
+                  transition: 'background-color 0.2s ease, transform 0.2s ease',
                 }}
                 onClick={() => handleTestClick(2)}
+                onMouseEnter={(e) => {
+                  if (!isLoadingTests) {
+                    e.currentTarget.style.backgroundColor = '#0d9768';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isLoadingTests) {
+                    e.currentTarget.style.backgroundColor = '#10b981';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }
+                }}
               >
                 {isLoadingTests ? 'Loading Tests...' : 'Start Reading & Writing Test'}
               </button>

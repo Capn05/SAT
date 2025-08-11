@@ -155,6 +155,12 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
           font-size: 24px;
           cursor: pointer;
           color: #6b7280;
+          transition: color 0.2s ease, transform 0.2s ease;
+        }
+        
+        .close-button:hover {
+          color: #374151;
+          transform: scale(1.1);
         }
         
         .difficulty-options {
@@ -177,6 +183,8 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
         .difficulty-option:hover {
           border-color: #4338ca;
           background-color: rgba(67, 56, 202, 0.05);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
         .difficulty-option.selected {
@@ -245,6 +253,12 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
           font-weight: 500;
           color: #374151;
           cursor: pointer;
+          transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+        
+        .cancel-button:hover {
+          background-color: #f9fafb;
+          border-color: #9ca3af;
         }
         
         .start-button {
@@ -256,10 +270,12 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
           font-weight: 500;
           color: white;
           cursor: pointer;
+          transition: background-color 0.2s ease, transform 0.2s ease;
         }
         
         .start-button:hover {
           background-color: #3730a3;
+          transform: translateY(-1px);
         }
         
         @media (max-width: 640px) {

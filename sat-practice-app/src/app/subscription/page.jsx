@@ -133,6 +133,18 @@ function FeedbackModal({ isOpen, onClose, onSuccess }) {
                 type="submit" 
                 style={modalStyles.submitButton}
                 disabled={isSubmitting}
+                onMouseEnter={(e) => {
+                  if (!isSubmitting) {
+                    e.currentTarget.style.backgroundColor = '#0d9768';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isSubmitting) {
+                    e.currentTarget.style.backgroundColor = '#10b981';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }
+                }}
               >
                 {isSubmitting ? 'Sending...' : 'Send Feedback'}
                 {!isSubmitting && <Send size={16} style={{ marginLeft: '8px' }} />}
@@ -235,8 +247,21 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
                 borderRadius: '6px',
                 fontWeight: '500',
                 cursor: 'pointer',
+                transition: 'background-color 0.2s ease, transform 0.2s ease',
               }}
               disabled={isSubmitting}
+              onMouseEnter={(e) => {
+                if (!isSubmitting) {
+                  e.currentTarget.style.backgroundColor = '#e5e7eb';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isSubmitting) {
+                  e.currentTarget.style.backgroundColor = '#f3f4f6';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }
+              }}
             >
               Keep Subscription
             </button>
@@ -252,6 +277,19 @@ function CancelSubscriptionModal({ isOpen, onClose, onCancelSubscription }) {
                 fontWeight: '500',
                 cursor: 'pointer',
                 opacity: isSubmitting ? '0.7' : '1',
+                transition: 'background-color 0.2s ease, transform 0.2s ease',
+              }}
+              onMouseEnter={(e) => {
+                if (!isSubmitting) {
+                  e.currentTarget.style.backgroundColor = '#e11d48';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isSubmitting) {
+                  e.currentTarget.style.backgroundColor = '#f43f5e';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }
               }}
             >
               {isSubmitting ? 'Processing...' : 'Yes, Cancel Subscription'}
@@ -561,6 +599,14 @@ function SubscriptionContent() {
         <button 
           style={styles.retryButton}
           onClick={() => window.location.reload()}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#0d9768';
+            e.currentTarget.style.transform = 'translateY(-1px)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#10b981';
+            e.currentTarget.style.transform = 'translateY(0)';
+          }}
         >
           Try Again
         </button>
@@ -598,7 +644,17 @@ function SubscriptionContent() {
               </p>
               
               <Link href="/pricing">
-                <button style={styles.renewButton}>
+                <button 
+                  style={styles.renewButton}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#0d9768';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#10b981';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
                   View Subscription Plans <ExternalLink size={16} style={{ marginLeft: '4px' }} />
                 </button>
               </Link>
@@ -869,20 +925,48 @@ function SubscriptionContent() {
               {(subscription?.status === 'active' || subscription?.status === 'trialing') && !subscription?.cancellation_requested ? (
                 <>
                   <Link href="/pricing" style={{ flex: 1 }}>
-                    <button style={styles.renewButton}>
+                    <button 
+                      style={styles.renewButton}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = '#0d9768';
+                        e.currentTarget.style.transform = 'translateY(-1px)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = '#10b981';
+                        e.currentTarget.style.transform = 'translateY(0)';
+                      }}
+                    >
                       Change Plan <ExternalLink size={16} style={{ marginLeft: '4px' }} />
                     </button>
                   </Link>
                   <button 
                     style={styles.cancelButton}
                     onClick={() => setShowCancelModal(true)}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#fef2f2';
+                      e.currentTarget.style.transform = 'translateY(-1px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'white';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
                   >
                     {subscription?.status === 'trialing' ? 'Cancel Trial' : 'Cancel Subscription'}
                   </button>
                 </>
               ) : subscription?.status === 'canceled' ? (
                 <Link href="/pricing" style={{ width: '100%' }}>
-                  <button style={styles.renewButton}>
+                  <button 
+                    style={styles.renewButton}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#0d9768';
+                      e.currentTarget.style.transform = 'translateY(-1px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#10b981';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
                     {subscription?.status === 'canceled' ? 'Resubscribe' : 'Reactivate Subscription'} <ExternalLink size={16} style={{ marginLeft: '4px' }} />
                   </button>
                 </Link>
@@ -933,6 +1017,14 @@ function SubscriptionContent() {
               <button 
                 style={styles.secondaryButton} 
                 onClick={() => setShowFeedbackModal(true)}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#e5e7eb';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#f3f4f6';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
               >
                 Send Feedback
               </button>
@@ -1083,7 +1175,7 @@ const modalStyles = {
     fontSize: '16px',
     fontWeight: 500,
     cursor: 'pointer',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
   },
   errorMessage: {
     display: 'flex',
@@ -1219,7 +1311,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: 500,
     cursor: 'pointer',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
   },
   secondaryButton: {
     display: 'inline-flex',
@@ -1233,7 +1325,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: 500,
     cursor: 'pointer',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
   },
   contactInfo: {
     display: 'flex',
@@ -1328,6 +1420,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: 500,
     cursor: 'pointer',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
   },
   thankYouBanner: {
     display: 'flex',
@@ -1379,7 +1472,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: 500,
     cursor: 'pointer',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
   },
   accessUntil: {
     display: 'flex',

@@ -1110,12 +1110,14 @@ const styles = {
     fontSize: '16px',
     fontWeight: '500',
     marginTop: '20px',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
     '&:disabled': {
       backgroundColor: '#e5e7eb',
       cursor: 'not-allowed',
     },
     '&:hover:not(:disabled)': {
-      backgroundColor: '#4338ca',
+      backgroundColor: '#0d9768',
+      transform: 'translateY(-1px)',
     },
   },
   navigationContainer: {
@@ -1132,14 +1134,15 @@ const styles = {
     cursor: 'pointer',
     fontSize: '14px',
     fontWeight: '500',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
     '&:disabled': {
       backgroundColor: '#e5e7eb',
       color: '#9ca3af',
       cursor: 'not-allowed',
     },
     '&:hover:not(:disabled)': {
-      backgroundColor: '#4338ca',
+      backgroundColor: '#d1e7d1',
+      transform: 'translateY(-1px)',
     },
   },
   radioLabel: {
@@ -1196,6 +1199,11 @@ const styles = {
     fontSize: '14px',
     margin: '5px',
     width: '10%',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#4d7c0f',
+      transform: 'translateY(-1px)',
+    },
   },
   secondaryButton: {
     padding: '8px 16px',
@@ -1207,9 +1215,10 @@ const styles = {
     fontSize: '14px',
     margin: '5px',
     width: '10%',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
     '&:hover': {
       backgroundColor: '#e5e7eb',
+      transform: 'translateY(-1px)',
     },
   },
   correctIndicator: {
@@ -1253,6 +1262,11 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer',
     fontSize: '14px',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#4d7c0f',
+      transform: 'translateY(-1px)',
+    },
   },
   optionsContainer: {
     display: 'flex',

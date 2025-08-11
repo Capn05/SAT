@@ -136,11 +136,7 @@ const styles = {
     flexDirection: 'column',
     gap: '0.5rem',
     cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    '&:hover': {
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-      transform: 'translateY(-2px)'
-    }
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
   },
   cardHeader: {
     display: 'flex',
@@ -202,10 +198,7 @@ const styles = {
     width: 'fit-content',
     margin: '0 auto',
     cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    '&:hover': {
-      backgroundColor: '#e5e7eb'
-    }
+    transition: 'transform 0.2s ease, background-color 0.2s ease',
   },
   viewAllIcon: {
     color: '#4b5563'
@@ -513,6 +506,14 @@ export default function TestCategories() {
                     }}
                     onClick={() => handleSkillClick(category.name, skill.name)}
                     title={tooltipText}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+                    }}
                   >
                     <div style={styles.cardHeader}>
                       <div style={styles.iconContainer}>
@@ -553,7 +554,17 @@ export default function TestCategories() {
       </div>
       
       <Link href="/skills?subject=1" style={styles.seeMoreLink}>
-        <div style={styles.viewAllButton}>
+        <div 
+          style={styles.viewAllButton}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.backgroundColor = '#e5e7eb';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.backgroundColor = '#f3f4f6';
+          }}
+        >
           <BookOpen style={styles.viewAllIcon} />
           <span style={styles.viewAllText}>View All Skills</span>
           <ArrowRight style={styles.viewAllArrow} />
