@@ -443,6 +443,16 @@ function SubscriptionContent() {
     return diffDays;
   };
   
+  // Helper function to check if trial is active (not expired)
+  const isTrialActive = (sub) => {
+    if (!sub?.isTrialing) return false;
+    if (!sub?.trialEnd) return true; // If no trial end date, assume active
+    
+    const trialEndDate = new Date(sub.trialEnd);
+    const now = new Date();
+    return trialEndDate > now;
+  };
+  
   // Add a helper function to determine if user has active access
   const hasActiveAccess = (sub) => {
     if (!sub) return false;
@@ -461,7 +471,7 @@ function SubscriptionContent() {
   const getSubscriptionDisplayStatus = (sub) => {
     if (!sub) return 'Inactive';
     
-    if (sub.isTrialing) {
+    if (isTrialActive(sub)) {
       return 'Trial';
     }
     
@@ -479,7 +489,7 @@ function SubscriptionContent() {
   const getStatusBadgeStyle = (sub) => {
     if (!sub) return {};
     
-    if (sub.isTrialing) {
+    if (isTrialActive(sub)) {
       // Purple for trial
       return {
         backgroundColor: '#f5f3ff',
@@ -770,7 +780,7 @@ function SubscriptionContent() {
         </div>
       )}
       
-      {subscription?.isTrialing && (
+      {isTrialActive(subscription) && (
         <div style={{
           display: 'flex',
           padding: '12px 24px',
@@ -784,9 +794,9 @@ function SubscriptionContent() {
         }}>
           <AlertCircle size={18} />
           <span>
-            You're currently on a free trial. Your trial ends on {formatDate(subscription?.trialEnd)}.
+            End of Free Trial: {formatDate(subscription?.trialEnd)}.
             {subscription?.cancellation_requested 
-              ? " Your subscription will be canceled after the trial."
+              ? " Your subscription will be canceled after the trial and you will not be charged."
               : " You'll be billed after the trial period ends."}
           </span>
         </div>
@@ -822,7 +832,7 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  {subscription?.isTrialing ? 'Trial Started' : 'Start Date'}
+                  {isTrialActive(subscription) ? 'Trial Started' : 'Start Date'}
                 </div>
                 <div style={styles.infoValue}>
                   {formatDate(subscription?.startDate)}
@@ -832,14 +842,14 @@ function SubscriptionContent() {
               <div style={styles.infoItem}>
                 <div style={styles.infoLabel}>
                   <Calendar size={16} style={{ marginRight: '6px' }} />
-                  {subscription?.isTrialing 
+                  {isTrialActive(subscription) 
                     ? 'Trial Ends' 
                     : subscription?.cancellation_requested 
                       ? 'Access Until' 
                       : 'Renewal Date'}
                 </div>
                 <div style={styles.infoValue}>
-                  {subscription?.isTrialing 
+                  {isTrialActive(subscription) 
                     ? formatDate(subscription?.trialEnd)
                     : formatDate(subscription?.endDate)}
                 </div>
@@ -847,7 +857,7 @@ function SubscriptionContent() {
             </div>
             
             {/* Show trial price info if in trial */}
-            {subscription?.isTrialing && (
+            {isTrialActive(subscription) && (
               <div style={styles.infoRow}>
                 <div style={styles.infoItem}>
                   <div style={styles.infoLabel}>Trial Period</div>
