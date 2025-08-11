@@ -118,7 +118,16 @@ export default function AnalyticsCard() {
   };
 
   return (
-    <div style={styles.container}>
+    <div 
+      style={styles.container}
+      onClick={handleViewAnalytics}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-4px)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+      }}
+    >
       <div style={styles.header}>
         <h2 style={styles.title}>Your Progress</h2>
       </div>
@@ -149,9 +158,17 @@ export default function AnalyticsCard() {
         </div>
       </div>
 
-      <button style={styles.viewButton} onClick={handleViewAnalytics}>
-        <BarChart2 style={styles.buttonIcon} />
-        <span>View Detailed Analytics</span>
+      <button 
+        style={styles.viewButton} 
+        onClick={handleViewAnalytics}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = '#0d9768';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = '#10b981';
+        }}
+      >
+        <span>    View Detailed Analytics</span>
       </button>
     </div>
   );
@@ -163,6 +180,8 @@ const styles = {
     backgroundColor: "white",
     borderRadius: "8px",
     boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)",
+    transition: "transform 0.2s ease, box-shadow 0.2s ease",
+    cursor: "pointer",
   },
   header: {
     marginBottom: "20px",
@@ -216,6 +235,7 @@ const styles = {
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
+    transition: "background-color 0.2s ease",
   },
   buttonIcon: {
     width: "16px",

@@ -136,7 +136,15 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
   };
 
   return (
-    <div style={styles.container}>
+    <div 
+      style={styles.container}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-4px)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+      }}
+    >
       <h3 style={styles.title}>Brill: Your Personalized AI Tutor</h3>
       <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputContainer}>
         <MessageCircle style={styles.icon} />
@@ -147,7 +155,16 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
           value={userQuestion}
           onChange={(e) => setUserQuestion(e.target.value)}
         />
-        <button type="submit" style={styles.submitButton}>
+        <button 
+          type="submit" 
+          style={styles.submitButton}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#0d9768';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#10b981';
+          }}
+        >
           Ask
         </button>
       </form>
@@ -170,6 +187,8 @@ const styles = {
     borderRadius: '12px',
     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
     backgroundColor: 'white',
+    transition: 'transform 0.2s ease',
+    cursor: 'pointer',
   },
 
   paddingBox: {
@@ -213,6 +232,7 @@ const styles = {
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
+    transition: "background-color 0.2s ease",
   },
   responseBox: {
     padding: '10px',

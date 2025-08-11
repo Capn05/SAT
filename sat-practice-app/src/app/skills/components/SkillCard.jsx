@@ -50,6 +50,14 @@ export default function SkillCard({ skill, subject }) {
         }}
         onClick={handleClick}
         title={tooltipText}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'translateY(-4px)';
+          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+        }}
       >
         <div style={styles.header}>
           <div style={styles.iconContainer}>{skill.icon}</div>
@@ -102,10 +110,6 @@ const styles = {
     cursor: 'pointer',
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    '&:hover': {
-      transform: 'translateY(-2px)',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-    },
   },
   header: {
     display: 'flex',
