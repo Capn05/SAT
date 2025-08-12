@@ -485,3 +485,18 @@
 .option-text p {
   margin: 0.75em 0;
 } 
+
+/* Use the same font family and sizing as other math questions */
+.passage,
+.question-text,
+.option-text {
+  font-family: var(--question-font-family);
+  font-size: var(--question-text-font-size);
+}
+
+.passage .katex,
+.question-text .katex,
+.option-text .katex {
+  font-family: var(--question-font-family) !important;
+  font-size: var(--question-math-font-size);
+}

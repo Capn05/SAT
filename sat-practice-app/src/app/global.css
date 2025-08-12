@@ -122,6 +122,11 @@ a {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Question text and math styling knobs */
+  --question-font-family: "Times New Roman", Times, serif;
+  --question-text-font-size: 1rem; /* adjust overall plain text size inside question text container */
+  --question-math-font-size: 1em;  /* math relative to surrounding text (keep 1em to match) */
 }
 
 .dark {
@@ -205,17 +210,20 @@ a {
   }
 }
 
-/* Math rendering styles */
+/* Math rendering: rely on KaTeX defaults; only keep safe container overflow */
 .katex-display {
-  margin: 1em 0;
   overflow-x: auto;
-  overflow-y: hidden;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
-.katex {
-  font-size: 1.1em;
+/* Scope Times New Roman and sizing to question content and math */
+.question-text-container {
+  font-family: var(--question-font-family);
+  font-size: var(--question-text-font-size);
+}
+
+.question-text-container .katex {
+  font-family: var(--question-font-family) !important;
+  font-size: var(--question-math-font-size);
 }
 
 /* For math expressions that might be large */

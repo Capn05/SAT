@@ -238,64 +238,7 @@ function ReviewTestContent() {
     return { passage: '', question: text };
   };
 
-  // Add global styles for KaTeX rendering
-  useEffect(() => {
-    const globalStyles = `
-      /* Math content styles */
-      .question-text-container .katex {
-        font-size: 1.1em;
-        line-height: 1.5;
-        display: inline-block;
-        text-rendering: auto;
-      }
-    
-      .question-text-container .katex-display {
-        display: block;
-        margin: 1em 0;
-        text-align: center;
-      }
-    
-      /* Ensure block elements maintain their formatting */
-      .question-text-container ul,
-      .question-text-container ol,
-      .question-text-container blockquote,
-      .question-text-container pre,
-      .question-text-container table {
-        display: block;
-        margin: 1em 0;
-      }
-    
-      /* Math question styling */
-      .math-question {
-        font-family: 'KaTeX_Main', serif;
-        line-height: 1.6;
-      }
-    
-      .reading-question {
-        font-family: 'Noto Sans', sans-serif;
-        line-height: 1.8;
-      }
-    
-      /* Fix for dollar signs in math content */
-      .math-question .katex .mord, 
-      .math-content .katex .mord {
-        display: inline-block;
-        margin-right: 0.05em;
-      }
-    `;
-
-    // Create a style element and append it to the head
-    if (typeof document !== 'undefined') {
-      const styleElement = document.createElement('style');
-      styleElement.innerHTML = globalStyles;
-      document.head.appendChild(styleElement);
-      
-      // Return a cleanup function to remove the style when the component unmounts
-      return () => {
-        document.head.removeChild(styleElement);
-      };
-    }
-  }, []);
+  // Remove non-default KaTeX overrides to stick with library defaults
 
   if (loading) {
     return (
@@ -475,7 +418,7 @@ function ReviewTestContent() {
                   {questions[selectedQuestion].domainName} - {questions[selectedQuestion].subcategoryName}
                   {questions[selectedQuestion].moduleNumber === 2 && (
                     <span className="module-tag">
-                      {questions[selectedQuestion].isHarderModule ? ' - Higher Difficulty' : ' - Lower Difficulty'}
+                      {questions[selectedQuestion].isHarderModule ? 'Higher Difficulty' : 'Lower Difficulty'}
                     </span>
                   )}
                 </div>

@@ -1346,17 +1346,7 @@ const globalStyles = `
     background-color: #f3f4f6;
   }
   
-  /* KaTeX styles */
-  .katex-display {
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 0.5rem 0;
-    max-width: 100%;
-  }
-  
-  .katex {
-    font-size: 1.1em;
-  }
+  /* Use default KaTeX styles without overrides */
   
   /* Desmos panel animation */
   @keyframes slideDown {

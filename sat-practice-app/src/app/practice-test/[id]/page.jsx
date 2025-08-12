@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import TopBar from '../../components/TopBar';
 import { ChevronLeft, ChevronRight, Clock, Flag, CheckCircle, AlertCircle, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import 'katex/dist/katex.min.css';
+import { renderMathContent as renderMathFromModule } from '../../components/MathRenderer';
 
 export default function PracticeTestPage({ params }) {
   const testId = params.id;
@@ -43,6 +45,8 @@ export default function PracticeTestPage({ params }) {
   const [showInstructionsModal, setShowInstructionsModal] = useState(true);
   const [showResultsModal, setShowResultsModal] = useState(false);
   const [testResults, setTestResults] = useState(null);
+
+  const hasMath = (content) => typeof content === 'string' && /\$/.test(content);
   
   // Initialize test data
   useEffect(() => {
@@ -612,9 +616,16 @@ export default function PracticeTestPage({ params }) {
                       />
                     </div>
                   )}
-                  
-                  <div className="prose max-w-none">
-                    <p className="text-gray-900 font-medium">{currentQuestion.question_text}</p>
+
+                  <div className="prose max-w-none question-text-container">
+                    {hasMath(currentQuestion.question_text) ? (
+                      <div
+                        className="text-gray-900 font-medium"
+                        dangerouslySetInnerHTML={{ __html: renderMathFromModule(currentQuestion.question_text) }}
+                      />
+                    ) : (
+                      <p className="text-gray-900 font-medium">{currentQuestion.question_text}</p>
+                    )}
                   </div>
                 </div>
                 
@@ -641,7 +652,13 @@ export default function PracticeTestPage({ params }) {
                       </div>
                       <div className="text-left">
                         <span className="font-medium mr-2">{option.value}.</span>
-                        <span>{option.label}</span>
+                        {hasMath(option.label) ? (
+                          <span
+                            dangerouslySetInnerHTML={{ __html: renderMathFromModule(option.label) }}
+                          />
+                        ) : (
+                          <span>{option.label}</span>
+                        )}
                       </div>
                     </button>
                   ))}
