@@ -10,6 +10,10 @@ This document provides a comprehensive overview of the SAT Prep App database str
 
 3. **Difficulty Format**: The `difficulty` field is stored as TEXT in all tables, not INTEGER (e.g., 'easy', 'medium', 'hard').
 
+4. **Backup Tables**: The `backup_questions` and `backup_options` tables serve as historical backups of the main questions and options data. These contain older schema formats with enum types and may have different column structures.
+
+5. **Enhanced Subscriptions**: The subscription system has been expanded with trial management, cancellation tracking, and enhanced status handling including `'canceled_with_access'` for users who retain access until period end.
+
 ## Database Schema
 
 ### Core Content Tables
@@ -136,6 +140,87 @@ Tracks completed practice test performance.
 | module2_score | REAL | Score percentage for module 2 |
 | used_harder_module | BOOLEAN | Whether module 2 was the harder version |
 | total_score | REAL | Overall test score percentage |
+
+#### paused_tests
+Stores paused test sessions for users to resume later.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key (auto-generated) |
+| user_id | UUID | Foreign key to auth.users.id |
+| practice_test_id | INTEGER | Foreign key to practice_tests.id |
+| test_module_id | INTEGER | Foreign key to test_modules.id |
+| current_question | INTEGER | Index of the current question |
+| time_remaining | INTEGER | Remaining time in seconds |
+| answers | JSONB | User's answers so far (default: []) |
+| flagged_questions | JSONB | Questions flagged for review (default: []) |
+| paused_at | TIMESTAMPTZ | When the test was paused (default: now()) |
+
+### Business Tables
+
+#### subscriptions
+Manages user subscription information for Stripe integration.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key (auto-generated) |
+| user_id | UUID | Foreign key to auth.users.id |
+| stripe_customer_id | TEXT | Stripe customer identifier |
+| stripe_subscription_id | TEXT | Stripe subscription identifier |
+| status | TEXT | Subscription status ('active', 'trialing', 'canceled', 'canceled_with_access', 'incomplete', 'incomplete_expired', 'past_due', 'unpaid') |
+| plan_type | TEXT | Type of plan ('monthly', 'quarterly') |
+| current_period_end | TIMESTAMPTZ | When the current billing period ends |
+| created_at | TIMESTAMPTZ | When the subscription was created (default: now()) |
+| updated_at | TIMESTAMPTZ | When the subscription was last updated (default: now()) |
+| canceled_at | TIMESTAMPTZ | When the subscription was canceled (nullable) |
+| cancellation_requested | BOOLEAN | Whether user has requested cancellation (default: false) |
+| is_trialing | BOOLEAN | Whether the subscription is in trial period (default: false) |
+| trial_end | TIMESTAMPTZ | When the trial period ends (nullable) |
+
+#### feedback
+Stores user feedback and support requests.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key (auto-generated) |
+| user_id | UUID | Foreign key to auth.users.id |
+| user_email | TEXT | User's email address (nullable) |
+| feedback_type | TEXT | Type of feedback ('general', 'subscription', 'feature', 'bug', 'content') |
+| message | TEXT | The feedback message |
+| created_at | TIMESTAMPTZ | When feedback was submitted (default: now()) |
+| resolved | BOOLEAN | Whether feedback has been resolved (default: false) |
+| resolved_at | TIMESTAMPTZ | When feedback was resolved (nullable) |
+| resolution_notes | TEXT | Admin notes about resolution (nullable) |
+| admin_user_id | UUID | Foreign key to auth.users.id for admin who resolved (nullable) |
+
+### Backup Tables
+
+#### backup_questions
+Backup storage for questions data.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | INTEGER | Question ID |
+| question_text | TEXT | Content of the question |
+| image_url | TEXT | URL to any image associated with the question |
+| difficulty | TEXT | Difficulty level |
+| test_id | INTEGER | Associated test ID |
+| subject_id | INTEGER | Subject identifier |
+| subject | ENUM | Subject category (Math, Reading & Writing) |
+| main_category | TEXT | Main category name |
+| subcategory | ENUM | Subcategory skill |
+| subcategory_id | INTEGER | Subcategory identifier |
+
+#### backup_options
+Backup storage for answer options.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | INTEGER | Option ID |
+| question_id | INTEGER | Foreign key to questions |
+| value | TEXT | Value identifier for the option |
+| label | TEXT | Display text for the option |
+| is_correct | BOOLEAN | Whether this option is correct |
 
 ## Operations by Feature
 
@@ -410,6 +495,193 @@ ORDER BY uta.taken_at DESC
 LIMIT 5;
 ```
 
+### 5. Paused Test Management
+
+**Description**: Users can pause practice tests and resume them later with preserved state.
+
+#### Read Operations:
+```sql
+-- Check if user has any paused tests
+SELECT 
+  pt.id,
+  ptest.name AS test_name,
+  pt.current_question,
+  pt.time_remaining,
+  pt.paused_at,
+  tm.module_number,
+  tm.is_harder
+FROM paused_tests pt
+JOIN practice_tests ptest ON pt.practice_test_id = ptest.id
+JOIN test_modules tm ON pt.test_module_id = tm.id
+WHERE pt.user_id = $user_id
+ORDER BY pt.paused_at DESC;
+
+-- Get paused test details for resuming
+SELECT 
+  pt.*,
+  ptest.name AS test_name,
+  tm.module_number,
+  tm.is_harder
+FROM paused_tests pt
+JOIN practice_tests ptest ON pt.practice_test_id = ptest.id
+JOIN test_modules tm ON pt.test_module_id = tm.id
+WHERE pt.id = $paused_test_id AND pt.user_id = $user_id;
+```
+
+#### Write Operations:
+```sql
+-- Pause a test (upsert to handle multiple pauses)
+INSERT INTO paused_tests (
+  user_id,
+  practice_test_id,
+  test_module_id,
+  current_question,
+  time_remaining,
+  answers,
+  flagged_questions
+) VALUES (
+  $user_id,
+  $practice_test_id,
+  $test_module_id,
+  $current_question,
+  $time_remaining,
+  $answers_json,
+  $flagged_questions_json
+)
+ON CONFLICT (user_id, practice_test_id, test_module_id)
+DO UPDATE SET
+  current_question = EXCLUDED.current_question,
+  time_remaining = EXCLUDED.time_remaining,
+  answers = EXCLUDED.answers,
+  flagged_questions = EXCLUDED.flagged_questions,
+  paused_at = now();
+
+-- Delete paused test after resuming/completing
+DELETE FROM paused_tests
+WHERE id = $paused_test_id AND user_id = $user_id;
+```
+
+### 6. Subscription Management
+
+**Description**: Handle user subscription lifecycle with Stripe integration.
+
+#### Read Operations:
+```sql
+-- Get user's current subscription status
+SELECT 
+  s.*,
+  CASE 
+    WHEN s.status = 'active' AND s.current_period_end > now() THEN true
+    WHEN s.status = 'canceled_with_access' AND s.current_period_end > now() THEN true
+    WHEN s.status = 'trialing' AND s.trial_end > now() THEN true
+    ELSE false
+  END AS has_active_access
+FROM subscriptions s
+WHERE s.user_id = $user_id
+ORDER BY s.created_at DESC
+LIMIT 1;
+
+-- Check subscription expiring soon (for notifications)
+SELECT COUNT(*) as expiring_count
+FROM subscriptions
+WHERE status IN ('active', 'canceled_with_access')
+  AND current_period_end BETWEEN now() AND now() + interval '7 days';
+```
+
+#### Write Operations:
+```sql
+-- Create new subscription
+INSERT INTO subscriptions (
+  user_id,
+  stripe_customer_id,
+  stripe_subscription_id,
+  status,
+  plan_type,
+  current_period_end,
+  is_trialing,
+  trial_end
+) VALUES (
+  $user_id,
+  $stripe_customer_id,
+  $stripe_subscription_id,
+  $status,
+  $plan_type,
+  $current_period_end,
+  $is_trialing,
+  $trial_end
+);
+
+-- Update subscription status (webhook)
+UPDATE subscriptions 
+SET 
+  status = $new_status,
+  current_period_end = $current_period_end,
+  canceled_at = CASE WHEN $new_status = 'canceled' THEN now() ELSE canceled_at END,
+  updated_at = now()
+WHERE stripe_subscription_id = $stripe_subscription_id;
+
+-- Request cancellation (user action)
+UPDATE subscriptions
+SET 
+  cancellation_requested = true,
+  updated_at = now()
+WHERE user_id = $user_id AND status = 'active';
+```
+
+### 7. Feedback System
+
+**Description**: Collect and manage user feedback across different categories.
+
+#### Read Operations:
+```sql
+-- Get user's feedback history
+SELECT 
+  f.id,
+  f.feedback_type,
+  f.message,
+  f.created_at,
+  f.resolved,
+  f.resolved_at,
+  f.resolution_notes
+FROM feedback f
+WHERE f.user_id = $user_id
+ORDER BY f.created_at DESC;
+
+-- Admin: Get unresolved feedback
+SELECT 
+  f.*,
+  au.email as user_email
+FROM feedback f
+JOIN auth.users au ON f.user_id = au.id
+WHERE f.resolved = false
+ORDER BY f.created_at ASC;
+```
+
+#### Write Operations:
+```sql
+-- Submit new feedback
+INSERT INTO feedback (
+  user_id,
+  user_email,
+  feedback_type,
+  message
+) VALUES (
+  $user_id,
+  $user_email,
+  $feedback_type,
+  $message
+);
+
+-- Admin: Resolve feedback
+UPDATE feedback
+SET 
+  resolved = true,
+  resolved_at = now(),
+  resolution_notes = $resolution_notes,
+  admin_user_id = $admin_user_id
+WHERE id = $feedback_id;
+```
+
 ## Implementation Notes
 
 ### Calculating Mastery Level
@@ -444,3 +716,32 @@ The app uses Supabase Auth, which provides:
 - Row-level security (RLS) policies
 
 All user_id values in the database are UUID references to auth.users table.
+
+### Paused Test State Management
+
+The `paused_tests` table stores the complete state needed to resume a test:
+
+- `answers`: JSONB array of user's selected answers so far
+- `flagged_questions`: JSONB array of question indices marked for review
+- `current_question`: 0-based index of the next question to show
+- `time_remaining`: Seconds remaining for the current module
+
+### Subscription Status Logic
+
+The subscription system handles complex state transitions:
+
+- `'active'`: User has full access
+- `'trialing'`: User is in trial period with full access
+- `'canceled'`: Subscription canceled, access immediately revoked
+- `'canceled_with_access'`: Subscription canceled but user retains access until period end
+- `'past_due'`, `'unpaid'`: Payment issues, may have limited access
+- `'incomplete'`, `'incomplete_expired'`: Setup issues
+
+### Backup Table Usage
+
+The backup tables (`backup_questions`, `backup_options`) contain:
+
+- Historical data with older schema formats
+- Enum type definitions for subjects and subcategories
+- Different column naming conventions
+- Used for data recovery and migration validation
