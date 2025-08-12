@@ -126,112 +126,174 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   };
 
   return (
-    <aside style={styles.sidebar}>
-      <div style={styles.header}>
-        <h3>Chat with Brill</h3>
-      </div>
-      
-      <div style={styles.chatContainer}>
-        <div style={styles.messagesContainer}>
-          {messages.map((message) => (
-            <div 
-              key={message.id} 
-              style={message.role === 'user' ? styles.userMessage : styles.assistantMessage}
-            >
-              <div style={styles.messageHeader}>
-                <strong>{message.role === 'user' ? 'You' : 'Brill'}</strong>
-                <span style={styles.timestamp}>
-                  {message.createdAt ? new Date(message.createdAt).toLocaleTimeString() : ''}
-                </span>
-              </div>
-              <div style={styles.messageContent}>
-                {message.role === 'assistant' ? (
-                  <div dangerouslySetInnerHTML={{ __html: renderResponse(message.content) }} />
-                ) : (
-                  message.content
-                )}
-              </div>
-            </div>
-          ))}
-          {isLoading && <div style={styles.loadingIndicator}>Brill is typing...</div>}
-          <div ref={messagesEndRef} />
-        </div>
-      </div>
-      
-      {/* Combined input and suggestions container */}
-      <div style={styles.inputContainer}>
-        {/* Input form */}
-        <form onSubmit={handleUserSubmit} style={styles.inputForm}>
-          <MessageCircle style={styles.messageIcon} />
-          <input
-            type="text"
-            placeholder="Ask me anything about the question..."
-            style={styles.inputField}
-            value={userQuestion}
-            onChange={(e) => setUserQuestion(e.target.value)}
-          />
-          {userQuestion && !isLoading && (
-            <button 
-              type="button" 
-              onClick={handleClearInput} 
-              style={styles.clearButton}
-            >
-              <X size={16} />
-            </button>
-          )}
-          {isLoading ? (
-            <button 
-              type="button" 
-              onClick={stop} 
-              style={styles.stopButton}
-            >
-              <Square size={16} />
-            </button>
-          ) : (
-            <button type="submit" style={styles.sendButton}>
-              <Send size={20} />
-            </button>
-          )}
-        </form>
+    <>
+      <style jsx global>{`
+        .message-content h1,
+        .message-content h2,
+        .message-content h3,
+        .message-content h4,
+        .message-content h5,
+        .message-content h6 {
+          margin-top: 1.2em;
+          margin-bottom: 0.6em;
+          font-weight: 600;
+          line-height: 1.3;
+        }
         
-        {/* Suggestions - now placed below the input */}
-        <div style={styles.suggestions}>
-          <button 
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleQuestionPreset("Give me a hint for the question without revealing the answer");
-            }} 
-            style={styles.suggestionButton}
-            disabled={isLoading}
-          >
-            Hint
-          </button>
-          <button 
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleQuestionPreset("Explain the answer");
-            }} 
-            style={styles.suggestionButton}
-            disabled={isLoading}
-          >
-            Explain
-          </button>
-          <button 
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer");
-            }} 
-            style={styles.suggestionButton}
-            disabled={isLoading}
-          >
-            Why is my answer incorrect
-          </button>
+        .message-content h1:first-child,
+        .message-content h2:first-child,
+        .message-content h3:first-child,
+        .message-content h4:first-child,
+        .message-content h5:first-child,
+        .message-content h6:first-child {
+          margin-top: 0;
+        }
+        
+        .message-content p {
+          margin-bottom: 0.8em;
+          line-height: 1.5;
+        }
+        
+        .message-content ul,
+        .message-content ol {
+          margin: 0.8em 0;
+          padding-left: 1.2em;
+        }
+        
+        .message-content li {
+          margin-bottom: 0.4em;
+          line-height: 1.4;
+        }
+        
+        .message-content strong {
+          font-weight: 600;
+        }
+        
+        .message-content table {
+          margin: 1em 0;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        .message-content th,
+        .message-content td {
+          padding: 8px 12px;
+          border: 1px solid #e5e7eb;
+          text-align: left;
+        }
+        
+        .message-content th {
+          background-color: #f9fafb;
+          font-weight: 600;
+        }
+      `}</style>
+      <aside style={styles.sidebar}>
+        <div style={styles.header}>
+          <h3>Chat with Brill</h3>
         </div>
-      </div>
-    </aside>
+        
+        <div style={styles.chatContainer}>
+          <div style={styles.messagesContainer}>
+            {messages.map((message) => (
+              <div 
+                key={message.id} 
+                style={message.role === 'user' ? styles.userMessage : styles.assistantMessage}
+              >
+                <div style={styles.messageHeader}>
+                  <strong>{message.role === 'user' ? 'You' : 'Brill'}</strong>
+                  <span style={styles.timestamp}>
+                    {message.createdAt ? new Date(message.createdAt).toLocaleTimeString() : ''}
+                  </span>
+                </div>
+                <div style={{...styles.messageContent, ...styles.formattedContent}} className="message-content">
+                  {message.role === 'assistant' ? (
+                    <div dangerouslySetInnerHTML={{ __html: renderResponse(message.content) }} />
+                  ) : (
+                    message.content
+                  )}
+                </div>
+              </div>
+            ))}
+            {isLoading && <div style={styles.loadingIndicator}>Brill is typing...</div>}
+            <div ref={messagesEndRef} />
+          </div>
+        </div>
+        
+        {/* Combined input and suggestions container */}
+        <div style={styles.inputContainer}>
+          {/* Input form */}
+          <form onSubmit={handleUserSubmit} style={styles.inputForm}>
+            <MessageCircle style={styles.messageIcon} />
+            <input
+              type="text"
+              placeholder="Ask me anything about the question..."
+              style={styles.inputField}
+              value={userQuestion}
+              onChange={(e) => setUserQuestion(e.target.value)}
+            />
+            {userQuestion && !isLoading && (
+              <button 
+                type="button" 
+                onClick={handleClearInput} 
+                style={styles.clearButton}
+              >
+                <X size={16} />
+              </button>
+            )}
+            {isLoading ? (
+              <button 
+                type="button" 
+                onClick={stop} 
+                style={styles.stopButton}
+              >
+                <Square size={16} />
+              </button>
+            ) : (
+              <button type="submit" style={styles.sendButton}>
+                <Send size={20} />
+              </button>
+            )}
+          </form>
+          
+          {/* Suggestions - now placed below the input */}
+          <div style={styles.suggestions}>
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleQuestionPreset("Give me a hint for the question without revealing the answer");
+              }} 
+              style={styles.suggestionButton}
+              disabled={isLoading}
+            >
+              Hint
+            </button>
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleQuestionPreset("Explain the answer");
+              }} 
+              style={styles.suggestionButton}
+              disabled={isLoading}
+            >
+              Explain
+            </button>
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer");
+              }} 
+              style={styles.suggestionButton}
+              disabled={isLoading}
+            >
+              Why is my answer incorrect
+            </button>
+          </div>
+        </div>
+      </aside>
+    </>
   );
 }
 
@@ -401,5 +463,11 @@ const styles = {
     justifyContent: 'center',
     borderRadius: '50%',
     marginRight: '4px',
+  },
+  // New styles for formatted content
+  formattedContent: {
+    // Add any specific styles for formatted content if needed,
+    // but the main messageContent styles already handle line height and paragraph spacing.
+    // This is primarily for headers and lists.
   },
 };
