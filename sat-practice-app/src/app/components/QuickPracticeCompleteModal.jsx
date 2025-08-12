@@ -32,14 +32,56 @@ const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode
           Great job completing this practice session! Would you like to practice more?
         </p>
         <div style={styles.buttonContainer}>
-          <button onClick={handleMorePractice} style={styles.confirmButton}>
+          <button 
+            onClick={handleMorePractice} 
+            style={styles.confirmButton}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#059669';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 8px 12px -1px rgba(16, 185, 129, 0.3)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#10b981';
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(16, 185, 129, 0.2)';
+            }}
+          >
             More Practice
           </button>
-          <button onClick={handleImDone} style={styles.cancelButton}>
+          <button 
+            onClick={handleImDone} 
+            style={styles.cancelButton}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#f1f5f9';
+              e.currentTarget.style.borderColor = '#cbd5e1';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#f8fafc';
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+          >
             I'm Done
           </button>
         </div>
       </div>
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes modalSlideIn {
+          from { 
+            opacity: 0;
+            transform: scale(0.95) translateY(-20px);
+          }
+          to { 
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 };
@@ -51,66 +93,70 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1000,
+    backdropFilter: 'blur(4px)',
+    animation: 'fadeIn 0.2s ease-out',
   },
   modal: {
     backgroundColor: '#fff',
-    padding: '24px',
-    borderRadius: '12px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+    padding: '32px',
+    borderRadius: '16px',
+    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
     textAlign: 'center',
     maxWidth: '500px',
     width: '90%',
+    transform: 'scale(0.95)',
+    animation: 'modalSlideIn 0.3s ease-out forwards',
+    border: '1px solid #f1f5f9',
   },
   title: {
-    margin: '0 0 16px',
-    color: '#1f2937',
-    fontSize: '24px',
-    fontWeight: '600',
+    margin: '0 0 12px',
+    color: '#111827',
+    fontSize: '28px',
+    fontWeight: '700',
+    letterSpacing: '-0.025em',
   },
   message: {
-    margin: '0 0 24px',
+    margin: '0 0 32px',
     color: '#4b5563',
     fontSize: '16px',
-    lineHeight: '1.5',
+    lineHeight: '1.6',
+    fontWeight: '400',
   },
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
-    gap: '16px',
+    gap: '12px',
     flexWrap: 'wrap',
   },
   confirmButton: {
-    padding: '12px 24px',
-    backgroundColor: '#65a30d',
+    padding: '14px 28px',
+    backgroundColor: '#10b981',
     color: 'white',
     border: 'none',
-    borderRadius: '8px',
+    borderRadius: '10px',
     cursor: 'pointer',
     fontSize: '16px',
-    fontWeight: '500',
-    transition: 'background-color 0.2s',
-    '&:hover': {
-      backgroundColor: '#4d7c0f',
-    },
+    fontWeight: '600',
+    transition: 'all 0.2s ease',
+    transform: 'translateY(0)',
+    boxShadow: '0 4px 6px -1px rgba(16, 185, 129, 0.2)',
   },
   cancelButton: {
-    padding: '12px 24px',
-    backgroundColor: '#f3f4f6',
-    color: '#1f2937',
-    border: 'none',
-    borderRadius: '8px',
+    padding: '14px 28px',
+    backgroundColor: '#f8fafc',
+    color: '#475569',
+    border: '1px solid #e2e8f0',
+    borderRadius: '10px',
     cursor: 'pointer',
     fontSize: '16px',
-    fontWeight: '500',
-    transition: 'background-color 0.2s',
-    '&:hover': {
-      backgroundColor: '#e5e7eb',
-    },
+    fontWeight: '600',
+    transition: 'all 0.2s ease',
+    transform: 'translateY(0)',
   },
 };
 
