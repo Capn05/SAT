@@ -50,6 +50,8 @@ export async function POST(request) {
       model: 'gpt-4o-mini',
       messages: conversationMessages,
       stream: true,
+      max_tokens: 4000, // Increased token limit to prevent cutoffs
+      temperature: 0.7, // Consistent response generation
     });
 
     // Create a ReadableStream to handle the streaming response
@@ -58,13 +60,33 @@ export async function POST(request) {
         const encoder = new TextEncoder();
         
         try {
+          let totalTokens = 0;
+          let responseComplete = false;
+          
           for await (const chunk of completion) {
             const content = chunk.choices[0]?.delta?.content;
+            const finishReason = chunk.choices[0]?.finish_reason;
+            
             if (content) {
+              totalTokens += content.split(' ').length; // Rough token estimation
               // Send data in Server-Sent Events format
               const data = `data: ${JSON.stringify({ content })}\n\n`;
               controller.enqueue(encoder.encode(data));
             }
+            
+            // Check if response was completed naturally
+            if (finishReason) {
+              responseComplete = true;
+              console.log(`Response completed with reason: ${finishReason}, estimated tokens: ${totalTokens}`);
+              
+              if (finishReason === 'length') {
+                console.warn('Response was truncated due to token limit. Consider increasing max_tokens.');
+              }
+            }
+          }
+          
+          if (!responseComplete) {
+            console.warn('Response stream ended without completion signal - possible network timeout or interruption');
           }
           
           // Send done signal
@@ -72,6 +94,12 @@ export async function POST(request) {
           controller.close();
         } catch (error) {
           console.error('Streaming error:', error);
+          // Send error information to client for debugging
+          const errorData = `data: ${JSON.stringify({ 
+            error: 'Streaming interrupted', 
+            message: error.message 
+          })}\n\n`;
+          controller.enqueue(encoder.encode(errorData));
           controller.error(error);
         }
       },

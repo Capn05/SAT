@@ -50,6 +50,14 @@ export function useChat({
     setMessages(prev => [...prev, assistantMessage]);
 
     try {
+      // Set up timeout for the request
+      const timeoutId = setTimeout(() => {
+        if (abortControllerRef.current) {
+          abortControllerRef.current.abort();
+          console.warn('Chat request timed out after 60 seconds');
+        }
+      }, 60000); // 60 second timeout
+
       const response = await fetch(api, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -62,6 +70,8 @@ export function useChat({
         }),
         signal: abortControllerRef.current.signal,
       });
+
+      clearTimeout(timeoutId);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -99,6 +109,11 @@ export function useChat({
 
             try {
               const parsed = JSON.parse(data);
+              if (parsed.error) {
+                // Handle error data from server
+                console.error('Server error during streaming:', parsed);
+                throw new Error(`Server error: ${parsed.message}`);
+              }
               if (parsed.content) {
                 setMessages(prev => prev.map(msg => 
                   msg.id === assistantMessage.id 
@@ -107,22 +122,45 @@ export function useChat({
                 ));
               }
             } catch (e) {
+              // Only ignore JSON parsing errors, not actual error objects
+              if (e.message.startsWith('Server error:')) {
+                throw e;
+              }
               // Ignore parsing errors for partial chunks
+              console.debug('Ignoring partial chunk parse error:', e.message);
             }
           }
         }
       }
     } catch (error) {
+      console.error('Chat error details:', {
+        name: error.name,
+        message: error.message,
+        stack: error.stack,
+        timestamp: new Date().toISOString()
+      });
+
       if (error.name === 'AbortError') {
+        console.log('Chat request was aborted (user stopped or timeout)');
         // Remove incomplete assistant message on abort
         setMessages(prev => prev.filter(msg => msg.id !== assistantMessage.id));
       } else {
-        console.error('Chat error:', error);
+        let errorContent = 'Sorry, there was an error processing your request.';
+        
+        // Provide more specific error messages
+        if (error.message.includes('fetch')) {
+          errorContent = 'Network error occurred. Please check your connection and try again.';
+        } else if (error.message.includes('Server error')) {
+          errorContent = `${error.message} Please try again.`;
+        } else if (error.message.includes('timeout')) {
+          errorContent = 'Request timed out. The response was taking too long. Please try again.';
+        }
+
         // Add error message
         const errorMessage = {
           id: Date.now() + '-error',
           role: 'assistant',
-          content: 'Sorry, there was an error processing your request.',
+          content: errorContent,
           createdAt: new Date(),
         };
         setMessages(prev => [...prev.slice(0, -1), errorMessage]);
