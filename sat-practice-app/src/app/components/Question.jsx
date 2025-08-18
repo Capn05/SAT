@@ -47,6 +47,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [showSkillsModal, setShowSkillsModal] = useState(false);
   const [showPostCompleteDifficultyModal, setShowPostCompleteDifficultyModal] = useState(false);
   const [sessionCorrectAnswers, setSessionCorrectAnswers] = useState({});
+  const [currentCorrectAnswers, setCurrentCorrectAnswers] = useState({}); // Track latest correct status for visual display
   const [shouldShakeFeedback, setShouldShakeFeedback] = useState(false);
 
   const md = new MarkdownIt({
@@ -61,6 +62,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   // Helper function to determine if question is math
   const isMathQuestion = (question) => {
     return question && question.subject_id === 1; // Math questions have subject_id of 1
+  };
+
+  // Helper function to calculate first attempt correct answers
+  const calculateFirstAttemptScore = () => {
+    const firstAttemptCorrect = Object.values(sessionCorrectAnswers).filter(result => result === true).length;
+    const questionsAttempted = Object.keys(sessionCorrectAnswers).length;
+    return { firstAttemptCorrect, questionsAttempted };
   };
 
   // Main rendering function for all content
@@ -589,6 +597,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           [currentQuestionId]: selectedOption.is_correct
         }));
         
+        // Also initialize current correct status (will be updated on subsequent attempts)
+        setCurrentCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: selectedOption.is_correct
+        }));
+        
         // Store the answer for this question regardless of correctness
         setUserAnswers(prev => ({
           ...prev,
@@ -610,6 +624,14 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         // If this is a correct answer on a subsequent attempt and we haven't counted it yet,
         // update the answered count but DO NOT change the sessionCorrectAnswers state
         setAnsweredCount(prev => prev + 1);
+      }
+      
+      // Always update current correct status when user gets it right (for visual display)
+      if (selectedOption.is_correct) {
+        setCurrentCorrectAnswers(prev => ({
+          ...prev,
+          [currentQuestionId]: true
+        }));
       }
 
       // Track attempt count and selected options for all attempts
@@ -703,6 +725,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setAttempts({});
     setShowFeedback(false);
     setSessionCorrectAnswers({}); // Reset session correct answers
+    setCurrentCorrectAnswers({}); // Reset current correct answers for visual display
     setSubmittedOptions({}); // Reset submitted options
     setQuestionsInNewSession(new Set()); // Reset the new session questions tracking
     setShouldShakeFeedback(false); // Reset shake animation
@@ -872,6 +895,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     });
   };
 
+  // Calculate first attempt scores for modals
+  const { firstAttemptCorrect, questionsAttempted } = calculateFirstAttemptScore();
+
   return (
     <div style={styles.column}>
       <div style={styles.progressContainer}>
@@ -891,6 +917,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         difficulty={difficulty}
         mode={mode}
         onMorePractice={handleMorePractice}
+        correctAnswers={firstAttemptCorrect}
+        totalQuestions={questionsAttempted}
       />
 
       <SkillsCompleteModal
@@ -901,6 +929,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         difficulty={difficulty}
         mode={mode}
         onMorePractice={handleMorePractice}
+        correctAnswers={firstAttemptCorrect}
+        totalQuestions={questionsAttempted}
       />
 
       {showPostCompleteDifficultyModal && (
@@ -924,6 +954,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           questions={questions}
           answeredQuestionsInSession={answeredQuestions}
           sessionAnswers={sessionCorrectAnswers}
+          currentAnswers={currentCorrectAnswers}
           questionsInNewSession={questionsInNewSession}
         />
 

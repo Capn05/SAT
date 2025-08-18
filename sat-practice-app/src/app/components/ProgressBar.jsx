@@ -14,8 +14,8 @@ const ProgressBar = ({ completed, total }) => {
         <div style={styles.glow} />
       </div>
       <div style={styles.textContainer}>
-        <span style={styles.completedText}>{completed}</span>
-        <span style={styles.totalText}>of {total} questions answered</span>
+        <span style={styles.completedText}>{completed} /</span>
+        <span style={styles.totalText}><span style={styles.completedText}>{total}</span>questions answered</span>
       </div>
     </div>
   )

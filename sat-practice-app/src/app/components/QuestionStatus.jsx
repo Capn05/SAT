@@ -3,20 +3,11 @@ import React, { useEffect, useState } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
-const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions, answeredQuestionsInSession, sessionAnswers, questionsInNewSession }) => {
+const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSelectQuestion, questions, answeredQuestionsInSession, sessionAnswers, currentAnswers, questionsInNewSession }) => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(0);
-  const questionsPerPage = 10;
   const router = useRouter();
   const supabase = createClientComponentClient();
-
-  // Calculate the index of the first and last question to display
-  const startIndex = currentPage * questionsPerPage;
-  const endIndex = startIndex + questionsPerPage;
-  const displayedQuestions = questions.slice(startIndex, endIndex);
-
-  const totalPages = Math.ceil(questions.length / questionsPerPage);
 
   useEffect(() => {
     const fetchUserAnswersData = async () => {
@@ -56,15 +47,16 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
     fetchUserAnswersData();
   }, [fetchUserAnswers]);
 
+  // Scroll to current question when it changes
   useEffect(() => {
-    // Calculate which page the current question should be on
-    const targetPage = Math.floor(currentIndex / questionsPerPage);
-    
-    // Update the page if needed
-    if (targetPage !== currentPage) {
-      setCurrentPage(targetPage);
+    const currentButton = document.getElementById(`question-${currentIndex}`);
+    if (currentButton) {
+      currentButton.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
     }
-  }, [currentIndex, questionsPerPage]);
+  }, [currentIndex]);
 
   const getStatus = (questionId) => {
     // If this question is in the new session and hasn't been answered yet,
@@ -75,9 +67,12 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
     
     // Check if the question was answered in this session
     if (answeredQuestionsInSession && answeredQuestionsInSession.has(questionId)) {
-      // If in session answers, use that result (which reflects first attempt only)
+      // Use currentAnswers for visual display (shows green if user eventually got it right)
+      if (currentAnswers && questionId in currentAnswers) {
+        return currentAnswers[questionId] === true ? 'correct' : 'incorrect';
+      }
+      // Fallback to sessionAnswers if currentAnswers not available
       if (sessionAnswers && questionId in sessionAnswers) {
-        // This status reflects first attempt only, which is stored in sessionAnswers
         return sessionAnswers[questionId] === true ? 'correct' : 'incorrect';
       }
     }
@@ -93,54 +88,49 @@ const QuestionStatus = ({ currentIndex, totalQuestions, fetchUserAnswers, onSele
     return 'not_answered';
   };
 
-  const nextPage = () => {
-    if (currentPage < totalPages - 1) {
-      setCurrentPage((prevPage) => prevPage + 1);
-    }
-  };
 
-  const prevPage = () => {
-    if (currentPage > 0) {
-      setCurrentPage((prevPage) => prevPage - 1);
-    }
-  };
 
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div style={styles.container}>
-      {/* Up Arrow Navigation */}
-      <div style={styles.pagination}>
-        <button onClick={prevPage} disabled={currentPage === 0} style={styles.arrowButton}>
-          &#9650; {/* Up Arrow */}
-        </button>
+    <>
+      <style jsx>{`
+        .scrollable-container::-webkit-scrollbar {
+          width: 4px;
+        }
+        .scrollable-container::-webkit-scrollbar-track {
+          background: #f1f5f9;
+          border-radius: 2px;
+        }
+        .scrollable-container::-webkit-scrollbar-thumb {
+          background: #cbd5e1;
+          border-radius: 2px;
+        }
+        .scrollable-container::-webkit-scrollbar-thumb:hover {
+          background: #94a3b8;
+        }
+      `}</style>
+      <div style={styles.container}>
+        <div style={styles.statusContainer} className="scrollable-container">
+          {questions.map((question, index) => {
+            const status = getStatus(question.id);
+            const isSelected = index === currentIndex;
+            return (
+              <button
+                key={question.id}
+                id={`question-${index}`}
+                style={styles.circle(status, isSelected)}
+                onClick={() => onSelectQuestion(index)}
+              >
+                {index + 1} {/* Display the correct question number */}
+              </button>
+            );
+          })}
+        </div>
       </div>
-
-      <div style={styles.statusContainer}>
-        {displayedQuestions.map((question, index) => {
-          const status = getStatus(question.id);
-          const isSelected = startIndex + index === currentIndex;
-          return (
-            <button
-              key={question.id}
-              style={styles.circle(status, isSelected)}
-              onClick={() => onSelectQuestion(startIndex + index)}
-            >
-              {startIndex + index + 1} {/* Display the correct question number */}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Down Arrow Navigation */}
-      <div style={styles.pagination}>
-        <button onClick={nextPage} disabled={currentPage === totalPages - 1} style={styles.arrowButton}>
-          &#9660; {/* Down Arrow */}
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 
@@ -149,18 +139,27 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '10px',
     padding: '10px',
     backgroundColor: 'white',
     borderRadius: '8px',
     width: '80px',
     margin: '10px',
     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
+    maxHeight: '70vh', // Limit height to enable scrolling
+    overflow: 'hidden', // Hide overflow on container
   },
   statusContainer: {
     display: 'flex',
     flexDirection: 'column',
     gap: '8px',
+    overflowY: 'auto', // Enable vertical scrolling
+    padding: '8px 5px 8px 0', // Add padding: top right bottom left
+    maxHeight: '100%',
+    width: '100%',
+    alignItems: 'center',
+    // Custom scrollbar styling
+    scrollbarWidth: 'thin',
+    scrollbarColor: '#cbd5e1 #f1f5f9',
   },
   circle: (status, isSelected) => ({
     width: '30px',
@@ -178,24 +177,8 @@ const styles = {
     fontSize: '12px',
     outline: isSelected ? '3px solid #4338ca' : 'none',
     outlineOffset: '2px',
+    flexShrink: 0, // Prevent circles from shrinking in flex container
   }),
-  pagination: {
-    display: 'flex',
-    justifyContent: 'center',
-    width: '100%',
-  },
-  arrowButton: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    color: '#6b7280',
-    padding: '4px',
-    '&:disabled': {
-      color: '#d1d5db',
-      cursor: 'not-allowed',
-    },
-  },
 };
 
 export default QuestionStatus; 
