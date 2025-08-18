@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 
-const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode, onMorePractice }) => {
+const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode, onMorePractice, correctAnswers = 0, totalQuestions = 0 }) => {
   const router = useRouter();
 
   const handleMorePractice = useCallback(() => {
@@ -20,6 +20,16 @@ const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode
     // Then navigate to home
     router.push('/home');
   }, [router, onClose]);
+
+  // Calculate score percentage
+  const percentage = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+  
+  // Determine score color based on performance
+  const getScoreColor = (percentage) => {
+    if (percentage >= 80) return '#10b981'; // Green for excellent
+    if (percentage >= 60) return '#f59e0b'; // Yellow for good
+    return '#ef4444'; // Red for needs improvement
+  };
   
   // Conditional return after all hook declarations
   if (!isOpen) return null;
@@ -28,6 +38,22 @@ const QuickPracticeCompleteModal = ({ isOpen, onClose, subject, difficulty, mode
     <div style={styles.overlay}>
       <div style={styles.modal}>
         <h2 style={styles.title}>Practice Completed!</h2>
+        
+        {/* Score Display Section */}
+        <div style={styles.scoreSection}>
+          <div style={{...styles.scoreCircle, borderColor: getScoreColor(percentage)}}>
+            <span style={{...styles.scorePercentage, color: getScoreColor(percentage)}}>{percentage}%</span>
+          </div>
+          <div style={styles.scoreDetails}>
+            <span style={styles.scoreText}>
+              {correctAnswers} / {totalQuestions} correct on the first attempt
+            </span>
+            <span style={styles.scoreLabel}>
+              {percentage >= 80 ? 'Excellent!' : percentage >= 60 ? 'Good job!' : 'Keep practicing!'}
+            </span>
+          </div>
+        </div>
+        
         <p style={styles.message}>
           Great job completing this practice session! Would you like to practice more?
         </p>
@@ -126,6 +152,51 @@ const styles = {
     fontSize: '16px',
     lineHeight: '1.6',
     fontWeight: '400',
+  },
+  scoreSection: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '20px',
+    margin: '24px 0 32px',
+    padding: '20px',
+    backgroundColor: '#f8fafc',
+    borderRadius: '12px',
+    border: '1px solid #e2e8f0',
+  },
+  scoreCircle: {
+    width: '80px',
+    height: '80px',
+    borderRadius: '50%',
+    border: '4px solid',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ffffff',
+    flexShrink: 0,
+  },
+  scorePercentage: {
+    fontSize: '24px',
+    fontWeight: '700',
+    lineHeight: 1,
+  },
+  scoreDetails: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    gap: '4px',
+  },
+  scoreText: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#1f2937',
+    lineHeight: 1.2,
+  },
+  scoreLabel: {
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#6b7280',
+    lineHeight: 1.2,
   },
   buttonContainer: {
     display: 'flex',
