@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 
 export default function DifficultyModal({ isOpen, onClose, subject, title, mode = "quick", category = null, onDifficultySelected = null }) {
   const [selectedDifficulty, setSelectedDifficulty] = useState('mixed');
+  const [questionCount, setQuestionCount] = useState(10);
   const router = useRouter();
 
   if (!isOpen) return null;
@@ -16,7 +17,7 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
   const handleStartPractice = () => {
     // If the parent provided a callback, use it
     if (onDifficultySelected) {
-      onDifficultySelected(selectedDifficulty);
+      onDifficultySelected(selectedDifficulty, questionCount);
       onClose();
       return;
     }
@@ -28,7 +29,7 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
     // Force a small delay before navigation to ensure modal state is updated
     setTimeout(() => {
       // Build the URL based on the mode
-      let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}`;
+      let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}&count=${questionCount}`;
       
       // Add category parameter if provided (for skill mode)
       if (category && mode === "skill") {
@@ -99,6 +100,34 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
               <h3>Mixed</h3>
               <p>Balanced selection from all difficulty levels</p>
             </div>
+          </div>
+        </div>
+        
+        <div className="question-count-section">
+          <div className="question-count-header">
+            <h3>Number of Questions</h3>
+          </div>
+          <div className="slider-container">
+            <span className="slider-label">0</span>
+            <div className="slider-wrapper">
+              <input
+                type="range"
+                min="0"
+                max="20"
+                value={questionCount}
+                onChange={(e) => setQuestionCount(parseInt(e.target.value))}
+                className="question-slider"
+              />
+              <div 
+                className="slider-value-display"
+                style={{
+                  left: `calc(${(questionCount / 20) * 100}% - ${(questionCount / 20) * 20}px + 10px)`
+                }}
+              >
+                {questionCount}
+              </div>
+            </div>
+            <span className="slider-label">20</span>
           </div>
         </div>
         
@@ -234,6 +263,120 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
           margin: 0;
           font-size: 0.875rem;
           color: #6b7280;
+        }
+        
+        .question-count-section {
+          padding: 20px 24px;
+          border-top: 1px solid #e5e7eb;
+          border-bottom: 1px solid #e5e7eb;
+          background-color: #f9fafb;
+        }
+        
+        .question-count-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 32px;
+        }
+        
+        .question-count-header h3 {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #111827;
+        }
+        
+        .slider-container {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+        
+        .slider-wrapper {
+          flex: 1;
+          position: relative;
+          height: 40px;
+          display: flex;
+          align-items: center;
+        }
+        
+        .slider-label {
+          font-size: 0.875rem;
+          color: #6b7280;
+          font-weight: 500;
+          min-width: 20px;
+          text-align: center;
+        }
+        
+        .slider-value-display {
+          position: absolute;
+          top: -30px;
+          transform: translateX(-50%);
+          background-color: #4338ca;
+          color: white;
+          padding: 4px 8px;
+          border-radius: 6px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          min-width: 24px;
+          text-align: center;
+          pointer-events: none;
+          z-index: 10;
+        }
+        
+        .slider-value-display::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 4px solid #4338ca;
+        }
+        
+        .question-slider {
+          width: 100%;
+          height: 8px;
+          background: #e5e7eb;
+          border-radius: 4px;
+          outline: none;
+          cursor: pointer;
+          -webkit-appearance: none;
+          appearance: none;
+        }
+        
+        .question-slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #4338ca;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        
+        .question-slider::-webkit-slider-thumb:hover {
+          background: #3730a3;
+          transform: scale(1.1);
+        }
+        
+        .question-slider::-moz-range-thumb {
+          width: 20px;
+          height: 20px;
+          background: #4338ca;
+          border-radius: 50%;
+          cursor: pointer;
+          border: none;
+          transition: all 0.2s ease;
+        }
+        
+        .question-slider::-moz-range-thumb:hover {
+          background: #3730a3;
+          transform: scale(1.1);
         }
         
         .modal-footer {

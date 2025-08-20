@@ -1,6 +1,6 @@
 import React from "react"
 
-const ProgressBar = ({ completed, total }) => {
+const ProgressBar = ({ completed, total, showEarlySubmit = false, onEarlySubmit = null, mode = "quick" }) => {
   const percentage = Math.min(Math.round((completed / total) * 100), 100)
 
   return (
@@ -13,9 +13,27 @@ const ProgressBar = ({ completed, total }) => {
         <div style={{ ...styles.progress, width: `${percentage}%` }} />
         <div style={styles.glow} />
       </div>
-      <div style={styles.textContainer}>
-        <span style={styles.completedText}>{completed} /</span>
-        <span style={styles.totalText}><span style={styles.completedText}>{total}</span>questions answered</span>
+      <div style={styles.bottomContainer}>
+        <div style={styles.textContainer}>
+          <span style={styles.completedText}>{completed} /</span>
+          <span style={styles.totalText}><span style={styles.completedText}>{total}</span>questions answered</span>
+        </div>
+        {showEarlySubmit && onEarlySubmit && (
+          <button
+            style={styles.earlySubmitButton}
+            onClick={onEarlySubmit}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = "#dc2626";
+              e.target.style.color = "white";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "transparent";
+              e.target.style.color = "#dc2626";
+            }}
+          >
+            Submit Module Early
+          </button>
+        )}
       </div>
     </div>
   )
@@ -71,11 +89,16 @@ const styles = {
     filter: "blur(3px)",
     animation: "glow 1.5s infinite",
   },
+  bottomContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: "10px",
+  },
   textContainer: {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    marginTop: "10px",
   },
   completedText: {
     fontSize: "24px",
@@ -86,6 +109,18 @@ const styles = {
   totalText: {
     fontSize: "14px",
     color: "#6b7280",
+  },
+  earlySubmitButton: {
+    padding: "6px 12px",
+    backgroundColor: "transparent",
+    color: "#dc2626",
+    border: "1px solid #dc2626",
+    borderRadius: "4px",
+    cursor: "pointer",
+    fontSize: "12px",
+    fontWeight: "400",
+    transition: "all 0.2s ease",
+    boxShadow: "none",
   },
 }
 

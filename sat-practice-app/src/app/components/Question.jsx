@@ -18,7 +18,7 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import DifficultyModal from './DifficultyModal';
 import { renderMathContent, processTableFormat } from './MathRenderer';
 
-export default function Question({ subject, mode, skillName, questions: initialQuestions, difficulty }) {
+export default function Question({ subject, mode, skillName, questions: initialQuestions, difficulty, questionCount }) {
   const [questions, setQuestions] = useState(initialQuestions || []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [feedback, setFeedback] = useState(null);
@@ -49,6 +49,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [sessionCorrectAnswers, setSessionCorrectAnswers] = useState({});
   const [currentCorrectAnswers, setCurrentCorrectAnswers] = useState({}); // Track latest correct status for visual display
   const [shouldShakeFeedback, setShouldShakeFeedback] = useState(false);
+  const [showEarlySubmitConfirm, setShowEarlySubmitConfirm] = useState(false);
 
   const md = new MarkdownIt({
     html: true,
@@ -225,7 +226,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         
         console.log(`Found ${unansweredQuestions.length} unanswered questions and ${previouslyAnsweredQuestions.length} previously answered questions`);
         
-        const targetLimit = 15; // Number of questions for quick practice
+        const targetLimit = questionCount || 15; // Number of questions for quick practice (use questionCount prop or default to 15)
         
         // Create the final set of questions
         let finalQuestions = [];
@@ -255,8 +256,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       } else if (mode === "skill" && skillName) {
         console.log(`Fetching skill questions for ${skillName} with difficulty ${difficulty || 'mixed'}`);
         
-        // Use the API route that supports difficulty
-        const response = await fetch(`/api/skill-questions?subject=${subjectId}&category=${encodeURIComponent(skillName)}&difficulty=${difficulty || 'mixed'}&previouslyAnswered=true`);
+        // Use the API route that supports difficulty and question count
+        const response = await fetch(`/api/skill-questions?subject=${subjectId}&category=${encodeURIComponent(skillName)}&difficulty=${difficulty || 'mixed'}&previouslyAnswered=true&count=${questionCount || 5}`);
         
         if (!response.ok) {
           const errorData = await response.json();
@@ -313,12 +314,12 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   };
 
   useEffect(() => {
-    console.log('Question component initialized with:', { subject, mode, skillName, difficulty });
+    console.log('Question component initialized with:', { subject, mode, skillName, difficulty, questionCount });
     
     let mounted = true;
     
     if (subject) {
-      console.log('Fetching questions for:', { subject, mode, skillName, difficulty });
+      console.log('Fetching questions for:', { subject, mode, skillName, difficulty, questionCount });
       fetchUnansweredQuestions(subject);  
     }
     
@@ -330,8 +331,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       setShowModal(false);
       setShowQuickPracticeModal(false);
       setShowSkillsModal(false);
+      setShowEarlySubmitConfirm(false);
     };
-  }, [subject, mode, skillName, difficulty]);
+  }, [subject, mode, skillName, difficulty, questionCount]);
 
   // Add this function to refresh skills cache
   const refreshSkillsCache = useCallback(async () => {
@@ -363,7 +365,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
   // Update the useEffect that shows the completion modals to also refresh the skills cache
   useEffect(() => {
-    const limit = mode === "skill" ? 5 : 15;
+    const limit = questionCount || (mode === "skill" ? 5 : 15);
 
     if (answeredCount === limit) {
       // First refresh the skills cache
@@ -382,7 +384,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       setShowSkillsModal(false);
       setShowQuickPracticeModal(false);
     }
-  }, [answeredCount, mode, refreshSkillsCache]);
+  }, [answeredCount, mode, questionCount, refreshSkillsCache]);
 
   useEffect(() => {
     if (questions.length > 0) {
@@ -710,6 +712,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
     setShowModal(false);
     setShowQuickPracticeModal(false);
     setShowSkillsModal(false);
+    setShowEarlySubmitConfirm(false);
     
     // Complete reset of all state for a new question set
     setCurrentIndex(0);
@@ -766,22 +769,38 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   }, []);
 
   // Add handler for difficulty selection after completion
-  const handlePostCompleteDifficultySelected = useCallback((selectedDifficulty) => {
+  const handlePostCompleteDifficultySelected = useCallback((selectedDifficulty, questionCount = 15) => {
     setShowPostCompleteDifficultyModal(false);
     
-    // Navigate to restart practice with the selected difficulty
+    // Navigate to restart practice with the selected difficulty and question count
     setTimeout(() => {
       // Add a timestamp to force a refresh even when URL parameters are the same
       const timestamp = Date.now();
       
       if (mode === 'quick') {
         // Use window.location instead of router to force a full page refresh
-        window.location.href = `/practice?subject=${subject}&mode=quick&difficulty=${selectedDifficulty}&t=${timestamp}`;
+        window.location.href = `/practice?subject=${subject}&mode=quick&difficulty=${selectedDifficulty}&count=${questionCount}&t=${timestamp}`;
       } else if (mode === 'skill' && skillName) {
-        window.location.href = `/practice?subject=${subject}&mode=skill&difficulty=${selectedDifficulty}&category=${encodeURIComponent(skillName)}&t=${timestamp}`;
+        window.location.href = `/practice?subject=${subject}&mode=skill&difficulty=${selectedDifficulty}&count=${questionCount}&category=${encodeURIComponent(skillName)}&t=${timestamp}`;
       }
     }, 100);
   }, [subject, mode, skillName]);
+
+  // Add handler for early submission
+  const handleEarlySubmit = useCallback(() => {
+    // First refresh the skills cache
+    refreshSkillsCache();
+    
+    // Then show the appropriate modal based on the mode
+    if (mode === "skill") {
+      setShowSkillsModal(true);
+    } else {
+      setShowQuickPracticeModal(true);
+    }
+    
+    // Close the confirmation modal
+    setShowEarlySubmitConfirm(false);
+  }, [mode, refreshSkillsCache]);
 
   // Update to handle adding questions to the new session tracking
   useEffect(() => {
@@ -901,7 +920,13 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   return (
     <div style={styles.column}>
       <div style={styles.progressContainer}>
-        <ProgressBar completed={answeredCount} total={mode === "skill" ? 5 : 15} />
+        <ProgressBar 
+          completed={answeredCount} 
+          total={questionCount || (mode === "skill" ? 5 : 15)}
+          showEarlySubmit={answeredCount > 0 && answeredCount < (questionCount || (mode === "skill" ? 5 : 15))}
+          onEarlySubmit={() => setShowEarlySubmitConfirm(true)}
+          mode={mode}
+        />
       </div>
 
       <Modal
@@ -943,6 +968,58 @@ export default function Question({ subject, mode, skillName, questions: initialQ
           category={mode === 'skill' ? skillName : null}
           onDifficultySelected={handlePostCompleteDifficultySelected}
         />
+      )}
+
+      {/* Early Submit Confirmation Modal */}
+      {showEarlySubmitConfirm && (
+        <div style={styles.modalOverlay}>
+          <div style={styles.modalContent}>
+            <button 
+              style={styles.modalCloseButton}
+              onClick={() => setShowEarlySubmitConfirm(false)}
+            >
+              ×
+            </button>
+            <h3 style={styles.modalTitle}>Submit Early?</h3>
+            <p style={styles.modalText}>
+              Are you sure you want to submit your practice session now? You have answered {answeredCount} out of {questionCount || (mode === "skill" ? 5 : 15)} questions correctly.
+            </p>
+            <div style={styles.modalButtons}>
+              <button 
+                style={styles.modalCancelButton}
+                onClick={() => setShowEarlySubmitConfirm(false)}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#f1f5f9';
+                  e.currentTarget.style.borderColor = '#cbd5e1';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#f3f4f6';
+                  e.currentTarget.style.borderColor = '#d1d5db';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                Continue Practicing
+              </button>
+              <button 
+                style={styles.modalConfirmButton}
+                onClick={handleEarlySubmit}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#7c3aed';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 8px 12px -1px rgba(139, 92, 246, 0.3)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#8b5cf6';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(139, 92, 246, 0.2)';
+                }}
+              >
+                Submit Now
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       <div style={styles.container}>
@@ -1062,7 +1139,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         </div>
       </div>
 
-      {answeredCount === (mode === "skill" ? 5 : 15) && (
+      {answeredCount === (questionCount || (mode === "skill" ? 5 : 15)) && (
         <div style={styles.RefreshQuestionsContainer}>
           {mode === "skill" ? (
             <button onClick={() => setShowSkillsModal(true)} style={styles.newQuestionsButton}>
@@ -1364,5 +1441,89 @@ const styles = {
     marginBottom: '20px',
     display: 'flex',
     justifyContent: 'center',
+  },
+  modalOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1000,
+  },
+  modalContent: {
+    backgroundColor: 'white',
+    borderRadius: '12px',
+    padding: '32px',
+    maxWidth: '500px',
+    width: '90%',
+    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+    position: 'relative',
+  },
+  modalTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    marginBottom: '16px',
+    color: '#1f2937',
+    textAlign: 'center',
+  },
+  modalText: {
+    fontSize: '16px',
+    lineHeight: '1.6',
+    color: '#4b5563',
+    marginBottom: '24px',
+    textAlign: 'center',
+  },
+  modalButtons: {
+    display: 'flex',
+    gap: '12px',
+    justifyContent: 'center',
+  },
+  modalCancelButton: {
+    padding: '10px 20px',
+    backgroundColor: '#f3f4f6',
+    color: '#4b5563',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: '500',
+    transition: 'all 0.2s ease',
+  },
+  modalConfirmButton: {
+    padding: '10px 20px',
+    backgroundColor: '#8b5cf6',
+    color: 'white',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: '500',
+    transition: 'all 0.2s ease',
+    boxShadow: '0 4px 6px -1px rgba(139, 92, 246, 0.2)',
+  },
+  modalCloseButton: {
+    position: 'absolute',
+    top: '16px',
+    right: '16px',
+    width: '32px',
+    height: '32px',
+    border: 'none',
+    backgroundColor: 'transparent',
+    fontSize: '24px',
+    color: '#6b7280',
+    cursor: 'pointer',
+    borderRadius: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#f3f4f6',
+      color: '#374151',
+    },
   },
 };

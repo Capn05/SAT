@@ -19,6 +19,7 @@ function PracticePageContent() {
   const subject = searchParams.get('subject');
   const category = searchParams.get('category');
   const difficulty = searchParams.get('difficulty') || 'mixed';
+  const questionCount = searchParams.get('count') ? parseInt(searchParams.get('count')) : null;
 
   useEffect(() => {
     let mounted = true;
@@ -80,14 +81,14 @@ function PracticePageContent() {
     return () => {
       mounted = false;
     };
-  }, [mode, subject, category, difficulty, router, supabase.auth]);
+  }, [mode, subject, category, difficulty, questionCount, router, supabase.auth]);
 
   if (loading) {
     return (
       <div style={styles.loadingContainer}>
         <div style={styles.loadingText}>Preparing practice session...</div>
         <div style={styles.loadingDetails}>
-          Mode: {mode}, Subject: {subject || 'N/A'}, Skill: {category || 'N/A'}, Difficulty: {difficulty || 'Mixed'}
+          Mode: {mode}, Subject: {subject || 'N/A'}, Skill: {category || 'N/A'}, Difficulty: {difficulty || 'Mixed'}, Count: {questionCount || 'Default'}
         </div>
       </div>
     );
@@ -122,6 +123,7 @@ function PracticePageContent() {
           subject={subject}
           skillName={category}
           difficulty={difficulty}
+          questionCount={questionCount}
         />
       </SubscriptionCheck>
     </div>
