@@ -145,8 +145,9 @@ export default function PracticeTestsPage() {
         console.log("Practice tests:", data);
         
         // Filter tests that have modules and are not completed by user - don't require "isComplete"
+        // Also exclude tests that are currently paused
         const validTests = data.filter(test => 
-          test.hasModules && !test.completed
+          test.hasModules && !test.completed && !test.isPaused
         );
         
         setAvailablePracticeTests(validTests);

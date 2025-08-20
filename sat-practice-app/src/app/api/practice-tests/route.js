@@ -167,12 +167,25 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Failed to fetch user test history' }, { status: 500 });
     }
     
-    // Mark tests as completed or available
+    // Fetch paused tests for the user
+    const { data: pausedTests, error: pausedError } = await supabase
+      .from('paused_tests')
+      .select('practice_test_id')
+      .eq('user_id', user_id);
+          
+    if (pausedError) {
+      console.error('Error fetching paused tests:', pausedError);
+      return NextResponse.json({ error: 'Failed to fetch user paused tests' }, { status: 500 });
+    }
+    
+    // Mark tests as completed, paused, or available
     const completedTestIds = new Set(completedTests?.map(test => test.practice_test_id) || []);
+    const pausedTestIds = new Set(pausedTests?.map(test => test.practice_test_id) || []);
     
     const processedTests = testsWithModules.map(test => ({
       ...test,
-      completed: completedTestIds.has(test.id)
+      completed: completedTestIds.has(test.id),
+      isPaused: pausedTestIds.has(test.id)
     }));
     
     return NextResponse.json(processedTests);
