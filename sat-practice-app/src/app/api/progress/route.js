@@ -15,24 +15,17 @@ export async function GET(request) {
 
     // Get the date range from query parameters, default to last 30 days
     const { searchParams } = new URL(request.url);
-    const days = parseInt(searchParams.get('days') || '30');
+    const daysParam = searchParams.get('days') || '30';
     const subject = searchParams.get('subject');
+    const difficulty = searchParams.get('difficulty');
 
-    // Calculate the start date
-    const startDate = new Date();
-    startDate.setDate(startDate.getDate() - days);
-    const startDateStr = startDate.toISOString();
-
-    // Get user's performance data from user_skill_analytics
-    const { data: skillAnalytics, error: analyticsError } = await supabase
-      .from('user_skill_analytics')
-      .select('total_attempts, correct_attempts, last_practiced')
-      .eq('user_id', session.user.id)
-      .gte('last_practiced', startDateStr);
-
-    if (analyticsError) {
-      console.error('Error fetching skill analytics:', analyticsError);
-      return NextResponse.json({ error: 'Failed to fetch skill analytics' }, { status: 500 });
+    // Calculate the start date (or handle all-time)
+    let startDateStr = null;
+    if (daysParam !== 'all') {
+      const days = parseInt(daysParam, 10);
+      const startDate = new Date();
+      startDate.setDate(startDate.getDate() - days);
+      startDateStr = startDate.toISOString();
     }
 
     // Build the base query for user_answers
@@ -44,7 +37,9 @@ export async function GET(request) {
         practice_type,
         questions!inner (
           subject_id,
+          difficulty,
           domains!inner (
+            id,
             domain_name
           ),
           subcategories!inner (
@@ -53,13 +48,22 @@ export async function GET(request) {
         )
       `)
       .eq('user_id', session.user.id)
-      .gte('answered_at', startDateStr)
-      .or(`practice_type.eq.quick,practice_type.eq.skills,practice_type.eq.test`)
+      // include all practice types
       .order('answered_at', { ascending: true });
 
     // Add subject filter if provided
     if (subject) {
       query = query.eq('questions.subject_id', subject);
+    }
+
+    // Add difficulty filter if provided
+    if (difficulty && difficulty !== 'all') {
+      query = query.eq('questions.difficulty', difficulty);
+    }
+
+    // Add date filter if not all-time
+    if (startDateStr) {
+      query = query.gte('answered_at', startDateStr);
     }
 
     const { data: answers, error: answersError } = await query;
@@ -69,51 +73,30 @@ export async function GET(request) {
       return NextResponse.json({ error: 'Failed to fetch progress data' }, { status: 500 });
     }
 
-    // Process the data to get daily statistics
+    // Process the data to get daily and domain statistics
     const dailyStats = {};
-    const subcategoryStats = {};
-
-    // Process skill analytics
-    skillAnalytics.forEach(analytics => {
-      const date = new Date(analytics.last_practiced).toISOString().split('T')[0];
-      
-      // Initialize daily stats if not exists
-      if (!dailyStats[date]) {
-        dailyStats[date] = {
-          total: 0,
-          correct: 0,
-          accuracy: 0
-        };
-      }
-
-      // Add skill analytics to daily stats
-      dailyStats[date].total += analytics.total_attempts;
-      dailyStats[date].correct += analytics.correct_attempts;
-      dailyStats[date].accuracy = (dailyStats[date].correct / dailyStats[date].total) * 100;
-    });
+    const domainStats = {};
 
     // Process user answers
     answers.forEach(answer => {
       const date = new Date(answer.answered_at).toISOString().split('T')[0];
-      const subcategory = answer.questions.subcategories.subcategory_name;
       const domain = answer.questions.domains.domain_name;
+      const domainId = answer.questions.domains.id;
 
       // Initialize daily stats if not exists
       if (!dailyStats[date]) {
         dailyStats[date] = {
           total: 0,
-          correct: 0,
-          accuracy: 0
+          correct: 0
         };
       }
 
-      // Initialize subcategory stats if not exists
-      if (!subcategoryStats[subcategory]) {
-        subcategoryStats[subcategory] = {
-          domain,
+      // Initialize domain stats if not exists
+      if (!domainStats[domain]) {
+        domainStats[domain] = {
+          domainId,
           total: 0,
-          correct: 0,
-          accuracy: 0
+          correct: 0
         };
       }
 
@@ -122,28 +105,67 @@ export async function GET(request) {
       if (answer.is_correct) {
         dailyStats[date].correct++;
       }
-      dailyStats[date].accuracy = (dailyStats[date].correct / dailyStats[date].total) * 100;
 
-      // Update subcategory stats
-      subcategoryStats[subcategory].total++;
+      // Update domain stats
+      domainStats[domain].total++;
       if (answer.is_correct) {
-        subcategoryStats[subcategory].correct++;
+        domainStats[domain].correct++;
       }
-      subcategoryStats[subcategory].accuracy = 
-        (subcategoryStats[subcategory].correct / subcategoryStats[subcategory].total) * 100;
     });
 
     // Convert daily stats to array format for the chart
-    const dailyData = Object.entries(dailyStats).map(([date, stats]) => ({
-      date,
-      ...stats
-    }));
+    let dailyData = Object.entries(dailyStats)
+      .map(([date, stats]) => ({
+        date,
+        total: stats.total,
+        correct: stats.correct
+      }))
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    // Convert subcategory stats to array format
-    const subcategoryData = Object.entries(subcategoryStats).map(([name, stats]) => ({
-      name,
-      ...stats
-    }));
+    // If we have a fixed start date (not all-time), fill missing dates with zeros
+    if (startDateStr) {
+      const start = new Date(startDateStr);
+      start.setHours(0, 0, 0, 0);
+      const end = new Date();
+      end.setHours(0, 0, 0, 0);
+
+      const existingByDate = new Map(dailyData.map(d => [d.date, d]));
+      const filled = [];
+      for (let d = new Date(start); d.getTime() <= end.getTime(); d.setDate(d.getDate() + 1)) {
+        const key = new Date(d).toISOString().split('T')[0];
+        filled.push(existingByDate.get(key) || { date: key, total: 0, correct: 0 });
+      }
+      dailyData = filled;
+    }
+
+    // Fetch full domain list based on subject filter so we can include domains with no data
+    let domainsQuery = supabase
+      .from('domains')
+      .select('id, domain_name, subject_id');
+
+    if (subject && subject !== 'all') {
+      domainsQuery = domainsQuery.eq('subject_id', subject);
+    }
+
+    const { data: allDomains, error: domainsError } = await domainsQuery;
+    if (domainsError) {
+      console.error('Error fetching domains:', domainsError);
+      return NextResponse.json({ error: 'Failed to fetch domains' }, { status: 500 });
+    }
+
+    // Build domain data ensuring all domains appear
+    const domainData = (allDomains || []).map(dom => {
+      const stats = Object.values(domainStats).find(s => s.domainId === dom.id) || { total: 0, correct: 0 };
+      const total = stats.total || 0;
+      const correct = stats.correct || 0;
+      return {
+        domain: dom.domain_name,
+        domain_id: dom.id,
+        total,
+        correct,
+        accuracy: total > 0 ? (correct / total) * 100 : 0
+      };
+    });
 
     // Calculate overall stats to match AnalyticsCard
     const totalQuestions = dailyData.reduce((sum, day) => sum + day.total, 0);
@@ -152,7 +174,8 @@ export async function GET(request) {
 
     return NextResponse.json({
       dailyData,
-      subcategoryData,
+      domainData,
+      domains: domainData.map(d => d.domain),
       overallStats: {
         totalQuestions,
         totalCorrect,

@@ -4,246 +4,120 @@ import { useState, useEffect } from 'react';
 import TopBar from "../components/TopBar";
 import SubscriptionCheck from '../../components/SubscriptionCheck';
 
-// Import Recharts with needed components
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, 
   Tooltip, Legend, ResponsiveContainer, BarChart, Bar 
 } from 'recharts';
 
-const StatCard = ({ title, value, subtitle, trend }) => (
-  <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:border-emerald-200 transition-all">
-    <h3 className="text-sm font-medium text-gray-500 mb-1">{title}</h3>
-    <div className="flex items-baseline gap-2">
-      <p className="text-3xl font-bold text-gray-900">{value}</p>
-      {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
-    </div>
-    {trend && (
-      <p className={`text-sm mt-2 ${trend >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
-        {trend >= 0 ? '↑' : '↓'} {Math.abs(trend)}% from last period
-      </p>
-    )}
-  </div>
-);
+// Wrapped X-axis tick to prevent overlaps and bleed with multi-line centered labels
+const WrappedAxisTick = ({ x, y, payload }) => {
+  const value = String(payload?.value ?? '');
+  const maxCharsPerLine = 16;
+  const maxLines = 2;
 
-// Custom tooltip component for the daily accuracy chart
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    const data = payload[0].payload;
-    return (
-      <div className="bg-white p-4 rounded-lg shadow-lg border border-gray-200">
-        <p className="text-sm font-semibold text-gray-900 mb-1">
-          {new Date(label).toLocaleDateString('en-US', { 
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
-        </p>
-        <p className="text-sm text-emerald-600">
-          Accuracy: {data.accuracy.toFixed(1)}%
-        </p>
-        <p className="text-xs text-gray-500 mt-1">
-          {data.correct} correct out of {data.total} questions
-        </p>
-      </div>
-    );
+  const words = value.split(' ');
+  const lines = [];
+  let current = '';
+  for (const w of words) {
+    if ((current + (current ? ' ' : '') + w).length <= maxCharsPerLine) {
+      current = current ? current + ' ' + w : w;
+    } else {
+      lines.push(current);
+      current = w;
+    }
+    if (lines.length >= maxLines) break;
   }
-  return null;
-};
+  if (lines.length < maxLines && current) lines.push(current);
 
-// Custom tooltip for subcategory performance
-const SubcategoryTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    const data = payload[0].payload;
-    return (
-      <div className="bg-white p-4 rounded-lg shadow-lg border border-gray-200">
-        <p className="text-sm font-semibold text-gray-900 mb-1">{data.name}</p>
-        <p className="text-xs text-gray-600 mb-2">{data.domain}</p>
-        <p className="text-sm text-emerald-600">
-          Accuracy: {data.accuracy.toFixed(1)}%
-        </p>
-        <p className="text-xs text-gray-500 mt-1">
-          {data.correct} correct out of {data.total} questions
-        </p>
-      </div>
-    );
-  }
-  return null;
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text textAnchor="middle" fill="#374151" fontSize={12}>
+        {lines.map((line, idx) => (
+          <tspan key={idx} x={0} dy={idx === 0 ? 12 : 14}>{line}</tspan>
+        ))}
+      </text>
+    </g>
+  );
 };
 
 export default function ProgressPage() {
   const [progressData, setProgressData] = useState(null);
   const [timeRange, setTimeRange] = useState('30');
   const [subject, setSubject] = useState('all');
-  const [activeTab, setActiveTab] = useState('accuracy');
+  const [difficulty, setDifficulty] = useState('all');
+  const [selectedDomains, setSelectedDomains] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [stats, setStats] = useState({
-    totalQuestions: 0,
-    totalCorrect: 0,
-    accuracyTrend: null,
-    correctToday: null
-  });
 
   useEffect(() => {
     fetchProgressData();
-  }, [timeRange, subject]);
+  }, [timeRange, subject, difficulty]);
 
   useEffect(() => {
-    if (progressData?.dailyData) {
-      calculateStats(progressData.dailyData);
+    if (progressData?.domains) {
+      setSelectedDomains(progressData.domains);
     }
-    if (progressData?.overallStats) {
-      setStats(prevStats => ({
-        ...prevStats,
-        totalQuestions: progressData.overallStats.totalQuestions,
-        totalCorrect: progressData.overallStats.totalCorrect
-      }));
-    }
-  }, [progressData]);
-
-  const calculateStats = (dailyData) => {
-    if (!dailyData || !dailyData.length) {
-      setStats(prevStats => ({
-        ...prevStats,
-        accuracyTrend: null,
-        correctToday: null
-      }));
-      return;
-    }
-    
-    // Sort data by date (newest first)
-    const sortedData = [...dailyData].sort((a, b) => 
-      new Date(b.date) - new Date(a.date)
-    );
-    
-    // Get today's date (without time)
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    // Find today's entry and yesterday's entry
-    const todayData = sortedData.find(day => {
-      const dayDate = new Date(day.date);
-      dayDate.setHours(0, 0, 0, 0);
-      return dayDate.getTime() === today.getTime();
-    });
-    
-    // Find the most recent day with data and the day before that
-    const lastDayWithData = sortedData[0];
-    const previousDayWithData = sortedData[1];
-    
-    // Calculate accuracy trend (if we have at least 2 days of data)
-    let accuracyTrend = null;
-    if (lastDayWithData && previousDayWithData) {
-      accuracyTrend = lastDayWithData.accuracy - previousDayWithData.accuracy;
-    }
-    
-    // Calculate correct answers added today
-    let correctToday = null;
-    if (todayData && todayData.correct > 0) {
-      correctToday = todayData.correct;
-    }
-    
-    setStats(prevStats => ({
-      ...prevStats,
-      accuracyTrend,
-      correctToday
-    }));
-  };
+  }, [progressData?.domains]);
 
   const fetchProgressData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/api/progress?days=${timeRange}${subject !== 'all' ? `&subject=${subject}` : ''}`);
-      
+      const params = new URLSearchParams();
+      params.set('days', timeRange);
+      if (subject !== 'all') params.set('subject', subject);
+      if (difficulty && difficulty !== 'all') params.set('difficulty', difficulty);
+
+      const response = await fetch(`/api/progress?${params.toString()}`);
       if (!response.ok) throw new Error('Failed to fetch progress data');
-      
       const data = await response.json();
-      
-      // Always use the actual data from the API, even if empty
       setProgressData(data);
     } catch (err) {
       setError(err.message);
-      // Instead of using generated data, use empty data
-      setProgressData({
-        dailyData: [],
-        subcategoryData: []
-      });
+      setProgressData({ dailyData: [], domainData: [], domains: [] });
     } finally {
       setLoading(false);
     }
   };
 
-  const overallAccuracy = stats.totalQuestions > 0
-    ? Math.round((stats.totalCorrect / stats.totalQuestions) * 100)
-    : 0;
+  const toggleDomain = (domain) => {
+    setSelectedDomains((prev) =>
+      prev.includes(domain)
+        ? prev.filter((d) => d !== domain)
+        : [...prev, domain]
+    );
+  };
 
+  const visibleDomainData = (progressData?.domainData || [])
+    .filter(d => selectedDomains.includes(d.domain))
+    .sort((a, b) => (b.accuracy ?? 0) - (a.accuracy ?? 0));
 
+  // Compute evenly spaced ticks for the line chart based on the selected range
+  const computeLineTicks = (data, range) => {
+    if (!data || data.length === 0) return [];
+    const dates = data.map(d => d.date);
+    if (range === '7') return dates; // label each day
+    if (range === '30') return dates.filter((_, i) => i % 3 === 0); // every 3rd day
+    if (range === '90') return dates.filter((_, i) => i % 9 === 0); // every 9th day
+    // all-time: 10 evenly spaced ticks including first and last
+    const desired = 10;
+    if (dates.length <= desired) return dates;
+    const ticks = [];
+    const lastIndex = dates.length - 1;
+    for (let i = 0; i < desired; i++) {
+      const idx = Math.round((i * lastIndex) / (desired - 1));
+      const date = dates[idx];
+      if (!ticks.includes(date)) ticks.push(date);
+    }
+    return ticks;
+  };
+
+  const lineTicks = computeLineTicks(progressData?.dailyData || [], timeRange);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-      <TopBar title="Progress Tracking" />
-      
-      {/* Main Content */}
+      <TopBar title="Progress" />
       <SubscriptionCheck>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
-          
-          {/* Stats Cards */}
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-            gap: '20px',
-            marginBottom: '20px'
-          }}>
-            {/* Overall Accuracy Card */}
-            <div style={{ 
-              backgroundColor: 'white', 
-              borderRadius: '10px', 
-              padding: '20px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-            }}>
-              <h3 style={{ fontSize: '14px', color: '#6b7280', marginBottom: '8px' }}>Overall Accuracy</h3>
-              <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#111827' }}>{overallAccuracy}%</p>
-              {stats.accuracyTrend !== null && (
-                <p style={{ 
-                  fontSize: '14px', 
-                  color: stats.accuracyTrend >= 0 ? '#10b981' : '#ef4444', 
-                  marginTop: '8px' 
-                }}>
-                  {stats.accuracyTrend >= 0 ? '↑' : '↓'} {Math.abs(Math.round(stats.accuracyTrend))}% from previous day
-                </p>
-              )}
-            </div>
-            
-            {/* Total Questions Card */}
-            <div style={{ 
-              backgroundColor: 'white', 
-              borderRadius: '10px', 
-              padding: '20px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-            }}>
-              <h3 style={{ fontSize: '14px', color: '#6b7280', marginBottom: '8px' }}>Total Questions</h3>
-              <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#111827' }}>{stats.totalQuestions}</p>
-              <p style={{ fontSize: '14px', color: '#6b7280', marginTop: '8px' }}>questions answered</p>
-            </div>
-            
-            {/* Correct Answers Card */}
-            <div style={{ 
-              backgroundColor: 'white', 
-              borderRadius: '10px', 
-              padding: '20px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-            }}>
-              <h3 style={{ fontSize: '14px', color: '#6b7280', marginBottom: '8px' }}>Correct Answers</h3>
-              <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#111827' }}>{stats.totalCorrect}</p>
-              {stats.correctToday && (
-                <p style={{ fontSize: '14px', color: '#10b981', marginTop: '8px' }}>
-                  ↑ {stats.correctToday} correct answers today!
-                </p>
-              )}
-            </div>
-          </div>
-          
           {/* Filters */}
           <div style={{ 
             backgroundColor: 'white', 
@@ -252,213 +126,123 @@ export default function ProgressPage() {
             marginBottom: '20px',
             boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
           }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '20px' }}>
               <div>
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '500', color: '#374151' }}>
-                  Time Range
-                </label>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '500', color: '#374151' }}>Time Range</label>
                 <select
                   value={timeRange}
                   onChange={(e) => setTimeRange(e.target.value)}
-                  style={{ 
-                    width: '100%', 
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    border: '1px solid #d1d5db',
-                    fontSize: '14px'
-                  }}
+                  style={{ width: '100%', padding: '8px 12px', borderRadius: '8px', border: '1px solid #d1d5db', fontSize: '14px' }}
                 >
                   <option value="7">Last 7 days</option>
                   <option value="30">Last 30 days</option>
                   <option value="90">Last 90 days</option>
-                  <option value="180">Last 180 days</option>
+                  <option value="all">All Time</option>
                 </select>
               </div>
               <div>
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '500', color: '#374151' }}>
-                  Subject
-                </label>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '500', color: '#374151' }}>Subject</label>
                 <select
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  style={{ 
-                    width: '100%', 
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    border: '1px solid #d1d5db',
-                    fontSize: '14px'
-                  }}
+                  style={{ width: '100%', padding: '8px 12px', borderRadius: '8px', border: '1px solid #d1d5db', fontSize: '14px' }}
                 >
                   <option value="all">All Subjects</option>
                   <option value="1">Math</option>
                   <option value="2">Reading & Writing</option>
                 </select>
               </div>
-            </div>
-          </div>
-          
-          {/* Charts Container */}
-          <div style={{ 
-            backgroundColor: 'white', 
-            borderRadius: '10px', 
-            overflow: 'hidden',
-            boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-          }}>
-            {/* Tabs */}
-            <div style={{ borderBottom: '1px solid #e5e7eb' }}>
-              <div style={{ display: 'flex' }}>
-                <button
-                  onClick={() => setActiveTab('accuracy')}
-                  style={{ 
-                    flex: 1,
-                    padding: '16px 24px',
-                    fontSize: '14px',
-                    fontWeight: '500',
-                    color: activeTab === 'accuracy' ? '#10b981' : '#6b7280',
-                    background: 'none',
-                    border: activeTab === 'accuracy' 
-                      ? '2px solid transparent' 
-                      : 'none',
-                    borderBottomColor: activeTab === 'accuracy' ? '#10b981' : 'transparent',
-                    cursor: 'pointer'
-                  }}
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '500', color: '#374151' }}>Difficulty</label>
+                <select
+                  value={difficulty}
+                  onChange={(e) => setDifficulty(e.target.value)}
+                  style={{ width: '100%', padding: '8px 12px', borderRadius: '8px', border: '1px solid #d1d5db', fontSize: '14px' }}
                 >
-                  Accuracy Trend
-                </button>
-                <button
-                  onClick={() => setActiveTab('subcategories')}
-                  style={{ 
-                    flex: 1,
-                    padding: '16px 24px',
-                    fontSize: '14px',
-                    fontWeight: '500',
-                    color: activeTab === 'subcategories' ? '#10b981' : '#6b7280',
-                    background: 'none',
-                    border: activeTab === 'subcategories' 
-                      ? '2px solid transparent' 
-                      : 'none',
-                    borderBottomColor: activeTab === 'subcategories' ? '#10b981' : 'transparent',
-                    cursor: 'pointer'
-                  }}
-                >
-                  Topic Performance
-                </button>
+                  <option value="all">All</option>
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Hard">Hard</option>
+                </select>
               </div>
             </div>
-            
-            {/* Chart Content */}
-            <div style={{ padding: '24px' }}>
-              {activeTab === 'accuracy' ? (
-                <div>
-                  <div style={{ 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    alignItems: 'baseline',
-                    marginBottom: '20px'
-                  }}>
-                    <h2 style={{ fontSize: '18px', fontWeight: '600', color: '#111827' }}>Daily Accuracy</h2>
-                    <p style={{ fontSize: '14px', color: '#6b7280' }}>Last {timeRange} days</p>
-                  </div>
-                  
-                  {/* Accuracy Chart */}
-                  <div style={{ height: '400px', width: '100%' }}>
-                    {progressData?.dailyData && (
-                      <ResponsiveContainer width="100%" height="100%">
-                        <LineChart data={progressData.dailyData}>
-                          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                          <XAxis 
-                            dataKey="date" 
-                            tickFormatter={(date) => {
-                              const d = new Date(date);
-                              return `${d.getMonth()+1}/${d.getDate()}`;
-                            }}
-                            stroke="#6b7280"
-                          />
-                          <YAxis 
-                            domain={[0, 100]} 
-                            tickFormatter={(value) => `${value}%`}
-                            stroke="#6b7280"
-                          />
-                          <Tooltip 
-                            formatter={(value) => [`${value}%`, 'Accuracy']}
-                            labelFormatter={(date) => new Date(date).toLocaleDateString()}
-                            contentStyle={{
-                              backgroundColor: 'white',
-                              border: '1px solid #e5e7eb',
-                              borderRadius: '8px',
-                              boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
-                            }}
-                          />
-                          <Legend />
-                          <Line 
-                            type="natural" 
-                            dataKey="accuracy" 
-                            stroke="#10b981" 
-                            strokeWidth={3}
-                            dot={{ r: 4, fill: '#10b981', strokeWidth: 1, stroke: '#ffffff' }}
-                            activeDot={{ r: 6, fill: '#10b981', stroke: 'white', strokeWidth: 2 }}
-                          />
-                        </LineChart>
-                      </ResponsiveContainer>
-                    )}
-                  </div>
+          </div>
+
+          {/* Line Chart: Questions and Correct Over Time */}
+          <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', marginBottom: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '20px' }}>
+              <h2 style={{ fontSize: '18px', fontWeight: '600', color: '#111827' }}>Activity</h2>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>{timeRange === 'all' ? 'All Time' : `Last ${timeRange} days`}</p>
+            </div>
+            <div style={{ height: '400px', width: '100%' }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={progressData?.dailyData || []}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis 
+                    dataKey="date" 
+                    tickFormatter={(date) => {
+                      const d = new Date(date);
+                      return `${d.getMonth()+1}/${d.getDate()}`;
+                    }}
+                    ticks={lineTicks}
+                    stroke="#6b7280"
+                  />
+                  <YAxis stroke="#6b7280" />
+                  <Tooltip 
+                    labelFormatter={(date) => new Date(date).toLocaleDateString()}
+                    contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }}
+                  />
+                  <Legend />
+                  <Line type="monotone" dataKey="total" name="Questions Answered" stroke="#3b82f6" strokeWidth={3} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="correct" name="Correct Answers" stroke="#10b981" strokeWidth={3} dot={{ r: 3 }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Bar Chart: Domain Accuracy with Multi-select */}
+          <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', alignItems: 'center', marginBottom: '12px' }}>
+              <h2 style={{ fontSize: '18px', fontWeight: '600', color: '#111827' }}>Domain Accuracy</h2>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '14px', color: '#374151' }}>Show domains:</span>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {(progressData?.domains || []).map((d) => (
+                    <label key={d} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: '#374151', background: selectedDomains.includes(d) ? '#ecfdf5' : '#f3f4f6', border: '1px solid #e5e7eb', borderRadius: '9999px', padding: '6px 10px', cursor: 'pointer' }}>
+                      <input 
+                        type="checkbox" 
+                        checked={selectedDomains.includes(d)} 
+                        onChange={() => toggleDomain(d)} 
+                        style={{ accentColor: '#10b981' }}
+                      />
+                      {d}
+                    </label>
+                  ))}
                 </div>
-              ) : (
-                <div>
-                  <div style={{ 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    alignItems: 'baseline',
-                    marginBottom: '20px'
-                  }}>
-                    <h2 style={{ fontSize: '18px', fontWeight: '600', color: '#111827' }}>Topic Performance</h2>
-                    <p style={{ fontSize: '14px', color: '#6b7280' }}>By subject area</p>
-                  </div>
-                  
-                  {/* Topic Performance Chart */}
-                  <div style={{ height: '400px', width: '100%' }}>
-                    {progressData?.subcategoryData && (
-                      <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={progressData.subcategoryData} margin={{ bottom: 50 }}>
-                          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                          <XAxis 
-                            dataKey="name" 
-                            stroke="#6b7280"
-                            angle={-45}
-                            textAnchor="end"
-                            height={100}
-                          />
-                          <YAxis 
-                            domain={[0, 100]} 
-                            tickFormatter={(value) => `${value}%`}
-                            stroke="#6b7280"
-                          />
-                          <Tooltip 
-                            formatter={(value) => [`${value}%`, 'Accuracy']}
-                            contentStyle={{
-                              backgroundColor: 'white',
-                              border: '1px solid #e5e7eb',
-                              borderRadius: '8px',
-                              boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
-                            }}
-                          />
-                          <Legend />
-                          <Bar 
-                            dataKey="accuracy" 
-                            fill="#10b981"
-                            name="Accuracy"
-                            radius={[4, 4, 0, 0]}
-                          />
-                        </BarChart>
-                      </ResponsiveContainer>
-                    )}
-                  </div>
-                </div>
-              )}
+              </div>
+            </div>
+            <div style={{ height: '420px', width: '100%' }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={visibleDomainData} margin={{ top: 28, right: 8, left: 8, bottom: 56 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis 
+                    dataKey="domain"
+                    stroke="#6b7280"
+                    height={56}
+                    interval={0}
+                    tickLine={false}
+                    tick={<WrappedAxisTick />}
+                  />
+                  <YAxis domain={[0, 100]} tickFormatter={(value) => `${value}%`} stroke="#6b7280" />
+                  <Tooltip formatter={(value) => [`${Number(value).toFixed(1)}%`, 'Accuracy']} contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                  <Legend verticalAlign="top" align="right" />
+                  <Bar dataKey="accuracy" fill="#10b981" name="Accuracy" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </div>
       </SubscriptionCheck>
     </div>
   );
-} 
+}
