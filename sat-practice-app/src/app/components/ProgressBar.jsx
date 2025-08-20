@@ -23,12 +23,14 @@ const ProgressBar = ({ completed, total, showEarlySubmit = false, onEarlySubmit 
             style={styles.earlySubmitButton}
             onClick={onEarlySubmit}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = "#dc2626";
-              e.target.style.color = "white";
+              e.target.style.backgroundColor = "#f1f5f9";
+              e.target.style.borderColor = "#cbd5e1";
+              e.target.style.transform = "translateY(-2px)";
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = "transparent";
-              e.target.style.color = "#dc2626";
+              e.target.style.backgroundColor = "#f8fafc";
+              e.target.style.borderColor = "#e2e8f0";
+              e.target.style.transform = "translateY(0)";
             }}
           >
             Submit Module Early
@@ -111,14 +113,14 @@ const styles = {
     color: "#6b7280",
   },
   earlySubmitButton: {
-    padding: "6px 12px",
-    backgroundColor: "transparent",
-    color: "#dc2626",
-    border: "1px solid #dc2626",
-    borderRadius: "4px",
+    padding: "8px 16px",
+    backgroundColor: "#f8fafc",
+    color: "#475569",
+    border: "1px solid #e2e8f0",
+    borderRadius: "6px",
     cursor: "pointer",
-    fontSize: "12px",
-    fontWeight: "400",
+    fontSize: "14px",
+    fontWeight: "500",
     transition: "all 0.2s ease",
     boxShadow: "none",
   },

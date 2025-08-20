@@ -375,7 +375,7 @@ async function fetchSkillPerformance() {
           if (!sub.last_attempt_at) {
             lastPracticedDisplay = 'Never practiced';
           } else if (isFutureDate || isTestData) {
-            lastPracticedDisplay = 'Recently';
+            lastPracticedDisplay = 'Today';
           } else {
             lastPracticedDisplay = lastPracticedDate.toLocaleDateString();
           }

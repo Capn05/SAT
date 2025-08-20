@@ -1005,14 +1005,14 @@ export default function Question({ subject, mode, skillName, questions: initialQ
                 style={styles.modalConfirmButton}
                 onClick={handleEarlySubmit}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = '#7c3aed';
+                  e.currentTarget.style.backgroundColor = '#059669';
                   e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 8px 12px -1px rgba(139, 92, 246, 0.3)';
+                  e.currentTarget.style.boxShadow = '0 8px 12px -1px rgba(16, 185, 129, 0.3)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = '#8b5cf6';
+                  e.currentTarget.style.backgroundColor = '#10b981';
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(139, 92, 246, 0.2)';
+                  e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(16, 185, 129, 0.2)';
                 }}
               >
                 Submit Now
@@ -1495,7 +1495,7 @@ const styles = {
   },
   modalConfirmButton: {
     padding: '10px 20px',
-    backgroundColor: '#8b5cf6',
+    backgroundColor: '#10b981',
     color: 'white',
     border: 'none',
     borderRadius: '6px',
@@ -1503,7 +1503,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: '500',
     transition: 'all 0.2s ease',
-    boxShadow: '0 4px 6px -1px rgba(139, 92, 246, 0.2)',
+    boxShadow: '0 4px 6px -1px rgba(16, 185, 129, 0.2)',
   },
   modalCloseButton: {
     position: 'absolute',
