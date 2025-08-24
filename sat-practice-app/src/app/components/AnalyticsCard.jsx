@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { BarChart2, TrendingUp, CheckCircle } from "lucide-react"
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 // Create a stats cache to reduce repeated API calls
 const statsCache = {
@@ -21,6 +22,8 @@ export default function AnalyticsCard() {
     accuracyPercentage: 0
   })
   const [loading, setLoading] = useState(true)
+  const [chartLoading, setChartLoading] = useState(true)
+  const [dailyData, setDailyData] = useState([])
   const router = useRouter()
   const supabase = createClientComponentClient()
   const fetchInProgress = useRef(false);
@@ -113,6 +116,29 @@ export default function AnalyticsCard() {
     fetchStats();
   }, [router, supabase]);
 
+  // Fetch last 7 days daily data for line chart (both subjects, all difficulties)
+  useEffect(() => {
+    let isMounted = true;
+    const fetchProgress = async () => {
+      try {
+        setChartLoading(true);
+        const resp = await fetch('/api/progress?days=7');
+        if (!resp.ok) throw new Error('Failed to fetch progress');
+        const data = await resp.json();
+        if (isMounted) setDailyData(data?.dailyData || []);
+      } catch (e) {
+        console.error('Error fetching 7-day progress:', e);
+        if (isMounted) setDailyData([]);
+      } finally {
+        if (isMounted) setChartLoading(false);
+      }
+    };
+    fetchProgress();
+    return () => { isMounted = false };
+  }, []);
+
+  const ticks = dailyData.map(d => d.date);
+
   const handleViewAnalytics = () => {
     router.push('/progress');
   };
@@ -129,33 +155,31 @@ export default function AnalyticsCard() {
       }}
     >
       <div style={styles.header}>
-        <h2 style={styles.title}>Your Progress</h2>
+        <h2 style={styles.title}>Your Progress (Last 7 days)</h2>
       </div>
-
-      <div style={styles.stats}>
-        <div style={styles.stat}>
-          <div style={styles.statIcon}>
-            <CheckCircle style={{ color: "#65a30d", width: 20, height: 20 }} />
-          </div>
-          <div style={styles.statInfo}>
-            <div style={styles.statValue}>
-              {loading ? "..." : stats.questionsAnswered}
-            </div>
-            <div style={styles.statLabel}>Questions Completed</div>
-          </div>
-        </div>
-
-        <div style={styles.stat}>
-          <div style={styles.statIcon}>
-            <TrendingUp style={{ color: "#65a30d", width: 20, height: 20 }} />
-          </div>
-          <div style={styles.statInfo}>
-            <div style={styles.statValue}>
-              {loading ? "..." : `${stats.accuracyPercentage.toFixed(1)}%`}
-            </div>
-            <div style={styles.statLabel}>Accuracy Rate</div>
-          </div>
-        </div>
+      <div style={{ height: 260, width: '100%', marginBottom: 16 }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={dailyData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+            <XAxis 
+              dataKey="date"
+              ticks={ticks}
+              tickFormatter={(date) => {
+                const d = new Date(date);
+                return `${d.getMonth()+1}/${d.getDate()}`;
+              }}
+              stroke="#6b7280"
+            />
+            <YAxis stroke="#6b7280" />
+            <Tooltip 
+              labelFormatter={(date) => new Date(date).toLocaleDateString()}
+              contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }}
+            />
+            <Legend />
+            <Line type="monotone" dataKey="total" name="Questions Answered" stroke="#3b82f6" strokeWidth={3} dot={{ r: 3 }} />
+            <Line type="monotone" dataKey="correct" name="Correct Answers" stroke="#10b981" strokeWidth={3} dot={{ r: 3 }} />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
 
       <button 
