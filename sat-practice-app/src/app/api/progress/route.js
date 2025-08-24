@@ -32,12 +32,19 @@ export async function GET(request) {
     let query = supabase
       .from('user_answers')
       .select(`
+        id,
         answered_at,
         is_correct,
         practice_type,
+        selected_option_id,
         questions!inner (
+          id,
+          question_text,
+          image_url,
           subject_id,
           difficulty,
+          domain_id,
+          subcategory_id,
           domains!inner (
             id,
             domain_name
@@ -113,6 +120,58 @@ export async function GET(request) {
       }
     });
 
+    // Build answer history with question details and options
+    const questionIds = Array.from(new Set((answers || [])
+      .map(a => a?.questions?.id)
+      .filter(Boolean)));
+
+    let optionsByQuestionId = {};
+    if (questionIds.length > 0) {
+      const { data: optionsData, error: optionsError } = await supabase
+        .from('options')
+        .select('id, question_id, value, label, is_correct')
+        .in('question_id', questionIds);
+
+      if (!optionsError && optionsData) {
+        optionsByQuestionId = optionsData.reduce((acc, opt) => {
+          if (!acc[opt.question_id]) acc[opt.question_id] = [];
+          acc[opt.question_id].push(opt);
+          return acc;
+        }, {});
+      } else if (optionsError) {
+        console.error('Error fetching options for answer history:', optionsError);
+      }
+    }
+
+    const answerHistory = (answers || []).map(a => {
+      const q = a.questions || {};
+      const subjectLabel = q.subject_id === 1 ? 'Math' : 'Reading & Writing';
+      const rawOptions = optionsByQuestionId[q.id] || [];
+      const sortedOptions = rawOptions
+        .slice()
+        .sort((x, y) => (String(x.value || '')).localeCompare(String(y.value || '')));
+      return {
+        id: a.id,
+        question_id: q.id,
+        subject_id: q.subject_id,
+        subject: subjectLabel,
+        domain: q.domains?.domain_name || null,
+        subcategory: q.subcategories?.subcategory_name || null,
+        difficulty: q.difficulty,
+        is_correct: a.is_correct,
+        answered_at: a.answered_at,
+        question_text: q.question_text,
+        image_url: q.image_url,
+        selected_option_id: a.selected_option_id,
+        options: sortedOptions.map(o => ({
+          id: o.id,
+          label: o.label,
+          value: o.value,
+          is_correct: o.is_correct
+        }))
+      };
+    }).sort((a, b) => new Date(b.answered_at) - new Date(a.answered_at));
+
     // Convert daily stats to array format for the chart
     let dailyData = Object.entries(dailyStats)
       .map(([date, stats]) => ({
@@ -176,6 +235,7 @@ export async function GET(request) {
       dailyData,
       domainData,
       domains: domainData.map(d => d.domain),
+      answerHistory,
       overallStats: {
         totalQuestions,
         totalCorrect,
