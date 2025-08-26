@@ -130,14 +130,14 @@ console.log(skill.name)
             <h2 style={styles.sectionTitle}>Skill Overview</h2>
             <p style={styles.overviewText}>
               {skill.description ||
-                `${skill.name} is an important skill in the SAT. 
+                `${skill.name} is an important skill in the PSAT. 
               Focus on improving your understanding and application of this concept to boost your overall performance.`}
             </p>
             <h3 style={styles.subTitle}>Tips to Improve</h3>
             <ul style={styles.tipsList}>
               <li>Practice regularly with a variety of question types</li>
               <li>Review your mistakes and understand why you made them</li>
-              <li>Use official SAT study materials to familiarize yourself with the test format</li>
+              <li>Use official PSAT study materials to familiarize yourself with the test format</li>
               <li>Time yourself when practicing to improve your speed and accuracy</li>
             </ul>
           </div>

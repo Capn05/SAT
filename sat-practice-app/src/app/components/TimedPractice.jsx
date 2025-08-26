@@ -31,7 +31,7 @@ export default function TimedTestButton() {
           <div style={styles.textContent}>
             
             <h3 style={styles.title}> Practice Test</h3>
-            <p style={styles.description}>Challenge yourself with a full-length, timed SAT practice exam</p>
+            <p style={styles.description}>Challenge yourself with a full-length, timed PSAT practice exam</p>
           </div>
           <ArrowRight style={styles.arrowIcon} />
         </button>

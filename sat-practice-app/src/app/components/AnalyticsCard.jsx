@@ -122,7 +122,8 @@ export default function AnalyticsCard() {
     const fetchProgress = async () => {
       try {
         setChartLoading(true);
-        const resp = await fetch('/api/progress?days=7');
+        const tzOffset = new Date().getTimezoneOffset() * -1;
+        const resp = await fetch(`/api/progress?days=7&tzOffset=${tzOffset}`);
         if (!resp.ok) throw new Error('Failed to fetch progress');
         const data = await resp.json();
         if (isMounted) setDailyData(data?.dailyData || []);

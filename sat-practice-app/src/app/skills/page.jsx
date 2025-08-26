@@ -114,7 +114,7 @@ const categoryIcons = {
   'Linear Inequalities': Calculator,
 };
 
-// Hard-coded SAT distribution percentages and question counts
+// Hard-coded PSAT distribution percentages and question counts
 const satDistributions = {
   // Reading & Writing distributions
   "Craft and Structure": { percentage: 28, questions: "13-15" },
@@ -122,7 +122,7 @@ const satDistributions = {
   "Standard English Conventions": { percentage: 26, questions: "11-15" },
   "Expression of Ideas": { percentage: 20, questions: "8-12" },
   
-  // Math distributions (using approximate values based on standard SAT)
+  // Math distributions (using approximate values based on standard PSAT)
   "Algebra": { percentage: 35, questions: "13-15" },
   "Problem-Solving and Data Analysis": { percentage: 15, questions: "5-7" },
   "Advanced Math": { percentage: 35, questions: "13-15" },
@@ -381,7 +381,7 @@ export default function SkillsPage() {
 
   return (
     <div style={styles.container}>
-      <SkillsHeader title={"SAT Skills"}/>
+      <SkillsHeader title={"PSAT Skills"}/>
       <SubjectTabs activeSubject={activeSubject} onSubjectChange={setActiveSubject} />
       
       <SubscriptionCheck>
