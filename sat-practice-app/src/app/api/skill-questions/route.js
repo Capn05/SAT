@@ -18,12 +18,14 @@ export async function GET(request) {
     const category = searchParams.get('category');
     const difficulty = searchParams.get('difficulty') || 'mixed';
     const includePreviouslyAnswered = searchParams.get('previouslyAnswered') === 'true';
+    const requestedCount = parseInt(searchParams.get('count')) || 5; // Get count from URL, default to 5
 
     console.log('Fetching questions with params:', { 
       subject, 
       category, 
       difficulty, 
-      includePreviouslyAnswered
+      includePreviouslyAnswered,
+      requestedCount
     });
 
     if (!subject || !category) {
@@ -109,7 +111,7 @@ export async function GET(request) {
     
     // Prioritize unanswered questions
     let selectedQuestions = [];
-    const questionCount = 5; // For skill practice, we want 5 questions
+    const questionCount = requestedCount; // Use the count requested by the user
     
     // If we have enough unanswered questions, use only those
     if (unansweredQuestions.length >= questionCount) {
