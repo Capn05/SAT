@@ -1,12 +1,23 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function DifficultyModal({ isOpen, onClose, subject, title, mode = "quick", category = null, onDifficultySelected = null }) {
   const [selectedDifficulty, setSelectedDifficulty] = useState('mixed');
-  const [questionCount, setQuestionCount] = useState(10);
+  const [questionCount, setQuestionCount] = useState(mode === "skill" ? 5 : 10); // Default to 5 for skills, 10 for others
   const router = useRouter();
+
+  // Ensure question count doesn't exceed the max for the current mode
+  const maxQuestions = mode === "skill" ? 7 : 20;
+  const clampedQuestionCount = Math.min(questionCount, maxQuestions);
+
+  // Clamp question count when mode changes
+  useEffect(() => {
+    if (questionCount > maxQuestions) {
+      setQuestionCount(maxQuestions);
+    }
+  }, [mode, maxQuestions, questionCount]);
 
   if (!isOpen) return null;
 
@@ -15,9 +26,11 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
   };
 
   const handleStartPractice = () => {
+    const finalQuestionCount = clampedQuestionCount;
+    
     // If the parent provided a callback, use it
     if (onDifficultySelected) {
-      onDifficultySelected(selectedDifficulty, questionCount);
+      onDifficultySelected(selectedDifficulty, finalQuestionCount);
       onClose();
       return;
     }
@@ -29,7 +42,7 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
     // Force a small delay before navigation to ensure modal state is updated
     setTimeout(() => {
       // Build the URL based on the mode
-      let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}&count=${questionCount}`;
+      let url = `/practice?subject=${subject}&mode=${mode}&difficulty=${selectedDifficulty}&count=${finalQuestionCount}`;
       
       // Add category parameter if provided (for skill mode)
       if (category && mode === "skill") {
@@ -113,21 +126,21 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
               <input
                 type="range"
                 min="0"
-                max="20"
-                value={questionCount}
+                max={maxQuestions}
+                value={clampedQuestionCount}
                 onChange={(e) => setQuestionCount(parseInt(e.target.value))}
                 className="question-slider"
               />
               <div 
                 className="slider-value-display"
                 style={{
-                  left: `calc(${(questionCount / 20) * 100}% - ${(questionCount / 20) * 20}px + 10px)`
+                  left: `calc(${(clampedQuestionCount / maxQuestions) * 100}% - ${(clampedQuestionCount / maxQuestions) * 20}px + 10px)`
                 }}
               >
-                {questionCount}
+                {clampedQuestionCount}
               </div>
             </div>
-            <span className="slider-label">20</span>
+            <span className="slider-label">{mode === "skill" ? "7" : "20"}</span>
           </div>
         </div>
         
