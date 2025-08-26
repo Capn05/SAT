@@ -8,14 +8,16 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
   const [questionCount, setQuestionCount] = useState(mode === "skill" ? 5 : 10); // Default to 5 for skills, 10 for others
   const router = useRouter();
 
-  // Ensure question count doesn't exceed the max for the current mode
+  // Ensure question count doesn't exceed the max for the current mode and is at least 1
   const maxQuestions = mode === "skill" ? 7 : 20;
-  const clampedQuestionCount = Math.min(questionCount, maxQuestions);
+  const clampedQuestionCount = Math.max(1, Math.min(questionCount, maxQuestions));
 
   // Clamp question count when mode changes
   useEffect(() => {
     if (questionCount > maxQuestions) {
       setQuestionCount(maxQuestions);
+    } else if (questionCount < 1) {
+      setQuestionCount(1);
     }
   }, [mode, maxQuestions, questionCount]);
 
@@ -121,11 +123,11 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
             <h3>Number of Questions</h3>
           </div>
           <div className="slider-container">
-            <span className="slider-label">0</span>
+            <span className="slider-label">1</span>
             <div className="slider-wrapper">
               <input
                 type="range"
-                min="0"
+                min="1"
                 max={maxQuestions}
                 value={clampedQuestionCount}
                 onChange={(e) => setQuestionCount(parseInt(e.target.value))}
@@ -134,7 +136,7 @@ export default function DifficultyModal({ isOpen, onClose, subject, title, mode 
               <div 
                 className="slider-value-display"
                 style={{
-                  left: `calc(${(clampedQuestionCount / maxQuestions) * 100}% - ${(clampedQuestionCount / maxQuestions) * 20}px + 10px)`
+                  left: `calc(${((clampedQuestionCount - 1) / (maxQuestions - 1)) * 100}% - ${((clampedQuestionCount - 1) / (maxQuestions - 1)) * 20}px + 10px)`
                 }}
               >
                 {clampedQuestionCount}
