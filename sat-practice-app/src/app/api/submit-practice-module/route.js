@@ -112,7 +112,7 @@ export async function POST(request) {
     // If this was Module 1, determine which Module 2 to use next
     if (moduleData.module_number === 1) {
       // Different thresholds based on subject
-      const correctThreshold = isSubjectMath ? 15 : 18; // Math: 15/22, Reading & Writing: 18/27
+      const correctThreshold = isSubjectMath ? 14 : 18; // Math: 14/22, Reading & Writing: 18/27
       
       // Decide whether to use the harder Module 2
       const useHarderModule = correctAnswers >= correctThreshold;

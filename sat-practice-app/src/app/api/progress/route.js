@@ -16,6 +16,8 @@ export async function GET(request) {
     // Get the date range from query parameters, default to last 30 days
     const { searchParams } = new URL(request.url);
     const daysParam = searchParams.get('days') || '30';
+    const tzOffsetParam = searchParams.get('tzOffset');
+    const tzOffsetMin = Number.isFinite(Number(tzOffsetParam)) ? Number(tzOffsetParam) : 0; // minutes to add to local to reach UTC
     const subject = searchParams.get('subject');
     const difficulty = searchParams.get('difficulty');
 
@@ -23,9 +25,14 @@ export async function GET(request) {
     let startDateStr = null;
     if (daysParam !== 'all') {
       const days = parseInt(daysParam, 10);
-      const startDate = new Date();
-      startDate.setDate(startDate.getDate() - days);
-      startDateStr = startDate.toISOString();
+      // Work in user's local timeline by shifting UTC by tzOffset
+      const nowUtc = new Date();
+      const userNow = new Date(nowUtc.getTime() - tzOffsetMin * 60000);
+      const startUser = new Date(userNow);
+      startUser.setHours(0, 0, 0, 0);
+      startUser.setDate(startUser.getDate() - Math.max(0, days - 1));
+      // Store as ISO back in UTC domain
+      startDateStr = new Date(startUser.getTime() + tzOffsetMin * 60000).toISOString();
     }
 
     // Build the base query for user_answers
@@ -84,9 +91,20 @@ export async function GET(request) {
     const dailyStats = {};
     const domainStats = {};
 
+    // Helper to generate a local date key (YYYY-MM-DD) without timezone drift
+    const toLocalDateKey = (d) => {
+      const year = d.getFullYear();
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    };
+
     // Process user answers
     answers.forEach(answer => {
-      const date = new Date(answer.answered_at).toISOString().split('T')[0];
+      const utc = new Date(answer.answered_at);
+      // Shift UTC to user-local timeline
+      const userLocal = new Date(utc.getTime() - tzOffsetMin * 60000);
+      const date = toLocalDateKey(userLocal);
       const domain = answer.questions.domains.domain_name;
       const domainId = answer.questions.domains.id;
 
@@ -183,15 +201,18 @@ export async function GET(request) {
 
     // If we have a fixed start date (not all-time), fill missing dates with zeros
     if (startDateStr) {
-      const start = new Date(startDateStr);
+      // Convert stored ISO (UTC) back to user-local timeline
+      const startUtc = new Date(startDateStr);
+      const start = new Date(startUtc.getTime() - tzOffsetMin * 60000);
       start.setHours(0, 0, 0, 0);
-      const end = new Date();
+      const nowUtc = new Date();
+      const end = new Date(nowUtc.getTime() - tzOffsetMin * 60000);
       end.setHours(0, 0, 0, 0);
 
       const existingByDate = new Map(dailyData.map(d => [d.date, d]));
       const filled = [];
       for (let d = new Date(start); d.getTime() <= end.getTime(); d.setDate(d.getDate() + 1)) {
-        const key = new Date(d).toISOString().split('T')[0];
+        const key = toLocalDateKey(d);
         filled.push(existingByDate.get(key) || { date: key, total: 0, correct: 0 });
       }
       dailyData = filled;

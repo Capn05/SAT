@@ -270,12 +270,12 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                handleQuestionPreset("How do I get a perfect score on the SAT?");
+                handleQuestionPreset("How do I get a perfect score on the PSAT?");
               }} 
               style={styles.suggestionButton}
               disabled={isLoading}
             >
-              How to get a 1600?
+              How to get a 1520?
             </button>
             <button 
               onClick={(e) => {

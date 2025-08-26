@@ -73,6 +73,8 @@ export default function ProgressPage() {
       if (subject !== 'all') params.set('subject', subject);
       if (difficulty && difficulty !== 'all') params.set('difficulty', difficulty);
 
+      // Send timezone offset in minutes so the API can align dates to user's local day
+      params.set('tzOffset', String(new Date().getTimezoneOffset() * -1));
       const response = await fetch(`/api/progress?${params.toString()}`);
       if (!response.ok) throw new Error('Failed to fetch progress data');
       const data = await response.json();

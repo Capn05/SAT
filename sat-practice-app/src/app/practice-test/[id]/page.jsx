@@ -251,7 +251,10 @@ export default function PracticeTestPage({ params }) {
       setModule1Completed(true);
       
       // Determine Module 2 difficulty based on Module 1 score
-      const useHarderModule = scorePercentage >= 70;
+      // Thresholds: Math 14/22 (~64%), Reading & Writing 18/27 (~67%)
+      const defaultModuleQuestions = subject?.includes('Math') ? 22 : 27;
+      const thresholdCorrect = subject?.includes('Math') ? 14 : 18;
+      const useHarderModule = correctCount >= thresholdCorrect;
       setIsHarderModule2(useHarderModule);
       
       // Fetch Module 2 questions with appropriate difficulty
@@ -477,7 +480,7 @@ export default function PracticeTestPage({ params }) {
             <div className="space-y-4 mb-8">
               <p className="text-gray-600">
                 You are about to start <strong>{testName}</strong>, a timed practice test 
-                that simulates the actual Digital SAT exam experience.
+                that simulates the actual Digital PSAT exam experience.
               </p>
               
               <div className="bg-blue-50 p-4 rounded-lg">
