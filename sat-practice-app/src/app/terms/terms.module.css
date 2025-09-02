@@ -1,0 +1,181 @@
+/* Plain Terms Page Styling */
+.pageWrapper {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.backButtonContainer {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e5e9;
+  padding: 12px 0;
+}
+
+.backButtonInner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #10b981, #059669);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: linear-gradient(to right, #059669, #047857);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+.backButtonIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.contentWrapper {
+  padding: 0;
+}
+
+.contentContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.contentCard {
+  background-color: white;
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c1e21;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #65676b;
+  font-weight: normal;
+}
+
+.content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.34;
+  color: #1c1e21;
+}
+
+/* Plain document styling */
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1e21;
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.sectionSubtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1e21;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.sectionText {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.bulletList {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.bulletList li {
+  margin-bottom: 4px;
+}
+
+.numberedList {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.numberedList li {
+  margin-bottom: 8px;
+}
+
+.indentedSection {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.strongText {
+  font-weight: 600;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #e1e5e9;
+  margin: 32px 0;
+}
+
+.tableOfContents {
+  margin-bottom: 32px;
+}
+
+.tableOfContents ol {
+  padding-left: 20px;
+}
+
+.tableOfContents li {
+  margin-bottom: 4px;
+}
+
+.tableOfContents a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.tableOfContents a:hover {
+  text-decoration: underline;
+}
+
+.contactEmail {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.contactEmail:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e1e5e9;
+}
