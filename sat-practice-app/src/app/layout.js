@@ -41,8 +41,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Special handling for the landing page route - we don't need the sidebar/nav there
-  const isLandingPage = children?.props?.childProp?.segment === 'landing';
+  // Special handling for public pages that don't need authentication/sidebar/nav
+  const currentSegment = children?.props?.childProp?.segment;
+  const isPublicPage = currentSegment === 'landing' || currentSegment === 'privacy' || currentSegment === 'terms';
 
   return (
     <html lang="en">
@@ -50,20 +51,20 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}
         style={{ margin: 0, display: "flex" }}
       >
-        {/* Desktop Sidebar - hidden on mobile */}
-        {!isLandingPage && <Sidebar />}
+        {/* Desktop Sidebar - hidden on mobile and public pages */}
+        {!isPublicPage && <Sidebar />}
         
         <div style={{ 
-          marginLeft: isLandingPage ? "0px" : "0px",
+          marginLeft: isPublicPage ? "0px" : "0px",
           flex: 1,
-          width: isLandingPage ? "100%" : "auto",
-          paddingBottom: isLandingPage ? "0" : "60px" // Add padding for mobile nav
+          width: isPublicPage ? "100%" : "auto",
+          paddingBottom: isPublicPage ? "0" : "60px" // Add padding for mobile nav
         }}>
           {children}
         </div>
         
-        {/* Mobile Navigation - hidden on desktop */}
-        {!isLandingPage && <MobileNav />}
+        {/* Mobile Navigation - hidden on desktop and public pages */}
+        {!isPublicPage && <MobileNav />}
       </body>
     </html>
   );

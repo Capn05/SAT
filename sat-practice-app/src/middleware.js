@@ -64,7 +64,9 @@ export async function middleware(req) {
     '/forgot-password',
     '/reset-password',
     '/pricing',
-    '/welcome'  // New landing page path
+    '/welcome',  // New landing page path
+    '/privacy',  // Privacy policy page
+    '/terms'     // Terms of use page
   ];
   
   // Special handling for auth callback
