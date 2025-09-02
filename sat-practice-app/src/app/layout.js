@@ -1,9 +1,8 @@
-import Sidebar from "../components/Sidebar.tsx";
-import MobileNav from "../components/MobileNav.tsx";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Noto_Sans, Roboto } from "next/font/google";
 import "./global.css";
 import Providers from './providers';
+import ConditionalLayout from './components/ConditionalLayout.jsx';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,34 +40,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Special handling for public pages that don't need authentication/sidebar/nav
-  const currentSegment = children?.props?.childProp?.segment;
-  const isPublicPage = currentSegment === 'landing' || currentSegment === 'privacy' || currentSegment === 'terms';
-
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}
-        style={{ 
-          margin: 0, 
-          display: isPublicPage ? "block" : "flex" 
-        }}
+        style={{ margin: 0, display: "flex" }}
       >
         <Providers>
-          {/* Desktop Sidebar - hidden on mobile and public pages */}
-          {!isPublicPage && <Sidebar />}
-          
-          <div style={{ 
-            marginLeft: isPublicPage ? "0px" : "0px",
-            flex: 1,
-            width: isPublicPage ? "100%" : "auto",
-            paddingBottom: isPublicPage ? "0" : "60px" // Add padding for mobile nav
-          }}>
+          <ConditionalLayout>
             {children}
-          </div>
-          
-          {/* Mobile Navigation - hidden on desktop and public pages */}
-          {!isPublicPage && <MobileNav />}
+          </ConditionalLayout>
         </Providers>
       </body>
     </html>
