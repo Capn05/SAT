@@ -28,7 +28,7 @@
 
 ## Acceptance of Terms
 
-By accessing or using Brill Tutor's SAT preparation platform (the "Service"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use our Service.
+By accessing or using Brill Tutor's standardized test preparation platform (the "Service"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use our Service.
 
 ### Who These Terms Apply To
 - **Individual Users:** Students and parents who create personal accounts
@@ -48,21 +48,21 @@ We may modify these Terms as described in Section 14. Continued use of the Servi
 
 ## Description of Service
 
-Brill Tutor is an AI-powered SAT preparation platform designed to help students improve their SAT scores through personalized practice and instruction.
+Brill Tutor is an AI-powered standardized test preparation platform designed to help students improve their standardized test scores through personalized practice and instruction.
 
 ### Core Features
 - **2,000+ Practice Questions:** Covering Math and Reading & Writing sections
-- **15+ Full-Length Practice Tests:** Adaptive exams that mirror the real SAT experience
+- **15+ Full-Length Practice Tests:** Adaptive exams that mirror the real standardized test experience
 - **AI Tutor "Brill":** Personalized hints, explanations, and study guidance
 - **Performance Analytics:** Detailed progress tracking and weakness identification
 - **Multiple Practice Modes:** 
-  - Quick Practice (15 random questions)
+  - Quick Practice (random questions of preferred difficulty)
   - Skills Practice (targeted by topic)
   - Timed Practice Tests (full exam simulation)
 
 ### Educational Purpose
 Our Service is designed exclusively for:
-- SAT test preparation and study
+- Standardized test preparation and study
 - Educational skill development
 - Academic progress tracking
 - Learning enhancement through AI assistance
@@ -70,7 +70,7 @@ Our Service is designed exclusively for:
 ### Service Limitations
 Please note that our Service:
 - Provides practice materials but is not affiliated with College Board
-- Cannot guarantee specific SAT score improvements
+- Cannot guarantee specific standardized test score improvements
 - Is not a substitute for professional educational advice
 
 ---
@@ -147,7 +147,7 @@ If payment fails:
 
 ### Acceptable Use
 You agree to use the Service only for:
-- Personal SAT preparation and study
+- Personal standardized test preparation and study
 - Educational purposes as intended
 - Lawful activities in compliance with applicable laws
 - Activities that do not harm other users or our Service
@@ -156,8 +156,7 @@ You agree to use the Service only for:
 You may NOT:
 
 #### Academic Integrity Violations
-- Use the Service during actual SAT examinations
-- Attempt to circumvent practice question limitations
+- Use the Service during actual standardized test examinations
 - Create or distribute answer keys or shortcuts
 
 #### Technical Violations
@@ -191,9 +190,9 @@ Violation of these Terms may result in:
 
 ### Content Standards
 We strive to provide:
-- **High-Quality Questions:** Modeled after official SAT format and content
+- **High-Quality Questions:** Modeled after official standardized test format and content
 - **Accurate Explanations:** Detailed solutions and learning guidance  
-- **Current Standards:** Updated to reflect current SAT requirements
+- **Current Standards:** Updated to reflect current standardized test requirements
 - **Comprehensive Coverage:** All tested topics and skill areas
 
 ### No Guarantee of Accuracy
@@ -201,20 +200,20 @@ While we work to ensure accuracy:
 - Content may contain errors or become outdated
 - We are not liable for any inaccuracies
 - Users should verify information with official sources
-- Practice scores may not predict actual SAT performance
+- Practice scores may not predict actual standardized test performance
 
 ### Score Improvement Disclaimer
-**We do not guarantee SAT score improvements.** Results depend on:
+**We do not guarantee standardized test score improvements.** Results depend on:
 - Individual student effort and study habits
 - Starting skill level and academic background
 - Amount and consistency of practice
 - Use of additional study resources
 
-### Official SAT Information
+### Official Standardized Test Information
 - We are not affiliated with College Board
-- Official SAT information should be obtained from collegeboard.org
+- Official standardized test information should be obtained from collegeboard.org
 - Our Service provides practice, not official testing
-- Registration for actual SAT exams must be done through College Board
+- Registration for actual standardized test exams must be done through College Board
 
 ---
 
@@ -230,7 +229,7 @@ Brill Tutor owns all rights to:
 
 ### Your License to Use Content
 We grant you a limited, personal, non-exclusive license to:
-- Access and use our Service for SAT preparation
+- Access and use our Service for standardized test preparation
 - View and interact with our educational content
 - Print practice questions for personal study (not for redistribution)
 - Use our AI tutor for learning assistance
@@ -283,10 +282,7 @@ For school-based users:
 - FERPA protections apply to educational records
 
 ### Data Retention and Deletion
-- Active accounts: Data retained for service provision
-- Deleted accounts: Data removed within 60 days
-- Legal requirements: Some data may be retained longer if required by law
-- User control: You can request data deletion at any time
+For active accounts, we retain your data as necessary to provide our Service. When you delete your account, we remove your data within 60 days of deletion. Some data may be retained longer if required by law or legal obligations. You maintain control over your data and can request data deletion at any time by contacting us.
 
 ---
 
@@ -298,7 +294,7 @@ Our AI tutor "Brill" can:
 - **Explain Solutions:** Break down problem-solving approaches
 - **Identify Patterns:** Help you understand common question types
 - **Personalize Learning:** Adapt responses to your skill level
-- **Answer Questions:** Respond to general SAT preparation inquiries
+- **Answer Questions:** Respond to general standardized test preparation inquiries
 
 ### AI Limitations and Disclaimers
 Please understand that our AI tutor:
@@ -347,7 +343,6 @@ To use our Service effectively, you need:
 
 ### Technical Support
 If you experience technical issues:
-- Check our Help Center at help.brilltutor.com
 - Contact brillai.tutor@gmail.com for assistance
 - We aim to respond to support requests within 24 hours
 - Emergency issues receive priority response
@@ -364,7 +359,7 @@ We are not liable for:
 ## Limitation of Liability
 
 ### Educational Service Nature
-Brill Tutor is an educational preparation service. We provide practice materials and study tools but cannot guarantee specific outcomes or SAT score improvements.
+Brill Tutor is an educational preparation service. We provide practice materials and study tools but cannot guarantee specific outcomes or standardized test score improvements.
 
 ### Limitation of Damages
 TO THE MAXIMUM EXTENT PERMITTED BY LAW:
@@ -390,7 +385,7 @@ We are not liable for damages caused by:
 - Your failure to follow instructions or recommendations
 
 ### Educational Results Disclaimer
-- **No Score Guarantees:** We cannot guarantee SAT score improvements
+- **No Score Guarantees:** We cannot guarantee standardized test score improvements
 - **Individual Results Vary:** Effectiveness depends on many factors
 - **Supplemental Tool:** Our Service should supplement other study methods
 - **Professional Advice:** Consult educators for personalized guidance
@@ -622,4 +617,4 @@ Our failure to enforce any Term does not:
 
 These Terms of Use are effective as of September 1, 2025. For questions about these Terms or our Service, please contact us at brillai.tutor@gmail.com.
 
-Thank you for choosing Brill Tutor for your SAT preparation!
+Thank you for choosing Brill Tutor for your standardized test preparation!

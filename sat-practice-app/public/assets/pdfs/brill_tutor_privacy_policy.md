@@ -27,12 +27,12 @@
 
 ## Introduction
 
-Welcome to Brill Tutor, an AI-powered SAT preparation platform. This Privacy Policy explains how Brill Tutor ("we," "our," or "us") collects, uses, protects, and shares information when you use our SAT preparation service (the "Service").
+Welcome to Brill Tutor, an AI-powered standardized test preparation platform. This Privacy Policy explains how Brill Tutor ("we," "our," or "us") collects, uses, protects, and shares information when you use our standardized test preparation service (the "Service").
 
 **We are committed to protecting your privacy and ensuring you own and control your educational data.** This policy describes our practices in clear, understandable language and explains your rights regarding your information.
 
 Our Service provides:
-- 2,000+ SAT practice questions across Math and Reading & Writing
+- 2,000+ standardized test practice questions across Math and Reading & Writing
 - 15+ full-length adaptive practice exams
 - AI tutor assistance with personalized hints and explanations
 - Performance analytics and progress tracking
@@ -42,7 +42,7 @@ Our Service provides:
 
 ## Information We Collect
 
-We limit our data collection to what is necessary to provide you with an excellent SAT preparation experience. Here's exactly what we collect:
+We limit our data collection to what is necessary to provide you with an excellent standardized test preparation experience. Here's exactly what we collect:
 
 ### Account Information
 When you create an account, we collect:
@@ -51,7 +51,7 @@ When you create an account, we collect:
 
 
 ### Educational Data and Performance Information
-To provide personalized SAT preparation, we collect:
+To provide personalized standardized test preparation, we collect:
 - **Practice Session Data:** Your answers to practice questions, response times, and completion status
 - **Performance Analytics:** Accuracy rates, strengths/weaknesses analysis, and progress over time
 - **Study Preferences:** Difficulty level selections, subject focus areas, and practice modes used
@@ -80,7 +80,7 @@ When you contact us:
 
 ## How We Use Your Information
 
-We use your information solely to provide, improve, and personalize your SAT preparation experience:
+We use your information solely to provide, improve, and personalize your standardized test preparation experience:
 
 ### Service Delivery
 - Provide access to practice questions, tests, and AI tutor
@@ -105,7 +105,7 @@ We use your information solely to provide, improve, and personalize your SAT pre
 - Protect against fraud, abuse, and security threats
 - Enforce our Terms of Service
 
-**We do NOT use your educational data for advertising, marketing to third parties, or any commercial purposes beyond providing you with SAT preparation services.**
+**We do NOT use your educational data for advertising, marketing to third parties, or any commercial purposes beyond providing you with standardized test preparation services.**
 
 ---
 
@@ -169,7 +169,7 @@ We will provide you with at least **15 days advance notice** of any changes to o
 
 ### User Control Over Third-Party Sharing
 You can opt out of non-essential third-party data sharing by:
-- Contacting us at privacy@brilltutor.com for  options
+- Contacting us at brillai.tutor@gmail.com for  options
 
 ---
 
@@ -284,7 +284,7 @@ We respect "Do Not Track" browser signals and will not track users who have enab
 ### Marketing Communications
 We may send you information about:
 - New features and service improvements
-- Educational content and SAT preparation tips
+- Educational content and standardized test preparation tips
 - Important account and billing notifications
 
 You can opt out of marketing communications at any time through:
@@ -299,7 +299,7 @@ We are committed to protecting children's privacy and comply with the Children's
 
 ### Age Requirements
 - **Minimum Age:** Users must be at least 13 years old
-- **Parental Consent:** Users under 18 should have parentalor school permission to use our service
+- **Parental Consent:** Users under 18 should have parental or school permission to use our service
 
 
 ### Data Collection from Children Under 13
@@ -339,7 +339,7 @@ Educational records may include:
 
 ### Use Restrictions
 FERPA-covered student information is used only for:
-- Providing SAT preparation services
+- Providing standardized test preparation services
 - Generating progress reports for educators
 - Improving educational outcomes
 
@@ -358,7 +358,7 @@ We comply with the General Data Protection Regulation (GDPR) and other internati
 
 ### Legal Basis for Processing
 We process your information based on:
-- **Contract:** To provide you with our SAT preparation service
+- **Contract:** To provide you with our standardized test preparation service
 - **Legitimate Interest:** To improve our service and prevent fraud
 - **Consent:** For optional features like analytics cookies
 - **Legal Obligation:** To comply with applicable laws
@@ -378,7 +378,7 @@ If you're an EU resident, you have additional rights including:
 
 ### Data Protection Officer
 For GDPR-related inquiries, contact our Data Protection Officer:
-- Email: dpo@brilltutor.com
+- Email: brillai.tutor@gmail.com
 - Response time: Within 30 days
 
 ---
