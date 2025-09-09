@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import SubjectSection from "../components/SubjectSection"
 import WeeklyTrack from "../components/WeeklyTrack"
 import TestCategories from "../components/topics"
-import { useAuth } from '../../../lib/AuthProvider'; // Use the new auth provider
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import AIChat from "../components/AIChatGeneral"
 import AnalyticsCard from "../components/AnalyticsCard"
 import Footer from "../components/Footer"
@@ -15,8 +15,9 @@ import DifficultyModal from '../components/DifficultyModal';
 import SubscriptionCheck from '../../components/SubscriptionCheck';
 
 export default function Dashboard() {
-  // Use the new centralized auth context
-  const { user, loading } = useAuth();
+  const supabase = createClientComponentClient();
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   
   const [showDifficultyModal, setShowDifficultyModal] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -24,21 +25,24 @@ export default function Dashboard() {
   const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
 
-  // Add a safety timeout to prevent infinite loading
+  // Load user from Supabase session
   useEffect(() => {
-    // Update local loading state when auth loading changes
-    setLocalLoading(loading);
-    
-    // Set a timeout to prevent infinite loading
-    const timeout = setTimeout(() => {
-      if (loading) {
-        console.warn("Dashboard loading timed out after 7 seconds");
-        setLocalLoading(false);
+    let isMounted = true;
+    const loadUser = async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!isMounted) return;
+        setUser(session?.user ?? null);
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+          setLocalLoading(false);
+        }
       }
-    }, 100);
-    
-    return () => clearTimeout(timeout);
-  }, [loading]);
+    };
+    loadUser();
+    return () => { isMounted = false; };
+  }, [supabase]);
 
   // Check for mobile viewport on mount and resize
   useEffect(() => {

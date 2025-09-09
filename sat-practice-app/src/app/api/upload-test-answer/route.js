@@ -1,4 +1,5 @@
-import { supabase } from '../../../../lib/supabase';
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
 // Add export for POST method
@@ -17,6 +18,9 @@ export async function POST(request) {
         { status: 400 }
       );
     }
+
+    const cookieStore = cookies();
+    const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
 
     // Get question details to get domain and subcategory info
     const { data: question, error: questionError } = await supabase

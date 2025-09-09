@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState, useCallback } from 'react';
-import { supabase } from '../../../lib/supabase';
 import { CheckCircle, XCircle } from 'lucide-react';
 import ChatSidebar from './ChatSidebar';
 import { motion, AnimatePresence } from 'framer-motion';

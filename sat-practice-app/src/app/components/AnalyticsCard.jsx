@@ -47,57 +47,22 @@ export default function AnalyticsCard() {
       try {
         setLoading(true);
         
-        // Check if we have a session already cached in localStorage
-        const localSession = localStorage.getItem('supabase.auth.token');
-        if (!localSession) {
-          console.log('No session found in local storage');
-          // No session cached, check with the server
-          const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-          
-          if (sessionError || !session) {
-            console.log('No valid session found');
-            return;
-          }
-          
-          console.log('Fetching stats for user:', session.user.id);
-          
-          const response = await fetch(`/api/user-stats?userId=${session.user.id}`);
-          
-          if (!response.ok) {
-            throw new Error(`API error: ${response.status}`);
-          }
-          
-          const data = await response.json();
-          
-          if (data && data.stats) {
-            // Cache the stats data
-            statsCache.data = data.stats;
-            statsCache.lastFetched = Date.now();
-            
-            setStats(data.stats);
-          }
-        } else {
-          // We already have a session in localStorage, parse it
-          const session = JSON.parse(localSession);
-          if (session?.user) {
-            console.log('Using cached session for user:', session.user.id);
-            
-            const response = await fetch(`/api/user-stats?userId=${session.user.id}`);
-            
-            if (!response.ok) {
-              throw new Error(`API error: ${response.status}`);
-            }
-            
-            const data = await response.json();
-            
-            if (data && data.stats) {
-              // Cache the stats data
-              statsCache.data = data.stats;
-              statsCache.lastFetched = Date.now();
-              
-              setStats(data.stats);
-            }
-          }
+        // Always use Supabase to get the current session
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+        if (sessionError || !session) {
+          console.log('No valid session found');
+          return;
+        }
+        console.log('Fetching stats for user:', session.user.id);
+        const response = await fetch(`/api/user-stats?userId=${session.user.id}`);
+        if (!response.ok) {
+          throw new Error(`API error: ${response.status}`);
+        }
+        const data = await response.json();
+        if (data && data.stats) {
+          statsCache.data = data.stats;
+          statsCache.lastFetched = Date.now();
+          setStats(data.stats);
         }
       } catch (error) {
         console.error('Error fetching user stats:', error);

@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { GraduationCap } from 'lucide-react';
 import { useState } from 'react';
-import { supabase } from '../../../lib/supabase';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
 export default function SignUp() {
   const router = useRouter();
+  const supabase = createClientComponentClient();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);

@@ -4,11 +4,24 @@ import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 import TopBar from '../components/TopBar'
 import Question from '../components/Question'
-import useAuth from '../../../lib/useAuth'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 // Create a client component for content
 function QuestionPageContent() {
-  useAuth()
+  const router = useRouter()
+  const supabase = createClientComponentClient()
+  useEffect(() => {
+    let isMounted = true
+    const ensureAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (!isMounted) return
+      if (!session) router.replace('/login')
+    }
+    ensureAuth()
+    return () => { isMounted = false }
+  }, [router, supabase])
   const searchParams = useSearchParams()
 
   // Access the 'subject', 'mode', and 'skillName' query parameters
