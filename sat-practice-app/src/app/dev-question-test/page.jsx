@@ -32,6 +32,12 @@ export default function DevQuestionTest() {
   const [subcategories, setSubcategories] = useState([]);
   const [subcategoriesLoading, setSubcategoriesLoading] = useState(false);
   const [selectedSubcategory, setSelectedSubcategory] = useState('');
+  
+  // New state for editing functionality
+  const [editModal, setEditModal] = useState(false);
+  const [editType, setEditType] = useState(''); // 'question' or 'option'
+  const [editData, setEditData] = useState({});
+  const [saving, setSaving] = useState(false);
 
   // Helper function to determine if question is math
   const isMathQuestion = (question) => {
@@ -166,6 +172,120 @@ export default function DevQuestionTest() {
       fetchSubcategories();
     }
   }, [activeTab, subcategories.length, subcategoriesLoading]);
+
+  // Edit functions
+  const openQuestionEdit = (question) => {
+    console.log('Opening question edit for:', question);
+    setEditType('question');
+    setEditData({
+      id: question.id,
+      question_text: question.text,
+      difficulty: question.difficulty,
+      image_url: question.imageUrl || ''
+    });
+    setEditModal(true);
+  };
+
+  const openOptionEdit = (option, questionId) => {
+    console.log('Opening option edit for:', option, 'questionId:', questionId);
+    setEditType('option');
+    setEditData({
+      id: option.id,
+      questionId: questionId,
+      label: option.text,
+      is_correct: option.isCorrect
+    });
+    setEditModal(true);
+  };
+
+  const handleSaveEdit = async () => {
+    setSaving(true);
+    
+    const requestData = {
+      type: editType,
+      id: editData.id,
+      data: editType === 'question' ? {
+        question_text: editData.question_text,
+        difficulty: editData.difficulty,
+        image_url: editData.image_url
+      } : {
+        label: editData.label,
+        is_correct: editData.is_correct
+      }
+    };
+    
+    console.log('Sending update request:', requestData);
+    
+    try {
+      const response = await fetch('/api/update-question', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+      });
+
+      console.log('Response status:', response.status);
+      const result = await response.json();
+      console.log('Response data:', result);
+
+      if (!response.ok) {
+        throw new Error(result.error || `HTTP ${response.status}`);
+      }
+
+      // Update local state
+      if (editType === 'question') {
+        // Update single question if it exists
+        if (question && question.id === editData.id) {
+          setQuestion(prev => ({
+            ...prev,
+            text: editData.question_text,
+            difficulty: editData.difficulty,
+            imageUrl: editData.image_url
+          }));
+        }
+        // Update bulk questions if they exist
+        setQuestions(prev => prev.map(q => 
+          q.id === editData.id 
+            ? { ...q, text: editData.question_text, difficulty: editData.difficulty, imageUrl: editData.image_url }
+            : q
+        ));
+      } else {
+        // Update options in both single and bulk views
+        const updateOptions = (q) => ({
+          ...q,
+          options: q.options.map(opt => 
+            opt.id === editData.id 
+              ? { ...opt, text: editData.label, isCorrect: editData.is_correct }
+              : opt
+          )
+        });
+
+        if (question) {
+          setQuestion(updateOptions);
+        }
+        setQuestions(prev => prev.map(q => 
+          q.id === editData.questionId ? updateOptions(q) : q
+        ));
+      }
+
+      setEditModal(false);
+      setEditData({});
+      alert(`${editType === 'question' ? 'Question' : 'Option'} updated successfully!`);
+
+    } catch (err) {
+      console.error('Error saving edit:', err);
+      alert(`Error: ${err.message}`);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleCancelEdit = () => {
+    setEditModal(false);
+    setEditData({});
+    setEditType('');
+  };
 
   return (
     <div style={styles.container}>
@@ -352,7 +472,24 @@ export default function DevQuestionTest() {
 
           {/* Question Content */}
           <div style={styles.questionSection}>
-            <h2 style={styles.sectionTitle}>❓ Question</h2>
+            <div style={styles.sectionHeader}>
+              <h2 style={styles.sectionTitle}>❓ Question</h2>
+              <button
+                style={styles.editButton}
+                onClick={() => openQuestionEdit(question)}
+                title="Edit Question"
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = '#dbeafe';
+                  e.target.style.transform = 'translateY(-1px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = '#eff6ff';
+                  e.target.style.transform = 'translateY(0)';
+                }}
+              >
+                ✏️ Edit
+              </button>
+            </div>
             <div 
               style={styles.questionText}
               dangerouslySetInnerHTML={{ __html: renderResponse(question.text, question) }}
@@ -393,9 +530,26 @@ export default function DevQuestionTest() {
                       <span style={styles.optionValue}>{option.value}.</span>
                       <span style={styles.optionId}>ID: {option.id}</span>
                     </div>
-                    {option.isCorrect && (
-                      <span style={styles.correctBadge}>✅ CORRECT</span>
-                    )}
+                    <div style={styles.optionHeaderRight}>
+                      {option.isCorrect && (
+                        <span style={styles.correctBadge}>✅ CORRECT</span>
+                      )}
+                      <button
+                        style={styles.editOptionButton}
+                        onClick={() => openOptionEdit(option, question.id)}
+                        title="Edit Option"
+                        onMouseEnter={(e) => {
+                          e.target.style.backgroundColor = '#f3f4f6';
+                          e.target.style.color = '#374151';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.backgroundColor = '#f9fafb';
+                          e.target.style.color = '#6b7280';
+                        }}
+                      >
+                        ✏️
+                      </button>
+                    </div>
                   </div>
                   <div 
                     style={styles.optionText}
@@ -441,9 +595,26 @@ export default function DevQuestionTest() {
             <div key={question.id} style={styles.bulkQuestionCard}>
               {/* Question Header */}
               <div style={styles.bulkQuestionHeader}>
-                <h3 style={styles.bulkQuestionTitle}>
-                  Question #{index + 1} (ID: {question.id})
-                </h3>
+                <div style={styles.bulkQuestionTitleSection}>
+                  <h3 style={styles.bulkQuestionTitle}>
+                    Question #{index + 1} (ID: {question.id})
+                  </h3>
+                  <button
+                    style={styles.editButton}
+                    onClick={() => openQuestionEdit(question)}
+                    title="Edit Question"
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = '#dbeafe';
+                      e.target.style.transform = 'translateY(-1px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = '#eff6ff';
+                      e.target.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    ✏️ Edit
+                  </button>
+                </div>
                 <div style={styles.bulkQuestionMeta}>
                   <span style={styles.metaBadge}>
                     {question.difficulty}
@@ -496,9 +667,26 @@ export default function DevQuestionTest() {
                           <span style={styles.bulkOptionValue}>{option.value}.</span>
                           <span style={styles.bulkOptionId}>ID: {option.id}</span>
                         </div>
-                        {option.isCorrect && (
-                          <span style={styles.bulkCorrectBadge}>✅ CORRECT</span>
-                        )}
+                        <div style={styles.optionHeaderRight}>
+                          {option.isCorrect && (
+                            <span style={styles.bulkCorrectBadge}>✅ CORRECT</span>
+                          )}
+                          <button
+                            style={styles.editOptionButton}
+                            onClick={() => openOptionEdit(option, question.id)}
+                            title="Edit Option"
+                            onMouseEnter={(e) => {
+                              e.target.style.backgroundColor = '#f3f4f6';
+                              e.target.style.color = '#374151';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.backgroundColor = '#f9fafb';
+                              e.target.style.color = '#6b7280';
+                            }}
+                          >
+                            ✏️
+                          </button>
+                        </div>
                       </div>
                       <div 
                         style={styles.bulkOptionText}
@@ -518,6 +706,111 @@ export default function DevQuestionTest() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Edit Modal */}
+      {editModal && (
+        <div 
+          style={styles.modalOverlay}
+          onClick={handleCancelEdit}
+        >
+          <div 
+            style={styles.editModalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={styles.editModalHeader}>
+              <h3 style={styles.editModalTitle}>
+                {editType === 'question' ? '✏️ Edit Question' : '✏️ Edit Option'}
+              </h3>
+              <button 
+                style={styles.modalCloseButton}
+                onClick={handleCancelEdit}
+              >
+                ×
+              </button>
+            </div>
+            
+            <div style={styles.editModalBody}>
+              {editType === 'question' ? (
+                <>
+                  <div style={styles.editFormGroup}>
+                    <label style={styles.editLabel}>Question Text:</label>
+                    <textarea
+                      style={styles.editTextarea}
+                      value={editData.question_text || ''}
+                      onChange={(e) => setEditData(prev => ({ ...prev, question_text: e.target.value }))}
+                      rows={6}
+                      placeholder="Enter question text..."
+                    />
+                  </div>
+                  <div style={styles.editFormGroup}>
+                    <label style={styles.editLabel}>Difficulty:</label>
+                    <select
+                      style={styles.editSelect}
+                      value={editData.difficulty || ''}
+                      onChange={(e) => setEditData(prev => ({ ...prev, difficulty: e.target.value }))}
+                    >
+                      <option value="Easy">Easy</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Hard">Hard</option>
+                    </select>
+                  </div>
+                  <div style={styles.editFormGroup}>
+                    <label style={styles.editLabel}>Image URL (optional):</label>
+                    <input
+                      style={styles.editInput}
+                      type="text"
+                      value={editData.image_url || ''}
+                      onChange={(e) => setEditData(prev => ({ ...prev, image_url: e.target.value }))}
+                      placeholder="https://example.com/image.png"
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div style={styles.editFormGroup}>
+                    <label style={styles.editLabel}>Option Text:</label>
+                    <textarea
+                      style={styles.editTextarea}
+                      value={editData.label || ''}
+                      onChange={(e) => setEditData(prev => ({ ...prev, label: e.target.value }))}
+                      rows={4}
+                      placeholder="Enter option text..."
+                    />
+                  </div>
+                  <div style={styles.editFormGroup}>
+                    <label style={styles.editCheckboxLabel}>
+                      <input
+                        type="checkbox"
+                        checked={editData.is_correct || false}
+                        onChange={(e) => setEditData(prev => ({ ...prev, is_correct: e.target.checked }))}
+                        style={styles.editCheckbox}
+                      />
+                      This is the correct answer
+                    </label>
+                  </div>
+                </>
+              )}
+            </div>
+
+            <div style={styles.editModalFooter}>
+              <button
+                style={styles.editCancelButton}
+                onClick={handleCancelEdit}
+                disabled={saving}
+              >
+                Cancel
+              </button>
+              <button
+                style={styles.editSaveButton}
+                onClick={handleSaveEdit}
+                disabled={saving}
+              >
+                {saving ? 'Saving...' : 'Save Changes'}
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -1004,5 +1297,202 @@ const styles = {
     padding: '8px 12px',
     borderRadius: '6px',
     border: '1px solid #22c55e',
+  },
+  // Edit functionality styles
+  modalOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1000,
+    padding: '20px',
+  },
+  sectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: '16px',
+  },
+  editButton: {
+    padding: '8px 16px',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#3b82f6',
+    backgroundColor: '#eff6ff',
+    border: '1px solid #3b82f6',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      backgroundColor: '#dbeafe',
+      transform: 'translateY(-1px)',
+    },
+  },
+  editOptionButton: {
+    padding: '4px 8px',
+    fontSize: '12px',
+    color: '#6b7280',
+    backgroundColor: '#f9fafb',
+    border: '1px solid #e5e7eb',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    marginLeft: '8px',
+    '&:hover': {
+      backgroundColor: '#f3f4f6',
+      color: '#374151',
+    },
+  },
+  optionHeaderRight: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+  },
+  bulkQuestionTitleSection: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: '12px',
+  },
+  editModalContent: {
+    backgroundColor: 'white',
+    borderRadius: '12px',
+    maxWidth: '600px',
+    width: '90%',
+    maxHeight: '80vh',
+    overflow: 'hidden',
+    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    margin: 'auto',
+  },
+  editModalHeader: {
+    padding: '20px 24px',
+    borderBottom: '1px solid #e5e7eb',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  editModalTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#1f2937',
+    margin: '0',
+  },
+  editModalBody: {
+    padding: '24px',
+    flex: 1,
+    overflow: 'auto',
+  },
+  editModalFooter: {
+    padding: '16px 24px',
+    borderTop: '1px solid #e5e7eb',
+    display: 'flex',
+    gap: '12px',
+    justifyContent: 'flex-end',
+  },
+  editFormGroup: {
+    marginBottom: '20px',
+  },
+  editLabel: {
+    display: 'block',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#374151',
+    marginBottom: '8px',
+  },
+  editInput: {
+    width: '100%',
+    padding: '12px',
+    fontSize: '14px',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    transition: 'border-color 0.2s ease',
+    '&:focus': {
+      outline: 'none',
+      borderColor: '#3b82f6',
+      boxShadow: '0 0 0 3px rgba(59, 130, 246, 0.1)',
+    },
+  },
+  editTextarea: {
+    width: '100%',
+    padding: '12px',
+    fontSize: '14px',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    resize: 'vertical',
+    fontFamily: 'inherit',
+    transition: 'border-color 0.2s ease',
+    '&:focus': {
+      outline: 'none',
+      borderColor: '#3b82f6',
+      boxShadow: '0 0 0 3px rgba(59, 130, 246, 0.1)',
+    },
+  },
+  editSelect: {
+    width: '100%',
+    padding: '12px',
+    fontSize: '14px',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    backgroundColor: 'white',
+    cursor: 'pointer',
+    transition: 'border-color 0.2s ease',
+    '&:focus': {
+      outline: 'none',
+      borderColor: '#3b82f6',
+      boxShadow: '0 0 0 3px rgba(59, 130, 246, 0.1)',
+    },
+  },
+  editCheckboxLabel: {
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '14px',
+    color: '#374151',
+    cursor: 'pointer',
+  },
+  editCheckbox: {
+    marginRight: '8px',
+    transform: 'scale(1.2)',
+  },
+  editSaveButton: {
+    padding: '10px 20px',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: 'white',
+    backgroundColor: '#10b981',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    '&:hover:not(:disabled)': {
+      backgroundColor: '#059669',
+      transform: 'translateY(-1px)',
+    },
+    '&:disabled': {
+      backgroundColor: '#9ca3af',
+      cursor: 'not-allowed',
+    },
+  },
+  editCancelButton: {
+    padding: '10px 20px',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#6b7280',
+    backgroundColor: '#f9fafb',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    '&:hover:not(:disabled)': {
+      backgroundColor: '#f3f4f6',
+      borderColor: '#9ca3af',
+    },
   },
 };
