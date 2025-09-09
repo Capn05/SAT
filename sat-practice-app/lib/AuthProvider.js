@@ -62,27 +62,62 @@ export function AuthProvider({ children }) {
               // Only do this if we haven't checked recently
               const lastServerCheck = localStorage.getItem('supabase.auth.lastServerCheck');
               if (!lastServerCheck || (now - parseInt(lastServerCheck, 10)) > 60000) { // 1 minute
-                const { data: { user: serverUser }, error } = await supabase.auth.getUser();
-                localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
-                
-                if (serverUser) {
-                  // Update if server has newer data
-                  localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-                  if (isMounted) {
-                    setUser(serverUser);
+                try {
+                  const { data: { user: serverUser }, error } = await supabase.auth.getUser();
+                  localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+                  
+                  if (serverUser) {
+                    // Update if server has newer data
+                    localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
+                    if (isMounted) {
+                      setUser(serverUser);
+                    }
+                  } else if (!isPublicPath && !error) {
+                    // Local storage has user but server doesn't - user likely signed out elsewhere
+                    localStorage.removeItem('supabase.auth.user');
+                    localStorage.removeItem('supabase.auth.lastServerCheck');
+                    if (isMounted) {
+                      setUser(null);
+                      router.replace('/login');
+                    }
                   }
-                } else if (!isPublicPath && !error) {
-                  // Local storage has user but server doesn't - user likely signed out elsewhere
-                  localStorage.removeItem('supabase.auth.user');
-                  if (isMounted) {
-                    setUser(null);
-                    router.replace('/login');
-                  }
+                } catch (serverError) {
+                  console.warn('Server auth check failed, using cached user:', serverError.message);
+                  // If server check fails, continue with cached user for now
+                  // The auth state change listener will handle session updates
                 }
               }
             } else {
               // Invalid user data in localStorage
               localStorage.removeItem('supabase.auth.user');
+              localStorage.removeItem('supabase.auth.lastServerCheck');
+              try {
+                const { data: { user: serverUser }, error } = await supabase.auth.getUser();
+                localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+                
+                if (serverUser) {
+                  localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
+                  if (isMounted) {
+                    setUser(serverUser);
+                  }
+                } else if (!isPublicPath) {
+                  if (isMounted) {
+                    router.replace('/login');
+                  }
+                }
+              } catch (serverError) {
+                console.warn('Server user check failed:', serverError.message);
+                if (!isPublicPath && isMounted) {
+                  router.replace('/login');
+                }
+              }
+            }
+          } catch (parseError) {
+            // Handle JSON parse error (corrupted localStorage)
+            console.error('Failed to parse user from localStorage:', parseError);
+            localStorage.removeItem('supabase.auth.user');
+            localStorage.removeItem('supabase.auth.lastServerCheck');
+            try {
               const { data: { user: serverUser }, error } = await supabase.auth.getUser();
               localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
               
@@ -96,16 +131,37 @@ export function AuthProvider({ children }) {
                   router.replace('/login');
                 }
               }
+            } catch (serverError) {
+              console.warn('Server user check failed after parse error:', serverError.message);
+              if (!isPublicPath && isMounted) {
+                router.replace('/login');
+              }
             }
-          } catch (parseError) {
-            // Handle JSON parse error (corrupted localStorage)
-            console.error('Failed to parse user from localStorage:', parseError);
-            localStorage.removeItem('supabase.auth.user');
+          }
+        } else {
+          // If no local user, check with server (but be more cautious)
+          try {
             const { data: { user: serverUser }, error } = await supabase.auth.getUser();
-            localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
+            
+            if (error) {
+              console.warn('Auth error during initial check:', error.message);
+              // If it's a refresh token error, clear everything and redirect
+              if (error.message?.includes('refresh_token_not_found') || error.message?.includes('invalid_grant')) {
+                localStorage.removeItem('supabase.auth.user');
+                localStorage.removeItem('supabase.auth.lastServerCheck');
+                if (!isPublicPath && isMounted) {
+                  router.replace('/login');
+                }
+                return;
+              }
+              // For other errors, don't redirect immediately
+              return;
+            }
             
             if (serverUser) {
+              // Store user in local storage for future quick access
               localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
+              localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
               if (isMounted) {
                 setUser(serverUser);
               }
@@ -114,32 +170,27 @@ export function AuthProvider({ children }) {
                 router.replace('/login');
               }
             }
-          }
-        } else {
-          // If no local user, check with server
-          const { data: { user: serverUser }, error } = await supabase.auth.getUser();
-          
-          if (error && !isPublicPath) {
-            console.error('Auth error:', error);
-            router.replace('/login');
-            return;
-          }
-          
-          if (serverUser) {
-            // Store user in local storage for future quick access
-            localStorage.setItem('supabase.auth.user', JSON.stringify(serverUser));
-            localStorage.setItem('supabase.auth.lastServerCheck', now.toString());
-            if (isMounted) {
-              setUser(serverUser);
+          } catch (serverError) {
+            console.warn('Server check failed:', serverError.message);
+            // Don't redirect on network errors, let the user stay on the current page
+            if (!isPublicPath && serverError.message?.includes('refresh_token_not_found')) {
+              localStorage.removeItem('supabase.auth.user');
+              localStorage.removeItem('supabase.auth.lastServerCheck');
+              if (isMounted) {
+                router.replace('/login');
+              }
             }
-          } else if (!isPublicPath) {
-            router.replace('/login');
           }
         }
       } catch (error) {
         console.error('Auth check error:', error);
-        if (!isPublicPath) {
-          router.replace('/login');
+        // Only redirect on specific auth errors, not network errors
+        if (!isPublicPath && (error.message?.includes('refresh_token_not_found') || error.message?.includes('invalid_grant'))) {
+          localStorage.removeItem('supabase.auth.user');
+          localStorage.removeItem('supabase.auth.lastServerCheck');
+          if (isMounted) {
+            router.replace('/login');
+          }
         }
       } finally {
         if (isMounted) {

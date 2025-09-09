@@ -93,7 +93,17 @@ export async function middleware(req) {
     // Simple lightweight check without token refresh
     const { data, error } = await supabase.auth.getSession();
     
-    // Only redirect if we're certain there's no session
+    // If there's a specific auth error (like invalid refresh token), clear the session
+    if (error && (error.message?.includes('refresh_token_not_found') || error.message?.includes('invalid_grant'))) {
+      console.log('Invalid refresh token detected, clearing session');
+      // Clear the session and redirect to login
+      const response = NextResponse.redirect(new URL('/login', req.url));
+      response.cookies.delete('sb-access-token');
+      response.cookies.delete('sb-refresh-token');
+      return response;
+    }
+    
+    // Only redirect if we're certain there's no session and no errors
     if (!data.session && !error) {
       console.log('User not authenticated, redirecting to login from:', req.nextUrl.pathname);
       const redirectUrl = new URL('/login', req.url);
@@ -105,7 +115,14 @@ export async function middleware(req) {
     return res;
   } catch (error) {
     console.error('Middleware error:', error);
-    // On error, allow the request to proceed
+    
+    // If it's a rate limit error, let the request proceed to avoid cascading failures
+    if (error.message?.includes('429') || error.message?.includes('rate')) {
+      console.warn('Rate limit hit in middleware, allowing request to proceed');
+      return res;
+    }
+    
+    // For other errors, allow the request to proceed
     return res;
   }
 }
