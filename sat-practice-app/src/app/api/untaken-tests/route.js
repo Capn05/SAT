@@ -1,7 +1,10 @@
 
-import { supabase } from '../../../../lib/supabase';
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
 
 export async function GET(request) {
+  const cookieStore = cookies();
+  const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
   const { searchParams } = new URL(request.url);
   const userId = searchParams.get('userId');
   const subject = searchParams.get('subject');

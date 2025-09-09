@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useState, useEffect } from 'react';
-import { supabase } from '../../../lib/supabase';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('');
+  const supabase = createClientComponentClient();
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
