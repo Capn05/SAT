@@ -1,0 +1,457 @@
+[
+  {
+    "id": 8138,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "Enrollment in a summer camp increased over two consecutive years from $200$ to $220$. The camp director predicted that the percent increase from 2021 to 2022 would be double the percent increase from 2022 to 2023. Based on this prediction, how many students did the director expect to enroll in 2023?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 81380,
+        "label": "225",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 81381,
+        "label": "231",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 81382,
+        "label": "237",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 81383,
+        "label": "242",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 131114,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "After $30\\%$ of the original number of books in a library were checked out, $280$ books remained in the library. How many books were checked out from the library?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1311140,
+        "label": "84",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1311141,
+        "label": "120",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1311142,
+        "label": "140",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1311143,
+        "label": "400",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 140574,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "A telecommunications company guarantees that the data corruption rate on their network will not exceed $0.025\\%$. If a customer transmits $250$ gigabytes of data, what is the maximum amount of data, in megabytes, that could be corrupted while still meeting the company's guarantee? (Assume $1$ gigabyte = $1,000$ megabytes)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1405740,
+        "label": "62.5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1405741,
+        "label": "625",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1405742,
+        "label": "0.0625",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1405743,
+        "label": "25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 202784,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The number $a$ is $30\\%$ greater than the number $b$. The number $b$ is $80\\%$ less than $200$. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2027840,
+        "label": "52",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2027841,
+        "label": "208",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2027842,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2027843,
+        "label": "156",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 239112,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "In the year 2020, the population of Town A increased by $10\\%$ compared to 2019. In 2021, the population further increased by $5\\%$ compared to 2020. If the population in 2021 was $z$ times the population in 2019, what is the value of $z$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2391120,
+        "label": "1.150",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2391121,
+        "label": "1.050",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2391122,
+        "label": "1.155",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2391123,
+        "label": "1.105",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 307878,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The price of a share of stock in a tech company increased by $25\\%$ during the first quarter of the year. In the second quarter, due to market fluctuations, the price decreased by $10\\%$. What was the net percentage increase in the price of the stock over the first two quarters of the year?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3078780,
+        "label": "$12.5\\%$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3078781,
+        "label": "$15\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3078782,
+        "label": "$35\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3078783,
+        "label": "$17.5\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 632013,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "$70\\%$ of the fruits in a basket are apples. Of those apples, $80\\%$ are ripe. Of the ripe apples, $20\\%$ are organic. Which of the following is closest to the percentage of the fruits in the basket that are not ripe organic apples?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6320130,
+        "label": "$11.2\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6320131,
+        "label": "$50.0\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6320132,
+        "label": "$88.8\\%$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6320133,
+        "label": "$94.4\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 640349,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The number $p$ is $150\\%$ greater than the number $q$ is $60\\%$ less than $35$. What is the value of $p$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6403490,
+        "label": "14",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6403491,
+        "label": "21",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6403492,
+        "label": "35",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6403493,
+        "label": "53",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 754452,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The monthly website visits in thousands for a company from January to May were as follows: January: $20,000$, February: $25,000$, March: $30,000$, April: $24,000$, and May: $36,000$. What is the approximate percent increase in website visits from February to May?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7544520,
+        "label": "$36\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7544521,
+        "label": "$40\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7544522,
+        "label": "$50\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7544523,
+        "label": "$44\\%$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 840861,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The number $x$ is $30\\%$ greater than the positive number $y$. The number $z$ is $20\\%$ less than $x$. The number $z$ is how many times $y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8408610,
+        "label": "1.04",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8408611,
+        "label": "1.10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8408612,
+        "label": "0.90",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8408613,
+        "label": "1.50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 848658,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The initial price of a jacket was $P$. During a clearance sale, the price was reduced by $30\\%$. After the sale, the price was increased by $20\\%$ of the reduced price. What percentage of the original price $P$ is the final price of the jacket?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8486580,
+        "label": "$84\\%$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8486581,
+        "label": "$90\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8486582,
+        "label": "$76\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8486583,
+        "label": "$70\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 928850,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "$42$ is $q\\%$ greater than $30$. What is the value of $q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9288500,
+        "label": "24",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9288501,
+        "label": "40",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9288502,
+        "label": "70",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9288503,
+        "label": "140",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 957273,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Hard",
+    "question_text": "The number $x$ is $20\\%$ greater than the positive number $y$. The number $z$ is $25\\%$ less than $x$. The number $z$ is how many times $y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9572730,
+        "label": "0.90",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9572731,
+        "label": "0.95",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9572732,
+        "label": "0.85",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9572733,
+        "label": "1.05",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

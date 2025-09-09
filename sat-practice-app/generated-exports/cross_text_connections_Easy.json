@@ -1,0 +1,387 @@
+[
+  {
+    "id": 86227,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "Text 1 \n\n The use of renewable energy sources like solar and wind power is rapidly expanding.  Proponents argue that these technologies are essential for reducing carbon emissions and mitigating climate change.  They point to advancements in energy storage and grid management that make renewable sources increasingly reliable and cost-effective.  Many governments are now incentivizing renewable energy projects to accelerate the transition away from fossil fuels. \n \n Text 2 \n \n  While renewable energy is gaining traction, fossil fuels still dominate global energy production.  Critics of a rapid shift to renewables highlight the intermittency of solar and wind power, which can lead to energy supply disruptions.  They also raise concerns about the environmental impact of manufacturing renewable energy infrastructure and the challenges of scaling up these technologies quickly enough to meet global energy demands.  Fossil fuels, despite their environmental drawbacks, remain a dependable and energy-dense source.  \n  <br>\nBased on the texts, both authors would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 862270,
+        "label": "Renewable energy sources are currently more reliable than fossil fuels.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 862271,
+        "label": "The transition to renewable energy is a complex issue with both advantages and disadvantages.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 862272,
+        "label": "Fossil fuels should be completely phased out within the next decade.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 862273,
+        "label": "Environmental concerns are irrelevant when considering energy production.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 184195,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "Text 1 \n\nA recent study published in the journal *Nature Astronomy* suggests that the number of potentially habitable exoplanets (planets outside our solar system) could be significantly higher than previously estimated.  Researchers, led by Dr. Aris Papagiannis, analyzed data from the Kepler space telescope and concluded that for every star like our Sun, there may be at least two Earth-sized planets in the habitable zone, where liquid water could exist on the surface. This suggests that our galaxy could be teeming with worlds capable of supporting life.   \n\nText 2  \n\nWhile Dr. Papagiannis and his team's analysis provides exciting new possibilities regarding the prevalence of habitable exoplanets, it is crucial to acknowledge the limitations of current research.  The Kepler data, while extensive, is based on observations of a relatively small portion of our galaxy. Furthermore, habitability as defined by the presence of liquid water is only one factor; other crucial elements for life, such as atmospheric composition and planetary geology, remain largely unknown for these distant worlds.  Therefore, while the Nature Astronomy study is encouraging, definitive conclusions about the abundance of life-supporting planets are premature.\n<br>\n\nWhich of the following is most accurate:",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1841950,
+        "label": "The author of Text 2 emphasizes the speculative nature of the study's conclusions, whereas the author of Text 1 highlights the study's groundbreaking implications.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1841951,
+        "label": "The author of Text 2 questions the reliability of the Kepler space telescope data, whereas the author of Text 1 presents the data as definitive.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1841952,
+        "label": "The author of Text 2 believes the study focuses too much on Earth-sized planets, whereas the author of Text 1 believes this focus is appropriate.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1841953,
+        "label": "The author of Text 2 is primarily concerned with the technological challenges of studying exoplanets, whereas the author of Text 1 focuses on the theoretical possibilities.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 374828,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "#### Text 1 \n\n The advent of streaming services has dramatically changed how people consume television.  Once limited to scheduled broadcasts, viewers now have on-demand access to vast libraries of content. This shift has empowered audiences to watch what they want, when they want, leading to significant changes in viewing habits and the television industry itself.  \n \n #### Text 2 \n \n  While streaming offers undeniable convenience, some argue it has drawbacks. The binge-watching culture it fosters can lead to a less social viewing experience, as people increasingly watch alone or in smaller groups, rather than gathering for communal viewing events. Furthermore, the constant availability of content may diminish the anticipation and shared cultural moments once associated with watching television.  \n  <br>\n\n  Based on the texts, both authors would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3748280,
+        "label": "Streaming services have made television viewing more convenient for audiences.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3748281,
+        "label": "Binge-watching is the primary way people now consume television content.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3748282,
+        "label": "The quality of television programming has declined since the rise of streaming.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3748283,
+        "label": "Traditional broadcast television remains the most popular way to watch shows.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 517606,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1\n\nRecent advancements in artificial intelligence have led to the development of sophisticated AI models capable of generating creative content, including music, visual art, and written stories. These models analyze vast datasets of existing creative works to identify patterns and then use these patterns to produce novel outputs. Some researchers believe that AI can democratize creativity, allowing anyone to generate art without needing traditional skills or training.\n\n### Text 2\n\nArt historian Dr. Anya Sharma argues that while AI can generate outputs that resemble creative works, true creativity is rooted in human experience, emotion, and intentionality. Sharma believes that AI-generated content lacks the deeper meaning and emotional resonance that characterize human art. For Sharma, AI tools are merely sophisticated mimics, capable of replicating style but not genuine artistic innovation, which stems from conscious thought and lived experience.\n<br>\n\nBased on the texts, what would Dr. Anya Sharma (Text 2) most likely say about the claim in the underlined portion of Text 1: ",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5176060,
+        "label": "The development of AI art generators is a significant step towards making traditional art skills obsolete.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5176061,
+        "label": "AI-generated art will likely surpass human art in technical skill and complexity in the near future.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5176062,
+        "label": "Humans will soon lose interest in creating art as AI becomes more proficient at generating diverse and appealing artistic outputs.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5176063,
+        "label": "AI tools may make art creation more accessible, but they do not foster the kind of deep, meaningful creativity that humans achieve through personal experience.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 626672,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1\n\nIn a 2019 study, researchers examined the effects of urban green spaces on cognitive function. They found that participants who spent time in parks and gardens exhibited improved attention spans and working memory compared to those who remained in urban environments. The study concluded that <u>access to nature may offer a simple and effective way to enhance cognitive performance in city dwellers.</u>\n\n### Text 2\n\nWhile exposure to green spaces can be beneficial, it's crucial to consider other factors influencing cognitive function.  Stress levels, diet, and sleep quality are also significant determinants of cognitive health.  Furthermore, studies on the cognitive benefits of nature sometimes fail to control for confounding variables, such as the potential for increased physical activity in green spaces, which itself boosts cognitive function.  \n<br>\n\nTherefore, attributing cognitive enhancement solely to:",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6266720,
+        "label": "By agreeing that nature enhances cognition but questioning whether its effects are as straightforward as Text 1 suggests.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6266721,
+        "label": "By arguing that the benefits of urban green spaces are primarily physical rather than cognitive.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6266722,
+        "label": "By suggesting that cognitive improvements are only observed in individuals already predisposed to enjoying nature.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6266723,
+        "label": "By dismissing the idea that urban green spaces have any measurable impact on cognitive function.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 670233,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1  \n\nIn recent years, the popularity of online streaming services for movies and television shows has surged. These platforms offer viewers a vast library of content accessible at any time, for a monthly fee.  Many argue that this convenience and affordability have democratized entertainment, allowing more people to access a wider range of stories and perspectives than ever before.  \n\n### Text 2  \n\nDespite the benefits of streaming services, some critics point to a potential downside. They argue that the ease of access and the sheer volume of content available on these platforms can lead to a decline in attention spans and a passive consumption of media.  Furthermore, the subscription-based model, while seemingly affordable, can accumulate costs over time, potentially exceeding traditional media expenses.  \n<br>\n\nBased on the texts, both authors would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6702330,
+        "label": "Online streaming services have changed how people consume media.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6702331,
+        "label": "Traditional media expenses are always higher than streaming service costs.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6702332,
+        "label": "Streaming services primarily benefit content creators.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6702333,
+        "label": "Attention spans have definitively declined due to streaming services.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752715,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1\n\n  Botanist Maria Merian is recognized today for her detailed illustrations of plants and insects. During her lifetime in the 17th and 18th centuries, however, her work was not widely celebrated by the scientific community. While some naturalists admired the accuracy of her depictions, many dismissed her contributions because she was not formally trained and conducted her research independently.  \n  \n  ### Text 2  \n  \n  In recent years, there has been a resurgence of interest in Maria Merian's work. Scholars are now highlighting her pioneering approach to natural history, which involved meticulous observation and direct study of living organisms in their natural habitats.  This contrasts sharply with the more traditional, book-based methods of her contemporaries, and positions Merian as a significant, albeit previously overlooked, figure in the history of science.  \n  <br>\n\n  Based on the texts, both authors would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7527150,
+        "label": "Merian's lack of formal training hindered the quality of her scientific observations.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7527151,
+        "label": "Merian's work is now being re-evaluated for its innovative scientific methods.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7527152,
+        "label": "Scientific illustration was not considered a valuable contribution to natural history in Merian's time.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7527153,
+        "label": "Merian primarily focused on studying plants and neglected the study of insects.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 769815,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1\n\nMany believe that art's primary role is aesthetic pleasure, offering escape or decoration. This perspective often overlooks art's capacity to incite social change. While art can certainly be beautiful or entertaining, its power to challenge societal norms, inspire collective action, and reflect social realities is frequently underestimated in public discourse.  \n\n### Text 2  \n\nThe Harlem Renaissance of the 1920s was a vibrant period of artistic and cultural flourishing within the African American community. Writers, artists, and musicians created groundbreaking works that celebrated Black identity and challenged racial stereotypes. <u>Yet, despite the undeniable artistic merit of this movement, its profound influence on the burgeoning Civil Rights movement is often minimized in mainstream historical accounts.</u> \n<br>\n\n Based on the two texts, how would the author of Text 1 most likely regard the situation presented in the underlined sentence in Text 2?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7698150,
+        "label": "As predictable, because mainstream historical accounts tend to focus on political events rather than cultural movements.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7698151,
+        "label": "As understandable, because the artistic achievements of the Harlem Renaissance are more readily apparent than its social impact.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7698152,
+        "label": "As consistent, because the situation exemplifies the general tendency to underappreciate art's influence beyond aesthetics.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7698153,
+        "label": "As questionable, because the Harlem Renaissance’s artistic merit is debatable and its social impact is likely overstated.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 805956,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "#### Text 1\n\n  Many proponents of urban green spaces argue that they are essential for improving the well-being of city residents.  They point to studies showing that access to parks and gardens reduces stress levels and promotes physical activity.  Furthermore, these green spaces can foster a sense of community by providing areas for social interaction and local events.  \n  \n  #### Text 2  \n  \n  While the benefits of urban green spaces are often touted, it's important to consider the practicalities and potential drawbacks.  Economist Dr. Lena Weiss argues that converting valuable urban land into parks can lead to increased housing costs and reduced economic productivity.  She contends that focusing on efficient urban planning and affordable housing is a more direct approach to improving residents' overall quality of life.  \n  \n  <br>\n\n  Based on the texts, how would Weiss (Text 2) most likely respond to the arguments made in Text 1?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8059560,
+        "label": "Urban green spaces are only beneficial in cities with high population densities.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8059561,
+        "label": "The economic costs of urban green spaces may outweigh their social and health benefits.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8059562,
+        "label": "City residents are more concerned with economic stability than access to green spaces.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8059563,
+        "label": "Urban green spaces should be designed to also serve economic purposes, such as community markets.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 827243,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1  \n\nEconomists largely agree that globalization has increased overall economic output. However, some argue that this growth has come at a significant environmental cost.  The increased production and consumption associated with global trade lead to higher levels of pollution, resource depletion, and greenhouse gas emissions, exacerbating climate change and ecological degradation.  \n\n### Text 2  \n\nWhile acknowledging potential environmental challenges, proponents of globalization emphasize its role in fostering sustainable development. They argue that globalization facilitates the diffusion of green technologies and best practices across borders. Moreover, increased economic prosperity, driven by globalization, provides nations with the resources necessary to invest in environmental protection and transition to cleaner energy sources.  \n<br>\n\nWhich choice best describes a difference in how the author of Text 1 and the author of Text 2 view the relationship between globalization and environmental issues?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8272430,
+        "label": "The author of Text 1 views globalization primarily as a driver of environmental harm, whereas the author of Text 2 sees globalization as a potential catalyst for environmental improvement.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8272431,
+        "label": "While the author of Text 1 focuses on the environmental impact of increased consumption, the author of Text 2 is more concerned with the environmental effects of technological development.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8272432,
+        "label": "The author of Text 1 believes that environmental problems are solely attributable to globalization, whereas the author of Text 2 argues that environmental issues existed before globalization.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8272433,
+        "label": "Although the author of Text 1 recognizes the economic benefits of globalization, the author of Text 2 questions whether these benefits outweigh the environmental costs.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 880645,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Easy",
+    "question_text": "### Text 1  \n\nIn a study examining the effects of caffeine on athletic performance, researchers divided participants into two groups. Group A received 200mg of caffeine one hour before a cycling test, while Group B received a placebo.  The results showed that Group A cycled, on average, 15% longer than Group B. The researchers concluded that caffeine significantly enhances endurance in cycling.  \n\n### Text 2  \n\nA separate study investigated the impact of caffeine on cognitive function. Participants were given either 100mg of caffeine or a placebo before completing a series of memory and attention tasks.  This study found no statistically significant difference in cognitive performance between the caffeine and placebo groups. The researchers suggested that the cognitive benefits of caffeine may be overstated in popular media.  \n<br>\n\nWhich choice best describes a difference in the conclusions drawn by the researchers in Text 1 and Text 2?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8806450,
+        "label": "The researchers in Text 1 focused on the effects of caffeine on physical tasks, whereas the researchers in Text 2 focused on the effects on mental tasks.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8806451,
+        "label": "The researchers in Text 1 used a larger sample size than the researchers in Text 2.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8806452,
+        "label": "The researchers in Text 1 found caffeine to be completely ineffective, while the researchers in Text 2 found it to be highly effective.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8806453,
+        "label": "The researchers in Text 1 studied the long-term effects of caffeine, whereas the researchers in Text 2 studied the immediate effects.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

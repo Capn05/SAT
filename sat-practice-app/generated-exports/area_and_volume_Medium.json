@@ -1,0 +1,422 @@
+[
+  {
+    "id": 60005,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A spherical water tank has a diameter of $10$ feet. What is the volume, in cubic feet, of water the tank can hold when full?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 600050,
+        "label": "$\\frac{500\\pi}{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 600051,
+        "label": "$100\\pi$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 600052,
+        "label": "$\\frac{100\\pi}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 600053,
+        "label": "$500\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 125971,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A triangle has a base of $6$ and a height of $4$. What is the length of one side of a square that has the same area as this triangle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1259710,
+        "label": "$2 \\sqrt{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1259711,
+        "label": "$\\sqrt{6}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1259712,
+        "label": "$\\sqrt{10}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1259713,
+        "label": "$\\sqrt{24}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 171450,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A rectangular box containing granola is filled to the top with milk after the granola is added. The base of the box is a rectangle with dimensions $8$ cm by $5$ cm, and the height of the box is $9$ cm. If $220$ $\\text{cm}^3$ of milk is needed to fill the box to the top after the granola is added, what is the total volume of the granola in the box?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1714500,
+        "label": "$100 \\text{cm}^3$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1714501,
+        "label": "$140 \\text{cm}^3$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1714502,
+        "label": "$220 \\text{cm}^3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1714503,
+        "label": "$360 \\text{cm}^3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 225336,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A right circular cone has a volume of $24\\pi$ cubic inches. If the radius of the base of the cone is $3$ inches, what is the height of the cone?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2253360,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2253361,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2253362,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2253363,
+        "label": "24",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 278325,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A right circular cylinder has a volume of $450$ cubic centimeters. The area of the base of the cylinder is $15$ square centimeters. What is the height, in centimeters, of the cylinder?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2783250,
+        "label": "25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2783251,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2783252,
+        "label": "35",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2783253,
+        "label": "150",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 389441,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A right circular cylinder has a volume of $540$ cubic centimeters. The base area of the cylinder is $36$ square centimeters. What is the height, in centimeters, of the cylinder?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3894410,
+        "label": "10",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3894411,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3894412,
+        "label": "15",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3894413,
+        "label": "18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 436000,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A triangular prism has a height of $12$ centimeters (cm) and a volume of $300$ $\\text{cm}^3$. What is the area, in $\\text{cm}^2$, of the base of the prism? (The volume of a triangular prism is equal to $Bh$, where $B$ is the area of the base and $h$ is the height of the prism.)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4360000,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4360001,
+        "label": "24",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4360002,
+        "label": "25",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4360003,
+        "label": "36",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 579416,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A shipping box is shaped like a right rectangular prism. The base of the box has a width of $8$ inches and a length of $12$ inches. If the volume of the box is $960$ cubic inches, what is the height of the box in inches?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5794160,
+        "label": "10",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5794161,
+        "label": "80",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5794162,
+        "label": "96",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5794163,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 602390,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane shown, square $ABCD$ has its diagonals on the $x$- and $y$-axes.  What is the area, in square units, of the square?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//602390.png",
+    "options": [
+      {
+        "id": 6023900,
+        "label": "16",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6023901,
+        "label": "24",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6023902,
+        "label": "32",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6023903,
+        "label": "64",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 877326,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A circular fountain has a diameter of $20$ feet. What is the approximate circumference, in feet, of the fountain? Use $3.14$ for $\\pi$.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8773260,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8773261,
+        "label": "31.4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8773262,
+        "label": "62.8",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8773263,
+        "label": "125.6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 973925,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A company manufactures cylindrical pipes in two sizes. Both sizes have a length of $10$ meters. The radius of Pipe $X$ is $20$ centimeters, and the radius of Pipe $Y$ is $10\\%$ longer than the radius of Pipe $X$. What is the volume, in cubic centimeters, of Pipe $Y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9739250,
+        "label": "$400,000\\pi$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9739251,
+        "label": "$440,000\\pi$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9739252,
+        "label": "$484,000\\pi$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9739253,
+        "label": "$900,000\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 979600,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Medium",
+    "question_text": "A party hat is shaped like a right circular cone. The party hat can hold a maximum volume of $125\\pi$ cubic centimeters. The radius of the circular base is $5$ centimeters. What is the height of the party hat, in centimeters?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9796000,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9796001,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9796002,
+        "label": "15",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9796003,
+        "label": "18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

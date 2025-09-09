@@ -1,0 +1,457 @@
+[
+  {
+    "id": 894,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "In a recent survey, $25$ students reported spending a total of $100$ hours on homework during a specific week. Which of the following values can be calculated based on this information alone?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8940,
+        "label": "The average number of hours spent on homework per student during the week",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8941,
+        "label": "The median number of hours spent on homework per student during the week",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8942,
+        "label": "The maximum number of hours spent on homework by any student during the week",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8943,
+        "label": "The minimum number of hours spent on homework by any student during the week",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 86296,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The table shows the number of books read by students in a class during a summer reading program. What is the range of the number of books read by these students?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//86296.png",
+    "options": [
+      {
+        "id": 862960,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 862961,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 862962,
+        "label": "7",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 862963,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 144240,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The table below shows the number of hours two students, Aisha and Ben, spent studying each day for a week. Which of the following statements correctly compares the means of data set $C$ and data set $D$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//144240.png",
+    "options": [
+      {
+        "id": 1442400,
+        "label": "The mean of each data set is 3.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1442401,
+        "label": "The mean of data set C is less than the mean of data set D.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1442402,
+        "label": "The mean of data set C is greater than the mean of data set D.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1442403,
+        "label": "The means of data set C and data set D are equal.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 358384,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The table above shows the monthly sales in thousands of dollars for two different stores over four months. No store is part of both Store A and Store B. Which of the following statements are true about the monthly sales for the $4$ months shown? I. The mean monthly sales for Store A is greater than the mean monthly sales for Store B. II. The median monthly sales for Store A is greater than the median monthly sales for Store B.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3583840,
+        "label": "I only",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3583841,
+        "label": "II only",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3583842,
+        "label": "I and II",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3583843,
+        "label": "Neither I nor II",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 384006,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The bar graph shows the number of books read by students in each grade level during the summer break. How many fewer books were read by $8$th-grade students compared to $6$th-grade students?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//384006.png",
+    "options": [
+      {
+        "id": 3840060,
+        "label": "12",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3840061,
+        "label": "5",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3840062,
+        "label": "45",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3840063,
+        "label": "25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 457719,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The bar graph shows the distribution of the number of apples sold by a farmer at a market over five days. How many apples were sold on Wednesday?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//457719.png",
+    "options": [
+      {
+        "id": 4577190,
+        "label": "45",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4577191,
+        "label": "35",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4577192,
+        "label": "50",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4577193,
+        "label": "40",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 459136,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "Last week, a bakery sold a total of $75$ pastries. According to the sales records, $22$ pastries were croissants, $18$ were muffins, and $20$ were scones. The remaining pastries sold were cookies. How many cookies were sold last week?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4591360,
+        "label": "15",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4591361,
+        "label": "25",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4591362,
+        "label": "40",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4591363,
+        "label": "50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 497353,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The heights, in inches, of five seedlings are recorded as follows: $4, 6, 8, 10, 12$. What is the mean height of these seedlings?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4973530,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4973531,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4973532,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4973533,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 558677,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The table below shows the scores of four students on Test $1$ and Test $2$. What was the mean score on Test $1$ for these four students?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//558677.png",
+    "options": [
+      {
+        "id": 5586770,
+        "label": "83",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5586771,
+        "label": "84",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5586772,
+        "label": "89",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5586773,
+        "label": "90",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 678209,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The weights, in pounds, of six packages are listed below: $$12, 15, 15, 18, 20, 32$$ What is the median weight of these packages?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6782090,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6782091,
+        "label": "16.5",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6782092,
+        "label": "17",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6782093,
+        "label": "18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 817733,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The table shows the height, in meters, of the five tallest buildings in Metropolis. Based on the table, what is the mean height of these five buildings, to the nearest meter?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//817733.png",
+    "options": [
+      {
+        "id": 8177330,
+        "label": "390",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8177331,
+        "label": "400",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8177332,
+        "label": "410",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8177333,
+        "label": "420",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 834785,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "The number of points scored by a player in $5$ games are shown below. Over these $5$ games, which of the following is NOT equal to $20$ points?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//834785.png",
+    "options": [
+      {
+        "id": 8347850,
+        "label": "Median of the points scored",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8347851,
+        "label": "Mean of the points scored",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8347852,
+        "label": "Mode of the points scored",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8347853,
+        "label": "Range of the points scored",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 969750,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Easy",
+    "question_text": "A local bakery tracked the number of croissants sold each day for a week. The bar graph below shows the number of croissants sold from Monday to Friday. What is the mean number of croissants sold per day during these five days?",
+    "image_url": "0__page_14_Figure_3_modified.png",
+    "options": [
+      {
+        "id": 9697500,
+        "label": "38",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9697501,
+        "label": "40",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9697502,
+        "label": "42",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9697503,
+        "label": "44",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

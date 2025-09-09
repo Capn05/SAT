@@ -1,0 +1,492 @@
+[
+  {
+    "id": 77996,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "While massive stars, burning fuel at an extraordinary rate, exhaust their reserves in a relatively short time, leading to lifespans of only a few million years; __________stars like red dwarfs, with their slow burn and minimal fuel consumption, can shine for trillions of years.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 779960,
+        "label": "similarly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 779961,
+        "label": "conversely,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 779962,
+        "label": "furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 779963,
+        "label": "therefore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 166434,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Many cities are facing increasing population density. _______, urban planners are exploring vertical urbanism as a solution.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1664340,
+        "label": "Furthermore,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1664341,
+        "label": "As a result,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1664342,
+        "label": "For example,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1664343,
+        "label": "Nevertheless,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 178479,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "The study of history often focuses on the analysis of written documents and archaeological evidence. Anthropology, __________, frequently relies on participant observation and ethnographic fieldwork to understand human cultures.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1784790,
+        "label": "similarly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1784791,
+        "label": "in fact,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1784792,
+        "label": "for example,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1784793,
+        "label": "by contrast,",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 186504,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Many studies suggest that dark chocolate, rich in antioxidants, may offer certain health benefits, such as improved cardiovascular function. __________, it is crucial to remember that chocolate, even dark chocolate, is also calorie-dense and should be consumed in moderation as part of a balanced diet.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1865040,
+        "label": "Accordingly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1865041,
+        "label": "Conversely,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1865042,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1865043,
+        "label": "Unquestionably,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 243913,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Early studies suggested that the newly discovered exoplanet, Kepler-186f, might be remarkably similar to Earth in size and temperature, raising hopes for potentially habitable conditions. _____________________ further data revealed that its atmospheric composition and stellar radiation environment are significantly harsher than initially anticipated, making the prospect of life as we know it on Kepler-186f less likely.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2439130,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2439131,
+        "label": "Nevertheless,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2439132,
+        "label": "Specifically,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2439133,
+        "label": "Similarly,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 267871,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Many expected that the rise of remote work would uniformly improve employee well-being and productivity. Companies invested heavily in remote infrastructure, anticipating significant gains across various metrics. __________, research on remote work's impact has revealed a more nuanced reality, with some studies showing increased productivity in certain sectors while others highlight challenges in maintaining team cohesion and work-life balance.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2678710,
+        "label": "Nevertheless,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2678711,
+        "label": "For example,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2678712,
+        "label": "Subsequently,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2678713,
+        "label": "In addition,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 386090,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "While some studies suggest that moderate coffee consumption may have health benefits, particularly in reducing the risk of type 2 diabetes, excessive intake can lead to adverse effects like anxiety and insomnia.  __________________________, individuals with pre-existing heart conditions are often advised to limit or avoid caffeine altogether due to its potential to elevate heart rate and blood pressure.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3860900,
+        "label": "Consequently",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3860901,
+        "label": "Conversely",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3860902,
+        "label": "Moreover",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3860903,
+        "label": "Nevertheless",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 624019,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Many anticipated that the ambitious urban renewal project would rapidly revitalize the city's downtown area. _____________________, unexpected delays and budget overruns plagued the development, pushing back the completion date by several years and significantly altering the initial vision.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6240190,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6240191,
+        "label": "Alternatively,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6240192,
+        "label": "Nevertheless,",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6240193,
+        "label": "Additionally,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 685871,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "In recent years, the popularity of podcasts has surged dramatically.  Listeners appreciate their on-demand nature and the diverse range of topics available, from true crime to historical analysis.  ________, podcasts have become a significant force in media consumption, rivaling traditional radio and even television in certain demographics.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6858710,
+        "label": "For example,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6858711,
+        "label": "By contrast,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6858712,
+        "label": "Nevertheless,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6858713,
+        "label": "Therefore,",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 723297,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Economists once believed that a strong correlation existed between increased coffee consumption and heightened productivity.  _____, recent studies, employing larger sample sizes and more rigorous methodologies, have revealed that this correlation is not statistically significant, suggesting other factors play a more crucial role in workplace output.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7232970,
+        "label": "Accordingly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7232971,
+        "label": "Nevertheless,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7232972,
+        "label": "Furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7232973,
+        "label": "Subsequently,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 729960,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "While digital communication offers unprecedented convenience, it can also subtly erode traditional forms of social interaction. For example, face-to-face conversations, once the cornerstone of community building, are increasingly being replaced by text messages and social media posts. ____, some sociologists argue that this shift towards digital interaction may contribute to feelings of isolation and a weakening of social bonds.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7299600,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7299601,
+        "label": "Regardless,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7299602,
+        "label": "Similarly,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7299603,
+        "label": "Incidentally,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 767564,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Researchers studying the impact of urban green spaces on mental health examined data from several major cities. They found a strong correlation between the amount of green space in a neighborhood and residents' reported stress levels. _____________, the study also revealed that access to green spaces was not equitably distributed across socioeconomic groups within these cities.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7675640,
+        "label": "However,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7675641,
+        "label": "Similarly,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7675642,
+        "label": "For example,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7675643,
+        "label": "Therefore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 840854,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Traditional economic models often prioritize Gross Domestic Product (GDP) growth as the key metric for assessing a nation's economic health. ________, some economists argue that focusing solely on GDP can be misleading, as it may mask significant disparities in income distribution across the population. These economists contend that a more equitable distribution of wealth is a better indicator of overall societal progress.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8408540,
+        "label": "Consequently",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8408541,
+        "label": "Nevertheless",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8408542,
+        "label": "For instance",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8408543,
+        "label": "Moreover",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 983095,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Hard",
+    "question_text": "Economists once believed that consumer spending was primarily driven by immediate income levels.  This theory suggested that individuals would adjust their spending in direct response to any changes in their current earnings.  ________________,  modern economic thought recognizes that consumer behavior is significantly influenced by expectations of future income and long-term financial security, not just present earnings.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9830950,
+        "label": "Nevertheless,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9830951,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9830952,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9830953,
+        "label": "Furthermore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

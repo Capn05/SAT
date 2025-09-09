@@ -1,0 +1,387 @@
+[
+  {
+    "id": 91165,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "Sarah earns $\\$25$ per hour tutoring and $\\$15$ per hour babysitting. Last week, she babysat for $5$ hours. If she wants to earn a total of $\\$205$ from tutoring and babysitting, how many hours must she tutor?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 911650,
+        "label": "5.2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 911651,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 911652,
+        "label": "5.5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 911653,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 189404,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "Line $m$ is defined by the equation $y = -\\frac{5}{3}x + 7$. Line $n$ is perpendicular to line $m$ in the $xy$-plane. What is the slope of line $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1894040,
+        "label": "$\\frac{3}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1894041,
+        "label": "$-\\frac{5}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1894042,
+        "label": "$-\\frac{3}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1894043,
+        "label": "$\\frac{5}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 219185,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "What is the slope of the graph of $y = -\\frac{1}{3}(18x - 9) + 5x$ in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2191850,
+        "label": "-1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2191851,
+        "label": "11",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2191852,
+        "label": "-6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2191853,
+        "label": "1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 352328,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "A line passes through the points $(1, 4)$ and $(7, 8)$ in the $xy$-plane. What is the slope of the line?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3523280,
+        "label": "$\\frac{2}{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3523281,
+        "label": "$\\frac{3}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3523282,
+        "label": "$-\\frac{2}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3523283,
+        "label": "$\\frac{1}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 419185,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "A student travels to school using a combination of walking and riding a scooter. The total distance to school is $1.5$ miles. The equation $3w + 15s = 1.5$ represents this situation, where $w$ is the time in hours spent walking and $s$ is the time in hours spent riding the scooter. Which statement is the best interpretation of $15$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4191850,
+        "label": "The student spends 15 hours riding the scooter.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4191851,
+        "label": "The student walks at a speed of 15 miles per hour.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4191852,
+        "label": "The student rides the scooter at a speed of 15 miles per hour.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4191853,
+        "label": "The total distance to school is 15 miles.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 515777,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "A furniture maker is designing a tabletop using oak, pine, and maple wood. The table below shows the density and cost per pound for each type of wood. The tabletop is designed to have a total weight of $200$ pounds, using only oak, pine, and maple.  If $60$ pounds of pine wood is used, which of the following equations could represent the relationship between the amounts, $x$ and $y$, in cubic feet ($\\text{ft}^3$), of oak and maple wood used in the tabletop?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//515777.png",
+    "options": [
+      {
+        "id": 5157770,
+        "label": "$45x + 40y = 260$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5157771,
+        "label": "$30x + 40y = 140$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5157772,
+        "label": "$45x + 40y = 140$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5157773,
+        "label": "$45x + 30y = 140$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 606936,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "A rectangular garden is fenced on three sides, with one side of the garden serving as a wall. The sides perpendicular to the wall are each of length $x$ meters, and the side parallel to the wall is of length $y$ meters. The equation $2x + y = 50$ represents this situation. What is the best interpretation of $50$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6069360,
+        "label": "The sum, in meters, of the lengths of the two sides perpendicular to the wall.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6069361,
+        "label": "The length, in meters, of the side parallel to the wall.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6069362,
+        "label": "The total length, in meters, of the fence used to enclose the three sides of the garden.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6069363,
+        "label": "The sum of the lengths, in meters, of all four sides if the garden was fully fenced.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 649088,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "A carpenter is building birdhouses. He uses $7$ pieces of square wood, each with side length $s$, for the base of each birdhouse. He also uses $4$ pieces of regular hexagonal wood, each with side length $h$, for the roof of each birdhouse. For one birdhouse, the total perimeter of the wooden pieces used is $290$ inches. Which equation represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6490880,
+        "label": "$7s + 4h = 290$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6490881,
+        "label": "$14s + 8h = 290$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6490882,
+        "label": "$28s + 4h = 290$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6490883,
+        "label": "$28s + 24h = 290$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 692051,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "What is the slope of the graph of $y = \\frac{3}{7}x - 15$ in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6920510,
+        "label": "$\\frac{3}{7}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6920511,
+        "label": "$\\frac{7}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6920512,
+        "label": "$-\\frac{3}{7}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6920513,
+        "label": "$-15$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 698482,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "Line $m$ is defined by $y = \\frac{2}{5}x - 3$. Line $n$ is perpendicular to line $m$ in the $xy$-plane. What is the slope of line $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6984820,
+        "label": "$-\\frac{5}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6984821,
+        "label": "$-\\frac{2}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6984822,
+        "label": "$\\frac{2}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6984823,
+        "label": "$\\frac{5}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 959352,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, line $K$ passes through the points $(2, 3)$ and $(4, 7)$. Which equation defines line $K$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9593520,
+        "label": "$y = x - 1$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9593521,
+        "label": "$y = 2x + 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9593522,
+        "label": "$y = 2x - 1$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9593523,
+        "label": "$y = -2x - 3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

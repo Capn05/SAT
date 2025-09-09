@@ -1,0 +1,597 @@
+[
+  {
+    "id": 169115,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "The formula for the volume $V$ of a cone is given by $V = \\frac{1}{3}\\pi r^2 h$, where $r$ is the radius of the base and $h$ is the height of the cone. Which of the following expresses $h$ in terms of $V$ and $r$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1691150,
+        "label": "$h = \\frac{3V}{\\pi r^2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1691151,
+        "label": "$h = \\frac{V}{3\\pi r^2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1691152,
+        "label": "$h = \\frac{3\\pi V}{r^2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1691153,
+        "label": "$h = \\frac{\\pi V}{3r^2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 184506,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "Which ordered pair is a solution to the system of equations below? $$x + y = 2$$ $$x - y = y^2 - 4$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1845060,
+        "label": "$(3 - \\sqrt{7}, -1 + \\sqrt{7})$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1845061,
+        "label": "$(3 + \\sqrt{7}, -1 + \\sqrt{7})$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1845062,
+        "label": "$(3 - \\sqrt{5}, -1 + \\sqrt{5})$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1845063,
+        "label": "$(3 + \\sqrt{5}, -1 - \\sqrt{5})$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 222344,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "$$3(x - 2) = 12(x + 3)(x - 2)$$ What is the sum of the solutions to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2223440,
+        "label": "-0.75",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2223441,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2223442,
+        "label": "-2.75",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2223443,
+        "label": "4.75",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 249515,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "In the equation $3x^2 + 6x = k$, where $k$ is a constant, if the equation has no real solutions, which of the following could be the value of $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2495150,
+        "label": "-5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2495151,
+        "label": "-2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2495152,
+        "label": "0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2495153,
+        "label": "2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 334607,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "$$y = x^2 - 4x + 3$$ $$x+2y=4$$ If $(x_1, y_1)$ and $(x_2, y_2)$ are the two solutions to the system of equations above, what is the value of $y_1 + y_2$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3346070,
+        "label": "$\\frac{3}{2}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3346071,
+        "label": "$2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3346072,
+        "label": "$\\frac{9}{4}$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3346073,
+        "label": "$\\frac{5}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 343883,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "$$\\frac{2x^2}{x^2-1} - \\frac{x}{x-1} = \\frac{-2}{x+1}$$ What value of $x$ satisfies the equation above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3438830,
+        "label": "-2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3438831,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3438832,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3438833,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 385020,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "How many distinct real solutions does the given equation have? $$|x^2 - 4| = x$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3850200,
+        "label": "Exactly one",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3850201,
+        "label": "Exactly two",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3850202,
+        "label": "Exactly three",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3850203,
+        "label": "Zero",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 578591,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "In the given equation, $4x^2 + 12x + k = 0$, where $k$ is a constant, the equation has exactly one solution. What is the value of $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5785910,
+        "label": "9",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5785911,
+        "label": "-9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5785912,
+        "label": "1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5785913,
+        "label": "36",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 616306,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "The solutions to $x^2 - 2x - 1 = 0$ are $p$ and $q$, where $p < q$. The solutions to $x^2 - 6x + 7 = 0$ are $v$ and $w$, where $v < w$. The solutions to $x^2 + kx + c = 0$, where $c$ is a constant, are $p + v$ and $q + w$. What is the value of $c$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6163060,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6163061,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6163062,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6163063,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 727446,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "$$y = x^2 + 2x + 3$$ $$y - x + 2 = 0$$ How many solutions are there to the system of equations above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7274460,
+        "label": "There are exactly 4 solutions.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7274461,
+        "label": "There are exactly 2 solutions.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7274462,
+        "label": "There is exactly 1 solution.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7274463,
+        "label": "There are no solutions.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 783344,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "What is the solution set of the equation $\\sqrt{3x+7}+5=x+4$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7833440,
+        "label": "$\\{-1\\}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7833441,
+        "label": "$\\{6\\}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7833442,
+        "label": "$\\{-1, 6\\}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7833443,
+        "label": "$\\{0, -1, 6\\}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 800211,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "The graph of the function $f$ is defined by $f(x) = -(x-3)^2 + 6$. If the function $g$ is defined by $g(x) = x + 1$, what is one possible value of $a$ such that $f(a) = g(a)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8002110,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8002111,
+        "label": "3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8002112,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8002113,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 831444,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "If $5x^2 - 25x + 15 = 0$, what is the value of $x^2 - 5x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8314440,
+        "label": "-3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8314441,
+        "label": "3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8314442,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8314443,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 859381,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "In the $xy$-plane, the graph of $y = 2x^2 - 13x$ intersects the graph of $y = x$ at the points $(0, 0)$ and $(a, a)$. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8593810,
+        "label": "6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8593811,
+        "label": "7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8593812,
+        "label": "8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8593813,
+        "label": "14",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 925807,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "What is the sum of the solutions to the following equation? $$x^2 + 16x - 3 = 0$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9258070,
+        "label": "-16",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9258071,
+        "label": "16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9258072,
+        "label": "-3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9258073,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 954642,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "The voltage $V$ across a circuit component with resistance $R$ and current $I$ is given by Ohm's Law: $V = IR$. During an experiment, the resistance $R$ is kept constant at 7 ohms.  If Ohm's Law is rewritten in the form $I = kV + c$, where $k$ and $c$ are constants, what is the value of $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9546420,
+        "label": "$\\frac{1}{7}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9546421,
+        "label": "$7$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9546422,
+        "label": "$-\\frac{1}{7}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9546423,
+        "label": "$-7$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 995870,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Hard",
+    "question_text": "$$x^2 - y + 5 = 5$$ $$10x - 25 - y = 0$$ The solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9958700,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9958701,
+        "label": "-5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9958702,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9958703,
+        "label": "-25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

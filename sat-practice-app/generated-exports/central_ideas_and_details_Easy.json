@@ -1,0 +1,457 @@
+[
+  {
+    "id": 34214,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "In 1928, Scottish bacteriologist Alexander Fleming noticed a petri dish contaminated with mold.  He observed that the bacteria around the mold were dying. This accidental discovery led Fleming to isolate the mold, which he identified as *Penicillium notatum*.  Further research revealed that *Penicillium notatum* produced a substance that could kill various types of bacteria. Fleming named this antibacterial substance penicillin, marking a turning point in medicine.\n\n<br>\n\nWhat did Alexander Fleming discover in 1928 that marked a turning point in medicine?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 342140,
+        "label": "A fungal growth in a laboratory",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 342141,
+        "label": "A new type of bacteria",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 342142,
+        "label": "A chemical compound derived from plants",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 342143,
+        "label": "An antiseptic solution",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 87252,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "The following text is from Louisa May Alcott's 1868 novel *Little Women*. Hannah is a servant in the March family. Jo is one of the daughters in the March family.  “I don't believe in much medicine, but I do in rubbing,” Hannah murmured, as she wrapped up Jo's head in a warm shawl. “It always seems to do good, and folks set a great deal by it in old times. I must rub your head well, and then you’ll be all right again.” Hannah tucked her patient up in a comfortable chair, and rubbed vigorously with camphor.  According to the text, why does Hannah rub Jo's head?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 872520,
+        "label": "Hannah believes rubbing is a traditional and effective remedy.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 872521,
+        "label": "Hannah is trying to warm Jo up because she is cold.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 872522,
+        "label": "Hannah is applying camphor to soothe Jo's headache.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 872523,
+        "label": "Hannah is showing affection for Jo because she is ill.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 138153,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Dr. Anya Sharma, a historian specializing in ancient Mediterranean civilizations, faced a significant obstacle when studying a recently discovered collection of papyrus scrolls. The scrolls, dating back to the Roman era, were severely deteriorated after centuries buried underground. The papyrus was brittle and prone to crumbling at the slightest touch, making it impossible to unroll the scrolls fully and read their contents without risking further damage.  Dr. Sharma and her team had to develop specialized techniques to carefully examine the scrolls without causing them to disintegrate.<br>What was the significant obstacle Dr. Anya Sharma faced when studying the scrolls?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1381530,
+        "label": "The language used in the scrolls was undecipherable.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1381531,
+        "label": "The scrolls were too fragile to be easily examined.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1381532,
+        "label": "The scrolls were located in a remote archaeological site.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1381533,
+        "label": "The historical information in the scrolls was inconsistent with other sources.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 205651,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "While consumer drones are often associated with recreational use, they are increasingly being adopted across various professional sectors.  Farmers, for instance, utilize drones equipped with sensors to monitor crop health and optimize irrigation. Construction companies employ drones for site surveying and progress tracking, enhancing efficiency and safety.  Furthermore, drones are proving invaluable in search and rescue operations, providing aerial views over vast areas in less time than traditional methods.  These diverse applications highlight the shift of drones from novelty gadgets to versatile tools in the modern workplace.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2056510,
+        "label": "Consumer drones, initially seen as toys, are now essential tools in search and rescue operations.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2056511,
+        "label": "The use of drones in agriculture and construction has significantly improved efficiency and safety.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2056512,
+        "label": "Drones are transitioning from primarily recreational devices to valuable tools in a variety of professional fields.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2056513,
+        "label": "Farmers and construction companies are the primary beneficiaries of drone technology in the professional sector.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 322320,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Orchids, known for their diverse and vibrant flowers, are often perceived as delicate and requiring specific tropical climates. However, botanist Emily Thompson's recent study challenges this notion. Her research, conducted across various temperate regions, reveals that a surprising number of orchid species are remarkably resilient and adaptable to colder environments. Thompson and her team discovered that certain orchid varieties employ unique physiological mechanisms, such as specialized antifreeze proteins, to survive freezing temperatures. These findings suggest that orchids may be more widespread and ecologically significant in non-tropical areas than previously thought.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3223200,
+        "label": "Orchids are predominantly found in tropical climates due to their delicate nature.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3223201,
+        "label": "Botanist Emily Thompson's study focuses on the antifreeze proteins found in certain plants.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3223202,
+        "label": "Research indicates that some orchid species are surprisingly adaptable to and resilient in colder, temperate climates.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3223203,
+        "label": "Specialized antifreeze proteins are the primary reason for the vibrancy and diversity of orchid flowers.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 414409,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Urban green spaces like parks and gardens provide numerous benefits for city dwellers. Studies have shown that access to green spaces can reduce stress, improve mental health, and encourage physical activity. Furthermore, green spaces can help mitigate the urban heat island effect, improve air quality, and support biodiversity in cities. As cities become more densely populated, the importance of preserving and expanding urban green spaces is increasingly recognized by urban planners and public health officials.  According to the text, what is one reason urban green spaces are considered important in cities?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4144090,
+        "label": "They primarily serve as venues for large public events.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4144091,
+        "label": "They offer various advantages for the well-being of city residents and the environment.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4144092,
+        "label": "They are essential for attracting tourists and boosting the local economy.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4144093,
+        "label": "They mainly provide habitats for endangered animal species in urban areas.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 498148,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Dr. Mae Jemison was the first African American woman to travel to space.  Before becoming an astronaut, she was a medical doctor who served in the Peace Corps in Liberia and Sierra Leone.  Jemison has often spoken about the importance of encouraging students, especially minority students, to pursue careers in science and technology fields. She believes that everyone, regardless of their background, has the potential to contribute to scientific advancements.\n\n<br>\nWhat is the primary purpose of the text about Dr. Mae Jemison?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4981480,
+        "label": "To highlight the challenges faced by doctors in developing countries",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4981481,
+        "label": "To encourage more women to join the Peace Corps",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4981482,
+        "label": "To promote scientific careers among students from all backgrounds",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4981483,
+        "label": "To detail the rigorous training required to become an astronaut",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 560472,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "The following text is adapted from Frederick Douglass's 1845 autobiography, *Narrative of the Life of Frederick Douglass, an American Slave*. In this excerpt, Douglass describes his early attempts to learn to read and write.  I lived in Master Hugh's family about seven years. During this time, I succeeded in learning to read and write. In accomplishing this, I was compelled to resort to various stratagems. I had no regular teacher. My mistress, Mrs. Sophia Auld, was my first teacher. She very kindly commenced to teach me the alphabet. After I had learned this, she assisted me in learning to spell. She also taught me to read. In a very short time, by her kind assistance, I had mastered the alphabet and could spell and read to a considerable extent. At this point of my progress, my kind mistress was suddenly checked in her benevolent design, by the unexpect­ed interference of her husband, Master Hugh.\n\n<br>\n\nWhich statement best summarizes Frederick Douglass’s early experiences with learning to read and write as described in the excerpt?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5604720,
+        "label": "Frederick Douglass lived with Master Hugh's family for seven years and during that time was largely unsuccessful in his attempts to learn literacy.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5604721,
+        "label": "Frederick Douglass was initially taught to read and write by Mrs. Auld, who willingly began his education until her husband intervened.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5604722,
+        "label": "Mrs. Auld was a reluctant teacher who only briefly assisted Frederick Douglass with learning the alphabet before abandoning his education.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5604723,
+        "label": "Master Hugh actively supported Frederick Douglass's education and encouraged Mrs. Auld to continue teaching him to read and write.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 652688,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Before the invention of the printing press in the mid-15th century, books were painstakingly handwritten, making them expensive and scarce. Johannes Gutenberg's printing press, utilizing movable type, revolutionized book production. Suddenly, books could be produced much faster and in larger quantities, dramatically lowering their cost. This increased accessibility to books had a profound impact on society, fostering literacy, spreading knowledge, and contributing to the intellectual and cultural shifts of the Renaissance and Reformation.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6526880,
+        "label": "Johannes Gutenberg's printing press utilized movable type, which made book production faster.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6526881,
+        "label": "The printing press dramatically reduced the cost of books, making them more widely available.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6526882,
+        "label": "The invention of the printing press revolutionized book production and profoundly impacted society by increasing access to knowledge.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6526883,
+        "label": "Before the printing press, books were expensive and scarce because they were handwritten.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 707596,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Botanists investigated the effect of different soil types on the growth rate of sunflower seedlings. In an experiment, they planted 50 sunflower seeds in sandy soil and another 50 sunflower seeds in clay soil. All other conditions, such as watering and sunlight exposure, were kept the same for both groups. After two weeks, they measured the average height of the seedlings in each group. Seedlings in clay soil had an average height of 15 cm, while seedlings in sandy soil had an average height of 22 cm. The botanists concluded that sandy soil promotes faster initial growth in sunflower seedlings compared to clay soil.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7075960,
+        "label": "Botanists have determined that clay soil is detrimental to the long-term health of sunflower plants.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7075961,
+        "label": "An experiment demonstrated that sunflower seedlings grow taller in sandy soil than in clay soil in the first two weeks.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7075962,
+        "label": "The study suggests that the type of soil has no significant impact on the growth rate of sunflower seedlings.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7075963,
+        "label": "Botanists are primarily interested in studying the effects of soil composition on the growth of various plant species.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 790512,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "The following text describes the initial reception of the telephone.  When Alexander Graham Bell introduced the telephone, he was filled with excitement about its potential to connect people across distances. He envisioned a world where conversations could happen instantly, regardless of location. However, the public response was initially mixed. Many people were skeptical. They questioned the practicality of such a device and doubted whether it would truly be useful in everyday life.  Some newspapers even ridiculed the idea, calling it a 'scientific toy' with no real future.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7905120,
+        "label": "While the inventor was optimistic about the telephone, the public was unsure of its value.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7905121,
+        "label": "Newspapers were uniformly supportive of Bell's invention and predicted its success.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7905122,
+        "label": "The telephone quickly became popular and changed daily life for most people.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7905123,
+        "label": "Bell focused solely on the scientific aspects of the telephone and ignored public opinion.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 808270,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Zora Neale Hurston, a central figure of the Harlem Renaissance, carved a unique path by centering her literary and anthropological work on the lives of ordinary Black Americans in the rural South. While some contemporaries engaged with urban themes or direct political protest, Hurston immersed herself in documenting the vibrant cultural traditions, folklore, and daily routines of Southern Black communities. This emphasis on the everyday and vernacular, rather than solely on narratives of hardship, aimed to offer a more comprehensive and nuanced depiction of Black life.  According to the text, what was significant about Hurston's focus on the lives of ordinary Black Americans in her work?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8082700,
+        "label": "It allowed her to primarily address political injustices prevalent during the Harlem Renaissance.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8082701,
+        "label": "It enabled her to document the cultural traditions and everyday experiences of Black communities.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8082702,
+        "label": "It quickly established her as the most commercially successful writer of her time.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8082703,
+        "label": "It primarily focused on the urban experiences of Black people during the Harlem Renaissance.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 813447,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Easy",
+    "question_text": "Artificial light at night, from streetlights to building illumination, is increasingly recognized as a significant environmental pollutant. Studies show that nocturnal animals, which have evolved in darkness, are particularly vulnerable. For instance, migratory birds can become disoriented by city lights, leading to collisions with buildings. Sea turtles, which rely on dark beaches to lay their eggs, are deterred by artificial light, and hatchlings are drawn inland to lit areas instead of the ocean. Scientists are now exploring ways to mitigate light pollution to protect these sensitive ecosystems.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8134470,
+        "label": "Artificial light at night primarily affects migratory birds and sea turtles, causing them to become disoriented and stray from their natural habitats.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8134471,
+        "label": "While artificial light improves human safety in urban areas, its detrimental effects on nocturnal animals are becoming increasingly evident.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8134472,
+        "label": "Nocturnal animals, having evolved in the dark, are disproportionately harmed by artificial light pollution, which disrupts their natural behaviors and ecosystems.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8134473,
+        "label": "Scientists believe that reducing light pollution will have minimal impact on the overall health and survival of nocturnal animal populations.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

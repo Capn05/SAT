@@ -1,0 +1,457 @@
+[
+  {
+    "id": 47248,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "$$x + y = 6$$ $$y = x^2$$ If $(x, y)$ is a solution to the system of equations above, which of the following is a possible value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 472480,
+        "label": "-1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 472481,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 472482,
+        "label": "1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 472483,
+        "label": "2",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 91761,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "Which of the following inequalities is equivalent to the inequality below? $$10x + 5y < 20$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 917610,
+        "label": "$2x + y > 4$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 917611,
+        "label": "$2x + y < 4$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 917612,
+        "label": "$2x - y < 4$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 917613,
+        "label": "$x + 2y < 4$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 269059,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "Which of the following is a solution to the equation $4z^2 - 20 = z^2 + 7$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2690590,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2690591,
+        "label": "3",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2690592,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2690593,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 299092,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "If $(x + 3)^2 = 9$, which of the following is a possible value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2990920,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2990921,
+        "label": "-3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2990922,
+        "label": "0",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2990923,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 327379,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "The area of a rectangle can be calculated using the formula $A = LW$, where $A$ is the area, $L$ is the length, and $W$ is the width. Which of the following equations gives the width of the rectangle in terms of $A$ and $L$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3273790,
+        "label": "$W = AL$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3273791,
+        "label": "$W = \\frac{A}{L}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3273792,
+        "label": "$W = \\frac{L}{A}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3273793,
+        "label": "$W = A - L$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 368961,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "$$\\sqrt{x+5} = 7$$ What value of $x$ satisfies the equation above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3689610,
+        "label": "44",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3689611,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3689612,
+        "label": "54",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3689613,
+        "label": "7",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 405771,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "The density $D$ of an object is given by the formula $D = \\frac{m}{V}$, where $m$ is the mass of the object and $V$ is its volume. Which of the following correctly expresses the volume $V$ in terms of $D$ and $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4057710,
+        "label": "$V = \\frac{m}{D}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4057711,
+        "label": "$V = mD$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4057712,
+        "label": "$V = \\frac{D}{m}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4057713,
+        "label": "$V = m + D$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 448636,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "$$x^2 = 15 \\cdot 15$$ What is the positive solution to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4486360,
+        "label": "15",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4486361,
+        "label": "-15",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4486362,
+        "label": "225",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4486363,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 655039,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "The given equation relates the positive numbers $p$, $q$, and $r$. $$p = 75qr$$ Which equation correctly expresses $q$ in terms of $p$ and $r$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6550390,
+        "label": "$q = \\frac{p}{75r}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6550391,
+        "label": "$q = 75pr$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6550392,
+        "label": "$q = 75 - \\frac{p}{r}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6550393,
+        "label": "$q = \\frac{75r}{p}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 663374,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "The given equation relates the positive numbers $p$, $m$, and $n$. $$3p + 5m = n$$ Which equation correctly expresses $p$ in terms of $m$ and $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6633740,
+        "label": "$p = \\frac{n + 5m}{3}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6633741,
+        "label": "$p = \\frac{n - 5m}{3}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6633742,
+        "label": "$p = 3(n - 5m)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6633743,
+        "label": "$p = \\frac{n - 3m}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 691082,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "$$2x - 15 = y + z$$ The given equation relates the variables $x$, $y$, and $z$. Which equation correctly expresses $x$ in terms of $y$ and $z$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6910820,
+        "label": "$x = \\frac{y + z + 15}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6910821,
+        "label": "$x = \\frac{y + z - 15}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6910822,
+        "label": "$x = y + z + 15$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6910823,
+        "label": "$x = 2(y + z + 15)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 851846,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "What is one possible solution to the given equation? $$|2x + 3| = 7$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8518460,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8518461,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8518462,
+        "label": "-2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8518463,
+        "label": "4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 952032,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Easy",
+    "question_text": "$$\\sqrt{x + 5} = 4$$ Which of the following values of $x$ satisfies the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9520320,
+        "label": "11",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9520321,
+        "label": "16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9520322,
+        "label": "-1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9520323,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "id": 8982,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "Initial paleontological interpretations of *Tyrannosaurus Rex* bones suggested a solitary predator. However, recent discoveries of multiple *T. Rex* fossils in close proximity, dating from the same geological period, are increasingly _________ that long-held view.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 89820,
+        "label": "refining",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 89821,
+        "label": "solidifying",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 89822,
+        "label": "confirming",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 89823,
+        "label": "undermining",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 33598,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "Dr. Aris Thorne’s research on avian migration patterns necessitates a highly ______ approach to field observations. Spending countless hours in remote locations, Dr. Thorne meticulously documents every detail, from species identification to flight altitudes and environmental conditions, ensuring the integrity of his dataset.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 335980,
+        "label": "desultory",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 335981,
+        "label": "rigorous",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 335982,
+        "label": "perfunctory",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 335983,
+        "label": "intuitive",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 173890,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "While many economists assume that technological advancements inevitably lead to widespread job losses, the introduction of automated looms in the 19th-century textile industry presents a notable ________. Contrary to expectations, a 2023 study revealed that the efficiency gains spurred by these looms led to an *increase* in overall employment within the sector.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1738900,
+        "label": "predicament",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1738901,
+        "label": "paradox",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1738902,
+        "label": "anomaly",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1738903,
+        "label": "validation",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 240088,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "Studies on social media use and mental health are varied. Some suggest a correlation between increased social media consumption and heightened anxiety. However, others argue that social media can be a tool for connection, especially for those with limited offline social networks. Despite these varying perspectives, most researchers agree that the \\_\\_\\_\\_ social media use, rather than use itself, is the crucial factor in determining its impact on well-being.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2400880,
+        "label": "context of",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2400881,
+        "label": "duration of",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2400882,
+        "label": "accessibility of",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2400883,
+        "label": "novelty of",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 271741,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "While initial predictions suggested that digital communication would foster stronger interpersonal bonds, researcher Anya Kamenetz argues that as technology has become increasingly integrated into daily life, human interactions have become notably _______, characterized by fleeting exchanges and a decline in sustained, meaningful conversation.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2717410,
+        "label": "cursory",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2717411,
+        "label": "profound",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2717412,
+        "label": "tenuous",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2717413,
+        "label": "robust",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 275101,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "While some urban planners advocate for increased green spaces in cities, citing the environmental and health benefits, others argue that prioritizing housing density is crucial to address urban sprawl and affordability, suggesting that the focus on green spaces may come at the _____________ of necessary housing development.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2751010,
+        "label": "detriment",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2751011,
+        "label": "expense",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2751012,
+        "label": "auspice",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2751013,
+        "label": "catalyst",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 542566,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "The following text is adapted from Jane Austen’s 1813 novel *Pride and Prejudice*. Elizabeth had the satisfaction of seeing her father taking pains to get Mr. Bennet away from her sister, and exert himself to restrain the violence of her mother’s reproof. They were not always successful; but in the affairs of this week, they were repeatedly obliged to exert themselves. Which phrase best defines the meaning of \"exert himself\" in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5425660,
+        "label": "To relax",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5425661,
+        "label": "To apply effort",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5425662,
+        "label": "To boast",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5425663,
+        "label": "To criticize",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 565310,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "While initial studies suggested that the impact of microplastics on marine ecosystems was minimal, Dr. Anya Sharma's recent research, focusing on the ingestion rates of these particles by deep-sea organisms, paints a different picture. Her findings indicate that the prevalence of microplastics in the abyssal zone, and their subsequent consumption by even the most remote species, is far from ____________. The data compels a reevaluation of previous assessments and underscores the pervasive reach of plastic pollution.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5653100,
+        "label": "insignificant",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5653101,
+        "label": "negligible",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5653102,
+        "label": "localized",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5653103,
+        "label": "detectable",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 814704,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "Paleontologist Emily Carter and her team examined fossilized remains of a previously unknown species of prehistoric bird discovered in Montana. Their analysis revealed that the bird possessed unusually dense bones for its size, a characteristic typically associated with aquatic birds that dive underwater. However, the fossil site showed no evidence of a large body of water, and the bird's skeletal structure lacked other adaptations common to divers.  The researchers concluded that the bone density in this species was likely _____ the demands of a terrestrial environment with frequent aerial predation.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8147040,
+        "label": "ancillary to",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8147041,
+        "label": "independent of",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8147042,
+        "label": "unaccounted for by",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8147043,
+        "label": "adaptive to",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 909837,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Hard",
+    "question_text": "Dr. Aris Thorne is celebrated for his innovative contributions to astrophysics. Unlike many of his peers who prioritize established methodologies, Thorne champions exploratory investigations, even when those investigations appear initially _____. This willingness to consider less conventional paths has been instrumental in his groundbreaking discoveries.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9098370,
+        "label": "rigorous",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9098371,
+        "label": "untenable",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9098372,
+        "label": "derivative",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9098373,
+        "label": "speculative",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

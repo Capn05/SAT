@@ -1,0 +1,422 @@
+[
+  {
+    "id": 6118,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "A study examined the effect of background noise on reading comprehension. Participants were divided into two groups. Group 1 read a short story in a silent room. Group 2 read the same story in a room with moderate background noise, such as the sound of people talking in another room.  After reading, both groups took a comprehension quiz. Group 1, who read in silence, scored significantly higher on the quiz than Group 2. This finding implies that  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 61180,
+        "label": "reading comprehension is primarily determined by prior knowledge and vocabulary, not environmental factors.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 61181,
+        "label": "background noise may negatively impact the ability to understand and process written information.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 61182,
+        "label": "people who are easily distracted should avoid reading altogether.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 61183,
+        "label": "the volume of background noise is the only factor affecting reading comprehension.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 59335,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Before the invention of the printing press in the 15th century, books were painstakingly handwritten, making them expensive and rare. Each copy had to be manually transcribed, a process that could take months or even years for longer works. The printing press, with its movable type, allowed for the mass production of books. This drastically reduced the time and labor involved in creating books. As a result, it is reasonable to assume that after the widespread adoption of the printing press, _",
+    "image_url": null,
+    "options": [
+      {
+        "id": 593350,
+        "label": "handwriting was no longer taught in schools.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 593351,
+        "label": "the demand for handwritten books increased.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 593352,
+        "label": "the cost of books decreased significantly.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 593353,
+        "label": "authors became less important in the book creation process.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 164065,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Economist Mariana Mazzucato argues that technological advancements are not solely the product of the private sector; rather, they are the result of a collaborative effort between public and private entities.  She points to the development of the internet as a prime example, noting that while companies like Google and Amazon profited immensely from the internet, its foundational technologies were largely funded by government initiatives and research institutions.  Similarly, Mazzucato highlights the role of public investment in the pharmaceutical industry, where basic research funded by the National Institutes of Health often paves the way for profitable drugs developed by private companies.  Thus, Mazzucato contends that the narrative of innovation as a purely private sector endeavor ____________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1640650,
+        "label": "overlooks the crucial contributions of governmental and public institutions.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1640651,
+        "label": "accurately reflects the limited capacity of public institutions to foster true innovation.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1640652,
+        "label": "is primarily supported by evidence from sectors outside of technology and pharmaceuticals.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1640653,
+        "label": "underestimates the financial risks that private companies undertake in technological development.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 182857,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Researchers investigated the impact of different social media platforms on users' feelings of social connection. Participants were randomly assigned to spend 30 minutes daily for a week on either platform A, platform B, or no social media (control group).  Before and after the week, participants completed a survey measuring their feelings of social connection. The results showed that the group using platform A reported a significant increase in feelings of social connection, while the group using platform B reported no significant change compared to the control group. This suggests that  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1828570,
+        "label": "some social media platforms may be more effective than others at fostering feelings of social connection among users.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1828571,
+        "label": "spending 30 minutes a day on social media is generally beneficial for improving feelings of social connection.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1828572,
+        "label": "users who already have strong social connections are more likely to choose platform A over platform B.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1828573,
+        "label": "platforms like platform B are fundamentally flawed in their design and should be redesigned to promote social connection.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 364632,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "In 1911, Ernest Rutherford conducted an experiment to probe the structure of the atom. He directed a beam of alpha particles at a thin gold foil and observed how the particles scattered. Most particles passed straight through, but a small fraction were deflected at large angles, some even bouncing back.  Rutherford concluded that the positive charge and most of the mass of an atom are concentrated in a tiny, central nucleus, rather than being uniformly distributed as previously thought.  Rutherford’s gold foil experiment therefore demonstrated that the atomic model at the time was ____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3646320,
+        "label": "surprisingly accurate in its depiction of electron behavior.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3646321,
+        "label": "fundamentally flawed in its understanding of atomic structure.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3646322,
+        "label": "partially correct but needed refinement in understanding isotopes.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3646323,
+        "label": "consistent with observations of chemical reactions but not physical phenomena.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 517208,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Urban planners increasingly recognize the importance of green spaces in cities. Parks, gardens, and tree-lined streets not only enhance the aesthetic appeal of urban environments but also offer significant benefits for residents' well-being. Studies have shown that access to green spaces reduces stress levels and promotes physical activity. Therefore, many cities are investing in creating and maintaining green spaces because ___________________________________________________________________________________________________________________________________________________  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5172080,
+        "label": "they are primarily focused on improving the visual attractiveness of the city.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5172081,
+        "label": "they believe green spaces contribute to the health and happiness of city dwellers.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5172082,
+        "label": "constructing new buildings is becoming too expensive in densely populated areas.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5172083,
+        "label": "green spaces are easier to maintain than concrete infrastructure.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 607234,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Dr. Ramirez, a marine biologist, was studying the impact of microplastics on marine life in a remote coastal region.  Due to the area's isolation, transporting samples back to her mainland lab for analysis was time-consuming and could compromise sample integrity. To address this, Dr. Ramirez set up a portable, field-operable microscope and analysis station directly at her research site. This on-site setup most likely allowed Dr. Ramirez to __________________________________________________________________________________________________________________________________________________________.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6072340,
+        "label": "publish her findings in more prestigious scientific journals.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6072341,
+        "label": "conduct preliminary analyses of her samples immediately after collection.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6072342,
+        "label": "reduce the overall cost of her research expedition significantly.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6072343,
+        "label": "train local community members in advanced laboratory techniques.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 687287,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "The early internet, unlike the heavily regulated telecommunications networks that preceded it, was designed to be open and decentralized.  This design philosophy encouraged widespread experimentation and collaboration among researchers and hobbyists alike.  The lack of central control meant that individuals could develop new technologies and applications without needing permission from any governing body. This environment of openness and freedom ______",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6872870,
+        "label": "fostered rapid innovation and the emergence of diverse online communities.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6872871,
+        "label": "made it difficult to establish clear standards for online communication and security.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6872872,
+        "label": "primarily benefited large corporations who were able to quickly monopolize online services.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6872873,
+        "label": "initially struggled to gain widespread adoption due to the complexity of the technology.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 888507,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "A recent study investigated the impact of different types of music on plant growth. Researchers played classical music for one group of basil plants and heavy metal music for another group for four hours daily over a period of three weeks. A control group of basil plants was not exposed to any music. At the end of the three weeks, the researchers measured the height and leaf size of the plants in each group. The plants exposed to classical music showed a significant increase in both height and leaf size compared to the control group. In contrast, the plants exposed to heavy metal music showed no significant difference in growth compared to the control group. This suggests that _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8885070,
+        "label": "classical music is the only genre that can positively affect plant growth.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8885071,
+        "label": "exposure to any type of music is detrimental to plant growth.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8885072,
+        "label": "certain types of music may have a beneficial effect on the growth of basil plants.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8885073,
+        "label": "heavy metal music inhibits the growth of all types of plants.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 898195,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Researchers have long been fascinated by the Bar-tailed Godwit's incredible migratory feats. These birds undertake the longest known non-stop flight of any bird, traveling thousands of kilometers between their breeding grounds in Alaska and their non-breeding areas in New Zealand. Recent tracking studies using satellite tags have revealed that some Godwits fly directly over the Pacific Ocean for over 11,000 kilometers without stopping to rest or refuel. This remarkable endurance suggests that the Bar-tailed Godwit likely ________________________________________________________________________________________________________________________________________________  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8981950,
+        "label": "relies on favorable wind patterns to assist its transpacific journeys.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8981951,
+        "label": "has developed highly efficient metabolic processes for long-distance flight.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8981952,
+        "label": "is the only bird species capable of migrating over such vast distances.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8981953,
+        "label": "faces significant challenges from predators during its lengthy migrations.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 922298,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Archaeologists studying two ancient settlements in the Indus Valley, Harappa and Mohenjo-daro, analyzed pottery shards to understand trade patterns.  They discovered that Harappa, located further north, contained a significantly higher proportion of pottery made from clay sources found near Mohenjo-daro, located further south, than vice versa.  Additionally, the pottery found in Harappa, originating from the south, was often of a finer quality and more elaborately decorated than the locally produced Harappan pottery. Taken together, these findings suggest that _______________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9222980,
+        "label": "Harappan potters primarily used clay sources from Mohenjo-daro for all their pottery production.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9222981,
+        "label": "trade between Harappa and Mohenjo-daro likely involved the southward movement of higher quality pottery from Mohenjo-daro to Harappa.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9222982,
+        "label": "Mohenjo-daro was likely more dependent on trade with Harappa than Harappa was on trade with Mohenjo-daro.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9222983,
+        "label": "the clay sources near Harappa were completely unsuitable for pottery making, forcing Harappans to import clay from the south.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 980703,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Easy",
+    "question_text": "Botanists investigated the impact of light spectrum on spinach growth. Three groups of spinach plants were grown under identical conditions except for the light source. Group A received predominantly red light, Group B predominantly blue light, and Group C a mix of red and blue light.  After two weeks, leaf surface area was measured. Group A exhibited significantly smaller leaf areas compared to Groups B and C, which were similar and larger. The botanists concluded that for spinach, efficient growth is more likely with _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9807030,
+        "label": "red light alone.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9807031,
+        "label": "blue light alone or combined with red light.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9807032,
+        "label": "increasing red light intensity.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9807033,
+        "label": "the length of light exposure.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

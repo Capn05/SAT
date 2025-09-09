@@ -1,0 +1,142 @@
+[
+  {
+    "id": 479505,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Medium",
+    "question_text": "The number of radians in a $270$-degree angle can be written as $a\\pi$, where $a$ is a constant. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4795050,
+        "label": "$\\frac{3}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4795051,
+        "label": "$\\frac{2}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4795052,
+        "label": "$3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4795053,
+        "label": "$2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 684941,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, a circle has center $(5, -3)$ and radius $7$. Which of the following is an equation of this circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6849410,
+        "label": "$(x-5)^2 + (y+3)^2 = 7$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6849411,
+        "label": "$(x+5)^2 + (y-3)^2 = 49$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6849412,
+        "label": "$(x-5)^2 + (y+3)^2 = 49$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6849413,
+        "label": "$(x+5)^2 + (y-3)^2 = 7$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 769080,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Medium",
+    "question_text": "An angle has a measure of $\\frac{5\\pi}{6}$ radians. What is the measure of this angle in degrees?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7690800,
+        "label": "30",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7690801,
+        "label": "120",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7690802,
+        "label": "150",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7690803,
+        "label": "300",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 887680,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Medium",
+    "question_text": "A circle in the $xy$-plane has its center at $(2, -3)$ and the point $(5, 1)$ lies on the circle. Which equation represents this circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8876800,
+        "label": "$(x+2)^2 + (y-3)^2 = 5$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8876801,
+        "label": "$(x-2)^2 + (y+3)^2 = 5$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8876802,
+        "label": "$(x+2)^2 + (y-3)^2 = 25$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8876803,
+        "label": "$(x-2)^2 + (y+3)^2 = 25$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

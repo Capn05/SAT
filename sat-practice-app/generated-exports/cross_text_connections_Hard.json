@@ -1,0 +1,352 @@
+[
+  {
+    "id": 35764,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "Text 1  \n\nIn a study of urban noise pollution, researchers placed sound level meters at various locations in a city center. They found that noise levels consistently exceeded 70 decibels (dB) during daytime hours, peaking at 85 dB during rush hour traffic. The researchers concluded that these levels pose a significant risk to public health, potentially contributing to stress, sleep disturbances, and even cardiovascular problems among city residents.  \n\nText 2  \n\nWhile acknowledging the potential negative impacts of excessive noise, some urban planners argue that focusing solely on decibel levels provides an incomplete picture of the issue. They contend that the type of noise is also crucial.  The rhythmic sounds of a fountain in a park, for instance, might be perceived as less disruptive and stressful than the intermittent screech of car brakes, even if both register at similar decibel readings.  Therefore, simply reducing overall dB levels may not be sufficient to improve the acoustic environment of a city; attention must also be paid to the quality and characteristics of urban sounds. \n<br>\n\n Based on the texts, how would the urban planners in Text 2 most likely respond to the researchers' conclusion in Text 1 about the health risks of urban noise?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 357640,
+        "label": "By suggesting that the researchers should have focused on measuring noise levels during nighttime hours when sleep disturbances are more likely.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 357641,
+        "label": "By arguing that the researchers' conclusion is valid only for individuals living in close proximity to major traffic arteries.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 357642,
+        "label": "By claiming that the researchers' methodology was flawed because sound level meters are unreliable in urban environments.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 357643,
+        "label": "By pointing out that the researchers' analysis overlooks the qualitative differences between various types of urban sounds at similar decibel levels.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 110679,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "Text 1 \n\n In many cultures, storytelling serves not only as entertainment but also as a crucial method for transmitting cultural values and historical knowledge across generations. Oral traditions, in particular, rely on the art of narrative to embody and preserve a community's identity, beliefs, and collective memory. The nuances of tone, rhythm, and even the physical presence of the storyteller enrich the transmission of these narratives, creating a deeply engaging and memorable experience for listeners.  \n \n Text 2 \n \n  While digital archives offer unprecedented capacity for storing and disseminating information, some scholars express concern about their effectiveness in preserving cultural heritage.  The conversion of complex cultural expressions, such as nuanced oral histories and traditional performances, into digital formats may inevitably lead to a loss of vital contextual elements.  These elements, often intangible and experiential, are crucial for fully understanding and appreciating the cultural significance of the original forms. \n  <br>\n\n   Based on the texts, how would the author of Text 1 most likely respond to the concerns raised in Text 2?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1106790,
+        "label": "By asserting that the engaging nature of oral storytelling can be effectively replicated through interactive digital platforms.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1106791,
+        "label": "By emphasizing that the primary goal of cultural preservation should be accessibility, which digital archives undeniably enhance.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1106792,
+        "label": "By arguing that the irreplaceable elements of live storytelling are fundamentally diminished when traditions are solely preserved digitally.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1106793,
+        "label": "By suggesting that digital archives should prioritize the preservation of written texts and visual artifacts over oral traditions.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 354465,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "### Text 1 \n\n Public health interventions aimed at reducing sugar consumption often focus on taxation or labeling of sugary drinks. Proponents argue that these measures effectively deter consumption by increasing prices or raising awareness of health risks.  They point to studies showing a correlation between increased taxes on sugary drinks and a decrease in their sales, concluding that such policies are crucial for combating obesity and related diseases. \n \n### Text 2 \n  \n   While taxation and labeling may play a role, the focus on individual sugary drinks overlooks the broader issue of added sugars in processed foods.  These hidden sugars, found in everything from bread to sauces, contribute significantly to overall sugar intake and are less easily targeted by drink-specific interventions.  Effective public health strategies must address the pervasive nature of added sugars across the entire food supply, not just isolated beverage categories. \n   <br>\n\n    Based on the texts, how would the author of Text 2 most likely characterize the underlined claim in Text 1? ",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3544650,
+        "label": "As appropriately emphasizing the need for multifaceted approaches to combating public health issues.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3544651,
+        "label": "As accurately reflecting the comprehensive nature of current public health interventions.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3544652,
+        "label": "As somewhat limited in scope by its narrow focus on a single category of sugary products.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3544653,
+        "label": "As fundamentally flawed in its understanding of the relationship between taxation and consumer behavior.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 365209,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "#### Text 1  \n\nTechnological advancements in artificial intelligence (AI) are rapidly transforming numerous sectors, including creative industries.  Some observers predict that AI tools will soon become indispensable for artists and writers, assisting with idea generation, content creation, and overcoming creative blocks. They envision a future where AI enhances human creativity, allowing for new forms of artistic expression. \n\n #### Text 2 \n \n  While AI offers intriguing possibilities for creative fields, it is essential to approach its integration with caution.  History shows that over-reliance on technology in art can sometimes lead to homogenization and a decline in originality.  The emphasis should remain on human ingenuity and emotional depth, ensuring that AI serves as a tool to augment, not replace, the unique aspects of human creativity.  True art stems from lived experience and personal expression, elements that AI, in its current form, cannot replicate.  \n  <br>\n\n  Based on the texts, how would the author of Text 2 most likely respond to the predictions about AI's role in creative industries presented in Text 1? ",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3652090,
+        "label": "By fully embracing the optimistic view of AI's potential to revolutionize artistic creation and expressing excitement about the future of AI-assisted art",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3652091,
+        "label": "By acknowledging the potential benefits of AI tools for creative processes but cautioning against an overemphasis on technology at the expense of human elements in art",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3652092,
+        "label": "By dismissing the predictions in Text 1 as overly enthusiastic and arguing that AI will ultimately have a negligible impact on artistic creation",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3652093,
+        "label": "By agreeing with the predictions but suggesting that the integration of AI in art will primarily benefit commercial applications rather than purely artistic pursuits",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 487252,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "#### Text 1  \n\nResearchers in a 2018 study investigated the impact of blue light exposure on sleep quality. Participants were divided into two groups: one group used blue-light emitting devices (smartphones, tablets) for two hours before bed, and the other group used devices with blue-light filters for the same duration.  The study found that the blue-light exposure group reported significantly lower sleep quality and increased sleep latency (time to fall asleep) compared to the blue-light filter group.  #### Text 2  A separate study in 2021 explored the effects of ambient temperature on sleep. Participants slept in rooms with varying temperatures (18°C, 22°C, 26°C).  The results indicated that participants in the 18°C room experienced more frequent awakenings and reduced REM sleep duration compared to those in the 22°C and 26°C rooms.  Participants in the 26°C room also reported slightly disrupted sleep and increased awakenings compared to the 22°C room, suggesting an optimal temperature range for sleep.  \n<br>\n\nBased on the texts, if the researchers from the 2018 study (Text 1) and the 2021 study (Text 2) were aware of the findings of both experiments, they would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4872520,
+        "label": "The negative effects of blue light on sleep can be mitigated by maintaining a room temperature of 22°C.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4872521,
+        "label": "Environmental factors, such as light exposure and temperature, independently influence different aspects of sleep quality.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4872522,
+        "label": "Devices with blue-light filters are less detrimental to sleep quality than maintaining an optimal room temperature.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4872523,
+        "label": "Both blue light exposure and cooler room temperatures primarily affect sleep latency, but not REM sleep duration.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 606153,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "#### Text 1  \n\nPrior to the 1980s, the prevailing medical view held that peptic ulcers were primarily caused by factors such as stress and diet. The notion that bacteria could thrive in the highly acidic environment of the stomach, let alone cause ulcers, was considered unlikely by many. While some researchers proposed a bacterial link, their findings were often met with skepticism, and traditional treatments focused on managing stomach acid and lifestyle changes.  \n\n#### Text 2  \n\nSince the groundbreaking work of Barry Marshall and Robin Warren in the early 1980s, the medical consensus has shifted significantly. It is now widely accepted that *Helicobacter pylori* (*H. pylori*) bacteria play a crucial role in the development of peptic ulcers. Extensive research has established a strong correlation between *H. pylori* infection and ulcer formation. Consequently, antibiotics have become a standard component in ulcer treatment, alongside acid-reducing medications, reflecting the current understanding of *H. pylori* as a key factor in ulcer pathogenesis.  \n<br>\n\nBased on the texts, both Text 1 and Text 2 would most likely agree with which statement regarding the understanding of peptic ulcers?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6061530,
+        "label": "The presence of bacteria within the stomach was a subject of scientific inquiry.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6061531,
+        "label": "Lifestyle modifications are ineffective in treating peptic ulcers.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6061532,
+        "label": "Peptic ulcers were fully understood by the medical community prior to the 1980s.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6061533,
+        "label": "Antibiotics were a common treatment for peptic ulcers throughout the 20th century.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 671918,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "#### Text 1  \n\nWhile often lauded for its economic growth, the fictional nation of Genovia, as depicted in popular media, presents a troubling picture of societal inequality.  Despite a seemingly prosperous facade, closer examination reveals a stark divide between the wealthy elite, who benefit disproportionately from Genovia's industries, and a significant portion of the population struggling with poverty and limited access to essential resources like healthcare and education. This economic disparity undermines the notion of Genovia as a genuinely successful nation.  \n\n#### Text 2  \n\nGenovia's economic model, while not without its challenges, has demonstrably improved the overall quality of life for its citizens.  Key indicators such as average income and life expectancy have risen significantly in recent decades, suggesting a broad-based improvement across society.  While acknowledging that some disparities exist, the focus should be on the positive trajectory of Genovia's development and the government's ongoing efforts to address remaining inequalities through targeted social programs and investments in infrastructure.  \n<br>\n\nWhich choice best describes a difference in how the authors of Text 1 and Text 2 view the nation of Genovia?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6719180,
+        "label": "The author of Text 1 emphasizes the negative aspects of Genovia's economic inequality, while the author of Text 2 focuses on the positive overall improvements in Genovia's quality of life.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6719181,
+        "label": "The author of Text 1 believes Genovia's economic problems are entirely due to fictional media portrayals, while the author of Text 2 implies that these problems are rooted in real-world economic data.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6719182,
+        "label": "The author of Text 1 argues that Genovia's government is unaware of the economic disparities, while the author of Text 2 suggests the government is actively working to exacerbate these inequalities.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6719183,
+        "label": "The author of Text 1 focuses on Genovia's political instability as the primary issue, whereas the author of Text 2 believes that Genovia's main challenge is its lack of natural resources.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752387,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "#### Text 1  \n\nEconomist Anya Sharma argues that the implementation of a universal basic income (UBI) could significantly boost national productivity. She posits that a guaranteed income floor would reduce financial precarity, allowing individuals to pursue education, entrepreneurship, or more fulfilling careers.  Sharma contends that this increased economic agency would lead to a more skilled and motivated workforce, ultimately driving innovation and overall economic output.  \n\n#### Text 2  \n\nSociologist Ben Carter, while acknowledging the potential benefits of UBI, expresses concern about its impact on workforce participation.  Carter's research suggests that a UBI, without robust complementary programs and social support systems, could lead to a decrease in overall labor force participation. He argues that for some individuals, a guaranteed income might disincentivize work, particularly in lower-paying jobs, potentially offsetting any gains in productivity from increased education and entrepreneurship.  \n<br>\n\nBased on the texts, how would Ben Carter (Text 2) most likely respond to Anya Sharma's (Text 1) argument about the productivity benefits of UBI? ",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7523870,
+        "label": "By conceding that UBI might improve individual well-being but questioning whether these improvements would translate into measurable gains in national productivity",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7523871,
+        "label": "By challenging the assumption that financial security is the primary factor limiting individual pursuit of education and entrepreneurship",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7523872,
+        "label": "By cautioning that the potential reduction in workforce participation due to UBI could counteract any positive effects on national productivity",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7523873,
+        "label": "By agreeing that UBI could enhance productivity but only if implemented in conjunction with policies that actively encourage workforce participation",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 864327,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "### Text 1  \n\nAnalysis of tree rings from the American Southwest reveals a prolonged drought period around 1300 CE, coinciding with the abandonment of many Ancestral Puebloan settlements. This correlation has led some researchers to hypothesize that severe drought was the primary cause of this societal shift. They argue that prolonged water scarcity would have decimated agriculture, leading to famine and social disruption, ultimately forcing people to relocate.  \n\n### Text 2  \n\nWhile acknowledging the significant drought around 1300 CE, other researchers point out evidence of societal strain among Ancestral Puebloans prior to this period, including increased intergroup conflict and resource depletion in certain areas. They suggest that these pre-existing vulnerabilities, rather than drought alone, may have been the critical factors in the settlements' abandonment. Drought, in this view, might have acted as a tipping point for a society already under considerable stress.  \n<br>\n\nWhich choice best describes how Text 1 and Text 2 relate to each other?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8643270,
+        "label": "Text 1 presents a hypothesis and supporting evidence, whereas Text 2 offers contradictory evidence that undermines that hypothesis.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8643271,
+        "label": "Text 1 proposes a single factor as the primary cause of a historical event, whereas Text 2 suggests a more complex explanation involving multiple contributing factors.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8643272,
+        "label": "Text 1 describes a widely accepted historical narrative, whereas Text 2 challenges the accuracy of that narrative based on new archaeological findings.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8643273,
+        "label": "Text 1 focuses on the environmental aspects of a historical event, whereas Text 2 emphasizes the social and political dimensions of the same event.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 985182,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Hard",
+    "question_text": "Text 1\n\nTraditional economic models often rely on the assumption of rational choice. This framework posits that individuals act as rational agents, diligently weighing costs and benefits before making decisions to maximize their personal utility.  According to this view, consumer behavior is driven by logical calculations aimed at achieving optimal outcomes.\n\nText 2\n\nHowever, the field of behavioral economics has presented substantial challenges to the rational choice model. Empirical studies consistently demonstrate that human decision-making is susceptible to various cognitive biases and emotional influences that deviate from purely rational calculations. \n<br>\nWhich of the following best reflects the challenge behavioral economics poses to the rational choice model, as described in Text 1 and Text 2?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9851820,
+        "label": "It is a generally sound framework that requires minor adjustments to incorporate psychological factors.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9851821,
+        "label": "It is fundamentally misguided, as it overlooks the pervasive influence of cognitive biases on decision-making.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9851822,
+        "label": "It holds true primarily in controlled laboratory settings but is less applicable to real-world consumer behavior.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9851823,
+        "label": "It offers a valuable initial perspective, but it needs to be expanded to fully account for the complexities of human emotions.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

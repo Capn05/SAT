@@ -1,0 +1,177 @@
+[
+  {
+    "id": 21821,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Medium",
+    "question_text": "For the right triangle shown, which expression represents the value of $b$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//21821.png",
+    "options": [
+      {
+        "id": 218210,
+        "label": "$\\sqrt{17^2 - 8^2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 218211,
+        "label": "$17^2 - 8^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 218212,
+        "label": "$\\sqrt{17 - 8}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 218213,
+        "label": "$17 - 8$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 789394,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Medium",
+    "question_text": "The length of a rectangle's diagonal is $4\\sqrt{29}$, and the length of the rectangle's shorter side is $8$. What is the length of the rectangle's longer side?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7893940,
+        "label": "20",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7893941,
+        "label": "29",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7893942,
+        "label": "$4\\sqrt{33}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7893943,
+        "label": "16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 879456,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Medium",
+    "question_text": "In right triangle $ABC$, angle $C$ is a right angle, and angle $A$ measures $30^\\circ$. If the length of side $BC$ is 5, what is the length of hypotenuse $AB$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8794560,
+        "label": "10",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8794561,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8794562,
+        "label": "$5\\sqrt{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8794563,
+        "label": "7.5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 967774,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Medium",
+    "question_text": "In right triangle $ABC$, $\\angle C$ is a right angle. Altitude $\\overline{CD}$ is drawn to hypotenuse $\\overline{AB}$. If $AC = 8$ and $BC = 6$, what is the length of $\\overline{CD}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9677740,
+        "label": "4.0",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9677741,
+        "label": "4.8",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9677742,
+        "label": "5.0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9677743,
+        "label": "6.4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 969814,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Medium",
+    "question_text": "A carpenter is building a ramp for wheelchair access. The ramp is in the shape of a right triangle. The horizontal leg of the triangle measures $4$ feet, and the vertical leg measures $6$ feet. What is the length of the ramp, which is the hypotenuse of the right triangle, in feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9698140,
+        "label": "$2\\sqrt{13}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9698141,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9698142,
+        "label": "$\\sqrt{26}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9698143,
+        "label": "26",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

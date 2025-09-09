@@ -1,0 +1,196 @@
+{
+  "questions": [
+    {
+      "id": "9f1e3c9a-4a40-4e8e-9a58-0d8cf8073b20",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 9,
+      "difficulty": "Medium",
+      "question_text": "A right triangular prism has a right-triangular base with legs of lengths $3$ cm and $4$ cm. If the volume of the prism is $150$ cubic centimeters, what is the length of the prism, in centimeters?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3cf5f354-2a3d-4a9e-9b75-7d2e7ce2a0d8",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 9,
+      "difficulty": "Medium",
+      "question_text": "A right circular cylinder has a volume of $750\\pi$ cubic centimeters and a height of $15$ centimeters. What is the radius, in centimeters, of the cylinder?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c0c2d9a3-b496-4d5b-8a21-7f2ab4e9b8ef",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 9,
+      "difficulty": "Medium",
+      "question_text": "A circle and a square have equal perimeters. What is the ratio of the area of the square to the area of the circle?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5a44a9a8-9e9f-4c0e-89eb-1d8a6aa2b8d1",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 9,
+      "difficulty": "Medium",
+      "question_text": "A right circular cylinder with radius $5$ centimeters is filled with water to a depth of $h$ centimeters. The water is poured into a right circular cone with the same base radius $5$ centimeters and height $12$ centimeters, filling the cone exactly. What is the value of $h$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b7b47d72-6f66-4c41-8a30-9d1f4a1edc6e",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 9,
+      "difficulty": "Medium",
+      "question_text": "Two cubes are similar. The ratio of their surface areas is $9:16$. If the volume of the smaller cube is $54$ cubic units, what is the volume, in cubic units, of the larger cube?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "bda9b03b-88b5-4b61-a74b-86fdf0a4672f",
+      "question_id": "9f1e3c9a-4a40-4e8e-9a58-0d8cf8073b20",
+      "value": "A",
+      "label": "20",
+      "is_correct": false
+    },
+    {
+      "id": "0f89af43-b7f0-4d2f-9c74-6b46de9e62fb",
+      "question_id": "9f1e3c9a-4a40-4e8e-9a58-0d8cf8073b20",
+      "value": "B",
+      "label": "25",
+      "is_correct": true
+    },
+    {
+      "id": "e4f05e4d-0b14-4a95-8ee1-992a37bc32a2",
+      "question_id": "9f1e3c9a-4a40-4e8e-9a58-0d8cf8073b20",
+      "value": "C",
+      "label": "30",
+      "is_correct": false
+    },
+    {
+      "id": "edc7b5a1-8c6f-4c6d-8b2e-e7e9a643d3a4",
+      "question_id": "9f1e3c9a-4a40-4e8e-9a58-0d8cf8073b20",
+      "value": "D",
+      "label": "12",
+      "is_correct": false
+    },
+    {
+      "id": "5e6f37b0-76db-4f9d-9e69-6d8c3d2a517c",
+      "question_id": "3cf5f354-2a3d-4a9e-9b75-7d2e7ce2a0d8",
+      "value": "A",
+      "label": "$5\\sqrt{2}$",
+      "is_correct": true
+    },
+    {
+      "id": "6a1283cf-1f28-4d1a-93c1-7f06d3d1b2f0",
+      "question_id": "3cf5f354-2a3d-4a9e-9b75-7d2e7ce2a0d8",
+      "value": "B",
+      "label": "$10$",
+      "is_correct": false
+    },
+    {
+      "id": "12fd02e3-48b2-4c4a-9b2f-f33c7f0d0f9e",
+      "question_id": "3cf5f354-2a3d-4a9e-9b75-7d2e7ce2a0d8",
+      "value": "C",
+      "label": "$5$",
+      "is_correct": false
+    },
+    {
+      "id": "b8b5346f-b59b-4a3a-9a9e-3b2e6c8297e0",
+      "question_id": "3cf5f354-2a3d-4a9e-9b75-7d2e7ce2a0d8",
+      "value": "D",
+      "label": "$10\\sqrt{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "e5a7a169-9c55-4a1f-8e24-8de8e8d0f13b",
+      "question_id": "c0c2d9a3-b496-4d5b-8a21-7f2ab4e9b8ef",
+      "value": "A",
+      "label": "$\\frac{4}{\\pi}$",
+      "is_correct": false
+    },
+    {
+      "id": "4a4389b9-3a54-4d78-8d93-8a6d1aa4c2ec",
+      "question_id": "c0c2d9a3-b496-4d5b-8a21-7f2ab4e9b8ef",
+      "value": "B",
+      "label": "$\\frac{16}{\\pi^2}$",
+      "is_correct": false
+    },
+    {
+      "id": "7c5f4f6b-72c4-4ec7-b0c6-6e98af6d99a0",
+      "question_id": "c0c2d9a3-b496-4d5b-8a21-7f2ab4e9b8ef",
+      "value": "C",
+      "label": "$\\frac{\\pi}{4}$",
+      "is_correct": true
+    },
+    {
+      "id": "e3f8a99e-8f62-4a3d-bdbf-0d3f6a4b45de",
+      "question_id": "c0c2d9a3-b496-4d5b-8a21-7f2ab4e9b8ef",
+      "value": "D",
+      "label": "$1$",
+      "is_correct": false
+    },
+    {
+      "id": "de06a7df-1e65-4b46-9c77-02d6cf2ea8f8",
+      "question_id": "5a44a9a8-9e9f-4c0e-89eb-1d8a6aa2b8d1",
+      "value": "A",
+      "label": "3",
+      "is_correct": false
+    },
+    {
+      "id": "f9bb3af1-67d3-4e25-9237-8a0fd14a6f3b",
+      "question_id": "5a44a9a8-9e9f-4c0e-89eb-1d8a6aa2b8d1",
+      "value": "B",
+      "label": "3.5",
+      "is_correct": false
+    },
+    {
+      "id": "34887a39-7f0a-4b21-8321-1a566405b1a2",
+      "question_id": "5a44a9a8-9e9f-4c0e-89eb-1d8a6aa2b8d1",
+      "value": "C",
+      "label": "5",
+      "is_correct": false
+    },
+    {
+      "id": "a3e4d278-6640-4790-bb38-c8255a3b1849",
+      "question_id": "5a44a9a8-9e9f-4c0e-89eb-1d8a6aa2b8d1",
+      "value": "D",
+      "label": "4",
+      "is_correct": true
+    },
+    {
+      "id": "8b2b4b5c-3f37-4b4a-a128-bf3fd8434bcf",
+      "question_id": "b7b47d72-6f66-4c41-8a30-9d1f4a1edc6e",
+      "value": "A",
+      "label": "128",
+      "is_correct": true
+    },
+    {
+      "id": "8a3ce53e-ecdd-4ea5-9bd8-148a3fa4f2f5",
+      "question_id": "b7b47d72-6f66-4c41-8a30-9d1f4a1edc6e",
+      "value": "B",
+      "label": "96",
+      "is_correct": false
+    },
+    {
+      "id": "0b2451ab-811e-4c54-b8b2-8ecdcfd7a3ca",
+      "question_id": "b7b47d72-6f66-4c41-8a30-9d1f4a1edc6e",
+      "value": "C",
+      "label": "216",
+      "is_correct": false
+    },
+    {
+      "id": "6c1e32d6-3437-41f3-8e6a-e29cc52f8c5d",
+      "question_id": "b7b47d72-6f66-4c41-8a30-9d1f4a1edc6e",
+      "value": "D",
+      "label": "64",
+      "is_correct": false
+    }
+  ]
+}

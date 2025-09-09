@@ -1,0 +1,982 @@
+[
+  {
+    "id": 23480,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Researchers studying the impact of screen time on sleep discovered a correlation between evening social media use and sleep disturbances. Individuals who spent more than two hours on social media in the hour before bed reported experiencing difficulty falling asleep. _________, those who limited their evening social media use reported better sleep quality.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 234800,
+        "label": "Conversely",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 234801,
+        "label": "Subsequently",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 234802,
+        "label": "Indeed",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 234803,
+        "label": "Consequently",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 60352,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many cities around the world are implementing innovative solutions to reduce traffic congestion. ______ , some cities have introduced congestion pricing, charging drivers a fee to enter the city center during peak hours.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 603520,
+        "label": "In contrast,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 603521,
+        "label": "For example,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 603522,
+        "label": "Consequently,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 603523,
+        "label": "Indeed,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 87940,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many traditional brick-and-mortar stores have struggled to compete with online retailers that offer lower prices and greater convenience. __________, some physical stores are adapting by focusing on experiential retail, providing customers with unique in-store experiences like workshops or personalized services.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 879400,
+        "label": "Subsequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 879401,
+        "label": "Therefore,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 879402,
+        "label": "Nevertheless,",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 879403,
+        "label": "For example,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 127016,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "In 2010, it was estimated that online sales constituted approximately 8% of total retail sales in the United States. _____ , e-commerce accounts for roughly 20% of all retail sales.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1270160,
+        "label": "Now,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1270161,
+        "label": "For example,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1270162,
+        "label": "Conversely,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1270163,
+        "label": "Furthermore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 146539,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The Renaissance was a period of renewed interest in classical art and learning.  ____, the Baroque era, which followed, embraced dramatic and ornate styles that diverged significantly from Renaissance ideals. This shift is evident in architecture, painting, and music, marking a distinct change in European artistic expression.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1465390,
+        "label": "Subsequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1465391,
+        "label": "In contrast,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1465392,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1465393,
+        "label": "Additionally,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 196954,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The relentless advancement of microchip technology has led to exponential increases in computing power. _______________________, personal computers today are not only significantly faster but also dramatically smaller than their predecessors.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1969540,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1969541,
+        "label": "Nevertheless,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1969542,
+        "label": "In addition,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1969543,
+        "label": "Incidentally,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 217589,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Johannes Gutenberg's printing press revolutionized the dissemination of information in Europe during the 15th century. _________________________, before Gutenberg's invention, books were painstakingly handwritten, making them expensive and inaccessible to most people.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2175890,
+        "label": "Indeed,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2175891,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2175892,
+        "label": "Furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2175893,
+        "label": "Conversely,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 243780,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Studies have shown that regular physical exercise is crucial for maintaining good health, improving cardiovascular function, and boosting mood.  ______, individuals who incorporate consistent physical activity into their routines often experience enhanced sleep quality and increased energy levels throughout the day.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2437800,
+        "label": "Similarly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2437801,
+        "label": "Therefore,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2437802,
+        "label": "Nevertheless,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2437803,
+        "label": "For example,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 261436,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "In recent years, the popularity of vinyl records has experienced a surprising resurgence.  For decades, digital music formats dominated the market, and vinyl records were relegated to niche collectors and enthusiasts.  ___, a new generation of listeners, alongside returning audiophiles, has embraced the warm sound and tactile experience of vinyl, leading to increased sales and a renewed interest in record players.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2614360,
+        "label": "Consequently",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2614361,
+        "label": "Conversely",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2614362,
+        "label": "Ultimately",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2614363,
+        "label": "Similarly",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 286251,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Botanists have long debated the role of scent in plant communication. Some research suggests that floral fragrances primarily function to attract pollinators, guiding bees and other insects to nectar-rich blossoms.  ____, recent studies indicate that plants can also emit airborne chemical signals to warn neighboring plants of herbivore attacks, triggering defensive responses in the recipients. ",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2862510,
+        "label": "Subsequently",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2862511,
+        "label": "However",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2862512,
+        "label": "For instance",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2862513,
+        "label": "Therefore",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 429903,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Maya is learning to play the guitar. She practices chords and scales for at least thirty minutes each day. ________, she listens to her favorite guitarists to learn different playing styles.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4299030,
+        "label": "Therefore,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4299031,
+        "label": "However,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4299032,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4299033,
+        "label": "In addition,",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 433218,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Scientists studying the effects of climate change on ecosystems are increasingly focusing on the Amazon rainforest. The Amazon plays a crucial role in global carbon cycling and biodiversity.  __________, researchers are developing advanced monitoring systems to track deforestation and changes in vegetation health across this vast region.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4332180,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4332181,
+        "label": "Similarly,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4332182,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4332183,
+        "label": "However,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 482271,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many gardeners appreciate the beauty of roses and their delightful fragrance. \\_\\_\\_\\_\\_, cultivating roses can be challenging, as these plants are susceptible to diseases and require diligent pruning and care to thrive.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4822710,
+        "label": "Therefore",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4822711,
+        "label": "Nevertheless",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4822712,
+        "label": "Furthermore",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4822713,
+        "label": "Similarly",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 530525,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "In a study of urban bee populations, researchers first identified several green spaces within a city. _______________ they meticulously cataloged the species and number of bees found in each location over a six-month period.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5305250,
+        "label": "Subsequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5305251,
+        "label": "Conversely,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5305252,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5305253,
+        "label": "Similarly,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 586083,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Dr. Aris Thorne, a marine biologist, was deeply concerned about the impact of plastic pollution on ocean ecosystems. _____ he initiated a long-term study analyzing microplastic accumulation in various marine species in the Pacific Ocean.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5860830,
+        "label": "As a result,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5860831,
+        "label": "In contrast,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5860832,
+        "label": "Furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5860833,
+        "label": "Nevertheless,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 768858,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "In 1969, the Apollo 11 mission successfully landed the first humans on the Moon, a feat of engineering and human endeavor celebrated globally. ____________________, the Soviet Union had achieved the first unmanned landing on the Moon with Luna 9 in 1966, a technological milestone often overshadowed by the later crewed landing.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7688580,
+        "label": "Subsequently",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7688581,
+        "label": "Conversely",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7688582,
+        "label": "For instance",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7688583,
+        "label": "Moreover",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 774122,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many people believe that listening to music while studying enhances focus and concentration.  _____ , research indicates that for some individuals, background music can be distracting, particularly when the music has lyrics or is unfamiliar.  These distractions can divide attention and hinder cognitive performance, ultimately making studying less effective.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7741220,
+        "label": "Consequently",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7741221,
+        "label": "Furthermore",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7741222,
+        "label": "However",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7741223,
+        "label": "For instance",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 774795,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many birds build nests in trees or bushes to protect their eggs and young. First, they gather twigs, leaves, and other materials. __________________________, they carefully weave these materials together to form a secure structure.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7747950,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7747951,
+        "label": "Afterward,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7747952,
+        "label": "Furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7747953,
+        "label": "In contrast,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 783171,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many students find it challenging to concentrate for extended periods while studying. _________, they often employ techniques like the Pomodoro method, which involves focused work intervals followed by short breaks. This approach helps to maintain concentration and prevent mental fatigue during study sessions.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7831710,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7831711,
+        "label": "In other words,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7831712,
+        "label": "Regardless,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7831713,
+        "label": "For instance,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 799974,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many cultures value storytelling as a way to pass down traditions and knowledge across generations.  Oral storytelling, in particular, relies on memory and performance to engage listeners.  ______,  written language has provided a more permanent method for preserving narratives, allowing stories to reach wider audiences and endure over longer periods.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7999740,
+        "label": "Conversely,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7999741,
+        "label": "For example,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7999742,
+        "label": "Furthermore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7999743,
+        "label": "In other words,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 809833,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Studies have shown that the blue light emitted from electronic devices can interfere with the production of melatonin, a hormone that regulates sleep. __________ many sleep experts recommend avoiding screen time at least an hour before going to bed.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8098330,
+        "label": "Similarly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8098331,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8098332,
+        "label": "Nevertheless,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8098333,
+        "label": "For example,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 854250,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The processing speed of computers has increased dramatically over the decades. For instance, a computer from the 1980s might have performed a few million calculations per second. ____________________ a modern smartphone can perform billions of calculations per second.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8542500,
+        "label": "Conversely,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8542501,
+        "label": "Similarly,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8542502,
+        "label": "Therefore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8542503,
+        "label": "In other words,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 903444,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The impact of artificial intelligence (AI) on various industries is becoming increasingly evident. ________________________ AI is now being implemented in fields ranging from healthcare and finance to transportation and education.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9034440,
+        "label": "Therefore,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9034441,
+        "label": "However,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9034442,
+        "label": "For example,",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9034443,
+        "label": "Furthermore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 907006,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Early studies suggested that moderate coffee consumption could slightly elevate blood pressure. ______, more recent and extensive research indicates that for most people, this effect is minimal and temporary, with the long-term benefits of coffee potentially outweighing this minor risk.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9070060,
+        "label": "Therefore",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9070061,
+        "label": "Conversely",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9070062,
+        "label": "Subsequently",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9070063,
+        "label": "For instance",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 918600,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "In 1928, Alexander Fleming discovered penicillin accidentally while studying influenza. __________, large-scale production of penicillin began during World War II, saving countless lives.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9186000,
+        "label": "Subsequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9186001,
+        "label": "Nevertheless,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9186002,
+        "label": "For example,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9186003,
+        "label": "Furthermore,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 919532,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The ancient Greeks made significant advancements in mathematics, including Euclid's development of geometry and Archimedes's calculations of areas and volumes.  _____, their contributions extended to astronomy, with figures like Ptolemy creating models of the solar system that, while geocentric, influenced astronomical thought for centuries.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9195320,
+        "label": "Furthermore,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9195321,
+        "label": "In contrast,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9195322,
+        "label": "Therefore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9195323,
+        "label": "For example,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 946730,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "The cello, a prominent member of the string family, is known for its rich, resonant tone. _________, skilled cellists can produce sounds ranging from deep, somber lows to bright, singing highs, showcasing the instrument’s broad expressive capabilities.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9467300,
+        "label": "For example,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9467301,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9467302,
+        "label": "In contrast,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9467303,
+        "label": "Nevertheless,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 955625,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Easy",
+    "question_text": "Many ancient civilizations relied heavily on astrology, believing that celestial events could predict earthly occurrences. ____________________, the Babylonians developed sophisticated astronomical observations and mathematical models, aiming to interpret the will of the gods through the movements of the stars and planets.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9556250,
+        "label": "Consequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9556251,
+        "label": "For instance,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9556252,
+        "label": "Conversely,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9556253,
+        "label": "Similarly,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

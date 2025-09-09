@@ -1,0 +1,317 @@
+[
+  {
+    "id": 57400,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching the history of coffee production in Brazil, a student has taken the following notes:  \n- · In the early 20th century, Brazil became the world's largest coffee producer. \n- · This dominance was partly due to government policies favoring coffee cultivation. \n- · Extensive deforestation occurred to create coffee plantations. \n- · Labor conditions on many plantations were exploitative. \n- · By the mid-20th century, Brazil's coffee industry faced challenges from price fluctuations and competition.  \n\n<br>\nThe student wants to make and support a generalization about the Brazilian coffee industry in the first half of the 20th century. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 574000,
+        "label": "In the early 20th century, Brazil became the world's largest coffee producer due to government policies and extensive deforestation.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 574001,
+        "label": "Despite facing challenges later in the century, Brazil's coffee industry was significantly shaped by government support and exploitative labor practices in its early decades.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 574002,
+        "label": "Extensive deforestation and exploitative labor conditions were negative aspects of Brazil's rise to become the world's largest coffee producer in the early 20th century.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 574003,
+        "label": "Brazil's coffee industry, which became dominant in the early 20th century, experienced both government support and later challenges from price fluctuations.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 82570,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching a topic, a student has taken the following notes:  \n-   Concerns have been raised about the decline in pollinator populations, including bees and butterflies, crucial for agriculture. \n-   A team led by Dr. Anya Sharma sought to understand the role of pesticide use in this decline. \n-   Sharma's team analyzed data from agricultural regions with varying levels of pesticide application. \n-   They compared pollinator population trends in these regions over a ten-year period. \n-   The analysis revealed a strong negative correlation between pesticide concentration in agricultural areas and pollinator species richness. \n\n<br>\nThe student wants to present the primary aim of the research study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 825700,
+        "label": "Sharma's team sought to understand the role of pesticide use in the decline of pollinator populations, which are crucial for agriculture.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 825701,
+        "label": "The researchers analyzed data from agricultural regions and compared pollinator population trends over ten years.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 825702,
+        "label": "Concerns have been raised about the decline in pollinator populations, including bees and butterflies, crucial for agriculture.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 825703,
+        "label": "A strong negative correlation was revealed between pesticide concentration in agricultural areas and pollinator species richness.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 182264,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching the impact of social media on political polarization, a student has taken the following notes:  \n- Political scientists Jennifer McCoy and Tahnee Conner conducted a study on social media's role in polarization. - They analyzed data from Twitter and Facebook during the 2020 US presidential election. \n- They focused on the spread of misinformation and echo chambers on these platforms. \n- McCoy and Conner found that users primarily interact with content reinforcing their existing political beliefs. \n- They also observed that algorithms on social media amplify extreme content, further exacerbating polarization.\n\n<br>\nThe student wants to summarize the study's findings. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1822640,
+        "label": "To study social media's role in the 2020 US presidential election, McCoy and Conner analyzed data from Twitter and Facebook, focusing on misinformation and echo chambers.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1822641,
+        "label": "McCoy and Conner's study on Twitter and Facebook during the 2020 US election revealed the prevalence of echo chambers and misinformation.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1822642,
+        "label": "Analyzing social media use during the 2020 US presidential election, McCoy and Conner found that algorithms amplify extreme content, leading to increased political polarization.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1822643,
+        "label": "According to McCoy and Conner's research, social media platforms contribute to political polarization by creating echo chambers where users mainly see belief-confirming content and algorithms boost extreme viewpoints.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 247316,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching urban development, a student has taken the following notes:  \n*   Green roofs are rooftop gardens that can help mitigate the urban heat island effect. \n*   A 2024 study in a major city analyzed the impact of green roofs on building energy consumption. \n*   The study compared energy usage in buildings with green roofs to similar buildings without them. \n*   Buildings with green roofs showed an average of 15% reduction in summer cooling costs. \n*   This reduction is attributed to the insulation and cooling effects of the vegetation and soil.  The student wants to present the study's findings to an audience already knowledgeable about green roofs and their benefits. \n\n<br>\nWhich choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2473160,
+        "label": "Green roofs, which are rooftop gardens, help reduce the urban heat island effect.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2473161,
+        "label": "A 2024 study compared buildings with and without green roofs to analyze energy consumption.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2473162,
+        "label": "Researchers found that green roofs can lead to a 15% decrease in summer cooling costs due to the insulation and cooling properties of vegetation and soil.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2473163,
+        "label": "Buildings with green roofs have vegetation and soil on their rooftops, leading to reduced energy consumption, according to a recent study.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 502483,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching urban development, a student has taken the following notes:  \n-  Mixed-use zoning combines residential, commercial, and cultural spaces in one area. \n-  Single-use zoning separates residential, commercial, and cultural spaces into distinct areas. \n-  Proponents of mixed-use zoning argue it reduces car dependency. -  Proponents of single-use zoning argue it enhances residential privacy. \n-  Walkability is often increased in areas with mixed-use zoning.  The student wants to explain the primary benefit of mixed-use zoning according to its advocates. \n\n<br>Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5024830,
+        "label": "Mixed-use zoning, unlike single-use zoning, aims to integrate different types of spaces.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5024831,
+        "label": "Advocates claim that mixed-use zoning primarily benefits urban areas by encouraging walking.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5024832,
+        "label": "Mixed-use zoning is favored by some because it is believed to lessen the need for cars.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5024833,
+        "label": "While single-use zoning prioritizes privacy, mixed-use zoning focuses on combining different spaces.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 513590,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching the impact of social media on political discourse, a student has taken the following notes:  \n- Social media platforms allow for rapid dissemination of political information. \n- Algorithms on these platforms can create echo chambers, reinforcing existing beliefs. \n- Studies suggest that exposure to diverse viewpoints online can increase political polarization. \n- Some researchers argue that social media facilitates citizen engagement in political debates. \n- Others worry about the spread of misinformation and its influence on elections.  \n\n<br>The student wants to summarize the complex role of social media in political discourse. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5135900,
+        "label": "Social media's algorithms are designed to create echo chambers that reinforce pre-existing political beliefs, according to some studies.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5135901,
+        "label": "The role of social media in political discourse is multifaceted, as it enables rapid information sharing and citizen engagement but also risks echo chambers, polarization, and misinformation.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5135902,
+        "label": "Researchers are concerned that the spread of misinformation on social media platforms could significantly influence election outcomes.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5135903,
+        "label": "While social media facilitates rapid dissemination of information, it also presents challenges related to exposure to diverse viewpoints.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 641815,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching the history of the incandescent light bulb, a student has taken the following notes:  \n- Joseph Swan (1828-1914) was a British physicist and chemist. \n- He developed one of the first practical and long-lasting incandescent light bulbs. \n- Swan demonstrated his light bulb in 1879 in Newcastle, England. \n- Thomas Edison also developed an incandescent light bulb around the same time in the United States. \n- Both Swan and Edison's inventions revolutionized indoor lighting.  \n\n<br>\nThe student wants to begin a narrative about Swan's contribution to the development of the light bulb. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6418150,
+        "label": "In 1879, British physicist and chemist Joseph Swan showcased his groundbreaking invention, a practical and enduring incandescent light bulb, in Newcastle, England.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6418151,
+        "label": "Joseph Swan, a British physicist and chemist, developed a practical and long-lasting incandescent light bulb, an invention that would later revolutionize indoor lighting alongside Thomas Edison's similar creation.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6418152,
+        "label": "Though Thomas Edison is widely known for the light bulb, Joseph Swan, also working in the late 1870s, successfully demonstrated his own version in Newcastle.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6418153,
+        "label": "The incandescent light bulb, a revolutionary invention for indoor lighting, was developed by both Joseph Swan and Thomas Edison in the late 1870s.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 672419,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching cloud formations, a student has taken the following notes:  \n- Cloud classification is primarily based on altitude and general appearance. \n- High-altitude clouds are typically composed of ice crystals due to colder temperatures. \n- Cirrus clouds are a type of high-altitude cloud characterized by their wispy, feathery appearance. \n- Cumulus clouds are low-altitude clouds that are puffy and cotton-like in shape. \n- Stratus clouds are also low-altitude, appearing as flat, gray, sheet-like layers.  The student wants to provide an explanation and an example of cloud classification based on altitude. \n\n<br>\nWhich choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6724190,
+        "label": "Cloud classification depends on altitude and appearance; for example, cirrus clouds, found at high altitudes, are known for their wispy, feathery look.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6724191,
+        "label": "In cloud classification, different types are categorized by their altitude and appearance, ranging from high-altitude ice crystal clouds to low-altitude water droplet clouds.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6724192,
+        "label": "Characterized by their puffy, cotton-like shape, cumulus clouds are one type of low-altitude cloud formation.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6724193,
+        "label": "While both are cloud types, cirrus clouds are high-altitude and wispy, whereas stratus clouds are low-altitude and sheet-like.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 745215,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Hard",
+    "question_text": "While researching different approaches to urban planning, a student has taken the following notes:  \n*   Both Jane Jacobs and Robert Moses significantly influenced urban development in New York City. \n*   Jacobs advocated for bottom-up, community-based planning that prioritized the needs of residents and pedestrians. \n*   Moses favored top-down, large-scale projects like highways and urban renewal initiatives to modernize the city. \n*   Jacobs emphasized the importance of mixed-use neighborhoods, walkability, and preserving existing urban fabric. \n*   Moses prioritized efficiency and vehicular traffic flow, often at the expense of existing communities and neighborhood character.  \n\n<br>\nThe student wants to emphasize a difference in the philosophies of Jacobs and Moses. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7452150,
+        "label": "While both Jacobs and Moses shaped New York City's urban landscape, Jacobs championed community-centered planning, whereas Moses favored large-scale, top-down development.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7452151,
+        "label": "Jacobs and Moses both had strong opinions about how cities should be developed and left lasting marks on New York City.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7452152,
+        "label": "Although they both influenced urban planning, Jacobs focused on neighborhoods and Moses focused on highways.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7452153,
+        "label": "Both Jacobs and Moses were influential figures in New York City's history, and their ideas about urban development are still debated today.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

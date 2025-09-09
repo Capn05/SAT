@@ -1,0 +1,107 @@
+[
+  {
+    "id": 341055,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Hard",
+    "question_text": "In right triangle $ABC$, angle $C$ is the right angle and $BC = 90$. Point $D$ on side $AB$ is connected by a line segment with point $E$ on side $AC$ such that line segment $DE$ is parallel to side $BC$ and $CE = \\frac{2}{3}AE$. What is the length of line segment $DE$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3410550,
+        "label": "36",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3410551,
+        "label": "45",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3410552,
+        "label": "54",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3410553,
+        "label": "135",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 556618,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Hard",
+    "question_text": "In right triangle $ABC$, $BD$ is the altitude to hypotenuse $AC$. If $AD = 9$ and $DC = 4$, what is the length of $BD$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5566180,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5566181,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5566182,
+        "label": "6",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5566183,
+        "label": "6.5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 756284,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Hard",
+    "question_text": "In triangle $ABC$, angle $C$ is a right angle, point $D$ lies on $BC$, and $DE$ is parallel to $AC$. If the length of $AC$ is $40$ units, the length of $DE$ is $16$ units, and the area of triangle $ABC$ is $480$ square units, what is the length of $DC$, in units?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7562840,
+        "label": "7.2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7562841,
+        "label": "9.6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7562842,
+        "label": "14.4",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7562843,
+        "label": "15.4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

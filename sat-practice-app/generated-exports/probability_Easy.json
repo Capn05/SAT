@@ -1,0 +1,387 @@
+[
+  {
+    "id": 35718,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A basket of $50$ fruits contains apples, bananas, and oranges, as shown in the frequency table. If one fruit is selected at random from the basket, what is the probability of selecting a banana?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//35718.png",
+    "options": [
+      {
+        "id": 357180,
+        "label": "$\\frac{25}{15}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 357181,
+        "label": "$\\frac{25}{10}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 357182,
+        "label": "$\\frac{25}{25}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 357183,
+        "label": "$\\frac{25}{50}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 191790,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A bakery produced $800$ bagels one morning, and during quality control, it was found that $6$ bagels were burnt. If a bagel is randomly selected from this batch, what is the probability that it is burnt?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1917900,
+        "label": "0.0075",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1917901,
+        "label": "0.075",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1917902,
+        "label": "0.75",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1917903,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 254072,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A student has a collection of markers. The collection includes $5$ permanent markers, $3$ dry-erase markers, and $2$ highlighters. If one marker is selected at random from the collection, what is the probability of selecting a dry-erase marker?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2540720,
+        "label": "$\\frac{3}{10}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2540721,
+        "label": "$\\frac{3}{7}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2540722,
+        "label": "$\\frac{1}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2540723,
+        "label": "$\\frac{2}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 309861,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A survey of $600$ people at a library asked whether they prefer to read ebooks or physical books. The table summarizes all $600$ responses from the people surveyed. If there were a total of $220$ teenagers surveyed, how many of the adults surveyed responded that they prefer to read physical books?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//309861.png",
+    "options": [
+      {
+        "id": 3098610,
+        "label": "100",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3098611,
+        "label": "180",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3098612,
+        "label": "200",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3098613,
+        "label": "310",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 338311,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "At a high school, $170$ students were surveyed about their participation in clubs or sports and whether they take advanced classes. The table above summarizes the results. Based on the data in the table, what is the probability that a student selected at random from those surveyed participates in a club or sport?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//338311.png",
+    "options": [
+      {
+        "id": 3383110,
+        "label": "$\\frac{7}{17}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3383111,
+        "label": "$\\frac{11}{17}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3383112,
+        "label": "$\\frac{6}{17}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3383113,
+        "label": "$\\frac{10}{17}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 498996,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A local animal shelter recorded data on the types of animals adopted and the age group of the adopters. The data is summarized in the table below. If one of the $500$ adoptions recorded is selected at random, what is the probability that the adopted animal was a dog?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//498996.png",
+    "options": [
+      {
+        "id": 4989960,
+        "label": "$\\frac{500}{200}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4989961,
+        "label": "$\\frac{200}{500}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4989962,
+        "label": "$\\frac{300}{500}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4989963,
+        "label": "$\\frac{200}{300}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 614782,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "The table shows the number of different types of fruits sold at two farmers markets in June. Of the fruits sold in June, which of the following represents the fraction of fruits that were sold at Sunny Orchard Market?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//614782.png",
+    "options": [
+      {
+        "id": 6147820,
+        "label": "$\\frac{11}{20}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6147821,
+        "label": "$\\frac{1}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6147822,
+        "label": "$\\frac{3}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6147823,
+        "label": "$\\frac{2}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 650924,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "At Lakeside High School, the probability that a randomly selected student is a sophomore (10th grade) is $0.4$. If there are $150$ students in the school, how many students are sophomores?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6509240,
+        "label": "60",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6509241,
+        "label": "40",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6509242,
+        "label": "90",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6509243,
+        "label": "110",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 749132,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A classroom has $25$ students.  Of these students, $15$ are taking a math class. If a student is selected at random from the classroom, what is the probability that the selected student is taking a math class?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7491320,
+        "label": "$\\frac{2}{5}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7491321,
+        "label": "$\\frac{3}{5}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7491322,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7491323,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 891939,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A classroom has $30$ students. Of these students, $18$ are taking Spanish, and the rest are taking French. If a student is selected at random from this classroom, what is the probability that the selected student is taking French?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8919390,
+        "label": "$\\frac{2}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8919391,
+        "label": "$\\frac{3}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8919392,
+        "label": "$\\frac{3}{17}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8919393,
+        "label": "$\\frac{17}{30}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 920224,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Easy",
+    "question_text": "A fruit basket contains $m$ red apples and $20$ green apples. If one apple is selected at random from the basket, what is the probability of selecting a red apple, in terms of $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9202240,
+        "label": "$\\frac{20}{m}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9202241,
+        "label": "$\\frac{m}{m+20}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9202242,
+        "label": "$\\frac{20}{m+20}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9202243,
+        "label": "$m+20$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]
