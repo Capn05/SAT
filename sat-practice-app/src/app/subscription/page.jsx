@@ -314,7 +314,15 @@ function SubscriptionContent() {
   const [showFeedbackSuccess, setShowFeedbackSuccess] = useState(false)
   const [showCancelModal, setShowCancelModal] = useState(false)
   const [showCancelSuccess, setShowCancelSuccess] = useState(false)
-  const [syncingStatus, setSyncingStatus] = useState(false);
+  const [syncingStatus, setSyncingStatus] = useState(false)
+  const [userEmail, setUserEmail] = useState(null)
+  
+  // Check if user has approved email domain
+  const isApprovedDomain = (email) => {
+    if (!email) return false;
+    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    return approvedDomains.some(domain => email.toLowerCase().endsWith(domain));
+  };
   
   useEffect(() => {
     // Check if user just subscribed
@@ -331,6 +339,9 @@ function SubscriptionContent() {
           router.push('/login')
           return
         }
+        
+        // Store user email for domain checking
+        setUserEmail(user.email)
         
         // Fetch subscription data from our API endpoint
         const response = await fetch('/api/subscription')
@@ -675,6 +686,97 @@ function SubscriptionContent() {
     )
   }
   
+  // Special rendering for approved domain users
+  if (isApprovedDomain(userEmail)) {
+    return (
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <h1 style={styles.title}>Settings</h1>
+        </div>
+        
+        <div style={styles.content}>
+          <div style={styles.card}>
+            <div style={styles.cardHeader}>
+              <h2 style={styles.cardTitle}>Need Help?</h2>
+            </div>
+            
+            <div style={styles.cardContent}>
+              <p style={styles.helpText}>
+                If you have any questions or need assistance, 
+                our team is ready to provide personalized support to ensure your SAT prep experience is seamless.
+              </p>
+              
+              <div style={styles.contactInfo}>
+                <div style={styles.contactItem}>
+                  <Mail size={20} style={styles.contactIcon} />
+                  <div>
+                    <div style={styles.contactLabel}>Email</div>
+                    <a href="mailto:brillai.tutor@gmail.com" style={styles.contactValue}>
+                    brillai.tutor@gmail.com
+                    </a>
+                  </div>
+                </div>
+                
+                <div style={styles.contactItem}>
+                  <Phone size={20} style={styles.contactIcon} />
+                  <div>
+                    <div style={styles.contactLabel}>Phone</div>
+                    <a href="tel:+1-479-544-4410" style={styles.contactValue}>
+                    +1-479-544-4410
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div style={styles.feedbackSection}>
+                <h3 style={styles.feedbackTitle}>We Value Your Feedback</h3>
+                <p style={styles.feedbackText}>
+                  Your feedback helps us improve our service. 
+                  Let us know how we can make Brill better for you.
+                </p>
+                <button 
+                  style={styles.secondaryButton} 
+                  onClick={() => setShowFeedbackModal(true)}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#e5e7eb';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f3f4f6';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  Send Feedback
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Render feedback modal */}
+        <FeedbackModal 
+          isOpen={showFeedbackModal} 
+          onClose={() => setShowFeedbackModal(false)}
+          onSuccess={handleFeedbackSuccess}
+        />
+        
+        {showFeedbackSuccess && (
+          <div style={styles.thankYouBanner}>
+            <CheckCircle size={20} style={{ color: '#10b981' }} />
+            <span>Thank you for your feedback! We appreciate your input.</span>
+            <button 
+              style={styles.dismissButton} 
+              onClick={() => setShowFeedbackSuccess(false)}
+              aria-label="Dismiss"
+            >
+              ×
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div style={styles.container}>
       <div style={styles.header}>
@@ -1001,8 +1103,8 @@ function SubscriptionContent() {
                 <Mail size={20} style={styles.contactIcon} />
                 <div>
                   <div style={styles.contactLabel}>Email</div>
-                  <a href="mailto:gxalvarado2013@gmail.com" style={styles.contactValue}>
-                  gxalvarado2013@gmail.com
+                  <a href="mailto:brillai.tutor@gmail.com" style={styles.contactValue}>
+                  brillai.tutor@gmail.com
                   </a>
                 </div>
               </div>

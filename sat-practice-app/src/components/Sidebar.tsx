@@ -288,7 +288,15 @@ export default function Sidebar() {
         }}>
           <div 
             className={styles.navItem} 
-            onClick={() => setShowUserMenu(!showUserMenu)}
+            onClick={() => {
+              if (!isExpanded) {
+                // If sidebar is collapsed, expand it first
+                setIsExpanded(true)
+              } else {
+                // If sidebar is expanded, toggle the user menu
+                setShowUserMenu(!showUserMenu)
+              }
+            }}
             style={{ cursor: 'pointer' }}
           >
             <div className={styles.iconWrapper} style={{ 

@@ -23,6 +23,10 @@ export default function SignUp() {
       return;
     }
 
+    // Check if email is from approved domains for free access
+    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    const isApprovedStudent = approvedDomains.some(domain => email.toLowerCase().endsWith(domain));
+
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -43,7 +47,20 @@ export default function SignUp() {
       if (data?.user?.identities?.length === 0) {
         setError('This email is already registered. Please log in or use a different email.');
       } else {
-        setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
+        // If signup was successful and user is from approved domain, create free subscription
+        if (isApprovedStudent && data?.user?.id) {
+          try {
+            await createFreeSubscription(data.user.id, email);
+            setSuccess('Sign up successful! You have been given free access to all features. Please check your email for a confirmation link. You must confirm your email before logging in.');
+          } catch (subscriptionError) {
+            console.error('Error creating free subscription:', subscriptionError);
+            // Still show success for signup even if subscription creation fails
+            setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
+          }
+        } else {
+          setSuccess('Sign up successful! Please check your email for a confirmation link. You must confirm your email before logging in.');
+        }
+        
         setEmail('');
         setPassword('');
         
@@ -51,6 +68,33 @@ export default function SignUp() {
           router.push('/login?signup=success');
         }, 2000);
       }
+    }
+  };
+
+  const createFreeSubscription = async (userId, userEmail) => {
+    try {
+      const response = await fetch('/api/create-free-subscription', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: userId,
+          userEmail: userEmail
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        console.error('Error creating free subscription:', result);
+        throw new Error(result.error || 'Failed to create subscription');
+      }
+
+      console.log('Free subscription created successfully for approved domain user');
+    } catch (error) {
+      console.error('Error in createFreeSubscription:', error);
+      throw error;
     }
   };
 
@@ -246,18 +290,7 @@ export default function SignUp() {
           >
             Login
           </Link>
-          <Link 
-            href="/forgot-password" 
-            style={styles.link}
-            onMouseOver={(e) => {
-              e.currentTarget.style.color = '#0d9488';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.color = '#10b981';
-            }}
-          >
-            Forgot Password?
-          </Link>
+ 
         </div>
       </div>
     </div>
