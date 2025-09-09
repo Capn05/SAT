@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { renderMathContent, processTableFormat } from '../components/MathRenderer';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
@@ -27,6 +27,11 @@ export default function DevQuestionTest() {
   const [bulkLoading, setBulkLoading] = useState(false);
   const [bulkError, setBulkError] = useState('');
   const [activeTab, setActiveTab] = useState('single'); // 'single' or 'bulk'
+  
+  // New state for subcategories dropdown
+  const [subcategories, setSubcategories] = useState([]);
+  const [subcategoriesLoading, setSubcategoriesLoading] = useState(false);
+  const [selectedSubcategory, setSelectedSubcategory] = useState('');
 
   // Helper function to determine if question is math
   const isMathQuestion = (question) => {
@@ -91,9 +96,28 @@ export default function DevQuestionTest() {
     }
   };
 
+  const fetchSubcategories = async () => {
+    setSubcategoriesLoading(true);
+    try {
+      const response = await fetch('/api/subcategories');
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || `HTTP ${response.status}`);
+      }
+
+      setSubcategories(data.subcategories || []);
+    } catch (err) {
+      console.error('Error fetching subcategories:', err);
+      setBulkError(err.message || 'Failed to fetch subcategories');
+    } finally {
+      setSubcategoriesLoading(false);
+    }
+  };
+
   const fetchQuestionsByCriteria = async () => {
-    if (!subcategoryId.trim()) {
-      setBulkError('Please enter a subcategory ID');
+    if (!selectedSubcategory) {
+      setBulkError('Please select a subcategory');
       return;
     }
 
@@ -103,7 +127,7 @@ export default function DevQuestionTest() {
 
     try {
       const params = new URLSearchParams({
-        subcategory_id: subcategoryId.trim()
+        subcategory_id: selectedSubcategory
       });
       
       if (difficulty && difficulty !== 'all') {
@@ -120,7 +144,8 @@ export default function DevQuestionTest() {
       setQuestions(data.questions || []);
       
       if (data.questions && data.questions.length === 0) {
-        setBulkError(`No questions found for subcategory ${subcategoryId}${difficulty && difficulty !== 'all' ? ` with difficulty ${difficulty}` : ''}`);
+        const selectedSubcategoryName = subcategories.find(s => s.id.toString() === selectedSubcategory)?.name || selectedSubcategory;
+        setBulkError(`No questions found for subcategory "${selectedSubcategoryName}"${difficulty && difficulty !== 'all' ? ` with difficulty ${difficulty}` : ''}`);
       }
     } catch (err) {
       console.error('Error fetching questions by criteria:', err);
@@ -134,6 +159,13 @@ export default function DevQuestionTest() {
     e.preventDefault();
     fetchQuestionsByCriteria();
   };
+
+  // Fetch subcategories when bulk tab is activated
+  useEffect(() => {
+    if (activeTab === 'bulk' && subcategories.length === 0 && !subcategoriesLoading) {
+      fetchSubcategories();
+    }
+  }, [activeTab, subcategories.length, subcategoriesLoading]);
 
   return (
     <div style={styles.container}>
@@ -202,18 +234,25 @@ export default function DevQuestionTest() {
           <form onSubmit={handleBulkSubmit} style={styles.searchForm}>
             <div style={styles.bulkInputContainer}>
               <div style={styles.inputGroup}>
-                <label style={styles.label} htmlFor="subcategoryId">
-                  Subcategory ID:
+                <label style={styles.label} htmlFor="subcategory">
+                  Subcategory:
                 </label>
-                <input
-                  id="subcategoryId"
-                  type="text"
-                  value={subcategoryId}
-                  onChange={(e) => setSubcategoryId(e.target.value)}
-                  placeholder="Enter subcategory ID (e.g., 1, 2, 3)"
-                  style={styles.input}
-                  disabled={bulkLoading}
-                />
+                <select
+                  id="subcategory"
+                  value={selectedSubcategory}
+                  onChange={(e) => setSelectedSubcategory(e.target.value)}
+                  style={styles.subcategorySelect}
+                  disabled={bulkLoading || subcategoriesLoading}
+                >
+                  <option value="">
+                    {subcategoriesLoading ? 'Loading subcategories...' : 'Select a subcategory'}
+                  </option>
+                  {subcategories.map((subcategory) => (
+                    <option key={subcategory.id} value={subcategory.id}>
+                      {subcategory.displayName}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div style={styles.inputGroup}>
                 <label style={styles.label} htmlFor="difficulty">
@@ -235,7 +274,7 @@ export default function DevQuestionTest() {
               <button
                 type="submit"
                 style={styles.searchButton}
-                disabled={bulkLoading || !subcategoryId.trim()}
+                disabled={bulkLoading || !selectedSubcategory || subcategoriesLoading}
               >
                 {bulkLoading ? 'Loading...' : 'Fetch Questions'}
               </button>
@@ -265,7 +304,10 @@ export default function DevQuestionTest() {
             📊 Found {questions.length} Question{questions.length !== 1 ? 's' : ''}
           </h2>
           <p style={styles.summarySubtitle}>
-            Subcategory ID: {subcategoryId} 
+            {(() => {
+              const selectedSubcategoryObj = subcategories.find(s => s.id.toString() === selectedSubcategory);
+              return selectedSubcategoryObj ? selectedSubcategoryObj.displayName : `Subcategory ID: ${selectedSubcategory}`;
+            })()}
             {difficulty && difficulty !== 'all' && ` | Difficulty: ${difficulty}`}
           </p>
         </div>
@@ -410,7 +452,7 @@ export default function DevQuestionTest() {
                     {question.subjectName}
                   </span>
                   <span style={styles.metaBadge}>
-                    {question.subcategoryName}
+                    {question.subcategoryName} (ID: {question.subcategoryId})
                   </span>
                 </div>
               </div>
@@ -571,6 +613,26 @@ const styles = {
     '&:focus': {
       outline: 'none',
       borderColor: '#3b82f6',
+    },
+  },
+  subcategorySelect: {
+    padding: '12px 16px',
+    fontSize: '16px',
+    border: '2px solid #e5e7eb',
+    borderRadius: '8px',
+    minWidth: '400px',
+    maxWidth: '600px',
+    backgroundColor: 'white',
+    cursor: 'pointer',
+    transition: 'border-color 0.2s ease',
+    '&:focus': {
+      outline: 'none',
+      borderColor: '#3b82f6',
+    },
+    '&:disabled': {
+      backgroundColor: '#f3f4f6',
+      cursor: 'not-allowed',
+      color: '#6b7280',
     },
   },
   inputGroup: {
