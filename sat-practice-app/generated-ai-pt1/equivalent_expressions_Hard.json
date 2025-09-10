@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "f3a073e8-7e8a-4bc0-9dfa-7f6a3d0c41a9",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Hard",
+      "question_text": "Which of the following is equivalent to $$\\frac{(x^{\\frac{1}{3}}y^{-\\frac{1}{2}})^4 \\cdot (x^{-\\frac{3}{2}}y)^{-1}}{x^{\\frac{5}{6}}y^{-\\frac{7}{4}}}?$$",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0d204ee9-2e5a-4c31-9b43-6a6a42cd2e92",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Hard",
+      "question_text": "In the identity $$2(3x^2 - kx + 5) - (k - 4)x(3 - k) \\equiv 6x^2 + 4x + 10,$$ where $k > 3$, what is the value of $k$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6a1b6c8e-2908-4d05-acb8-5328f3dc3f4f",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Hard",
+      "question_text": "Which expression is equivalent to $$\\left(\\frac{27a^{-2}b^{\\frac{3}{2}}}{\\sqrt[3]{a}\\, b^{-1}}\\right)^{\\frac{2}{3}}?$$",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "9d0bc248-082e-46d7-95b3-0e1a97a42f02",
+      "question_id": "f3a073e8-7e8a-4bc0-9dfa-7f6a3d0c41a9",
+      "value": "A",
+      "label": "$x^{2}y^{-\\frac{5}{4}}$",
+      "is_correct": true
+    },
+    {
+      "id": "8a7b4b5a-9346-4db9-9f2a-2f60b3f4dc2b",
+      "question_id": "f3a073e8-7e8a-4bc0-9dfa-7f6a3d0c41a9",
+      "value": "B",
+      "label": "$x^{\\frac{7}{6}}y^{-\\frac{5}{4}}$",
+      "is_correct": false
+    },
+    {
+      "id": "2ed4c8e1-36b0-4604-b63a-4f705e345ac1",
+      "question_id": "f3a073e8-7e8a-4bc0-9dfa-7f6a3d0c41a9",
+      "value": "C",
+      "label": "$x^{2}y^{\\frac{5}{4}}$",
+      "is_correct": false
+    },
+    {
+      "id": "5c0a2de9-9f9e-4bd9-a6c1-ff0b6a9c0248",
+      "question_id": "f3a073e8-7e8a-4bc0-9dfa-7f6a3d0c41a9",
+      "value": "D",
+      "label": "$x^{\\frac{17}{6}}y^{-\\frac{5}{4}}$",
+      "is_correct": false
+    },
+    {
+      "id": "f5a61d9e-8be4-4c2f-9b12-93c90f7a1db1",
+      "question_id": "0d204ee9-2e5a-4c31-9b43-6a6a42cd2e92",
+      "value": "A",
+      "label": "$1$",
+      "is_correct": false
+    },
+    {
+      "id": "6a3a6db2-e1af-491f-a9a0-5df7fda01f07",
+      "question_id": "0d204ee9-2e5a-4c31-9b43-6a6a42cd2e92",
+      "value": "B",
+      "label": "$2$",
+      "is_correct": false
+    },
+    {
+      "id": "2b019f5b-2134-4b3d-8e64-3f8cbf82b1a6",
+      "question_id": "0d204ee9-2e5a-4c31-9b43-6a6a42cd2e92",
+      "value": "C",
+      "label": "$8$",
+      "is_correct": true
+    },
+    {
+      "id": "31bb2b47-8c5d-4ad5-b2ab-15de35cbe9e3",
+      "question_id": "0d204ee9-2e5a-4c31-9b43-6a6a42cd2e92",
+      "value": "D",
+      "label": "$12$",
+      "is_correct": false
+    },
+    {
+      "id": "cde3db13-7bf3-46dd-8e2f-f20a0a601ce8",
+      "question_id": "6a1b6c8e-2908-4d05-acb8-5328f3dc3f4f",
+      "value": "A",
+      "label": "$9a^{-\\frac{7}{9}}b^{\\frac{5}{3}}$",
+      "is_correct": false
+    },
+    {
+      "id": "888a9d1f-2ae5-4a08-96a0-1a272db57f1f",
+      "question_id": "6a1b6c8e-2908-4d05-acb8-5328f3dc3f4f",
+      "value": "B",
+      "label": "$9a^{-\\frac{14}{9}}b^{\\frac{10}{3}}$",
+      "is_correct": false
+    },
+    {
+      "id": "6c2a1e5c-9d62-4b6e-8e5f-2e0c16b9c148",
+      "question_id": "6a1b6c8e-2908-4d05-acb8-5328f3dc3f4f",
+      "value": "C",
+      "label": "$\\frac{9b^{\\frac{5}{3}}}{a^{\\frac{7}{9}}}$",
+      "is_correct": false
+    },
+    {
+      "id": "914cb986-cb4b-4038-8b7b-9d058f7f41b7",
+      "question_id": "6a1b6c8e-2908-4d05-acb8-5328f3dc3f4f",
+      "value": "D",
+      "label": "$\\frac{9b^{\\frac{5}{3}}}{a^{\\frac{14}{9}}}$",
+      "is_correct": true
+    }
+  ]
+}

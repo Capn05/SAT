@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "0f4e3a7e-6a86-4ba8-9d22-2b261aab7a9c",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "Urban planners emphasized that the proposed tree canopies and reflective roofs were intended not to eliminate but to ____ the city’s heat-island effects, reducing their intensity without altering the underlying causes.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7e6f2f4e-0db6-4d7c-8f3b-8d3a6b1f7b48",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "In the museum catalog, the curator offers a provisional chronology for the newly discovered panels, acknowledging that the timeline may change once dendrochronology results arrive. As used in the sentence, provisional most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "1b2c64e3-9c9a-4a39-8e3d-5d7f9f23a1b0",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "Decades of austerity had inured the villagers to scarcity, so campaign promises of lavish subsidies struck them as implausible distractions. As used in the sentence, inured most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a0a1c7de-8b20-4a1e-9a9e-ff12a7960f1c",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "The climatologist does not reject the model; rather, she ____ its predictions, noting that the uncertainty grows significantly under sparse observational data.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5e13a51c-e7c9-4a57-8d04-10d7f27dfc51",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "Investors found the founder’s mercurial leadership disorienting: one week he championed frugality, the next he demanded lavish expansion. As used in the sentence, mercurial most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "d2c3f60b-3a11-4ea3-b4d5-d4f2c59e71b2",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "The philosopher’s prose is so rarefied that it seems tailored for readers steeped in phenomenology rather than for a general audience. As used in the sentence, rarefied most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "28b9f0f0-3c53-4f45-9a7e-9bca5f0c62d1",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "Despite rumors of sabotage, the investigator settled on a prosaic explanation for the outage: a single tripped breaker. As used in the sentence, prosaic most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9a75e8af-009e-4f8e-b2f9-1a2e6af1c3e5",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "The fellowship guidelines stipulate that stipends must be commensurate with the complexity and scope of the researcher’s responsibilities. As used in the sentence, commensurate most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4bb8f071-657d-4cd7-8d44-6b7ec3a89a2d",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "The scholar’s reading of the poem is at once sympathetic and unsparing; her praise is couched in terms that are anything but ____.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c39f7b2f-3a94-4696-8e9e-9e7a5b6f4d11",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Hard",
+      "question_text": "Alarmed by the shortfall, the board cautioned against a precipitate withdrawal from the partnership, warning that such an exit could jeopardize regulatory approvals. As used in the sentence, precipitate most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "8d10367c-1a49-4dfd-9df2-5e8f5093c4ac",
+      "question_id": "0f4e3a7e-6a86-4ba8-9d22-2b261aab7a9c",
+      "value": "A",
+      "label": "attenuate",
+      "is_correct": true
+    },
+    {
+      "id": "7f8c1fa1-1d4d-4d78-bf83-7e9d9d35b7a4",
+      "question_id": "0f4e3a7e-6a86-4ba8-9d22-2b261aab7a9c",
+      "value": "B",
+      "label": "precipitate",
+      "is_correct": false
+    },
+    {
+      "id": "0a9b1a2c-78d8-4d2d-9a7c-2e4f2a7a95d1",
+      "question_id": "0f4e3a7e-6a86-4ba8-9d22-2b261aab7a9c",
+      "value": "C",
+      "label": "entrench",
+      "is_correct": false
+    },
+    {
+      "id": "7a2ad2fb-7a4c-4a53-8a2d-492d2d159a0f",
+      "question_id": "0f4e3a7e-6a86-4ba8-9d22-2b261aab7a9c",
+      "value": "D",
+      "label": "conflate",
+      "is_correct": false
+    },
+    {
+      "id": "c2a766f9-0f35-4c61-a6cd-9799a5a9cb81",
+      "question_id": "7e6f2f4e-0db6-4d7c-8f3b-8d3a6b1f7b48",
+      "value": "A",
+      "label": "innovative",
+      "is_correct": false
+    },
+    {
+      "id": "38a1d5b0-306d-4d49-8a1b-6f7480e98d5b",
+      "question_id": "7e6f2f4e-0db6-4d7c-8f3b-8d3a6b1f7b48",
+      "value": "B",
+      "label": "punitive",
+      "is_correct": false
+    },
+    {
+      "id": "ac1cceb6-93b8-4f87-9fd8-1b50a17192e6",
+      "question_id": "7e6f2f4e-0db6-4d7c-8f3b-8d3a6b1f7b48",
+      "value": "C",
+      "label": "tentative",
+      "is_correct": true
+    },
+    {
+      "id": "6e154f1c-754d-4f50-b4f7-6fbffb9e1b9a",
+      "question_id": "7e6f2f4e-0db6-4d7c-8f3b-8d3a6b1f7b48",
+      "value": "D",
+      "label": "comprehensive",
+      "is_correct": false
+    },
+    {
+      "id": "c12f9a87-2e8e-4f88-9d36-6da1e2e1f5a9",
+      "question_id": "1b2c64e3-9c9a-4a39-8e3d-5d7f9f23a1b0",
+      "value": "A",
+      "label": "obligated",
+      "is_correct": false
+    },
+    {
+      "id": "e1f6b2d0-294b-47fa-9f02-b2a8ad3bbd2a",
+      "question_id": "1b2c64e3-9c9a-4a39-8e3d-5d7f9f23a1b0",
+      "value": "B",
+      "label": "protected",
+      "is_correct": false
+    },
+    {
+      "id": "b996f5e0-f7a5-4aa7-bf0f-bb7fcb5d16c7",
+      "question_id": "1b2c64e3-9c9a-4a39-8e3d-5d7f9f23a1b0",
+      "value": "C",
+      "label": "resigned",
+      "is_correct": false
+    },
+    {
+      "id": "c9e96072-8da7-4f70-9a1d-a6d9e4f7de51",
+      "question_id": "1b2c64e3-9c9a-4a39-8e3d-5d7f9f23a1b0",
+      "value": "D",
+      "label": "accustomed",
+      "is_correct": true
+    },
+    {
+      "id": "d2f3b68b-c3a2-4c5f-9bdb-0e3eaa7d928c",
+      "question_id": "a0a1c7de-8b20-4a1e-9a9e-ff12a7960f1c",
+      "value": "A",
+      "label": "amplifies",
+      "is_correct": false
+    },
+    {
+      "id": "1d3633a0-6b19-46fb-90f3-8240a8a5b2e2",
+      "question_id": "a0a1c7de-8b20-4a1e-9a9e-ff12a7960f1c",
+      "value": "B",
+      "label": "qualifies",
+      "is_correct": true
+    },
+    {
+      "id": "fc647335-8cfb-4bf6-9cf2-8b6f0e9a9c5e",
+      "question_id": "a0a1c7de-8b20-4a1e-9a9e-ff12a7960f1c",
+      "value": "C",
+      "label": "ratifies",
+      "is_correct": false
+    },
+    {
+      "id": "e589d6f5-0f32-4df3-8b32-0b2208a0a043",
+      "question_id": "a0a1c7de-8b20-4a1e-9a9e-ff12a7960f1c",
+      "value": "D",
+      "label": "codifies",
+      "is_correct": false
+    },
+    {
+      "id": "e27e3b1f-7a54-4c2f-86a5-64b504a0211e",
+      "question_id": "5e13a51c-e7c9-4a57-8d04-10d7f27dfc51",
+      "value": "A",
+      "label": "volatile",
+      "is_correct": true
+    },
+    {
+      "id": "c05cb15b-abe2-4a00-8d65-7d26ca5a2a94",
+      "question_id": "5e13a51c-e7c9-4a57-8d04-10d7f27dfc51",
+      "value": "B",
+      "label": "transparent",
+      "is_correct": false
+    },
+    {
+      "id": "8f9d7f2a-0a2a-4e2e-9f07-6996e3ef3f77",
+      "question_id": "5e13a51c-e7c9-4a57-8d04-10d7f27dfc51",
+      "value": "C",
+      "label": "methodical",
+      "is_correct": false
+    },
+    {
+      "id": "35b92b40-4dd9-4a7d-8c2e-91cf94270939",
+      "question_id": "5e13a51c-e7c9-4a57-8d04-10d7f27dfc51",
+      "value": "D",
+      "label": "parsimonious",
+      "is_correct": false
+    },
+    {
+      "id": "9c7c5a2d-37e9-4db9-9e97-1deaf53e2f9f",
+      "question_id": "d2c3f60b-3a11-4ea3-b4d5-d4f2c59e71b2",
+      "value": "A",
+      "label": "scarce",
+      "is_correct": false
+    },
+    {
+      "id": "d9c1e97a-ec0f-4e35-b8de-f31c548c4f8b",
+      "question_id": "d2c3f60b-3a11-4ea3-b4d5-d4f2c59e71b2",
+      "value": "B",
+      "label": "thin",
+      "is_correct": false
+    },
+    {
+      "id": "d3d2a28c-59f6-4743-82e5-2b2c678f8d5a",
+      "question_id": "d2c3f60b-3a11-4ea3-b4d5-d4f2c59e71b2",
+      "value": "C",
+      "label": "lofty",
+      "is_correct": false
+    },
+    {
+      "id": "36ce8fd9-c6f7-4a77-a3c2-2f0096c338c4",
+      "question_id": "d2c3f60b-3a11-4ea3-b4d5-d4f2c59e71b2",
+      "value": "D",
+      "label": "esoteric",
+      "is_correct": true
+    },
+    {
+      "id": "97b9c410-73af-4f27-9f78-38c3a58b7f5b",
+      "question_id": "28b9f0f0-3c53-4f45-9a7e-9bca5f0c62d1",
+      "value": "A",
+      "label": "precise",
+      "is_correct": false
+    },
+    {
+      "id": "ed9ef114-6f62-4ad8-8ce1-f1d46032b02a",
+      "question_id": "28b9f0f0-3c53-4f45-9a7e-9bca5f0c62d1",
+      "value": "B",
+      "label": "provisional",
+      "is_correct": false
+    },
+    {
+      "id": "71a4d3a4-0c3e-4f3b-8d07-6de3a40bb8b3",
+      "question_id": "28b9f0f0-3c53-4f45-9a7e-9bca5f0c62d1",
+      "value": "C",
+      "label": "mundane",
+      "is_correct": true
+    },
+    {
+      "id": "6237a8b1-2f12-4c1c-9e3a-3f8b3f4a1aba",
+      "question_id": "28b9f0f0-3c53-4f45-9a7e-9bca5f0c62d1",
+      "value": "D",
+      "label": "convoluted",
+      "is_correct": false
+    },
+    {
+      "id": "9f0e0e21-97d0-4c8f-a7c9-8e659b83fdb8",
+      "question_id": "9a75e8af-009e-4f8e-b2f9-1a2e6af1c3e5",
+      "value": "A",
+      "label": "greater than",
+      "is_correct": false
+    },
+    {
+      "id": "ad77bf58-8e3f-4277-b6ee-6b5d0c89cf61",
+      "question_id": "9a75e8af-009e-4f8e-b2f9-1a2e6af1c3e5",
+      "value": "B",
+      "label": "proportionate",
+      "is_correct": true
+    },
+    {
+      "id": "0d8b805e-b2d0-4fa2-8a41-37058e1578a1",
+      "question_id": "9a75e8af-009e-4f8e-b2f9-1a2e6af1c3e5",
+      "value": "C",
+      "label": "additive",
+      "is_correct": false
+    },
+    {
+      "id": "7c0a296d-1978-42a2-9e06-ef0fd30b5020",
+      "question_id": "9a75e8af-009e-4f8e-b2f9-1a2e6af1c3e5",
+      "value": "D",
+      "label": "symbolic",
+      "is_correct": false
+    },
+    {
+      "id": "ba9f50a1-9e3f-4b41-8f19-0b8d1a6ee4c6",
+      "question_id": "4bb8f071-657d-4cd7-8d44-6b7ec3a89a2d",
+      "value": "A",
+      "label": "obsequious",
+      "is_correct": true
+    },
+    {
+      "id": "a96f89e3-63ac-4af3-9ed9-4a18cd338134",
+      "question_id": "4bb8f071-657d-4cd7-8d44-6b7ec3a89a2d",
+      "value": "B",
+      "label": "measured",
+      "is_correct": false
+    },
+    {
+      "id": "e8b3d484-8d6b-4e1f-87bf-62eae63d9f38",
+      "question_id": "4bb8f071-657d-4cd7-8d44-6b7ec3a89a2d",
+      "value": "C",
+      "label": "incisive",
+      "is_correct": false
+    },
+    {
+      "id": "e6b6b3a1-2e90-4d8a-b2f7-2ce6d599e3da",
+      "question_id": "4bb8f071-657d-4cd7-8d44-6b7ec3a89a2d",
+      "value": "D",
+      "label": "trenchant",
+      "is_correct": false
+    },
+    {
+      "id": "26c80c37-55a4-4b09-9a97-3bc37e67f5a2",
+      "question_id": "c39f7b2f-3a94-4696-8e9e-9e7a5b6f4d11",
+      "value": "A",
+      "label": "meteorological",
+      "is_correct": false
+    },
+    {
+      "id": "8ae18628-c606-4a57-b025-22b0701a7b05",
+      "question_id": "c39f7b2f-3a94-4696-8e9e-9e7a5b6f4d11",
+      "value": "B",
+      "label": "inevitable",
+      "is_correct": false
+    },
+    {
+      "id": "34f4c0c5-5d1b-4d56-9f45-4da8b9a2071d",
+      "question_id": "c39f7b2f-3a94-4696-8e9e-9e7a5b6f4d11",
+      "value": "C",
+      "label": "cathartic",
+      "is_correct": false
+    },
+    {
+      "id": "2d9ee3ea-3b90-4ffd-9d3a-96e1afb25b9a",
+      "question_id": "c39f7b2f-3a94-4696-8e9e-9e7a5b6f4d11",
+      "value": "D",
+      "label": "rash",
+      "is_correct": true
+    }
+  ]
+}

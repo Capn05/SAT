@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "1f7a4cdd-2a4e-4f39-bb6f-9a46a8f1e5c0",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "A series of late-season storms, along with an early snowmelt, _____ unusual flooding throughout the valley.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2b69d7a1-9a82-49de-b71f-2a5c20a3b9d5",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "The consultant's report not only outlines the risks associated with rapid expansion but also _____ a timeline for implementing safeguards.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3f44c9be-d2b3-4a6e-9cef-5c101e2a7f52",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "By standardizing file formats across departments, the university centralized its archives, _____ future researchers to locate materials more efficiently.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4c8d53b2-8c3e-446a-9c7e-a2a87bea5196",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "Although the committee reached a unanimous decision, _____ rationale was not immediately shared with the public.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5e1f1b00-1a6a-4b7f-81cb-0e1e2a6f58d8",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "For decades, researchers _____ the island was uninhabited, until an aerial survey in 2016 revealed traces of ancient agriculture.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6a3b0c72-4d1f-4f1d-a63f-bab1b6d8f043",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "The biographer interweaves letters and interviews, _____ a portrait that is more intimate than a chronological narrative alone.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7d5f2c91-ef2e-4b4e-8b75-47b3a5fbd1ac",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "Ultimately, the panel selected Maria, the candidate _____ they believed was best equipped to lead the project.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8e9a7c42-2bf1-4c77-bd28-38e2bf7f9910",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "After reviewing the survey results, _____ concluded that the sample size was too small to support definitive claims.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9a2d4f83-7cb2-4f3a-9f3d-1e7b0d4a65c4",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "The exhibit aims both to preserve fragile artifacts and _____ contemporary artists who reinterpret them.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a3c8f6d5-9f74-4a8c-8d7d-6e4d2b9c71ee",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "More than $60%$ of the town's population _____ within a ten-mile radius of the factory, necessitating stricter emissions controls.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "5b7f9e22-03a5-4d0b-9bf8-7dd4d7a8f3a1",
+      "question_id": "1f7a4cdd-2a4e-4f39-bb6f-9a46a8f1e5c0",
+      "value": "A",
+      "label": "have caused",
+      "is_correct": false
+    },
+    {
+      "id": "3f1a6b90-0a0d-4b6a-9b3d-28de34bc5c21",
+      "question_id": "1f7a4cdd-2a4e-4f39-bb6f-9a46a8f1e5c0",
+      "value": "B",
+      "label": "is causing",
+      "is_correct": false
+    },
+    {
+      "id": "0a3c5f4e-2d6f-4a4a-9b77-1cf7e837d4c9",
+      "question_id": "1f7a4cdd-2a4e-4f39-bb6f-9a46a8f1e5c0",
+      "value": "C",
+      "label": "has caused",
+      "is_correct": true
+    },
+    {
+      "id": "b2a9e5fe-6b44-4e1d-8cda-3e8c1d5c2e4f",
+      "question_id": "1f7a4cdd-2a4e-4f39-bb6f-9a46a8f1e5c0",
+      "value": "D",
+      "label": "cause",
+      "is_correct": false
+    },
+    {
+      "id": "6d4c9e12-1a3b-4c9c-9bf3-72c1a0e4f8d0",
+      "question_id": "2b69d7a1-9a82-49de-b71f-2a5c20a3b9d5",
+      "value": "A",
+      "label": "proposes",
+      "is_correct": true
+    },
+    {
+      "id": "a1e8b3c4-5d6f-4a9b-8c7d-1e2f3a4b5c6d",
+      "question_id": "2b69d7a1-9a82-49de-b71f-2a5c20a3b9d5",
+      "value": "B",
+      "label": "proposing",
+      "is_correct": false
+    },
+    {
+      "id": "bc9e71a2-f3d4-4c2b-8a9f-781c23d5e6f4",
+      "question_id": "2b69d7a1-9a82-49de-b71f-2a5c20a3b9d5",
+      "value": "C",
+      "label": "to propose",
+      "is_correct": false
+    },
+    {
+      "id": "c0d1e2f3-a4b5-4c6d-8e7f-90a1b2c3d4e5",
+      "question_id": "2b69d7a1-9a82-49de-b71f-2a5c20a3b9d5",
+      "value": "D",
+      "label": "proposed",
+      "is_correct": false
+    },
+    {
+      "id": "e1f2a3b4-c5d6-4e7f-8a90-1b2c3d4e5f60",
+      "question_id": "3f44c9be-d2b3-4a6e-9cef-5c101e2a7f52",
+      "value": "A",
+      "label": "allow",
+      "is_correct": false
+    },
+    {
+      "id": "d2c3b4a5-e6f7-4a8b-9c01-2d3e4f5a6b7c",
+      "question_id": "3f44c9be-d2b3-4a6e-9cef-5c101e2a7f52",
+      "value": "B",
+      "label": "allows",
+      "is_correct": false
+    },
+    {
+      "id": "a9b8c7d6-e5f4-4c3b-8a2f-1d0e9f8a7b6c",
+      "question_id": "3f44c9be-d2b3-4a6e-9cef-5c101e2a7f52",
+      "value": "C",
+      "label": "to allow",
+      "is_correct": false
+    },
+    {
+      "id": "f0e1d2c3-b4a5-4c6d-8e9f-0a1b2c3d4e5f",
+      "question_id": "3f44c9be-d2b3-4a6e-9cef-5c101e2a7f52",
+      "value": "D",
+      "label": "allowing",
+      "is_correct": true
+    },
+    {
+      "id": "af12bc34-de56-4789-8abc-12de34fa56bc",
+      "question_id": "4c8d53b2-8c3e-446a-9c7e-a2a87bea5196",
+      "value": "A",
+      "label": "it's",
+      "is_correct": false
+    },
+    {
+      "id": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e",
+      "question_id": "4c8d53b2-8c3e-446a-9c7e-a2a87bea5196",
+      "value": "B",
+      "label": "its",
+      "is_correct": true
+    },
+    {
+      "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f",
+      "question_id": "4c8d53b2-8c3e-446a-9c7e-a2a87bea5196",
+      "value": "C",
+      "label": "their",
+      "is_correct": false
+    },
+    {
+      "id": "d3e4f5a6-b7c8-4d9e-0f1a-2b3c4d5e6f70",
+      "question_id": "4c8d53b2-8c3e-446a-9c7e-a2a87bea5196",
+      "value": "D",
+      "label": "his or her",
+      "is_correct": false
+    },
+    {
+      "id": "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a80",
+      "question_id": "5e1f1b00-1a6a-4b7f-81cb-0e1e2a6f58d8",
+      "value": "A",
+      "label": "have believed",
+      "is_correct": false
+    },
+    {
+      "id": "f5a6b7c8-d9e0-4f1a-2b3c-4d5e6f7a8b90",
+      "question_id": "5e1f1b00-1a6a-4b7f-81cb-0e1e2a6f58d8",
+      "value": "B",
+      "label": "believe",
+      "is_correct": false
+    },
+    {
+      "id": "a6b7c8d9-e0f1-402a-b3c4-d5e6f7a8b9c0",
+      "question_id": "5e1f1b00-1a6a-4b7f-81cb-0e1e2a6f58d8",
+      "value": "C",
+      "label": "had believed",
+      "is_correct": true
+    },
+    {
+      "id": "b7c8d9e0-f1a2-413b-c4d5-e6f7a8b9c0d1",
+      "question_id": "5e1f1b00-1a6a-4b7f-81cb-0e1e2a6f58d8",
+      "value": "D",
+      "label": "were believing",
+      "is_correct": false
+    },
+    {
+      "id": "c8a7b6d5-e4f3-4a2b-9c1d-0e1f2a3b4c5d",
+      "question_id": "6a3b0c72-4d1f-4f1d-a63f-bab1b6d8f043",
+      "value": "A",
+      "label": "creating",
+      "is_correct": true
+    },
+    {
+      "id": "d9e8f7a6-b5c4-4d3e-8f2a-1b0c2d3e4f5a",
+      "question_id": "6a3b0c72-4d1f-4f1d-a63f-bab1b6d8f043",
+      "value": "B",
+      "label": "to create",
+      "is_correct": false
+    },
+    {
+      "id": "eaf9b8c7-d6e5-4f4a-9b3c-2d1e3f4a5b6c",
+      "question_id": "6a3b0c72-4d1f-4f1d-a63f-bab1b6d8f043",
+      "value": "C",
+      "label": "creates",
+      "is_correct": false
+    },
+    {
+      "id": "fb0a9c8d-e7f6-456b-8c4d-3e2f1a0b9c8d",
+      "question_id": "6a3b0c72-4d1f-4f1d-a63f-bab1b6d8f043",
+      "value": "D",
+      "label": "having created",
+      "is_correct": false
+    },
+    {
+      "id": "ab01cd23-ef45-4678-9abc-def012345678",
+      "question_id": "7d5f2c91-ef2e-4b4e-8b75-47b3a5fbd1ac",
+      "value": "A",
+      "label": "whom",
+      "is_correct": false
+    },
+    {
+      "id": "bc12de34-fa56-4789-abcd-ef0123456789",
+      "question_id": "7d5f2c91-ef2e-4b4e-8b75-47b3a5fbd1ac",
+      "value": "B",
+      "label": "which",
+      "is_correct": false
+    },
+    {
+      "id": "cd23ef45-0a67-489a-bcde-f0123456789a",
+      "question_id": "7d5f2c91-ef2e-4b4e-8b75-47b3a5fbd1ac",
+      "value": "C",
+      "label": "that",
+      "is_correct": false
+    },
+    {
+      "id": "de34f056-1b78-4a9b-cdef-0123456789ab",
+      "question_id": "7d5f2c91-ef2e-4b4e-8b75-47b3a5fbd1ac",
+      "value": "D",
+      "label": "who",
+      "is_correct": true
+    },
+    {
+      "id": "ef450123-2c89-4dab-9cde-f0123456abc7",
+      "question_id": "8e9a7c42-2bf1-4c77-bd28-38e2bf7f9910",
+      "value": "A",
+      "label": "it",
+      "is_correct": false
+    },
+    {
+      "id": "f0561234-3d9a-4ebc-ad0e-123456789abc",
+      "question_id": "8e9a7c42-2bf1-4c77-bd28-38e2bf7f9910",
+      "value": "B",
+      "label": "the researchers",
+      "is_correct": true
+    },
+    {
+      "id": "0123f456-4eab-5fcd-b0e1-23456789abcd",
+      "question_id": "8e9a7c42-2bf1-4c77-bd28-38e2bf7f9910",
+      "value": "C",
+      "label": "there",
+      "is_correct": false
+    },
+    {
+      "id": "1234a567-5fbc-60de-c1f2-3456789abcde",
+      "question_id": "8e9a7c42-2bf1-4c77-bd28-38e2bf7f9910",
+      "value": "D",
+      "label": "one",
+      "is_correct": false
+    },
+    {
+      "id": "2345b678-6cde-41ef-d203-456789abcdef",
+      "question_id": "9a2d4f83-7cb2-4f3a-9f3d-1e7b0d4a65c4",
+      "value": "A",
+      "label": "showcasing",
+      "is_correct": false
+    },
+    {
+      "id": "3456c789-7def-42f0-e314-56789abcdef0",
+      "question_id": "9a2d4f83-7cb2-4f3a-9f3d-1e7b0d4a65c4",
+      "value": "B",
+      "label": "for showcasing",
+      "is_correct": false
+    },
+    {
+      "id": "4567d89a-8ef0-4301-f425-6789abcdef01",
+      "question_id": "9a2d4f83-7cb2-4f3a-9f3d-1e7b0d4a65c4",
+      "value": "C",
+      "label": "to showcase",
+      "is_correct": true
+    },
+    {
+      "id": "5678e90b-9f01-4402-0536-789abcdef012",
+      "question_id": "9a2d4f83-7cb2-4f3a-9f3d-1e7b0d4a65c4",
+      "value": "D",
+      "label": "showcase",
+      "is_correct": false
+    },
+    {
+      "id": "6789f01c-a012-4503-1647-89abcdef0123",
+      "question_id": "a3c8f6d5-9f74-4a8c-8d7d-6e4d2b9c71ee",
+      "value": "A",
+      "label": "lives",
+      "is_correct": true
+    },
+    {
+      "id": "789a012d-b123-4604-2758-9abcdef01234",
+      "question_id": "a3c8f6d5-9f74-4a8c-8d7d-6e4d2b9c71ee",
+      "value": "B",
+      "label": "are living",
+      "is_correct": false
+    },
+    {
+      "id": "89ab123e-c234-4705-3869-abcdef012345",
+      "question_id": "a3c8f6d5-9f74-4a8c-8d7d-6e4d2b9c71ee",
+      "value": "C",
+      "label": "have lived",
+      "is_correct": false
+    },
+    {
+      "id": "9abc234f-d345-4806-497a-bcdef0123456",
+      "question_id": "a3c8f6d5-9f74-4a8c-8d7d-6e4d2b9c71ee",
+      "value": "D",
+      "label": "living",
+      "is_correct": false
+    }
+  ]
+}

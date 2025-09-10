@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "3e5a9f8e-2f6a-4f7a-8c9b-0d1a29f0af91",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The Enigma machine—an electromechanical device used by the German military ___ was once considered unbreakable; the Allies ultimately proved otherwise. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f1c2b73a-4c37-4d82-bc9a-6f9e0f5a7994",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The proposal promises immediate savings ___ however, its long-term costs remain unclear. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4b9d1a7e-6d99-4b1d-9f1e-24a6b2b0f4d2",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The field test confirmed what the models predicted ___ the new alloy withstands repeated stress without deforming. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6d12c370-2b4f-4ef6-9cf8-83a3f1d5b6cd",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "Many observers expected the satellite to fail on launch ___ it completed its mission flawlessly. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9a6c5d14-1f30-4a1c-8f57-2db0d2a0dd3e",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "Their response was not a retreat ______ a calculated pause to reassess risks. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7311b7fb-2e02-4b0f-b7d2-2b2e8baf6a15",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The expedition—comprising botanists, geologists, and linguists ___ returned with thousands of specimens. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "d9f0a4ef-52d4-4e6f-a62b-3b4c9a1d2e3f",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The glaciers are retreating rapidly ___ satellite data show a loss of mass each season. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0f6a2f1d-9b7e-4e4c-83be-1a2c3d4e5f60",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "Access to broadband should be treated as essential infrastructure ___ it enables participation in education and commerce. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "58b7cf3b-4154-4d80-9bfc-9e9a6423a4b7",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "The sample size was limited ___ consequently, the authors urge caution in interpreting the findings. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a3b9d8e1-4c46-4d76-98b1-0cd2e3f4a5b6",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Hard",
+      "question_text": "As a federal agency, NASA issues technical memoranda to guide contractors; one such bulletin—on orbital debris mitigation ___ outlines stricter deorbit timelines. Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "7c4a9f10-f5a1-4d8a-9b6a-9f1f3d2e4c5b",
+      "question_id": "3e5a9f8e-2f6a-4f7a-8c9b-0d1a29f0af91",
+      "value": "A",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "1b2c3d4e-5f60-4a7b-8c9d-0e1f2a3b4c5d",
+      "question_id": "3e5a9f8e-2f6a-4f7a-8c9b-0d1a29f0af91",
+      "value": "B",
+      "label": "—",
+      "is_correct": true
+    },
+    {
+      "id": "5e6f7a8b-9c0d-4e1f-8a2b-3c4d5e6f7a8b",
+      "question_id": "3e5a9f8e-2f6a-4f7a-8c9b-0d1a29f0af91",
+      "value": "C",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "2a7b6c5d-4e3f-4a1b-9c8d-7e6f5a4b3c2d",
+      "question_id": "3e5a9f8e-2f6a-4f7a-8c9b-0d1a29f0af91",
+      "value": "D",
+      "label": ";",
+      "is_correct": false
+    },
+    {
+      "id": "f6e5d4c3-b2a1-4c5d-8f90-1a2b3c4d5e6f",
+      "question_id": "f1c2b73a-4c37-4d82-bc9a-6f9e0f5a7994",
+      "value": "A",
+      "label": ";",
+      "is_correct": true
+    },
+    {
+      "id": "0a1b2c3d-4e5f-4567-89ab-bcdef0123456",
+      "question_id": "f1c2b73a-4c37-4d82-bc9a-6f9e0f5a7994",
+      "value": "B",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "question_id": "f1c2b73a-4c37-4d82-bc9a-6f9e0f5a7994",
+      "value": "C",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "89abcdef-0123-4567-89ab-cdef01234567",
+      "question_id": "f1c2b73a-4c37-4d82-bc9a-6f9e0f5a7994",
+      "value": "D",
+      "label": "—",
+      "is_correct": false
+    },
+    {
+      "id": "f0e1d2c3-b4a5-46c7-89d0-1e2f3a4b5c6d",
+      "question_id": "4b9d1a7e-6d99-4b1d-9f1e-24a6b2b0f4d2",
+      "value": "A",
+      "label": "—",
+      "is_correct": false
+    },
+    {
+      "id": "0f1e2d3c-4b5a-46c7-98d0-1e2f3a4b5c6d",
+      "question_id": "4b9d1a7e-6d99-4b1d-9f1e-24a6b2b0f4d2",
+      "value": "B",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "aa11bb22-cc33-44dd-88ee-ff0011223344",
+      "question_id": "4b9d1a7e-6d99-4b1d-9f1e-24a6b2b0f4d2",
+      "value": "C",
+      "label": ":",
+      "is_correct": true
+    },
+    {
+      "id": "55aa66bb-77cc-4888-99dd-eeff00112233",
+      "question_id": "4b9d1a7e-6d99-4b1d-9f1e-24a6b2b0f4d2",
+      "value": "D",
+      "label": ";",
+      "is_correct": false
+    },
+    {
+      "id": "c1d2e3f4-a5b6-47c8-9d0e-1f2a3b4c5d6e",
+      "question_id": "6d12c370-2b4f-4ef6-9cf8-83a3f1d5b6cd",
+      "value": "A",
+      "label": "yet",
+      "is_correct": false
+    },
+    {
+      "id": "1a2b3c4d-5e6f-4708-9a0b-1c2d3e4f5a6b",
+      "question_id": "6d12c370-2b4f-4ef6-9cf8-83a3f1d5b6cd",
+      "value": "B",
+      "label": ", yet",
+      "is_correct": true
+    },
+    {
+      "id": "6b5a4f3e-2d1c-40ba-9a08-7f6e5d4c3b2a",
+      "question_id": "6d12c370-2b4f-4ef6-9cf8-83a3f1d5b6cd",
+      "value": "C",
+      "label": "; yet",
+      "is_correct": false
+    },
+    {
+      "id": "31415926-5358-4c97-9b32-384626433832",
+      "question_id": "6d12c370-2b4f-4ef6-9cf8-83a3f1d5b6cd",
+      "value": "D",
+      "label": ", and",
+      "is_correct": false
+    },
+    {
+      "id": "abcdef01-2345-4678-9abc-def012345678",
+      "question_id": "9a6c5d14-1f30-4a1c-8f57-2db0d2a0dd3e",
+      "value": "A",
+      "label": "retreat, rather",
+      "is_correct": false
+    },
+    {
+      "id": "76543210-fedc-4ba9-8c76-543210fedcba",
+      "question_id": "9a6c5d14-1f30-4a1c-8f57-2db0d2a0dd3e",
+      "value": "B",
+      "label": "retreat rather,",
+      "is_correct": false
+    },
+    {
+      "id": "0c9b8a7d-6e5f-4d3c-8b2a-109876543210",
+      "question_id": "9a6c5d14-1f30-4a1c-8f57-2db0d2a0dd3e",
+      "value": "C",
+      "label": "retreat; rather,",
+      "is_correct": true
+    },
+    {
+      "id": "deadbeef-0000-4000-8000-abcdefabcdef",
+      "question_id": "9a6c5d14-1f30-4a1c-8f57-2db0d2a0dd3e",
+      "value": "D",
+      "label": "retreat: rather",
+      "is_correct": false
+    },
+    {
+      "id": "fe10dc32-ba54-4c76-98e0-1a2b3c4d5e7f",
+      "question_id": "7311b7fb-2e02-4b0f-b7d2-2b2e8baf6a15",
+      "value": "A",
+      "label": "—",
+      "is_correct": true
+    },
+    {
+      "id": "02468ace-bdf0-4ace-9bdf-02468acebdf0",
+      "question_id": "7311b7fb-2e02-4b0f-b7d2-2b2e8baf6a15",
+      "value": "B",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "bada55e0-0001-4bad-8dec-0ff1ce0bad00",
+      "question_id": "7311b7fb-2e02-4b0f-b7d2-2b2e8baf6a15",
+      "value": "C",
+      "label": ";",
+      "is_correct": false
+    },
+    {
+      "id": "cafef00d-1234-4abc-9def-001122334455",
+      "question_id": "7311b7fb-2e02-4b0f-b7d2-2b2e8baf6a15",
+      "value": "D",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "11112222-3333-4444-8888-9999aaaabbbb",
+      "question_id": "d9f0a4ef-52d4-4e6f-a62b-3b4c9a1d2e3f",
+      "value": "A",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "22223333-4444-4555-8666-777788889999",
+      "question_id": "d9f0a4ef-52d4-4e6f-a62b-3b4c9a1d2e3f",
+      "value": "B",
+      "label": ";",
+      "is_correct": true
+    },
+    {
+      "id": "33334444-5555-4666-8444-666677778888",
+      "question_id": "d9f0a4ef-52d4-4e6f-a62b-3b4c9a1d2e3f",
+      "value": "C",
+      "label": "—",
+      "is_correct": false
+    },
+    {
+      "id": "44445555-6666-4777-8222-555566667777",
+      "question_id": "d9f0a4ef-52d4-4e6f-a62b-3b4c9a1d2e3f",
+      "value": "D",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "aaaabbbb-cccc-4ddd-8eee-ffff00001111",
+      "question_id": "0f6a2f1d-9b7e-4e4c-83be-1a2c3d4e5f60",
+      "value": "A",
+      "label": ", for",
+      "is_correct": true
+    },
+    {
+      "id": "bbbbcccc-dddd-4eee-8fff-000011112222",
+      "question_id": "0f6a2f1d-9b7e-4e4c-83be-1a2c3d4e5f60",
+      "value": "B",
+      "label": "for",
+      "is_correct": false
+    },
+    {
+      "id": "ccccdddd-eeee-4fff-8000-111122223333",
+      "question_id": "0f6a2f1d-9b7e-4e4c-83be-1a2c3d4e5f60",
+      "value": "C",
+      "label": "; for",
+      "is_correct": false
+    },
+    {
+      "id": "dddd1111-2222-4333-8444-555566667777",
+      "question_id": "0f6a2f1d-9b7e-4e4c-83be-1a2c3d4e5f60",
+      "value": "D",
+      "label": ": for",
+      "is_correct": false
+    },
+    {
+      "id": "12121212-3434-4567-8787-9090a0a0b0b0",
+      "question_id": "58b7cf3b-4154-4d80-9bfc-9e9a6423a4b7",
+      "value": "A",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "23232323-4545-4678-8989-0101b1b1c1c1",
+      "question_id": "58b7cf3b-4154-4d80-9bfc-9e9a6423a4b7",
+      "value": "B",
+      "label": ";",
+      "is_correct": true
+    },
+    {
+      "id": "34343434-5656-4789-8a8a-1212c2c2d2d2",
+      "question_id": "58b7cf3b-4154-4d80-9bfc-9e9a6423a4b7",
+      "value": "C",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "45454545-6767-489a-8b8b-2323d3d3e3e3",
+      "question_id": "58b7cf3b-4154-4d80-9bfc-9e9a6423a4b7",
+      "value": "D",
+      "label": "—",
+      "is_correct": false
+    },
+    {
+      "id": "abcdefab-cdef-4abc-8def-0123456789ab",
+      "question_id": "a3b9d8e1-4c46-4d76-98b1-0cd2e3f4a5b6",
+      "value": "A",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "bcdefabc-def0-4bcd-8ef0-123456789abc",
+      "question_id": "a3b9d8e1-4c46-4d76-98b1-0cd2e3f4a5b6",
+      "value": "B",
+      "label": ";",
+      "is_correct": false
+    },
+    {
+      "id": "cdefab01-ef01-4cde-8f01-23456789abcd",
+      "question_id": "a3b9d8e1-4c46-4d76-98b1-0cd2e3f4a5b6",
+      "value": "C",
+      "label": ":",
+      "is_correct": false
+    },
+    {
+      "id": "defab012-f012-4def-8012-3456789abcde",
+      "question_id": "a3b9d8e1-4c46-4d76-98b1-0cd2e3f4a5b6",
+      "value": "D",
+      "label": "—",
+      "is_correct": true
+    }
+  ]
+}

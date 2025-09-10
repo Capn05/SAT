@@ -245,22 +245,14 @@ function ensureJson(text) {
   return JSON.parse(raw);
 }
 
-async function main() {
-  // Simple args: --subcategory=9 --difficulty=Medium
-  const argSub = process.argv.find(a => a.startsWith('--subcategory='));
-  const argDiff = process.argv.find(a => a.startsWith('--difficulty='));
-  const subcategoryId = argSub ? Number(argSub.split('=')[1]) : 9;
-  const difficulty = argDiff ? argDiff.split('=')[1] : 'Medium';
-
+async function generateFor(subcategoryId, difficulty, requestedN) {
   const ctx = await getSubcategoryContext(subcategoryId);
-  // For first run, reduce N to ensure output; adjust via env if needed
-  const requestedN = Number(process.env.AI_GEN_N || 10);
+  const n = Number.isFinite(Number(requestedN)) ? Number(requestedN) : 3;
   const examplesBundle = loadExamplesBundle(ctx.subcategoryName, 5);
-  const { system, user } = buildPrompt(ctx, difficulty, examplesBundle, requestedN);
+  const { system, user } = buildPrompt(ctx, difficulty, examplesBundle, n);
 
-  console.log(`Generating questions for subcategory ${subcategoryId} (${ctx.subcategoryName}), difficulty ${difficulty}...`);
+  console.log(`Generating questions for subcategory ${subcategoryId} (${ctx.subcategoryName}), difficulty ${difficulty}, N=${n}...`);
 
-  // Print the full prompt for verification
   console.log('===== GPT-5 PROMPT START =====');
   console.log(system);
   console.log('');
@@ -286,6 +278,44 @@ async function main() {
   const outPath = join(outDir, `${slug}_${difficulty}.json`);
   writeFileSync(outPath, JSON.stringify(json, null, 2));
   console.log('Wrote', outPath);
+}
+
+async function main() {
+  // Modes:
+  // 1) Single: --subcategory=<id> --difficulty=<Easy|Medium|Hard>
+  // 2) Batch: --pairs-json=/abs/path/to/pairs.json
+
+  const argPairs = process.argv.find(a => a.startsWith('--pairs-json='));
+  if (argPairs) {
+    const filePath = argPairs.split('=')[1];
+    const raw = readFileSync(filePath, 'utf8');
+    const arr = JSON.parse(raw);
+
+    const requestedN = Number(process.env.AI_GEN_N || 3);
+
+    for (const entry of arr) {
+      const subcategoryId = Number(entry.subcategory_id);
+      const difficulty = String(entry.difficulty || '').trim();
+      const count = Number(entry.question_count || 0);
+      if (!subcategoryId || !difficulty) continue;
+
+      // Filter to Reading & Writing only (subject_id = 2) via DB context
+      const ctx = await getSubcategoryContext(subcategoryId);
+      if (ctx.subjectId !== 2) continue;
+      if (count >= 15) continue;
+
+      await generateFor(subcategoryId, difficulty, requestedN);
+    }
+    return;
+  }
+
+  // Fallback single-run mode
+  const argSub = process.argv.find(a => a.startsWith('--subcategory='));
+  const argDiff = process.argv.find(a => a.startsWith('--difficulty='));
+  const subcategoryId = argSub ? Number(argSub.split('=')[1]) : 9;
+  const difficulty = argDiff ? argDiff.split('=')[1] : 'Medium';
+  const requestedN = Number(process.env.AI_GEN_N || 10);
+  await generateFor(subcategoryId, difficulty, requestedN);
 }
 
 await main();

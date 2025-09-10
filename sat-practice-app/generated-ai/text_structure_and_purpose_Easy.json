@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "a3a3b4c0-5d1a-4f9e-9a33-6b84c9d5a7e2",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "City officials recently updated the central park by adding new benches, planting shade trees, and repairing walking paths. <u>Because many visitors stay after sunset, the lights were the first upgrade.</u> The city hopes the changes will make the park safer and more welcoming. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b1c2d3e4-8f9a-4b2f-bc11-3aa9c0e7f8d5",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "Many students think the art club focuses only on sketching. In fact, the club now includes sculpture, digital design, and short film projects. Meetings are open to beginners, and materials are provided. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c2f5a6b7-1e23-4c45-9d12-78ab56cde901",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "For years, the morning announcements were read by the principal over the intercom. Starting this semester, student teams will record short audio segments that play before first period. Teachers say the new format will keep messages clear and lively. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "d45e67f8-9a01-4b23-8c45-12de34fa56bc",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "A museum sign explains that the upcoming exhibit is interactive. <u>That is, visitors can handle replicas and try simple experiments at each station.</u> The museum expects longer lines but hopes for a more engaging experience. Which choice best describes the function of the underlined sentence?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e56789ab-0123-4cde-9fab-3456bcdef012",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "The community center is offering a cooking class focused on practical weeknight meals. <u>For example, one lesson shows how to turn leftover rice into a quick soup.</u> The class meets on Tuesdays and includes a printed recipe packet. Which choice best describes the function of the underlined sentence?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f67890bc-1234-4def-8abc-4567cdef0123",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "Some residents borrow fewer books because they worry about late fees. To remove this barrier, the library will stop charging overdue fines next month and keep reminders friendly and frequent. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "The new weather app sends alerts about approaching storms and offers hour-by-hour forecasts. <u>Still, the app cannot guarantee perfect predictions.</u> Users should check multiple sources during severe weather. Which choice best describes the function of the underlined sentence?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "11223344-5566-4789-88aa-bbccddeeff00",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "When local baker Rosa saw unsold bread piling up each weekend, she started a Sunday market where businesses donate extra food near closing time. Neighbors stop by to pick up low-cost items, and leftovers go to the food pantry. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "22334455-6677-489a-99bb-ccddeeff0011",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "At the community garden, volunteers often weed beds and refill watering cans. <u>Yet these small tasks make the busy harvest days possible.</u> The coordinator thanks each team at the end of the month. Which choice best describes the function of the underlined sentence?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "33445566-7788-4abc-a0cc-ddeeff001122",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "The city plans to add protected bike lanes along two major streets to improve safety. <u>As a result, more people may choose to ride to work.</u> Officials will measure traffic patterns over the summer. Which choice best describes the function of the underlined sentence?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "fa1c2b3d-0e12-4f34-9a56-7890abcde001",
+      "question_id": "a3a3b4c0-5d1a-4f9e-9a33-6b84c9d5a7e2",
+      "value": "A",
+      "label": "It gives a reason for prioritizing one upgrade.",
+      "is_correct": true
+    },
+    {
+      "id": "b7c8d9ea-1f23-4a45-8b67-8901bcdefa10",
+      "question_id": "a3a3b4c0-5d1a-4f9e-9a33-6b84c9d5a7e2",
+      "value": "B",
+      "label": "It introduces a new problem with the park lights.",
+      "is_correct": false
+    },
+    {
+      "id": "c8d9ea1b-2c34-4b56-9c78-9012cdefab21",
+      "question_id": "a3a3b4c0-5d1a-4f9e-9a33-6b84c9d5a7e2",
+      "value": "C",
+      "label": "It defines a technical term used by engineers.",
+      "is_correct": false
+    },
+    {
+      "id": "d9ea1b2c-3d45-4c67-8d89-0123defabc32",
+      "question_id": "a3a3b4c0-5d1a-4f9e-9a33-6b84c9d5a7e2",
+      "value": "D",
+      "label": "It summarizes the entire plan for the park.",
+      "is_correct": false
+    },
+    {
+      "id": "ab12cd34-ef56-4789-9abc-def012345670",
+      "question_id": "b1c2d3e4-8f9a-4b2f-bc11-3aa9c0e7f8d5",
+      "value": "A",
+      "label": "To argue that sketching is the most valuable art skill.",
+      "is_correct": false
+    },
+    {
+      "id": "bc23de45-f067-489a-abcd-ef1234567801",
+      "question_id": "b1c2d3e4-8f9a-4b2f-bc11-3aa9c0e7f8d5",
+      "value": "B",
+      "label": "To compare the art club to the music club.",
+      "is_correct": false
+    },
+    {
+      "id": "cd34ef56-0078-4a9b-bcde-f12345678902",
+      "question_id": "b1c2d3e4-8f9a-4b2f-bc11-3aa9c0e7f8d5",
+      "value": "C",
+      "label": "To teach readers how to make a short film.",
+      "is_correct": false
+    },
+    {
+      "id": "de45f067-1189-4b0c-cdef-012345678913",
+      "question_id": "b1c2d3e4-8f9a-4b2f-bc11-3aa9c0e7f8d5",
+      "value": "D",
+      "label": "To inform readers that the art club now offers a wider range of activities.",
+      "is_correct": true
+    },
+    {
+      "id": "e1f2a3b4-c567-4d89-8a01-bcdef0123456",
+      "question_id": "c2f5a6b7-1e23-4c45-9d12-78ab56cde901",
+      "value": "A",
+      "label": "It describes a previous method and then presents a new approach with a benefit.",
+      "is_correct": true
+    },
+    {
+      "id": "f2a3b4c5-d678-4e9a-9012-cdef12345678",
+      "question_id": "c2f5a6b7-1e23-4c45-9d12-78ab56cde901",
+      "value": "B",
+      "label": "It lists several unrelated school policies.",
+      "is_correct": false
+    },
+    {
+      "id": "a3b4c5d6-e789-4fab-0123-def234567890",
+      "question_id": "c2f5a6b7-1e23-4c45-9d12-78ab56cde901",
+      "value": "C",
+      "label": "It poses a question and then leaves it unanswered.",
+      "is_correct": false
+    },
+    {
+      "id": "b4c5d6e7-f89a-40bc-1234-ef3456789012",
+      "question_id": "c2f5a6b7-1e23-4c45-9d12-78ab56cde901",
+      "value": "D",
+      "label": "It contrasts two scientific theories.",
+      "is_correct": false
+    },
+    {
+      "id": "c5d6e7f8-0a9b-41cd-2345-f45678901234",
+      "question_id": "d45e67f8-9a01-4b23-8c45-12de34fa56bc",
+      "value": "A",
+      "label": "To present a counterargument to the museum’s plan.",
+      "is_correct": false
+    },
+    {
+      "id": "d6e7f80a-1b9c-42de-3456-06789012345f",
+      "question_id": "d45e67f8-9a01-4b23-8c45-12de34fa56bc",
+      "value": "B",
+      "label": "To clarify the meaning of the word \"interactive\" with concrete details.",
+      "is_correct": true
+    },
+    {
+      "id": "e7f80a1b-2c9d-43ef-4567-17890123456a",
+      "question_id": "d45e67f8-9a01-4b23-8c45-12de34fa56bc",
+      "value": "C",
+      "label": "To predict that the exhibit will be unpopular.",
+      "is_correct": false
+    },
+    {
+      "id": "f80a1b2c-3d9e-4400-5678-28901234567b",
+      "question_id": "d45e67f8-9a01-4b23-8c45-12de34fa56bc",
+      "value": "D",
+      "label": "To summarize the exhibit’s historical background.",
+      "is_correct": false
+    },
+    {
+      "id": "0a1b2c3d-4f5e-46a7-8901-39012345678c",
+      "question_id": "e56789ab-0123-4cde-9fab-3456bcdef012",
+      "value": "A",
+      "label": "To question whether the class is worth the cost.",
+      "is_correct": false
+    },
+    {
+      "id": "1b2c3d4e-5f60-47b8-9012-4a012345678d",
+      "question_id": "e56789ab-0123-4cde-9fab-3456bcdef012",
+      "value": "B",
+      "label": "To explain why leftovers are unsafe to eat.",
+      "is_correct": false
+    },
+    {
+      "id": "2c3d4e5f-6071-48c9-0123-5b12345678e0",
+      "question_id": "e56789ab-0123-4cde-9fab-3456bcdef012",
+      "value": "C",
+      "label": "To provide a specific example that illustrates the class’s practical focus.",
+      "is_correct": true
+    },
+    {
+      "id": "3d4e5f60-7182-49da-1234-6c2345678ef1",
+      "question_id": "e56789ab-0123-4cde-9fab-3456bcdef012",
+      "value": "D",
+      "label": "To compare the class with professional culinary school training.",
+      "is_correct": false
+    },
+    {
+      "id": "4e5f6071-8293-4aeb-2345-7d345678ef02",
+      "question_id": "f67890bc-1234-4def-8abc-4567cdef0123",
+      "value": "A",
+      "label": "It narrates a librarian’s day from morning to evening.",
+      "is_correct": false
+    },
+    {
+      "id": "5f607182-93a4-4bfc-3456-8e45678ef013",
+      "question_id": "f67890bc-1234-4def-8abc-4567cdef0123",
+      "value": "B",
+      "label": "It evaluates several libraries in different cities.",
+      "is_correct": false
+    },
+    {
+      "id": "60718293-a4b5-4c0d-4567-9f5678ef0124",
+      "question_id": "f67890bc-1234-4def-8abc-4567cdef0123",
+      "value": "C",
+      "label": "It states a conclusion and then lists unrelated facts.",
+      "is_correct": false
+    },
+    {
+      "id": "718293a4-b5c6-4d1e-5678-006678ef0125",
+      "question_id": "f67890bc-1234-4def-8abc-4567cdef0123",
+      "value": "D",
+      "label": "It identifies a problem and then offers a solution.",
+      "is_correct": true
+    },
+    {
+      "id": "8293a4b5-c6d7-4e2f-6789-11778ef01236",
+      "question_id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "value": "A",
+      "label": "To advertise a different app with more features.",
+      "is_correct": false
+    },
+    {
+      "id": "93a4b5c6-d7e8-4f30-7890-2288ef012347",
+      "question_id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "value": "B",
+      "label": "To acknowledge a limitation of the app after describing its strengths.",
+      "is_correct": true
+    },
+    {
+      "id": "a4b5c6d7-e8f9-4041-8901-3399ef012458",
+      "question_id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "value": "C",
+      "label": "To explain how weather satellites operate.",
+      "is_correct": false
+    },
+    {
+      "id": "b5c6d7e8-f9a0-4152-9012-44aaef012569",
+      "question_id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "value": "D",
+      "label": "To provide step-by-step instructions for changing settings.",
+      "is_correct": false
+    },
+    {
+      "id": "c6d7e8f9-a0b1-4263-0123-55bbef01267a",
+      "question_id": "11223344-5566-4789-88aa-bbccddeeff00",
+      "value": "A",
+      "label": "To describe a local initiative that reduces food waste.",
+      "is_correct": true
+    },
+    {
+      "id": "d7e8f9a0-b1c2-4374-1234-66ccef01278b",
+      "question_id": "11223344-5566-4789-88aa-bbccddeeff00",
+      "value": "B",
+      "label": "To argue that bakeries should raise prices.",
+      "is_correct": false
+    },
+    {
+      "id": "e8f9a0b1-c2d3-4485-2345-77ddf01289c0",
+      "question_id": "11223344-5566-4789-88aa-bbccddeeff00",
+      "value": "C",
+      "label": "To compare farmers’ markets in different towns.",
+      "is_correct": false
+    },
+    {
+      "id": "f9a0b1c2-d3e4-4596-3456-88eef0129ad1",
+      "question_id": "11223344-5566-4789-88aa-bbccddeeff00",
+      "value": "D",
+      "label": "To provide a detailed recipe for making bread.",
+      "is_correct": false
+    },
+    {
+      "id": "0b1c2d3e-4f50-46a7-4567-99fff012abd2",
+      "question_id": "22334455-6677-489a-99bb-ccddeeff0011",
+      "value": "A",
+      "label": "To criticize volunteers for not working hard enough.",
+      "is_correct": false
+    },
+    {
+      "id": "1c2d3e4f-5061-47b8-5678-a000f012bce3",
+      "question_id": "22334455-6677-489a-99bb-ccddeeff0011",
+      "value": "B",
+      "label": "To introduce a new rule about garden tools.",
+      "is_correct": false
+    },
+    {
+      "id": "2d3e4f50-6172-48c9-6789-b111f012cdf4",
+      "question_id": "22334455-6677-489a-99bb-ccddeeff0011",
+      "value": "C",
+      "label": "To emphasize the importance of earlier tasks by contrasting them with later results.",
+      "is_correct": true
+    },
+    {
+      "id": "3e4f5061-7283-49da-7890-c222f012def5",
+      "question_id": "22334455-6677-489a-99bb-ccddeeff0011",
+      "value": "D",
+      "label": "To announce that the garden will close for the season.",
+      "is_correct": false
+    },
+    {
+      "id": "4f506172-8394-4aeb-8901-d333f012ef06",
+      "question_id": "33445566-7788-4abc-a0cc-ddeeff001122",
+      "value": "A",
+      "label": "To present evidence that driving will become less common.",
+      "is_correct": false
+    },
+    {
+      "id": "50617283-94a5-4bfc-9012-e444f0120f17",
+      "question_id": "33445566-7788-4abc-a0cc-ddeeff001122",
+      "value": "B",
+      "label": "To predict a likely effect of adding protected bike lanes.",
+      "is_correct": true
+    },
+    {
+      "id": "61728394-a5b6-4c0d-0123-f555f0121028",
+      "question_id": "33445566-7788-4abc-a0cc-ddeeff001122",
+      "value": "C",
+      "label": "To define the term \"protected\" as used in traffic law.",
+      "is_correct": false
+    },
+    {
+      "id": "728394a5-b6c7-4d1e-1234-0666f0122139",
+      "question_id": "33445566-7788-4abc-a0cc-ddeeff001122",
+      "value": "D",
+      "label": "To describe the history of cycling in the city.",
+      "is_correct": false
+    }
+  ]
+}
