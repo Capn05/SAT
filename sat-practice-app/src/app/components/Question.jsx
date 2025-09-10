@@ -49,6 +49,11 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   const [currentCorrectAnswers, setCurrentCorrectAnswers] = useState({}); // Track latest correct status for visual display
   const [shouldShakeFeedback, setShouldShakeFeedback] = useState(false);
   const [showEarlySubmitConfirm, setShowEarlySubmitConfirm] = useState(false);
+  const [isFlagging, setIsFlagging] = useState(false);
+  const [flagError, setFlagError] = useState(null);
+  const [flaggedQuestions, setFlaggedQuestions] = useState(new Set());
+  const [showReportInput, setShowReportInput] = useState(false);
+  const [reportMessage, setReportMessage] = useState('');
 
   const md = new MarkdownIt({
     html: true,
@@ -916,6 +921,35 @@ export default function Question({ subject, mode, skillName, questions: initialQ
   // Calculate first attempt scores for modals
   const { firstAttemptCorrect, questionsAttempted } = calculateFirstAttemptScore();
 
+  const handleFlagQuestion = async () => {
+    try {
+      setIsFlagging(true);
+      setFlagError(null);
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        router.push('/login');
+        return;
+      }
+      const currentQuestionId = questions[currentIndex].id;
+      const response = await fetch('/api/flag-question', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ questionId: currentQuestionId, reportMessage: reportMessage?.trim() || null })
+      });
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || 'Failed to report question');
+      }
+      setFlaggedQuestions(prev => new Set([...prev, currentQuestionId]));
+      setReportMessage('');
+      setShowReportInput(false);
+    } catch (err) {
+      setFlagError(err.message || 'Failed to report question');
+    } finally {
+      setIsFlagging(false);
+    }
+  };
+
   return (
     <div style={styles.column}>
       <div style={styles.progressContainer}>
@@ -1035,7 +1069,53 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         />
 
         <div style={styles.questionContent}>
-          <h2 style={styles.title}>Question {currentIndex + 1}</h2>
+          <div style={styles.headerRow}>
+            <h2 style={styles.title}>Question {currentIndex + 1}</h2>
+            <div style={styles.reportContainer}>
+              {showReportInput ? (
+                <div style={styles.reportInputGroup}>
+                  <input
+                    type="text"
+                    placeholder="Describe the issue (optional)"
+                    value={reportMessage}
+                    onChange={(e) => setReportMessage(e.target.value)}
+                    style={styles.reportInput}
+                    maxLength={500}
+                  />
+                  <button
+                    style={styles.reportSubmitButton}
+                    onClick={handleFlagQuestion}
+                    disabled={isFlagging || flaggedQuestions.has(questions[currentIndex].id)}
+                    title="Submit report"
+                  >
+                    {isFlagging ? 'Submitting...' : 'Submit'}
+                  </button>
+                  <button
+                    style={styles.reportCancelButton}
+                    onClick={() => { setShowReportInput(false); setReportMessage(''); }}
+                    disabled={isFlagging}
+                    title="Cancel"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              ) : (
+                <button
+                  style={styles.reportButton}
+                  onClick={() => setShowReportInput(true)}
+                  disabled={isFlagging || flaggedQuestions.has(questions[currentIndex].id)}
+                  title="Report an issue with this question"
+                >
+                  {flaggedQuestions.has(questions[currentIndex].id) ? 'Reported' : 'Report issue'}
+                </button>
+              )}
+            </div>
+          </div>
+          {flagError && (
+            <div style={styles.flagError}>
+              {flagError}
+            </div>
+          )}
           
           <div 
             style={styles.questionText}
@@ -1192,6 +1272,65 @@ const styles = {
     fontWeight: 600,
     marginBottom: '16px',
     color: '#1f2937',
+  },
+  headerRow: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: '16px',
+  },
+  reportContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+  },
+  reportButton: {
+    padding: '8px 12px',
+    backgroundColor: '#f3f4f6',
+    color: '#374151',
+    border: '1px solid #e5e7eb',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    transition: 'background-color 0.2s ease, transform 0.2s ease',
+  },
+  reportInputGroup: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+  },
+  reportInput: {
+    padding: '8px 10px',
+    border: '1px solid #e5e7eb',
+    borderRadius: '6px',
+    fontSize: '14px',
+    width: '280px',
+  },
+  reportSubmitButton: {
+    padding: '8px 12px',
+    backgroundColor: '#10b981',
+    color: 'white',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '14px',
+  },
+  reportCancelButton: {
+    padding: '8px 12px',
+    backgroundColor: '#f3f4f6',
+    color: '#374151',
+    border: '1px solid #e5e7eb',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '14px',
+  },
+  flagError: {
+    color: '#b91c1c',
+    backgroundColor: '#fee2e2',
+    border: '1px solid #fecaca',
+    padding: '8px 12px',
+    borderRadius: '6px',
+    marginBottom: '12px',
   },
   questionText: {
     fontSize: '18px',
