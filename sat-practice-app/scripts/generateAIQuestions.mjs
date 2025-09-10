@@ -157,7 +157,7 @@ Rules for correctness:
 - All question ids are UUIDs and referenced by their options.
 - Keep outputs valid JSON (no trailing commas, no comments).
 
-Important: Generate questions ONLY for difficulty = ${difficulty}. Use the examples to calibrate difficulty level; do not output questions outside the requested difficulty.`;
+Important: Generate questions ONLY for difficulty = ${difficulty}. Use the examples to calibrate difficulty level; do not output questions outside the requested difficulty. Also, for Reading & Writing questions, be sure to make unique themes and stories to the ones seen in the samples so that there is a diverse suite of texts that cover different topics and disciplines.`;
 
   return { system, user };
 }
