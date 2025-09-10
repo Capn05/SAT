@@ -25,10 +25,10 @@ export async function GET(request) {
 
     // Build the query
     let query = supabase
-      .from('questions')
+      .from('new_questions')
       .select(`
         *,
-        options(*),
+        new_options(*),
         subjects(subject_name),
         domains(domain_name),
         subcategories(subcategory_name),
@@ -62,8 +62,9 @@ export async function GET(request) {
 
     // Process each question
     const processedQuestions = questionsData.map(question => {
-      // Sort options by value (A, B, C, D)
-      const sortedOptions = question.options.sort((a, b) => a.value.localeCompare(b.value));
+      // Check if options exist and sort them by value (A, B, C, D)
+      const options = question.new_options || [];
+      const sortedOptions = options.sort((a, b) => a.value.localeCompare(b.value));
 
       // Find the correct answer
       const correctAnswer = sortedOptions.find(option => option.is_correct);

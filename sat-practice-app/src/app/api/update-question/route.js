@@ -23,7 +23,7 @@ export async function PUT(request) {
       // First check if question exists
       console.log('API: Checking if question exists with ID:', id);
       const { data: existingQuestion, error: checkError } = await supabase
-        .from('questions')
+        .from('new_questions')
         .select('id, question_text, difficulty')
         .eq('id', id)
         .single();
@@ -46,7 +46,7 @@ export async function PUT(request) {
       });
       
       const { data: updateResult, error: updateError } = await supabase
-        .from('questions')
+        .from('new_questions')
         .update({
           question_text: data.question_text,
           difficulty: data.difficulty,
@@ -75,10 +75,10 @@ export async function PUT(request) {
 
       // Fetch updated question to return
       const { data: updatedQuestion, error: fetchError } = await supabase
-        .from('questions')
+        .from('new_questions')
         .select(`
           *,
-          options(*),
+          new_options(*),
           subjects(subject_name),
           domains(domain_name),
           subcategories(subcategory_name)
@@ -104,7 +104,7 @@ export async function PUT(request) {
       // First check if option exists
       console.log('API: Checking if option exists with ID:', id);
       const { data: existingOption, error: checkError } = await supabase
-        .from('options')
+        .from('new_options')
         .select('id, label, is_correct')
         .eq('id', id)
         .single();
@@ -126,7 +126,7 @@ export async function PUT(request) {
       });
       
       const { data: updateResult, error: updateError } = await supabase
-        .from('options')
+        .from('new_options')
         .update({
           label: data.label,
           is_correct: data.is_correct
@@ -154,7 +154,7 @@ export async function PUT(request) {
 
       // Fetch updated option to return
       const { data: updatedOption, error: fetchError } = await supabase
-        .from('options')
+        .from('new_options')
         .select('*')
         .eq('id', id)
         .single();
