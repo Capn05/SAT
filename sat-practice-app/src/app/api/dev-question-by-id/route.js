@@ -15,19 +15,24 @@ export async function GET(request) {
 
     const { searchParams } = new URL(request.url);
     const questionId = searchParams.get('id');
+    const useNewTables = searchParams.get('use_new_tables') === 'true';
 
     if (!questionId) {
       return NextResponse.json({ error: 'Question ID is required' }, { status: 400 });
     }
 
-    console.log('Fetching question with ID:', questionId);
+    console.log('Fetching question with ID:', questionId, 'using new tables:', useNewTables);
+
+    // Determine which tables to use
+    const questionTable = useNewTables ? 'new_questions' : 'questions';
+    const optionTable = useNewTables ? 'new_options' : 'options';
 
     // Fetch the question with all related data
     const { data: question, error: questionError } = await supabase
-      .from('questions')
+      .from(questionTable)
       .select(`
         *,
-        options(*),
+        ${optionTable}(*),
         subjects(subject_name),
         domains(domain_name),
         subcategories(subcategory_name),
@@ -49,7 +54,7 @@ export async function GET(request) {
     }
 
     // Check if options exist and sort them by value (A, B, C, D)
-    const options = question.options || [];
+    const options = question[optionTable] || [];
     const sortedOptions = options.sort((a, b) => a.value.localeCompare(b.value));
 
     // Find the correct answer
@@ -89,10 +94,13 @@ export async function GET(request) {
       correctAnswer: correctAnswer ? {
         value: correctAnswer.value,
         text: correctAnswer.label
-      } : null
+      } : null,
+      
+      // Meta info
+      tableSource: useNewTables ? 'new_tables' : 'standard_tables'
     };
 
-    console.log(`Successfully fetched question ${questionId}`);
+    console.log(`Successfully fetched question ${questionId} from ${questionTable}`);
     return NextResponse.json(questionData);
 
   } catch (error) {

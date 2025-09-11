@@ -38,6 +38,9 @@ export default function DevQuestionTest() {
   const [editType, setEditType] = useState(''); // 'question' or 'option'
   const [editData, setEditData] = useState({});
   const [saving, setSaving] = useState(false);
+  
+  // New state for table switching
+  const [useNewTables, setUseNewTables] = useState(false);
 
   // Helper function to determine if question is math
   const isMathQuestion = (question) => {
@@ -74,7 +77,7 @@ export default function DevQuestionTest() {
     setQuestion(null);
 
     try {
-      const response = await fetch(`/api/question-by-id?id=${encodeURIComponent(questionId.trim())}`);
+      const response = await fetch(`/api/dev-question-by-id?id=${encodeURIComponent(questionId.trim())}&use_new_tables=${useNewTables}`);
       const data = await response.json();
 
       if (!response.ok) {
@@ -139,8 +142,10 @@ export default function DevQuestionTest() {
       if (difficulty && difficulty !== 'all') {
         params.append('difficulty', difficulty);
       }
+      
+      params.append('use_new_tables', useNewTables);
 
-      const response = await fetch(`/api/questions-by-criteria?${params}`);
+      const response = await fetch(`/api/dev-questions-by-criteria?${params}`);
       const data = await response.json();
 
       if (!response.ok) {
@@ -204,6 +209,7 @@ export default function DevQuestionTest() {
     const requestData = {
       type: editType,
       id: editData.id,
+      useNewTables: useNewTables,
       data: editType === 'question' ? {
         question_text: editData.question_text,
         difficulty: editData.difficulty,
@@ -217,7 +223,7 @@ export default function DevQuestionTest() {
     console.log('Sending update request:', requestData);
     
     try {
-      const response = await fetch('/api/update-question', {
+      const response = await fetch('/api/dev-update-question', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -316,6 +322,40 @@ export default function DevQuestionTest() {
         >
           📋 Bulk Query
         </button>
+      </div>
+
+      {/* Table Toggle Slider */}
+      <div style={styles.tableToggleContainer}>
+        <div style={styles.toggleSection}>
+          <span style={styles.toggleLabel}>
+            📊 Database Tables: 
+          </span>
+          <div style={styles.switchContainer}>
+            <span style={{...styles.switchLabel, ...(useNewTables ? {} : styles.switchLabelActive)}}>
+              questions/options
+            </span>
+            <label style={styles.switch}>
+              <input
+                type="checkbox"
+                checked={useNewTables}
+                onChange={(e) => setUseNewTables(e.target.checked)}
+                style={styles.switchInput}
+              />
+              <span style={{
+                ...styles.slider,
+                backgroundColor: useNewTables ? '#3b82f6' : '#cbd5e1',
+              }}>
+                <span style={{
+                  ...styles.sliderBall,
+                  transform: useNewTables ? 'translateX(26px)' : 'translateX(0)',
+                }}></span>
+              </span>
+            </label>
+            <span style={{...styles.switchLabel, ...(useNewTables ? styles.switchLabelActive : {})}}>
+              new_questions/new_options
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Single Question Search */}
@@ -1494,5 +1534,74 @@ const styles = {
       backgroundColor: '#f3f4f6',
       borderColor: '#9ca3af',
     },
+  },
+  
+  // Table Toggle Styles
+  tableToggleContainer: {
+    backgroundColor: '#f8fafc',
+    border: '1px solid #e2e8f0',
+    borderRadius: '8px',
+    padding: '16px',
+    marginBottom: '24px',
+  },
+  toggleSection: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '16px',
+    flexWrap: 'wrap',
+  },
+  toggleLabel: {
+    fontSize: '16px',
+    fontWeight: '500',
+    color: '#374151',
+  },
+  switchContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+  },
+  switchLabel: {
+    fontSize: '14px',
+    color: '#6b7280',
+    fontWeight: '400',
+    transition: 'color 0.2s ease',
+  },
+  switchLabelActive: {
+    color: '#1f2937',
+    fontWeight: '500',
+  },
+  switch: {
+    position: 'relative',
+    display: 'inline-block',
+    width: '50px',
+    height: '24px',
+  },
+  switchInput: {
+    opacity: 0,
+    width: 0,
+    height: 0,
+  },
+  slider: {
+    position: 'absolute',
+    cursor: 'pointer',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#cbd5e1',
+    transition: 'background-color 0.3s ease',
+    borderRadius: '24px',
+  },
+  sliderBall: {
+    position: 'absolute',
+    height: '18px',
+    width: '18px',
+    left: '3px',
+    bottom: '3px',
+    backgroundColor: 'white',
+    transition: 'transform 0.3s ease',
+    borderRadius: '50%',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
   },
 };

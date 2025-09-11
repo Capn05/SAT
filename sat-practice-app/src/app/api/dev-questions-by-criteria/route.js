@@ -16,19 +16,24 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const subcategoryId = searchParams.get('subcategory_id');
     const difficulty = searchParams.get('difficulty');
+    const useNewTables = searchParams.get('use_new_tables') === 'true';
 
     if (!subcategoryId) {
       return NextResponse.json({ error: 'Subcategory ID is required' }, { status: 400 });
     }
 
-    console.log('Fetching questions with criteria:', { subcategoryId, difficulty });
+    console.log('Fetching questions with criteria:', { subcategoryId, difficulty, useNewTables });
+
+    // Determine which tables to use
+    const questionTable = useNewTables ? 'new_questions' : 'questions';
+    const optionTable = useNewTables ? 'new_options' : 'options';
 
     // Build the query
     let query = supabase
-      .from('questions')
+      .from(questionTable)
       .select(`
         *,
-        options(*),
+        ${optionTable}(*),
         subjects(subject_name),
         domains(domain_name),
         subcategories(subcategory_name),
@@ -56,14 +61,15 @@ export async function GET(request) {
       return NextResponse.json({ 
         questions: [],
         message: 'No questions found for the given criteria',
-        criteria: { subcategoryId, difficulty }
+        criteria: { subcategoryId, difficulty, useNewTables },
+        tableSource: useNewTables ? 'new_tables' : 'standard_tables'
       });
     }
 
     // Process each question
     const processedQuestions = questionsData.map(question => {
       // Check if options exist and sort them by value (A, B, C, D)
-      const options = question.options || [];
+      const options = question[optionTable] || [];
       const sortedOptions = options.sort((a, b) => a.value.localeCompare(b.value));
 
       // Find the correct answer
@@ -106,12 +112,13 @@ export async function GET(request) {
       };
     });
 
-    console.log(`Successfully fetched ${processedQuestions.length} questions for subcategory ${subcategoryId}`);
+    console.log(`Successfully fetched ${processedQuestions.length} questions from ${questionTable} for subcategory ${subcategoryId}`);
     
     return NextResponse.json({ 
       questions: processedQuestions,
       count: processedQuestions.length,
-      criteria: { subcategoryId, difficulty }
+      criteria: { subcategoryId, difficulty, useNewTables },
+      tableSource: useNewTables ? 'new_tables' : 'standard_tables'
     });
 
   } catch (error) {

@@ -14,16 +14,20 @@ export async function PUT(request) {
     }
 
     const body = await request.json();
-    const { type, id, data } = body;
+    const { type, id, data, useNewTables = false } = body;
 
-    console.log('API: Received update request:', { type, id, data });
+    console.log('API: Received update request:', { type, id, data, useNewTables });
     console.log('API: User ID:', session.user.id);
+
+    // Determine which tables to use
+    const questionTable = useNewTables ? 'new_questions' : 'questions';
+    const optionTable = useNewTables ? 'new_options' : 'options';
 
     if (type === 'question') {
       // First check if question exists
       console.log('API: Checking if question exists with ID:', id);
       const { data: existingQuestion, error: checkError } = await supabase
-        .from('questions')
+        .from(questionTable)
         .select('id, question_text, difficulty')
         .eq('id', id)
         .single();
@@ -46,7 +50,7 @@ export async function PUT(request) {
       });
       
       const { data: updateResult, error: updateError } = await supabase
-        .from('questions')
+        .from(questionTable)
         .update({
           question_text: data.question_text,
           difficulty: data.difficulty,
@@ -75,10 +79,10 @@ export async function PUT(request) {
 
       // Fetch updated question to return
       const { data: updatedQuestion, error: fetchError } = await supabase
-        .from('questions')
+        .from(questionTable)
         .select(`
           *,
-          options(*),
+          ${optionTable}(*),
           subjects(subject_name),
           domains(domain_name),
           subcategories(subcategory_name)
@@ -97,14 +101,15 @@ export async function PUT(request) {
       return NextResponse.json({ 
         success: true, 
         message: 'Question updated successfully',
-        question: updatedQuestion
+        question: updatedQuestion,
+        tableSource: useNewTables ? 'new_tables' : 'standard_tables'
       });
 
     } else if (type === 'option') {
       // First check if option exists
       console.log('API: Checking if option exists with ID:', id);
       const { data: existingOption, error: checkError } = await supabase
-        .from('options')
+        .from(optionTable)
         .select('id, label, is_correct')
         .eq('id', id)
         .single();
@@ -126,7 +131,7 @@ export async function PUT(request) {
       });
       
       const { data: updateResult, error: updateError } = await supabase
-        .from('options')
+        .from(optionTable)
         .update({
           label: data.label,
           is_correct: data.is_correct
@@ -154,7 +159,7 @@ export async function PUT(request) {
 
       // Fetch updated option to return
       const { data: updatedOption, error: fetchError } = await supabase
-        .from('options')
+        .from(optionTable)
         .select('*')
         .eq('id', id)
         .single();
@@ -170,7 +175,8 @@ export async function PUT(request) {
       return NextResponse.json({ 
         success: true, 
         message: 'Option updated successfully',
-        option: updatedOption
+        option: updatedOption,
+        tableSource: useNewTables ? 'new_tables' : 'standard_tables'
       });
 
     } else {
