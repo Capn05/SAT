@@ -36,12 +36,15 @@ export async function POST(request) {
       Use markdown for all output. When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`
     };
 
-    // Add image context if present
+    // Add image context if present (multimodal)
     const conversationMessages = [systemMessage, ...messages];
-    if (questionContext.imageURL) {
+    if (questionContext?.imageURL) {
       conversationMessages.push({
         role: 'user',
-        content: `Additionally, here is an image related to the question: ${questionContext.imageURL}`,
+        content: [
+          { type: 'text', text: 'Here is the image related to the question.' },
+          { type: 'image_url', image_url: { url: String(questionContext.imageURL) } }
+        ],
       });
     }
 
