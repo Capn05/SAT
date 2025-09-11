@@ -36,12 +36,15 @@ export async function POST(request) {
       Use markdown for all output. When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`
     };
 
-    // Add image context if present
+    // Add image context if present (multimodal)
     const conversationMessages = [systemMessage, ...messages];
-    if (questionContext.imageURL) {
+    if (questionContext?.imageURL) {
       conversationMessages.push({
         role: 'user',
-        content: `Additionally, here is an image related to the question: ${questionContext.imageURL}`,
+        content: [
+          { type: 'text', text: 'Here is the image related to the question.' },
+          { type: 'image_url', image_url: { url: String(questionContext.imageURL) } }
+        ],
       });
     }
 
@@ -60,6 +63,7 @@ export async function POST(request) {
         try {
           let totalTokens = 0;
           let responseComplete = false;
+          let assistantFullResponse = '';
           
           for await (const chunk of completion) {
             const content = chunk.choices[0]?.delta?.content;
@@ -67,6 +71,7 @@ export async function POST(request) {
             
             if (content) {
               totalTokens += content.split(' ').length; // Rough token estimation
+              assistantFullResponse += content;
               // Send data in Server-Sent Events format
               const data = `data: ${JSON.stringify({ content })}\n\n`;
               controller.enqueue(encoder.encode(data));
@@ -85,6 +90,35 @@ export async function POST(request) {
           
           if (!responseComplete) {
             console.warn('Response stream ended without completion signal - possible network timeout or interruption');
+          }
+
+          // Persist the conversational turn (user prompt + assistant response)
+          try {
+            const lastUserMessage = Array.isArray(messages)
+              ? [...messages].reverse().find(m => m?.role === 'user' && typeof m?.content === 'string')
+              : null;
+            const promptText = lastUserMessage?.content || null;
+            const questionId = questionContext?.questionId ?? null;
+
+            if (session?.user && promptText && assistantFullResponse) {
+              const insertRes = await supabase
+                .from('ai_chat_turns')
+                .insert({
+                  user_id: session.user.id,
+                  question_id: questionId,
+                  prompt_text: promptText,
+                  response_text: assistantFullResponse,
+                });
+              if (insertRes.error) {
+                console.error('Failed to insert ai_chat_turn:', insertRes.error);
+              }
+            } else {
+              if (!session?.user) console.warn('Skipping chat turn insert: no authenticated user');
+              if (!promptText) console.warn('Skipping chat turn insert: missing promptText');
+              if (!assistantFullResponse) console.warn('Skipping chat turn insert: missing assistant response');
+            }
+          } catch (persistErr) {
+            console.error('Error persisting ai_chat_turn:', persistErr);
           }
           
           // Send done signal

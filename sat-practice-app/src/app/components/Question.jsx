@@ -1213,7 +1213,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             questionText={question_text} 
             selectedAnswer={selectedAnswer} 
             options={sortedOptions} 
-            imageURL={image_url} 
+            imageURL={image_url}
+            questionId={questions[currentIndex]?.id}
           />
         </div>
       </div>
