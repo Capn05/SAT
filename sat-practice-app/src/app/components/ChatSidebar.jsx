@@ -8,7 +8,7 @@ import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { useChat } from '../hooks/useChat';
 
-export default function ChatSidebar({ questionText, selectedAnswer, options, imageURL }) {
+export default function ChatSidebar({ questionText, selectedAnswer, options, imageURL, questionId }) {
   const [userQuestion, setUserQuestion] = useState('');
   const messagesEndRef = useRef(null);
 
@@ -17,7 +17,8 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
     questionText,
     selectedAnswer,
     options,
-    imageURL
+    imageURL,
+    questionId
   };
 
   const { 
@@ -41,7 +42,7 @@ export default function ChatSidebar({ questionText, selectedAnswer, options, ima
   useEffect(() => {
     clear();
     setUserQuestion('');
-  }, [questionText, clear]);
+  }, [questionText, questionId, clear]);
 
   // Set up the Markdown renderer with KaTeX support
   const md = new MarkdownIt({
