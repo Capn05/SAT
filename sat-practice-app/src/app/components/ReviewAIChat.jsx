@@ -1,108 +1,73 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { MessageCircle } from 'lucide-react';
-import OpenAI from 'openai';
-import ReactMarkdown from 'react-markdown';
-import remarkMath from 'remark-math';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import MarkdownIt from 'markdown-it';
 import markdownItKatex from 'markdown-it-katex';
+import { useChat } from '../hooks/useChat';
 
 export default function ReviewAIChat({ question, selectedAnswer, options, imageURL }) {
-  const [response, setResponse] = useState('');
-  const [loading, setLoading] = useState(false);
   const [userQuestion, setUserQuestion] = useState('');
 
-  // Clear response when question changes
-  useEffect(() => {
-    setResponse('');
-    setUserQuestion('');
-  }, [question]);
+  // Question context for the API
+  const questionContext = {
+    questionText: question,
+    selectedAnswer,
+    options,
+    imageURL
+  };
 
-  const openai = new OpenAI({
-    apiKey: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,
-    dangerouslyAllowBrowser: true,
+  const { 
+    messages, 
+    append,
+    isLoading,
+    clear 
+  } = useChat({
+    api: '/api/chat',
+    questionContext
   });
+
+  // Clear conversation when question changes
+  useEffect(() => {
+    clear();
+    setUserQuestion('');
+  }, [question, clear]);
 
   const md = new MarkdownIt({
     html: true,
     linkify: true,
     typographer: true,
+    breaks: true,
   }).use(markdownItKatex);
 
   const handleQuestionPreset = (presetQuestion) => {
+    if (isLoading) return;
     setUserQuestion(presetQuestion);
-    handleUserQuestionSubmit(null, presetQuestion);
-  }
-
-  const handleUserQuestionSubmit = async (event, presetQuestion) => {
-    if (event) event.preventDefault();
-    const questionToUse = presetQuestion || userQuestion;
-    if (!questionToUse) return;
-
-    setLoading(true);
-    setResponse('');
-
-    try {
-      const messages = [
-        {
-          role: 'system',
-          content: `Your name is Brill, You are a helpful PSAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. You're reviewing a previously answered question. The question: ${question}. The answer the user selected: ${selectedAnswer}. All answer choices: ${JSON.stringify(options)}. Use markdown for all output. When presenting mathematical equations or formulas, use LaTeX syntax enclosed in double dollar signs for block math (e.g., $$x^2 + y^2 = z^2$$) and single dollar signs for inline math (e.g., $E=mc^2$).`,
-        },
-        { role: 'user', content: questionToUse },
-      ];
-
-      if (imageURL) {
-        messages.push({
-          role: 'user',
-          content: [{
-            type: 'image_url',
-            image_url: {
-              url: `${imageURL}`,
-            },
-          }],
-        });
-      }
-
-      const stream = await openai.chat.completions.create({
-        model: 'gpt-4-turbo-preview',
-        messages,
-        stream: true,
-      });
-
-      for await (const chunk of stream) {
-        const content = chunk.choices[0]?.delta?.content;
-        if (content) {
-          setResponse((prev) => prev + content);
-        }
-      }
-
-    } catch (error) {
-      if (error.status === 429) {
-        setResponse('You are sending requests too quickly. Please wait a moment and try again.');
-      } else {
-        console.error('Error fetching AI response:', error);
-        setResponse('Error fetching response from AI.');
-      }
-    } finally {
-      setLoading(false);
-    }
+    append({ content: presetQuestion });
   };
 
-  const renderMath = (mathString) => {
+  const handleUserQuestionSubmit = (event) => {
+    if (event) event.preventDefault();
+    if (!userQuestion.trim() || isLoading) return;
+    
+    append({ content: userQuestion });
+    setUserQuestion('');
+  };
+
+  const renderMathInline = (mathString) => {
     try {
       return katex.renderToString(mathString, {
         throwOnError: false,
         displayMode: false,
       });
     } catch (error) {
-      console.error('Error rendering math:', error);
+      console.error('Error rendering inline math:', error);
       return mathString;
     }
   };
 
-  const renderBlockMath = (mathString) => {
+  const renderMathBlock = (mathString) => {
     try {
       return katex.renderToString(mathString, {
         throwOnError: false,
@@ -114,25 +79,31 @@ export default function ReviewAIChat({ question, selectedAnswer, options, imageU
     }
   };
 
-  const renderResponse = (response) => {
+  const renderResponse = (responseText) => {
+    if (!responseText) return '';
+    
+    // Process math expressions first
     const inlineMathRegex = /\$([^$]+)\$/g;
     const blockMathRegex = /\$\$([^$]+)\$\$/g;
 
-    response = response.replace(blockMathRegex, (match, p1) => {
-      return renderBlockMath(p1);
+    let formattedText = responseText.replace(blockMathRegex, (match, p1) => {
+      return renderMathBlock(p1);
     });
 
-    response = response.replace(inlineMathRegex, (match, p1) => {
-      return renderMath(p1);
+    formattedText = formattedText.replace(inlineMathRegex, (match, p1) => {
+      return renderMathInline(p1);
     });
 
-    return md.render(response);
+    return md.render(formattedText);
   };
+
+  // Get the latest assistant response for display
+  const latestResponse = messages.filter(m => m.role === 'assistant').pop()?.content || '';
 
   return (
     <div style={styles.container}>
       <h3 style={styles.title}>Brill: Your Personalized AI Tutor</h3>
-      <form onSubmit={(e) => handleUserQuestionSubmit(e)} style={styles.inputContainer}>
+      <form onSubmit={handleUserQuestionSubmit} style={styles.inputContainer}>
         <MessageCircle style={styles.icon} />
         <input
           type="text"
@@ -140,25 +111,36 @@ export default function ReviewAIChat({ question, selectedAnswer, options, imageU
           style={styles.input}
           value={userQuestion}
           onChange={(e) => setUserQuestion(e.target.value)}
+          disabled={isLoading}
         />
-        <button type="submit" style={styles.submitButton}>
-          Ask
+        <button type="submit" style={styles.submitButton} disabled={isLoading || !userQuestion.trim()}>
+          {isLoading ? 'Asking...' : 'Ask'}
         </button>
       </form>
       <div style={{ fontSize: '14px', paddingTop: '10px' }}>Suggestions:</div>
       <div style={styles.buttonContainer}>
-        <button onClick={() => handleQuestionPreset("Explain the answer")} style={styles.secondaryButton}>
+        <button 
+          onClick={() => handleQuestionPreset("Explain the answer")} 
+          style={styles.secondaryButton}
+          disabled={isLoading}
+        >
           Explain
         </button>
 
-
-        <button onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} style={styles.secondaryButton}>
+        <button 
+          onClick={() => handleQuestionPreset("Tell me why my answer is incorrect without revealing the correct answer")} 
+          style={styles.secondaryButton}
+          disabled={isLoading}
+        >
           Why is my answer incorrect
         </button>
       </div>
       <div style={styles.paddingBox}>
         <div style={styles.responseBox}>
-          <div style={styles.innermostBox} dangerouslySetInnerHTML={{ __html: renderResponse(response) }} />
+          {isLoading && !latestResponse && (
+            <div style={styles.loadingIndicator}>Brill is thinking...</div>
+          )}
+          <div style={styles.innermostBox} dangerouslySetInnerHTML={{ __html: renderResponse(latestResponse) }} />
         </div>
       </div>
     </div>
@@ -226,6 +208,14 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer',
     fontSize: '14px',
-    marginRight: '10px'
+    marginRight: '10px',
+    transition: 'opacity 0.2s ease',
+  },
+  loadingIndicator: {
+    fontSize: '14px',
+    color: '#aaa',
+    padding: '12px',
+    textAlign: 'center',
+    fontStyle: 'italic',
   },
 }; 

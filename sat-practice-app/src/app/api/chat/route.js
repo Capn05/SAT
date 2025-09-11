@@ -47,11 +47,9 @@ export async function POST(request) {
 
     // Create streaming response
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5-chat-latest',
       messages: conversationMessages,
       stream: true,
-      max_tokens: 4000, // Increased token limit to prevent cutoffs
-      temperature: 0.7, // Consistent response generation
     });
 
     // Create a ReadableStream to handle the streaming response
