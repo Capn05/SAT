@@ -369,9 +369,9 @@ export default function Question({ subject, mode, skillName, questions: initialQ
 
   // Update the useEffect that shows the completion modals to also refresh the skills cache
   useEffect(() => {
-    const limit = questionCount || (mode === "skill" ? 5 : 15);
+    const limit = questions.length;
 
-    if (answeredCount === limit) {
+    if (questions.length > 0 && answeredCount === limit) {
       // First refresh the skills cache
       refreshSkillsCache();
       
@@ -388,7 +388,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       setShowSkillsModal(false);
       setShowQuickPracticeModal(false);
     }
-  }, [answeredCount, mode, questionCount, refreshSkillsCache]);
+  }, [answeredCount, mode, questions.length, refreshSkillsCache]);
 
   useEffect(() => {
     if (questions.length > 0) {
@@ -955,8 +955,8 @@ export default function Question({ subject, mode, skillName, questions: initialQ
       <div style={styles.progressContainer}>
         <ProgressBar 
           completed={answeredCount} 
-          total={questionCount || (mode === "skill" ? 5 : 15)}
-          showEarlySubmit={answeredCount > 0 && answeredCount < (questionCount || (mode === "skill" ? 5 : 15))}
+          total={questions.length}
+          showEarlySubmit={answeredCount > 0 && answeredCount < questions.length}
           onEarlySubmit={() => setShowEarlySubmitConfirm(true)}
           mode={mode}
         />
@@ -1015,7 +1015,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
             </button>
             <h3 style={styles.modalTitle}>Submit Early?</h3>
             <p style={styles.modalText}>
-              Are you sure you want to submit your practice session now? You have answered {answeredCount} out of {questionCount || (mode === "skill" ? 5 : 15)} questions correctly.
+              Are you sure you want to submit your practice session now? You have answered {answeredCount} out of {questions.length} questions correctly.
             </p>
             <div style={styles.modalButtons}>
               <button 
@@ -1219,7 +1219,7 @@ export default function Question({ subject, mode, skillName, questions: initialQ
         </div>
       </div>
 
-      {answeredCount === (questionCount || (mode === "skill" ? 5 : 15)) && (
+      {questions.length > 0 && answeredCount === questions.length && (
         <div style={styles.RefreshQuestionsContainer}>
           {mode === "skill" ? (
             <button onClick={() => setShowSkillsModal(true)} style={styles.newQuestionsButton}>
