@@ -1,0 +1,737 @@
+[
+  {
+    "id": 195977,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The area $A$, in square feet, of a rectangular floor in a dance studio is given by the expression $f(f + 12)$, where $f$ is the width, in feet, of the floor. Which of the following expressions represents the length, in feet, of the floor?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1959770,
+        "label": "$f$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1959771,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1959772,
+        "label": "$(f + 12)$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1959773,
+        "label": "$f(f + 12)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 211374,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "A colony of bacteria doubles in population every $3$ hours. The function $p(t) = 500(2)^{\\frac{t}{3}}$ models the approximate population of bacteria, $p$, in a culture $t$ hours after the colony was started with $500$ bacteria. Which statement is the best interpretation of $p(6) = 2000$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2113740,
+        "label": "Approximately 2000 bacteria are present in the colony 6 hours after the colony was started.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2113741,
+        "label": "The population of the bacteria colony has increased by approximately 2000 bacteria after 6 hours.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2113742,
+        "label": "The population of the bacteria colony has increased by approximately 6 bacteria after 2000 hours.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2113743,
+        "label": "Approximately 6 bacteria are present in the colony 2000 hours after the colony was started.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 220175,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "A scientist initially cultures $50$ bacteria in a petri dish. If the bacteria population grows exponentially, exhibiting an average annual increase of $20\\%$, which of the following functions best models the population $p(t)$ of bacteria $t$ years after the initial culture?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2201750,
+        "label": "$p(t) = 50(1.20)^t$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2201751,
+        "label": "$p(t) = 50(2)^{1.20t}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2201752,
+        "label": "$p(t) = 1.20(50)^t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2201753,
+        "label": "$p(t) = (50 \\cdot 1.20)^t$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 265613,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The equation $B = 250(1.2)^t$ estimates the number of bacteria, $B$, in a petri dish after $t$ hours. What is the best interpretation of the number $250$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2656130,
+        "label": "The initial number of bacteria in the petri dish",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2656131,
+        "label": "The estimated rate of increase of bacteria in the petri dish per hour",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2656132,
+        "label": "The estimated percentage increase of bacteria in the petri dish per hour",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2656133,
+        "label": "The estimated number of bacteria in the petri dish after $t$ hours",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 310810,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "$$g(x) = 2x^2 - 5x + 3$$ For the function $g$ defined above, what is the value of $g(2)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3108100,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3108101,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3108102,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3108103,
+        "label": "-1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 327041,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "$$h(x)=(x-1)(2x+1)(x+7)$$ The function $h$ is defined above. Which of the following is NOT an $x$-intercept of the graph of the function in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3270410,
+        "label": "-7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3270411,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3270412,
+        "label": "-2",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3270413,
+        "label": "-0.5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 394052,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The function $g(t) = 120\\,000(1.025)^t$, where $0 \\leq t \\leq 15$, models the predicted population of a city $t$ years after the year 2020. What is the best interpretation of the statement $g(5) = 136\\,000$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3940520,
+        "label": "When the city's predicted population is approximately 136,000, it represents a 2.5% increase from the predicted population of the previous year.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3940521,
+        "label": "When the city's predicted population is approximately 136,000, it is approximately 5 times the population of the city in the year 2020.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3940522,
+        "label": "From the year 2020 to 5 years later, the city's predicted population increased by approximately 136,000 people.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3940523,
+        "label": "5 years after the year 2020, the city's predicted population is approximately 136,000.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 418968,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The profit, in dollars, from selling $n$ items can be modeled by the function $P(n) = -0.1n^2 + 50n - 1000$. Based on the model, which of the following statements best interprets the equation $P(100) = 3000$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4189680,
+        "label": "The profit when 100 items are sold is $3000.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4189681,
+        "label": "The number of items sold when the profit is $3000 is 100.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4189682,
+        "label": "The profit when 3000 items are sold is $100.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4189683,
+        "label": "The profit when 100 items are sold is $300.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 450173,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "$$V(t) = 22\\,000(0.85)^t$$ The function $V$ defined above models the value $V(t)$, in dollars, of a used motorcycle $t$ years after it was purchased. Which of the following statements is the best interpretation of this model?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4501730,
+        "label": "For every increase in time by 1 year, the value of the motorcycle decreases by $22,000.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4501731,
+        "label": "For every increase in time by 1 year, the value of the motorcycle decreases by 85%.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4501732,
+        "label": "For every increase in time by 1 year, the value of the motorcycle decreases by 15%.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4501733,
+        "label": "For every increase in time by 15 years, the value of the motorcycle decreases by 85%.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 464299,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "$$z = 2(3^w)$$ Which of the following is the graph in the $wz$-plane of the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4642990,
+        "label": "Graph of a decreasing exponential function.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4642991,
+        "label": "Graph of an increasing exponential function with a z-intercept of (0, 4) and doubling growth.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4642992,
+        "label": "Graph of an increasing exponential function with a z-intercept of (0, 2) and doubling growth.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4642993,
+        "label": "Graph of an increasing exponential function with a z-intercept of (0, 2) and tripling growth.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 538837,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The population of a bacteria colony is observed to grow exponentially. The table shows the relationship between the time $h$, in hours, since the observation began and the total population $p$ of bacteria. If the bacteria colony continues to grow at the same rate, which of the following equations best represents the relationship between $h$ and $p$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//538837.png",
+    "options": [
+      {
+        "id": 5388370,
+        "label": "$p = 0.05(1000)^h$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5388371,
+        "label": "$p = 1000(1 + 0.05)^h$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5388372,
+        "label": "$p = 0.05(1000h)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5388373,
+        "label": "$p = 1000(0.05 + h)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 540624,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "An object's kinetic energy, in joules, is given by the formula $K = \\frac{1}{2}mv^2$, where $m$ is the mass in kilograms and $v$ is the speed in meters per second. What is the speed, in meters per second, of an object with a mass of $4$ kilograms and a kinetic energy of $50$ joules?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5406240,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5406241,
+        "label": "2.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5406242,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5406243,
+        "label": "25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 550828,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The profit $P(x)$, in dollars, from selling $x$ units of a product is modeled by the function $P(x) = -0.5x^2 + 50x - 200$. What does the number $-200$ represent in this function?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5508280,
+        "label": "The fixed costs, in dollars, before any units are sold.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5508281,
+        "label": "The profit, in dollars, when 50 units are sold.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5508282,
+        "label": "The maximum profit, in dollars, that can be achieved.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5508283,
+        "label": "The revenue, in dollars, from selling one unit.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 608231,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The given equation relates the value of $x$ and its corresponding value of function $q$. $$q(x) - 23 = -x^2$$ What is the maximum value of the function $q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6082310,
+        "label": "-23",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6082311,
+        "label": "23",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6082312,
+        "label": "529",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6082313,
+        "label": "0",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 617579,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "From 2015 through 2024, the number of electric vehicles sold in a country increased each year by approximately $20\\%$ of the number sold in the preceding year. In 2015, approximately 100,000 electric vehicles were sold. Of the following, which best models $V$, the number of electric vehicles in thousands sold in the country, $t$ years after 2015?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6175790,
+        "label": "$V = 100(0.20)^t$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6175791,
+        "label": "$V = 100(1.20)^t$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6175792,
+        "label": "$V = 100 + 20t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6175793,
+        "label": "$V = 100(0.80)^t$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 637235,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "A new car was purchased for $\\$25,000$. The value of the car is predicted to depreciate by $10\\%$ each year after it is purchased. Which of the following functions models the value of the car, $V(t)$, $t$ years after it was purchased?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6372350,
+        "label": "$V(t) = 0.10(25,000)^t$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6372351,
+        "label": "$V(t) = 0.90(25,000)^t$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6372352,
+        "label": "$V(t) = 25,000(0.10)^t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6372353,
+        "label": "$V(t) = 25,000(0.90)^t$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 650775,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, the graph of a nonlinear function $f$ has a $y$-intercept. Let $k$ be the $y$-coordinate of this $y$-intercept. Which of the following expressions must be equal to $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6507750,
+        "label": "$f(0)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6507751,
+        "label": "$f(1)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6507752,
+        "label": "$f(2)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6507753,
+        "label": "$f(3)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 761234,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The function $f$ is defined by $f(x) = x^2 + 3x - 40$. If the graph of $y = f(x)$ is plotted in the $xy$-plane, which of the following points represents an $x$-intercept of this graph?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7612340,
+        "label": "(-8, 0)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7612341,
+        "label": "(5, 0)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7612342,
+        "label": "(40, 0)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7612343,
+        "label": "(8, 0)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 790619,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "The height of a ball thrown vertically upwards is modeled by the function $h(t) = -1.5(t-5)^2 + 60$, where $h(t)$ is the height in feet and $t$ is the time in seconds after the ball is thrown. According to this model, at what time, in seconds, does the ball reach its maximum height?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7906190,
+        "label": "1.5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7906191,
+        "label": "-1.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7906192,
+        "label": "5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7906193,
+        "label": "60",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 960096,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "A rectangular garden has an area of $144$ square feet. If the length of the garden is $4$ times the width, what is the width of the garden, in feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9600960,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9600961,
+        "label": "6",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9600962,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9600963,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 976769,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Medium",
+    "question_text": "A ball is thrown upwards from the ground. The graph shown gives the height above the ground $y$, in feet, of the ball $x$ seconds after being thrown. What is the best interpretation of the graph?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//976769.png",
+    "options": [
+      {
+        "id": 9767690,
+        "label": "The ball reaches a maximum height of 20 feet at 2.5 seconds.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9767691,
+        "label": "The ball hits the ground at 2.5 seconds.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9767692,
+        "label": "The ball reaches a maximum height of 20 feet at 0.5 seconds.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9767693,
+        "label": "The ball reaches a height of 5 feet at 0.1 seconds.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

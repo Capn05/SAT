@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "8b6c1c04-3d8d-4e24-8f56-8e2d6cdbb8ef",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 2,
+      "difficulty": "Hard",
+      "question_text": "Consider the system of equations $$y = x^2 + px + 1$$ $$y = (p - 1)x + 4$$ where $p$ is a real number. For how many real values of $p$ does the system have exactly one real solution $(x, y)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "593ad58e-f61b-4b92-9a9d-6c3a73d5d8a3",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 2,
+      "difficulty": "Hard",
+      "question_text": "Which of the following is a solution to the equation $$\\frac{x^2 - 4}{x - 2} = \\sqrt{9 - x}?$$",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0d3a4f0f-b8df-4a0b-8a6f-11b4cb9b2208",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 2,
+      "difficulty": "Hard",
+      "question_text": "Which ordered pair is a solution to the system below? $$x + y = 2$$ $$x - y = y^2 - 3$$",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "c0bf310c-b9a6-4b62-9e55-1a40f4c1f3b5",
+      "question_id": "8b6c1c04-3d8d-4e24-8f56-8e2d6cdbb8ef",
+      "value": "A",
+      "label": "0",
+      "is_correct": true
+    },
+    {
+      "id": "e7d3f722-6e63-4fb0-8a00-3a6798b1cf0a",
+      "question_id": "8b6c1c04-3d8d-4e24-8f56-8e2d6cdbb8ef",
+      "value": "B",
+      "label": "1",
+      "is_correct": false
+    },
+    {
+      "id": "7a3fd6cb-ec39-4659-a5af-0b0d14c6d4fe",
+      "question_id": "8b6c1c04-3d8d-4e24-8f56-8e2d6cdbb8ef",
+      "value": "C",
+      "label": "2",
+      "is_correct": false
+    },
+    {
+      "id": "9d150ae9-3544-4f6f-9a53-7fcbf30d05fe",
+      "question_id": "8b6c1c04-3d8d-4e24-8f56-8e2d6cdbb8ef",
+      "value": "D",
+      "label": "Infinitely many",
+      "is_correct": false
+    },
+    {
+      "id": "0ef2c4e6-9c4a-4c70-ac1a-3f8190cec2b9",
+      "question_id": "593ad58e-f61b-4b92-9a9d-6c3a73d5d8a3",
+      "value": "A",
+      "label": "2",
+      "is_correct": false
+    },
+    {
+      "id": "a529f8cb-a0d8-4255-90bc-0f34bb36bd0b",
+      "question_id": "593ad58e-f61b-4b92-9a9d-6c3a73d5d8a3",
+      "value": "B",
+      "label": "\\frac{-5 + 3\\sqrt{5}}{2}",
+      "is_correct": true
+    },
+    {
+      "id": "f97ee8b1-4f4f-4bfb-b9e8-327d3d45f28d",
+      "question_id": "593ad58e-f61b-4b92-9a9d-6c3a73d5d8a3",
+      "value": "C",
+      "label": "\\frac{-5 - 3\\sqrt{5}}{2}",
+      "is_correct": false
+    },
+    {
+      "id": "9f1cd499-8bb6-4b18-8d43-0650f4b2e87a",
+      "question_id": "593ad58e-f61b-4b92-9a9d-6c3a73d5d8a3",
+      "value": "D",
+      "label": "1",
+      "is_correct": false
+    },
+    {
+      "id": "b5e7843a-20d8-4ca8-9ed4-3c4b0743c1b3",
+      "question_id": "0d3a4f0f-b8df-4a0b-8a6f-11b4cb9b2208",
+      "value": "A",
+      "label": "(3 + \\sqrt{6}, -1 + \\sqrt{6})",
+      "is_correct": false
+    },
+    {
+      "id": "8cb6d07c-eba1-47f7-94a1-efedec1a9f8a",
+      "question_id": "0d3a4f0f-b8df-4a0b-8a6f-11b4cb9b2208",
+      "value": "B",
+      "label": "(3 - \\sqrt{5}, -1 + \\sqrt{5})",
+      "is_correct": false
+    },
+    {
+      "id": "010fc6b0-0008-4a70-a0a0-7f5f6758ea3a",
+      "question_id": "0d3a4f0f-b8df-4a0b-8a6f-11b4cb9b2208",
+      "value": "C",
+      "label": "(3 + \\sqrt{5}, -1 - \\sqrt{5})",
+      "is_correct": false
+    },
+    {
+      "id": "32ca2fdc-8bb2-4d9a-9d4c-9e1f1ebf11a3",
+      "question_id": "0d3a4f0f-b8df-4a0b-8a6f-11b4cb9b2208",
+      "value": "D",
+      "label": "(3 - \\sqrt{6}, -1 + \\sqrt{6})",
+      "is_correct": true
+    }
+  ]
+}

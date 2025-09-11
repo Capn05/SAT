@@ -1,0 +1,667 @@
+[
+  {
+    "id": 51627,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The graph above shows the volume $V$, in gallons, of water in a tank $t$ minutes after water starts flowing into the tank. Which of the following equations correctly relates $V$ and $t$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//51627.png",
+    "options": [
+      {
+        "id": 516270,
+        "label": "$V = 4t$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 516271,
+        "label": "$V = \\frac{1}{4}t$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 516272,
+        "label": "$V = t + 4$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 516273,
+        "label": "$V = \\frac{1}{2}t$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 82155,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "For the function $g$ defined given as $g(x) = \\sqrt{x+2}$, what is the value of $g(7) - g(2)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 821550,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 821551,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 821552,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 821553,
+        "label": "0",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 94851,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "For the linear function $k$, $n$ is a constant and $k(x) = nx + 50$. If $k(5) = 20$, what is the value of $k(8)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 948510,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 948511,
+        "label": "-2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 948512,
+        "label": "20",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 948513,
+        "label": "98",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 99361,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The table above shows the prices of common purchases in both US dollars and Euros on a certain day. If the price in US dollars is $d$ and the equivalent price in Euros is $e$, which of the following equations best represents the relationship between $d$ and $e$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//99361.png",
+    "options": [
+      {
+        "id": 993610,
+        "label": "$e = 0.8d$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 993611,
+        "label": "$e = 0.9d$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 993612,
+        "label": "$d = 0.9e$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 993613,
+        "label": "$e = 1.1d$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 138805,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The function $f$ is defined by $f(x) = mx + b$, where $m$ and $b$ are constants. If $f(0)=5$ and $f(1)=8$, what is the value of $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1388050,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1388051,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1388052,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1388053,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 191431,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "A linear model estimates the number of houses sold by a real estate company each year. The model estimates that $350$ houses were sold in 2018, $520$ houses were sold in 2021, and $x$ houses will be sold in 2023. To the nearest whole number, what is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1914310,
+        "label": "587",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1914311,
+        "label": "630",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1914312,
+        "label": "633",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1914313,
+        "label": "696",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 280776,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The cost of renting a bicycle consists of a fixed fee plus an hourly rate. The fixed fee is $\\$5$, and the hourly rate is $\\$3$ per hour. According to this model, what would be the total cost, in dollars, of renting a bicycle for $2.5$ hours?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2807760,
+        "label": "$\\$12.50$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2807761,
+        "label": "$\\$7.50$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2807762,
+        "label": "$\\$8.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2807763,
+        "label": "$\\$20.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 401600,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, the graph of the linear function $g$ contains the points $(-2, 1)$ and $(2, 9)$. Which equation defines $g$, where $y = g(x)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4016000,
+        "label": "$g(x) = 3x + 5$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4016001,
+        "label": "$g(x) = 2x + 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4016002,
+        "label": "$g(x) = 2x + 5$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4016003,
+        "label": "$g(x) = x + 7$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 482886,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The function $P(h) = 45.75 - 0.65h$ gives the estimated percentage of battery power remaining, $P(h)$, in a smartphone after $h$ hours of use since being fully charged, where $0 \\leq h \\leq 60$. Based on this model, what is the estimated percentage of battery power remaining after $12$ hours of use?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4828860,
+        "label": "45.75",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4828861,
+        "label": "7.80",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4828862,
+        "label": "37.95",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4828863,
+        "label": "-0.65",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 530851,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The equation $y = 30 - 2x$ models the volume of water $y$, in gallons, remaining in a tank after draining for $x$ minutes. If this equation is graphed in the $xy$-plane, which of the following is the best interpretation of the $x$-coordinate of the line's $x$-intercept in the context of the problem?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5308510,
+        "label": "The initial volume of water in the tank, in gallons.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5308511,
+        "label": "The rate at which water is draining from the tank, in gallons per minute.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5308512,
+        "label": "The number of minutes it takes for the water tank to be completely empty.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5308513,
+        "label": "The number of minutes it would take to drain half the initial volume of water.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 547986,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "If $f(p) = 2p - 3$ and $g(q) = q + 5$, what is the value of $2g(3) - f(3)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5479860,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5479861,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5479862,
+        "label": "13",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5479863,
+        "label": "17",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 577371,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "A taxi service charges a fixed initial fee plus a charge per mile. The initial fee is $\\$3.50$, and the charge per mile is $\\$2.25$. What is the total cost, in dollars, for a taxi ride of $8$ miles?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5773710,
+        "label": "$\\$21.50$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5773711,
+        "label": "$\\$19.50$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5773712,
+        "label": "$\\$18.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5773713,
+        "label": "$\\$3.50$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 677550,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "A small business produces custom T-shirts. For each batch of shirts, there is a fixed design setup cost in addition to the cost per shirt for materials.  The equation $C = 7.5n + 12$, where $10 \\leq n \\leq 60$, gives the predicted total cost, $C$, in dollars to produce a batch of $n$ shirts. If a batch contains $30$ shirts, which of the following is closest to the predicted total cost for the batch?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6775500,
+        "label": "222",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6775501,
+        "label": "225",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6775502,
+        "label": "237",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6775503,
+        "label": "245",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 730893,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, the points $(1, 5)$ and $(3, 1)$ lie on the graph of which of the following linear functions?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7308930,
+        "label": "$f(x) = -2x + 7$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7308931,
+        "label": "$f(x) = -x + 6$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7308932,
+        "label": "$f(x) = 2x + 3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7308933,
+        "label": "$f(x) = -2x + 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 787538,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The table above shows the height of a sunflower plant for Week $2$ and Week $4$ after planting. If the relationship between height and week is linear, which of the following functions $H$ models the height of the sunflower plant $w$ weeks after planting?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//787538.png",
+    "options": [
+      {
+        "id": 7875380,
+        "label": "$H(w) = 18 + 3w$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7875381,
+        "label": "$H(w) = 24 + 3w$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7875382,
+        "label": "$H(w) = 18 + 6w$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7875383,
+        "label": "$H(w) = 24 - 3w$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 809728,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "Some values of the linear function $f$ are shown in the table above. What is the value of $f(3)$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//809728.png",
+    "options": [
+      {
+        "id": 8097280,
+        "label": "0",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8097281,
+        "label": "1",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8097282,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8097283,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 819280,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "A water tank is being drained for maintenance. The equation below models the approximate amount of water, $y$, in gallons, remaining in the tank $x$ minutes after the draining started. $$y = 500 - 20x$$ The graph of this equation in the $xy$-plane is a line. What is the best interpretation of the $x$-intercept in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8192800,
+        "label": "The tank will be completely empty after 25 minutes.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8192801,
+        "label": "The tank is draining at a rate of 25 gallons per minute.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8192802,
+        "label": "The tank is draining at a rate of 20 gallons per minute.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8192803,
+        "label": "The tank initially contained 500 gallons of water.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 844183,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The air temperature at sea level is $77$ degrees Fahrenheit (°F). For every $400$ feet increase in altitude, the temperature decreases by approximately $1.4$°F. Which of the following equations can be used to find the air temperature $T$, in °F, at an altitude of $h$ feet above sea level?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8441830,
+        "label": "$T = 77 + 1.4h$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8441831,
+        "label": "$T = 77 - 1.4h$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8441832,
+        "label": "$T = 77 - (1.4/400)h$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8441833,
+        "label": "$T = 77 + (1.4/400)h$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 948799,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Medium",
+    "question_text": "The graph of the function $f$, where $y = f(x)$, gives the total cost $y$, in dollars, for a taxi ride of $x$ miles. What is the best interpretation of the slope of the graph in this context?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//948799.png",
+    "options": [
+      {
+        "id": 9487990,
+        "label": "The taxi charges a flat fee of $5.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9487991,
+        "label": "There is an initial charge of $5, and then it costs $2.50 per mile.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9487992,
+        "label": "The taxi charges $2.50 for every mile driven.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9487993,
+        "label": "The total cost of the taxi ride is $2.50.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

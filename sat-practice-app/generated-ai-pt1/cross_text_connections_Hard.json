@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "7b9d0d2e-2c6a-4b1f-8d3e-5a7c9f2b1a64",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA coalition of bioethicists argues for a time-limited moratorium on human germline editing until multi-generational risks are better understood. They contend that prospective consent cannot be obtained from future descendants and that current off-target effects and mosaicism present unacceptable uncertainties. The coalition concludes that, given the intergenerational stakes and unresolved governance questions, \"pausing is the only ethically defensible stance at present.\"\n\nText 2\n\nA regulatory scientist argues that categorical bans are counterproductive. Instead, they propose an adaptive, phase-gated framework: strictly limited initial indications (serious monogenic diseases with no alternatives), demanding preclinical evidence thresholds, international oversight, and mandatory long-term registries for all treated lineages. They warn that sweeping moratoria may push research to less scrupulous jurisdictions, reducing transparency and delaying learning under safeguards. The scientist distinguishes somatic from germline interventions and therapy from enhancement, insisting that narrow therapeutic trials can be ethically governed.\n\nBased on the texts, how would the author of Text 2 most likely respond to the coalition's assertion that \"pausing is the only ethically defensible stance at present\"?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c1e2f3a4-5b6c-4d7e-9a10-2b3c4d5e6f70",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA historian cautions that removing contested monuments from civic spaces risks \"erasing\" history. In their view, keeping monuments in place while adding substantial contextual materials—plaques, counter-memorials, and curricula—preserves the past while promoting critical debate. The historian argues that physical presence anchors public memory and prevents simplified narratives.\n\nText 2\n\nA community organizer responds that maintaining monuments that honor oppressive figures imposes ongoing social costs. They argue that context plaques rarely offset the honorific power of a prominent public display. Instead, they support relocating such monuments to museums or study centers, where they can be preserved, interpreted critically, and encountered voluntarily. For the organizer, removal redefines civic space without erasing history.\n\nBased on the texts, how would the author of Text 2 most likely respond to Text 1's claim that removing contested monuments \"erases\" history?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e5a7c9d1-8f2b-4c3d-b6a5-1d2e3f4a5b6c",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA macroeconomist defends the centrality of GDP as a policy anchor. While acknowledging its imperfections, they emphasize its cross-country comparability, stability, and association with fiscal capacity and improvements in average health. They warn that proliferating dashboards of alternative metrics can fragment priorities and muddy policy signals; a clear, single target remains essential for growth that lifts living standards.\n\nText 2\n\nA socio-ecological researcher argues that GDP is a poor proxy for welfare. It omits unpaid care, degrades environmental assets by treating resource drawdowns as income, and masks distributional harms. They advocate complementary indicators—distribution-sensitive wellbeing measures and ecological integrity metrics—to steer policy away from growth that amplifies inequality or ecological overshoot.\n\nBased on the texts, how would the author of Text 2 most likely characterize the limitation of relying on GDP, as presented in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "a3b2c1d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+      "question_id": "7b9d0d2e-2c6a-4b1f-8d3e-5a7c9f2b1a64",
+      "value": "A",
+      "label": "By endorsing the moratorium until multi-generational safety is demonstrated and global consent frameworks are established.",
+      "is_correct": false
+    },
+    {
+      "id": "d4c3b2a1-6e5f-4b7a-9c8d-1e0f2a3b4c5d",
+      "question_id": "7b9d0d2e-2c6a-4b1f-8d3e-5a7c9f2b1a64",
+      "value": "B",
+      "label": "By arguing that targeted, highly regulated trials for narrow therapeutic indications can ethically address consent and risk concerns through transparency, oversight, and long-term registries, rendering a blanket pause unnecessary.",
+      "is_correct": true
+    },
+    {
+      "id": "1a2b3c4d-5e6f-4a8b-b9c0-1d2e3f4a5b6c",
+      "question_id": "7b9d0d2e-2c6a-4b1f-8d3e-5a7c9f2b1a64",
+      "value": "C",
+      "label": "By claiming that ethical concerns are overstated because current off-target risks are negligible in clinical practice.",
+      "is_correct": false
+    },
+    {
+      "id": "5f4e3d2c-1b0a-4c9d-8e7f-6a5b4c3d2e1f",
+      "question_id": "7b9d0d2e-2c6a-4b1f-8d3e-5a7c9f2b1a64",
+      "value": "D",
+      "label": "By proposing that resources be redirected entirely to somatic editing and that germline interventions be abandoned permanently.",
+      "is_correct": false
+    },
+    {
+      "id": "0a1b2c3d-4e5f-4a6b-8c7d-9e0f1a2b3c4d",
+      "question_id": "c1e2f3a4-5b6c-4d7e-9a10-2b3c4d5e6f70",
+      "value": "A",
+      "label": "By agreeing that removal distorts the historical record and advocating for robust plaques while retaining the monuments in place.",
+      "is_correct": false
+    },
+    {
+      "id": "1f2e3d4c-5b6a-4c7d-9e8f-0a1b2c3d4e5f",
+      "question_id": "c1e2f3a4-5b6c-4d7e-9a10-2b3c4d5e6f70",
+      "value": "B",
+      "label": "By insisting that any artifact connected to oppression should be destroyed to prevent further harm.",
+      "is_correct": false
+    },
+    {
+      "id": "abcdef12-3456-4abc-8def-1234567890ab",
+      "question_id": "c1e2f3a4-5b6c-4d7e-9a10-2b3c4d5e6f70",
+      "value": "C",
+      "label": "By maintaining that removal silences public debate and therefore should be avoided except during major construction.",
+      "is_correct": false
+    },
+    {
+      "id": "123e4567-e89b-42d3-b456-426614174000",
+      "question_id": "c1e2f3a4-5b6c-4d7e-9a10-2b3c4d5e6f70",
+      "value": "D",
+      "label": "By contending that relocating monuments to museums with critical curation preserves the historical record while ending their celebratory presence in civic spaces.",
+      "is_correct": true
+    },
+    {
+      "id": "9f8e7d6c-5b4a-4c3b-8a7f-6e5d4c3b2a19",
+      "question_id": "e5a7c9d1-8f2b-4c3d-b6a5-1d2e3f4a5b6c",
+      "value": "A",
+      "label": "As primarily a technical problem of misreporting national accounts, solvable by better statistical agencies.",
+      "is_correct": false
+    },
+    {
+      "id": "2a3b4c5d-6e7f-4a8b-9c0d-1e2f3a4b5c6d",
+      "question_id": "e5a7c9d1-8f2b-4c3d-b6a5-1d2e3f4a5b6c",
+      "value": "B",
+      "label": "As acceptable provided GDP is adjusted for inflation and purchasing power parity.",
+      "is_correct": false
+    },
+    {
+      "id": "3b2a1c4d-5e6f-4d8a-8b9c-0d1e2f3a4b5c",
+      "question_id": "e5a7c9d1-8f2b-4c3d-b6a5-1d2e3f4a5b6c",
+      "value": "C",
+      "label": "As an overly narrow output metric that obscures distributional and ecological costs, requiring complementary wellbeing indicators to guide policy.",
+      "is_correct": true
+    },
+    {
+      "id": "4c3b2a1d-6e5f-4c8a-9b0c-1a2b3c4d5e6f",
+      "question_id": "e5a7c9d1-8f2b-4c3d-b6a5-1d2e3f4a5b6c",
+      "value": "D",
+      "label": "As evidence that composite indices are unnecessary because GDP correlates with life expectancy.",
+      "is_correct": false
+    }
+  ]
+}

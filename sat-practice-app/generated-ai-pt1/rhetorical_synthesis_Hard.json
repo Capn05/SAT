@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "7a2c2f7b-67b1-45aa-9a6c-9e2c3cfcf5ea",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching strategies to reduce microplastics entering oceans, a student has taken the following notes: \n- River interception booms capture plastics before they reach the sea; a 2023 pilot across five rivers removed 1,200 tons and used relatively little energy, but the systems require frequent maintenance.\n- Open-ocean trawling nets have collected 300 tons using four vessels but are energy-intensive and raise bycatch concerns.\n- Wastewater treatment plants equipped with microfiltration have removed an average of 92% of microplastics in a study of 18 facilities; upgrades require upfront investment but can be implemented across urban networks.\n- A 2024 NGO report concluded that preventing plastics upstream is more cost-effective than mid-ocean cleanup, noting most plastic is concentrated in rivers and nearshore waters before dispersal.\n\nThe student wants to recommend the most scalable strategy for reducing microplastics entering marine environments. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4b3e8d7f-1f75-4e73-b59a-2a5bc7a5d9f1",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching public library policies, a student has taken the following notes: \n- In 2019, City A eliminated late fees; circulation in low-income neighborhoods rose 28% in the first year, and the share of items returned within 30 days increased from 67% to 73%.\n- In 2020, City B eliminated late fees; new card sign-ups increased 35%, but the proportion of items 60+ days overdue did not change.\n- In 2021, City C retained late fees but added automatic renewals and text reminders; circulation rose 14%, and items 60+ days overdue fell 9%.\n- A 2023 meta-analysis of 26 systems concluded that removing late fees improves access equity but produces mixed effects on timely returns unless paired with reminders or auto-renewals.\n\nThe student wants to make and support a generalization about how eliminating late fees affects both access and return timeliness. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c61d0e5e-9cda-48fe-87b6-7216ab1a8d3e",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching transit finances, a student has taken the following notes: \n- Weekday ridership in 2023 averaged 62% of 2019 levels; weekend ridership reached 88% of 2019.\n- The share of office workers teleworking rose from 6% in 2019 to 28% in 2023, with effects concentrated on weekdays.\n- A 5% fare increase in 2022 raised per-trip revenue but did not restore weekday ridership.\n- Off-peak discounts boosted weekend trips but had limited weekday impact.\n- During 2022 gas price spikes, weekday transit gains were modest and temporary.\n- Office occupancy data show hybrid schedules, with Tuesday–Thursday closer to pre-2020 levels than Monday or Friday.\n\nThe student wants to attribute the primary driver of the agency’s continuing weekday revenue shortfall. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "e2e1f2c4-4a5f-4f2e-9f86-2f0b0c2b0d21",
+      "question_id": "7a2c2f7b-67b1-45aa-9a6c-9e2c3cfcf5ea",
+      "value": "A",
+      "label": "Expand river interception booms, which removed 1,200 tons in a recent pilot and use relatively little energy, to capture plastics before they reach the sea.",
+      "is_correct": false
+    },
+    {
+      "id": "9df38e55-153f-4e32-9abf-0603ca9d2f5d",
+      "question_id": "7a2c2f7b-67b1-45aa-9a6c-9e2c3cfcf5ea",
+      "value": "B",
+      "label": "Deploy more open-ocean trawling nets that can sweep broad areas even if they are energy-intensive and risk bycatch.",
+      "is_correct": false
+    },
+    {
+      "id": "94f5a8f5-6b9b-421d-9c71-b1f7fe3b7a4f",
+      "question_id": "7a2c2f7b-67b1-45aa-9a6c-9e2c3cfcf5ea",
+      "value": "C",
+      "label": "Prioritize wastewater microfiltration upgrades, which removed 92% of microplastics across 18 plants and can be implemented systemwide, aligning with evidence that upstream prevention is most cost-effective.",
+      "is_correct": true
+    },
+    {
+      "id": "d2d3f1b3-3f72-4a6a-8e45-9f66d7d9d8ee",
+      "question_id": "7a2c2f7b-67b1-45aa-9a6c-9e2c3cfcf5ea",
+      "value": "D",
+      "label": "Pursue all available tools equally, because no single strategy is scalable across different contexts.",
+      "is_correct": false
+    },
+    {
+      "id": "8f983b6a-02e1-4dbd-9a3a-3e5e9d3a7f4b",
+      "question_id": "4b3e8d7f-1f75-4e73-b59a-2a5bc7a5d9f1",
+      "value": "A",
+      "label": "Eliminating late fees reliably broadens access but does not consistently improve return timeliness unless paired with supports such as reminders or auto-renewals, as seen in City B and the meta-analysis (and contrasted with City C’s policy tools).",
+      "is_correct": true
+    },
+    {
+      "id": "8b6c7f12-a7d7-4a6a-b2b5-1df6f4d97a48",
+      "question_id": "4b3e8d7f-1f75-4e73-b59a-2a5bc7a5d9f1",
+      "value": "B",
+      "label": "Removing late fees both expands access and consistently lowers the share of long-overdue items, as City A’s results demonstrate.",
+      "is_correct": false
+    },
+    {
+      "id": "7b2d2e0b-7a12-47e7-9f24-8f6f7fbb9a29",
+      "question_id": "4b3e8d7f-1f75-4e73-b59a-2a5bc7a5d9f1",
+      "value": "C",
+      "label": "Because City C improved return rates without eliminating fees, the best generalization is that fees are unnecessary for both access and timely returns.",
+      "is_correct": false
+    },
+    {
+      "id": "f0f1c8db-09a7-4b41-8d6d-0c9a0a1f3d2f",
+      "question_id": "4b3e8d7f-1f75-4e73-b59a-2a5bc7a5d9f1",
+      "value": "D",
+      "label": "The principal effect of eliminating late fees is to increase new card sign-ups, as shown by City B’s 35% rise.",
+      "is_correct": false
+    },
+    {
+      "id": "2f1b9f54-9c88-4a87-9b0e-5c8e5a2f3e91",
+      "question_id": "c61d0e5e-9cda-48fe-87b6-7216ab1a8d3e",
+      "value": "A",
+      "label": "The 5% fare increase in 2022 is the primary driver, because higher prices typically depress demand and therefore revenue.",
+      "is_correct": false
+    },
+    {
+      "id": "b9a3f0dc-ff11-4a74-8e6f-9b2e9d2f3a17",
+      "question_id": "c61d0e5e-9cda-48fe-87b6-7216ab1a8d3e",
+      "value": "B",
+      "label": "Volatile gas prices primarily explain the shortfall, since spikes should have pushed riders back to transit but did not.",
+      "is_correct": false
+    },
+    {
+      "id": "c9a2d1b7-0a2e-4c7e-9d41-fcbb1b7d3e56",
+      "question_id": "c61d0e5e-9cda-48fe-87b6-7216ab1a8d3e",
+      "value": "C",
+      "label": "Weekend fare discounts reduced overall revenue by shifting trips to off-peak periods, leaving weekdays underperforming.",
+      "is_correct": false
+    },
+    {
+      "id": "4a1b7c9e-3f3e-4d6a-8d9a-4f7e9a1c2b60",
+      "question_id": "c61d0e5e-9cda-48fe-87b6-7216ab1a8d3e",
+      "value": "D",
+      "label": "Sustained telework is the main cause: weekday ridership remains at 62% of 2019 while weekends have rebounded to 88%, and hybrid schedules depress Monday and Friday demand in particular.",
+      "is_correct": true
+    }
+  ]
+}

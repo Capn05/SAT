@@ -1,0 +1,196 @@
+{
+  "questions": [
+    {
+      "id": "0b6a68e7-7dd9-4f8b-9d4d-0e3e8bb6f1e2",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 12,
+      "difficulty": "Easy",
+      "question_text": "A right triangle has legs of lengths $9$ and $12$. What is the length of the hypotenuse?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2f3c9a04-0ad3-4c8f-bf6a-4f56d00e8a8c",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 12,
+      "difficulty": "Easy",
+      "question_text": "In a right triangle, the hypotenuse is $10$ and one leg is $6$. What is the length of the other leg?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9e3b0a3e-6b13-4bde-8a11-be2c9f2c4f7d",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 12,
+      "difficulty": "Easy",
+      "question_text": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ right triangle, the shorter leg (opposite the $30^\\circ$ angle) is $4$. What is the length of the hypotenuse?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "19d2bcb3-12f7-4b2e-9e2f-1d8e40f62df5",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 12,
+      "difficulty": "Easy",
+      "question_text": "In a right triangle, for acute angle $\\theta$, $\\sin \\theta = \\frac{3}{5}$. What is $\\cos \\theta$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c2f4d67b-848c-4e3c-b1e9-6f4af4a06c11",
+      "subject_id": 1,
+      "domain_id": 3,
+      "subcategory_id": 12,
+      "difficulty": "Easy",
+      "question_text": "A $45^\\circ$-$45^\\circ$-$90^\\circ$ right triangle has hypotenuse $10$. What is the length of each leg?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1a5c3b22-3276-4a5a-a8c8-fb0dbb7890a5",
+      "question_id": "0b6a68e7-7dd9-4f8b-9d4d-0e3e8bb6f1e2",
+      "value": "A",
+      "label": "$12$",
+      "is_correct": false
+    },
+    {
+      "id": "a9bdbf1e-2f7b-4e3e-8486-3fe238c9ed3b",
+      "question_id": "0b6a68e7-7dd9-4f8b-9d4d-0e3e8bb6f1e2",
+      "value": "B",
+      "label": "$15$",
+      "is_correct": true
+    },
+    {
+      "id": "6b7e25b9-780a-4c15-a70f-0a1110c4a7dc",
+      "question_id": "0b6a68e7-7dd9-4f8b-9d4d-0e3e8bb6f1e2",
+      "value": "C",
+      "label": "$21$",
+      "is_correct": false
+    },
+    {
+      "id": "d24a196f-6b38-4b4a-9b3d-3a6f80d8d851",
+      "question_id": "0b6a68e7-7dd9-4f8b-9d4d-0e3e8bb6f1e2",
+      "value": "D",
+      "label": "$3\\sqrt{13}$",
+      "is_correct": false
+    },
+    {
+      "id": "3cb8c4d1-cf0c-4f9e-8b4d-4e5d8fca1a22",
+      "question_id": "2f3c9a04-0ad3-4c8f-bf6a-4f56d00e8a8c",
+      "value": "A",
+      "label": "$4$",
+      "is_correct": false
+    },
+    {
+      "id": "5bbdb93a-78a4-4b20-8cba-5d3db62360aa",
+      "question_id": "2f3c9a04-0ad3-4c8f-bf6a-4f56d00e8a8c",
+      "value": "B",
+      "label": "$6\\sqrt{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "c1ad6ff9-0f38-4a4f-9e6c-a0e2d63f98b8",
+      "question_id": "2f3c9a04-0ad3-4c8f-bf6a-4f56d00e8a8c",
+      "value": "C",
+      "label": "$16$",
+      "is_correct": false
+    },
+    {
+      "id": "8a79d1df-7f7d-41b8-90c1-6e8a0bfae522",
+      "question_id": "2f3c9a04-0ad3-4c8f-bf6a-4f56d00e8a8c",
+      "value": "D",
+      "label": "$8$",
+      "is_correct": true
+    },
+    {
+      "id": "0d9f5c6d-f2d2-4f0a-8481-11e9fd0b98f1",
+      "question_id": "9e3b0a3e-6b13-4bde-8a11-be2c9f2c4f7d",
+      "value": "A",
+      "label": "$8$",
+      "is_correct": true
+    },
+    {
+      "id": "7d5b0b66-5b9e-4a4f-8d1f-0a0b7c67a8d4",
+      "question_id": "9e3b0a3e-6b13-4bde-8a11-be2c9f2c4f7d",
+      "value": "B",
+      "label": "$4\\sqrt{3}$",
+      "is_correct": false
+    },
+    {
+      "id": "c3eab1bf-910d-44ac-a1d1-7502f577a4e3",
+      "question_id": "9e3b0a3e-6b13-4bde-8a11-be2c9f2c4f7d",
+      "value": "C",
+      "label": "$6$",
+      "is_correct": false
+    },
+    {
+      "id": "9f2b03eb-2f74-4eb2-8c07-3b5d9ea8c1ae",
+      "question_id": "9e3b0a3e-6b13-4bde-8a11-be2c9f2c4f7d",
+      "value": "D",
+      "label": "$2\\sqrt{3}$",
+      "is_correct": false
+    },
+    {
+      "id": "2a3b4c5d-6e7f-4a8b-9c0d-1e2f3a4b5c6d",
+      "question_id": "19d2bcb3-12f7-4b2e-9e2f-1d8e40f62df5",
+      "value": "A",
+      "label": "$\\frac{5}{3}$",
+      "is_correct": false
+    },
+    {
+      "id": "e5f4c3b2-a1b0-4c5d-9e8f-7a6b5c4d3e2f",
+      "question_id": "19d2bcb3-12f7-4b2e-9e2f-1d8e40f62df5",
+      "value": "B",
+      "label": "$\\frac{3}{5}$",
+      "is_correct": false
+    },
+    {
+      "id": "8c7b6a59-4d3e-4f2a-9b8c-1a2b3c4d5e6f",
+      "question_id": "19d2bcb3-12f7-4b2e-9e2f-1d8e40f62df5",
+      "value": "C",
+      "label": "$\\frac{4}{5}$",
+      "is_correct": true
+    },
+    {
+      "id": "f0e1d2c3-b4a5-46c7-8d9e-0f1e2d3c4b5a",
+      "question_id": "19d2bcb3-12f7-4b2e-9e2f-1d8e40f62df5",
+      "value": "D",
+      "label": "$\\frac{4}{3}$",
+      "is_correct": false
+    },
+    {
+      "id": "1f2e3d4c-5b6a-4789-8c7d-6e5f4a3b2c1d",
+      "question_id": "c2f4d67b-848c-4e3c-b1e9-6f4af4a06c11",
+      "value": "A",
+      "label": "$10\\sqrt{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "6a5b4c3d-2e1f-4a7b-9c8d-0e1f2a3b4c5d",
+      "question_id": "c2f4d67b-848c-4e3c-b1e9-6f4af4a06c11",
+      "value": "B",
+      "label": "$5\\sqrt{2}$",
+      "is_correct": true
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0a1b2c3d4e5f",
+      "question_id": "c2f4d67b-848c-4e3c-b1e9-6f4af4a06c11",
+      "value": "C",
+      "label": "$10$",
+      "is_correct": false
+    },
+    {
+      "id": "b5c4d3e2-f1a0-4b7c-8d9e-1f2a3b4c5d6e",
+      "question_id": "c2f4d67b-848c-4e3c-b1e9-6f4af4a06c11",
+      "value": "D",
+      "label": "$5\\sqrt{3}$",
+      "is_correct": false
+    }
+  ]
+}

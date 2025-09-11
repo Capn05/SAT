@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "b37a3f3e-bf1e-4c89-90b6-33f645d2fbf4",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "The chorus of dissenting voices from local businesses, not the city council's initial proposal, ______ the planning committee to revise the traffic ordinance.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f6c62d86-8a1a-4b6c-9b28-0e3b2c2f27d4",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "After years of study, the conservation project seeks to restore river flow by removing obsolete dams, reconnecting floodplains, and ______ pollution from upstream farms.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "01f6b8f8-0f6f-4b9e-9f49-e2f4c58f1a3d",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 29,
+      "difficulty": "Medium",
+      "question_text": "Because early data from the pilot program were inconsistent and occasionally contradictory, the agency issued a revised protocol, ______ all field teams to recalibrate their equipment.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "b80fa3f4-4b76-4f9c-9f4f-4c2e9d1a3a8d",
+      "question_id": "b37a3f3e-bf1e-4c89-90b6-33f645d2fbf4",
+      "value": "A",
+      "label": "has forced",
+      "is_correct": true
+    },
+    {
+      "id": "a2a5f2b8-17f9-4f0f-b0f6-3ee9e3ea0a92",
+      "question_id": "b37a3f3e-bf1e-4c89-90b6-33f645d2fbf4",
+      "value": "B",
+      "label": "have forced",
+      "is_correct": false
+    },
+    {
+      "id": "0f1ccf63-3a3c-4db8-a6d9-2d2c4fb5d3f3",
+      "question_id": "b37a3f3e-bf1e-4c89-90b6-33f645d2fbf4",
+      "value": "C",
+      "label": "are forcing",
+      "is_correct": false
+    },
+    {
+      "id": "b1b1e7a0-2d8d-4d65-9779-8a22a49a5c3f",
+      "question_id": "b37a3f3e-bf1e-4c89-90b6-33f645d2fbf4",
+      "value": "D",
+      "label": "forcing",
+      "is_correct": false
+    },
+    {
+      "id": "8e9a0b67-3a1a-46b1-8a2c-4d1bb3a7f9d6",
+      "question_id": "f6c62d86-8a1a-4b6c-9b28-0e3b2c2f27d4",
+      "value": "A",
+      "label": "to reduce",
+      "is_correct": false
+    },
+    {
+      "id": "9f2e9b1d-4f6b-4b6d-8f1c-4a6e2a3c7d52",
+      "question_id": "f6c62d86-8a1a-4b6c-9b28-0e3b2c2f27d4",
+      "value": "B",
+      "label": "the reduction of",
+      "is_correct": false
+    },
+    {
+      "id": "9a0f0a9e-3a7b-4f8e-8b2d-5c1e4f2a6b31",
+      "question_id": "f6c62d86-8a1a-4b6c-9b28-0e3b2c2f27d4",
+      "value": "C",
+      "label": "reducing",
+      "is_correct": true
+    },
+    {
+      "id": "f4c1a7e5-2d3b-4f69-9a6e-7e2f1c3d8b90",
+      "question_id": "f6c62d86-8a1a-4b6c-9b28-0e3b2c2f27d4",
+      "value": "D",
+      "label": "have reduced",
+      "is_correct": false
+    },
+    {
+      "id": "d2f3b9a7-5c1d-4f86-9e24-3a7e9f1c2b45",
+      "question_id": "01f6b8f8-0f6f-4b9e-9f49-e2f4c58f1a3d",
+      "value": "A",
+      "label": "require",
+      "is_correct": false
+    },
+    {
+      "id": "b6e2c3a1-9a7f-4b2b-8c1d-5e3a9f7c2d10",
+      "question_id": "01f6b8f8-0f6f-4b9e-9f49-e2f4c58f1a3d",
+      "value": "B",
+      "label": "to require",
+      "is_correct": false
+    },
+    {
+      "id": "7f0a2c6e-1b3d-4d2e-9e7a-6c2b9f1e3a45",
+      "question_id": "01f6b8f8-0f6f-4b9e-9f49-e2f4c58f1a3d",
+      "value": "C",
+      "label": "having required",
+      "is_correct": false
+    },
+    {
+      "id": "2e4c6b8a-7d1f-4a3e-8f2b-9c6d1e3f2a47",
+      "question_id": "01f6b8f8-0f6f-4b9e-9f49-e2f4c58f1a3d",
+      "value": "D",
+      "label": "requiring",
+      "is_correct": true
+    }
+  ]
+}

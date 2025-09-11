@@ -1,0 +1,387 @@
+[
+  {
+    "id": 131895,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "Initially, researchers believed that the newly discovered exoplanet Kepler-186f, located within its star's habitable zone, would be remarkably similar to Earth. It was assumed to have a similar atmospheric composition and surface temperature, fostering hopes for potential life. _____________, further analysis revealed significant differences, including a potentially tidally locked orbit and a less dense atmosphere than initially predicted.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1318950,
+        "label": "Consequently",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1318951,
+        "label": "However",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1318952,
+        "label": "Therefore",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1318953,
+        "label": "Similarly",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 143851,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "To understand ancient trade routes in the Mediterranean, archaeologist Dr. Anya Sharma analyzes pottery shards found at various coastal sites. ________ she examines surviving written records from the period, as these documents often detail the goods and ships involved in trade.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1438510,
+        "label": "However,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1438511,
+        "label": "Therefore,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1438512,
+        "label": "Specifically,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1438513,
+        "label": "Additionally,",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 279316,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "The average global temperature has been steadily rising over the past century. Scientists attribute this warming trend primarily to the increase in greenhouse gas emissions from human activities such as burning fossil fuels and deforestation. ___________ rising sea levels, more frequent extreme weather events, and disruptions to ecosystems are becoming increasingly apparent.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2793160,
+        "label": "Specifically,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2793161,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2793162,
+        "label": "Conversely,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2793163,
+        "label": "For example,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 326618,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "While artificial intelligence (AI) offers numerous benefits, such as increased efficiency and automation, it also presents potential downsides. AI systems can perpetuate biases present in their training data, leading to unfair or discriminatory outcomes. ________, the increasing reliance on AI in various sectors raises concerns about job displacement and the need for workforce adaptation.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3266180,
+        "label": "Conversely,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3266181,
+        "label": "Moreover,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3266182,
+        "label": "Therefore,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3266183,
+        "label": "Ultimately,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 466656,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "Researchers have long observed a correlation between socioeconomic status and access to healthy food options. Individuals in higher income brackets often have greater access to supermarkets stocked with fresh produce and organic goods. _____________________ those in lower income brackets may primarily rely on convenience stores or fast-food outlets, which typically offer fewer nutritious choices.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4666560,
+        "label": "Similarly,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4666561,
+        "label": "In contrast,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4666562,
+        "label": "For instance,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4666563,
+        "label": "Consequently,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 723503,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "Many historical accounts suggest that the Library of Alexandria was the largest and most significant library of the ancient world, housing a vast collection of scrolls and attracting scholars from across the Mediterranean.  ______, recent archaeological findings in Egypt have unearthed evidence of other substantial libraries predating or contemporary with Alexandria, challenging its presumed uniqueness.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7235030,
+        "label": "Nevertheless,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7235031,
+        "label": "For instance,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7235032,
+        "label": "Subsequently,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7235033,
+        "label": "Accordingly,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 759834,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "For much of the 19th century, academic painting emphasized realism and historical subjects, often with highly detailed and polished finishes. Critics and the public largely valued these traditional styles. ____, artists began to experiment with capturing fleeting moments and impressions of light and color, leading to the Impressionist movement.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7598340,
+        "label": "For instance,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7598341,
+        "label": "Consequently,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7598342,
+        "label": "However,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7598343,
+        "label": "Ultimately,",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 766366,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "Many popular weight-loss diets focus on reducing carbohydrate intake. The ketogenic diet, , drastically restricts carbohydrates to induce a metabolic state called ketosis. The Paleo diet,  limits grains and processed foods, but allows for moderate carbohydrate consumption from fruits and vegetables.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7663660,
+        "label": "furthermore",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7663661,
+        "label": "for example",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7663662,
+        "label": "in conclusion",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7663663,
+        "label": "conversely",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 798785,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "A recent study by Dr. Emily Carter and colleagues explored the effects of regular physical activity on cognitive abilities in adults over the age of 65. _________________________, they examined participants’ performance on memory tests and problem-solving tasks both before and after a six-month exercise program.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7987850,
+        "label": "For example,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7987851,
+        "label": "In contrast,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7987852,
+        "label": "Consequently,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7987853,
+        "label": "Moreover,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 846161,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "Many ancient cultures developed sophisticated systems for tracking time based on celestial observations. The Maya, for instance, created a complex calendar system with remarkable accuracy; __________, ancient Egyptians relied on the annual flooding of the Nile River to regulate their agricultural and civic life.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8461610,
+        "label": "meanwhile",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8461611,
+        "label": "in short",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8461612,
+        "label": "therefore",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8461613,
+        "label": "additionally",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 991328,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 24,
+    "difficulty": "Medium",
+    "question_text": "The advent of social media platforms has undeniably broadened avenues for individuals to connect, fostering relationships across vast geographical distances.  _____, the richness of nonverbal communication and the nuances of in-person dialogue can be significantly reduced when interactions are primarily mediated through digital interfaces.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9913280,
+        "label": "Nonetheless",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9913281,
+        "label": "Consequently",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9913282,
+        "label": "Moreover",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9913283,
+        "label": "For instance",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

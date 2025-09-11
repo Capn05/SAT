@@ -1,0 +1,37 @@
+[
+  {
+    "id": 970990,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Hard",
+    "question_text": "Entomologist Erica McAlister has observed that the complex flight patterns of certain fly species, particularly hoverflies, are not merely random movements; instead, they are sophisticated aerial maneuvers that serve several crucial functions, from evading predators to attracting mates. These intricate patterns, often characterized by rapid changes in direction and velocity, ____________________________________________________________________________ the flies to navigate complex environments and perform their essential life functions with remarkable agility.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9709900,
+        "label": "enabling",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9709901,
+        "label": "enable",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9709902,
+        "label": "to enable",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9709903,
+        "label": "having enabled",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

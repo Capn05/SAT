@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "f4c8c2b2-5a6e-4c61-9b8f-0f3c3b9a16aa",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Medium",
+      "question_text": "A linear function $f$ satisfies that for every increase of $3$ in $x$, the value of $f(x)$ increases by $12$. If $f(2)=5$, which equation defines $f(x)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9d75df65-2f7a-4bce-9a36-6a089cae23f5",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Medium",
+      "question_text": "A gym membership charges a one-time sign-up fee and a fixed monthly fee. The total amount paid is $\\$185$ after $3$ months and $\\$325$ after $7$ months. What is the monthly fee, in dollars?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2a4d56fb-5b4e-4db1-8a98-494c9aa05af1",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Medium",
+      "question_text": "The function $g$ is linear and satisfies $g(-2)=11$ and $g(4)=-1$. Which of the following is an equation for $g(x)$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "0afcb0ba-91fc-4dfc-8e70-ccfb622ea0e9",
+      "question_id": "f4c8c2b2-5a6e-4c61-9b8f-0f3c3b9a16aa",
+      "value": "A",
+      "label": "$f(x) = 4x - 3$",
+      "is_correct": true
+    },
+    {
+      "id": "c3ca8e58-4ea5-4a7d-bd24-39d8658afa90",
+      "question_id": "f4c8c2b2-5a6e-4c61-9b8f-0f3c3b9a16aa",
+      "value": "B",
+      "label": "$f(x) = 4x + 3$",
+      "is_correct": false
+    },
+    {
+      "id": "742b24e7-e97a-44b0-b3b3-7a0ea2742e6a",
+      "question_id": "f4c8c2b2-5a6e-4c61-9b8f-0f3c3b9a16aa",
+      "value": "C",
+      "label": "$f(x) = 3x - 3$",
+      "is_correct": false
+    },
+    {
+      "id": "9a131bd7-9b8a-4b9e-9d69-1f4945c7f8a1",
+      "question_id": "f4c8c2b2-5a6e-4c61-9b8f-0f3c3b9a16aa",
+      "value": "D",
+      "label": "$f(x) = \\frac{1}{4}x - 3$",
+      "is_correct": false
+    },
+    {
+      "id": "813a1000-01aa-489a-a6ba-8f6b9b4a7a07",
+      "question_id": "9d75df65-2f7a-4bce-9a36-6a089cae23f5",
+      "value": "A",
+      "label": "$25$",
+      "is_correct": false
+    },
+    {
+      "id": "7b6c6c9f-415b-4d14-bef2-55e4cdcdbe9a",
+      "question_id": "9d75df65-2f7a-4bce-9a36-6a089cae23f5",
+      "value": "B",
+      "label": "$30$",
+      "is_correct": false
+    },
+    {
+      "id": "9e5a1e3b-b194-43f3-9d18-9a4bc4cd2e6c",
+      "question_id": "9d75df65-2f7a-4bce-9a36-6a089cae23f5",
+      "value": "C",
+      "label": "$35$",
+      "is_correct": true
+    },
+    {
+      "id": "699c6b11-46aa-4a86-87e6-28dd2ac987e1",
+      "question_id": "9d75df65-2f7a-4bce-9a36-6a089cae23f5",
+      "value": "D",
+      "label": "$40$",
+      "is_correct": false
+    },
+    {
+      "id": "838b2b7e-d4cf-4a97-8f28-54d813d6ec9a",
+      "question_id": "2a4d56fb-5b4e-4db1-8a98-494c9aa05af1",
+      "value": "A",
+      "label": "$g(x) = 2x + 7$",
+      "is_correct": false
+    },
+    {
+      "id": "a4ee5ec9-21a2-49a7-8d9c-6df2bc565398",
+      "question_id": "2a4d56fb-5b4e-4db1-8a98-494c9aa05af1",
+      "value": "B",
+      "label": "$g(x) = -2x - 7$",
+      "is_correct": false
+    },
+    {
+      "id": "0f7fc76c-9168-4e4f-ac20-a0739dc82558",
+      "question_id": "2a4d56fb-5b4e-4db1-8a98-494c9aa05af1",
+      "value": "C",
+      "label": "$g(x) = -2x + 5$",
+      "is_correct": false
+    },
+    {
+      "id": "f8e6e29e-07a7-4b7f-9d0e-91f4a3f235d4",
+      "question_id": "2a4d56fb-5b4e-4db1-8a98-494c9aa05af1",
+      "value": "D",
+      "label": "$g(x) = -2x + 7$",
+      "is_correct": true
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "8f1c3d78-9a69-49d3-8c1f-5a23e2d0c8e3",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Easy",
+      "question_text": "A tank leaks water so that the amount remaining after $t$ hours is modeled by $$W(t) = 120(0.8)^t$$ where $W(t)$ is measured in liters. What does the number $120$ represent in this context?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2c4b06a2-8d3e-4aa6-8c9a-3e0b7f2c1b9d",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Easy",
+      "question_text": "The function $f$ is defined by $$f(x) = x^2 + 4x + 1$$ What is the value of $f(-3)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a6d5f0e1-7b64-4c3f-87a9-0e5f12a4b7c2",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Easy",
+      "question_text": "The function $$y = -3(2)^x + 5$$ is graphed in the $xy$-plane. What is the $y$-intercept of the graph?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "d1a7f6d2-1f0a-4c3e-9a5b-7b0d2a9f3c11",
+      "question_id": "8f1c3d78-9a69-49d3-8c1f-5a23e2d0c8e3",
+      "value": "A",
+      "label": "The initial amount of water in the tank, in liters",
+      "is_correct": true
+    },
+    {
+      "id": "b4f8a2c5-6d3e-4f9a-8b7c-1e2d3c4b5a66",
+      "question_id": "8f1c3d78-9a69-49d3-8c1f-5a23e2d0c8e3",
+      "value": "B",
+      "label": "The amount of water removed each hour, in liters",
+      "is_correct": false
+    },
+    {
+      "id": "e3c2b1a0-9d8f-4a7b-8c6d-5e4f3a2b1c77",
+      "question_id": "8f1c3d78-9a69-49d3-8c1f-5a23e2d0c8e3",
+      "value": "C",
+      "label": "The percentage of water removed each hour",
+      "is_correct": false
+    },
+    {
+      "id": "c9b8a7d6-5e4f-4c3b-9a8d-7f6e5d4c3b22",
+      "question_id": "8f1c3d78-9a69-49d3-8c1f-5a23e2d0c8e3",
+      "value": "D",
+      "label": "The amount of water remaining after 1 hour, in liters",
+      "is_correct": false
+    },
+    {
+      "id": "f0e1d2c3-b4a5-46c7-89d0-1a2b3c4d5e60",
+      "question_id": "2c4b06a2-8d3e-4aa6-8c9a-3e0b7f2c1b9d",
+      "value": "A",
+      "label": "-4",
+      "is_correct": false
+    },
+    {
+      "id": "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b61",
+      "question_id": "2c4b06a2-8d3e-4aa6-8c9a-3e0b7f2c1b9d",
+      "value": "B",
+      "label": "2",
+      "is_correct": false
+    },
+    {
+      "id": "b2c3d4e5-f6a7-48b9-8c0d-1e2f3a4b5c62",
+      "question_id": "2c4b06a2-8d3e-4aa6-8c9a-3e0b7f2c1b9d",
+      "value": "C",
+      "label": "10",
+      "is_correct": false
+    },
+    {
+      "id": "c3d4e5f6-a7b8-49ca-8d0e-1f2a3b4c5d63",
+      "question_id": "2c4b06a2-8d3e-4aa6-8c9a-3e0b7f2c1b9d",
+      "value": "D",
+      "label": "-2",
+      "is_correct": true
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4adb-8e0f-1a2b3c4d5e64",
+      "question_id": "a6d5f0e1-7b64-4c3f-87a9-0e5f12a4b7c2",
+      "value": "A",
+      "label": "(2, 0)",
+      "is_correct": false
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4bec-8f01-2a3b4c5d6e65",
+      "question_id": "a6d5f0e1-7b64-4c3f-87a9-0e5f12a4b7c2",
+      "value": "B",
+      "label": "(0, -3)",
+      "is_correct": false
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4cfd-9012-3b4c5d6e7f66",
+      "question_id": "a6d5f0e1-7b64-4c3f-87a9-0e5f12a4b7c2",
+      "value": "C",
+      "label": "(0, 2)",
+      "is_correct": true
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4d0e-9123-4c5d6e7f8a67",
+      "question_id": "a6d5f0e1-7b64-4c3f-87a9-0e5f12a4b7c2",
+      "value": "D",
+      "label": "(0, 5)",
+      "is_correct": false
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "b6c0c0b4-6c52-4b1b-8a57-4d0f0ddf8b79",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Streaming services have made it easier for independent musicians to reach global audiences, but the per-stream royalties are often too small to cover basic expenses. ______ some artists have turned to limited-edition vinyl releases and direct-to-fan subscriptions to create more reliable revenue.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8f8c96a4-d45e-4c37-90a0-2bbf0c5c0a35",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Many anti-smoking campaigns rely on fear appeals to discourage use. These messages can capture attention but may also provoke defensive avoidance among some viewers. ______ messages that emphasize practical quitting strategies and social support tend to produce higher engagement.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e2161d8e-5bf5-4a12-9b71-0bbcb6b4c9b4",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "An early ocean-circulation model underestimated heat transport because it excluded small eddies. After the team incorporated those features, the simulation produced currents that better matched observed temperatures. ______ its predictions aligned more closely with satellite measurements.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6a791bb1-9f3d-49f0-9441-4f25c1f3e8c0",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Lithium-ion batteries are widely used for grid storage, but they rely on cobalt and nickel, elements that are relatively scarce and costly. ______ emerging sodium-ion batteries use abundant materials but currently deliver lower energy density.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c4e2b2cf-4b3e-4cb2-9c58-8b2f2ab0a0c3",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "The museum’s new exhibition traces textile traditions chronologically and uses annotated maps to situate garments within historic trade routes. ______ the gallery includes tactile replicas that let visitors feel weaving patterns without risking damage to original artifacts.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3a2a2f33-1bde-49ea-b6d2-917b2befd6fa",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Prescriptive grammar guides insist that writers avoid split infinitives and informal constructions. ______ sociolinguists document how speakers actually use language, noting regional variation and change over time.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a58e6f6b-9b25-4a25-9c13-2df2ef7a0dd5",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Decades of aggressive wildfire suppression have allowed dry brush and small trees to accumulate, increasing the likelihood of severe fires. ______ land managers are expanding the use of prescribed burns to reduce fuel loads and restore forest resilience.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b1206e9c-1f2a-4b21-8e75-6b4abfb0555d",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Re-reading notes can feel productive because it is fast and familiar, but research shows it adds relatively little to long-term learning. ______ self-testing with spaced practice improves retention across a wide range of subjects.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7f54ac1a-0a49-4b4a-bd6c-7e2b5a6d72d5",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Drip irrigation can reduce water use by delivering moisture directly to plant roots. ______ if emitters are not regularly maintained, clogs develop and yields can fall.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "da9d8540-1e6e-4764-9d6e-4bb3eb3b2c96",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "During conservation of a $17$th-century painting, the team considered removing discolored varnish entirely. Doing so risked stripping delicate glazes applied by the original artist; ______ the conservators chose a minimal, reversible treatment to preserve the work’s patina.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1a9b1a62-5f80-4b3e-b4a6-16b9a650b1a1",
+      "question_id": "b6c0c0b4-6c52-4b1b-8a57-4d0f0ddf8b79",
+      "value": "A",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "b4c7c2d2-8b8e-4f0d-9d13-43c33e707b2a",
+      "question_id": "b6c0c0b4-6c52-4b1b-8a57-4d0f0ddf8b79",
+      "value": "B",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "b8b45d6d-6b3e-47b0-823e-6f1f0b3e1a8c",
+      "question_id": "b6c0c0b4-6c52-4b1b-8a57-4d0f0ddf8b79",
+      "value": "C",
+      "label": "Consequently,",
+      "is_correct": true
+    },
+    {
+      "id": "8e5a6db3-862e-4abc-b377-0d3f9f7b0a6f",
+      "question_id": "b6c0c0b4-6c52-4b1b-8a57-4d0f0ddf8b79",
+      "value": "D",
+      "label": "Similarly,",
+      "is_correct": false
+    },
+    {
+      "id": "e9a833fd-04f1-4c2b-8bb6-2dc6624b9c78",
+      "question_id": "8f8c96a4-d45e-4c37-90a0-2bbf0c5c0a35",
+      "value": "A",
+      "label": "Moreover,",
+      "is_correct": false
+    },
+    {
+      "id": "f1baf5c2-6a3b-48f6-b6cc-7e0f95dcb2ee",
+      "question_id": "8f8c96a4-d45e-4c37-90a0-2bbf0c5c0a35",
+      "value": "B",
+      "label": "Therefore,",
+      "is_correct": false
+    },
+    {
+      "id": "bd6f5477-8a3f-4e4f-97d2-81e3f9245c41",
+      "question_id": "8f8c96a4-d45e-4c37-90a0-2bbf0c5c0a35",
+      "value": "C",
+      "label": "By contrast,",
+      "is_correct": true
+    },
+    {
+      "id": "0d51d8a8-4e16-4c6e-840e-7a8e13b3633b",
+      "question_id": "8f8c96a4-d45e-4c37-90a0-2bbf0c5c0a35",
+      "value": "D",
+      "label": "For instance,",
+      "is_correct": false
+    },
+    {
+      "id": "a3e3b1cc-3a25-4b8d-97a3-69dce4c9dc34",
+      "question_id": "e2161d8e-5bf5-4a12-9b71-0bbcb6b4c9b4",
+      "value": "A",
+      "label": "As a result,",
+      "is_correct": true
+    },
+    {
+      "id": "1dbf8016-642e-4c47-9b30-2f8b63b61c47",
+      "question_id": "e2161d8e-5bf5-4a12-9b71-0bbcb6b4c9b4",
+      "value": "B",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "82833f56-8f3e-4f47-bd10-6b92b8a4f826",
+      "question_id": "e2161d8e-5bf5-4a12-9b71-0bbcb6b4c9b4",
+      "value": "C",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "0a4c9ad0-4c7a-4d26-9b3c-9f156b9e3e7f",
+      "question_id": "e2161d8e-5bf5-4a12-9b71-0bbcb6b4c9b4",
+      "value": "D",
+      "label": "Meanwhile,",
+      "is_correct": false
+    },
+    {
+      "id": "f9d4f0f3-5b2d-4b39-8b77-b90b61d31fd5",
+      "question_id": "6a791bb1-9f3d-49f0-9441-4f25c1f3e8c0",
+      "value": "A",
+      "label": "Consequently,",
+      "is_correct": false
+    },
+    {
+      "id": "7085ce09-5b35-4d1f-9d53-19cf2f061b61",
+      "question_id": "6a791bb1-9f3d-49f0-9441-4f25c1f3e8c0",
+      "value": "B",
+      "label": "Specifically,",
+      "is_correct": false
+    },
+    {
+      "id": "9c815a92-d8d0-4b74-8bc9-552c0f4493b2",
+      "question_id": "6a791bb1-9f3d-49f0-9441-4f25c1f3e8c0",
+      "value": "C",
+      "label": "Moreover,",
+      "is_correct": false
+    },
+    {
+      "id": "0c2d4a8e-4dbf-4e73-bc32-b0ad6dc60b3a",
+      "question_id": "6a791bb1-9f3d-49f0-9441-4f25c1f3e8c0",
+      "value": "D",
+      "label": "In contrast,",
+      "is_correct": true
+    },
+    {
+      "id": "3c2901fb-1e1c-4f73-9e6f-49df0a0ee2b8",
+      "question_id": "c4e2b2cf-4b3e-4cb2-9c58-8b2f2ab0a0c3",
+      "value": "A",
+      "label": "Conversely,",
+      "is_correct": false
+    },
+    {
+      "id": "7d1d24ee-7a8c-4fb8-8fa4-4d33cdb43663",
+      "question_id": "c4e2b2cf-4b3e-4cb2-9c58-8b2f2ab0a0c3",
+      "value": "B",
+      "label": "Additionally,",
+      "is_correct": true
+    },
+    {
+      "id": "1a7ed6a1-e4b7-449c-9de2-37ee13e5f5c8",
+      "question_id": "c4e2b2cf-4b3e-4cb2-9c58-8b2f2ab0a0c3",
+      "value": "C",
+      "label": "Therefore,",
+      "is_correct": false
+    },
+    {
+      "id": "2c3e4494-9745-4e1a-8dc6-7d7930f77a7e",
+      "question_id": "c4e2b2cf-4b3e-4cb2-9c58-8b2f2ab0a0c3",
+      "value": "D",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "6ebf3d2d-2a77-4ee0-a6b0-1554ea1606a0",
+      "question_id": "3a2a2f33-1bde-49ea-b6d2-917b2befd6fa",
+      "value": "A",
+      "label": "Similarly,",
+      "is_correct": false
+    },
+    {
+      "id": "a1a081b9-cac4-40ce-9a66-7bc9bbbd0c67",
+      "question_id": "3a2a2f33-1bde-49ea-b6d2-917b2befd6fa",
+      "value": "B",
+      "label": "Consequently,",
+      "is_correct": false
+    },
+    {
+      "id": "4dba44ec-7f71-4a10-9b82-d7d9a12046a0",
+      "question_id": "3a2a2f33-1bde-49ea-b6d2-917b2befd6fa",
+      "value": "C",
+      "label": "Specifically,",
+      "is_correct": false
+    },
+    {
+      "id": "e5050ec5-3364-4b59-8f89-01102f7a4862",
+      "question_id": "3a2a2f33-1bde-49ea-b6d2-917b2befd6fa",
+      "value": "D",
+      "label": "Conversely,",
+      "is_correct": true
+    },
+    {
+      "id": "72688d3c-1f59-4d11-924c-2fbf71e31b73",
+      "question_id": "a58e6f6b-9b25-4a25-9c13-2df2ef7a0dd5",
+      "value": "A",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "77e9f3a8-2b0c-4e0c-86cf-a35f02c19325",
+      "question_id": "a58e6f6b-9b25-4a25-9c13-2df2ef7a0dd5",
+      "value": "B",
+      "label": "For instance,",
+      "is_correct": false
+    },
+    {
+      "id": "df161e8a-7d7d-4a9c-b15a-6a7495bc7f1d",
+      "question_id": "a58e6f6b-9b25-4a25-9c13-2df2ef7a0dd5",
+      "value": "C",
+      "label": "Therefore,",
+      "is_correct": true
+    },
+    {
+      "id": "6c3740ec-69c3-49d7-9c81-1ac3a5bc48e0",
+      "question_id": "a58e6f6b-9b25-4a25-9c13-2df2ef7a0dd5",
+      "value": "D",
+      "label": "Meanwhile,",
+      "is_correct": false
+    },
+    {
+      "id": "3c7b2e4e-7a04-4c77-9bd0-d9fd2c0a98c4",
+      "question_id": "b1206e9c-1f2a-4b21-8e75-6b4abfb0555d",
+      "value": "A",
+      "label": "In contrast,",
+      "is_correct": true
+    },
+    {
+      "id": "e1bbdc3a-0880-4bde-b5f1-1a84d2ee744b",
+      "question_id": "b1206e9c-1f2a-4b21-8e75-6b4abfb0555d",
+      "value": "B",
+      "label": "Consequently,",
+      "is_correct": false
+    },
+    {
+      "id": "db2f3534-5922-49a6-9c85-2c332f609d86",
+      "question_id": "b1206e9c-1f2a-4b21-8e75-6b4abfb0555d",
+      "value": "C",
+      "label": "Moreover,",
+      "is_correct": false
+    },
+    {
+      "id": "020aaf12-0338-4ab8-a1b6-0176f2fd5f3d",
+      "question_id": "b1206e9c-1f2a-4b21-8e75-6b4abfb0555d",
+      "value": "D",
+      "label": "Namely,",
+      "is_correct": false
+    },
+    {
+      "id": "6d661b62-9f43-4fd0-b7da-5c7f4c9017fd",
+      "question_id": "7f54ac1a-0a49-4b4a-bd6c-7e2b5a6d72d5",
+      "value": "A",
+      "label": "Accordingly,",
+      "is_correct": false
+    },
+    {
+      "id": "df7d97a0-2e0b-4a16-8a9a-c2c52f37c12a",
+      "question_id": "7f54ac1a-0a49-4b4a-bd6c-7e2b5a6d72d5",
+      "value": "B",
+      "label": "However,",
+      "is_correct": true
+    },
+    {
+      "id": "b1d7390c-0a9a-4e20-8f2a-3fbefd8b969e",
+      "question_id": "7f54ac1a-0a49-4b4a-bd6c-7e2b5a6d72d5",
+      "value": "C",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "f3f5e0f1-a65a-4cd1-ae1a-500b01232f1a",
+      "question_id": "7f54ac1a-0a49-4b4a-bd6c-7e2b5a6d72d5",
+      "value": "D",
+      "label": "Thus,",
+      "is_correct": false
+    },
+    {
+      "id": "c8f5a454-e5b4-4d4c-9c03-0eb2a11c60df",
+      "question_id": "da9d8540-1e6e-4764-9d6e-4bb3eb3b2c96",
+      "value": "A",
+      "label": "Accordingly,",
+      "is_correct": true
+    },
+    {
+      "id": "f8a8b6a3-90f6-4a9d-8a2a-44b6c3f5d2f1",
+      "question_id": "da9d8540-1e6e-4764-9d6e-4bb3eb3b2c96",
+      "value": "B",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "1e47322f-4913-4d1d-9271-6d7f5cadb101",
+      "question_id": "da9d8540-1e6e-4764-9d6e-4bb3eb3b2c96",
+      "value": "C",
+      "label": "Conversely,",
+      "is_correct": false
+    },
+    {
+      "id": "5e3a2cd7-83e0-4396-8bbd-656ca2b3e204",
+      "question_id": "da9d8540-1e6e-4764-9d6e-4bb3eb3b2c96",
+      "value": "D",
+      "label": "For example,",
+      "is_correct": false
+    }
+  ]
+}

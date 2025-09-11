@@ -1,0 +1,212 @@
+[
+  {
+    "id": 13531,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "The table shows the daily water usage rate per acre and the number of acres planted for three different agricultural regions. If all regions maintain these water usage rates, what is the total water usage, in gallons, for Region B in a week ($7$ days)?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//13531.png",
+    "options": [
+      {
+        "id": 135310,
+        "label": "600",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 135311,
+        "label": "90,000",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 135312,
+        "label": "630,000",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 135313,
+        "label": "840,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 78055,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "A biologist starts an experiment with a colony of bacteria. The number of bacteria triples every hour. After $3$ hours, there are $8,100$ bacteria in the colony. How many bacteria were there at the start of the experiment?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 780550,
+        "label": "300",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 780551,
+        "label": "900",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 780552,
+        "label": "2,700",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 780553,
+        "label": "100",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 313002,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "A gardener is preparing a fertilizer mixture by combining nitrogen and phosphorus in a ratio of $5$ parts nitrogen to $2$ parts phosphorus. For a large batch, the gardener wants to use $12.5$ pounds of nitrogen, while maintaining the same ratio. How many pounds of phosphorus should the gardener use?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3130020,
+        "label": "5 pounds",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3130021,
+        "label": "8 pounds",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3130022,
+        "label": "3 pounds",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3130023,
+        "label": "2.5 pounds",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 600669,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "If $\\frac{\\Psi}{\\Omega} = 2.5$ and $\\frac{\\Phi}{\\Omega} = 7.5$, what is the value of $n = \\frac{\\Psi}{\\Phi}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6006690,
+        "label": "$\\frac{1}{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6006691,
+        "label": "$\\frac{1}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6006692,
+        "label": "$\\frac{2}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6006693,
+        "label": "$\\frac{3}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 643351,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "A jewelry maker is crafting pendants using pure gold. She melts gold and pours it into cubic molds. One such mold has an edge length of $2.00$ centimeters. Pure gold has a density of $19.3$ grams per cubic centimeter. What is the mass, in grams, of a gold pendant made using this mold, assuming the mold is filled completely?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6433510,
+        "label": "19.3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6433511,
+        "label": "38.6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6433512,
+        "label": "77.2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6433513,
+        "label": "154.4",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 703590,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Hard",
+    "question_text": "The density of gold is approximately $19,300$ kilograms per cubic meter. A sample of pure gold is in the shape of a cube and has a mass of $25$ kilograms. To the nearest hundredth of a meter, what is the length of one edge of this sample?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7035900,
+        "label": "0.09",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7035901,
+        "label": "0.10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7035902,
+        "label": "0.11",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7035903,
+        "label": "0.12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "id": 101,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "The scatterplot shown shows the height of a ball, in feet, at different times after it was thrown upwards into the air. Time is measured in seconds since the ball was thrown. Of the following equations, which best models the data in the scatterplot?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//101.png",
+    "options": [
+      {
+        "id": 1010,
+        "label": "$y = 12.5x^2 + 30.2x + 4.1$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1011,
+        "label": "$y = -12.5x^2 - 30.2x - 4.1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1012,
+        "label": "$y = 12.5x^2 + 30.2x - 4.1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1013,
+        "label": "$y = -12.5x^2 + 30.2x + 4.1$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 139703,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "The scatterplot above shows the relationship between the number of hours a group of students spent studying for a test and their scores on the test. A line of best fit is shown, and its equation is $y = 7.2x + 65$, where $x$ represents the number of study hours and $y$ represents the predicted test score. According to the line of best fit, what is the predicted increase in test score for each additional hour of study?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//139703.png",
+    "options": [
+      {
+        "id": 1397030,
+        "label": "For each additional hour of study, the test score is predicted to increase by 65 points.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1397031,
+        "label": "For each additional hour of study, the test score is predicted to increase by 7.2 points. ",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1397032,
+        "label": "For every 7.2 hours of study, the test score is predicted to increase by 1 point.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1397033,
+        "label": "For every 65 hours of study, the test score is predicted to increase by 7.2 points.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 523940,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "The scatterplot shows the relationship between the height of a sunflower, $y$, in centimeters, and the number of weeks after planting, $x$. What is the average rate of change, in centimeters per week, of the sunflower's height from week 3 to week 7?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//523940.png",
+    "options": [
+      {
+        "id": 5239400,
+        "label": "2.5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5239401,
+        "label": "3.5",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5239402,
+        "label": "4.5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5239403,
+        "label": "14",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 826324,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "Each dot in the scatterplot above represents the number of hours spent exercising per week and the resting heart rate of several adults. The line of best fit for the data is also shown. The line of best fit for the data has a slope of approximately -2.5. According to this estimate, how much lower is a person's predicted resting heart rate for each 4-hour increase in exercise per week?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.41.20%20PM.png",
+    "options": [
+      {
+        "id": 8263240,
+        "label": "2.5 beats per minute",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8263241,
+        "label": "6.25 beats per minute",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8263242,
+        "label": "10 beats per minute",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8263243,
+        "label": "25 beats per minute",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 941540,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "The scatterplot above shows a company's sales $s$, in thousands of dollars, and advertising spending $a$, in thousands of dollars, on 12 different months. A line of best fit for the data is also shown. Which of the following could be an equation of the line of best fit?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-20%20at%2012.04.46%20AM.png",
+    "options": [
+      {
+        "id": 9415400,
+        "label": "$s = 7.5a + 75$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9415401,
+        "label": "$s = 2a + 200$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9415402,
+        "label": "$s = 15a + 25$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9415403,
+        "label": "$s = 0.5a + 300$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 967765,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Hard",
+    "question_text": "The scatterplot above shows the number of hours students studied per week and their exam scores (out of 100) for eight students in a class. The line of best fit for the data is also shown. According to the line of best fit, which of the following is closest to the predicted increase in exam score for every increase of 1 hour of study per week?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.45.53%20PM.png",
+    "options": [
+      {
+        "id": 9677650,
+        "label": "2.5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9677651,
+        "label": "2.0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9677652,
+        "label": "1.5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9677653,
+        "label": "1.0",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

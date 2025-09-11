@@ -1,0 +1,772 @@
+[
+  {
+    "id": 48872,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "While online communication offers unparalleled convenience in connecting with individuals across vast distances, it is important to remember that ________________________________________________________________________________________________________________________________________________ face-to-face interactions remain crucial for developing deep interpersonal skills.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 488720,
+        "label": "convenience and",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 488721,
+        "label": "convenience,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 488722,
+        "label": "convenience",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 488723,
+        "label": "convenience, and",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 134309,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The study of ancient civilizations often requires meticulous attention to detail. Historians and archaeologists carefully examine artifacts and texts, piecing together fragmented evidence to understand past societies.  When analyzing pottery shards, for instance, researchers frequently ______________ subtle variations in design and material composition, which can reveal trade routes and cultural influences.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1343090,
+        "label": "look, for",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1343091,
+        "label": "look. For",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1343092,
+        "label": "look; for",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1343093,
+        "label": "look for",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 173959,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Many historians consider Leonardo da Vinci a true Renaissance polymath: he excelled as a painter ___________ made significant contributions to the fields of anatomy and engineering.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1739590,
+        "label": "painter;",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1739591,
+        "label": "painter,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1739592,
+        "label": "painter. And",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1739593,
+        "label": "painter",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 180739,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Many historians consider the printing press to be one of the most transformative inventions in human history. This device revolutionized the spread of information _____ it made books and other texts far more accessible to the general public.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1807390,
+        "label": "and",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1807391,
+        "label": "and,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1807392,
+        "label": ", and",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1807393,
+        "label": ", and,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 185073,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The research study will focus ______ the impact of social media on teenagers' mental health, academic performance, and social interactions in the digital age.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1850730,
+        "label": "on",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1850731,
+        "label": "upon",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1850732,
+        "label": "in",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1850733,
+        "label": "at",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 310928,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "In 1925, Zora Neale Hurston arrived in New York City, eager to engage with the burgeoning literary and artistic scene _________________________________________________________________________________________________________________________________________________ quickly became a central figure of the Harlem Renaissance.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3109280,
+        "label": "City she",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3109281,
+        "label": "City, she",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3109282,
+        "label": "City and she",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3109283,
+        "label": "City. She",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 364155,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Renewable energy sources like solar and wind power are becoming increasingly cost-effective _______ their widespread adoption is still hindered by infrastructure limitations and storage challenges.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3641550,
+        "label": "effective, but",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3641551,
+        "label": "effective but",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3641552,
+        "label": "effective,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3641553,
+        "label": "effective",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 387993,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The Italian Renaissance, a period of immense artistic and intellectual growth, is renowned for its remarkable figures, which encompassed Leonardo da Vinci _________ Michelangelo, and Raphael.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3879930,
+        "label": ",",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3879931,
+        "label": ";",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3879932,
+        "label": ":",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3879933,
+        "label": ".",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 451141,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "In 1921, pioneering nurse Clara Barton founded the American Red Cross, a humanitarian organization ___________________________________________________________________________ that provides emergency assistance and disaster relief around the world and that remains a vital resource for communities in need.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4511410,
+        "label": "organization",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4511411,
+        "label": "organization,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4511412,
+        "label": "organization-",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4511413,
+        "label": "organization, and",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 455101,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Historian Elizabeth Edwards observed that early photography, with its unparalleled ability to capture detail, sparked a debate: “Was this new medium art or mere replication” <br> Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4551010,
+        "label": "“Was this new medium art or mere replication?”",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4551011,
+        "label": "“Was this new medium art or mere replication”.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4551012,
+        "label": "Was this new medium art or mere replication?",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4551013,
+        "label": "Was this new medium art or mere replication”.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 481774,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The librarian explained that due to budget cuts, only the most popular _____ from the bestseller list would be purchased for the library this year.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4817740,
+        "label": "titles:",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4817741,
+        "label": "titles,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4817742,
+        "label": "titles",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4817743,
+        "label": "titles-",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 537471,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The biologist collected samples from the forest floor. She analyzed them under a microscope and _____ identified several new species of fungi.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5374710,
+        "label": ", ",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5374711,
+        "label": ";",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5374712,
+        "label": "-",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5374713,
+        "label": ":",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 552407,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Despite initial skepticism, research into the effectiveness of online learning platforms __________________________________________________________________________________________________________________________________________________ promising results, particularly in terms of accessibility and personalized learning experiences.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5524070,
+        "label": "reveals the",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5524071,
+        "label": "reveals. The",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5524072,
+        "label": "reveals, the",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5524073,
+        "label": "reveals; the",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 586916,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Photosynthesis is the process _____ plants convert light energy into chemical energy.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5869160,
+        "label": "where plants convert light energy into chemical energy?",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5869161,
+        "label": "where do plants convert light energy into chemical energy.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5869162,
+        "label": "where plants convert light energy into chemical energy.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5869163,
+        "label": "where do plants convert light energy into chemical energy?",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 603533,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Many gardens are designed with specific goals in mind. For example, a kitchen garden is primarily intended to grow herbs, fruits, and vegetables for culinary use, while a formal garden is often designed for aesthetic appeal _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6035330,
+        "label": "is it not?",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6035331,
+        "label": ".",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6035332,
+        "label": "!",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6035333,
+        "label": "?",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 685277,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "In a recent study examining the effects of screen time on sleep quality, researchers sought to understand: How _____  Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6852770,
+        "label": "does screen time affect sleep patterns.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6852771,
+        "label": "screen time affects sleep patterns.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6852772,
+        "label": "screen time affects sleep patterns?",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6852773,
+        "label": "will screen time affect sleep patterns?",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 727128,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Quantum computing harnesses the principles of quantum mechanics to solve complex problems that are intractable for classical computers ________________________________________________________________________________ its potential applications span diverse fields, from drug discovery and materials science to financial modeling and artificial intelligence.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7271280,
+        "label": "computers,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7271281,
+        "label": "computers",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7271282,
+        "label": "computers;",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7271283,
+        "label": "computers and",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 796349,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The ancient city of Petra, carved into sandstone cliffs in Jordan, is a remarkable example of Nabataean engineering. This breathtaking archaeological site, _________________________________________________________________________________________________ attracts tourists from around the globe.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7963490,
+        "label": "which",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7963491,
+        "label": "which,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7963492,
+        "label": "which—",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7963493,
+        "label": ", which",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 800249,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Modern architecture emphasizes functionality and clean lines.  Early proponents of the style, such as Le Corbusier and Walter Gropius, sought to create buildings that were efficient and devoid of unnecessary ornamentation, ______ later architects explored more decorative and expressive possibilities within the modernist framework.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8002490,
+        "label": "but",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8002491,
+        "label": "and",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8002492,
+        "label": "so",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8002493,
+        "label": "for",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 919731,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "Recent studies on online learning platforms show that student feedback, especially comments regarding course structure and assignment clarity, _________ is invaluable for course improvement. Researchers analyze these comments to refine teaching methods and enhance the learning experience.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9197310,
+        "label": " ",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9197311,
+        "label": ":",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9197312,
+        "label": "-",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9197313,
+        "label": ";",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 967205,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "The Amazon River is the longest river ______ all the rivers in the world, stretching for over 4,000 miles.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9672050,
+        "label": "of",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9672051,
+        "label": "of;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9672052,
+        "label": "of—",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9672053,
+        "label": "of,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 980936,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Easy",
+    "question_text": "While some studies suggest that moderate coffee consumption may have health benefits, others do ____________________________________________________________________ they point to potential risks associated with high intake.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9809360,
+        "label": "not. However,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9809361,
+        "label": "not, however,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9809362,
+        "label": "not however",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9809363,
+        "label": "not; however,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

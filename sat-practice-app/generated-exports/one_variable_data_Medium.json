@@ -1,0 +1,352 @@
+[
+  {
+    "id": 169008,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The number of books read by $8$ students during summer vacation are recorded as follows: $2, 5, 8, 3, 5, 6, 7, 5$. What is the median number of books read by these students?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1690080,
+        "label": "5.1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1690081,
+        "label": "5",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1690082,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1690083,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 190438,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The weights, in pounds, of five packages are $20, 22, 25, 23$, and $x$. The mean and the median of these five weights are equal. Which of the following is NOT a possible value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1904380,
+        "label": "15",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1904381,
+        "label": "20",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1904382,
+        "label": "22.5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1904383,
+        "label": "25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 524430,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "A coffee shop owner recorded the number of customers served each hour for two different days. Which of the following statements about the means and medians of the number of customers served per hour for Day $1$ and Day $2$ is true?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//524430.png",
+    "options": [
+      {
+        "id": 5244300,
+        "label": "Only the means are different.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5244301,
+        "label": "Only the medians are different.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5244302,
+        "label": "Both the means and the medians are different.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5244303,
+        "label": "Neither the means nor the medians are different.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 536285,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The results of two independent surveys on student test scores are shown in the table. Which statement is true based on the table?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//536285.png",
+    "options": [
+      {
+        "id": 5362850,
+        "label": "The average score in Group X is lower than the average score in Group Y.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5362851,
+        "label": "Group Y contained the participant with the highest test score.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5362852,
+        "label": "The test scores in Group Y had a larger spread than the test scores in Group X.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5362853,
+        "label": "The median test score of Group X is larger than the median test score of Group Y.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 605168,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "A botanist categorizes seedlings into three groups based on their heights. In Group $X$, there are $20$ seedlings with heights less than $10$ cm. In Group $Y$, there are $18$ seedlings with heights at least $10$ cm but no more than $25$ cm. In Group $Z$, there are $15$ seedlings with heights greater than $25$ cm. Which of the following could be the median height, in centimeters, of these $53$ seedlings?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6051680,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6051681,
+        "label": "15",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6051682,
+        "label": "28",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6051683,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 609488,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "$$3, 12, 9$$ The mean of the list of numbers above is what fraction of the sum of the three numbers?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6094880,
+        "label": "$\\frac{1}{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6094881,
+        "label": "$\\frac{1}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6094882,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6094883,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 641422,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The number of books read by $9$ students in a summer reading program are recorded in four different lists below. For which list of books is the mean number of books read greater than the median number of books read?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6414220,
+        "label": "6, 6, 6, 6, 6, 6, 6, 6, 6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6414221,
+        "label": "2, 3, 4, 5, 6, 7, 8, 9, 10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6414222,
+        "label": "1, 2, 2, 3, 3, 3, 10, 20, 30",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6414223,
+        "label": "1, 1, 1, 5, 5, 5, 5, 10, 10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 843183,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The table shows the average monthly rent, in dollars, for a one-bedroom apartment in nine different cities in 2022 and 2023. Based on the information given in the table, how much greater was the median average monthly rent in these cities in 2023 than the median average monthly rent in 2022?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//843183.png",
+    "options": [
+      {
+        "id": 8431830,
+        "label": "$\\$150$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8431831,
+        "label": "$\\$100$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8431832,
+        "label": "$\\$200$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8431833,
+        "label": "$\\$250$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 880646,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "A set of data consists of thirteen consecutive integers. If $m$ represents the mean of this set and $p$ represents the median, what is the value of $|m-p|$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8806460,
+        "label": "0",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8806461,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8806462,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8806463,
+        "label": "-1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 882450,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Medium",
+    "question_text": "The scores of $8$ students on a quiz were initially recorded. The mean, median, range, and standard deviation of these scores were calculated. It was later discovered that the student with the highest recorded score actually scored $5$ points less than what was initially recorded. If the four values are recalculated using the corrected score, which value will remain unchanged?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8824500,
+        "label": "Mean",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8824501,
+        "label": "Median",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8824502,
+        "label": "Range",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8824503,
+        "label": "Standard deviation",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

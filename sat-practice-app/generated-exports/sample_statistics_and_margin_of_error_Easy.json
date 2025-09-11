@@ -1,0 +1,177 @@
+[
+  {
+    "id": 32383,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Easy",
+    "question_text": "A school has $600$ students. Ms. Lee randomly surveyed $30$ students and found that $12$ of them are members of the Math Club. Based on this survey, what is the best estimate of the total number of students in the school who are members of the Math Club?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 323830,
+        "label": "200",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 323831,
+        "label": "240",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 323832,
+        "label": "280",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 323833,
+        "label": "500",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 287979,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Easy",
+    "question_text": "At a large high school, $350$ students were selected at random and were asked in a survey about their favorite subject. All $350$ students completed the survey. It was estimated that $60\\%$ of the students reported Science as their favorite subject, with a margin of error of $4\\%$. Which of the following is the best interpretation of the survey results?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2879790,
+        "label": "The percent of the students at the school whose favorite subject is Science is 60%.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2879791,
+        "label": "The percent of the students at the school whose favorite subject is Science is less than 60%.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2879792,
+        "label": "Plausible values of the percent of the students at the school whose favorite subject is Science are between 56% and 64%.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2879793,
+        "label": "Plausible values of the number of students at the school who reported Science as their favorite subject are between 200 and 220.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 303649,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Easy",
+    "question_text": "In a survey of high school students, the average time spent studying per week from a random sample was $25$ hours, with an associated margin of error of $4$ hours. Which of the following is the most appropriate conclusion that can be made about the average weekly study time for all high school students in the population?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3036490,
+        "label": "It is less than 25 hours.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3036491,
+        "label": "It is greater than 25 hours.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3036492,
+        "label": "It is between 21 hours and 29 hours.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3036493,
+        "label": "It is less than 21 hours or greater than 29 hours.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 360318,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Easy",
+    "question_text": "A bakery produces $400$ loaves of bread each day. To ensure quality, a random sample of $25$ loaves is selected and inspected. On a particular day, $3$ loaves in the sample were found to be underbaked. Based on this sample, which of the following is the best estimate of the total number of underbaked loaves produced that day?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3603180,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3603181,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3603182,
+        "label": "48",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3603183,
+        "label": "75",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 403056,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Easy",
+    "question_text": "A quality control inspector at a factory randomly sampled $60$ light bulbs and found that $3$ were defective. If the factory produces $3,000$ light bulbs per day, approximately how many defective light bulbs would be expected to be produced in a day?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4030560,
+        "label": "50",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4030561,
+        "label": "150",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4030562,
+        "label": "300",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4030563,
+        "label": "600",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

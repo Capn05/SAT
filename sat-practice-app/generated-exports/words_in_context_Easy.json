@@ -1,0 +1,1297 @@
+[
+  {
+    "id": 1787,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While some critics found Toni Morrison's novel *Beloved* to be stylistically challenging, many praised its profound exploration of trauma and memory, arguing that its unconventional narrative structure was essential to conveying the story's complex and emotionally charged themes. For these readers, the novel's formal experimentation was not a flaw but rather an ___ aspect of its overall artistic achievement.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 17870,
+        "label": "incidental",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 17871,
+        "label": "integral",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 17872,
+        "label": "peripheral",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 17873,
+        "label": "extraneous",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 14855,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The following text is adapted from a scientific article about the behavior of ants.\n<br>\nAnts exhibit a remarkable ability to navigate complex environments. When foraging for food, they often follow trails left by their predecessors, which guide them efficiently to resources. However, if a trail becomes blocked or leads to a dead end, ants demonstrate a capacity to **deviate** from the established path and explore alternative routes.\n<br>\nAs used in the text, what does the word deviate mean?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 148550,
+        "label": "Distinguish",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 148551,
+        "label": "Depart",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 148552,
+        "label": "Deceive",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 148553,
+        "label": "Destroy",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 78093,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Despite the senator's reputation for delivering lengthy, meandering speeches, her address at the national convention was surprisingly __________, focusing on just the three key issues her campaign would prioritize.\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 780930,
+        "label": "verbose",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 780931,
+        "label": "laconic",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 780932,
+        "label": "garrulous",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 780933,
+        "label": "loquacious",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 139042,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The town of Willow Creek faced a severe drought last summer.  Initially, residents attempted to conserve water by limiting lawn watering and shortening showers. However, as the drought worsened and the town's reservoir level plummeted, these measures proved insufficient.  By late August, the town council was forced to implement much stricter regulations, hoping to __________ the remaining water supply and prevent complete depletion.\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1390420,
+        "label": "augment",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1390421,
+        "label": "exhaust",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1390422,
+        "label": "deplete",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1390423,
+        "label": "conserve",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 139712,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The following text is from a review of a musical performance. The critic listened intently to the performance. While some applauded enthusiastically, she remained unconvinced. She thought the singer’s technique was impressive, but ultimately, the sound of her voice lacked genuine emotion. Which word best completes the critic’s assessment: \"She thought the singer’s technique was impressive, but ultimately, the sound of her voice lacked ___\"?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1397120,
+        "label": "Quality",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1397121,
+        "label": "Noise",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1397122,
+        "label": "Volume",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1397123,
+        "label": "Audibility",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 148192,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Dr. Anya Sharma, a renowned astrophysicist, dedicated her career to studying distant galaxies.  After years of meticulous research and countless nights observing the cosmos, she finally achieved a major breakthrough: she developed a revolutionary new method to ___________ the age of galaxies with unprecedented accuracy.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1481920,
+        "label": "postulate",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1481921,
+        "label": "estimate",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1481922,
+        "label": "ignore",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1481923,
+        "label": "destroy",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 168293,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "To ensure the validity of their findings, researchers must be exceptionally __________ in their experimental design, meticulously documenting every variable, because even slight deviations can significantly influence the results and lead to unreliable conclusions.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1682930,
+        "label": "adaptable",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1682931,
+        "label": "methodical",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1682932,
+        "label": "impulsive",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1682933,
+        "label": "indifferent",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 174568,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Economists studying global trade patterns have observed that while the exchange of goods between nations has generally increased, certain tariffs and trade barriers can significantly _______ this growth, leading to economic friction.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1745680,
+        "label": "catalyze",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1745681,
+        "label": "impede",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1745682,
+        "label": "amplify",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1745683,
+        "label": "validate",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 181991,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While some critics initially dismissed Toni Morrison’s early novels as overly sentimental, others recognized in her work a powerful and unflinching exploration of American history and identity, arguing that her evocative prose actually _________ the emotional depth and complexity of the African American experience.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1819910,
+        "label": "minimized",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1819911,
+        "label": "obscured",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1819912,
+        "label": "belied",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1819913,
+        "label": "accentuated",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 261101,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Despite being written centuries ago, Jane Austen's novels continue to resonate with modern readers because of their _____________________________observations on human nature.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2611010,
+        "label": "outdated",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2611011,
+        "label": "insightful",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2611012,
+        "label": "complex",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2611013,
+        "label": "simplistic",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 264196,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Dr. Anya Sharma is renowned for her groundbreaking research on the migratory patterns of monarch butterflies. When studying their complex navigation system, she chose to use radio telemetry, a method involving attaching small radio transmitters to the butterflies to track their movements. This was a particularly ______ choice because radio telemetry allows for precise, real-time tracking of individual insects over vast distances.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2641960,
+        "label": "insightful",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2641961,
+        "label": "practical",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2641962,
+        "label": "conventional",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2641963,
+        "label": "unexpected",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 275459,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While some historians argue that the invention of the printing press led to a rapid and widespread increase in literacy, others maintain that its initial impact was more __________.  They point to the fact that books were still expensive and primarily accessible to the wealthy elite for several decades after Gutenberg's innovation.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2754590,
+        "label": "substantial",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2754591,
+        "label": "localized",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2754592,
+        "label": "universal",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2754593,
+        "label": "revolutionary",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 278520,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Economists once believed that deflation, a general decline in prices for goods and services, invariably leads to economic recession. However, recent studies of economies experiencing mild deflation have _________ that this is not always the case.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2785200,
+        "label": "insinuated",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2785201,
+        "label": "postulated",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2785202,
+        "label": "demonstrated",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2785203,
+        "label": "assumed",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 289564,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Even though the professor’s lecture on quantum physics was highly theoretical, she aimed to _______ the core concepts for the undergraduate students.  Which choice completes the text with the most logical and precise word or phrase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2895640,
+        "label": "summarize",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2895641,
+        "label": "complicate",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2895642,
+        "label": "disregard",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2895643,
+        "label": "clarify",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 302825,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While classical music is often perceived as rigid and structured, many composers found ways to express profound emotional depth within its forms.  Beethoven, for instance, pushed the boundaries of sonata form, using dynamic shifts and harmonic complexity to imbue his symphonies with a sense of dramatic ______.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3028250,
+        "label": "precision",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3028251,
+        "label": "intensity",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3028252,
+        "label": "restraint",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3028253,
+        "label": "ornamentation",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 308398,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The following text is adapted from a historical account of early aviation.   “The biplane, a marvel of its age, sputtered to life on the grassy field.  The pilot, with a determined glint in his eye, adjusted his goggles and signaled to the ground crew.  As the engine roared, the aircraft began its lumbering roll across the uneven terrain, slowly but surely **gaining** momentum.”  As used in the text, what does the word “gaining” most nearly mean?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3083980,
+        "label": "Acquiring",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3083981,
+        "label": "Benefiting",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3083982,
+        "label": "Winning",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3083983,
+        "label": "Appreciating",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 314322,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Early writing systems were initially very complex, often employing hundreds of symbols. As societies grew and the need for widespread communication increased, writing systems gradually ____, becoming more efficient and accessible to a wider population.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3143220,
+        "label": "complicated",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3143221,
+        "label": "stagnated",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3143222,
+        "label": "simplified",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3143223,
+        "label": "expanded",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 400970,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While some initial studies suggested a correlation between smartphone use and decreased attention spans, more recent, longitudinal research, incorporating larger participant groups and refined methodologies, has largely _________ these earlier conclusions.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4009700,
+        "label": "bolstered",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4009701,
+        "label": "undermined",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4009702,
+        "label": "qualified",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4009703,
+        "label": "reiterated",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 451182,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While some critics lauded the film's ambitious scope and intricate plot, others found its narrative structure overly ____, claiming that the constant shifts in timeline and perspective ultimately detracted from the viewing experience.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4511820,
+        "label": "convoluted",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4511821,
+        "label": "transparent",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4511822,
+        "label": "conventional",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4511823,
+        "label": "predictable",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 455081,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The old wooden bridge, despite its age, was remarkably **sound**. Inspectors had examined it thoroughly, and found no signs of decay or weakness. The community relied on it daily.\n<br>\nAs used in the text, what does the word sound mean?\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4550810,
+        "label": "Noiseless",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4550811,
+        "label": "Healthy",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4550812,
+        "label": "Secure",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4550813,
+        "label": "Durable",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 467639,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Initially met with skepticism, artificial sweeteners, such as aspartame and sucralose, have become increasingly prevalent in the food industry. Their ability to provide sweetness without the caloric content of sugar offered a __________________________ alternative for manufacturers looking to cater to health-conscious consumers.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4676390,
+        "label": "appealing",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4676391,
+        "label": "necessary",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4676392,
+        "label": "controversial",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4676393,
+        "label": "novel",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 489405,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While social media platforms were initially hailed as tools for connecting people across distances, some critics argue that the constant stream of information and superficial interactions can actually ____________ genuine human connection.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4894050,
+        "label": "fostering",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4894051,
+        "label": "diminishing",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4894052,
+        "label": "amplifying",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4894053,
+        "label": "guaranteeing",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 617968,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Botanist Maria Merian was fascinated by insects and their transformations. Departing from the common practice of illustrating preserved specimens, Merian meticulously observed and painted insects in their natural habitats. Her detailed engravings, showcasing the full life cycle of insects and their interactions with host plants, served to ______ scientific understanding of entomology in the seventeenth century.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6179680,
+        "label": "restrict",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6179681,
+        "label": "obfuscate",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6179682,
+        "label": "illuminate",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6179683,
+        "label": "complicate",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 618958,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Although initially intimidated by the complexity of sourdough baking, Marcus was surprised to find that with careful instruction and practice, the process became quite ________. He started by following simple recipes and gradually moved on to more intricate techniques.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6189580,
+        "label": "routine",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6189581,
+        "label": "unpredictable",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6189582,
+        "label": "demanding",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6189583,
+        "label": "laborious",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 730070,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "In the early twentieth century, as radio broadcasting became increasingly widespread, political campaigns _____________________________ the new medium to reach a larger electorate, recognizing its potential to disseminate their messages directly into people's homes.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7300700,
+        "label": "utilized",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7300701,
+        "label": "avoided",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7300702,
+        "label": "questioned",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7300703,
+        "label": "overlooked",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 756515,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Renowned art critic, Alistair Finch, carefully examined the abstract painting, striving to ____________________ the artist's intentions, particularly focusing on the vibrant use of color and bold brushstrokes as clues to the underlying emotional narrative.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7565150,
+        "label": "discern",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7565151,
+        "label": "ignore",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7565152,
+        "label": "enhance",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7565153,
+        "label": "question",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 767655,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Paleontologist Stephen Jay Gould emphasized the idea of punctuated equilibrium, suggesting that evolutionary change isn't always a gradual progression. Instead, species often remain largely unchanged for long periods, and then experience rapid bursts of evolution. This view challenged the traditional understanding that evolution is a slow, continuous process, arguing that the fossil record’s gaps weren't imperfections in the data, but rather ____________________________ of evolution itself.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7676550,
+        "label": "misinterpretations",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7676551,
+        "label": "reflections",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7676552,
+        "label": "fabrications",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7676553,
+        "label": "exaggerations",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 767897,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Art historian Dr. Anya Sharma argues that Frida Kahlo's later self-portraits, characterized by their bolder colors and direct gaze, represent a ___________ departure from her earlier, more traditional style, reflecting her growing artistic confidence.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7678970,
+        "label": "radical",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7678971,
+        "label": "tentative",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7678972,
+        "label": "hesitant",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7678973,
+        "label": "typical",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 773349,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The following text is from a science article about bird migration.<br>\nScientists have long been puzzled by the navigational abilities of migratory birds.  While many theories exist, a recent study suggests that birds may utilize the Earth's magnetic field as a compass.  This remarkable sense, often referred to as magnetoreception, allows birds to **practice** incredible feats of long-distance navigation, guiding them across continents and oceans with astonishing accuracy.\n<br>\nAs used in the text, what does the word practice mean?\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7733490,
+        "label": "Exercise",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7733491,
+        "label": "Perform",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7733492,
+        "label": "Rehearse",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7733493,
+        "label": "Study",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 781778,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The scientific community lauded the ____________________ endeavors of the international research teams, whose combined expertise resulted in a significant breakthrough in cancer treatment.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7817780,
+        "label": "competitive",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7817781,
+        "label": "independent",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7817782,
+        "label": "solitary",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7817783,
+        "label": "collaborative",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 789272,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "While the ancient Greeks are renowned for their advancements in philosophy and democracy, their approach to science was often characterized by abstract reasoning rather than empirical observation.  Consequently, when explaining natural phenomena, they frequently relied on elaborate theoretical constructs that, while intellectually stimulating, were not always grounded in verifiable ___________.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7892720,
+        "label": "speculation",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7892721,
+        "label": "evidence",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7892722,
+        "label": "intuition",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7892723,
+        "label": "imagination",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 810987,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "In the early 2000s, Nokia was the leading mobile phone manufacturer.  Before the rise of smartphones, the Finnish company had achieved significant market share, and its devices were known for their durability and user-friendliness. Nokia's _________ by the introduction of devices like the Apple iPhone and the rise of Android operating systems.  Which choice completes the text with the most logical and precise word or phrase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8109870,
+        "label": "supremacy",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8109871,
+        "label": "innovation",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8109872,
+        "label": "obscurity",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8109873,
+        "label": "vulnerability",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 854882,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Early photography techniques, especially the daguerreotype process, \\_\\_\\_\\_\\_\\_ modern photography, serving as a significant step towards capturing images permanently and impacting visual culture.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8548820,
+        "label": "influenced",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8548821,
+        "label": "resisted",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8548822,
+        "label": "complicated",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8548823,
+        "label": "mirrored",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 902354,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The chameleon’s skin color is remarkable because it __________________ to its surroundings, allowing it to blend seamlessly with leaves, bark, or even brightly colored flowers. This ability is a crucial element of its survival strategy, helping it to evade predators and ambush prey.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9023540,
+        "label": "conforms",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9023541,
+        "label": "changes",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9023542,
+        "label": "reacts",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9023543,
+        "label": "ignores",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 923279,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Botanist Maria Santos studies the flora of the Amazon rainforest.  She hypothesized that introducing a specific non-native orchid species to a degraded section of the forest would ____________________________ the biodiversity of the area, because orchids often create symbiotic relationships with various insects and fungi, thus supporting a wider range of life.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9232790,
+        "label": "bolster",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9232791,
+        "label": "supplant",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9232792,
+        "label": "disregard",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9232793,
+        "label": "undermine",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 954285,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "Despite facing numerous setbacks in her early experiments, chemist Marie Maynard Daly remained remarkably ________ in her pursuit of scientific discovery. This unwavering focus ultimately led to her groundbreaking research on the relationship between cholesterol and heart disease.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9542850,
+        "label": "curious",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9542851,
+        "label": "persistent",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9542852,
+        "label": "recognized",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9542853,
+        "label": "innovative",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 998232,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 22,
+    "difficulty": "Easy",
+    "question_text": "The following text is adapted from a historical account of early computing. \n<br>\nAda Lovelace understood the potential of Charles Babbage's Analytical Engine beyond mere calculation. She saw it as a machine capable of manipulating symbols and creating patterns, harboring a nascent notion of what we now call computer programming.  \n<br>\nAs used in the text, what does 'nascent notion' mean?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9982320,
+        "label": "Whim",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9982321,
+        "label": "Understanding",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9982322,
+        "label": "Idea",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9982323,
+        "label": "Fact",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

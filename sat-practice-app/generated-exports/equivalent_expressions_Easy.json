@@ -1,0 +1,562 @@
+[
+  {
+    "id": 55118,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $3x^2(2x-1)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 551180,
+        "label": "$6x^3 - x^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 551181,
+        "label": "$5x^3 - 3x^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 551182,
+        "label": "$6x^3 - 3x^2$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 551183,
+        "label": "$6x^4 - 3x^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 77367,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $4(y - 1) + 3$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 773670,
+        "label": "$4y - 7$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 773671,
+        "label": "$4y + 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 773672,
+        "label": "$4y - 1$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 773673,
+        "label": "$4y - 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 117735,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $7p - 7q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1177350,
+        "label": "$7pq$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1177351,
+        "label": "$7(p - q)$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1177352,
+        "label": "$14q$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1177353,
+        "label": "$14p$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 265977,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $(3xy)(z)(4x)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2659770,
+        "label": "$12x^2yz$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2659771,
+        "label": "$7x^2yz$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2659772,
+        "label": "$12xyz$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2659773,
+        "label": "$7xyz$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 313031,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $3y^2 + 12y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3130310,
+        "label": "$3y(y + 4)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3130311,
+        "label": "$3y(y + 12)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3130312,
+        "label": "$12y(y + 1)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3130313,
+        "label": "$4y(y + 3)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 394543,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $(3x^2 + 5x - 2) - (x^2 - 2x + 1)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3945430,
+        "label": "$2x^2 + 7x - 3$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3945431,
+        "label": "$2x^2 + 3x - 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3945432,
+        "label": "$4x^2 + 3x - 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3945433,
+        "label": "$2x^2 + 7x + 3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 402167,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $2(y - 4) + 7$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4021670,
+        "label": "$2y - 15$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4021671,
+        "label": "$2y + 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4021672,
+        "label": "$2y + 15$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4021673,
+        "label": "$2y - 1$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 422185,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $(3y + 7) - (y - 2)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4221850,
+        "label": "$2y + 5$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4221851,
+        "label": "$2y + 9$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4221852,
+        "label": "$4y + 9$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4221853,
+        "label": "$2y - 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 456790,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "The expression $3x^2 + bx$ is equivalent to $x(3x + 5)$ for some constant $b$. What is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4567900,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4567901,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4567902,
+        "label": "5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4567903,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 623007,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to the sum of $(2x^3 + 3x - 4)$ and $(x^3 - x^2 + 5)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6230070,
+        "label": "$3x^3 + x^2 + 3x + 1$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6230071,
+        "label": "$3x^3 + 3x + 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6230072,
+        "label": "$3x^3 - x^2 + 3x + 1$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6230073,
+        "label": "$2x^3 - x^2 + 3x + 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 625071,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which of the following expressions is equivalent to $5(a^3 + 2a) - 2(a^3 + 2a)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6250710,
+        "label": "$3a^3+6a$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6250711,
+        "label": "$3a^6+6a^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6250712,
+        "label": "$7a^3+14a$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6250713,
+        "label": "$7a^6+14a^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 690322,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "$$(3x^2 - 2)(x^2 + 4)$$ Which of the following is equivalent to the expression above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6903220,
+        "label": "$3x^4 + 12x^2 - 8$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6903221,
+        "label": "$3x^4 + 10x^2 - 8$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6903222,
+        "label": "$3x^4 - 10x^2 - 8$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6903223,
+        "label": "$3x^4 - 8$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 706644,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $15x + 35$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7066440,
+        "label": "$3(5x + 7)$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7066441,
+        "label": "$5(5x + 7)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7066442,
+        "label": "$5(3x + 7)$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7066443,
+        "label": "$7(2x + 5)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 726687,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $49x^2 - 144$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7266870,
+        "label": "$(7x - 12)(7x + 12)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7266871,
+        "label": "$(7x - 12)(7x - 12)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7266872,
+        "label": "$(49x - 12)(49x + 12)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7266873,
+        "label": "$(7x + 12)(7x + 12)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 739488,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $15 + x^2 + 7$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7394880,
+        "label": "$x^2 + 12$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7394881,
+        "label": "$x^2 + 22$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7394882,
+        "label": "$x^2 + 21$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7394883,
+        "label": "$x^2 + 29$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 998073,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Easy",
+    "question_text": "Which expression is equivalent to $7a + 3a + 8b - 2b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9980730,
+        "label": "$4a + 6b$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9980731,
+        "label": "$10a + 10b$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9980732,
+        "label": "$11a + 5b$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9980733,
+        "label": "$10a + 6b$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

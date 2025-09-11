@@ -1,0 +1,702 @@
+[
+  {
+    "id": 61035,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "The graph of a nonlinear equation is shown. What is the solution to the equation when $y = 4$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//61035.png",
+    "options": [
+      {
+        "id": 610350,
+        "label": "-1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 610351,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 610352,
+        "label": "1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 610353,
+        "label": "2",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 80412,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "What is the product of the solutions to the given equation? $$(x+3)(x-5)(x+1) = 0$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 804120,
+        "label": "15",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 804121,
+        "label": "-15",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 804122,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 804123,
+        "label": "1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 121353,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$7x^2 = 112$$ What is the positive solution to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1213530,
+        "label": "4",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1213531,
+        "label": "-4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1213532,
+        "label": "16",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1213533,
+        "label": "-16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 156499,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "The equation $m = \\frac{7\\sqrt{n}}{p}$ relates the distinct positive numbers $m$, $n$, and $p$. Which equation correctly expresses $p$ in terms of $m$ and $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1564990,
+        "label": "$p = \\frac{7\\sqrt{n}}{m}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1564991,
+        "label": "$p = \\frac{7m}{\\sqrt{n}}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1564992,
+        "label": "$p = 7\\sqrt{n} \\cdot m$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1564993,
+        "label": "$p = 7m - \\sqrt{n}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 209846,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$y = x^2 - x - 2$$ $$y = 2 - x$$ If the ordered pair $(x, y)$ satisfies the system of equations above, what is one possible value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2098460,
+        "label": "-2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2098461,
+        "label": "-1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2098462,
+        "label": "0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2098463,
+        "label": "1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 219351,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "The power $P$ (in watts) dissipated by a resistor in an electrical circuit is given by the formula $P = \\frac{V^2}{R}$, where $V$ is the voltage (in volts) across the resistor and $R$ is the resistance (in ohms). Which of the following correctly expresses the resistance in terms of the power and the voltage?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2193510,
+        "label": "$R = \\frac{V^2}{P}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2193511,
+        "label": "$R = \\frac{P}{V^2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2193512,
+        "label": "$R = \\frac{V}{P^2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2193513,
+        "label": "$R = \\sqrt{\\frac{P}{V}}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 250245,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "In physics, the force $F$ in Newtons required to accelerate an object is related to its acceleration $a$ in meters per second squared. For a particular object, this relationship is modeled by the equation $F = \\frac{3}{5}a$. Which of the following expresses the acceleration of the object in terms of the force applied?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2502450,
+        "label": "$a = \\frac{5}{3}F$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2502451,
+        "label": "$a = \\frac{3}{5}F$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2502452,
+        "label": "$a = \\frac{5}{3} + F$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2502453,
+        "label": "$a = \\frac{3}{5} + F$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 313617,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$y = 2x - 1$$ $$y = x^2 - 1$$ If $(x, y)$ is a solution to the system of equations above, which of the following could be the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3136170,
+        "label": "-2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3136171,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3136172,
+        "label": "2",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3136173,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 319380,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "What is the positive solution to the equation $3x^2 - x - 10 = 0$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3193800,
+        "label": "1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3193801,
+        "label": "$\\frac{5}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3193802,
+        "label": "2",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3193803,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 325957,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$y = x^2 + 5$$ $$y = 9$$ When the equations above are graphed in the $xy$-plane, what are the coordinates $(x, y)$ of the points of intersection of the two graphs?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3259570,
+        "label": "(2, 9) and (-2, 9)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3259571,
+        "label": "(3, 9) and (-3, 9)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3259572,
+        "label": "(4, 9) and (-4, 9)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3259573,
+        "label": "(2, 14) and (-2, 14)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 350903,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "If the equation $x^2 - bx + 18 = 0$ where $b$ is a constant and $b > 0$ has two integer solutions, what is a possible value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3509030,
+        "label": "9",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3509031,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3509032,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3509033,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 385529,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is a solution to the equation $(x + 1)(x + 4) = (x - 1)(x - 2) + 18$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3855290,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3855291,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3855292,
+        "label": "-2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3855293,
+        "label": "4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 440080,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$x + y = 13$$ $$xy = 40$$ If one solution to the system of equations above is $(x, y)$, what is one possible value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4400800,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4400801,
+        "label": "13",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4400802,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4400803,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 613790,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "The cost $C$, in dollars, to convert euros to dollars at a foreign exchange kiosk is given by the formula $C = 0.05(E - 10)$, where $E$ is the amount of euros being converted. Which of the following expresses the amount of euros in terms of the cost in dollars?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6137900,
+        "label": "$E = 20C - 10$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6137901,
+        "label": "$E = 0.05C + 10$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6137902,
+        "label": "$E = 0.05C - 10$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6137903,
+        "label": "$E = 20C + 10$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 659251,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "In electrical circuits, the voltage $V$ across a resistor is related to the current $I$ flowing through it and the resistance $R$ by Ohm's Law: $V = IR$. A circuit is designed such that the voltage is measured in millivolts and the current in microamperes, while the resistance is measured in kiloohms. Which of the following correctly expresses the resistance $R$ in terms of the voltage $V$ and the current $I$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6592510,
+        "label": "$R = \\frac{V}{I}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6592511,
+        "label": "$R = \\frac{I}{V}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6592512,
+        "label": "$R = VI$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6592513,
+        "label": "$R = V - I$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 667047,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "A system of equations consists of a quadratic equation representing a circle and a linear equation. The equations in this system are: $$x^2 + y^2 = 25$$ $$y = x + 10$$ How many solutions does this system have?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6670470,
+        "label": "0",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6670471,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6670472,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6670473,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 697190,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "$$y = x^2$$ $$y - 5 = x - 3$$ If $(x, y)$ is a solution of the system of equations above and $x > 0$, what is the value of $xy$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6971900,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6971901,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6971902,
+        "label": "8",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6971903,
+        "label": "16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 793534,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "The power $P$ dissipated by a resistor in a circuit is given by the formula $P = \\frac{V^2}{R}$, where $V$ is the voltage across the resistor and $R$ is the resistance. What is the resistance $R$ in terms of $P$ and $V$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7935340,
+        "label": "$R = \\frac{V^2}{P}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7935341,
+        "label": "$R = \\frac{P}{V^2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7935342,
+        "label": "$R = \\frac{V}{P}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7935343,
+        "label": "$R = PV^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 875317,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "In the equation $y = mx^2 + n$, $m$ and $n$ are positive constants. How many times does the graph of the equation above intersect the graph of the equation $y = -2n$ in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8753170,
+        "label": "Zero",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8753171,
+        "label": "One",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8753172,
+        "label": "Two",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8753173,
+        "label": "More than two",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 924660,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 2,
+    "difficulty": "Medium",
+    "question_text": "If $m$ is a solution of the equation $x^2 - 7x - 18 = 0$ and $m < 0$, what is the value of $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9246600,
+        "label": "-2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9246601,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9246602,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9246603,
+        "label": "-9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

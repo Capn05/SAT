@@ -1,0 +1,282 @@
+[
+  {
+    "id": 56706,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The graph above shows the relationship between the number of hours a student studies for a test and their score on the test, in points. Approximately how many more points will a student score if they study for $8$ hours than if they study for $4$ hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//56706.png",
+    "options": [
+      {
+        "id": 567060,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 567061,
+        "label": "20",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 567062,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 567063,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 228696,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The scatterplot shows the number of daily visitors, $y$, to a museum recorded over several months, $x$, since its grand reopening in March. During which of the following time periods did the greatest increase in the number of daily visitors take place?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//228696.png",
+    "options": [
+      {
+        "id": 2286960,
+        "label": "From $x = 2$ to $x = 3$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2286961,
+        "label": "From $x = 4$ to $x = 5$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2286962,
+        "label": "From $x = 6$ to $x = 7$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2286963,
+        "label": "From $x = 1$ to $x = 2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 382344,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The scatterplot above shows the fuel efficiency, in miles per gallon (mpg), of $7$ car models with respect to their engine size, in liters (L). The line of best fit is also shown. A new car model has an engine size of $3.2$ liters. According to the line of best fit, which of the following best approximates the fuel efficiency of this car model, in miles per gallon?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.33.55%20PM.png",
+    "options": [
+      {
+        "id": 3823440,
+        "label": "23",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3823441,
+        "label": "25",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3823442,
+        "label": "27",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3823443,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 403389,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The scatterplot above shows the relationship between the number of hours students studied for a test and their test scores.  According to the line of best fit for the data, which of the following is closest to the predicted test score for a student who studied for $3.5$ hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//403389.png",
+    "options": [
+      {
+        "id": 4033890,
+        "label": "85",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4033891,
+        "label": "88",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4033892,
+        "label": "90",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4033893,
+        "label": "93",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 654073,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The scatterplot shows the relationship between the number of hours spent exercising per week and the resting heart rate, in beats per minute (bpm), for $12$ adults. Based on the scatterplot, what is the approximate resting heart rate, in bpm, for an adult who exercises $5$ hours per week?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.58.22%20PM.png",
+    "options": [
+      {
+        "id": 6540730,
+        "label": "65",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6540731,
+        "label": "60",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6540732,
+        "label": "55",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6540733,
+        "label": "50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 727608,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "A student recorded the number of hours they studied and their corresponding test scores for five different tests. The scatterplot shows this data for study hours and test scores. The $x$-coordinate represents the study hours and the $y$-coordinate represents the test score. What was the test score the student received when they studied for $3$ hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//727608.png",
+    "options": [
+      {
+        "id": 7276080,
+        "label": "80",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7276081,
+        "label": "70",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7276082,
+        "label": "85",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7276083,
+        "label": "90",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 751117,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "Each dot in the scatterplot above represents the number of hours students studied per week and their corresponding exam scores in a class. The line of best fit for the data is also shown. According to the line of best fit, what is the predicted exam score, rounded to the nearest 10, for a student who studies for 15 hours per week?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.30.55%20PM.png",
+    "options": [
+      {
+        "id": 7511170,
+        "label": "80",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7511171,
+        "label": "90",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7511172,
+        "label": "100",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7511173,
+        "label": "70",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 983144,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Easy",
+    "question_text": "The scatterplot above shows the number of hours students studied for a test and their corresponding test scores. A line of best fit for the data is also shown. According to the line of best fit, what test score is predicted for a student who studied for 5 hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-20%20at%2012.01.49%20AM.png",
+    "options": [
+      {
+        "id": 9831440,
+        "label": "78",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9831441,
+        "label": "81",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9831442,
+        "label": "84",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9831443,
+        "label": "87",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

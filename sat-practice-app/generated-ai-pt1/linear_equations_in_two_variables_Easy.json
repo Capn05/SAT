@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "b7a1f4e9-5af7-4e0d-b0a5-6b3f3f5c9a45",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Easy",
+      "question_text": "In the $xy$-plane, a line has slope $\\frac{1}{2}$ and passes through the point $(0, -4)$. Which of the following is an equation of the line?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2a0a9b4e-6d92-44a9-8e2c-6a2c5d01bd5c",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Easy",
+      "question_text": "The $x$-intercept of the graph of $y = -3x + 12$ in the $xy$-plane is $(x, 0)$. What is the value of $x$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6d0ec4e8-3a75-4b76-9cf8-8de0a2e7d2c2",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Easy",
+      "question_text": "$$4x+3y=33$$ A store sells notebooks for \\$4 each and pens for \\$3 each. The equation above represents the total cost in dollars, where $x$ is the number of notebooks and $y$ is the number of pens. If a customer buys $3$ notebooks, how many pens were purchased?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "b4a1f0d1-13d3-4d64-9a0e-8b5c0f5e2a10",
+      "question_id": "b7a1f4e9-5af7-4e0d-b0a5-6b3f3f5c9a45",
+      "value": "A",
+      "label": "$y = \\frac{1}{2}x - 4$",
+      "is_correct": true
+    },
+    {
+      "id": "7db8b0ef-4a2f-4e2f-bd25-2d9c7b7c2e6a",
+      "question_id": "b7a1f4e9-5af7-4e0d-b0a5-6b3f3f5c9a45",
+      "value": "B",
+      "label": "$y = -\\frac{1}{2}x - 4$",
+      "is_correct": false
+    },
+    {
+      "id": "3f7c1b83-0f28-4f31-8b56-41a3d0ae4906",
+      "question_id": "b7a1f4e9-5af7-4e0d-b0a5-6b3f3f5c9a45",
+      "value": "C",
+      "label": "$y = \\frac{1}{2}x + 4$",
+      "is_correct": false
+    },
+    {
+      "id": "f67ef9b2-2c56-4e44-a8f9-8a0eef9db0f8",
+      "question_id": "b7a1f4e9-5af7-4e0d-b0a5-6b3f3f5c9a45",
+      "value": "D",
+      "label": "$y = 2x - 4$",
+      "is_correct": false
+    },
+    {
+      "id": "c2f61490-6b2c-4c3c-908a-2dbf3fc4b3ea",
+      "question_id": "2a0a9b4e-6d92-44a9-8e2c-6a2c5d01bd5c",
+      "value": "A",
+      "label": "-4",
+      "is_correct": false
+    },
+    {
+      "id": "41a68d11-64d1-4dc0-a45b-257b1027f370",
+      "question_id": "2a0a9b4e-6d92-44a9-8e2c-6a2c5d01bd5c",
+      "value": "B",
+      "label": "0",
+      "is_correct": false
+    },
+    {
+      "id": "0f1e6c7a-2ac2-4f2a-bb88-14a035ec19bf",
+      "question_id": "2a0a9b4e-6d92-44a9-8e2c-6a2c5d01bd5c",
+      "value": "C",
+      "label": "3",
+      "is_correct": false
+    },
+    {
+      "id": "e8c0f0a3-3d89-4a3c-bfa1-4f85ce0afbc9",
+      "question_id": "2a0a9b4e-6d92-44a9-8e2c-6a2c5d01bd5c",
+      "value": "D",
+      "label": "4",
+      "is_correct": true
+    },
+    {
+      "id": "a4e55b7a-99f5-4f84-90d1-2b6b3d9b9e01",
+      "question_id": "6d0ec4e8-3a75-4b76-9cf8-8de0a2e7d2c2",
+      "value": "A",
+      "label": "5",
+      "is_correct": false
+    },
+    {
+      "id": "d1cbbf7b-2a8e-44a1-8c47-4e53a2b03969",
+      "question_id": "6d0ec4e8-3a75-4b76-9cf8-8de0a2e7d2c2",
+      "value": "B",
+      "label": "7",
+      "is_correct": true
+    },
+    {
+      "id": "8f3e3a52-8e2f-4b24-9e71-7d6f9bf3e235",
+      "question_id": "6d0ec4e8-3a75-4b76-9cf8-8de0a2e7d2c2",
+      "value": "C",
+      "label": "6",
+      "is_correct": false
+    },
+    {
+      "id": "9c4b5fd3-3e72-4f2d-9a3b-97eb5c6d7a92",
+      "question_id": "6d0ec4e8-3a75-4b76-9cf8-8de0a2e7d2c2",
+      "value": "D",
+      "label": "8",
+      "is_correct": false
+    }
+  ]
+}

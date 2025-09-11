@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "1c2bc908-3f0c-4a22-9c7d-25a3a1c85c08",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 27,
+      "difficulty": "Easy",
+      "question_text": "To accommodate students preparing for exams, the Westside Library extended its weekday closing time from 8 p.m. to 11 p.m. for one month. During that month, the number of evening visits between 8 p.m. and 11 p.m. rose by 40%, while midday visits remained essentially unchanged. Staff reported no new programs or promotions during the trial. These observations most strongly support which inference?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5a4a2a63-b9b2-4b69-9f2d-2e3e4c597d2a",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 27,
+      "difficulty": "Easy",
+      "question_text": "In a controlled indoor horticulture study, researchers grew the same plant species under two lighting conditions: standard white LEDs and blue-enriched LEDs. All plants received identical water and nutrients. After six weeks, plants under blue-enriched light had shorter stems and more densely spaced leaves, while plants under standard white light were taller with longer spaces between leaves. Both groups appeared healthy. These findings suggest that  Which choice most logically completes the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e3c1a7c9-85bf-4a46-9b4a-2db7fbe2c1f1",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 27,
+      "difficulty": "Easy",
+      "question_text": "An email service introduced an optional two-step verification feature. Over the next three months, accounts that enabled the feature experienced a 60% reduction in security breaches, and users who enabled it reported an average increase of about 5 seconds in sign-in time. No comparable changes were observed among users who did not enable the feature. Therefore, it is reasonable to conclude that  Which choice most logically completes the text?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "9fb922f3-0d1e-4c12-9c0e-7f4eb604d9a9",
+      "question_id": "1c2bc908-3f0c-4a22-9c7d-25a3a1c85c08",
+      "value": "A",
+      "label": "Students reduced their overall library use because the building stayed open later.",
+      "is_correct": false
+    },
+    {
+      "id": "a7d1a9a6-6d34-4f97-8f7b-1af228a1f1a7",
+      "question_id": "1c2bc908-3f0c-4a22-9c7d-25a3a1c85c08",
+      "value": "B",
+      "label": "Midday services were inferior to evening services during the trial period.",
+      "is_correct": false
+    },
+    {
+      "id": "c3f04739-8cd1-4cf6-a47a-4dbf2d7c6a78",
+      "question_id": "1c2bc908-3f0c-4a22-9c7d-25a3a1c85c08",
+      "value": "C",
+      "label": "Earlier closing times had previously discouraged many potential evening visitors.",
+      "is_correct": true
+    },
+    {
+      "id": "5e9c8a2d-6b47-4ec4-8e62-3dbba50d26a8",
+      "question_id": "1c2bc908-3f0c-4a22-9c7d-25a3a1c85c08",
+      "value": "D",
+      "label": "The extended hours directly increased the size of the library’s collection.",
+      "is_correct": false
+    },
+    {
+      "id": "c8f2bc5f-4a6b-4a31-9b7b-fb5f5a8aaf2f",
+      "question_id": "5a4a2a63-b9b2-4b69-9f2d-2e3e4c597d2a",
+      "value": "A",
+      "label": "blue-enriched light may encourage compact, bushier plant growth relative to standard lighting.",
+      "is_correct": true
+    },
+    {
+      "id": "903bc5b1-7cf9-47a3-83c0-7a1b0e0b6c4d",
+      "question_id": "5a4a2a63-b9b2-4b69-9f2d-2e3e4c597d2a",
+      "value": "B",
+      "label": "blue-enriched light prevents plants from photosynthesizing effectively.",
+      "is_correct": false
+    },
+    {
+      "id": "4d827f6f-27a3-4b9b-8e1a-48a9c6f3e0cb",
+      "question_id": "5a4a2a63-b9b2-4b69-9f2d-2e3e4c597d2a",
+      "value": "C",
+      "label": "standard white lighting causes nutrient deficiencies in plants.",
+      "is_correct": false
+    },
+    {
+      "id": "1a69b7f0-7bd5-4a3b-b5ea-547de6bd3b39",
+      "question_id": "5a4a2a63-b9b2-4b69-9f2d-2e3e4c597d2a",
+      "value": "D",
+      "label": "plant height is determined only by genetics and not influenced by lighting conditions.",
+      "is_correct": false
+    },
+    {
+      "id": "6db0c9c4-3851-4fad-84ca-5c47f1bb2aed",
+      "question_id": "e3c1a7c9-85bf-4a46-9b4a-2db7fbe2c1f1",
+      "value": "A",
+      "label": "two-step verification eliminated all security breaches across the platform.",
+      "is_correct": false
+    },
+    {
+      "id": "d72d1c20-0f46-4ce2-9d0e-1fbf64db76a2",
+      "question_id": "e3c1a7c9-85bf-4a46-9b4a-2db7fbe2c1f1",
+      "value": "B",
+      "label": "most users chose to enable two-step verification during the study period.",
+      "is_correct": false
+    },
+    {
+      "id": "ddf3f5f4-88c9-4f4a-bf45-8bb3e851b2ac",
+      "question_id": "e3c1a7c9-85bf-4a46-9b4a-2db7fbe2c1f1",
+      "value": "C",
+      "label": "the service simultaneously strengthened password rules for all accounts.",
+      "is_correct": false
+    },
+    {
+      "id": "3f0d1c5b-574b-4a91-8dbe-1b6a57a20d58",
+      "question_id": "e3c1a7c9-85bf-4a46-9b4a-2db7fbe2c1f1",
+      "value": "D",
+      "label": "enabling two-step verification substantially improves account security at the cost of a small added sign-in delay.",
+      "is_correct": true
+    }
+  ]
+}

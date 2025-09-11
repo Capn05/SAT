@@ -1,0 +1,212 @@
+[
+  {
+    "id": 453403,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "The table shows the distribution of students in a high school according to whether they participate in the Math Club and the Science Club. To the nearest tenth of a percent, what percent of students in the Math Club do not participate in the Science Club?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//453403.png",
+    "options": [
+      {
+        "id": 4534030,
+        "label": "$10.0\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4534031,
+        "label": "$25.0\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4534032,
+        "label": "$28.6\\%$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4534033,
+        "label": "$35.0\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 679340,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "At a local high school, a survey was conducted among students to determine their participation in after-school activities. The survey recorded whether students participated in sports and whether they participated in music clubs. The results are summarized in the table. If a student who participates in music clubs is selected at random, which of the following is closest to the probability that the student also participates in sports?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//679340.png",
+    "options": [
+      {
+        "id": 6793400,
+        "label": "0.15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6793401,
+        "label": "0.25",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6793402,
+        "label": "0.38",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6793403,
+        "label": "0.60",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 701584,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "The table shows the number of customer service ratings received by a company during Week 1 and Week 2. Customers rated the service on a scale of $0$ to $5$, with $5$ being the highest rating. Assume each customer provided a rating only once. If a customer is selected at random from all customers who provided a rating, what is the probability that the selected customer gave a rating of $5$ in Week 1, given that the customer gave a rating of $5$ in either Week 1 or Week 2?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//701584.png",
+    "options": [
+      {
+        "id": 7015840,
+        "label": "$\\frac{3}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7015841,
+        "label": "$\\frac{2}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7015842,
+        "label": "$\\frac{3}{20}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7015843,
+        "label": "$\\frac{5}{40}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 800490,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "The table summarizes the distribution of extracurricular activity and grade level for $60$ high school students. One of these students will be selected at random. What is the probability of selecting a student who is in Grade 10, given that the student is in Math Club?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//800490.png",
+    "options": [
+      {
+        "id": 8004900,
+        "label": "0.48",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8004901,
+        "label": "0.2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8004902,
+        "label": "0.33",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8004903,
+        "label": "0.42",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 851968,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "A school surveyed students about their favorite subjects and grade level. The table below shows the number of students in each category. If a 12th-grade student is chosen at random, the probability that the student prefers History is $\\frac{1}{6}$. What is the value of $Y$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//851968.png",
+    "options": [
+      {
+        "id": 8519680,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8519681,
+        "label": "22",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8519682,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8519683,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 869579,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Hard",
+    "question_text": "The Grand Library has a collection of books categorized as Fiction, Non-Fiction, and Children's books. As of October 26, 2023, the library's catalog contained $55,000$ books. If a book is selected at random from the library's catalog, the probability that the book is a Fiction book is $0.68$. There are $f$ thousand Fiction books in the library. To the nearest integer, what is the value of $f$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8695790,
+        "label": "35",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8695791,
+        "label": "37",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8695792,
+        "label": "39",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8695793,
+        "label": "40",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

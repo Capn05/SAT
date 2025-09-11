@@ -1,0 +1,422 @@
+[
+  {
+    "id": 70538,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "At a furniture store's clearance sale, all chairs are marked down by $15\\%$. If the sale price of a chair is $\\$68$, what was the original price of the chair?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 705380,
+        "label": "$\\$58$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 705381,
+        "label": "$\\$78$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 705382,
+        "label": "$\\$80$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 705383,
+        "label": "$\\$85$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 170718,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "A local bakery sold a loaf of sourdough bread for $\\$6.50$ last year. This year, due to increased ingredient costs, they sell the same loaf for $\\$6.89$. To the nearest tenth of a percent, by what percent did the price of a loaf of sourdough bread increase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1707180,
+        "label": "$5.7\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1707181,
+        "label": "$6.0\\%$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1707182,
+        "label": "$6.2\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1707183,
+        "label": "$6.5\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 278934,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "The original price of a jacket is $j$. During a sale, the price of the jacket is reduced by $20\\%$. Which of the following expressions represents the sale price of the jacket in dollars?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2789340,
+        "label": "$0.20j$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2789341,
+        "label": "$j - 20$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2789342,
+        "label": "$0.80j$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2789343,
+        "label": "$1.20j$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 282149,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "During the first month of service, a streaming platform gained $2,500,000$ new subscribers. During the same month, $8\\%$ of these new subscribers cancelled their subscriptions. If the rate of new subscriptions and the cancellation rate remain the same for each of the next $5$ months, about how many subscriptions will be cancelled during this $6$-month period?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2821490,
+        "label": "200,000",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2821491,
+        "label": "1,000,000",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2821492,
+        "label": "1,200,000",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2821493,
+        "label": "1,400,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 325030,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "In a high school, $60\\%$ of students are enrolled in an art class. Of the students enrolled in an art class, $25\\%$ are also in the photography club. What percentage of all students in the high school are enrolled in an art class and are in the photography club?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3250300,
+        "label": "$25\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3250301,
+        "label": "$35\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3250302,
+        "label": "$15\\%$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3250303,
+        "label": "$75\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 394122,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "A store is having a sale where all items are $25\\%$ off. If a pair of jeans is on sale for $\\$36$, what was the original price of the jeans?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3941220,
+        "label": "$\\$42$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3941221,
+        "label": "$\\$45$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3941222,
+        "label": "$\\$48$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3941223,
+        "label": "$\\$54$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 567234,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "A small town currently has a population of $50,000$ residents. Town planners predict that the population will grow by $10\\%$ each year for the next two years. Assuming this prediction is accurate, what will be the estimated population of the town exactly $2$ years from now?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5672340,
+        "label": "60,000",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5672341,
+        "label": "60,500",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5672342,
+        "label": "55,000",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5672343,
+        "label": "61,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 607490,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "The value of $y$ is $1.25$ times $200$. The value of $y$ is what percent greater than $200$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6074900,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6074901,
+        "label": "25",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6074902,
+        "label": "125",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6074903,
+        "label": "250",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 686742,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "A company increased its number of employees from $25$ to $30$. What was the percent increase in the number of employees?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6867420,
+        "label": "5%",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6867421,
+        "label": "16.7%",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6867422,
+        "label": "20%",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6867423,
+        "label": "120%",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 771578,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "For a fundraising event benefiting Charity A and Charity B, donations were collected through online platforms and mail-in contributions. Charity A aimed to receive more than $50\\%$ of the total funds raised. It is estimated that $20\\%$ of the community members contributed, and $60\\%$ of all donations were made online. Charity A received $60\\%$ of the funds donated online and $30\\%$ of the funds donated via mail. Based on this information, which of the following is an accurate conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7715780,
+        "label": "If all community members had contributed with the same donation preferences, Charity A would have exceeded its goal.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7715781,
+        "label": "Donors who contributed online were generally less supportive of Charity A than donors who contributed via mail.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7715782,
+        "label": "If all donations made via mail had instead been made online, Charity A would have exceeded its goal.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7715783,
+        "label": "If the percentage of community members who donated had been 10%, Charity A would have received a smaller percentage of the total donations.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 783476,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "The number $p$ is $15\\%$ greater than $60$. If $p$ is the product of $60$ and $q$, what is the value of $q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7834760,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7834761,
+        "label": "1.15",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7834762,
+        "label": "0.15",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7834763,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 812549,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Medium",
+    "question_text": "A store is having a sale where all items are marked up by $15\\%$ from their original wholesale price. If a hat has a wholesale price of $\\$20$, what is the sale price of the hat?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8125490,
+        "label": "$\\$23$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8125491,
+        "label": "$\\$21.50$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8125492,
+        "label": "$\\$30$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8125493,
+        "label": "$\\$35$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

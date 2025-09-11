@@ -1,0 +1,212 @@
+[
+  {
+    "id": 21047,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "The table shows the number of students in $7$ schools in District $X$. The median number of students per school for all $30$ schools in District $X$ is $510$. What is the difference between the median number of students per school for these $7$ schools and the median for all $30$ schools?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//21047.png",
+    "options": [
+      {
+        "id": 210470,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 210471,
+        "label": "10",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 210472,
+        "label": "15",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 210473,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 235673,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "A class of $25$ students took a quiz. The set of quiz scores has a mean of $78$ and a median of $78$. To encourage improvement, the teacher decided to adjust the scores. For each student who scored above the median, the teacher added $6$ points to their score. For each student who scored below the median, the teacher subtracted $6$ points from their score. Scores exactly equal to the median remained unchanged. Which of the following measures does NOT have the same value in both the original and adjusted sets of quiz scores?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2356730,
+        "label": "Median",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2356731,
+        "label": "Mean",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2356732,
+        "label": "Sum of the scores",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2356733,
+        "label": "Range",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 410822,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "Data set $R$ consists of the weights, in pounds, of $40$ newborn babies at a hospital, where each weight is between $5$ and $10$ pounds. Data set $S$ consists of all the weights in data set $R$ as well as the weight of a premature baby that is $3$ pounds. Which of the following must be less for data set $S$ than for data set $R$? I. The mean, II. The median",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4108220,
+        "label": "I only",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4108221,
+        "label": "II only",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4108222,
+        "label": "I and II",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4108223,
+        "label": "Neither I nor II",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 602589,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "Two classes, each with $25$ students, took a science quiz. The mean score for each class was calculated and is shown below. Which of the following statements MUST be true? I. Every student in Class $P$ scored higher than any student in Class $Q$. II. The median score in Class $P$ is greater than the median score in Class $Q$. III. There is at least one student in Class $P$ who scored higher than some student in Class $Q$.",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//602589.png",
+    "options": [
+      {
+        "id": 6025890,
+        "label": "A. III only",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6025891,
+        "label": "B. I and II only",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6025892,
+        "label": "C. II and III only",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6025893,
+        "label": "D. I, II, and III",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 605209,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "The table summarizes the scores of $20$ students on a recent history quiz. Which of the following could be the median score for the students on this quiz?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//605209.png",
+    "options": [
+      {
+        "id": 6052090,
+        "label": "65",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6052091,
+        "label": "75",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6052092,
+        "label": "85",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6052093,
+        "label": "95",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 626465,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 14,
+    "difficulty": "Hard",
+    "question_text": "The mean weight of $25$ packages shipped by a company is $12.4$ pounds. After one package is delivered, the mean weight of the remaining packages decreases to $11.8$ pounds. What was the weight, in pounds, of the package that was delivered?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6264650,
+        "label": "6.0",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6264651,
+        "label": "11.9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6264652,
+        "label": "12.1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6264653,
+        "label": "27.4",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

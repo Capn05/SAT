@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "2f9b2d9e-8a6a-4f0e-9bf1-3a2a0b1932c7",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nIn a city-run pilot, a vertical farm produced leafy greens year-round using $90\\%$ less water than nearby conventional farms and yielded twice as much per square meter. Advocates argue that as the electric grid incorporates more renewables, the overall emissions of vertical farming will drop, making rapid expansion a sensible climate strategy.\n\nText 2\n\nA life-cycle analyst cautions that vertical farms depend on intensive energy inputs for LED lighting and climate control. Unless facilities are powered predominantly by low-carbon energy and sited to minimize heating and cooling loads, their carbon footprint per kilogram can exceed that of field-grown produce. The analyst adds that upstream inputs and packaging must be considered in any net-emissions claim.\n<br>\nBased on the texts, how would the author of Text 2 most likely respond to the proposal in Text 1 to rapidly expand vertical farming as a climate solution?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6a4da0e4-2e65-4b20-9b76-7b2a1af45a64",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA software firm’s 2022 internal review found that fully remote engineers wrote $12\\%$ more code and reported higher job satisfaction than when they were in-office. The report attributes the gains to fewer interruptions and flexible scheduling, concluding that remote work boosts productivity.\n\nText 2\n\nA cross-industry 2023 study observed that while individual output sometimes increases with remote work, indicators of cross-team collaboration and novel feature development declined. The authors suggest structured hybrid models with intentional collaboration days to balance focused work and innovation.\n<br>\nBased on the texts, both authors would most likely agree with which statement?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f1d1a7b0-0d3b-4a3b-9be7-5c66a0c3d8e4",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nHistorian A argues that Captain Langley’s 1789 journals are the most reliable record of the coastal expedition. Because the entries were written daily by an eyewitness, they should serve as the benchmark against which later narratives are judged, likely reflecting events with minimal distortion.\n\nText 2\n\nHistorian B counters that ship journals and logs are shaped by audience, purpose, and self-justification. B notes inconsistencies between Langley’s account, indigenous oral histories, and traders’ letters, and urges triangulation and contextual analysis rather than privileging a single voice.\n<br>\nBased on the texts, how would Historian B (Text 2) most likely characterize Historian A’s approach in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "a1f4d0e9-5c2a-4b5f-9f40-77d962d7ad2a",
+      "question_id": "2f9b2d9e-8a6a-4f0e-9bf1-3a2a0b1932c7",
+      "value": "A",
+      "label": "Support immediate large-scale expansion because water savings guarantee lower emissions regardless of energy source.",
+      "is_correct": false
+    },
+    {
+      "id": "7f3a6e76-6d6c-4c62-9a0e-2dc2a68ebd77",
+      "question_id": "2f9b2d9e-8a6a-4f0e-9bf1-3a2a0b1932c7",
+      "value": "B",
+      "label": "Urge caution, arguing that expansion should be contingent on low-carbon energy and comprehensive life-cycle assessments.",
+      "is_correct": true
+    },
+    {
+      "id": "2bb09d89-1fe1-4a73-8b20-95df9e8b465b",
+      "question_id": "2f9b2d9e-8a6a-4f0e-9bf1-3a2a0b1932c7",
+      "value": "C",
+      "label": "Reject vertical farming entirely as inherently less efficient than field agriculture even with renewable energy.",
+      "is_correct": false
+    },
+    {
+      "id": "b8c7a5a4-e6dd-41e4-9f0d-8f58aa4101f8",
+      "question_id": "2f9b2d9e-8a6a-4f0e-9bf1-3a2a0b1932c7",
+      "value": "D",
+      "label": "Focus primarily on packaging and distribution changes, downplaying energy inputs within facilities.",
+      "is_correct": false
+    },
+    {
+      "id": "dba3b3a1-1d72-4c3c-b9c6-3d5d7a2401bf",
+      "question_id": "6a4da0e4-2e65-4b20-9b76-7b2a1af45a64",
+      "value": "A",
+      "label": "Decisions about work arrangements should weigh both individual productivity and the needs of collaboration and innovation.",
+      "is_correct": true
+    },
+    {
+      "id": "d3d79f85-fcc1-4df6-92b4-1bf27c6d5a6a",
+      "question_id": "6a4da0e4-2e65-4b20-9b76-7b2a1af45a64",
+      "value": "B",
+      "label": "Remote work invariably reduces collaboration costs and accelerates innovation.",
+      "is_correct": false
+    },
+    {
+      "id": "9f5cbe39-1ae4-4a53-a47e-e1a1403ec974",
+      "question_id": "6a4da0e4-2e65-4b20-9b76-7b2a1af45a64",
+      "value": "C",
+      "label": "Returning to fully in-person schedules is the only viable long-term solution.",
+      "is_correct": false
+    },
+    {
+      "id": "a6b70526-750e-4d9e-b8c2-9d2f8965d95e",
+      "question_id": "6a4da0e4-2e65-4b20-9b76-7b2a1af45a64",
+      "value": "D",
+      "label": "Productivity data from a single firm is sufficient to settle the debate.",
+      "is_correct": false
+    },
+    {
+      "id": "f4ea0f3d-2b5e-4b9f-835b-41d0b79fb121",
+      "question_id": "f1d1a7b0-0d3b-4a3b-9be7-5c66a0c3d8e4",
+      "value": "A",
+      "label": "As demonstrating that later accounts are inherently unreliable compared with ship journals.",
+      "is_correct": false
+    },
+    {
+      "id": "5f1a7678-16e5-4a56-9b5c-9fd1d8a51b8e",
+      "question_id": "f1d1a7b0-0d3b-4a3b-9be7-5c66a0c3d8e4",
+      "value": "B",
+      "label": "As a necessary corrective that centers marginalized voices over official logs.",
+      "is_correct": false
+    },
+    {
+      "id": "1f3fb56f-8e31-4b50-9c30-57ad9ac4d8a9",
+      "question_id": "f1d1a7b0-0d3b-4a3b-9be7-5c66a0c3d8e4",
+      "value": "C",
+      "label": "As methodologically rigorous because daily entries eliminate author bias.",
+      "is_correct": false
+    },
+    {
+      "id": "c74e2ef1-6af2-4a90-8fb6-0fde1c8f2a17",
+      "question_id": "f1d1a7b0-0d3b-4a3b-9be7-5c66a0c3d8e4",
+      "value": "D",
+      "label": "As overly credulous toward a single firsthand narrative and insufficiently attentive to corroborating evidence and context.",
+      "is_correct": true
+    }
+  ]
+}

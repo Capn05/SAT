@@ -1,0 +1,632 @@
+[
+  {
+    "id": 103,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A hummingbird is $8$ centimeters long. What is the hummingbird's length, in millimeters? ($1$ centimeter = $10$ millimeters)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1030,
+        "label": "80",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1031,
+        "label": "18",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1032,
+        "label": "0.8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1033,
+        "label": "800",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 32498,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A painter has $15$ liters of paint and needs to convert it to gallons for a project. The conversion rate is approximately $1 \\text{gallon} = 3.785 \\text{liters}$. During the transfer process, $10\\%$ of the paint is wasted due to spillage. How many gallons of paint, after accounting for the wastage, will the painter have for the project?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 324980,
+        "label": "3.57 gallons",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 324981,
+        "label": "3.96 gallons",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 324982,
+        "label": "0.40 gallons",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 324983,
+        "label": "4.36 gallons",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 167771,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A bakery produced $450$ cakes in a $15$-hour period. On average, how many cakes were produced per hour?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1677710,
+        "label": "0.03",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1677711,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1677712,
+        "label": "465",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1677713,
+        "label": "6,750",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 181816,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A baker is making cookies for a large order. Each cookie requires $2.5$ ounces of dough. If the baker has $75$ ounces of dough available, what is the maximum number of cookies the baker can make?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1818160,
+        "label": "28",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1818161,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1818162,
+        "label": "77.5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1818163,
+        "label": "187.5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 206261,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A student is preparing a presentation. The presentation is designed to be $540$ seconds in length. How many minutes long is the presentation? ($1 \\text{minute} = 60 \\text{seconds}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2062610,
+        "label": "9",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2062611,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2062612,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2062613,
+        "label": "54",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 230721,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A car gets $30$ miles per gallon of gasoline. How many quarts of gasoline are needed for the car to travel $150$ miles? ($1 \\text{gallon} = 4 \\text{quarts}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2307210,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2307211,
+        "label": "20",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2307212,
+        "label": "38",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2307213,
+        "label": "120",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 235841,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "The ratio of the number of apples to the number of bananas in a fruit basket is $7$ to $3$. If there are $42$ apples in the basket, how many bananas are in the basket?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2358410,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2358411,
+        "label": "18",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2358412,
+        "label": "49",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2358413,
+        "label": "98",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 277206,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "How many meters are equivalent to $3.5$ kilometers? ($1 \\text{kilometer} = 1000 \\text{meters}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2772060,
+        "label": "0.35",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2772061,
+        "label": "35",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2772062,
+        "label": "350",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2772063,
+        "label": "3,500",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 292708,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "How many fluid ounces are equivalent to $5$ cups? ($8 \\text{fluid ounces} = 1 \\text{cup}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2927080,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2927081,
+        "label": "32",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2927082,
+        "label": "40",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2927083,
+        "label": "48",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 364635,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A store sells notebooks for $\\$2.50$ each. What is the total cost, in dollars, of buying $8$ notebooks?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3646350,
+        "label": "20",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3646351,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3646352,
+        "label": "2.58",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3646353,
+        "label": "8.50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 443124,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "In a flower vase, the ratio of roses to tulips is $4$ to $7$. There are $12$ roses in the vase. How many tulips are in the vase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4431240,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4431241,
+        "label": "21",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4431242,
+        "label": "28",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4431243,
+        "label": "48",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 641810,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "How many pints are equivalent to $5$ gallons? ($1 \\text{gallon} = 8 \\text{pints}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6418100,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6418101,
+        "label": "40",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6418102,
+        "label": "45",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6418103,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 653388,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells muffins and croissants. On a particular morning, they sold $35$ muffins and $15$ croissants. What is the ratio of croissants sold to muffins sold?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6533880,
+        "label": "3 to 7",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6533881,
+        "label": "7 to 3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6533882,
+        "label": "3 to 5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6533883,
+        "label": "5 to 3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 656326,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "If $p = 3q$, which of the following is equivalent to $4p$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6563260,
+        "label": "$12q$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6563261,
+        "label": "$7q$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6563262,
+        "label": "$4q$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6563263,
+        "label": "$3q$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 771256,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "The book density on a bookshelf in a library is $40$ books per meter. A librarian needs to shelve $12,000$ books. What is the required length of the bookshelf, in meters?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7712560,
+        "label": "3,000",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7712561,
+        "label": "400",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7712562,
+        "label": "300",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7712563,
+        "label": "30",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 777942,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A student types $1,200$ words in $30$ minutes. At this rate, how many words per minute does the student type?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7779420,
+        "label": "24",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7779421,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7779422,
+        "label": "40",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7779423,
+        "label": "1,230",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 845936,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "For a hybrid car traveling a distance of $m$ miles, the amount of fuel consumed is $g$ gallons. The ratio of $m$ to $g$ can be estimated to be $55$ to $1$. According to this estimate, the car will travel how many miles if it consumes $3$ gallons of fuel?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8459360,
+        "label": "165",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8459361,
+        "label": "58",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8459362,
+        "label": "52",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8459363,
+        "label": "18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 925604,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Easy",
+    "question_text": "A baker can decorate $5$ cakes in $1$ hour. At this rate, how many hours would it take the baker to decorate $35$ cakes?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9256040,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9256041,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9256042,
+        "label": "7",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9256043,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

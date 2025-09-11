@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "3f8a3b38-7934-4a6b-8a1b-36a1c2c3f9ff",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Easy",
+      "question_text": "A printing service charges a one-time setup fee of \\$5 and an additional \\$0.20 per page printed. Which equation best represents the total cost, $y$, in dollars, for printing $x$ pages?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9b5a0b42-93de-4f69-9a56-3c5d7c1080eb",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Easy",
+      "question_text": "The linear function $g$ is defined by $g(x) = -3x + 7$. What is the value of $g(2)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6d86c1e1-1b43-4f86-8f0e-3d9f1d3a84b7",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Easy",
+      "question_text": "The temperature inside a room, in degrees Fahrenheit, $h$ hours after the air conditioner is turned on is modeled by $T(h) = 68 - 3h$. Which is the best interpretation of the number $-3$ in this model?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "d0a0f1a7-8ab2-4b25-8f51-5f63a8a72680",
+      "question_id": "3f8a3b38-7934-4a6b-8a1b-36a1c2c3f9ff",
+      "value": "A",
+      "label": "$y = 0.20(x + 5)$",
+      "is_correct": false
+    },
+    {
+      "id": "9c10e66f-0e89-4c9a-8c34-2e0f795d9dc7",
+      "question_id": "3f8a3b38-7934-4a6b-8a1b-36a1c2c3f9ff",
+      "value": "B",
+      "label": "$y = 0.20x - 5$",
+      "is_correct": false
+    },
+    {
+      "id": "b8479246-9fa6-4ffc-9a01-0f14da9c0f5a",
+      "question_id": "3f8a3b38-7934-4a6b-8a1b-36a1c2c3f9ff",
+      "value": "C",
+      "label": "$y = 5x + 0.20$",
+      "is_correct": false
+    },
+    {
+      "id": "a2c7d1e1-3c2a-4808-9ff7-f0a1a0f3b6ce",
+      "question_id": "3f8a3b38-7934-4a6b-8a1b-36a1c2c3f9ff",
+      "value": "D",
+      "label": "$y = 0.20x + 5$",
+      "is_correct": true
+    },
+    {
+      "id": "6a0a2a54-0fb6-4f9b-8b77-05db0ca02453",
+      "question_id": "9b5a0b42-93de-4f69-9a56-3c5d7c1080eb",
+      "value": "A",
+      "label": "1",
+      "is_correct": true
+    },
+    {
+      "id": "93e7a3ae-5a37-4ec6-bc7c-1cfc298af8de",
+      "question_id": "9b5a0b42-93de-4f69-9a56-3c5d7c1080eb",
+      "value": "B",
+      "label": "13",
+      "is_correct": false
+    },
+    {
+      "id": "c78416fa-0c74-420f-998c-a9a0e9b9f719",
+      "question_id": "9b5a0b42-93de-4f69-9a56-3c5d7c1080eb",
+      "value": "C",
+      "label": "-1",
+      "is_correct": false
+    },
+    {
+      "id": "e8f23d22-8b84-4b81-97da-3c1e4dfe8a47",
+      "question_id": "9b5a0b42-93de-4f69-9a56-3c5d7c1080eb",
+      "value": "D",
+      "label": "-13",
+      "is_correct": false
+    },
+    {
+      "id": "6e08eaa7-1f40-4ad5-9a3b-497dca0e6f67",
+      "question_id": "6d86c1e1-1b43-4f86-8f0e-3d9f1d3a84b7",
+      "value": "A",
+      "label": "The initial temperature is 68 degrees Fahrenheit.",
+      "is_correct": false
+    },
+    {
+      "id": "1c6f0c24-c8ec-4f1b-b7f1-33d042a6b98c",
+      "question_id": "6d86c1e1-1b43-4f86-8f0e-3d9f1d3a84b7",
+      "value": "B",
+      "label": "The temperature decreases by 3 degrees per hour.",
+      "is_correct": true
+    },
+    {
+      "id": "b3d0e7a2-6b1a-4b57-9aa9-05f9d8d0b9c4",
+      "question_id": "6d86c1e1-1b43-4f86-8f0e-3d9f1d3a84b7",
+      "value": "C",
+      "label": "After 1 hour, the temperature is 3 degrees Fahrenheit.",
+      "is_correct": false
+    },
+    {
+      "id": "5c2abf42-6a82-4b0f-8d3f-2f3b18e2b6bb",
+      "question_id": "6d86c1e1-1b43-4f86-8f0e-3d9f1d3a84b7",
+      "value": "D",
+      "label": "The temperature increases by 3 degrees per hour.",
+      "is_correct": false
+    }
+  ]
+}

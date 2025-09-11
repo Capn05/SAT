@@ -1,0 +1,947 @@
+[
+  {
+    "id": 40200,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "$$V(n) = 15 + 3n$$ The number of visitors to a museum each year can be modeled by the function $V$ defined above, where $V(n)$ is the number of visitors in thousands, $n$ years after the museum opened in 2005. Of the following, which is the best interpretation of the equation $V(10) = 45$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 402000,
+        "label": "The number of visitors to the museum is predicted to be 10,000 in the year 2015.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 402001,
+        "label": "The number of visitors to the museum is predicted to be 45,000 in the year 2015.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 402002,
+        "label": "The number of visitors to the museum is predicted to be 10,000 in the year 2025.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 402003,
+        "label": "The number of visitors to the museum is predicted to be 45,000 in the year 2025.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 75281,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "Sarah is subscribing to a streaming service that charges a monthly membership fee plus an additional cost for each movie rented. The monthly membership fee is $\\$8.00$, and each movie rental costs $\\$2.25$. If Sarah rented $6$ movies in a month, what was the total amount she was charged for that month?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 752810,
+        "label": "$\\$21.50$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 752811,
+        "label": "$\\$20.25$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 752812,
+        "label": "$\\$33.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 752813,
+        "label": "$\\$14.25$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 102082,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The graph of the linear function $g$ is shown, where $y = g(x)$. What is the $y$-intercept of the graph of $g$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//102082.png",
+    "options": [
+      {
+        "id": 1020820,
+        "label": "(0, 0)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1020821,
+        "label": "(0, -7)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1020822,
+        "label": "(0, -3)",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1020823,
+        "label": "(0, 3)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 127774,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells cupcakes where the cost is modeled by the function $C(n) = 2.25n + 3.50$, where $C(n)$ is the total cost in dollars and $n$ is the number of cupcakes purchased. What is the best interpretation of the number $3.50$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1277740,
+        "label": "The cost of each cupcake.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1277741,
+        "label": "The total cost of purchasing one cupcake.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1277742,
+        "label": "The initial setup fee or base cost, regardless of the number of cupcakes purchased.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1277743,
+        "label": "The number of cupcakes you can buy for $3.50.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 137547,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A taxi service charges an initial fee of $\\$3.50$ plus $\\$2.25$ for each mile driven. Which equation best represents the total cost, $y$, of a taxi ride in dollars, for a trip of $x$ miles?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1375470,
+        "label": "$y = 3.50x$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1375471,
+        "label": "$y = 2.25x + 3.50$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1375472,
+        "label": "$y = 5.75x$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1375473,
+        "label": "$y = 3.50x + 2.25$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 165160,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "$$\\Psi = O + 12\\rho$$ In the equation above, $\\Psi$ represents the total amount of money raised, in dollars, by a charity walkathon, where $\\rho$ represents the number of participants in the walkathon and $O$ represents a starting donation from a corporate sponsor. Each participant raises an additional $\\$12$. If the total amount of money raised was $\\$3,456$, and the corporate sponsor donated $\\$1,200$, how many participants were in the walkathon?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1651600,
+        "label": "104",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1651601,
+        "label": "188",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1651602,
+        "label": "271",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1651603,
+        "label": "388",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 181416,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The line graphed in the $xy$-plane below models the total cost, in dollars, to fill a car with gasoline, $y$, at a particular gas station based on the number of gallons purchased, $x$. According to the graph, what is the cost per gallon of gasoline, in dollars?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//181416.png",
+    "options": [
+      {
+        "id": 1814160,
+        "label": "$\\$2.00$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1814161,
+        "label": "$\\$2.50$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1814162,
+        "label": "$\\$3.50$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1814163,
+        "label": "$\\$5.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 217421,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A car travels at a constant speed. The graph shows the estimated distance $y$, in miles, the car travels in $x$ hours. What is the estimated distance, in miles, the car travels in $8$ hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//217421.png",
+    "options": [
+      {
+        "id": 2174210,
+        "label": "200",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2174211,
+        "label": "300",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2174212,
+        "label": "400",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2174213,
+        "label": "500",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 237049,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "In the year 2023, a small town had a population of $12,000$ people.  The town's population is projected to grow at a constant rate of $300$ people per year for the next several years. Which of the following functions best models the population, $P$, of the town $x$ years after 2023, where $x = 1, 2, 3, 4, 5$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2370490,
+        "label": "$f(x) = 12000 - 300x$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2370491,
+        "label": "$f(x) = 300x$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2370492,
+        "label": "$f(x) = 12000 + 300x$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2370493,
+        "label": "$f(x) = 12300x$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 238084,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A taxi service charges a flat fee of $\\$3$ plus $\\$2$ for each mile traveled. If a passenger travels $m$ miles, the total cost $C(m)$ in dollars is given by the function $C(m) = 2m + 3$. What is the total cost if a passenger travels $6$ miles?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2380840,
+        "label": "$9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2380841,
+        "label": "$12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2380842,
+        "label": "$15",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2380843,
+        "label": "$18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 240153,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "Which of the following is the graph of the equation $y = -x + 3$ in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2401530,
+        "label": "A line with a positive slope and y-intercept at (0, 3).",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2401531,
+        "label": "A line with a negative slope and y-intercept at (0, -3).",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2401532,
+        "label": "A line with a negative slope and y-intercept at (0, 3).",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2401533,
+        "label": "A line with a positive slope and y-intercept at (3, 0).",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 285227,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A music teacher charges $\\$25$ for a registration fee plus $\\$30$ per lesson. Which function $f$ represents the total amount, in dollars, a student will pay for music lessons if they take $l$ lessons?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2852270,
+        "label": "$f(l) = 30l + 25$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2852271,
+        "label": "$f(l) = 25l$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2852272,
+        "label": "$f(l) = 25l + 30$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2852273,
+        "label": "$f(l) = 55l$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 330286,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A hiker starts climbing a mountain at an elevation of $\\$500$ feet. They ascend at a constant rate of $\\$150$ feet per hour. What will be their elevation, in feet, at the end of the 3rd hour?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3302860,
+        "label": "650",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3302861,
+        "label": "800",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3302862,
+        "label": "900",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3302863,
+        "label": "950",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 335643,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "Some values of the linear function $f$ are shown in the table above. Which of the following defines $f$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//335643.png",
+    "options": [
+      {
+        "id": 3356430,
+        "label": "$f(x) = 2x + 3$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3356431,
+        "label": "$f(x) = 3x + 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3356432,
+        "label": "$f(x) = 3x + 2$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3356433,
+        "label": "$f(x) = 4x - 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 373587,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The function $f$ is defined as $f(x) = 3x + b$, where $b$ is a constant. If $f(2) = 10$, what is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3735870,
+        "label": "4",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3735871,
+        "label": "16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3735872,
+        "label": "7",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3735873,
+        "label": "2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 486049,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The function $g$ is defined by $g(x) = 2x + 5$. What is the value of $g(3)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4860490,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4860491,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4860492,
+        "label": "11",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4860493,
+        "label": "13",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 555860,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The equation $C = 2.50n$ represents the total cost $C$, in dollars, of buying $n$ apples. What is the best interpretation of $2.50$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5558600,
+        "label": "The cost of buying apples is $2.50.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5558601,
+        "label": "The total cost of buying apples is $2.50n.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5558602,
+        "label": "Each apple costs $2.50.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5558603,
+        "label": "The number of apples that can be bought for $2.50.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 610552,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A florist is arranging bouquets of roses. The equation below estimates the total cost $c$, in dollars, to create $b$ bouquets. $$c = 12.50b$$ Which of the following does $12.50$ represent in the equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6105520,
+        "label": "The florist creates 12.50 bouquets per day.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6105521,
+        "label": "The cost to create one bouquet of roses is $12.50.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6105522,
+        "label": "The florist sells each bouquet for $12.50.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6105523,
+        "label": "The cost of roses increased by $12.50 this week.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 618867,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "A hot air balloon is initially at a height of $500$ feet above the ground. It begins to ascend at a constant rate of $20$ feet per minute. Which of the following equations represents the height $h$, in feet, of the hot air balloon $m$ minutes after it starts ascending?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6188670,
+        "label": "$h = 20m + 500$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6188671,
+        "label": "$h = 500m + 20$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6188672,
+        "label": "$h = 520m$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6188673,
+        "label": "$h = 500 - 20m$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 837518,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "For the linear function $f$, $m$ is a constant. $$f(x) = x - m$$ When $x = 7$, $f(x) = 1$. What is the value of $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8375180,
+        "label": "-6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8375181,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8375182,
+        "label": "1",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8375183,
+        "label": "6",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 878137,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The function $m$ is defined by $m(x) = x - 100$. What is the value of $m(150)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8781370,
+        "label": "-100",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8781371,
+        "label": "50",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8781372,
+        "label": "150",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8781373,
+        "label": "250",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 881550,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The function $f$ is defined by $f(x) = 2x - 3$. What is the value of $f(1)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8815500,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8815501,
+        "label": "-3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8815502,
+        "label": "-1",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8815503,
+        "label": "2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 915416,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "If $g$ is the function defined by $g(x) = \\frac{4x - 3}{2}$ what is the value of $g(3)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9154160,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9154161,
+        "label": "$\\frac{9}{2}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9154162,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9154163,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 944593,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The function $g$ is defined by $g(x) = 15 + 4x$. What is the value of $g(5)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9445930,
+        "label": "19",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9445931,
+        "label": "35",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9445932,
+        "label": "60",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9445933,
+        "label": "95",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 956379,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "The graph of the function $g$ is a line in the $xy$-plane. If the line has slope $-2$ and $g(0) = 5$, which of the following defines $g$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9563790,
+        "label": "$g(x) = -2x - 5$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9563791,
+        "label": "$g(x) = -2x + 5$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9563792,
+        "label": "$g(x) = 2x - 5$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9563793,
+        "label": "$g(x) = 2x + 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 968487,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "For the linear function $g$, $g(0) = -5$ and $g(2) = -5$. Which equation defines $g$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9684870,
+        "label": "$g(x) = -5$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9684871,
+        "label": "$g(x) = x - 5$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9684872,
+        "label": "$g(x) = -2x - 5$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9684873,
+        "label": "$g(x) = 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 993901,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Easy",
+    "question_text": "For the linear function $g$, the graph of $y = g(x)$ in the $xy$-plane has a $y$-intercept at $(0, 3)$. Which equation defines $g$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9939010,
+        "label": "$g(x) = -x + 1$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9939011,
+        "label": "$g(x) = -x - 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9939012,
+        "label": "$g(x) = -x - 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9939013,
+        "label": "$g(x) = -x + 3$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

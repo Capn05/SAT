@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "7d2e8e4b-2c1b-4f54-9eeb-0c5c7a3e4c10",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Medium",
+      "question_text": "The lab's initial trial failed to replicate the results ______ the researchers repeated the experiment with stricter controls.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a27a0c44-73d4-4f63-8da9-0f0f014fdb52",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Medium",
+      "question_text": "Many critics dismissed the novel as sensationalistic ______ it earned several scholarly awards.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f0a87ef0-4b9b-4f1a-9a63-a680bce6a3eb",
+      "subject_id": 2,
+      "domain_id": 8,
+      "subcategory_id": 28,
+      "difficulty": "Medium",
+      "question_text": "The city council postponed the outdoor festival for one reason ______ the forecast predicted severe thunderstorms.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1d8eaa14-d2f3-4f6d-9f0a-23f263b4e2a9",
+      "question_id": "7d2e8e4b-2c1b-4f54-9eeb-0c5c7a3e4c10",
+      "value": "A",
+      "label": "; therefore,",
+      "is_correct": true
+    },
+    {
+      "id": "b1cd3cbf-3f0e-4a51-8a1e-e053e53a0c39",
+      "question_id": "7d2e8e4b-2c1b-4f54-9eeb-0c5c7a3e4c10",
+      "value": "B",
+      "label": ", therefore",
+      "is_correct": false
+    },
+    {
+      "id": "7e2fbd1d-2df2-4b99-8c42-4a1af93f771a",
+      "question_id": "7d2e8e4b-2c1b-4f54-9eeb-0c5c7a3e4c10",
+      "value": "C",
+      "label": "therefore",
+      "is_correct": false
+    },
+    {
+      "id": "ec5ae5c5-5d3f-4aee-b8af-7b28e07baf6f",
+      "question_id": "7d2e8e4b-2c1b-4f54-9eeb-0c5c7a3e4c10",
+      "value": "D",
+      "label": "consequently",
+      "is_correct": false
+    },
+    {
+      "id": "5d33a7f6-84ac-44f2-8d8c-8af8a0d7a911",
+      "question_id": "a27a0c44-73d4-4f63-8da9-0f0f014fdb52",
+      "value": "A",
+      "label": "yet",
+      "is_correct": false
+    },
+    {
+      "id": "2f7b8e37-6fb2-4a53-9a63-1b22a7f857e2",
+      "question_id": "a27a0c44-73d4-4f63-8da9-0f0f014fdb52",
+      "value": "B",
+      "label": "yet,",
+      "is_correct": false
+    },
+    {
+      "id": "16c8b00d-4b96-49d8-9c9f-81bfdfb24b98",
+      "question_id": "a27a0c44-73d4-4f63-8da9-0f0f014fdb52",
+      "value": "C",
+      "label": ", yet",
+      "is_correct": true
+    },
+    {
+      "id": "0b2f1f30-5f21-4f63-b9be-404a63b8a9f3",
+      "question_id": "a27a0c44-73d4-4f63-8da9-0f0f014fdb52",
+      "value": "D",
+      "label": "; yet,",
+      "is_correct": false
+    },
+    {
+      "id": "9d528a6b-0092-4f53-adb2-af3fa2e38d2c",
+      "question_id": "f0a87ef0-4b9b-4f1a-9a63-a680bce6a3eb",
+      "value": "A",
+      "label": "—",
+      "is_correct": false
+    },
+    {
+      "id": "e1a48c21-d958-46a8-982b-155c594b37a4",
+      "question_id": "f0a87ef0-4b9b-4f1a-9a63-a680bce6a3eb",
+      "value": "B",
+      "label": ",",
+      "is_correct": false
+    },
+    {
+      "id": "f12f2e45-7d41-4c7f-9f78-83b3fceffed0",
+      "question_id": "f0a87ef0-4b9b-4f1a-9a63-a680bce6a3eb",
+      "value": "C",
+      "label": ";",
+      "is_correct": false
+    },
+    {
+      "id": "6b7b8f81-9f1d-4b40-8b45-7c4f725f6f92",
+      "question_id": "f0a87ef0-4b9b-4f1a-9a63-a680bce6a3eb",
+      "value": "D",
+      "label": ":",
+      "is_correct": true
+    }
+  ]
+}

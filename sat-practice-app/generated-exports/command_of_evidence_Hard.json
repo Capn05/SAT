@@ -1,0 +1,492 @@
+[
+  {
+    "id": 63414,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Biologists have observed that the body mass index (BMI) of polar bears varies seasonally, influenced by their hunting success and food availability. A researcher studied a population of polar bears over several years, categorizing them into age groups and recording their average BMI during two seasons: spring (post-hibernation, pre-hunting peak) and autumn (post-hunting peak, pre-hibernation). The researcher *hypothesized* that younger polar bears would show a more pronounced seasonal BMI variation than older bears due to their less developed hunting skills and reliance on readily available food sources.\n\n| Age Group            | Average BMI - Spring | Average BMI - Autumn | BMI Change (Autumn - Spring) |\n|----------------------|----------------------|----------------------|-----------------------------|\n| Cubs (< 2 years)     | 18.5                 | 22.0                 | 3.5                         |\n| Juveniles (2-5 years)| 20.0                 | 23.0                 | 3.0                         |\n| Young Adults (5-10 years) | 22.0            | 24.5                 | 2.5                         |\n| Adults (> 10 years)  | 23.5                 | 25.5                 | 2.0                         |\n\nWhich choice best describes data from the table that support the *underlined hypothesis*?\n\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 634140,
+        "label": "The average BMI in autumn is consistently higher than in spring across all age groups, and the difference between autumn and spring BMI is greatest for the oldest age group.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 634141,
+        "label": "The average BMI in spring is lowest for cubs, and while autumn BMI increases with age, the BMI change is similar across all age groups.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 634142,
+        "label": "Across all age groups, the average BMI increases from spring to autumn, and the magnitude of this increase is progressively smaller with increasing age.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 634143,
+        "label": "The average BMI in autumn is highest for adult bears, but the percentage increase in BMI from spring to autumn is greatest for juvenile bears.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 269217,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Researcher Anya Sharma and colleagues investigated the impact of different study methods on test score improvement. Participants used either Method A or Method B and rated their test score improvement and their confidence in the study method used. The researchers correlated these ratings with the actual time spent studying and the confidence rating. (Correlations range from –1 to 1, with greater distance from 0 indicating greater strength). The researchers concluded that overall the correlations with study time are stronger than those with confidence in the study method.\n\n**Correlations Between Test Score Improvement Ratings and Study Method Features**\n\n|          | Study Time | Confidence in Method | Overall |\n|----------|------------|----------------------|---------|\n| Method A | 0.75       | 0.52                 | 0.68    |\n| Method B | 0.62       | 0.48                 | 0.55    |\n\nWhich choice best describes data from the table that support the researchers' conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2692170,
+        "label": "The correlation between test score improvement using Method A and study time is further from 0 than the correlation between overall test score improvement and confidence in method is.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2692171,
+        "label": "The correlation between test score improvement using Method A and study time is further from 0 than the correlation between test score improvement using Method B and study time is.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2692172,
+        "label": "For each of the two methods, the correlation with study time is positive while the correlation with confidence in method is also positive.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2692173,
+        "label": "For each of the two methods, correlations with study time are further from 0 than the corresponding correlations with confidence in method are.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 292279,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "For decades, scientists believed that the gray wolf population in Yellowstone National Park had minimal impact on the park's overall ecosystem after their reintroduction in 1995.  This view was largely based on studies focusing primarily on the direct effects of wolf predation on elk populations. However, recent research employing advanced ecological modeling suggests a more nuanced understanding. These models indicate that wolves exert a cascading trophic effect, significantly altering vegetation patterns and river morphology through their influence on elk behavior and distribution.  Which finding, if true, would most directly support the recent research suggesting a significant cascading trophic effect of wolves in Yellowstone?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2922790,
+        "label": "Studies showing a decrease in elk populations following wolf reintroduction, without significant changes in vegetation.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2922791,
+        "label": "Evidence indicating that willow and aspen trees along rivers in Yellowstone have shown increased growth after wolf reintroduction, coinciding with a decrease in elk browsing in those areas.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2922792,
+        "label": "Data revealing that the overall biodiversity of Yellowstone has remained relatively stable since the reintroduction of wolves.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2922793,
+        "label": "Observations of wolves primarily hunting bison and other large herbivores in Yellowstone, rather than elk.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 327461,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Paleontologist Dr. Aris Thorne argues that the extinction of megafauna in Australia around 45,000 years ago was primarily caused by human activity, specifically hunting, rather than climate change. He points to evidence of sophisticated hunting tools and butchered megafauna bones found in archaeological sites dating back to that period. While acknowledging that Australia's climate was also changing at the time, Dr. Thorne contends that the arrival of humans introduced a novel and overwhelming pressure on these large, slow-reproducing animals, leading to their rapid decline.  Which finding, if true, would most directly support Dr. Thorne’s argument?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3274610,
+        "label": "Analysis of ancient pollen records from Australia indicates a significant shift in vegetation types around 45,000 years ago, suggesting a period of substantial climate change.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3274611,
+        "label": "Fossil evidence reveals that megafauna populations in regions of Australia uninhabited by humans at the time also experienced a decline, albeit less severe than in human-inhabited areas.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3274612,
+        "label": "A study comparing megafauna extinction rates across different continents shows that continents colonized by humans earlier experienced more rapid and extensive megafauna extinctions.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3274613,
+        "label": "Isotopic analysis of megafauna bones from archaeological sites shows a shift in their diet just before their extinction, suggesting they were struggling to adapt to changing food sources.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 448279,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Environmental scientists analyzed household waste composition across different income levels to understand waste management patterns. They posit that while food waste remains a significant component across all income levels, the proportion of recyclables and organic waste varies inversely with income level. Specifically, they assert that as income increases, the percentage of recyclables tends to increase, while the percentage of organic waste decreases.\n\n**Distribution of Household Waste Composition by Income Level**\n\n| Income Level        | Food Waste (35%) | Recyclables (30%) | Organic Waste (20%) | Other (15%) |\n|---------------------|------------------|-------------------|---------------------|-------------|\n| Low Income          | 45%              | 20%               | 25%                 | 10%         |\n| Middle Income       | 30%              | 35%               | 15%                 | 20%         |\n| High Income         | 25%              | 40%               | 10%                 | 25%         |\n| Overall Average     | 35%              | 30%               | 20%                 | 15%         |\n\nWhich choice best describes data from the table that support the environmental scientists' assertion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4482790,
+        "label": "Food waste is highest for low-income households at 45% and lowest for high-income households at 25%, directly contradicting the assertion.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4482791,
+        "label": "Recyclables increase from 20% in low-income households to 40% in high-income households, while organic waste decreases from 25% to 10% across the same income range.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4482792,
+        "label": "Other waste increases from 10% in low-income households to 25% in high-income households, showing a positive correlation with income level.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4482793,
+        "label": "The overall average shows that food waste is the largest component at 35%, followed by recyclables at 30%, regardless of income level.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 509352,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Ornithologists studying a species of songbird, *Cyanus melodius*, hypothesize that regional variations in their songs are primarily learned from parents rather than from other unrelated adult birds.  They believe juvenile *Cyanus melodius* develop their songs by mimicking their fathers and mothers during a critical learning period.   Which finding, if true, would most directly support the ornithologists' hypothesis?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5093520,
+        "label": "Juvenile *Cyanus melodius* birds raised in isolation still develop songs with some species-typical elements, but these songs lack the regional variations observed in wild populations.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5093521,
+        "label": "Researchers observed that juvenile *Cyanus melodius* birds are exposed to a wide range of songs from various adult birds within their habitat during their early development.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5093522,
+        "label": "Longitudinal studies reveal that juvenile *Cyanus melodius* birds are significantly more likely to incorporate song elements heard from their parents into their own songs than elements heard from unrelated adult *Cyanus melodius* birds living nearby.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5093523,
+        "label": "Analysis of *Cyanus melodius* songs across different regions shows a correlation between the complexity of the song repertoire and the density of the bird population in each region.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 670407,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Researchers studying the effects of caffeine on short-term memory typically observe a positive correlation between caffeine intake and performance on memory tasks, suggesting caffeine enhances cognitive function. However, a recent study examining the impact of caffeine on memory recall in shift workers found no statistically significant improvement in memory scores among those who consumed caffeine compared to a control group.  The researchers proposed that the irregular sleep patterns and chronic sleep deprivation common among shift workers might negate the typical cognitive benefits of caffeine.  Which finding, if true, would most directly support the researchers’ explanation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6704070,
+        "label": "Shift workers in the study reported significantly higher levels of daytime sleepiness compared to individuals in the general population.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6704071,
+        "label": "The shift workers who consumed caffeine in the study also exhibited elevated levels of stress hormones, such as cortisol, compared to the control group.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6704072,
+        "label": "In a separate analysis, the researchers found that among shift workers who reported getting adequate sleep, caffeine consumption did correlate with improved memory recall.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6704073,
+        "label": "The memory tasks used in the study were specifically designed to be challenging and to require sustained attention and focus over an extended period.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 686815,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Economic models are computer simulations designed to forecast market trends and are frequently used to analyze financial systems. In a review of 1,500 such models predicting stock market crashes, analysts found that while 85% of the models successfully predicted crashes, only about 15% of those did so for reasons aligned with widely accepted economic principles, such as shifts in investor confidence or changes in interest rates. Instead, the analysts concluded that the crash predictions in the majority of models were primarily driven by inherent mathematical patterns within the model’s algorithms, rather than genuine reflections of economic dynamics. But even this successful prediction of market crashes has less to do with the models accurately reflecting real-world economic forces than it does with the mathematical structure built into the models. Which finding, if true, would most directly support the claim in the underlined sentence?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6868150,
+        "label": "The mathematical formulas that enable models to predict market crashes are based on theoretical relationships that are not consistently observed in actual market conditions.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6868151,
+        "label": "Models that did not predict market crashes often incorporated factors related to investor psychology, which are difficult to quantify mathematically.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6868152,
+        "label": "Economic models are frequently adapted to improve their predictive accuracy across various types of market fluctuations, not just crashes.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6868153,
+        "label": "When economic models predict market crashes, they are often validated by comparing their predictions with the outcomes of previous market downturns.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 735163,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Exercise scientists conducted a study to investigate the effects of different exercise intensities on body composition and stress markers. Participants were assigned to low, medium, or high intensity exercise groups for 8 weeks, with diet kept constant. Based on measurements taken after 8 weeks, the researchers concluded that while moderate exercise promotes both muscle gain and fat loss, high intensity exercise, while promoting fat loss, may hinder muscle gain due to increased stress responses.\n\n**Body Composition and Stress Markers After 8 Weeks of Different Exercise Intensities**\n\n| Exercise Intensity | Average Muscle Gain (kg) | Average Fat Loss (kg) | Average Cortisol Level (nmol/L) |\n|--------------------|--------------------------|-----------------------|---------------------------------|\n| Low                | 1.5                      | 0.5                   | 150                             |\n| Medium             | 2.5                      | 2.0                   | 200                             |\n| High               | 1.0                      | 3.0                   | 300                             |\n\nWhich choice uses data from the table to most effectively support the researchers' conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7351630,
+        "label": "Participants in the medium intensity group showed greater average muscle gain and fat loss compared to the low intensity group, but the high intensity group had the highest fat loss despite lower muscle gain than the medium intensity group.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7351631,
+        "label": "The average cortisol level increased with exercise intensity, with the high intensity group showing double the cortisol level of the low intensity group, suggesting increased stress.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7351632,
+        "label": "While fat loss increased consistently from low to high intensity exercise, muscle gain peaked at medium intensity and decreased at high intensity.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7351633,
+        "label": "The difference in fat loss between medium and high intensity exercise was relatively small compared to the difference in muscle gain between medium and high intensity exercise.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 756092,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "To investigate the effect of study habits on academic performance, researchers tracked two groups of students: those who studied an average of 5 hours per week (Low Study Group) and those who studied an average of 10 hours per week (High Study Group). The table below shows the average exam scores for each group across three subjects. The researchers concluded that the effect of increased study time on exam scores varied depending on the subject.\n\n| Subject      | Average Study Time (Hours/Week) | Average Exam Score (Low Study Group) | Average Exam Score (High Study Group) |\n|--------------|-----------------------------------|---------------------------------------|----------------------------------------|\n| Math         | 5                                 | 70                                    | 85                                     |\n| Science      | 5                                 | 75                                    | 88                                     |\n| English      | 5                                 | 65                                    | 72                                     |\n\nWhich choice best describes data from the table that support the researchers' conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7560920,
+        "label": "For all subjects, increased study time led to higher exam scores, but the increase was most significant in Math.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7560921,
+        "label": "Compared to Math and Science, English scores showed the smallest improvement with increased study time.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7560922,
+        "label": "Students in the low study time group consistently scored below 70 across all subjects.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7560923,
+        "label": "Increased study time resulted in the same score improvement across Math and Science, but a lower improvement in English.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 924516,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Climate change is altering ecosystems worldwide, impacting animal behavior. A recent study by ornithologist Dr. Emily Carter and her team investigated the effects of rising global temperatures on migratory bird patterns in North America. Focusing on the Willow Warbler, a species known for its long-distance migration, Carter's team analyzed migration arrival dates over the past 30 years. Their analysis revealed a consistent trend: Willow Warblers are arriving at their breeding grounds significantly earlier in the spring compared to three decades ago. The team concluded that this shift in migration timing is a direct response to warmer spring temperatures, allowing the birds to exploit earlier insect emergence, a crucial food source for breeding.  Which finding, if true, would most directly support the team's conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9245160,
+        "label": "Insect emergence in the Willow Warbler's breeding grounds is occurring earlier in the spring, and this earlier emergence is strongly correlated with rising average spring temperatures.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9245161,
+        "label": "Willow Warbler populations in other parts of the world with different climate change impacts are exhibiting similar changes in migration timing.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9245162,
+        "label": "Average spring temperatures in the Willow Warbler's breeding grounds have increased steadily over the past 30 years.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9245163,
+        "label": "Willow Warblers that arrive at their breeding grounds at the historical average time are found to have higher rates of nestling survival compared to those arriving earlier.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 924755,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "In 1990, Mifflin and colleagues calculated a revised estimate of the average daily metabolic rate (in Calories) for adult males. Prior to the 1990 study, estimates of the average metabolic rate were low enough to suggest that a daily caloric intake of 2000 Calories would lead to weight gain in most adult males, but according to a nutritional analysis by Willett and Stampfer, the estimated metabolic rate from the 1990 study is high enough that a daily caloric intake of 2000 Calories would likely only maintain weight for most adult males. Therefore, if Willett and Stampfer are correct, the minimum average metabolic rate for adult males that would suggest a daily caloric intake of 2000 Calories is sufficient for weight maintenance is likely _______________________________\n\n| Researchers         | Study Year | Estimated Average Metabolic Rate (Calories/day) |\n|---------------------|------------|-------------------------------------------------|\n| Harris and Benedict | 1918       | 1800                                            |\n| Mifflin et al.      | 1990       | 2050                                            |\n| Katch-McArdle       | 1977       | 1950                                            |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9247550,
+        "label": "above 1950 Calories/day but below 2050 Calories/day.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9247551,
+        "label": "above 1800 Calories/day but below 1950 Calories/day.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9247552,
+        "label": "above 2050 Calories/day.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9247553,
+        "label": "below 1800 Calories/day.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 979587,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Early civilizations developed in various regions of the world, each adapting to its unique environmental conditions. The density of population in these early centers was closely related to the productivity of their agricultural systems. While fertile river valleys like Mesopotamia and the Nile Valley supported relatively high population densities through intensive agriculture, other regions showed different patterns. For instance, in Mesoamerica, despite the development of sophisticated agricultural techniques like chinampas in some areas, ________________________________________________________________________________________________________________________\n\n**Historical Population Density and Agricultural Practices**\n\n| Region         | Year     | Population Density (people/sq km) | Primary Agricultural Practice   |\n|----------------|----------|-----------------------------------|---------------------------------|\n| Mesopotamia    | 3000 BCE | 15                                | Irrigation Agriculture          |\n| Nile Valley    | 3000 BCE | 12                                | Flood Recession Agriculture     |\n| Indus Valley   | 2500 BCE | 10                                | Rain-fed Agriculture            |\n| Mesoamerica    | 1500 BCE | 8                                 | Slash-and-burn Agriculture      |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9795870,
+        "label": "population density remained lower compared to river valley civilizations, possibly reflecting the limitations of slash-and-burn agriculture despite its ingenuity.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9795871,
+        "label": "the Indus Valley civilization, which relied on rain-fed agriculture, exhibited a population density only slightly lower than that of the Nile Valley.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9795872,
+        "label": "irrigation agriculture in Mesopotamia led to a population density significantly higher than that of the Nile Valley, suggesting the superiority of Mesopotamian farming techniques.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9795873,
+        "label": "slash-and-burn agriculture, while less intensive than irrigation, still allowed for a higher population density than rain-fed agriculture in the Indus Valley.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 986704,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Hard",
+    "question_text": "Automobile manufacturers are constantly striving to improve fuel efficiency, which is typically measured in miles per gallon (MPG). A recent study by the Green Auto Research Institute compared two popular car models, Sedan X and Hatchback Y, to assess their fuel efficiency. The study concluded that Sedan X is more fuel-efficient than Hatchback Y. Fuel tank capacity, while not directly indicative of fuel efficiency, can influence the total distance a car can travel before refueling.  Which choice best describes data, if presented in a graph showing fuel tank capacities, that would support the study's conclusion that Sedan X is more fuel-efficient than Hatchback Y?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9867040,
+        "label": "The graph shows that Sedan X has a fuel tank capacity only slightly larger than Hatchback Y, while the study concludes Sedan X is more fuel-efficient.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9867041,
+        "label": "The graph shows that both Sedan X and Hatchback Y have fuel tank capacities greater than 14 gallons, and the study concludes Sedan X is more fuel-efficient.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9867042,
+        "label": "The graph shows that Hatchback Y has a smaller fuel tank capacity than Sedan X, but the study still concludes Sedan X is more fuel-efficient.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9867043,
+        "label": "The graph shows that Sedan X has a much larger fuel tank capacity than Hatchback Y, which explains why the study concludes Sedan X is more fuel-efficient.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

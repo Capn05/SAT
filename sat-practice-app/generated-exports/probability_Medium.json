@@ -1,0 +1,282 @@
+[
+  {
+    "id": 151881,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "The table shows the number of students at a high school who participate in after-school clubs and sports. If a student from this high school is selected at random, what is the probability that the student participates in a club but does not participate in a sport?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//151881.png",
+    "options": [
+      {
+        "id": 1518810,
+        "label": "$\\frac{7}{40}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1518811,
+        "label": "$\\frac{7}{22}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1518812,
+        "label": "$\\frac{3}{8}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1518813,
+        "label": "$\\frac{1}{4}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 272093,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "A survey was conducted at a local coffee shop to understand customer preferences for pastry type and coffee temperature. The results for $150$ customers are summarized in the table below. What fraction of customers who prefer croissants also prefer iced coffee?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//272093.png",
+    "options": [
+      {
+        "id": 2720930,
+        "label": "$\\frac{47}{80}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2720931,
+        "label": "$\\frac{47}{75}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2720932,
+        "label": "$\\frac{33}{80}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2720933,
+        "label": "$\\frac{47}{28}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 490996,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "In a jar, there are $12$ green marbles, $8$ red marbles, $5$ blue marbles, and $15$ yellow marbles. If one of these marbles is selected at random, what is the probability of selecting a marble that is neither blue nor yellow?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4909960,
+        "label": "$\\frac{1}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4909961,
+        "label": "$\\frac{5}{8}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4909962,
+        "label": "$\\frac{7}{8}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4909963,
+        "label": "$\\frac{1}{8}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 533015,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "The table shows the enrollment of 9th and 10th grade students in after-school activities at a high school. If one student is selected at random from these $35$ students, what is the probability that the student selected will be a 10th grade student enrolled in Clubs?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//533015.png",
+    "options": [
+      {
+        "id": 5330150,
+        "label": "$\\frac{1}{7}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5330151,
+        "label": "$\\frac{17}{35}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5330152,
+        "label": "$\\frac{13}{35}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5330153,
+        "label": "$\\frac{8}{35}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 563784,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "A bakery produces fresh bagels at a rate of $150$ bagels per hour. If the bakery aims to produce $900$ bagels in total each morning, what fraction of the $900$ bagels produced are made in the first $2$ hours of production?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5637840,
+        "label": "$\\frac{1}{6}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5637841,
+        "label": "$\\frac{1}{3}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5637842,
+        "label": "$\\frac{1}{2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5637843,
+        "label": "$\\frac{2}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 692914,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "The table shows the number of students at a high school who participate in different extracurricular activities and their grade level. A student from this high school is to be chosen at random. If the student chosen is a junior, what is the probability that they participate in the Debate club?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//692914692914.png",
+    "options": [
+      {
+        "id": 6929140,
+        "label": "$\\frac{15}{25}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6929141,
+        "label": "$\\frac{15}{55}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6929142,
+        "label": "$\\frac{3}{5}$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6929143,
+        "label": "$\\frac{15}{75}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 795224,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "A bag contains a total of $60$ marbles. If $24$ of the marbles are yellow, and the rest are green, what is the probability of randomly selecting a green marble?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7952240,
+        "label": "$\\frac{3}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7952241,
+        "label": "$\\frac{2}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7952242,
+        "label": "$\\frac{2}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7952243,
+        "label": "$\\frac{3}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 903898,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 16,
+    "difficulty": "Medium",
+    "question_text": "At a high school, a survey was conducted among all $450$ students to determine their favorite subject among Math, Science, and English. If a student is selected at random, the probability that their favorite subject is Math is $0.32$, and the probability that their favorite subject is Science is $0.48$. How many students reported English as their favorite subject?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9038980,
+        "label": "90",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9038981,
+        "label": "144",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9038982,
+        "label": "216",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9038983,
+        "label": "360",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

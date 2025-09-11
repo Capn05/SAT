@@ -1,0 +1,107 @@
+[
+  {
+    "id": 93065,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Hard",
+    "question_text": "To estimate the average number of books read per year by adults in a city, a researcher surveyed $75$ members of a local book club. The survey found that the average number of books read per year by these $75$ members was $28$. Which of the following statements must be true?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 930650,
+        "label": "The average number of books read per year by adults in the city is 28.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 930651,
+        "label": "A conclusion about the average number of books read per year by adults in the city should not be made because the sample size is too small.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 930652,
+        "label": "The sampling method is flawed and may produce a biased estimate of the average number of books read per year by adults in the city.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 930653,
+        "label": "The sampling method is not flawed and is likely to produce an unbiased estimate of the average number of books read per year by adults in the city.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 423520,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Hard",
+    "question_text": "A school counselor wanted to investigate the relationship between the number of hours a student sleeps the night before an exam and their exam score. The counselor randomly selected 100 students from the high school. The table below summarizes the data for the $80$ students in the sample who slept for at least $6$ hours the night before the exam. Which of the following is the largest population to which the results of this study can be generalized?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//423520.png",
+    "options": [
+      {
+        "id": 4235200,
+        "label": "All students in the high school who scored 80% or above on the exam",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4235201,
+        "label": "The 100 students in the sample",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4235202,
+        "label": "The 80 students in the sample who slept at least 6 hours the night before the exam",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4235203,
+        "label": "All students in the high school",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 866883,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Hard",
+    "question_text": "A botanist is studying the effect of a new plant food on the growth rate of sunflower plants.  From a greenhouse containing $500$ sunflower seedlings, the botanist randomly selects $60$ seedlings to receive the new plant food, while the remaining seedlings receive the standard plant food. After one month, the botanist measures the growth rate of all seedlings and finds that the seedlings receiving the new plant food show a statistically significant increase in growth rate compared to those receiving the standard plant food. To which of the following largest groups can the results of this study be reasonably generalized?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8668830,
+        "label": "The 60 sunflower seedlings in the sample",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8668831,
+        "label": "The 500 sunflower seedlings in the greenhouse",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8668832,
+        "label": "All sunflower seedlings of this specific variety",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8668833,
+        "label": "All sunflower plants",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

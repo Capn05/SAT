@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "3b5a6d2c-3c13-4dd1-9b0e-1f5d9e0f8a2b",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Hard",
+      "question_text": "Psycholinguists conducted a meta-analysis on whether bilingualism confers an advantage on executive function tasks. They hypothesized that the advantage is stronger for inhibition-heavy tasks and that it increases with age. Effect sizes $d$ (positive values favor bilinguals) are summarized below.\n\n| Age Group                 | Inhibition Tasks (d) | Switching Tasks (d) |\n|---------------------------|----------------------|---------------------|\n| Children (6–12)           | 0.05                 | 0.10                |\n| Young Adults (18–35)      | 0.08                 | 0.14                |\n| Midlife (36–55)           | 0.12                 | 0.13                |\n| Older Adults (56+)        | 0.28                 | 0.15                |\n\nWhich choice best describes data from the table that most directly support the researchers' hypothesis?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9c1b7c44-9b5d-4e2a-bad6-4b01a0f9b6cc",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Hard",
+      "question_text": "A city introduced a weekday morning congestion charge (7:00–10:00) in its central zone. After the policy, average bus speeds within the zone rose by 9% during the charged hours, and car entries fell by 14%. However, the city also implemented signal retiming and opened several bus lanes during the same year. Officials claim that the charge—by directly reducing car entries—caused most of the bus-speed increase, rather than the other changes. Which finding, if true, would most directly support the officials' claim?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c84e2d9a-88e4-45d0-9f99-9e83f02f18b9",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Hard",
+      "question_text": "Agronomists tested four wheat genotypes under three irrigation regimes to assess yield stability. They argue that DR-7 shows relatively stable yields across water availability, whereas conventional lines are more sensitive to water deficit.\n\nYields (in $t/ha$):\n\n| Genotype | High Irrigation | Moderate Irrigation | Low Irrigation |\n|----------|------------------|---------------------|----------------|\n| DR-7     | 5.4              | 5.1                 | 4.8            |\n| DR-3     | 5.8              | 4.6                 | 3.3            |\n| Conv-1   | 6.0              | 4.9                 | 3.8            |\n| Conv-4   | 5.2              | 4.0                 | 2.9            |\n\nWhich choice best describes data from the table that support the agronomists' argument?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "de9a2a9e-9c11-4ed2-bf96-65c98a0575d5",
+      "question_id": "3b5a6d2c-3c13-4dd1-9b0e-1f5d9e0f8a2b",
+      "value": "A",
+      "label": "The average effect across all ages is larger for switching tasks than for inhibition tasks.",
+      "is_correct": false
+    },
+    {
+      "id": "5cce7d3e-8025-4b9c-9c61-0e7d7dbb3f81",
+      "question_id": "3b5a6d2c-3c13-4dd1-9b0e-1f5d9e0f8a2b",
+      "value": "B",
+      "label": "Among children, switching advantage exceeds inhibition advantage by $0.05$, indicating task specificity at early ages.",
+      "is_correct": false
+    },
+    {
+      "id": "7b1533d1-1b29-4b93-9e07-60a1ddfd6a62",
+      "question_id": "3b5a6d2c-3c13-4dd1-9b0e-1f5d9e0f8a2b",
+      "value": "C",
+      "label": "Inhibition advantage increases monotonically with age, reaching the largest value in older adults ($0.28$), while switching advantages remain relatively stable across ages.",
+      "is_correct": true
+    },
+    {
+      "id": "d71e31fd-2e59-4d79-90c9-91945b7e3dbd",
+      "question_id": "3b5a6d2c-3c13-4dd1-9b0e-1f5d9e0f8a2b",
+      "value": "D",
+      "label": "Both tasks show their highest effects in young adults, counter to the hypothesis.",
+      "is_correct": false
+    },
+    {
+      "id": "f3f6a6d4-929a-4b23-b9a9-36d3082ccf2c",
+      "question_id": "9c1b7c44-9b5d-4e2a-bad6-4b01a0f9b6cc",
+      "value": "A",
+      "label": "On days when toll readers malfunctioned at several cordon points (briefly suspending charges within the 7:00–10:00 window), car entries into the zone spiked and bus speeds on the affected routes simultaneously dropped, with no changes in weather, incidents, or signal timing.",
+      "is_correct": true
+    },
+    {
+      "id": "8b3b3ed2-5c64-47f2-92bc-af7a06d0c3eb",
+      "question_id": "9c1b7c44-9b5d-4e2a-bad6-4b01a0f9b6cc",
+      "value": "B",
+      "label": "A neighboring city without congestion pricing recorded a 5% increase in bus speeds over the same year.",
+      "is_correct": false
+    },
+    {
+      "id": "d1b6b2a7-e88e-4d26-8f04-308a1b1def29",
+      "question_id": "9c1b7c44-9b5d-4e2a-bad6-4b01a0f9b6cc",
+      "value": "C",
+      "label": "Surveys indicated that 60% of former drivers cited rising fuel prices as their primary reason for switching to transit.",
+      "is_correct": false
+    },
+    {
+      "id": "ea7f1d64-6e3b-4fe3-a028-b17f54647577",
+      "question_id": "9c1b7c44-9b5d-4e2a-bad6-4b01a0f9b6cc",
+      "value": "D",
+      "label": "Most newly added bus lanes were located outside the charged zone and were introduced gradually over the year.",
+      "is_correct": false
+    },
+    {
+      "id": "a1dc9f0b-1d5b-4a56-9cfb-3f0c2a7ab10e",
+      "question_id": "c84e2d9a-88e4-45d0-9f99-9e83f02f18b9",
+      "value": "A",
+      "label": "Under high irrigation, Conv-1 achieves the highest yield (6.0 $t/ha$), indicating that conventional varieties outperform drought-resistant lines when water is plentiful.",
+      "is_correct": false
+    },
+    {
+      "id": "4d1a965b-1e4b-41da-9a4f-8f83ef0774f4",
+      "question_id": "c84e2d9a-88e4-45d0-9f99-9e83f02f18b9",
+      "value": "B",
+      "label": "DR-3's yield drops by $\\frac{5.8-3.3}{5.8} \\approx 43%$ from high to low irrigation, showing drought sensitivity in at least one drought-resistant line.",
+      "is_correct": false
+    },
+    {
+      "id": "5ac2fbb6-3df8-4a35-8dff-71e082bc3f73",
+      "question_id": "c84e2d9a-88e4-45d0-9f99-9e83f02f18b9",
+      "value": "C",
+      "label": "The overall average yield across all genotypes under moderate irrigation is approximately 4.6 $t/ha$.",
+      "is_correct": false
+    },
+    {
+      "id": "901c1c3d-89da-4d6a-9d7f-1dc7b2d6a0dd",
+      "question_id": "c84e2d9a-88e4-45d0-9f99-9e83f02f18b9",
+      "value": "D",
+      "label": "DR-7's yield declines modestly from 5.4 to 4.8 $t/ha$ (range 0.6 $t/ha$) across high to low irrigation, compared with much larger drops of 2.2–2.3 $t/ha$ in the conventional lines, indicating greater stability for DR-7.",
+      "is_correct": true
+    }
+  ]
+}

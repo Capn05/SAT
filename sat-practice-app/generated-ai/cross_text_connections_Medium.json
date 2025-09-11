@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "a4b7e0d1-1a2f-4a8e-92a4-05e37f7b6a2c",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nUrban planners in Brookfield argue that installing rooftop gardens across commercial buildings can significantly reduce localized temperatures and alleviate stormwater runoff. A pilot block with five vegetated roofs recorded cooler rooftop surface temperatures and reduced runoff during summer storms. Proponents claim these results suggest that widespread adoption would notably reduce urban heat.\n\nText 2\n\nAn environmental engineering review notes that rooftop gardens' benefits vary widely with plant selection, maintenance, building insulation, and the proportion of roofs converted. Modeling studies indicate citywide temperature effects remain modest unless coverage reaches a substantial share of rooftops, though co-benefits like habitat creation and runoff reduction are still meaningful.\n\nBased on the texts, how would the author of Text 2 most likely respond to the claim in Text 1 that rooftop gardens can \"notably reduce urban heat\"?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5f3c89b7-b3a6-4d7d-b4e1-1f64d2b3c9d4",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA recent biography portrays the 19th-century inventor Elise Marchand as primarily motivated by profit, emphasizing her aggressive patent strategy and frequent licensing lawsuits as key drivers of her success.\n\nText 2\n\nNewly discovered personal letters from Marchand to colleagues describe her desire to make affordable medical devices for rural clinics and recount instances where she waived fees for hospitals. The editor of the letters suggests these documents complicate the view that profit was her sole or even dominant motivation.\n\nBased on the texts, how would the author of Text 1 most likely respond to the evidence presented in Text 2?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9c2f3d14-7b2e-4b0c-9f7d-6a18f2b1e5a7",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nEducational technologists argue that digital reading tools—such as inline dictionaries, annotation apps, and highlighting features—improve comprehension by allowing readers to clarify terms instantly and engage actively with text.\n\nText 2\n\nA cognitive scientist cautions that while such features can be helpful, the hyperlinked and notification-rich environments in which they are used often encourage skimming and fragmented attention. Studies cited indicate that deep comprehension tends to decline when readers frequently switch tasks or jump between screens.\n\nBased on the texts, how would the author of Text 2 most likely respond to Text 1's claim that these tools \"improve comprehension\"?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3d8a2c51-5e9f-4e4f-9a63-7a0d7d2c6b91",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nTransportation analysts argue that electric vehicles (EVs) are a key part of decarbonization. They cite lifecycle assessments showing lower total emissions compared with internal-combustion cars after the first several years of use. According to one policy brief, EVs are <u>unequivocally cleaner across their entire lifecycle</u> than gasoline vehicles.\n\nText 2\n\nA sustainability researcher agrees that EVs can reduce emissions but emphasizes that benefits depend on the electricity mix, battery manufacturing practices, and end-of-life management. In regions reliant on coal-heavy grids or with weak recycling systems, the net advantages may be smaller than advocates suggest.\n\nBased on the texts, how would the author of Text 2 most likely characterize the underlined claim in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e6b1a6f4-3c0d-4bd4-8b90-8c0f7d5a9f12",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA randomized trial at a large firm reported a 13% productivity increase among employees working from home two days per week, along with fewer sick days and lower attrition.\n\nText 2\n\nA multi-company field study found that while remote work can improve individual throughput, fully remote teams reported declines in mentorship, on-the-job learning, and cross-team innovation. The study recommended structured hybrid schedules and intentional collaboration time.\n\nBased on the texts, both authors would most likely agree with which statement about remote work policies?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2f9a3c7e-1b5d-4f2d-a7b3-4e6f8a9c1d2e",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nAn education advocate argues that dropping standardized test requirements makes admissions fairer by reducing the influence of exams that often mirror socioeconomic privilege rather than academic potential.\n\nText 2\n\nAn admissions researcher counters that while tests have flaws, they provide a common academic signal across schools of varying rigor. Eliminating them entirely may shift emphasis toward subjective metrics—like extracurriculars or recommendation letters—that can also reflect unequal access.\n\nBased on the texts, how would the author of Text 2 most likely respond to the assertion in Text 1 that removing standardized tests \"improves fairness\"?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7a1d3f2b-4c5e-4920-bf62-0c7a2b1d9e84",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA public-health communicator proposes simplifying hazard information into a single number—one risk score—arguing that this clarity helps people make better choices. The brief claims that a <u>single-number summary leads to more accurate decisions</u> than multi-parameter dashboards.\n\nText 2\n\nA risk scientist warns that oversimplification can obscure uncertainty, context, and population differences. She recommends layered communication: a concise headline metric paired with uncertainty ranges and links to underlying assumptions.\n\nBased on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0e5f9c2a-3b4d-4a6e-9f81-2c3d4b5e6f70",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA human-resources director reports that an AI screening tool increased the proportion of women shortlisted by 25% relative to the prior process, arguing that algorithmic evaluations reduce bias by focusing on skills rather than pedigree.\n\nText 2\n\nAn AI ethics auditor notes that hiring models can encode historical biases from training data and recommends ongoing bias testing, transparency about features used, and third-party audits as preconditions for deployment.\n\nBased on the texts, both authors would most likely agree with which action regarding algorithmic hiring tools?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b3c1d2e4-5a6f-47b8-9c0d-1e2f3a4b5c6d",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nA coastal city touts its plastic straw ban as a model policy, citing beach cleanups that recorded a 50% decline in straw litter within a year of implementation. Officials suggest that similar bans worldwide could meaningfully reduce ocean plastic.\n\nText 2\n\nA marine pollution researcher argues that most ocean plastic originates from mismanaged waste entering a small number of river systems. While local bans may improve neighborhood litter, they contend that without investments in waste infrastructure and river interception, global ocean plastic loads will change little.\n\nBased on the texts, how would the author of Text 2 most likely characterize the strategy described in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c7e8d9a0-1b2c-4d3e-8f90-0a1b2c3d4e5f",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Medium",
+      "question_text": "Text 1\n\nAn environmental policy brief argues that shifting toward plant-based diets substantially reduces greenhouse gas emissions, land use, and water consumption compared with typical meat-heavy diets, and should be broadly encouraged.\n\nText 2\n\nAn agroecologist agrees that many plant-based patterns can lower impacts but cautions that outcomes depend on how crops are produced. Large-scale monocultures can harm biodiversity and degrade soil, whereas diversified systems or well-managed grazing can offer different ecological trade-offs.\n\nBased on the texts, how would the author of Text 2 most likely respond to the broad claim in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "f1a2b3c4-5d6e-47f8-9012-3a4b5c6d7e8f",
+      "question_id": "a4b7e0d1-1a2f-4a8e-92a4-05e37f7b6a2c",
+      "value": "A",
+      "label": "By endorsing the claim as universally true for any city that installs even a few rooftop gardens.",
+      "is_correct": false
+    },
+    {
+      "id": "0a9b8c7d-6e5f-4d3c-8b7a-9c8d7e6f5a4b",
+      "question_id": "a4b7e0d1-1a2f-4a8e-92a4-05e37f7b6a2c",
+      "value": "B",
+      "label": "By arguing that rooftop gardens typically increase ambient temperatures due to evapotranspiration demands.",
+      "is_correct": false
+    },
+    {
+      "id": "1b2c3d4e-5f6a-407b-8c9d-0e1f2a3b4c5d",
+      "question_id": "a4b7e0d1-1a2f-4a8e-92a4-05e37f7b6a2c",
+      "value": "C",
+      "label": "By acknowledging potential benefits but emphasizing that meaningful heat reductions require extensive coverage and appropriate design.",
+      "is_correct": true
+    },
+    {
+      "id": "2c3d4e5f-6a7b-418c-9d0e-1f2a3b4c5d6e",
+      "question_id": "a4b7e0d1-1a2f-4a8e-92a4-05e37f7b6a2c",
+      "value": "D",
+      "label": "By suggesting any cooling benefits are fully offset by emissions from maintaining the gardens.",
+      "is_correct": false
+    },
+    {
+      "id": "3d4e5f6a-7b8c-49d0-a1b2-c3d4e5f6a7b8",
+      "question_id": "5f3c89b7-b3a6-4d7d-b4e1-1f64d2b3c9d4",
+      "value": "A",
+      "label": "Dismiss the letters as forgeries that should not be considered in serious scholarship.",
+      "is_correct": false
+    },
+    {
+      "id": "4e5f6a7b-8c9d-4a0b-b1c2-d3e4f5a6b7c8",
+      "question_id": "5f3c89b7-b3a6-4d7d-b4e1-1f64d2b3c9d4",
+      "value": "B",
+      "label": "Acknowledge that the letters add nuance but maintain that profit-seeking remains the most compelling explanation of Marchand's overall behavior.",
+      "is_correct": true
+    },
+    {
+      "id": "5f6a7b8c-9d0e-4b1c-c2d3-e4f5a6b7c8d9",
+      "question_id": "5f3c89b7-b3a6-4d7d-b4e1-1f64d2b3c9d4",
+      "value": "C",
+      "label": "Fully reverse the original thesis and conclude that profit rarely motivated Marchand.",
+      "is_correct": false
+    },
+    {
+      "id": "6a7b8c9d-0e1f-4c2d-d3e4-f5a6b7c8d9e0",
+      "question_id": "5f3c89b7-b3a6-4d7d-b4e1-1f64d2b3c9d4",
+      "value": "D",
+      "label": "Claim that patent litigation proves altruism was never a factor in Marchand's decisions.",
+      "is_correct": false
+    },
+    {
+      "id": "7b8c9d0e-1f2a-4d3e-e4f5-a6b7c8d9e0f1",
+      "question_id": "9c2f3d14-7b2e-4b0c-9f7d-6a18f2b1e5a7",
+      "value": "A",
+      "label": "They necessarily improve comprehension because more features always yield better outcomes for readers.",
+      "is_correct": false
+    },
+    {
+      "id": "8c9d0e1f-2a3b-4e4f-f5a6-b7c8d9e0f1a2",
+      "question_id": "9c2f3d14-7b2e-4b0c-9f7d-6a18f2b1e5a7",
+      "value": "B",
+      "label": "They decrease comprehension uniformly, regardless of how the reading session is structured.",
+      "is_correct": false
+    },
+    {
+      "id": "9d0e1f2a-3b4c-404f-a6b7-c8d9e0f1a2b3",
+      "question_id": "9c2f3d14-7b2e-4b0c-9f7d-6a18f2b1e5a7",
+      "value": "C",
+      "label": "They are irrelevant to comprehension because vocabulary knowledge has no relationship to understanding.",
+      "is_correct": false
+    },
+    {
+      "id": "a0e1f2a3-4b5c-4150-b7c8-d9e0f1a2b3c4",
+      "question_id": "9c2f3d14-7b2e-4b0c-9f7d-6a18f2b1e5a7",
+      "value": "D",
+      "label": "They can aid specific tasks, but in typical digital settings they often undermine sustained, deep comprehension through distraction and task-switching.",
+      "is_correct": true
+    },
+    {
+      "id": "b1f2a3c4-5d6e-4261-c8d9-e0f1a2b3c4d5",
+      "question_id": "3d8a2c51-5e9f-4e4f-9a63-7a0d7d2c6b91",
+      "value": "A",
+      "label": "As fully accurate in all contexts, regardless of local electricity sources or recycling capabilities.",
+      "is_correct": false
+    },
+    {
+      "id": "c2a3b4d5-6e7f-4372-d9e0-f1a2b3c4d5e6",
+      "question_id": "3d8a2c51-5e9f-4e4f-9a63-7a0d7d2c6b91",
+      "value": "B",
+      "label": "As too cautious, since tailpipe emissions alone determine lifecycle impacts.",
+      "is_correct": false
+    },
+    {
+      "id": "d3b4c5e6-7f80-4483-e0f1-a2b3c4d5e6f7",
+      "question_id": "3d8a2c51-5e9f-4e4f-9a63-7a0d7d2c6b91",
+      "value": "C",
+      "label": "As overgeneralized, because net benefits vary with grid mix, manufacturing practices, and end-of-life treatment.",
+      "is_correct": true
+    },
+    {
+      "id": "e4c5d6f7-8091-4594-f1a2-b3c4d5e6f708",
+      "question_id": "3d8a2c51-5e9f-4e4f-9a63-7a0d7d2c6b91",
+      "value": "D",
+      "label": "As irrelevant to policy debates, which should ignore lifecycle analysis altogether.",
+      "is_correct": false
+    },
+    {
+      "id": "f5d6e7a8-9012-46a5-a2b3-c4d5e6f70819",
+      "question_id": "e6b1a6f4-3c0d-4bd4-8b90-8c0f7d5a9f12",
+      "value": "A",
+      "label": "Effective policies should balance productivity gains with collaboration and learning through structured hybrid approaches.",
+      "is_correct": true
+    },
+    {
+      "id": "a6e7f809-0123-47b6-b3c4-d5e6f708192a",
+      "question_id": "e6b1a6f4-3c0d-4bd4-8b90-8c0f7d5a9f12",
+      "value": "B",
+      "label": "Fully remote work is optimal in all cases and should replace office work entirely.",
+      "is_correct": false
+    },
+    {
+      "id": "b7f80901-1234-48c7-c4d5-e6f708192a3b",
+      "question_id": "e6b1a6f4-3c0d-4bd4-8b90-8c0f7d5a9f12",
+      "value": "C",
+      "label": "Office attendance should be mandatory five days a week to maximize innovation.",
+      "is_correct": false
+    },
+    {
+      "id": "c8f90112-2345-49d8-d5e6-f708192a3b4c",
+      "question_id": "e6b1a6f4-3c0d-4bd4-8b90-8c0f7d5a9f12",
+      "value": "D",
+      "label": "Productivity and mentorship are unaffected by where people work, so policy details are unimportant.",
+      "is_correct": false
+    },
+    {
+      "id": "d9fa1223-3456-4ae9-e6f7-08192a3b4c5d",
+      "question_id": "2f9a3c7e-1b5d-4f2d-a7b3-4e6f8a9c1d2e",
+      "value": "A",
+      "label": "By agreeing and adding that eliminating grades would further improve fairness.",
+      "is_correct": false
+    },
+    {
+      "id": "ea0b2334-4567-4bfa-f708-192a3b4c5d6e",
+      "question_id": "2f9a3c7e-1b5d-4f2d-a7b3-4e6f8a9c1d2e",
+      "value": "B",
+      "label": "By contending that removing tests may simply shift bias to other subjective measures and that reformed common metrics can support fairness.",
+      "is_correct": true
+    },
+    {
+      "id": "fb1c3445-5678-4c0b-0819-2a3b4c5d6e7f",
+      "question_id": "2f9a3c7e-1b5d-4f2d-a7b3-4e6f8a9c1d2e",
+      "value": "C",
+      "label": "By asserting that tests are perfect indicators of merit and require no changes.",
+      "is_correct": false
+    },
+    {
+      "id": "0c2d4556-6789-4d1c-192a-3b4c5d6e7f80",
+      "question_id": "2f9a3c7e-1b5d-4f2d-a7b3-4e6f8a9c1d2e",
+      "value": "D",
+      "label": "By suggesting that fairness is irrelevant to admissions decisions.",
+      "is_correct": false
+    },
+    {
+      "id": "1d3e5667-7890-4e2d-2a3b-4c5d6e7f8091",
+      "question_id": "7a1d3f2b-4c5e-4920-bf62-0c7a2b1d9e84",
+      "value": "A",
+      "label": "By agreeing that one number is always superior to multi-parameter presentations.",
+      "is_correct": false
+    },
+    {
+      "id": "2e4f6778-8901-4f3e-3b4c-5d6e7f8091a2",
+      "question_id": "7a1d3f2b-4c5e-4920-bf62-0c7a2b1d9e84",
+      "value": "B",
+      "label": "By proposing to remove uncertainty information to avoid confusing the public.",
+      "is_correct": false
+    },
+    {
+      "id": "3f508889-9012-404f-4c5d-6e7f8091a2b3",
+      "question_id": "7a1d3f2b-4c5e-4920-bf62-0c7a2b1d9e84",
+      "value": "C",
+      "label": "By insisting that risk communication should rely solely on detailed technical appendices.",
+      "is_correct": false
+    },
+    {
+      "id": "4061999a-0123-4150-5d6e-7f8091a2b3c4",
+      "question_id": "7a1d3f2b-4c5e-4920-bf62-0c7a2b1d9e84",
+      "value": "D",
+      "label": "By cautioning that a single-number score can mislead without uncertainty ranges and contextual explanations.",
+      "is_correct": true
+    },
+    {
+      "id": "5172aaaa-1234-4261-6e7f-8091a2b3c4d5",
+      "question_id": "0e5f9c2a-3b4d-4a6e-9f81-2c3d4b5e6f70",
+      "value": "A",
+      "label": "Implement regular bias audits and increase transparency before and after deployment.",
+      "is_correct": true
+    },
+    {
+      "id": "6283bbbb-2345-4372-7f80-91a2b3c4d5e6",
+      "question_id": "0e5f9c2a-3b4d-4a6e-9f81-2c3d4b5e6f70",
+      "value": "B",
+      "label": "Remove all human oversight to prevent subjective judgments from affecting outcomes.",
+      "is_correct": false
+    },
+    {
+      "id": "7394cccc-3456-4483-8091-a2b3c4d5e6f7",
+      "question_id": "0e5f9c2a-3b4d-4a6e-9f81-2c3d4b5e6f70",
+      "value": "C",
+      "label": "Avoid documenting model features to protect proprietary methods from scrutiny.",
+      "is_correct": false
+    },
+    {
+      "id": "84a5dddd-4567-4594-91a2-b3c4d5e6f708",
+      "question_id": "0e5f9c2a-3b4d-4a6e-9f81-2c3d4b5e6f70",
+      "value": "D",
+      "label": "Assume models trained on large datasets are unbiased by default.",
+      "is_correct": false
+    },
+    {
+      "id": "95b6eeee-5678-46a5-a1b2-c3d4e5f6a7b8",
+      "question_id": "b3c1d2e4-5a6f-47b8-9c0d-1e2f3a4b5c6d",
+      "value": "A",
+      "label": "As globally transformative because local litter trends directly predict ocean plastic loads.",
+      "is_correct": false
+    },
+    {
+      "id": "a6c7ffff-6789-47b6-b2c3-d4e5f6a7b8c9",
+      "question_id": "b3c1d2e4-5a6f-47b8-9c0d-1e2f3a4b5c6d",
+      "value": "B",
+      "label": "As counterproductive, since bans usually increase other forms of plastic waste.",
+      "is_correct": false
+    },
+    {
+      "id": "b7d80000-7890-48c7-c3d4-e5f6a7b8c9d0",
+      "question_id": "b3c1d2e4-5a6f-47b8-9c0d-1e2f3a4b5c6d",
+      "value": "C",
+      "label": "As locally helpful but insufficient without upstream investments in waste systems and river-focused interventions.",
+      "is_correct": true
+    },
+    {
+      "id": "c8e91111-8901-49d8-d4e5-f6a7b8c9d0e1",
+      "question_id": "b3c1d2e4-5a6f-47b8-9c0d-1e2f3a4b5c6d",
+      "value": "D",
+      "label": "As irrelevant because beach cleanups are unreliable sources of data.",
+      "is_correct": false
+    },
+    {
+      "id": "d9fa2222-9012-4ae9-e5f6-a7b8c9d0e1f2",
+      "question_id": "c7e8d9a0-1b2c-4d3e-8f90-0a1b2c3d4e5f",
+      "value": "A",
+      "label": "By rejecting the claim and asserting that plant-based diets typically increase environmental impacts.",
+      "is_correct": false
+    },
+    {
+      "id": "ea0b3333-0123-4bfa-f6a7-b8c9d0e1f2a3",
+      "question_id": "c7e8d9a0-1b2c-4d3e-8f90-0a1b2c3d4e5f",
+      "value": "B",
+      "label": "By agreeing with the general direction but stressing that benefits depend on production methods and local ecological context.",
+      "is_correct": true
+    },
+    {
+      "id": "fb1c4444-1234-4c0b-07a8-90b1c2d3e4f5",
+      "question_id": "c7e8d9a0-1b2c-4d3e-8f90-0a1b2c3d4e5f",
+      "value": "C",
+      "label": "By claiming that dietary patterns have no measurable impact on environmental indicators.",
+      "is_correct": false
+    },
+    {
+      "id": "0c2d5555-2345-4d1c-18b9-01c2d3e4f5a6",
+      "question_id": "c7e8d9a0-1b2c-4d3e-8f90-0a1b2c3d4e5f",
+      "value": "D",
+      "label": "By insisting that only livestock-intensive systems can be environmentally sustainable.",
+      "is_correct": false
+    }
+  ]
+}

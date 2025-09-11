@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "f2c27b6b-3b73-4d80-9b4f-6f0baad1fd6c",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Popular accounts credit wolf reintroduction with rapidly reorganizing Yellowstone's ecosystems: elk avoided open valleys, willows rebounded, and streams narrowed. That narrative, however, can obscure variability across space and time. <u>Meta-analyses of park monitoring indicate that while predator-driven \"trophic cascades\" occurred, effect sizes were heterogeneous and, in several watersheds, attenuated after $3$ to $5$ years as ungulates adjusted their foraging strategies.</u> Consequently, recent management plans emphasize habitat context rather than expecting uniform landscape engineering by predators.  Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "96a77ef6-166c-4d17-8a59-b1d1bf82d3f6",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Conventional advice holds that longer emails secure better outcomes because they \"cover all bases.\" An audit of $n=12{,}842$ customer-service threads appeared to confirm this: messages exceeding $\\frac{3}{2}$ standard deviations above the median length correlated with faster resolution. Yet when thread topic complexity—operationalized as the number of distinct issue tags $k$—was controlled for, the pattern weakened and, for high-$k$ cases, reversed. The authors conclude that length per se is a poor predictor; instead, writers should match density to task complexity.  Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b0a4c4a4-3a6e-4dda-8b9b-60f8d8f64da3",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Paleoclimatologists have long debated whether tree rings or cave deposits offer the \"truer\" record of regional rainfall. Critics of dendrochronology argue that rising $CO_2$ can inflate growth independent of moisture, while speleothem advocates note that dripwater chemistry integrates precipitation over time but can lag events by months. Recent reconstructions increasingly employ multiproxy models that assign weights $w_i$ to each record such that $\\sum w_i = 1$, explicitly propagating uncertainties. Rather than declaring a single proxy superior, this approach leverages complementary strengths to recover a more reliable hydroclimate signal.  Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "7a54a7ce-3b2e-4532-9fd9-8b9bd55f2d0c",
+      "question_id": "f2c27b6b-3b73-4d80-9b4f-6f0baad1fd6c",
+      "value": "A",
+      "label": "It tempers a popular claim by acknowledging partial support while highlighting limitations and variability.",
+      "is_correct": true
+    },
+    {
+      "id": "0c2f2a01-6e72-4d8b-9bda-8354ec0f1e2a",
+      "question_id": "f2c27b6b-3b73-4d80-9b4f-6f0baad1fd6c",
+      "value": "B",
+      "label": "It supplies a counterexample that fully refutes the notion that predators can cause trophic cascades.",
+      "is_correct": false
+    },
+    {
+      "id": "f4cd9702-77ef-4b75-9d5d-317b7e5c8a33",
+      "question_id": "f2c27b6b-3b73-4d80-9b4f-6f0baad1fd6c",
+      "value": "C",
+      "label": "It introduces a methodological critique unrelated to the debate on ecosystem effects.",
+      "is_correct": false
+    },
+    {
+      "id": "9f9a1974-1e76-4f57-ba0e-9e6dcf4b0e1e",
+      "question_id": "f2c27b6b-3b73-4d80-9b4f-6f0baad1fd6c",
+      "value": "D",
+      "label": "It extends the initial narrative by detailing hydrological mechanisms behind stream narrowing.",
+      "is_correct": false
+    },
+    {
+      "id": "2a8d5c01-2c75-4fc8-8d1f-18b77aa9b98a",
+      "question_id": "96a77ef6-166c-4d17-8a59-b1d1bf82d3f6",
+      "value": "A",
+      "label": "It evaluates competing theories of writing style and ranks them by practical usefulness.",
+      "is_correct": false
+    },
+    {
+      "id": "50116f23-2a29-4f4e-b2b0-c97fdfa54126",
+      "question_id": "96a77ef6-166c-4d17-8a59-b1d1bf82d3f6",
+      "value": "B",
+      "label": "It describes a data-collection method and then postpones interpretation for future work.",
+      "is_correct": false
+    },
+    {
+      "id": "2c02e5bd-0ad1-4f03-a6fa-1dd0ed5bff92",
+      "question_id": "96a77ef6-166c-4d17-8a59-b1d1bf82d3f6",
+      "value": "C",
+      "label": "It reports an initial correlation, incorporates a confounding variable that alters the interpretation, and ends with a qualified recommendation.",
+      "is_correct": true
+    },
+    {
+      "id": "c1776bd2-6e8a-4f4f-9396-98294a995b6a",
+      "question_id": "96a77ef6-166c-4d17-8a59-b1d1bf82d3f6",
+      "value": "D",
+      "label": "It contrasts casual observations with expert opinion and sides with the experts.",
+      "is_correct": false
+    },
+    {
+      "id": "8b2ea59d-4aef-4016-8a3f-4c4a2bb5a0fb",
+      "question_id": "b0a4c4a4-3a6e-4dda-8b9b-60f8d8f64da3",
+      "value": "A",
+      "label": "To provide a detailed chemical analysis of speleothem formation.",
+      "is_correct": false
+    },
+    {
+      "id": "ef2c3cf1-9bef-4f52-8a18-0ec57e6a862d",
+      "question_id": "b0a4c4a4-3a6e-4dda-8b9b-60f8d8f64da3",
+      "value": "B",
+      "label": "To argue that tree rings are inherently more accurate than cave deposits for reconstructing rainfall.",
+      "is_correct": false
+    },
+    {
+      "id": "3f6c0a3a-9bde-4b8f-acb5-8a6a69b9e3bc",
+      "question_id": "b0a4c4a4-3a6e-4dda-8b9b-60f8d8f64da3",
+      "value": "C",
+      "label": "To outline the history of paleoclimate research from its beginnings to current debates.",
+      "is_correct": false
+    },
+    {
+      "id": "6fb2a67c-7d7a-4d1c-8d83-8e034a954c34",
+      "question_id": "b0a4c4a4-3a6e-4dda-8b9b-60f8d8f64da3",
+      "value": "D",
+      "label": "To explain why integrating multiple proxies through explicit weighting offers a more dependable alternative to choosing a single proxy.",
+      "is_correct": true
+    }
+  ]
+}

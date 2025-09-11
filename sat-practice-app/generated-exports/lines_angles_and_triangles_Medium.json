@@ -1,0 +1,177 @@
+[
+  {
+    "id": 88308,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Medium",
+    "question_text": "A person who is $6$ feet tall casts a shadow of $2$ feet long on flat ground. At the same time, a building nearby casts a shadow that is $15$ feet long. Assuming both the person and the building are perpendicular to the ground, how tall, in feet, is the building?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 883080,
+        "label": "17",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 883081,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 883082,
+        "label": "45",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 883083,
+        "label": "90",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 268650,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Medium",
+    "question_text": "In triangle $PQR$, the measure of angle $P$ is $20^\\circ$. If triangle $PQR$ is isosceles, which of the following is NOT a possible measure of angle $Q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2686500,
+        "label": "$20^\\circ$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2686501,
+        "label": "$80\\circ$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2686502,
+        "label": "40°",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2686503,
+        "label": "$140\\circ$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 341898,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Medium",
+    "question_text": "Triangle $DEF$ is similar to triangle $PQR$, such that $D$, $E$, and $F$ correspond to $P$, $Q$, and $R$ respectively. The length of each side of triangle $PQR$ is $3$ times the length of its corresponding side in triangle $DEF$. The measure of side $DE$ is $12$. What is the measure of side $PQ$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3418980,
+        "label": "12",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3418981,
+        "label": "15",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3418982,
+        "label": "24",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3418983,
+        "label": "36",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 603691,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Medium",
+    "question_text": "Triangle $STU$ and triangle $VWX$ are shown. The relationship between the side lengths of the two triangles is such that $\\frac{ST}{VW} = \\frac{TU}{WX} = \\frac{SU}{VX} = \\frac{3}{2}$. If the measure of angle $STU$ is $45^\\circ$, what is the measure, in degrees, of angle $VWX$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6036910,
+        "label": "30",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6036911,
+        "label": "45",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6036912,
+        "label": "60",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6036913,
+        "label": "90",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 682887,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Medium",
+    "question_text": "In triangle $PQR$, the measures of $\\angle P$ and $\\angle Q$ are $55^\\circ$ and $65^\\circ$ respectively. What is the measure of $\\angle R$, in degrees?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6828870,
+        "label": "120",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6828871,
+        "label": "70",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6828872,
+        "label": "60",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6828873,
+        "label": "65",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

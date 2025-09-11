@@ -1,0 +1,492 @@
+[
+  {
+    "id": 112442,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "At a local farm stand, apples cost $\\$2$ each and bananas cost $\\$1.50$ each. Sarah bought a total of $12$ fruits and paid $\\$21$. How many apples did Sarah buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1124420,
+        "label": "6",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1124421,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1124422,
+        "label": "8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1124423,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 112718,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$3x + y = 10$$ $$y = 2x + 5$$ The solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1127180,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1127181,
+        "label": "-1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1127182,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1127183,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 126222,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$3x + y = 10$$ $$x - y = 2$$ The system of equations above has solution $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1262220,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1262221,
+        "label": "3",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1262222,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1262223,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 198772,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$a + 2b = 45$$ $$2b = 15$$ The solution to the given system of equations is $(a, b)$. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1987720,
+        "label": "30",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1987721,
+        "label": "35",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1987722,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1987723,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 224388,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$\\frac{1}{2}y = x$$ $$\\frac{1}{3}y = x + 2$$ The solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2243880,
+        "label": "-3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2243881,
+        "label": "-6",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2243882,
+        "label": "0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2243883,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 234949,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "A cashier has a total of $48$ coins, consisting of only nickels and dimes. The total value of the coins is $\\$3.30$. How many nickels does the cashier have?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2349490,
+        "label": "30",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2349491,
+        "label": "24",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2349492,
+        "label": "18",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2349493,
+        "label": "36",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 330557,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$3x + 5y = 25$$ $$3x + 2y = 10$$ In the solution $(x, y)$ to the system of equations below, what is the value of $y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3305570,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3305571,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3305572,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3305573,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 446961,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "In the solution to the system of equations below, what is the value of $y$? $$y = 3x + 1$$ $$2y = 7x$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4469610,
+        "label": "4",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4469611,
+        "label": "7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4469612,
+        "label": "-5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4469613,
+        "label": "-2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 479545,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "Which of the following systems of linear equations has no solution?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4795450,
+        "label": "$$y = -3x + 7$$ $$y = -3x - 2$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4795451,
+        "label": "$$y = 2x + 5$$ $$y = -2x + 5$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4795452,
+        "label": "$$y = 4x - 1$$ $$y = 5x - 1$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4795453,
+        "label": "$$x = -2$$ $$y = 5$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 591606,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$2x + 3y = 30$$ $$3x + 2y = 20$$ If the system of equations above has solution $(x, y)$, what is the value of $x + y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5916060,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5916061,
+        "label": "10",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5916062,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5916063,
+        "label": "50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 608720,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$2x + y = 10$$ $$2x - y = 6$$ The solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6087200,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6087201,
+        "label": "4",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6087202,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6087203,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 629126,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "Which of the following systems of equations has the same solution as the system of equations graphed above?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//629126.png",
+    "options": [
+      {
+        "id": 6291260,
+        "label": "$$2x + 3y = 1$$ $$4x - y = 9$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6291261,
+        "label": "$$x + y = 0$$ $$3x - y = 8$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6291262,
+        "label": "$$x - 2y = 5$$ $$2x + y = 5$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6291263,
+        "label": "$$3x + y = 7$$ $$x - y = 1$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 828364,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "$$y = \\frac{1}{3}x$$ $$y = -2x + 7$$ The solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8283640,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8283641,
+        "label": "-3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8283642,
+        "label": "0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8283643,
+        "label": "2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 853218,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Medium",
+    "question_text": "In the $xy$-plane, the graph of $y = 3x - 2$ intersects the graph of $y = -x + 6$ at the point $(a,b)$. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8532180,
+        "label": "1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8532181,
+        "label": "2",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8532182,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8532183,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

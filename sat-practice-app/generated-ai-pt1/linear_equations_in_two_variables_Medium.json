@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "5a2a99c3-b56c-44a8-9c5f-7e2d9a7d8f1a",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Medium",
+      "question_text": "Line $\\ell$ is parallel to the line $3x - 2y = 8$ and passes through the point $(-4, 1)$. Which of the following is an equation of line $\\ell$ in slope-intercept form?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f6da2b72-93d0-4a50-8c0b-6a2ea4a7e5c1",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Medium",
+      "question_text": "Line $n$ is perpendicular to the line $y = -\\frac{4}{7}x + 6$ and passes through the point $(-7, 5)$. What is an equation of line $n$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8f3d76b1-3c62-4b1a-9f90-3c9b4736a8e4",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Medium",
+      "question_text": "A moving company charges according to the equation $C = 35 + 0.20m$, where $C$ is the total cost in dollars and $m$ is the number of miles driven. Which statement best interprets $0.20$ in this context?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "0a1e68b4-8c8a-4d2e-9c24-1a3b90e0a1f0",
+      "question_id": "5a2a99c3-b56c-44a8-9c5f-7e2d9a7d8f1a",
+      "value": "A",
+      "label": "$y = \\frac{3}{2}x + 7$",
+      "is_correct": true
+    },
+    {
+      "id": "b1c71965-2d33-4c7f-bad4-e8e1f0c9a443",
+      "question_id": "5a2a99c3-b56c-44a8-9c5f-7e2d9a7d8f1a",
+      "value": "B",
+      "label": "$y = -\\frac{2}{3}x + 7$",
+      "is_correct": false
+    },
+    {
+      "id": "f2f5a781-c8cf-4fdd-9a33-2f3a8b79c88c",
+      "question_id": "5a2a99c3-b56c-44a8-9c5f-7e2d9a7d8f1a",
+      "value": "C",
+      "label": "$y = \\frac{3}{2}x - 7$",
+      "is_correct": false
+    },
+    {
+      "id": "7c4f99d0-4aee-4dde-9a17-6d5cbf2d2a66",
+      "question_id": "5a2a99c3-b56c-44a8-9c5f-7e2d9a7d8f1a",
+      "value": "D",
+      "label": "$y = \\frac{3}{2}x + 1$",
+      "is_correct": false
+    },
+    {
+      "id": "3d5a0e9e-4f84-4bb2-86a3-2f1c8a4f0d11",
+      "question_id": "f6da2b72-93d0-4a50-8c0b-6a2ea4a7e5c1",
+      "value": "A",
+      "label": "$y = -\\frac{7}{4}x + \\frac{69}{4}$",
+      "is_correct": false
+    },
+    {
+      "id": "9a5d27d8-65b7-47d1-9c2e-1f6b6710a728",
+      "question_id": "f6da2b72-93d0-4a50-8c0b-6a2ea4a7e5c1",
+      "value": "B",
+      "label": "$y = \\frac{7}{4}x + \\frac{61}{4}$",
+      "is_correct": false
+    },
+    {
+      "id": "c6d8f2f4-2f8a-4d41-a1c2-4f4e8c7d6a90",
+      "question_id": "f6da2b72-93d0-4a50-8c0b-6a2ea4a7e5c1",
+      "value": "C",
+      "label": "$y = \\frac{7}{4}x + \\frac{69}{4}$",
+      "is_correct": true
+    },
+    {
+      "id": "e7a2d1b9-3f60-4d26-95a8-2a5f4d7b8c31",
+      "question_id": "f6da2b72-93d0-4a50-8c0b-6a2ea4a7e5c1",
+      "value": "D",
+      "label": "$y = \\frac{4}{7}x + \\frac{69}{4}$",
+      "is_correct": false
+    },
+    {
+      "id": "a3c5e7d1-8b2d-4f6a-b3c1-7d9e1f2a3b4c",
+      "question_id": "8f3d76b1-3c62-4b1a-9f90-3c9b4736a8e4",
+      "value": "A",
+      "label": "The fixed fee, in dollars, charged before any miles are driven.",
+      "is_correct": false
+    },
+    {
+      "id": "d4e5f6a7-1b2c-4d3e-8f9a-0b1c2d3e4f5a",
+      "question_id": "8f3d76b1-3c62-4b1a-9f90-3c9b4736a8e4",
+      "value": "B",
+      "label": "The cost, in dollars per mile, charged for each mile driven.",
+      "is_correct": true
+    },
+    {
+      "id": "0f1e2d3c-4b5a-6c7d-8e9f-1a2b3c4d5e6f",
+      "question_id": "8f3d76b1-3c62-4b1a-9f90-3c9b4736a8e4",
+      "value": "C",
+      "label": "The number of miles included at no additional charge.",
+      "is_correct": false
+    },
+    {
+      "id": "b7c8d9e0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "question_id": "8f3d76b1-3c62-4b1a-9f90-3c9b4736a8e4",
+      "value": "D",
+      "label": "The total cost for driving 35 miles.",
+      "is_correct": false
+    }
+  ]
+}

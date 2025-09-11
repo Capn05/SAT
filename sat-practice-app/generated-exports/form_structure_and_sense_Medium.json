@@ -1,0 +1,282 @@
+[
+  {
+    "id": 29710,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "The recent surge in popularity of podcasts, particularly those focusing on investigative journalism, __________ a renewed interest in long-form storytelling and in-depth analysis of complex social issues.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 297100,
+        "label": "reflects",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 297101,
+        "label": "are reflecting",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 297102,
+        "label": "have reflected",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 297103,
+        "label": "reflect",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 65946,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "While individual honeybees are incapable of complex navigation over long distances, a swarm of bees, working collectively, can locate a new hive site many miles away.  This ability to navigate as a unit suggests that swarms of honeybees possess a form of collective intelligence as _____________________________________________________________________ directional information from individual bees.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 659460,
+        "label": "it integrates",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 659461,
+        "label": "they integrate",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 659462,
+        "label": "one integrates",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 659463,
+        "label": "we integrate",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 73996,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "Maya Lin’s design for the Vietnam Veterans Memorial—a stark, black granite wall inscribed with the names of fallen soldiers—initially sparked controversy, but its simple yet powerful form ultimately resonated deeply with the public, ______ it a landmark of American memorial architecture.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 739960,
+        "label": "establishing",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 739961,
+        "label": "established",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 739962,
+        "label": "to establish",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 739963,
+        "label": "establish",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 83764,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "Because the annual average temperature in coastal cities _________ a noticeable increase in recent years, urban planners are re-evaluating infrastructure designs.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 837640,
+        "label": "indicate",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 837641,
+        "label": "are indicating",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 837642,
+        "label": "indicates",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 837643,
+        "label": "to indicate",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 139535,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "The development of sophisticated artificial intelligence models has dramatically transformed various sectors.  These models have streamlined complex data analysis, enhanced predictive capabilities, and _________________________________ new avenues for innovation across industries.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1395350,
+        "label": "uncovering",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1395351,
+        "label": "uncovered",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1395352,
+        "label": "to uncover",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1395353,
+        "label": "having uncovered",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 765385,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "Despite being often associated with recent technological advancements, __________________ as far back as the early 19th century, with the pioneering work of Ada Lovelace and Charles Babbage.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7653850,
+        "label": "the concept of computer programming existed",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7653851,
+        "label": "computer programming existed conceptually",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7653852,
+        "label": "the conceptual existence of computer programming was",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7653853,
+        "label": "conceptual computer programming had existence",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 862131,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "Dr. Ramirez and colleagues at the university's biology department published groundbreaking findings based on their extensive analysis of multiple _________ DNA samples collected during the clinical trial.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8621310,
+        "label": "patients'",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8621311,
+        "label": "patient's",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8621312,
+        "label": "patients",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8621313,
+        "label": "patient",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 961222,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Medium",
+    "question_text": "Prior to Marie Curie _______________________________ her groundbreaking research on radioactivity in the late 19th century, the phenomenon was largely unexplored, and its potential applications were not yet understood.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9612220,
+        "label": "commences",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9612221,
+        "label": "commenced",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9612222,
+        "label": "will commence",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9612223,
+        "label": "is commencing",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

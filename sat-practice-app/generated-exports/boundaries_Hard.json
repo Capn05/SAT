@@ -1,0 +1,387 @@
+[
+  {
+    "id": 113040,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "The polymerase chain reaction, or PCR—a technique used to amplify DNA segments—has revolutionized fields from medicine to forensics.  Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1130400,
+        "label": "PCR:",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1130401,
+        "label": "PCR—",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1130402,
+        "label": "PCR,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1130403,
+        "label": "PCR",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 264520,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "Urban planners increasingly recognize the importance of green spaces in cities. Like access to clean water and sanitation, access to parks and natural environments is now considered a crucial component of urban infrastructure, ___________ has been linked to improved mental and physical health outcomes for city residents.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2645200,
+        "label": "consequently but it",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2645201,
+        "label": "consequently it",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2645202,
+        "label": "consequently, it",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2645203,
+        "label": "consequently. It",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 336444,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "The advent of digital audio workstations (DAWs) has revolutionized music production _____  producers can now manipulate sounds with unprecedented precision and create complex arrangements from their home studios.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3364440,
+        "label": "production,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3364441,
+        "label": "production;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3364442,
+        "label": "production and",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3364443,
+        "label": "production, and",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 400688,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "In his groundbreaking study of classical music, musicologist Charles Rosen examines the innovations of Franz Joseph Haydn. Rosen asserts that Haydn's use of sonata form was not simply adherence to established ___________________________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4006880,
+        "label": "conventions",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4006881,
+        "label": "conventions,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4006882,
+        "label": "conventions; rather,",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4006883,
+        "label": "conventions, rather",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 426775,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "The effectiveness of renewable energy sources in mitigating climate change is widely recognized _______ solar, wind, and geothermal power offer sustainable alternatives to fossil fuels.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4267750,
+        "label": "recognized",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4267751,
+        "label": "recognized,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4267752,
+        "label": "recognized and,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4267753,
+        "label": "recognized:",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 491660,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "While initial projections suggested a modest increase in sales, the marketing campaign proved surprisingly effective. The company’s revenue, __________ surpassed all previous records.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4916600,
+        "label": "however,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4916601,
+        "label": "however;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4916602,
+        "label": "however",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4916603,
+        "label": "however; and",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 501466,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "In 2023, a team of economists analyzed consumer spending patterns over the past decade. With this comprehensive dataset, the team was able to determine how economic anxieties influence purchasing decisions across ________ and their subsequent effects on market trends.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5014660,
+        "label": "demographics,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5014661,
+        "label": "demographics:",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5014662,
+        "label": "demographics;",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5014663,
+        "label": "demographics",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 507230,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "In his seminal work on the American Revolution, historian Gordon S. Wood argued that, despite facing numerous military and political setbacks, there was one characteristic that ultimately secured George Washington's leadership ______________ resilience.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5072300,
+        "label": "leadership. Resilience",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5072301,
+        "label": "leadership; resilience",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5072302,
+        "label": "leadership resilience",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5072303,
+        "label": "leadership: resilience",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 542800,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "Archaeologists studying ancient Minoan pottery shards – fragments of elaborately decorated vessels – have discovered new insights into the civilization's trade routes and artistic techniques ____________________________________________________________________________ revealing previously unknown connections to cultures once thought to be geographically distant.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5428000,
+        "label": "and consequently,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5428001,
+        "label": "and, consequently,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5428002,
+        "label": "and consequently-",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5428003,
+        "label": "and, consequently",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 915835,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "The world of modern poetry owes much to American _____________ Langston Hughes, a celebrated poet whose insightful poems explored themes of identity and the African American experience.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9158350,
+        "label": "poet,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9158351,
+        "label": "poet",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9158352,
+        "label": "poet;",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9158353,
+        "label": "poet:",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 917014,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Hard",
+    "question_text": "Paleontologist Jing Li developed a technique for determining the age—measured in millions of years, or Ma—of fossilized dinosaur bones _________ examining the ratio of carbon isotopes present in the bone fragments, Li refined the accuracy of dating fossils from the Mesozoic Era.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9170140,
+        "label": "bones, by",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9170141,
+        "label": "bones by",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9170142,
+        "label": "bones and by",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9170143,
+        "label": "bones. By",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "f3a1b2c4-5d67-4e89-8a1b-2c3d4e5f6a70",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Medium",
+      "question_text": "City Library Program Attendance by Category, 2019 and 2023\n\n| Program Category | 2019 Attendance | 2023 Attendance |\n|------------------|-----------------|-----------------|\n| Children         | 12,000          | 19,000          |\n| Teens            | 5,000           | 6,000           |\n| Adults           | 10,000          | 11,000          |\n| Seniors          | 3,000           | 3,500           |\n\nA city library director claims that the overall rise in attendance from 2019 to 2023 was primarily driven by children's programs. Which choice most effectively uses data from the table to support the director's claim?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0c9e7a62-1b3f-4d58-9c2a-7e6d5b4a3f21",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Medium",
+      "question_text": "Agricultural scientists examined whether higher pollinator visitation during bloom is associated with higher apple yields. They grouped 80 fields of the same cultivar into quartiles based on average pollinator visits per hour and recorded mean yield.\n\n| Visit-Rate Quartile | Mean Visits (per hr) | Mean Yield (t/ha) |\n|---------------------|----------------------|-------------------|\n| Q1 (lowest)         | 15                   | 4.8               |\n| Q2                  | 25                   | 5.2               |\n| Q3                  | 35                   | 5.6               |\n| Q4 (highest)        | 45                   | 6.1               |\n\nWhich choice best describes data from the table that support the scientists' hypothesis that greater pollinator visitation increases yield?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7b2c3d4e-5f60-4a71-8d9e-0a1b2c3d4e5f",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 26,
+      "difficulty": "Medium",
+      "question_text": "A city expanded its downtown bike-share network in 2021. The transportation department tracked bike-share rides downtown and the number of short car trips (less than 3 miles) detected by traffic sensors.\n\n| Year | Bike-Share Rides per Month (Downtown) | Short Car Trips per Day (< 3 miles, Downtown) |\n|------|---------------------------------------|-----------------------------------------------|\n| 2019 | 12,000                                | 18,000                                        |\n| 2021 | 28,000                                | 15,000                                        |\n| 2023 | 35,000                                | 14,000                                        |\n\nA local columnist claims that the 2021 expansion reduced short car trips downtown. Which choice most effectively uses data from the table to support the columnist's claim?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "a1b2c3d4-e5f6-4a78-8b9c-0d1e2f3a4b5c",
+      "question_id": "f3a1b2c4-5d67-4e89-8a1b-2c3d4e5f6a70",
+      "value": "A",
+      "label": "Children's program attendance rose by 7,000, accounting for more than half of the total increase of 9,500 across all categories.",
+      "is_correct": true
+    },
+    {
+      "id": "b2c3d4e5-f6a7-4b89-9cad-1e2f3a4b5c6d",
+      "question_id": "f3a1b2c4-5d67-4e89-8a1b-2c3d4e5f6a70",
+      "value": "B",
+      "label": "Adult programs grew by 10\\% more than children's programs in percentage terms.",
+      "is_correct": false
+    },
+    {
+      "id": "c3d4e5f6-a7b8-4c9a-8dbe-2f3a4b5c6d7e",
+      "question_id": "f3a1b2c4-5d67-4e89-8a1b-2c3d4e5f6a70",
+      "value": "C",
+      "label": "Teen programs contributed the same absolute increase as adult programs and seniors combined.",
+      "is_correct": false
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4dab-abcd-3a4b5c6d7e8f",
+      "question_id": "f3a1b2c4-5d67-4e89-8a1b-2c3d4e5f6a70",
+      "value": "D",
+      "label": "Seniors' programs saw the largest absolute and percentage increases from 2019 to 2023.",
+      "is_correct": false
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4ea1-8b2c-4d5e6f7a8b9c",
+      "question_id": "0c9e7a62-1b3f-4d58-9c2a-7e6d5b4a3f21",
+      "value": "A",
+      "label": "Q2 has a slightly higher yield than Q3, indicating no consistent relationship between visitation and yield.",
+      "is_correct": false
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4fb2-9c3d-5e6f7a8b9c0d",
+      "question_id": "0c9e7a62-1b3f-4d58-9c2a-7e6d5b4a3f21",
+      "value": "B",
+      "label": "The highest-yield quartile shows the smallest yield variance, demonstrating stability rather than any link with visitation.",
+      "is_correct": false
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4ac3-8d4e-6f7a8b9c0d1e",
+      "question_id": "0c9e7a62-1b3f-4d58-9c2a-7e6d5b4a3f21",
+      "value": "C",
+      "label": "Mean yield rises steadily from 4.8 t/ha in Q1 to 6.1 t/ha in Q4 as mean visit rate increases from 15 to 45 per hour.",
+      "is_correct": true
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4bd4-b5c6-7a8b9c0d1e2f",
+      "question_id": "0c9e7a62-1b3f-4d58-9c2a-7e6d5b4a3f21",
+      "value": "D",
+      "label": "Fields receiving supplemental fertilizer were overrepresented in Q4, explaining the higher yields.",
+      "is_correct": false
+    },
+    {
+      "id": "c9d0e1f2-a3b4-4ce5-8d6e-8b9c0d1e2f3a",
+      "question_id": "7b2c3d4e-5f60-4a71-8d9e-0a1b2c3d4e5f",
+      "value": "A",
+      "label": "The absolute number of short car trips remained above 14,000 per day in all years, indicating persistent congestion.",
+      "is_correct": false
+    },
+    {
+      "id": "d0e1f2a3-b4c5-4df6-9e7f-9c0d1e2f3a4b",
+      "question_id": "7b2c3d4e-5f60-4a71-8d9e-0a1b2c3d4e5f",
+      "value": "B",
+      "label": "Citywide vehicle registrations increased slightly from 2019 to 2023, suggesting more drivers overall.",
+      "is_correct": false
+    },
+    {
+      "id": "e1f2a3b4-c5d6-4e07-8f90-0d1e2f3a4b5c",
+      "question_id": "7b2c3d4e-5f60-4a71-8d9e-0a1b2c3d4e5f",
+      "value": "C",
+      "label": "In 2023, bike-share rides were nearly triple their 2019 level, while short car trips were lower than in 2019 in both 2021 and 2023.",
+      "is_correct": false
+    },
+    {
+      "id": "f2a3b4c5-d6e7-4f18-b0a1-1e2f3a4b5c6d",
+      "question_id": "7b2c3d4e-5f60-4a71-8d9e-0a1b2c3d4e5f",
+      "value": "D",
+      "label": "Immediately after the expansion (2021), bike-share rides rose from 12,000 to 28,000 per month while short car trips fell from 18,000 to 15,000 per day relative to 2019.",
+      "is_correct": true
+    }
+  ]
+}

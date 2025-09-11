@@ -1,0 +1,527 @@
+[
+  {
+    "id": 14718,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Scientists have long observed the remarkable migration of monarch butterflies, traveling thousands of miles across generations. While the exact mechanisms guiding their navigation, particularly for butterflies that have never made the journey before, remain unclear, researchers have noted consistent patterns. Monarch butterflies predictably follow specific routes and appear to utilize environmental cues such as the position of the sun and Earth's magnetic fields.  These patterns suggest that __",
+    "image_url": null,
+    "options": [
+      {
+        "id": 147180,
+        "label": "the complete migration route of monarch butterflies is now fully understood by researchers.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 147181,
+        "label": "monarch butterflies' ability to navigate is primarily based on learned behaviors passed down through generations.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 147182,
+        "label": "monarch butterflies possess an inherent navigational capability that allows them to migrate without prior experience.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 147183,
+        "label": "future research should focus solely on the environmental cues used by monarch butterflies during migration.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 65775,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Archaeologists initially hypothesized that the monumental statues on Easter Island, known as Moai, were transported across the island using only ropes and manpower, based on the island's limited resources and the absence of evidence for advanced technology.  However, recent experiments employing detailed computer simulations and replicating potential transport methods have demonstrated that moving the Moai upright, while possible with ropes and manpower, would have been significantly slower and less efficient than previously thought.  These findings, combined with newly discovered evidence of sophisticated road systems and wooden sled components near statue quarries, suggest that _  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 657750,
+        "label": "the Moai were likely transported using a combination of ropes, manpower, and wooden sled technology.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 657751,
+        "label": "computer simulations are not reliable tools for understanding ancient transportation methods.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 657752,
+        "label": "the initial hypothesis about Moai transport was entirely incorrect and should be disregarded.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 657753,
+        "label": "Easter Island lacked the necessary resources to develop any form of advanced transportation technology.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 319542,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "To understand the impact of environmental noise on avian communication, researchers studied song sparrows in urban and rural habitats. They recorded and analyzed sparrow songs from both locations, focusing on song complexity, measured by the number of distinct syllables and song types. The analysis showed that urban sparrows, living in areas with higher background noise levels averaging 65 decibels, produced songs with an average complexity score of 7.2, while rural sparrows, in areas averaging 45 decibels, had a score of 12.5.  The researchers concluded that ____________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3195420,
+        "label": "exposure to elevated levels of environmental noise is associated with reduced song complexity in song sparrows.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3195421,
+        "label": "song sparrows in urban environments compensate for noise pollution by increasing the volume of their songs, rather than altering complexity.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3195422,
+        "label": "the complexity of sparrow songs is primarily determined by genetic factors and is largely unaffected by environmental noise.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3195423,
+        "label": "a noise level of 55 decibels represents a critical threshold above which sparrow song complexity begins to decline sharply.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 333534,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Ornithologists have noted a trend in the migration patterns of the Willow Warbler, a species that breeds in northern Europe and overwinters in sub-Saharan Africa. For the past two decades, these birds have consistently arrived at their European breeding grounds approximately one week earlier each spring. Scientists hypothesize that this shift is linked to climate change, which has resulted in earlier spring seasons and a corresponding advancement in the phenology of plants and insects, the Willow Warbler's primary food source during breeding. Therefore, the observed change in the Willow Warbler's migration timing is most likely an adaptation to _",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3335340,
+        "label": "the altered seasonal availability of their food resources in Europe.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3335341,
+        "label": "a reduction in the energy expenditure required for their migration journey.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3335342,
+        "label": "increasing competition from other bird species in their wintering grounds.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3335343,
+        "label": "a natural fluctuation in their internal biological clocks over time.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 337601,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Ornithologists have long observed that migratory bird populations are declining worldwide.  While habitat loss and climate change are significant contributing factors, recent studies have highlighted another potential stressor: light pollution. Artificial light at night disorients migrating birds, drawing them away from their natural routes and causing them to expend crucial energy reserves searching for proper rest and foraging areas.  Furthermore, brightly lit urban centers can act as ecological traps, attracting birds to dangerous environments.  The growing global concern over light pollution and its impact on avian species suggests that __________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3376010,
+        "label": "habitat preservation is no longer sufficient to protect migratory birds.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3376011,
+        "label": "reducing artificial light at night may be crucial for migratory bird conservation.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3376012,
+        "label": "migratory birds are primarily threatened by urban development and expansion.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3376013,
+        "label": "light pollution is a more significant threat to bird populations than climate change.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 339805,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Paleontologist Dr. Aris Thorne initially estimated the age of newly discovered *Tyrannosaurus Rex* fossils to be approximately 75 million years old, based on the established age of the geological stratum in which they were unearthed. However, using a refined radiometric dating method directly on the fossilized bone material, Dr. Thorne's team determined the fossils to be closer to 68 million years old. Therefore, the team most likely concluded that __",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3398050,
+        "label": "the radiometric dating method is inherently more accurate than geological stratum dating.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3398051,
+        "label": "the *Tyrannosaurus Rex* species lived for a shorter period than previously thought.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3398052,
+        "label": "the geological stratum where the fossils were found is likely younger than initially determined.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3398053,
+        "label": "the initial age estimate of the fossils was likely inaccurate.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 354452,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "In a study of social media usage and political polarization, researchers analyzed the online behavior of 1,500 participants before and after a major national election. They found that individuals who primarily consumed news from sources aligning with their pre-existing political beliefs showed a 20% increase in the extremity of their views post-election. Conversely, participants who actively sought out news from diverse sources, including those with opposing viewpoints, exhibited no significant change in their political polarization. These findings suggest that echo chambers on social media platforms may exacerbate political divides, and that __________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3544520,
+        "label": "exposure to a wide range of perspectives can mitigate the polarizing effects of social media algorithms.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3544521,
+        "label": "individuals are inherently resistant to changing their political beliefs, regardless of media consumption.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3544522,
+        "label": "social media platforms are the sole drivers of political polarization in contemporary society.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3544523,
+        "label": "consuming news from sources aligning with pre-existing beliefs is beneficial for maintaining political stability.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 497951,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Researchers conducted a study on the impact of background noise on focus. Participants were asked to complete a series of complex math problems while exposed to either silence or ambient office noise. The researchers measured both accuracy and completion time. They found that while accuracy remained consistent across both conditions, participants in the ambient noise condition took, on average, 15% longer to complete the problems. This suggests that while background noise may not decrease the correctness of work, it likely ____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4979510,
+        "label": "improves focus for individuals accustomed to working in busy environments.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4979511,
+        "label": "increases the cognitive effort required to maintain the same level of accuracy.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4979512,
+        "label": "primarily affects individuals who are new to complex mathematical tasks.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4979513,
+        "label": "leads to a significant decrease in accuracy over extended periods of task completion.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 538871,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Researchers investigated the effects of different amounts of caffeine on cognitive performance. Participants were randomly assigned to drink either 0mg, 100mg, or 200mg of caffeine before completing a series of attention-based tasks. The results showed that participants in the 200mg group had significantly faster average reaction times and higher accuracy rates compared to both the 0mg and 100mg groups. Interestingly, there was no significant difference in performance between the 0mg and 100mg groups.  This suggests that _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5388710,
+        "label": "even small amounts of caffeine can noticeably improve cognitive functions like attention and reaction time.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5388711,
+        "label": "the benefits of caffeine for cognitive performance plateau at a moderate dose, beyond which there may be no additional improvement.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5388712,
+        "label": "caffeine's impact on cognitive performance is primarily due to its effect on reaction time, with minimal impact on accuracy.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5388713,
+        "label": "individuals who regularly consume caffeine require higher doses to experience any measurable cognitive enhancement.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 705405,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Ecological researchers studying migratory patterns of songbirds tracked various populations along both coastal and inland routes.  Their data indicated a statistically significant increase in predation rates among songbirds following coastal routes compared to those migrating inland.  The researchers propose that the relatively unobstructed airspace over coastal areas exposes migrating birds to greater visibility from aerial predators. In contrast, inland routes, characterized by diverse landscapes and forest cover, may offer more opportunities for evasion. This explanation implies that _________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7054050,
+        "label": "coastal migratory paths pose an intrinsically higher predation risk for songbirds compared to inland paths.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7054051,
+        "label": "the primary factor driving songbird route selection is the availability of food resources, which are scarcer along coastlines.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7054052,
+        "label": "weather conditions, rather than predation, are the overriding determinant of successful songbird migration regardless of the route chosen.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7054053,
+        "label": "songbird populations that rely on coastal migration are inevitably facing a steep decline due to predator pressure.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 712353,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "The bombardier beetle is known for its unique defense mechanism. When threatened, it can eject a hot, irritating chemical spray from its abdomen. This spray is produced by mixing two relatively harmless chemicals, hydroquinone and hydrogen peroxide, within a specialized gland in the beetle's body. These chemicals are stored in separate compartments and are mixed only when the beetle needs to defend itself.  The mixing process is catalyzed by enzymes, resulting in an exothermic reaction that heats the mixture to near boiling point and creates pressure for ejection.  This sophisticated system allows the bombardier beetle to ____  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7123530,
+        "label": "produce a defensive spray only when both hydroquinone and hydrogen peroxide are available in the environment.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7123531,
+        "label": "effectively deter predators with a rapid and potent chemical defense without risking self-harm.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7123532,
+        "label": "store the irritating chemical spray in its abdomen and release it directly when attacked.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7123533,
+        "label": "develop immunity to the irritating effects of its own chemical spray over its lifespan.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 777312,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Paleoclimatologists analyze tree rings to reconstruct past climate conditions. Wider tree rings generally indicate years with more favorable growing conditions, such as increased rainfall. However, tree growth can also be influenced by factors unrelated to regional climate, including soil composition, competition with neighboring trees, and localized pest outbreaks. Therefore, ______",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7773120,
+        "label": "tree ring width alone may not be a definitive indicator of regional rainfall patterns.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7773121,
+        "label": "tree rings are generally unreliable for reconstructing past climate conditions.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7773122,
+        "label": "the period with wider tree rings necessarily experienced unusually high levels of rainfall.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7773123,
+        "label": "climate scientists should focus on other methods besides tree rings to study past climate.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 800842,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Many educational theorists argue that excessive screen time diminishes students' attention spans and critical thinking skills. Yet, studies suggest that when used thoughtfully, digital tools like interactive simulations and collaborative platforms can foster deeper engagement and enhance problem-solving abilities among students. Consequently, educators ought to recognize that  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8008420,
+        "label": "the judicious integration of digital tools may offer pedagogical advantages that counteract concerns about screen time.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8008421,
+        "label": "digital technology is inherently superior to traditional teaching methods in promoting student learning.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8008422,
+        "label": "students' preference for digital devices is the primary factor determining the effectiveness of educational technology.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8008423,
+        "label": "eliminating screen time entirely is the most effective way to improve students' academic performance.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 803641,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "Early reports concerning a recent study appeared to establish a direct link between social media usage and decreased mental well-being in teenagers. Public discourse quickly focused on alarming statistics highlighted in initial press releases, emphasizing correlations between heavy social media consumption and reported increases in anxiety and depressive symptoms. However, a detailed analysis of the complete study reveals a more intricate relationship. Researchers concluded that while excessive social media engagement was indeed associated with adverse mental health outcomes, moderate usage, especially for purposes of social connection and information retrieval, did not demonstrate harmful effects and, in certain contexts, exhibited marginally positive associations. This suggests that the connection between social media and teenage mental health _____________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8036410,
+        "label": "is as detrimental as early reports led many to believe.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8036411,
+        "label": "is considerably more complex than initial interpretations indicated.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8036412,
+        "label": "is primarily determined by the nature of content teenagers engage with on social media platforms.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8036413,
+        "label": "can be effectively managed through simple restrictions on teenagers’ screen time.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 882943,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Medium",
+    "question_text": "In many cultures, storytelling through oral tradition plays a vital role in transmitting history, values, and beliefs across generations.  While written records offer a fixed account, oral narratives are inherently dynamic, evolving with each retelling and adapting to the specific context and audience.  Anthropologist Margaret Mead observed that in societies reliant on oral tradition, storytellers are not merely reciting memorized texts but are active interpreters, shaping the narrative to resonate with contemporary concerns. Consequently, ______",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8829430,
+        "label": "oral traditions are often dismissed as unreliable sources of historical information compared to written documents.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8829431,
+        "label": "the fluidity of oral narratives allows for cultural values to be continually re-examined and reinterpreted.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8829432,
+        "label": "anthropologists prioritize the study of oral traditions over written history to gain a deeper understanding of a culture.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8829433,
+        "label": "storytellers in oral traditions are primarily concerned with preserving the literal accuracy of historical events.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

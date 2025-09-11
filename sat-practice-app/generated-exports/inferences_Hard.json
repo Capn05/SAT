@@ -1,0 +1,632 @@
+[
+  {
+    "id": 103036,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Economists once predicted that the expansion of railroads in the 19th century would uniformly stimulate economic growth across all regions they reached.  Early data from the Northeastern United States seemed to confirm this, showing rapid industrialization following railroad network development. However, a closer examination of data from the Southern United States, particularly agricultural regions, revealed a different pattern. Despite the establishment of extensive rail lines, these regions did not experience the same level of economic transformation as the Northeast. This discrepancy suggests that  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1030360,
+        "label": "the technical specifications of railroad construction in the South were significantly less advanced than those in the Northeast, hindering their economic impact.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1030361,
+        "label": "economies in the Southern United States had already reached a peak level of development prior to the introduction of railroads, thus limiting the potential for further growth.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1030362,
+        "label": "the economic models used to predict the impact of railroads failed to consider the diverse range of regional economic structures that existed across the United States.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1030363,
+        "label": "the economic benefits of railroad expansion were not universally applicable and were instead dependent on the pre-existing economic characteristics of specific regions.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 189453,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "The Metropolis Public Library system recently implemented a new fine structure for overdue books. Previously, the fine was $0.10 per day per book, with no maximum. The new policy sets the fine at $0.25 per day per book, but caps the maximum fine per book at $5.  Initial data collected over the first three months following the policy change shows a 15% decrease in the total number of overdue books returned, but a 20% increase in the total revenue collected from overdue fines. This suggests that after the implementation of the new fine policy, _________________________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1894530,
+        "label": "patrons are returning books more promptly, leading to a decrease in the total number of overdue books.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1894531,
+        "label": "a smaller number of books are being kept overdue for longer periods, resulting in higher total fines despite fewer overdue books overall.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1894532,
+        "label": "the library system's operational costs have significantly decreased due to the reduced handling of overdue books.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1894533,
+        "label": "patrons are borrowing fewer books to avoid the risk of incurring higher fines, which has also incidentally reduced the number of overdue returns.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 244312,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers studying the impact of urbanization on bird populations observed two groups of sparrows in a major city: one residing in heavily urbanized downtown parks and another in quieter suburban green spaces. They found that downtown sparrows exhibited significantly higher levels of corticosterone, a stress hormone, and a lower diversity of gut bacteria compared to their suburban counterparts.  Furthermore, downtown sparrows showed reduced foraging efficiency in novel environments. These findings suggest that the stress of urban environments __",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2443120,
+        "label": "uniformly diminishes the adaptability of all bird species to new habitats.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2443121,
+        "label": "may have multifaceted physiological and behavioral consequences for urban bird populations.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2443122,
+        "label": "primarily affects the gut microbiome of birds without significantly altering stress hormone levels.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2443123,
+        "label": "is solely attributable to noise pollution and has minimal impact on foraging behaviors.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 292507,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "The average commute time in major cities has steadily increased over the past decade. Studies show that public transportation, while cost-effective and environmentally friendly, often suffers from delays and overcrowding, particularly during peak hours. To address these issues, several urban planning initiatives are now focusing on expanding and modernizing subway systems. These initiatives imply that current public transportation systems in major cities __",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2925070,
+        "label": "are inadequate for meeting the current demands of commuters.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2925071,
+        "label": "will likely become obsolete as more people switch to private vehicles.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2925072,
+        "label": "are already operating at maximum efficiency and cannot be improved.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2925073,
+        "label": "primarily serve the needs of commuters during off-peak hours.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 299193,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Prior to Alexander Fleming's 1928 discovery of penicillin, bacterial infections posed a significant threat to human life.  The subsequent development and widespread adoption of penicillin and other antibiotics marked a turning point in medical history, drastically decreasing mortality rates associated with conditions such as pneumonia and septicemia.  This advancement not only saved millions of lives but also profoundly reshaped societal attitudes towards illness and medical intervention. The remarkable efficacy of antibiotics fostered a growing confidence in the capacity of scientific innovation to address health crises, suggesting to many that future research could _______________________________________________________________________________________________________________________________________.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2991930,
+        "label": "lead to the complete elimination of all infectious diseases.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2991931,
+        "label": "provide effective treatments for a broad range of previously untreatable conditions.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2991932,
+        "label": "diminish the importance of preventative healthcare measures in favor of curative treatments.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2991933,
+        "label": "overshadow the contributions of other fields of science to overall human well-being.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 302693,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers studying the effects of caffeine on memory conducted an experiment involving two groups of participants. Group A consumed 200mg of caffeine, while Group B consumed a placebo. Both groups then completed a memory recall test. The researchers found that Group A, which consumed caffeine, showed an average of 15% improvement in recall scores compared to Group B, suggesting that _",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3026930,
+        "label": "placebos have no discernible effect on memory recall performance.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3026931,
+        "label": "caffeine consumption has no correlation with enhanced memory recall.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3026932,
+        "label": "consuming 200mg of caffeine may lead to a measurable improvement in memory recall.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3026933,
+        "label": "memory recall tests are not a reliable method for assessing cognitive enhancement.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 335736,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Botanist Maria Rodriguez studies plant adaptations in extreme environments. While researching in the Atacama Desert, one of the driest places on Earth, she observed a species of cactus thriving in a region with virtually no rainfall. This cactus, unlike others Rodriguez had studied, had an unusually shallow root system. Rodriguez hypothesized that if this cactus survives in such arid conditions with shallow roots, then its primary source of water _",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3357360,
+        "label": "is most likely deep underground, accessed through an extensive taproot system.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3357361,
+        "label": "must be atmospheric moisture, absorbed directly through its specialized skin.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3357362,
+        "label": "is definitely obtained from a hidden underground spring that Rodriguez has yet to discover.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3357363,
+        "label": "is probably transported from distant, wetter regions via unknown biological mechanisms.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 362478,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers recently discovered that presenting information in a visually cluttered environment can paradoxically enhance memory retention for certain details, theorizing that the brain works harder to process information when it is less organized.  Conversely, suspecting that a highly structured and overly simplified visual presentation might hinder deeper cognitive processing, the researchers designed a study where participants learned about historical events either through densely packed timelines or sparsely populated ones and hypothesized that those presented with sparsely populated timelines would ___",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3624780,
+        "label": "exhibit superior recall of event dates due to the clarity of the visual structure.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3624781,
+        "label": "demonstrate a weaker understanding of the causal links between events compared to those with densely packed timelines.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3624782,
+        "label": "report feeling less overwhelmed by the amount of historical information presented.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3624783,
+        "label": "process the information at a faster rate, leading to quicker comprehension of the timeline.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 383534,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "The quill pen, fashioned from bird feathers, served as the dominant writing instrument across numerous cultures for more than a thousand years. Its inherent flexibility and responsiveness enabled diverse calligraphic styles and subtle nuances of expression.  Despite these advantages, quill pens necessitated frequent ink dipping, were prone to breakage, and demanded regular sharpening to preserve a precise point. Therefore, the quill pen was ultimately superseded by writing implements that _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3835340,
+        "label": "utilized different types of ink and pigments for enhanced color variation.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3835341,
+        "label": "were less fragile and provided a more consistent and cleaner writing process.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3835342,
+        "label": "could be manufactured on a larger scale and at a lower cost of production.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3835343,
+        "label": "were adopted for specialized purposes beyond general writing and calligraphy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 436595,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers investigated the effect of different light wavelengths on the photosynthetic rate of a species of marine algae, *Phaeophyta oceanica*.  They exposed samples of *P. oceanica* to three wavelengths: red light (650 nm), green light (550 nm), and blue light (450 nm), and measured the rate of oxygen production as an indicator of photosynthesis. The study found that *P. oceanica* exhibited the highest photosynthetic rate under blue light, a significantly lower rate under green light, and negligible photosynthesis under red light. These findings suggest that _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4365950,
+        "label": "*P. oceanica* is incapable of utilizing wavelengths longer than 550 nm for photosynthesis, unlike most terrestrial plants.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4365951,
+        "label": "the depth at which *P. oceanica* can thrive in the ocean is likely limited by the penetration of blue light.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4365952,
+        "label": "exposure to red light is detrimental to the photosynthetic machinery of *P. oceanica* and may cause cellular damage.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4365953,
+        "label": "the photosynthetic rate of *P. oceanica* would continue to increase if exposed to wavelengths shorter than 450 nm.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 461795,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers have studied the effectiveness of different renewable energy sources, such as solar and wind power, in reducing reliance on fossil fuels. While solar and wind energy are environmentally beneficial, their intermittent nature poses a challenge to grid stability. Current battery storage technology, while improving, is still limited in terms of large-scale, cost-effective energy storage needed to consistently compensate for this intermittency. Therefore, for renewable energy sources like solar and wind to become a primary energy source, __________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4617950,
+        "label": "battery technology must be significantly advanced to provide reliable and affordable large-scale energy storage.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4617951,
+        "label": "governments should reduce investment in renewable energy sources and focus on nuclear power.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4617952,
+        "label": "fossil fuel power plants must be kept operational to ensure grid stability during periods of low renewable energy production.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4617953,
+        "label": "energy consumers should reduce their overall energy consumption to match the fluctuating supply of renewable energy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 567572,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "In the field of archaeology, radiocarbon dating has long been the standard method for determining the age of organic materials. However, radiocarbon dating is limited by the fact that it can only accurately date materials up to around 50,000 years old. For older samples, researchers often turn to potassium-argon dating, which analyzes the decay of potassium-40 into argon-40. While potassium-argon dating can date materials millions of years old, it typically requires larger sample sizes than radiocarbon dating because __________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5675720,
+        "label": "the decay rate of potassium-40 is significantly slower than that of carbon-14.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5675721,
+        "label": "potassium-argon dating is more susceptible to contamination from the surrounding environment.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5675722,
+        "label": "radiocarbon dating equipment is more readily available and easier to use in the field.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5675723,
+        "label": "the argon-40 produced is a gas and can diffuse out of the sample over very long periods.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 578931,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Researchers conducted a study on consumer behavior to investigate the impact of loss aversion on purchasing decisions. Participants were presented with two scenarios for buying a concert ticket, regularly priced at $50. In the first scenario, participants imagined they were going to buy a $50 ticket and upon arrival at the venue, discovered they had lost a $50 bill from their wallet. In the second scenario, participants imagined they were going to see the same concert and upon arrival, realized they had lost the $50 concert ticket they had pre-purchased. When asked if they would still purchase a new ticket, 46% in the first scenario said yes, while only 23% in the second scenario said yes, indicating that _____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5789310,
+        "label": "consumers are generally less willing to repurchase a ticket they have already lost compared to proceeding with a purchase after losing an equivalent amount of cash.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5789311,
+        "label": "the perceived value of a concert ticket decreases significantly once a consumer has experienced any form of financial loss on the day of the event.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5789312,
+        "label": "individuals are equally likely to proceed with a purchase regardless of whether they lose the cash intended for the purchase or the purchased item itself.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5789313,
+        "label": "the price of concert tickets is often considered too expensive, leading a majority of consumers to reconsider purchasing after experiencing a loss.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 756701,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "A recent study published in the Journal of Digital Security revealed that 85 percent of internet users report being concerned about their online privacy. However, data from global web traffic analysis indicates that the average adult spends over 6 hours per day browsing the internet. This apparent contradiction suggests that while many individuals express unease about data collection, they are, in practice, ______",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7567010,
+        "label": "actively seeking out online platforms with stronger privacy protections.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7567011,
+        "label": "willing to trade some privacy for the benefits of internet access.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7567012,
+        "label": "largely unaware of the extent to which their online activity is tracked.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7567013,
+        "label": "becoming increasingly vocal about government regulations on data privacy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 797517,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Dr. Anya Sharma theorizes that non-diegetic music in film, particularly its emotional congruence with a protagonist's internal state, profoundly impacts viewer identification.  Sharma contends that music harmonizing with a protagonist's emotions deepens empathy and strengthens identification.  Conversely, music dissonant with a protagonist's feelings or the conspicuous absence of non-diegetic music during emotionally resonant moments would likely attenuate viewer identification.  For instance, in the concluding scene of Charlie Chaplin’s *City Lights*, the near-total absence of non-diegetic music as the Tramp and the flower girl reunite is notable.  According to Sharma’s theory, this absence of music should affect viewers by __________________________________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7975170,
+        "label": "intensifying their emotional engagement through a heightened focus on the characters' expressions and actions.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7975171,
+        "label": "weakening their emotional connection to the Tramp, fostering a sense of emotional distance.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7975172,
+        "label": "prompting them to focus on the film's visual aspects rather than its emotional undercurrents.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7975173,
+        "label": "encouraging a detached, intellectual appreciation of Chaplin’s minimalist artistic choices.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 882871,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Conventional marketing wisdom suggests that celebrity endorsements significantly boost product appeal. However, a recent study by consumer behavior researchers at Tech University investigated the impact of different types of endorsements on consumer interest in a new smartphone.  The study compared advertisements featuring celebrity endorsements with advertisements featuring endorsements from everyday smartphone users. Surprisingly, they found that advertisements featuring ordinary users led to a significantly higher level of consumer interest than advertisements featuring celebrities. One possible explanation for this unexpected finding is that consumers may have perceived endorsements from ordinary users as being more  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8828710,
+        "label": "expert and grounded in a deep understanding of smartphone technology compared to celebrities.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8828711,
+        "label": "trustworthy and reflective of genuine user experience, in contrast to celebrity endorsements which are often perceived as purely transactional.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8828712,
+        "label": "aspirational and representative of a lifestyle that consumers desire, making them more appealing than celebrity endorsements.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8828713,
+        "label": "technically detailed and informative about the smartphone's features, while celebrity endorsements focus more on brand image.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 934769,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "It is widely accepted that exercise, particularly resistance training, leads to muscle hypertrophy. This is often attributed to the body's response to muscle damage incurred during exercise. However, some researchers argue that the extent of muscle damage necessary for muscle growth seems disproportionately high compared to the actual gains in muscle mass observed in many studies. These researchers therefore imply that  Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9347690,
+        "label": "muscle growth is likely influenced by factors beyond just the repair of damaged muscle tissue.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9347691,
+        "label": "excessive muscle damage is the primary driver of significant long-term muscle growth.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9347692,
+        "label": "current methods for measuring muscle damage in exercise studies are fundamentally flawed.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9347693,
+        "label": "resistance training is ultimately a less efficient method of muscle building compared to other forms of exercise.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 989663,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 27,
+    "difficulty": "Hard",
+    "question_text": "Early ethologists, scientists who study animal behavior, often assumed that the complex social structures observed in insect colonies, such as those of ants or bees, were primarily driven by instinct. This assumption was based on the observation that these insects exhibited highly coordinated behaviors without apparent learning or individual decision-making processes. Researchers at the time focused on genetically programmed responses to environmental stimuli, largely believing that _____ Which choice most logically completes the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9896630,
+        "label": "instinctual behaviors are more adaptable to environmental changes than are learned behaviors.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9896631,
+        "label": "the seemingly complex social organization of these colonies was, in fact, the result of numerous simple, genetically determined actions.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9896632,
+        "label": "individual insects within these colonies displayed no significant variation in their behavior, contributing to the overall efficiency of the colony.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9896633,
+        "label": "laboratory experiments were less reliable than direct field observations for understanding the true nature of insect social behavior.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

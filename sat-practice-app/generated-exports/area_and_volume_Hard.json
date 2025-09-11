@@ -1,0 +1,492 @@
+[
+  {
+    "id": 101642,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A right circular cylinder has a height of $14$ centimeters (cm) and a base with a diameter of $10$ cm. The volume of this cylinder is $n\\pi$ $\\text{cm}^3$. What is the value of $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1016420,
+        "label": "224",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1016421,
+        "label": "250",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1016422,
+        "label": "300",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1016423,
+        "label": "350",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 158756,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A rectangular garden has an area of $500$ square feet. To reduce water consumption, the gardener decides to reduce both the length and the width of the garden by $10\\%$. What is the area of the new garden, in square feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1587560,
+        "label": "400",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1587561,
+        "label": "405",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1587562,
+        "label": "450",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1587563,
+        "label": "490",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 171543,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "The figure shown is a right circular cylinder with a radius of $r$ and height of $h$. A second right circular cylinder (not shown) has a volume that is $108$ times as large as the volume of the cylinder shown. Which of the following could represent the radius $R$, in terms of $r$, and the height $H$, in terms of $h$, of the second cylinder?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//171543.png",
+    "options": [
+      {
+        "id": 1715430,
+        "label": "$R = 6r$ and $H = 2h$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1715431,
+        "label": "$R = 4r$ and $H = 3h$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1715432,
+        "label": "$R = 6r$ and $H = 3h$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1715433,
+        "label": "$R = 9r$ and $H = 3h$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 267413,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A right circular cylinder has a radius of $5$ centimeters (cm) and a height of $12$ cm. What is the volume, in $\\text{cm}^3$, of the right circular cylinder in terms of $\\pi$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2674130,
+        "label": "$300\\pi$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2674131,
+        "label": "$1200\\pi$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2674132,
+        "label": "720$\\pi$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2674133,
+        "label": "$170\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 313833,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A cube has a surface area of $96$ square meters. What is the volume, in cubic meters, of the cube?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3138330,
+        "label": "16",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3138331,
+        "label": "32",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3138332,
+        "label": "64",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3138333,
+        "label": "128",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 424831,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A right circular cone used as a party hat has a volume of $15\\pi$ cubic inches and a height of $5$ inches. What is the radius, in inches, of the circular base of the party hat?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4248310,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4248311,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4248312,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4248313,
+        "label": "$\\sqrt{45}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 490156,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "The volume of right circular cylinder $A$ is $22$ cubic centimeters. What is the volume, in cubic centimeters, of a right circular cylinder with triple the radius and one-third the height of cylinder $A$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4901560,
+        "label": "22",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4901561,
+        "label": "33",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4901562,
+        "label": "66",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4901563,
+        "label": "88",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 588702,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A soup company designs cans in the shape of right cylinders. To optimize material, the height of each can is designed to be $1.5$ times the diameter of its base. Which of the following expressions represents the volume, $V$, in cubic centimeters, of such a can, where $r$ is the radius of the base in centimeters?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5887020,
+        "label": "$V = \\pi r^3$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5887021,
+        "label": "$V = 3\\pi r^3$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5887022,
+        "label": "$V = 1.5\\pi r^3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5887023,
+        "label": "$V = 4\\pi r^3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 689283,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "The dimensions of a right rectangular prism are $7$ inches by $8$ inches by $9$ inches. What is the surface area, in square inches, of the prism?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6892830,
+        "label": "191",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6892831,
+        "label": "380",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6892832,
+        "label": "382",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6892833,
+        "label": "504",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 760345,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "Rectangles $ABCD$ and $EFGH$ are similar. The length of $EFGH$ is $4$ times the length of the corresponding side of $ABCD$. The area of $ABCD$ is $15$ square units. What is the area, in square units, of $EFGH$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7603450,
+        "label": "60",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7603451,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7603452,
+        "label": "960",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7603453,
+        "label": "240",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 923086,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "Circle $P$ and Circle $Q$ are similar. The radius of Circle $P$ is one-third the radius of Circle $Q$. The area of Circle $Q$ is $81\\pi$ square inches. What is the area, in square inches, of Circle $P$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9230860,
+        "label": "$9\\pi$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9230861,
+        "label": "$27\\pi$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9230862,
+        "label": "$243\\pi$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9230863,
+        "label": "$729\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 924990,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "What is the area, in square units, of the triangle formed by connecting the three points shown: $(1, 2)$, $(6, 1)$, and $(4, -2)$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//924990.png",
+    "options": [
+      {
+        "id": 9249900,
+        "label": "8.5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9249901,
+        "label": "11.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9249902,
+        "label": "17",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9249903,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 926372,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "The line segment connecting points $(1, 1)$ and $(4, 1)$ represents one leg of a right triangle. The area of this triangle is $12\\sqrt{2}$ square units. What is the length, in units, of the other leg of this triangle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9263720,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9263721,
+        "label": "$16\\sqrt{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9263722,
+        "label": "$8\\sqrt{2}$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9263723,
+        "label": "$4\\sqrt{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 962439,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Hard",
+    "question_text": "A right circular cylinder has a radius of $3$ units. The volume of the cylinder is $126\\pi$ cubic units. What is the height, in units, of the cylinder?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9624390,
+        "label": "14",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9624391,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9624392,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9624393,
+        "label": "28",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

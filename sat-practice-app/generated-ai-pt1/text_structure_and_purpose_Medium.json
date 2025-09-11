@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "6f8c3d30-3a1e-4b5e-9d76-3a2b6e7d3a9b",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Medium",
+      "question_text": "Municipal planners have embraced urban beekeeping as a way to bolster pollinator populations. Advocates argue that cities offer diverse floral resources and lower exposure to agricultural pesticides than large-scale farms. <u>Yet municipal nectar sources can be unpredictable, with blooms concentrated in brief bursts that leave bees short of food later in the season.</u> In response, some programs stagger plantings and map forage gaps, but these measures are unevenly adopted. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0b103bf4-3c4a-4f6f-9f2d-6fae3dc6a0c3",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Medium",
+      "question_text": "For much of the twentieth century, restorers cleaned oil paintings with solvent baths, a practice prized for speed but criticized for stripping delicate varnish layers. In recent years, conservators have adapted enzyme-based gels from biochemistry to remove grime more selectively. Early trials in $2015$ at two museums reported stronger color retention and fewer surface abrasions. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a55aa3be-8f5a-48e8-b239-6a3e2541cde7",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Medium",
+      "question_text": "Open-access journals make articles free to read, often by charging authors an article processing fee. Critics warn that these charges can exclude scholars at underfunded institutions and in low-income countries. Supporters counter that institutional agreements and waivers broaden participation and that the public benefits when paywalls fall. Ultimately, the issue is whether expanding open access can avoid deepening inequities in who gets to publish. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "f58f2ae5-02b1-492d-9e27-e59e8650d5da",
+      "question_id": "6f8c3d30-3a1e-4b5e-9d76-3a2b6e7d3a9b",
+      "value": "A",
+      "label": "It introduces a caveat that tempers the preceding claim by identifying a seasonal limitation.",
+      "is_correct": true
+    },
+    {
+      "id": "9c3e5b9a-5f73-4f99-8bc1-195633601c41",
+      "question_id": "6f8c3d30-3a1e-4b5e-9d76-3a2b6e7d3a9b",
+      "value": "B",
+      "label": "It provides statistical evidence showing urban honey yields surpass rural yields.",
+      "is_correct": false
+    },
+    {
+      "id": "de0ecc1a-0b6f-4938-b26d-03adf1a1057c",
+      "question_id": "6f8c3d30-3a1e-4b5e-9d76-3a2b6e7d3a9b",
+      "value": "C",
+      "label": "It restates the passage’s main argument in more technical terms.",
+      "is_correct": false
+    },
+    {
+      "id": "bb7a7a9c-e1e2-46f5-b3a2-4e9f22d17df9",
+      "question_id": "6f8c3d30-3a1e-4b5e-9d76-3a2b6e7d3a9b",
+      "value": "D",
+      "label": "It illustrates how training programs fully resolve the risks posed by urban hives.",
+      "is_correct": false
+    },
+    {
+      "id": "2b3ff8c4-9348-4a62-8a6f-961e2bf6d659",
+      "question_id": "0b103bf4-3c4a-4f6f-9f2d-6fae3dc6a0c3",
+      "value": "A",
+      "label": "It critiques a new technique by recounting a failed trial and concludes that restoration should avoid innovation.",
+      "is_correct": false
+    },
+    {
+      "id": "a2d1ba8e-2ebb-472e-b9cf-8624b2ad8c20",
+      "question_id": "0b103bf4-3c4a-4f6f-9f2d-6fae3dc6a0c3",
+      "value": "B",
+      "label": "It compares two historical periods in art and explains how they influenced cleaning practices.",
+      "is_correct": false
+    },
+    {
+      "id": "9d3bb0a8-87c1-4a7f-b5a7-b1a0aaf8fcd1",
+      "question_id": "0b103bf4-3c4a-4f6f-9f2d-6fae3dc6a0c3",
+      "value": "C",
+      "label": "It describes a long-standing approach, points out a limitation, and then presents a newer method that addresses that limitation.",
+      "is_correct": true
+    },
+    {
+      "id": "6a9a7652-9f5c-476c-83a1-43c0e1b48b14",
+      "question_id": "0b103bf4-3c4a-4f6f-9f2d-6fae3dc6a0c3",
+      "value": "D",
+      "label": "It presents several unrelated case studies to argue that conservation is inherently subjective.",
+      "is_correct": false
+    },
+    {
+      "id": "9a408dbc-9b25-4fac-b43a-8e2d8a2f90e3",
+      "question_id": "a55aa3be-8f5a-48e8-b239-6a3e2541cde7",
+      "value": "A",
+      "label": "To demonstrate that open-access publishing is economically unsustainable and should be abandoned.",
+      "is_correct": false
+    },
+    {
+      "id": "62a8b2de-2b21-4f8b-b376-3ccfd70d3eaf",
+      "question_id": "a55aa3be-8f5a-48e8-b239-6a3e2541cde7",
+      "value": "B",
+      "label": "To outline a debate about open-access publishing by weighing benefits against concerns about equity.",
+      "is_correct": true
+    },
+    {
+      "id": "d6b6f9ee-0f01-4f63-9c8b-2db8d2f8b501",
+      "question_id": "a55aa3be-8f5a-48e8-b239-6a3e2541cde7",
+      "value": "C",
+      "label": "To instruct authors on how to obtain waivers for article processing charges.",
+      "is_correct": false
+    },
+    {
+      "id": "1a042d6c-02da-4d2b-8d68-6b29cbe3684e",
+      "question_id": "a55aa3be-8f5a-48e8-b239-6a3e2541cde7",
+      "value": "D",
+      "label": "To provide a quantitative analysis comparing subscription and open-access revenue models.",
+      "is_correct": false
+    }
+  ]
+}

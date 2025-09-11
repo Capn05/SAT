@@ -1,0 +1,387 @@
+[
+  {
+    "id": 181190,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "The equation $(x-2)^2+(y+5)^2 = 64$ a circle in the $xy$-plane. What is the diameter of the circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1811900,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1811901,
+        "label": "16",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1811902,
+        "label": "32",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1811903,
+        "label": "64",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 232815,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "A circle in the xy-plane has its center at $(2, -3)$. Line $t$ is tangent to this circle at the point $(-1, 1)$. Which of the following points also lies on line $t$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2328150,
+        "label": "(7, 7)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2328151,
+        "label": "(7, 6)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2328152,
+        "label": "(6, 7)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2328153,
+        "label": "(4, 11)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 245131,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "In the circle with center $O$, the length of arc $ADC$ is $3\\pi$ and the measure of central angle $\\angle AOC$ is $60^\\circ$. What is the length of arc $ABC$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2451310,
+        "label": "$9\\pi$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2451311,
+        "label": "$15\\pi$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2451312,
+        "label": "$18\\pi$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2451313,
+        "label": "$7.5\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 352937,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "Point $O$ is the center of the circle above, and the measure of $\\angle AOB$ is $45^\\circ$. If the length of $OD$ is $10$, what is the length of arc $AB$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//352937.png",
+    "options": [
+      {
+        "id": 3529370,
+        "label": "$2.5\\pi$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3529371,
+        "label": "$5\\pi$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3529372,
+        "label": "$10\\pi$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3529373,
+        "label": "$20\\pi$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 622256,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "A circle in the $xy$-plane has equation $(x - 1)^2 +(y + 3)^2 = 9$. Which of the following points does NOT lie in the interior of the circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6222560,
+        "label": "(1, -3)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6222561,
+        "label": "(1, 0)",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6222562,
+        "label": "(0, -3)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6222563,
+        "label": "(1, -2)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 713383,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "In the $xy$-plane, the graph of $3x^2 + 12x + 3y^2 - 6y = 36$ is a circle. What is the radius of the circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7133830,
+        "label": "$\\sqrt{17}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7133831,
+        "label": "17",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7133832,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7133833,
+        "label": "$\\sqrt{21}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 737978,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "$$x^2 - 6x + y^2 + 4y = 12$$ The equation above defines a circle in the $xy$-plane. What are the coordinates of the center of the circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7379780,
+        "label": "(-3, 2)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7379781,
+        "label": "(3, 2)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7379782,
+        "label": "(3, -2)",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7379783,
+        "label": "(-3, -2)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 793801,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "$$(x+2)^2+(y-3)^2=25$$ In the $xy$-plane, the graph of the equation above is a circle. Point $R$ is on the circle and has coordinates $(3, 3)$. If segment $RS$ is the diameter of the circle, what are the coordinates of point S?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7938010,
+        "label": "(-7, 3)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7938011,
+        "label": "(-2, 3)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7938012,
+        "label": "(-2, 8)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7938013,
+        "label": "(1, 3)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 794326,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "A circle has center $O$, and points $P$ and $Q$ lie on the circle. The measure of arc $PQ$ is $30\\circ$ and the length of arc $PQ$ is $2$ inches. What is the circumference, in inches, of the circle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7943260,
+        "label": "4",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7943261,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7943262,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7943263,
+        "label": "24",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 836636,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "A circle in the $xy$-plane has its center at $(3, -4)$ and has a radius of $5$. An equation of this circle is $x^2 + y^2 + ax + by + c = 0$, where $a$, $b$, and $c$ are constants. What is the value of $c$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8366360,
+        "label": "0",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8366361,
+        "label": "25",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8366362,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8366363,
+        "label": "-25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 889118,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Hard",
+    "question_text": "Points $C$ and $D$ lie on a circle with radius $4$. The area of sector $COD$ is $2\\pi$. What fraction of the area of the circle is the area of sector $COD$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8891180,
+        "label": "$\\frac{1}{8}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8891181,
+        "label": "$\\frac{1}{4}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8891182,
+        "label": "$\\frac{1}{16}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8891183,
+        "label": "$\\frac{1}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

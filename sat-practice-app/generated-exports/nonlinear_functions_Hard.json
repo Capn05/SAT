@@ -1,0 +1,1017 @@
+[
+  {
+    "id": 3501,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "$$g(x) = x^3 + dx^2 + ex + f$$ The function $g$ is defined above, where $d$, $e$, and $f$ are integer constants. If the zeros of the function are $-1$, $2$, and $-4$, what is the value of $f$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 35010,
+        "label": "-8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 35011,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 35012,
+        "label": "-6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 35013,
+        "label": "16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 66688,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "For the function $g$, $g(0) = 200$, and for each increase in $x$ by $1$, the value of $g(x)$ decreases by $50\\%$. What is the value of $g(3)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 666880,
+        "label": "25",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 666881,
+        "label": "50",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 666882,
+        "label": "100",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 666883,
+        "label": "150",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 67056,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $g$ is defined by the equation $g(x) = (x - 8)(x + 4)$. For what value of $x$ does $g(x)$ reach its minimum?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 670560,
+        "label": "-32",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 670561,
+        "label": "-4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 670562,
+        "label": "2",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 670563,
+        "label": "4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 75250,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "$$R(p) = -25p^2 + 1500p$$ The revenue $R(p)$, in dollars, a store earns from selling backpacks is given by the function $R$ above, where $p$ is the price of a backpack, in dollars. The graph of $y = R(p)$ in the $xy$-plane intersects the $x$-axis at $p = 0$ and $p = c$. What does $c$ represent?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 752500,
+        "label": "The revenue, in dollars, when the price of a backpack is $0",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 752501,
+        "label": "The price, in dollars, of a backpack that will result in maximum revenue",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 752502,
+        "label": "The price, in dollars, of a backpack that will result in a revenue of $0",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 752503,
+        "label": "The maximum revenue, in dollars, that the store can make",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 112943,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "What is the maximum value of the function $f$ defined by $f(x) = -2(x + 1)^2 + 7$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1129430,
+        "label": "-1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1129431,
+        "label": "7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1129432,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1129433,
+        "label": "-7",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 125628,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The functions $f$ and $g$ are defined by the given equations. $$f(x) = 2 + |3x - x^2|$$ $$g(w) = \\left|\\frac{w}{5} - 2\\right| + 3$$ If $f(-2) = c$, where c is a constant, what is the value of $g(c)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1256280,
+        "label": "3.4, $\\frac{17}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1256281,
+        "label": "6.6, $\\frac{33}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1256282,
+        "label": "7.4, $\\frac{37}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1256283,
+        "label": "4.4, $\\frac{22}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 153676,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "A quadratic function models the height, in feet, of a toy rocket above the ground in terms of the time, in seconds, after the rocket is launched from a platform. The model indicates the rocket has an initial height of $20$ feet above the ground and reaches its maximum height of $520$ feet above the ground $5$ seconds after being launched. Based on the model, what is the height, in feet, of the rocket above the ground $7$ seconds after being launched?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1536760,
+        "label": "440",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1536761,
+        "label": "500",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1536762,
+        "label": "340",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1536763,
+        "label": "200",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 180172,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $g$ is defined by $g(x) = (x - 5)(x - 1)$. The graph of $g$ in the $xy$-plane is a parabola. Which of the following intervals contains the $x$-coordinate of the vertex of the graph of $g$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1801720,
+        "label": "$2 < x < 4$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1801721,
+        "label": "$0 < x < 2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1801722,
+        "label": "$4 < x < 6$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1801723,
+        "label": "$-1 < x < 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 219013,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "An initial investment of $\\$1,000$ is placed in an account that earns $5\\%$ interest compounded annually. Which of the following equations can be used to determine the number of years, $t$, it will take for the investment to reach $\\$1,200$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2190130,
+        "label": "$1,000 = 1,200(1.05)^t$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2190131,
+        "label": "$1,000 = 1,200(0.05)^t$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2190132,
+        "label": "$1,200 = 1,000(0.05)^t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2190133,
+        "label": "$1,200 = 1,000(1.05)^t$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 242866,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "Let the function $q$ be defined as $q(x) = \\frac{(x-k)^2 + 80}{4x}$, where $k$ is a constant. If $q(k) = 5$, what is the value of $q(10)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2428660,
+        "label": "2.6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2428661,
+        "label": "3.2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2428662,
+        "label": "4.0",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2428663,
+        "label": "2.9",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 258226,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The quadratic function $f$ is defined as $f(x) = -(x-3)^2 + 9$. In the $xy$-plane, the graph of $y = f(x)$ intersects the $x$-axis at the points $(0,0)$ and $(t,0)$, where $t$ is a constant. What is the value of $t$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2582260,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2582261,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2582262,
+        "label": "6",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2582263,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 280612,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The value $V$ of a rare painting $t$ years after its purchase is modeled by the equation below, where $k$ is a constant and $V_0$ is the value when $t = 0$. $$V = V_0 (1 + k)^{t}$$ If the value of the painting decreases by a fixed percentage each year after its purchase, which of the following must be true?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2806120,
+        "label": "$k < -1$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2806121,
+        "label": "$-1 < k < 0$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2806122,
+        "label": "$0 < k < 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2806123,
+        "label": "$k > 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 285626,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $f(t) = -16t^2 + 48t + 64$ models the height above the ground $f$, in feet, of a ball $t$ seconds after it is thrown vertically upwards from the top of a cliff. If $y = f(t)$ is graphed in the $ty$-plane, which of the following represents the real-life meaning of the positive $t$-intercept of the graph?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2856260,
+        "label": "The initial height of the ball above the ground.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2856261,
+        "label": "The maximum height of the ball above the ground.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2856262,
+        "label": "The time at which the ball reaches its maximum height.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2856263,
+        "label": "The time at which the ball hits the ground.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 300400,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $f$ is defined by $f(x) = a^n + b$, where $a$ and $b$ are constants. In the $xy$-plane, the graph of $y = f(x)$ has a $y$-intercept at $(0, -10)$ and an $x$-intercept at $(1, 0)$. What is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3004000,
+        "label": "-12",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3004001,
+        "label": "-11",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3004002,
+        "label": "-10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3004003,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 372027,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $g$ is defined by $g(x) = m \\cdot n^x$, where $m$ and $n$ are positive constants. The graph of $y = g(x)$ in the $xy$-plane passes through the points $(0, 8)$ and $(2, 32)$. What is the value of $m + n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3720270,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3720271,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3720272,
+        "label": "10",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3720273,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 375663,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "A model rocket is launched vertically from ground level. The rocket reaches a maximum height of $49$ meters above the ground at $3.5$ seconds after launch and returns to the ground $7$ seconds after launch. Which equation represents the height above ground $h$, in meters, of the rocket $t$ seconds after it is launched?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3756630,
+        "label": "$h = -4(t + 3.5)^2 + 49$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3756631,
+        "label": "$h = -4t^2 + 49$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3756632,
+        "label": "$h = -4t^2 - 49$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3756633,
+        "label": "$h = -4(t - 3.5)^2 + 49$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 387315,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "$$g(t) = 500(1.05)^t$$ The given function $g$ models the estimated population of rabbits in a park each year, where $t$ represents the number of years since the year 2000, and $0 \\leq t \\leq 5$. If $y = g(t)$ is graphed in the $ty$-plane, which of the following is the best interpretation of the $y$-intercept of the graph in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3873150,
+        "label": "The maximum estimated population of rabbits in the park during the 5 years was approximately 638.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3873151,
+        "label": "The initial population of rabbits in the park in the year 2000 was 500.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3873152,
+        "label": "The estimated population of rabbits in the park in the year 2001 was approximately 525.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3873153,
+        "label": "The estimated population of rabbits in the park in the year 2005 was approximately 638.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 417580,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The function $A(t) = 500(1.05)^{3t}$ models the amount of money in an investment account, in dollars, $t$ years after the initial investment. According to the model, the investment is predicted to increase by $5\\%$ every $n$ months. What is the value of $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4175800,
+        "label": "4",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4175801,
+        "label": "3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4175802,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4175803,
+        "label": "2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 535000,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "Function $f$ is defined by $f(x) = -a^x + b$, where $a$ and $b$ are constants. In the $xy$-plane, the graph of $y = f(x) - 5$ has a y-intercept at $(0, 54)$. The product of $a$ and $b$ is $300$. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5350000,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5350001,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5350002,
+        "label": "15",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5350003,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 580372,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The area $A$ of a circular stain spreading on a fabric is modeled by a quadratic function of time $t$, where $A$ is in square centimeters and $t$ is in minutes. At time $t = 2$ minutes, the area of the stain is $12$ square centimeters. At time $t = 4$ minutes, the area is $48$ square centimeters. If the stain had an area of $0$ square centimeters at $t = 0$, what is the area of the stain, in square centimeters, at time $t = 6$ minutes?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5803720,
+        "label": "108",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5803721,
+        "label": "96",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5803722,
+        "label": "144",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5803723,
+        "label": "72",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 618186,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The graph of the given equation in the $xy$-plane has a y-intercept of $(r, s)$. Which of the following equivalent equations displays the value of $s$ as a coefficient?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//618186.png",
+    "options": [
+      {
+        "id": 6181860,
+        "label": "$y = 16 \\cdot (16^x)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6181861,
+        "label": "$y = 16^{(x+1)}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6181862,
+        "label": "$y = 4^{(2x+2)}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6181863,
+        "label": "$y = 16 + 16 \\cdot (16^x - 1)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 625679,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "A population of insects is growing at an exponential rate, as shown in the table above. At this rate, on which day would the number of insects per colony reach $8.748 \\times 10^6$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//625679.png",
+    "options": [
+      {
+        "id": 6256790,
+        "label": "Day 5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6256791,
+        "label": "Day 7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6256792,
+        "label": "Day 9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6256793,
+        "label": "Day 11",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 661898,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "A rectangular garden has an area of $75$ square feet. The length of the garden is $5$ feet longer than twice its width. What is the width of the garden, in feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6618980,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6618981,
+        "label": "7.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6618982,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6618983,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 721721,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The graph of a quadratic function is shown in the $xy$-plane. Which of the following equations could represent this function?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//721721.png",
+    "options": [
+      {
+        "id": 7217210,
+        "label": "$y = -0.5(x + 2)^2 + 4$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7217211,
+        "label": "$y = 0.5(x - 2)^2 + 4$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7217212,
+        "label": "$y = -0.5(x - 2)^2 - 4$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7217213,
+        "label": "$y = 0.5(x + 2)^2 - 4$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 765283,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "A rectangular piece of paper has a length that is twice its width. If the area of the piece of paper is $128$ square inches, what is the width, in inches, of the piece of paper?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7652830,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7652831,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7652832,
+        "label": "12",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7652833,
+        "label": "16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 783924,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "For the exponential function $f$, the table above shows several values of $x$ and their corresponding values of $f(x)$, where $a$ is a constant greater than $1$. If $k$ is a constant and $f(k) = a^{31}$, what is the value of $k$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//783924.png",
+    "options": [
+      {
+        "id": 7839240,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7839241,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7839242,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7839243,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 803091,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The population of a town was initially $5,000$ people. An exponential model predicts that the population will increase by $8\\%$ each year. Which of the following equations best represents this model, where $P$ is the estimated population of the town after $t$ years?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8030910,
+        "label": "$P = 5000(1.16)^t$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8030911,
+        "label": "$P = 5000(0.08)^t$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8030912,
+        "label": "$P = 5000(9)^t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8030913,
+        "label": "$P = 5000(1.08)^t$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 852155,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "The equation $P = 500(1.05)^t$ models the population, $P$, of bacteria $t$ years after a scientist starts observing the population. Which of the following equations models the population of bacteria $m$ months after the scientist starts observing the population?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8521550,
+        "label": "$P = 500(1.05)^{\\frac{m}{12}}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8521551,
+        "label": "$P = 500(1.05)^{12m}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8521552,
+        "label": "$P = 500(1.05)^m$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8521553,
+        "label": "$P = 500(1.05)^{\\frac{9m}{12}}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 878622,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 3,
+    "difficulty": "Hard",
+    "question_text": "Amelia measured the temperature of a cup of coffee placed in a room with a constant temperature of $20$ degrees Celsius (°C). The temperature of the coffee was 80°C at 7:00 a.m. when it started cooling. The temperature of the coffee was 65°C at 7:04 a.m. and 53.75°C at 7:08 a.m. The coffee's temperature continued to decrease. Of the following functions, which best models the temperature $T(m)$, in degrees Celsius, of Amelia's coffee $m$ minutes after it started cooling?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8786220,
+        "label": "$T(m) = 80 (1.25)^m$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8786221,
+        "label": "$T(m) = 80 (0.85)^m$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8786222,
+        "label": "$T(m) = (80 - 20) (0.75)^{\\frac{m}{4}}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8786223,
+        "label": "$T(m) = 20 + 60 (0.75)^{\\frac{m}{4}}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

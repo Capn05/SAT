@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "6f2a1b1a-2aa3-445f-b6cd-0f3d9d1c2cf2",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Citywide pilots of a guaranteed basic income have been touted as economic catalysts: recipients report reduced financial stress, improved food security, and greater capacity to search for better jobs. <u>Yet, despite the headlines, evaluations across sites find that short-run employment gains are statistically indistinguishable from zero.</u> Policymakers reading these results face a puzzle: if well-being improves but employment does not, how should success be measured? Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8de3f17b-0e0d-4e38-8ea6-1c6f7e5092d9",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Conventional histories of cartography trace a near-linear progression from symbolic medieval mappae mundi to empirically grounded modern maps. Printing, the story goes, standardized technique and spread accurate geographic knowledge. But shipping records and surviving coastal charts from the 17th century suggest a more uneven evolution: ports and trade routes were mapped with striking precision while inland regions remained resolutely schematic. Consequently, claims of uniform improvement obscure how accuracy emerged piecemeal, driven by commercial priorities. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "70f2e073-5d4e-4d6f-9b3e-5bd0c8c0e1a1",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Biodiversity offset programs promise that ecological losses from development can be compensated elsewhere, yielding a 'net gain' in habitat. Developers fund restoration or protection projects scored against standardized metrics, and model projections convert future benefits into present credits. Yet field ecologists note that baseline data are sparse, reference sites are contested, and recovery trajectories highly variable. Even with sophisticated models, time lags and uncertainty make like-for-like substitution difficult to verify. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3b6f0a1d-5a8f-4e4a-9e9c-77b1a6ce0c90",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Debates over translating poetry often polarize into two camps: those who preserve literal meaning at the expense of meter and those who reproduce form even if individual words drift. <u>Yet the relevant standard is not word-for-word fidelity but the effect the original evokes in its readers.</u> Framed this way, the translator’s task becomes curatorial, choosing devices in the target language that elicit comparable responses rather than mirroring the source lineation. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0f4e7c37-1e8a-4d2b-9fa3-5f42d41f2b77",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Press releases tout silicon anodes as the imminent solution to range anxiety, promising to more than double electric vehicle capacity. Laboratory cells do achieve high specific capacity, but repeated lithiation fractures pure silicon, swelling volume and degrading cycle life. Composite designs that embed silicon in resilient matrices mitigate these effects, though at substantial cost and with modest performance trade-offs. The near term, then, looks less like a leap and more like incremental gains via careful engineering. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9b2b5f80-1f71-4bb4-9a1b-35f3dc47c6a2",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Popular accounts often claim that mirror neurons are the neural basis of empathy: we 'feel' others’ actions and emotions by simulating them. But lesion studies, developmental data, and fMRI meta-analyses indicate that empathic processes draw on distributed networks for affect, attention, and perspective taking, with mirror-related activity varying by task. Rather than being a single-module explanation, the mirror system appears to be one contributor among many. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "d3f9a1f5-0adc-4e74-9a1d-1c5a3f77e4d1",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Debates about environmental regulation frequently invoke the precautionary principle, often caricatured as a blanket veto on innovation. <u>Here, 'precaution' refers not to mere hesitation but to a policy preference for preventing serious or irreversible harm when evidence is uncertain.</u> On that understanding, the question is not whether to act, but how to calibrate action to the scale and plausibility of risk. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4b1c2d3e-7f8a-4c0b-9e1d-234f5a6b7c8d",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "It seems intuitive that more streams always mean more income for artists. Under the dominant pro-rata model, however, a subscriber’s fee is pooled across the platform and distributed by overall market share, so a niche artist’s streams are diluted by top-chart plays. Trials of a 'user-centric' model—allocating each listener’s fee only to what that listener actually played—suggest modest shifts, benefiting smaller catalogs in some genres. The choice of accounting method, more than aggregate stream counts, thus largely determines revenue distribution. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "61c56cbe-1a11-4d98-8d4a-4148b69a8f7a",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Calls to eliminate homework in early grades cite family stress and tenuous links to achievement. Yet meta-analyses report small benefits for foundational skills when practice is brief and well designed, while excessive assignments correlate with disengagement. A pragmatic compromise is to cap daily homework at $10$ minutes per grade level and focus on retrieval practice rather than busywork. The aim is to preserve useful practice without importing needless pressure into the home. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e18cb6c8-6df7-42a5-889d-6f8a31d9ef22",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Hard",
+      "question_text": "Advocates liken climate adaptation finance to insurance: pay now to avoid far larger losses later. The analogy is rhetorically powerful, suggesting prudent risk management rather than mere spending. <u>But unlike actuarial insurance, where losses are pooled after quantification, adaptation projects must be funded amid profound uncertainty about where and when losses will occur.</u> The funding model, the text suggests, should reflect that asymmetry by prioritizing flexible reserves and learning-oriented investments. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "3e7f2a17-9d6f-4c29-8a90-7b1d3f6e38bb",
+      "question_id": "6f2a1b1a-2aa3-445f-b6cd-0f3d9d1c2cf2",
+      "value": "A",
+      "label": "It identifies the mechanism by which cash transfers raise subjective well-being.",
+      "is_correct": false
+    },
+    {
+      "id": "884b9af3-fc3c-4e4e-9f06-3f38ee7c2c6f",
+      "question_id": "6f2a1b1a-2aa3-445f-b6cd-0f3d9d1c2cf2",
+      "value": "B",
+      "label": "It provides a counterexample showing that certain pilot sites experienced job losses.",
+      "is_correct": false
+    },
+    {
+      "id": "8b4a1e73-5691-4e0b-8ac4-4c9b55af6b2b",
+      "question_id": "6f2a1b1a-2aa3-445f-b6cd-0f3d9d1c2cf2",
+      "value": "C",
+      "label": "It tempers earlier positive claims by highlighting a key outcome that did not improve, narrowing how success should be assessed.",
+      "is_correct": true
+    },
+    {
+      "id": "1b8f9d05-f5a9-4b3e-a8c4-6f3a7a4d9c1e",
+      "question_id": "6f2a1b1a-2aa3-445f-b6cd-0f3d9d1c2cf2",
+      "value": "D",
+      "label": "It refutes the premise that guaranteed income affects labor markets by presenting long-run evidence.",
+      "is_correct": false
+    },
+    {
+      "id": "4a1b2c3d-5e6f-4711-9a1b-2c3d4e5f6a70",
+      "question_id": "8de3f17b-0e0d-4e38-8ea6-1c6f7e5092d9",
+      "value": "A",
+      "label": "It presents a familiar linear narrative, introduces evidence that complicates it, and concludes with a synthesis emphasizing uneven change.",
+      "is_correct": true
+    },
+    {
+      "id": "7b8c9d0e-1f2a-4b3c-8d9e-0f1a2b3c4d5e",
+      "question_id": "8de3f17b-0e0d-4e38-8ea6-1c6f7e5092d9",
+      "value": "B",
+      "label": "It outlines a chronological sequence of technological innovations and then forecasts the next phase.",
+      "is_correct": false
+    },
+    {
+      "id": "6c7d8e9f-0a1b-4c3d-9e8f-1a2b3c4d5e6f",
+      "question_id": "8de3f17b-0e0d-4e38-8ea6-1c6f7e5092d9",
+      "value": "C",
+      "label": "It contrasts the views of merchants and scholars and argues that the merchants’ perspective is superior.",
+      "is_correct": false
+    },
+    {
+      "id": "5d6e7f80-1a2b-4c3d-8e9f-2a3b4c5d6e7f",
+      "question_id": "8de3f17b-0e0d-4e38-8ea6-1c6f7e5092d9",
+      "value": "D",
+      "label": "It critiques printing’s role in map accuracy and proposes a new dating for its invention.",
+      "is_correct": false
+    },
+    {
+      "id": "2f1e3d4c-5b6a-47c8-9d0e-1f2a3b4c5d6e",
+      "question_id": "70f2e073-5d4e-4d6f-9b3e-5bd0c8c0e1a1",
+      "value": "A",
+      "label": "To propose a new accounting metric that eliminates uncertainty from offset assessments.",
+      "is_correct": false
+    },
+    {
+      "id": "9e8d7c6b-5a4f-4e3d-9c2b-1a0f9e8d7c6b",
+      "question_id": "70f2e073-5d4e-4d6f-9b3e-5bd0c8c0e1a1",
+      "value": "B",
+      "label": "To argue that biodiversity offsets invariably fail and should be prohibited.",
+      "is_correct": false
+    },
+    {
+      "id": "0a9b8c7d-6e5f-4d3c-9b2a-1c0d9e8f7a6b",
+      "question_id": "70f2e073-5d4e-4d6f-9b3e-5bd0c8c0e1a1",
+      "value": "C",
+      "label": "To provide a procedural guide to designing restoration projects that guarantee net ecological gain.",
+      "is_correct": false
+    },
+    {
+      "id": "1a2b3c4d-5e6f-4711-8a9b-0c1d2e3f4a5b",
+      "question_id": "70f2e073-5d4e-4d6f-9b3e-5bd0c8c0e1a1",
+      "value": "D",
+      "label": "To urge caution in interpreting claims of 'net gain' by highlighting measurement limits and temporal mismatches.",
+      "is_correct": true
+    },
+    {
+      "id": "c2a1b3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c",
+      "question_id": "3b6f0a1d-5a8f-4e4a-9e9c-77b1a6ce0c90",
+      "value": "A",
+      "label": "It concedes that literal translation is impossible and thereby devalues translation as a practice.",
+      "is_correct": false
+    },
+    {
+      "id": "d3b2c4e5-f6a7-48b9-0c1d-2e3f4a5b6c7d",
+      "question_id": "3b6f0a1d-5a8f-4e4a-9e9c-77b1a6ce0c90",
+      "value": "B",
+      "label": "It introduces the evaluative standard that reframes the preceding debate and guides the ensuing argument.",
+      "is_correct": true
+    },
+    {
+      "id": "e4c3d5f6-a7b8-49c0-1d2e-3f4a5b6c7d8e",
+      "question_id": "3b6f0a1d-5a8f-4e4a-9e9c-77b1a6ce0c90",
+      "value": "C",
+      "label": "It supplies a historical example to demonstrate a successful translation strategy.",
+      "is_correct": false
+    },
+    {
+      "id": "f5d4e6a7-b8c9-40d1-2e3f-4a5b6c7d8e9f",
+      "question_id": "3b6f0a1d-5a8f-4e4a-9e9c-77b1a6ce0c90",
+      "value": "D",
+      "label": "It summarizes the arguments of both camps without taking a position.",
+      "is_correct": false
+    },
+    {
+      "id": "0f1e2d3c-4b5a-46c7-8d9e-0f1a2b3c4d5e",
+      "question_id": "0f4e7c37-1e8a-4d2b-9fa3-5f42d41f2b77",
+      "value": "A",
+      "label": "It introduces a widely publicized promise, scrutinizes technical constraints and partial solutions, and ends with a moderated forecast.",
+      "is_correct": true
+    },
+    {
+      "id": "1e2d3c4b-5a6f-47c8-9d0e-1f2a3b4c5d6f",
+      "question_id": "0f4e7c37-1e8a-4d2b-9fa3-5f42d41f2b77",
+      "value": "B",
+      "label": "It catalogs multiple battery chemistries before recommending silicon as the optimal choice.",
+      "is_correct": false
+    },
+    {
+      "id": "2d3c4b5a-6f7e-48c9-0d1e-2f3a4b5c6d7e",
+      "question_id": "0f4e7c37-1e8a-4d2b-9fa3-5f42d41f2b77",
+      "value": "C",
+      "label": "It contrasts academic and industry perspectives and declares the academic view decisive.",
+      "is_correct": false
+    },
+    {
+      "id": "3c4b5a6f-7e8d-49ca-1e2f-3a4b5c6d7e8f",
+      "question_id": "0f4e7c37-1e8a-4d2b-9fa3-5f42d41f2b77",
+      "value": "D",
+      "label": "It presents experimental data to prove silicon anodes are impractical in any form.",
+      "is_correct": false
+    },
+    {
+      "id": "a1b2c3d4-e5f6-47a8-9c0d-1e2f3a4b5c6d",
+      "question_id": "9b2b5f80-1f71-4bb4-9a1b-35f3dc47c6a2",
+      "value": "A",
+      "label": "To defend the mirror neuron account by presenting convergent empirical support.",
+      "is_correct": false
+    },
+    {
+      "id": "b2c3d4e5-f6a7-48b9-0d1e-2f3a4b5c6d7e",
+      "question_id": "9b2b5f80-1f71-4bb4-9a1b-35f3dc47c6a2",
+      "value": "B",
+      "label": "To dismiss empathy research as too methodologically heterogeneous to study reliably.",
+      "is_correct": false
+    },
+    {
+      "id": "c3d4e5f6-a7b8-49c0-1e2f-3a4b5c6d7e8f",
+      "question_id": "9b2b5f80-1f71-4bb4-9a1b-35f3dc47c6a2",
+      "value": "C",
+      "label": "To challenge a single-cause explanation by arguing for a distributed account supported by several lines of evidence.",
+      "is_correct": true
+    },
+    {
+      "id": "d4e5f6a7-b8c9-40d1-2f3a-4b5c6d7e8f9a",
+      "question_id": "9b2b5f80-1f71-4bb4-9a1b-35f3dc47c6a2",
+      "value": "D",
+      "label": "To show that mirror neurons explain affective but not cognitive empathy.",
+      "is_correct": false
+    },
+    {
+      "id": "e5f6a7b8-c9d0-41d2-3f4a-5b6c7d8e9f0a",
+      "question_id": "d3f9a1f5-0adc-4e74-9a1d-1c5a3f77e4d1",
+      "value": "A",
+      "label": "It offers an anecdote illustrating public misunderstanding of environmental policy.",
+      "is_correct": false
+    },
+    {
+      "id": "f6a7b8c9-d0e1-42d3-4a5b-6c7d8e9f0a1b",
+      "question_id": "d3f9a1f5-0adc-4e74-9a1d-1c5a3f77e4d1",
+      "value": "B",
+      "label": "It introduces a counterargument that undermines the case for regulation.",
+      "is_correct": false
+    },
+    {
+      "id": "a7b8c9d0-e1f2-43d4-5b6c-7d8e9f0a1b2c",
+      "question_id": "d3f9a1f5-0adc-4e74-9a1d-1c5a3f77e4d1",
+      "value": "C",
+      "label": "It narrows the discussion from environmental regulation in general to climate policy in particular.",
+      "is_correct": false
+    },
+    {
+      "id": "b8c9d0e1-f2a3-44d5-6c7d-8e9f0a1b2c3d",
+      "question_id": "d3f9a1f5-0adc-4e74-9a1d-1c5a3f77e4d1",
+      "value": "D",
+      "label": "It precisely defines a central term to preempt a common misreading and set the terms of the analysis.",
+      "is_correct": true
+    },
+    {
+      "id": "c9d0e1f2-a3b4-45d6-7c8d-9e0f1a2b3c4d",
+      "question_id": "4b1c2d3e-7f8a-4c0b-9e1d-234f5a6b7c8d",
+      "value": "A",
+      "label": "It compares two music genres and concludes that listener habits are stable across time.",
+      "is_correct": false
+    },
+    {
+      "id": "d0e1f2a3-b4c5-46d7-8c9d-0e1f2a3b4c5d",
+      "question_id": "4b1c2d3e-7f8a-4c0b-9e1d-234f5a6b7c8d",
+      "value": "B",
+      "label": "It challenges an intuitive premise by analyzing the prevailing model, considers an alternative, and concludes that model choice largely governs outcomes.",
+      "is_correct": true
+    },
+    {
+      "id": "e1f2a3b4-c5d6-47d8-9c0d-1e2f3a4b5c6d",
+      "question_id": "4b1c2d3e-7f8a-4c0b-9e1d-234f5a6b7c8d",
+      "value": "C",
+      "label": "It argues that streaming platforms have increased overall artist revenue regardless of payout method.",
+      "is_correct": false
+    },
+    {
+      "id": "f2a3b4c5-d6e7-48d9-0c1d-2e3f4a5b6c7d",
+      "question_id": "4b1c2d3e-7f8a-4c0b-9e1d-234f5a6b7c8d",
+      "value": "D",
+      "label": "It presents a case study of one platform and generalizes to unrelated industries.",
+      "is_correct": false
+    },
+    {
+      "id": "01a2b3c4-d5e6-47f8-90a1-b2c3d4e5f6a7",
+      "question_id": "61c56cbe-1a11-4d98-8d4a-4148b69a8f7a",
+      "value": "A",
+      "label": "To argue for a calibrated policy that limits rather than abolishes homework by synthesizing mixed evidence on its effects.",
+      "is_correct": true
+    },
+    {
+      "id": "12b3c4d5-e6f7-4809-a0b1-c2d3e4f5a6b7",
+      "question_id": "61c56cbe-1a11-4d98-8d4a-4148b69a8f7a",
+      "value": "B",
+      "label": "To demonstrate that homework is harmful across all ages and subjects.",
+      "is_correct": false
+    },
+    {
+      "id": "23c4d5e6-f7a8-4910-b1c2-d3e4f5a6b7c8",
+      "question_id": "61c56cbe-1a11-4d98-8d4a-4148b69a8f7a",
+      "value": "C",
+      "label": "To present a historical overview of homework practices since the 19th century.",
+      "is_correct": false
+    },
+    {
+      "id": "34d5e6f7-a8b9-4a11-c2d3-e4f5a6b7c8d9",
+      "question_id": "61c56cbe-1a11-4d98-8d4a-4148b69a8f7a",
+      "value": "D",
+      "label": "To recommend eliminating all out-of-school practice in favor of in-class work only.",
+      "is_correct": false
+    },
+    {
+      "id": "45e6f7a8-b9c0-4b12-d3e4-f5a6b7c8d9e0",
+      "question_id": "e18cb6c8-6df7-42a5-889d-6f8a31d9ef22",
+      "value": "A",
+      "label": "It provides statistical evidence that the insurance analogy yields higher returns on investment.",
+      "is_correct": false
+    },
+    {
+      "id": "56f7a8b9-c0d1-4c13-e4f5-a6b7c8d9e0f1",
+      "question_id": "e18cb6c8-6df7-42a5-889d-6f8a31d9ef22",
+      "value": "B",
+      "label": "It extends the insurance analogy by introducing an additional financial instrument to strengthen it.",
+      "is_correct": false
+    },
+    {
+      "id": "67a8b9c0-d1e2-4d14-f5a6-b7c8d9e0f1a2",
+      "question_id": "e18cb6c8-6df7-42a5-889d-6f8a31d9ef22",
+      "value": "C",
+      "label": "It explains how pooled-risk models can be applied directly to adaptation without modification.",
+      "is_correct": false
+    },
+    {
+      "id": "78b9c0d1-e2f3-4e15-a6b7-c8d9e0f1a2b3",
+      "question_id": "e18cb6c8-6df7-42a5-889d-6f8a31d9ef22",
+      "value": "D",
+      "label": "It limits the force of the analogy by identifying a structural dissimilarity that motivates a different funding approach.",
+      "is_correct": true
+    }
+  ]
+}

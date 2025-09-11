@@ -1,0 +1,37 @@
+[
+  {
+    "id": 583021,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 10,
+    "difficulty": "Easy",
+    "question_text": "The circle above with center $O$ has a circumference of $48$. If the measure of central angle $AOC$ is $60$ degrees, what is the length of minor arc $AC$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//583021.png",
+    "options": [
+      {
+        "id": 5830210,
+        "label": "6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5830211,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5830212,
+        "label": "8",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5830213,
+        "label": "24",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

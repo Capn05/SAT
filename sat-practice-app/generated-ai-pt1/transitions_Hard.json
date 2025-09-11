@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "8a9a8d83-d0b1-4fba-8c3e-0a8a8d8b3c12",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Hard",
+      "question_text": "To minimize interpretive intrusion, some translators retain the source text's syntactic architecture, even when the result sounds ungainly in the target language. _______, advocates of dynamic equivalence insist that readers should encounter sentences that move with the ease and idiom of the new language, even if the structure is reshaped.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "1b7f1a32-4aaf-4a9d-9f4a-8fbf0e3af1c8",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Hard",
+      "question_text": "Early modeling studies suggested that managed grazing could increase soil carbon stocks across semi-arid rangelands. _______, field measurements that account for episodic disturbance and variable precipitation show gains are patchy and often transient.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5e1f5d0f-8c3b-4e22-9a61-6b7f9b1e2a45",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Hard",
+      "question_text": "Several museums have publicly pledged never to fund operations by selling artworks from their permanent collections. _______, during the budget crisis brought on by a prolonged shutdown, one such institution quietly auctioned peripheral pieces to pay staff, arguing the move protected its mission.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "f4b5a9e2-8c4d-4b7a-8a9f-cc12e0f9d001",
+      "question_id": "8a9a8d83-d0b1-4fba-8c3e-0a8a8d8b3c12",
+      "value": "A",
+      "label": "Consequently,",
+      "is_correct": false
+    },
+    {
+      "id": "a91d0e7b-e0a2-4c5e-9657-5ca2d6ec1f02",
+      "question_id": "8a9a8d83-d0b1-4fba-8c3e-0a8a8d8b3c12",
+      "value": "B",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "2a42b1f3-1a3b-4c24-9f10-7c6c5b4a2d03",
+      "question_id": "8a9a8d83-d0b1-4fba-8c3e-0a8a8d8b3c12",
+      "value": "C",
+      "label": "By contrast,",
+      "is_correct": true
+    },
+    {
+      "id": "0f1e2d3c-4b5a-4967-8c9d-0e1f2a3b4c04",
+      "question_id": "8a9a8d83-d0b1-4fba-8c3e-0a8a8d8b3c12",
+      "value": "D",
+      "label": "Furthermore,",
+      "is_correct": false
+    },
+    {
+      "id": "9c8b7a6d-5e4f-4c3b-9a8f-1e2d3c4b5a05",
+      "question_id": "1b7f1a32-4aaf-4a9d-9f4a-8fbf0e3af1c8",
+      "value": "A",
+      "label": "However,",
+      "is_correct": true
+    },
+    {
+      "id": "3e2f1a4b-6c7d-48e9-9b0a-5f4e3d2c1b06",
+      "question_id": "1b7f1a32-4aaf-4a9d-9f4a-8fbf0e3af1c8",
+      "value": "B",
+      "label": "Therefore,",
+      "is_correct": false
+    },
+    {
+      "id": "7a8b9c0d-1e2f-4a3b-8c9d-0a1b2c3d4e07",
+      "question_id": "1b7f1a32-4aaf-4a9d-9f4a-8fbf0e3af1c8",
+      "value": "C",
+      "label": "In addition,",
+      "is_correct": false
+    },
+    {
+      "id": "5f6e7d8c-9b0a-4c3d-8e7f-6a5b4c3d2e08",
+      "question_id": "1b7f1a32-4aaf-4a9d-9f4a-8fbf0e3af1c8",
+      "value": "D",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "c1d2e3f4-a5b6-4c7d-8e9f-012345678909",
+      "question_id": "5e1f5d0f-8c3b-4e22-9a61-6b7f9b1e2a45",
+      "value": "A",
+      "label": "Accordingly,",
+      "is_correct": false
+    },
+    {
+      "id": "d2e3f4a5-b6c7-4d8e-9f01-1234567890aa",
+      "question_id": "5e1f5d0f-8c3b-4e22-9a61-6b7f9b1e2a45",
+      "value": "B",
+      "label": "In the same vein,",
+      "is_correct": false
+    },
+    {
+      "id": "e3f4a5b6-c7d8-4e9f-8012-234567890abb",
+      "question_id": "5e1f5d0f-8c3b-4e22-9a61-6b7f9b1e2a45",
+      "value": "C",
+      "label": "Because of this,",
+      "is_correct": false
+    },
+    {
+      "id": "f4a5b6c7-d8e9-4012-9f23-34567890abcc",
+      "question_id": "5e1f5d0f-8c3b-4e22-9a61-6b7f9b1e2a45",
+      "value": "D",
+      "label": "Nevertheless,",
+      "is_correct": true
+    }
+  ]
+}

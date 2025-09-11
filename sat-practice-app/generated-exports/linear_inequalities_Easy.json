@@ -1,0 +1,352 @@
+[
+  {
+    "id": 167406,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A student worked $20$, $25$, and $15$ hours in the first three weeks at a part-time job. Solving which inequality gives the number of hours, $H$, the student must work in the fourth week to have an average of at least $22$ hours per week for all four weeks?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1674060,
+        "label": "$\\frac{20+25+15+H}{4} \\geq 22$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1674061,
+        "label": "$\\frac{20+25+15+H}{4} \\leq 22$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1674062,
+        "label": "$\\frac{20+25+15+H}{3} \\geq 22$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1674063,
+        "label": "$20+25+15+H \\geq 22$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 258502,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A certain chemical reaction is most effective when the temperature is between $25$ degrees Celsius and $40$ degrees Celsius, inclusive. Which inequality represents this situation, where $t$ is the temperature in degrees Celsius for the reaction to be most effective?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2585020,
+        "label": "$t < 25$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2585021,
+        "label": "$25 < t < 40$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2585022,
+        "label": "$t > 40$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2585023,
+        "label": "$25 \\leq t \\leq 40$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 284992,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "Sarah is buying notebooks and pens for school. Notebooks cost $\\$2.50$ each and pens cost $\\$1.50$ each. She wants to spend less than $\\$18$ in total. Which of the following inequalities represents this situation, where $n$ is the number of notebooks Sarah buys and $p$ is the number of pens she buys?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2849920,
+        "label": "$2.50n + 1.50p > 18$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2849921,
+        "label": "$2.50n + 1.50p < 18$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2849922,
+        "label": "$1.50n + 2.50p > 18$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2849923,
+        "label": "$1.50n + 2.50p < 18$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 310670,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A fruit vendor sells baskets of oranges. Each basket contains at least $25$ oranges but no more than $35$ oranges. Which of the following could be the total number of oranges on $6$ baskets of oranges?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3106700,
+        "label": "140",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3106701,
+        "label": "195",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3106702,
+        "label": "220",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3106703,
+        "label": "240",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 354787,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A coffee shop sells small coffees for $\\$2$ and large coffees for $\\$4$. During the morning rush, the barista wants to ensure that the total revenue from coffee sales is at least $\\$60$. If the barista sells $x$ small coffees and $y$ large coffees, which of the following inequalities must be true?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3547870,
+        "label": "$2x + 4y \\leq 60$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3547871,
+        "label": "$2x + 4y \\geq 60$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3547872,
+        "label": "$4x + 2y \\leq 60$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3547873,
+        "label": "$4x + 2y \\geq 60$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 545539,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A hardware store needs to stock up on boxes of nails for the upcoming week. They estimate they will need at least $200$ boxes of nails. Nails are sold in cartons, where each carton contains $24$ boxes of nails. What is the minimum number of cartons of nails the hardware store needs to purchase to meet their estimated need?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5455390,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5455391,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5455392,
+        "label": "9",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5455393,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 668608,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A bakery is making cookies and cakes for a school event. Let $x$ be the number of cookies and $y$ be the number of cakes. They need to make at least $50$ items in total, but the total baking time should be no more than $120$ minutes. Each cookie takes $2$ minutes to bake and each cake takes $5$ minutes to bake. Which of the following systems of inequalities models this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6686080,
+        "label": "$$x + y \\geq 50$$ $$2x + 5y \\leq 120$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6686081,
+        "label": "$$x + y \\leq 50$$ $$2x + 5y \\geq 120$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6686082,
+        "label": "$$2x + 5y \\geq 50$$ $$x + y \\leq 120$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6686083,
+        "label": "$$x + y \\geq 50$$ $$5x + 2y \\leq 120$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 716863,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A fruit vendor has two baskets of fruits. In the first basket, $20\\%$ of the fruits are apples, and in the second basket, $60\\%$ of the fruits are apples.  Together, the baskets must contain at least $300$ apples to meet the daily requirement. Which inequality shows this relationship, where $x$ is the total number of fruits in the first basket and $y$ is the total number of fruits in the second basket?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7168630,
+        "label": "$0.2x + 0.6y \\geq 300$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7168631,
+        "label": "$0.6x + 0.2y \\geq 300$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7168632,
+        "label": "$0.2x + 0.6y \\leq 300$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7168633,
+        "label": "$0.2x + 0.6y < 300$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 722898,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "A taxi service charges a flat fee of $\\$3$ plus $\\$2.50$ per mile driven. Michael wants to spend no more than $\\$28$ on a taxi ride. If the distance is measured in whole miles, what is the maximum number of miles Michael can travel in the taxi?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7228980,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7228981,
+        "label": "10",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7228982,
+        "label": "11",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7228983,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 794539,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Easy",
+    "question_text": "To earn a 'Bronze' medal in a robotics competition, a team's robot must complete the obstacle course in more than $25$ seconds but less than or equal to $30$ seconds. If Team Alpha earned a 'Bronze' medal, which of the following could have been their robot's completion time in seconds?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7945390,
+        "label": "24.9 seconds",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7945391,
+        "label": "25.1 seconds",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7945392,
+        "label": "30.1 seconds",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7945393,
+        "label": "31 seconds",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

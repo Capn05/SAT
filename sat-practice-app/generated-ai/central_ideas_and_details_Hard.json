@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "b9a2e6a7-02e3-4a6c-9b0d-1b6f9de38f3d",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "The conservator paused before the damaged fresco, resisting the familiar impulse to \"restore\" what history had edited. A brightened sky here, a reconstructed face there—each gesture risked trading patina for pastiche. The goal, she argued, was not to make the wall look new but to let it speak honestly: to stabilize what time had stressed, reveal what remains, and leave legible the intervals of loss. Every additional brushstroke, however well-intentioned, would say as much about the restorer as the original painter and might eclipse the very record that made the work worth saving. Which choice best states the central claim of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f3b3522f-b9e0-4cbf-a2c1-8b5ddc19d4a0",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Proponents of carbon markets often point to offsets as a pragmatic bridge: fund a forest here to counterbalance a smokestack there. Yet the arithmetic can conceal as much as it clarifies. If a firm claims net-zero by financing distant sequestration while its own facilities emit unabated, a ledger may appear balanced without any local reduction in pollution or progress toward decarbonizing its operations. Offsets have their place, but without stringent limits and transparent accounting, they risk becoming a virtue on paper that defers hard changes in practice. What is the author's primary concern about the use of offsets as described in the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2f16e9c1-3f64-4cd5-a241-1bf8c6401eb0",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "The instructor described skepticism not as a sneer at truth but as a discipline for approaching it. Doubt, in this view, is not paralysis; it is a method for distinguishing what one merely prefers from what one can actually defend. To withhold judgment, temporarily and purposefully, is to give an argument the chance to earn assent rather than inherit it. The habit of testing claims, the instructor said, makes belief more—not less—capable of guiding action. Which choice best states the main idea of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8e9f1d12-7108-4fbb-8e8c-3c2a6d1b3a8e",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Our dashboard glows with impressive counts—downloads, sign-ups, minutes in-app—yet the bucket is leaking faster than we can pour. Last month’s cohort tried the product and drifted away; this month’s cohort looks poised to repeat the pattern. We can buy attention, but rented attention leaves when the ad spend stops. The next quarter will fix activation friction and the long, quiet stretch after first use where people forget why they came. A product that earns return visits does not need to shout to be heard. The passage most strongly suggests that the founder would treat which metric as the clearest indicator of product health?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f07b8f2d-b5a3-4b8b-9c1a-93a7cb3f3f2e",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "A diary, we assume, is a refuge for candor—but it is also an architecture of omission. The facts most troubling to the writer may be fenced out by euphemism or silence, and the very dailiness of entries can lull readers into mistaking regularity for completeness. The result is not falsehood so much as curvature: the record bends toward what the diarist can bear to recollect. If we learn from diaries, it is as much from the gaps as from the glittering particulars they preserve. According to the passage, what can be inferred about omissions in diaries?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4e73d7b0-2cc9-4e2f-bf4d-8fd3c1a0ab2e",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Archaeologists charted pottery fragments along the old ridgelines and found a tidy corridor of shards. It would be tempting to declare a trade route on that evidence alone—until one notices that lowland soils, more acidic and farmed for centuries, rarely preserve ceramics at all. The map of surviving fragments is not a map of everything that once was; it is a palimpsest shaped by burial, breakage, chemistry, and chance, as well as by ancient merchants. Which choice best states the main point of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0aefc8c6-2e91-4b9e-9587-9f2f54d6d0d4",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Early in the outbreak, public advisories urged scrubbing doorknobs and quarantining packages; later, as evidence mounted for airborne transmission, guidance shifted to ventilation and masking. Critics called the reversal a failure. But revision is not betrayal—it is the work of science made visible. The more directly officials communicate what is known, what is probable, and what remains uncertain, the more the public can adjust behavior without feeling misled. Which choice best captures the central claim of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "d3b4a887-9b6a-4e3d-9a2d-1c0f5a6e2e91",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Decades of careful listening have yielded only the hum of our own machinery and the sigh of natural phenomena. This does not prove that no one is speaking; it sharpens the questions we can ask. Perhaps transmitters are rare, faint, brief, misaligned with our schedules, or conversing in bands we have not yet thought to monitor. Silence, here, is not a verdict but a constraint, narrowing the range of plausible worlds without closing the case. Which choice best states the main idea of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7f7e7a6b-6d94-4f52-9ba7-9d1e0a3b4c6d",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "The composer’s theme returns so often that at first it seems a confession of scarcity, as if invention had stalled. But listen to where it reappears: slowed and darkened in the strings after a bright statement in the winds, inverted in a moment of doubt, hammered into insistence just before the last cadence. Repetition, here, is not redundancy but argument—the motif tries on positions until it belongs to the whole. Based on the passage, what does the recurrence of the theme most strongly suggest about the composer’s intent?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "1e3b5f6a-9c42-4a8a-87d1-5a2c9f1e7b30",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Machine translation promises to make endangered languages legible to outsiders and newly useful to their own communities. Yet models trained on sparse, uneven data can converge on a polished, standardized voice that trims dialectal edges and domestic metaphors. Without community governance—deciding what to encode, how to annotate, and when to prefer ambiguity—software may become an arbiter of correctness rather than a tool of continuity. The technology can help, but not as a substitute for living stewards. Which choice best captures the central claim of the passage?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "3a028649-1d37-4c45-88d8-7c9a3f8a6a01",
+      "question_id": "b9a2e6a7-02e3-4a6c-9b0d-1b6f9de38f3d",
+      "value": "A",
+      "label": "Conservation should prioritize restoring vivid colors because viewers expect artworks to look new.",
+      "is_correct": false
+    },
+    {
+      "id": "0d7226f4-1a0a-4b9f-a5fd-8b5d8f5b9c2a",
+      "question_id": "b9a2e6a7-02e3-4a6c-9b0d-1b6f9de38f3d",
+      "value": "B",
+      "label": "Restoration inevitably interprets the past, so conservators should intervene minimally to preserve the work’s historical complexity.",
+      "is_correct": true
+    },
+    {
+      "id": "6b59ba2c-8b23-4b54-8fd6-58f3d2e7b1b0",
+      "question_id": "b9a2e6a7-02e3-4a6c-9b0d-1b6f9de38f3d",
+      "value": "C",
+      "label": "Most conservation errors result from a failure to match the original pigment chemistry exactly.",
+      "is_correct": false
+    },
+    {
+      "id": "1bd9e5a5-75b8-4e8b-b948-11a5f3f8d3c2",
+      "question_id": "b9a2e6a7-02e3-4a6c-9b0d-1b6f9de38f3d",
+      "value": "D",
+      "label": "The only ethical course is to leave all damaged artworks untouched, regardless of condition.",
+      "is_correct": false
+    },
+    {
+      "id": "a37c7d1d-5a31-47e9-9b2e-613f3d1e8365",
+      "question_id": "f3b3522f-b9e0-4cbf-a2c1-8b5ddc19d4a0",
+      "value": "A",
+      "label": "Offsets are inherently fraudulent and should be banned outright.",
+      "is_correct": false
+    },
+    {
+      "id": "4a198e55-01f6-4cba-8b7d-3eee441b94f9",
+      "question_id": "f3b3522f-b9e0-4cbf-a2c1-8b5ddc19d4a0",
+      "value": "B",
+      "label": "Carbon taxes should replace offsets because taxes are easier for firms to administer.",
+      "is_correct": false
+    },
+    {
+      "id": "da4e4b57-21af-4a65-a6a7-3b7e3a5aa8a1",
+      "question_id": "f3b3522f-b9e0-4cbf-a2c1-8b5ddc19d4a0",
+      "value": "C",
+      "label": "Offsets primarily function to reduce compliance costs for smaller firms.",
+      "is_correct": false
+    },
+    {
+      "id": "9b9d7b8e-0be6-4c4a-82c9-2b1a6f5c6aa4",
+      "question_id": "f3b3522f-b9e0-4cbf-a2c1-8b5ddc19d4a0",
+      "value": "D",
+      "label": "Overreliance on offsets can obscure inadequate on-site emission cuts and weaken incentives to decarbonize operations.",
+      "is_correct": true
+    },
+    {
+      "id": "b5b14a9a-8b57-4c69-8a2c-7c7d8d3e9a44",
+      "question_id": "2f16e9c1-3f64-4cd5-a241-1bf8c6401eb0",
+      "value": "A",
+      "label": "Structured doubt strengthens beliefs by forcing them to be tested rather than accepted by habit.",
+      "is_correct": true
+    },
+    {
+      "id": "1a6a3886-2d4d-45e2-a3d4-6b5a0d4e0a1b",
+      "question_id": "2f16e9c1-3f64-4cd5-a241-1bf8c6401eb0",
+      "value": "B",
+      "label": "Students today are not skeptical enough to evaluate competing claims responsibly.",
+      "is_correct": false
+    },
+    {
+      "id": "b0fae5e7-95e2-4c8d-9a72-7b8a3d4e5c90",
+      "question_id": "2f16e9c1-3f64-4cd5-a241-1bf8c6401eb0",
+      "value": "C",
+      "label": "Skepticism is superior to faith in all matters of knowledge and morality.",
+      "is_correct": false
+    },
+    {
+      "id": "5e53f3cc-1a5f-4e8c-9d15-3f3b0a2b4c66",
+      "question_id": "2f16e9c1-3f64-4cd5-a241-1bf8c6401eb0",
+      "value": "D",
+      "label": "Withholding judgment is equivalent to adopting a neutral position on every issue.",
+      "is_correct": false
+    },
+    {
+      "id": "90f2c7a9-6c0d-4a1f-9d88-8d1e2f2c7f31",
+      "question_id": "8e9f1d12-7108-4fbb-8e8c-3c2a6d1b3a8e",
+      "value": "A",
+      "label": "Total ad impressions across paid channels",
+      "is_correct": false
+    },
+    {
+      "id": "c6f9a7b3-9031-4a12-ae0a-8c7d5e2a3f15",
+      "question_id": "8e9f1d12-7108-4fbb-8e8c-3c2a6d1b3a8e",
+      "value": "B",
+      "label": "Cumulative downloads since launch",
+      "is_correct": false
+    },
+    {
+      "id": "d3873b76-47b8-4c15-9df6-93f8a9b2b16a",
+      "question_id": "8e9f1d12-7108-4fbb-8e8c-3c2a6d1b3a8e",
+      "value": "C",
+      "label": "Cohort retention after 90 days",
+      "is_correct": true
+    },
+    {
+      "id": "b9f2f5e1-52ac-4d3a-8c86-3c5e6b1d7f9b",
+      "question_id": "8e9f1d12-7108-4fbb-8e8c-3c2a6d1b3a8e",
+      "value": "D",
+      "label": "Number of new features shipped per quarter",
+      "is_correct": false
+    },
+    {
+      "id": "f4c8d5eb-28b7-4c65-8a42-0b8a127a0c72",
+      "question_id": "f07b8f2d-b5a3-4b8b-9c1a-93a7cb3f3f2e",
+      "value": "A",
+      "label": "Diaries are inherently more accurate than memory because they are written daily.",
+      "is_correct": false
+    },
+    {
+      "id": "96d3b7cd-3c29-47a8-b3e4-2f4e6c8ad2a1",
+      "question_id": "f07b8f2d-b5a3-4b8b-9c1a-93a7cb3f3f2e",
+      "value": "B",
+      "label": "Regular dates in a diary guarantee a complete chronological account of events.",
+      "is_correct": false
+    },
+    {
+      "id": "5a6f2c67-9a5b-4a7a-8b1e-05c4a127e3ab",
+      "question_id": "f07b8f2d-b5a3-4b8b-9c1a-93a7cb3f3f2e",
+      "value": "C",
+      "label": "Readers should distrust all diary entries equally, regardless of context.",
+      "is_correct": false
+    },
+    {
+      "id": "09b3b93f-13f2-4b8d-8c1a-62f93f1a2ea7",
+      "question_id": "f07b8f2d-b5a3-4b8b-9c1a-93a7cb3f3f2e",
+      "value": "D",
+      "label": "What is left unsaid in a diary can reveal the writer’s priorities and limits as clearly as what is recorded.",
+      "is_correct": true
+    },
+    {
+      "id": "0f1b6e8d-c3b4-4fda-9f3e-4b5d7f1a2c3e",
+      "question_id": "4e73d7b0-2cc9-4e2f-bf4d-8fd3c1a0ab2e",
+      "value": "A",
+      "label": "Ancient trade routes always followed ridgelines to avoid lowlands.",
+      "is_correct": false
+    },
+    {
+      "id": "6d7f46a4-3c8a-4c79-9b5a-7e2b1c5a3d1e",
+      "question_id": "4e73d7b0-2cc9-4e2f-bf4d-8fd3c1a0ab2e",
+      "value": "B",
+      "label": "Inferences about trade from artifact distributions must account for preservation and sampling biases.",
+      "is_correct": true
+    },
+    {
+      "id": "b3c1a7f6-9f7e-4e5d-9d3a-0b6f4d8e2c7a",
+      "question_id": "4e73d7b0-2cc9-4e2f-bf4d-8fd3c1a0ab2e",
+      "value": "C",
+      "label": "Ceramic vessels universally outlast metal artifacts in all soil conditions.",
+      "is_correct": false
+    },
+    {
+      "id": "dbf7c5e2-4a19-44d7-9b5f-7c6e2a1d9f4e",
+      "question_id": "4e73d7b0-2cc9-4e2f-bf4d-8fd3c1a0ab2e",
+      "value": "D",
+      "label": "Soil acidity is the sole determinant of where archaeologists will find artifacts.",
+      "is_correct": false
+    },
+    {
+      "id": "bf5f2d1e-6c2a-4a1e-a9c0-a1e7c8d2e5f1",
+      "question_id": "0aefc8c6-2e91-4b9e-9587-9f2f54d6d0d4",
+      "value": "A",
+      "label": "Officials should avoid changing guidance to prevent confusion among the public.",
+      "is_correct": false
+    },
+    {
+      "id": "a1c2f3e4-5d6b-7a8c-9d0e-1f2a3b4c5d6e",
+      "question_id": "0aefc8c6-2e91-4b9e-9587-9f2f54d6d0d4",
+      "value": "B",
+      "label": "Public health recommendations are unreliable because evidence often contradicts itself.",
+      "is_correct": false
+    },
+    {
+      "id": "b6e7f8a9-0b1c-4d2e-9f3a-5a6b7c8d9e0f",
+      "question_id": "0aefc8c6-2e91-4b9e-9587-9f2f54d6d0d4",
+      "value": "C",
+      "label": "Guidance should evolve with evidence, and openly communicating uncertainty helps maintain public trust.",
+      "is_correct": true
+    },
+    {
+      "id": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b",
+      "question_id": "0aefc8c6-2e91-4b9e-9587-9f2f54d6d0d4",
+      "value": "D",
+      "label": "Masking and ventilation are effective only when paired with routine surface disinfection.",
+      "is_correct": false
+    },
+    {
+      "id": "d4c5b6a7-8e9f-4a1b-9c0d-2e3f4a5b6c7d",
+      "question_id": "d3b4a887-9b6a-4e3d-9a2d-1c0f5a6e2e91",
+      "value": "A",
+      "label": "Non-detections constrain hypotheses about extraterrestrial signals without proving their absence.",
+      "is_correct": true
+    },
+    {
+      "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "question_id": "d3b4a887-9b6a-4e3d-9a2d-1c0f5a6e2e91",
+      "value": "B",
+      "label": "Extended silence shows that intelligent life is exceedingly common but communicates infrequently.",
+      "is_correct": false
+    },
+    {
+      "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+      "question_id": "d3b4a887-9b6a-4e3d-9a2d-1c0f5a6e2e91",
+      "value": "C",
+      "label": "Null results should prompt researchers to abandon radio-based searches entirely.",
+      "is_correct": false
+    },
+    {
+      "id": "0a1b2c3d-4e5f-6789-abcd-ef0123456789",
+      "question_id": "d3b4a887-9b6a-4e3d-9a2d-1c0f5a6e2e91",
+      "value": "D",
+      "label": "Detection failures indicate that our instruments are fundamentally incapable of scientific discovery in this domain.",
+      "is_correct": false
+    },
+    {
+      "id": "ab7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
+      "question_id": "7f7e7a6b-6d94-4f52-9ba7-9d1e0a3b4c6d",
+      "value": "A",
+      "label": "The composer lacked sufficient new material and therefore repeated earlier ideas.",
+      "is_correct": false
+    },
+    {
+      "id": "c0d1e2f3-4a5b-6c7d-8e9f-0a1b2c3d4e5f",
+      "question_id": "7f7e7a6b-6d94-4f52-9ba7-9d1e0a3b4c6d",
+      "value": "B",
+      "label": "The recurring theme is intended primarily to ensure audience recognition and applause.",
+      "is_correct": false
+    },
+    {
+      "id": "f1e2d3c4-b5a6-7c8d-9e0f-1a2b3c4d5e6f",
+      "question_id": "7f7e7a6b-6d94-4f52-9ba7-9d1e0a3b4c6d",
+      "value": "C",
+      "label": "The motif’s repetition is a strict adherence to traditional sonata form expectations.",
+      "is_correct": false
+    },
+    {
+      "id": "5a4b3c2d-1e0f-9d8c-7b6a-5c4d3e2f1a0b",
+      "question_id": "7f7e7a6b-6d94-4f52-9ba7-9d1e0a3b4c6d",
+      "value": "D",
+      "label": "The recurrence is a deliberate structural strategy that creates coherence and development across the work.",
+      "is_correct": true
+    },
+    {
+      "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "question_id": "1e3b5f6a-9c42-4a8a-87d1-5a2c9f1e7b30",
+      "value": "A",
+      "label": "AI will inevitably replace native speakers as the most authoritative source of a language.",
+      "is_correct": false
+    },
+    {
+      "id": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "question_id": "1e3b5f6a-9c42-4a8a-87d1-5a2c9f1e7b30",
+      "value": "B",
+      "label": "AI translation can support revitalization only if communities govern its design to avoid homogenizing the language.",
+      "is_correct": true
+    },
+    {
+      "id": "e3f4a5b6-c7d8-9e0f-1a2b-3c4d5e6f7a8b",
+      "question_id": "1e3b5f6a-9c42-4a8a-87d1-5a2c9f1e7b30",
+      "value": "C",
+      "label": "Technical accuracy alone is sufficient to preserve nuance in endangered languages.",
+      "is_correct": false
+    },
+    {
+      "id": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+      "question_id": "1e3b5f6a-9c42-4a8a-87d1-5a2c9f1e7b30",
+      "value": "D",
+      "label": "Documentation efforts should pause until translation tools can perfectly model dialectal variation.",
+      "is_correct": false
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "bcd1d78e-6b6e-4c18-9fd7-7b9b4f585fe7",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "For several seasons, the city art museum prioritized blockbuster exhibitions to boost attendance, a strategy that succeeded by drawing long lines and national media coverage. Local artists, however, argued that the focus pushed community voices to the margins, concerns that culminated in a widely attended public forum. ________ the museum launched a residency program that guarantees gallery space for regional artists each spring.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "41bba6a2-b7f6-4a0f-a969-b4d1c7b0d621",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "Field observations show that mangrove roots buffer coastlines by slowing waves and trapping sediment. ________, controlled tank experiments indicate that the density of prop roots can reduce water velocity by as much as $40%$ during simulated storms.",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e0c03a82-8cc5-4f88-9c4e-0df8281b9bcb",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 24,
+      "difficulty": "Medium",
+      "question_text": "To speed up commutes, the transit authority converted a major downtown artery into a bus-priority corridor, decreasing average travel times by $15%$ within the first month. ________, several storefronts along the route reported fewer spontaneous visits from drivers who once parked briefly to shop.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1a4f6f8c-c9e8-4c0a-968c-8e3301d23f41",
+      "question_id": "bcd1d78e-6b6e-4c18-9fd7-7b9b4f585fe7",
+      "value": "A",
+      "label": "Conversely,",
+      "is_correct": false
+    },
+    {
+      "id": "fa2ce3a1-4d24-4f1d-9c74-b9b4754a0f73",
+      "question_id": "bcd1d78e-6b6e-4c18-9fd7-7b9b4f585fe7",
+      "value": "B",
+      "label": "Specifically,",
+      "is_correct": false
+    },
+    {
+      "id": "9b555f7b-d2d6-4ae9-9a39-1aa3f8e92ec1",
+      "question_id": "bcd1d78e-6b6e-4c18-9fd7-7b9b4f585fe7",
+      "value": "C",
+      "label": "Nevertheless,",
+      "is_correct": false
+    },
+    {
+      "id": "20f96c59-8940-4bda-9d55-1a6862c7a141",
+      "question_id": "bcd1d78e-6b6e-4c18-9fd7-7b9b4f585fe7",
+      "value": "D",
+      "label": "In response,",
+      "is_correct": true
+    },
+    {
+      "id": "2a3f3e90-ee2e-4a1e-9b59-784f0fef3e6d",
+      "question_id": "41bba6a2-b7f6-4a0f-a969-b4d1c7b0d621",
+      "value": "A",
+      "label": "Consequently,",
+      "is_correct": false
+    },
+    {
+      "id": "b4b3c969-9287-4b3e-8269-785f0a3dca8c",
+      "question_id": "41bba6a2-b7f6-4a0f-a969-b4d1c7b0d621",
+      "value": "B",
+      "label": "Moreover,",
+      "is_correct": true
+    },
+    {
+      "id": "5719f515-1b7f-4f9c-8b60-7d820a8be3e0",
+      "question_id": "41bba6a2-b7f6-4a0f-a969-b4d1c7b0d621",
+      "value": "C",
+      "label": "In contrast,",
+      "is_correct": false
+    },
+    {
+      "id": "4d8a5a17-e34a-4f5b-bd1f-1cb3c4dd3e8f",
+      "question_id": "41bba6a2-b7f6-4a0f-a969-b4d1c7b0d621",
+      "value": "D",
+      "label": "For example,",
+      "is_correct": false
+    },
+    {
+      "id": "1fb2a548-1e87-4e3e-9ec6-2f93a3e5a1cc",
+      "question_id": "e0c03a82-8cc5-4f88-9c4e-0df8281b9bcb",
+      "value": "A",
+      "label": "However,",
+      "is_correct": true
+    },
+    {
+      "id": "3db5e1a8-2e9d-458a-bc2a-0d2ed3e09964",
+      "question_id": "e0c03a82-8cc5-4f88-9c4e-0df8281b9bcb",
+      "value": "B",
+      "label": "Therefore,",
+      "is_correct": false
+    },
+    {
+      "id": "55af5b58-cc9d-4de3-b9c7-8abf7d0cf51f",
+      "question_id": "e0c03a82-8cc5-4f88-9c4e-0df8281b9bcb",
+      "value": "C",
+      "label": "Similarly,",
+      "is_correct": false
+    },
+    {
+      "id": "f7a4ce1b-b6fc-4f87-99d3-3d6440aa5a70",
+      "question_id": "e0c03a82-8cc5-4f88-9c4e-0df8281b9bcb",
+      "value": "D",
+      "label": "As a result,",
+      "is_correct": false
+    }
+  ]
+}

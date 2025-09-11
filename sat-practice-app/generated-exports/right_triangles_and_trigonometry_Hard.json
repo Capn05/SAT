@@ -1,0 +1,282 @@
+[
+  {
+    "id": 43296,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "Triangle $PQR$ is similar to triangle $STU$, where angle $P$ corresponds to angle $S$ and angles $R$ and $U$ are right angles. If $\\tan P = \\frac{4}{3}$, what is the value of $\\cos S$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 432960,
+        "label": "$\\frac{3}{5}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 432961,
+        "label": "$\\frac{4}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 432962,
+        "label": "$\\frac{3}{4}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 432963,
+        "label": "$\\frac{4}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 454356,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "A right triangle has angle measures of $30^\\circ$, $60^\\circ$, and $90^\\circ$. The perimeter of this triangle is $9+3\\sqrt{3}$. What is the length of the shortest side of the triangle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4543560,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4543561,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4543562,
+        "label": "$3\\sqrt{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4543563,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 455845,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "In right triangle $PQR$, where angle $R$ is the right angle, the cosine of angle $P$ is $\\frac{3}{5}$ and the length of the hypotenuse $PQ$ is $15$. What is the length of side $QR$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4558450,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4558451,
+        "label": "12",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4558452,
+        "label": "15",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4558453,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 601775,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "In a right triangle, the tangent of one of the two acute angles is $\\frac{3}{2}$. What is the tangent of the other acute angle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6017750,
+        "label": "$\\frac{2}{3}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6017751,
+        "label": "$\\frac{3}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6017752,
+        "label": "$\\frac{\\sqrt{13}}{2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6017753,
+        "label": "$\\frac{\\sqrt{13}}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 645618,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "Triangle $ABC$ is similar to triangle $DEF$, where $A$ corresponds to $D$ and $C$ corresponds to $F$. Angles $C$ and $F$ are right angles. If $\\tan(A) = 1$ and $DF = 50$, what is the length of $DE$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6456180,
+        "label": "50",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6456181,
+        "label": "$50\\sqrt{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6456182,
+        "label": "100",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6456183,
+        "label": "$50\\sqrt{2}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 651452,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "Triangle $PQR$ is similar to triangle $XYZ$, where angle $P$ corresponds to angle $X$, angle $Q$ corresponds to angle $Y$, and angle $R$ corresponds to angle $Z$. Angles $R$ and $Z$ are right angles. If $\\sin(P) = \\frac{3}{5}$, what is the value of $\\tan(Y)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6514520,
+        "label": "$\\frac{3}{4}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6514521,
+        "label": "$\\frac{3}{5}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6514522,
+        "label": "$\\frac{4}{3}$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6514523,
+        "label": "$\\frac{4}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 657473,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "Triangle $PQR$ is a right triangle with the right angle at $Q$. If $PQ = 5$ and $PR = 13$, what is the value of $\\cos (P)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6574730,
+        "label": "$\\frac{12}{13}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6574731,
+        "label": "$\\frac{5}{12}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6574732,
+        "label": "$\\frac{13}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6574733,
+        "label": "$\\frac{5}{13}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 875612,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 12,
+    "difficulty": "Hard",
+    "question_text": "The length of a rectangle's diagonal is $5$, and the length of the rectangle's shorter side is $2$. What is the length of the rectangle's longer side?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8756120,
+        "label": "$\\sqrt{21}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8756121,
+        "label": "$\\sqrt{29}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8756122,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8756123,
+        "label": "7",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,492 @@
+[
+  {
+    "id": 117215,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "$$2y = 7x + 12$$ $$2y = 2x + 2$$ The solution to the given system of equations is $(x, y)$. What is the value of $10x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1172150,
+        "label": "-20",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1172151,
+        "label": "-10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1172152,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1172153,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 201501,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "At a fruit stand, apples are sold for $\\$1$ each and bananas are sold for $\\$0.50$ each. A customer bought a total of $140$ apples and bananas. The revenue from the bananas was twice the revenue from the apples. How many bananas did the customer buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2015010,
+        "label": "28",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2015011,
+        "label": "84",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2015012,
+        "label": "112",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2015013,
+        "label": "120",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 249055,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "Alex and Ben together earned $\\$50$ from a weekend job. Alex's earnings were $\\$2$ more than twice Ben's earnings. How much did Alex earn?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2490550,
+        "label": "$\\$34$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2490551,
+        "label": "$\\$32$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2490552,
+        "label": "$\\$36$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2490553,
+        "label": "$\\$25$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 346300,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "In the given system of equations, $m$ is a constant. If the system has no solution, what is the value of $m$? $$10x - 4y = 6y + 8$$ $$my = -5x$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3463000,
+        "label": "-5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3463001,
+        "label": "-2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3463002,
+        "label": "-10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3463003,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 450347,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "$$3x = 12 + 6y$$ $$px = 10 + 4y$$ In the given system of equations, $p$ is a constant. If the system has no solution, what is the value of $p$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4503470,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4503471,
+        "label": "3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4503472,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4503473,
+        "label": "1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 557551,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "$$3x + 4y = 10$$ $$2x - 3y = -1$$ If $(x,y)$ is the solution to the system of equations above, what is the value of $5x + y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5575510,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5575511,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5575512,
+        "label": "9",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5575513,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 576432,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "$$2x + 3y = 10$$ $$3x + 2y = 10$$ The solution to the given system of equations is $(x, y)$. What is the value of $xy$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5764320,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5764321,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5764322,
+        "label": "4",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5764323,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 638890,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "One of the two equations in a linear system is $3x - 9y = 6$. The system has no solution. Which of the following could be the other equation in the system?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6388900,
+        "label": "$x - 3y = 2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6388901,
+        "label": "$x - 3y = 10$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6388902,
+        "label": "$3x + 9y = 6$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6388903,
+        "label": "$3x + y = 6$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 644794,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "Company A sells regular concert tickets for $\\$40$ each and VIP tickets for $\\$100$ each. Company B sells regular concert tickets for $\\$50$ each and VIP tickets for $\\$90$ each. A certain purchase of concert tickets would cost $\\$680$ at Company A or $\\$780$ at Company B. How many VIP tickets are in this purchase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6447940,
+        "label": "1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6447941,
+        "label": "2",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6447942,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6447943,
+        "label": "4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 697999,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "In the system of equations below, $a$ is a constant.  $$4ax + 2y = 8$$ $$6x + 3y = 12$$ If the system of equations has an infinite number of solutions $(x,y)$, what is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6979990,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6979991,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6979992,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6979993,
+        "label": "3/2",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 782484,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "In the given system of equations, $c$ and $d$ are constants. $$cx + dy = 48$$ $$5x + 3dy = 40$$ The graphs of the equations in the $xy$-plane intersect at the point $(2, y)$. What is the value of $c$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7824840,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7824841,
+        "label": "12",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7824842,
+        "label": "18",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7824843,
+        "label": "19",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 844631,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "$$3x - 2y = 7$$ $$x + 2y = 5$$ If $(x, y)$ satisfies the system of equations above, what is the value of $y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8446310,
+        "label": "1",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8446311,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8446312,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8446313,
+        "label": "4",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 963493,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "In the system of equations below, $b$ is a constant.  $$3x + 4y = 12$$ $$6x + by = 5$$ If the system of equations has no solution, what is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9634930,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9634931,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9634932,
+        "label": "8",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9634933,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 982103,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Hard",
+    "question_text": "In the system of equations below, $k$ is a constant. $$2x + 3y = 7$$ $$4x + ky = 14$$ If the system has infinitely many solutions, what is the value of $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9821030,
+        "label": "6",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9821031,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9821032,
+        "label": "4",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9821033,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

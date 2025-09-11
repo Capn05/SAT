@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "b65cf6f6-8f4b-4ec3-8e6d-82e0f09dcc49",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Hard",
+      "question_text": "$$f(x) = x^2 - kx - 12$$ Suppose the minimum value of $f$ is $-25$. What is the value of $k^2$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b81976ce-1df6-4fda-b3b2-3ec8a0ec2b15",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Hard",
+      "question_text": "The quadratic function $q$ has zeros at $x = -1$ and $x = 2$. If $q(0) = 6$, what is the maximum value of $q$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b19d2b64-55f5-46c6-9d54-7b97a8a1b50f",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 3,
+      "difficulty": "Hard",
+      "question_text": "The rational function $$h(x) = \\frac{x^2 + ax + b}{x - 3}$$ has a removable discontinuity at $x = 3$. If $h$ is defined at $x = 3$ by continuity so that $h(3) = 7$, what is $a + b$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "0b2d6a5b-6d6e-4b9b-9f22-64a80c02d3d5",
+      "question_id": "b65cf6f6-8f4b-4ec3-8e6d-82e0f09dcc49",
+      "value": "A",
+      "label": "13",
+      "is_correct": false
+    },
+    {
+      "id": "c25d1f88-7e48-4f23-82e2-23d815acabfe",
+      "question_id": "b65cf6f6-8f4b-4ec3-8e6d-82e0f09dcc49",
+      "value": "B",
+      "label": "25",
+      "is_correct": false
+    },
+    {
+      "id": "a53a668d-517d-4c77-8d6f-bf6beea820cc",
+      "question_id": "b65cf6f6-8f4b-4ec3-8e6d-82e0f09dcc49",
+      "value": "C",
+      "label": "52",
+      "is_correct": true
+    },
+    {
+      "id": "3c058f64-9da8-4fc0-8d75-d09c315a50cc",
+      "question_id": "b65cf6f6-8f4b-4ec3-8e6d-82e0f09dcc49",
+      "value": "D",
+      "label": "144",
+      "is_correct": false
+    },
+    {
+      "id": "7cb0d9dd-62f6-4f8d-bb73-168f84f8e602",
+      "question_id": "b81976ce-1df6-4fda-b3b2-3ec8a0ec2b15",
+      "value": "A",
+      "label": "6",
+      "is_correct": false
+    },
+    {
+      "id": "815a4a87-2dc6-4e2e-a4ea-f266667b6dfa",
+      "question_id": "b81976ce-1df6-4fda-b3b2-3ec8a0ec2b15",
+      "value": "B",
+      "label": "$\\frac{9}{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "0d9bfe27-6be9-48fd-b1a2-3ba9b828af85",
+      "question_id": "b81976ce-1df6-4fda-b3b2-3ec8a0ec2b15",
+      "value": "C",
+      "label": "$\\frac{27}{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "2ec5d6d2-5b16-4af0-bb15-4a4deda5fb8b",
+      "question_id": "b81976ce-1df6-4fda-b3b2-3ec8a0ec2b15",
+      "value": "D",
+      "label": "$\\frac{27}{4}$",
+      "is_correct": true
+    },
+    {
+      "id": "ae2e3d18-d1e5-4da4-9ce2-bad9b8ef9f4c",
+      "question_id": "b19d2b64-55f5-46c6-9d54-7b97a8a1b50f",
+      "value": "A",
+      "label": "-11",
+      "is_correct": true
+    },
+    {
+      "id": "b9b23c3b-19e0-4c37-a5b7-c59f1f89bde4",
+      "question_id": "b19d2b64-55f5-46c6-9d54-7b97a8a1b50f",
+      "value": "B",
+      "label": "-9",
+      "is_correct": false
+    },
+    {
+      "id": "18d595cc-cff2-4431-b840-896bb8e46af5",
+      "question_id": "b19d2b64-55f5-46c6-9d54-7b97a8a1b50f",
+      "value": "C",
+      "label": "-7",
+      "is_correct": false
+    },
+    {
+      "id": "caa1ca60-36f2-4d8a-8c33-94d9f0c63af5",
+      "question_id": "b19d2b64-55f5-46c6-9d54-7b97a8a1b50f",
+      "value": "D",
+      "label": "11",
+      "is_correct": false
+    }
+  ]
+}

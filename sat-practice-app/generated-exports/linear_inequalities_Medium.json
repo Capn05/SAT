@@ -1,0 +1,317 @@
+[
+  {
+    "id": 56955,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A delivery truck is transporting two types of boxes: small boxes weighing $30$ pounds each and large boxes weighing $50$ pounds each.  For each delivery, the truck must carry at least $12$ boxes, and the total weight of the boxes cannot exceed $600$ pounds. What is the maximum number of large boxes that the truck can carry per delivery?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 569550,
+        "label": "10",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 569551,
+        "label": "11",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 569552,
+        "label": "12",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 569553,
+        "label": "13",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 122107,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "Which of the following ordered pairs $(x, y)$ satisfies the system of inequalities below? $$y > -2x + 3$$ $$x + y \\leq 4$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1221070,
+        "label": "(1, 1)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1221071,
+        "label": "(0, 5)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1221072,
+        "label": "(3, 2)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1221073,
+        "label": "(2, 1)",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 338771,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A small business currently spends $\\$1,500$ per year on traditional light bulbs. The owner is considering switching to LED bulbs, which would cost $\\$4,800$ to install but are estimated to reduce the annual lighting cost to $\\$900$.  Which of the following inequalities can be solved to find $t$, the number of years after installation at which the total amount of electricity cost savings will exceed the installation cost?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3387710,
+        "label": "$4,800 > (1,500 - 900)t$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3387711,
+        "label": "$4,800 < (1,500 - 900)t$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3387712,
+        "label": "$4,800 - 1,500 > 900t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3387713,
+        "label": "$4,800 < 1,500 - 900t$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 443293,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A coffee shop estimates that on a typical weekday, they sell between $350$ and $400$ cups of coffee before noon. Based on this estimate, which inequality represents the possible total revenue, in dollars, from coffee sales before noon on a weekday if each cup of coffee costs $\\$3$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4432930,
+        "label": "$350 + 3 < x < 400 + 3$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4432931,
+        "label": "$(350)(3) < x < (400)(3)$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4432932,
+        "label": "$350 < 3 + x < 400$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4432933,
+        "label": "$350 < 3x < 400$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 544509,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A shipping company uses cylindrical containers to transport goods. The standard diameter of a container must be at least $4$ feet and no more than $5$ feet. A cargo ship has a storage bay that is $60$ feet wide. The containers are to be placed side-by-side along the width of the storage bay. Let $n$ be the number of containers that can be placed in a row across the width of the storage bay. Which of the following describes all the possible values of $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5445090,
+        "label": "$12 \\leq n \\leq 15$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5445091,
+        "label": "$4 < n < 5$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5445092,
+        "label": "$12 < n < 15$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5445093,
+        "label": "$4 \\leq n \\leq 60$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 590518,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "Which of the following ordered pairs $(x, y)$ is a solution to the system of inequalities below? $$y \\geq x + 1$$ $$y \\leq -x - 1$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5905180,
+        "label": "(0,0)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5905181,
+        "label": "(-2,0)",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5905182,
+        "label": "(0,-2)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5905183,
+        "label": "(-2,-2)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 661631,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "The formula to convert Celsius ($C$) to Fahrenheit ($F$) is $F = \\frac{9}{5}C + 32$. The Fahrenheit temperature in a refrigerator must be at most $41$ degrees Fahrenheit. Which inequality represents the condition for the Celsius temperature? Let $C$ be the Celsius temperature.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6616310,
+        "label": "$\\frac{9}{5}C + 32 < 41$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6616311,
+        "label": "$\\frac{9}{5}C + 32 \\geq 41$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6616312,
+        "label": "$\\frac{5}{9}C + 32 < 41$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6616313,
+        "label": "$\\frac{5}{9}C + 32 \\geq 41$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 678892,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A certain plant is $5$ inches tall when planted and grows more than $0.5$ inch but less than $0.75$ inch per week. Which of the following inequalities represents all possible heights $h$, in inches, for the plant $52$ weeks after being planted?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6788920,
+        "label": "$30 < h < 40$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6788921,
+        "label": "$31 < h < 44$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6788922,
+        "label": "$35 < h < 50$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6788923,
+        "label": "$40 < h < 55$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 731832,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 7,
+    "difficulty": "Medium",
+    "question_text": "A bakery is making cookies and cakes for a large order. They need to make at least $50$ items in total. Cookies require $10$ minutes of preparation time each, and cakes require $25$ minutes of preparation time each. The bakery has a maximum of $15$ hours ($900$ minutes) of preparation time available. They must make at least $20$ cookies and at least $10$ cakes. Which of the following systems of inequalities represents these conditions, if $x$ is the number of cookies and $y$ is the number of cakes?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7318320,
+        "label": "$$10x + 25y \\leq 900$$ $$x + y \\geq 50$$ $$x \\geq 20\\$$ $$y \\geq 10$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7318321,
+        "label": "$$10x + 25y \\geq 900$$ $$x + y \\leq 50$$ $$x \\geq 20$$ $$y \\geq 10$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7318322,
+        "label": "$$10x + 25y \\leq 900$$ $$x + y \\geq 50$$ $$x \\leq 20$$ $$y \\leq 10$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7318323,
+        "label": "$$10x + 25y \\geq 900$$ $$x + y \\leq 50$$ $$x \\leq 10$$ $$y \\leq 20$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

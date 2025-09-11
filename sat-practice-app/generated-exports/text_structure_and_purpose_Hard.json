@@ -1,0 +1,387 @@
+[
+  {
+    "id": 138342,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Prior to the Apollo missions, several theories existed regarding the Moon's origin. The co-formation theory suggested the Earth and Moon formed together from the same protoplanetary disk. The capture theory proposed that the Moon formed elsewhere in the solar system and was later captured by Earth's gravity. However, the fission theory, championed by George Darwin (son of Charles Darwin), gained traction. Darwin hypothesized that a rapidly spinning early Earth ejected material that coalesced to form the Moon.  <u>While seemingly plausible given the Earth-Moon system's angular momentum, this theory struggled to explain the Moon's compositional differences compared to Earth's mantle.</u>  Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1383420,
+        "label": "It concedes a potential strength of the fission theory while introducing a major flaw.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1383421,
+        "label": "It provides evidence supporting the fission theory’s widespread acceptance within the scientific community.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1383422,
+        "label": "It summarizes the primary mechanism proposed by the fission theory for lunar formation.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1383423,
+        "label": "It contrasts the fission theory with the co-formation theory in terms of explanatory power.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 285865,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Many popular self-help books assert that visualization—mentally picturing oneself succeeding—is a direct pathway to achieving goals. However, this perspective often neglects the crucial role of concrete planning and consistent effort. While visualization can be a useful motivational tool, studies in behavioral psychology suggest that it is most effective when coupled with detailed action plans and rigorous self-discipline.  Therefore, rather than being a standalone solution, visualization should be understood as a component of a broader, more comprehensive strategy for goal attainment.  Which choice best describes the overall structure of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2858650,
+        "label": "It introduces a commonly accepted technique, acknowledges a potential benefit of that technique, and then argues for the technique’s complete ineffectiveness.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2858651,
+        "label": "It presents a widely promoted method, points out an oversimplification in the understanding of that method, and then advocates for a more nuanced application of it.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2858652,
+        "label": "It describes a popular practice, concedes the practice’s validity in certain contexts, and then proposes an entirely new practice as a superior alternative.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2858653,
+        "label": "It outlines a familiar strategy, dismisses the strategy as fundamentally flawed, and then recommends abandoning the strategy in favor of different approaches.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 292932,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Microplastic pollution, consisting of plastic particles less than five millimeters in size, has become a pervasive environmental issue.  While larger plastic debris is often visible and can be physically removed, microplastics are much harder to manage due to their size and widespread dispersal.  These tiny particles originate from various sources, including the breakdown of larger plastics, industrial processes, and textiles.  Their ubiquity in ecosystems, from oceans to soils, raises concerns about potential ecological and health impacts, prompting ongoing research into effective mitigation strategies.  Which choice best states the main purpose of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2929320,
+        "label": "To advocate for stricter regulations on plastic manufacturing.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2929321,
+        "label": "To explain the sources and challenges associated with microplastic pollution.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2929322,
+        "label": "To compare the dangers of microplastics to those of larger plastic debris.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2929323,
+        "label": "To detail the specific chemical composition of various microplastics.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 349485,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Ecologist Sarah Elmendorf and her team conducted a long-term study in the Alaskan Arctic, focusing on the dwarf shrub *Betula nana*. They meticulously tracked plant growth, snowmelt timing, and temperature fluctuations over two decades. Their analysis revealed that while earlier snowmelt initially boosted *Betula nana* growth, prolonged early snowmelt over multiple years led to decreased growth rates and increased plant stress. The researchers attributed this to soil moisture depletion during the extended growing season, exceeding the plant's capacity to adapt to the altered hydrological cycle.  Which choice best states the main purpose of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3494850,
+        "label": "It details a longitudinal study aimed at determining the precise relationship between snowmelt duration and plant species distribution in Arctic ecosystems.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3494851,
+        "label": "It contrasts two distinct hypotheses regarding the short-term versus long-term effects of altered snowmelt patterns on Arctic shrub growth.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3494852,
+        "label": "It argues for the necessity of implementing immediate conservation strategies to mitigate the negative impacts of early snowmelt on vulnerable Arctic plant species.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3494853,
+        "label": "It summarizes the findings of a study that assessed the long-term impacts of changes in snowmelt timing on the growth and stress levels of a specific Arctic plant.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 400150,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "When Pluto was discovered in 1930, it was immediately classified as the ninth planet in our solar system. However, in the late 20th and early 21st centuries, astronomers began to question this classification.  Its small size, eccentric orbit, and the discovery of other similarly sized objects in the Kuiper Belt led some to argue that Pluto was more accurately described as a dwarf planet.  In 2006, the International Astronomical Union (IAU) formally reclassified Pluto as a dwarf planet, a decision that sparked considerable public debate and continues to be discussed among scientists.  Which choice best describes the overall structure of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4001500,
+        "label": "The text describes the initial acceptance of Pluto as a planet and then explains the reasons for a subsequent revision of this classification.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4001501,
+        "label": "The text recounts the discovery of Pluto and then details the immediate scientific agreement regarding its planetary status.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4001502,
+        "label": "The text compares Pluto to other planets in our solar system and then emphasizes Pluto's distinct characteristics.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4001503,
+        "label": "The text outlines the development of astronomical classification systems and then illustrates how Pluto challenged these systems.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 440161,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "In a study of early childhood education programs, researchers Miller and Chen analyzed data from 150 preschool classrooms across three states. Their findings indicated that classrooms with a higher ratio of books to students, specifically exceeding 10 books per child, showed statistically significant improvements in children's pre-literacy skills, such as phonological awareness and letter recognition, compared to classrooms with fewer books. Miller and Chen suggest that access to a rich print environment is a crucial, yet often overlooked, factor in fostering early literacy development.  Which choice best states the main purpose of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4401610,
+        "label": "To question the methodology employed by Miller and Chen in their study of preschool classrooms and literacy skills.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4401611,
+        "label": "To present the results of a research project that examined the impact of classroom book ratios on young children's literacy development.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4401612,
+        "label": "To argue for increased funding for preschool programs based on the findings of Miller and Chen’s classroom research.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4401613,
+        "label": "To compare and contrast different approaches to teaching pre-literacy skills in early childhood education.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 468218,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "The following text is adapted from a contemporary social commentary.   The park bench faced the bustling city square. From his vantage point, Thomas watched the lunchtime crowd ebb and flow.  People hurried past, engrossed in their phones or lost in thought.  He noticed a peculiar pattern: whenever someone stumbled or dropped an item, a flurry of apologies and helping hands would emerge, only to vanish as quickly as they appeared, leaving the individual alone again, swallowed by the indifferent tide of the city.  It struck Thomas then:  compassion in the city was a fleeting reflex, a burst of momentary kindness that punctuated, rather than permeated, the daily routine.  Which choice best states the main purpose of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4682180,
+        "label": "To criticize the lack of genuine empathy in urban environments.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4682181,
+        "label": "To describe the physical layout of a city square during lunchtime.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4682182,
+        "label": "To illustrate how technology isolates people in public spaces.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4682183,
+        "label": "To celebrate the spontaneous acts of kindness found in cities.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 629085,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Dr. Anya Sharma's recent book, *The Urban Microbiome: Cities as Living Ecosystems*, explores the complex microbial communities within urban environments.  The book begins by outlining the surprising diversity of microbes found in cities, from building surfaces to public transportation.  It then delves into the ways these microbial ecosystems impact human health, both positively and negatively, discussing topics like allergies and the spread of antibiotic resistance.  Finally, Sharma concludes by proposing innovative urban planning strategies that could harness the power of the urban microbiome to create healthier and more sustainable cities.   Which choice best describes the overall structure of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6290850,
+        "label": "It introduces a scientific book, outlines the scope of its investigation, and then summarizes the book's primary recommendations.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6290851,
+        "label": "It presents a controversial scientific theory, provides historical context for its development, and then critiques the methodology used to support the theory.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6290852,
+        "label": "It describes a personal journey of scientific discovery, highlights the key experiments conducted, and then reflects on the broader implications of the findings.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6290853,
+        "label": "It analyzes a scientific publication, compares it to other works in the field, and then evaluates the originality of its contributions to scientific knowledge.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 785144,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Marie Curie, a Polish and naturalized-French physicist and chemist, conducted pioneering research on radioactivity. Working with her husband Pierre, Curie isolated two new elements, polonium and radium, and developed techniques for isolating radioactive isotopes. Her work not only expanded the field of chemistry but also laid the groundwork for new medical treatments, particularly in cancer therapy. As the Nobel Committee noted in its award to Curie in Physics in 1903, her research opened new avenues in scientific discovery. Which of the following best describes the structure and purpose of this passage?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7851440,
+        "label": "It presents a chronological account of a scientist's life, detailing their education, key discoveries, and eventual recognition.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7851441,
+        "label": "It introduces a prominent scientist, outlines a significant area of their research, and indicates the broad impact of that research.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7851442,
+        "label": "It contrasts different scientific fields, highlighting a scientist's contributions to each, and argues for the interdisciplinary nature of their work.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7851443,
+        "label": "It describes a scientific partnership, focusing on the collaborative aspect of the research, and emphasizes the shared awards received.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 800858,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "Botanist Maria Merian, working in 17th-century Suriname, challenged prevailing European understandings of insect metamorphosis. While the common belief, informed by limited observation, was that insects spontaneously generated from mud or decaying matter, Merian meticulously observed and illustrated the complete life cycles of numerous tropical insects. Her detailed engravings, published in *Metamorphosis insectorum Surinamensium*, depicted each stage of transformation—egg, larva, pupa, and adult—along with the host plants they depended on.  **This groundbreaking work, based on direct observation and detailed illustration, provided empirical evidence that directly contradicted the theory of spontaneous generation for insects and laid the foundation for modern entomology.**  Which choice best describes the function of the underlined portion in the text as a whole?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8008580,
+        "label": "It summarizes the overall significance of Merian's research and its lasting impact on the field of entomology.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8008581,
+        "label": "It highlights the specific artistic techniques Merian employed in her illustrations of Surinamese insects.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8008582,
+        "label": "It emphasizes the geographical scope of Merian's travels and the diversity of insect species she encountered.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8008583,
+        "label": "It provides a specific example of a common misconception about insect metamorphosis prevalent in 17th-century Europe.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 946528,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 21,
+    "difficulty": "Hard",
+    "question_text": "The concept of “herd immunity” suggests that if a sufficiently high proportion of a population is immune to a contagious disease, those who are not immune are also less likely to be infected. This is because there are fewer people overall who can spread the disease.  Historically, herd immunity was primarily achieved through natural infection. However, with the advent of vaccines, a safer and more controlled pathway to herd immunity became possible.  While natural infection can confer immunity, it often comes at the cost of widespread illness and death. Vaccines, on the other hand, can stimulate the immune system to develop protection without causing the disease itself, thus offering a way to achieve herd immunity with significantly less suffering.   What choice best describes the main purpose of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9465280,
+        "label": "It contrasts the dangers of natural infection with the safety of vaccination in achieving immunity.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9465281,
+        "label": "It explains the concept of herd immunity and outlines two different methods of achieving it.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9465282,
+        "label": "It presents an argument for vaccination as the only ethical way to achieve herd immunity.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9465283,
+        "label": "It analyzes the historical trends in disease outbreaks before and after the introduction of vaccines.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

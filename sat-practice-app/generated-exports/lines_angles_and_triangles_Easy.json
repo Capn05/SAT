@@ -1,0 +1,247 @@
+[
+  {
+    "id": 166195,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In the figure above, lines $m$ and $n$ are parallel. What is the value of $x$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//166195.png",
+    "options": [
+      {
+        "id": 1661950,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1661951,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1661952,
+        "label": "40",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1661953,
+        "label": "60",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 203805,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "A flagpole casts a shadow that is $24$ feet long. At the same time, a nearby person who is $5$ feet tall casts a shadow that is $4$ feet long. Assuming the flagpole and the person are both standing vertically and the sun's rays are parallel, what is the height, in feet, of the flagpole?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2038050,
+        "label": "25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2038051,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2038052,
+        "label": "35",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2038053,
+        "label": "40",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 273613,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In triangle $PQR$, $PQ = PR$ and the measure of $\\angle QPR$ is $40^\\circ$. What is the measure of $\\angle PQR$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2736130,
+        "label": "50",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2736131,
+        "label": "60",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2736132,
+        "label": "70",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2736133,
+        "label": "80",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 520418,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In a right triangle, the measure of one of the acute angles is $27^\\circ$. What is the measure, in degrees, of the other acute angle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5204180,
+        "label": "27",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5204181,
+        "label": "53",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5204182,
+        "label": "63",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5204183,
+        "label": "73",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 847120,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In $\\Delta PQR$, the measure of $\\angle P$ is $30^\\circ$ and the measure of $\\angle Q$ is $60^\\circ$. What is the measure of $\\angle R$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8471200,
+        "label": "$30^\\circ$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8471201,
+        "label": "$60^\\circ$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8471202,
+        "label": "$90^\\circ$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8471203,
+        "label": "$120^\\circ$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 864472,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In the figure shown, lines $AB$ and $CD$ intersect at point $C$. If the measure of angle $BCD$ is $125^\\circ$, what is the value of $ACD$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8644720,
+        "label": "45",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8644721,
+        "label": "55",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8644722,
+        "label": "70",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8644723,
+        "label": "125",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 902309,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 11,
+    "difficulty": "Easy",
+    "question_text": "In the figure, three lines intersect at point $P$. If $x = 50$ and $y = 60$, what is the value of $z$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//902309.png",
+    "options": [
+      {
+        "id": 9023090,
+        "label": "110",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9023091,
+        "label": "50",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9023092,
+        "label": "70",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9023093,
+        "label": "80",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "id": 54841,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "What is the area, in square feet, of a rectangular garden with a length of $12$ feet and a width of $5$ feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 548410,
+        "label": "17",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 548411,
+        "label": "34",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 548412,
+        "label": "50",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 548413,
+        "label": "60",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 74369,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "The area of a rectangular banner is $360$ square centimeters. The width of the banner is $9$ centimeters. What is the length, in centimeters, of this banner?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 743690,
+        "label": "36",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 743691,
+        "label": "40",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 743692,
+        "label": "90",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 743693,
+        "label": "351",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 144987,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "The area of a rectangular garden is $48$ square feet. If the width of the garden is $6$ feet, what is the length, in feet, of the garden?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1449870,
+        "label": "8",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1449871,
+        "label": "42",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1449872,
+        "label": "54",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1449873,
+        "label": "288",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 246273,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "The length of a rectangle is $12$ centimeters (cm) and the width is $7$ centimeters (cm). What is the area, in $\\text{cm}^2$, of the rectangle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2462730,
+        "label": "19",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2462731,
+        "label": "38",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2462732,
+        "label": "84",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2462733,
+        "label": "96",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 482527,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "A sail on a sailboat is in the shape of a triangle. If the base of the sail is $25$ feet and the height of the sail is $32$ feet, what is the area, in square feet, of the sail?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4825270,
+        "label": "200",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4825271,
+        "label": "400",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4825272,
+        "label": "600",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4825273,
+        "label": "800",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 644150,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "The figure shows the lengths, in centimeters (cm), of the edges of a right rectangular prism. The volume $V$ of a right rectangular prism is given by the formula $V = lwh$, where $l$ is the length, $w$ is the width, and $h$ is the height of the prism. What is the volume, in cubic centimeters, of the prism?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//644150.png",
+    "options": [
+      {
+        "id": 6441500,
+        "label": "40",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6441501,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6441502,
+        "label": "20",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6441503,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 818989,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "A rectangular garden has a length of $15$ meters and a width of $12$ meters. What is the area, in square meters, of the garden?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8189890,
+        "label": "27",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8189891,
+        "label": "180",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8189892,
+        "label": "165",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8189893,
+        "label": "300",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 882318,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "Triangle $PQR$ and triangle $XYZ$ are similar triangles, where $PQ$ and $XY$ are corresponding sides. If $XY = 3PQ$ and the perimeter of triangle $PQR$ is $15$, what is the perimeter of triangle $XYZ$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8823180,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8823181,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8823182,
+        "label": "45",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8823183,
+        "label": "60",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 903360,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "A square garden has a side length of $5$ meters. What is the area of the garden in square meters?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9033600,
+        "label": "$10 \\text{m}^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9033601,
+        "label": "$20 \\text{m}^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9033602,
+        "label": "$25 \\text{m}^2$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9033603,
+        "label": "$30 \\text{m}^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 926750,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "A rectangle has a length of $15$ and a width of $7$. What is the area of the rectangle?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9267500,
+        "label": "22",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9267501,
+        "label": "44",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9267502,
+        "label": "105",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9267503,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 952781,
+    "subject_id": 1,
+    "domain_id": 3,
+    "subcategory_id": 9,
+    "difficulty": "Easy",
+    "question_text": "A square garden has a side length of $25$ feet. What is the area, in square feet, of the garden?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9527810,
+        "label": "50",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9527811,
+        "label": "100",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9527812,
+        "label": "625",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9527813,
+        "label": "650",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

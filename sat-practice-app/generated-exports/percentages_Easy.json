@@ -1,0 +1,562 @@
+[
+  {
+    "id": 28648,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A baker made $200$ cookies in a day. If $35\\%$ of the cookies were chocolate chip, how many cookies were chocolate chip?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 286480,
+        "label": "35",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 286481,
+        "label": "50",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 286482,
+        "label": "70",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 286483,
+        "label": "130",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 150869,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A bakery made $300$ cookies in the morning. By noon, they had sold $35\\%$ of these cookies. How many cookies were sold by noon?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1508690,
+        "label": "105",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1508691,
+        "label": "35",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1508692,
+        "label": "175",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1508693,
+        "label": "265",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 175184,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The original price of a jacket is $j$. During a weekend sale, the jacket is advertised at a $15\\%$ discount. Which expression represents the amount of the discount, in dollars?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1751840,
+        "label": "$15j$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1751841,
+        "label": "$0.015j$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1751842,
+        "label": "$1.5j$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1751843,
+        "label": "$0.15j$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 185759,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The total bill at a restaurant before discount is $\\$40$. If there is a $15\\%$ discount on the total bill, what is the final amount to be paid?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1857590,
+        "label": "$\\$6$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1857591,
+        "label": "$\\$32$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1857592,
+        "label": "$\\$34$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1857593,
+        "label": "$\\$36$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 192725,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "What is $75\\%$ of $40$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1927250,
+        "label": "10",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1927251,
+        "label": "30",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1927252,
+        "label": "40",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1927253,
+        "label": "70",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 213438,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "In 2010, the population of a certain city was approximately $500,000$. It is projected that the population will increase by $15\\%$ from 2010 to 2020. Of the following, which is closest to the projected population of the city in 2020?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2134380,
+        "label": "565,000",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2134381,
+        "label": "500,000",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2134382,
+        "label": "575,000",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2134383,
+        "label": "585,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 356210,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The table below shows the quarterly sales for a company in 2023, rounded to the nearest million dollars. What was the approximate percent increase in sales from Q1 to Q2 of 2023?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//356210.png",
+    "options": [
+      {
+        "id": 3562100,
+        "label": "$15\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3562101,
+        "label": "$20\\%$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3562102,
+        "label": "$25\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3562103,
+        "label": "$30\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 394495,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A local bakery decided to increase the price of their croissants by $25\\%$. If a croissant originally cost $\\$2$, what is the new price of a croissant?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3944950,
+        "label": "$\\$2.25$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3944951,
+        "label": "$\\$2.50$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3944952,
+        "label": "$\\$2.75$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3944953,
+        "label": "$\\$3.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 432629,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A local bakery sold $350$ loaves of bread last week. This week, due to a promotion, they sold $122\\%$ of last week's sales. How many loaves of bread did the bakery sell this week?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4326290,
+        "label": "372",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4326291,
+        "label": "427",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4326292,
+        "label": "472",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4326293,
+        "label": "527",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 598221,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "At a bookstore, the price of a book is $\\$40$. If there is a discount of $15\\%$ on all books, what is the amount of the discount on this book?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5982210,
+        "label": "$\\$4.00$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5982211,
+        "label": "$\\$5.00$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5982212,
+        "label": "$\\$6.00$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5982213,
+        "label": "$\\$8.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 610990,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A store is offering a $25\\%$ discount on all shirts. If a shirt is originally priced at $\\$80$, what is the amount of the discount?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6109900,
+        "label": "$\\$8$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6109901,
+        "label": "$\\$20$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6109902,
+        "label": "$\\$40$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6109903,
+        "label": "$\\$60$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 638937,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "If $25\\%$ of a number is $5$, what is the number?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6389370,
+        "label": "1.25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6389371,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6389372,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6389373,
+        "label": "20",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 651645,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "A retail store is having a $20\\%$ off sale on all items. If a customer is purchasing an item with a regular price of $\\$42.50$, which of the following is closest to the amount of the discount the customer will receive?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6516450,
+        "label": "$\\$7.00$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6516451,
+        "label": "$\\$8.50$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6516452,
+        "label": "$\\$9.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6516453,
+        "label": "$\\$10.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 751612,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The table below shows the distribution of favorite subjects among $1,800$ high school students surveyed. Based on the table, how many students surveyed consider either Math or Science their favorite subject?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//751612.png",
+    "options": [
+      {
+        "id": 7516120,
+        "label": "945",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7516121,
+        "label": "1026",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7516122,
+        "label": "1134",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7516123,
+        "label": "1278",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 879660,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The manager of an online bookstore tracked customer ratings for four different book genres. The number of ratings for each genre and rating category ($1$ star to $4$ stars) is shown in the table. According to the table, to the nearest whole percent, what percent of Fiction book ratings were $1$-star?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//879660.png",
+    "options": [
+      {
+        "id": 8796600,
+        "label": "$8\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8796601,
+        "label": "$13\\%$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8796602,
+        "label": "$25\\%$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8796603,
+        "label": "$40\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 990129,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 15,
+    "difficulty": "Easy",
+    "question_text": "The price of a book is $\\$30$. If there is a $10\\%$ discount, what is the final price of the book?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9901290,
+        "label": "$\\$29.00$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9901291,
+        "label": "$\\$33.00$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9901292,
+        "label": "$\\$28.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9901293,
+        "label": "$\\$27.00$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

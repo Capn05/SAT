@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "5f8c2a4a-b7c0-4e3b-8df6-8f854e9a4f42",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Easy",
+      "question_text": "Solve the inequality $2(x - 3) + 5 \\le 11$. Which of the following gives the solution for $x$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8c2d1e26-2f4f-4d7e-8b8a-c2e3ae9521ab",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Easy",
+      "question_text": "A community theater sells adult tickets for $\\$7$ each and child tickets for $\\$4$ each. A family wants to spend less than $\\$50$ in total. If $a$ is the number of adult tickets and $c$ is the number of child tickets, which inequality must be true?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "1a4e5c8d-2b9f-4d67-9d22-0c7f0f93b0a1",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Easy",
+      "question_text": "To keep a certain aquarium species healthy, the water pH, $p$, should be at least $6.8$ and less than $7.4$. Which inequality represents the acceptable pH range?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "0e7a9f5d-7f1f-4d8a-9cb5-86bf2d3d6a10",
+      "question_id": "5f8c2a4a-b7c0-4e3b-8df6-8f854e9a4f42",
+      "value": "A",
+      "label": "$x \\le 6$",
+      "is_correct": true
+    },
+    {
+      "id": "8e2b1f4c-13aa-4e0a-92fb-35b5d8947f18",
+      "question_id": "5f8c2a4a-b7c0-4e3b-8df6-8f854e9a4f42",
+      "value": "B",
+      "label": "$x < 6$",
+      "is_correct": false
+    },
+    {
+      "id": "f6c13719-8df1-4f2f-aac6-47b32e2c9d65",
+      "question_id": "5f8c2a4a-b7c0-4e3b-8df6-8f854e9a4f42",
+      "value": "C",
+      "label": "$x \\ge 6$",
+      "is_correct": false
+    },
+    {
+      "id": "5a90e2a4-5e38-4b14-8b29-406aeb1a67fb",
+      "question_id": "5f8c2a4a-b7c0-4e3b-8df6-8f854e9a4f42",
+      "value": "D",
+      "label": "$x \\ge 5$",
+      "is_correct": false
+    },
+    {
+      "id": "1c3a8b2e-7d57-4a3d-8b6d-2a7a8af1da41",
+      "question_id": "8c2d1e26-2f4f-4d7e-8b8a-c2e3ae9521ab",
+      "value": "A",
+      "label": "$7a + 4c \\le 50$",
+      "is_correct": false
+    },
+    {
+      "id": "f2f8d75c-e6c2-4d30-8b0e-7b1f3d711a02",
+      "question_id": "8c2d1e26-2f4f-4d7e-8b8a-c2e3ae9521ab",
+      "value": "B",
+      "label": "$7a + 4c \\ge 50$",
+      "is_correct": false
+    },
+    {
+      "id": "a7a4c7d3-8c5f-4e1a-9b2d-54c8a1f5e0e3",
+      "question_id": "8c2d1e26-2f4f-4d7e-8b8a-c2e3ae9521ab",
+      "value": "C",
+      "label": "$7a + 4c < 50$",
+      "is_correct": true
+    },
+    {
+      "id": "d1e9bb5c-b0a6-4cf3-a681-59f681b33a63",
+      "question_id": "8c2d1e26-2f4f-4d7e-8b8a-c2e3ae9521ab",
+      "value": "D",
+      "label": "$4a + 7c < 50$",
+      "is_correct": false
+    },
+    {
+      "id": "b7f2b1ec-9c4e-4b4a-8a1f-8a5ae2b9d0c7",
+      "question_id": "1a4e5c8d-2b9f-4d67-9d22-0c7f0f93b0a1",
+      "value": "A",
+      "label": "$6.8 < p \\le 7.4$",
+      "is_correct": false
+    },
+    {
+      "id": "e5d8a93a-1b2c-4d6a-b2c0-5f9d1e2c3a4b",
+      "question_id": "1a4e5c8d-2b9f-4d67-9d22-0c7f0f93b0a1",
+      "value": "B",
+      "label": "$6.8 < p < 7.4$",
+      "is_correct": false
+    },
+    {
+      "id": "3c9f1a5d-6e7b-4f1e-8d3a-2f4b6c7d8e9f",
+      "question_id": "1a4e5c8d-2b9f-4d67-9d22-0c7f0f93b0a1",
+      "value": "C",
+      "label": "$6.8 \\le p \\le 7.4$",
+      "is_correct": false
+    },
+    {
+      "id": "9a4b1c2d-5e6f-4a7b-8c9d-1e2f3a4b5c6d",
+      "question_id": "1a4e5c8d-2b9f-4d67-9d22-0c7f0f93b0a1",
+      "value": "D",
+      "label": "$6.8 \\le p < 7.4$",
+      "is_correct": true
+    }
+  ]
+}

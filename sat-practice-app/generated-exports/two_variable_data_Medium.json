@@ -1,0 +1,352 @@
+[
+  {
+    "id": 267126,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "A water tank initially contains $500$ gallons of water. Water drains from the tank at a constant rate of $10$ gallons per minute. Which type of model is best to represent the amount of water remaining in the tank, in gallons, after $m$ minutes?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2671260,
+        "label": "A linear model with a positive slope",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2671261,
+        "label": "A linear model with a negative slope",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2671262,
+        "label": "An exponential growth model",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2671263,
+        "label": "An exponential decay model",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 284699,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot shows the relationship between altitude above sea level, in feet, and atmospheric pressure, in pounds per square inch (psi). A line of best fit is also shown. Which of the following is closest to the slope of the line of best fit shown?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//284699.png",
+    "options": [
+      {
+        "id": 2846990,
+        "label": "-0.05",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2846991,
+        "label": "-0.0005",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2846992,
+        "label": "0.0005",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2846993,
+        "label": "0.05",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 327591,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "Each dot in the scatterplot above represents the number of practice SAT Math tests taken, $x$, and the increase in SAT Math score, $y$, for each student in a group of twenty students. The graph of which of the following equations is a line that most closely fits the data?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//327591.png",
+    "options": [
+      {
+        "id": 3275910,
+        "label": "$y = 25x + 10$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3275911,
+        "label": "$y = 25x - 5$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3275912,
+        "label": "$y = 10x + 25$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3275913,
+        "label": "$y = 10x - 10$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 405037,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot shows the relationship between the number of hours a group of students spent volunteering and their final exam scores. Which of the following equations could represent a line of best fit for the data shown in the scatterplot?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//405037.png",
+    "options": [
+      {
+        "id": 4050370,
+        "label": "$y = -2x + 80$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4050371,
+        "label": "$y = 2x + 80$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4050372,
+        "label": "$y = -2x + 60$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4050373,
+        "label": "$y = -0.5x + 80$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 449362,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot below shows the relationship between the number of hours students spent watching television per week and their scores on a recent exam. A line of best fit is shown for the data. Which of the following is closest to the slope of this line of best fit?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//449362.png",
+    "options": [
+      {
+        "id": 4493620,
+        "label": "-5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4493621,
+        "label": "-0.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4493622,
+        "label": "0.5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4493623,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 503139,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot above shows the relationship between the number of hours a student spent tutoring per week and their final exam score in mathematics. In this scatterplot, $t$ represents the number of tutoring hours per week, and $s$ represents the final exam score. A line of best fit is also shown. Which of the following could be an equation of the line of best fit?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//503139.png",
+    "options": [
+      {
+        "id": 5031390,
+        "label": "$s = 52 + 7t$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5031391,
+        "label": "$s = 7 + 52t$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5031392,
+        "label": "$s = 52 + 15t$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5031393,
+        "label": "$s = 15 + 52t$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 614377,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot shows the relationship between the number of hours students studied for a test and their scores on the test. A line of best fit for the data is also shown.  ![](1__page_16_Figure_5_modified.png)  Based on the line of best fit, what is the predicted test score for a student who studied for 7 hours?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2011.48.48%20PM.png",
+    "options": [
+      {
+        "id": 6143770,
+        "label": "66",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6143771,
+        "label": "71",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6143772,
+        "label": "76",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6143773,
+        "label": "81",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 670979,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is true about the values of $3^x$ and $3x+1$ for $x > 0$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6709790,
+        "label": "For all $x > 0$, it is true that $3^x < 3x+1$.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6709791,
+        "label": "For all $x > 0$, it is true that $3^x > 3x+1$.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6709792,
+        "label": "There is a constant $c$ such that if $0 < x < c$, then $3^x < 3x+1$, but if $x > c$, then $3^x > 3x+1$.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6709793,
+        "label": "There is a constant $c$ such that if $0 < x < c$, then $3^x > 3x+1$, but if $x > c$, then $3^x < 3x+1$.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 851365,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot above shows data for eight students relating their hours studied per week to their exam score percentage, along with the line of best fit. For the student who studied the greatest number of hours per week, which of the following is closest to the actual exam score percentage and the percentage predicted by the line of best fit?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//851365.png",
+    "options": [
+      {
+        "id": 8513650,
+        "label": "Actual: 90%, Predicted: 86%",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8513651,
+        "label": "Actual: 86%, Predicted: 90%",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8513652,
+        "label": "Actual: 90%, Predicted: 96%",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8513653,
+        "label": "Actual: 80%, Predicted: 86%",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 914562,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 19,
+    "difficulty": "Medium",
+    "question_text": "The scatterplot shows the relationship between the number of hours students studied for a test and their test scores. A line of best fit for the data is also shown. Which of the following is closest to the difference between the test score of the student who studied for 5 hours and the test score predicted by the line of best fit for a student who studied for 5 hours?",
+    "image_url": "https://raw.githubusercontent.com/jasonzli/example-sat-questions/main/page_0_Figure_7.png",
+    "options": [
+      {
+        "id": 9145620,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9145621,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9145622,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9145623,
+        "label": "78",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "2abf2b6f-1d6d-4a41-8e3f-6c795ccf6b1e",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Hard",
+      "question_text": "The linear function $f$ satisfies $f(3x - 4) = 3f(x) + 1$ for all real $x$, and $f(1) = 5$. What is the $x$-coordinate of the $x$-intercept of the graph of $y = f(x)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "6c0b8a94-4e8b-4d71-9a60-2dd2fe74f7d2",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Hard",
+      "question_text": "The function $f$ is linear with $f(0) = 6$ and $f(f(x)) = 4x + 18$ for all real $x$. What is the $x$-intercept of the graph of $y = f(x)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0f1c1b41-3d6a-4a52-9b3e-9fe2c56a6bcb",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 6,
+      "difficulty": "Hard",
+      "question_text": "The function $g$ is linear and satisfies $g(x+2) - 2g(x-1) = -g(x) + 14$ for all real $x$. If $g(5) = 1$, what is the $x$-coordinate of the $x$-intercept of the graph of $y = g(x)$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "9d1b090a-4c5e-4f1e-9a72-3df0b0f6b1c2",
+      "question_id": "2abf2b6f-1d6d-4a41-8e3f-6c795ccf6b1e",
+      "value": "A",
+      "label": "$\\frac{11}{3}$",
+      "is_correct": false
+    },
+    {
+      "id": "52b6725a-01f5-44a0-9948-7b9d48ac9e90",
+      "question_id": "2abf2b6f-1d6d-4a41-8e3f-6c795ccf6b1e",
+      "value": "B",
+      "label": "$\\frac{3}{11}$",
+      "is_correct": false
+    },
+    {
+      "id": "4f4f9e57-6e38-4f0a-9c08-6fcee8f5a6ff",
+      "question_id": "2abf2b6f-1d6d-4a41-8e3f-6c795ccf6b1e",
+      "value": "C",
+      "label": "$\\frac{21}{11}$",
+      "is_correct": true
+    },
+    {
+      "id": "6a2f6c59-9a41-49e0-8f91-94ef9245206c",
+      "question_id": "2abf2b6f-1d6d-4a41-8e3f-6c795ccf6b1e",
+      "value": "D",
+      "label": "$\\frac{11}{21}$",
+      "is_correct": false
+    },
+    {
+      "id": "35dd9b3d-0f4e-4c86-a3a1-13b6f20b1d0a",
+      "question_id": "6c0b8a94-4e8b-4d71-9a60-2dd2fe74f7d2",
+      "value": "A",
+      "label": "$-3$",
+      "is_correct": true
+    },
+    {
+      "id": "d5f90bfa-4df8-4cc4-8f74-3d6b593b9e8c",
+      "question_id": "6c0b8a94-4e8b-4d71-9a60-2dd2fe74f7d2",
+      "value": "B",
+      "label": "$-9$",
+      "is_correct": false
+    },
+    {
+      "id": "3da3f1c3-6392-4e58-8fe4-2c4a7db6d3f6",
+      "question_id": "6c0b8a94-4e8b-4d71-9a60-2dd2fe74f7d2",
+      "value": "C",
+      "label": "$3$",
+      "is_correct": false
+    },
+    {
+      "id": "2a6b6eb9-8cc0-4a1e-9a14-2e6a4f12d5cf",
+      "question_id": "6c0b8a94-4e8b-4d71-9a60-2dd2fe74f7d2",
+      "value": "D",
+      "label": "$-6$",
+      "is_correct": false
+    },
+    {
+      "id": "1289e46e-5e0c-4b80-b6c8-3a79ead5fd96",
+      "question_id": "0f1c1b41-3d6a-4a52-9b3e-9fe2c56a6bcb",
+      "value": "A",
+      "label": "$\\frac{7}{33}$",
+      "is_correct": false
+    },
+    {
+      "id": "9a11f82e-1fd1-4c99-a08a-70a18f64b567",
+      "question_id": "0f1c1b41-3d6a-4a52-9b3e-9fe2c56a6bcb",
+      "value": "B",
+      "label": "$\\frac{33}{14}$",
+      "is_correct": false
+    },
+    {
+      "id": "2e30f649-0df3-4b69-8d69-572bf2635e37",
+      "question_id": "0f1c1b41-3d6a-4a52-9b3e-9fe2c56a6bcb",
+      "value": "C",
+      "label": "$\\frac{21}{7}$",
+      "is_correct": false
+    },
+    {
+      "id": "35d3f3df-f0c8-4ea2-9be5-2d5be3371f2a",
+      "question_id": "0f1c1b41-3d6a-4a52-9b3e-9fe2c56a6bcb",
+      "value": "D",
+      "label": "$\\frac{33}{7}$",
+      "is_correct": true
+    }
+  ]
+}

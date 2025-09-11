@@ -1,0 +1,842 @@
+[
+  {
+    "id": 23413,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "What is the equation of the line shown in the $xy$-plane above?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//23413.png",
+    "options": [
+      {
+        "id": 234130,
+        "label": "$y = 2x + 1$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 234131,
+        "label": "$y = x + 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 234132,
+        "label": "$y = 2x - 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 234133,
+        "label": "$y = -2x + 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 28260,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The $x$-intercept of the graph of $y = 2x - 10$ in the $xy$-plane is $(x, 0)$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 282600,
+        "label": "-10",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 282601,
+        "label": "-5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 282602,
+        "label": "5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 282603,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 131598,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "$$2x+5y=31$$ A fruit vendor charged a customer $\\$31$ for some apples and some bananas. The equation above represents the relationship between $x$, the number of apples, and $y$, the number of bananas, the customer purchased. If the customer purchased $3$ apples, how many bananas were purchased?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1315980,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1315981,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1315982,
+        "label": "5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1315983,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 167639,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "In the $xy$-plane, a line has a slope of $-2$ and passes through the point $(0, 5)$.  Which of the following is an equation of this line?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1676390,
+        "label": "$y = -2x + 5$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1676391,
+        "label": "$y = 5x - 2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1676392,
+        "label": "$y = 2x + 5$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1676393,
+        "label": "$y = -2x - 5$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 219447,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "$$p + c = 45$$ The equation above relates the price of a pair of pants, $p$, and the price of a shirt, $c$, that Javier purchased. If the equation represents the total cost before tax, what does the number $45$ represent?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2194470,
+        "label": "The price of the pair of pants",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2194471,
+        "label": "The price of the shirt",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2194472,
+        "label": "The total price of the pants and the shirt",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2194473,
+        "label": "The difference in price between the pants and the shirt",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 321839,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The equation $12x + 6y = 60$ represents the cost in dollars of buying movie tickets, $x$, and snacks, $y$, for a group outing, with a total budget of $\\$60$. If the group purchased $3$ movie tickets, how many snacks could they purchase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3218390,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3218391,
+        "label": "4",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3218392,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3218393,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 323164,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The equation of a line is given by $y = 5x - 3$. Which table gives three values of $x$ and their corresponding values of $y$ for this equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3231640,
+        "label": "(0, -3), (2, 7), (4, 17)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3231641,
+        "label": "(0, 3), (2, 13), (4, 23)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3231642,
+        "label": "(0, -3), (2, 3), (4, 9)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3231643,
+        "label": "(0, 1), (2, 11), (4, 21)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 423706,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells two types of cookies: chocolate chip and oatmeal raisin. Last Saturday, the bakery's cookie sales totaled $\\$352.50$. The equation $2.25c + 1.50o = 352.50$ represents this situation, where $c$ is the number of chocolate chip cookies sold and $o$ is the number of oatmeal raisin cookies sold.  According to the equation, which of the following represents the price, in dollars, of each oatmeal raisin cookie?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4237060,
+        "label": "2.25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4237061,
+        "label": "$1.50o$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4237062,
+        "label": "1.50",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4237063,
+        "label": "$2.25c$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 438847,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "Line $p$ is defined by the equation $y = -2x + 7$. Line $q$ is perpendicular to line $p$ in the $xy$-plane. What is the slope of line $q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4388470,
+        "label": "$\\frac{1}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4388471,
+        "label": "$-2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4388472,
+        "label": "$2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4388473,
+        "label": "$-\\frac{1}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 474993,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The equation $y = 2.5x$ models the total earnings, $y$, in dollars, a vendor makes at a craft fair by selling $x$ handcrafted items. If the vendor sold $8$ items, how much money did they earn?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4749930,
+        "label": "$\\$10$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4749931,
+        "label": "$\\$16$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4749932,
+        "label": "$\\$20$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4749933,
+        "label": "$\\$25$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 481332,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A line in the $xy$-plane has a slope of $\\frac{1}{2}$ and passes through the point $(2, 1)$. Which equation represents this line?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4813320,
+        "label": "$y = \\frac{1}{2}x$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4813321,
+        "label": "$y = 2x - 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4813322,
+        "label": "$y = \\frac{1}{2}x + 2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4813323,
+        "label": "$y = 2x + 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 509309,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A student is buying notebooks and pens for school supplies. Each notebook costs $\\$2.50$ and each pen costs $\\$1.25$. The student spends a total of $\\$20.00$ on purchasing $x$ notebooks and $y$ pens. Which equation represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5093090,
+        "label": "$1.25x + 2.50y = 20.00$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5093091,
+        "label": "$2.50x + 1.25y = 20.00$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5093092,
+        "label": "$2.50x - 1.25y = 20.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5093093,
+        "label": "$x + y = 20.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 510062,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A bakery sold a total of $c$ cookies in a day. Of these, $o$ were oatmeal raisin cookies and $125$ were chocolate chip cookies. Which of the following equations represents the relationship between $c$ and $o$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5100620,
+        "label": "$c + o = 125$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5100621,
+        "label": "$c - o = 125$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5100622,
+        "label": "$o - c = 125$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5100623,
+        "label": "$2c - o = 125$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 518770,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells muffins for $\\$3$ each and cookies for $\\$2$ each.  A customer buys a mix of muffins and cookies for a total of $\\$24$. If the customer bought $6$ muffins, how many cookies did they buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5187700,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5187701,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5187702,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5187703,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 537179,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "David bought notebooks and pens for a total of $\\$26$. Each notebook costs $\\$5$ and each pen costs $\\$2$. If David bought $3$ pens, how many notebooks did he buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5371790,
+        "label": "4",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5371791,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5371792,
+        "label": "13",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5371793,
+        "label": "20",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 583438,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "David is ordering pizzas and breadsticks for a party. Each pizza costs $\\$15$, and each order of breadsticks costs $\\$6$. If David has a budget of $\\$90$ to spend, and he orders $p$ pizzas and $b$ orders of breadsticks, which of the following equations best represents the relationship between $p$ and $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5834380,
+        "label": "$p + b = 90$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5834381,
+        "label": "$6p + 15b = 90$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5834382,
+        "label": "$15p + 6b = 90$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5834383,
+        "label": "$21(p + b) = 90$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 613523,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A fruit vendor sells apples for $\\$2$ each and bananas for $\\$1.50$ each. A customer purchased some apples and bananas, and the total cost was $\\$22.50$. The equation $4x + 3y = 45$ represents this situation, where $x$ is the number of apples purchased and $y$ is the number of bananas purchased. What is the best interpretation of $(x, y) = (3, 11)$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6135230,
+        "label": "If 3 apples were purchased, then 11 bananas were purchased.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6135231,
+        "label": "If 3 apples were purchased, then the total cost was $11.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6135232,
+        "label": "If 11 apples were purchased, then 3 bananas were purchased.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6135233,
+        "label": "If 11 bananas were purchased, then 3 apples were purchased.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 644946,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The equation $28 = 2l + 2w$ gives the perimeter of a rectangular garden that has length $l$, in feet. The length of the garden is $9$ feet. What is the width, in feet, of the garden?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6449460,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6449461,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6449462,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6449463,
+        "label": "19",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 703502,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "Javier bought some apples and bananas. The apples cost $\\$2.00$ per pound, and the bananas cost $\\$1.00$ per pound. If Javier spent $\\$12.00$ in total and bought twice as many pounds of bananas as pounds of apples, how many pounds of bananas did Javier buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7035020,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7035021,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7035022,
+        "label": "6",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7035023,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 720394,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "$$7r + 2l = 42$$ A florist purchased $7$ roses that cost $\\$r$ each and $2$ lilies that cost $\\$l$ each. If the given equation represents this situation, which of the following is the best interpretation of $42$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7203940,
+        "label": "The total cost, in dollars, for all roses purchased",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7203941,
+        "label": "The total cost, in dollars, for all lilies purchased",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7203942,
+        "label": "The total cost, in dollars, for all roses and lilies purchased",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7203943,
+        "label": "The difference in the number of roses and lilies purchased",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 722880,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "$$R = 15b + 5h$$ In the equation above, $R$ represents the total rental cost, in dollars, for renting $b$ bikes and $h$ helmets from a rental shop. The rental cost per bike is the same, and the rental cost per helmet is the same. Which of the following is the best interpretation for the number $15$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7228800,
+        "label": "The total rental cost for bikes and helmets",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7228801,
+        "label": "The rental cost, in dollars, for one helmet",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7228802,
+        "label": "The rental cost, in dollars, for one bike",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7228803,
+        "label": "The number of helmets rented",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 728241,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A bicycle rental shop charges $\\$25$ per bicycle and $\\$8$ per helmet. The total cost of renting $b$ bicycles and $h$ helmets is $\\$432$. Which equation represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7282410,
+        "label": "$8b + 25h = 432$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7282411,
+        "label": "$25b - 8h = 432$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7282412,
+        "label": "$8b - 25h = 432$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7282413,
+        "label": "$25b + 8h = 432$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 952241,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "The equation $P = 2l + 2w$ gives the perimeter $P$ of a rectangle with length $l$ and width $w$. A rectangular garden has a perimeter of $32$ feet. If the length of the garden is $10$ feet, what is the width of the garden in feet?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9522410,
+        "label": "6",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9522411,
+        "label": "11",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9522412,
+        "label": "16",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9522413,
+        "label": "22",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 986582,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Easy",
+    "question_text": "A baker is creating a custom blend of two types of flour, Type A and Type B. Type A flour is $12\\%$ protein by weight, and Type B flour is $15\\%$ protein by weight. If the baker wants to create a blend that contains a total of $3$ pounds of protein, which equation models this relationship, where $x$ is the number of pounds of Type A flour and $y$ is the number of pounds of Type B flour?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9865820,
+        "label": "$0.12x + 0.15y = 3$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9865821,
+        "label": "$0.15x + 0.12y = 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9865822,
+        "label": "$12x + 15y = 3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9865823,
+        "label": "$27(x+y) = 3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

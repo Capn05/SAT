@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "3d9c8a64-6b1a-4e2b-9f8e-5c1d2a3b4c5d",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Easy",
+      "question_text": "Which expression is equivalent to $5(x - 2) + 3x$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a2f7b3d1-9c8e-4f0a-b2d3-6e7f8a9b0c1d",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Easy",
+      "question_text": "Which of the following is equivalent to $(2a^2b)(-3ab^2)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5e1a2b3c-7d8e-4f9a-8b7c-1d2e3f4a5b6c",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Easy",
+      "question_text": "Which expression is equivalent to $9m - 6n$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
+      "question_id": "3d9c8a64-6b1a-4e2b-9f8e-5c1d2a3b4c5d",
+      "value": "A",
+      "label": "$8x - 10$",
+      "is_correct": true
+    },
+    {
+      "id": "2a3b4c5d-6e7f-4a8b-9c0d-1e2f3a4b5c6d",
+      "question_id": "3d9c8a64-6b1a-4e2b-9f8e-5c1d2a3b4c5d",
+      "value": "B",
+      "label": "$5x - 10$",
+      "is_correct": false
+    },
+    {
+      "id": "3b4c5d6e-7f8a-4b9c-a0b1-2c3d4e5f6a7b",
+      "question_id": "3d9c8a64-6b1a-4e2b-9f8e-5c1d2a3b4c5d",
+      "value": "C",
+      "label": "$8x + 10$",
+      "is_correct": false
+    },
+    {
+      "id": "4c5d6e7f-8a9b-4c0d-b1c2-3d4e5f6a7b8c",
+      "question_id": "3d9c8a64-6b1a-4e2b-9f8e-5c1d2a3b4c5d",
+      "value": "D",
+      "label": "$2x - 10$",
+      "is_correct": false
+    },
+    {
+      "id": "5d6e7f8a-9b0c-4d1e-8c2d-4e5f6a7b8c9d",
+      "question_id": "a2f7b3d1-9c8e-4f0a-b2d3-6e7f8a9b0c1d",
+      "value": "A",
+      "label": "$-6a^2b^2$",
+      "is_correct": false
+    },
+    {
+      "id": "6e7f8a9b-0c1d-4e2f-9e4f-5f6a7b8c9d0e",
+      "question_id": "a2f7b3d1-9c8e-4f0a-b2d3-6e7f8a9b0c1d",
+      "value": "B",
+      "label": "$-5a^3b^2$",
+      "is_correct": false
+    },
+    {
+      "id": "7f8a9b0c-1d2e-4f3a-8f56-6a7b8c9d0e1f",
+      "question_id": "a2f7b3d1-9c8e-4f0a-b2d3-6e7f8a9b0c1d",
+      "value": "C",
+      "label": "$6a^3b^3$",
+      "is_correct": false
+    },
+    {
+      "id": "8a9b0c1d-2e3f-4a5b-8c9d-0e1f2a3b4c5d",
+      "question_id": "a2f7b3d1-9c8e-4f0a-b2d3-6e7f8a9b0c1d",
+      "value": "D",
+      "label": "$-6a^3b^3$",
+      "is_correct": true
+    },
+    {
+      "id": "9b0c1d2e-3f4a-4b5c-9d0e-1f2a3b4c5d6e",
+      "question_id": "5e1a2b3c-7d8e-4f9a-8b7c-1d2e3f4a5b6c",
+      "value": "A",
+      "label": "$3(3m + 2n)$",
+      "is_correct": false
+    },
+    {
+      "id": "ab0c1d2e-3f4a-4c5d-8e9f-0a1b2c3d4e5f",
+      "question_id": "5e1a2b3c-7d8e-4f9a-8b7c-1d2e3f4a5b6c",
+      "value": "B",
+      "label": "$9(m - n)$",
+      "is_correct": false
+    },
+    {
+      "id": "bc0d1e2f-4a5b-4d6e-9f0a-1b2c3d4e5f6a",
+      "question_id": "5e1a2b3c-7d8e-4f9a-8b7c-1d2e3f4a5b6c",
+      "value": "C",
+      "label": "$3(3m - 2n)$",
+      "is_correct": true
+    },
+    {
+      "id": "cd0e1f2a-5b6c-4e7f-8a0b-2c3d4e5f6a7b",
+      "question_id": "5e1a2b3c-7d8e-4f9a-8b7c-1d2e3f4a5b6c",
+      "value": "D",
+      "label": "$3(3m - 6n)$",
+      "is_correct": false
+    }
+  ]
+}

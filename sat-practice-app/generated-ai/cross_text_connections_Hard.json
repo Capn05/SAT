@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "2f6d2b7b-2fcf-4a3a-8e0a-3f20a3b1b0c0",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nAdvocates of stratospheric aerosol injection (SAI) argue that, in the face of slow emissions reductions, a temporary program could offset global warming by approximately $0.5^\\circ\\text{C}$ within a decade. They cite climate models indicating relatively predictable radiative forcing and propose SAI as a necessary interim measure while decarbonization accelerates.\n\nText 2\n\nAn ethicist contends that even if models predict a cooling effect, SAI raises unresolved governance and justice problems: risk distribution will be uneven, exit strategies are unclear, and transboundary consent is practically unattainable. The ethicist argues that prioritizing rapid deployability without legitimate global oversight magnifies moral hazard.\n\nBased on the texts, how would the author of Text 2 most likely characterize the conclusion in Text 1 that SAI is a \"necessary interim measure\"?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b0b5b2b8-0d3a-4c8c-85d0-56c5f4f47d2e",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA historian argues that early modern scientific societies prized replication over novelty: journals privileged confirmatory reports and standardized protocols, believing that public knowledge rested on reproducibility rather than discovery for its own sake.\n\nText 2\n\nA bibliometric study of recent journal policies finds the opposite pattern: editorial guidelines and prestige metrics reward novelty signals (e.g., \"first-of-its-kind\" claims), while replication studies face higher rejection rates even when methodologically rigorous.\n\nWhich claim would both authors most likely endorse?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f8d88a59-6dfd-4f9c-8a84-0a5c7a4e6b2a",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA computational linguist claims that attention patterns in large transformer models encode syntactic structure. Probing classifiers trained on internal representations succeed on tasks like dependency arc prediction and part-of-speech labeling, suggesting that models \"learn\" abstractions akin to grammatical rules.\n\nText 2\n\nA philosopher of language cautions that success on probes may reflect surface regularities rather than competence with generative rules. The philosopher distinguishes performance on diagnostic tasks from possession of the underlying theoretical constructs, noting that distributional fit does not entail the correct explanatory ontology.\n\nHow would the author of Text 2 most likely respond to Text 1's inference from probe performance to syntactic representation?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "b3a3a2ae-2c7d-4995-9a9d-2868b1a6f3a2",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nAn urban economist reports that pedestrianization increased average retail sales by $7\\%$ across treated corridors, using a difference-in-differences design with matched comparison streets. The economist concludes that pedestrianization is a net win for local commerce.\n\nText 2\n\nA sociologist notes that average gains can conceal redistribution: some shops lose foot traffic as flows re-route, and workers face longer commutes due to transit changes. The sociologist argues that evaluations should incorporate distribution-sensitive metrics and mitigation plans for adversely affected segments.\n\nBased on the texts, how would the author of Text 2 most likely qualify the conclusion in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f1a4a5db-0e0f-4c42-b5cf-6f3b9bfe0e1f",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA district-level meta-analysis finds that interleaving and spaced practice yield substantial learning gains across math and science, with effects persisting after 12 weeks. The authors recommend district-wide mandates that require teachers to adopt these schedules.\n\nText 2\n\nA veteran teacher argues that while the techniques are promising, rigid mandates ignore classroom constraints (e.g., pacing guides, heterogeneous readiness) and can backfire by reducing teacher autonomy needed to adapt strategies to subject-specific demands.\n\nIf both authors considered each other's points, which statement would they most likely agree with?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "91f6e4e1-8f0e-4d1f-9f7e-27de8e9234a1",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nAn epidemiological preprint estimates that county-level mask mandates reduced $R_t$ by $25\\%$ relative to synthetic controls, after adjusting for mobility, seasonality, and testing intensity. The authors conclude that mandates were the decisive driver of observed transmission declines.\n\nText 2\n\nA statistician warns that staggered adoption, policy bundling, and measurement error can bias synthetic control and event-study estimates. Small specification changes in donor pools or lag structures can flip results, and unobserved behavioral shifts may confound causal interpretations.\n\nBased on the texts, how would the author of Text 2 most likely characterize the causal claim in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9f2c5b1e-3a70-4b4b-9d9f-8c2b7d8f2a67",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nAn art critic praises participatory museum exhibits for democratizing curation, claiming that \"curatorial authority should be decentralized\" so visitors can shape interpretive narratives through voting and annotation.\n\nText 2\n\nA museum conservator responds that while participation can broaden engagement, interpretive coherence and preservation require domain expertise. Without expert scaffolding, displays risk misattribution, material damage, and the loss of historical context.\n\nHow would the conservator most likely address the claim in Text 1 that curatorial authority should be decentralized?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2e0a5407-38e3-4c3d-9c9e-4b5975a3b7b0",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nAn environmental economist argues that a carbon border adjustment mechanism (CBAM) can curb leakage by aligning import prices with domestic carbon costs. A model projects a $15\\%$ emissions reduction in targeted sectors, and the economist claims that recycling CBAM revenues to least-developed partners ensures fairness.\n\nText 2\n\nA trade lawyer cautions that CBAMs risk violating WTO non-discrimination rules unless designed with robust equivalence tests, due process, and narrowly tailored exemptions. Revenue recycling is commendable but does not itself establish legal or procedural fairness.\n\nBased on the texts, how would the author of Text 2 most likely respond to Text 1's fairness claim?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c6f3a4a1-6a2e-4dce-8e7c-3f7c2b6d8e1a",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA psychologist reports that grit correlates with long-term achievement slightly more than IQ in certain cohorts (meta-analytic $r=0.23$ vs. $r=0.19$), recommending that admissions policies weight grit heavily.\n\nText 2\n\nA methodologist notes publication bias, overlap between grit and conscientiousness, and criterion contamination in outcome measures. The methodologist warns that small effect-size differences should not drive policy absent preregistered replications across contexts.\n\nBased on the texts, how would the author of Text 2 most likely evaluate the recommendation in Text 1?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "1c1a5a98-3e64-4d6f-9a7b-4d3a2c0f6d1b",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Hard",
+      "question_text": "Text 1\n\nA conservation biologist argues that reintroducing apex predators restores trophic cascades, citing the Yellowstone wolf case, and proposes applying similar rewilding across fragmented European landscapes, asserting that wildlife corridors will suffice to replicate benefits.\n\nText 2\n\nA landscape ecologist counters that cascades depend on context: human-dominated mosaics involve livestock conflict, prey community shifts, disease dynamics, and land-use incentives. Corridors alone cannot substitute for broader socio-ecological planning and stakeholder agreements.\n\nBased on the texts, how would the author of Text 2 most likely characterize Text 1's proposed extension?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "7d2a4c1f-3c3f-4d1a-8f3b-9d2e7a6b5c01",
+      "question_id": "2f6d2b7b-2fcf-4a3a-8e0a-3f20a3b1b0c0",
+      "value": "A",
+      "label": "As acceptable provided cost-effectiveness is demonstrated, since governance concerns are secondary to climate urgency.",
+      "is_correct": false
+    },
+    {
+      "id": "a9b1d2c3-4e5f-4b6a-8c9d-1e2f3a4b5c02",
+      "question_id": "2f6d2b7b-2fcf-4a3a-8e0a-3f20a3b1b0c0",
+      "value": "B",
+      "label": "As prudent, because model-based predictability outweighs uncertainties about distributional risks.",
+      "is_correct": false
+    },
+    {
+      "id": "e3f4a5b6-c7d8-4e9f-9a0b-1c2d3e4f5a03",
+      "question_id": "2f6d2b7b-2fcf-4a3a-8e0a-3f20a3b1b0c0",
+      "value": "C",
+      "label": "As premature, because it downplays unresolved governance, consent, and equity issues despite projected cooling benefits.",
+      "is_correct": true
+    },
+    {
+      "id": "5b6c7d8e-9f0a-4b1c-8d2e-3f4a5b6c7d04",
+      "question_id": "2f6d2b7b-2fcf-4a3a-8e0a-3f20a3b1b0c0",
+      "value": "D",
+      "label": "As feasible only if limited to small regional trials that require no international coordination.",
+      "is_correct": false
+    },
+    {
+      "id": "f7e8d9a0-b1c2-4d3e-8f9a-0b1c2d3e4f11",
+      "question_id": "b0b5b2b8-0d3a-4c8c-85d0-56c5f4f47d2e",
+      "value": "A",
+      "label": "Institutional incentives strongly shape what communities count as valuable scientific contributions.",
+      "is_correct": true
+    },
+    {
+      "id": "2a3b4c5d-6e7f-4a8b-9c0d-1e2f3a4b5c12",
+      "question_id": "b0b5b2b8-0d3a-4c8c-85d0-56c5f4f47d2e",
+      "value": "B",
+      "label": "Replication has always been secondary to novelty, historically and today.",
+      "is_correct": false
+    },
+    {
+      "id": "3b4c5d6e-7f8a-4b9c-0d1e-2f3a4b5c6d13",
+      "question_id": "b0b5b2b8-0d3a-4c8c-85d0-56c5f4f47d2e",
+      "value": "C",
+      "label": "Bibliometrics cannot reveal editorial preferences with respect to replication.",
+      "is_correct": false
+    },
+    {
+      "id": "4c5d6e7f-8a9b-4c0d-1e2f-3a4b5c6d7e14",
+      "question_id": "b0b5b2b8-0d3a-4c8c-85d0-56c5f4f47d2e",
+      "value": "D",
+      "label": "Early modern and contemporary science evaluate replication identically.",
+      "is_correct": false
+    },
+    {
+      "id": "5d6e7f8a-9b0c-4d1e-2f3a-4b5c6d7e8f21",
+      "question_id": "f8d88a59-6dfd-4f9c-8a84-0a5c7a4e6b2a",
+      "value": "A",
+      "label": "Probe accuracy implies models internalize formal grammars comparable to human linguistic knowledge.",
+      "is_correct": false
+    },
+    {
+      "id": "6e7f8a9b-0c1d-4e2f-3a4b-5c6d7e8f9a22",
+      "question_id": "f8d88a59-6dfd-4f9c-8a84-0a5c7a4e6b2a",
+      "value": "B",
+      "label": "Attention patterns are irrelevant to any claims about structure in language models.",
+      "is_correct": false
+    },
+    {
+      "id": "7f8a9b0c-1d2e-4f3a-5b6c-7d8e9f0a1b23",
+      "question_id": "f8d88a59-6dfd-4f9c-8a84-0a5c7a4e6b2a",
+      "value": "C",
+      "label": "Transformer performance on probes strictly falsifies distributional explanations.",
+      "is_correct": false
+    },
+    {
+      "id": "8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c24",
+      "question_id": "f8d88a59-6dfd-4f9c-8a84-0a5c7a4e6b2a",
+      "value": "D",
+      "label": "Probe success may reflect surface regularities and does not by itself establish possession of syntactic competence.",
+      "is_correct": true
+    },
+    {
+      "id": "9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d31",
+      "question_id": "b3a3a2ae-2c7d-4995-9a9d-2868b1a6f3a2",
+      "value": "A",
+      "label": "By rejecting the study's methods as incapable of estimating average effects in urban settings.",
+      "is_correct": false
+    },
+    {
+      "id": "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e32",
+      "question_id": "b3a3a2ae-2c7d-4995-9a9d-2868b1a6f3a2",
+      "value": "B",
+      "label": "By noting that the average gain may mask harms to specific groups and thus warrants distributional analysis and targeted mitigation.",
+      "is_correct": true
+    },
+    {
+      "id": "1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f33",
+      "question_id": "b3a3a2ae-2c7d-4995-9a9d-2868b1a6f3a2",
+      "value": "C",
+      "label": "By arguing that any increase in sales necessarily implies universal benefits across all corridors.",
+      "is_correct": false
+    },
+    {
+      "id": "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a34",
+      "question_id": "b3a3a2ae-2c7d-4995-9a9d-2868b1a6f3a2",
+      "value": "D",
+      "label": "By concluding that qualitative interviews should replace quantitative measures in policy evaluation.",
+      "is_correct": false
+    },
+    {
+      "id": "3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b41",
+      "question_id": "f1a4a5db-0e0f-4c42-b5cf-6f3b9bfe0e1f",
+      "value": "A",
+      "label": "Evidence-based strategies are promising, but effective adoption should respect classroom constraints and allow adaptive implementation.",
+      "is_correct": true
+    },
+    {
+      "id": "4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c42",
+      "question_id": "f1a4a5db-0e0f-4c42-b5cf-6f3b9bfe0e1f",
+      "value": "B",
+      "label": "Mandates are unnecessary because interleaving and spacing have negligible effects on learning outcomes.",
+      "is_correct": false
+    },
+    {
+      "id": "5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d43",
+      "question_id": "f1a4a5db-0e0f-4c42-b5cf-6f3b9bfe0e1f",
+      "value": "C",
+      "label": "Teacher autonomy should be eliminated to ensure uniformity in instructional practice.",
+      "is_correct": false
+    },
+    {
+      "id": "6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e44",
+      "question_id": "f1a4a5db-0e0f-4c42-b5cf-6f3b9bfe0e1f",
+      "value": "D",
+      "label": "Spaced practice works only in mathematics and fails in science contexts.",
+      "is_correct": false
+    },
+    {
+      "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c51",
+      "question_id": "91f6e4e1-8f0e-4d1f-9f7e-27de8e9234a1",
+      "value": "A",
+      "label": "As definitive, because specification checks fully eliminate concerns about unobservables.",
+      "is_correct": false
+    },
+    {
+      "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d52",
+      "question_id": "91f6e4e1-8f0e-4d1f-9f7e-27de8e9234a1",
+      "value": "B",
+      "label": "As invalid, since synthetic control methods are never appropriate for public health interventions.",
+      "is_correct": false
+    },
+    {
+      "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e53",
+      "question_id": "91f6e4e1-8f0e-4d1f-9f7e-27de8e9234a1",
+      "value": "C",
+      "label": "As understated, because the true effect likely exceeds the estimated $25\\%$ reduction in $R_t$.",
+      "is_correct": false
+    },
+    {
+      "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f54",
+      "question_id": "91f6e4e1-8f0e-4d1f-9f7e-27de8e9234a1",
+      "value": "D",
+      "label": "As overconfident, given sensitivity to timing, bundling, and unobserved behaviors that threaten causal attribution.",
+      "is_correct": true
+    },
+    {
+      "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a61",
+      "question_id": "9f2c5b1e-3a70-4b4b-9d9f-8c2b7d8f2a67",
+      "value": "A",
+      "label": "By cautioning that fully decentralizing authority risks eroding expertise and coherence, even if participatory elements are valuable.",
+      "is_correct": true
+    },
+    {
+      "id": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b62",
+      "question_id": "9f2c5b1e-3a70-4b4b-9d9f-8c2b7d8f2a67",
+      "value": "B",
+      "label": "By endorsing public voting as the primary tool for ensuring conservation standards.",
+      "is_correct": false
+    },
+    {
+      "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c63",
+      "question_id": "9f2c5b1e-3a70-4b4b-9d9f-8c2b7d8f2a67",
+      "value": "C",
+      "label": "By asserting that expertise can be replaced by crowd-sourced annotations without loss.",
+      "is_correct": false
+    },
+    {
+      "id": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d64",
+      "question_id": "9f2c5b1e-3a70-4b4b-9d9f-8c2b7d8f2a67",
+      "value": "D",
+      "label": "By arguing that participation undermines conservation ethics in all contexts.",
+      "is_correct": false
+    },
+    {
+      "id": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e71",
+      "question_id": "2e0a5407-38e3-4c3d-9c9e-4b5975a3b7b0",
+      "value": "A",
+      "label": "That revenue recycling ensures both legal compliance and fairness, making design details largely irrelevant.",
+      "is_correct": false
+    },
+    {
+      "id": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f72",
+      "question_id": "2e0a5407-38e3-4c3d-9c9e-4b5975a3b7b0",
+      "value": "B",
+      "label": "That while CBAMs may pursue legitimate aims, fairness and legality depend on stringent equivalence tests and non-discrimination, not merely revenue recycling.",
+      "is_correct": true
+    },
+    {
+      "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a73",
+      "question_id": "2e0a5407-38e3-4c3d-9c9e-4b5975a3b7b0",
+      "value": "C",
+      "label": "That CBAMs necessarily violate all WTO rules regardless of design.",
+      "is_correct": false
+    },
+    {
+      "id": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b74",
+      "question_id": "2e0a5407-38e3-4c3d-9c9e-4b5975a3b7b0",
+      "value": "D",
+      "label": "That emissions leakage is a myth and therefore CBAMs are unnecessary.",
+      "is_correct": false
+    },
+    {
+      "id": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c81",
+      "question_id": "c6f3a4a1-6a2e-4dce-8e7c-3f7c2b6d8e1a",
+      "value": "A",
+      "label": "The recommendation is premature given small, possibly biased effect differences and construct overlap.",
+      "is_correct": true
+    },
+    {
+      "id": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d82",
+      "question_id": "c6f3a4a1-6a2e-4dce-8e7c-3f7c2b6d8e1a",
+      "value": "B",
+      "label": "Grit should fully replace IQ in admissions because it is causally definitive.",
+      "is_correct": false
+    },
+    {
+      "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e83",
+      "question_id": "c6f3a4a1-6a2e-4dce-8e7c-3f7c2b6d8e1a",
+      "value": "C",
+      "label": "Publication bias inflates IQ effects more than grit effects, ensuring the policy is safe.",
+      "is_correct": false
+    },
+    {
+      "id": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f84",
+      "question_id": "c6f3a4a1-6a2e-4dce-8e7c-3f7c2b6d8e1a",
+      "value": "D",
+      "label": "Effect-size differences of $0.04$ necessarily justify immediate policy overhaul.",
+      "is_correct": false
+    },
+    {
+      "id": "3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a91",
+      "question_id": "1c1a5a98-3e64-4d6f-9a7b-4d3a2c0f6d1b",
+      "value": "A",
+      "label": "As a straightforward application, since all trophic systems respond similarly to predator reintroduction.",
+      "is_correct": false
+    },
+    {
+      "id": "4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b92",
+      "question_id": "1c1a5a98-3e64-4d6f-9a7b-4d3a2c0f6d1b",
+      "value": "B",
+      "label": "As an overgeneralization from a specific context that ignores socio-ecological constraints and stakeholder dynamics.",
+      "is_correct": true
+    },
+    {
+      "id": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c93",
+      "question_id": "1c1a5a98-3e64-4d6f-9a7b-4d3a2c0f6d1b",
+      "value": "C",
+      "label": "As inapplicable because corridors cannot ever influence wildlife movement.",
+      "is_correct": false
+    },
+    {
+      "id": "6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d94",
+      "question_id": "1c1a5a98-3e64-4d6f-9a7b-4d3a2c0f6d1b",
+      "value": "D",
+      "label": "As ethically objectionable irrespective of ecological outcomes.",
+      "is_correct": false
+    }
+  ]
+}

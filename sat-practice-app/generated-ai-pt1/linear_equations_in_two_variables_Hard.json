@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "b0c2ad77-8a3a-4d9b-9f0c-5f8d2a8c71b2",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Hard",
+      "question_text": "A line in the $xy$-plane has slope $-\\frac{3}{2}$, and the midpoint of its $x$- and $y$-intercepts is $(2, 3)$. Which equation represents the line?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f1d8a8de-23b4-4a1a-bbce-31d3bfa93b0f",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Hard",
+      "question_text": "Let $L$ be the line given by $(a - 2)x + (2a + 1)y = 12$, where $a \\ne 2$ and $a \\ne -\\frac{1}{2}$. If $L$ is perpendicular to the line $3x - 4y = 8$, what is the $y$-coordinate of the $y$-intercept of $L$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8b924f3a-5b1e-4d60-9b52-79b9d9d77234",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 5,
+      "difficulty": "Hard",
+      "question_text": "Lines in the $xy$-plane are given by $\\frac{1}{2}x - \\frac{1}{3}y = 1$ and $x + y = 5$, which intersect at point $P$. Line $L$ passes through $P$ and is perpendicular to $6x + y = 0$. Which of the following is an equation of $L$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "d4a5b7c2-6f1d-4a22-9e5d-1b2f0e9a5c31",
+      "question_id": "b0c2ad77-8a3a-4d9b-9f0c-5f8d2a8c71b2",
+      "value": "A",
+      "label": "$3x + 2y = 12$",
+      "is_correct": true
+    },
+    {
+      "id": "3f6b26b9-0db8-4e3f-b3ae-1cbbf2d3e7a8",
+      "question_id": "b0c2ad77-8a3a-4d9b-9f0c-5f8d2a8c71b2",
+      "value": "B",
+      "label": "$3x - 2y = 12$",
+      "is_correct": false
+    },
+    {
+      "id": "f3214e73-6b31-4f2a-9b8b-7d2e1a0f5c64",
+      "question_id": "b0c2ad77-8a3a-4d9b-9f0c-5f8d2a8c71b2",
+      "value": "C",
+      "label": "$y = -\\frac{2}{3}x + 6$",
+      "is_correct": false
+    },
+    {
+      "id": "ac1e6d27-1821-47c2-8b46-5f94a87e9c0b",
+      "question_id": "b0c2ad77-8a3a-4d9b-9f0c-5f8d2a8c71b2",
+      "value": "D",
+      "label": "$y = -\\frac{3}{2}x + 5$",
+      "is_correct": false
+    },
+    {
+      "id": "19a04d35-1b0a-46b2-8e2c-bfd6a2d4e9f1",
+      "question_id": "f1d8a8de-23b4-4a1a-bbce-31d3bfa93b0f",
+      "value": "A",
+      "label": "$4$",
+      "is_correct": false
+    },
+    {
+      "id": "f7b1d93c-0d9d-4f2e-92b6-5e89d9d17a32",
+      "question_id": "f1d8a8de-23b4-4a1a-bbce-31d3bfa93b0f",
+      "value": "B",
+      "label": "$-\\frac{3}{2}$",
+      "is_correct": false
+    },
+    {
+      "id": "a8c5f13e-2c51-4a5c-9651-0d94ab8e73ef",
+      "question_id": "f1d8a8de-23b4-4a1a-bbce-31d3bfa93b0f",
+      "value": "C",
+      "label": "$-4$",
+      "is_correct": true
+    },
+    {
+      "id": "bb3e09f0-5a7d-4a4e-bf2c-0087c8d2a6e0",
+      "question_id": "f1d8a8de-23b4-4a1a-bbce-31d3bfa93b0f",
+      "value": "D",
+      "label": "$\\frac{12}{5}$",
+      "is_correct": false
+    },
+    {
+      "id": "0e136c76-8f72-4b3b-bfa3-9df62b1e7a1a",
+      "question_id": "8b924f3a-5b1e-4d60-9b52-79b9d9d77234",
+      "value": "A",
+      "label": "$y = -\\frac{1}{6}x + \\frac{19}{15}$",
+      "is_correct": false
+    },
+    {
+      "id": "e7a4b517-916e-4e2a-bcdf-6e71d4b9c512",
+      "question_id": "8b924f3a-5b1e-4d60-9b52-79b9d9d77234",
+      "value": "B",
+      "label": "$y = \\frac{1}{6}x + \\frac{17}{15}$",
+      "is_correct": false
+    },
+    {
+      "id": "ab92d9c1-c43a-44a6-9bb9-ea10af27f88c",
+      "question_id": "8b924f3a-5b1e-4d60-9b52-79b9d9d77234",
+      "value": "C",
+      "label": "$5x - 30y = 38$",
+      "is_correct": false
+    },
+    {
+      "id": "6a5b2d46-9734-4c59-9c3a-0b9d3fd7ae21",
+      "question_id": "8b924f3a-5b1e-4d60-9b52-79b9d9d77234",
+      "value": "D",
+      "label": "$y = \\frac{1}{6}x + \\frac{19}{15}$",
+      "is_correct": true
+    }
+  ]
+}

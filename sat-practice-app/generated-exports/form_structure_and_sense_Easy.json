@@ -1,0 +1,1122 @@
+[
+  {
+    "id": 3905,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "While conventional ovens rely on heating elements to warm the air inside, microwave ovens use electromagnetic radiation to excite water molecules in food. This process allows microwaves to cook food much faster than traditional ovens, sometimes reducing cooking times from hours to mere minutes.  However, some culinary purists _______ that microwave cooking can alter the texture and flavor of certain dishes.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 39050,
+        "label": "argue",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 39051,
+        "label": "arguing",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 39052,
+        "label": "to argue",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 39053,
+        "label": "having argued",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 26843,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "During his groundbreaking research in the 1920s, Edwin Hubble, an American astronomer, meticulously analyzed the spectra of spiral nebulae. He carefully measured their redshifts and _______________ that these nebulae were actually galaxies moving away from Earth, revolutionizing our understanding of the cosmos.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 268430,
+        "label": "to conclude",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 268431,
+        "label": "concluding",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 268432,
+        "label": "concludes",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 268433,
+        "label": "concluded",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 28154,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The latest research study on the effects of blue light on sleep ______ compelling evidence suggesting a link between increased screen time and insomnia.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 281540,
+        "label": "provides",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 281541,
+        "label": "providing",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 281542,
+        "label": "to provide",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 281543,
+        "label": "provided",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 33929,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Bioluminescence, the production of light by living organisms, is a fascinating phenomenon.  Fireflies and certain marine creatures use this process for communication and camouflage.  Researchers are actively studying bioluminescence, as understanding _______________ may lead to breakthroughs in various fields, from sustainable lighting to medical imaging.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 339290,
+        "label": "it",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 339291,
+        "label": "them",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 339292,
+        "label": "these",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 339293,
+        "label": "those",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 63188,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Researchers studying ancient artifacts discovered a collection of clay tablets. These tablets were inscribed with cuneiform script, and the researchers carefully translated each of ____________________________________________________________________________________________ symbols to understand the historical context.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 631880,
+        "label": "their",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 631881,
+        "label": "its",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 631882,
+        "label": "his",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 631883,
+        "label": "her",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 72710,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In early astronomical studies of the night sky, nebulae, once mysterious and poorly understood, ______ vast clouds of interstellar gas and dust.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 727100,
+        "label": "is",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 727101,
+        "label": "was",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 727102,
+        "label": "are",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 727103,
+        "label": "were",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 107957,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Botanists have been studying the biodiversity of the Amazon rainforest for decades.  New research suggests that the rainforest floor, often overlooked in previous studies, ____ a surprisingly complex ecosystem teeming with unique fungal species.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1079570,
+        "label": "harbors",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1079571,
+        "label": "is harboring",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1079572,
+        "label": "harbored",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1079573,
+        "label": "will harbor",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 109974,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The Rhythmic Roots, a band known for their energetic performances, are a group of talented musicians who meticulously prepare for each concert. When a performance venue is booked, The Rhythmic Roots gather their instruments and _____________ ready.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1099740,
+        "label": "get",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1099741,
+        "label": "gotten",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1099742,
+        "label": "getting",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1099743,
+        "label": "got",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 116599,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Researchers have studied various factors affecting sleep quality. One factor, the use of electronic devices before bed, _____ to disrupt sleep patterns.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1165990,
+        "label": "tending",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1165991,
+        "label": "to tend",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1165992,
+        "label": "tend",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1165993,
+        "label": "tends",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 132125,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The advent of digital photography in the late 20th century dramatically changed the field.  Prior to this technological shift, capturing and developing photographs _______ a complex and time-consuming process involving darkrooms and chemical solutions.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1321250,
+        "label": "is",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1321251,
+        "label": "has been",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1321252,
+        "label": "was",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1321253,
+        "label": "will be",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 163775,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "During the early 20th century, as aviation technology rapidly advanced, Bessie Coleman faced significant discrimination as an African American woman aspiring to be a pilot.  Despite these challenges, Coleman became the first African American woman _____ a pilot's license internationally and achieving fame for her daring air shows.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1637750,
+        "label": "obtaining",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1637751,
+        "label": "obtained",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1637752,
+        "label": "to obtain",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1637753,
+        "label": "obtains",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 269501,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Renowned for her innovative approach to vegan baking, pastry chef Anya Sharma carefully _____ each spice before incorporating it into her delicate cakes.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2695010,
+        "label": "blend",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2695011,
+        "label": "are blending",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2695012,
+        "label": "were blending",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2695013,
+        "label": "blends",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 277120,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "To mitigate the effects of urban heat islands, many cities are increasing their green spaces by planting trees and creating parks, __________ cooler microclimates and improving air quality for residents.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2771200,
+        "label": "generating",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2771201,
+        "label": "this generates",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2771202,
+        "label": "generates",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2771203,
+        "label": "it generates",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 304830,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Dr. Anya Sharma is a plant biologist. This means that Dr. Sharma doesn't just observe plants in their natural habitats. She uses advanced imaging techniques _____ their cellular structures in detail.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3048300,
+        "label": "observing",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3048301,
+        "label": "to observe",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3048302,
+        "label": "observed",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3048303,
+        "label": "observes",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 315152,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The newly renovated community center, a hub for local artists and workshops, ___________________________________________________________________________________________________________________________________________________________ a wide range of classes, from pottery to digital painting, for residents of all ages.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3151520,
+        "label": "offer",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3151521,
+        "label": "are offering",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3151522,
+        "label": "offers",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3151523,
+        "label": "have offered",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 347944,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In a 2023 study published in *The Astrophysical Journal*, Dr. Anya Sharma and her team found that the newly discovered exoplanet Kepler-186f, located 500 light-years away, _______________________________ unusually high levels of atmospheric methane during its summer months.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3479440,
+        "label": "exhibiting",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3479441,
+        "label": "to exhibit",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3479442,
+        "label": "exhibited",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3479443,
+        "label": "has exhibited",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 427593,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In mathematics, Fermat's Last Theorem, after being conjectured by Pierre de Fermat in 1637, __________________________________________________________________________ finally proven by Andrew Wiles in 1994.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4275930,
+        "label": "have been",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4275931,
+        "label": "were",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4275932,
+        "label": "was",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4275933,
+        "label": "are",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 438496,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Recognizing the limitations of his current role at the tech startup, David resigned from his position as marketing manager __________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4384960,
+        "label": "to enroll",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4384961,
+        "label": "enrolling",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4384962,
+        "label": "enrolled",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4384963,
+        "label": "enrolls",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 455901,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In 1953, James Watson and Francis Crick published their model of DNA. This discovery built upon the X-ray diffraction data that Rosalind Franklin ____ in the years leading up to their publication.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4559010,
+        "label": "is collecting",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4559011,
+        "label": "will collect",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4559012,
+        "label": "collects",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4559013,
+        "label": "had collected",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 476902,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In binary code, the number two represented as '10'. However, in the standard decimal system, two ____ represented as '2'.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4769020,
+        "label": "is",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4769021,
+        "label": "being",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4769022,
+        "label": "to be",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4769023,
+        "label": "are",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 531218,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The long-term success of any startup often hinges on ____ ability to adapt to market changes, innovative ideas, and dedicated teamwork.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5312180,
+        "label": "a company's",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5312181,
+        "label": "companies",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5312182,
+        "label": "companies'",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5312183,
+        "label": "a company",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 559809,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "In 1776, the Declaration of Independence was signed, marking a pivotal moment in American history.  Scholars __________________________________________________________________________________________________________________________________ the document's enduring influence on global political thought in later chapters of their analyses.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5598090,
+        "label": "had explored",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5598091,
+        "label": "have explored",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5598092,
+        "label": "will explore",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5598093,
+        "label": "are exploring",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 568482,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Researchers studying the impact of artificial light on nocturnal wildlife have observed that increased illumination in coastal areas _____________________________________________________________________________________________ the nesting behaviors of sea turtles, leading to concerns about population decline.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5684820,
+        "label": "disrupts",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5684821,
+        "label": "disrupted",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5684822,
+        "label": "will disrupt",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5684823,
+        "label": "is disrupting",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 715489,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Examples of modern architecture, from the Guggenheim Museum Bilbao to the Sydney Opera House to the Heydar Aliyev Center, ______ the innovative use of curves and unconventional materials.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7154890,
+        "label": "showcases",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7154891,
+        "label": "showcase",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7154892,
+        "label": "is showcasing",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7154893,
+        "label": "have showcased",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 750025,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Economists noted that if consumers ______________________ their spending habits in response to the initial economic downturn, the subsequent recession might have been less severe.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7500250,
+        "label": "curtail",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7500251,
+        "label": "had curtailed",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7500252,
+        "label": "will curtail",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7500253,
+        "label": "are curtailing",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 780795,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Many ancient cultures relied on celestial bodies for navigation and timekeeping. The position of the sun, for example, was meticulously observed, and sundials were developed to measure the passage of hours based on how the sun’s shadow ________ across a marked surface.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7807950,
+        "label": "is moving",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7807951,
+        "label": "moved",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7807952,
+        "label": "moves",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7807953,
+        "label": "has moved",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 831417,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Contemporary research into the effects of social media on adolescent mental health ________ a complex and often contradictory picture, with some studies highlighting potential risks while others emphasize benefits or neutral impacts.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8314170,
+        "label": "present",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8314171,
+        "label": "presents",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8314172,
+        "label": "are presenting",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8314173,
+        "label": "have presented",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 885271,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The discovery of penicillin revolutionized medicine.  However, many of the ____ were conducted in less-than-ideal laboratory conditions, leading to some initially inconsistent results.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8852710,
+        "label": "scientist's early experiment's",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8852711,
+        "label": "scientists early experiment's",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8852712,
+        "label": "scientist's early experiments",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8852713,
+        "label": "scientists early experiments",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 906748,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "The renowned art museum prides itself on the breadth of its collection. Visitors to the museum are often impressed by ___________ diverse range of paintings and sculptures from various eras.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9067480,
+        "label": "its",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9067481,
+        "label": "it's",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9067482,
+        "label": "its'",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9067483,
+        "label": "it's'",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 911484,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Although massive by today's standards, ENIAC, one of the first electronic computers, ______ approximately 17,460 vacuum tubes and occupied a large room.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9114840,
+        "label": "to be using",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9114841,
+        "label": "using",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9114842,
+        "label": "uses",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9114843,
+        "label": "used",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 934652,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Botanical gardens play a crucial role in conservation efforts.  These gardens, acting as living laboratories, _____________  a wide array of plant species, including many that are endangered in their natural habitats.  This preservation work is essential for maintaining biodiversity.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9346520,
+        "label": "showcase",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9346521,
+        "label": "showcases",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9346522,
+        "label": "is showcasing",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9346523,
+        "label": "has showcased",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 976924,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 29,
+    "difficulty": "Easy",
+    "question_text": "Dr. Mae Jemison was the first African American woman to travel to space, embarking on the Space Shuttle Endeavour in 1992.  _____ pioneering spirit and dedication to science continue to inspire young people around the globe, particularly those from underrepresented communities.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9769240,
+        "label": "Her",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9769241,
+        "label": "Their",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9769242,
+        "label": "It's",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9769243,
+        "label": "His",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]
