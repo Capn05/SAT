@@ -320,7 +320,7 @@ function SubscriptionContent() {
   // Check if user has approved email domain
   const isApprovedDomain = (email) => {
     if (!email) return false;
-    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    const approvedDomains = ['@knilok.com', '@inupup.com'];
     return approvedDomains.some(domain => email.toLowerCase().endsWith(domain));
   };
   

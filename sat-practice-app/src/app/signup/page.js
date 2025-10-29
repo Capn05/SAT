@@ -25,7 +25,7 @@ export default function SignUp() {
     }
 
     // Check if email is from approved domains for free access
-    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    const approvedDomains = ['@knilok.com', '@inupup.com'];
     const isApprovedStudent = approvedDomains.some(domain => email.toLowerCase().endsWith(domain));
 
     const { data, error } = await supabase.auth.signUp({

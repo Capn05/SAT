@@ -28,7 +28,7 @@ export async function GET(request) {
       
       // Check if this is a new user and if they have an approved domain email
       if (data?.user && data?.user?.email) {
-        const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+        const approvedDomains = [ '@knilok.com', '@inupup.com'];
         const isApprovedStudent = approvedDomains.some(domain => data.user.email.toLowerCase().endsWith(domain));
         
         if (isApprovedStudent) {
