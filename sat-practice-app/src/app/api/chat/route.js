@@ -20,7 +20,7 @@ export async function POST(request) {
     // Construct system message with question context
     const systemMessage = {
       role: 'system',
-      content: `Your name is Brill. You are a helpful PSAT tutoring assistant. Your answers should be crafted to be understood by a 15 year old kid. Format your responses with clear structure:
+      content: `Your name is Brill. You are a helpful SAT tutoring assistant. Your answers should be crafted to be understood by a 15 year old kid. Format your responses with clear structure:
       - Use headers (##) for main sections
       - Use bullet points for lists
       - **Bold** important concepts

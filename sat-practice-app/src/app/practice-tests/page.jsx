@@ -58,14 +58,14 @@ export default function PracticeTestsPage() {
   
   return (
     <div className="min-h-screen bg-gray-50">
-      <TopBar title="Timed PSAT Practice Tests" />
+      <TopBar title="Timed SAT Practice Tests" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Introduction Section */}
         <div className="bg-white rounded-xl shadow-sm p-6 mb-8 border border-gray-100">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">About Timed PSAT Practice Tests</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">About Timed SAT Practice Tests</h2>
           <p className="text-gray-600 mb-4">
-            Timed practice tests are designed to simulate the real PSAT experience. Each test consists of two modules:
+            Timed practice tests are designed to simulate the real SAT experience. Each test consists of two modules:
           </p>
           <ul className="space-y-2 mb-4">
             <li className="flex items-start">
@@ -82,13 +82,13 @@ export default function PracticeTestsPage() {
             </li>
           </ul>
           <div className="bg-blue-50 p-4 rounded-lg">
-            <p className="text-blue-700 font-medium">These practice tests follow the official College Board Digital PSAT format and timing guidelines.</p>
+            <p className="text-blue-700 font-medium">These practice tests follow the official College Board Digital SAT format and timing guidelines.</p>
           </div>
 
           <div className="bg-emerald-50 p-4 rounded-lg mt-4">
-            <p className="text-emerald-700 font-medium mb-2">About PSAT Scoring</p>
+            <p className="text-emerald-700 font-medium mb-2">About SAT Scoring</p>
             <ul className="list-disc list-inside text-emerald-700 space-y-1">
-              <li>The PSAT has 2 sections (Reading & Writing, Math), each scored 160–760; total 320–1520.</li>
+              <li>The SAT has 2 sections (Reading & Writing, Math), each scored 160–760; total 320–1520.</li>
               <li>Section score = 160 + 600 × (questions correct ÷ total questions), rounded to the nearest 10.</li>
               <li>National Merit Scholarship Index (NMSI) = (2 × Reading & Writing + Math) ÷ 10.</li>
               <li>On this page, you can take sections separately, but only paired completions (e.g., RW 1 + Math 1, RW 2 + Math 2) produce a Total and NMSI.</li>

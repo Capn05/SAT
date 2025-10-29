@@ -270,7 +270,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                handleQuestionPreset("How do I get a perfect score on the PSAT?");
+                handleQuestionPreset("How do I get a perfect score on the SAT?");
               }} 
               style={styles.suggestionButton}
               disabled={isLoading}

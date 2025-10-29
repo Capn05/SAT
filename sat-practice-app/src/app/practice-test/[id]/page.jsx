@@ -480,7 +480,7 @@ export default function PracticeTestPage({ params }) {
             <div className="space-y-4 mb-8">
               <p className="text-gray-600">
                 You are about to start <strong>{testName}</strong>, a timed practice test 
-                that simulates the actual Digital PSAT exam experience.
+                that simulates the actual Digital SAT exam experience.
               </p>
               
               <div className="bg-blue-50 p-4 rounded-lg">

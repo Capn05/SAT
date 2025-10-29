@@ -253,12 +253,12 @@ export default function PracticeTestsPage() {
     router.push(`/review-test?testId=${test.test_id}`);
   };
 
-  // Calculate PSAT section score (160-760) based on correct/total
-  const calculatePSATSectionScore = (correct, total) => {
-    if (!total || total <= 0) return 160;
-    const raw = 160 + 600 * (correct / total);
+  // Calculate SAT section score (200-800) based on correct/total
+  const calculateSATSectionScore = (correct, total) => {
+    if (!total || total <= 0) return 200;
+    const raw = 200 + 600 * (correct / total);
     const rounded = Math.round(raw / 10) * 10; // nearest 10
-    return Math.max(160, Math.min(760, rounded));
+    return Math.max(200, Math.min(800, rounded));
   };
 
   // Helper: extract test index number from a test name (e.g., "Practice Test 1" -> 1)
@@ -324,7 +324,7 @@ export default function PracticeTestsPage() {
           <div style={{...styles.mstExplanation, backgroundColor: '#f8fafc', padding: '16px', borderRadius: '8px', marginBottom: '24px'}}>
             <h3 style={{...styles.mstExplanationTitle, fontSize: '18px', color: '#0f172a', marginBottom: '10px'}}>About Multistage Adaptive Testing (MST)</h3>
             <p style={{...styles.mstExplanationText, fontSize: '14px', color: '#334155', marginBottom: '12px'}}>
-              The PSAT uses a multistage adaptive testing approach:
+              The SAT uses a multistage adaptive testing approach:
             </p>
             <ol style={{...styles.mstExplanationList, paddingLeft: '20px'}}>
               <li style={{marginBottom: '8px', fontSize: '14px', color: '#334155'}}>You'll first complete <strong>Module 1</strong> with questions of mixed difficulty.</li>
@@ -441,9 +441,9 @@ export default function PracticeTestsPage() {
       
       <div style={styles.content}>
         <div style={styles.mainSection}>
-          <h1 style={styles.pageTitle}>PSAT Practice Tests</h1>
+          <h1 style={styles.pageTitle}>SAT Practice Tests</h1>
           <p style={styles.pageDescription}>
-            Take full-length adaptive PSAT practice tests that simulate the real testing experience. Each section (Reading & Writing, Math) is scored 160-760. Your total PSAT score is the sum (320-1520). The National Merit Score Index (NMSI) is calculated from your section scores and is used to determine eligibility for the National Merit Scholarship. You can take sections separately, but only paired completions (e.g., RW 1 & Math 1, RW 2 & Math 2) produce a Total and NMSI for the table below.
+            Take full-length adaptive SAT practice tests that simulate the real testing experience. Each section (Reading & Writing, Math) is scored 200-800. Your total SAT score is the sum (400-1600). You can take sections separately, and your performance on Module 1 determines whether you receive a harder or easier Module 2, which affects your final score calculation.
           </p>
           <div style={styles.testTypes}>
             <div
@@ -690,7 +690,7 @@ export default function PracticeTestsPage() {
                     const module1Correct = module1Score !== 'N/A' ? Math.round((module1Score / 100) * module1Total) : 0;
                     const module2Correct = module2Score !== 'N/A' ? Math.round((module2Score / 100) * module2Total) : 0;
                     
-                    const psatSectionScore = calculatePSATSectionScore(module1Correct + module2Correct, module1Total + module2Total);
+                    const satSectionScore = calculateSATSectionScore(module1Correct + module2Correct, module1Total + module2Total);
                     
                     return (
                       <div 
@@ -726,7 +726,7 @@ export default function PracticeTestsPage() {
                               justifyContent: 'center',
                               minWidth: '90px',
                             }}>
-                              {psatSectionScore}/760
+                              {satSectionScore}/800
                             </div>
                           </div>
                           <div style={{fontSize: '14px', color: '#64748b', marginBottom: '12px'}}>
@@ -855,7 +855,7 @@ export default function PracticeTestsPage() {
           </div>
 
           {/* PSAT Scores & NMSI Summary */}
-          <div style={{...styles.testHistorySection, backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)', marginTop: '16px'}}>
+          {/* <div style={{...styles.testHistorySection, backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)', marginTop: '16px'}}>
             <h2 style={styles.sectionTitle}>PSAT Scores & NMSI</h2>
             <div style={{ fontSize: '14px', color: '#475569', marginBottom: '12px', lineHeight: 1.5 }}>
             </div>
@@ -917,7 +917,7 @@ export default function PracticeTestsPage() {
                 }
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

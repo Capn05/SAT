@@ -927,7 +927,7 @@ function PracticeTestContent() {
                   {showReferenceSheet && (
                     <div style={styles.referenceSheetPanel}>
                       <div style={styles.desmosPanelHeader}>
-                        <span style={styles.desmosPanelTitle}>PSAT Math Reference Sheet</span>
+                        <span style={styles.desmosPanelTitle}>SAT Math Reference Sheet</span>
                         <button
                           style={styles.desmosPanelCloseButton}
                           onClick={() => setShowReferenceSheet(false)}
@@ -939,7 +939,7 @@ function PracticeTestContent() {
                       <div style={styles.referenceSheetContent}>
                         <img 
                           src="/assets/images/free-sat-math-worksheet-19.png"
-                          alt="PSAT Math Reference Sheet" 
+                          alt="SAT Math Reference Sheet" 
                           style={styles.referenceSheetImage}
                           onError={(e) => {
                             console.error('Failed to load reference sheet image');
