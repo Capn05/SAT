@@ -1,0 +1,352 @@
+[
+  {
+    "id": 105500,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "Text 1\n\n Classical economic theory suggests that minimum wage laws can lead to unemployment. According to this view, when a minimum wage is set above the market equilibrium wage, employers will hire fewer workers because the cost of labor has increased. This theory emphasizes the supply and demand dynamics in the labor market. \n \n Text 2\n \n  A 2019 study by economists Arindrajit Dube, T. William Lester, and Michael Reich, analyzing minimum wage increases in several US cities, found “no evidence of job losses” and even observed “modest wage increases for low-wage workers.” The study used a difference-in-differences approach to compare employment trends in cities that raised their minimum wage with those that did not.  \n  <br>\n\n  Based on the texts, how would the author of Text 1 most likely respond to the findings of the study described in Text 2?\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1055000,
+        "label": "Dismiss it as limited in scope because the study focuses on specific cities rather than the national economy, which is the proper scale for economic analysis.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1055001,
+        "label": "Question its methodology, arguing that difference-in-differences approaches are inherently unreliable for isolating the impact of minimum wage policies.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1055002,
+        "label": "Recognize it as presenting a challenge to the traditional economic theory described in Text 1, suggesting that the theory may not fully account for real-world complexities.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1055003,
+        "label": "Accept it as potentially demonstrating short-term effects of minimum wage, while still maintaining that long-term consequences will ultimately align with classical economic predictions.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 249179,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "Text 1  \n\nStudies have consistently shown a correlation between increased screen time and decreased attention spans in adolescents.  Researchers hypothesize that the constant barrage of rapidly changing stimuli on digital devices overloads developing neural pathways, hindering the ability to sustain focused attention on a single task.  This suggests a direct causal link: the more time young people spend engaging with screens, the less capable they become of deep, sustained concentration.  \n\nText 2\n\n  While concerns about screen time and attention spans are prevalent, recent research indicates a more nuanced relationship.  A study using EEG measurements found that while prolonged screen exposure *can* lead to attentional shifts, these shifts are primarily towards *selective* attention—the ability to filter out distractions and focus on relevant information within a complex environment. This suggests that screen time may not diminish overall attention, but rather reshape attentional skills in adaptive ways for the digital age. \n  <br>\n\n   Based on the texts, how would the author of Text 2 most likely respond to the assertion in Text 1 that increased screen time directly causes a decrease in the capacity for sustained concentration?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2491790,
+        "label": "By suggesting that the prevailing view overlooks critical societal factors that contribute to economic inequality.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2491791,
+        "label": "By conceding that market forces are the primary drivers of economic inequality, but acknowledging minor social influences.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2491792,
+        "label": "By arguing that individual skills and productivity are ultimately shaped by social structures and institutions.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2491793,
+        "label": "By supporting the prevailing view and further emphasizing the importance of individual skills in a competitive economy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 436193,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "#### Text 1  \n\nIn a 2022 study, Castillo and Schmidt analyzed data from 150 participants and concluded that increased exposure to blue light from electronic devices in the hours before sleep significantly reduces melatonin production, disrupting circadian rhythms. They reported an average melatonin reduction of 20% in participants exposed to blue light for two hours before bedtime, compared to a control group with no blue light exposure.  \n### Text 2  \n\nHowever, a meta-analysis conducted by Anya Sharma in 2023, encompassing 500 participants across five independent studies, found a weaker correlation between evening blue light exposure and melatonin suppression. Sharma’s analysis indicated an average melatonin reduction of only 8% across all studies, and concluded that factors such as individual light sensitivity and screen brightness levels are likely more significant determinants of melatonin levels than simply the presence of blue light itself. \n<br>\n\n Based on the texts, how would Sharma likely respond to Castillo and Schmidt’s findings, as presented in Text 1?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4361930,
+        "label": "By questioning whether Castillo and Schmidt accounted for variations in participants' pre-existing melatonin levels.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4361931,
+        "label": "By suggesting that Castillo and Schmidt's study overemphasized the magnitude of blue light's impact on melatonin production.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4361932,
+        "label": "By supporting Castillo and Schmidt's focus on the disruption of circadian rhythms due to electronic device use.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4361933,
+        "label": "By recommending that Castillo and Schmidt expand their research to include a larger sample size of participants.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 626507,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "#### Text 1  \n\nIn 2023, the city of Oakhaven implemented a congestion pricing system for vehicles entering the downtown area during peak hours.  Initial data suggested a 15% reduction in traffic volume within the zone.  While proponents lauded this as a success in easing gridlock, critics pointed to the increased traffic congestion on roads just outside the pricing zone and argued that the system merely shifted, rather than solved, the problem.  Furthermore, local businesses within the downtown area reported a slight decrease in foot traffic during the initial months following implementation. \n\n #### Text 2  \n \n Many urban centers grapple with traffic congestion, and congestion pricing is often proposed as a solution.  While the Oakhaven example demonstrates a reduction in downtown traffic, a truly effective system must consider the broader transportation network.  A successful congestion pricing strategy requires investment in public transportation and alternative routes to accommodate displaced traffic.  Additionally, mitigating any negative economic impact on businesses within the priced zone through targeted support programs is crucial for the long-term viability of such initiatives.  \n <br>\n\n Based on the texts, the authors would most likely agree with which statement about congestion pricing systems like the one in Oakhaven?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6265070,
+        "label": "Congestion pricing is ultimately ineffective because it only redistributes traffic congestion to other areas.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6265071,
+        "label": "The primary goal of congestion pricing should be to generate revenue for city infrastructure improvements.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6265072,
+        "label": "Implementing congestion pricing requires careful planning and consideration of various factors beyond just reducing downtown traffic.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6265073,
+        "label": "Local businesses generally benefit from congestion pricing due to reduced traffic and improved accessibility for customers.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 627963,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "Text 1: \n\nThe conventional wisdom in the early 20th century held that improvements in technology and industrial efficiency would inevitably lead to greater leisure time for workers.  Economists and social commentators predicted a future where people would work fewer hours and have more time for recreation and personal pursuits. This optimistic view was rooted in the belief that technological advancements would drastically reduce the labor required for production.  \n\nText 2:\n\nDespite significant technological advancements and increased industrial efficiency over the past century, many workers today report feeling more time-constrained and stressed than ever before.  Studies show that while productivity has increased, so too has the pace of work, often leading to longer workdays and the blurring of lines between professional and personal life. This phenomenon challenges the earlier predictions of a leisure-filled future, suggesting that technology, while increasing efficiency, may also intensify work culture.  \n<br>\n\nBased on the texts, how would the author of Text 1 most likely respond to the findings and observations presented in Text 2?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6279630,
+        "label": "By arguing that the data in Text 2 is likely flawed and does not accurately reflect the overall increase in leisure time for the average worker.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6279631,
+        "label": "By suggesting that unforeseen societal or economic factors have counteracted the expected leisure-enhancing effects of technological progress.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6279632,
+        "label": "By maintaining that the predictions were fundamentally correct, and that the perceived lack of leisure is merely a subjective feeling rather than an objective reality.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6279633,
+        "label": "By conceding that while technology has increased efficiency, its primary effect has been to redistribute labor rather than reduce its overall demand.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 745270,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "**Text 1** \n\nStudies suggest that social media platforms, with their algorithms prioritizing user engagement, contribute to political polarization. These algorithms often create 'echo chambers' where users are primarily exposed to information confirming their existing beliefs, reinforcing extreme viewpoints and limiting exposure to diverse perspectives.  \n\n**Text 2** \n\nWhile acknowledging the potential for social media algorithms to create echo chambers, some researchers argue that these platforms also increase exposure to a wider range of political content than traditional media. The vast and interconnected nature of social networks, combined with user agency in choosing whom to follow, can inadvertently expose individuals to diverse viewpoints, even if algorithms initially prioritize similar content.  \n<br>\n\nBased on the texts, how would the author of Text 2 most likely characterize the view presented in Text 1?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7452700,
+        "label": "By suggesting that it oversimplifies the complex ways social media users encounter political information",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7452701,
+        "label": "By endorsing it as consistent with findings about the effects of algorithms on online discourse",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7452702,
+        "label": "By dismissing it as failing to account for users' conscious choices in online interactions",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7452703,
+        "label": "By questioning its focus on algorithms rather than on the intentions of social media companies",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 788916,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "**Text 1**  \n\nThe conventional wisdom in urban planning has long favored maximizing green spaces within cities, assuming that more greenery automatically translates to greater well-being for residents. Parks, gardens, and tree-lined streets are seen as essential for improving air quality, reducing urban heat island effects, and providing recreational opportunities.  Therefore, many city development plans prioritize increasing the total acreage of green spaces, believing that *a simple increase in green space acreage directly and proportionally enhances urban livability*.\n\n  **Text 2**  \n  \n  Recent research in environmental psychology suggests that the relationship between urban green space and well-being is more complex than previously thought.  A study by Dr. Lena Chang and colleagues found that the *quality* and accessibility of green spaces are far more critical to resident well-being than the sheer quantity.  Their findings indicate that small, well-maintained pocket parks and accessible green streets in residential areas contribute more significantly to residents' perceived quality of life than large, but distant or poorly maintained, urban parks.  \n  <br>\n\n  Based on the texts, what would the researchers in Text 2 most likely say about the claim underlined in Text 1?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7889160,
+        "label": "It is fundamentally accurate, as expanding green space acreage remains the most straightforward method for improving urban environments.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7889161,
+        "label": "It is partially correct but overly simplistic, because the quality and accessibility of green spaces are equally important factors.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7889162,
+        "label": "It is entirely misleading, because studies show that increased green space acreage has no discernible impact on urban residents' well-being.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7889163,
+        "label": "It is irrelevant to current urban planning debates, because the focus has already shifted to prioritizing the quality of green spaces over quantity.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 862669,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "### Text 1  \n\nPublic transportation systems in urban areas are often criticized for being inefficient and unreliable.  Critics point to frequent delays, overcrowding, and disruptions as major drawbacks.  Furthermore, the cost of maintaining these systems is substantial, often requiring significant public funding that could be allocated to other essential services.  Ultimately, reliance on personal vehicles, despite their environmental impact, remains a more practical and convenient option for many city dwellers.  \n\n### Text 2  \n\nWhile acknowledging the challenges faced by public transportation, proponents emphasize its crucial role in fostering sustainable and equitable urban development.  Efficient public transit reduces traffic congestion and air pollution, contributing to a healthier environment for everyone.  Moreover, it provides essential mobility for low-income residents who may not be able to afford private vehicles, thereby promoting social equity.  Investing in and improving public transportation is therefore a vital step towards creating more livable and inclusive cities. \n<br>\n\n Based on the texts, how would the author of Text 2 most likely respond to the overall argument presented in Text 1?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8626690,
+        "label": "By conceding that public transportation faces challenges but highlighting its broader societal benefits that Text 1 overlooks.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8626691,
+        "label": "By arguing that the criticisms in Text 1 are entirely unfounded and that public transportation systems are universally efficient and reliable.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8626692,
+        "label": "By suggesting that the author of Text 1 focuses too much on the financial costs of public transportation and not enough on the economic benefits.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8626693,
+        "label": "By agreeing with Text 1 that personal vehicles are ultimately a more practical solution for urban transportation despite environmental concerns.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 877483,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "**Text 1**  \n\nOver the past decade, urban beekeeping has seen a surge in popularity. Advocates cite its potential to increase local honey production and pollinator populations within city limits. Moreover, beekeeping can serve as an educational tool, connecting urban dwellers to the natural world and promoting environmental awareness. \n\n **Text 2**  \n \n While urban beekeeping offers certain benefits, it also presents challenges. Densely populated urban environments can limit available forage for bees, potentially leading to competition with native pollinators. Furthermore, the high concentration of beehives in urban areas increases the risk of disease transmission among bee colonies and may raise concerns about human-bee interactions.  \n <br>\n\n Based on the texts, both authors would most likely agree with which statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8774830,
+        "label": "Urban beekeeping is unequivocally beneficial for both honey production and native pollinator populations.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8774831,
+        "label": "Urban beekeeping presents both potential advantages and notable disadvantages.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8774832,
+        "label": "The risks associated with urban beekeeping outweigh any potential benefits it may offer.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8774833,
+        "label": "Educational initiatives are the primary justification for promoting urban beekeeping.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 878678,
+    "subject_id": 2,
+    "domain_id": 5,
+    "subcategory_id": 20,
+    "difficulty": "Medium",
+    "question_text": "#### Text 1  \n\nEconomist Anya Petrova argues that increased automation in manufacturing will inevitably lead to widespread job displacement across various sectors. Petrova's analysis suggests that while automation may boost productivity and reduce costs for businesses, the societal cost of mass unemployment will outweigh these benefits, leading to economic instability and increased social inequality. \n\n### Text 2  \n\nTechnology analyst Kenji Tanaka acknowledges the potential for job displacement due to automation. However, Tanaka contends that historical trends indicate that technological advancements ultimately create more jobs than they eliminate.  New industries and roles emerge, requiring different skill sets.  Furthermore, Tanaka points out that automation can free human workers from repetitive and dangerous tasks, allowing them to focus on more creative and intellectually stimulating endeavors.  \n<br>\n\nBased on the texts, how would the author of Text 2 most likely respond to Petrova's claim in Text 1 regarding the *societal cost* of automation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8786780,
+        "label": "The long-term economic benefits of automation will eventually mitigate any initial social costs.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8786781,
+        "label": "Petrova's analysis fails to consider the ethical implications of prioritizing profit over employment.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8786782,
+        "label": "Automation will primarily impact low-skill jobs, leaving higher-skilled workers largely unaffected.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8786783,
+        "label": "Governments should implement policies to retrain workers and manage the transition to an automated economy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

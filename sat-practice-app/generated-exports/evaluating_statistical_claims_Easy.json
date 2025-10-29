@@ -1,0 +1,72 @@
+[
+  {
+    "id": 32350,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Easy",
+    "question_text": "The principal of a high school wants to determine if students would prefer a new lunch menu. The principal surveys $200$ students who are members of the school's sports teams. The survey results show that a large majority of the surveyed students prefer the new lunch menu. Which of the following is true about the principal's survey?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 323500,
+        "label": "It accurately represents the preferences of all students at the high school regarding the new lunch menu.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 323501,
+        "label": "The survey would be more representative if it included a larger number of students from the sports teams.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 323502,
+        "label": "To reduce bias, the survey should only include students who bring lunch from home.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 323503,
+        "label": "The survey is biased because the sample population is not representative of the entire student body.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 842299,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Easy",
+    "question_text": "A pharmaceutical company conducted a study on a new allergy medication. They randomly selected $150$ patients diagnosed with seasonal allergies. After taking the medication for two weeks, $80\\%$ of the patients reported a significant reduction in their allergy symptoms. Which of the following inferences is most appropriately drawn from this study result?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8422990,
+        "label": "Approximately 80% of people taking allergy medication will experience symptom relief.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8422991,
+        "label": "Approximately 80% of people with seasonal allergies will experience symptom relief from this medication.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8422992,
+        "label": "Approximately 80% of people with severe seasonal allergies will experience symptom relief from this medication.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8422993,
+        "label": "Approximately 20% of people with seasonal allergies will experience symptom relief from this medication.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

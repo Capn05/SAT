@@ -1,0 +1,1087 @@
+[
+  {
+    "id": 3620,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching renewable energy sources, a student has taken the following notes:  \n*   Solar energy is harnessed using photovoltaic panels that convert sunlight into electricity. \n*    Wind energy is captured by wind turbines, which use wind to generate electricity. \n*    Hydropower relies on dams to control water flow and generate electricity from turbines. \n*    Geothermal energy utilizes heat from the Earth's interior to produce steam, which drives turbines to generate electricity.  \n<br>The student wants to emphasize a common mechanism shared by wind, hydropower, and geothermal energy sources in generating electricity. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 36200,
+        "label": "Wind, hydropower, and geothermal energy all use turbines to generate electricity.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 36201,
+        "label": "While solar energy directly converts sunlight, wind, hydropower, and geothermal energy rely on indirect methods.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 36202,
+        "label": "Hydropower uses dams, geothermal uses Earth's heat, and wind uses turbines to create electricity.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 36203,
+        "label": "Renewable energy sources like wind, water, and geothermal are becoming increasingly important.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 10116,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of coffee cultivation, a student has taken the following notes:  \n- Coffee plants originated in Ethiopia and Sudan. \n-  By the 16th century, coffee cultivation had spread to Yemen. - In the 17th century, coffee was introduced to India. \n- Coffee cultivation in the Americas began in the 18th century with plantations in the Caribbean and South America. \n- Today, coffee is cultivated in over 50 countries worldwide. \n\n<br>\nThe student wants to describe the global spread of coffee cultivation over time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 101160,
+        "label": "Originating in Ethiopia and Sudan, coffee cultivation spread to Yemen by the 16th century, then to India in the 17th century, and finally to the Americas in the 18th century before becoming a global crop cultivated in over 50 countries today.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 101161,
+        "label": "Coffee plants, which originated in Ethiopia and Sudan, are now cultivated in over 50 countries worldwide, including the Americas, where plantations were established in the 18th century.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 101162,
+        "label": "In the 16th century, coffee cultivation was present in Yemen, and by the 17th and 18th centuries, it had reached India and the Americas, respectively.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 101163,
+        "label": "The global spread of coffee cultivation began in the 18th century in the Americas, after originating in Ethiopia and Sudan, and then moving to Yemen and India.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 47883,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching a newly discovered plant species, a student has taken the following notes:  \n- Botanist Dr. Anya Sharma collected plant samples in the Amazon rainforest in 2022. \n- One sample exhibited unique leaf structures and flower colors not seen in known species. \n- Back in the lab, DNA analysis showed the sample's genetic makeup was distinct from any existing plant in the database. \n- Sharma published her findings in a peer-reviewed journal, proposing the sample represents a new species, *Amazonia mirabilis*. \n- Other botanists are now conducting field studies to verify Sharma's findings in their own research.\n\n<br>\nThe student wants to emphasize the initial evidence that led Dr. Sharma to believe she had discovered a new plant species. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 478830,
+        "label": "Dr. Sharma's belief that she had found a new plant species was initially based on the Amazon sample's unique leaf structures and flower colors, which were later confirmed by DNA analysis.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 478831,
+        "label": "Though DNA analysis confirmed the plant sample was unique, Dr. Sharma's publication of her findings in a peer-reviewed journal was the most significant step in identifying *Amazonia mirabilis*.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 478832,
+        "label": "Dr. Sharma collected plant samples in the Amazon in 2022, and after conducting DNA analysis in the lab, she determined that one sample was a new species.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 478833,
+        "label": "The discovery of *Amazonia mirabilis*, a new plant species, involved field work in the Amazon, lab analysis, and eventual verification by other botanists.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 73011,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching sustainable farming practices, a student took the following notes:  \n*   Crop rotation involves planting different crops sequentially on the same plot of land to improve soil health. \n*   Monoculture, the practice of growing a single crop repeatedly, can deplete soil nutrients. \n*   Legumes, like beans and clover, are often used in crop rotation because they fix nitrogen in the soil. \n*   Nitrogen is an essential nutrient for plant growth.\n*   Healthy soil reduces the need for synthetic fertilizers. \n\n<br>\nThe student wants to explain how crop rotation can reduce the need for synthetic fertilizers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 730110,
+        "label": "Crop rotation, which involves planting different crops sequentially, helps improve soil health, reducing the need for synthetic fertilizers.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 730111,
+        "label": "Monoculture depletes soil nutrients, but crop rotation, especially with legumes, can help.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 730112,
+        "label": "Legumes like beans and clover are used in crop rotation because they fix nitrogen, an essential nutrient for plant growth.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 730113,
+        "label": "By planting different crops like legumes, crop rotation improves soil health and makes it unnecessary to grow a single crop repeatedly.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 74589,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching urban green spaces, a student has taken the following notes:  \n- A 2022 study by the National Recreation and Park Association analyzed data from several US cities. \n- The study examined the relationship between the size of urban parks and nearby property values. \n- Researchers found that homes located within 0.25 miles of a large park (over 10 acres) had significantly higher market values. - Homes within 0.25 miles of parks smaller than 5 acres showed no statistically significant increase in value. \n- The study concluded that larger urban parks contribute more to increasing property values than smaller parks.\n\n<br>\nThe student wants to summarize the study's main finding. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 745890,
+        "label": "According to a 2022 study, larger urban parks, specifically those over 10 acres, have a greater positive impact on nearby property values than smaller parks.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 745891,
+        "label": "Researchers at the National Recreation and Park Association conducted a study in 2022 to investigate the impact of urban parks on home prices.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 745892,
+        "label": "The study analyzed property values of homes located near urban parks of different sizes, from under 5 acres to over 10 acres.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 745893,
+        "label": "Data from several US cities were used in the study to determine if there was a relationship between park size and property values.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 78904,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of urban green spaces, a student has taken the following notes:  \n*   Urban green spaces, such as parks and gardens, are areas with vegetation in cities. \n*   Studies show that access to urban green spaces is correlated with improved mental well-being for city residents. \n*   Green spaces offer opportunities for physical activity, stress reduction, and social interaction. \n*   Urban green spaces can mitigate the urban heat island effect, lowering temperatures in cities. \n*   Some cities are incorporating green roofs and vertical gardens into urban planning to increase green space. \n<br>\nThe student wants to emphasize the multifaceted benefits of urban green spaces. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 789040,
+        "label": "Urban green spaces, including parks and green roofs, not only improve mental well-being but also offer opportunities for physical activity and reduce urban temperatures.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 789041,
+        "label": "To combat the urban heat island effect and improve residents' mental well-being, cities are incorporating green roofs and vertical gardens into urban planning.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 789042,
+        "label": "Studies show that while urban green spaces are areas with vegetation, they are crucial for physical activity, social interaction, and mitigating heat in cities.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 789043,
+        "label": "Offering opportunities for stress reduction and social interaction, urban green spaces are increasingly being recognized for their role in improving mental well-being and lowering urban temperatures.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 146517,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of artificial sweeteners on health, a student has taken the following notes:  \n- Artificial sweeteners are synthetic or refined sugar substitutes.  \n- They are used in many food and beverage products to provide sweetness without added calories from sugar. \n- Some studies suggest a correlation between artificial sweetener consumption and changes in gut bacteria. \n- Gut bacteria play a role in digestion, nutrient absorption, and immune function. \n- Changes in gut bacteria composition may have various health implications, but more research is needed.\n\n<br>\nThe student wants to introduce the topic of artificial sweeteners by explaining their primary purpose. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1465170,
+        "label": "Artificial sweeteners are synthetic or refined sugar substitutes that are used in food and beverages to modify gut bacteria.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1465171,
+        "label": "Used in numerous products, artificial sweeteners are sugar substitutes created in labs or refined from natural sources.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1465172,
+        "label": "Due to their impact on gut bacteria, artificial sweeteners are being studied for their effects on digestion, nutrient absorption, and immunity.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1465173,
+        "label": "Artificial sweeteners, found in many foods, are sugar substitutes that may lead to changes in the composition of gut bacteria.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 163611,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching urban development, a student has taken the following notes:  \n*   Many cities face challenges related to traffic congestion. \n*   Public transportation systems can help alleviate traffic congestion. \n*   Implementing bus rapid transit (BRT) systems is a cost-effective way to improve public transportation. \n*   BRT systems use dedicated bus lanes to speed up travel times. \n*   Some cities have successfully reduced traffic congestion by implementing BRT systems.  The student wants to emphasize a benefit of BRT systems beyond cost-effectiveness.\n\n<br>\nWhich choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1636110,
+        "label": "Bus rapid transit systems are a form of public transportation that can be implemented in cities.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1636111,
+        "label": "Cities experiencing traffic congestion can consider implementing public transportation solutions.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1636112,
+        "label": "BRT systems, by utilizing dedicated lanes, improve travel times and thus help reduce traffic congestion.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1636113,
+        "label": "Public transportation, including BRT, is becoming increasingly important in modern urban development.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 184113,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching energy consumption, a student has taken the following notes:  \n- The average household electricity consumption in the US is about 900 kWh per month. \n- Heating accounts for the largest portion of household energy use, around 42%. \n- Air conditioning is the second largest energy consumer in households, using about 17% of total energy. \n- Lighting makes up a smaller portion of household energy use, approximately 9%. \n\n<br>\nThe student wants to emphasize the significantly larger proportion of energy used for heating compared to lighting in households. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1841130,
+        "label": "Heating accounts for the largest portion of household energy use, around 42%, while air conditioning uses about 17% of total energy.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1841131,
+        "label": "Household energy consumption in the US is distributed across heating, air conditioning, and lighting.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1841132,
+        "label": "Lighting makes up approximately 9% of household energy use, a smaller portion compared to other uses.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1841133,
+        "label": "While lighting constitutes only about 9% of household energy consumption, heating accounts for a much larger 42%.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 224615,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of coffee, a student has taken the following notes:  \n*   Coffee beans are believed to have been discovered in Ethiopia. \n*   Yemen was one of the earliest places where coffee was cultivated commercially. \n*   By the 16th century, coffee was popular in Persia, Egypt, Syria, and Turkey. \n*   European travelers to the Near East brought coffee back to Europe in the 17th century. \n*   Coffeehouses became important social and cultural hubs in European cities.  \n\n<br>\nThe student wants to emphasize the role of European travelers in the spread of coffee. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2246150,
+        "label": "Coffee cultivation started in Yemen, and by the 16th century, coffee had become popular in various countries in the Near East.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2246151,
+        "label": "Originating in Ethiopia, coffee's popularity spread to Persia, Egypt, Syria, and Turkey by the 16th century.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2246152,
+        "label": "Coffee, initially popular in the Near East, was introduced to Europe in the 17th century by European travelers.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2246153,
+        "label": "Coffeehouses in European cities became centers of social life after coffee was brought to Europe from the Near East.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 231351,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching different communication technologies, a student has taken the following notes:  \n*   Postal mail involves physically transporting letters and packages. \n*   Postal mail has been used for centuries to send personal and business correspondence. \n*   Email uses digital networks to transmit messages electronically. \n*   Email became widely adopted in the late 20th century. \n*   Instant messaging (IM) also uses digital networks for real-time text-based communication. \n*   IM became popular with the rise of the internet and mobile devices.  The student wants to emphasize the difference in speed between postal mail and instant messaging.\n\n<br>\nWhich choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2313510,
+        "label": "Communication technologies have evolved over time, with postal mail being a traditional method and email and instant messaging being more recent digital forms.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2313511,
+        "label": "Both postal mail and instant messaging are used for communication, but they differ in that postal mail is for correspondence while instant messaging is for quick chats.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2313512,
+        "label": "Unlike postal mail, which requires the physical transportation of messages and has been used for centuries, instant messaging utilizes digital networks for real-time communication and is a more recent development.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2313513,
+        "label": "Email is another digital communication method that, like instant messaging, uses networks to send messages but was adopted earlier than instant messaging.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 279080,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of urbanization on local ecosystems, a student has taken the following notes:  \n*   Urban green spaces, like parks and gardens, help mitigate the heat island effect in cities. \n*   These green spaces also support biodiversity by providing habitats for various species. \n*   A study in Chicago found that community gardens significantly increased insect diversity compared to surrounding paved areas. \n*   Increased insect diversity in urban gardens can lead to better pollination and natural pest control. \n*   These ecological benefits contribute to the overall resilience of urban ecosystems.  The student wants to emphasize the ecological advantages of community gardens to an audience already aware of the general benefits of urban green spaces. \n\n<br>\nWhich choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2790800,
+        "label": "Community gardens in Chicago, as highlighted by a study, increase insect diversity, which is one of the ecological benefits of urban green spaces that help mitigate the heat island effect.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2790801,
+        "label": "Compared to paved areas, community gardens in Chicago have significantly higher insect diversity, leading to improved pollination and pest control, as demonstrated by a recent study.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2790802,
+        "label": "Urban green spaces, including community gardens, are known to support biodiversity and mitigate heat island effects, and a Chicago study focused on insect diversity in these areas.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2790803,
+        "label": "A recent study found that urban ecosystems, especially community gardens in cities like Chicago, benefit from increased insect diversity, contributing to pollination and natural pest control.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 330722,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of aviation, a student has taken the following notes:  \n* Amelia Earhart was a famous aviator. \n* She attempted to fly around the world. \n* Earhart disappeared in 1937 during her attempt. \n* Her plane was a Lockheed Electra\n\n<br>The student wants to specify when Amelia Earhart disappeared. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3307220,
+        "label": "Amelia Earhart, who was flying a Lockheed Electra, disappeared in 1937 while attempting to fly around the world.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3307221,
+        "label": "In 1937, Amelia Earhart disappeared; she was a famous aviator.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3307222,
+        "label": "Amelia Earhart disappeared while attempting to fly around the world and was a famous aviator.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3307223,
+        "label": "Earhart, flying a Lockheed Electra, was a famous aviator who attempted an around-the-world flight.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 372488,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of electric lighting, a student has taken the following notes:  \n* Thomas Edison patented the first commercially viable incandescent light bulb. \n* Edison's patent was filed in 1879. \n* Joseph Swan also developed a working incandescent bulb independently. \n* Swan began installing electric lighting in homes in 1881.  \n\n<br>\nThe student wants to emphasize the chronological order of Edison's and Swan's contributions. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3724880,
+        "label": "Thomas Edison patented the incandescent light bulb in 1879, and Joseph Swan began installing electric lighting in homes in 1881.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3724881,
+        "label": "Joseph Swan began installing electric lighting in homes in 1881, while Thomas Edison patented the incandescent light bulb.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3724882,
+        "label": "Thomas Edison and Joseph Swan both contributed to the development of the incandescent light bulb in the late 19th century.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3724883,
+        "label": "In the late 1800s, Thomas Edison patented the incandescent light bulb and Joseph Swan began installing electric lighting.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 390218,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching urban planning, a student has taken the following notes:  \n*   Urban green spaces include parks, gardens, and tree-lined streets in cities. \n*   They provide numerous benefits for city residents. \n*   These spaces improve air quality by absorbing pollutants. \n*   They help reduce the urban heat island effect, making cities cooler. \n*   Green spaces also offer recreational areas and promote physical and mental well-being.  \n\n<br>\nThe student wants to introduce the concept of urban green spaces to a new audience. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3902180,
+        "label": "Urban green spaces, encompassing parks, gardens, and tree-lined streets in cities, are vital as they improve air quality, reduce urban heat, and provide recreational areas that enhance residents' well-being.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3902181,
+        "label": "Urban green spaces are defined by the presence of parks, gardens, and tree-lined streets within cities.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3902182,
+        "label": "Urban green spaces are important because they improve air quality by absorbing pollutants in urban areas.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3902183,
+        "label": "Urban green spaces offer benefits such as improved air quality, reduced heat, and areas for recreation and well-being.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 398467,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of social media on political campaigns, a student has taken the following notes:  \n*   Political campaigns increasingly use social media platforms like Twitter and Facebook. \n*   In the 2008 US presidential election, Barack Obama's campaign effectively utilized social media for fundraising and grassroots organizing. \n*   Social media allows campaigns to directly communicate with voters and bypass traditional media outlets. \n*   Studies show that social media engagement correlates with increased voter turnout, especially among younger demographics. \n*   Misinformation can spread rapidly on social media, posing a challenge for campaigns to control their message.  \n\n<br>The student wants to make and support a generalization about the role of social media in political campaigns. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3984670,
+        "label": "Barack Obama's 2008 campaign demonstrated the effectiveness of social media for fundraising and grassroots organizing, a strategy now widely adopted.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3984671,
+        "label": "Social media's role in political campaigns is primarily to bypass traditional media and communicate directly with voters.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3984672,
+        "label": "Although challenges like misinformation exist, social media has become an important tool in modern political campaigns for direct voter communication, fundraising, and increasing voter turnout, particularly among younger people.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3984673,
+        "label": "Political campaigns use social media because studies show it increases voter turnout and allows them to fundraise more effectively than traditional methods.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 412344,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of social media on political discourse, a student has taken the following notes:  \n*   Social media platforms allow for rapid dissemination of political information. \n*   These platforms often prioritize engagement, sometimes at the expense of factual accuracy. \n*   Misinformation and emotionally charged content can spread quickly on social media. \n*   Studies suggest that online echo chambers can reinforce existing political beliefs.  \n\n<br>\nThe student wants to emphasize a potential negative consequence of social media's influence on political discourse. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4123440,
+        "label": "Social media platforms facilitate the rapid spread of political information, both accurate and inaccurate.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4123441,
+        "label": "The design of social media algorithms to maximize user engagement can inadvertently contribute to the spread of political misinformation.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4123442,
+        "label": "Studies show that online echo chambers on social media reinforce users' pre-existing political beliefs.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4123443,
+        "label": "Political information, including misinformation and emotionally charged content, is readily available on social media.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 458996,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching Gross Domestic Product (GDP), a student has taken the following notes:\n\n* Gross Domestic Product (GDP) is a fundamental measure in economics.\n* GDP represents the total monetary value of all finished goods and services produced within a country's borders during a specific period, typically a year.\n* Economists use different approaches to calculate GDP, including the expenditure approach.\n* The expenditure approach formula is: GDP = C + I + G + NX (where C=Consumption, I=Investment, G=Government Spending, NX=Net Exports).\n* For example, a family buying a new refrigerator counts as consumption (C) and increases GDP.\n* Government investment in infrastructure projects like building a new highway is categorized as government spending (G) and also contributes to GDP.\n* Activities like unpaid volunteer work or household chores are not included in GDP calculations as they are not market transactions.\n\nThe student wants to illustrate what kind of economic activity is captured by GDP. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4589960,
+        "label": "GDP is a fundamental measure in economics, representing the total monetary value of goods and services.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4589961,
+        "label": "The expenditure approach to calculating GDP includes consumption, investment, government spending, and net exports.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4589962,
+        "label": "Economists calculate GDP using different approaches, but the expenditure approach includes categories like consumption and government spending.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4589963,
+        "label": "Purchasing a new refrigerator for a household, which is considered consumption, is an example of an activity that contributes to a country's GDP.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 550591,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While preparing a presentation for a community meeting about city planning, a student has taken the following notes:  \n- Urban gardens are small-scale food production in cities. \n- They can be implemented in various urban spaces like rooftops, balconies, and vacant lots. \n- Urban gardens increase access to fresh, healthy produce in food deserts. \n- They can reduce the carbon footprint of food transportation. \n- Community gardens foster social connections and community building. - Studies show urban gardening can improve mental well-being by reducing stress. \n\n<br>The student wants to use these notes to persuade the community meeting attendees to allocate resources for developing community garden projects. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5505910,
+        "label": "Urban gardening projects offer significant advantages for cities by increasing access to fresh produce in underserved areas, lessening food transportation emissions, and strengthening community relationships, thus aligning with key urban sustainability goals.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5505911,
+        "label": "Urban gardens can be implemented in various urban spaces, from rooftops to vacant lots, and they are defined as small-scale food production systems in cities.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5505912,
+        "label": "Improving mental well-being and reducing stress are notable benefits of urban gardening, as studies have demonstrated.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5505913,
+        "label": "Urban gardens are a form of small-scale food production in cities that utilizes various urban spaces to grow food locally.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 582732,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching a presentation on effective communication, a student has taken the following notes:  \n- Clear and concise language is essential for effective communication. \n- Avoiding jargon ensures a wider audience can understand the message. \n- Visual aids, such as charts and graphs, can enhance understanding. \n- Active listening and feedback loops improve communication effectiveness. \n- In a study, presentations using visuals were rated 40% higher in clarity by participants.  \n\n<br>The student wants to emphasize the importance of visual aids in presentations to an audience of fellow students. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5827320,
+        "label": "Effective communication relies on clear language, avoiding jargon, and incorporating active listening techniques.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5827321,
+        "label": "Visual aids like charts and graphs are not just enhancements but crucial tools, as studies show presentations with visuals are rated significantly higher in clarity.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5827322,
+        "label": "To ensure effective communication, one must use clear and concise language, which is often improved by avoiding jargon.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5827323,
+        "label": "While clear language and active listening are important for presentations, visual aids can also be used to enhance audience understanding.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 583652,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching types of investments, a student has taken the following notes:  \n- Stocks represent ownership in a company. \n- Bonds represent a loan made by an investor to a borrower (typically corporate or governmental). \n- Certificates of Deposit (CDs) are savings accounts that hold a fixed amount of money for a fixed period of time and usually offer a fixed interest rate. \n- Real estate involves purchasing property, such as land or buildings.  \n\n<br>\nThe student wants to make a generalization about investment asset classes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5836520,
+        "label": "Examples of investment asset classes include stocks, which represent company ownership, and bonds, which represent loans.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5836521,
+        "label": "While CDs are considered low-risk investments, real estate can involve significant capital.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5836522,
+        "label": "Investment asset classes vary in nature, ranging from ownership stakes in companies to loans and physical property.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5836523,
+        "label": "Bonds and CDs are both forms of debt instruments, whereas stocks and real estate are equity-based investments.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 639650,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching types of investments, a student has taken the following notes:  \n- Stocks represent ownership in a company. \n- Bonds represent a loan made by an investor to a borrower (typically corporate or governmental). \n- Certificates of Deposit (CDs) are savings accounts that hold a fixed amount of money for a fixed period of time and usually offer a fixed interest rate. \n- Real estate involves purchasing property, such as land or buildings.  \n\n<br>\nThe student wants to make a generalization about investment asset classes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6396500,
+        "label": "Cityville's population grew from 50,000 in 1950 to 300,000 in 2020, with slower growth after 2000.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6396501,
+        "label": "Experiencing significant suburban expansion, Cityville's population increased from 50,000 residents in 1950 to 250,000 residents by 2000, its period of most rapid growth.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6396502,
+        "label": "Between 2000 and 2020, Cityville's population grew to 300,000 residents, a slower pace compared to the previous fifty years.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6396503,
+        "label": "Increased housing costs coincided with a population of 300,000 residents in Cityville by 2020, following a period of suburban expansion.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 644265,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the economic impact of ride-sharing services, a student has taken the following notes:  \n- In major cities, ride-sharing services like Uber and Lyft have become popular transportation options. \n- Traditional taxi services often required phone calls for booking and had fixed routes. \n- Ride-sharing apps allow users to book rides instantly via smartphones and track drivers in real-time. \n- Studies show that the convenience of ride-sharing has led to a decrease in taxi usage in urban areas. \n- However, taxi services often provide more wheelchair-accessible vehicles than ride-sharing services.  \n\n<br>\nThe student wants to emphasize a key difference in accessibility between traditional taxi services and ride-sharing services. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6442650,
+        "label": "While ride-sharing services offer the convenience of smartphone booking and real-time tracking, traditional taxi services often provide more wheelchair-accessible vehicles.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6442651,
+        "label": "Ride-sharing services have become popular in major cities, but traditional taxi services, which often required phone calls for booking, still exist.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6442652,
+        "label": "The rise of ride-sharing apps has led to a decrease in taxi usage, though both offer transportation options in urban areas.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6442653,
+        "label": "Studies show that ride-sharing is convenient, and traditional taxis are less convenient because they often required phone calls for booking.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752525,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the effectiveness of different fertilizers, a student took the following notes:  \n- Researchers conducted a study comparing a new fertilizer, NitroBoost, to a standard fertilizer on corn yield. \n- The study was conducted across 50 test plots in Iowa. \n- Half of the plots used NitroBoost, and half used the standard fertilizer. \n- Plots using NitroBoost yielded an average of 180 bushels of corn per acre. \n- Plots using the standard fertilizer yielded an average of 150 bushels of corn per acre. \n- NitroBoost showed a 20% increase in corn yield compared to the standard fertilizer.\n- \n<br>\nThe student wants to summarize the study's main finding. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7525250,
+        "label": "Across 50 test plots in Iowa, NitroBoost fertilizer resulted in a 20% increase in corn yield compared to standard fertilizer.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7525251,
+        "label": "Researchers studied corn yields in Iowa and found that some plots yielded 180 bushels per acre while others yielded 150 bushels per acre.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7525252,
+        "label": "NitroBoost fertilizer increased corn yield by 30 bushels per acre compared to standard fertilizer in a study.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7525253,
+        "label": "In Iowa, researchers testing fertilizers found that NitroBoost and standard fertilizer produced different corn yields across 50 test plots.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 763522,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of social media on political discourse, a student has taken the following notes:  \n- Social media platforms allow for rapid dissemination of information. \n- Traditional media outlets often act as gatekeepers, filtering information before it reaches the public. \n- Social media can bypass these gatekeepers, allowing direct communication between individuals and political figures. \n- However, the lack of gatekeepers on social media can also lead to the spread of misinformation. \n- Fact-checking organizations are increasingly working to combat misinformation online. \n\n<br>\nThe student wants to emphasize a potential benefit of social media in political discourse. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7635220,
+        "label": "Traditional media outlets, acting as gatekeepers, often filter information, whereas social media allows rapid dissemination.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7635221,
+        "label": "Social media platforms enable direct communication and bypass traditional media gatekeepers, potentially fostering more direct engagement in political discourse.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7635222,
+        "label": "The rapid dissemination of information on social media, while beneficial, is often counteracted by the spread of misinformation.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7635223,
+        "label": "Despite the efforts of fact-checking organizations, social media's lack of gatekeepers remains a significant problem in political discourse.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 906853,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the impact of technology on social interaction, a student has taken the following notes:  \n*   Dr. Anya Sharma conducted a study on teenagers' use of social media. \n*   Her study found that teenagers who spend more than 3 hours daily on social media report lower levels of face-to-face interaction. \n*   Dr. Ben Carter researched the use of smartphones among adults in the workplace. \n*   His research indicated that adults who rely heavily on smartphones for communication at work experience decreased in-person collaboration. \n\n<br>The student wants to emphasize a similarity between the findings of Sharma and Carter. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9068530,
+        "label": "Sharma focused on teenagers and social media, while Carter studied adults and smartphone use in the workplace.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9068531,
+        "label": "Both Sharma and Carter investigated the effects of technology on communication within different age groups.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9068532,
+        "label": "Sharma's study on teenagers and Carter's research on adults both suggest that heavy technology use is associated with reduced in-person social engagement.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9068533,
+        "label": "The research of Sharma and Carter highlights the increasing role of technology in modern social interactions across various demographics.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 926094,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching different economic models, a student has taken the following notes:  \n- Classical economics emphasizes minimal government intervention and free markets. \n- Keynesian economics advocates for government intervention to manage aggregate demand. \n- Classical economists believe the economy is self-regulating and will naturally return to full employment. \n- Keynesian economists argue that the economy can remain in equilibrium below full employment, necessitating government stimulus. \n\n<br>The student wants to contrast the classical economic view of economic regulation with the Keynesian economic view. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9260940,
+        "label": "Keynesian economics suggests government intervention is sometimes necessary, while classical economics focuses on free markets.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9260941,
+        "label": "Because their approaches to economic regulation differ, it is difficult to reconcile classical and Keynesian economic theories.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9260942,
+        "label": "Classical economics posits that the economy is self-regulating and achieves full employment naturally, a view that contrasts with Keynesian economics.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9260943,
+        "label": "Classical economics views the economy as self-regulating and naturally returning to full employment, in contrast to Keynesian economics, which supports government intervention to manage demand and prevent prolonged unemployment.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 948132,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of personal computers, a student has taken the following notes:  \n- · The Altair 8800, released in 1975, is often considered the first personal computer. \n- · It was sold as a kit and required assembly by the user. \n- · The Apple II, released in 1977, was a fully assembled personal computer. \n- · It was more user-friendly and commercially successful than the Altair 8800. \n- · The IBM PC, released in 1981, became a dominant force in the personal computer market. \n- · The IBM PC architecture influenced the development of many subsequent personal computers.  \n\n<br>The student wants to emphasize the Altair 8800's pioneering role as the first personal computer, while acknowledging its limitations compared to later models. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9481320,
+        "label": "The Altair 8800, Apple II, and IBM PC represent key milestones in the development of personal computers, with each contributing to the evolution of the technology.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9481321,
+        "label": "Although later models like the Apple II and IBM PC became more user-friendly and commercially successful, the Altair 8800, released in 1975 as a kit, is widely regarded as the first personal computer.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9481322,
+        "label": "Released in 1977, the Apple II offered a fully assembled and user-friendly alternative to the Altair 8800, which was released two years earlier and required assembly.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9481323,
+        "label": "The IBM PC, becoming dominant in 1981 and influencing future designs, followed the Altair 8800, which is considered the first personal computer and was released in 1975.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 953018,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the history of book production, a student has taken the following notes:  \n- Johannes Gutenberg completed his first printing press in Europe around 1440. \n- Before the printing press, books were primarily handwritten, a slow and laborious process. \n- The Gutenberg Bible, one of the first books printed using this new technology, was completed around 1455. \n- The printing press drastically increased the speed at which books could be produced and distributed. \n\n<br>The student wants to emphasize the revolutionary impact of Gutenberg's invention on the speed of book production. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9530180,
+        "label": "Gutenberg's printing press, which was completed around 1440, significantly changed how information was shared.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9530181,
+        "label": "The Gutenberg Bible, a famous example of early printed material, was completed around 1455 using the new printing press.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9530182,
+        "label": "Around 1440, Johannes Gutenberg completed his printing press, which greatly increased the speed at which books could be produced and distributed.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9530183,
+        "label": "The printing press, attributed to Johannes Gutenberg and completed around 1440, led to the creation of books such as the Gutenberg Bible around 1455.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 974959,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching renewable energy sources, a student has taken the following notes:  \n- Traditional renewable energy sources like hydropower rely on large dams. \n- Hydropower dams can have significant environmental impacts, such as altering river ecosystems. \n- Geothermal energy uses heat from the Earth's interior. \n- Geothermal power plants can have a smaller footprint and less environmental impact than large dams. \n- Iceland heavily utilizes geothermal energy for heating and electricity. \n\n<br>The student wants to emphasize the environmental benefits of geothermal energy compared to traditional hydropower. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9749590,
+        "label": "Geothermal energy utilizes heat from the Earth's interior and is a significant energy source in Iceland.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9749591,
+        "label": "Unlike traditional hydropower, geothermal energy offers a renewable energy source with a smaller environmental footprint.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9749592,
+        "label": "Hydropower, a traditional renewable energy source relying on dams, can have environmental impacts, while geothermal energy is also renewable.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9749593,
+        "label": "Hydropower is a major renewable energy source worldwide, and geothermal energy is increasingly utilized in regions like Iceland.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 976949,
+    "subject_id": 2,
+    "domain_id": 6,
+    "subcategory_id": 23,
+    "difficulty": "Medium",
+    "question_text": "While researching the decline of honeybee populations, a student has taken the following notes:  \n* Honeybees are important pollinators for many crops. * Neonicotinoids are a class of pesticides widely used in agriculture. \n* Neonicotinoids are systemic and can be present in pollen and nectar. \n* Neonicotinoid exposure impairs honeybee navigation and foraging ability. \n* Colony Collapse Disorder (CCD) is linked to pesticide exposure.\n\n<br>The student wants to explain why honeybee populations are declining. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9769490,
+        "label": "Neonicotinoids, a class of pesticides, are widely used in agriculture and can be present in pollen and nectar.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9769491,
+        "label": "Because neonicotinoid exposure impairs honeybee navigation and foraging, these pesticides may contribute to the decline of honeybee populations.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9769492,
+        "label": "Honeybees are important pollinators and their decline is a serious agricultural concern.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9769493,
+        "label": "Colony Collapse Disorder (CCD), characterized by the disappearance of worker bees, is a symptom of declining honeybee populations.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

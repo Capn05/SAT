@@ -1,0 +1,807 @@
+[
+  {
+    "id": 55000,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "The expression $\\left(\\frac{2}{3}x - \\frac{1}{3}\\right)\\left(\\frac{3}{4}x + \\frac{2}{3}\\right)$ is equivalent to $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 550000,
+        "label": "$\\frac{7}{36}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 550001,
+        "label": "$\\frac{25}{36}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 550002,
+        "label": "$\\frac{1}{36}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 550003,
+        "label": "$\\frac{7}{18}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 146090,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "If the given expression is rewritten in the form $(3x - 2)(x + k)$, where k is a constant, and the expression is $3x^2 + 10x - 8$ what is the value of k?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1460900,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1460901,
+        "label": "3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1460902,
+        "label": "4",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1460903,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 223988,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "If $a = 2x - 1$ and $b = x + 3$, which of the following is equivalent to $2ab - a + 3b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2239880,
+        "label": "$4x^2 + 11x + 6$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2239881,
+        "label": "$4x^2 + 6x + 4$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2239882,
+        "label": "$4x^2 + 11x + 2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2239883,
+        "label": "$4x^2 + 11x + 4$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 279039,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to $12y^3 + 18y^2 - 6y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2790390,
+        "label": "$6y(2y^2 + 3y - 1)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2790391,
+        "label": "$2y(6y^2 + 9y - 1)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2790392,
+        "label": "$3y(4y^2 - 6y + 2)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2790393,
+        "label": "$6(2y^2 + 3y - 1)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 281690,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which expression represents the product of $(2x + 3y)$ and $(x - 4y)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2816900,
+        "label": "$2x^2 + 5xy - 12y^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2816901,
+        "label": "$2x^2 - 11xy - 12y^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2816902,
+        "label": "$2x^2 - 5xy + 12y^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2816903,
+        "label": "$2x^2 - 5xy - 12y^2$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 391996,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is a factor of the polynomial $9x^2 - 12xy + 4y^2$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3919960,
+        "label": "$3x + 2y$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3919961,
+        "label": "$9x - 2y$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3919962,
+        "label": "$3x - 4y$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3919963,
+        "label": "$3x - 2y$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 441768,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is an equivalent form of $(2x-3)^2 - (3x^2-5)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4417680,
+        "label": "$x^2 - 12x + 14$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4417681,
+        "label": "$x^2 - 12x - 4$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4417682,
+        "label": "$-x^2 - 12x + 14$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4417683,
+        "label": "$5x^2 - 12x + 14$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 476626,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to $3(y - 2) + 2(y + 4)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4766260,
+        "label": "$5y - 2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4766261,
+        "label": "$y + 2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4766262,
+        "label": "$5y + 2$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4766263,
+        "label": "$y - 2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 500318,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to $x^2 - 9$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5003180,
+        "label": "$(x-3)^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5003181,
+        "label": "$(x+9)(x-1)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5003182,
+        "label": "$(x+3)(x-3)$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5003183,
+        "label": "$(x+3)^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 547332,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to $\\sqrt[3]{(x^2 - 6x + 9)^2}$, where $x > 3$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5473320,
+        "label": "$(x - 3)^{\\frac{2}{3}}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5473321,
+        "label": "$(x - 3)^3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5473322,
+        "label": "$(x - 3)^{\\frac{4}{3}}$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5473323,
+        "label": "$(x - 9)^{\\frac{2}{3}}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 549946,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to the expression $(2x+3y)(x-4y)-5y(x+2y)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5499460,
+        "label": "$2x^2 + xy - 22y^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5499461,
+        "label": "$2x^2 - 10xy - 2y^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5499462,
+        "label": "$2x^2 - 10xy - 22y^2$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5499463,
+        "label": "$2x^2 - 6xy - 22y^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 554341,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to the expression? $x^2 - 8x + 10$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5543410,
+        "label": "$(x - 4)^2 - 6$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5543411,
+        "label": "$(x - 4)^2 + 6$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5543412,
+        "label": "$(x + 4)^2 - 6$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5543413,
+        "label": "$(x + 4)^2 + 6$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 635916,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to $(1-q)(1+q+q^2+q^3+q^4)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6359160,
+        "label": "$1-q^5$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6359161,
+        "label": "$1-q^6$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6359162,
+        "label": "$1+q^5$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6359163,
+        "label": "$1+q^6$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 683220,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "If $x \\neq 0$, which of the following expressions is equivalent to $\\frac{\\sqrt[3]{8x^9y^6}}{x^4}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6832200,
+        "label": "$2x^3y^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6832201,
+        "label": "$2xy^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6832202,
+        "label": "$2x^{-1}y^3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6832203,
+        "label": "$2x^{-1}y^2$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 699139,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to the sum of $5y^5 + 3y^2$ and $2y^5 - y^2$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6991390,
+        "label": "$8y^5 + y^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6991391,
+        "label": "$3y^5 + 4y^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6991392,
+        "label": "$9y^5$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6991393,
+        "label": "$7y^5 + 2y^2$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 745354,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "$$(3x^3 + 2x^2 - 7x + 1) - (x^3 - 4x^2 + 2x - 5)$$ Which of the following expressions is equivalent to the expression above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7453540,
+        "label": "$2x^3 - 2x^2 - 9x - 4$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7453541,
+        "label": "$2x^3 - 2x^2 - 9x + 6$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7453542,
+        "label": "$2x^3 + 6x^2 - 9x + 6$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7453543,
+        "label": "$2x^3 + 6x^2 + 9x + 6$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 785160,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to the expression $x^4 - 8x^2 + 15$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7851600,
+        "label": "$(x^2-3)(x^2-5)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7851601,
+        "label": "$(x^2-1)(x^2-15)$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7851602,
+        "label": "$(x^2-2)(x^2-6)$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7851603,
+        "label": "$(x^2-3)(x^2+5)$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 801278,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to $\\left(\\frac{3}{4}x - 2\\right) - \\left(\\frac{1}{2}x + 1\\right)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8012780,
+        "label": "$\\frac{1}{4}x - 3$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8012781,
+        "label": "$\\frac{5}{4}x - 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8012782,
+        "label": "$\\frac{1}{4}x - 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8012783,
+        "label": "$-\\frac{1}{4}x - 3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 847493,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "If $p^3 = m + n$ and $q^3 = m + r$, which of the following is equal to $(p^3 - q^3)^2$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8474930,
+        "label": "$n^2 - 2nr + r^2$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8474931,
+        "label": "$n^2 + 2nr + r^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8474932,
+        "label": "$m^2 - 2mr + r^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8474933,
+        "label": "$n^2 - r^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 847858,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "The difference of $(5x^2 - 3x + 12)$ and $(2x^2 + x - 5)$ can be written in the form $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $a+b+c$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8478580,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8478581,
+        "label": "16",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8478582,
+        "label": "20",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8478583,
+        "label": "24",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 907144,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following is equivalent to the expression $(3x-2)^2 - 2(x+1) + (4x-3)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9071440,
+        "label": "$9x^2 - 10x - 1$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9071441,
+        "label": "$9x^2 + 14x - 1$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9071442,
+        "label": "$9x^2 - 10x + 1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9071443,
+        "label": "$9x^2 + 14x + 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 921497,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which expression is equivalent to $(2x + 3)(x^2 - 5x + 2)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9214970,
+        "label": "$2x^3 - 7x^2 - 11x + 6$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9214971,
+        "label": "$2x^3 - 7x^2 + 11x + 6$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9214972,
+        "label": "$2x^3 - 13x^2 - 11x + 6$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9214973,
+        "label": "$2x^3 - 7x^2 - 11x - 6$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 995100,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Medium",
+    "question_text": "Which of the following expressions is equivalent to $\\frac{(5x^3y^7)}{(5x^3y^5)}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9951000,
+        "label": "$y^2$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9951001,
+        "label": "$xy^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9951002,
+        "label": "$x^2y^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9951003,
+        "label": "$y^3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

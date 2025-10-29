@@ -1,0 +1,317 @@
+[
+  {
+    "id": 65020,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "Scholars studying ancient Mayan civilization have made significant progress in deciphering Mayan _____ the intricate symbols used in their writing system - revealing details about their history and culture.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 650200,
+        "label": "glyphs",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 650201,
+        "label": "glyphs;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 650202,
+        "label": "glyphs,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 650203,
+        "label": "glyphs-",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 421616,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "Researchers studying the impact of screen time on adolescents discovered a correlation between excessive social media use and heightened anxiety levels, even when teenagers were actively ______________________________________________________________________________________________________________________________________________________ in extracurricular activities and face-to-face interactions.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4216160,
+        "label": "participating,",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4216161,
+        "label": "participating;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4216162,
+        "label": "participating:",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4216163,
+        "label": "participating",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 462933,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "The advent of social media has dramatically changed communication patterns, creating new avenues for expression and discourse, ______ individuals now share information and opinions globally in real-time, bypassing traditional media gatekeepers.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4629330,
+        "label": "patterns. Consequently,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4629331,
+        "label": "patterns, consequently,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4629332,
+        "label": "patterns consequently,",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4629333,
+        "label": "patterns and consequently,",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 580215,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "In the early 20th century, jazz music emerged from African American communities in the United States, quickly gaining popularity for its improvisational nature and syncopated rhythms.  Many critics at the time dismissed jazz as unsophisticated _____ audiences around the world embraced it, recognizing its artistic merit and cultural significance.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5802150,
+        "label": "but",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5802151,
+        "label": "but,",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5802152,
+        "label": ", but",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5802153,
+        "label": ",",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 662100,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "While urban centers often grapple with noise and congestion, __________ smaller towns offer a slower pace of life and a stronger sense of community.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6621000,
+        "label": "conversely,",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6621001,
+        "label": "conversely;",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6621002,
+        "label": "conversely",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6621003,
+        "label": "conversely ;",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 791889,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "Many studies suggest that consuming sugary drinks in moderation is acceptable.  _______________________________________________________________________________________________________________________________________ long-term effects of high sugar intake are still being investigated.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7918890,
+        "label": "However, the",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7918891,
+        "label": "However; the",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7918892,
+        "label": "However: the",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7918893,
+        "label": "However the",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 872314,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "Galileo Galilei made significant contributions to astronomy. His _____________ telescope, allowed him to observe the phases of Venus and the moons of Jupiter.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8723140,
+        "label": "invention (the",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8723141,
+        "label": "invention-the",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8723142,
+        "label": "invention, the",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8723143,
+        "label": "invention the",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 950438,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "The international art exhibition will showcase works from several renowned galleries around the world: the Louvre, Paris, France; the Uffizi Gallery, Florence, Italy; the Prado Museum, Madrid, Spain; and ____________________________________________________________________________________________________________________________________________________________________",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9504380,
+        "label": "the Metropolitan Museum New York",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9504381,
+        "label": "the Metropolitan Museum, New York",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9504382,
+        "label": "the Metropolitan Museum: New York",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9504383,
+        "label": "the Metropolitan Museum; New York",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 999358,
+    "subject_id": 2,
+    "domain_id": 8,
+    "subcategory_id": 28,
+    "difficulty": "Medium",
+    "question_text": "The ancient library of Alexandria, ___________ many scholars believe, was not destroyed in a single catastrophic fire, but rather declined gradually over centuries due to various factors such as underfunding and loss of interest.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9993580,
+        "label": "as",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9993581,
+        "label": "as,",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9993582,
+        "label": "as;",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9993583,
+        "label": "as-",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

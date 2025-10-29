@@ -1,0 +1,632 @@
+[
+  {
+    "id": 94489,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "A zoologist studied the average lifespan of different species of parrots in captivity. The data, presented in the graph below, shows the average lifespan in years for five species. While the Blue-fronted Amazon parrot has a relatively long lifespan, it is still shorter than that of _____________________________________________________________________________________________________________________________________________________________________.",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2010.51.36%20PM.png",
+    "options": [
+      {
+        "id": 944890,
+        "label": "the Scarlet Macaw.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 944891,
+        "label": "the African Grey parrot.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 944892,
+        "label": "the Yellow-crested Cockatoo.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 944893,
+        "label": "the Budgerigar.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 320279,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "\nScientists have analyzed the sources of greenhouse gas emissions to understand which sectors contribute most significantly to climate change. The table below shows the estimated percentage contribution of different sectors to total emissions of three major greenhouse gases. Higher percentages indicate a greater contribution.\n\n**Estimated Percentage Contribution of Different Sectors to Greenhouse Gas Emissions**\n\n| Greenhouse Gas        | Electricity Generation | Transportation | Agriculture |\n|-----------------------|-------------------------|----------------|-------------|\n| Carbon Dioxide (CO2)  | 0.25                    | 0.28           | 0.11        |\n| Methane (CH4)         | 0.02                    | 0.01           | 0.27        |\n| Nitrous Oxide (N2O)   | 0.01                    | 0.01           | 0.58        |\n\nThe estimated percentage contribution of the transportation sector to carbon dioxide emissions is ____",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3202790,
+        "label": "0.11",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3202791,
+        "label": "0.25",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3202792,
+        "label": "0.28",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3202793,
+        "label": "0.58",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 364567,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "In the early 20th century, the American automotive industry experienced rapid growth, driven by mass production techniques and increasing consumer demand.  Several companies emerged as major players, each contributing to the industry's overall expansion.  For instance: _______",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2010.40.06%20PM.png",
+    "options": [
+      {
+        "id": 3645670,
+        "label": "Ford's production figures showed a slight decrease in growth rate after 1925.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3645671,
+        "label": "General Motors produced more vehicles than Chrysler in 1929.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3645672,
+        "label": "Chrysler's vehicle production was below 500,000 units in 1921.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3645673,
+        "label": "From 1921 to 1929, vehicle production increased substantially for Chrysler, Ford, and General Motors.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 398840,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "For decades, the prevailing scientific view held that plants are largely passive organisms, reacting to environmental stimuli through pre-programmed responses rather than active learning. However, recent investigations challenge this notion. Biologist Monica Gagliano and her colleagues conducted a series of experiments with pea plants, *Pisum sativum*, and discovered evidence suggesting a capacity for associative learning in these organisms. The researchers found that pea plants, after being repeatedly exposed to a puff of air immediately followed by an unpleasant dark environment, began to anticipate the unpleasant stimulus. The team claims that this anticipatory behavior indicates that pea plants can learn to associate a neutral stimulus (air puff) with a negative one (darkness), a form of learning previously attributed primarily to animals.  Which finding, if true, would most directly support Gagliano and her team's claim about associative learning in pea plants?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3988400,
+        "label": "Pea plants demonstrate increased rates of photosynthesis when exposed to blue light.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3988401,
+        "label": "Pea plants, after being conditioned with air puffs followed by darkness, subsequently exhibit avoidance behavior when exposed to air puffs alone, even in the absence of darkness.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3988402,
+        "label": "Studies on other plant species have not yet replicated Gagliano's team's findings regarding associative learning.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3988403,
+        "label": "The observed avoidance behavior in pea plants is later found to be attributable to a previously unknown physiological response to air currents, rather than learned association.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 443854,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Different soil types can significantly impact plant growth. Factors such as drainage, nutrient retention, and aeration vary across soil types, influencing germination time and plant size. As evidenced by the data, while some soil types promote rapid germination and robust growth, others are less conducive. For example, _______\n\n**Plant Growth in Different Soil Types**\n\n| Soil Type   | Planting Date | Days to Germination | Average Plant Height (cm) | Number of Plants per Plot |\n|-------------|---------------|---------------------|---------------------------|---------------------------|\n| Sandy Soil  | April 1st     | 14                  | 25                        | 35                        |\n| Clay Soil   | April 1st     | 21                  | 30                        | 28                        |\n| Loamy Soil  | April 1st     | 10                  | 40                        | 40                        |\n| Silty Soil  | April 1st     | 12                  | 35                        | 38                        |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4438540,
+        "label": "plants in sandy soil took 14 days to germinate, and plants in silty soil took 12 days to germinate, indicating similar germination times.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4438541,
+        "label": "loamy soil resulted in an average plant height of 40 cm, whereas clay soil resulted in an average plant height of 30 cm.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4438542,
+        "label": "clay soil had fewer plants per plot (28) compared to sandy soil (35), suggesting clay soil is less fertile.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4438543,
+        "label": "the planting date was April 1st for all soil types, ensuring a consistent starting condition for the experiment.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 461406,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "A technology blog tracks the user ratings of various smartphone brands. The graph below shows the average user rating for 'TechPhone' brand smartphones from 2015 to 2024, on a scale of 1 to 5, where 5 is the highest rating. According to a tech analyst, although TechPhone's average user ratings have fluctuated throughout the period shown, the overall trend indicates an improvement in user satisfaction since 2015.  Which choice most effectively uses data from the graph to justify the underlined claim?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2010.56.42%20PM.png",
+    "options": [
+      {
+        "id": 4614060,
+        "label": "The average user rating for TechPhone was approximately 3.2 in 2015 and approximately 4.5 in 2024.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4614061,
+        "label": "The highest average user rating for TechPhone during the period shown was approximately 4.8 in 2022.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4614062,
+        "label": "The lowest average user rating for TechPhone during the period shown was approximately 2.8 in 2018.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4614063,
+        "label": "The average user rating for TechPhone was approximately 3.5 in 2017 and approximately 2.8 in 2018.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 467913,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Northwood High School offers a variety of after-school clubs for students to explore their interests. Club enrollment can vary based on grade level as students' interests and time commitments change throughout their high school years. For instance, in the fall semester, _______\n\n**Student Enrollment in After-School Clubs at Northwood High**\n\n| Club             | 9th Grade Enrollment | 10th Grade Enrollment |\n|------------------|----------------------|-----------------------|\n| Debate Club      | 25                   | 30                    |\n| Robotics Club    | 40                   | 35                    |\n| Drama Club       | 15                   | 20                    |\n| Math Club        | 30                   | 25                    |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4679130,
+        "label": "Debate Club has a higher enrollment in 10th grade than in 9th grade.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4679131,
+        "label": "Math Club has the highest total enrollment across both grades.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4679132,
+        "label": "Drama Club has the same enrollment in both 9th and 10th grade.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4679133,
+        "label": "Math Club's 9th grade enrollment is lower than Drama Club's 9th grade enrollment.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 482876,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Average Daily Water Consumption per Household in Different Neighborhoods\n\n| Neighborhood   | Average Daily Water Consumption (Gallons) |\n|----------------|-------------------------------------------|\n| Oakwood        | 185                                       |\n| Willow Creek   | 240                                       |\n| Maple Heights  | 315                                       |\n| Pine Ridge     | 280                                       |\n| Cedar Grove    | 210                                       |\n\nA city's water department is analyzing residential water usage to identify areas with the highest consumption rates for conservation initiatives.  Their analysis of household water consumption indicated that the highest average daily water consumption, at 315 gallons per household, is in the ___ neighborhood.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4828760,
+        "label": "Maple Heights",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4828761,
+        "label": "Pine Ridge",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4828762,
+        "label": "Willow Creek",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4828763,
+        "label": "Cedar Grove",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 502925,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Some countries rely on the United States as their top export partner. Two examples of such countries from the table are _\n\n| Country       | Top Export Partner | Percentage of Exports (Approximate) |\n|---------------|--------------------|-------------------------------------|\n| Germany       | France             | 17%                                 |\n| China         | United States      | 16%                                 |\n| Japan         | United States      | 20%                                 |\n| United Kingdom| United States      | 15%                                 |\n| South Korea   | China              | 25%                                 |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5029250,
+        "label": "China and Japan.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5029251,
+        "label": "Germany and South Korea.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5029252,
+        "label": "Germany and China.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5029253,
+        "label": "United Kingdom and South Korea.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 505742,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Paleontologists once believed that evolutionary change in species occurred gradually over long periods. However, recent research suggests that significant evolutionary adaptations can occur more rapidly when species face new environmental pressures. Researchers studying a population of finches on a newly formed volcanic island claim that noticeable physical changes, such as beak size and shape, can appear in finch populations within just a few generations in response to changes in available food sources.  Which finding, if true, would most directly support the researchers' claim?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5057420,
+        "label": "Researchers observed and documented a measurable increase in average beak depth in the finch population over a period of ten years, coinciding with a shift in the island's vegetation.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5057421,
+        "label": "Genetic analysis of the finch population revealed a higher rate of heritable mutations in genes related to beak morphology compared to finch populations on older, more stable islands.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5057422,
+        "label": "Fossil evidence from other volcanic islands indicated that finch beak morphology remained relatively stable for millions of years after the islands' formation.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5057423,
+        "label": "Scientists discovered that finches possess a gene that allows for greater phenotypic plasticity in beak development compared to other bird species.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 537018,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Researchers have long studied the effects of caffeine on cognitive function. While some studies suggest that caffeine enhances alertness and focus, Dr. Anya Sharma and her colleagues propose a more nuanced view. They argue that the benefits of caffeine are most pronounced when individuals are already experiencing a degree of mental fatigue. In other words, caffeine primarily acts to restore cognitive performance to baseline levels in fatigued individuals, rather than universally elevating cognitive function above baseline.\n<br>\nWhich choice best describes data that would provide the strongest support for Dr. Anya Sharma’s hypothesis?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5370180,
+        "label": "A study showing that caffeine significantly improves the reaction times of participants who have been sleep-deprived, but has minimal effect on well-rested participants.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5370181,
+        "label": "An analysis of large datasets indicating a strong positive correlation between national coffee consumption and overall academic achievement scores.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5370182,
+        "label": "Experiments demonstrating that caffeine consumption leads to increased activity in brain regions associated with attention and working memory in all participants.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5370183,
+        "label": "Observations that individuals who regularly consume caffeine report feeling more energetic and motivated throughout the day, regardless of their fatigue levels.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 616916,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "\nThe table below shows the average monthly rainfall in centimeters for City A and City B during spring months. The month with the lowest combined average rainfall for both cities is ________________________________________________.\n\n**Average Monthly Rainfall in Two Cities**\n\n| Month     | City A (cm) | City B (cm) |\n|-----------|-------------|-------------|\n| April     | 7.5         | 9.2         |\n| May       | 8.8         | 8.5         |\n| June      | 6.3         | 7.1         |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6169160,
+        "label": "April.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6169161,
+        "label": "May.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6169162,
+        "label": "June.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6169163,
+        "label": "May for City A and June for City B.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 734184,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "A marketing analyst is reviewing the quarterly sales figures for two products, Product Alpha and Product Beta. Of the four quarters included in the table, the quarter with the highest total sales for both Product Alpha and Product Beta combined was ________________________________\n**Quarterly Sales (in Units) from Q1 to Q4**\n\n| Product       | Q1  | Q2  | Q3  | Q4  |\n|---------------|-----|-----|-----|-----|\n| Product Alpha | 100 | 151 | 110 | 120 |\n| Product Beta  | 80  | 80  | 100 | 110 |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7341840,
+        "label": "Quarter 1.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7341841,
+        "label": "Quarter 3.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7341842,
+        "label": "Quarter 4.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7341843,
+        "label": "Quarter 2.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 807187,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "### Results of Plant Growth Under Varying Light Conditions\n\n| Plant Group | Light Intensity (lux) | Average Leaf Area (cm²) | Average Stem Elongation (cm) | Weekly Biomass Increase (grams) |\n|-------------|-----------------------|-------------------------|-----------------------------|---------------------------------|\n| Shade Group | 200                   | 18                      | 25                          | 5                               |\n| Sun Group   | 800                   | 22                      | 30                          | 8                               |\n\nThe table shows data from a botanist's 2023 study on the growth characteristics of a species of flowering plant grown under different light intensities, categorized as Shade Group (200 lux) and Sun Group (800 lux). The botanist concluded that higher light intensity enhances overall plant growth.\n\nWhich choice best describes data from the table that support the botanist’s conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8071870,
+        "label": "a smaller average leaf area and a shorter average stem elongation.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8071871,
+        "label": "a smaller average leaf area and a longer average stem elongation.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8071872,
+        "label": "a larger average leaf area and a longer average stem elongation.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8071873,
+        "label": "a larger average leaf area and a shorter average stem elongation.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 891177,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Mr. Thompson recorded the weekly study time and corresponding test scores of three students in his math class. The table shows the data collected over one week. According to the table, students who studied more generally achieved higher test scores, _____\n\n**Student Study Time and Test Scores in Math Class**\n\n| Student ID | Study Time (hours/week) | Test Score (%) |\n|------------|-------------------------|----------------|\n| 1          | 5                       | 85             |\n| 2          | 10                      | 92             |\n| 3          | 3                       | 70             |\n\nWhich choice most effectively uses data from the table to complete the statement?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8911770,
+        "label": "and student 2 achieved the highest score despite studying less than student 1.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8911771,
+        "label": "even though study time is not the only factor affecting test scores.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8911772,
+        "label": "but student 3, who studied significantly less than student 2, received a noticeably lower test score.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8911773,
+        "label": "and all students showed improvement over previous tests regardless of study time.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 910297,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Tech company analysts investigated the effectiveness of two different marketing strategies, Strategy X and Strategy Y, on product sales. They concluded that Strategy X is generally more effective for products targeting younger demographics, while Strategy Y is better suited for older demographics.\n\n**Effect of Different Marketing Strategies on Product Sales**\n\n| Product     | Total Sales Change ($ in thousands) | Percentage Change (%) | Target Demographic | Marketing Strategy |\n|-------------|-------------------------------------|-----------------------|--------------------|--------------------|\n| Product A   | 55,000                              | 15                    | Younger            | X                  |\n| Product B   | 12,000                              | 5                     | Older              | Y                  |\n| Product C   | -5,000                              | -2                    | Older              | X                  |\n| Product D   | 30,000                              | 10                    | Younger            | Y                  |\n| Product E   | 70,000                              | 25                    | Younger            | X                  |\n\nWhich choice best describes data from the table that support the analysts' conclusion?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9102970,
+        "label": "Product A and Product E, both targeted at younger demographics and using Strategy X, had positive total sales changes.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9102971,
+        "label": "Product B and Product D had positive total sales changes, but Product B used Strategy Y and Product D used Strategy X.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9102972,
+        "label": "Product A, which used Strategy X and targeted younger demographics, had a positive percentage change, while Product C, which used Strategy X and targeted older demographics, had a negative percentage change.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9102973,
+        "label": "Product D, targeted at younger demographics, had a smaller percentage change than Product B, targeted at older demographics.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 917502,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Global Coffee Consumption by Region,  In the early 21st century, global coffee consumption patterns displayed regional variations. While some regions maintained relatively stable consumption rates, others experienced notable shifts driven by changing consumer preferences and economic factors.  For instance, the graph illustrates that coffee consumption in _  Which choice most effectively uses data from the graph to complete the example?\n\n",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//Screen%20Shot%202025-03-19%20at%2010.33.26%20PM.png",
+    "options": [
+      {
+        "id": 9175020,
+        "label": "North America saw a modest increase overall.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9175021,
+        "label": "South America declined sharply after 2016.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9175022,
+        "label": "Europe experienced a significant decrease from 2010 to 2014.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9175023,
+        "label": "Asia remained consistently low throughout the period.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 952064,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 26,
+    "difficulty": "Easy",
+    "question_text": "Ecologist Dr. Anya Sharma and her team are studying the impact of the invasive zebra mussel on native clam populations in Lake Huron. Zebra mussels consume large quantities of phytoplankton, a primary food source for native clams. Based on their field observations and analysis of water samples collected over three years, Dr. Sharma and her team hypothesize that the introduction of zebra mussels has led to a significant decline in native clam populations due to resource competition.  Which finding, if true, would most directly support the researchers' hypothesis?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9520640,
+        "label": "Zebra mussel populations in Lake Huron have expanded rapidly since their initial introduction, occupying a wider range of habitats than native clams.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9520641,
+        "label": "Native clam populations in areas of Lake Huron with high zebra mussel densities exhibit significantly lower body weights and reproductive rates compared to clam populations in areas with few zebra mussels.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9520642,
+        "label": "Water samples from Lake Huron show a general decrease in phytoplankton levels over the three-year study period, regardless of zebra mussel presence.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9520643,
+        "label": "Some species of fish that prey on native clams have also been observed to consume zebra mussels, albeit at a lower rate.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "id": 32598,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "If $4(2x + 3) + 2(2x + 3) = 24$, what is the value of $2x + 3$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 325980,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 325981,
+        "label": "4",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 325982,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 325983,
+        "label": "12",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 45917,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "A group of friends bought $5$ concert tickets online. The price of each ticket was $\\$45$. They also had to pay a single service fee for the entire purchase. If the total cost for the $5$ tickets, including the service fee, was $\\$240$, what was the amount of the service fee?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 459170,
+        "label": "$\\$15$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 459171,
+        "label": "$\\$3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 459172,
+        "label": "$\\$20$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 459173,
+        "label": "$\\$48$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 295183,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "A salesperson earns a base commission rate for the first $\\$5,000$ in monthly sales and a commission rate that is $1.2$ times the base rate for any sales exceeding $\\$5,000$. In a particular month, the salesperson's sales totaled $\\$8,000$, and their total commission was $\\$688$. What is the salesperson's base commission rate?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2951830,
+        "label": "$7\\%$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2951831,
+        "label": "$7.5\\%$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2951832,
+        "label": "$8\\%$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2951833,
+        "label": "$8.5\\%$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 389807,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "In the equation, $3x + 15 = a(x + 5)$, $a$ is a constant. If the equation has infinitely many solutions, what is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3898070,
+        "label": "3",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3898071,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3898072,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3898073,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 437856,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "What value of $x$ is the solution to the given equation? $$\\frac{1}{2}(x-3) - \\frac{1}{5}(x-3) = 3$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4378560,
+        "label": "-7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4378561,
+        "label": "8",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4378562,
+        "label": "13",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4378563,
+        "label": "23",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 497516,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "In the equation $c(2+x)-d=5+3x$, where $c$ and $d$ are constants, if the equation has infinitely many solutions, what are the values of $c$ and $d$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4975160,
+        "label": "$c = 3$ and $d = 1$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4975161,
+        "label": "$c = 3$ and $d = 7$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4975162,
+        "label": "$c = -3$ and $d = -1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4975163,
+        "label": "$c = -3$ and $d = 7$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 512996,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "A bicycle rental shop charges a fixed fee in addition to an hourly rental rate. The equation $5h + 10 = 35$ represents the total cost of renting a bicycle for $h$ hours, where $\\$10$ is the fixed fee. What is the best interpretation of the number $5$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5129960,
+        "label": "The total cost to rent the bicycle for 5 hours.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5129961,
+        "label": "The fixed fee for renting the bicycle.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5129962,
+        "label": "The hourly rate for renting the bicycle, in dollars per hour.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5129963,
+        "label": "The number of hours the bicycle can be rented for $5.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 648872,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "$$(c+3)x = 5$$ In the given equation, $c$ is a constant. If the equation has no solution, what is the value of $c$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6488720,
+        "label": "-5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6488721,
+        "label": "-3",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6488722,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6488723,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 724642,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "$$3(x - 2) + 4(x + 1) = 6x$$ What value of $x$ is the solution of the equation above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7246420,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7246421,
+        "label": "-2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7246422,
+        "label": "10",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7246423,
+        "label": "1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 810242,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "The width of a rectangular garden is $x$ feet. The length of the garden is $3$ feet less than twice its width. Which of the following expresses the area, in square feet, of the garden in terms of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8102420,
+        "label": "$6x - 6$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8102421,
+        "label": "$3x - 3$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8102422,
+        "label": "$2x^2 - 3x$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8102423,
+        "label": "$2x^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 994430,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Medium",
+    "question_text": "If $\\frac{3x+2}{4} = 2$, what is the value of $6x+1$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9944300,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9944301,
+        "label": "21",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9944302,
+        "label": "-19",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9944303,
+        "label": "13",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

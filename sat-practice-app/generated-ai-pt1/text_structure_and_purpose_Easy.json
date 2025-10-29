@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "b4b3b8c6-4049-4b55-b0dd-0fc551d6aabc",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "Neighbors started a community garden to make better use of a vacant lot. The project quickly brought residents together. <u>For example, weekly harvest days gave neighbors a reason to meet and share recipes.</u> The garden also supplied fresh produce to a nearby food pantry. Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f7cde1ce-9836-4d6f-8fa9-a93f899b0c88",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "Many city libraries noticed that teenagers were visiting less often after school. In response, they created a quiet \"homework zone\" and scheduled brief tutoring sessions every afternoon. Within a month, attendance increased. Which choice best describes the overall structure of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7c27a1f4-96b1-4a33-9a1f-0ee2a5a2d5df",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 21,
+      "difficulty": "Easy",
+      "question_text": "The new transit app shows bus locations on a map and predicts arrival times. While the estimates are not perfect, they are usually accurate enough to help riders decide when to leave home. The app also sends alerts if routes are delayed due to traffic or weather. Which choice best states the main purpose of the text?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "3d2a4a1f-7d07-4c09-8efd-9ab5f1b75b48",
+      "question_id": "b4b3b8c6-4049-4b55-b0dd-0fc551d6aabc",
+      "value": "A",
+      "label": "It introduces a drawback of the project.",
+      "is_correct": false
+    },
+    {
+      "id": "8c558ea2-1643-4b8d-ba58-26fbe6fc2c47",
+      "question_id": "b4b3b8c6-4049-4b55-b0dd-0fc551d6aabc",
+      "value": "B",
+      "label": "It restates the main idea in different words.",
+      "is_correct": false
+    },
+    {
+      "id": "1602dbc4-8dcd-4da8-b23b-30d1b4a4eb2f",
+      "question_id": "b4b3b8c6-4049-4b55-b0dd-0fc551d6aabc",
+      "value": "C",
+      "label": "It provides a concrete example that illustrates how the garden strengthened community ties.",
+      "is_correct": true
+    },
+    {
+      "id": "e72f9eb6-2bd0-4c8a-95a8-8b9cb9e081a4",
+      "question_id": "b4b3b8c6-4049-4b55-b0dd-0fc551d6aabc",
+      "value": "D",
+      "label": "It predicts future challenges for the garden.",
+      "is_correct": false
+    },
+    {
+      "id": "4a258459-dce6-46a0-a0df-b3636e6a4dc0",
+      "question_id": "f7cde1ce-9836-4d6f-8fa9-a93f899b0c88",
+      "value": "A",
+      "label": "It identifies a problem, describes a response, and notes the result.",
+      "is_correct": true
+    },
+    {
+      "id": "7a28d56c-0f7a-41f3-8a6e-9dece2de6bcb",
+      "question_id": "f7cde1ce-9836-4d6f-8fa9-a93f899b0c88",
+      "value": "B",
+      "label": "It lists several unrelated events in chronological order.",
+      "is_correct": false
+    },
+    {
+      "id": "d3726a43-a6e1-4f2a-9b96-31aef6b0c5a5",
+      "question_id": "f7cde1ce-9836-4d6f-8fa9-a93f899b0c88",
+      "value": "C",
+      "label": "It presents opposing viewpoints and then takes a side.",
+      "is_correct": false
+    },
+    {
+      "id": "0da7f6b0-05fe-4eb6-9bbc-d08c0dd7356b",
+      "question_id": "f7cde1ce-9836-4d6f-8fa9-a93f899b0c88",
+      "value": "D",
+      "label": "It explains a complex theory and provides a definition.",
+      "is_correct": false
+    },
+    {
+      "id": "3dc11bc5-bfc7-4f60-9e82-f2ebf01a13ed",
+      "question_id": "7c27a1f4-96b1-4a33-9a1f-0ee2a5a2d5df",
+      "value": "A",
+      "label": "To argue that the app should replace printed schedules entirely.",
+      "is_correct": false
+    },
+    {
+      "id": "20042b95-7bc2-4661-8fe6-7b6e08f0c367",
+      "question_id": "7c27a1f4-96b1-4a33-9a1f-0ee2a5a2d5df",
+      "value": "B",
+      "label": "To describe features of a transit app that help riders plan their trips.",
+      "is_correct": true
+    },
+    {
+      "id": "d8ff74ac-1d60-4d47-bcd6-65b407fbce42",
+      "question_id": "7c27a1f4-96b1-4a33-9a1f-0ee2a5a2d5df",
+      "value": "C",
+      "label": "To compare two competing transit apps and select the better one.",
+      "is_correct": false
+    },
+    {
+      "id": "b3b23634-3ba5-45a6-8fcd-83aaa9b2cd51",
+      "question_id": "7c27a1f4-96b1-4a33-9a1f-0ee2a5a2d5df",
+      "value": "D",
+      "label": "To criticize the accuracy of bus tracking technology.",
+      "is_correct": false
+    }
+  ]
+}

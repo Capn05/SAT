@@ -1,0 +1,352 @@
+[
+  {
+    "id": 144898,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "Line $k$ is defined by the equation $-\\frac{3}{4}x + \\frac{2}{5}y + 15 = 0$ in the $xy$-plane. What is the slope of line $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1448980,
+        "label": "$-\\frac{15}{8}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1448981,
+        "label": "$\\frac{8}{15}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1448982,
+        "label": "$-\\frac{8}{15}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1448983,
+        "label": "$\\frac{15}{8}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 179501,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "The line in the $xy$-plane is given by the equation $\\frac{y}{2} + \\frac{x}{5} = \\frac{3}{10}$. What is the $x$-coordinate of the $x$-intercept of this line?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1795010,
+        "label": "$\\frac{3}{2}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1795011,
+        "label": "$\\frac{2}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1795012,
+        "label": "$\\frac{5}{2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1795013,
+        "label": "$1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 340944,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "The equation of a line is given by $y = \\frac{2}{3}x - 1$. Which table gives three values of $x$ and their corresponding values of $y$ for the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3409440,
+        "label": "(0, -3), (3, -1), (6, 1)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3409441,
+        "label": "(0, 1), (3, 0), (6, -1)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3409442,
+        "label": "(0, -1), (3, 0), (6, 1)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3409443,
+        "label": "(0, -1), (3, 1), (6, 3)",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 386783,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "The graph shows a linear relationship between $p$ and $q$. Which equation represents this relationship, where $R$ is a positive constant?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//386783.png",
+    "options": [
+      {
+        "id": 3867830,
+        "label": "$Rx + 8y = 24$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3867831,
+        "label": "$Rx - 8y = 24$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3867832,
+        "label": "$8x + Ry = 24$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3867833,
+        "label": "$8x - Ry = 24$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 568318,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "In the equation $cx + dy = d$, $c$ and $d$ are constants such that $0 < d \\leq c$. Which of the following could represent the graph of the equation in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5683180,
+        "label": "Placeholder A",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5683181,
+        "label": "Placeholder B",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5683182,
+        "label": "Placeholder C",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5683183,
+        "label": "Placeholder D",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 876334,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "The graph of the equation $px + qy = -10$ is a line in the $xy$-plane, where $p$ and $q$ are constants. If the line contains the points $(2,-4)$ and $(0,-2)$, what is the value of $q$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8763340,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8763341,
+        "label": "-5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8763342,
+        "label": "$\\frac{1}{5}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8763343,
+        "label": "$\\frac{-1}{5}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 928283,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "In the $xy$-plane, line $m$ intersects the $y$-axis at the point $(0, 8)$ and passes through the point $(4, 0)$. If the point $(12, w)$ lies on line $m$, what is the value of $w$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9282830,
+        "label": "-24",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9282831,
+        "label": "-16",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9282832,
+        "label": "-8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9282833,
+        "label": "32",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 963091,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "Evelyn sells two types of handcrafted jewelry: rings and necklaces. She earns a profit of $\\$25$ for each ring and $\\$40$ for each necklace she sells. The graph above represents all possible combinations of the number of rings and necklaces Evelyn could sell in a week to earn a total profit of $P$ dollars. What is the value of $P$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//963091.png",
+    "options": [
+      {
+        "id": 9630910,
+        "label": "200",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9630911,
+        "label": "400",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9630912,
+        "label": "500",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9630913,
+        "label": "800",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 982229,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "Line $k$ in the $xy$-plane is perpendicular to the line with equation $y = x + 5$. What is the slope of line $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9822290,
+        "label": "1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9822291,
+        "label": "0",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9822292,
+        "label": "-1",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9822293,
+        "label": "Undefined",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 987950,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 5,
+    "difficulty": "Hard",
+    "question_text": "In the $xy$-plane, line $k$ is defined by $2x - y = 0$. Line $j$ is perpendicular to line $k$, and the $y$-intercept of line $j$ is $(0,-1)$. Which of the following is an equation of line $j$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9879500,
+        "label": "$x + 2y = -2$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9879501,
+        "label": "$x + 2y = 2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9879502,
+        "label": "$2x - y = -1$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9879503,
+        "label": "$2x - y = 1$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

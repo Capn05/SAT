@@ -1,0 +1,772 @@
+[
+  {
+    "id": 102327,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $4y = 20$, what is the value of $4y - 5$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1023270,
+        "label": "1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1023271,
+        "label": "15",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1023272,
+        "label": "25",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1023273,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 128415,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "The perimeter of an isosceles triangle is $95$ inches. Two sides of this triangle are congruent and each has a length of $30$ inches. What is the length, in inches, of the third side?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1284150,
+        "label": "35",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1284151,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1284152,
+        "label": "65",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1284153,
+        "label": "55",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 237700,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $\\frac{x}{3} - \\frac{x}{12} = 5$, what is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2377000,
+        "label": "15",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2377001,
+        "label": "18",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2377002,
+        "label": "20",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2377003,
+        "label": "24",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 240292,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells cupcakes and cakes. On Monday, they sold $m$ cupcakes. On Tuesday, they sold $7$ fewer than half the number of cupcakes sold on Monday. In terms of $m$, how many cupcakes did the bakery sell on Tuesday?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2402920,
+        "label": "$\\frac{m}{2} + 7$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2402921,
+        "label": "$\\frac{m}{2} - 7$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2402922,
+        "label": "$2m - 7$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2402923,
+        "label": "$7 - \\frac{m}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 257673,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "Which of the following equations is equivalent to $5x - 3 = 7$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2576730,
+        "label": "$10x - 6 = 14$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2576731,
+        "label": "$5x - 6 = 14$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2576732,
+        "label": "$10x - 3 = 7$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2576733,
+        "label": "$5x - 3 = 14$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 317347,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "$$7z + 3 = 17$$ How many solutions exist to the equation shown above?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3173470,
+        "label": "None",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3173471,
+        "label": "Exactly 1",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3173472,
+        "label": "Exactly 2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3173473,
+        "label": "Infinitely many",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 327515,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "$$7x = 60 - 5x$$ What value of $x$ is the solution to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3275150,
+        "label": "4",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3275151,
+        "label": "5",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3275152,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3275153,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 454466,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $3x = 18$, what is the value of $3x + 5$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4544660,
+        "label": "11",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4544661,
+        "label": "18",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4544662,
+        "label": "23",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4544663,
+        "label": "24",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 473256,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $5x - 3 = 12$, what is the value of $20x - 12$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4732560,
+        "label": "24",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4732561,
+        "label": "48",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4732562,
+        "label": "60",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4732563,
+        "label": "15",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 474911,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $3x = 21$, what is the value of $12x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4749110,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4749111,
+        "label": "28",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4749112,
+        "label": "63",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4749113,
+        "label": "84",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 478626,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A baker made a total of $32$ cookies for a bake sale.  If $18$ of the cookies were chocolate chip, how many cookies were not chocolate chip?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4786260,
+        "label": "14",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4786261,
+        "label": "18",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4786262,
+        "label": "32",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4786263,
+        "label": "50",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 553686,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If $6b - 30 = 42$, what is the value of $b - 5$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5536860,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5536861,
+        "label": "7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5536862,
+        "label": "42",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5536863,
+        "label": "72",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 565376,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "If the cost of $2$ pens and $5$ pencils is $\\$8$, what is the cost, in dollars, of $6$ pens and $15$ pencils?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5653760,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5653761,
+        "label": "16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5653762,
+        "label": "24",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5653763,
+        "label": "32",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 595840,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A bakery starts the day with $60$ bagels. Every hour, the bakery makes $25$ new bagels. If no bagels are sold, how many bagels will the bakery have $3$ hours after starting the day?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5958400,
+        "label": "135",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5958401,
+        "label": "85",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5958402,
+        "label": "180",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5958403,
+        "label": "63",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 617475,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A bakery has $77$ cookies to pack into boxes. If they put $6$ cookies in each box, they will have $5$ cookies left over. How many boxes did the bakery use?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6174750,
+        "label": "13",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6174751,
+        "label": "12",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6174752,
+        "label": "14",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6174753,
+        "label": "18",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 662979,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "What is the solution to the equation $3x - 2 = 13$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6629790,
+        "label": "3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6629791,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6629792,
+        "label": "5",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6629793,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 729480,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "$$7x = 91$$ What value of $x$ is the solution to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7294800,
+        "label": "13",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7294801,
+        "label": "84",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7294802,
+        "label": "98",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7294803,
+        "label": "637",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752851,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "$$2x + 4(x + 3) = 36$$ What value of $x$ is the solution to the given equation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7528510,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7528511,
+        "label": "4",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7528512,
+        "label": "6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7528513,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752950,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A mobile phone company charges a $\\$25$ activation fee and $\\$8$ per gigabyte (GB) of data used. If a customer's total bill, with no other charges, is $\\$89$, how many GB of data did the customer use?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7529500,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7529501,
+        "label": "8",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7529502,
+        "label": "9",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7529503,
+        "label": "11",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 919127,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "$$3x + m = 3x - 9$$ In the given equation, $m$ is a constant. If the equation has infinitely many solutions, what is the value of $m$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9191270,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9191271,
+        "label": "-9",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9191272,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9191273,
+        "label": "-3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 927699,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "For what value of $x$ does $2x + 3 = 3(x - 1)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9276990,
+        "label": "4",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9276991,
+        "label": "5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9276992,
+        "label": "6",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9276993,
+        "label": "0",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 932944,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells muffins for $\\$3$ each. At this price, how many dollars will it cost to buy $m$ muffins?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9329440,
+        "label": "$3m$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9329441,
+        "label": "$3+m$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9329442,
+        "label": "$m$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9329443,
+        "label": "3",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

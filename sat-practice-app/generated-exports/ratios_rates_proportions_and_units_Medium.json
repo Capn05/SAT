@@ -1,0 +1,702 @@
+[
+  {
+    "id": 26783,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "The ratio of $15$ to $x$ is equivalent to the ratio of $3$ to $12$. What is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 267830,
+        "label": "40",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 267831,
+        "label": "50",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 267832,
+        "label": "60",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 267833,
+        "label": "80",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 34867,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A grocery store sells honey in large jars. A jar contains $3$ pints of honey and costs $\\$12$. What is the price of the honey per fluid ounce? ($1 \\text{pint} = 16 \\text{fluid ounces}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 348670,
+        "label": "$\\$0.25$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 348671,
+        "label": "$\\$2.00$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 348672,
+        "label": "$\\$4.00$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 348673,
+        "label": "$\\$12.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 137990,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "How many inches are equivalent to $3$ miles? ($1 \\text{mile} = 5280 \\text{feet}$ and $1 \\text{foot} = 12 \\text{inches}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1379900,
+        "label": "15,840",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1379901,
+        "label": "63,360",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1379902,
+        "label": "174,240",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1379903,
+        "label": "190,080",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 210237,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "The population density of Cityville, in people per square kilometer of land area, increased from $60$ in 2010 to $75$ in 2020. During this ten-year period, the land area of Cityville remained constant at $300$ square kilometers. By how many people did Cityville's population increase from 2010 to 2020?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2102370,
+        "label": "4,500",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2102371,
+        "label": "22,500",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2102372,
+        "label": "18,000",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2102373,
+        "label": "45,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 237924,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A train travels at a constant speed of $55$ miles per hour. If the train travels for $z$ hours, it covers a distance of $55z$ miles. Which of the following expressions gives the distance, in miles, the train will travel if it travels for $\\frac{z}{2}$ hours?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2379240,
+        "label": "$\\frac{1}{2}(55z)$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2379241,
+        "label": "$55z - \\frac{1}{2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2379242,
+        "label": "$55(z - \\frac{1}{2})$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2379243,
+        "label": "$\\frac{55z}{\\frac{1}{2}}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 506328,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "$$C = 25n$$ The equation above can be used to calculate the cost $C$, in dollars, of purchasing n notebooks at a price of $\\$25$ per notebook. For any positive constant $p$, the cost of purchasing $12p$ notebooks is how many times the cost of purchasing $3p$ notebooks?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5063280,
+        "label": "4",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5063281,
+        "label": "9",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5063282,
+        "label": "$4p$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5063283,
+        "label": "$9p$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 508728,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A family drove from City A to City B, a distance of $215$ miles. The trip took $4$ hours and $30$ minutes. What was their average speed in miles per hour during this trip, rounded to the nearest whole number?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5087280,
+        "label": "48",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5087281,
+        "label": "47",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5087282,
+        "label": "50",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5087283,
+        "label": "54",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 549107,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A cheetah can run at a maximum speed of $120$ kilometers per hour. What is the cheetah's maximum speed in meters per second?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5491070,
+        "label": "20",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5491071,
+        "label": "30",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5491072,
+        "label": "33.3",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5491073,
+        "label": "40",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 555498,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A recipe calls for $5$ gallons of water. If $1$ gallon is equal to $4$ quarts, $1$ quart is equal to $2$ pints, $1$ pint is equal to $2$ cups, and $1$ cup is equal to $8$ fluid ounces, then $5$ gallons is equivalent to how many fluid ounces?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5554980,
+        "label": "320",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5554981,
+        "label": "560",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5554982,
+        "label": "640",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5554983,
+        "label": "800",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 557444,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A delivery truck uses $16$ gallons of fuel for each delivery route it completes. A larger delivery truck uses $18$ gallons of fuel for each delivery route it completes. How many more gallons of fuel does the larger delivery truck use than the smaller delivery truck if each truck completes $32$ delivery routes?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5574440,
+        "label": "32",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5574441,
+        "label": "64",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5574442,
+        "label": "512",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5574443,
+        "label": "576",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 558987,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A container holds $5$ gallons of juice. How many milliliters of juice are in the container? ($1 \\text{gallon} = 4 \\text{liters}$ and $1 \\text{liter} = 1000 \\text{milliliters}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5589870,
+        "label": "20,000",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5589871,
+        "label": "2,000",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5589872,
+        "label": "1,250",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5589873,
+        "label": "5,000",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 654624,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A school district's total budget is $\\$48.5$ million, of which $\\$12.8$ million is allocated to administrative costs. If the district serves $8,200$ students, which of the following is closest to the amount of money spent per student on non-administrative costs?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6546240,
+        "label": "$\\$4,350$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6546241,
+        "label": "$\\$5,915$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6546242,
+        "label": "$\\$7,134$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6546243,
+        "label": "$\\$396,700$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 711911,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "Rectangle $P$ has a length of $x$ and a width of $6$. Rectangle $Q$ has a width of $9$ and the same length-to-width ratio as rectangle $P$. What is the length of rectangle $Q$ in terms of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7119110,
+        "label": "$\\frac{3}{2}x$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7119111,
+        "label": "$\\frac{2}{3}x$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7119112,
+        "label": "$x + 3$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7119113,
+        "label": "$x - 3$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 717525,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A car's fuel efficiency is rated at $30$ miles per gallon. If the average price of gasoline is $\\$4.50$ per gallon, what is the cost of gasoline, in dollars, to drive this car one mile?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7175250,
+        "label": "$\\$0.15$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7175251,
+        "label": "$\\$0.67$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7175252,
+        "label": "$\\$1.50$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7175253,
+        "label": "$\\$135.00$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 743561,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A carpenter is building a bookshelf. The design specifies that each shelf should be $2.5$ feet long. How many inches long should each shelf be? ($1 \\text{foot} = 12 \\text{inches}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7435610,
+        "label": "25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7435611,
+        "label": "27.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7435612,
+        "label": "30",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7435613,
+        "label": "32",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 752598,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A cheetah is running at a speed of $30$ miles per hour. Which of the following is equivalent to this speed in feet per second? ($1 \\text{mile} = 5,280 \\text{feet}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7525980,
+        "label": "44 feet per second",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7525981,
+        "label": "40 feet per second",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7525982,
+        "label": "88 feet per second",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7525983,
+        "label": "22 feet per second",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 810054,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A car has a fuel efficiency of $32$ miles per gallon. If the car used $12.5$ gallons of fuel on a trip, how far, in miles, did the car travel?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8100540,
+        "label": "375",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8100541,
+        "label": "400",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8100542,
+        "label": "440",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8100543,
+        "label": "450",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 928391,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A runner completed a race at an average speed of $0.3$ kilometers per minute. What was the average speed, in meters per second, of the runner during the race? ($1 \\text{kilometer} = 1,000 \\text{meters}$, $1 \\text{minute} = 60 \\text{seconds}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9283910,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9283911,
+        "label": "18",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9283912,
+        "label": "50",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9283913,
+        "label": "300",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 948954,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "In a recipe for cookies, the ratio of cups of flour to cups of sugar is $5$ to $2$. If a baker decides to use $2.5$ times the amount of flour for a larger batch, by what factor should they multiply the amount of sugar to maintain the same recipe ratio?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9489540,
+        "label": "2.5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9489541,
+        "label": "2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9489542,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9489543,
+        "label": "6.25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 952753,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 17,
+    "difficulty": "Medium",
+    "question_text": "A recipe for fruit punch requires $2$ cups of orange juice per serving. Maria is making a large batch of fruit punch for a school event and has $3$ gallons of orange juice. How many full servings of fruit punch can Maria make? ($1 \\text{gallon} = 16 \\text{cups}$)",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9527530,
+        "label": "8",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9527531,
+        "label": "16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9527532,
+        "label": "24",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9527533,
+        "label": "32",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

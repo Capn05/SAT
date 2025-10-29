@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "5f8e9c2a-9bcd-4f4a-b9df-8e2f3a0b8a13",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "An anthropologist returning to a coastal town after a decade away found its annual \"revival\" festival transformed. Young weavers had reintroduced patterns long absent from daily life, learning motifs from museum catalogs and elders' recollections, then modifying them to suit new looms and tourist tastes. Some elders dismissed the event as spectacle, yet the festival proceeds funded language classes and apprenticeships that otherwise would not exist. The anthropologist concluded that \"authenticity\" was a misleading yardstick: the festival did not reconstruct a lost past so much as publicly negotiate a future, staging ancestry to make claims on resources, attention, and continuity. In this reading, fidelity to an unbroken lineage mattered less than the festival's capacity to convene people, practices, and possibilities. Which choice best states the central claim of the text?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "e7f9d11e-7f02-4d18-8a1a-fd2a74c8a44a",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "An economist reviewing data from call centers, software repositories, and patent filings argues that early reports of a productivity surge under widespread remote work captured a transition period shaped by selection effects and temporary buffers (for example, overtime to meet urgent deadlines and the easy gains from reallocated commuting time). As routines stabilized, the economist finds that outcomes diverged: teams with modular tasks, strong documentation norms, and asynchronous workflows often sustained or improved output, while interdependent projects reliant on tacit knowledge exchange saw plateauing or declines. The paper concludes that \"location is a design choice,\" meaning the productivity effects of remote work are contingent on task structure, management practices, and workforce composition, and that blanket policies—whether fully remote or fully on-site—risk misallocating attention and talent. Which statement best captures the author's main conclusion?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2b5af3df-9a77-44a0-8fae-da2ec9d0f3ee",
+      "subject_id": 2,
+      "domain_id": 7,
+      "subcategory_id": 25,
+      "difficulty": "Hard",
+      "question_text": "Sorting a trove of letters, the historian tried to align dates and voices into a clean chronology, only to find that each clarified thread revealed seams of contradiction: a promise recounted as betrayal in another hand, a motive asserted here and denied there. She caught herself smoothing a jagged edge—choosing one version because it made the narrative close neatly—and stopped. \"The shape I prefer,\" she thought, \"is not necessarily the shape that was.\" She left margins in her account where the correspondence refused to converge, marking them not as failures of research but as the residue of human distance and secrecy. Based on the text, which choice best describes the narrator's view of certainty in historical reconstruction?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "1a7e3b44-54b7-4c8f-b6a6-f9df2f6f9c01",
+      "question_id": "5f8e9c2a-9bcd-4f4a-b9df-8e2f3a0b8a13",
+      "value": "A",
+      "label": "Revival festivals are chiefly tourist performances that, while economically useful, lack real cultural value.",
+      "is_correct": false
+    },
+    {
+      "id": "3f4f728a-4b14-4f2c-ae93-9d7df6b0e4f3",
+      "question_id": "5f8e9c2a-9bcd-4f4a-b9df-8e2f3a0b8a13",
+      "value": "B",
+      "label": "The most genuine outcome of the festival is the funding it provides for language classes.",
+      "is_correct": false
+    },
+    {
+      "id": "c50c65a3-f2e3-4f49-9a9b-2b68b0d7a0a3",
+      "question_id": "5f8e9c2a-9bcd-4f4a-b9df-8e2f3a0b8a13",
+      "value": "C",
+      "label": "Authenticity should be measured less by exact replication of the past and more by how the festival enables the community to shape its present and future.",
+      "is_correct": true
+    },
+    {
+      "id": "0f6a2e5a-c5cd-4dd4-88fd-0b5b5b6a6af2",
+      "question_id": "5f8e9c2a-9bcd-4f4a-b9df-8e2f3a0b8a13",
+      "value": "D",
+      "label": "Museum catalogs are the most reliable path to recovering lost techniques and restoring cultural authenticity.",
+      "is_correct": false
+    },
+    {
+      "id": "1c1e04d7-57a6-4f3f-9c71-9f7c17aab65d",
+      "question_id": "e7f9d11e-7f02-4d18-8a1a-fd2a74c8a44a",
+      "value": "A",
+      "label": "Remote work's productivity effects depend on task design, management practices, and selection, so organizations should tailor policies rather than impose uniform mandates.",
+      "is_correct": true
+    },
+    {
+      "id": "e9a2a8c3-88f2-4a5e-8658-3e31e2a4b2a9",
+      "question_id": "e7f9d11e-7f02-4d18-8a1a-fd2a74c8a44a",
+      "value": "B",
+      "label": "Remote work uniformly boosts productivity in regions with high commuting times, regardless of organizational practices.",
+      "is_correct": false
+    },
+    {
+      "id": "8f2e145e-82b5-4a09-a8a5-9e5e3c0f9dc6",
+      "question_id": "e7f9d11e-7f02-4d18-8a1a-fd2a74c8a44a",
+      "value": "C",
+      "label": "The early pandemic productivity surge proves that remote work is superior for most knowledge-intensive industries.",
+      "is_correct": false
+    },
+    {
+      "id": "dd47f0b8-8bea-4e19-94a7-2a06cb4b0b0a",
+      "question_id": "e7f9d11e-7f02-4d18-8a1a-fd2a74c8a44a",
+      "value": "D",
+      "label": "Any declines observed with remote work mainly reflect employees working fewer hours at home than in the office.",
+      "is_correct": false
+    },
+    {
+      "id": "b4e5f3a7-2e59-45b3-9b43-5e8a04d6b0f1",
+      "question_id": "2b5af3df-9a77-44a0-8fae-da2ec9d0f3ee",
+      "value": "A",
+      "label": "Certainty is achievable if sufficient documents are collected and arranged into a single coherent timeline.",
+      "is_correct": false
+    },
+    {
+      "id": "4f3bc8a7-6b2a-4f5d-9d68-1f0d2e8f7a21",
+      "question_id": "2b5af3df-9a77-44a0-8fae-da2ec9d0f3ee",
+      "value": "B",
+      "label": "Uncertainty is regrettable but unavoidable because historical figures often fail to record their true motives.",
+      "is_correct": false
+    },
+    {
+      "id": "3d1ad1a3-3c7b-4bc3-b3e6-3f14d24b8d79",
+      "question_id": "2b5af3df-9a77-44a0-8fae-da2ec9d0f3ee",
+      "value": "C",
+      "label": "Letters are too contradictory to be useful, so the historian ultimately rejects narrative reconstruction.",
+      "is_correct": false
+    },
+    {
+      "id": "e0d44941-e31a-4cdf-9d65-2f9fbdb86f5e",
+      "question_id": "2b5af3df-9a77-44a0-8fae-da2ec9d0f3ee",
+      "value": "D",
+      "label": "Certainty is seductive but can distort the record; acknowledging ambiguity is a more honest approach to the past.",
+      "is_correct": true
+    }
+  ]
+}

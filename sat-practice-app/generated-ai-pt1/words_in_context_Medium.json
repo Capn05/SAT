@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "8b6c61e3-4b83-4d6f-8d57-5cfd2e0b2b2a",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Medium",
+      "question_text": "In an effort to make the waterfront more livable, planners proposed building low earthen berms and planting dense evergreens to attenuate the constant roar of trucks from the adjacent port. As used in the sentence, attenuate most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "03fbc91e-7b01-4d78-8ea4-7d4ef2fbcc35",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Medium",
+      "question_text": "In popular biographies, the inventor is depicted as a tireless lone genius. Yet recently unearthed letters belie that image, revealing repeated pleas for assistance and lengthy acknowledgments of collaborators. As used in the sentence, belie most nearly means:",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "c4b30b62-77a9-4f00-b6c5-079f0fd0d9a6",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 22,
+      "difficulty": "Medium",
+      "question_text": "After early results showed only a marginal improvement—about $2\\%$—the lead author addressed journalists carefully. Her statement was appropriately _____, emphasizing the small sample and the need for preregistered replications before any policy could be advised.",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "a9d19f7d-0e2d-4a63-b1f3-7e2c736d5c22",
+      "question_id": "8b6c61e3-4b83-4d6f-8d57-5cfd2e0b2b2a",
+      "value": "A",
+      "label": "Lessen",
+      "is_correct": true
+    },
+    {
+      "id": "6d3b9588-7f7e-45a1-9c64-6bb8ab3a2215",
+      "question_id": "8b6c61e3-4b83-4d6f-8d57-5cfd2e0b2b2a",
+      "value": "B",
+      "label": "Amplify",
+      "is_correct": false
+    },
+    {
+      "id": "a05a0f0a-51fa-4a43-8d41-0faec1e9dbda",
+      "question_id": "8b6c61e3-4b83-4d6f-8d57-5cfd2e0b2b2a",
+      "value": "C",
+      "label": "Obscure",
+      "is_correct": false
+    },
+    {
+      "id": "86af1b89-8d2c-45f0-91bf-3c6e1e7a8df7",
+      "question_id": "8b6c61e3-4b83-4d6f-8d57-5cfd2e0b2b2a",
+      "value": "D",
+      "label": "Redirect",
+      "is_correct": false
+    },
+    {
+      "id": "671c8b39-9f4d-45c4-9ff5-fb527d2c9841",
+      "question_id": "03fbc91e-7b01-4d78-8ea4-7d4ef2fbcc35",
+      "value": "A",
+      "label": "Reinforce",
+      "is_correct": false
+    },
+    {
+      "id": "9e24d66f-2b4a-41b9-862f-694a29d78e68",
+      "question_id": "03fbc91e-7b01-4d78-8ea4-7d4ef2fbcc35",
+      "value": "B",
+      "label": "Romanticize",
+      "is_correct": false
+    },
+    {
+      "id": "c6c3f0d8-6148-4dfa-a1c8-93a6f8d0cb2b",
+      "question_id": "03fbc91e-7b01-4d78-8ea4-7d4ef2fbcc35",
+      "value": "C",
+      "label": "Contradict",
+      "is_correct": true
+    },
+    {
+      "id": "a4b89d89-8f1b-43a8-9b69-6f9d93f2ff65",
+      "question_id": "03fbc91e-7b01-4d78-8ea4-7d4ef2fbcc35",
+      "value": "D",
+      "label": "Summarize",
+      "is_correct": false
+    },
+    {
+      "id": "3b0cf2d4-1f11-47a0-8e5a-13d9487be2f0",
+      "question_id": "c4b30b62-77a9-4f00-b6c5-079f0fd0d9a6",
+      "value": "A",
+      "label": "Incendiary",
+      "is_correct": false
+    },
+    {
+      "id": "949b73a4-ff72-4c72-9150-4bd2b2b8a20b",
+      "question_id": "c4b30b62-77a9-4f00-b6c5-079f0fd0d9a6",
+      "value": "B",
+      "label": "Resolute",
+      "is_correct": false
+    },
+    {
+      "id": "0e5613bb-2b7f-4b0e-8fd5-f7f34e0f1e2c",
+      "question_id": "c4b30b62-77a9-4f00-b6c5-079f0fd0d9a6",
+      "value": "C",
+      "label": "Definitive",
+      "is_correct": false
+    },
+    {
+      "id": "5aa4b68e-f6e8-4f7e-bc3e-315a7a52ba86",
+      "question_id": "c4b30b62-77a9-4f00-b6c5-079f0fd0d9a6",
+      "value": "D",
+      "label": "Tentative",
+      "is_correct": true
+    }
+  ]
+}

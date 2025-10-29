@@ -1,0 +1,72 @@
+[
+  {
+    "id": 2670,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Medium",
+    "question_text": "To gauge support for a new recycling program, a city council surveyed residents. A random sample of $450$ residents was selected from the city's phone directory. Of those surveyed, $68\\%$ indicated they would participate in the new recycling program. Based on this information, which of the following statements must be true? I. Exactly $68\\%$ of all city residents support the new recycling program. II. If a second random sample of $450$ residents were surveyed using the same method, exactly $68\\%$ would indicate they would participate.",
+    "image_url": null,
+    "options": [
+      {
+        "id": 26700,
+        "label": "Neither I nor II",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 26701,
+        "label": "I only",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 26702,
+        "label": "II only",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 26703,
+        "label": "I and II",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 876332,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 13,
+    "difficulty": "Medium",
+    "question_text": "A researcher conducted a study on the sleep habits of nurses working in hospitals within the city of Chicago. A random sample of nurses was selected from all hospitals in Chicago, and each nurse was asked to record the number of hours they slept per night for one week.  Based on this study, to which of the following populations can the researcher generalize the findings regarding average sleep hours?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8763320,
+        "label": "All nurses in the United States.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8763321,
+        "label": "All nurses working in hospitals.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8763322,
+        "label": "All nurses working in hospitals in Chicago.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8763323,
+        "label": "All healthcare professionals working in hospitals in Chicago.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

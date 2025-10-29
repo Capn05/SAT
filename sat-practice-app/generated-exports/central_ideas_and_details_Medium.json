@@ -1,0 +1,632 @@
+[
+  {
+    "id": 98276,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Some studies have indicated that exposure to blue light, commonly emitted from electronic devices, can disrupt melatonin production, a hormone regulating sleep. However, a recent meta-analysis examining multiple studies on the topic found only a weak correlation between typical evening blue light exposure from screens and significant sleep disruption.  The analysis suggests that other factors, such as screen content and individual sensitivity to light, may play a more substantial role in affecting sleep patterns.\n\n<br>Which statement best reflects the findings of the meta-analysis described in the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 982760,
+        "label": "Evening screen use is conclusively proven to have no impact on sleep quality due to the low intensity of blue light emitted.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 982761,
+        "label": "While blue light from screens may have a minor effect on melatonin, other elements related to screen use are likely more influential on sleep.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 982762,
+        "label": "Meta-analyses consistently demonstrate a strong link between blue light exposure from electronic devices and severe melatonin suppression.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 982763,
+        "label": "Individual sensitivity to light is the sole determinant of whether blue light from screens will disrupt a person's sleep cycle.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 139416,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Conventional wisdom in urban planning has long held that increasing green spaces in cities invariably leads to gentrification, displacing lower-income residents. However, a recent study by researchers at the University of Cityville challenges this assumption. By analyzing urban development data across ten major cities over two decades, they found that while green space development can correlate with rising property values, targeted interventions, such as affordable housing initiatives and community land trusts in conjunction with greening projects, can effectively mitigate gentrification pressures and ensure equitable access to urban green spaces for all residents.  Which choice best describes the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1394160,
+        "label": "The study's findings suggest that with proper planning, cities can increase green spaces without causing gentrification.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1394161,
+        "label": "Urban planners are increasingly focused on the negative impacts of gentrification on lower-income residents.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1394162,
+        "label": "Prior to this study, no research had examined the relationship between green spaces and gentrification in major cities.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1394163,
+        "label": "The researchers at the University of Cityville believe that gentrification is an unavoidable consequence of urban development.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 206523,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "The following text is adapted from Henry David Thoreau's *Walden* (1854).  I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived. I did not wish to live what was not life, living is so dear; nor did I wish to practice resignation, unless it was quite necessary. I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms, and, if it proved to be mean, why then to get the whole and genuine meanness of it, and publish its meanness to the world; or if it were sublime, to know it by experience, and be able to give a true account of it in my next excursion.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2065230,
+        "label": "The narrator explains his reasons for moving to a natural setting to live intentionally and understand life's core elements.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2065231,
+        "label": "The narrator expresses his dissatisfaction with modern society and his desire to escape its complexities.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2065232,
+        "label": "The narrator details the practical skills and knowledge he hopes to acquire by living in a simple, rustic environment.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2065233,
+        "label": "The narrator reflects on the inevitability of death and his fear of not having lived a meaningful life.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 229513,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "While Alexander Fleming is widely credited with the discovery of penicillin in 1928, his initial findings were limited by his inability to produce the drug in large quantities. It was the subsequent research of biochemists Howard Florey and Ernst Chain, along with their team, in the late 1930s and early 1940s, that developed the methods for mass production and purification of penicillin.  This collaborative effort, often simplified to highlight Fleming's initial observation, was essential in transforming penicillin from a laboratory curiosity into a life-saving antibiotic widely available during and after World War II.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2295130,
+        "label": "Although Fleming discovered penicillin, Florey and Chain were essential in making it a widely available and effective medicine.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2295131,
+        "label": "Fleming's discovery of penicillin in 1928 immediately revolutionized medical treatments for bacterial infections worldwide.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2295132,
+        "label": "The process of producing penicillin in large quantities was more complex and scientifically significant than Fleming's original discovery.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2295133,
+        "label": "Penicillin's effectiveness as an antibiotic is primarily attributed to Fleming's profound understanding of bacterial infections and mold.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 237156,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Studies have shown a correlation between increased social media use among teenagers and a rise in reported feelings of anxiety and depression. Some researchers suggest that the curated and often unrealistic portrayals of life on social media platforms contribute to social comparison and feelings of inadequacy in young people. These feelings can, in turn, manifest as anxiety and depression.  Which question does the text most directly attempt to answer?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2371560,
+        "label": "What are the most frequently used social media platforms among teenagers?",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2371561,
+        "label": "How might social media use be connected to teenagers' mental well-being?",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2371562,
+        "label": "Which aspects of social media are most damaging to teenagers’ self-esteem?",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2371563,
+        "label": "Could social media be utilized as a tool to enhance teenagers' mental health?",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 246109,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Recent studies have explored the impact of social media on teenagers' mental health. While some celebrate social media platforms for fostering connection and community, other researchers express concerns about potential downsides. These critics often point to rising levels of anxiety and depression in adolescents, suggesting that the curated nature of online profiles and the tendency for social comparison on these platforms can be harmful. They argue that the pressure to maintain a perfect online image and the constant exposure to others' seemingly ideal lives can negatively affect self-esteem.  According to the text, how do critics view the impact of social media on teenagers?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2461090,
+        "label": "They believe that social media primarily promotes positive self-esteem by allowing teenagers to showcase their achievements.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2461091,
+        "label": "They suggest that social media can negatively affect self-esteem through social comparison and pressure for online perfection.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2461092,
+        "label": "They argue that social media is beneficial because it encourages teenagers to engage in more real-world social interactions.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2461093,
+        "label": "They contend that social media's impact on teenagers is minimal compared to other factors like family and school environment.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 290992,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Researchers have conducted multiple studies on the effects of social media on teenage mental health.  A 2022 study published in the *Journal of Adolescent Psychology* focused on the *quantity* of social media use among teenagers aged 14 to 16. This study found a correlation between increased hours spent on social media platforms and higher self-reported levels of anxiety.  In contrast, a 2023 study by the Institute for Digital Wellbeing examined the *nature* of social media engagement within the same age group.  This later study differentiated between passive consumption, such as scrolling through feeds, and active participation, like posting and commenting.  It concluded that passive social media use was significantly associated with increased feelings of loneliness and social isolation, whereas active engagement did not show the same strong correlation. Both studies utilized large-scale surveys and were conducted over a one-year timeframe.  What does the text indicate about the 2023 study by the Institute for Digital Wellbeing?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2909920,
+        "label": "It determined that any form of social media engagement leads to increased anxiety in teenagers.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2909921,
+        "label": "It concentrated on the amount of time teenagers spent on social media platforms.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2909922,
+        "label": "It identified a link between passive social media use and feelings of loneliness in teenagers.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 2909923,
+        "label": "It found no significant correlation between social media use and any negative mental health outcomes.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 324901,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "It is commonly assumed that increased screen time before bed negatively impacts sleep duration. Studies have shown a correlation between late-night screen use and reduced sleep. However, recent research suggests that the relationship is more nuanced than previously thought. While the *duration* of screen time may be a factor, the *content* consumed may also play a significant role. A study found that individuals who engaged with relaxing content before bed experienced no significant difference in sleep duration compared to those who avoided screens entirely. This suggests that simply reducing screen time may not be sufficient; the *type* of content consumed could be equally important in maintaining healthy sleep patterns.  Based on the text, what can be concluded about the impact of screen time on sleep duration?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3249010,
+        "label": "The type of content consumed before bed may be as important as the duration of screen time in affecting sleep.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3249011,
+        "label": "Reducing screen time before bed is the most effective strategy for improving sleep duration, regardless of content.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3249012,
+        "label": "Studies have definitively proven that any screen time before bed will negatively impact sleep duration.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3249013,
+        "label": "Individuals should eliminate screen time completely before bed to ensure optimal sleep duration.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 380802,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Entomologist Dr. Anya Sharma and her team conducted a study on monarch butterfly migration patterns over a five-year period. Their research, focused on a specific migratory route in North America, revealed that approximately 70% of the butterflies successfully completed the entire journey, reaching their overwintering sites in Mexico.  However, the study also indicated that of the 30% that did not complete the migration, roughly two-thirds were lost due to habitat fragmentation and the remaining one-third due to severe weather events encountered during their journey.\n\n<br>Which statement best summarizes the findings of Dr. Anya Sharma’s study on monarch butterfly migration patterns as described in the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3808020,
+        "label": "A majority of monarch butterflies are unable to complete their migration due to weather.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3808021,
+        "label": "Habitat fragmentation is a more significant factor than severe weather in migration failure.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3808022,
+        "label": "Severe weather events are the primary cause of monarch butterfly population decline.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3808023,
+        "label": "Dr. Sharma's study focused on monarch butterflies migrating to locations other than Mexico.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 470840,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Researchers studying the effects of caffeine on memory conducted an experiment where participants were given either a caffeinated beverage or a placebo before completing a memory recall task. The team anticipated that caffeine would moderately improve memory performance, based on previous studies. However, the results were striking: the caffeinated group showed a recall rate nearly double that of the placebo group, a difference much larger than initially hypothesized.    According to the text, what was surprising about the results of the caffeine and memory study?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4708400,
+        "label": "Caffeine had no noticeable impact on memory recall.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4708401,
+        "label": "The memory recall of the placebo group was unexpectedly high.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4708402,
+        "label": "Caffeine's effect on memory was significantly greater than predicted.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4708403,
+        "label": "The study confirmed previous findings about moderate memory improvement from caffeine.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 637206,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "The following text is adapted from a reflection on the experience of reading.   When I sit down to read a book, I am not merely turning pages and absorbing words.  It's more like stepping into another world. The everyday noises of my surroundings fade, and the characters and events in the book become more real than my own room.  For a time, I cease to be myself and become lost in the narrative, experiencing joys and sorrows that are not my own, yet feel deeply personal.  The world outside the book becomes distant and unimportant, replaced by the vivid reality unfolding in my mind.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6372060,
+        "label": "Reading provides a temporary escape from personal problems.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6372061,
+        "label": "Reading allows individuals to deeply engage with narratives and experience a sense of transformation.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6372062,
+        "label": "Reading is primarily a way to acquire knowledge and information about different subjects.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6372063,
+        "label": "The physical act of reading a book is more important than the content of the story itself.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 707575,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Researchers have long observed that consumer spending patterns shift during economic downturns, but the specifics of these changes across different income levels remained unclear. Economists Anya Petrova and Ben Carter analyzed consumer spending data from 2008 to 2012, a period encompassing a significant recession, across various income brackets. Their findings indicated that while all income groups reduced discretionary spending, lower-income households showed a proportionally larger decrease in essential spending, such as groceries and healthcare, compared to higher-income households, who maintained essential spending levels more consistently.\n\n<br>Which statement best summarizes the findings of Anya Petrova and Ben Carter’s study on consumer spending during the 2008-2012 recession as described in the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7075750,
+        "label": "Petrova and Carter's analysis definitively proves that economic recessions disproportionately harm lower-income households by forcing them to drastically cut essential spending.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7075751,
+        "label": "Petrova and Carter's study revealed that during the recession from 2008 to 2012, lower-income households reduced essential spending more significantly than higher-income households.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7075752,
+        "label": "Petrova and Carter discovered that all income groups responded to the recession solely by decreasing discretionary spending, simplifying previous understandings of consumer behavior.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7075753,
+        "label": "The results of Petrova and Carter's research suggest that government aid programs implemented during recessions are ineffective in preventing essential spending cuts across all income levels, challenging current economic policy.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 763636,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Archaeologist Sarah Parcak uses satellite imagery to locate ancient sites.  Traditional archaeological surveys, relying on footwork and aerial photography, can be time-consuming and limited in scope. Parcak's approach, however, allows for the rapid scanning of vast areas, identifying subtle changes in vegetation or soil that may indicate buried structures.  For example, in Egypt, she identified potential pyramid sites invisible to the naked eye, revolutionizing the scale and efficiency of archaeological exploration.\n\n<br>\n\nWhat is the central idea of the passage?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7636360,
+        "label": "Archaeological digs in Egypt have proven to be more fruitful thanks to Parcak’s satellite imagery techniques.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7636361,
+        "label": "Satellite imagery offers a significant improvement over conventional methods in the field of archaeology.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7636362,
+        "label": "Footwork and aerial photography remain essential tools for archaeologists despite advancements in technology.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7636363,
+        "label": "Sarah Parcak's most important contribution to archaeology is the discovery of previously unknown pyramids in Egypt.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 792746,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "The following text is from Charles Dickens's 1838 novel *Oliver Twist*. The scene depicts Oliver's arrival at the workhouse.  Oliver had not been within the walls of the workhouse a quarter of an hour, and had scarcely completed the demolition of a second pewter porringer of pauper gruel, when Master Bumble, the beadle, thrust himself into the room, and said in an angry voice, 'What's this?  Stop!' 'Gruel, Ma'am,' replied a workhouse-master, surprised at the interruption; 'it's a new boy, Ma'am.' Oliver timidly rose, and bowed to the beadle. 'Hold your head up!' said Master Bumble. 'Answer the master louder!' 'He is frightened,' whimpered the workhouse-master in an agony of terror. 'Please, Bumble, don't bite at him!' Bumble regarded with lofty composure the newcomer's pale face and meagre person; and, turning to the workhouse-master, said, 'You'll fill up his porringers once more, Ma'am?' 'As much as he can eat, Master Bumble?' inquired the master. 'As much as he can eat?' repeated Bumble. 'He'll eat a good deal, I dare say.' Here Mr. Bumble paused; and, regarding Oliver with a steady frown, said, 'You're a nice boy, ain't you?' Oliver cried very bitterly; and the gruel came, and he ate it very quickly.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7927460,
+        "label": "Oliver is overwhelmed by the amount of food he is given in the workhouse.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7927461,
+        "label": "Master Bumble is a kind and welcoming figure who cares for the new boys in the workhouse.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7927462,
+        "label": "Oliver's initial encounter with the workhouse is characterized by fear and intimidation due to Master Bumble's stern demeanor.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7927463,
+        "label": "The workhouse-master is sympathetic to Oliver and tries to protect him from Master Bumble's anger.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 899814,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Researchers studying the impact of screen time on sleep quality have noted a correlation between evening use of electronic devices and disrupted sleep patterns.  Specifically, the blue light emitted from screens can suppress melatonin production, a hormone crucial for regulating sleep-wake cycles.  Therefore, experts often recommend limiting screen exposure in the hours leading up to bedtime to promote better sleep.\n\n<br>\n\nWhat is the central idea of the passage?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8998140,
+        "label": "Limiting screen time before bed is advisable because blue light can interfere with the body's natural sleep regulation.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8998141,
+        "label": "Evening use of electronic devices is the primary cause of sleep disorders in modern society.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8998142,
+        "label": "Melatonin production is solely regulated by exposure to blue light from electronic screens.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8998143,
+        "label": "Researchers are primarily concerned with the impact of screen time on children's sleep quality.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 904729,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "Recent studies have revealed the widespread presence of microplastics in marine environments, from surface waters to the deepest ocean trenches. Researchers at the University of Exeter analyzed samples from various marine species, including plankton, fish, and seabirds. Their findings indicate that microplastics are ingested by a wide range of organisms, potentially disrupting feeding behaviors and causing physical harm. Further research is needed to fully understand the long-term ecological consequences of this plastic pollution, but initial evidence suggests a significant threat to marine ecosystems.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9047290,
+        "label": "Researchers at the University of Exeter have conducted studies on microplastic ingestion by marine species.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9047291,
+        "label": "Microplastics are found in all parts of the ocean, including the deepest trenches.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9047292,
+        "label": "Microplastic pollution poses a widespread threat to marine ecosystems because it is ingested by many organisms and may cause ecological disruption.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9047293,
+        "label": "More research is necessary to fully understand the effects of microplastics on marine life.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 976766,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "In 2023, paleontologists in Argentina unearthed the fossil of a giant dinosaur, *Meraxes gigas*. While *Meraxes* had a large body, its arms were surprisingly short, similar to *Tyrannosaurus rex*. Scientists believe that these short arms were not vestigial but rather evolved independently in both species for different purposes, perhaps related to mating or balance. The fossil, which included a nearly complete skull, has provided valuable insights into the evolution of giant carnivorous dinosaurs.  What does the text indicate about the arms of *Meraxes gigas*?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9767660,
+        "label": "They were surprisingly short and their size is believed to be a result of convergent evolution with *Tyrannosaurus rex*.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9767661,
+        "label": "They were primarily used for hunting large prey, similar to other carnivorous dinosaurs of its time.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9767662,
+        "label": "Their length suggests they were vestigial and no longer served any significant biological function for *Meraxes gigas*.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9767663,
+        "label": "The fossil discovery indicates that the arms of *Meraxes gigas* were significantly longer than initially predicted by paleontologists.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 978699,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Medium",
+    "question_text": "A 2023 study published in the journal *Nature* analyzed data from over 500,000 individuals across multiple countries and found a consistent correlation between higher levels of air pollution and increased rates of depression.  Specifically, the research team, led by Dr. Annelise Austin at the University of California, Berkeley, noted that for every 10 $\\mu g/m^3$ increase in fine particulate matter (PM2.5) exposure, there was an approximate 8% rise in the incidence of diagnosed depression.  While the study establishes a correlation and not direct causation, the researchers suggest that air pollution may contribute to inflammation in the brain, potentially impacting mental health.\n\n<br>\n\nWhich statement best summarizes the findings of the 2023 study described in the text?\n",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9786990,
+        "label": "Dr. Austin's team discovered that air pollution causes depression in all individuals exposed to PM2.5.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9786991,
+        "label": "A large-scale study suggests a link between increased air pollution levels and a higher incidence of depression, potentially due to brain inflammation.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9786992,
+        "label": "The journal *Nature* published a study in 2023 that focused primarily on the physical health effects of PM2.5 air pollution.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9786993,
+        "label": "Researchers at the University of California, Berkeley, were the first to identify any connection between environmental factors and mental health.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "1f9d3c3d-2d3a-4c66-9e9c-2de5b06dfd1a",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Easy",
+      "question_text": "Text 1\n\nE-books have made reading more accessible. With a library card or a subscription, readers can download titles instantly and adjust font size for comfort. Digital collections also let small libraries offer far more choices than their shelves could hold.\n\nText 2\n\nWhile she prefers printed books for sustained focus and note-taking, a high school teacher acknowledges that e-books are convenient for travel and quick access to assigned readings. She advises students to choose the format that best fits their purpose.\n\nBased on the texts, both authors would most likely agree with which statement?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3c2c6f97-0fab-4f73-8940-2cb1ca4f5d35",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Easy",
+      "question_text": "Text 1\n\nA city sustainability office highlights rooftop beekeeping as the most effective step to support urban pollinators. The program has installed 50 honeybee hives and reports strong honey yields and increased community interest in gardening.\n\nText 2\n\nAn urban ecologist cautions that adding managed honeybee hives can increase competition for limited nectar and pollen, stressing native bee species. She argues that the most reliable way to help pollinators is to expand pesticide-free, native flowering habitat; managed hives may play a role, but only alongside habitat improvements.\n\nBased on the texts, how would the author of Text 2 most likely respond to the claim in Text 1 that adding more rooftop hives is “the most effective way” to support pollinators?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7f52b1e0-8bba-4490-bcf5-6b9c5d6e2c42",
+      "subject_id": 2,
+      "domain_id": 5,
+      "subcategory_id": 20,
+      "difficulty": "Easy",
+      "question_text": "Text 1\n\nA company survey finds that teams with flexible remote options report higher productivity and fewer interruptions. Employees also save commuting time and appreciate scheduling autonomy.\n\nText 2\n\nA department head argues that regular in-person time is valuable for mentoring, onboarding, and spontaneous idea-sharing. She supports a structured hybrid schedule to preserve collaboration without losing flexibility.\n\nBased on the texts, the authors would most likely agree with which statement about workplace policies?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "0e0da9f3-6321-4d7d-9f7a-1c05d8bbc3a7",
+      "question_id": "1f9d3c3d-2d3a-4c66-9e9c-2de5b06dfd1a",
+      "value": "A",
+      "label": "E-books offer convenient access to reading materials.",
+      "is_correct": true
+    },
+    {
+      "id": "6e4c7ee1-7fb1-4f95-8c26-4e986ec7fb1f",
+      "question_id": "1f9d3c3d-2d3a-4c66-9e9c-2de5b06dfd1a",
+      "value": "B",
+      "label": "Print books are obsolete in schools.",
+      "is_correct": false
+    },
+    {
+      "id": "a1c7c7b5-c0c1-48c8-8d17-3d787db58a52",
+      "question_id": "1f9d3c3d-2d3a-4c66-9e9c-2de5b06dfd1a",
+      "value": "C",
+      "label": "Screen reading invariably reduces comprehension for all readers and purposes.",
+      "is_correct": false
+    },
+    {
+      "id": "7294d8da-3ee7-4b8b-a7f2-44ec5b09a5c1",
+      "question_id": "1f9d3c3d-2d3a-4c66-9e9c-2de5b06dfd1a",
+      "value": "D",
+      "label": "Libraries should replace all print collections with digital ones.",
+      "is_correct": false
+    },
+    {
+      "id": "42a21b84-42bd-4ccf-94de-1cb5444cb69f",
+      "question_id": "3c2c6f97-0fab-4f73-8940-2cb1ca4f5d35",
+      "value": "A",
+      "label": "By agreeing entirely, since honey yields directly prove overall ecosystem health.",
+      "is_correct": false
+    },
+    {
+      "id": "19fbaa52-132d-4969-8d76-61a4b9b6a2ad",
+      "question_id": "3c2c6f97-0fab-4f73-8940-2cb1ca4f5d35",
+      "value": "B",
+      "label": "By suggesting the city replace all honeybee hives with butterfly gardens.",
+      "is_correct": false
+    },
+    {
+      "id": "3a3d2a38-9ac2-4b3a-9f81-83c6b1d9f6b1",
+      "question_id": "3c2c6f97-0fab-4f73-8940-2cb1ca4f5d35",
+      "value": "C",
+      "label": "By arguing that expanding native, pesticide-free habitat is more effective, with hives only as one component of a broader strategy.",
+      "is_correct": true
+    },
+    {
+      "id": "6a249cc2-7cf5-4e45-9b7e-30a55e330b30",
+      "question_id": "3c2c6f97-0fab-4f73-8940-2cb1ca4f5d35",
+      "value": "D",
+      "label": "By claiming urban beekeeping should be banned to protect native insects.",
+      "is_correct": false
+    },
+    {
+      "id": "0d40fd54-4f8a-4bd0-a2e2-6f6d0f5a8d86",
+      "question_id": "7f52b1e0-8bba-4490-bcf5-6b9c5d6e2c42",
+      "value": "A",
+      "label": "Fully remote work is the best policy for all organizations.",
+      "is_correct": false
+    },
+    {
+      "id": "71f777f4-8e67-4d51-b587-e7a19a14fb3f",
+      "question_id": "7f52b1e0-8bba-4490-bcf5-6b9c5d6e2c42",
+      "value": "B",
+      "label": "Mandatory five-day in-office schedules are necessary for productivity.",
+      "is_correct": false
+    },
+    {
+      "id": "6b4cdddb-2f01-4f89-bd8d-2b8cf47f3d51",
+      "question_id": "7f52b1e0-8bba-4490-bcf5-6b9c5d6e2c42",
+      "value": "C",
+      "label": "Technology eliminates the need for any in-person interaction.",
+      "is_correct": false
+    },
+    {
+      "id": "5c42d944-0a7a-48d9-91fa-c8fd28802c54",
+      "question_id": "7f52b1e0-8bba-4490-bcf5-6b9c5d6e2c42",
+      "value": "D",
+      "label": "Effective workplace policies should balance flexibility with opportunities for collaboration.",
+      "is_correct": true
+    }
+  ]
+}

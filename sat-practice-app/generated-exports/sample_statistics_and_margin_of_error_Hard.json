@@ -1,0 +1,107 @@
+[
+  {
+    "id": 263759,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Hard",
+    "question_text": "A market research company interviewed $500$ randomly selected adults in a city and asked about their preferred type of online streaming service. The table below summarizes the responses. If the city's adult population was $2$ million when the survey was conducted, based on the sample data for the $500$ adults, what is the best estimate, in millions, of the difference between the number of adults who prefer streaming movies or TV shows and the number of those who prefer streaming music?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//263759.png",
+    "options": [
+      {
+        "id": 2637590,
+        "label": "0.6",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2637591,
+        "label": "0.4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2637592,
+        "label": "1.6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2637593,
+        "label": "1.1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 399443,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Hard",
+    "question_text": "At Northwood High School, a survey of $50$ randomly selected students found that $42$ percent of them prefer basketball as their favorite sport. If there are $1500$ students in Northwood High School, and the surveyed students are representative of the entire student population, which of the following best estimates the number of students in the school who do NOT prefer basketball as their favorite sport?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3994430,
+        "label": "570",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3994431,
+        "label": "630",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3994432,
+        "label": "870",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3994433,
+        "label": "1170",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 414228,
+    "subject_id": 1,
+    "domain_id": 4,
+    "subcategory_id": 18,
+    "difficulty": "Hard",
+    "question_text": "Researchers conducted a survey on breakfast habits and academic performance among $500$ randomly selected high school students. The students were categorized based on whether they eat breakfast regularly and their grade level. The data are summarized in the table below. Based on the data from the study, an estimate of the percent of US high school students who eat breakfast regularly and achieve good grades is $30\\%$, and the associated margin of error is $4\\%$. Which of the following is a correct statement based on the given margin of error?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//414228.png",
+    "options": [
+      {
+        "id": 4142280,
+        "label": "Approximately 4% of the students in the study who eat breakfast regularly and achieve good grades do not actually eat breakfast regularly or achieve good grades.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4142281,
+        "label": "It is not possible that the percent of all US high school students who eat breakfast regularly and achieve good grades is less than 26%.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4142282,
+        "label": "The percent of all US high school students who eat breakfast regularly and achieve good grades is 34%.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4142283,
+        "label": "It is doubtful that the percent of all US high school students who eat breakfast regularly and achieve good grades is 35%.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

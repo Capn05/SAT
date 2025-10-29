@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "2b6a2f8b-1d47-4a7c-9db2-4e0f8b2d6c1a",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Medium",
+      "question_text": "A nonprofit is printing flyers and posters. Flyers cost $\\$0.12$ each and posters cost $\\$1.80$ each. With a budget of at most $\\$120$, they must print at least $400$ total items. Let $f$ be the number of flyers and $p$ be the number of posters, with $f$ and $p$ integers. What is the greatest possible value of $p$ that satisfies $0.12f + 1.80p \\leq 120$ and $f + p \\geq 400$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8d9c4b4e-5bf7-49f6-9b6d-2c6e63e7239f",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Medium",
+      "question_text": "A rideshare driver has completed $70$ trips with an average rating of $4.4$ out of $5$. If the next $n$ ratings are all $5$ stars, what is the least value of $n$ such that the driver's overall average rating is at least $4.6$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f3a1e6e8-3d0e-4b52-b8c6-3c5dcb79c1f4",
+      "subject_id": 1,
+      "domain_id": 2,
+      "subcategory_id": 7,
+      "difficulty": "Medium",
+      "question_text": "A theater sells student tickets for $\\$18$ and adult tickets for $\\$25$. On a certain night, between $200$ and $240$ tickets inclusive were sold, and total ticket revenue was at least $\\$4,800$. If $s$ is the number of student tickets and $a$ is the number of adult tickets, what is the least possible value of $a$ that satisfies $s + a \\leq 240$, $s + a \\geq 200$, and $18s + 25a \\geq 4800$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "e3a8b8d2-8a26-4f84-9df7-5a0bfa29d5f1",
+      "question_id": "2b6a2f8b-1d47-4a7c-9db2-4e0f8b2d6c1a",
+      "value": "A",
+      "label": "40",
+      "is_correct": false
+    },
+    {
+      "id": "3e5d4c2b-6fa9-45b0-9d56-6a3b2c4d5e6f",
+      "question_id": "2b6a2f8b-1d47-4a7c-9db2-4e0f8b2d6c1a",
+      "value": "B",
+      "label": "41",
+      "is_correct": false
+    },
+    {
+      "id": "a1c2b3d4-e5f6-47a8-9c0d-1e2f3a4b5c6d",
+      "question_id": "2b6a2f8b-1d47-4a7c-9db2-4e0f8b2d6c1a",
+      "value": "C",
+      "label": "42",
+      "is_correct": true
+    },
+    {
+      "id": "b7e8d9c0-1a2b-4c3d-8e9f-0a1b2c3d4e5f",
+      "question_id": "2b6a2f8b-1d47-4a7c-9db2-4e0f8b2d6c1a",
+      "value": "D",
+      "label": "43",
+      "is_correct": false
+    },
+    {
+      "id": "6a7b8c9d-0e1f-4a2b-9c3d-4e5f60718293",
+      "question_id": "8d9c4b4e-5bf7-49f6-9b6d-2c6e63e7239f",
+      "value": "A",
+      "label": "28",
+      "is_correct": false
+    },
+    {
+      "id": "1b2c3d4e-5f60-47a8-9b0c-1d2e3f405162",
+      "question_id": "8d9c4b4e-5bf7-49f6-9b6d-2c6e63e7239f",
+      "value": "B",
+      "label": "30",
+      "is_correct": false
+    },
+    {
+      "id": "9f8e7d6c-5b4a-4213-8c7d-9e0f1a2b3c4d",
+      "question_id": "8d9c4b4e-5bf7-49f6-9b6d-2c6e63e7239f",
+      "value": "C",
+      "label": "36",
+      "is_correct": false
+    },
+    {
+      "id": "02468ace-bdf0-4ace-8ace-13579bdf2468",
+      "question_id": "8d9c4b4e-5bf7-49f6-9b6d-2c6e63e7239f",
+      "value": "D",
+      "label": "35",
+      "is_correct": true
+    },
+    {
+      "id": "aa11bb22-cc33-44dd-88ee-ff0011223344",
+      "question_id": "f3a1e6e8-3d0e-4b52-b8c6-3c5dcb79c1f4",
+      "value": "A",
+      "label": "69",
+      "is_correct": true
+    },
+    {
+      "id": "55aa66bb-77cc-48dd-99ee-00ff11223344",
+      "question_id": "f3a1e6e8-3d0e-4b52-b8c6-3c5dcb79c1f4",
+      "value": "B",
+      "label": "68",
+      "is_correct": false
+    },
+    {
+      "id": "11223344-5566-4788-99aa-bbccddeeff00",
+      "question_id": "f3a1e6e8-3d0e-4b52-b8c6-3c5dcb79c1f4",
+      "value": "C",
+      "label": "66",
+      "is_correct": false
+    },
+    {
+      "id": "deadbeef-0000-4000-8000-abcdefabcdef",
+      "question_id": "f3a1e6e8-3d0e-4b52-b8c6-3c5dcb79c1f4",
+      "value": "D",
+      "label": "72",
+      "is_correct": false
+    }
+  ]
+}

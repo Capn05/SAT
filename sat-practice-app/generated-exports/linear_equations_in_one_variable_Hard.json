@@ -1,0 +1,352 @@
+[
+  {
+    "id": 45494,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A stationery store sells pens in three colors: black, blue, and green. The total number of pens available is $50$. The number of black pens is twice the number of blue pens, denoted by $b$. There are $10$ green pens. Which equation must be true for the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 454940,
+        "label": "$3b + 10 = 50$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 454941,
+        "label": "$2b + 10 = 50$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 454942,
+        "label": "$2b + 2 + 10 = 50$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 454943,
+        "label": "$2(2b) + 10 = 50$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 130425,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A bakery sells three types of cookies: chocolate chip, oatmeal raisin, and peanut butter. On a particular day, the number of chocolate chip cookies sold was $3$ times the number of oatmeal raisin cookies sold. The bakery also sold $25$ peanut butter cookies. If the bakery sold a total of $85$ cookies that day, which equation represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1304250,
+        "label": "$3r + 25 = 85$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1304251,
+        "label": "$r + 3r + 25 = 85$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1304252,
+        "label": "$3(3r) + 25 = 85$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1304253,
+        "label": "$r + 25 = 85$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 168866,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A tank initially contained $30,000$ liters of water. Water is drained from the tank at a constant rate. After $4$ hours, $22,000$ liters of water remained in the tank. If the water continues to drain at this rate, what is the total number of hours it will take for $14,000$ liters of water to remain in the tank?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1688660,
+        "label": "6",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1688661,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1688662,
+        "label": "8",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1688663,
+        "label": "9",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 234715,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "The Townsend Realty Group invested in the five different properties listed in the table above. The table shows the amount, in dollars, the company paid for each property and the corresponding monthly rental price, in dollars, the company charges for the property at each of the five locations. Townsend Realty purchased the Driftwood Drive property after receiving a $15\\%$ discount off the original listed price. Prior to finalizing the purchase, they negotiated an additional $\\$5,000$ reduction from the discounted price due to necessary repairs. Which of the following best approximates the original listed price, in dollars, of the Driftwood Drive property?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//234715.png",
+    "options": [
+      {
+        "id": 2347150,
+        "label": "$\\$202,400$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 2347151,
+        "label": "$\\$212,900$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 2347152,
+        "label": "$\\$207,100$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2347153,
+        "label": "$\\$220,000$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 334379,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A school is printing flyers for an upcoming event. They currently print an average of $500$ flyers each month. One ink cartridge can print approximately $1,000$ flyers, and each ink cartridge costs $\\$30$. The school wants to reduce its monthly expenditure on ink by $\\$6$. Assuming the cost per ink cartridge remains constant, which equation can the school use to determine how many fewer average flyers, $f$, they should print each month?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3343790,
+        "label": "$\\frac{1000}{30}f = 6$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3343791,
+        "label": "$\\frac{30}{1000}f = 6$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 3343792,
+        "label": "$\\frac{1000}{30}f = 500$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3343793,
+        "label": "$\\frac{30}{1000}f = 500$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 650138,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "If $\\frac{y-3}{4} = \\frac{y-3}{9}$, the value of $y-3$ is between which of the following pairs of values?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6501380,
+        "label": "-5 and -1",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6501381,
+        "label": "-1 and 1",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6501382,
+        "label": "2 and 6",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6501383,
+        "label": "7 and 11",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 689737,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "The equation $px - 4 = 2(x + q)$, where $p$ and $q$ are constants, has no solutions. Which of the following must be true? I. $p = 2$, II. $q = -2$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6897370,
+        "label": "None",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6897371,
+        "label": "I only",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6897372,
+        "label": "II only",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6897373,
+        "label": "I and II only",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 740427,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "$$5\\left(jx-2\\right)=\\frac{25}{3}x+7$$ In the given equation, $j$ is a constant. The equation has no solution. What is the value of $3j$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7404270,
+        "label": "5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7404271,
+        "label": "$\\frac{5}{3}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7404272,
+        "label": "$\\frac{25}{3}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7404273,
+        "label": "7",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 781523,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A student is buying pens and pencils for a class of $25$ students. Pens cost $\\$2$ each and pencils cost $\\$1$ each. If $y$ represents the number of pens the student buys, and the remaining items are pencils, which of the following expressions represents the total cost in dollars?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7815230,
+        "label": "$25 + y$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7815231,
+        "label": "$25 + 2y$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7815232,
+        "label": "$50 + y$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7815233,
+        "label": "$50 + 2y$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 930205,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 4,
+    "difficulty": "Hard",
+    "question_text": "A bakery produces artisanal bread at a cost of $\\$3$ per loaf.  Each loaf is sold at a farmer's market by a vendor who receives a commission of $10\\%$ of the selling price for each loaf sold. The bakery's profit for each loaf is the selling price minus the combined cost of production and the vendor's commission. If the selling price of a loaf is $\\$12$, which of the following equations gives the number of loaves, $l$, the bakery needs to sell to make a profit of $\\$810$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9302050,
+        "label": "$(12(1-0.1)-3)l = 810$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9302051,
+        "label": "$(12-3)(1-0.1)l = 810$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9302052,
+        "label": "$(0.9(12)-3)l = 810$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9302053,
+        "label": "$(0.1(12) +3)l = 810$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

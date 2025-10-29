@@ -1,0 +1,527 @@
+[
+  {
+    "id": 78732,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A coffee shop sells two types of beans: Arabica and Robusta. Arabica beans cost $a$ dollars per pound, and Robusta beans cost $b$ dollars per pound. On Monday, the shop sold $15$ pounds of Arabica and $20$ pounds of Robusta, for a total revenue of $\\$215$. On Tuesday, the shop sold $12$ pounds of Arabica and $25$ pounds of Robusta, for a total revenue of $\\$230$.  Which system of equations can be used to correctly determine the values of $a$ and $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 787320,
+        "label": "$$15a + 20b = 215$$ $$25a + 12b = 230$$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 787321,
+        "label": "$$20a + 15b &= 215$$ $$25a + 12b = 230$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 787322,
+        "label": "$$15a + 20b = 215$$ $$12a + 25b = 230$$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 787323,
+        "label": "$$215a + 15b = 20$$ $$230a + 12b = 25$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 158502,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "$$y = 7$$ $$x = 3$$ What is the solution $(x, y)$ to the given system of equations?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1585020,
+        "label": "(7, 3)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1585021,
+        "label": "(5, 7)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1585022,
+        "label": "(3, 7)",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 1585023,
+        "label": "(3, 5)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 164118,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "The graph of a system of linear equations is shown. What is the solution $(x, y)$ to the system?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//164118.png",
+    "options": [
+      {
+        "id": 1641180,
+        "label": "(1, -2)",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1641181,
+        "label": "(0, -1)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1641182,
+        "label": "(2, -3)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1641183,
+        "label": "(-1, -3)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 169533,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A coffee shop sells two types of coffee beans: Arabica and Robusta. Arabica beans cost $\\$15$ per pound, and Robusta beans cost $\\$10$ per pound. A customer wants to create a blend of these two beans. If the customer wants to buy a total of $7$ pounds of coffee beans and spend exactly $\\$90$, which of the following systems of equations can be solved to find $a$, the number of pounds of Arabica beans, and $r$, the number of pounds of Robusta beans, the customer should buy?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1695330,
+        "label": "$$15a + 10r = 7$$ $$a + r = 90$$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1695331,
+        "label": "$$15a + 10r = 90$$ $$a + r = 7$$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1695332,
+        "label": "$$10a + 15r = 7$$ $$a + r = 90$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1695333,
+        "label": "$$10a + 15r = 90$$ $$a + r = 7$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 238593,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "Leo and Mia went to a farmers market. The price of each apple was the same, and the price of each banana was the same. Leo bought $5$ apples and $3$ bananas for $\\$13.50$, and Mia bought $2$ apples and $4$ bananas for $\\$9.00$. Which of the following systems of linear equations represents the situation, if $x$ represents the price, in dollars, of each apple and $y$ represents the price, in dollars, of each banana?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2385930,
+        "label": "$$5x+3y=13.50$$ $$2x +4y = 9.00$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2385931,
+        "label": "$$3x+5y=9.00$$ $$4x +2y = 13.50$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2385932,
+        "label": "$$5x+3y=9.00$$ $$2x +4y = 13.50$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2385933,
+        "label": "$$3x+5y=13.50$$ $$4x +2y = 9.00$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 420513,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "$$m = 7$$ $$n = 2m - 5$$ The solution to the given system of equations is $(m, n)$. What is the value of $n$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4205130,
+        "label": "2",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4205131,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4205132,
+        "label": "9",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 4205133,
+        "label": "14",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 454290,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A coffee shop sells small coffees for $\\$3.50$ and large coffees for $\\$4.75$. On a particular morning, the shop sold a total of $85$ coffees and generated $\\$343.25$ in revenue. Which of the following systems of equations could be used to determine the number of small coffees, $s$, and the number of large coffees, $l$, sold?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4542900,
+        "label": "$$s + l = 343.25$$ $$3.50s + 4.75l = 85$$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4542901,
+        "label": "$$s + l = 85$$ $$3.50s + 4.75l = 343.25$$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4542902,
+        "label": "$$s + l = 85$$ $$4.75s + 3.50l = 343.25$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4542903,
+        "label": "$$3.50s + 4.75l = 85$$ $$s + l = 343.25$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 678483,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A fruit stand sells apples and bananas. Each apple costs $\\$2$, and each banana costs $\\$0.50$. If John purchased a total of $15$ apples and bananas that have a combined cost of $\\$18$, how many apples did he purchase?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6784830,
+        "label": "5",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6784831,
+        "label": "6",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6784832,
+        "label": "7",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6784833,
+        "label": "8",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 681584,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "What is the solution $(x,y)$ to the given system of equations? $$y = 3x - 1$$ $$x - 2 = 0$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6815840,
+        "label": "(5,2)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6815841,
+        "label": "(2,5)",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 6815842,
+        "label": "(3,8)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6815843,
+        "label": "(2,7)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 735298,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells muffins and bagels. Each muffin costs $\\$3$ and each bagel costs $\\$2$. On Tuesday, the bakery sold a total of $120$ muffins and bagels and made $\\$290$. Which of the following systems of equations can be used to find the number of muffins, $m$, and bagels, $b$, sold on Tuesday?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7352980,
+        "label": "$$m + b = 120$$ $$3m + 2b = 290$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7352981,
+        "label": "$$3m + 2b = 120$$ $$m + b = 290$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7352982,
+        "label": "$$2m + 3b = 120$$ $$m + b = 290$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7352983,
+        "label": "$$m + b = 290$$ $$2m + 3b = 120$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 774793,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A fruit stand sells apples and bananas. Let $a$ be the number of apples and $b$ be the number of bananas. There are $3$ times as many bananas as apples, and in total there are $16$ fruits. Which system of equations represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7747930,
+        "label": "$$b = 3a$$ $$a + b = 16$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 7747931,
+        "label": "$$a = 3b$$ $$a + b = 16$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7747932,
+        "label": "$$b = 16a$$ $$a + b = 3$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7747933,
+        "label": "$$a = 16b$$ $$a + b = 3$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 818479,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "What is the solution $(a, b)$ to the given system of equations? $$3a - 2b = 20$$ $$b = 2$$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8184790,
+        "label": "(2, 8)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8184791,
+        "label": "(8, 2)",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8184792,
+        "label": "(2, 20)",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8184793,
+        "label": "(20, 2)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 825268,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "$$2x - y = 10$$ $$x = 6$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $y$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8252680,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8252681,
+        "label": "-2",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8252682,
+        "label": "8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8252683,
+        "label": "6",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 926369,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "$$a = 7$$ $$b = 2a - 5$$ The solution to the given system of equations is $(a, b)$. What is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9263690,
+        "label": "14",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9263691,
+        "label": "7",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9263692,
+        "label": "9",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9263693,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 928918,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 8,
+    "difficulty": "Easy",
+    "question_text": "A bakery sells two types of cookies: chocolate chip and oatmeal raisin. Chocolate chip cookies are sold for $\\$2$ each, and oatmeal raisin cookies are sold for $\\$1.50$ each. On a particular day, the bakery sold a total of $200$ cookies and made $\\$340$ in revenue. Let $c$ represent the number of chocolate chip cookies sold and $o$ represent the number of oatmeal raisin cookies sold. Which system of equations represents this situation?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9289180,
+        "label": "$$c + o = 200$$ $$2c + 1.5o = 340$$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9289181,
+        "label": "$$c + o = 340$$ $2c + 1.5o = 200$$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9289182,
+        "label": "$$2c + o = 200$$ $$1.5c + o = 340$$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9289183,
+        "label": "$$2c + 1.5o = 200$$ $$c + o = 340$$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+      "id": "f3b64d2e-5e9b-4b1a-8a6f-2f6b5c891ad3",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Medium",
+      "question_text": "Which of the following expressions is equivalent to $(2x - 3)(x + 5) - (x - 4)(x + 5)$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0c8c5f66-8e4a-4e58-9fb0-7b4a7d30d4d2",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Medium",
+      "question_text": "The expression $(\\frac{3}{2}x - \\frac{1}{4})(\\frac{2}{3}x + 5)$ is equivalent to $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $c$?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "a7c1e9d3-9c74-4a76-b2c9-9f2a7b0f7e43",
+      "subject_id": 1,
+      "domain_id": 1,
+      "subcategory_id": 1,
+      "difficulty": "Medium",
+      "question_text": "Let $p = x + \\frac{1}{x}$ for $x \\ne 0$. Which of the following is equivalent to $p^2 - 2$?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "2f7a3a41-3cfd-4d5f-8d27-5cbf861ac6e0",
+      "question_id": "f3b64d2e-5e9b-4b1a-8a6f-2f6b5c891ad3",
+      "value": "A",
+      "label": "$x^2 + 6x + 5$",
+      "is_correct": true
+    },
+    {
+      "id": "c1f0d733-77d4-4a4f-9c4c-5a78f5eb2a11",
+      "question_id": "f3b64d2e-5e9b-4b1a-8a6f-2f6b5c891ad3",
+      "value": "B",
+      "label": "$(x - 1)(x + 5)$",
+      "is_correct": false
+    },
+    {
+      "id": "94a812d7-6ef4-4a7c-b2af-7a0d71a31f2f",
+      "question_id": "f3b64d2e-5e9b-4b1a-8a6f-2f6b5c891ad3",
+      "value": "C",
+      "label": "$x^2 + 4x - 5$",
+      "is_correct": false
+    },
+    {
+      "id": "6c8dd1e2-1b0a-4d6a-8f3c-9f91b2c6a8d4",
+      "question_id": "f3b64d2e-5e9b-4b1a-8a6f-2f6b5c891ad3",
+      "value": "D",
+      "label": "$(x + 1)(x + 3)$",
+      "is_correct": false
+    },
+    {
+      "id": "d2b486e0-1af8-4e43-8e1b-6bff2ee2b14d",
+      "question_id": "0c8c5f66-8e4a-4e58-9fb0-7b4a7d30d4d2",
+      "value": "A",
+      "label": "$-\\frac{5}{6}$",
+      "is_correct": false
+    },
+    {
+      "id": "7e015f8e-cf32-4a3d-9d89-9e7c65f25739",
+      "question_id": "0c8c5f66-8e4a-4e58-9fb0-7b4a7d30d4d2",
+      "value": "B",
+      "label": "$-\\frac{1}{4}$",
+      "is_correct": false
+    },
+    {
+      "id": "3b26b2a1-0d47-4e4c-8fbd-2cde9f0c1d7a",
+      "question_id": "0c8c5f66-8e4a-4e58-9fb0-7b4a7d30d4d2",
+      "value": "C",
+      "label": "$-\\frac{5}{4}$",
+      "is_correct": true
+    },
+    {
+      "id": "b4f5a6e9-98af-4d04-b0b5-0b15db0e9f71",
+      "question_id": "0c8c5f66-8e4a-4e58-9fb0-7b4a7d30d4d2",
+      "value": "D",
+      "label": "$\\frac{5}{4}$",
+      "is_correct": false
+    },
+    {
+      "id": "5b0b1c2d-7061-4e22-8a9b-1d2c3f4e5a6b",
+      "question_id": "a7c1e9d3-9c74-4a76-b2c9-9f2a7b0f7e43",
+      "value": "A",
+      "label": "$x^2 - \\frac{1}{x^2}$",
+      "is_correct": false
+    },
+    {
+      "id": "8e7d6c5b-3a21-4f90-9b8a-5e4d3c2b1a0f",
+      "question_id": "a7c1e9d3-9c74-4a76-b2c9-9f2a7b0f7e43",
+      "value": "B",
+      "label": "$x^2 + \\frac{1}{x^2}$",
+      "is_correct": true
+    },
+    {
+      "id": "1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+      "question_id": "a7c1e9d3-9c74-4a76-b2c9-9f2a7b0f7e43",
+      "value": "C",
+      "label": "$(x - \\frac{1}{x})^2$",
+      "is_correct": false
+    },
+    {
+      "id": "9f8e7d6c-5b4a-4c3d-8b7a-6c5d4e3f2a1b",
+      "question_id": "a7c1e9d3-9c74-4a76-b2c9-9f2a7b0f7e43",
+      "value": "D",
+      "label": "$p(p - 2)$",
+      "is_correct": false
+    }
+  ]
+}

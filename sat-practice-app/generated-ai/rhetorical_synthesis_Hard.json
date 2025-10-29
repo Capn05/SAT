@@ -1,0 +1,386 @@
+{
+  "questions": [
+    {
+      "id": "d6e3f2a1-5c4b-4b8e-9a1d-3f2e1c0b9a88",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching coastal erosion management, a student has taken the following notes:\n- A 2018–2023 comparative study examined 14 coastal municipalities.\n- Towns that prohibited seawalls and funded dune restoration saw a 30% reduction in average shoreline retreat relative to similar towns that permitted seawalls.\n- Seawalls protected adjacent properties in the short term but increased erosion downstream.\n- In prohibition towns, tourism revenue rose by 12% on average, attributed to wider beaches.\n- Nature-based strategies had higher maintenance costs in the first two years but lower costs thereafter.\n- The study’s policy brief concluded that nature-based approaches delivered net long-term benefits.\n\n<br>\nThe student wants to make and support a generalization about the long-term outcomes of nature-based approaches compared with seawalls. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "0a4f3c22-7b1e-4d39-8f6a-56c2b1a9e7d3",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching an upcoming space telescope mission, a student has taken the following notes:\n- The ORBIT-2 mission (launch planned for 2027) will focus on planets orbiting M-dwarf stars.\n- Its near-infrared spectrometer is optimized to detect water vapor absorption features.\n- Target sample: 60 exoplanets, primarily close-in, temperate worlds.\n- The team will compare water signature strength while accounting for stellar flares and activity indices.\n- Hypothesis: some close-in exoplanets retain atmospheric water despite high stellar activity.\n\n<br>\nThe student wants to present the primary aim of the mission. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "f1b2c3d4-3e2d-4a5b-a6c7-8d9e0f1a2b3c",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching medieval European guilds, a student has taken the following notes:\n- In 14th-century Flanders, textile guilds controlled apprenticeship pipelines and enforced quality standards.\n- Archival wage records indicate that guild towns paid higher average wages than comparable non-guild towns.\n- Non-guild cities adopted mechanized fulling and new looms earlier, raising output per worker by the late 1300s.\n- Export prices for guild-certified cloth were consistently higher, attributed to reputation for quality.\n- An economic historian concludes that guilds traded productive efficiency for credible quality signaling.\n\n<br>\nThe student wants to articulate the study’s central trade-off. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "2c9e7b6a-1d3f-4e8a-9b2c-7d6e5f4a3b2c",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching a county vaccination initiative, a student has taken the following notes:\n- In 2021–2022, the county ran mobile clinics plus texting outreach in five neighborhoods with the lowest vaccination rates.\n- Target-area vaccination rates rose from 48% to 71%; in matched control neighborhoods without the program, rates rose from 52% to 58%.\n- Post-visit surveys: most appointments in target areas were scheduled via text links.\n- Estimated program cost per additional vaccination: 34 dollars.\n- Uptake gains plateaued after about four months.\n\n<br>\nThe student wants to summarize the program’s effectiveness while acknowledging a key limitation. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "9a8b7c6d-5e4f-4c3b-8a2d-1f0e9d8c7b6a",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching bilingual code-switching, a student has taken the following notes:\n- A corpus study examined Spanish–English bilinguals across professional emails and casual text messages.\n- Intra-sentential switching rate: 3% in professional emails vs. 22% in casual texts.\n- Common functions of switches in texts: introducing culturally specific terms; signaling stance or emphasis.\n- Interviewees reported avoiding switches in formal contexts due to professionalism norms.\n- A linguist argues code-switching is pragmatic rather than random.\n\n<br>\nThe student wants to describe what the data suggest about the function of code-switching. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "3f2e1d0c-9b8a-4a7e-b6c5-4d3e2f1a0b9c",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching marine protected areas, a student has taken the following notes:\n- A decade-long study compared no-take reserves with adjacent fished areas.\n- Inside reserves, biomass increased by approximately 250% across target species.\n- In adjacent fished zones, catch-per-unit effort (CPUE) rose by about 20% after year 5.\n- CPUE gains were not observed for highly mobile pelagic species.\n- Habitat complexity was a positive predictor of spillover magnitude.\n- Authors conclude reserves can enhance local fisheries when species are relatively sedentary and habitats are complex.\n\n<br>\nThe student wants to explain under what conditions the reserves benefited nearby fisheries. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "7a6b5c4d-3e2f-4d1a-8b9c-0a1b2c3d4e5f",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching approaches to AI regulation, a student has taken the following notes:\n- A 2025 policy paper compares risk-based regulation (e.g., EU model) and sectoral enforcement (e.g., US model).\n- Risk-based systems classify applications by risk tier and impose stricter requirements on high-risk uses.\n- Sectoral enforcement relies on existing agencies within domains like health or finance.\n- Case studies: medical diagnostic AI showed stronger safety compliance under risk-based rules; fintech AI deployed faster under sectoral oversight with similar consumer complaint rates.\n- The paper argues no single model dominates across domains and proposes a blended strategy.\n\n<br>\nThe student wants to present the paper’s recommendation grounded in its comparative findings. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "4b3c2d1e-9f8a-4a6b-b7c8-9d0e1f2a3b4c",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching vertical farming, a student has taken the following notes:\n- Vertical farms use up to 95% less land and water than conventional farming.\n- Electricity demand for lighting and climate control is high and can dominate environmental impacts.\n- Life-cycle assessment (LCA): in coal-heavy grids, vertical-farm lettuce has roughly twice the emissions of field-grown; in renewable-heavy grids, emissions are about 40% lower than field-grown.\n- Product quality and yields are consistent year-round.\n\n<br>\nThe student wants to convey the main conditional finding about environmental impact. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "5e4d3c2b-1a0f-4b9e-9c8d-7a6b5c4d3e2f",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching labor and recognition in the construction of a transcontinental railroad, a student has taken the following notes:\n- The workforce included Chinese and Irish immigrants, Black freedmen, and Mesoamerican laborers.\n- Payroll and accident reports show Chinese crews received lower wages and had higher fatality rates in mountain sections.\n- Contemporary political speeches credited \"American ingenuity\" while largely omitting immigrant labor.\n- Early 20th-century commemorations began to acknowledge multiple groups.\n- A historian argues that public narratives initially erased immigrant contributions despite material reliance on their labor.\n\n<br>\nThe student wants to make and support a claim about the discrepancy between contribution and recognition. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    },
+    {
+      "id": "8c7b6a5d-4e3f-4d2c-a1b2-3c4d5e6f7a8b",
+      "subject_id": 2,
+      "domain_id": 6,
+      "subcategory_id": 23,
+      "difficulty": "Hard",
+      "question_text": "While researching the cognitive effects of sleep deprivation, a student has taken the following notes:\n- Double-blind, within-subjects design with 40 adults: one night of total sleep deprivation vs. normal sleep.\n- Tasks assessed sustained attention, working memory, and emotion recognition.\n- Performance changes after sleep deprivation: sustained attention declined by about 35%; working memory by about 15%; emotion recognition showed no significant change.\n- Caffeine improved sustained attention by roughly half of the observed deficit but did not eliminate working-memory declines.\n- Authors caution against claims of global cognitive impairment; effects vary by domain.\n\n<br>\nThe student wants to state the qualified conclusion drawn by the authors. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "image_url": null,
+      "test_module_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "7fb392f5-1e35-4f7f-8e6b-7cb3b7b2a1a1",
+      "question_id": "d6e3f2a1-5c4b-4b8e-9a1d-3f2e1c0b9a88",
+      "value": "A",
+      "label": "Seawalls protected adjacent properties and increased erosion downstream, showing why they should be banned.",
+      "is_correct": false
+    },
+    {
+      "id": "e21e5e3d-b0bf-43bd-8cb6-cc2df3a72112",
+      "question_id": "d6e3f2a1-5c4b-4b8e-9a1d-3f2e1c0b9a88",
+      "value": "B",
+      "label": "Tourism revenue rose in towns that banned seawalls, although maintenance costs were higher.",
+      "is_correct": false
+    },
+    {
+      "id": "0a7f8c1b-6e04-4f6f-b06a-82f7df6a5a33",
+      "question_id": "d6e3f2a1-5c4b-4b8e-9a1d-3f2e1c0b9a88",
+      "value": "C",
+      "label": "The study found that both seawalls and dune restoration reduced shoreline retreat by similar amounts, but for different reasons.",
+      "is_correct": false
+    },
+    {
+      "id": "9d76d0c6-78d0-4c3e-ae46-2e3a4f1e2b44",
+      "question_id": "d6e3f2a1-5c4b-4b8e-9a1d-3f2e1c0b9a88",
+      "value": "D",
+      "label": "Across the municipalities studied, prohibiting seawalls and investing in dune restoration yielded better long-term results—slower shoreline retreat and higher tourism revenue—despite higher early maintenance costs.",
+      "is_correct": true
+    },
+    {
+      "id": "b0f0d27d-0a2f-4e7e-8a65-7c47b1a2f555",
+      "question_id": "0a4f3c22-7b1e-4d39-8f6a-56c2b1a9e7d3",
+      "value": "A",
+      "label": "The ORBIT-2 mission primarily aims to determine whether close-in exoplanets around M-dwarfs retain atmospheric water by mapping water vapor with near-infrared spectroscopy.",
+      "is_correct": true
+    },
+    {
+      "id": "8f3d2a7c-2b3d-4f30-a1c1-3eb5c6d7a666",
+      "question_id": "0a4f3c22-7b1e-4d39-8f6a-56c2b1a9e7d3",
+      "value": "B",
+      "label": "Using a near-infrared spectrometer, the mission will observe 60 exoplanets and compare water signatures with stellar activity indices.",
+      "is_correct": false
+    },
+    {
+      "id": "3a0e1f2d-1c2b-4b6e-8f7a-9c0d1e2f3777",
+      "question_id": "0a4f3c22-7b1e-4d39-8f6a-56c2b1a9e7d3",
+      "value": "C",
+      "label": "Because flares can strip atmospheres, the team expects to find little water vapor around most M-dwarf planets.",
+      "is_correct": false
+    },
+    {
+      "id": "c7d8e9f0-1a2b-4c3d-9e0f-1a2b3c4d4888",
+      "question_id": "0a4f3c22-7b1e-4d39-8f6a-56c2b1a9e7d3",
+      "value": "D",
+      "label": "M-dwarfs are small stars, so their planets are easier to study than those around Sun-like stars.",
+      "is_correct": false
+    },
+    {
+      "id": "1b2c3d4e-5f60-4a7b-8c9d-0e1f2a3b4c91",
+      "question_id": "f1b2c3d4-3e2d-4a5b-a6c7-8d9e0f1a2b3c",
+      "value": "A",
+      "label": "Guild-controlled towns earned higher wages and higher output by adopting mechanized fulling early.",
+      "is_correct": false
+    },
+    {
+      "id": "2c3d4e5f-6a70-4b8c-9d0e-1f2a3b4c5d92",
+      "question_id": "f1b2c3d4-3e2d-4a5b-a6c7-8d9e0f1a2b3c",
+      "value": "B",
+      "label": "Because export prices were higher for guild-certified cloth, guilds clearly improved efficiency.",
+      "is_correct": false
+    },
+    {
+      "id": "3d4e5f6a-7b80-4c9d-0e1f-2a3b4c5d6e93",
+      "question_id": "f1b2c3d4-3e2d-4a5b-a6c7-8d9e0f1a2b3c",
+      "value": "C",
+      "label": "Guild regulation traded speed and efficiency for quality signaling: wages were higher and reputation supported price premiums, but adoption of new looms lagged.",
+      "is_correct": true
+    },
+    {
+      "id": "4e5f6a7b-8c90-4d0e-1f2a-3b4c5d6e7f94",
+      "question_id": "f1b2c3d4-3e2d-4a5b-a6c7-8d9e0f1a2b3c",
+      "value": "D",
+      "label": "Cities without strict guilds delayed mechanization, which reduced their per-worker output in the late 1300s.",
+      "is_correct": false
+    },
+    {
+      "id": "5f6a7b8c-9d00-4e1f-2a3b-4c5d6e7f8095",
+      "question_id": "2c9e7b6a-1d3f-4e8a-9b2c-7d6e5f4a3b2c",
+      "value": "A",
+      "label": "Vaccination rates increased in the county from 2021 to 2022 due to broader trends and local programs.",
+      "is_correct": false
+    },
+    {
+      "id": "6a7b8c9d-0e10-4f2a-3b4c-5d6e7f8a9196",
+      "question_id": "2c9e7b6a-1d3f-4e8a-9b2c-7d6e5f4a3b2c",
+      "value": "B",
+      "label": "The mobile clinics plus texting campaign produced substantially larger gains in the target neighborhoods than in controls at a cost of 34 dollars per additional shot, though uptake plateaued after four months.",
+      "is_correct": true
+    },
+    {
+      "id": "7b8c9d0e-1f20-4a3b-4c5d-6e7f8a9b0297",
+      "question_id": "2c9e7b6a-1d3f-4e8a-9b2c-7d6e5f4a3b2c",
+      "value": "C",
+      "label": "Text messages scheduled most appointments, proving that texting alone caused the increase.",
+      "is_correct": false
+    },
+    {
+      "id": "8c9d0e1f-2a30-4b4c-5d6e-7f8a9b0c1398",
+      "question_id": "2c9e7b6a-1d3f-4e8a-9b2c-7d6e5f4a3b2c",
+      "value": "D",
+      "label": "Although the program had a low cost per additional vaccination, the overall county rate changes were similar across neighborhoods.",
+      "is_correct": false
+    },
+    {
+      "id": "9d0e1f2a-3b40-4c5d-6e7f-8a9b0c1d2499",
+      "question_id": "9a8b7c6d-5e4f-4c3b-8a2d-1f0e9d8c7b6a",
+      "value": "A",
+      "label": "Code-switching occurred at equal rates in professional and casual contexts, showing it is random.",
+      "is_correct": false
+    },
+    {
+      "id": "0e1f2a3b-4c50-4d6e-7f8a-9b0c1d2e35aa",
+      "question_id": "9a8b7c6d-5e4f-4c3b-8a2d-1f0e9d8c7b6a",
+      "value": "B",
+      "label": "Interview responses were the primary evidence that code-switching is perceived as professional in formal emails.",
+      "is_correct": false
+    },
+    {
+      "id": "1f2a3b4c-5d60-4e7f-8a9b-0c1d2e3f46bb",
+      "question_id": "9a8b7c6d-5e4f-4c3b-8a2d-1f0e9d8c7b6a",
+      "value": "C",
+      "label": "Because switches introduce culturally specific terms, they always signal a change in topic.",
+      "is_correct": false
+    },
+    {
+      "id": "2a3b4c5d-6e70-4f8a-9b0c-1d2e3f4a57cc",
+      "question_id": "9a8b7c6d-5e4f-4c3b-8a2d-1f0e9d8c7b6a",
+      "value": "D",
+      "label": "The corpus and interviews indicate that code-switching is a pragmatic, context-sensitive choice—common in casual messages to convey culture or stance and avoided in formal settings.",
+      "is_correct": true
+    },
+    {
+      "id": "3b4c5d6e-7f80-4a9b-0c1d-2e3f4a5b68dd",
+      "question_id": "3f2e1d0c-9b8a-4a7e-b6c5-4d3e2f1a0b9c",
+      "value": "A",
+      "label": "Marine reserves uniformly raised catches for all species after five years.",
+      "is_correct": false
+    },
+    {
+      "id": "4c5d6e7f-8090-4b0c-1d2e-3f4a5b6c79ee",
+      "question_id": "3f2e1d0c-9b8a-4a7e-b6c5-4d3e2f1a0b9c",
+      "value": "B",
+      "label": "Habitat complexity inside reserves increased biomass by 250%.",
+      "is_correct": false
+    },
+    {
+      "id": "5d6e7f80-90a0-4c1d-2e3f-4a5b6c7d80ff",
+      "question_id": "3f2e1d0c-9b8a-4a7e-b6c5-4d3e2f1a0b9c",
+      "value": "C",
+      "label": "Reserves tended to boost nearby fisheries only when target species were relatively sedentary and habitats were complex, with catch rates rising in adjacent zones after several years.",
+      "is_correct": true
+    },
+    {
+      "id": "6e7f8090-a0b0-4d2e-3f4a-5b6c7d8e9010",
+      "question_id": "3f2e1d0c-9b8a-4a7e-b6c5-4d3e2f1a0b9c",
+      "value": "D",
+      "label": "Because pelagic species benefited most, reserves are best placed in open-water areas.",
+      "is_correct": false
+    },
+    {
+      "id": "7f8090a0-b0c0-4e3f-4a5b-6c7d8e9f0121",
+      "question_id": "7a6b5c4d-3e2f-4d1a-8b9c-0a1b2c3d4e5f",
+      "value": "A",
+      "label": "Risk-based regulation outperformed sectoral enforcement in both safety and deployment speed, so it should be adopted wholesale.",
+      "is_correct": false
+    },
+    {
+      "id": "8090a0b0-c0d0-4f4a-5b6c-7d8e9f0a1232",
+      "question_id": "7a6b5c4d-3e2f-4d1a-8b9c-0a1b2c3d4e5f",
+      "value": "B",
+      "label": "Drawing on mixed case-study results, the paper recommends a hybrid approach: apply risk-tiered rules to safety-critical systems and rely on sectoral enforcement elsewhere.",
+      "is_correct": true
+    },
+    {
+      "id": "90a0b0c0-d0e0-404b-6c7d-8e9f0a1b2343",
+      "question_id": "7a6b5c4d-3e2f-4d1a-8b9c-0a1b2c3d4e5f",
+      "value": "C",
+      "label": "Sectoral enforcement produced the fewest consumer complaints in fintech and medicine, proving it is superior.",
+      "is_correct": false
+    },
+    {
+      "id": "a0b0c0d0-e0f0-414c-7d8e-9f0a1b2c3454",
+      "question_id": "7a6b5c4d-3e2f-4d1a-8b9c-0a1b2c3d4e5f",
+      "value": "D",
+      "label": "Because the EU and US use different models, international harmonization is impossible.",
+      "is_correct": false
+    },
+    {
+      "id": "b0c0d0e0-f001-424d-8e9f-0a1b2c3d4565",
+      "question_id": "4b3c2d1e-9f8a-4a6b-b7c8-9d0e1f2a3b4c",
+      "value": "A",
+      "label": "The life-cycle analysis shows vertical farming's emissions advantage depends on the electricity mix: it outperforms fields on renewable-heavy grids but fares worse on fossil-heavy ones.",
+      "is_correct": true
+    },
+    {
+      "id": "c0d0e0f0-0112-434e-9f0a-1b2c3d4e5676",
+      "question_id": "4b3c2d1e-9f8a-4a6b-b7c8-9d0e1f2a3b4c",
+      "value": "B",
+      "label": "Vertical farms always have lower emissions than conventional farms because they use less land and water.",
+      "is_correct": false
+    },
+    {
+      "id": "d0e0f001-1223-444f-a01b-2c3d4e5f6787",
+      "question_id": "4b3c2d1e-9f8a-4a6b-b7c8-9d0e1f2a3b4c",
+      "value": "C",
+      "label": "Year-round product consistency makes vertical farms the most sustainable option regardless of the grid's composition.",
+      "is_correct": false
+    },
+    {
+      "id": "e0f00112-2334-4550-b12c-3d4e5f607898",
+      "question_id": "4b3c2d1e-9f8a-4a6b-b7c8-9d0e1f2a3b4c",
+      "value": "D",
+      "label": "Lighting and climate control raise energy use, but the effect on emissions is negligible compared with transport.",
+      "is_correct": false
+    },
+    {
+      "id": "f0011223-3445-4651-912d-4e5f607189a9",
+      "question_id": "5e4d3c2b-1a0f-4b9e-9c8d-7a6b5c4d3e2f",
+      "value": "A",
+      "label": "All groups received equal pay and recognition for their work on the railroad.",
+      "is_correct": false
+    },
+    {
+      "id": "00112233-4556-4752-a23e-5f607189ab0a",
+      "question_id": "5e4d3c2b-1a0f-4b9e-9c8d-7a6b5c4d3e2f",
+      "value": "B",
+      "label": "Because later commemorations recognized immigrant workers, early narratives were accurate.",
+      "is_correct": false
+    },
+    {
+      "id": "11223344-5667-4853-b34f-607189ab1c1b",
+      "question_id": "5e4d3c2b-1a0f-4b9e-9c8d-7a6b5c4d3e2f",
+      "value": "C",
+      "label": "Material records reveal heavy reliance on immigrant labor—especially Chinese crews who faced lower wages and higher fatalities—yet early public narratives minimized these contributions.",
+      "is_correct": true
+    },
+    {
+      "id": "22334455-6778-4954-8450-7189ab1c2d2c",
+      "question_id": "5e4d3c2b-1a0f-4b9e-9c8d-7a6b5c4d3e2f",
+      "value": "D",
+      "label": "The railroad was built mostly by engineers using machines rather than by laborers.",
+      "is_correct": false
+    },
+    {
+      "id": "33445566-7889-4a55-9561-89ab1c2d3e3d",
+      "question_id": "8c7b6a5d-4e3f-4d2c-a1b2-3c4d5e6f7a8b",
+      "value": "A",
+      "label": "After one night without sleep, all measured cognitive abilities declined equally, and caffeine restored performance across the board.",
+      "is_correct": false
+    },
+    {
+      "id": "44556677-899a-4b56-a672-9ab1c2d3e4f4",
+      "question_id": "8c7b6a5d-4e3f-4d2c-a1b2-3c4d5e6f7a8b",
+      "value": "B",
+      "label": "The authors conclude that sleep loss produces domain-specific impairments—especially in sustained attention—while working memory and emotion recognition are less affected, and caffeine only partly offsets attention deficits.",
+      "is_correct": true
+    },
+    {
+      "id": "55667788-9aab-4c57-b783-ab1c2d3e4f05",
+      "question_id": "8c7b6a5d-4e3f-4d2c-a1b2-3c4d5e6f7a8b",
+      "value": "C",
+      "label": "Because emotion recognition did not change, sleep deprivation has no measurable cognitive impact.",
+      "is_correct": false
+    },
+    {
+      "id": "66778899-aabc-4d58-8894-b1c2d3e4f516",
+      "question_id": "8c7b6a5d-4e3f-4d2c-a1b2-3c4d5e6f7a8b",
+      "value": "D",
+      "label": "The within-subjects design prevents any conclusions about attention.",
+      "is_correct": false
+    }
+  ]
+}

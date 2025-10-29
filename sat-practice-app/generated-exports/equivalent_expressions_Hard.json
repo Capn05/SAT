@@ -1,0 +1,597 @@
+[
+  {
+    "id": 105231,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "If $(5^2)^x = \\sqrt[4]{5^3}$, what is the value of $x$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1052310,
+        "label": "$\\frac{3}{4}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1052311,
+        "label": "$\\frac{3}{8}$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1052312,
+        "label": "$\\frac{3}{2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1052313,
+        "label": "$\\frac{2}{3}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 170426,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The expression $0.25x^2 - 0.15x + 0.40$ can be rewritten in the form $a(5x^2 - 3x + 8)$, where $a$ is a constant. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1704260,
+        "label": "0.05",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1704261,
+        "label": "0.5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1704262,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1704263,
+        "label": "1.25",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 179612,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "In the expression $2(3x^2 + px + 5) - 4x(p + 2)$, $p$ is a constant. This expression is equivalent to the expression $6x^2 + 2x + 10$. What is the value of $p$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1796120,
+        "label": "-5",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1796121,
+        "label": "-3",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1796122,
+        "label": "3",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1796123,
+        "label": "5",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 295832,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The expression $\\frac{p^{\\frac{1}{2}}q^{-3}}{p^{-2}q^{\\frac{1}{4}}}$ where $p > 1$ and $q > 1$, is equivalent to which of the following?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2958320,
+        "label": "$\\frac{p^2\\sqrt{p}}{q^3\\sqrt[4]{q}}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2958321,
+        "label": "$\\frac{p^2\\sqrt[4]{p}}{q^3\\sqrt{q}}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2958322,
+        "label": "$\\frac{p\\sqrt{p}}{q^2\\sqrt[4]{q}}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2958323,
+        "label": "$\\frac{\\sqrt[4]{p^5}}{q^3\\sqrt{q}}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 386567,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "$$\\frac{\\sqrt[3]{x^7}}{\\sqrt{x^3}} = x^{\\frac{g}{b}}$$ What is the value of $\\frac{g}{b}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3865670,
+        "label": "$\\frac{5}{6}$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 3865671,
+        "label": "$\\frac{23}{6}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3865672,
+        "label": "$\\frac{7}{2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 3865673,
+        "label": "$\\frac{3}{2}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 419166,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The expression $(5x - 7)(2x + 9)$ is equivalent to the expression $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4191660,
+        "label": "31",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4191661,
+        "label": "59",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4191662,
+        "label": "45",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4191663,
+        "label": "-14",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 491038,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "$$\\frac{x^2 - 5x + k}{x-2}$$ In the expression above, $k$ and $m$ are integers. If the expression is equivalent to $x + m$ and $x \\neq 2$, which of the following could be the value of $k$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4910380,
+        "label": "4",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4910381,
+        "label": "6",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4910382,
+        "label": "8",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4910383,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 516918,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The equation $(px - 1)(qx^2 + rx + 2) = 2x^3 + 5x^2 + sx - 2$ is true for all values of $x$, where $p$, $q$, $r$, and $s$ are constants. What is the value of $qr$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5169180,
+        "label": "7",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5169181,
+        "label": "10",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5169182,
+        "label": "14",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 5169183,
+        "label": "16",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 542695,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The equation $\\frac{1}{x+3} - \\frac{5}{x-1} = \\frac{px+q}{(x+3)(x-1)}$ is true for all $x \\neq -3, x \\neq 1$, where $p$ and $q$ are constants. What is the value of $pq$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5426950,
+        "label": "-64",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5426951,
+        "label": "-16",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5426952,
+        "label": "16",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5426953,
+        "label": "64",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 559958,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "If $x$ and $y$ are positive numbers, which of the following is equivalent to $\\sqrt[3]{27x^9}\\sqrt{16y^4}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5599580,
+        "label": "$12x^3y^2$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 5599581,
+        "label": "$7xy$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 5599582,
+        "label": "$7x^3y^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5599583,
+        "label": "$12xy$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 575894,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "If $\\beta = p - q$, which of the following is equivalent to the expression $y^2 - p^2 + 2pq - q^2$",
+    "image_url": null,
+    "options": [
+      {
+        "id": 5758940,
+        "label": "$(y - \\beta)^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 5758941,
+        "label": "$(y + \\beta)(y - \\beta)$",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 5758942,
+        "label": "$y^2 - \\beta y - \\beta^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 5758943,
+        "label": "$y^2 + \\beta^2$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 626557,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "Which of the following expressions is equivalent to $(2x - 3y)^2$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6265570,
+        "label": "$4x^2 - 9y^2$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6265571,
+        "label": "$4x^2 + 12xy + 9y^2$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6265572,
+        "label": "$2x^2 - 6xy + 3y^2$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6265573,
+        "label": "$4x^2 - 12xy + 9y^2$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 688902,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "$$(4250 + 50x^2) + 5(20x^2 - 200)$$ The expression above can be written in the form $ax^2 + b$, where $a$ and $b$ are constants. What is the value of $a + b$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6889020,
+        "label": "3400",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 6889021,
+        "label": "4200",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6889022,
+        "label": "5400",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6889023,
+        "label": "3300",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 755986,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "Given the functions $f(x) = x^3 + 5x^2 + 6x$ and $g(x) = x^2 + 3x + 2$, which of the following expressions is equivalent to $\\frac{f(x)}{g(x)}$, for $x > -1$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7559860,
+        "label": "$\\frac{x+3}{x+1}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7559861,
+        "label": "$\\frac{x(x+2)}{x+1}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7559862,
+        "label": "$\\frac{x(x+3)}{x+2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7559863,
+        "label": "$\\frac{x(x+3)}{x+1}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 800127,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "The expression $7x^2 - 28$ can be rewritten as $7(x-a)(x+a)$, where $a$ is a positive constant. What is the value of $a$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8001270,
+        "label": "2",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 8001271,
+        "label": "4",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8001272,
+        "label": "$\\sqrt{7}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8001273,
+        "label": "$\\sqrt{28}$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 913488,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "Which of the following expressions is equivalent to $\\frac{3x^2 - 7x + 3}{x-2}$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9134880,
+        "label": "$3x + 1 + \\frac{1}{x-2}$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9134881,
+        "label": "$3x - 1 - \\frac{1}{x-2}$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9134882,
+        "label": "$3x + 1 - \\frac{1}{x-2}$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9134883,
+        "label": "$3x - 1 + \\frac{1}{x-2}$",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 959282,
+    "subject_id": 1,
+    "domain_id": 1,
+    "subcategory_id": 1,
+    "difficulty": "Hard",
+    "question_text": "$$\\frac{x^2 - 5x - 14}{x - 7} = ax + d$$ The equation above is true for all $x \\neq 7$, where $a$ and $d$ are integers. What is the value of $a + d$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9592820,
+        "label": "-3",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9592821,
+        "label": "1",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9592822,
+        "label": "2",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9592823,
+        "label": "3",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  }
+]

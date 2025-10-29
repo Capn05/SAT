@@ -1,0 +1,352 @@
+[
+  {
+    "id": 79067,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "The following text is adapted from a short story about a scholar's experience in a library.  The library stood, a towering edifice of thought, promising answers to questions unasked.  He entered eagerly, seeking wisdom in the rustling pages. Yet, the more he read, the more vast the ocean of the unknown seemed to stretch before him.  Each answer uncovered spawned a dozen new inquiries, leaving him both enlightened and overwhelmed by the boundless expanse of ignorance he had yet to traverse.  The thirst for knowledge, once a simple longing, now felt like an insatiable fire, fueled by the very knowledge it consumed.  Based on the text, what is a potential downside of pursuing knowledge, as experienced by the individual described?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 790670,
+        "label": "It can lead to social isolation as one becomes absorbed in books.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 790671,
+        "label": "It can create a sense of inadequacy by highlighting the vastness of what is unknown.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 790672,
+        "label": "It can diminish one's appreciation for practical skills in everyday life.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 790673,
+        "label": "It can foster a distrust of others' opinions as one values personal study above all else.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 254797,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "The following text is adapted from Edith Wharton's 1905 novel *The House of Mirth*.  Miss Bart was a fairly good mathematician, and could instantly calculate the odds against her marrying Horace Trenor. Even to her ownவ்வளவுindulgent calculations, the chances were unfavorable. She knew, of course, that her refusal had been a disappointment to him; but she also knew that to Horace Trenor disappointment was a necessary stimulant, and that none of her attractions were likely to be heightened by acquiescence. She had therefore met his advances with the smiling evasion which she knew how to make so charming, and had contented herself with assuring him of her unalterable friendship, and with praising his cigars.   Based on the text, how does Miss Bart most likely view Horace Trenor?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2547970,
+        "label": "As someone whose interest in her is likely to diminish if she reciprocates his feelings.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2547971,
+        "label": "As a man whose mathematical abilities rival her own and provide a basis for intellectual connection.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2547972,
+        "label": "As a friend whose taste in cigars is as refined and appealing as his romantic sensibilities.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2547973,
+        "label": "As someone genuinely heartbroken by her rejection and in need of sincere reassurance of her friendship.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 412701,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "Studies examining the relationship between social media and political polarization have yielded complex results.  While some researchers initially hypothesized that social media echo chambers would inevitably deepen partisan divides, recent evidence suggests a more nuanced picture.  A large-scale study, analyzing user behavior across multiple platforms, found that while individuals do tend to consume news from sources aligned with their political views online, the *degree* of this selective exposure is not significantly greater than in traditional media consumption.  Furthermore, the study indicated that social media can also expose individuals to diverse perspectives, albeit often in the context of online debates and discussions that can themselves be polarizing.  Therefore, the role of social media in political polarization appears to be less straightforward than earlier anticipated, and further research is needed to fully understand its complex effects.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4127010,
+        "label": "Social media echo chambers have been definitively proven to be the primary driver of increasing political polarization in recent years.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 4127011,
+        "label": "While initially believed to be a major cause of political polarization, social media's actual impact is complex and requires further study.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 4127012,
+        "label": "Research has conclusively shown that social media exposes individuals to a wider range of political perspectives than traditional media.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4127013,
+        "label": "Traditional media sources are more responsible for political polarization than social media platforms due to their established echo chambers.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 450940,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "Traditional crop rotation involves planting different types of crops in the same field in planned sequences. In contrast, monoculture farming focuses on growing a single crop species repeatedly in the same area. While monoculture can offer short-term efficiency gains, it often leads to soil nutrient depletion because the same nutrients are extracted year after year.  Moreover, relying on a single crop type can make entire harvests vulnerable to specific pests or diseases. Crop rotation, on the other hand, helps maintain soil fertility naturally and can disrupt pest cycles, leading to more sustainable agricultural practices.  What does the text most strongly suggest about monoculture farming?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 4509400,
+        "label": "It is likely to result in lower yields over extended periods compared to farming methods that incorporate crop rotation.",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 4509401,
+        "label": "It requires more sophisticated machinery and technology than crop rotation methods to achieve comparable levels of efficiency.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 4509402,
+        "label": "It is primarily adopted in regions with less diverse climates, where crop rotation is not a viable agricultural strategy.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 4509403,
+        "label": "It is more labor-intensive in the short term than crop rotation but offers greater long-term economic benefits.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 665467,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "The history of hybrid vehicles dates back further than many realize, with early examples appearing in the late 19th century. However, these early hybrids were often complex and unreliable, limiting their widespread adoption. It wasn't until the late 20th and early 21st centuries that hybrid technology became truly viable for mass production.  While Ferdinand Porsche developed a gasoline-electric hybrid car called the Lohner-Porsche Mixte Hybrid in 1900, its complexity and cost were prohibitive.  The modern resurgence of hybrids began with advancements in battery technology and electronics, culminating in the Toyota Prius in 1997, which is often credited with popularizing the modern hybrid car.  Therefore, although the concept of hybrid vehicles is old, their practical success is a relatively recent development.\n\n<br>\n\nWhich statement best summarizes the history of hybrid vehicles as described in the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6654670,
+        "label": "Early hybrid vehicles from the 19th century were more efficient than modern ones.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6654671,
+        "label": "The complexity and cost of early hybrid vehicles hindered their widespread adoption, delaying their success until modern times.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6654672,
+        "label": "The Toyota Prius, introduced in 1997, marked the beginning of hybrid vehicle technology.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 6654673,
+        "label": "Although the idea of hybrid vehicles is old, their widespread practicality and adoption are relatively recent due to technological advancements.",
+        "value": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": 708776,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "Many insects have evolved remarkable camouflage strategies to avoid predation. Stick insects, for example, are masters of disguise, closely resembling twigs in shape, color, and texture. Leaf insects take this further, not only mimicking the appearance of leaves but also exhibiting behaviors that enhance their camouflage. These insects often remain motionless throughout the day, when visually oriented predators like birds are most active, and become more active during the night.  What does the text most strongly suggest about the daytime behavior of stick insects and leaf insects?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7087760,
+        "label": "It is primarily motivated by the need to conserve energy due to limited food availability during the day.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7087761,
+        "label": "It is a crucial element of their camouflage strategy, protecting them from visually oriented predators.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 7087762,
+        "label": "It is less effective at night because nocturnal predators rely more on senses other than sight.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 7087763,
+        "label": "It is a learned behavior, acquired through observing the actions of older, more experienced insects.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 846119,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "Data transmission through fiber optic cables relies on light signals. However, over long distances, these signals can weaken, a phenomenon known as signal attenuation. To combat this, engineers employ optical repeaters, devices placed at intervals along the cable. These repeaters receive the weakened signal, amplify it back to its original strength, and then retransmit it down the fiber. This process ensures data integrity over vast distances.  Based on the text, what is the primary function of optical repeaters in fiber optic cables?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8461190,
+        "label": "They convert light signals into electrical signals for easier transmission.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8461191,
+        "label": "They amplify weakened light signals to maintain data integrity over long distances.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 8461192,
+        "label": "They reduce the speed of light signals to prevent signal distortion.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 8461193,
+        "label": "They split the light signal into multiple channels for increased bandwidth.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 906988,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "There are two primary methods for generating electricity: renewable and nonrenewable. Nonrenewable methods, such as burning fossil fuels like coal and natural gas, have historically been dominant due to their high energy density and established infrastructure. However, they release significant amounts of greenhouse gases, contributing to climate change. Renewable methods, such as solar and wind power, are cleaner and more sustainable in the long term but often face challenges related to intermittency and initial infrastructure costs. If, for example, a study shows that a city powered by nonrenewable sources has lower short-term energy costs than a city powered by renewables, but long-term environmental costs are significantly higher in the nonrenewable city, it suggests that the economic analysis must consider both short-term and long-term impacts to provide a complete picture.\n\n<br>Which statement best summarizes the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9069880,
+        "label": "Nonrenewable energy sources are ultimately unsustainable because their long-term environmental costs outweigh any short-term economic benefits.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9069881,
+        "label": "Renewable energy sources, despite higher initial costs, are always the more economically sound choice due to their minimal environmental impact.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9069882,
+        "label": "Both renewable and nonrenewable methods of electricity generation have distinct advantages and disadvantages, and a comprehensive assessment must consider both short-term and long-term consequences.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9069883,
+        "label": "Studies comparing renewable and nonrenewable energy sources are inherently flawed because they cannot accurately quantify either short-term economic costs or long-term environmental impacts.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 924900,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "For much of the 20th century, standardized testing was widely accepted as an objective measure of academic ability and potential, playing a central role in college admissions and educational placement.  However, decades of research have revealed significant limitations, including cultural biases and a weak correlation with long-term success.  Increasingly, educators and policymakers are questioning the reliance on these tests, advocating for more holistic evaluation methods that consider diverse skills and experiences.  Which choice best states the main idea of the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9249000,
+        "label": "The growing popularity of standardized tests in college admissions reflects their proven accuracy in predicting student success.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9249001,
+        "label": "Recent research has focused on improving the design of standardized tests to address concerns about objectivity.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9249002,
+        "label": "Standardized tests were once considered essential for evaluating academic ability, but their limitations are now prompting a shift towards more comprehensive assessment methods.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 9249003,
+        "label": "The development of new technologies has enabled standardized tests to become more widely used and accepted in educational settings.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 960580,
+    "subject_id": 2,
+    "domain_id": 7,
+    "subcategory_id": 25,
+    "difficulty": "Hard",
+    "question_text": "While Antoine Lavoisier is often credited as the father of modern chemistry for his groundbreaking work on combustion and the conservation of mass in the late 18th century, the story is more nuanced.  Decades prior, Mikhail Lomonosov, a Russian polymath, independently formulated the law of conservation of mass and conducted significant experiments in chemistry and physics.  However, due to language barriers and limited dissemination of his work outside of Russia, Lomonosov’s contributions were largely unrecognized in Western scientific circles until long after Lavoisier’s theories became prominent.  Consequently, the widespread adoption of these fundamental principles is primarily attributed to Lavoisier’s influential publications and systematic approach.\n\n<br>\nWhich statement best reflects the relationship between Antoine Lavoisier’s and Mikhail Lomonosov’s contributions to modern chemistry as described in the text?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9605800,
+        "label": "Lomonosov's discoveries in chemistry were ultimately proven to be more accurate than those of Lavoisier.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 9605801,
+        "label": "Despite Lomonosov's earlier findings, Lavoisier's work became more influential in establishing modern chemistry due to wider recognition.",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 9605802,
+        "label": "The language barrier was the sole factor preventing Lomonosov from receiving credit for the law of conservation of mass.",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9605803,
+        "label": "Lavoisier intentionally appropriated Lomonosov's research without giving him proper acknowledgement.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "id": 4977,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The table above shows some values of $x$ and their corresponding values $f(x)$ for the linear function $f$. What is the $x$-intercept of the graph of $y = f(x)$ in the $xy$-plane?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//4977.png",
+    "options": [
+      {
+        "id": 49770,
+        "label": "(2,0)",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 49771,
+        "label": "(4,0)",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 49772,
+        "label": "(3,0)",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 49773,
+        "label": "(6,0)",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 145459,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "Widgets are sold in three models: Basic, Standard, and Premium. The profit per widget for each model is shown in the table. A company aims to make a total profit of $\\$550$ from selling widgets. If the company sells $b$ Basic widgets, $s$ Standard widgets, and $p$ Premium widgets, which of the following expresses $s$ in terms of $b$ and $p$?",
+    "image_url": "https://gyhivtmohbofyhbagwld.supabase.co/storage/v1/object/public/Questions//145459.png",
+    "options": [
+      {
+        "id": 1454590,
+        "label": "$s = 100 - \\frac{5}{11}b - \\frac{16}{11}p$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 1454591,
+        "label": "$s = 100 + \\frac{5}{11}b + \\frac{16}{11}p$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 1454592,
+        "label": "$s = 100 - \\frac{11}{5}b - \\frac{11}{16}p$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1454593,
+        "label": "$s = 100 + \\frac{11}{5}b - \\frac{16}{11}p$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 192780,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "For the function $f$, if $f(2x) = x + 5$ for all values of $x$, what is the value of $f(4)$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 1927800,
+        "label": "9",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 1927801,
+        "label": "7",
+        "value": "B",
+        "is_correct": true
+      },
+      {
+        "id": 1927802,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 1927803,
+        "label": "-1",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 245547,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The function $K(m) = 1.609m$ gives the distance in kilometers that corresponds to a distance of $m$ miles. If a distance increased by $2.5$ miles, by how much did the distance increase in kilometers?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2455470,
+        "label": "4.02",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2455471,
+        "label": "2.50",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2455472,
+        "label": "1.61",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2455473,
+        "label": "6.52",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 273147,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The functions $f$ and $g$ are defined as $f(x) = 3x - 5$ and $g(x) = -2x + 15$. If the function $h$ is defined as $h(x) = f(x) + g(x)$, what is the $x$-coordinate of the $x$-intercept of the graph of $y = h(x)$ in the $xy$-plane?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 2731470,
+        "label": "-10",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 2731471,
+        "label": "-5",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 2731472,
+        "label": "5",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 2731473,
+        "label": "10",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 399926,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The population of a certain town is modeled by the function $P$ defined by $P(t) = 12,500 + 250(t-5)^2$, where $P(t)$ is the population $t$ years after the year 2010. The constant $12,500$ in this function represents which of the following?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 3999260,
+        "label": "The annual increase in the population of the town.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 3999261,
+        "label": "The population of the town in the year 2010.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 3999262,
+        "label": "The population of the town in the year 2015.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 3999263,
+        "label": "The population of the town in the year 2020.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 642380,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The relationship between temperature in degrees Celsius ($C$) and degrees Fahrenheit ($F$) is linear.  When the temperature is $68$ degrees Fahrenheit, it is $20$ degrees Celsius. When the temperature is $50$ degrees Fahrenheit, it is $10$ degrees Celsius. Based on this linear model, what is the temperature in degrees Celsius when the temperature is $86$ degrees Fahrenheit?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 6423800,
+        "label": "25",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 6423801,
+        "label": "27",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 6423802,
+        "label": "30",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 6423803,
+        "label": "35",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 732632,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The population of a town increased from $5,000$ residents in the year 2010 to $7,500$ residents in the year 2020. Assuming that the population increased at a constant rate, which of the following linear functions $f$ best models the population, in residents, $t$ years after the year 2010?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 7326320,
+        "label": "$f(t) = 200t + 5000$",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 7326321,
+        "label": "$f(t) = -250t + 7500$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 7326322,
+        "label": "$f(t) = 250t + 5000$",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 7326323,
+        "label": "$f(t) = 250t + 7500$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 868633,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "The number of apples, $A$, remaining in a barrel after selling $n$ apples each day is modeled by the equation $A = 150 - 7n$.  Which of the following describes the meaning of the $7$ in this context?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 8686330,
+        "label": "The initial number of apples in the barrel.",
+        "value": "A",
+        "is_correct": false
+      },
+      {
+        "id": 8686331,
+        "label": "The number of apples sold in 7 days.",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 8686332,
+        "label": "The decrease in the number of apples remaining for each day.",
+        "value": "C",
+        "is_correct": true
+      },
+      {
+        "id": 8686333,
+        "label": "The number of days it takes to sell 150 apples.",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": 940371,
+    "subject_id": 1,
+    "domain_id": 2,
+    "subcategory_id": 6,
+    "difficulty": "Hard",
+    "question_text": "A photography studio charges a sitting fee for a portrait session and an additional cost for each printed portrait. The total cost for a session including up to $6$ printed portraits is structured as follows: $\\$60$ sitting fee for the session and $\\$25$ for each printed portrait after the first. Which of the following equations gives the total cost $y$, in dollars, for a session with $x$ printed portraits, where $x$ is a positive integer and $x \\leq 6$?",
+    "image_url": null,
+    "options": [
+      {
+        "id": 9403710,
+        "label": "$y = 25x + 35$",
+        "value": "A",
+        "is_correct": true
+      },
+      {
+        "id": 9403711,
+        "label": "$y = 25x + 60$",
+        "value": "B",
+        "is_correct": false
+      },
+      {
+        "id": 9403712,
+        "label": "$y = 60x + 25$",
+        "value": "C",
+        "is_correct": false
+      },
+      {
+        "id": 9403713,
+        "label": "$y = 85x$",
+        "value": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]
