@@ -47,7 +47,7 @@ export async function POST(request) {
 
     // Create streaming response
     const completion = await openai.chat.completions.create({
-      model: 'gpt-5-chat-latest',
+      model: 'gpt-5.6-luna',
       messages: conversationMessages,
       stream: true,
     });
