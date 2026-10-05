@@ -37,7 +37,7 @@ export default function SubjectTabs({ activeSubject, onSubjectChange }) {
         <div style={styles.info}>
           <h2 style={styles.infoTitle}>Understanding Domains and Skills</h2>
           <p style={styles.infoText}>
-            The PSAT is organized into <strong>domains</strong> (major subject areas) and <strong>skills</strong> (specific
+            The SAT is organized into <strong>domains</strong> (major subject areas) and <strong>skills</strong> (specific
             abilities tested within each domain). Each domain shows its approximate distribution of questions on the test.
             Click on any skill to start practicing questions specifically targeted to that area.
           </p>

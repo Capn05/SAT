@@ -22,7 +22,7 @@ export async function POST(request) {
     }
 
     // Check if email is from approved domains for free access
-    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    const approvedDomains = [ '@knilok.com', '@inupup.com'];
     const isApprovedStudent = approvedDomains.some(domain => userEmail.toLowerCase().endsWith(domain));
 
     if (!isApprovedStudent) {

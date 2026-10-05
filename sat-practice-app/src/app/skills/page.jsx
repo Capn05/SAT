@@ -381,7 +381,7 @@ export default function SkillsPage() {
 
   return (
     <div style={styles.container}>
-      <SkillsHeader title={"PSAT Skills"}/>
+      <SkillsHeader title={"SAT Skills"}/>
       <SubjectTabs activeSubject={activeSubject} onSubjectChange={setActiveSubject} />
       
       <SubscriptionCheck>

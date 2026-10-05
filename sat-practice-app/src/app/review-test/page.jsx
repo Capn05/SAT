@@ -524,6 +524,7 @@ function ReviewTestContent() {
         selectedAnswer={selectedQuestion !== null ? questions[selectedQuestion].userAnswer?.selectedOptionId : ''}
         options={selectedQuestion !== null ? questions[selectedQuestion].options : []}
         imageURL={selectedQuestion !== null ? questions[selectedQuestion].imageUrl : ''}
+        questionId={selectedQuestion !== null ? questions[selectedQuestion].id : null}
         style={{
           position: 'fixed',
           top: 0,

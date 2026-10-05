@@ -55,7 +55,7 @@ export default function AIChat({ question, selectedAnswer, options, imageURL }) 
       const messages = [
         {
           role: 'system',
-          content: `Your name is Brill, You are a helpful PSAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. The user may ask about the math question in front of them but they may ask you about other things as well. The question that the user may be referring to: ${question}. The answer choice that the user selected (undefined or null if the user has not answered yet): ${selectedAnswer}. All answer choices where 'label' are the options: ${JSON.stringify(
+          content: `Your name is Brill, You are a helpful SAT tutoring assistant, your answers should be crafted to be understood by a 10 year old kid. The user may ask about the math question in front of them but they may ask you about other things as well. The question that the user may be referring to: ${question}. The answer choice that the user selected (undefined or null if the user has not answered yet): ${selectedAnswer}. All answer choices where 'label' are the options: ${JSON.stringify(
             options
           )}. 
           

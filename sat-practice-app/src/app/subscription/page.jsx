@@ -320,7 +320,7 @@ function SubscriptionContent() {
   // Check if user has approved email domain
   const isApprovedDomain = (email) => {
     if (!email) return false;
-    const approvedDomains = ['@bentonvillek12.org', '@knilok.com', '@inupup.com'];
+    const approvedDomains = ['@knilok.com', '@inupup.com'];
     return approvedDomains.some(domain => email.toLowerCase().endsWith(domain));
   };
   
@@ -1095,7 +1095,7 @@ function SubscriptionContent() {
           <div style={styles.cardContent}>
             <p style={styles.helpText}>
               If you have any questions about your subscription or need assistance, 
-              our team is ready to provide personalized support to ensure your PSAT prep experience is seamless.
+              our team is ready to provide personalized support to ensure your SAT prep experience is seamless.
             </p>
             
             <div style={styles.contactInfo}>
